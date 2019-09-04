@@ -1,5 +1,5 @@
 
-#define VERSION "0.3.1"
+#define VERSION "0.4.1"
 //#include <String.h>
 //#include "Arduino.h"
 #include <ESP8266WiFi.h>
@@ -29,8 +29,9 @@ WIEGAND wg;
 RFID_Reader RFIDr;
 
 
-int readertype;
-int relayPin;
+uint8_t readertype;
+uint8_t readerlook;
+uint8_t relayPin;
 
 #include <NTP.h>
 NtpClient NTP;
@@ -180,21 +181,17 @@ void ICACHE_FLASH_ATTR setup()
 
 	if (!SPIFFS.begin())
 	{
-#ifdef DEBUG
-		Serial.print(F("[ 警告 ] Formatting filesystem..."));
-#endif
 		if (SPIFFS.format())
 		{
-			writeEvent("警告", "sys", "Filesystem formatted", "");
 #ifdef DEBUG
-			Serial.println(F(" completed!"));
+			Serial.println(F("[ 警告 ] Formatting filesystem...completed!"));
 #endif
 		}
 		else
 		{
 			writeEvent("错误", "sys", "文件系统无法格式化", "");
 #ifdef DEBUG
-			Serial.println(F("[ 警告 ] Could not format filesystem!"));
+			Serial.println(F("[ 警告 ] 文件系统无法格式化!"));
 #endif
 		}
 	}
