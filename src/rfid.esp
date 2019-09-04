@@ -1,0 +1,567 @@
+#define NR_KNOWN_KEYS   8
+byte knownKeys[NR_KNOWN_KEYS][MFRC522::MF_KEY_SIZE] =  {
+    {0xff, 0xff, 0xff, 0xff, 0xff, 0xff}, 				// FF FF FF FF FF FF = factory default
+    {0xa0, 0xa1, 0xa2, 0xa3, 0xa4, 0xa5},	 // A0 A1 A2 A3 A4 A5
+    {0xb0, 0xb1, 0xb2, 0xb3, 0xb4, 0xb5}, 	// B0 B1 B2 B3 B4 B5
+    {0x4d, 0x3a, 0x99, 0xc3, 0x51, 0xdd}, 	// 4D 3A 99 C3 51 DD
+    {0x1a, 0x98, 0x2c, 0x7e, 0x45, 0x9a}, // 1A 98 2C 7E 45 9A
+    {0xd3, 0xf7, 0xd3, 0xf7, 0xd3, 0xf7}, // D3 F7 D3 F7 D3 F7
+    {0xaa, 0xbb, 0xcc, 0xdd, 0xee, 0xff}, // AA BB CC DD EE FF
+    {0x00, 0x00, 0x00, 0x00, 0x00, 0x00}  // 00 00 00 00 00 00
+};
+
+// void dump_byte_array(byte *buffer, byte bufferSize) {
+//   for (byte i = 0; i < bufferSize; i++) {
+//     Serial.print(buffer[i] < 0x10 ? " 0" : " ");
+//     Serial.write(buffer[i]);
+//   }
+// }
+
+bool ICACHE_FLASH_ATTR try_key(MFRC522::MIFARE_Key *key)
+{
+    bool result = false;
+    for(byte block = 0; block < 64; block++)
+	{ 
+		// Serial.println(F("Authenticating using key A..."));
+		status = mfrc522.PCD_Authenticate(MFRC522::PICC_CMD_MF_AUTH_KEY_A, block, key, &(mfrc522.uid));
+		if (status != MFRC522::STATUS_OK) {
+			#ifdef DEBUG
+			Serial.print(F("PCD Auth failed: "));
+			Serial.println(mfrc522.GetStatusCodeName(status));
+			#endif
+			return false;
+		}
+		// Read block
+		byte byteCount = sizeof(buffer);
+		status = mfrc522.MIFARE_Read(block, buffer, &byteCount);
+		if (status != MFRC522::STATUS_OK) {
+			//mfrc522.PCD_Reset();
+			#ifdef DEBUG
+			Serial.print(F("MIFARE Read failed: "));
+			Serial.println(mfrc522.GetStatusCodeName(status));
+			#endif
+		}
+		else {
+			// Successful read
+			result = true;
+			#ifdef DEBUG
+			//Serial.print(F("Read Success"));
+			//dump_byte_array((*key).keyByte, MFRC522::MF_KEY_SIZE);
+			// Serial.println();
+			for (int p = 0; p < 16; p++) //De 16 bits uit de block uitlezen
+			{
+				waarde [block][p] = buffer[p];
+				Serial.print(waarde[block][p]);
+				Serial.print(" ");
+			}  
+			Serial.println();
+			#endif  
+		}
+    }
+    mfrc522.PICC_HaltA();      			 // Halt PICC
+    mfrc522.PCD_StopCrypto1();  // Stop encryption on PCD
+    return result;   
+}
+
+void ICACHE_FLASH_ATTR rfidloop()
+{
+	String uid = "";
+	String type = "";
+	if (readertype == 0)
+	{
+		if (!mfrc522.PICC_IsNewCardPresent())
+		{
+			delay(50);
+			return;
+		}
+		if (!mfrc522.PICC_ReadCardSerial())
+		{
+			delay(50);
+			return;
+		}
+		MFRC522::PICC_Type piccType = mfrc522.PICC_GetType(mfrc522.uid.sak);
+		//Serial.println(mfrc522.PICC_GetTypeName(piccType));
+		type = mfrc522.PICC_GetTypeName(piccType);
+		for (byte i = 0; i < 6; i++) {
+			key.keyByte[i] = 0xFF;
+		}
+		MFRC522::MIFARE_Key key;
+		for (byte k = 0; k < NR_KNOWN_KEYS; k++) {
+			// Copy the known key into the MIFARE_Key structure
+			for (byte i = 0; i < MFRC522::MF_KEY_SIZE; i++) {
+				key.keyByte[i] = knownKeys[k][i];
+			}
+			if (try_key(&key)) {
+				break;
+			}
+		}
+		mfrc522.PICC_HaltA();	
+		mfrc522.PCD_StopCrypto1();  // Stop encryption on PCD
+		for (int i = 0; i < mfrc522.uid.size; ++i)
+		{
+			uid += String(mfrc522.uid.uidByte[i], HEX);
+		}
+		cooldown = millis() + 1000;
+		//mfrc522.PCD_Reset();
+
+		#ifdef DEBUG
+		Serial.print(F("[ 提醒 ] PICC's UID: "));
+		//dump_byte_array(mfrc522.uid.uidByte, mfrc522.uid.size);
+		Serial.print(uid);
+		Serial.println(" " + type);
+		#endif
+	}
+	else if (readertype == 1) //WG
+	{
+		if (wg.available())
+		{
+			#ifdef DEBUG
+			Serial.print(F("[ 提醒 ] PICC's UID: "));
+			Serial.println(wg.getCode());
+			#endif
+			uid = String(wg.getCode(), DEC);
+			type = String(wg.getWiegandType(), DEC);
+			cooldown = millis() + 2000;
+		}
+		else
+		{
+			return;
+		}
+	}
+	else if (readertype == 2)  //NFC PN532
+	{
+		  boolean success;
+		uint8_t pnuid[] = { 0, 0, 0, 0, 0, 0, 0 , 0};	// Buffer to store the returned UID
+		uint8_t uidLength;				// Length of the UID (4 or 7 bytes depending on ISO14443A card type)
+		success = nfc.readPassiveTargetID(PN532_MIFARE_ISO14443A, &pnuid[0], &uidLength);
+		if (success) {
+		#ifdef DEBUG
+			Serial.println("Found an ISO14443A card");
+			Serial.print("  UID Length: ");Serial.print(uidLength, DEC);Serial.println(" bytes");
+			Serial.print("  UID Value: ");
+			nfc.PrintHex(pnuid, uidLength);
+			if (uidLength == 4)
+			{
+				Serial.println("Seems to be a Mifare Classic card ");
+			}
+		#endif
+			for (uint8_t i = 0; i < uidLength; i++)
+			{
+				uid += String(pnuid[i], HEX);
+			}
+			// Wait 1 second before continuing
+			//delay(1000);
+			cooldown = millis() + 1000;
+		}
+		else
+		{
+			delay(50);
+			return;
+		}
+
+// 		bool found = false;
+// 		byte pnuid[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+// 		eCardType e_CardType;
+// 		byte u8_UidLength = 0x00; // UID = 4 or 7 bytes
+// 		found = pn532.ReadPassiveTargetID(pnuid, &u8_UidLength, &e_CardType);
+// 		if (found && u8_UidLength >= 4)
+// 		{
+// #ifdef DEBUG
+// 			Serial.print(F("PICC's UID: "));
+// #endif
+// 			for (uint8_t i = 0; i < u8_UidLength; i++)
+// 			{
+// 				uid += String(pnuid[i], HEX);
+// 			}
+// #ifdef DEBUG
+// 			Serial.print(uid);
+// #endif
+// 			cooldown = millis() + 2000;
+// 		}
+// 		else
+// 		{
+// 			delay(50);
+// 			return;
+// 		}
+
+	}
+	else if (readertype > 2)
+	{
+		while (Serial.available() > 0)
+		{
+			RFIDr.rfidSerial(Serial.read());
+		}
+		if (RFIDr.Available())
+		{
+			uid = RFIDr.GetHexID();
+			type = RFIDr.GetTagType();
+			cooldown = millis() + 2000;
+#ifdef DEBUG
+			Serial.print(F("[ 提醒 ] PICC's UID: "));
+			Serial.print(uid);
+#endif
+		}
+		else
+		{
+			if (readertype == 3)
+			{
+				delay(50);
+				return;
+			}
+		}
+
+		if (readertype == 4 && uid.length() == 0)
+		{
+			if (!mfrc522.PICC_IsNewCardPresent())
+			{
+				delay(50);
+				return;
+			}
+			if (!mfrc522.PICC_ReadCardSerial())
+			{
+				delay(50);
+				return;
+			}
+			mfrc522.PICC_HaltA();
+			cooldown = millis() + 2000;
+#ifdef DEBUG
+			Serial.print(F("[ 提醒 ] PICC's UID: "));
+#endif
+			for (int i = 0; i < mfrc522.uid.size; ++i)
+			{
+				uid += String(mfrc522.uid.uidByte[i], HEX);
+			}
+#ifdef DEBUG
+			Serial.print(uid);
+#endif
+			MFRC522::PICC_Type piccType = mfrc522.PICC_GetType(mfrc522.uid.sak);
+			type = mfrc522.PICC_GetTypeName(piccType);
+#ifdef DEBUG
+			Serial.print(" " + type);
+#endif
+		}
+
+		else if (readertype == 5 && uid.length() == 0)
+		{
+			if (wg.available())
+			{
+#ifdef DEBUG
+				Serial.print(F("[ 提醒 ] PICC's UID: "));
+				Serial.println(wg.getCode());
+#endif
+				uid = String(wg.getCode(), DEC);
+				type = String(wg.getWiegandType(), DEC);
+				cooldown = millis() + 2000;
+			}
+			else
+			{
+				return;
+			}
+		}
+		else if (readertype == 6 && uid.length() == 0)
+		{
+			boolean success;
+			uint8_t pnuid[] = { 0, 0, 0, 0, 0, 0, 0 , 0};	// Buffer to store the returned UID
+			uint8_t uidLength;				// Length of the UID (4 or 7 bytes depending on ISO14443A card type)
+			success = nfc.readPassiveTargetID(PN532_MIFARE_ISO14443A, &pnuid[0], &uidLength);
+
+			if (success) {
+				for (uint8_t i = 0; i < uidLength; i++)
+				{
+					uid += String(pnuid[i], HEX);
+				}
+				#ifdef DEBUG
+				// Serial.print(" ISO14443A card UID Length: ");Serial.print(uidLength, DEC);Serial.println(" bytes");
+				// Serial.print("  UID Value: ");
+				// nfc.PrintHex(pnuid, uidLength);
+				// if (uidLength >= 4)
+				// {
+				// 	Serial.print(F("[ 提醒 ] PICC's UID: "));
+				// 	//Serial.println("Seems to be a Mifare Classic card ");
+				// }
+				#endif
+				cooldown = millis() + 1000;
+			}
+			else
+			{
+				delay(50);
+				return;
+			}
+// 			bool found = false;
+// 			byte pnuid[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+// 			eCardType e_CardType;
+// 			byte u8_UidLength = 0x00; // UID = 4 or 7 bytes
+// 			found = pn532.ReadPassiveTargetID(pnuid, &u8_UidLength, &e_CardType);
+// 			if (found && u8_UidLength >= 4)
+// 			{
+// 			#ifdef DEBUG
+// 				Serial.print(F("[ 提醒 ] PICC's UID: "));
+// 			#endif
+// 				for (uint8_t i = 0; i < u8_UidLength; i++)
+// 				{
+// 					uid += String(pnuid[i], HEX);
+// 				}
+// #ifdef DEBUG
+// 				Serial.print(uid);
+// #endif
+// 				cooldown = millis() + 2000;
+// 			}
+// 			else
+// 			{
+// 				delay(50);
+// 				return;
+// 			}
+		}
+	}
+	else //no reader selected
+	{
+		delay(50);
+		return;
+	}
+
+	int AccType = 0;
+	String filename = "/P/";
+	filename += uid;
+	File f = SPIFFS.open(filename, "r");
+	if (f)
+	{
+		size_t size = f.size();
+		std::unique_ptr<char[]> buf(new char[size]);
+		f.readBytes(buf.get(), size);
+		DynamicJsonBuffer jsonBuffer;
+		JsonObject &json = jsonBuffer.parseObject(buf.get());
+		if (json.success())
+		{
+			String username = json["user"];
+			AccType = json["acctype"];
+#ifdef DEBUG
+			Serial.println(" = known PICC");
+			Serial.print("[ 提醒 ] User Name: ");
+			if (username == "undefined")
+				Serial.print(uid);
+			else
+				Serial.print(username);
+#endif
+			if (AccType == 1)
+			{
+				unsigned long validL = json["validuntil"];
+				unsigned long nowL = now();
+
+				if (validL > nowL)
+				{
+					activateRelay = true;
+					ws.textAll("{\"command\":\"giveAccess\"}");
+#ifdef DEBUG
+					Serial.println(" have access");
+#endif
+					if (mqttenabled == 1)
+					{
+						mqtt_publish_access(now(), "true", "Always", username, uid);
+					}
+				}
+				else
+				{
+					#ifdef DEBUG
+					Serial.println(" expired");
+					#endif
+					if (mqttenabled == 1)
+					{
+						mqtt_publish_access(now(), "true", "Expired", username, uid);
+					}
+					AccType = 2;
+				}
+			}
+			else if (AccType == 2)
+			{
+				#ifdef DEBUG
+				Serial.println(" forbidden");
+				#endif
+				if (mqttenabled == 1)
+				{
+					mqtt_publish_access(now(), "true", "forbidden", username, uid);
+				}
+			}
+			else if (AccType == 99)
+			{
+				doEnableWifi = true;
+				activateRelay = true;
+				ws.textAll("{\"command\":\"giveAccess\"}");
+				#ifdef DEBUG
+				Serial.println(" have admin access, enable wifi");
+				#endif
+				if (mqttenabled == 1)
+				{
+						mqtt_publish_access(now(), "true", "Admin", username, uid);
+				}
+			}
+			else
+			{
+				#ifdef DEBUG
+				Serial.println(" does not have access");
+				#endif
+				if (mqttenabled == 1)
+				{
+					mqtt_publish_access(now(), "true", "Disabled", username, uid);
+				}
+			}
+			writeLatest(uid, username, AccType);
+			DynamicJsonBuffer jsonBuffer2;
+			JsonObject &root = jsonBuffer2.createObject();
+			root["command"] = "piccscan";
+			root["uid"] = uid;
+			root["picctype"] = type;
+			root["type"] = type;
+			root["known"] = 1;
+			root["acctype"] = AccType;
+			root["user"] = username;
+			size_t len = root.measureLength();
+			AsyncWebSocketMessageBuffer *buffer = ws.makeBuffer(len);
+			if (buffer)
+			{
+				root.printTo((char *)buffer->get(), len + 1);
+				ws.textAll(buffer);
+			}
+		}
+		else
+		{
+			#ifdef DEBUG
+			Serial.println(F("[ 警告 ] Failed to parse User Data"));
+			#endif
+		}
+		f.close();
+	}
+	else
+	{
+		String data = String(uid);
+		data += " " + String(type);
+		//writeLatest(uid, "Unknown", 98);
+		#ifdef DEBUG
+				Serial.println(" = unknown PICC");
+		#endif
+		DynamicJsonBuffer jsonBuffer;
+		JsonObject &root = jsonBuffer.createObject();
+		root["command"] = "piccscan";
+		root["uid"] = uid;
+		root["type"] = type;
+		root["known"] = 0;
+		size_t len = root.measureLength();
+		AsyncWebSocketMessageBuffer *buffer = ws.makeBuffer(len);
+		if (buffer)
+		{
+			root.printTo((char *)buffer->get(), len + 1);
+			ws.textAll(buffer);
+		}
+		if (mqttenabled == 1)
+		{
+			mqtt_publish_access(now(), "false", "Denied", "Unknown", uid);
+		}
+	}
+}
+
+void ICACHE_FLASH_ATTR setupWiegandReader(int d0, int d1)
+{
+	wg.begin(d0, d1);
+}
+
+#ifndef OFFICIALBOARD
+
+void ICACHE_FLASH_ATTR ShowMFRC522ReaderDetails()
+{
+	// Get the MFRC522 software version
+	byte v = mfrc522.PCD_ReadRegister(mfrc522.VersionReg);
+	#ifdef DEBUG
+	Serial.print(F("[ 提醒 ] MFRC522 读卡器 : 0x "));
+	Serial.print(v, HEX);
+	if (v == 0x91)
+		Serial.print(F(" = v1.0"));
+	else if (v == 0x92)
+		Serial.print(F(" = v2.0"));
+	else if (v == 0x12)
+		Serial.print(F(" = tiny"));
+	else if (v == 0x88)
+		Serial.print(F(" = clone"));
+	else
+		Serial.print(F("未连接"));
+	Serial.println("");
+	#endif
+}
+
+#endif
+
+#ifndef OFFICIALBOARD
+
+void ICACHE_FLASH_ATTR setupMFRC522Reader(int rfidss, int rfidgain)
+{
+	SPI.begin();						 // MFRC522 Hardware uses SPI protocol
+	mfrc522.PCD_Init(rfidss, UINT8_MAX); // Initialize MFRC522 Hardware
+	mfrc522.PCD_SetAntennaGain(rfidgain);
+	mfrc522.PICC_HaltA();       // Halt PICC
+    mfrc522.PCD_StopCrypto1();  // Stop encryption on PCD
+	ShowMFRC522ReaderDetails();  // Show details of PCD - MFRC522 Card Reader details
+	#ifdef DEBUG
+			Serial.printf("[ 提醒 ] RC522 SS:%u  dBm: %u\n", rfidss, rfidgain);
+			//Serial.println("[ 提醒 ] RC522 SS:%u  dBm: %u", rfidss, rfidgain);
+			Serial.println(" ");
+
+	#endif
+}
+#endif
+
+// #ifndef OFFICIALBOARD 
+// void ICACHE_FLASH_ATTR setupPN532Reader(int rfidss)
+// {
+// 	// init controller
+// 	pn532.InitSoftwareSPI(14, 12, 13, rfidss, 0);
+// 	do
+// 	{ // pseudo loop (just used for aborting with break;)
+// 		// Reset the PN532
+// 		pn532.begin(); // delay > 400 ms
+// 		byte IC, VersionHi, VersionLo, Flags;
+// 		if (!pn532.GetFirmwareVersion(&IC, &VersionHi, &VersionLo, &Flags))
+// 			break;
+// #ifdef DEBUG
+// 		char Buf[80];
+// 		sprintf(Buf, "NFC Chip: PN5%02X,  Version: %d.%d\r\n", IC, VersionHi, VersionLo);
+// 		Utils::Print(Buf);
+// 		sprintf(Buf, "Supports :\n ISO 14443A:%s, ISO 14443B:%s, ISO 18092:%s\r\n", (Flags & 1) ? "Yes" : "No",
+// 				(Flags & 2) ? "Yes" : "No",
+// 				(Flags & 4) ? "Yes" : "No");
+// 		Utils::Print(Buf);
+// #endif
+// 		// Set the max number of retry attempts to read from a card.
+// 		// This prevents us from waiting forever for a card, which is the default behaviour of the PN532.
+// 		if (!pn532.SetPassiveActivationRetries())
+// 		{
+// 			break;
+// 		}
+// 		// configure the PN532 to read RFID tags
+// 		if (!pn532.SamConfig())
+// 		{
+// 			break;
+// 		}
+// 	} while (false);
+// }
+// #endif
+
+#ifndef NoNFC
+void ICACHE_FLASH_ATTR NRCReader(int rfidss)
+{
+		NFC nfc(rfidss);
+		nfc.begin();
+	 	 uint32_t versiondata = nfc.getFirmwareVersion();
+		if (! versiondata) {
+			writeEvent("错误", "HAL", "没找到NFC读卡器", "");
+			#ifdef DEBUG
+						Serial.println(F("Didn't find PN53x!"));
+			#endif
+		}
+		else{
+			#ifdef DEBUG
+			Serial.print("Found chip PN5"); Serial.println((versiondata>>24) & 0xFF, HEX); 
+			Serial.print("Firmware ver. "); Serial.print((versiondata>>16) & 0xFF, DEC); 
+			Serial.print('.'); Serial.println((versiondata>>8) & 0xFF, DEC);
+			#endif
+			nfc.SAMConfig();
+		}
+}
+#endif

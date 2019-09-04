@@ -1,0 +1,175 @@
+void wifiLedOn()
+{
+	if (wifipin<255) digitalWrite(wifipin, LEDon);
+}
+
+void wifiLedOff()
+{
+	if (wifipin<255) digitalWrite(wifipin, LEDoff);
+}
+
+void onWifiConnect(const WiFiEventStationModeConnected &event)
+{
+	wifiFlag = true;
+	wifiLedOn();
+	#ifdef DEBUG
+		Serial.println(F("\n[ 提醒 ] WiFi STA Connected"));
+	#endif
+	//mqttReconnectTimer.detach();
+}
+void onWifiDisconnect(const WiFiEventStationModeDisconnected &event)
+{
+	mqttReconnectTimer.detach();
+	if (wifiFlag)
+	{
+		#ifdef DEBUG
+		Serial.println(F("[ 提醒 ] WiFi STA Disconnected"));
+		#endif
+		wifiFlag = false;
+		wifiLedOff();
+	}
+}
+
+bool ICACHE_FLASH_ATTR startAP(IPAddress apip, IPAddress apsubnet, int hid, const char *ssid, const char *password = NULL)
+{
+	inAPMode = true;
+	WiFi.mode(WIFI_AP);
+// if(apip!=NULL){
+	#ifdef DEBUG
+		Serial.print(F("[ 提醒 ] 配置AP模式参数 ... "));
+	#endif
+	WiFi.softAPConfig(apip, apip, apsubnet);
+// }
+// else  fallbacktoAPMode();
+  	
+	bool success;
+	if (hid == 1)
+	{
+		success = WiFi.softAP(ssid, password, 3, true);
+	}
+	else
+	{
+		success = WiFi.softAP(ssid, password);
+	}
+	#ifdef DEBUG
+	Serial.println(success ? F("Ready") : F("Failed!"));
+	#endif
+
+	if (!success)
+	{
+		ESP.restart();
+	}
+	else wifiLedOn();
+
+#ifdef DEBUG
+	IPAddress myIP = WiFi.softAPIP();
+	Serial.print(F("[ 提醒 ] AP IP address: "));
+	Serial.println(myIP);
+	Serial.printf("[ 提醒 ] AP SSID: %s\n", ssid);
+#endif
+
+	isWifiConnected = success;
+	return success;
+}
+
+void ICACHE_FLASH_ATTR fallbacktoAPMode()
+{
+	inAPMode = true;
+	#ifdef DEBUG
+		Serial.println(F("[ 提醒 ]初始化AP模式"));
+	#endif
+	uint8_t macAddr[6];
+	WiFi.softAPmacAddress(macAddr);
+	char ssid[15];
+	sprintf(ssid, "RFID[%02x%02x%02x]", macAddr[3], macAddr[4], macAddr[5]);
+	WiFi.mode(WIFI_AP);
+	bool success;
+	success = WiFi.softAP(ssid);
+	isWifiConnected = success;
+	if (success){
+	wifiLedOn();
+	}
+}
+
+//连接wifi 
+bool ICACHE_FLASH_ATTR connectSTA(const char *ssid, const char *password, byte bssid[6])
+{
+	uint8_t times = 3; 
+	//uint8_t timeout = 20;
+	for(uint8_t i=0;i<times ;i++){
+		WiFi.mode(WIFI_STA);
+		WiFi.begin(ssid, password, 0, bssid);
+		#ifdef DEBUG
+			Serial.printf("[ 提醒 ] WiFi连接 [%d]: ",i);
+			Serial.println(ssid);
+		#endif
+		unsigned long now = millis();
+		do
+		{
+			delay(300);
+			#ifdef DEBUG
+			if (!wifiFlag) Serial.print(F("."));
+			#endif
+			if (WiFi.status() == WL_CONNECTED )
+			{
+				#ifdef DEBUG
+				Serial.print(F("[ 提醒 ] IP : "));
+				Serial.println(WiFi.localIP());
+				#endif
+				
+				isWifiConnected = true;
+				String data = ssid;
+				wifiLedOn(); 
+				data += " " + WiFi.localIP().toString();
+				writeEvent("提醒", "WiFi", "WiFi已连接", data);
+				return true;
+			}
+			else if(wifiFlag==true) {
+				delay(500);
+				return true;
+			}
+			//delay(500);
+			//if (wifipin!=255) digitalWrite(wifipin, !digitalRead(wifipin));
+		} while (millis() < (now +  6000));
+	}
+	//} while ((millis() - now < timeout * 1000)||noAPfallback);
+	// We now out of the while loop, either time is out or we connected. check what happened
+	// if (WiFi.status() == WL_CONNECTED)
+	// {
+	// 	#ifdef DEBUG
+	// 	Serial.print(F("[ 提醒 ] IP : "));
+	// 	Serial.println(WiFi.localIP());
+	// 	#endif
+	// 	isWifiConnected = true;
+	// 	String data = ssid;
+	// 	wifiLedOn(); 
+	// 	data += " " + WiFi.localIP().toString();
+	// 	writeEvent("提醒", "WiFi", "WiFi已连接", data);
+	// 	return true;
+	// }
+	// else
+	// {
+		wifiLedOff(); 
+		#ifdef DEBUG
+				Serial.println(F("[ 警告 ] 尝试连接网络超时 "));
+		#endif
+		return false;
+	// }
+}
+
+void ICACHE_FLASH_ATTR disableWifi()
+{
+	isWifiConnected = false;
+	WiFi.disconnect(true);
+#ifdef DEBUG
+	Serial.println(F("Turn wifi off."));
+#endif
+}
+
+void ICACHE_FLASH_ATTR enableWifi()
+{
+#ifdef DEBUG
+	Serial.println(F("[ 提醒 ] Restarting the board to connect wi-fi again"));
+#endif
+	ESP.restart();
+}
