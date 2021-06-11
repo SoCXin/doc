@@ -1,20 +1,38 @@
-# Minimal makefile for Sphinx documentation
-#
+lint:
+	pylint -j 6 --rcfile=./.pylintrc ./platformio
+	pylint -j 6 --rcfile=./.pylintrc ./tests
 
-# You can set these variables from the command line.
-SPHINXOPTS    =
-SPHINXBUILD   = sphinx-build
-SOURCEDIR     = source
-BUILDDIR      = build
+isort:
+	isort ./platformio
+	isort ./tests
 
-# Put it first so that "make" without argument is like "make help".
-help:
-	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+format:
+	black --target-version py27 ./platformio
+	black --target-version py27 ./tests
 
-.PHONY: help Makefile
+test:
+	py.test --verbose --capture=no --exitfirst -n 6 --dist=loadscope tests --ignore tests/test_examples.py
 
-# Catch-all target: route all unknown targets to Sphinx using the new
-# "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-	-cp  ./source/images/*.png ./build/html/_images/
+before-commit: isort format lint
+
+clean-docs:
+	rm -rf docs/_build
+
+clean: clean-docs
+	find . -name \*.pyc -delete
+	find . -name __pycache__ -delete
+	rm -rf .cache
+	rm -rf build
+	rm -rf htmlcov
+	rm -f .coverage
+
+profile:
+	# Usage $ > make PIOARGS="boards" profile
+	python -m cProfile -o .tox/.tmp/cprofile.prof -m platformio ${PIOARGS}
+	snakeviz .tox/.tmp/cprofile.prof
+
+pack:
+	python setup.py sdist
+
+publish:
+	python setup.py sdist upload
