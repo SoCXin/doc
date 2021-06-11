@@ -14,51 +14,8 @@
 
 from setuptools import find_packages, setup
 
-from platformio import (
-    __author__,
-    __description__,
-    __email__,
-    __license__,
-    __title__,
-    __url__,
-    __version__,
-)
-from platformio.compat import PY2, WINDOWS
-
-
-minimal_requirements = [
-    "bottle==0.12.*",
-    "click>=5,<9%s" % (",!=7.1,!=7.1.1" if WINDOWS else ""),
-    "colorama",
-    "marshmallow%s" % (">=2,<3" if PY2 else ">=2,<4"),
-    "pyelftools>=0.27,<1",
-    "pyserial==3.*",
-    "requests==2.*",
-    "semantic_version==2.8.*",
-    "tabulate==0.8.*",
-]
-
-if not PY2:
-    minimal_requirements.append("zeroconf==0.31.*")
-
-home_requirements = [
-    "aiofiles==0.7.*",
-    "ajsonrpc==1.1.*",
-    "starlette==0.14.*",
-    "uvicorn==0.14.*",
-    "wsproto==1.0.*",
-]
 
 setup(
-    name=__title__,
-    version=__version__,
-    description=__description__,
-    # long_description=open("README.rst").read(),
-    author=__author__,
-    author_email=__email__,
-    url=__url__,
-    license=__license__,
-    install_requires=minimal_requirements + ([] if PY2 else home_requirements),
     packages=find_packages(exclude=["tests.*", "tests"]) + ["scripts"],
     package_data={
         "platformio": [
