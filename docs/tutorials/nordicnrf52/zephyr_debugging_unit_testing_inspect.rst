@@ -182,7 +182,7 @@ Compiling and Uploading the Firmware
 Debugging the Firmware
 ----------------------
 
-Since `Nordic nRF52-DK <https://src.soc.xin/en/latest/boards/nordicnrf52/nrf52_dk.html>`__
+Since `Nordic nRF52-DK <https://socxin.github.io/websrc/en/latest/boards/nordicnrf52/nrf52_dk.html>`__
 includes an onboard debug probe we can use :ref:`piodebug` without any configuration.
 
 #. To start a debug session we can use the following options:
@@ -339,5 +339,5 @@ report it.
 Conclusion
 ----------
 
-Now we have a project template for Nordic `Nordic nRF52-DK <https://src.soc.xin/en/latest/boards/nordicnrf52/nrf52_dk.html>`__
+Now we have a project template for Nordic `Nordic nRF52-DK <https://socxin.github.io/websrc/en/latest/boards/nordicnrf52/nrf52_dk.html>`__
 board that we can use as a boilerplate for the next projects.

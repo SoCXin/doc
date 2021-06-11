@@ -1,3 +1,3 @@
 # PlatformIO Documentation
 
-[https://src.soc.xin/](https://src.soc.xin/)
+[https://socxin.github.io/websrc/](https://socxin.github.io/websrc/)

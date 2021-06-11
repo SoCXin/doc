@@ -58,7 +58,7 @@ Source files
       ;   Library options: dependencies, extra library storages
       ;
       ; Please visit documentation for the other options and examples
-      ; https://src.soc.xin/page/projectconf.html
+      ; https://socxin.github.io/websrc/page/projectconf.html
 
 
       [env:uno]

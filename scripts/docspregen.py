@@ -992,7 +992,7 @@ def update_project_examples():
 {description}
 
 * [Home](https://platformio.org/platforms/{name}) (home page in PlatformIO Registry)
-* [Documentation](https://src.soc.xin/page/platforms/{name}.html) (advanced usage, packages, boards, frameworks, etc.)
+* [Documentation](https://socxin.github.io/websrc/page/platforms/{name}.html) (advanced usage, packages, boards, frameworks, etc.)
 
 # Examples
 
@@ -1004,7 +1004,7 @@ def update_project_examples():
 {description}
 
 * [Home](https://platformio.org/frameworks/{name}) (home page in PlatformIO Registry)
-* [Documentation](https://src.soc.xin/page/frameworks/{name}.html)
+* [Documentation](https://socxin.github.io/websrc/page/frameworks/{name}.html)
 
 # Examples
 
@@ -1081,7 +1081,7 @@ def update_project_examples():
                 )
             )
         url = campaign_url(
-            "https://src.soc.xin/en/latest/frameworks/%s.html#examples"
+            "https://socxin.github.io/websrc/en/latest/frameworks/%s.html#examples"
             % framework["name"],
             source="github",
             medium="examples",
