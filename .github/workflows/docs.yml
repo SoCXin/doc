@@ -24,12 +24,12 @@ jobs:
           tox -e docs
 
       - name: Preserve Docs
-        if: ${{ github.event_name == 'push' }}
+        # if: ${{ github.event_name == 'push' }}
         run: |
           tar -czvf docs.tar.gz -C docs/_build html rtdpage
 
       - name: Save artifact
-        if: ${{ github.event_name == 'push' }}
+        # if: ${{ github.event_name == 'push' }}
         uses: actions/upload-artifact@v2
         with:
           name: docs
@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DOCS_REPO: Qitas/xinsrc
-      DOCS_DIR: platformio-docs
+      DOCS_DIR: xinsrc
       LATEST_DOCS_DIR: latest-docs
       RELEASE_BUILD: ${{ startsWith(github.ref, 'refs/tags/v') }}
     if: ${{ github.event_name == 'push' }}
