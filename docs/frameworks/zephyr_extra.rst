@@ -13,7 +13,7 @@ Tutorials
 ---------
 
 * :ref:`tutorial_nordicnrf52_zephyr_debugging_unit_testing_analysis`
-* `Enabling PlatformIO and Zephyr on custom hardware <https://piolabs.com/blog/engineering/platformio-zephyr-custom-hardware.html>`__
+* `Enabling PlatformIO and Zephyr on custom hardware <https://www.soc.xin/blog/engineering/platformio-zephyr-custom-hardware.html>`__
 
 Configuration
 -------------
