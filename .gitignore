@@ -1,0 +1,4 @@
+*.bak
+/build
+*DS_Store*
+.vscode
