@@ -31,7 +31,7 @@ Contents
 .. toctree::
     :maxdepth: 2
 
-    what-is-platformio
+    welcome
 
 .. toctree::
     :caption: Getting Started
