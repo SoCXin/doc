@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DOCS_REPO: Qitas/xinsrc
-      DOCS_DIR: xinsrc
+      DOCS_DIR: platformio-docs
       LATEST_DOCS_DIR: latest-docs
       RELEASE_BUILD: ${{ startsWith(github.ref, 'refs/tags/v') }}
     if: ${{ github.event_name == 'push' }}
@@ -87,13 +87,13 @@ jobs:
       - name: Validate Docs
         run: |
           if [ -z "$(ls -A ${{ env.DOCS_DIR }})" ]; then
-             echo "Docs folder is empty. Aborting!"
-             exit 1
+            echo "Docs folder is empty. Aborting!"
+            exit 1
           fi
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          personal_token: ${{ secrets.Q_TOKEN }}
           external_repository: ${{ env.DOCS_REPO }}
           publish_dir: ./${{ env.DOCS_DIR }}
           commit_message: Sync Docs
