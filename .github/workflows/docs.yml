@@ -23,15 +23,6 @@ jobs:
         run: |
           tox -e docs
 
-      - name: Slack Notification
-        uses: homoluctus/slatify@master
-        if: failure()
-        with:
-          type: ${{ job.status }}
-          job_name: '*Docs*'
-          commit: true
-          url: ${{ secrets.SLACK_BUILD_WEBHOOK }}
-
       - name: Preserve Docs
         if: ${{ github.event_name == 'push' }}
         run: |

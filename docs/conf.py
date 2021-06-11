@@ -283,9 +283,9 @@ linkcheck_anchors = False
 
 html_context = {
     "display_github": True,
-    "github_user": "Qitas",
-    "github_repo": "xinsrc",
-    "github_version": "master",
+    "github_user": "platformio",
+    "github_repo": "platformio-docs",
+    "github_version": "develop",
     "conf_py_path": "/",
     "is_latest": is_latest,
     "versions": [

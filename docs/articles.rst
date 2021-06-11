@@ -16,7 +16,7 @@ Articles about us
 
 .. note::
     If you've written article about PlatformIO and would like it listed on
-    this page, `please edit this page <https://github.com/Qitas/xinsrc/blob/develop/articles.rst>`_.
+    this page, `please edit this page <https://github.com/platformio/platformio-docs/blob/develop/articles.rst>`_.
 
 Here are recent articles/reviews about PlatformIO:
 
