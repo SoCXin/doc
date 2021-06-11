@@ -53,7 +53,7 @@ setup(
     name=__title__,
     version=__version__,
     description=__description__,
-    long_description=open("README.rst").read(),
+    # long_description=open("README.rst").read(),
     author=__author__,
     author_email=__email__,
     url=__url__,
