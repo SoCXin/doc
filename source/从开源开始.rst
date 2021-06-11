@@ -1,0 +1,33 @@
+*************
+从开源开始
+*************
+
+芯片是作为平台型的产品，所以需要有大量支撑的生态作为基点，而生态的建立可以反哺产品本身，还能实现生态溢价。
+
+特别是用量不是很大的产品，往往会通过研发成本的方式为生态付费。
+
+.. note::
+    当前的生态模式往往以少数企业为主进行构建，用于服务自家的产品，没能建立起足够的通用标准。
+    用户在使用的时候必须将对应生态的价值考虑进去进行综合衡量，而且这一过程具有滞后性。
+
+
+STM32
+=============
+
+.. toctree::
+   :maxdepth: 2
+
+   ./ecosystem/introduction
+   ./ecosystem/roadmap
+
+
+Arduino
+=============
+
+.. toctree::
+   :maxdepth: 2
+
+   ./ecosystem/introduction
+   ./ecosystem/roadmap
+   ./ecosystem/info
+   ./ecosystem/test
