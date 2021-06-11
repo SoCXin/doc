@@ -216,7 +216,7 @@ Workflow
         ;   Library options: dependencies, extra library storages
         ;
         ; Please visit documentation for the other options and examples
-        ; https://docs.platformio.org/page/projectconf.html
+        ; https://src.soc.xin/page/projectconf.html
 
         ;
         ; Embedded platforms

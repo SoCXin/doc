@@ -2,13 +2,13 @@ PlatformIO
 ==========
 
 .. image:: https://github.com/platformio/platformio-core/workflows/Core/badge.svg
-    :target: https://docs.platformio.org/page/core/index.html
+    :target: https://src.soc.xin/page/core/index.html
     :alt:  CI Build for PlatformIO Core
 .. image:: https://github.com/platformio/platformio-core/workflows/Examples/badge.svg
     :target: https://github.com/platformio/platformio-examples
     :alt:  CI Build for dev-platform examples
 .. image:: https://github.com/platformio/platformio-core/workflows/Docs/badge.svg
-    :target: https://docs.platformio.org?utm_source=github&utm_medium=core
+    :target: https://src.soc.xin?utm_source=github&utm_medium=core
     :alt:  CI Build for Docs
 .. image:: https://img.shields.io/pypi/v/platformio.svg
     :target: https://pypi.python.org/pypi/platformio/
@@ -23,7 +23,7 @@ PlatformIO
 **Quick Links:** `Web <https://platformio.org?utm_source=github&utm_medium=core>`_ |
 `PlatformIO IDE <https://platformio.org/platformio-ide?utm_source=github&utm_medium=core>`_ |
 `Project Examples <https://github.com/platformio/platformio-examples/>`__ |
-`Docs <https://docs.platformio.org?utm_source=github&utm_medium=core>`_ |
+`Docs <https://src.soc.xin?utm_source=github&utm_medium=core>`_ |
 `Donate <https://platformio.org/donate?utm_source=github&utm_medium=core>`_ |
 `Contact Us <https://piolabs.com/?utm_source=github&utm_medium=core>`_
 
@@ -48,24 +48,24 @@ PlatformIO
 Get Started
 -----------
 
-* `What is PlatformIO? <https://docs.platformio.org/page/what-is-platformio.html?utm_source=github&utm_medium=core>`_
+* `What is PlatformIO? <https://src.soc.xin/page/what-is-platformio.html?utm_source=github&utm_medium=core>`_
 * `PlatformIO IDE <https://platformio.org/platformio-ide?utm_source=github&utm_medium=core>`_
-* `PlatformIO Core (CLI) <https://docs.platformio.org/page/core.html?utm_source=github&utm_medium=core>`_
+* `PlatformIO Core (CLI) <https://src.soc.xin/page/core.html?utm_source=github&utm_medium=core>`_
 * `Project Examples <https://github.com/platformio/platformio-examples?utm_source=github&utm_medium=core>`__
 
 Solutions
 ---------
 
-* `Library Management <https://docs.platformio.org/page/librarymanager/index.html?utm_source=github&utm_medium=core>`_
-* `Desktop IDEs Integration <https://docs.platformio.org/page/ide.html?utm_source=github&utm_medium=core>`_
-* `Continuous Integration <https://docs.platformio.org/page/ci/index.html?utm_source=github&utm_medium=core>`_
+* `Library Management <https://src.soc.xin/page/librarymanager/index.html?utm_source=github&utm_medium=core>`_
+* `Desktop IDEs Integration <https://src.soc.xin/page/ide.html?utm_source=github&utm_medium=core>`_
+* `Continuous Integration <https://src.soc.xin/page/ci/index.html?utm_source=github&utm_medium=core>`_
 
 **Advanced**
 
-* `Debugging <https://docs.platformio.org/page/plus/debugging.html?utm_source=github&utm_medium=core>`_
-* `Unit Testing <https://docs.platformio.org/page/plus/unit-testing.html?utm_source=github&utm_medium=core>`_
-* `Static Code Analysis <https://docs.platformio.org/page/plus/pio-check.html?utm_source=github&utm_medium=core>`_
-* `Remote Development <https://docs.platformio.org/page/plus/pio-remote.html?utm_source=github&utm_medium=core>`_
+* `Debugging <https://src.soc.xin/page/plus/debugging.html?utm_source=github&utm_medium=core>`_
+* `Unit Testing <https://src.soc.xin/page/plus/unit-testing.html?utm_source=github&utm_medium=core>`_
+* `Static Code Analysis <https://src.soc.xin/page/plus/pio-check.html?utm_source=github&utm_medium=core>`_
+* `Remote Development <https://src.soc.xin/page/plus/pio-remote.html?utm_source=github&utm_medium=core>`_
 
 Registry
 --------
@@ -142,7 +142,7 @@ Telemetry / Privacy Policy
 Share minimal diagnostics and usage information to help us make PlatformIO better.
 It is enabled by default. For more information see:
 
-* `Telemetry Setting <https://docs.platformio.org/page/userguide/cmd_settings.html?utm_source=github&utm_medium=core#enable-telemetry>`_
+* `Telemetry Setting <https://src.soc.xin/page/userguide/cmd_settings.html?utm_source=github&utm_medium=core#enable-telemetry>`_
 
 License
 -------

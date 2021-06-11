@@ -64,7 +64,7 @@ def cli(dev):
             fg="green",
         )
         click.echo("Release notes: ", nl=False)
-        click.secho("https://docs.platformio.org/en/latest/history.html", fg="cyan")
+        click.secho("https://src.soc.xin/en/latest/history.html", fg="cyan")
         if app.get_session_var("caller_id"):
             click.secho(
                 "Warning! Please restart IDE to affect PIO Home changes", fg="yellow"

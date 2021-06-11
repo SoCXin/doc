@@ -190,7 +190,7 @@ html_show_sphinx = False
 # html_file_suffix = None
 
 # The base URL which points to the root of the HTML documentation
-html_baseurl = "https://docs.platformio.org"
+html_baseurl = "https://src.soc.xin"
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = "PlatformIOdoc"

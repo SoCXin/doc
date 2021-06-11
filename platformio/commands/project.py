@@ -305,7 +305,7 @@ For example, see a structure of the following two libraries `Foo` and `Bar`:
 |  |  |--src
 |  |     |- Bar.c
 |  |     |- Bar.h
-|  |  |- library.json (optional, custom build options, etc) https://docs.platformio.org/page/librarymanager/config.html
+|  |  |- library.json (optional, custom build options, etc) https://src.soc.xin/page/librarymanager/config.html
 |  |
 |  |--Foo
 |  |  |- Foo.c
@@ -333,7 +333,7 @@ PlatformIO Library Dependency Finder will find automatically dependent
 libraries scanning project source files.
 
 More information about PlatformIO Library Dependency Finder
-- https://docs.platformio.org/page/librarymanager/ldf.html
+- https://src.soc.xin/page/librarymanager/ldf.html
 """,
         )
 
@@ -351,7 +351,7 @@ determine whether they are fit for use. Unit testing finds problems early
 in the development cycle.
 
 More information about PlatformIO Unit Testing:
-- https://docs.platformio.org/page/plus/unit-testing.html
+- https://src.soc.xin/page/plus/unit-testing.html
 """,
         )
 

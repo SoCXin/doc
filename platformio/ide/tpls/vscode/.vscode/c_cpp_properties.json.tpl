@@ -86,7 +86,7 @@
 //
 // !!! WARNING !!! AUTO-GENERATED FILE!
 // PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
-// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+// https://src.soc.xin/page/projectconf/section_env_build.html#build-flags
 //
 {
     "configurations": [

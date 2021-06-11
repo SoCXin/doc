@@ -155,7 +155,7 @@ def after_upgrade(ctx):
         )
         click.secho("Please remove multiple PIO Cores from a system:", fg="yellow")
         click.secho(
-            "https://docs.platformio.org/page/faq.html"
+            "https://src.soc.xin/page/faq.html"
             "#multiple-platformio-cores-in-a-system",
             fg="cyan",
         )
@@ -257,7 +257,7 @@ def check_platformio_upgrade():
         click.secho("pip install -U platformio", fg="cyan", nl=False)
         click.secho("` command.", fg="yellow")
     click.secho("Changes: ", fg="yellow", nl=False)
-    click.secho("https://docs.platformio.org/en/latest/history.html", fg="cyan")
+    click.secho("https://src.soc.xin/en/latest/history.html", fg="cyan")
     click.echo("*" * terminal_width)
     click.echo("")
 

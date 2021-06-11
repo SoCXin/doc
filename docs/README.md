@@ -1,3 +1,3 @@
 # PlatformIO Documentation
 
-[https://docs.platformio.org/](https://docs.platformio.org/)
+[https://src.soc.xin/](https://src.soc.xin/)
