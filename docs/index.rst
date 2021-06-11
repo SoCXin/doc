@@ -31,10 +31,10 @@ Contents
 .. toctree::
     :maxdepth: 2
 
-    welcome-to-socxin
+    what-is-platformio
 
 .. toctree::
-    :caption: performance
+    :caption: Getting Started
     :maxdepth: 1
 
     integration/ide/pioide
