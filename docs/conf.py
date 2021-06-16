@@ -192,7 +192,7 @@ html_show_sphinx = False
 html_baseurl = "https://src.soc.xin"
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "PlatformIOdoc"
+htmlhelp_basename = "socdoc"
 
 # -- Options for LaTeX output ---------------------------------------------
 
