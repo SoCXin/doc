@@ -9,8 +9,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-Professional collaborative platform for embedded development
-============================================================
+SoC Hub
+========
 
 **A place where Developers and Teams have true Freedom! No more vendor lock-in!**
 
@@ -20,7 +20,7 @@ Professional collaborative platform for embedded development
 * Multi-platform and Multi-architecture Build System
 * Firmware File Explorer and Memory Inspection.
 
-**Social:** `LinkedIn <https://www.linkedin.com/company/platformio/>`_ |
+**Social:** `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
 `Twitter <https://twitter.com/PlatformIO_Org>`_ |
 `Facebook <https://www.facebook.com/platformio>`_ |
 `Community Forums <https://community.platformio.org>`_
