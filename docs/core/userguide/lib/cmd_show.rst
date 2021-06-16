@@ -28,7 +28,7 @@ Description
 -----------
 
 Show detailed info about a library using
-`PlatformIO Library Registry <https://platformio.org/lib>`_.
+`PlatformIO Library Registry <https://www.soc.xin/lib>`_.
 
 The possible values for ``[LIBRARY]``:
 

@@ -95,7 +95,7 @@ A library package must contain a manifest. We recommend using :ref:`library_json
 Publishing
 ----------
 
-You can publish a library to the `PlatformIO Registry <https://platformio.org/lib>`__
+You can publish a library to the `PlatformIO Registry <https://www.soc.xin/lib>`__
 using :ref:`cmd_package_publish` command. Every time when you modify a source code of
 a library you will need to increment the "version" field in :ref:`library_json` manifest
 and re-publish again.
@@ -106,4 +106,4 @@ Registry, please use :ref:`cmd_package_unpublish` command.
 Examples
 --------
 
-See the published libraries in `PlatformIO Registry <https://platformio.org/lib>`__.
+See the published libraries in `PlatformIO Registry <https://www.soc.xin/lib>`__.

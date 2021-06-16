@@ -15,7 +15,7 @@ Quick Start
 ===========
 
 *PlatformIO Library Manager* is a tool for managing libraries of
-`PlatformIO Registry <https://platformio.org/lib>`__ and VCS repositories (Git,
+`PlatformIO Registry <https://www.soc.xin/lib>`__ and VCS repositories (Git,
 Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
 up-to-date. PlatformIO Library Manager supports
 `Semantic Versioning <http://semver.org>`_ and its rules.
@@ -23,7 +23,7 @@ up-to-date. PlatformIO Library Manager supports
 There are 3 options how to find/manage libraries:
 
 * :ref:`piohome`
-* `Web Library Search <https://platformio.org/lib>`__
+* `Web Library Search <https://www.soc.xin/lib>`__
 * PlatformIO Core :ref:`Command Line Interface <cmd_lib_search>`
 
 You can manage different library storages using

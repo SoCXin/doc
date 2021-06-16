@@ -79,10 +79,10 @@ Contents
     integration/compile_commands
 
 .. toctree::
-    :caption: Miscellaneous
+    :caption: Qitas
     :maxdepth: 1
 
-    articles
+    test <articles>
     FAQ <faq>
     core/history
     core/migration

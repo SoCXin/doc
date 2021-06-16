@@ -57,7 +57,7 @@ Board Identifier
 
 :ref:`cmd_project_init` command requires to specify board identifier ID. It can
 be found using :ref:`boards` catalog,
-`Boards Explorer <https://platformio.org/boards>`_ or :ref:`cmd_boards` command. For example, using :ref:`cmd_boards` let's try
+`Boards Explorer <https://www.soc.xin/boards>`_ or :ref:`cmd_boards` command. For example, using :ref:`cmd_boards` let's try
 to find Teensy boards:
 
 .. code-block:: bash

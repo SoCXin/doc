@@ -210,7 +210,7 @@ Adding Bluetooth LE features
 ----------------------------
 
 To add the basic BLE functionality to our project we need to define the SoftDevice version
-and install a library called `BLEPeripheral <https://platformio.org/lib/show/259/BLEPeripheral>`_.
+and install a library called `BLEPeripheral <https://www.soc.xin/lib/show/259/BLEPeripheral>`_.
 Both these modifications can be specified in :ref:`projectconf`:
 
 

@@ -129,7 +129,7 @@ Type: ``String (ID)`` | Multiple: ``No``
 - connectivity information, etc.
 
 You can find a valid  ``board`` ID in :ref:`boards` catalog,
-`Boards Explorer <https://platformio.org/boards>`_ or
+`Boards Explorer <https://www.soc.xin/boards>`_ or
 :ref:`cmd_boards` command.
 
 ``board_build.mcu``

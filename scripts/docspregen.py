@@ -485,7 +485,7 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://www.soc.xin/boards>`_
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
 """
@@ -604,7 +604,7 @@ Boards
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://www.soc.xin/boards>`_
     * For more detailed ``board`` information please scroll the tables below by horizontally.
 """
         )
@@ -642,7 +642,7 @@ popular embedded boards and IDE.
 
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command or
-      `PlatformIO Boards Explorer <https://platformio.org/boards>`_
+      `PlatformIO Boards Explorer <https://www.soc.xin/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 """
     )
@@ -987,11 +987,11 @@ Boards
 
 def update_project_examples():
     platform_readme_tpl = """
-# {title}: development platform for [PlatformIO](https://platformio.org)
+# {title}: development platform for [PlatformIO](https://www.soc.xin)
 
 {description}
 
-* [Home](https://platformio.org/platforms/{name}) (home page in PlatformIO Registry)
+* [Home](https://www.soc.xin/platforms/{name}) (home page in PlatformIO Registry)
 * [Documentation](https://socxin.github.io/websrc/page/platforms/{name}.html) (advanced usage, packages, boards, frameworks, etc.)
 
 # Examples
@@ -999,11 +999,11 @@ def update_project_examples():
 {examples}
 """
     framework_readme_tpl = """
-# {title}: framework for [PlatformIO](https://platformio.org)
+# {title}: framework for [PlatformIO](https://www.soc.xin)
 
 {description}
 
-* [Home](https://platformio.org/frameworks/{name}) (home page in PlatformIO Registry)
+* [Home](https://www.soc.xin/frameworks/{name}) (home page in PlatformIO Registry)
 * [Documentation](https://socxin.github.io/websrc/page/frameworks/{name}.html)
 
 # Examples

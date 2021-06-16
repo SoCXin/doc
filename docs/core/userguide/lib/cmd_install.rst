@@ -70,7 +70,7 @@ Description
 
 Install a library, and any libraries that it depends on using:
 
-1. `PlatformIO Library Registry <https://platformio.org/lib>`_
+1. `PlatformIO Library Registry <https://www.soc.xin/lib>`_
 2. Custom folder, repository or archive.
 
 The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`_ (
@@ -204,7 +204,7 @@ Examples
 
     Library Storage: /storage/dir/...
     Looking for IRRemote library in registry
-    Found: https://platformio.org/lib/show/4/IRremote
+    Found: https://www.soc.xin/lib/show/4/IRremote
     LibraryManager: Installing id=4
     IRremote @ 2.2.1 is already installed
 
@@ -217,7 +217,7 @@ Examples
 
     Library Storage: /storage/dir/...
     Looking for ArduinoJson library in registry
-    Found: https://platformio.org/lib/show/64/ArduinoJson
+    Found: https://www.soc.xin/lib/show/64/ArduinoJson
     LibraryManager: Installing id=64 @ 5.6.7
     Downloading  [####################################]  100%
     Unpacking  [####################################]  100%
@@ -232,14 +232,14 @@ Examples
 
     Library Storage: /my/storage/dir
     Looking for DallasTemperature library in registry
-    Found: https://platformio.org/lib/show/54/DallasTemperature
+    Found: https://www.soc.xin/lib/show/54/DallasTemperature
     LibraryManager: Installing id=54
     Downloading  [####################################]  100%
     Unpacking  [####################################]  100%
     DallasTemperature @ 3.7.7 has been successfully installed!
     Installing dependencies
     Looking for OneWire library in registry
-    Found: https://platformio.org/lib/show/1/OneWire
+    Found: https://www.soc.xin/lib/show/1/OneWire
     LibraryManager: Installing id=1
     Downloading  [####################################]  100%
     Unpacking  [####################################]  100%

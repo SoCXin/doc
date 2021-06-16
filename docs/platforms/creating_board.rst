@@ -16,7 +16,7 @@ Custom Embedded Boards
 
 *PlatformIO* has pre-built settings for many popular embedded
 boards. The list of these boards is available as a web page at
-`PlatformIO Boards Explorer <https://platformio.org/boards>`_ or
+`PlatformIO Boards Explorer <https://www.soc.xin/boards>`_ or
 through the CLI command :ref:`cmd_boards`.
 
 Custom boards can also be defined from scratch or by overriding settings

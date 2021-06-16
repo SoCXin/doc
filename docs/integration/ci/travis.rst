@@ -135,7 +135,7 @@ Install dependent library using :ref:`librarymanager`
         #
         # Libraries from PlatformIO Library Registry:
         #
-        # https://platformio.org/lib/show/1/OneWire
+        # https://www.soc.xin/lib/show/1/OneWire
         - pio lib -g install 1
 
 Manually download dependent library and include in build process via ``--lib`` option
@@ -224,8 +224,8 @@ Examples
         #
         # Libraries from PlatformIO Library Registry:
         #
-        # https://platformio.org/lib/show/416/TinyGPS
-        # https://platformio.org/lib/show/417/SPI4Teensy3
+        # https://www.soc.xin/lib/show/416/TinyGPS
+        # https://www.soc.xin/lib/show/417/SPI4Teensy3
         - pio lib -g install 416 417
 
     script:
@@ -300,7 +300,7 @@ Examples
         #
         # Libraries from PlatformIO Library Registry:
         #
-        # https://platformio.org/lib/show/416/TinyGPS
+        # https://www.soc.xin/lib/show/416/TinyGPS
         - pio lib -g install 416 421 422
 
     script:
@@ -338,19 +338,19 @@ Examples
         #
         # Libraries from PlatformIO Library Registry:
         #
-        # https://platformio.org/lib/show/44/Time
-        # https://platformio.org/lib/show/419/SimpleTimer
+        # https://www.soc.xin/lib/show/44/Time
+        # https://www.soc.xin/lib/show/419/SimpleTimer
         #
-        # https://platformio.org/lib/show/17/Adafruit-CC3000
-        # https://platformio.org/lib/show/28/SPI4Teensy3
-        # https://platformio.org/lib/show/91/UIPEthernet
-        # https://platformio.org/lib/show/418/WildFireCore
-        # https://platformio.org/lib/show/420/WildFire-CC3000
-        # https://platformio.org/lib/show/65/WiFlyHQ
-        # https://platformio.org/lib/show/19/Adafruit-DHT
-        # https://platformio.org/lib/show/299/WiFi101
-        # https://platformio.org/lib/show/259/BLEPeripheral
-        # https://platformio.org/lib/show/177/Adafruit_BluefruitLE_nRF51
+        # https://www.soc.xin/lib/show/17/Adafruit-CC3000
+        # https://www.soc.xin/lib/show/28/SPI4Teensy3
+        # https://www.soc.xin/lib/show/91/UIPEthernet
+        # https://www.soc.xin/lib/show/418/WildFireCore
+        # https://www.soc.xin/lib/show/420/WildFire-CC3000
+        # https://www.soc.xin/lib/show/65/WiFlyHQ
+        # https://www.soc.xin/lib/show/19/Adafruit-DHT
+        # https://www.soc.xin/lib/show/299/WiFi101
+        # https://www.soc.xin/lib/show/259/BLEPeripheral
+        # https://www.soc.xin/lib/show/177/Adafruit_BluefruitLE_nRF51
 
         - pio lib -g install 17 28 91 418 419 420 65 44 19 299 259 177 https://github.com/vshymanskyy/BlynkESP8266.git https://github.com/cmaglie/FlashStorage.git https://github.com/michael71/Timer5.git
 
