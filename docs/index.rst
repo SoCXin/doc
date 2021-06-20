@@ -12,8 +12,7 @@ SoC Hub
 
 **Social:** `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
 `Twitter <https://twitter.com/PlatformIO_Org>`_ |
-`Facebook <https://www.facebook.com/platformio>`_ |
-`Community Forums <https://community.platformio.org>`_
+`Facebook <https://www.facebook.com/platformio>`_ 
 
 Contents
 --------
