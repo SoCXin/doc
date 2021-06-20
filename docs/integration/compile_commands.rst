@@ -2,8 +2,8 @@
  
 .. _compilation_db:
 
-Compilation database ``compile_commands.json``
-----------------------------------------------
+Compilation database
+-------------------------------
 
 A `compilation database <https://clang.llvm.org/docs/JSONCompilationDatabase.html>`_ is
 a `JSON-formatted <https://www.json.org/>`_ file named ``compile_commands.json`` that

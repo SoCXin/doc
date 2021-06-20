@@ -1,5 +1,5 @@
  
-SoC Hub
+SoC xin
 ========
 
 **A place where Developers and Teams have true Freedom! No more vendor lock-in!**
