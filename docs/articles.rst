@@ -1,7 +1,7 @@
 
 .. _articles:
 
-about us
+more infomation
 =================
 
 .. note::
@@ -19,7 +19,3 @@ Here are recent articles/reviews about PlatformIO:
 ^^^^
 
 * Aug 30, 2020 - **Hamzah Hajeir** - `PlatformIO Part 4 : Ultimate features (عربي) <https://www.linkedin.com/pulse/platformio-part-4-ultimate-features-hamzah-hajeir/>`_
-* Aug 7, 2020 - **Benjamin Cabé** - `Connecting the Wio Terminal to Azure IoT <https://blog.benjamin-cabe.com/2020/08/05/connecting-the-wio-terminal-to-azure-iot>`_
-* Jul 15, 2020 - **Andreas Schmidt** - `IoT für Webentwickler: Unit Testing mit PlatformIO <https://entwickler.de/online/iot/iot-unit-testing-platformio-579863298.html>`_
-* Jun 22, 2020 - **Noud van Kruysbergen** - `RISC-V programmeren: met platform IO en microcontrollerboard <https://www.ct.nl/workshops/risc-v-programmeren-platform-io/>`_
-

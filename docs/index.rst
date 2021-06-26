@@ -1,4 +1,4 @@
- 
+
 SoC xin
 ========
 
@@ -12,7 +12,7 @@ SoC xin
 
 **Social:** `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
 `Twitter <https://twitter.com/PlatformIO_Org>`_ |
-`Facebook <https://www.facebook.com/platformio>`_ 
+`Facebook <https://www.facebook.com/platformio>`_
 
 Contents
 --------
@@ -23,7 +23,7 @@ Contents
     welcome
 
 .. toctree::
-    :caption: Getting Started
+    :caption: Level 1
     :maxdepth: 1
 
     integration/ide/pioide
@@ -32,7 +32,7 @@ Contents
     tutorials/index
 
 .. toctree::
-    :caption: Configuration
+    :caption: Level 2
     :maxdepth: 1
 
     platformio.ini <projectconf/index>
@@ -40,7 +40,7 @@ Contents
     projectconf/advanced_scripting
 
 .. toctree::
-    :caption: Instruments
+    :caption: Level 3
     :maxdepth: 1
 
     librarymanager/index
@@ -50,7 +50,7 @@ Contents
     platforms/custom_platform_and_board
 
 .. toctree::
-    :caption: Professional
+    :caption: Level 4
     :maxdepth: 1
 
     Debugging <plus/debugging>
@@ -60,7 +60,7 @@ Contents
     plus/pio-account
 
 .. toctree::
-    :caption: Integration
+    :caption: Level 5
     :maxdepth: 2
 
     integration/ide/index
@@ -68,7 +68,7 @@ Contents
     integration/compile_commands
 
 .. toctree::
-    :caption: Qitas
+    :caption: Level 6
     :maxdepth: 1
 
     test <articles>
@@ -76,3 +76,20 @@ Contents
     core/history
     core/migration
 
+.. toctree::
+    :caption: Level 7
+    :maxdepth: 1
+
+    test <articles>
+
+.. toctree::
+    :caption: Level 8
+    :maxdepth: 1
+
+    test <articles>
+
+.. toctree::
+    :caption: Level 9
+    :maxdepth: 1
+
+    test <articles>
