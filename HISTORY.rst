@@ -3,12 +3,12 @@ Release Notes
 
 .. _release_notes_5:
 
-PlatformIO Core 5
+define init
 -----------------
 
 **A professional collaborative platform for embedded development**
 
-5.2.0 (2021-??-??)
+5.2.0 (2021-06-11)
 ~~~~~~~~~~~~~~~~~~
 
 * **PlatformIO Debugging**
@@ -28,20 +28,4 @@ PlatformIO Core 5
     * `PVS-Studio <https://socxin.github.io/websrc/page/plus/check-tools/pvs-studio.html>`__ v7.12 with new diagnostics and extended capabilities for security and safety standards
 
 * **Package Management**
-
-  - Improved a package publishing process:
-
-    * Show package details
-    * Check for conflicting names in the PlatformIO Trusted Registry
-    * Check for duplicates and used version
-    * Validate package manifest
-
-  - Added a new option ``--non-interactive`` to `pio package publish <https://socxin.github.io/websrc/page/core/userguide/package/cmd_publish.html>`__ command
-
-* **Miscellaneous**
-
-  - Ensure that a serial port is ready before running unit tests on a remote target (`issue #3742 <https://github.com/platformio/platformio-core/issues/3742>`_)
-  - Fixed an error "Unknown development platform" when running unit tests on a clean machine (`issue #3901 <https://github.com/platformio/platformio-core/issues/3901>`_)
-  - Fixed an issue when "main.cpp" was generated for a new project for 8-bit development platforms (`issue #3872 <https://github.com/platformio/platformio-core/issues/3872>`_)
-  - Fixed an issue with broken binary file extension when a custom ``PROGNAME`` contains dot symbols (`issue #3906 <https://github.com/platformio/platformio-core/issues/3906>`_)
 
