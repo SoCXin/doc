@@ -1,4 +1,4 @@
- 
+
 .. _cmd_settings:
 
 pio settings
@@ -118,7 +118,7 @@ Enable caching for API requests and Library Manager
 
 Share minimal diagnostics and usage information to help us make PlatformIO better.
 
-The source code of telemetry service is `open source <https://github.com/platformio/platformio-core/blob/develop/platformio/telemetry.py>`_.
+The source code of telemetry service is `open source <https://github.com/platformio/platformio-core/blob/master/platformio/telemetry.py>`_.
 You can make sure that we **DO NOT SHARE PRIVATE** information or
 source code of your project. All information shares **ANONYMOUSLY**.
 

@@ -1,4 +1,4 @@
- 
+
 .. |PIOCore| replace:: **PlatformIO Core**
 
 .. _core_installation:
@@ -407,7 +407,7 @@ Troubleshooting
 
 .. note::
     **Linux OS**: Don't forget to install "udev" rules file
-    `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/develop/scripts/99-platformio-udev.rules>`_ (an instruction is located in the file).
+    `99-platformio-udev.rules <https://github.com/platformio/platformio-core/blob/master/scripts/99-platformio-udev.rules>`_ (an instruction is located in the file).
 
     **Windows OS**: Please check that you have correctly installed USB driver
     from board manufacturer

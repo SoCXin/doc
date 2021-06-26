@@ -1,4 +1,4 @@
- 
+
 Configuration
 -------------
 
@@ -59,7 +59,7 @@ Fuses programming
 
 PlatformIO has a built-in target called ``fuses`` for setting fuse bits. The default fuse
 bits are predefined in the board manifest file in the ``fuses`` section. For example,
-`fuses section for Arduino Nano Every board <https://github.com/platformio/platform-atmelmegaavr/blob/develop/boards/nano_every.json>`_.
+`fuses section for Arduino Nano Every board <https://github.com/platformio/platform-atmelmegaavr/blob/master/boards/nano_every.json>`_.
 To set fuse bits you need to use target ``fuses`` with :option:`pio run --target` command.
 
 Custom fuses
@@ -89,7 +89,7 @@ Bootloader programming
 
 PlatformIO has a built-in target called ``bootloader`` for flashing bootloaders. The
 default bootloader image and corresponding fuse bits are predefined in the board manifest
-file in the ``bootloader`` section, for example, `Arduino Uno WiFi Rev2 <https://github.com/platformio/platform-atmelmegaavr/blob/develop/boards/uno_wifi_rev2.json>`_.
+file in the ``bootloader`` section, for example, `Arduino Uno WiFi Rev2 <https://github.com/platformio/platform-atmelmegaavr/blob/master/boards/uno_wifi_rev2.json>`_.
 To upload a bootloader image you need to use target ``bootloader`` with
 :option:`pio run --target` command.
 

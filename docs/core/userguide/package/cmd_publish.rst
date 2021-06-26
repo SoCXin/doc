@@ -1,4 +1,4 @@
- 
+
 .. _cmd_package_publish:
 
 pio package publish
@@ -22,7 +22,7 @@ Description
 Publish a package to the registry so that it can be installed by name.
 All files in the package directory are included if ``export`` field is not declared
 in a package manifest (for example, see :ref:`libjson_export`).
-The `next items <https://github.com/platformio/platformio-core/blob/develop/platformio/package/pack.py#L33>`__ are
+The `next items <https://github.com/platformio/platformio-core/blob/master/platformio/package/pack.py#L33>`__ are
 automatically excluded.
 
 Please check which files will be included in the final package using the

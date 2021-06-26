@@ -1,4 +1,4 @@
- 
+
 .. _projectconf_section_env_debug:
 
 Debugging options
@@ -112,7 +112,7 @@ Type: ``String`` | Multiple: ``Yes`` | Default: `See details... <https://github.
 Initial commands that will be passed to back-end debugger.
 
 PlatformIO dynamically configures back-end debugger depending on a debug
-environment. Here is `a list with default initial commands <https://github.com/platformio/platformio-core/blob/develop/platformio/commands/debug/initcfgs.py>`__
+environment. Here is `a list with default initial commands <https://github.com/platformio/platformio-core/blob/master/platformio/commands/debug/initcfgs.py>`__
 for the popular :ref:`debugging_tools`.
 
 For example, the custom initial commands for GDB:

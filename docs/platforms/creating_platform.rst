@@ -1,4 +1,4 @@
- 
+
 .. _platform_creating:
 
 Custom Development Platforms
@@ -175,7 +175,7 @@ see the following template as start for developing your own ``main.py``.
     )
 
     # The source code of "platformio-build-tool" is here
-    # https://github.com/platformio/platformio-core/blob/develop/platformio/builder/tools/platformio.py
+    # https://github.com/platformio/platformio-core/blob/master/platformio/builder/tools/platformio.py
 
     #
     # Target: Build executable and linkable firmware

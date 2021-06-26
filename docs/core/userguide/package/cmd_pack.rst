@@ -1,4 +1,4 @@
- 
+
 .. _cmd_package_pack:
 
 pio package pack
@@ -35,7 +35,7 @@ depending on a package type:
   A ``package.json`` is a manifest file of a tool package. It is intended for toolchains,
   flashers, debugging servers, simulators, and other tools.
 
-See a `manifest validation scheme <https://github.com/platformio/platformio-core/blob/develop/platformio/package/manifest/schema.py>`_.
+See a `manifest validation scheme <https://github.com/platformio/platformio-core/blob/master/platformio/package/manifest/schema.py>`_.
 
 Options
 ~~~~~~~

@@ -1,4 +1,4 @@
- 
+
 .. _projectconf_advanced_scripting:
 
 Advanced Scripting
@@ -504,7 +504,7 @@ Custom options in ``platformio.ini``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 PlatformIO allows you extending project configuration with own data. You can read
-these values later using `ProjectConfig API <https://github.com/platformio/platformio-core/blob/develop/platformio/project/config.py>`__:
+these values later using `ProjectConfig API <https://github.com/platformio/platformio-core/blob/master/platformio/project/config.py>`__:
 
 :``ProjectConfig::get(section, option, default=None)``:
     Get an option value for the named section

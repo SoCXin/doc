@@ -284,8 +284,8 @@ html_context = {
     "display_github": True,
     "github_user": "SoCXin",
     "github_repo": "websrc",
-    "github_version": "develop",
-    "conf_py_path": "/",
+    "github_version": "master",
+    "conf_py_path": "/docs/",
     "is_latest": is_latest,
     "versions": [
         ("latest", "/en/"),
