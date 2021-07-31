@@ -4,7 +4,7 @@
 CH549
 =========
 
-.. image:: ../../_static/images/ci-CH549-logo.png
+.. image:: ../../_static/images/WCH/CH549.png
     :target: https://docs.CH549-ci.com/user/MCS51/platformio/
 
 
