@@ -1,4 +1,4 @@
- 
+
 .. _library_quickstart:
 
 Quick Start
@@ -80,4 +80,4 @@ CLI Guide
 .. toctree::
     :maxdepth: 3
 
-    ../core/userguide/lib/index
+    ../arm/userguide/lib/index

@@ -1,4 +1,4 @@
- 
+
 .. _pioaccount:
 
 PlatformIO Account
@@ -26,4 +26,4 @@ CLI Guide
 .. toctree::
     :maxdepth: 2
 
-    ../core/userguide/account/index
+    ../arm/userguide/account/index

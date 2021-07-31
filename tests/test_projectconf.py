@@ -1,4 +1,4 @@
- 
+
 
 # pylint: disable=redefined-outer-name
 
@@ -213,8 +213,8 @@ def test_sysenv_options(config):
     ]
 
     # sysenv
-    os.environ["PLATFORMIO_HOME_DIR"] = "/custom/core/dir"
-    assert config.get("platformio", "core_dir") == "/custom/core/dir"
+    os.environ["PLATFORMIO_HOME_DIR"] = "/custom/arm/dir"
+    assert config.get("platformio", "core_dir") == "/custom/arm/dir"
 
     # cleanup system environment variables
     del os.environ["PLATFORMIO_BUILD_FLAGS"]

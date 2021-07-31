@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif8266_espectro:
 
 ESPectro Core
@@ -22,7 +22,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `DycodeX <https://shop.makestro.com/en/product/espectro-core/?utm_source=platformio.org&utm_medium=docs>`__
+    - `DycodeX <https://shop.makestro.com/en/product/espectro-arm/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

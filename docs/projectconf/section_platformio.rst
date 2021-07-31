@@ -228,7 +228,7 @@ Example:
 .. code-block:: ini
 
     [platformio]
-    core_dir = /path/to/custom/pio-core/storage
+    core_dir = /path/to/custom/pio-arm/storage
 
 .. _projectconf_pio_globallib_dir:
 

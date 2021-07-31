@@ -35,9 +35,9 @@ Classification
     :caption: ARM
     :maxdepth: 1
 
-    platformio.ini <projectconf/index>
-    envvars
-    projectconf/advanced_scripting
+    arm/index
+    arm/history
+    arm/migration
 
 .. toctree::
     :caption: RISC-V
@@ -63,13 +63,15 @@ Classification
     :caption: X86
     :maxdepth: 2
 
-    core/index
-    home/index
-    tutorials/index
+    platformio.ini <projectconf/index>
+    envvars
+    projectconf/advanced_scripting
+
 
 .. toctree::
     :caption: Miscellaneous
     :maxdepth: 1
 
     FAQ <faq>
-    core/history
+    home/index
+    tutorials/index

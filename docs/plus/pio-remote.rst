@@ -1,4 +1,4 @@
- 
+
 .. |PIORemote| replace:: **PlatformIO Remote Development Solution**
 .. |PIOCloud| replace:: PlatformIO Cloud
 
@@ -163,6 +163,6 @@ CLI Guide
 .. toctree::
     :maxdepth: 3
 
-    ../core/userguide/remote/index
+    ../arm/userguide/remote/index
 
 
