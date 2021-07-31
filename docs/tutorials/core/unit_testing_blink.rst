@@ -1,4 +1,4 @@
- 
+
 .. _tutorial_unit_testing_blink:
 
 Unit Testing of a "Blink" Project
@@ -48,7 +48,7 @@ Source files
       ;   Library options: dependencies, extra library storages
       ;
       ; Please visit documentation for the other options and examples
-      ; https://socxin.github.io/websrc/page/projectconf.html
+      ; https://socxin.github.io/docs/page/projectconf.html
 
 
       [env:uno]

@@ -1,4 +1,4 @@
- 
+
 .. _ide_qtcreator:
 
 Qt Creator
@@ -167,7 +167,7 @@ Edit the content to match the code described below.
     ;   Library options: dependencies, extra library storages
     ;
     ; Please visit documentation for the other options and examples
-    ; https://socxin.github.io/websrc/page/projectconf.html
+    ; https://socxin.github.io/docs/page/projectconf.html
 
     [env:arduino_uno]
     platform = atmelavr

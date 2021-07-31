@@ -47,17 +47,17 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = u"soc.xin"
-copyright = u"2021, soc.xin"
+project = u"SoCXin"
+copyright = u"2021, www.SoC.xin"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version
-version = u'0.2'
+version = u'0.3'
 # The full version, including alpha/beta/rc tags
-release = u'0.2'
+release = u'0.3'
 
 is_latest = not str(version).isdigit()
 
@@ -283,7 +283,7 @@ linkcheck_anchors = False
 html_context = {
     "display_github": True,
     "github_user": "SoCXin",
-    "github_repo": "websrc",
+    "github_repo": "docs",
     "github_version": "master",
     "conf_py_path": "/docs/",
     "is_latest": is_latest,

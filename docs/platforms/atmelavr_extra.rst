@@ -361,7 +361,7 @@ PlatformIO splits the command for programming fuses in the following overridable
 
 If for any reason default parameters are not suitable for your project, you can override
 the entire upload command or any particular part of that command using
-`an extra script <https://socxin.github.io/websrc/en/latest/projectconf/advanced_scripting.html#before-pre-and-after-post-actions>`_,
+`an extra script <https://socxin.github.io/docs/en/latest/projectconf/advanced_scripting.html#before-pre-and-after-post-actions>`_,
 for example, you can override only fuses values:
 
 .. code-block:: python
@@ -536,7 +536,7 @@ parts:
 
 If for any reason default parameters are not suitable for your project, you can override
 the entire upload command or any particular part of that command using
-`an extra script <https://socxin.github.io/websrc/en/latest/projectconf/advanced_scripting.html#before-pre-and-after-post-actions>`_,
+`an extra script <https://socxin.github.io/docs/en/latest/projectconf/advanced_scripting.html#before-pre-and-after-post-actions>`_,
 for example, you can override only fuses values:
 
 .. code-block:: python
