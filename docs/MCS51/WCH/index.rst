@@ -1,7 +1,7 @@
- 
+
 .. _ci:
 
-Continuous Integration
+WCH 8051 MCU
 ======================
 
 `Continuous Integration (CI, wiki) <http://en.wikipedia.org/wiki/Continuous_integration>`_
@@ -18,11 +18,9 @@ easily.
 .. toctree::
     :maxdepth: 2
 
-    appveyor
-    circleci
-    drone
-    github-actions
-    gitlab
-    jenkins
-    shippable
-    travis
+    CH552
+    CH554
+    CH557
+    CH559
+    CH545
+    CH549

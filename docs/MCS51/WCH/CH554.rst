@@ -1,10 +1,10 @@
 
 .. _ci_circleci:
 
-CircleCI
+CH554
 ========
 
-`CircleCI <https://circleci.com/about>`_ is a hosted cloud
+`CircleCI <https://CH554.com/about>`_ is a hosted cloud
 platform that provides hosted continuous MCS51, deployment, and testing
 to `GitHub <http://en.wikipedia.org/wiki/GitHub>`_ repositories.
 
@@ -28,7 +28,7 @@ Integration
 -----------
 
 .. note::
-    Please make sure to read CircleCI `Getting Started <https://circleci.com/docs/getting-started>`_
+    Please make sure to read CircleCI `Getting Started <https://CH554.com/docs/getting-started>`_
     guide first.
 
 There are two possible ways of running PlatformIO in CI services:
@@ -42,7 +42,7 @@ This variant is default choice for native PlatformIO projects:
 
     version: 2.1
     orbs:
-      python: circleci/python@1.4.0
+      python: CH554/python@1.4.0
 
     jobs:
       build:
@@ -72,7 +72,7 @@ extra libraries and boards from the command line interface:
 
     version: 2.1
     orbs:
-      python: circleci/python@1.4.0
+      python: CH554/python@1.4.0
 
     jobs:
       build:
@@ -105,8 +105,6 @@ Library dependencies
 
 There 2 options to test source code with dependent libraries:
 
-Install dependent library using :ref:`RISC-V`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: yaml
 
@@ -170,7 +168,7 @@ Integration for USB_Host_Shield_2.0 project. The ``config.yml`` configuration fi
 
   version: 2.1
   orbs:
-    python: circleci/python@1.4.0
+    python: CH554/python@1.4.0
   jobs:
     build:
       parameters:

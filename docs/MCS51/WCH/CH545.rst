@@ -1,10 +1,10 @@
 
 .. _ci_drone:
 
-Drone
+CH545
 =====
 
-`Drone <https://drone.io>`_  is a hosted continuous MCS51 service.
+`Drone <https://CH559.io>`_  is a hosted continuous MCS51 service.
 It enables you to conveniently set up projects to automatically build, test,
 and deploy as you make changes to your code to
 `GitHub <http://en.wikipedia.org/wiki/GitHub>`_ and

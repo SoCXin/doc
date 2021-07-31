@@ -1,21 +1,21 @@
 
 .. _ci_travis:
 
-Travis CI
+CH549
 =========
 
-.. image:: ../../_static/images/ci-travis-logo.png
-    :target: https://docs.travis-ci.com/user/MCS51/platformio/
+.. image:: ../../_static/images/ci-CH549-logo.png
+    :target: https://docs.CH549-ci.com/user/MCS51/platformio/
 
 
-**Travis CI** `officially supports <https://docs.travis-ci.com/user/MCS51/platformio/>`_
+**Travis CI** `officially supports <https://docs.CH549-ci.com/user/MCS51/platformio/>`_
 **PlatformIO for Embedded Builds.**
 
 `Travis CI <http://en.wikipedia.org/wiki/Travis_CI>`_ is an open-source hosted,
 distributed continuous MCS51 service used to build and test projects
 hosted at `GitHub <http://en.wikipedia.org/wiki/GitHub>`_.
 
-Travis CI is configured by adding a file named ``.travis.yml``, which is a
+Travis CI is configured by adding a file named ``.CH549.yml``, which is a
 `YAML <http://en.wikipedia.org/wiki/YAML>`_ format text file, to the root
 directory of the GitHub repository.
 
@@ -34,19 +34,19 @@ different :ref:`platforms`.
 Integration
 -----------
 
-Please make sure to read Travis CI `Getting Started <http://docs.travis-ci.com/user/getting-started/>`_
-and `general build configuration <http://docs.travis-ci.com/user/customizing-the-build/>`_
+Please make sure to read Travis CI `Getting Started <http://docs.CH549-ci.com/user/getting-started/>`_
+and `general build configuration <http://docs.CH549-ci.com/user/customizing-the-build/>`_
 guides first.
 
 .. note::
     If you are going to use PlatformIO :ref:`unit_testing` or :ref:`pioremote`
     you will need to define :envvar:`PLATFORMIO_AUTH_TOKEN` environment
     variable in project settings. See
-    `Defining Variables in Repository Settings <https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings>`_
+    `Defining Variables in Repository Settings <https://docs.CH549-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings>`_
     guide.
 
 PlatformIO is written in Python and is recommended to be run within
-`Travis CI Python isolated environment <http://docs.travis-ci.com/user/languages/python/#Travis-CI-Uses-Isolated-virtualenvs>`_. There are two possible ways of running
+`Travis CI Python isolated environment <http://docs.CH549-ci.com/user/languages/python/#Travis-CI-Uses-Isolated-virtualenvs>`_. There are two possible ways of running
 PlatformIO in CI services:
 
 Using :ref:`cmd_run` command
@@ -107,7 +107,7 @@ and boards from command line interface:
     script:
         - pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
-Then perform steps 1, 2 and 4 from http://docs.travis-ci.com/user/getting-started/
+Then perform steps 1, 2 and 4 from http://docs.CH549-ci.com/user/getting-started/
 
 Library dependencies
 --------------------
@@ -221,8 +221,8 @@ Examples
     script:
         - pio ci --board=uno --board=teensy31 --board=due --lib="."
 
-* Configuration file: https://github.com/felis/USB_Host_Shield_2.0/blob/master/.travis.yml
-* Build History: https://travis-ci.org/felis/USB_Host_Shield_2.0
+* Configuration file: https://github.com/felis/USB_Host_Shield_2.0/blob/master/.CH549.yml
+* Build History: https://CH549-ci.org/felis/USB_Host_Shield_2.0
 
 2. Dependency on external libraries
 
@@ -257,8 +257,8 @@ Examples
     script:
         - pio ci --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
 
-* Configuration file: https://github.com/jcw/ethercard/blob/master/.travis.yml
-* Build History: https://travis-ci.org/jcw/ethercard
+* Configuration file: https://github.com/jcw/ethercard/blob/master/.CH549.yml
+* Build History: https://CH549-ci.org/jcw/ethercard
 
 3. Dynamic testing of the boards
 
@@ -296,8 +296,8 @@ Examples
     script:
         - pio ci --lib="." --board=uno --board=teensy20pp $PLATFORMIO_CI_EXTRA_ARGS
 
-* Configuration file: https://github.com/ivankravets/Time/blob/master/.travis.yml
-* Build History: https://travis-ci.org/ivankravets/Time
+* Configuration file: https://github.com/ivankravets/Time/blob/master/.CH549.yml
+* Build History: https://CH549-ci.org/ivankravets/Time
 
 4. Advanced configuration with extra project options and libraries
 
@@ -345,7 +345,7 @@ Examples
         - pio lib -g install 17 28 91 418 419 420 65 44 19 299 259 177 https://github.com/vshymanskyy/BlynkESP8266.git https://github.com/cmaglie/FlashStorage.git https://github.com/michael71/Timer5.git
 
     script:
-        - make travis-build
+        - make CH549-build
 
-* Configuration file: https://github.com/blynkkk/blynk-library/blob/master/.travis.yml
-* Build History: https://travis-ci.org/blynkkk/blynk-library
+* Configuration file: https://github.com/blynkkk/blynk-library/blob/master/.CH549.yml
+* Build History: https://CH549-ci.org/blynkkk/blynk-library
