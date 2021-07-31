@@ -201,28 +201,3 @@ and select registers to monitor. Close configuration window.
 
 .. image:: ../../_static/images/STC/clion/ide-platformio-clion-debug-peripherals.png
 
-
-PlatformIO Home
----------------
-
-Currently, :ref:`piohome` is not integrated into "PlatformIO for CLion". See related
-feature request `CLion: CPP-19493 Integrate PlatformIO Home <https://youtrack.jetbrains.com/issue/CPP-19493>`_.
-
-Nevertheless, you can start it manually and open in your browser. Please note that some
-features do not work, such as project opening. Please open CLion terminal
-and run :ref:`cmd_home` command:
-
-.. code-block:: shell
-
-    pio -c clion home
-
-.. image:: ../../_static/images/STC/clion/ide-platformio-clion-piohome-terminal.png
-
----------------
-
-Further for reading:
-
-* :ref:`tutorials` (step-by-step tutorials with debugging and unit testing)
-* `CLion documentation <https://www.jetbrains.com/help/clion/working-with-source-code.html>`__.
-
-**Happy coding with PlatformIO!**

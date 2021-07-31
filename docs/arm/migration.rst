@@ -95,9 +95,6 @@ via :ref:`projectconf_lib_deps`:
     bblanchon/ArduinoJson @ ^6.16.1
     knolleary/PubSubClient @ ^2.8
 
-You can find an owner name of a library in the registry using
-:ref:`piohome` > Libraries > Some Library > Installation tab.
-
 Build System
 ~~~~~~~~~~~~
 
@@ -161,38 +158,3 @@ other services such as :ref:`pioremote`.
 
 At PlatformIO, we are always looking for ways to improve the security of our services.
 
-packageRepositories
-~~~~~~~~~~~~~~~~~~~
-
-PlatformIO Core 5.0 does not support unofficial package repositories declared through
-``packageRepositories`` in ``platform.json`` that was introduced in PlatformIO 3.0.
-
-Please publish your development platforms and toolchains to the **PlatformIO Trusted
-Registry** using :ref:`cmd_package` CLI.
-
-Command Line Interface
-~~~~~~~~~~~~~~~~~~~~~~
-
-The following commands have been changed in v5.0.
-
-.. list-table::
-    :header-rows:  1
-
-    * - Command
-      - Description
-    * - :ref:`cmd_access`
-      - **New**. Manage package access for users, teams, and maintainers
-    * - :ref:`cmd_package`
-      - **New**. Manage packages in the registry (publish, unpublish)
-    * - :ref:`cmd_project_data`
-      - **New**. Dump build system data intended for IDE extensions/plugins
-    * - :ref:`cmd_system_info`
-      - **New**. Display system-wide information
-    * - :ref:`cmd_system_prune`
-      - **New**. Remove unused data
-    * - :ref:`cmd_project_init`
-      - Update project configuration for the specific environment using :option:`pio project init --environment` option
-    * - :ref:`cmd_run`
-      - List projects targets with :option:`pio run --list-targets` option
-    * - :ref:`cmd_account_destroy`
-      - New command to remove permanently :ref:`pioaccount` and related data

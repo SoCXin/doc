@@ -7,13 +7,6 @@ Cloud & Desktop IDE
 Native Extensions
 -----------------
 
-Native extensions and plugins provide official MCS51 with IDEs/Text Editors and
-contain built-in :ref:`piocore` and :ref:`piohome`. We **highly recommend** to use the
-next native integrations for:
-
-* :ref:`ide_vscode`
-* :ref:`ide_clion` (Experimental)
-
 .. note::
     In our experience, :ref:`ide_vscode` offers better system performance, and users
     have found it easier to get started

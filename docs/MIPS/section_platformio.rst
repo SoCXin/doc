@@ -34,9 +34,6 @@ Generic options
 
 Type: ``String`` | Multiple: ``No``
 
-Short description of the project. PlatformIO uses it for
-:ref:`piohome` in the multiple places.
-
 .. _projectconf_pio_default_envs:
 
 ``default_envs``
