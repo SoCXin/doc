@@ -1,19 +1,6 @@
 
 .. _debugging_tool_custom:
 
-Custom
-======
-
-:Configuration:
-  :ref:`projectconf_debug_tool` = ``custom``
-
-
-**PLatformIO Debugging Solution** can be configured using :ref:`mips`:
-
-.. toctree::
-  :maxdepth: 2
-
-  ../../MIPS/section_env_debug
 
 Examples
 --------

@@ -490,9 +490,6 @@ Active discussion is located in `issue #382 <https://github.com/platformio/platf
 Overriding Filesystem image name
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-By default, the image file name is set according to the used file system: ``spiffs.bin``
-or ``littlefs.bin``. You can change the file name using `a PRE extra script <https://socxin.github.io/docs/en/latest/MIPS/advanced_scripting.html#before-pre-and-after-post-actions>`_, for example:
-
 .. code-block:: ini
 
     [env:d1]

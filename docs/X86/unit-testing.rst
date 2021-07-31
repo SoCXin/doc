@@ -59,16 +59,6 @@ For the other examples and source code please follow to
 `PlatformIO Unit Testing Examples <https://github.com/platformio/platformio-examples/tree/develop/unit-testing>`_ repository.
 
 
-Configuration
--------------
-
-|PIOUTS| can be configured using :ref:`mips`
-
-.. toctree::
-  :maxdepth: 2
-
-  ../MIPS/section_env_test
-
 Test Types
 ----------
 

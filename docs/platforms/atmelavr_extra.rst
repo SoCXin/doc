@@ -359,11 +359,6 @@ PlatformIO splits the command for programming fuses in the following overridable
         - Variable that holds the final command compiled from variables above
         - ``$FUSESUPLOADER $FUSESUPLOADERFLAGS $UPLOAD_FLAGS $FUSESFLAGS``
 
-If for any reason default parameters are not suitable for your project, you can override
-the entire upload command or any particular part of that command using
-`an extra script <https://socxin.github.io/docs/en/latest/MIPS/advanced_scripting.html#before-pre-and-after-post-actions>`_,
-for example, you can override only fuses values:
-
 .. code-block:: python
 
     Import("env")
@@ -533,11 +528,6 @@ parts:
       * - ``UPLOADBOOTCMD``
         - Variable that holds the final command compiled from variables above
         - ``$BOOTUPLOADER $BOOTUPLOADERFLAGS $UPLOAD_FLAGS $BOOTFLAGS``
-
-If for any reason default parameters are not suitable for your project, you can override
-the entire upload command or any particular part of that command using
-`an extra script <https://socxin.github.io/docs/en/latest/MIPS/advanced_scripting.html#before-pre-and-after-post-actions>`_,
-for example, you can override only fuses values:
 
 .. code-block:: python
 

@@ -53,7 +53,6 @@ Classification
     :maxdepth: 1
 
     platformio <MIPS/index>
-    MIPS/advanced_scripting
 
 
 .. toctree::

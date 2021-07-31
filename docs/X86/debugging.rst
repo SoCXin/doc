@@ -72,12 +72,6 @@ Configuration
 
 |PIODebug| can be configured using :ref:`mips`:
 
-.. toctree::
-  :maxdepth: 2
-
-  ../MIPS/build_configurations
-  ../MIPS/section_env_debug
-
 .. _debugging_tools:
 
 Tools & Debug Probes
