@@ -171,7 +171,7 @@ format ``board_{OBJECT.PATH}``, where ``{OBJECT.PATH}`` is an object path in
 JSON manifest. Please navigate to "boards" folder of `PlatfomIO development platforms <https://github.com/topics/platformio-platform>`_
 and open JSON file to list all available options.
 
-For example, `Manifest: Espressif ESP32 Dev Module <https://github.com/platformio/platform-espressif32/blob/master/boards/esp32dev.json>`_:
+For example, `Manifest: Espressif ESP32 Dev Module <https://github.com/platformio/platform-espressif32/blob/master/level/esp32dev.json>`_:
 
 .. code-block:: ini
 

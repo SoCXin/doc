@@ -46,7 +46,7 @@ Classification
     RISC-V/index
     Platforms <platforms/index>
     frameworks/index
-    boards/index
+    level/index
     platforms/custom_platform_and_board
 
 .. toctree::

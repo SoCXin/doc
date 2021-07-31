@@ -189,7 +189,7 @@ Fuses programming
 
 PlatformIO has a built-in target called ``fuses`` for setting fuse bits. The default fuse
 bits are predefined in the board manifest file in the ``fuses`` section. For example,
-`fuses section for Arduino Uno board <https://github.com/platformio/platform-atmelavr/blob/master/boards/uno.json>`_.
+`fuses section for Arduino Uno board <https://github.com/platformio/platform-atmelavr/blob/master/level/uno.json>`_.
 To set fuse bits you need to use target ``fuses`` with :option:`pio run --target` command.
 
 Custom fuses
@@ -412,7 +412,7 @@ Bootloader programming
 
 PlatformIO has a built-in target called ``bootloader`` for flashing bootloaders. The
 default bootloader image and corresponding fuse bits are predefined in the board manifest
-file in the ``bootloader`` section, for example, `Arduino Uno <https://github.com/platformio/platform-atmelavr/blob/master/boards/uno.json>`_.
+file in the ``bootloader`` section, for example, `Arduino Uno <https://github.com/platformio/platform-atmelavr/blob/master/level/uno.json>`_.
 To upload a bootloader image you need to use target ``bootloader`` with
 :option:`pio run --target` command.
 

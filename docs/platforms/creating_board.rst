@@ -1,4 +1,4 @@
- 
+
 .. _board_creating:
 
 Custom Embedded Boards
@@ -26,7 +26,7 @@ The key fields are:
 * ``platform`` name of :ref:`platforms`
 * ``upload`` upload settings which depend on the ``platform``
 
-For details, see existing boards as examples, available under ``.platformio/platforms/*/boards/``.
+For details, see existing boards as examples, available under ``.platformio/platforms/*/level/``.
 
 .. code-block:: json
 

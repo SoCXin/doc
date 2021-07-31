@@ -326,10 +326,6 @@ There are two solutions:
 
 .. _ide_atom_knownissues_sclarduino_manually:
 
-Convert Arduino file to C++ manually
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Recommended! See :ref:`faq_convert_ino_to_cpp`.
 
 Force Arduino file as C++
 ^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -1,4 +1,4 @@
- 
+
 Tutorials
 ---------
 
@@ -87,7 +87,7 @@ code. There are several ways to set ``.overlay`` files:
 * Using ``DTC_OVERLAY_FILE`` variable in the ``CMakeLists.txt`` file,
   before including Zephyr's ``boilerplate.cmake`` file. (Recommended)
 
-* Using a ``boards/<BOARD>.overlay`` file in the ``zephyr`` folder, for the current
+* Using a ``level/<BOARD>.overlay`` file in the ``zephyr`` folder, for the current
   board
 
 * Using a ``<BOARD>.overlay`` file in the  ``zephyr`` folder.
@@ -96,7 +96,7 @@ code. There are several ways to set ``.overlay`` files:
     PlatformIO board names may differ from Zephyr targets, which means that to help
     the build system automatically pick up ``.overlay`` file, the ``<BOARD>`` name in
     ``<BOARD>.overlay`` file must have the same name as specified in
-    `the official Zephyr board list <https://docs.zephyrproject.org/latest/boards/index.html>`_.
+    `the official Zephyr board list <https://docs.zephyrproject.org/latest/level/index.html>`_.
 
 Embedding files at compile time
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

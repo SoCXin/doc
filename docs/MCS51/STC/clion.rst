@@ -77,8 +77,6 @@ not valid C/C++ based source files:
 1. Missing includes such as ``#include <Arduino.h>``
 2. Function declarations are omitted.
 
-See how to :ref:`faq_convert_ino_to_cpp`.
-
 Quick Start
 -----------
 
