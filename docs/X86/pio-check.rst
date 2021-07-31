@@ -55,18 +55,6 @@ It allows you to filter messages or directly jump to an issue in a source code.
 
 .. image:: ../_static/images/home/pio-home-inspect-code-defects.png
 
-Configuration
--------------
-
-|PIOCheck| allows selecting what tool is used for finding defects in
-the project, what source files are checked. |PIOCheck| can be configured
-from :ref:`mips` using the next options:
-
-.. toctree::
-  :maxdepth: 2
-
-  ../MIPS/section_env_check
-
 .. _check_tools:
 
 Check tools

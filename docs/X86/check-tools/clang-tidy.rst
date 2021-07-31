@@ -41,13 +41,6 @@ option in :ref:`mips`:
     board = ...
     check_tool = clangtidy
 
-Useful options that can be used used for adjusting check process:
-
-.. toctree::
-  :maxdepth: 2
-
-  ../../MIPS/section_env_check
-
 Supported checks
 ----------------
 
