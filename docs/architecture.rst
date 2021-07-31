@@ -1,6 +1,6 @@
-.. welcome:
+.. architecture:
 
-Welcome
+architecture
 ===================
 
 **A place where Developers and Teams have true Freedom! No more vendor lock-in!**
@@ -8,19 +8,6 @@ Welcome
 .. contents:: Contents
     :local:
 
-PlatformIO is a cross-platform, cross-architecture, multiple framework, professional
-tool for embedded systems engineers and for software developers who write applications
-for embedded products.
-
-Awards
-------
-
-PlatformIO was nominated for the year's `best Software and Tools in the 2015/16 IoT Awards <http://www.postscapes.com/2015-16/best-iot-software-and-tools/>`_.
-
-A native `PlatformIO IDE extension <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`__
-for Microsoft :ref:`ide_vscode` editor is the most rated/reviewed extension with over 800
-five-star reviews in the whole Microsoft Marketplace. It also was installed by over
-750,000 unique developers around the world.
 
 Philosophy
 ----------

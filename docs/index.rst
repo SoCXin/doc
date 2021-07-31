@@ -1,8 +1,8 @@
 
-SoC xin
-========
+SoC Architecture
+================
 
-**A place where Developers and Teams have true Freedom! No more vendor lock-in!**
+**A place where Developers have true Freedom! No more vendor lock-in!**
 
 * Open source, maximum permissive Apache 2.0 license
 * Cross-platform IDE and Unified Debugger
@@ -11,19 +11,19 @@ SoC xin
 * Firmware File Explorer and Memory Inspection.
 
 **Social:** `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
-`Twitter <https://twitter.com/PlatformIO_Org>`_ |
-`Facebook <https://www.facebook.com/platformio>`_
+`Twitter <https://twitter.com/QitasTang>`_ |
+`Facebook <https://www.facebook.com/qitast>`_
 
-Contents
---------
+Classification
+---------------
 
 .. toctree::
     :maxdepth: 2
 
-    welcome
+    architecture
 
 .. toctree::
-    :caption: Level 1
+    :caption: MCS-51
     :maxdepth: 1
 
     level1/ide/pioide
@@ -32,7 +32,7 @@ Contents
     tutorials/index
 
 .. toctree::
-    :caption: Level 2
+    :caption: Cortex
     :maxdepth: 1
 
     platformio.ini <projectconf/index>
@@ -40,7 +40,7 @@ Contents
     projectconf/advanced_scripting
 
 .. toctree::
-    :caption: Level 3
+    :caption: RISC-V
     :maxdepth: 1
 
     librarymanager/index
@@ -50,7 +50,7 @@ Contents
     platforms/custom_platform_and_board
 
 .. toctree::
-    :caption: Level 4
+    :caption: MIPS
     :maxdepth: 1
 
     Debugging <plus/debugging>
@@ -60,7 +60,7 @@ Contents
     plus/pio-account
 
 .. toctree::
-    :caption: Level 5
+    :caption: X86
     :maxdepth: 2
 
     level1/ide/index
@@ -68,7 +68,7 @@ Contents
     level1/index
 
 .. toctree::
-    :caption: Level 6
+    :caption: Miscellaneous
     :maxdepth: 1
 
     test <articles>
@@ -76,20 +76,3 @@ Contents
     core/history
     core/migration
 
-.. toctree::
-    :caption: Level 7
-    :maxdepth: 1
-
-    test <articles>
-
-.. toctree::
-    :caption: Level 8
-    :maxdepth: 1
-
-    test <articles>
-
-.. toctree::
-    :caption: Level 9
-    :maxdepth: 1
-
-    test <articles>
