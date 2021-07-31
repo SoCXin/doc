@@ -236,4 +236,4 @@ Further Reading
 ---------------
 
 * `Project examples <https://github.com/platformio/platformio-examples/tree/develop>`_
-* :ref:`piocore_userguide` for :ref:`piocore` commands
+* :ref:`stm32` for :ref:`piocore` commands

@@ -32,7 +32,7 @@
 /stm32/lib/index.html -> /arm/stm32/lib/index.html
 /stm32/cmd_home.html -> /arm/stm32/cmd_home.html
 /stm32/cmd_debug.html -> /arm/stm32/cmd_debug.html
-/stm32/cmd_ci.html -> /arm/stm32/cmd_ci.html
+/stm32/STM32F103.html -> /arm/stm32/STM32F103.html
 /stm32/cmd_check.html -> /arm/stm32/cmd_check.html
 /stm32/cmd_boards.html -> /arm/stm32/cmd_boards.html
 /stm32/account/cmd_token.html -> /arm/stm32/account/cmd_token.html

@@ -14,7 +14,7 @@ directory of the GitHub repository.
 
 CircleCI automatically detects when a commit has been made and pushed to a
 repository that is using CircleCI, and each time this happens, it will
-try to build the project using :ref:`cmd_ci` command. This includes commits to
+try to build the project using :ref:`stm32f103` command. This includes commits to
 all branches, not just to the master branch. CircleCI will also build and run
 pull requests. When that process has completed, it will notify a developer in
 the way it has been configured to do so — for example, by sending an email
@@ -61,7 +61,7 @@ This variant is default choice for native PlatformIO projects:
         jobs:
           - build
 
-Using :ref:`cmd_ci` command
+Using :ref:`stm32f103` command
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This variant is more convenient if a project is written as a library (when there are
@@ -140,9 +140,6 @@ PlatformIO allows you to specify your own build flags using :envvar:`PLATFORMIO_
         executor: python/default
         environment:
             PLATFORMIO_BUILD_FLAGS: -D SPECIFIC_MACROS -I/extra/inc
-
-For the more details, please follow to
-:ref:`available build flags/options <projectconf_build_flags>`.
 
 
 Advanced configuration

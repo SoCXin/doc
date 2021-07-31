@@ -1,7 +1,7 @@
- 
-.. _piocore_userguide:
 
-CLI Guide
+.. _stm32:
+
+STM32
 =========
 
 .. contents::
@@ -56,7 +56,7 @@ Commands
     account/index
     cmd_boards
     cmd_check
-    cmd_ci
+    STM32F103
     cmd_debug
     pio device <device/index>
     cmd_home

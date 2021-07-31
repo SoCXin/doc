@@ -14,7 +14,7 @@ Drone is configured by modifying settings in your project control panel.
 
 Drone automatically detects when a commit has been made and pushed to a
 repository that is using Drone, and each time this happens, it will
-try to build the project using :ref:`cmd_ci` command. This includes commits to
+try to build the project using :ref:`stm32f103` command. This includes commits to
 all branches, not just to the master branch. Drone will also build and run
 pull requests. When that process has completed, it will notify a developer in
 the way it has been configured to do so — for example, by sending an email
@@ -42,7 +42,7 @@ fields for your project in the Drone control panel):
     pio run -e <ID_1> -e <ID_2> -e <ID_N>
 
 
-Using :ref:`cmd_ci` command
+Using :ref:`stm32f103` command
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This variant is more convenient when project is written as a library (when there are

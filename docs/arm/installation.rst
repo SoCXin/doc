@@ -196,7 +196,7 @@ Install Shell Commands
 
 :ref:`piocore` consists of 2 standalone tools in a system:
 
-* ``platformio`` or ``pio`` (short alias) - :ref:`piocore_userguide`
+* ``platformio`` or ``pio`` (short alias) - :ref:`stm32`
 * ``piodebuggdb`` - alias of :ref:`cmd_debug`
 
 If you have :ref:`espressif_esp32` already installed, you do not need to install
@@ -357,7 +357,7 @@ to save data in JSON format:
     get-platformio.py check core --dump-state tmpdir/pioinstaller-state.json
 
 Now, read JSON file and use ``platformio_exe`` binary to call PlatforIO Core using CLI
-(see :ref:`piocore_userguide`). You can also export ``penv_bin_dir`` into system
+(see :ref:`stm32`). You can also export ``penv_bin_dir`` into system
 environment ``PATH`` variable and ``platformio`` command will be available without
 a full path.
 
