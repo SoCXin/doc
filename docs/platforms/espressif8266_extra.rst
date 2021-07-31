@@ -8,7 +8,7 @@ Configuration
 CPU Frequency
 ~~~~~~~~~~~~~
 
-See :ref:`projectconf_board_build.f_cpu` option from :ref:`projectconf`
+See :ref:`projectconf_board_build.f_cpu` option from :ref:`mips`
 
 .. code-block:: ini
 
@@ -19,7 +19,7 @@ See :ref:`projectconf_board_build.f_cpu` option from :ref:`projectconf`
 FLASH Frequency
 ~~~~~~~~~~~~~~~
 
-Please use ``board_build.f_flash`` option from :ref:`projectconf` to change
+Please use ``board_build.f_flash`` option from :ref:`mips` to change
 a value. Possible values:
 
 * ``20000000L``
@@ -41,7 +41,7 @@ header, along with the flash size and flash frequency. The ROM bootloader
 in the ESP chip uses the value of these parameters in order to know how to
 talk to the flash chip.
 
-Please use ``board_build.flash_mode`` option from :ref:`projectconf` to change
+Please use ``board_build.flash_mode`` option from :ref:`mips` to change
 a value. Possible values:
 
 * ``qio``
@@ -58,7 +58,7 @@ Reset Method
 ~~~~~~~~~~~~
 
 You can set custom reset method using :ref:`projectconf_upload_resetmethod`
-option from :ref:`projectconf`.
+option from :ref:`mips`.
 
 The `possible values <https://github.com/igrr/esptool-ck#supported-boards>`_ are:
 
@@ -88,7 +88,7 @@ https://github.com/esp8266/Arduino/tree/master/tools/sdk/ld
 Please open ``eagle.flash.***.ld`` file to check how flash is split.
 
 To override default LD script please use :ref:`projectconf_board_build.ldscript`
-option from :ref:`projectconf`.
+option from :ref:`mips`.
 
 .. code-block:: ini
 
@@ -99,7 +99,7 @@ Upload Speed
 ~~~~~~~~~~~~
 
 You can set custom upload speed using :ref:`projectconf_upload_speed` option
-from :ref:`projectconf`
+from :ref:`mips`
 
 .. code-block:: ini
 
@@ -357,7 +357,7 @@ MMU - Adjusting ICACHE to IRAM ratio
 
 By default the balanced ratio (32KB cache + 32KB IRAM) configuration is used.
 Alternative configurations can be enabled using the :ref:`projectconf_build_flags`
-option in :ref:`projectconf`:
+option in :ref:`mips`:
 
 
 .. list-table:: MMU Configuration Options
@@ -449,7 +449,7 @@ will not preserve any files, and vice-versa.
 
 The ``SPIFFS`` file system is used by default in order to keep legacy project
 compatible. To choose ``LittleFS`` as the file system, it should be explicitly specified
-using ``board_build.filesystem`` option in :ref:`projectconf`, for example:
+using ``board_build.filesystem`` option in :ref:`mips`, for example:
 
 .. code-block:: ini
 
@@ -468,12 +468,12 @@ Uploading files to Filesystem
     Please make sure to read `ESP8266 Flash layout <https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout>`_
     information first.
 
-1. Create new project using :ref:`pioide` or initialize project using
+1. Create new project using :ref:`espressif_esp32` or initialize project using
    :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
 2. Create ``data`` folder (it should be on the same level as ``src`` folder)
    and put files here. Also, you can specify own location for
    :ref:`projectconf_pio_data_dir`
-3. Run "Upload File System image" task in :ref:`pioide` or use :ref:`piocore`
+3. Run "Upload File System image" task in :ref:`espressif_esp32` or use :ref:`piocore`
    and :option:`pio run --target` command with ``uploadfs`` target.
 
 
@@ -525,7 +525,7 @@ There are 2 options:
 
     pio run --target upload --upload-port IP_ADDRESS_HERE or mDNS_NAME.local
 
-* Specify ``upload_port`` option in :ref:`projectconf`
+* Specify ``upload_port`` option in :ref:`mips`
 
 
 You also need to set :ref:`projectconf_upload_protocol` to ``espota``.
@@ -545,7 +545,7 @@ Authentication and upload options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can pass additional options/flags to OTA uploader using
-``upload_flags`` option in :ref:`projectconf`
+``upload_flags`` option in :ref:`mips`
 
 .. code-block:: ini
 
@@ -612,10 +612,10 @@ Using Arduino Framework with Staging version
 PlatformIO will install the latest Arduino Core for ESP8266 from
 https://github.com/esp8266/Arduino. The `Git <https://git-scm.com>`_
 should be installed in a system. To update Arduino Core to the latest revision,
-please open :ref:`pioide` and navigate to ``PlatformIO Home > Platforms > Updates``.
+please open :ref:`espressif_esp32` and navigate to ``PlatformIO Home > Platforms > Updates``.
 
-1.  Please install :ref:`pioide`
-2.  Initialize a new project, open :ref:`projectconf` and specify the link to the
+1.  Please install :ref:`espressif_esp32`
+2.  Initialize a new project, open :ref:`mips` and specify the link to the
     framework repository in :ref:`projectconf_env_platform_packages` section.
     For example,
 

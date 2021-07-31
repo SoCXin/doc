@@ -1,4 +1,4 @@
- 
+
 .. _debugging_tool_digilent-hs1:
 
 JTAG-HS1
@@ -17,7 +17,7 @@ Configuration
 -------------
 
 You can configure debugging tool using :ref:`projectconf_debug_tool` option in
-:ref:`projectconf`:
+:ref:`mips`:
 
 .. code-block:: ini
 
@@ -101,14 +101,14 @@ Boards
     * - :ref:`board_openhw_nexys_a7`
       - :ref:`platform_openhw`
       - On-board
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB

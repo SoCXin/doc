@@ -1,4 +1,4 @@
- 
+
 .. _debugging_tool_ftdi:
 
 FTDI Chip
@@ -19,7 +19,7 @@ Configuration
 -------------
 
 You can configure debugging tool using :ref:`projectconf_debug_tool` option in
-:ref:`projectconf`:
+:ref:`mips`:
 
 .. code-block:: ini
 
@@ -66,7 +66,7 @@ Platforms
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
 
 Frameworks
 ----------

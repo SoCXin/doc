@@ -66,7 +66,7 @@ Custom fuses
 ^^^^^^^^^^^^
 
 Custom fuse values and upload flags (based on upload protocol) should be specified in
-:ref:`projectconf`. An example of setting custom fuses for ``ATmega3209`` board:
+:ref:`mips`. An example of setting custom fuses for ``ATmega3209`` board:
 
 .. code-block:: ini
 
@@ -96,7 +96,7 @@ To upload a bootloader image you need to use target ``bootloader`` with
 Custom bootloader
 ^^^^^^^^^^^^^^^^^
 
-Custom bootloader and accompanying fuses should be specified in :ref:`projectconf`.
+Custom bootloader and accompanying fuses should be specified in :ref:`mips`.
 An example of setting custom bootloader for ``ATmega4808`` board:
 
 .. code-block:: ini

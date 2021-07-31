@@ -62,7 +62,7 @@ For the other examples and source code please follow to
 Configuration
 -------------
 
-|PIOUTS| can be configured using :ref:`projectconf`
+|PIOUTS| can be configured using :ref:`mips`
 
 .. toctree::
   :maxdepth: 2
@@ -103,7 +103,7 @@ Test Runner
 
 Test Runner allows you to process specific environments or ignore a test using
 "Glob patterns". You can also ignore a test for specific environments using a
-:ref:`projectconf_test_ignore` option from :ref:`projectconf`.
+:ref:`projectconf_test_ignore` option from :ref:`mips`.
 
 Local
 ~~~~~
@@ -153,7 +153,7 @@ You can also define ``custom`` transport and implement its interface:
 
 1. Custom transport for :ref:`platform_native` platform
 
-  * Set ``test_transport = custom`` in :ref:`projectconf`
+  * Set ``test_transport = custom`` in :ref:`mips`
 
   .. code-block:: ini
 
@@ -276,7 +276,7 @@ programs, you have 2 options:
    and the main program using ``#include <calculator.h>``.
 
 2. Manually instruct PlatformIO to build source code from :ref:`projectconf_pio_src_dir`
-   folder using :ref:`projectconf_test_build_project_src` option in :ref:`projectconf`:
+   folder using :ref:`projectconf_test_build_project_src` option in :ref:`mips`:
 
    .. code-block:: ini
 

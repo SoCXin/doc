@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif32_s_odi_ultra:
 
 S.ODI Ultra v1
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 Configuration
 -------------
 
-Please use ``s_odi_ultra`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``s_odi_ultra`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

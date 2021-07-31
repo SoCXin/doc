@@ -1,4 +1,4 @@
- 
+
 .. _board_asrmicro650x_cubecell_node:
 
 Heltec CubeCell-1/2AA Node (HTCC-AB02A)
@@ -28,7 +28,7 @@ Platform :ref:`platform_asrmicro650x`: ASR Microelectronics ASR650x series is hi
 Configuration
 -------------
 
-Please use ``cubecell_node`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``cubecell_node`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

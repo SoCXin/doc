@@ -1,4 +1,4 @@
- 
+
 .. _board_sifive_hifive-unleashed:
 
 HiFive Unleashed
@@ -9,7 +9,7 @@ HiFive Unleashed
 Hardware
 --------
 
-Platform :ref:`platform_sifive`: SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+Platform :ref:`platform_sifive`: SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
 
 .. list-table::
 
@@ -28,7 +28,7 @@ Platform :ref:`platform_sifive`: SiFive brings the power of open source and soft
 Configuration
 -------------
 
-Please use ``hifive-unleashed`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``hifive-unleashed`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -64,7 +64,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 HiFive Unleashed has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -79,10 +79,10 @@ HiFive Unleashed has on-board debug probe and **IS READY** for debugging. You do
     - Yes
   * - :ref:`debugging_tool_qemu`
     - Yes
-    - 
+    -
   * - :ref:`debugging_tool_renode`
     - Yes
-    - 
+    -
 
 Frameworks
 ----------

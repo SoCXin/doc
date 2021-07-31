@@ -60,7 +60,7 @@ Configuration
 
 |PIOCheck| allows selecting what tool is used for finding defects in
 the project, what source files are checked. |PIOCheck| can be configured
-from :ref:`projectconf` using the next options:
+from :ref:`mips` using the next options:
 
 .. toctree::
   :maxdepth: 2

@@ -1,4 +1,4 @@
- 
+
 .. _board_infineonxmc_xmc4700_relax_kit:
 
 XMC4700 Relax Kit
@@ -28,7 +28,7 @@ Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrol
 Configuration
 -------------
 
-Please use ``xmc4700_relax_kit`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``xmc4700_relax_kit`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -64,7 +64,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 XMC4700 Relax Kit has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 

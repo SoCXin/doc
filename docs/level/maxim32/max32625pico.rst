@@ -1,4 +1,4 @@
- 
+
 .. _board_maxim32_max32625pico:
 
 MAX32625PICO
@@ -28,7 +28,7 @@ Platform :ref:`platform_maxim32`: Maxim's microcontrollers provide low-power, ef
 Configuration
 -------------
 
-Please use ``max32625pico`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``max32625pico`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

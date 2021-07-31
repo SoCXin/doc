@@ -1,4 +1,4 @@
- 
+
 .. _board_microchippic32_openscope:
 
 Digilent OpenScope
@@ -28,7 +28,7 @@ Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the M
 Configuration
 -------------
 
-Please use ``openscope`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``openscope`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

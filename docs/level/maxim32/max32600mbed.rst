@@ -1,4 +1,4 @@
- 
+
 .. _board_maxim32_max32600mbed:
 
 Maxim ARM mbed Enabled Development Platform for MAX32600
@@ -28,7 +28,7 @@ Platform :ref:`platform_maxim32`: Maxim's microcontrollers provide low-power, ef
 Configuration
 -------------
 
-Please use ``max32600mbed`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``max32600mbed`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -84,7 +84,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Maxim ARM mbed Enabled Development Platform for MAX32600 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 

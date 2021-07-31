@@ -1,4 +1,4 @@
- 
+
 Configuration
 -------------
 
@@ -20,7 +20,7 @@ Configuration system
 
 PlatformIO allows you to customize mbed OS compile time configuration
 parameters using ``mbed_app.json`` manifest. It should be placed into the root
-of your project and located on the same level as :ref:`projectconf`.
+of your project and located on the same level as :ref:`mips`.
 
 Configuration is defined using `JSON <https://en.wikipedia.org/wiki/JSON>`_.
 Some examples of configuration parameters:
@@ -69,7 +69,7 @@ Mbed OS 5 and Mbed 2
 PlatformIO allows compiling projects with or without Mbed OS 5. By default, project
 is built without the OS feature. Most of the framework functionality requires the OS to
 be enabled. To add the OS feature you can use a special macro definition that needs be
-added to :ref:`projectconf_build_flags` of :ref:`projectconf`:
+added to :ref:`projectconf_build_flags` of :ref:`mips`:
 
 .. list-table::
     :header-rows:  1
@@ -80,7 +80,7 @@ added to :ref:`projectconf_build_flags` of :ref:`projectconf`:
     * - ``PIO_FRAMEWORK_MBED_RTOS_PRESENT``
       - Build the project with enabled ``rtos``
 
-An example of :ref:`projectconf` with enabled ``rtos``
+An example of :ref:`mips` with enabled ``rtos``
 
 .. code-block:: ini
 
@@ -98,7 +98,7 @@ By default, PlatformIO builds your project using ``develop profile`` which provi
 optimized firmware size with full error information and allows MCU to go to sleep mode.
 In the case when default build profile is not suitable for your project there two other
 profiles ``release`` and ``debug`` that can be enabled using special macro definitions.
-You can change build profile :ref:`projectconf_build_flags` of :ref:`projectconf`:
+You can change build profile :ref:`projectconf_build_flags` of :ref:`mips`:
 
 .. list-table::
     :header-rows:  1
@@ -181,7 +181,7 @@ describe your board, for example here is the configuration for ``NUCLEO-F401RE``
 
 Secondly, you need to add code specific to your target to the ``src`` folder of your project.
 Usually, it's a good idea to isolate this code in a separate folder and add the path to this folder
-to :ref:`projectconf_build_flags` of :ref:`projectconf`:
+to :ref:`projectconf_build_flags` of :ref:`mips`:
 
 .. code-block:: ini
 

@@ -1,4 +1,4 @@
- 
+
 .. _board_microchippic32_picadillo_35t:
 
 4D Systems PICadillo 35T
@@ -28,7 +28,7 @@ Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the M
 Configuration
 -------------
 
-Please use ``picadillo_35t`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``picadillo_35t`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

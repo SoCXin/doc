@@ -1,4 +1,4 @@
- 
+
 .. _board_shakti_artix7_100t:
 
 Arty A7-100: Artix-7 FPGA Development Board
@@ -28,7 +28,7 @@ Platform :ref:`platform_shakti`: Shakti is an open-source initiative by the RISE
 Configuration
 -------------
 
-Please use ``artix7_100t`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``artix7_100t`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -86,7 +86,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Arty A7-100: Artix-7 FPGA Development Board has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -100,8 +100,8 @@ Arty A7-100: Artix-7 FPGA Development Board has on-board debug probe and **IS RE
     - Yes
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

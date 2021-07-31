@@ -1,4 +1,4 @@
- 
+
 .. _board_atmelmegaavr_ATmega3208:
 
 ATmega3208
@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelmegaavr`: 8-bit MCUs Built for Real-time Control wi
 Configuration
 -------------
 
-Please use ``ATmega3208`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATmega3208`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

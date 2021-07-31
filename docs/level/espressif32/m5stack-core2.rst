@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif32_m5stack-core2:
 
 M5Stack Core2
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 Configuration
 -------------
 
-Please use ``m5stack-core2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``m5stack-core2`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

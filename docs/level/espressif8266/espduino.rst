@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif8266_espduino:
 
 ESPDuino (ESP-13 Module)
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
 Configuration
 -------------
 
-Please use ``espduino`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``espduino`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

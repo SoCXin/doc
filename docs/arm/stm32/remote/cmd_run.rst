@@ -1,4 +1,4 @@
- 
+
 .. _cmd_remote_run:
 
 pio remote run
@@ -21,7 +21,7 @@ Usage
 Description
 -----------
 
-Process environments which are defined in :ref:`projectconf` file remotely.
+Process environments which are defined in :ref:`mips` file remotely.
 By default, :ref:`pioremote` builds project on a host machine and deploy
 final firmware (program) to a remote device (embedded board).
 
@@ -42,7 +42,7 @@ Options
 Process specified environments.
 
 You can also specify which environments should be processed by default using
-:ref:`projectconf_pio_default_envs` option from :ref:`projectconf`.
+:ref:`projectconf_pio_default_envs` option from :ref:`mips`.
 
 
 .. option::
@@ -76,7 +76,7 @@ or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 .. option::
     --disable-auto-clean
 
-Disable auto-clean of :ref:`projectconf_pio_build_dir` when :ref:`projectconf`
+Disable auto-clean of :ref:`projectconf_pio_build_dir` when :ref:`mips`
 or :ref:`projectconf_pio_src_dir` (project structure) have been modified.
 
 .. option::

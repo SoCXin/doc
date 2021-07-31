@@ -8,7 +8,7 @@ Custom
   :ref:`projectconf_debug_tool` = ``custom``
 
 
-**PLatformIO Debugging Solution** can be configured using :ref:`projectconf`:
+**PLatformIO Debugging Solution** can be configured using :ref:`mips`:
 
 .. toctree::
   :maxdepth: 2
@@ -110,7 +110,7 @@ to a valid identifier. See supported J-Link devices at :ref:`debugging_tool_jlin
 
 **extra_script.py**
 
-Place this file on the same level as :ref:`projectconf`.
+Place this file on the same level as :ref:`mips`.
 
 .. code-block:: py
 

@@ -1,4 +1,4 @@
- 
+
 Configuration
 -------------
 
@@ -17,7 +17,7 @@ You need GAP8 AutoTiler library, please request it via
 `support@greenwaves-technologies.com <mailto:support@greenwaves-technologies.com>`_
 
 Put a library somewhere on a disk and add this folder to library path using
-:ref:`projectconf_build_flags` in :ref:`projectconf`. For example,
+:ref:`projectconf_build_flags` in :ref:`mips`. For example,
 
   .. code-block:: ini
 
@@ -44,7 +44,7 @@ A running process can be controlled through the internal upload commands:
 * ``start``, @TODO
 * ``wait``, @TODO
 
-You can configure "boot mode" and list of upload commands using :ref:`projectconf`.
+You can configure "boot mode" and list of upload commands using :ref:`mips`.
 Default values are:
 
 * ``board_upload.boot_mode = jtag``
@@ -53,13 +53,13 @@ Default values are:
 Run from RAM
 ^^^^^^^^^^^^
 
-This is a default behavior when you run "Upload" task in :ref:`pioide` or use
+This is a default behavior when you run "Upload" task in :ref:`espressif_esp32` or use
 :ref:`piocore` and :option:`pio run --target` command with ``upload`` target.
 
 Run from RAM (without any bridge interaction)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Configure build environment using :ref:`projectconf` as described below
+* Configure build environment using :ref:`mips` as described below
 
   .. code-block:: ini
 
@@ -69,7 +69,7 @@ Run from RAM (without any bridge interaction)
     framework = ...
     board_upload.commands = load start
 
-* Run "Upload" task in :ref:`pioide` or use :ref:`piocore` and
+* Run "Upload" task in :ref:`espressif_esp32` or use :ref:`piocore` and
   :option:`pio run --target` command with ``upload`` target.
 
 Flash and run from RAM
@@ -80,7 +80,7 @@ The same as :ref:`platform_riscv_gap_uploadfs`.
 Flash and run from Flash
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Configure build environment using :ref:`projectconf` as described below
+* Configure build environment using :ref:`mips` as described below
 
   .. code-block:: ini
 
@@ -99,7 +99,7 @@ Run from Flash
 .. note::
   You have to perform :ref:`platform_riscv_gap_uploadfs` before.
 
-* Configure build environment using :ref:`projectconf` as described below
+* Configure build environment using :ref:`mips` as described below
 
   .. code-block:: ini
 
@@ -110,7 +110,7 @@ Run from Flash
     board_upload.boot_mode = jtag_hyper
     board_upload.commands = reqloop ioloop start wait
 
-* Run "Upload" task in :ref:`pioide` or use :ref:`piocore` and
+* Run "Upload" task in :ref:`espressif_esp32` or use :ref:`piocore` and
   :option:`pio run --target` command with ``upload`` target.
 
 Run from Flash (without any bridge interaction)
@@ -119,7 +119,7 @@ Run from Flash (without any bridge interaction)
 .. note::
   You have to perform :ref:`platform_riscv_gap_uploadfs` before.
 
-* Configure build environment using :ref:`projectconf` as described below
+* Configure build environment using :ref:`mips` as described below
 
   .. code-block:: ini
 
@@ -130,7 +130,7 @@ Run from Flash (without any bridge interaction)
     board_upload.boot_mode = jtag_hyper
     board_upload.commands = start
 
-* Run "Upload" task in :ref:`pioide` or use :ref:`piocore` and
+* Run "Upload" task in :ref:`espressif_esp32` or use :ref:`piocore` and
   :option:`pio run --target` command with ``upload`` target.
 
 .. _platform_riscv_gap_uploadfs:
@@ -138,12 +138,12 @@ Run from Flash (without any bridge interaction)
 Uploading files to HyperFlash
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Create new project using :ref:`pioide` or initialize project using
+1. Create new project using :ref:`espressif_esp32` or initialize project using
    :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
 2. Create ``data`` folder (it should be on the same level as ``src`` folder)
    and put files here. Also, you can specify own location for
    :ref:`projectconf_pio_data_dir`
-3. Run "Upload File System image" task in :ref:`pioide` or use :ref:`piocore`
+3. Run "Upload File System image" task in :ref:`espressif_esp32` or use :ref:`piocore`
    and :option:`pio run --target` command with ``uploadfs`` target.
 
 Examples:

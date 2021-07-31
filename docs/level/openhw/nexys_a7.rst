@@ -1,4 +1,4 @@
- 
+
 .. _board_openhw_nexys_a7:
 
 Digilent Nexys A7
@@ -14,7 +14,7 @@ Platform :ref:`platform_openhw`: OpenHW Group is a not-for-profit, global organi
 .. list-table::
 
   * - **Microcontroller**
-    - 
+    -
   * - **Frequency**
     - 320MHz
   * - **Flash**
@@ -28,7 +28,7 @@ Platform :ref:`platform_openhw`: OpenHW Group is a not-for-profit, global organi
 Configuration
 -------------
 
-Please use ``nexys_a7`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nexys_a7`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -48,7 +48,7 @@ board manifest `nexys_a7.json <https://github.com/platformio/platform-openhw/blo
   board = nexys_a7
 
   ; change microcontroller
-  board_build.mcu = 
+  board_build.mcu =
 
   ; change MCU frequency
   board_build.f_cpu = 320000000L
@@ -64,7 +64,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Digilent Nexys A7 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -78,26 +78,26 @@ Digilent Nexys A7 has on-board debug probe and **IS READY** for debugging. You d
     - Yes
     - Yes
   * - :ref:`debugging_tool_digilent-hs2`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-ocd`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-jtag-tiny`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_ovpsim`
     - Yes
-    - 
+    -
   * - :ref:`debugging_tool_renode`
     - Yes
-    - 
+    -
 
 Frameworks
 ----------

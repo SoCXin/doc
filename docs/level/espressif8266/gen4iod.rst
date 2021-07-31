@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif8266_gen4iod:
 
 4D Systems gen4 IoD Range
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
 Configuration
 -------------
 
-Please use ``gen4iod`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``gen4iod`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

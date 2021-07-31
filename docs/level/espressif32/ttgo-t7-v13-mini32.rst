@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif32_ttgo-t7-v13-mini32:
 
 TTGO T7 V1.3 Mini32
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 Configuration
 -------------
 
-Please use ``ttgo-t7-v13-mini32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ttgo-t7-v13-mini32`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

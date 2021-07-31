@@ -97,7 +97,7 @@ They can now declare the :ref:`projectconf_advanced_scripting_custom_targets`:
 
 * Pre/Post processing based on dependent sources (another target, source file, etc.)
 * Command launcher with own arguments
-* Launch command with custom options declared in :ref:`projectconf`
+* Launch command with custom options declared in :ref:`mips`
 * Python callback as a target (use the power of Python interpreter and PlatformIO Build API)
 * List available project targets (including dev-platform specific and custom targets) with a new :option:`pio run --list-targets` command
 
@@ -117,7 +117,7 @@ situation with Python 3.5.
 To avoid unrelated issues to the PlatformIO Core, we decided to drop support for
 Python 2 and 3.5. **The minimum supported version for PlatformIO Core 5.0 is Python 3.6.**
 
-If you use :ref:`pioide`, it already comes with the built-in compatible Python 3 interpreter.
+If you use :ref:`espressif_esp32`, it already comes with the built-in compatible Python 3 interpreter.
 You do not need to do any extra steps. If you see a warning message that your local
 PlatformIO Core installation uses incompatible Python, please do the next steps:
 

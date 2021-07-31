@@ -1,4 +1,4 @@
- 
+
 .. _board_nordicnrf51_seeedTinyBLE:
 
 Seeed Tiny BLE
@@ -28,7 +28,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
 Configuration
 -------------
 
-Please use ``seeedTinyBLE`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``seeedTinyBLE`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -88,7 +88,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Seeed Tiny BLE has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -99,17 +99,17 @@ Seeed Tiny BLE has on-board debug probe and **IS READY** for debugging. You don'
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_stlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

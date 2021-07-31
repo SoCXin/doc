@@ -27,7 +27,7 @@ Project dependencies
 *PlatformIO Library Manager* allows one to specify project dependencies
 (:ref:`projectconf_lib_deps`) that will be installed automatically per project
 before environment processing. You do not need to install libraries manually.
-The only one simple step is to define dependencies in :ref:`projectconf`. For example,
+The only one simple step is to define dependencies in :ref:`mips`. For example,
 
 .. code-block:: ini
 
@@ -47,7 +47,7 @@ possible values.
 
 .. warning::
 
-  If some libraries are not visible in :ref:`pioide` and Code Completion or
+  If some libraries are not visible in :ref:`espressif_esp32` and Code Completion or
   Code Linting does not work properly, please perform
 
   * **VSCode**: "Menu: View > Command Palette... > PlatformIO: Rebuild C/C++

@@ -1,4 +1,4 @@
- 
+
 .. _board_atmelmegaavr_ATtiny214:
 
 ATtiny214
@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelmegaavr`: 8-bit MCUs Built for Real-time Control wi
 Configuration
 -------------
 
-Please use ``ATtiny214`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ATtiny214`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

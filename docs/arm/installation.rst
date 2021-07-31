@@ -9,7 +9,6 @@ Installation
 .. note::
 
     Please note that you do not need to install :ref:`piocore` if you are going
-    to use :ref:`pioide`. :ref:`piocore` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
     If you need :ref:`piocore` outside PlatformIO IDE, please :ref:`piocore_install_shell_commands`.
@@ -152,7 +151,7 @@ Development Version
 -------------------
 
 .. warning::
-    If you use :ref:`pioide`, please enable development version:
+    If you use :ref:`espressif_esp32`, please enable development version:
 
     * :ref:`ide_atom`: "Menu PlatformIO: Settings > PlatformIO IDE > Use development
       version of PlatformIO Core"
@@ -200,7 +199,7 @@ Install Shell Commands
 * ``platformio`` or ``pio`` (short alias) - :ref:`piocore_userguide`
 * ``piodebuggdb`` - alias of :ref:`cmd_debug`
 
-If you have :ref:`pioide` already installed, you do not need to install
+If you have :ref:`espressif_esp32` already installed, you do not need to install
 :ref:`piocore` separately. Just link these tools with your shell:
 
 .. contents::

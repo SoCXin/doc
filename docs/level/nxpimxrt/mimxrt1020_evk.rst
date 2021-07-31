@@ -1,4 +1,4 @@
- 
+
 .. _board_nxpimxrt_mimxrt1020_evk:
 
 NXP i.MX RT1020 Evaluation Kit
@@ -28,7 +28,7 @@ Platform :ref:`platform_nxpimxrt`: The i.MX RT series of crossover processors fe
 Configuration
 -------------
 
-Please use ``mimxrt1020_evk`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``mimxrt1020_evk`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -85,7 +85,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 NXP i.MX RT1020 Evaluation Kit has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -96,8 +96,8 @@ NXP i.MX RT1020 Evaluation Kit has on-board debug probe and **IS READY** for deb
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
     - Yes
     - Yes

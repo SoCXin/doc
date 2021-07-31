@@ -1,4 +1,4 @@
- 
+
 .. _tutorial_espressif32_espidf_debugging_unit_testing_analysis:
 
 Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis
@@ -214,7 +214,7 @@ using the following pins:
     * - ``GPIO 15 (TDO)``
       - ``Pin 13 (TDO)``
 
-#. Specify :ref:`projectconf_debug_tool` in :ref:`projectconf`. In this tutorial,
+#. Specify :ref:`projectconf_debug_tool` in :ref:`mips`. In this tutorial,
    :ref:`debugging_tool_olimex-arm-usb-ocd-h` debug probe is used:
 
     .. code-block:: ini

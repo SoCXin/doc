@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif8266_esp07s:
 
 Espressif Generic ESP8266 ESP-07S
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
 Configuration
 -------------
 
-Please use ``esp07s`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``esp07s`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

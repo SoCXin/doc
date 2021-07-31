@@ -1,4 +1,4 @@
- 
+
 .. _platform_microchippic32:
 
 Microchip PIC32
@@ -29,7 +29,7 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-microchippic32/releases>`__
 of Microchip PIC32 development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
+:ref:`projectconf_env_platform` option in :ref:`mips` as described below.
 
 Stable
 ~~~~~~

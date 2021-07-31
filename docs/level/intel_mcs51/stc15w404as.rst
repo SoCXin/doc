@@ -1,4 +1,4 @@
- 
+
 .. _board_intel_mcs51_stc15w404as:
 
 Generic STC15W404AS
@@ -28,7 +28,7 @@ Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is
 Configuration
 -------------
 
-Please use ``stc15w404as`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``stc15w404as`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

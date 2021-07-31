@@ -1,4 +1,4 @@
- 
+
 .. _board_nuclei_hbird_eval:
 
 HummingBird Evaluation Kit
@@ -28,7 +28,7 @@ Platform :ref:`platform_nuclei`: Find professional RISC-V Processor IP in Nuclei
 Configuration
 -------------
 
-Please use ``hbird_eval`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``hbird_eval`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -64,7 +64,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 HummingBird Evaluation Kit has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 

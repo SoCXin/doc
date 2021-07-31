@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif32_wifiduino32:
 
 Blinker WiFiduino32
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 Configuration
 -------------
 
-Please use ``wifiduino32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``wifiduino32`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

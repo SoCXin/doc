@@ -1,4 +1,4 @@
- 
+
 .. _cmd_project_init:
 
 pio project init
@@ -21,7 +21,7 @@ Initialize a new PlatformIO based project or update existing with new data.
 
 This command will create:
 
-* :ref:`projectconf`
+* :ref:`mips`
 * :ref:`projectconf_pio_include_dir`, put project header files here
 * :ref:`projectconf_pio_src_dir`, put project source files here
   (``*.h, *.c, *.cpp, *.S, *.ino, etc.``)
@@ -44,7 +44,7 @@ A path to a directory where *PlatformIO* will initialize new project.
     -b, --board
 
 If you specify board ``ID`` (you can pass multiple ``--board`` options), then
-*PlatformIO* will automatically generate environment for :ref:`projectconf` and
+*PlatformIO* will automatically generate environment for :ref:`mips` and
 pre-fill these data:
 
 * :ref:`projectconf_env_platform`
@@ -72,7 +72,7 @@ Update project using existing environment.
 .. option::
     -O, --project-option
 
-Initialize project with additional options from :ref:`projectconf`. For example,
+Initialize project with additional options from :ref:`mips`. For example,
 ``pio project init --project-option="lib_deps=ArduinoJSON"``.
 Multiple options are allowed.
 

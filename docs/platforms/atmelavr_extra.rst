@@ -196,7 +196,7 @@ Custom fuses
 ^^^^^^^^^^^^
 
 Custom fuse values and upload flags (based on upload protocol) should be specified in
-:ref:`projectconf`. The ``lfuse`` and ``hfuse`` bits are mandatory, ``efuse`` is optional
+:ref:`mips`. The ``lfuse`` and ``hfuse`` bits are mandatory, ``efuse`` is optional
 and not supported by all targets. An example of setting custom fuses for ``uno`` board:
 
 .. code-block:: ini
@@ -419,7 +419,7 @@ To upload a bootloader image you need to use target ``bootloader`` with
 Custom bootloader
 ^^^^^^^^^^^^^^^^^
 
-Custom bootloader and accompanying fuses should be specified in :ref:`projectconf`.
+Custom bootloader and accompanying fuses should be specified in :ref:`mips`.
 If ``lock_bits`` and ``unlock_bits`` are not set then the default values ``0x0F`` and
 ``0x3F`` are used accordingly. An example of setting custom bootloader for ``uno``
 board:

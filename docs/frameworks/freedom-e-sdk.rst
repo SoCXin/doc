@@ -1,4 +1,4 @@
- 
+
 .. _framework_freedom-e-sdk:
 
 Freedom E SDK
@@ -32,7 +32,7 @@ Tools & Debug Probes
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -107,7 +107,7 @@ Platforms
       - Description
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
 
 Boards
 ------

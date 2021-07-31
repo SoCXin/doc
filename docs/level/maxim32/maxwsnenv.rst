@@ -1,4 +1,4 @@
- 
+
 .. _board_maxim32_maxwsnenv:
 
 Maxim Wireless Sensor Node Demonstrator
@@ -28,7 +28,7 @@ Platform :ref:`platform_maxim32`: Maxim's microcontrollers provide low-power, ef
 Configuration
 -------------
 
-Please use ``maxwsnenv`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``maxwsnenv`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -84,7 +84,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Maxim Wireless Sensor Node Demonstrator does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
@@ -95,7 +95,7 @@ Maxim Wireless Sensor Node Demonstrator does not have on-board debug probe and *
     - On-board
     - Default
   * - :ref:`debugging_tool_cmsis-dap`
-    - 
+    -
     - Yes
 
 Frameworks

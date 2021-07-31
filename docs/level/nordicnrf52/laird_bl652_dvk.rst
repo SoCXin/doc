@@ -1,4 +1,4 @@
- 
+
 .. _board_nordicnrf52_laird_bl652_dvk:
 
 BL652 Development Kit
@@ -28,7 +28,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
 Configuration
 -------------
 
-Please use ``laird_bl652_dvk`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``laird_bl652_dvk`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -88,7 +88,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 BL652 Development Kit has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -99,17 +99,17 @@ BL652 Development Kit has on-board debug probe and **IS READY** for debugging. Y
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
-    - 
+    -
   * - :ref:`debugging_tool_jlink`
     - Yes
     - Yes
   * - :ref:`debugging_tool_stlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

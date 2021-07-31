@@ -1,4 +1,4 @@
- 
+
 .. _board_linux_arm_raspberrypi_3b:
 
 Raspberry Pi 3 Model B
@@ -28,7 +28,7 @@ Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-co
 Configuration
 -------------
 
-Please use ``raspberrypi_3b`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``raspberrypi_3b`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

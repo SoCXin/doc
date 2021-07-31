@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif32_onehorse32dev:
 
 Onehorse ESP32 Dev Module
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 Configuration
 -------------
 
-Please use ``onehorse32dev`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``onehorse32dev`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

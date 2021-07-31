@@ -1,4 +1,4 @@
- 
+
 .. _board_atmelavr_attiny841:
 
 Generic ATtiny841
@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
 Configuration
 -------------
 
-Please use ``attiny841`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``attiny841`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

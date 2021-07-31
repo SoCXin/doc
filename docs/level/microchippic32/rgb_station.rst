@@ -1,4 +1,4 @@
- 
+
 .. _board_microchippic32_rgb_station:
 
 RGB Station
@@ -28,7 +28,7 @@ Platform :ref:`platform_microchippic32`: Microchip's 32-bit portfolio with the M
 Configuration
 -------------
 
-Please use ``rgb_station`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``rgb_station`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

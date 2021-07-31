@@ -1,4 +1,4 @@
- 
+
 .. _board_kendryte210_sipeed-maix-one-dock:
 
 Sipeed MAIX ONE DOCK
@@ -28,7 +28,7 @@ Platform :ref:`platform_kendryte210`: Kendryte K210 is an AI capable RISCV64 dua
 Configuration
 -------------
 
-Please use ``sipeed-maix-one-dock`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sipeed-maix-one-dock`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -92,7 +92,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Sipeed MAIX ONE DOCK does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
@@ -103,32 +103,32 @@ Sipeed MAIX ONE DOCK does not have on-board debug probe and **IS NOT READY** for
     - On-board
     - Default
   * - :ref:`debugging_tool_iot-bus-jtag`
-    - 
+    -
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_minimodule`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-ocd`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-jtag-tiny`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_sipeed-rv-debugger`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_tumpa`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

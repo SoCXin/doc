@@ -1,4 +1,4 @@
- 
+
 .. _board_asrmicro650x_cubecell_board_plus:
 
 Heltec CubeCell-Board Plus (HTCC-AB02)
@@ -28,7 +28,7 @@ Platform :ref:`platform_asrmicro650x`: ASR Microelectronics ASR650x series is hi
 Configuration
 -------------
 
-Please use ``cubecell_board_plus`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``cubecell_board_plus`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

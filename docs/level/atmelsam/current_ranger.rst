@@ -1,4 +1,4 @@
- 
+
 .. _board_atmelsam_current_ranger:
 
 LowPowerLab CurrentRanger
@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
 Configuration
 -------------
 
-Please use ``current_ranger`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``current_ranger`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

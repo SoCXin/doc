@@ -1,4 +1,4 @@
- 
+
 .. _library_json:
 
 library.json
@@ -549,7 +549,7 @@ files directly (in-line). This could be useful if you need to override ``weak``
 symbols defined in framework or other libraries.
 
 You can disable library archiving globally using :ref:`projectconf_lib_archive`
-option in :ref:`projectconf`.
+option in :ref:`mips`.
 
 ``libLDFMode``
 ~~~~~~~~~~~~~~

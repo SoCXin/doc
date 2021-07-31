@@ -215,7 +215,7 @@ Using the "myplatform" platform example above:
 5. Install the ``myplatform`` platform via the :ref:`cmd_platform_install` command.
 
 Now, you can use ``myplatform`` as value for the :ref:`projectconf_env_platform`
-option in :ref:`projectconf`.
+option in :ref:`mips`.
 
 Publishing
 ----------

@@ -1,4 +1,4 @@
- 
+
 .. _board_atmelavr_megaatmega2560:
 
 Arduino Mega or Mega 2560 ATmega2560 (Mega 2560)
@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
 Configuration
 -------------
 
-Please use ``megaatmega2560`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``megaatmega2560`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -64,7 +64,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -79,7 +79,7 @@ Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) has on-board debug probe and **
     - Yes
   * - :ref:`debugging_tool_simavr`
     - Yes
-    - 
+    -
 
 Frameworks
 ----------

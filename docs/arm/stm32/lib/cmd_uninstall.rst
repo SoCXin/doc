@@ -1,4 +1,4 @@
- 
+
 .. _cmd_lib_uninstall:
 
 pio lib uninstall
@@ -68,7 +68,7 @@ Options
 .. option::
     --save / --no-save
 
-Remove libraries from the :ref:`projectconf` dependency list
+Remove libraries from the :ref:`mips` dependency list
 (:ref:`projectconf_lib_deps`) and save changes. Default value is to save.
 
 

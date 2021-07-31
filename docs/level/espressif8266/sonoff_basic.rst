@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif8266_sonoff_basic:
 
 Sonoff Basic
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
 Configuration
 -------------
 
-Please use ``sonoff_basic`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sonoff_basic`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

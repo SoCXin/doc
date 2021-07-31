@@ -28,7 +28,7 @@ Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is
 Configuration
 -------------
 
-Please use ``frdm_kl82z`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``frdm_kl82z`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -84,7 +84,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Freescale Kinetis FRDM-KL82Z does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 

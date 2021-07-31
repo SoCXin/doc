@@ -1,5 +1,5 @@
 
-.. _projectconf_section_env_platform:
+.. _espressif_esp32:
 
 ESP32
 ----------------

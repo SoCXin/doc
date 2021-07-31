@@ -1,4 +1,4 @@
- 
+
 .. _cmd_run:
 
 pio run
@@ -17,7 +17,7 @@ Usage
 Description
 -----------
 
-Run project targets over environments declared in :ref:`projectconf`.
+Run project targets over environments declared in :ref:`mips`.
 
 Options
 -------
@@ -30,7 +30,7 @@ Options
 Process specified environments. Multiple environments are allowed.
 
 You can also specify which environments should be processed by default using
-:ref:`projectconf_pio_default_envs` option from :ref:`projectconf`.
+:ref:`projectconf_pio_default_envs` option from :ref:`mips`.
 
 .. option::
     -t, --target
@@ -38,7 +38,7 @@ You can also specify which environments should be processed by default using
 Process specified targets. Multiple targets are allowed.
 
 You can configure default targets per project environment using
-:ref:`projectconf_targets` option in :ref:`projectconf`.
+:ref:`projectconf_targets` option in :ref:`mips`.
 
 .. option::
     --list-targets
@@ -77,7 +77,7 @@ to current working directory (``CWD``).
 .. option::
     -c, --project-conf
 
-Process project with a custom :ref:`projectconf`.
+Process project with a custom :ref:`mips`.
 
 .. option::
     -j, --jobs
@@ -100,7 +100,7 @@ or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 .. option::
     --disable-auto-clean
 
-Disable auto-clean of :ref:`projectconf_pio_build_dir` when :ref:`projectconf`
+Disable auto-clean of :ref:`projectconf_pio_build_dir` when :ref:`mips`
 or :ref:`projectconf_pio_src_dir` (project structure) have been modified.
 
 Examples

@@ -1,4 +1,4 @@
- 
+
 .. _board_atmelsam_tian:
 
 Arduino Tian
@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
 Configuration
 -------------
 
-Please use ``tian`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``tian`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -86,7 +86,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Arduino Tian does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
@@ -97,14 +97,14 @@ Arduino Tian does not have on-board debug probe and **IS NOT READY** for debuggi
     - On-board
     - Default
   * - :ref:`debugging_tool_atmel-ice`
-    - 
+    -
     - Yes
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

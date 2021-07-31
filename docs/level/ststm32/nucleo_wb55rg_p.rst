@@ -28,7 +28,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 Configuration
 -------------
 
-Please use ``nucleo_wb55rg_p`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nucleo_wb55rg_p`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -86,7 +86,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 P-Nucleo WB55RG has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 

@@ -1,4 +1,4 @@
- 
+
 .. _board_nxplpc_lpc4088_dm:
 
 Embedded Artists LPC4088 Display Module
@@ -28,7 +28,7 @@ Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroll
 Configuration
 -------------
 
-Please use ``lpc4088_dm`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``lpc4088_dm`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -85,7 +85,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Embedded Artists LPC4088 Display Module has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -99,8 +99,8 @@ Embedded Artists LPC4088 Display Module has on-board debug probe and **IS READY*
     - Yes
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

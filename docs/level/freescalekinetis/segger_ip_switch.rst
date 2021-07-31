@@ -28,7 +28,7 @@ Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is
 Configuration
 -------------
 
-Please use ``segger_ip_switch`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``segger_ip_switch`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -84,7 +84,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 SEGGER IP Switch Board does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 

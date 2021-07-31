@@ -1,4 +1,4 @@
- 
+
 .. _board_lattice_ice40_icezum:
 
 IceZUM Alhambra FPGA
@@ -28,7 +28,7 @@ Platform :ref:`platform_lattice_ice40`: The iCE40 family of ultra-low power, non
 Configuration
 -------------
 
-Please use ``icezum`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``icezum`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

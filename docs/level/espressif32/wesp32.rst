@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif32_wesp32:
 
 Silicognition wESP32
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 Configuration
 -------------
 
-Please use ``wesp32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``wesp32`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -93,7 +93,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Silicognition wESP32 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
@@ -104,32 +104,32 @@ Silicognition wESP32 does not have on-board debug probe and **IS NOT READY** for
     - On-board
     - Default
   * - :ref:`debugging_tool_esp-prog`
-    - 
+    -
     - Yes
   * - :ref:`debugging_tool_iot-bus-jtag`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_minimodule`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-ocd`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-jtag-tiny`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_tumpa`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

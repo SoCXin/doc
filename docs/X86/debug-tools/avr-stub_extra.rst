@@ -1,4 +1,4 @@
- 
+
 
 Configuration
 -------------
@@ -9,7 +9,7 @@ Configuration
 In a nutshell, avr-stub is a piece of software (stub) that is added to your
 application and communicates with PlatformIO when a debug session is running. It
 requires several additional configuration steps in order to use it as a debug tool. To
-use avr-stub, the following settings in :ref:`projectconf`:
+use avr-stub, the following settings in :ref:`mips`:
 
 .. code-block:: ini
 

@@ -1,4 +1,4 @@
- 
+
 .. _board_ststm8_stm8sdisco:
 
 ST STM8S-DISCOVERY
@@ -28,7 +28,7 @@ Platform :ref:`platform_ststm8`: The STM8 is an 8-bit microcontroller family by 
 Configuration
 -------------
 
-Please use ``stm8sdisco`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``stm8sdisco`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -85,7 +85,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 ST STM8S-DISCOVERY has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 

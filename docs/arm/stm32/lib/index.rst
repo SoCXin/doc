@@ -1,4 +1,4 @@
- 
+
 .. _cmd_lib:
 
 Library Manager CLI
@@ -22,7 +22,7 @@ Options
     -d, --storage-dir
 
 Manage custom library storage. It can be used later for the
-:ref:`projectconf_lib_extra_dirs` option from :ref:`projectconf`.
+:ref:`projectconf_lib_extra_dirs` option from :ref:`mips`.
 Multiple options are allowed.
 
 .. option::
@@ -36,7 +36,7 @@ dependencies by default.
     -e, --environment
 
 Manage libraries for the specific project build environments declared in
-:ref:`projectconf`. Works for ``--storage-dir`` which is valid PlatformIO
+:ref:`mips`. Works for ``--storage-dir`` which is valid PlatformIO
 project.
 
 Demo

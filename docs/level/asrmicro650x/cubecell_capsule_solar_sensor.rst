@@ -1,4 +1,4 @@
- 
+
 .. _board_asrmicro650x_cubecell_capsule_solar_sensor:
 
 Heltec CubeCell Capsule Solar Sensor (HTCC-AC02)
@@ -28,7 +28,7 @@ Platform :ref:`platform_asrmicro650x`: ASR Microelectronics ASR650x series is hi
 Configuration
 -------------
 
-Please use ``cubecell_capsule_solar_sensor`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``cubecell_capsule_solar_sensor`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

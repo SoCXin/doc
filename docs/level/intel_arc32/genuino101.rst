@@ -1,4 +1,4 @@
- 
+
 .. _board_intel_arc32_genuino101:
 
 Arduino/Genuino 101
@@ -28,7 +28,7 @@ Platform :ref:`platform_intel_arc32`: ARC embedded processors are a family of 32
 Configuration
 -------------
 
-Please use ``genuino101`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``genuino101`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif32_heltec_wifi_kit_32:
 
 Heltec WiFi Kit 32
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 Configuration
 -------------
 
-Please use ``heltec_wifi_kit_32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``heltec_wifi_kit_32`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

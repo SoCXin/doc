@@ -32,7 +32,7 @@ Configuration
 -------------
 
 To enable **Clang-Tidy** tool simply add it to the :ref:`projectconf_check_tool`
-option in :ref:`projectconf`:
+option in :ref:`mips`:
 
 .. code-block:: ini
 

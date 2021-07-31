@@ -1,4 +1,4 @@
- 
+
 .. _board_nordicnrf52_ublox_evk_nina_b1:
 
 u-blox EVK-NINA-B1
@@ -28,7 +28,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
 Configuration
 -------------
 
-Please use ``ublox_evk_nina_b1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``ublox_evk_nina_b1`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -88,7 +88,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 u-blox EVK-NINA-B1 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -99,17 +99,17 @@ u-blox EVK-NINA-B1 has on-board debug probe and **IS READY** for debugging. You 
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_cmsis-dap`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
     - Yes
     - Yes
   * - :ref:`debugging_tool_stlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

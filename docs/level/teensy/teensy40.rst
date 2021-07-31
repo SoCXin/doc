@@ -1,4 +1,4 @@
- 
+
 .. _board_teensy_teensy40:
 
 Teensy 4.0
@@ -28,7 +28,7 @@ Platform :ref:`platform_teensy`: Teensy is a complete USB-based microcontroller 
 Configuration
 -------------
 
-Please use ``teensy40`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``teensy40`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -85,7 +85,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Teensy 4.0 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
@@ -96,7 +96,7 @@ Teensy 4.0 does not have on-board debug probe and **IS NOT READY** for debugging
     - On-board
     - Default
   * - :ref:`debugging_tool_jlink`
-    - 
+    -
     - Yes
 
 Frameworks

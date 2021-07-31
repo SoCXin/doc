@@ -1,4 +1,4 @@
- 
+
 Tutorials
 ---------
 
@@ -15,7 +15,7 @@ Configuration
 CPU Frequency
 ~~~~~~~~~~~~~
 
-See :ref:`projectconf_board_build.f_cpu` option from :ref:`projectconf`
+See :ref:`projectconf_board_build.f_cpu` option from :ref:`mips`
 
 .. code-block:: ini
 
@@ -26,7 +26,7 @@ See :ref:`projectconf_board_build.f_cpu` option from :ref:`projectconf`
 FLASH Frequency
 ~~~~~~~~~~~~~~~
 
-Please use ``board_build.f_flash`` option from :ref:`projectconf` to change
+Please use ``board_build.f_flash`` option from :ref:`mips` to change
 a value. Possible values:
 
 * ``40000000L`` (default)
@@ -46,7 +46,7 @@ header, along with the flash size and flash frequency. The ROM bootloader
 in the ESP chip uses the value of these parameters in order to know how to
 talk to the flash chip.
 
-Please use ``board_build.flash_mode`` option from :ref:`projectconf` to change
+Please use ``board_build.flash_mode`` option from :ref:`mips` to change
 a value. Possible values:
 
 * ``qio``
@@ -63,7 +63,7 @@ External RAM (PSRAM)
 ~~~~~~~~~~~~~~~~~~~~
 
 You can enable external RAM using the next extra :ref:`projectconf_build_flags`
-in :ref:`projectconf` depending on a framework type.
+in :ref:`mips` depending on a framework type.
 
 Framework :ref:`framework_arduino`:
 
@@ -134,7 +134,7 @@ Upload Speed
 ~~~~~~~~~~~~
 
 You can set custom upload speed using  :ref:`projectconf_upload_speed` option
-from :ref:`projectconf`
+from :ref:`mips`
 
 .. code-block:: ini
 
@@ -167,7 +167,7 @@ documentation. PlatformIO uses **default partition tables** depending on a
   (`show pre-configured partition tables <https://github.com/espressif/esp-idf/blob/master/components/partition_table>`__)
 
 To override default table please use ``board_build.partitions`` option in
-:ref:`projectconf`.
+:ref:`mips`.
 
 .. warning::
     SPIFFS partition **MUST** have configured "Type" as "data" and "SubType"
@@ -240,12 +240,12 @@ See full example with embedding Amazon AWS certificates:
 Uploading files to file system SPIFFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Create new project using :ref:`pioide` or initialize project using
+1. Create new project using :ref:`espressif_esp32` or initialize project using
    :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
 2. Create ``data`` folder (it should be on the same level as ``src`` folder)
    and put files here. Also, you can specify own location for
    :ref:`projectconf_pio_data_dir`
-3. Run "Upload File System image" task in :ref:`pioide` or use :ref:`piocore`
+3. Run "Upload File System image" task in :ref:`espressif_esp32` or use :ref:`piocore`
    and :option:`pio run --target` command with ``uploadfs`` target.
 
 
@@ -283,7 +283,7 @@ There are 2 options:
 
     pio run --target upload --upload-port IP_ADDRESS_HERE or mDNS_NAME.local
 
-* Specify ``upload_port`` option in :ref:`projectconf`
+* Specify ``upload_port`` option in :ref:`mips`
 
 
 You also need to set :ref:`projectconf_upload_protocol` to ``espota``.
@@ -303,7 +303,7 @@ Authentication and upload options
 '''''''''''''''''''''''''''''''''
 
 You can pass additional options/flags to OTA uploader using
-``upload_flags`` option in :ref:`projectconf`
+``upload_flags`` option in :ref:`mips`
 
 .. code-block:: ini
 
@@ -370,10 +370,10 @@ Using Arduino Framework with Staging version
 PlatformIO will install the latest Arduino Core for ESP32 from
 https://github.com/espressif/arduino-esp32. The `Git <https://git-scm.com>`_
 should be installed in a system. To update Arduino Core to the latest revision,
-please open :ref:`pioide` and navigate to ``PlatformIO Home > Platforms > Updates``.
+please open :ref:`espressif_esp32` and navigate to ``PlatformIO Home > Platforms > Updates``.
 
-1.  Please install :ref:`pioide`
-2.  Initialize a new project, open :ref:`projectconf` and specify the link to the
+1.  Please install :ref:`espressif_esp32`
+2.  Initialize a new project, open :ref:`mips` and specify the link to the
     framework repository in :ref:`projectconf_env_platform_packages` section.
     For example,
 

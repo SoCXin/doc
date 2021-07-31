@@ -1,4 +1,4 @@
- 
+
 .. _platform_chipsalliance:
 
 CHIPS Alliance
@@ -43,7 +43,7 @@ Tools & Debug Probes
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -66,7 +66,7 @@ You do not need to use/buy external debug probe.
       - Flash
       - RAM
     * - :ref:`board_chipsalliance_swervolf_nexys`
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB
@@ -77,7 +77,7 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-chipsalliance/releases>`__
 of CHIPS Alliance development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
+:ref:`projectconf_env_platform` option in :ref:`mips` as described below.
 
 Stable
 ~~~~~~
@@ -251,7 +251,7 @@ Digilent
       - RAM
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - On-board
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB

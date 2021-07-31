@@ -1,4 +1,4 @@
- 
+
 .. _board_atmelavr_emonpi:
 
 OpenEnergyMonitor emonPi
@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
 Configuration
 -------------
 
-Please use ``emonpi`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``emonpi`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -64,7 +64,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 OpenEnergyMonitor emonPi has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -79,7 +79,7 @@ OpenEnergyMonitor emonPi has on-board debug probe and **IS READY** for debugging
     - Yes
   * - :ref:`debugging_tool_simavr`
     - Yes
-    - 
+    -
 
 Frameworks
 ----------

@@ -7,7 +7,7 @@ Configuration
     :local:
 
 You can configure Renode as a debugging tool using :ref:`projectconf_debug_tool` option in
-:ref:`projectconf`:
+:ref:`mips`:
 
 .. code-block:: ini
 
@@ -46,7 +46,7 @@ Custom Settings
 ---------------
 
 If the default Renode configuration is not suitable for your project, it's possible to
-override the default Renode flags in :ref:`projectconf`. The following sections describe
+override the default Renode flags in :ref:`mips`. The following sections describe
 typical use cases where custom settings might be useful.
 
 Additional Analyzers

@@ -1,4 +1,4 @@
- 
+
 
 Configuration
 -------------
@@ -7,7 +7,7 @@ Using with FreeRTOS
 ~~~~~~~~~~~~~~~~~~~
 
 In order to add FreeRTOS to your project, it must be explicitly specified as an
-additional framework in the ``framework`` field of :ref:`projectconf`, for example:
+additional framework in the ``framework`` field of :ref:`mips`, for example:
 
 .. code-block:: ini
 
@@ -24,7 +24,7 @@ additional framework in the ``framework`` field of :ref:`projectconf`, for examp
 
 Most of the application specific configuration is done in a special file called
 ``FreeRTOSConfig.h`` which must be present in each FreeRTOS-based project. Additional
-settings for build configuration are set in :ref:`projectconf` using the following
+settings for build configuration are set in :ref:`mips` using the following
 syntax ``board_build.freertos.*`` where ``*`` is an option from the following list:
 
 FreeRTOS settings
@@ -102,7 +102,7 @@ Default: ``SEGGER_SYSVIEW_RecordExitISRToScheduler``
 The name of a function to be called to record finish of interrupt when it's caused by
 a context switch.
 
-An example of :ref:`projectconf` with modified heap settings and enabled SystemView
+An example of :ref:`mips` with modified heap settings and enabled SystemView
 feature:
 
 .. code-block:: ini

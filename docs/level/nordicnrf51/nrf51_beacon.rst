@@ -1,4 +1,4 @@
- 
+
 .. _board_nordicnrf51_nrf51_beacon:
 
 Nordic Beacon Kit (PCA20006)
@@ -28,7 +28,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
 Configuration
 -------------
 
-Please use ``nrf51_beacon`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nrf51_beacon`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -87,7 +87,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Nordic Beacon Kit (PCA20006) has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -98,17 +98,17 @@ Nordic Beacon Kit (PCA20006) has on-board debug probe and **IS READY** for debug
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
-    - 
+    -
   * - :ref:`debugging_tool_jlink`
     - Yes
     - Yes
   * - :ref:`debugging_tool_stlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

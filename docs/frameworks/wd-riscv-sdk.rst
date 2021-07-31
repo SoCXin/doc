@@ -1,4 +1,4 @@
- 
+
 .. _framework_wd-riscv-sdk:
 
 WD-Firmware
@@ -31,7 +31,7 @@ Tools & Debug Probes
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -56,7 +56,7 @@ You do not need to use/buy external debug probe.
       - RAM
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB
@@ -102,7 +102,7 @@ Digilent
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB

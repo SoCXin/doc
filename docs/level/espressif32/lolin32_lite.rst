@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif32_lolin32_lite:
 
 WEMOS LOLIN32 Lite
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 Configuration
 -------------
 
-Please use ``lolin32_lite`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``lolin32_lite`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

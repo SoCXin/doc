@@ -149,7 +149,7 @@ Advanced configuration
 ~~~~~~~~~~~~~~~~~~~~~~
 
 PlatformIO allows you to configure multiple build environments for the single
-source code using :ref:`projectconf`.
+source code using :ref:`mips`.
 
 Instead of ``--board``, please use the ``--project-conf`` option:
 

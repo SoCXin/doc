@@ -114,7 +114,7 @@ pre-installed instruments for the professional development.
 Congrats! You have just created the first PlatformIO based Project with the
 next structure:
 
-* :ref:`projectconf`
+* :ref:`mips`
 * ``src`` directory where you should place source code
   (``*.h, *.c, *.cpp, *.S, *.ino, etc.``)
 * ``lib`` directory can be used for the project specific (private) libraries.
@@ -216,9 +216,9 @@ project environments (which were created per each board specified above). Here
 are a few useful commands:
 
 * ``pio run``. Process (build) all environments specified in
-  :ref:`projectconf`
+  :ref:`mips`
 * ``pio run --target upload``. Build project and upload firmware to the
-  all devices specified in :ref:`projectconf`
+  all devices specified in :ref:`mips`
 * ``pio run --target clean``. Clean project (delete compiled objects)
 * ``pio run -e uno``. Process only ``uno`` environment
 * ``pio run -e uno -t upload``. Build project only for ``uno`` and upload

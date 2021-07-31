@@ -1,4 +1,4 @@
- 
+
 .. _board_aceinna_imu_OpenRTK330L:
 
 Aceinna OpenRTK330L
@@ -28,7 +28,7 @@ Platform :ref:`platform_aceinna_imu`: Open-source, embedded development platform
 Configuration
 -------------
 
-Please use ``OpenRTK330L`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``OpenRTK330L`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -85,7 +85,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Aceinna OpenRTK330L does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
@@ -96,11 +96,11 @@ Aceinna OpenRTK330L does not have on-board debug probe and **IS NOT READY** for 
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_stlink`
-    - 
+    -
     - Yes

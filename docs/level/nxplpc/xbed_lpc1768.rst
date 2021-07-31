@@ -1,4 +1,4 @@
- 
+
 .. _board_nxplpc_xbed_lpc1768:
 
 Smeshlink xbed LPC1768
@@ -28,7 +28,7 @@ Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroll
 Configuration
 -------------
 
-Please use ``xbed_lpc1768`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``xbed_lpc1768`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

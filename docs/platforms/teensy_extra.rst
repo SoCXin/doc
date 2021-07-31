@@ -1,4 +1,4 @@
- 
+
 Configuration
 -------------
 
@@ -11,7 +11,7 @@ Optimization
 (valid only for Teensy LC, Teensy 3.0-3.6)
 
 You can control firmware optimization via special macro/define
-using :ref:`projectconf_build_flags` in :ref:`projectconf`:
+using :ref:`projectconf_build_flags` in :ref:`mips`:
 
 * ``-D TEENSY_OPT_FASTER``, **default**
 * ``-D TEENSY_OPT_FASTER_LTO``

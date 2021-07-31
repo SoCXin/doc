@@ -22,14 +22,9 @@ computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 `Samsung ARTIK <https://www.artik.io>`_, etc.).
 
 
-|PIOCORE| provides a rich and documented Command Line Interface (CLI).
-The other PlatformIO-based software and IDEs are based on **PlatformIO Core CLI**,
-such as :ref:`pioide`. In other words, they wrap |PIOCORE| with own GUI.
-
 .. note::
 
     Please note that you do not need to install |PIOCORE| if you are going
-    to use :ref:`pioide`. |PIOCORE| is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
     If you need |PIOCORE| commands outside PlatformIO IDE, please :ref:`piocore_install_shell_commands`.

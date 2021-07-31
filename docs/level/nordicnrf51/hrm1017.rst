@@ -1,4 +1,4 @@
- 
+
 .. _board_nordicnrf51_hrm1017:
 
 Switch Science mbed HRM1017
@@ -28,7 +28,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
 Configuration
 -------------
 
-Please use ``hrm1017`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``hrm1017`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -84,7 +84,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Switch Science mbed HRM1017 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 

@@ -1,4 +1,4 @@
- 
+
 .. _cmd_remote_test:
 
 pio remote test
@@ -25,7 +25,7 @@ Run remotely tests from PlatformIO based project. More details about PlatformIO
 :ref:`unit_testing`.
 
 This command allows you to apply the tests for the environments specified
-in :ref:`projectconf`.
+in :ref:`mips`.
 
 Options
 -------
@@ -43,7 +43,7 @@ Process specified environments. More details :option:`pio run --environment`
 Ignore tests where the name matches specified patterns. More than one
 pattern is allowed. If you need to ignore some tests for the specific
 environment, please take a look at :ref:`projectconf_test_ignore` option from
-:ref:`projectconf`.
+:ref:`mips`.
 
 .. list-table::
     :header-rows:  1

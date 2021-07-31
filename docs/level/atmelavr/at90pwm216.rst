@@ -1,4 +1,4 @@
- 
+
 .. _board_atmelavr_at90pwm216:
 
 Atmel AT90PWM216
@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
 Configuration
 -------------
 
-Please use ``at90pwm216`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``at90pwm216`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

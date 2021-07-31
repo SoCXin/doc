@@ -82,7 +82,7 @@ to the current working directory (``CWD``).
 .. option::
     -c, --project-conf
 
-Process project with a custom :ref:`projectconf`.
+Process project with a custom :ref:`mips`.
 
 .. option::
     --json-output

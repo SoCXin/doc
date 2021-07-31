@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif32_esp-wrover-kit:
 
 Espressif ESP-WROVER-KIT
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 Configuration
 -------------
 
-Please use ``esp-wrover-kit`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``esp-wrover-kit`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -94,7 +94,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Espressif ESP-WROVER-KIT has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -105,35 +105,35 @@ Espressif ESP-WROVER-KIT has on-board debug probe and **IS READY** for debugging
     - On-board
     - Default
   * - :ref:`debugging_tool_esp-prog`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_ftdi`
     - Yes
     - Yes
   * - :ref:`debugging_tool_iot-bus-jtag`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_minimodule`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-ocd`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-jtag-tiny`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_tumpa`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

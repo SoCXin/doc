@@ -1,5 +1,5 @@
 
-.. _projectconf:
+.. _mips:
 
 MIPS
 =============================================
@@ -17,22 +17,15 @@ Multiple value options can be specified in two ways:
 1. Split values with ", " (comma + space)
 2. Multi-line format, where each new line starts with at least two spaces
 
-There are two required sections:
-
-* :ref:`piocore` settings: :ref:`projectconf_section_platformio`
-* Environment settings: :ref:`projectconf_section_env`
-
 The other sections are optional to include. Here are the allowed
 sections and their allowed contents:
 
 .. toctree::
     :maxdepth: 2
 
-    section_platformio
-    section_env
-    build_configurations
-    dynamic_variables
-    examples
+    ESP32
+    ESP32-S2
+    ESP32-S3
 
 **Example**
 

@@ -1,4 +1,4 @@
- 
+
 .. _tutorial_stm32cube_debugging_unit_testing:
 
 STM32Cube HAL and Nucleo-F401RE: debugging and unit testing
@@ -133,7 +133,7 @@ supports only three frameworks: :ref:`framework_arduino`, :ref:`framework_espidf
 :ref:`framework_mbed`. Since we decided to use
 :ref:`framework_stm32cube` we need to implement a custom
 :ref:`projectconf_test_transport` to print testing results and specify that
-condition in :ref:`projectconf`:
+condition in :ref:`mips`:
 
 .. code-block:: ini
 

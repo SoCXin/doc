@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif8266_d1_mini_lite:
 
 WeMos D1 mini Lite
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
 Configuration
 -------------
 
-Please use ``d1_mini_lite`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``d1_mini_lite`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

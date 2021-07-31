@@ -1,4 +1,4 @@
- 
+
 .. _debugging_tool_qemu:
 
 QEMU
@@ -17,7 +17,7 @@ Configuration
 -------------
 
 You can configure debugging tool using :ref:`projectconf_debug_tool` option in
-:ref:`projectconf`:
+:ref:`mips`:
 
 .. code-block:: ini
 
@@ -41,7 +41,7 @@ Platforms
       - Description
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
 
 Frameworks
 ----------

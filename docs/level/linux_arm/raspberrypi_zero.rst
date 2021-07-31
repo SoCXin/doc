@@ -1,4 +1,4 @@
- 
+
 .. _board_linux_arm_raspberrypi_zero:
 
 Raspberry Pi Zero
@@ -28,7 +28,7 @@ Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-co
 Configuration
 -------------
 
-Please use ``raspberrypi_zero`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``raspberrypi_zero`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

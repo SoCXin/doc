@@ -1,4 +1,4 @@
- 
+
 .. _board_nordicnrf52_reel_board:
 
 PHYTEC reel board
@@ -28,7 +28,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
 Configuration
 -------------
 
-Please use ``reel_board`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``reel_board`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -88,7 +88,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 PHYTEC reel board has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -99,17 +99,17 @@ PHYTEC reel board has on-board debug probe and **IS READY** for debugging. You d
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_stlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

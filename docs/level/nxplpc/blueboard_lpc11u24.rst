@@ -1,4 +1,4 @@
- 
+
 .. _board_nxplpc_blueboard_lpc11u24:
 
 NGX Technologies BlueBoard-LPC11U24
@@ -28,7 +28,7 @@ Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroll
 Configuration
 -------------
 
-Please use ``blueboard_lpc11u24`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``blueboard_lpc11u24`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -85,7 +85,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 NGX Technologies BlueBoard-LPC11U24 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
@@ -96,11 +96,11 @@ NGX Technologies BlueBoard-LPC11U24 does not have on-board debug probe and **IS 
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
+    -
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

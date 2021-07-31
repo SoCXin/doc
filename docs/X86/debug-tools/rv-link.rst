@@ -1,4 +1,4 @@
- 
+
 .. _debugging_tool_rv-link:
 
 RV-LINK
@@ -16,7 +16,7 @@ Configuration
 -------------
 
 You can configure debugging tool using :ref:`projectconf_debug_tool` option in
-:ref:`projectconf`:
+:ref:`mips`:
 
 .. code-block:: ini
 

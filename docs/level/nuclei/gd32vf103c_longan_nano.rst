@@ -1,4 +1,4 @@
- 
+
 .. _board_nuclei_gd32vf103c_longan_nano:
 
 Sipeed Longan Nano
@@ -28,7 +28,7 @@ Platform :ref:`platform_nuclei`: Find professional RISC-V Processor IP in Nuclei
 Configuration
 -------------
 
-Please use ``gd32vf103c_longan_nano`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``gd32vf103c_longan_nano`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -86,7 +86,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Sipeed Longan Nano does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
@@ -97,17 +97,17 @@ Sipeed Longan Nano does not have on-board debug probe and **IS NOT READY** for d
     - On-board
     - Default
   * - :ref:`debugging_tool_altera-usb-blaster`
-    - 
+    -
     - Yes
   * - :ref:`debugging_tool_gd-link`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_rv-link`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

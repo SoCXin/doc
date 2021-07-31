@@ -1,4 +1,4 @@
- 
+
 .. _platform_atmelmegaavr:
 
 Atmel megaAVR
@@ -32,7 +32,7 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-atmelmegaavr/releases>`__
 of Atmel megaAVR development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
+:ref:`projectconf_env_platform` option in :ref:`mips` as described below.
 
 Stable
 ~~~~~~

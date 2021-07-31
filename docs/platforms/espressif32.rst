@@ -1,4 +1,4 @@
- 
+
 .. _platform_espressif32:
 
 Espressif 32
@@ -59,7 +59,7 @@ Tools & Debug Probes
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -401,7 +401,7 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-espressif32/releases>`__
 of Espressif 32 development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
+:ref:`projectconf_env_platform` option in :ref:`mips` as described below.
 
 Stable
 ~~~~~~

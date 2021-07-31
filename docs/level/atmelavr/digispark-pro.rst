@@ -1,4 +1,4 @@
- 
+
 .. _board_atmelavr_digispark-pro:
 
 Digispark Pro
@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
 Configuration
 -------------
 
-Please use ``digispark-pro`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``digispark-pro`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

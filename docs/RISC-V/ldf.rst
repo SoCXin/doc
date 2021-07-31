@@ -19,7 +19,7 @@ details.
 Configuration
 -------------
 
-Library Dependency Finder can be configured from :ref:`projectconf`:
+Library Dependency Finder can be configured from :ref:`mips`:
 
 .. toctree::
   :maxdepth: 2
@@ -58,14 +58,14 @@ project (:ref:`projectconf_pio_src_dir`) and can work in the next modes:
     The same behavior as for the ``deep`` but **evaluates** :ref:`ldf_c_cond_syntax`.
 
 The mode can be changed using :ref:`projectconf_lib_ldf_mode` option in
-:ref:`projectconf`. Default value is set to ``chain``.
+:ref:`mips`. Default value is set to ``chain``.
 
 .. note::
   Usually, when the LDF appears to fail to identify a dependency of a library,
   it is because the dependency is only referenced from a library source file,
   and not a library header file (see example below). In this case, it is
   necessary to either explicitly reference the dependency from the project
-  source or :ref:`projectconf` (:ref:`projectconf_lib_deps` option), or change
+  source or :ref:`mips` (:ref:`projectconf_lib_deps` option), or change
   the LDF mode to "deep" (not generally recommended).
 
 A difference between ``chain/chain+`` and ``deep/deep+`` modes. For example,
@@ -134,7 +134,7 @@ library with real build environment. Available compatibility modes:
     and :ref:`projectconf_env_platform` from build environment.
 
 This mode can be changed using :ref:`projectconf_lib_compat_mode` option in
-:ref:`projectconf`. Default value is set to ``soft``.
+:ref:`mips`. Default value is set to ``soft``.
 
 .. _ldf_c_cond_syntax:
 

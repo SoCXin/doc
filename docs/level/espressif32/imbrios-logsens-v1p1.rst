@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif32_imbrios-logsens-v1p1:
 
 Imbrios LogSens V1P1
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 Configuration
 -------------
 
-Please use ``imbrios-logsens-v1p1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``imbrios-logsens-v1p1`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

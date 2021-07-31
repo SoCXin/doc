@@ -1,4 +1,4 @@
- 
+
 .. _board_asrmicro650x_cubecell_capsule:
 
 Heltec CubeCell-Capsule (HTCC-AC01)
@@ -28,7 +28,7 @@ Platform :ref:`platform_asrmicro650x`: ASR Microelectronics ASR650x series is hi
 Configuration
 -------------
 
-Please use ``cubecell_capsule`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``cubecell_capsule`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

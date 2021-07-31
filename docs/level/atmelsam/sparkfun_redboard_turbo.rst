@@ -1,4 +1,4 @@
- 
+
 .. _board_atmelsam_sparkfun_redboard_turbo:
 
 SparkFun RedBoard Turbo
@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
 Configuration
 -------------
 
-Please use ``sparkfun_redboard_turbo`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sparkfun_redboard_turbo`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -86,7 +86,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 SparkFun RedBoard Turbo does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
@@ -97,14 +97,14 @@ SparkFun RedBoard Turbo does not have on-board debug probe and **IS NOT READY** 
     - On-board
     - Default
   * - :ref:`debugging_tool_atmel-ice`
-    - 
+    -
     - Yes
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

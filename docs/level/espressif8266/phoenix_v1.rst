@@ -1,4 +1,4 @@
- 
+
 .. _board_espressif8266_phoenix_v1:
 
 Phoenix 1.0
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
 Configuration
 -------------
 
-Please use ``phoenix_v1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``phoenix_v1`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

@@ -55,7 +55,7 @@ Configuration
 -------------
 
 **Cppcheck** is implicitly used as the default check tool when :ref:`projectconf_check_tool`
-option in :ref:`projectconf` is not set. To be explicit, you can specify it
+option in :ref:`mips` is not set. To be explicit, you can specify it
 in the configuration directly:
 
 .. code-block:: ini

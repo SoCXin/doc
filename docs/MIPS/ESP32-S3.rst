@@ -12,7 +12,7 @@ ESP32-S3
 Type: ``String`` | Multiple: ``Yes``
 
 This option allows one to inherit configuration from other sections or build environments
-in :ref:`projectconf`. Multiple items are allowed, split them with ``,`` or
+in :ref:`mips`. Multiple items are allowed, split them with ``,`` or
 with a new line.
 
 If you need to extend only a few options from some section, please take a look at

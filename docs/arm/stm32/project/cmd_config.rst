@@ -1,4 +1,4 @@
- 
+
 .. _cmd_project_config:
 
 pio project config
@@ -17,11 +17,11 @@ Usage
 Description
 -----------
 
-Show project computed configuration based on :ref:`projectconf`.
+Show project computed configuration based on :ref:`mips`.
 The extra configuration files and dynamic variables will be expanded.
 
 This command is useful for developers to check how PlatformIO computes configuration
-from :ref:`projectconf`.
+from :ref:`mips`.
 
 Options
 ~~~~~~~

@@ -1,4 +1,4 @@
- 
+
 .. _board_atmelsam_moteino_zero:
 
 Moteino M0
@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
 Configuration
 -------------
 
-Please use ``moteino_zero`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``moteino_zero`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -87,7 +87,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Moteino M0 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
@@ -98,17 +98,17 @@ Moteino M0 does not have on-board debug probe and **IS NOT READY** for debugging
     - On-board
     - Default
   * - :ref:`debugging_tool_atmel-ice`
-    - 
+    -
     - Yes
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_cmsis-dap`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

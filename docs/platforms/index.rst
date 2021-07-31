@@ -1,4 +1,4 @@
- 
+
 .. _platforms:
 
 Development Platforms
@@ -22,7 +22,7 @@ development platform, PlatformIO defines:
 - Pre-compiled toolchains and related tools for the architechture(s)
 
 Each project must specify the platform name using the
-:ref:`projectconf_env_platform` option in :ref:`projectconf`. A
+:ref:`projectconf_env_platform` option in :ref:`mips`. A
 specific platform version can optionally be specified as well. As
 embedded boards are equipped with a particular microcontroller, each
 embedded board specifies what development platform it uses and this

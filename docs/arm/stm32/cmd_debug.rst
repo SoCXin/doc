@@ -1,4 +1,4 @@
- 
+
 .. _cmd_debug:
 
 pio debug
@@ -36,7 +36,7 @@ Options
 Debug specified environments.
 
 You can also specify which environments should be used for debugging by default
-using :ref:`projectconf_pio_default_envs` option from :ref:`projectconf`.
+using :ref:`projectconf_pio_default_envs` option from :ref:`mips`.
 
 .. option::
     -d, --project-dir
@@ -47,7 +47,7 @@ to a current working directory (``CWD``).
 .. option::
     -c, --project-conf
 
-Process project with a custom :ref:`projectconf`.
+Process project with a custom :ref:`mips`.
 
 .. option::
     --interface

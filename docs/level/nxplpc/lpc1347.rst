@@ -1,4 +1,4 @@
- 
+
 .. _board_nxplpc_lpc1347:
 
 DipCortex M3
@@ -28,7 +28,7 @@ Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroll
 Configuration
 -------------
 
-Please use ``lpc1347`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``lpc1347`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -84,7 +84,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 DipCortex M3 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
@@ -95,7 +95,7 @@ DipCortex M3 does not have on-board debug probe and **IS NOT READY** for debuggi
     - On-board
     - Default
   * - :ref:`debugging_tool_jlink`
-    - 
+    -
     - Yes
 
 Frameworks

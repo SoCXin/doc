@@ -1,4 +1,4 @@
- 
+
 .. _board_nxplpc_xadow_m0:
 
 Seeed Xadow M0
@@ -28,7 +28,7 @@ Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroll
 Configuration
 -------------
 
-Please use ``xadow_m0`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``xadow_m0`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

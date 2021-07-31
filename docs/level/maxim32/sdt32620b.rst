@@ -1,4 +1,4 @@
- 
+
 .. _board_maxim32_sdt32620b:
 
 SDT32620B
@@ -28,7 +28,7 @@ Platform :ref:`platform_maxim32`: Maxim's microcontrollers provide low-power, ef
 Configuration
 -------------
 
-Please use ``sdt32620b`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``sdt32620b`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

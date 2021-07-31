@@ -1,4 +1,4 @@
- 
+
 .. _platform_linux_arm:
 
 Linux ARM
@@ -29,7 +29,7 @@ Stable and upstream versions
 
 You can switch between `stable releases <https://github.com/platformio/platform-linux_arm/releases>`__
 of Linux ARM development platform and the latest upstream version using
-:ref:`projectconf_env_platform` option in :ref:`projectconf` as described below.
+:ref:`projectconf_env_platform` option in :ref:`mips` as described below.
 
 Stable
 ~~~~~~

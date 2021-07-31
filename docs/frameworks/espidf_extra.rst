@@ -321,7 +321,7 @@ Enable C++ exceptions
 
 to enable C++ exceptions for :ref:`framework_espidf` add
 ``-D PIO_FRAMEWORK_ESP_IDF_ENABLE_EXCEPTIONS`` to :ref:`projectconf_build_flags` of
-:ref:`projectconf`.
+:ref:`mips`.
 
 See `project example <https://github.com/platformio/platform-espressif32/tree/v1.10.0/examples/espidf-exceptions>`_
 with enabled exceptions.

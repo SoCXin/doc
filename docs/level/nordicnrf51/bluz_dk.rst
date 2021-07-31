@@ -1,4 +1,4 @@
- 
+
 .. _board_nordicnrf51_bluz_dk:
 
 BluzDK
@@ -28,7 +28,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
 Configuration
 -------------
 
-Please use ``bluz_dk`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``bluz_dk`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -86,7 +86,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 BluzDK does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
@@ -97,14 +97,14 @@ BluzDK does not have on-board debug probe and **IS NOT READY** for debugging. Yo
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
+    -
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_stlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

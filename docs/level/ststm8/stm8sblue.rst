@@ -1,4 +1,4 @@
- 
+
 .. _board_ststm8_stm8sblue:
 
 ST STM8S103F3 Breakout Board
@@ -28,7 +28,7 @@ Platform :ref:`platform_ststm8`: The STM8 is an 8-bit microcontroller family by 
 Configuration
 -------------
 
-Please use ``stm8sblue`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``stm8sblue`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -84,7 +84,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 ST STM8S103F3 Breakout Board does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
@@ -95,7 +95,7 @@ ST STM8S103F3 Breakout Board does not have on-board debug probe and **IS NOT REA
     - On-board
     - Default
   * - :ref:`debugging_tool_stlink`
-    - 
+    -
     - Yes
 
 Frameworks

@@ -1,4 +1,4 @@
- 
+
 .. _framework_freertos:
 
 FreeRTOS
@@ -31,7 +31,7 @@ Tools & Debug Probes
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
@@ -80,7 +80,7 @@ You do not need to use/buy external debug probe.
       - 16KB
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB
@@ -116,7 +116,7 @@ Platforms
       - The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
 
 Boards
 ------
@@ -142,7 +142,7 @@ Digilent
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB

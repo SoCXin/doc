@@ -1,4 +1,4 @@
- 
+
 .. _board_atmelsam_samc21_xpro:
 
 Atmel SAMC21-XPRO
@@ -28,7 +28,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
 Configuration
 -------------
 
-Please use ``samc21_xpro`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``samc21_xpro`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -86,7 +86,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Atmel SAMC21-XPRO has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -97,14 +97,14 @@ Atmel SAMC21-XPRO has on-board debug probe and **IS READY** for debugging. You d
     - On-board
     - Default
   * - :ref:`debugging_tool_atmel-ice`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -

@@ -1,4 +1,4 @@
- 
+
 .. _board_infineonxmc_xmc1300_sense2gol:
 
 XMC1300 Sense2GoL
@@ -28,7 +28,7 @@ Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrol
 Configuration
 -------------
 
-Please use ``xmc1300_sense2gol`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``xmc1300_sense2gol`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -64,7 +64,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 XMC1300 Sense2GoL has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 

@@ -1,4 +1,4 @@
- 
+
 .. _board_siliconlabsefm32_tb_sense_12:
 
 Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT
@@ -28,7 +28,7 @@ Platform :ref:`platform_siliconlabsefm32`: Silicon Labs EFM32 Gecko 32-bit micro
 Configuration
 -------------
 
-Please use ``tb_sense_12`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``tb_sense_12`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -85,7 +85,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -96,8 +96,8 @@ Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT has on-board debug probe and *
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
     - Yes
     - Yes

@@ -1,4 +1,4 @@
- 
+
 .. _board_linux_arm_raspberrypi_2b:
 
 Raspberry Pi 2 Model B
@@ -28,7 +28,7 @@ Platform :ref:`platform_linux_arm`: Linux ARM is a Unix-like and mostly POSIX-co
 Configuration
 -------------
 
-Please use ``raspberrypi_2b`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``raspberrypi_2b`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

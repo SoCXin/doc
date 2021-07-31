@@ -1,4 +1,4 @@
- 
+
 .. _board_intel_mcs51_stc89c52rc:
 
 Generic STC89C52RC
@@ -28,7 +28,7 @@ Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is
 Configuration
 -------------
 
-Please use ``stc89c52rc`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``stc89c52rc`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

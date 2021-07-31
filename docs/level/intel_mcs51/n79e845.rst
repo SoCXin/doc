@@ -1,4 +1,4 @@
- 
+
 .. _board_intel_mcs51_n79e845:
 
 Generic N79E845
@@ -28,7 +28,7 @@ Platform :ref:`platform_intel_mcs51`: The Intel MCS-51 (commonly termed 8051) is
 Configuration
 -------------
 
-Please use ``n79e845`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``n79e845`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

@@ -68,7 +68,7 @@ Installation
    ``myboard`` board.
 
 Now, you can use ``myboard`` for the :ref:`projectconf_env_board` option in
-:ref:`projectconf`.
+:ref:`mips`.
 
 .. note::
   You can have custom boards per project. In this case, please put your

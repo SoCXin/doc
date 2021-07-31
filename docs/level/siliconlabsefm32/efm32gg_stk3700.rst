@@ -1,4 +1,4 @@
- 
+
 .. _board_siliconlabsefm32_efm32gg_stk3700:
 
 EFM32GG-STK3700 Giant Gecko
@@ -28,7 +28,7 @@ Platform :ref:`platform_siliconlabsefm32`: Silicon Labs EFM32 Gecko 32-bit micro
 Configuration
 -------------
 
-Please use ``efm32gg_stk3700`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``efm32gg_stk3700`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -85,7 +85,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 EFM32GG-STK3700 Giant Gecko has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -96,8 +96,8 @@ EFM32GG-STK3700 Giant Gecko has on-board debug probe and **IS READY** for debugg
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
     - Yes
     - Yes

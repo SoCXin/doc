@@ -1,4 +1,4 @@
- 
+
 .. _board_wiznet7500_wizwiki_w7500p:
 
 WIZwiki-W7500P
@@ -28,7 +28,7 @@ Platform :ref:`platform_wiznet7500`: The IOP (Internet Offload Processor) W7500 
 Configuration
 -------------
 
-Please use ``wizwiki_w7500p`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``wizwiki_w7500p`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -85,7 +85,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 WIZwiki-W7500P has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -99,8 +99,8 @@ WIZwiki-W7500P has on-board debug probe and **IS READY** for debugging. You don'
     - Yes
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

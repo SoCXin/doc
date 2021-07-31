@@ -28,7 +28,7 @@ Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is
 Configuration
 -------------
 
-Please use ``frdm_k82f`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``frdm_k82f`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -85,7 +85,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Freescale Kinetis FRDM-K82F has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 

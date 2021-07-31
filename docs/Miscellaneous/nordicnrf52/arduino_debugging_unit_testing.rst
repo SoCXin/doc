@@ -79,7 +79,7 @@ After successful uploading, the green LED1 should start blinking.
 Debugging the Firmware
 ----------------------
 
-:ref:`piodebug` offers the easiest way to debug the board. Firstly, we need to specify :ref:`projectconf_debug_tool` in :ref:`projectconf`. Since the board has an on-board ``JLink`` debug probe we can directly declare it in :ref:`projectconf`:
+:ref:`piodebug` offers the easiest way to debug the board. Firstly, we need to specify :ref:`projectconf_debug_tool` in :ref:`mips`. Since the board has an on-board ``JLink`` debug probe we can directly declare it in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -200,7 +200,7 @@ Adding Bluetooth LE features
 
 To add the basic BLE functionality to our project we need to define the SoftDevice version
 and install a library called `BLEPeripheral <https://www.soc.xin/lib/show/259/BLEPeripheral>`_.
-Both these modifications can be specified in :ref:`projectconf`:
+Both these modifications can be specified in :ref:`mips`:
 
 
 .. code-block:: ini

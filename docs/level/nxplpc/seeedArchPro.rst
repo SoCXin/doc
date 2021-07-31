@@ -1,4 +1,4 @@
- 
+
 .. _board_nxplpc_seeedArchPro:
 
 Seeed Arch Pro
@@ -28,7 +28,7 @@ Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroll
 Configuration
 -------------
 
-Please use ``seeedArchPro`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``seeedArchPro`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -84,7 +84,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Seeed Arch Pro has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 

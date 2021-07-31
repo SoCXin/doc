@@ -98,19 +98,19 @@ Don't remove :option:`pio ci --build-dir` after build process.
 .. option::
     -c, --project-conf
 
-Build project using pre-configured :ref:`projectconf`.
+Build project using pre-configured :ref:`mips`.
 
 .. option::
     -O, --project-option
 
-Pass additional options from :ref:`projectconf` to :ref:`cmd_project_init` command.
+Pass additional options from :ref:`mips` to :ref:`cmd_project_init` command.
 For example, automatically install dependent libraries
 ``pio ci --project-option="lib_deps=ArduinoJSON"`` or ignore specific
 library ``pio ci --project-option="lib_ignore=SomeLib"``.
 
 .. note::
     Use multiple ``--project-option`` to pass multiple options to
-    :ref:`projectconf`. One option per one argument. For example,
+    :ref:`mips`. One option per one argument. For example,
     ``pio ci --project-option="build_unflags = -std=gnu++11" --project-option="build_flags = -std=c++14"``
 
 .. option::

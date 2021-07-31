@@ -1,4 +1,4 @@
- 
+
 .. _board_ststm8_nucleo_8s207k8:
 
 NUCLEO-8S207K8
@@ -28,7 +28,7 @@ Platform :ref:`platform_ststm8`: The STM8 is an 8-bit microcontroller family by 
 Configuration
 -------------
 
-Please use ``nucleo_8s207k8`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nucleo_8s207k8`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -84,7 +84,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 NUCLEO-8S207K8 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 

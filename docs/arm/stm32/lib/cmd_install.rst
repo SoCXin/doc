@@ -1,4 +1,4 @@
- 
+
 .. _cmd_lib_install:
 
 pio lib install
@@ -49,7 +49,7 @@ Usage
 
 .. warning::
 
-  If some libraries are not visible in :ref:`pioide` and Code Completion or
+  If some libraries are not visible in :ref:`espressif_esp32` and Code Completion or
   Code Linting does not work properly, please perform
 
   * **VSCode**: "Menu: View > Command Palette... > PlatformIO: Rebuild C/C++
@@ -95,7 +95,7 @@ Options
 .. option::
     --save / --no-save
 
-Save installed libraries into the :ref:`projectconf` dependency list
+Save installed libraries into the :ref:`mips` dependency list
 (:ref:`projectconf_lib_deps`). Default value is to save.
 
 You can save libraries for the specific project environment using

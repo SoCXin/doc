@@ -1,4 +1,4 @@
- 
+
 .. _board_nxplpc_oc_mbuino:
 
 mBuino
@@ -28,7 +28,7 @@ Platform :ref:`platform_nxplpc`: The NXP LPC is a family of 32-bit microcontroll
 Configuration
 -------------
 
-Please use ``oc_mbuino`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``oc_mbuino`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

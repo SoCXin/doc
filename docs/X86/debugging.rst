@@ -70,7 +70,7 @@ Tutorials
 Configuration
 -------------
 
-|PIODebug| can be configured using :ref:`projectconf`:
+|PIODebug| can be configured using :ref:`mips`:
 
 .. toctree::
   :maxdepth: 2

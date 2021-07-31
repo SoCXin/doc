@@ -1,4 +1,4 @@
- 
+
 .. _board_nuclei_gd32vf103v_rvstar:
 
 GD32VF103V RVStar Kit
@@ -28,7 +28,7 @@ Platform :ref:`platform_nuclei`: Find professional RISC-V Processor IP in Nuclei
 Configuration
 -------------
 
-Please use ``gd32vf103v_rvstar`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``gd32vf103v_rvstar`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -86,7 +86,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 GD32VF103V RVStar Kit has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -97,14 +97,14 @@ GD32VF103V RVStar Kit has on-board debug probe and **IS READY** for debugging. Y
     - On-board
     - Default
   * - :ref:`debugging_tool_altera-usb-blaster`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_gd-link`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_rv-link`
     - Yes
     - Yes

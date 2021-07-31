@@ -1,4 +1,4 @@
- 
+
 .. _board_teensy_teensy2:
 
 Teensy 2.0
@@ -28,7 +28,7 @@ Platform :ref:`platform_teensy`: Teensy is a complete USB-based microcontroller 
 Configuration
 -------------
 
-Please use ``teensy2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``teensy2`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 

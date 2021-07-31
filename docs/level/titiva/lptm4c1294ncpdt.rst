@@ -28,7 +28,7 @@ Platform :ref:`platform_titiva`: Texas Instruments TM4C12x MCUs offer the indust
 Configuration
 -------------
 
-Please use ``lptm4c1294ncpdt`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``lptm4c1294ncpdt`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -64,7 +64,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 

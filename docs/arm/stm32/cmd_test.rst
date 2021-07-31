@@ -1,4 +1,4 @@
- 
+
 .. _cmd_test:
 
 pio test
@@ -22,7 +22,7 @@ Run locally tests from PlatformIO based project. More details about PlatformIO
 :ref:`unit_testing`.
 
 This command allows you to apply the tests for the environments specified
-in :ref:`projectconf`.
+in :ref:`mips`.
 
 Options
 -------
@@ -40,7 +40,7 @@ Process specified environments. More details :option:`pio run --environment`
 Process only the tests where the name matches specified patterns. More than one
 pattern is allowed. If you need to filter some tests for a specific
 environment, please take a look at :ref:`projectconf_test_filter` option from
-:ref:`projectconf`.
+:ref:`mips`.
 
 .. list-table::
     :header-rows:  1
@@ -68,7 +68,7 @@ For example, ``pio test --filter "mytest*" -i "test[13]"``
 Ignore tests where the name matches specified patterns. More than one
 pattern is allowed. If you need to ignore some tests for a specific
 environment, please take a look at :ref:`projectconf_test_ignore` option from
-:ref:`projectconf`.
+:ref:`mips`.
 
 .. list-table::
     :header-rows:  1
@@ -116,7 +116,7 @@ to current working directory (``CWD``).
 .. option::
     -c, --project-conf
 
-Process project with a custom :ref:`projectconf`.
+Process project with a custom :ref:`mips`.
 
 .. option::
     --without-building

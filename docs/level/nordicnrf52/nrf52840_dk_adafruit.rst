@@ -1,4 +1,4 @@
- 
+
 .. _board_nordicnrf52_nrf52840_dk_adafruit:
 
 Nordic nRF52840-DK (Adafruit BSP)
@@ -28,7 +28,7 @@ Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to ca
 Configuration
 -------------
 
-Please use ``nrf52840_dk_adafruit`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nrf52840_dk_adafruit`` ID for :ref:`projectconf_env_board` option in :ref:`mips`:
 
 .. code-block:: ini
 
@@ -87,7 +87,7 @@ Debugging
     instructions and configuration information.
 
 You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+:ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 Nordic nRF52840-DK (Adafruit BSP) has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
@@ -98,17 +98,17 @@ Nordic nRF52840-DK (Adafruit BSP) has on-board debug probe and **IS READY** for 
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_cmsis-dap`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
     - Yes
     - Yes
   * - :ref:`debugging_tool_stlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------
