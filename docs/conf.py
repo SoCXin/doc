@@ -189,10 +189,10 @@ html_show_sphinx = False
 # html_file_suffix = None
 
 # The base URL which points to the root of the HTML documentation
-html_baseurl = "https://src.soc.xin"
+html_baseurl = "https://docs.soc.xin"
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "socsrc"
+htmlhelp_basename = "socxin"
 
 # -- Options for LaTeX output ---------------------------------------------
 

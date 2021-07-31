@@ -1,6 +1,6 @@
-.. _what_is_pio:
+.. welcome:
 
-Welcome to SoC.xin
+Welcome
 ===================
 
 **A place where Developers and Teams have true Freedom! No more vendor lock-in!**
