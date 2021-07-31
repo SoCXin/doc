@@ -1,8 +1,8 @@
 
- 
+
 .. _compilation_db:
 
-Compilation database
+Level 1
 -------------------------------
 
 A `compilation database <https://clang.llvm.org/docs/JSONCompilationDatabase.html>`_ is

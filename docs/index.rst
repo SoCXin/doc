@@ -65,7 +65,7 @@ Contents
 
     level1/ide/index
     level1/ci/index
-    level1/compile_commands
+    level1/index
 
 .. toctree::
     :caption: Level 6
