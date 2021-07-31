@@ -1,7 +1,7 @@
 
-.. _librarymanager:
+.. _RISC_V:
 
-Library Management
+RISC-V
 ==================
 
 *PlatformIO Library Manager* is a tool for managing libraries of
@@ -28,4 +28,4 @@ up-to-date. PlatformIO Library Manager supports
     ldf
     Configuration <../MIPS/section_env_library>
     config
-    creating
+    ESP32-C3

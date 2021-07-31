@@ -1,7 +1,7 @@
 
-.. _library_creating:
+.. _ESP32_C3:
 
-Creating Library
+ESP32-C3
 ================
 
 Managing components between the projects is a historical issue. A common code

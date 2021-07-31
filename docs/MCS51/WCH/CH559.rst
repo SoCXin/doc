@@ -1,5 +1,5 @@
 
-.. _ci_drone:
+.. _wch_ch559:
 
 CH559
 =====
@@ -65,27 +65,3 @@ and boards from command line interface:
     pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 .. image:: ../../_static/images/WCH/MCS51.png
-
-Examples
---------
-
-1. Integration for `USB_Host_Shield_2.0 <https://github.com/felis/USB_Host_Shield_2.0>`_
-   project. The ``circle.yml`` configuration file:
-
-`Environment Variables`:
-
-.. code-block:: bash
-
-    PLATFORMIO_CI_SRC=examples/Bluetooth/PS3SPP/PS3SPP.ino
-    PLATFORMIO_CI_SRC=examples/pl2303/pl2303_gps/pl2303_gps.ino
-
-`Commands`:
-
-.. code-block:: bash
-
-    pip install -U platformio
-    wget https://github.com/xxxajk/spi4teensy3/archive/master.zip -O /tmp/spi4teensy3.zip
-    unzip /tmp/spi4teensy3.zip -d /tmp
-    pio ci --lib="." --lib="/tmp/spi4teensy3-master" --board=uno --board=teensy31 --board=due
-
-.. image:: ../../_static/images/level2.png
