@@ -1,4 +1,4 @@
- 
+
 .. _board_freescalekinetis_frdm_kl27z:
 
 Freescale Kinetis FRDM-KL27Z
@@ -9,7 +9,7 @@ Freescale Kinetis FRDM-KL27Z
 Hardware
 --------
 
-Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
+Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature level1.
 
 .. list-table::
 
@@ -97,14 +97,14 @@ Freescale Kinetis FRDM-KL27Z has on-board debug probe and **IS READY** for debug
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_cmsis-dap`
     - Yes
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

@@ -1,4 +1,4 @@
- 
+
 .. _cmd_ci:
 
 pio ci
@@ -33,7 +33,7 @@ Also, you can omit ``SRC`` argument and set path (multiple paths are allowed
 denoting with ``:``) to
 ``PLATFORMIO_CI_SRC`` `Environment variable <http://en.wikipedia.org/wiki/Environment_variable>`_
 
-For more details as for integration with the popular Continuous Integration
+For more details as for level1 with the popular Continuous Integration
 Systems please follow to :ref:`ci` page.
 
 .. note::

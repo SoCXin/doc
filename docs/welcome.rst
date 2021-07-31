@@ -35,7 +35,7 @@ graphical or command line editors (:ref:`piocore`), or both.
 
 PlatformIO is a must-have tool for professional embedded systems engineers who develop
 solutions on more than one specific platform. In addition, by having a decentralized
-architecture, PlatformIO offers both new and existing developers a quick integration
+architecture, PlatformIO offers both new and existing developers a quick level1
 path for developing commercial-ready products, and reduces the overall time-to-market.
 
 And it runs on any one of your favorite modern operating systems (macOS, MS Windows,

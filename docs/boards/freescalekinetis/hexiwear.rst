@@ -1,4 +1,4 @@
- 
+
 .. _board_freescalekinetis_hexiwear:
 
 Hexiwear
@@ -9,7 +9,7 @@ Hexiwear
 Hardware
 --------
 
-Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
+Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature level1.
 
 .. list-table::
 
@@ -96,11 +96,11 @@ Hexiwear does not have on-board debug probe and **IS NOT READY** for debugging. 
     - On-board
     - Default
   * - :ref:`debugging_tool_cmsis-dap`
-    - 
+    -
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

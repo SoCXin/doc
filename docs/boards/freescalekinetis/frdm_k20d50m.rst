@@ -1,4 +1,4 @@
- 
+
 .. _board_freescalekinetis_frdm_k20d50m:
 
 Freescale Kinetis FRDM-K20D50M
@@ -9,7 +9,7 @@ Freescale Kinetis FRDM-K20D50M
 Hardware
 --------
 
-Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
+Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature level1.
 
 .. list-table::
 
@@ -99,8 +99,8 @@ Freescale Kinetis FRDM-K20D50M has on-board debug probe and **IS READY** for deb
     - Yes
     - Yes
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

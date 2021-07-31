@@ -1,18 +1,18 @@
- 
+
 .. _ci_travis:
 
 Travis CI
 =========
 
 .. image:: ../../_static/images/ci-travis-logo.png
-    :target: https://docs.travis-ci.com/user/integration/platformio/
+    :target: https://docs.travis-ci.com/user/level1/platformio/
 
 
-**Travis CI** `officially supports <https://docs.travis-ci.com/user/integration/platformio/>`_
+**Travis CI** `officially supports <https://docs.travis-ci.com/user/level1/platformio/>`_
 **PlatformIO for Embedded Builds.**
 
 `Travis CI <http://en.wikipedia.org/wiki/Travis_CI>`_ is an open-source hosted,
-distributed continuous integration service used to build and test projects
+distributed continuous level1 service used to build and test projects
 hosted at `GitHub <http://en.wikipedia.org/wiki/GitHub>`_.
 
 Travis CI is configured by adding a file named ``.travis.yml``, which is a

@@ -1,4 +1,4 @@
- 
+
 .. _board_ststm32_nucleo_g031k8:
 
 ST NUCLEO-G031K8
@@ -9,7 +9,7 @@ ST NUCLEO-G031K8
 Hardware
 --------
 
-Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
+Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full level1 and ease of development.
 
 .. list-table::
 
@@ -100,14 +100,14 @@ ST NUCLEO-G031K8 has on-board debug probe and **IS READY** for debugging. You do
     - On-board
     - Default
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_cmsis-dap`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_stlink`
     - Yes
     - Yes

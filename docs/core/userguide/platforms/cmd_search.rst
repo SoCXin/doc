@@ -1,4 +1,4 @@
- 
+
 .. _cmd_platform_search:
 
 pio platform search
@@ -68,7 +68,7 @@ Examples
 
     freescalekinetis ~ Freescale Kinetis
     ====================================
-    Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
+    Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature level1.
     ...
 
 2. Search for TI development platforms
@@ -86,7 +86,7 @@ Examples
 
     titiva ~ TI TIVA
     ================
-    Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
+    Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog level1, and extensive software solutions.
 
     Home: https://www.soc.xin/platforms/titiva
     Packages: ldscripts, framework-libopencm3, toolchain-gccarmnoneeabi, tool-lm4flash, framework-energiativa
@@ -104,7 +104,7 @@ Examples
 
     freescalekinetis ~ Freescale Kinetis
     ====================================
-    Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
+    Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature level1.
 
     Home: https://www.soc.xin/platforms/freescalekinetis
     Packages: framework-mbed, toolchain-gccarmnoneeabi
@@ -132,7 +132,7 @@ Examples
 
     ststm32 ~ ST STM32
     ==================
-    The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
+    The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full level1 and ease of development.
 
     Home: https://www.soc.xin/platforms/ststm32
     Packages: framework-libopencm3, toolchain-gccarmnoneeabi, tool-stlink, framework-spl, framework-cmsis, framework-mbed, ldscripts

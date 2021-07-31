@@ -1,11 +1,11 @@
- 
+
 .. _ci_circleci:
 
 CircleCI
 ========
 
 `CircleCI <https://circleci.com/about>`_ is a hosted cloud
-platform that provides hosted continuous integration, deployment, and testing
+platform that provides hosted continuous level1, deployment, and testing
 to `GitHub <http://en.wikipedia.org/wiki/GitHub>`_ repositories.
 
 CircleCI is configured by adding a file named ``circle.yml``, which is a

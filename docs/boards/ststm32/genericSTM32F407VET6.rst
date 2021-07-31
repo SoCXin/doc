@@ -1,4 +1,4 @@
- 
+
 .. _board_ststm32_genericSTM32F407VET6:
 
 STM32F407VE (192k RAM. 512k Flash)
@@ -9,7 +9,7 @@ STM32F407VE (192k RAM. 512k Flash)
 Hardware
 --------
 
-Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
+Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full level1 and ease of development.
 
 .. list-table::
 
@@ -96,10 +96,10 @@ STM32F407VE (192k RAM. 512k Flash) does not have on-board debug probe and **IS N
     - On-board
     - Default
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_stlink`
-    - 
+    -
     - Yes
 
 Frameworks

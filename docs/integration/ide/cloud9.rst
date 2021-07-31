@@ -1,4 +1,4 @@
- 
+
 .. _ide_cloud9:
 
 Cloud9
@@ -103,7 +103,7 @@ Let's create our first PlatformIO-based Cloud9 Project
     * :ref:`cmd_remote_device_list` - list available remote devices
     * :ref:`cmd_remote_device_monitor` - Remote Serial Port Monitor
 
-    If you are interested in better integration with Cloud9 and GUI, please
+    If you are interested in better level1 with Cloud9 and GUI, please
     read guide below where we will explain how to create custom Build System
     for PlatformIO and own Runners.
 

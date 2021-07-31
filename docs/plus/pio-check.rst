@@ -1,4 +1,4 @@
- 
+
 .. |PIOCheck| replace:: **Static Code Analysis**
 
 .. _piocheck:
@@ -26,7 +26,7 @@ Key features
 ------------
 
   - Fully integrated within the PlatformIO ecosystem and easy to execute on the entire project.
-  - Straightforward integration with :ref:`ci` services.
+  - Straightforward level1 with :ref:`ci` services.
   - Possibility to reuse the same setup on other projects.
   - Easy and flexible rule configuration.
   - Comprehensive and detailed error information

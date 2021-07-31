@@ -26,7 +26,7 @@ Contents
     :caption: Level 1
     :maxdepth: 1
 
-    integration/ide/pioide
+    level1/ide/pioide
     core/index
     home/index
     tutorials/index
@@ -63,9 +63,9 @@ Contents
     :caption: Level 5
     :maxdepth: 2
 
-    integration/ide/index
-    integration/ci/index
-    integration/compile_commands
+    level1/ide/index
+    level1/ci/index
+    level1/compile_commands
 
 .. toctree::
     :caption: Level 6

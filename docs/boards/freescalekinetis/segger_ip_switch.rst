@@ -1,4 +1,4 @@
- 
+
 .. _board_freescalekinetis_segger_ip_switch:
 
 SEGGER IP Switch Board
@@ -9,7 +9,7 @@ SEGGER IP Switch Board
 Hardware
 --------
 
-Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
+Platform :ref:`platform_freescalekinetis`: Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature level1.
 
 .. list-table::
 
@@ -95,7 +95,7 @@ SEGGER IP Switch Board does not have on-board debug probe and **IS NOT READY** f
     - On-board
     - Default
   * - :ref:`debugging_tool_jlink`
-    - 
+    -
     - Yes
 
 Frameworks

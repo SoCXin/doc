@@ -1,10 +1,10 @@
- 
+
 .. _boards:
 
 Boards
 ======
 
-Rapid Embedded Development, Continuous and IDE integration in a few
+Rapid Embedded Development, Continuous and IDE level1 in a few
 steps with PlatformIO thanks to built-in project generator for the most
 popular embedded boards and IDE.
 
@@ -18,7 +18,7 @@ Aceinna IMU
 
 .. toctree::
     :maxdepth: 1
-        
+
     aceinna_imu/LowCostRTK
     aceinna_imu/OpenIMU300
     aceinna_imu/OpenIMU300ZA
@@ -31,7 +31,7 @@ ASR Microelectronics ASR650x
 
 .. toctree::
     :maxdepth: 1
-        
+
     asrmicro650x/cubecell_capsule_solar_sensor
     asrmicro650x/cubecell_node
     asrmicro650x/cubecell_board
@@ -46,7 +46,7 @@ Atmel AVR
 
 .. toctree::
     :maxdepth: 1
-        
+
     atmelavr/AT90CAN128
     atmelavr/AT90CAN32
     atmelavr/AT90CAN64
@@ -256,7 +256,7 @@ Atmel megaAVR
 
 .. toctree::
     :maxdepth: 1
-        
+
     atmelmegaavr/ATmega1608
     atmelmegaavr/ATmega1609
     atmelmegaavr/ATmega3208
@@ -301,7 +301,7 @@ Atmel SAM
 
 .. toctree::
     :maxdepth: 1
-        
+
     atmelsam/adafruit_blm_badge
     atmelsam/adafruit_circuitplayground_m0
     atmelsam/adafruit_crickit_m0
@@ -391,7 +391,7 @@ CHIPS Alliance
 
 .. toctree::
     :maxdepth: 1
-        
+
     chipsalliance/swervolf_nexys
 
 Espressif 32
@@ -399,7 +399,7 @@ Espressif 32
 
 .. toctree::
     :maxdepth: 1
-        
+
     espressif32/esp32cam
     espressif32/alksesp32
     espressif32/az-delivery-devkit-v4
@@ -511,7 +511,7 @@ Espressif 8266
 
 .. toctree::
     :maxdepth: 1
-        
+
     espressif8266/gen4iod
     espressif8266/huzzah
     espressif8266/oak
@@ -562,7 +562,7 @@ Freescale Kinetis
 
 .. toctree::
     :maxdepth: 1
-        
+
     freescalekinetis/IBMEthernetKit
     freescalekinetis/frdm_k20d50m
     freescalekinetis/frdm_k22f
@@ -585,7 +585,7 @@ GigaDevice GD32V
 
 .. toctree::
     :maxdepth: 1
-        
+
     gd32v/gd32vf103v-eval
     gd32v/sipeed-longan-nano
     gd32v/sipeed-longan-nano-lite
@@ -596,7 +596,7 @@ Infineon XMC
 
 .. toctree::
     :maxdepth: 1
-        
+
     infineonxmc/xmc1100_boot_kit
     infineonxmc/xmc1100_h_bridge2go
     infineonxmc/xmc1100_xmc2go
@@ -611,7 +611,7 @@ Intel ARC32
 
 .. toctree::
     :maxdepth: 1
-        
+
     intel_arc32/genuino101
 
 Intel MCS-51 (8051)
@@ -619,7 +619,7 @@ Intel MCS-51 (8051)
 
 .. toctree::
     :maxdepth: 1
-        
+
     intel_mcs51/n79e8432
     intel_mcs51/n79e844
     intel_mcs51/n79e845
@@ -637,7 +637,7 @@ Kendryte K210
 
 .. toctree::
     :maxdepth: 1
-        
+
     kendryte210/sipeed-maix-bit
     kendryte210/sipeed-maix-bit-mic
     kendryte210/sipeed-maix-go
@@ -650,7 +650,7 @@ Lattice iCE40
 
 .. toctree::
     :maxdepth: 1
-        
+
     lattice_ice40/icezum
     lattice_ice40/icestick
 
@@ -659,7 +659,7 @@ Linux ARM
 
 .. toctree::
     :maxdepth: 1
-        
+
     linux_arm/raspberrypi_1b
     linux_arm/raspberrypi_2b
     linux_arm/raspberrypi_3b
@@ -670,7 +670,7 @@ Maxim 32
 
 .. toctree::
     :maxdepth: 1
-        
+
     maxim32/max32620fthr
     maxim32/max32625mbed
     maxim32/max32625nexpaq
@@ -687,7 +687,7 @@ Microchip PIC32
 
 .. toctree::
     :maxdepth: 1
-        
+
     microchippic32/picadillo_35t
     microchippic32/dsmini
     microchippic32/cerebot32mx4
@@ -733,7 +733,7 @@ Nordic nRF51
 
 .. toctree::
     :maxdepth: 1
-        
+
     nordicnrf51/bbcmicrobit
     nordicnrf51/bluz_dk
     nordicnrf51/calliope_mini
@@ -763,7 +763,7 @@ Nordic nRF52
 
 .. toctree::
     :maxdepth: 1
-        
+
     nordicnrf52/96b_nitrogen
     nordicnrf52/adafruit_feather_nrf52832
     nordicnrf52/adafruit_clue_nrf52840
@@ -809,7 +809,7 @@ Nuclei
 
 .. toctree::
     :maxdepth: 1
-        
+
     nuclei/gd32vf103v_eval
     nuclei/gd32vf103v_rvstar
     nuclei/hbird_eval
@@ -820,7 +820,7 @@ NXP i.MX RT
 
 .. toctree::
     :maxdepth: 1
-        
+
     nxpimxrt/mimxrt1010_evk
     nxpimxrt/mimxrt1015_evk
     nxpimxrt/mimxrt1020_evk
@@ -833,7 +833,7 @@ NXP LPC
 
 .. toctree::
     :maxdepth: 1
-        
+
     nxplpc/lpc11u24_301
     nxplpc/lpc4330_m4
     nxplpc/lpc11u35_501
@@ -874,7 +874,7 @@ OpenHW Group
 
 .. toctree::
     :maxdepth: 1
-        
+
     openhw/nexys_a7
 
 Raspberry Pi RP2040
@@ -882,7 +882,7 @@ Raspberry Pi RP2040
 
 .. toctree::
     :maxdepth: 1
-        
+
     raspberrypi/nanorp2040connect
     raspberrypi/pico
 
@@ -891,7 +891,7 @@ RISC-V GAP
 
 .. toctree::
     :maxdepth: 1
-        
+
     riscv_gap/gapuino
 
 Shakti
@@ -899,7 +899,7 @@ Shakti
 
 .. toctree::
     :maxdepth: 1
-        
+
     shakti/artix7_35t
     shakti/artix7_100t
     shakti/parashu
@@ -911,7 +911,7 @@ SiFive
 
 .. toctree::
     :maxdepth: 1
-        
+
     sifive/e310-arty
     sifive/hifive-unleashed
     sifive/hifive1
@@ -924,7 +924,7 @@ Silicon Labs EFM32
 
 .. toctree::
     :maxdepth: 1
-        
+
     siliconlabsefm32/efm32gg_stk3700
     siliconlabsefm32/efm32lg_stk3600
     siliconlabsefm32/efm32wg_stk3800
@@ -939,7 +939,7 @@ ST STM32
 
 .. toctree::
     :maxdepth: 1
-        
+
     ststm32/1bitsy_stm32f415rgt
     ststm32/disco_f412zg
     ststm32/disco_f723ie
@@ -1195,7 +1195,7 @@ ST STM8
 
 .. toctree::
     :maxdepth: 1
-        
+
     ststm8/nucleo_8s207k8
     ststm8/nucleo_8s208rb
     ststm8/stm8sdisco
@@ -1210,7 +1210,7 @@ Teensy
 
 .. toctree::
     :maxdepth: 1
-        
+
     teensy/teensy2
     teensy/teensy30
     teensy/teensy31
@@ -1226,7 +1226,7 @@ TI MSP430
 
 .. toctree::
     :maxdepth: 1
-        
+
     timsp430/lpmsp430fr5739
     timsp430/lpmsp430f5529
     timsp430/lpmsp430fr2311
@@ -1245,7 +1245,7 @@ TI TIVA
 
 .. toctree::
     :maxdepth: 1
-        
+
     titiva/lplm4f120h5qr
     titiva/lptm4c1230c3pm
     titiva/lptm4c1294ncpdt
@@ -1255,7 +1255,7 @@ WIZNet W7500
 
 .. toctree::
     :maxdepth: 1
-        
+
     wiznet7500/wizwiki_w7500
     wiznet7500/wizwiki_w7500eco
     wiznet7500/wizwiki_w7500p

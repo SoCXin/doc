@@ -1,4 +1,4 @@
- 
+
 .. _faq:
 
 Frequently Asked Questions
@@ -13,11 +13,6 @@ Frequently Asked Questions
 
 General
 -------
-
-What is PlatformIO?
-~~~~~~~~~~~~~~~~~~~
-
-Please refer to :ref:`what_is_pio`
 
 What is ``.pio`` directory
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

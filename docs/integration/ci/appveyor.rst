@@ -1,11 +1,11 @@
- 
+
 .. _ci_appveyor:
 
 AppVeyor
 ========
 
 `AppVeyor <http://www.appveyor.com/about>`_ is an open-source hosted,
-distributed continuous integration service used to build and test projects
+distributed continuous level1 service used to build and test projects
 hosted at `GitHub <http://en.wikipedia.org/wiki/GitHub>`_ on Windows family
 systems.
 
