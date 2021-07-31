@@ -27,6 +27,7 @@ Classification
     :maxdepth: 1
 
     MCS51/STC/index
+    MCS51/STC/pioide
     MCS51/WCH/index
     MCS51/index
 
