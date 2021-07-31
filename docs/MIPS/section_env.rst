@@ -1,4 +1,4 @@
- 
+
 .. _projectconf_section_env:
 
 Section ``[env]``
@@ -86,11 +86,11 @@ Options
 .. toctree::
     :maxdepth: 2
 
-    section_env_platform
+    ESP32
+    ESP32-S2
     section_env_build
     section_env_library
     section_env_upload
-    section_env_monitor
     section_env_check
     section_env_test
     section_env_debug

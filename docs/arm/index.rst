@@ -3,14 +3,13 @@
 
 .. _piocore:
 
-PlatformIO Core (CLI)
+ARM
 =====================
 
 |PIOCORE| (CLI tool) is a heart of whole PlatformIO ecosystem and consists of
 
 * Multi-platform Build System
 * Development platform and package managers
-* :ref:`RISC-V`
 * :ref:`ldf`
 * :ref:`Serial Port Monitor <cmd_device_monitor>`
 * Integration components (:ref:`ide` and :ref:`ci`).

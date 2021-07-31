@@ -1,5 +1,5 @@
 
-.. _ci_appveyor:
+.. _wch_ch552:
 
 CH552
 ========

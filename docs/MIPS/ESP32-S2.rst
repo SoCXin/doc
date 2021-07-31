@@ -1,7 +1,7 @@
- 
+
 .. _projectconf_section_env_monitor:
 
-Monitor options
+ESP32-S2
 ---------------
 
 .. contents::

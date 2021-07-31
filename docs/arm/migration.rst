@@ -75,25 +75,6 @@ supports not only the libraries but also :ref:`platforms` and toolchains.
 Package maintainers can publish their libraries, development platforms, and toolchains
 to the registry using :ref:`cmd_package` CLI.
 
-.. _core_migration_libmanager:
-
-Library Manager
-~~~~~~~~~~~~~~~
-
-The biggest improvement for :ref:`RISC-V` is the owner-based dependency declaration.
-You can finally forget about conflicts with library names in the registry. Use the new
-syntax ``ownername/pkgname`` to declare an owner-based dependency in :ref:`projectconf`
-via :ref:`projectconf_lib_deps`:
-
-.. code-block:: ini
-
-  [env:myenv]
-  platform = ...
-  framework = ...
-  board = ...
-  lib_deps =
-    bblanchon/ArduinoJson @ ^6.16.1
-    knolleary/PubSubClient @ ^2.8
 
 Build System
 ~~~~~~~~~~~~

@@ -1,5 +1,5 @@
 
-.. _ci_travis:
+.. _wch_ch549:
 
 CH549
 =========
@@ -108,14 +108,6 @@ and boards from command line interface:
         - pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 Then perform steps 1, 2 and 4 from http://docs.CH549-ci.com/user/getting-started/
-
-Library dependencies
---------------------
-
-There 2 options to test source code with dependent libraries:
-
-Install dependent library using :ref:`RISC-V`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: yaml
 

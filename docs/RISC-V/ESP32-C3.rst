@@ -9,13 +9,6 @@ is duplicated between different projects that lead to project complexity.
 A good practice is to organize interdependent components as the separate libraries
 where other projects can depend on them.
 
-PlatformIO has a built-in :ref:`RISC-V` where developers can declare project
-dependencies and PlatformIO will automatically manage them (install, build, update).
-It doesn't have any requirements for a library source code structure.
-The only requirement is a library manifest file -
-:ref:`library_json`, `library.properties <https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification#library-metadata>`_, or `module.json <http://docs.yottabuild.org/reference/module.html>`_.
-It must be located in the root of a library.
-
 We highly recommend using :ref:`library_json` for better compatibility and avoiding any issues.
 
 .. contents:: Contents

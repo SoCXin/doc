@@ -1,7 +1,7 @@
 
 .. _projectconf_section_env_platform:
 
-Platform options
+ESP32
 ----------------
 
 .. contents::
