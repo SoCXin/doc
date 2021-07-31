@@ -82,5 +82,5 @@
 /MIPS/section_env_board.html -> /MIPS/section_env_platform.html
 /MIPS/section_env_general.html -> /MIPS/section_env_platform.html
 /stm32/cmd_serialports.html -> /stm32/cmd_device.html
-/platforms/unit_testing.html -> /plus/unit-testing.html
+/platforms/unit_testing.html -> /X86/unit-testing.html
 /platforms/espressif.html -> /platforms/espressif8266.html

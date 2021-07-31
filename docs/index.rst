@@ -53,25 +53,23 @@ Classification
     :caption: MIPS
     :maxdepth: 1
 
-    Debugging <plus/debugging>
-    Unit Testing <plus/unit-testing>
-    Static Code Analysis <plus/pio-check>
-    Remote Development <plus/pio-remote>
-    plus/pio-account
+    platformio <MIPS/index>
+    MIPS/advanced_scripting
+
 
 .. toctree::
     :caption: X86
     :maxdepth: 2
 
-    platformio.ini <MIPS/index>
-    envvars
-    MIPS/advanced_scripting
+    Debugging <X86/debugging>
+    Unit Testing <X86/unit-testing>
+    Static Code Analysis <X86/pio-check>
+    Remote Development <X86/pio-remote>
+    X86/pio-account
 
 
 .. toctree::
     :caption: Miscellaneous
     :maxdepth: 1
 
-    FAQ <faq>
-    home/index
-    tutorials/index
+    Miscellaneous/index

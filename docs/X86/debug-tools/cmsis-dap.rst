@@ -49,7 +49,7 @@ Drivers
 -------
 
 :Windows:
-  Please install `Windows serial driver <https://os.mbed.com/docs/latest/tutorials/windows-serial-driver.html>`_ and check "USB Driver Installation" guide
+  Please install `Windows serial driver <https://os.mbed.com/docs/latest/Miscellaneous/windows-serial-driver.html>`_ and check "USB Driver Installation" guide
   for your board.
 
 :Mac:
