@@ -26,4 +26,4 @@ CLI Guide
 .. toctree::
     :maxdepth: 2
 
-    ../arm/userguide/account/index
+    ../arm/stm32/account/index

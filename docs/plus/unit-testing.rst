@@ -383,5 +383,5 @@ CLI Guide
 .. toctree::
     :maxdepth: 3
 
-    pio test <../arm/userguide/cmd_test>
-    pio remote test <../arm/userguide/remote/cmd_test>
+    pio test <../arm/stm32/cmd_test>
+    pio remote test <../arm/stm32/remote/cmd_test>

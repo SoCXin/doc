@@ -163,6 +163,6 @@ CLI Guide
 .. toctree::
     :maxdepth: 3
 
-    ../arm/userguide/remote/index
+    ../arm/stm32/remote/index
 
 
