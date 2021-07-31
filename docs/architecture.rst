@@ -1,7 +1,7 @@
 .. architecture:
 
-architecture
-===================
+Architecture Knowledge
+=======================
 
 **A place where Developers and Teams have true Freedom! No more vendor lock-in!**
 
@@ -9,7 +9,7 @@ architecture
     :local:
 
 
-Philosophy
+MCS51
 ----------
 
 PlatformIO's unique philosophy in the embedded market provides developers with a modern
@@ -29,17 +29,28 @@ And it runs on any one of your favorite modern operating systems (macOS, MS Wind
 Linux, FreeBSD).
 
 
-Problematic
+ARM
 -----------
 
 * The main problem which repulses people from the embedded world is a complicated
   process to setup development software for a specific MCU/board: toolchains,
   proprietary vendor's IDE (which sometimes isn't free) and what is more,
   to get a computer with OS where that software is supported.
-* Multiple hardware platforms (MCUs, boards) require different toolchains,
-  IDEs, etc, and, respectively, spending time on learning new development environments.
-* Finding proper libraries and code samples showing how to use popular
-  sensors, actuators, etc.
-* Sharing embedded projects between team members, regardless of an operating
-  system they prefer to work with.
 
+
+RISC-V
+-----------
+
+* The main problem which repulses people from the embedded world is a complicated
+  process to setup development software for a specific MCU/board: toolchains,
+  proprietary vendor's IDE (which sometimes isn't free) and what is more,
+  to get a computer with OS where that software is supported.
+
+
+MIPS
+-----------
+
+* The main problem which repulses people from the embedded world is a complicated
+  process to setup development software for a specific MCU/board: toolchains,
+  proprietary vendor's IDE (which sometimes isn't free) and what is more,
+  to get a computer with OS where that software is supported.

@@ -1,14 +1,14 @@
 
-SoC Architecture
-================
+SoC Documentation
+==================
 
-**A place where Developers have true Freedom! No more vendor lock-in!**
+**A place where Developers find your chip! No more vendor lock-in!**
 
-* Open source, maximum permissive Apache 2.0 license
-* Cross-platform IDE and Unified Debugger
-* Static Code Analyzer and Remote Unit Testing
-* Multi-platform and Multi-architecture Build System
-* Firmware File Explorer and Memory Inspection.
+* open source
+* abundant
+* practical value
+* meticulous
+* Comprehensive
 
 **Social:** `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
 `Twitter <https://twitter.com/QitasTang>`_ |
@@ -23,7 +23,7 @@ Classification
     architecture
 
 .. toctree::
-    :caption: MCS-51
+    :caption: MCS51
     :maxdepth: 1
 
     level1/ide/pioide
@@ -32,7 +32,7 @@ Classification
     tutorials/index
 
 .. toctree::
-    :caption: Cortex
+    :caption: ARM
     :maxdepth: 1
 
     platformio.ini <projectconf/index>
