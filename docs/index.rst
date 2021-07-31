@@ -26,10 +26,9 @@ Classification
     :caption: MCS51
     :maxdepth: 1
 
-    MCS51/STC/index
-    MCS51/STC/pioide
-    MCS51/WCH/index
     MCS51/index
+    MCS51/STC/index
+    MCS51/WCH/index
 
 .. toctree::
     :caption: ARM
