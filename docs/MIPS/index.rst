@@ -1,7 +1,7 @@
- 
+
 .. _projectconf:
 
-"platformio.ini" (Project Configuration File)
+MIPS
 =============================================
 
 Each PlatformIO project has a configuration file named

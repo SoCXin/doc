@@ -88,10 +88,11 @@ Options
 
     ESP32
     ESP32-S2
+    ESP32-S3
     section_env_build
     section_env_library
     section_env_upload
     section_env_check
     section_env_test
     section_env_debug
-    section_env_advanced
+

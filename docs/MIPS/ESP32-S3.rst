@@ -1,7 +1,7 @@
- 
+
 .. _projectconf_section_env_advanced:
 
-Advanced options
+ESP32-S3
 ----------------
 
 .. _projectconf_env_extends:

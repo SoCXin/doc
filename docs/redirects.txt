@@ -46,6 +46,9 @@
 /stm32/account/index.html -> /arm/stm32/account/index.html
 /stm32/demo.html -> /arm/stm32/demo.html
 /stm32/index.html -> /arm/stm32/index.html
+/stm32/cmd_device.html -> /arm/stm32/device/index.html
+/stm32/cmd_init.html -> /stm32/project/cmd_init.html
+/stm32/cmd_serialports.html -> /stm32/cmd_device.html
 /quickstart.html -> /arm/quickstart.html
 /migration.html -> /arm/migration.html
 /history.html -> /arm/history.html
@@ -60,11 +63,9 @@
 /WCH/CH554.html -> /MCS51/WCH/CH554.html
 /WCH/CH552.html -> /MCS51/WCH/CH552.html
 /WCH/index.html -> /MCS51/WCH/index.html
-/stm32/cmd_device.html -> /arm/stm32/device/index.html
-/MIPS.html -> MIPS/index.html
-/stm32/cmd_init.html -> /stm32/project/cmd_init.html
-/MIPS/ESP32.html -> /MIPS/ESP32.html
-/MIPS/ESP32-S2.html -> /MIPS/section_env_platform.html
-/stm32/cmd_serialports.html -> /stm32/cmd_device.html
+/MIPS.html -> /MIPS/index.html
+/ESP32.html -> /MIPS/ESP32.html
+/ESP32-S2.html -> /MIPS/ESP32-S2.html
+/ESP32-S3.html -> /MIPS/ESP32-S3.html
 /platforms/unit_testing.html -> /X86/unit-testing.html
 /platforms/espressif.html -> /platforms/espressif8266.html
