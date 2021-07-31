@@ -70,8 +70,5 @@ Classification
     :caption: Miscellaneous
     :maxdepth: 1
 
-    test <articles>
     FAQ <faq>
     core/history
-    core/migration
-

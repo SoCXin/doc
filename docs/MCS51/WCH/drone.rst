@@ -64,7 +64,7 @@ and boards from command line interface:
     pip install -U platformio
     pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
-.. image:: ../../_static/images/MCS51.png
+.. image:: ../../_static/images/WCH/MCS51.png
 
 Examples
 --------
