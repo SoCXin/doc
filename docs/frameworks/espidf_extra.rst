@@ -116,7 +116,7 @@ the root folder has the following content:
     project(project-name)
 
 The second ``CMakeLists.txt`` in :ref:`projectconf_pio_src_dir` is responsible for
-controlling the build process of the component and its level1 into the overall
+controlling the build process of the component and its MCS51 into the overall
 project. The minimal component ``CMakeLists.txt`` file simply registers the component to
 the build system using ``idf_component_register``:
 
@@ -160,7 +160,7 @@ ESP-IDF modules as modular pieces of standalone code might be useful for structu
 reusable code or including third party components that aren’t part of ESP-IDF.
 
 These components contain either a single ``CMakeLists.txt`` file which controls the
-build process of the component and its level1 into the overall project. An
+build process of the component and its MCS51 into the overall project. An
 optional ``Kconfig`` file defines the component configuration options that can be set
 via ``menuconfig``. Some components may also include ``Kconfig.projbuild`` and
 ``project_include.cmake`` files, which are special files for overriding parts of the

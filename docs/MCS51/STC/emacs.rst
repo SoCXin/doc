@@ -1,4 +1,4 @@
- 
+
 .. _ide_emacs:
 
 Emacs
@@ -12,7 +12,7 @@ with extensions to support text editing.
 Refer to the `Emacs Documentation <https://www.gnu.org/software/emacs/#Manuals>`_
 page for more detailed information.
 
-.. image:: ../../_static/images/ide/emacs/ide-platformio-emacs.png
+.. image:: ../../_static/images/STC/emacs/ide-platformio-emacs.png
     :target: ../../_images/ide-platformio-emacs.png
 
 .. contents::

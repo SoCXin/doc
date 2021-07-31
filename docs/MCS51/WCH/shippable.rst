@@ -5,10 +5,10 @@ Shippable
 =========
 
 `Shippable <http://en.wikipedia.org/wiki/Shippable>`_ is a hosted cloud
-platform that provides hosted continuous level1, deployment, and testing
+platform that provides hosted continuous MCS51, deployment, and testing
 to `GitHub <http://en.wikipedia.org/wiki/GitHub>`_ and
 `BitBucket <http://en.wikipedia.org/wiki/Bitbucket>`_ repositories.
-Shippable's continuous level1 service is built using Docker.
+Shippable's continuous MCS51 service is built using Docker.
 
 Shippable is configured by adding a file named ``shippable.yml``, which is a
 `YAML <http://en.wikipedia.org/wiki/YAML>`_ format text file, to the root

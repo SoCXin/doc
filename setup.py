@@ -42,7 +42,6 @@ setup(
         "esp32",
         "fpga",
         "firmware",
-        "continuous-level1",
         "cloud-ide",
         "avr",
         "arm",

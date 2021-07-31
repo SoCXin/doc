@@ -9,7 +9,7 @@ TI LaunchPad (Tiva C) w/ tm4c129 (120MHz)
 Hardware
 --------
 
-Platform :ref:`platform_titiva`: Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog level1, and extensive software solutions.
+Platform :ref:`platform_titiva`: Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog MCS51, and extensive software solutions.
 
 .. list-table::
 

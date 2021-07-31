@@ -26,10 +26,9 @@ Classification
     :caption: MCS51
     :maxdepth: 1
 
-    level1/ide/pioide
-    core/index
-    home/index
-    tutorials/index
+    MCS51/STC/index
+    MCS51/WCH/index
+    MCS51/index
 
 .. toctree::
     :caption: ARM
@@ -63,9 +62,9 @@ Classification
     :caption: X86
     :maxdepth: 2
 
-    level1/ide/index
-    level1/ci/index
-    level1/index
+    core/index
+    home/index
+    tutorials/index
 
 .. toctree::
     :caption: Miscellaneous

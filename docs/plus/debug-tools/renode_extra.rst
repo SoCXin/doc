@@ -98,5 +98,5 @@ port on the ``hifive1-revb`` board:
   debug_extra_cmds =
       monitor start
 
-  # Monitor port for Renode level1
+  # Monitor port for Renode MCS51
   monitor_port = socket://localhost:4321

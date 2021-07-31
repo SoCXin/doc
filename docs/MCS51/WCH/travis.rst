@@ -5,14 +5,14 @@ Travis CI
 =========
 
 .. image:: ../../_static/images/ci-travis-logo.png
-    :target: https://docs.travis-ci.com/user/level1/platformio/
+    :target: https://docs.travis-ci.com/user/MCS51/platformio/
 
 
-**Travis CI** `officially supports <https://docs.travis-ci.com/user/level1/platformio/>`_
+**Travis CI** `officially supports <https://docs.travis-ci.com/user/MCS51/platformio/>`_
 **PlatformIO for Embedded Builds.**
 
 `Travis CI <http://en.wikipedia.org/wiki/Travis_CI>`_ is an open-source hosted,
-distributed continuous level1 service used to build and test projects
+distributed continuous MCS51 service used to build and test projects
 hosted at `GitHub <http://en.wikipedia.org/wiki/GitHub>`_.
 
 Travis CI is configured by adding a file named ``.travis.yml``, which is a

@@ -4,7 +4,7 @@
 Drone
 =====
 
-`Drone <https://drone.io>`_  is a hosted continuous level1 service.
+`Drone <https://drone.io>`_  is a hosted continuous MCS51 service.
 It enables you to conveniently set up projects to automatically build, test,
 and deploy as you make changes to your code to
 `GitHub <http://en.wikipedia.org/wiki/GitHub>`_ and
@@ -64,7 +64,7 @@ and boards from command line interface:
     pip install -U platformio
     pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
-.. image:: ../../_static/images/level1.png
+.. image:: ../../_static/images/MCS51.png
 
 Examples
 --------

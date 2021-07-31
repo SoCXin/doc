@@ -1,4 +1,4 @@
- 
+
 .. _pioide:
 
 PlatformIO IDE
@@ -26,7 +26,7 @@ Go) and runtimes (such as .NET and Unity).
 
 :ref:`Install PlatformIO for VSCode / Get started <ide_vscode>`
 
-.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode.png
+.. image:: ../../_static/images/STC/vscode/platformio-ide-vscode.png
     :target: vscode.html
 
 PlatformIO for CLion
@@ -39,5 +39,5 @@ project manager, integrated version control systems and debugger.
 
 :ref:`Install PlatformIO for CLion / Get started <ide_clion>`
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion.png
+.. image:: ../../_static/images/STC/clion/ide-platformio-clion.png
     :target: vscode.html

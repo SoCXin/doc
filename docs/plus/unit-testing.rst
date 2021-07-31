@@ -43,7 +43,7 @@ Tutorials
 * `ThingForward: Start Embedded Testing with PlatformIO <http://www.thingforward.io/techblog/2017-07-25-starting-embedded-testing-with-platformio.html>`_
 * `ThingForward: Embedded Testing with PlatformIO - Part 2 <http://www.thingforward.io/techblog/2017-08-08-embedded-testing-with-platformio-part-2.html>`_
 * `ThingForward: Embedded Testing with PlatformIO – Part 3: Remoting <http://www.thingforward.io/techblog/2017-09-06-embedded-testing-with-platformio-part-3-remoting.html>`_
-* `ThingForward: Embedded Testing with PlatformIO – Part 4: Continuous Integration <http://www.thingforward.io/techblog/2017-09-18-embedded-testing-with-platformio-part-4-continuous-level1.html>`_
+* `ThingForward: Embedded Testing with PlatformIO – Part 4: Continuous Integration <http://www.thingforward.io/techblog/2017-09-18-embedded-testing-with-platformio-part-4-continuous-MCS51.html>`_
 * `ThingForward, Webinar: Unit Testing for Embedded with PlatformIO and Qt Creator <https://www.youtube.com/watch?v=GJiMdmlBGlk>`_
 * `Xose Pérez: Automated unit testing in the metal <https://tinkerman.cat/automated-unit-testing-metal/>`_
 
@@ -123,7 +123,7 @@ network ports. Remote Unit Testing works in pair with :ref:`pioremote`. In this
 case, you need to use the special command :ref:`cmd_remote_test`.
 
 PlatformIO supports multiple :ref:`ci` systems where you can run unit tests
-at each level1 stage. See real
+at each MCS51 stage. See real
 `PlatformIO Remote Unit Testing Example <https://github.com/platformio/platformio-remote-unit-testing-example>`__.
 
 .. _unit_testing_transport:

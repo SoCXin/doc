@@ -7,7 +7,7 @@ Cloud & Desktop IDE
 Native Extensions
 -----------------
 
-Native extensions and plugins provide official level1 with IDEs/Text Editors and
+Native extensions and plugins provide official MCS51 with IDEs/Text Editors and
 contain built-in :ref:`piocore` and :ref:`piohome`. We **highly recommend** to use the
 next native integrations for:
 

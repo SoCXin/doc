@@ -1,4 +1,4 @@
- 
+
 .. _ide_clion:
 
 CLion
@@ -12,7 +12,7 @@ project manager, integrated version control systems and debugger.
 Refer to the `CLion Documentation <https://www.jetbrains.com/clion/help/>`_
 page for more detailed information.
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion.png
+.. image:: ../../_static/images/STC/clion/ide-platformio-clion.png
 
 .. contents:: Contents
     :local:
@@ -30,7 +30,7 @@ Installation
    Open "Configure > Plugins" window and go to the "Marketplace" tab. Search for
    ``PlatformIO`` and press the "Install" button.
 
-   .. image:: ../../_static/images/ide/clion/ide-platformio-clion-install-plugin.png
+   .. image:: ../../_static/images/STC/clion/ide-platformio-clion-install-plugin.png
 
 4. Restart CLion IDE.
 
@@ -64,7 +64,7 @@ A temporary solution is to manually configure project profiles in CLion.
 Please open CLion Settings and navigate to "Build, Execution, Deployment > CMake".
 Press "+" button and PlatformIO-based project profiles:
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion-configure-profiles.png
+.. image:: ../../_static/images/STC/clion/ide-platformio-clion-configure-profiles.png
 
 
 Arduino ``.ino`` files are not supported
@@ -94,7 +94,7 @@ Setting Up the Project
    avoid further issues with project compilation. Numbers and some symbols are
    allowed depending on a file system:
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion-new-project.png
+.. image:: ../../_static/images/STC/clion/ide-platformio-clion-new-project.png
 
 2. Rename ``main.c`` file in ``src`` folder to ``main.cpp``  (right click on a file
    ``main.c``, Refactor > Rename...) . Paste the next contents:
@@ -139,7 +139,7 @@ Setting Up the Project
       delay(1000);
     }
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion-blink-project.png
+.. image:: ../../_static/images/STC/clion/ide-platformio-clion-blink-project.png
 
 Build & Upload
 ~~~~~~~~~~~~~~
@@ -147,19 +147,19 @@ Build & Upload
 1. Open project configuration wizard and add ``PlatformIO Upload`` and
    ``PlatformIO Debug`` configurations (you can add the rest configurations if you need them):
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion-add-configuration.png
+.. image:: ../../_static/images/STC/clion/ide-platformio-clion-add-configuration.png
 
 
 2. Remove pre-task ("Build") from ``PlatformIO Upload`` and ``PlatformIO Debug``
    configurations to avoid double project building. You should see "There are no tasks
    to run before launch".
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion-configuration-remove-pretasks.png
+.. image:: ../../_static/images/STC/clion/ide-platformio-clion-configuration-remove-pretasks.png
 
 3. Select ``PlatformIO Upload`` configuration and use the "Build" button for project
    compilation or the "Run" for a firmware uploading:
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion-build-upload-project.png
+.. image:: ../../_static/images/STC/clion/ide-platformio-clion-build-upload-project.png
 
 
 Configuration options
@@ -183,7 +183,7 @@ Debugging
 application with 1-Click without extra steps. Please select ``PlatformIO Debug``
 configuration and press the "Debug" button:
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion-debug-project.png
+.. image:: ../../_static/images/STC/clion/ide-platformio-clion-debug-project.png
 
 Peripheral Registers
 ~~~~~~~~~~~~~~~~~~~~
@@ -201,7 +201,7 @@ and select registers to monitor. Close configuration window.
   "CMake" variable. Now press the "+" button in Peripherals Wizard and select SVD file
   mentioned in ``CLION_SVD_FILE_PATH``.
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion-debug-peripherals.png
+.. image:: ../../_static/images/STC/clion/ide-platformio-clion-debug-peripherals.png
 
 
 PlatformIO Home
@@ -218,7 +218,7 @@ and run :ref:`cmd_home` command:
 
     pio -c clion home
 
-.. image:: ../../_static/images/ide/clion/ide-platformio-clion-piohome-terminal.png
+.. image:: ../../_static/images/STC/clion/ide-platformio-clion-piohome-terminal.png
 
 ---------------
 

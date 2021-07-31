@@ -1,4 +1,4 @@
- 
+
 .. _ide_netbeans:
 
 NetBeans
@@ -22,7 +22,7 @@ install the C/C++ development plugins).
   PlatformIO CLI installed due to the container nature of this technology. It is
   recommended that you use the native version of the NetBeans IDE via the above link.
 
-.. image:: ../../_static/images/ide/netbeans/ide-platformio-netbeans.png
+.. image:: ../../_static/images/STC/netbeans/ide-platformio-netbeans.png
     :target: ../../_images/ide-platformio-netbeans.png
 
 .. contents::

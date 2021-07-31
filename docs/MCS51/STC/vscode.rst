@@ -1,4 +1,4 @@
- 
+
 .. _ide_vscode:
 
 VSCode
@@ -14,7 +14,7 @@ Windows, macOS and Linux. It comes with built-in support for JavaScript,
 TypeScript and Node.js and has a rich ecosystem of extensions for other
 languages (such as C++, C#, Python, PHP, Go) and runtimes (such as .NET and Unity)
 
-.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode.png
+.. image:: ../../_static/images/STC/vscode/platformio-ide-vscode.png
     :target: ../../_images/platformio-ide-vscode.png
 
 .. contents:: Contents
@@ -34,7 +34,7 @@ Installation
 2. **Search** for the official ``platformio ide`` `extension <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`_
 3. **Install** PlatformIO IDE.
 
-.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-pkg-installer.png
+.. image:: ../../_static/images/STC/vscode/platformio-ide-vscode-pkg-installer.png
 
 .. note::
 
@@ -54,11 +54,11 @@ Setting Up the Project
 
 1. Click on "PlatformIO Home" button on the bottom :ref:`ide_vscode_toolbar`
 
-.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-welcome.png
+.. image:: ../../_static/images/STC/vscode/platformio-ide-vscode-welcome.png
 
 2. Click on "New Project", select a board and create new PlatformIO Project
 
-.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-new-project.png
+.. image:: ../../_static/images/STC/vscode/platformio-ide-vscode-new-project.png
 
 3. Open ``main.cpp`` file form ``src`` folder and replace its contents with
    the next:
@@ -102,12 +102,12 @@ Setting Up the Project
       delay(1000);
     }
 
-.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-blink-project.png
+.. image:: ../../_static/images/STC/vscode/platformio-ide-vscode-blink-project.png
 
 4. Build your project with ``ctrl+alt+b`` hotkey (see all Key Bindings in
    "User Guide" section below) or using "Build" button on the :ref:`ide_vscode_toolbar`
 
-.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-build-project.png
+.. image:: ../../_static/images/STC/vscode/platformio-ide-vscode-build-project.png
 
 
 ---------------
@@ -129,7 +129,7 @@ PlatformIO IDE Toolbar is located in VSCode Status Bar (left corner)
 and contains quick access buttons for the popular commands.
 Each button contains hint (delay mouse on it).
 
-.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-toolbar.png
+.. image:: ../../_static/images/STC/vscode/platformio-ide-vscode-toolbar.png
 
 1. :ref:`piohome`
 2. PlatformIO: Build
@@ -148,7 +148,7 @@ There are 2 ways how to access :ref:`piocore`:
 1. "Terminal" icon on the :ref:`ide_vscode_toolbar`
 2. Left Activity Bar > PlatformIO (ant icon) > Quick Access > Miscellaneous > PlatformIO Core CLI
 
-.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-cli-access.png
+.. image:: ../../_static/images/STC/vscode/platformio-ide-vscode-cli-access.png
 
 
 Project Tasks
@@ -167,7 +167,7 @@ PlatformIO".
   Please note that you can drag/move "Project Task" into to the another view within
   VSCode, such as "Explorer".
 
-.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-task-explorer.png
+.. image:: ../../_static/images/STC/vscode/platformio-ide-vscode-task-explorer.png
 
 Task Runner
 ~~~~~~~~~~~
@@ -347,7 +347,7 @@ There are two pre-configured debugging configurations:
   environment in :ref:`projectconf` if the :ref:`projectconf_pio_default_envs`
   option is not specified.
 
-.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-debug.png
+.. image:: ../../_static/images/STC/vscode/platformio-ide-vscode-debug.png
 
 Variable Format
 ~~~~~~~~~~~~~~~

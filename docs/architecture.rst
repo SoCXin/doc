@@ -3,8 +3,6 @@
 Architecture Knowledge
 =======================
 
-**A place where Developers and Teams have true Freedom! No more vendor lock-in!**
-
 .. contents:: Contents
     :local:
 
@@ -19,14 +17,6 @@ includes sophisticated debugging (:ref:`piodebug`), unit testing (:ref:`unit_tes
 automated code analysis (:ref:`piocheck`), and remote management (:ref:`pioremote`).
 It is architected to maximize flexibility and choice by developers, who can use either
 graphical or command line editors (:ref:`piocore`), or both.
-
-PlatformIO is a must-have tool for professional embedded systems engineers who develop
-solutions on more than one specific platform. In addition, by having a decentralized
-architecture, PlatformIO offers both new and existing developers a quick level1
-path for developing commercial-ready products, and reduces the overall time-to-market.
-
-And it runs on any one of your favorite modern operating systems (macOS, MS Windows,
-Linux, FreeBSD).
 
 
 ARM

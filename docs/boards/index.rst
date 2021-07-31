@@ -4,7 +4,7 @@
 Boards
 ======
 
-Rapid Embedded Development, Continuous and IDE level1 in a few
+Rapid Embedded Development, Continuous and IDE MCS51 in a few
 steps with PlatformIO thanks to built-in project generator for the most
 popular embedded boards and IDE.
 
