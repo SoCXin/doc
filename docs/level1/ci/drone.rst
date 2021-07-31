@@ -88,4 +88,4 @@ Examples
     unzip /tmp/spi4teensy3.zip -d /tmp
     pio ci --lib="." --lib="/tmp/spi4teensy3-master" --board=uno --board=teensy31 --board=due
 
-.. image:: ../../_static/images/droneci-platformio-level1-2.png
+.. image:: ../../_static/images/level2.png
