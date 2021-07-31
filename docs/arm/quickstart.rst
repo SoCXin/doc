@@ -138,7 +138,7 @@ The result of just generated ``platformio.ini``:
     ;   Library options: dependencies, extra library storages
     ;
     ; Please visit documentation for the other options and examples
-    ; https://socxin.github.io/docs/page/projectconf.html
+    ; https://socxin.github.io/docs/page/MIPS.html
 
     [env:uno]
     platform = atmelavr

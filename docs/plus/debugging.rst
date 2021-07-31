@@ -75,8 +75,8 @@ Configuration
 .. toctree::
   :maxdepth: 2
 
-  ../projectconf/build_configurations
-  ../projectconf/section_env_debug
+  ../MIPS/build_configurations
+  ../MIPS/section_env_debug
 
 .. _debugging_tools:
 

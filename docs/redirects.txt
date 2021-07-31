@@ -77,10 +77,10 @@
 /WCH/appveyor.html -> /MCS51/WCH/appveyor.html
 /WCH/index.html -> /MCS51/WCH/index.html
 /stm32/cmd_device.html -> /arm/stm32/device/index.html
-/projectconf.html -> projectconf/index.html
+/MIPS.html -> MIPS/index.html
 /stm32/cmd_init.html -> /stm32/project/cmd_init.html
-/projectconf/section_env_board.html -> /projectconf/section_env_platform.html
-/projectconf/section_env_general.html -> /projectconf/section_env_platform.html
+/MIPS/section_env_board.html -> /MIPS/section_env_platform.html
+/MIPS/section_env_general.html -> /MIPS/section_env_platform.html
 /stm32/cmd_serialports.html -> /stm32/cmd_device.html
 /platforms/unit_testing.html -> /plus/unit-testing.html
 /platforms/espressif.html -> /platforms/espressif8266.html

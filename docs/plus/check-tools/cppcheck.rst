@@ -1,4 +1,4 @@
- 
+
 .. _check_tool_cppcheck:
 
 Cppcheck
@@ -71,7 +71,7 @@ Useful options that can be used used for adjusting check process:
 .. toctree::
   :maxdepth: 2
 
-  ../../projectconf/section_env_check
+  ../../MIPS/section_env_check
 
 Extra flags
 -----------

@@ -66,7 +66,7 @@ from :ref:`projectconf` using the next options:
 .. toctree::
   :maxdepth: 2
 
-  ../projectconf/section_env_check
+  ../MIPS/section_env_check
 
 .. _check_tools:
 

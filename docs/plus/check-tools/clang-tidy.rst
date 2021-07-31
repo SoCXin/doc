@@ -1,4 +1,4 @@
- 
+
 .. _check_tool_clangtidy:
 
 Clang-Tidy
@@ -46,7 +46,7 @@ Useful options that can be used used for adjusting check process:
 .. toctree::
   :maxdepth: 2
 
-  ../../projectconf/section_env_check
+  ../../MIPS/section_env_check
 
 Supported checks
 ----------------

@@ -67,7 +67,7 @@ Configuration
 .. toctree::
   :maxdepth: 2
 
-  ../projectconf/section_env_test
+  ../MIPS/section_env_test
 
 Test Types
 ----------

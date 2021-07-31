@@ -10,7 +10,7 @@ Tutorials
 .. toctree::
     :maxdepth: 1
 
-    arm/unit_testing_blink
+    core/unit_testing_blink
     espressif32/arduino_debugging_unit_testing
     espressif32/espidf_debugging_unit_testing_analysis
     ststm32/stm32cube_debugging_unit_testing

@@ -1,4 +1,4 @@
- 
+
 .. _debugging_tool_custom:
 
 Custom
@@ -13,7 +13,7 @@ Custom
 .. toctree::
   :maxdepth: 2
 
-  ../../projectconf/section_env_debug
+  ../../MIPS/section_env_debug
 
 Examples
 --------

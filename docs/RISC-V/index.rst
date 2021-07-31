@@ -1,4 +1,4 @@
- 
+
 .. _librarymanager:
 
 Library Management
@@ -28,6 +28,6 @@ up-to-date. PlatformIO Library Manager supports
 
     quickstart
     ldf
-    Configuration <../projectconf/section_env_library>
+    Configuration <../MIPS/section_env_library>
     config
     creating

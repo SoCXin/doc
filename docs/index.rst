@@ -63,9 +63,9 @@ Classification
     :caption: X86
     :maxdepth: 2
 
-    platformio.ini <projectconf/index>
+    platformio.ini <MIPS/index>
     envvars
-    projectconf/advanced_scripting
+    MIPS/advanced_scripting
 
 
 .. toctree::
