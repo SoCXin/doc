@@ -1,4 +1,4 @@
- 
+
 .. _cmd_remote_update:
 
 pio remote update
@@ -20,7 +20,7 @@ Description
 -----------
 
 Check or update installed :ref:`platforms` and global
-:ref:`Libraries <librarymanager>` on the remote machine.
+:ref:`Libraries <RISC-V>` on the remote machine.
 
 Options
 -------

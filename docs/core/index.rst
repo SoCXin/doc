@@ -1,4 +1,4 @@
- 
+
 .. |PIOCORE| replace:: **PlatformIO Core**
 
 .. _piocore:
@@ -10,7 +10,7 @@ PlatformIO Core (CLI)
 
 * Multi-platform Build System
 * Development platform and package managers
-* :ref:`librarymanager`
+* :ref:`RISC-V`
 * :ref:`ldf`
 * :ref:`Serial Port Monitor <cmd_device_monitor>`
 * Integration components (:ref:`ide` and :ref:`ci`).

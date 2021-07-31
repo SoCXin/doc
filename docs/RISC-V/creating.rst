@@ -1,4 +1,4 @@
- 
+
 .. _library_creating:
 
 Creating Library
@@ -9,7 +9,7 @@ is duplicated between different projects that lead to project complexity.
 A good practice is to organize interdependent components as the separate libraries
 where other projects can depend on them.
 
-PlatformIO has a built-in :ref:`librarymanager` where developers can declare project
+PlatformIO has a built-in :ref:`RISC-V` where developers can declare project
 dependencies and PlatformIO will automatically manage them (install, build, update).
 It doesn't have any requirements for a library source code structure.
 The only requirement is a library manifest file -

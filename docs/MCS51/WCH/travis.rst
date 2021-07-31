@@ -114,7 +114,7 @@ Library dependencies
 
 There 2 options to test source code with dependent libraries:
 
-Install dependent library using :ref:`librarymanager`
+Install dependent library using :ref:`RISC-V`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: yaml

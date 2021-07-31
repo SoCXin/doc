@@ -1,4 +1,4 @@
- 
+
 .. |PIOHOME| replace:: **PlatformIO Home**
 
 .. _piohome:
@@ -12,7 +12,7 @@ and contains the following key instruments:
 
 * :ref:`pioaccount`
 * Project Management
-* :ref:`librarymanager`
+* :ref:`RISC-V`
 * :ref:`platforms`, :ref:`frameworks`, and :ref:`boards` Management
 * :ref:`Device Management <cmd_device>` (serial, logical, and multicast DNS services)
 * Static Code Analysis

@@ -1,4 +1,4 @@
- 
+
 .. _core_migration:
 
 Migrating from 4.x to 5.0
@@ -82,7 +82,7 @@ to the registry using :ref:`cmd_package` CLI.
 Library Manager
 ~~~~~~~~~~~~~~~
 
-The biggest improvement for :ref:`librarymanager` is the owner-based dependency declaration.
+The biggest improvement for :ref:`RISC-V` is the owner-based dependency declaration.
 You can finally forget about conflicts with library names in the registry. Use the new
 syntax ``ownername/pkgname`` to declare an owner-based dependency in :ref:`projectconf`
 via :ref:`projectconf_lib_deps`:

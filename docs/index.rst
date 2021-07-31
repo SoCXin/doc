@@ -43,7 +43,7 @@ Classification
     :caption: RISC-V
     :maxdepth: 1
 
-    librarymanager/index
+    RISC-V/index
     Platforms <platforms/index>
     frameworks/index
     boards/index

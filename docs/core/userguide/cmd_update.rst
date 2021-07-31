@@ -1,4 +1,4 @@
- 
+
 .. _cmd_update:
 
 pio update
@@ -18,7 +18,7 @@ Description
 -----------
 
 Check or update installed PlatformIO Core packages, :ref:`platforms` and global
-:ref:`Libraries <librarymanager>`. This command is combination of 2 sub-commands:
+:ref:`Libraries <RISC-V>`. This command is combination of 2 sub-commands:
 
 * :ref:`cmd_platform_update`
 * :ref:`cmd_lib_update`

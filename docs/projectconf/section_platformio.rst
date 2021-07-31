@@ -1,4 +1,4 @@
- 
+
 .. _projectconf_section_platformio:
 
 Section ``[platformio]``
@@ -237,7 +237,7 @@ Example:
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`/lib"
 
-Global library storage for PlatfrmIO projects and :ref:`librarymanager` where
+Global library storage for PlatfrmIO projects and :ref:`RISC-V` where
 :ref:`ldf` looks for dependencies.
 
 This option can also be configured by the global environment variable
@@ -381,7 +381,7 @@ This option can also be configured by the global environment variable
 
 Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_workspace_dir`/libdeps"
 
-Internal storage where :ref:`librarymanager` will install project dependencies
+Internal storage where :ref:`RISC-V` will install project dependencies
 (:ref:`projectconf_lib_deps`).
 
 This option can also be configured by the global environment variable
