@@ -74,6 +74,6 @@ Do not show interactive prompt.
 See Also
 --------
 
-* :ref:`library_json`
+* :ref:`wch_ch573`
 * :ref:`cmd_package_pack`
 * :ref:`cmd_package_unpublish`

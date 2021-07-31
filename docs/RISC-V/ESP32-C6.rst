@@ -1,7 +1,7 @@
 
-.. _espressif_esp32c3:
+.. _espressif_esp32c6:
 
-ESP32-C3
+ESP32-C6
 ================
 
 Managing components between the projects is a historical issue. A common code

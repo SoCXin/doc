@@ -1,7 +1,7 @@
 
-.. _library_quickstart:
+.. _wch_ch573:
 
-Quick Start
+CH573
 ===========
 
 *PlatformIO Library Manager* is a tool for managing libraries of

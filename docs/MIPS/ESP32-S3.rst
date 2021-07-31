@@ -1,5 +1,5 @@
 
-.. _projectconf_section_env_advanced:
+.. _espressif_esp32s3:
 
 ESP32-S3
 ----------------

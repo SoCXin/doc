@@ -1,4 +1,4 @@
- 
+
 .. _cmd_lib_search:
 
 pio lib search
@@ -17,7 +17,7 @@ Description
 -----------
 
 Search for library in `PlatformIO Library Registry <https://www.soc.xin/lib>`_
-by :ref:`library_json` fields in the boolean mode.
+by :ref:`wch_ch573` fields in the boolean mode.
 
 The boolean search capability supports the following operators:
 

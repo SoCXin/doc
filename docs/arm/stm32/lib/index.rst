@@ -29,7 +29,7 @@ Multiple options are allowed.
     -g, --global
 
 Manage global PlatformIO's library storage (
-":ref:`projectconf_pio_core_dir`/lib") where :ref:`ldf` will look for
+":ref:`projectconf_pio_core_dir`/lib") where :ref:`wch_ch573` will look for
 dependencies by default.
 
 .. option::

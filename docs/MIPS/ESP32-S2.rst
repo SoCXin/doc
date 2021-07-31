@@ -1,5 +1,5 @@
 
-.. _projectconf_section_env_monitor:
+.. _espressif_esp32s2:
 
 ESP32-S2
 ---------------

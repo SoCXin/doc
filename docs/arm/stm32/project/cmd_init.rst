@@ -26,7 +26,7 @@ This command will create:
 * :ref:`projectconf_pio_src_dir`, put project source files here
   (``*.h, *.c, *.cpp, *.S, *.ino, etc.``)
 * :ref:`projectconf_pio_lib_dir`, put project specific (private) libraries here.
-  See also :ref:`ldf`
+  See also :ref:`wch_ch573`
 * :ref:`projectconf_pio_test_dir`, put project tests here. More details :ref:`unit_testing`
 * Miscellaneous files for VCS and :ref:`ci` support.
 

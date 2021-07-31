@@ -1,4 +1,4 @@
- 
+
 .. _cmd_package_unpublish:
 
 pio package unpublish
@@ -45,6 +45,6 @@ Undo a remove, putting a version back into the registry.
 See Also
 --------
 
-* :ref:`library_json`
+* :ref:`wch_ch573`
 * :ref:`cmd_package_pack`
 * :ref:`cmd_package_publish`

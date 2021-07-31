@@ -267,7 +267,7 @@ programs, you have 2 options:
 
 1. **RECOMMENDED**. We recommend splitting the source code into multiple
    components and placing them into :ref:`projectconf_pio_lib_dir` (project's
-   private libraries and components). :ref:`ldf` will find and include these libraries
+   private libraries and components). :ref:`wch_ch573` will find and include these libraries
    automatically in the build process. You can include any library/component header file
    in your test or program source code via ``#include <MyComponent.h>``.
 

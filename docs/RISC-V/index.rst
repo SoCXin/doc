@@ -1,5 +1,5 @@
 
-.. _RISC_V:
+.. _riscv:
 
 RISC-V
 ==================
@@ -24,8 +24,6 @@ up-to-date. PlatformIO Library Manager supports
 .. toctree::
     :maxdepth: 2
 
-    quickstart
-    ldf
-    Configuration <../MIPS/section_env_library>
-    config
+    CH573
+    ESP32-C6
     ESP32-C3

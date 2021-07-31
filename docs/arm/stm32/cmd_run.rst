@@ -54,7 +54,7 @@ There are also built-in system targets:
 
     + ``monitor`` automatically start :ref:`cmd_device_monitor` after successful
       build operation. You can configure monitor using
-      :ref:`projectconf_section_env_monitor`.
+      :ref:`espressif_esp32s2`.
 
 * System
 

@@ -10,7 +10,7 @@ ARM
 
 * Multi-platform Build System
 * Development platform and package managers
-* :ref:`ldf`
+* :ref:`wch_ch573`
 * :ref:`Serial Port Monitor <cmd_device_monitor>`
 * Integration components (:ref:`ide` and :ref:`ci`).
 
