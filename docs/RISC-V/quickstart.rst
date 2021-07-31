@@ -12,7 +12,6 @@ up-to-date. PlatformIO Library Manager supports
 
 There are 3 options how to find/manage libraries:
 
-* :ref:`piohome`
 * `Web Library Search <https://www.soc.xin/lib>`__
 * PlatformIO Core :ref:`Command Line Interface <cmd_lib_search>`
 
@@ -56,8 +55,6 @@ possible values.
 
 PlatformIO IDE
 --------------
-
-:ref:`pioide` has built-in :ref:`piohome` with a modern GUI which allows:
 
 * Search for new libraries in PlatformIO Registry
 * "1-click" library installation, per-project libraries, extra storages

@@ -131,7 +131,6 @@ Each button contains hint (delay mouse on it).
 
 .. image:: ../../_static/images/STC/vscode/platformio-ide-vscode-toolbar.png
 
-1. :ref:`piohome`
 2. PlatformIO: Build
 3. PlatformIO: Upload
 4. PlatformIO: Clean

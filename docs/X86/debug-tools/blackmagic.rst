@@ -50,7 +50,6 @@ You can configure debugging tool using :ref:`projectconf_debug_tool` option in
     debug_port = /dev/cu.usbmodemE2C0C4C6
 
 Black Magic Probe has 2 serial ports: UART and GDB. We will need "GDB" port.
-Please use :ref:`piohome` > Devices or :ref:`piocore` and :ref:`cmd_device_list`
 command to list available ports. If you do not see "Black Magic Probe GDB" port,
 please try both. More `details <https://github.com/blacksphere/blackmagic/wiki/Useful-GDB-commands#connecting-gdb-to-the-black-magic-probe>`_.
 

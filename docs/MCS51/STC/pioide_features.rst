@@ -1,4 +1,4 @@
- 
+
 **PlatformIO IDE is the next-generation integrated development environment for IoT.**
 
 * Cross-platform build system without external dependencies to the OS software:
@@ -17,4 +17,3 @@
 * Themes support with dark and light colors
 * Serial Port Monitor
 * Built-in Terminal with :ref:`piocore` and CLI tool (``pio``, ``platformio``)
-* Built-in :ref:`piohome`.

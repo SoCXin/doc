@@ -44,8 +44,6 @@ PlatformIO Core 5.0 has been switched to the official **PlatformIO Trusted Regis
 
 - Built-in fine-grained access control (role-based, :ref:`teams <cmd_team>`, :ref:`organizations <cmd_org>`).
 
-The new Web front-end and upgraded :ref:`piohome` are coming soon.
-
 Collaborative Platform
 ~~~~~~~~~~~~~~~~~~~~~~
 

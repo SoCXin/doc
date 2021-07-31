@@ -1,10 +1,8 @@
- 
+
 .. _cmd_home:
 
 pio home
 ========
-
-Helper command for :ref:`piohome`.
 
 .. contents::
 
@@ -14,11 +12,6 @@ Usage
 .. code-block:: bash
 
     pio home
-
-Description
------------
-
-Launch :ref:`piohome` Web-server.
 
 Options
 -------

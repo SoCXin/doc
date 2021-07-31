@@ -243,7 +243,6 @@ Each button contains a hint (leave the mouse on it for a moment).
 
 .. image:: ../../_static/images/STC/atom/ide-atom-toolbar.png
 
-* :ref:`piohome`
 * PlatformIO: Build
 * PlatformIO: Upload
 * PlatformIO: Clean

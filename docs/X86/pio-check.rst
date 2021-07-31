@@ -49,7 +49,6 @@ Key features
 User Interface
 --------------
 
-There is the rich and friendly interface for |PIOCheck| in :ref:`piohome`.
 It allows you to filter messages or directly jump to an issue in a source code.
 
 .. image:: ../_static/images/home/pio-home-inspect-stats-check.png
