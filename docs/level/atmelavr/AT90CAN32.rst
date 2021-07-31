@@ -55,7 +55,7 @@ board manifest `AT90CAN32.json <https://github.com/platformio/platform-atmelavr/
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support AT90CAN32 board.
+:ref:`mcs51` currently does not support AT90CAN32 board.
 
 Frameworks
 ----------

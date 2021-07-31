@@ -30,7 +30,7 @@ Examples are listed from `OpenHW Group development platform repository <https://
 Debugging
 ---------
 
-:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+:ref:`mcs51` - "1-click" solution for debugging with a zero configuration.
 
 .. contents::
     :local:
@@ -41,7 +41,7 @@ Tools & Debug Probes
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
-You can switch between debugging :ref:`debugging_tools` using
+You can switch between debugging :ref:`mcs51` using
 :ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 .. warning::

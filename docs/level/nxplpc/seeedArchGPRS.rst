@@ -55,7 +55,7 @@ board manifest `seeedArchGPRS.json <https://github.com/platformio/platform-nxplp
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Seeed Arch GPRS V2 board.
+:ref:`mcs51` currently does not support Seeed Arch GPRS V2 board.
 
 Frameworks
 ----------

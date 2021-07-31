@@ -55,7 +55,7 @@ board manifest `pinguino32.json <https://github.com/platformio/platform-microchi
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Olimex PIC32-PINGUINO board.
+:ref:`mcs51` currently does not support Olimex PIC32-PINGUINO board.
 
 Frameworks
 ----------

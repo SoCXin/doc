@@ -55,4 +55,4 @@ board manifest `n79e844.json <https://github.com/platformio/platform-intel_mcs51
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic N79E844 board.
+:ref:`mcs51` currently does not support Generic N79E844 board.

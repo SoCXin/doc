@@ -55,7 +55,7 @@ board manifest `xadow_m0.json <https://github.com/platformio/platform-nxplpc/blo
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Seeed Xadow M0 board.
+:ref:`mcs51` currently does not support Seeed Xadow M0 board.
 
 Frameworks
 ----------

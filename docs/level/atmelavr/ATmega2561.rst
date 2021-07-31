@@ -55,7 +55,7 @@ board manifest `ATmega2561.json <https://github.com/platformio/platform-atmelavr
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATmega2561 board.
+:ref:`mcs51` currently does not support ATmega2561 board.
 
 Frameworks
 ----------

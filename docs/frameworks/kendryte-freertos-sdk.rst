@@ -19,7 +19,7 @@ For more detailed information please visit `vendor site <https://github.com/kend
 Debugging
 ---------
 
-:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+:ref:`mcs51` - "1-click" solution for debugging with a zero configuration.
 
 .. contents::
     :local:
@@ -30,7 +30,7 @@ Tools & Debug Probes
 
 Supported debugging tools are listed in "Debug" column. For more detailed
 information, please scroll table by horizontal.
-You can switch between debugging :ref:`debugging_tools` using
+You can switch between debugging :ref:`mcs51` using
 :ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 .. warning::
@@ -41,7 +41,7 @@ You can switch between debugging :ref:`debugging_tools` using
 External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+Boards listed below are compatible with :ref:`mcs51` but **DEPEND ON**
 external debug probe. They **ARE NOT READY** for debugging.
 Please click on board name for the further details.
 

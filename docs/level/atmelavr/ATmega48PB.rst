@@ -55,7 +55,7 @@ board manifest `ATmega48PB.json <https://github.com/platformio/platform-atmelavr
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATmega48PB board.
+:ref:`mcs51` currently does not support ATmega48PB board.
 
 Frameworks
 ----------

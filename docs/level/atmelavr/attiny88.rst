@@ -55,7 +55,7 @@ board manifest `attiny88.json <https://github.com/platformio/platform-atmelavr/b
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic ATtiny88 board.
+:ref:`mcs51` currently does not support Generic ATtiny88 board.
 
 Frameworks
 ----------

@@ -55,7 +55,7 @@ board manifest `raspberrypi_zero.json <https://github.com/platformio/platform-li
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Raspberry Pi Zero board.
+:ref:`mcs51` currently does not support Raspberry Pi Zero board.
 
 Frameworks
 ----------

@@ -55,7 +55,7 @@ board manifest `ATmega168PB.json <https://github.com/platformio/platform-atmelav
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATmega168PB board.
+:ref:`mcs51` currently does not support ATmega168PB board.
 
 Frameworks
 ----------

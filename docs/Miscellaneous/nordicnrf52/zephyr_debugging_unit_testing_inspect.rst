@@ -167,7 +167,7 @@ Debugging the Firmware
 ----------------------
 
 Since `Nordic nRF52-DK <https://socxin.github.io/docs/en/latest/level/nordicnrf52/nrf52_dk.html>`__
-includes an onboard debug probe we can use :ref:`piodebug` without any configuration.
+includes an onboard debug probe we can use :ref:`mcs51` without any configuration.
 
 #. To start a debug session we can use the following options:
 

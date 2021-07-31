@@ -55,7 +55,7 @@ board manifest `fubarino_mini.json <https://github.com/platformio/platform-micro
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Fubarino Mini board.
+:ref:`mcs51` currently does not support Fubarino Mini board.
 
 Frameworks
 ----------

@@ -55,7 +55,7 @@ board manifest `nofire.json <https://github.com/platformio/platform-microchippic
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Pontech NoFire board.
+:ref:`mcs51` currently does not support Pontech NoFire board.
 
 Frameworks
 ----------

@@ -55,7 +55,7 @@ board manifest `flipnclickmz.json <https://github.com/platformio/platform-microc
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support MikroElektronika Flip N Click MZ board.
+:ref:`mcs51` currently does not support MikroElektronika Flip N Click MZ board.
 
 Frameworks
 ----------

@@ -55,7 +55,7 @@ board manifest `quick240_usb.json <https://github.com/platformio/platform-microc
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Pontech Quick240 board.
+:ref:`mcs51` currently does not support Pontech Quick240 board.
 
 Frameworks
 ----------

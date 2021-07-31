@@ -55,4 +55,4 @@ board manifest `stc15w204s.json <https://github.com/platformio/platform-intel_mc
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic STC15W204S board.
+:ref:`mcs51` currently does not support Generic STC15W204S board.

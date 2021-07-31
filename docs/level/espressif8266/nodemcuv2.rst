@@ -63,7 +63,7 @@ NodeMCU 1.0 (ESP-12E Module) supports the following uploading protocols:
 
 Default protocol is ``esptool``
 
-You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+You can change upload protocol using :ref:`mcs51` option:
 
 .. code-block:: ini
 
@@ -75,7 +75,7 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support NodeMCU 1.0 (ESP-12E Module) board.
+:ref:`mcs51` currently does not support NodeMCU 1.0 (ESP-12E Module) board.
 
 Frameworks
 ----------

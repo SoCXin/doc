@@ -120,7 +120,7 @@ Available variants (macros):
 * ``-D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH`` v1.4 Higher Bandwidth
 
 You can change lwIP Variant by passing a custom macro using project
-:ref:`projectconf_build_flags`.
+:ref:`riscv`.
 
 For example, to switch to lwIP v1.4
 
@@ -144,7 +144,7 @@ Available versions (macros):
 * ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_191122`` NonOS SDK v2.2.x branch as of to Nov 22, 2019
 
 You can change SDK version by passing a custom macro using project
-:ref:`projectconf_build_flags`.
+:ref:`riscv`.
 
 For example, to switch to SDK-pre-3.0:
 
@@ -160,7 +160,7 @@ SSL Support
 By default, all SSL ciphers (most compatible) are supported.
 
 You can control SSL support passing a custom macro using project
-:ref:`projectconf_build_flags`.
+:ref:`riscv`.
 
 For example, use basic SSL ciphers (lower ROM use):
 
@@ -176,7 +176,7 @@ For example, use basic SSL ciphers (lower ROM use):
 Serial Debug
 ~~~~~~~~~~~~
 
-Please use the next :ref:`projectconf_build_flags` to enable Serial debug:
+Please use the next :ref:`riscv` to enable Serial debug:
 
 .. code-block:: ini
 
@@ -191,12 +191,12 @@ Please use the next :ref:`projectconf_build_flags` to enable Serial debug:
 Debug Level
 ~~~~~~~~~~~
 
-Please use one of the next :ref:`projectconf_build_flags` to change debug level.
-A :ref:`projectconf_build_flags` option could be used only the one time per
+Please use one of the next :ref:`riscv` to change debug level.
+A :ref:`riscv` option could be used only the one time per
 build environment. If you need to specify more flags, please separate them
 with a new line or space.
 
-Also, please note that you will need to extend :ref:`projectconf_build_flags`
+Also, please note that you will need to extend :ref:`riscv`
 with :ref:`platform_espressif8266_serial_debug` macro. For example,
 ``build_flags = -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_SSL ...``.
 
@@ -335,7 +335,7 @@ Please scroll to ``generic.menu.lvl`` section.
 VTables
 ~~~~~~~
 
-Please use one of the next :ref:`projectconf_build_flags`:
+Please use one of the next :ref:`riscv`:
 
 .. code-block:: ini
 
@@ -356,7 +356,7 @@ MMU - Adjusting ICACHE to IRAM ratio
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 By default the balanced ratio (32KB cache + 32KB IRAM) configuration is used.
-Alternative configurations can be enabled using the :ref:`projectconf_build_flags`
+Alternative configurations can be enabled using the :ref:`riscv`
 option in :ref:`mips`:
 
 
@@ -417,7 +417,7 @@ More detailed information on this matter can be found in the `official documenta
 Exceptions
 ~~~~~~~~~~
 
-Exceptions are disabled by default. To enable exceptions, use the ``PIO_FRAMEWORK_ARDUINO_ENABLE_EXCEPTIONS`` macro in :ref:`projectconf_build_flags`.
+Exceptions are disabled by default. To enable exceptions, use the ``PIO_FRAMEWORK_ARDUINO_ENABLE_EXCEPTIONS`` macro in :ref:`riscv`.
 That macro will add the ``-fexceptions`` flag and will link the final firmware against the ``stdc++-exc`` library with enabled exceptions. For example:
 
 .. code-block:: ini
@@ -525,7 +525,7 @@ There are 2 options:
 * Specify ``upload_port`` option in :ref:`mips`
 
 
-You also need to set :ref:`projectconf_upload_protocol` to ``espota``.
+You also need to set :ref:`mcs51` to ``espota``.
 
 .. code-block:: ini
 

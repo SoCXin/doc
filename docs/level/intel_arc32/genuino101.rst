@@ -55,7 +55,7 @@ board manifest `genuino101.json <https://github.com/platformio/platform-intel_ar
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Arduino/Genuino 101 board.
+:ref:`mcs51` currently does not support Arduino/Genuino 101 board.
 
 Frameworks
 ----------

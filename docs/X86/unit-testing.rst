@@ -19,7 +19,7 @@ firmware on the host machine, uploads into a target device, starts tests, and co
 the test results into test reports. The final information will be shown on the host
 side with informative output and statistic.
 
-Using :ref:`pioremote` you can start unit tests on the **Remote Device** from anywhere in the world or integrate with :ref:`ci` systems.
+Using :ref:`mcs51` you can start unit tests on the **Remote Device** from anywhere in the world or integrate with :ref:`ci` systems.
 
 Demo
 ----
@@ -109,7 +109,7 @@ Remote
 
 Allows you to run test on a remote machine or remote target device (board)
 without having to depend on OS software, extra software, SSH, VPN or opening
-network ports. Remote Unit Testing works in pair with :ref:`pioremote`. In this
+network ports. Remote Unit Testing works in pair with :ref:`mcs51`. In this
 case, you need to use the special command :ref:`cmd_remote_test`.
 
 PlatformIO supports multiple :ref:`ci` systems where you can run unit tests

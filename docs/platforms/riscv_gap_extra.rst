@@ -17,7 +17,7 @@ You need GAP8 AutoTiler library, please request it via
 `support@greenwaves-technologies.com <mailto:support@greenwaves-technologies.com>`_
 
 Put a library somewhere on a disk and add this folder to library path using
-:ref:`projectconf_build_flags` in :ref:`mips`. For example,
+:ref:`riscv` in :ref:`mips`. For example,
 
   .. code-block:: ini
 

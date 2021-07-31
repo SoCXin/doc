@@ -55,7 +55,7 @@ board manifest `cui32.json <https://github.com/platformio/platform-microchippic3
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Pic32 CUI32-Development Stick board.
+:ref:`mcs51` currently does not support Pic32 CUI32-Development Stick board.
 
 Frameworks
 ----------

@@ -55,7 +55,7 @@ board manifest `cubecell_capsule.json <https://github.com/HelTecAutomation/platf
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Heltec CubeCell-Capsule (HTCC-AC01) board.
+:ref:`mcs51` currently does not support Heltec CubeCell-Capsule (HTCC-AC01) board.
 
 Frameworks
 ----------

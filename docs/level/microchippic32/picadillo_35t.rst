@@ -55,7 +55,7 @@ board manifest `picadillo_35t.json <https://github.com/platformio/platform-micro
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support 4D Systems PICadillo 35T board.
+:ref:`mcs51` currently does not support 4D Systems PICadillo 35T board.
 
 Frameworks
 ----------

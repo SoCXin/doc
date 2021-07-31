@@ -55,7 +55,7 @@ board manifest `cubecell_gps.json <https://github.com/HelTecAutomation/platform-
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Heltec CubeCell-GPS (HTCC-AB02S) board.
+:ref:`mcs51` currently does not support Heltec CubeCell-GPS (HTCC-AB02S) board.
 
 Frameworks
 ----------

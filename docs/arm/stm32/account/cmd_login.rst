@@ -1,4 +1,4 @@
- 
+
 .. _cmd_account_login:
 
 pio account login
@@ -18,7 +18,7 @@ Description
 
 Log in to :ref:`pioaccount`. If you are not able to provide authentication
 credentials manually you can use :envvar:`PLATFORMIO_AUTH_TOKEN`. This is
-very useful for :ref:`ci` systems and :ref:`pioremote` operations.
+very useful for :ref:`ci` systems and :ref:`mcs51` operations.
 
 Options
 ~~~~~~~

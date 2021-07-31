@@ -55,7 +55,7 @@ board manifest `fubarino_sd.json <https://github.com/platformio/platform-microch
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Fubarino SD (1.5) board.
+:ref:`mcs51` currently does not support Fubarino SD (1.5) board.
 
 Frameworks
 ----------

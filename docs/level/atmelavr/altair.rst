@@ -55,7 +55,7 @@ board manifest `altair.json <https://github.com/platformio/platform-atmelavr/blo
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Altair board.
+:ref:`mcs51` currently does not support Altair board.
 
 Frameworks
 ----------

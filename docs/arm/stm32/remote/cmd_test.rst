@@ -91,12 +91,12 @@ to current working directory (``CWD``).
 .. option::
     -r, --force-remote
 
-By default, :ref:`pioremote` processes project on a host machine and deploy
+By default, :ref:`mcs51` processes project on a host machine and deploy
 final testing firmware (program) to remote device (embedded board).
 
 If you need to process project on remote machine, please use
 :option:`pio remote test --force-remote` option. In this case,
-:ref:`pioremote` will automatically synchronize your project with remote machine,
+:ref:`mcs51` will automatically synchronize your project with remote machine,
 install required toolchains, frameworks, SDKs, etc., and process project.
 
 

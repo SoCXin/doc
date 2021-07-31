@@ -55,7 +55,7 @@ board manifest `rgb_station.json <https://github.com/platformio/platform-microch
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support RGB Station board.
+:ref:`mcs51` currently does not support RGB Station board.
 
 Frameworks
 ----------

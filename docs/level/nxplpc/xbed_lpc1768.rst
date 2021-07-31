@@ -55,7 +55,7 @@ board manifest `xbed_lpc1768.json <https://github.com/platformio/platform-nxplpc
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Smeshlink xbed LPC1768 board.
+:ref:`mcs51` currently does not support Smeshlink xbed LPC1768 board.
 
 Frameworks
 ----------

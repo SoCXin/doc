@@ -55,7 +55,7 @@ board manifest `openbci.json <https://github.com/platformio/platform-microchippi
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support OpenBCI 32bit board.
+:ref:`mcs51` currently does not support OpenBCI 32bit board.
 
 Frameworks
 ----------

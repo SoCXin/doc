@@ -55,7 +55,7 @@ board manifest `cui32stem.json <https://github.com/platformio/platform-microchip
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support SeeedStudio CUI32stem board.
+:ref:`mcs51` currently does not support SeeedStudio CUI32stem board.
 
 Frameworks
 ----------

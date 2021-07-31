@@ -7,7 +7,7 @@ PlatformIO Account
 **PlatformIO Account** is required for:
 
 * `Community Forum <https://community.platformio.org/>`_
-* :ref:`pioremote`
+* :ref:`mcs51`
 * :ref:`Managing organizations and owners of an organization <cmd_org>`
 * :ref:`Managing teams and team memberships <cmd_team>`
 * :ref:`Managing packages in the registry <cmd_package>`

@@ -55,7 +55,7 @@ board manifest `lenny.json <https://github.com/platformio/platform-microchippic3
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support chipKIT Lenny board.
+:ref:`mcs51` currently does not support chipKIT Lenny board.
 
 Frameworks
 ----------

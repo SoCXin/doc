@@ -55,7 +55,7 @@ board manifest `ATmega32.json <https://github.com/platformio/platform-atmelavr/b
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATmega32 board.
+:ref:`mcs51` currently does not support ATmega32 board.
 
 Frameworks
 ----------

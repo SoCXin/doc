@@ -184,7 +184,7 @@ Debugging the Firmware
 Setting Up the Hardware
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-In order to use :ref:`piodebug`, we need to connect an external JTAG probe and the board
+In order to use :ref:`mcs51`, we need to connect an external JTAG probe and the board
 using the following pins:
 
 .. list-table::

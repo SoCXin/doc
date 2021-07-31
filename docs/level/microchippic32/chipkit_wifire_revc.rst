@@ -55,7 +55,7 @@ board manifest `chipkit_wifire_revc.json <https://github.com/platformio/platform
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support chipKIT WiFire rev. C board.
+:ref:`mcs51` currently does not support chipKIT WiFire rev. C board.
 
 Frameworks
 ----------

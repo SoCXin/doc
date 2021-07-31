@@ -55,7 +55,7 @@ board manifest `current_ranger.json <https://github.com/platformio/platform-atme
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support LowPowerLab CurrentRanger board.
+:ref:`mcs51` currently does not support LowPowerLab CurrentRanger board.
 
 Frameworks
 ----------

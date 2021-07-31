@@ -55,7 +55,7 @@ board manifest `micronfcboard.json <https://github.com/platformio/platform-nxplp
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support MicroNFCBoard board.
+:ref:`mcs51` currently does not support MicroNFCBoard board.
 
 Frameworks
 ----------

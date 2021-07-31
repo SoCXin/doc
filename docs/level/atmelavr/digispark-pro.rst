@@ -55,7 +55,7 @@ board manifest `digispark-pro.json <https://github.com/platformio/platform-atmel
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Digispark Pro board.
+:ref:`mcs51` currently does not support Digispark Pro board.
 
 Frameworks
 ----------

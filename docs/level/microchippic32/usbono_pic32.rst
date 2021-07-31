@@ -55,7 +55,7 @@ board manifest `usbono_pic32.json <https://github.com/platformio/platform-microc
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support PONTECH UAV100 board.
+:ref:`mcs51` currently does not support PONTECH UAV100 board.
 
 Frameworks
 ----------

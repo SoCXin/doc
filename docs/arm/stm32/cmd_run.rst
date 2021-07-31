@@ -100,7 +100,7 @@ or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 .. option::
     --disable-auto-clean
 
-Disable auto-clean of :ref:`projectconf_pio_build_dir` when :ref:`mips`
+Disable auto-clean of :ref:`mcs51` when :ref:`mips`
 or :ref:`projectconf_pio_src_dir` (project structure) have been modified.
 
 Examples

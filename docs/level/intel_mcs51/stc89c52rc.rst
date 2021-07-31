@@ -55,4 +55,4 @@ board manifest `stc89c52rc.json <https://github.com/platformio/platform-intel_mc
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic STC89C52RC board.
+:ref:`mcs51` currently does not support Generic STC89C52RC board.

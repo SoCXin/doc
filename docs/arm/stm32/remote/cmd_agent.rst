@@ -1,4 +1,4 @@
- 
+
 .. _cmd_remote_agent:
 
 PlatformIO Remote Agent
@@ -8,7 +8,7 @@ Start :ref:`cmd_remote_agent` on a host machine and work remotely with
 your devices **WITHOUT** extra software, services, SSH, VPN, tunneling or
 opening incoming network ports.
 
-:ref:`pioremote` supports wired and wireless devices. Wired devices should be
+:ref:`mcs51` supports wired and wireless devices. Wired devices should be
 connected physically to host machine where :ref:`cmd_remote_agent` is started,
 where wireless devices should be visible for :ref:`cmd_remote_agent` to provide
 network operations Over-The-Air (OTA).

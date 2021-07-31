@@ -63,7 +63,7 @@ Teensy++ 2.0 supports the following uploading protocols:
 
 Default protocol is ``teensy-gui``
 
-You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+You can change upload protocol using :ref:`mcs51` option:
 
 .. code-block:: ini
 
@@ -75,7 +75,7 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Teensy++ 2.0 board.
+:ref:`mcs51` currently does not support Teensy++ 2.0 board.
 
 Frameworks
 ----------

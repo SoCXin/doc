@@ -55,7 +55,7 @@ board manifest `avr_iot_wg.json <https://github.com/platformio/platform-atmelmeg
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support AVR-IoT WG Development Board board.
+:ref:`mcs51` currently does not support AVR-IoT WG Development Board board.
 
 Frameworks
 ----------

@@ -136,7 +136,7 @@ Which data do we collect and why?
   for example, "atmelavr", "arduino", "uno", etc.)
 * **The name of CLI command**. It helps us to improve our CLI. For example, "run",
   "lib list")
-* The name of :ref:`ide`. This is very important information for us. We create native
+* The name of :ref:`mcs51`. This is very important information for us. We create native
   extensions based on the popularity of IDEs (for example, :ref:`ide_vscode`, :ref:`ide_clion`)
 
 **Thanks a lot that you keep this setting enabled!**

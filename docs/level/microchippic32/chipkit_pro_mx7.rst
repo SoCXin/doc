@@ -55,7 +55,7 @@ board manifest `chipkit_pro_mx7.json <https://github.com/platformio/platform-mic
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Digilent chipKIT Pro MX7 board.
+:ref:`mcs51` currently does not support Digilent chipKIT Pro MX7 board.
 
 Frameworks
 ----------

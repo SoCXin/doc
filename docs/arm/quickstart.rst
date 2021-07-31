@@ -15,7 +15,7 @@ Setting Up the Project
 :ref:`piocore` provides special :ref:`cmd_project_init` command for configuring your projects.
 It allows one to initialize new empty project or update existing with the new data.
 
-What is more, :ref:`cmd_project_init` can be used for :ref:`ide`. It means that you will
+What is more, :ref:`cmd_project_init` can be used for :ref:`mcs51`. It means that you will
 be able to import pre-generated PlatformIO project using favorite IDE and
 extend it with the professional instruments for IoT development.
 

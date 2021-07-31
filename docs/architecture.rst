@@ -11,10 +11,10 @@ MCS51
 ----------
 
 PlatformIO's unique philosophy in the embedded market provides developers with a modern
-integrated development environment (:ref:`ide`) that works cross-platform,
+integrated development environment (:ref:`mcs51`) that works cross-platform,
 supports many different software development kits (SDKs) or :ref:`frameworks`, and
-includes sophisticated debugging (:ref:`piodebug`), unit testing (:ref:`unit_testing`),
-automated code analysis (:ref:`piocheck`), and remote management (:ref:`pioremote`).
+includes sophisticated debugging (:ref:`mcs51`), unit testing (:ref:`unit_testing`),
+automated code analysis (:ref:`piocheck`), and remote management (:ref:`mcs51`).
 It is architected to maximize flexibility and choice by developers, who can use either
 graphical or command line editors (:ref:`piocore`), or both.
 

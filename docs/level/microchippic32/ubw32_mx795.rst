@@ -55,7 +55,7 @@ board manifest `ubw32_mx795.json <https://github.com/platformio/platform-microch
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support UBW32 MX795 board.
+:ref:`mcs51` currently does not support UBW32 MX795 board.
 
 Frameworks
 ----------

@@ -17,9 +17,9 @@ Please read :ref:`PlatformIO 5.0 Release Notes <release_notes_5>` before.
 Migration Steps
 ---------------
 
-1. Ensure that you do not use a short version of the Github declaration in :ref:`projectconf_lib_deps`.
+1. Ensure that you do not use a short version of the Github declaration in :ref:`mcs51`.
    Please use ``https://github.com/username/repo.git`` instead of ``username/repo``.
-2. We recommend updating your project dependency declarations in :ref:`projectconf_lib_deps`
+2. We recommend updating your project dependency declarations in :ref:`mcs51`
    using a new owner-based syntax. See  the :ref:`core_migration_libmanager` section for details.
 
 What is new
@@ -135,7 +135,7 @@ Introducing Strict SSL/TLS
 
 The setting ``strict_ssl`` has been removed from :ref:`cmd_settings`. Now, PlatformIO Core 5.0
 communicates over the encrypted SSL/TLS by default with the PlatformIO Registry and
-other services such as :ref:`pioremote`.
+other services such as :ref:`mcs51`.
 
 At PlatformIO, we are always looking for ways to improve the security of our services.
 

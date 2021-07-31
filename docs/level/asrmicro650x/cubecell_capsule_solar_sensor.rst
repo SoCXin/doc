@@ -55,7 +55,7 @@ board manifest `cubecell_capsule_solar_sensor.json <https://github.com/HelTecAut
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Heltec CubeCell Capsule Solar Sensor (HTCC-AC02) board.
+:ref:`mcs51` currently does not support Heltec CubeCell Capsule Solar Sensor (HTCC-AC02) board.
 
 Frameworks
 ----------

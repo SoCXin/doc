@@ -55,7 +55,7 @@ board manifest `chipkit_uc32.json <https://github.com/platformio/platform-microc
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Digilent chipKIT uC32 board.
+:ref:`mcs51` currently does not support Digilent chipKIT uC32 board.
 
 Frameworks
 ----------

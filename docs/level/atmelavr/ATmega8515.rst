@@ -55,7 +55,7 @@ board manifest `ATmega8515.json <https://github.com/platformio/platform-atmelavr
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATmega8515 board.
+:ref:`mcs51` currently does not support ATmega8515 board.
 
 Frameworks
 ----------

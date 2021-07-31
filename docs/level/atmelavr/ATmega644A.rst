@@ -55,7 +55,7 @@ board manifest `ATmega644A.json <https://github.com/platformio/platform-atmelavr
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATmega644/A board.
+:ref:`mcs51` currently does not support ATmega644/A board.
 
 Frameworks
 ----------

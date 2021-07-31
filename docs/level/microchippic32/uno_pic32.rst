@@ -55,7 +55,7 @@ board manifest `uno_pic32.json <https://github.com/platformio/platform-microchip
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Digilent chipKIT UNO32 board.
+:ref:`mcs51` currently does not support Digilent chipKIT UNO32 board.
 
 Frameworks
 ----------

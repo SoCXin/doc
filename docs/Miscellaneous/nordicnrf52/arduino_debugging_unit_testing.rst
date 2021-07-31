@@ -79,7 +79,7 @@ After successful uploading, the green LED1 should start blinking.
 Debugging the Firmware
 ----------------------
 
-:ref:`piodebug` offers the easiest way to debug the board. Firstly, we need to specify :ref:`projectconf_debug_tool` in :ref:`mips`. Since the board has an on-board ``JLink`` debug probe we can directly declare it in :ref:`mips`:
+:ref:`mcs51` offers the easiest way to debug the board. Firstly, we need to specify :ref:`projectconf_debug_tool` in :ref:`mips`. Since the board has an on-board ``JLink`` debug probe we can directly declare it in :ref:`mips`:
 
 .. code-block:: ini
 

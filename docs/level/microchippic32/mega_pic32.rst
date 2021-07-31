@@ -55,7 +55,7 @@ board manifest `mega_pic32.json <https://github.com/platformio/platform-microchi
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Digilent chipKIT MAX32 board.
+:ref:`mcs51` currently does not support Digilent chipKIT MAX32 board.
 
 Frameworks
 ----------

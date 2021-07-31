@@ -55,7 +55,7 @@ board manifest `ATmega324PB.json <https://github.com/platformio/platform-atmelav
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATmega324PB board.
+:ref:`mcs51` currently does not support ATmega324PB board.
 
 Frameworks
 ----------

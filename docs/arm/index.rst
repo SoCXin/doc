@@ -12,7 +12,7 @@ ARM
 * Development platform and package managers
 * :ref:`wch_ch573`
 * :ref:`Serial Port Monitor <cmd_device_monitor>`
-* Integration components (:ref:`ide` and :ref:`ci`).
+* Integration components (:ref:`mcs51` and :ref:`ci`).
 
 |PIOCORE| is written in `Python <https://www.python.org/downloads/>`_
 and works on Windows, macOS, Linux, FreeBSD and *ARM*-based credit-card sized

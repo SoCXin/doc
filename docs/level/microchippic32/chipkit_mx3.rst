@@ -55,7 +55,7 @@ board manifest `chipkit_mx3.json <https://github.com/platformio/platform-microch
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Digilent chipKIT MX3 board.
+:ref:`mcs51` currently does not support Digilent chipKIT MX3 board.
 
 Frameworks
 ----------

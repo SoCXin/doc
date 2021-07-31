@@ -22,12 +22,12 @@ Description
 -----------
 
 Process environments which are defined in :ref:`mips` file remotely.
-By default, :ref:`pioremote` builds project on a host machine and deploy
+By default, :ref:`mcs51` builds project on a host machine and deploy
 final firmware (program) to a remote device (embedded board).
 
 If you need to process project on a remote machine, please use
 :option:`pio remote run --force-remote` option. In this case,
-:ref:`pioremote` will automatically synchronize your project with remote machine,
+:ref:`mcs51` will automatically synchronize your project with remote machine,
 install required toolchains, frameworks, SDKs, etc., and process project.
 
 
@@ -76,18 +76,18 @@ or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 .. option::
     --disable-auto-clean
 
-Disable auto-clean of :ref:`projectconf_pio_build_dir` when :ref:`mips`
+Disable auto-clean of :ref:`mcs51` when :ref:`mips`
 or :ref:`projectconf_pio_src_dir` (project structure) have been modified.
 
 .. option::
     -r, --force-remote
 
-By default, :ref:`pioremote` builds project on a host machine and deploy
+By default, :ref:`mcs51` builds project on a host machine and deploy
 final firmware (program) to remote device (embedded board).
 
 If you need to process project on remote machine, please use
 :option:`pio remote run --force-remote` option. In this case,
-:ref:`pioremote` will automatically synchronize your project with remote machine,
+:ref:`mcs51` will automatically synchronize your project with remote machine,
 install required toolchains, frameworks, SDKs, etc., and process project.
 
 Example

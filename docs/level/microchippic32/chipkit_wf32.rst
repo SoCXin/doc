@@ -55,7 +55,7 @@ board manifest `chipkit_wf32.json <https://github.com/platformio/platform-microc
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Digilent chipKIT WF32 board.
+:ref:`mcs51` currently does not support Digilent chipKIT WF32 board.
 
 Frameworks
 ----------

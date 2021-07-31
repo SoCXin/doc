@@ -55,7 +55,7 @@ board manifest `helvepic32_smd.json <https://github.com/platformio/platform-micr
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support HelvePic32 board.
+:ref:`mcs51` currently does not support HelvePic32 board.
 
 Frameworks
 ----------

@@ -55,7 +55,7 @@ board manifest `cubecell_board_plus.json <https://github.com/HelTecAutomation/pl
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Heltec CubeCell-Board Plus (HTCC-AB02) board.
+:ref:`mcs51` currently does not support Heltec CubeCell-Board Plus (HTCC-AB02) board.
 
 Frameworks
 ----------

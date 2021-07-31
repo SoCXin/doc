@@ -55,7 +55,7 @@ board manifest `openscope.json <https://github.com/platformio/platform-microchip
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Digilent OpenScope board.
+:ref:`mcs51` currently does not support Digilent OpenScope board.
 
 Frameworks
 ----------

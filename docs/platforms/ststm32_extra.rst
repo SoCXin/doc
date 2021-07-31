@@ -15,7 +15,7 @@ Arduino STM32 (maple) and STM32L0. All of them have been developed independently
 therefore, have different functionality and set of internal libraries. By default,
 official STM32Duino core is used (except cases when a board supports only one specific
 core). Some of the boards support all three cores. To change the core you can use a
-``board_build.core`` option that needs be added to :ref:`projectconf_build_flags`:
+``board_build.core`` option that needs be added to :ref:`riscv`:
 
 An example of :ref:`mips` with ``maple`` core
 
@@ -32,7 +32,7 @@ STM32Duino configuration system
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 STM32Duino core has several options that can be configured using the next
-configuration flags in :ref:`projectconf_build_flags` section of :ref:`mips`:
+configuration flags in :ref:`riscv` section of :ref:`mips`:
 
 
 .. list-table:: C/C++ standard library configuration
@@ -111,7 +111,7 @@ Maple STM32 configuration system
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this core the USB peripheral (STM32F4 boards only) can be configured using the next
-configuration flags in :ref:`projectconf_build_flags` section of :ref:`mips`:
+configuration flags in :ref:`riscv` section of :ref:`mips`:
 
 .. list-table:: USB Configuration for STM32F4 boards
     :header-rows:  1
@@ -141,7 +141,7 @@ Arduino STM32L0 configuration system
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Arduino STM32L0 core has several options that can be configured using the next
-configuration flags in :ref:`projectconf_build_flags` section of :ref:`mips`:
+configuration flags in :ref:`riscv` section of :ref:`mips`:
 
 .. list-table:: USB Configuration
     :header-rows:  1

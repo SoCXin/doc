@@ -132,7 +132,7 @@ In order to use a JTAG probe with an ESP32, we need to connect the following pin
     * - ``GPIO 15 (TDO)``
       - ``Pin 13 (TDO)``
 
-:ref:`piodebug` offers the easiest way to debug the board. Firstly, we need to specify :ref:`projectconf_debug_tool` in :ref:`mips`. In this tutorial, an :ref:`debugging_tool_olimex-arm-usb-ocd-h` debug probe is used:
+:ref:`mcs51` offers the easiest way to debug the board. Firstly, we need to specify :ref:`projectconf_debug_tool` in :ref:`mips`. In this tutorial, an :ref:`debugging_tool_olimex-arm-usb-ocd-h` debug probe is used:
 
 .. code-block:: ini
 

@@ -62,7 +62,7 @@ a value. Possible values:
 External RAM (PSRAM)
 ~~~~~~~~~~~~~~~~~~~~
 
-You can enable external RAM using the next extra :ref:`projectconf_build_flags`
+You can enable external RAM using the next extra :ref:`riscv`
 in :ref:`mips` depending on a framework type.
 
 Framework :ref:`framework_arduino`:
@@ -94,8 +94,8 @@ More details are located in the official ESP-IDF documentation -
 Debug Level
 ~~~~~~~~~~~
 
-Please use one of the next :ref:`projectconf_build_flags` to change debug level.
-A :ref:`projectconf_build_flags` option could be used only the one time per
+Please use one of the next :ref:`riscv` to change debug level.
+A :ref:`riscv` option could be used only the one time per
 build environment. If you need to specify more flags, please separate them
 with a new line or space.
 
@@ -286,7 +286,7 @@ There are 2 options:
 * Specify ``upload_port`` option in :ref:`mips`
 
 
-You also need to set :ref:`projectconf_upload_protocol` to ``espota``.
+You also need to set :ref:`mcs51` to ``espota``.
 
 .. code-block:: ini
 

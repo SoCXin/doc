@@ -55,7 +55,7 @@ board manifest `ATtiny814.json <https://github.com/platformio/platform-atmelmega
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATtiny814 board.
+:ref:`mcs51` currently does not support ATtiny814 board.
 
 Frameworks
 ----------

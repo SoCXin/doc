@@ -55,7 +55,7 @@ board manifest `oc_mbuino.json <https://github.com/platformio/platform-nxplpc/bl
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support mBuino board.
+:ref:`mcs51` currently does not support mBuino board.
 
 Frameworks
 ----------

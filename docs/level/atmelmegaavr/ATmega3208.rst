@@ -55,7 +55,7 @@ board manifest `ATmega3208.json <https://github.com/platformio/platform-atmelmeg
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATmega3208 board.
+:ref:`mcs51` currently does not support ATmega3208 board.
 
 Frameworks
 ----------

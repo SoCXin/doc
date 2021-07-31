@@ -55,4 +55,4 @@ board manifest `n79e8432.json <https://github.com/platformio/platform-intel_mcs5
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic N79E8432 board.
+:ref:`mcs51` currently does not support Generic N79E8432 board.

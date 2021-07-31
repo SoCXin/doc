@@ -55,7 +55,7 @@ board manifest `chipkit_pi.json <https://github.com/platformio/platform-microchi
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Element14 chipKIT Pi board.
+:ref:`mcs51` currently does not support Element14 chipKIT Pi board.
 
 Frameworks
 ----------

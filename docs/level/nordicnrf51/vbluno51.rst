@@ -63,7 +63,7 @@ VNG VBLUNO51 supports the following uploading protocols:
 
 Default protocol is ``cmsis-dap``
 
-You can change upload protocol using :ref:`projectconf_upload_protocol` option:
+You can change upload protocol using :ref:`mcs51` option:
 
 .. code-block:: ini
 
@@ -76,14 +76,14 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 Debugging
 ---------
 
-:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+:ref:`mcs51` - "1-click" solution for debugging with a zero configuration.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
     Please click on compatible debug tool below for the further
     instructions and configuration information.
 
-You can switch between debugging :ref:`debugging_tools` using
+You can switch between debugging :ref:`mcs51` using
 :ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 VNG VBLUNO51 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.

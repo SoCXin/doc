@@ -112,7 +112,7 @@ After successful uploading, the green LED2 should start blinking.
 Debugging the Firmware
 ----------------------
 
-:ref:`piodebug` offers the easiest way to debug your board. To start debugging session you can use ``Start debugging`` option in ``PlatformIO Quick Access`` menu, ``Debug: Start debugging`` from the top menu or hotkey button ``F5``:
+:ref:`mcs51` offers the easiest way to debug your board. To start debugging session you can use ``Start debugging`` option in ``PlatformIO Quick Access`` menu, ``Debug: Start debugging`` from the top menu or hotkey button ``F5``:
 
 .. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-7.png
 

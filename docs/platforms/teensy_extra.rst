@@ -11,7 +11,7 @@ Optimization
 (valid only for Teensy LC, Teensy 3.0-3.6)
 
 You can control firmware optimization via special macro/define
-using :ref:`projectconf_build_flags` in :ref:`mips`:
+using :ref:`riscv` in :ref:`mips`:
 
 * ``-D TEENSY_OPT_FASTER``, **default**
 * ``-D TEENSY_OPT_FASTER_LTO``
@@ -45,7 +45,7 @@ USB Features
 ~~~~~~~~~~~~
 
 If you want to use Teensy USB Features, you need to add special macro/define
-using :ref:`projectconf_build_flags`:
+using :ref:`riscv`:
 
 * ``-D USB_SERIAL``
 * ``-D USB_KEYBOARDONLY``

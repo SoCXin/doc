@@ -55,7 +55,7 @@ board manifest `cerebot32mx4.json <https://github.com/platformio/platform-microc
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Digilent Cerebot 32MX4 board.
+:ref:`mcs51` currently does not support Digilent Cerebot 32MX4 board.
 
 Frameworks
 ----------

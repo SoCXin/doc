@@ -55,4 +55,4 @@ board manifest `stc15w404as.json <https://github.com/platformio/platform-intel_m
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic STC15W404AS board.
+:ref:`mcs51` currently does not support Generic STC15W404AS board.

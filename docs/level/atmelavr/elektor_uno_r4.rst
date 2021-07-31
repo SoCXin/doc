@@ -55,7 +55,7 @@ board manifest `elektor_uno_r4.json <https://github.com/platformio/platform-atme
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Elektor Uno R4 board.
+:ref:`mcs51` currently does not support Elektor Uno R4 board.
 
 Frameworks
 ----------

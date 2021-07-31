@@ -55,7 +55,7 @@ board manifest `nano_every.json <https://github.com/platformio/platform-atmelmeg
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Arduino Nano Every board.
+:ref:`mcs51` currently does not support Arduino Nano Every board.
 
 Frameworks
 ----------

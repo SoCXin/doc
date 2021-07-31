@@ -96,7 +96,7 @@ Options
     --save / --no-save
 
 Save installed libraries into the :ref:`mips` dependency list
-(:ref:`projectconf_lib_deps`). Default value is to save.
+(:ref:`mcs51`). Default value is to save.
 
 You can save libraries for the specific project environment using
 ``-e, --environment`` option from :ref:`pio lib <cmd_lib>` command. For example,

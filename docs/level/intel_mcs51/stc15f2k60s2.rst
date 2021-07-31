@@ -55,4 +55,4 @@ board manifest `stc15f2k60s2.json <https://github.com/platformio/platform-intel_
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Generic STC15F2K60S2 board.
+:ref:`mcs51` currently does not support Generic STC15F2K60S2 board.

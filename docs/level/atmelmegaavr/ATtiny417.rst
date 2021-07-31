@@ -55,7 +55,7 @@ board manifest `ATtiny417.json <https://github.com/platformio/platform-atmelmega
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATtiny417 board.
+:ref:`mcs51` currently does not support ATtiny417 board.
 
 Frameworks
 ----------

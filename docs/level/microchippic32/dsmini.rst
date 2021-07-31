@@ -55,7 +55,7 @@ board manifest `dsmini.json <https://github.com/platformio/platform-microchippic
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support DataStation Mini board.
+:ref:`mcs51` currently does not support DataStation Mini board.
 
 Frameworks
 ----------

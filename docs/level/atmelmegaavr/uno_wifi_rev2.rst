@@ -55,7 +55,7 @@ board manifest `uno_wifi_rev2.json <https://github.com/platformio/platform-atmel
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Arduino Uno WiFi Rev2 board.
+:ref:`mcs51` currently does not support Arduino Uno WiFi Rev2 board.
 
 Frameworks
 ----------

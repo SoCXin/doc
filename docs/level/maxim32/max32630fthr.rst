@@ -55,7 +55,7 @@ board manifest `max32630fthr.json <https://github.com/platformio/platform-maxim3
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Maxim MAX32630FTHR Application Platform board.
+:ref:`mcs51` currently does not support Maxim MAX32630FTHR Application Platform board.
 
 Frameworks
 ----------

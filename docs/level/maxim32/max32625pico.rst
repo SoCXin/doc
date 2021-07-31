@@ -55,7 +55,7 @@ board manifest `max32625pico.json <https://github.com/platformio/platform-maxim3
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support MAX32625PICO board.
+:ref:`mcs51` currently does not support MAX32625PICO board.
 
 Frameworks
 ----------

@@ -55,7 +55,7 @@ board manifest `sdt32620b.json <https://github.com/platformio/platform-maxim32/b
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support SDT32620B board.
+:ref:`mcs51` currently does not support SDT32620B board.
 
 Frameworks
 ----------

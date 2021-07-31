@@ -1,4 +1,4 @@
- 
+
 .. _cmd_account_token:
 
 pio account token
@@ -17,7 +17,7 @@ Description
 -----------
 
 Get or regenerate Personal Authentication Token. It is very useful for :ref:`ci`
-systems, :ref:`pioremote` operations where you are not able to authorize manually.
+systems, :ref:`mcs51` operations where you are not able to authorize manually.
 
 PlatformIO handles Personal Authentication Token from environment variable
 :envvar:`PLATFORMIO_AUTH_TOKEN`.

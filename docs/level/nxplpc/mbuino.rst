@@ -55,7 +55,7 @@ board manifest `mbuino.json <https://github.com/platformio/platform-nxplpc/blob/
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Outrageous Circuits mBuino board.
+:ref:`mcs51` currently does not support Outrageous Circuits mBuino board.
 
 Frameworks
 ----------

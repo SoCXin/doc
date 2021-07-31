@@ -69,7 +69,7 @@ Options
     --save / --no-save
 
 Remove libraries from the :ref:`mips` dependency list
-(:ref:`projectconf_lib_deps`) and save changes. Default value is to save.
+(:ref:`mcs51`) and save changes. Default value is to save.
 
 
 .. option::

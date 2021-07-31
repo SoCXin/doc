@@ -4,7 +4,7 @@
 pio debug
 =========
 
-Helper command for :ref:`piodebug`.
+Helper command for :ref:`mcs51`.
 
 .. contents::
 

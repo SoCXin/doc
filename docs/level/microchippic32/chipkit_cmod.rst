@@ -55,7 +55,7 @@ board manifest `chipkit_cmod.json <https://github.com/platformio/platform-microc
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Digilent chipKIT Cmod board.
+:ref:`mcs51` currently does not support Digilent chipKIT Cmod board.
 
 Frameworks
 ----------

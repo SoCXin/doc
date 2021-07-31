@@ -55,7 +55,7 @@ board manifest `dwenguino.json <https://github.com/platformio/platform-atmelavr/
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Dwenguino board.
+:ref:`mcs51` currently does not support Dwenguino board.
 
 Frameworks
 ----------

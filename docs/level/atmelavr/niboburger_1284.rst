@@ -56,14 +56,14 @@ board manifest `niboburger_1284.json <https://github.com/platformio/platform-atm
 Debugging
 ---------
 
-:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+:ref:`mcs51` - "1-click" solution for debugging with a zero configuration.
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
     Please click on compatible debug tool below for the further
     instructions and configuration information.
 
-You can switch between debugging :ref:`debugging_tools` using
+You can switch between debugging :ref:`mcs51` using
 :ref:`projectconf_debug_tool` option in :ref:`mips`.
 
 nicai-systems NIBO burger robot with Tuning Kit has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.

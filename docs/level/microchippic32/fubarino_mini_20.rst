@@ -55,7 +55,7 @@ board manifest `fubarino_mini_20.json <https://github.com/platformio/platform-mi
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Mini 2.0 board.
+:ref:`mcs51` currently does not support Mini 2.0 board.
 
 Frameworks
 ----------

@@ -1,8 +1,8 @@
 
 
-.. _compilation_db:
+.. _mcs51:
 
-Level 1
+MCS51
 -------------------------------
 
 A `compilation database <https://clang.llvm.org/docs/JSONCompilationDatabase.html>`_ is
@@ -17,8 +17,8 @@ contains structured data about every compilation unit in your project.
   > pio run -t compiledb
 
 
-A default path for ``compile_commands.json`` is ":ref:`projectconf_pio_build_dir`/envname".
-You can override this path with :ref:`projectconf_advanced_scripting` and
+A default path for ``compile_commands.json`` is ":ref:`mcs51`/envname".
+You can override this path with :ref:`mcs51` and
 ``COMPILATIONDB_PATH`` environment variable. For example, generate ``compile_commands.json``
 in a root of project:
 

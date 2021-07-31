@@ -55,7 +55,7 @@ board manifest `pinoccio.json <https://github.com/platformio/platform-atmelavr/b
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Pinoccio Scout board.
+:ref:`mcs51` currently does not support Pinoccio Scout board.
 
 Frameworks
 ----------

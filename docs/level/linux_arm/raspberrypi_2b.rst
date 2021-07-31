@@ -55,7 +55,7 @@ board manifest `raspberrypi_2b.json <https://github.com/platformio/platform-linu
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Raspberry Pi 2 Model B board.
+:ref:`mcs51` currently does not support Raspberry Pi 2 Model B board.
 
 Frameworks
 ----------

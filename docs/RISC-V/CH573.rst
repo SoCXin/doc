@@ -25,7 +25,7 @@ Project dependencies
 --------------------
 
 *PlatformIO Library Manager* allows one to specify project dependencies
-(:ref:`projectconf_lib_deps`) that will be installed automatically per project
+(:ref:`mcs51`) that will be installed automatically per project
 before environment processing. You do not need to install libraries manually.
 The only one simple step is to define dependencies in :ref:`mips`. For example,
 

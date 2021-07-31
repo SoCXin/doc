@@ -55,7 +55,7 @@ board manifest `ATmega1609.json <https://github.com/platformio/platform-atmelmeg
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ATmega1609 board.
+:ref:`mcs51` currently does not support ATmega1609 board.
 
 Frameworks
 ----------

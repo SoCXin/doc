@@ -55,4 +55,4 @@ board manifest `icestick.json <https://github.com/platformio/platform-lattice_ic
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Lattice iCEstick FPGA Evaluation Kit board.
+:ref:`mcs51` currently does not support Lattice iCEstick FPGA Evaluation Kit board.

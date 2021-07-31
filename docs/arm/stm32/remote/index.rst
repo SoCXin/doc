@@ -1,10 +1,10 @@
- 
+
 .. _cmd_remote:
 
 PlatformIO Remote CLI
 =====================
 
-Helper command for :ref:`pioremote`.
+Helper command for :ref:`mcs51`.
 
 To print all available commands and options use:
 

@@ -55,7 +55,7 @@ board manifest `chipkit_wifire.json <https://github.com/platformio/platform-micr
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Digilent chipKIT WiFire board.
+:ref:`mcs51` currently does not support Digilent chipKIT WiFire board.
 
 Frameworks
 ----------

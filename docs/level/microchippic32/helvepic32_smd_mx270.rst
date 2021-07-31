@@ -55,7 +55,7 @@ board manifest `helvepic32_smd_mx270.json <https://github.com/platformio/platfor
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support HelvePic32 SMD MX270 board.
+:ref:`mcs51` currently does not support HelvePic32 SMD MX270 board.
 
 Frameworks
 ----------

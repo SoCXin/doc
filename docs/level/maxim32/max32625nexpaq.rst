@@ -55,7 +55,7 @@ board manifest `max32625nexpaq.json <https://github.com/platformio/platform-maxi
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support MAX32625NEXPAQ board.
+:ref:`mcs51` currently does not support MAX32625NEXPAQ board.
 
 Frameworks
 ----------

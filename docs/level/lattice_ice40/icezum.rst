@@ -55,4 +55,4 @@ board manifest `icezum.json <https://github.com/platformio/platform-lattice_ice4
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support IceZUM Alhambra FPGA board.
+:ref:`mcs51` currently does not support IceZUM Alhambra FPGA board.
