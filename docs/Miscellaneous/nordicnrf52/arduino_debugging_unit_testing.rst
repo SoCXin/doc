@@ -3,13 +3,13 @@
 Arduino and Nordic nRF52-DK: debugging and unit testing
 =======================================================
 
-The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_vscode` to develop, run and debug a simple project with :ref:`framework_arduino` framework for ``Nordic nRF52-DK`` board.
+The goal of this tutorial is to demonstrate how simple it is to use :ref:`stc_stc8g` to develop, run and debug a simple project with :ref:`framework_arduino` framework for ``Nordic nRF52-DK`` board.
 
 * **Level:** Beginner
 * **Platforms:** Windows, Mac OS X, Linux
 
 **Requirements:**
-    - Downloaded and installed :ref:`ide_vscode`
+    - Downloaded and installed :ref:`stc_stc8g`
     - Install drivers for :ref:`debugging_tool_jlink` debug tool
     - :ref:`board_nordicnrf52_nrf52_dk` development board
 

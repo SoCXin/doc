@@ -1,14 +1,14 @@
 
-.. _ide:
+.. _stc:
 
-Cloud & Desktop IDE
-===================
+STC
+======
 
 Native Extensions
 -----------------
 
 .. note::
-    In our experience, :ref:`ide_vscode` offers better system performance, and users
+    In our experience, :ref:`stc_stc8g` offers better system performance, and users
     have found it easier to get started
 
 
@@ -18,5 +18,5 @@ Desktop IDE
 .. toctree::
     :maxdepth: 1
 
-    STC8G <vscode>
+    STC8G
 

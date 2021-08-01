@@ -4,7 +4,7 @@
 Quick Start
 ===========
 
-This tutorial introduces you to the basics of :ref:`piocore` Command Line Interface
+This tutorial introduces you to the basics of :ref:`arm` Command Line Interface
 (CLI) workflow and shows you a creation process of a simple cross-platform
 “Blink” Project. After finishing you will have a general understanding of how
 to work with the multiple development platforms and embedded boards.
@@ -12,7 +12,7 @@ to work with the multiple development platforms and embedded boards.
 Setting Up the Project
 ----------------------
 
-:ref:`piocore` provides special :ref:`cmd_project_init` command for configuring your projects.
+:ref:`arm` provides special :ref:`cmd_project_init` command for configuring your projects.
 It allows one to initialize new empty project or update existing with the new data.
 
 What is more, :ref:`cmd_project_init` can be used for :ref:`mcs51`. It means that you will
@@ -210,7 +210,7 @@ The final Project structure:
 Process Project
 ---------------
 
-:ref:`piocore` provides special :ref:`cmd_run` command to process project. If
+:ref:`arm` provides special :ref:`cmd_run` command to process project. If
 you call it without any arguments, PlatformIO Build System will process all
 project environments (which were created per each board specified above). Here
 are a few useful commands:
@@ -236,4 +236,4 @@ Further Reading
 ---------------
 
 * `Project examples <https://github.com/platformio/platformio-examples/tree/develop>`_
-* :ref:`stm32` for :ref:`piocore` commands
+* :ref:`stm32` for :ref:`arm` commands

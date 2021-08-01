@@ -54,7 +54,7 @@ Run from RAM
 ^^^^^^^^^^^^
 
 This is a default behavior when you run "Upload" task in :ref:`espressif_esp32` or use
-:ref:`piocore` and :option:`pio run --target` command with ``upload`` target.
+:ref:`arm` and :option:`pio run --target` command with ``upload`` target.
 
 Run from RAM (without any bridge interaction)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -69,7 +69,7 @@ Run from RAM (without any bridge interaction)
     framework = ...
     board_upload.commands = load start
 
-* Run "Upload" task in :ref:`espressif_esp32` or use :ref:`piocore` and
+* Run "Upload" task in :ref:`espressif_esp32` or use :ref:`arm` and
   :option:`pio run --target` command with ``upload`` target.
 
 Flash and run from RAM
@@ -110,7 +110,7 @@ Run from Flash
     board_upload.boot_mode = jtag_hyper
     board_upload.commands = reqloop ioloop start wait
 
-* Run "Upload" task in :ref:`espressif_esp32` or use :ref:`piocore` and
+* Run "Upload" task in :ref:`espressif_esp32` or use :ref:`arm` and
   :option:`pio run --target` command with ``upload`` target.
 
 Run from Flash (without any bridge interaction)
@@ -130,7 +130,7 @@ Run from Flash (without any bridge interaction)
     board_upload.boot_mode = jtag_hyper
     board_upload.commands = start
 
-* Run "Upload" task in :ref:`espressif_esp32` or use :ref:`piocore` and
+* Run "Upload" task in :ref:`espressif_esp32` or use :ref:`arm` and
   :option:`pio run --target` command with ``upload`` target.
 
 .. _platform_riscv_gap_uploadfs:
@@ -139,11 +139,11 @@ Uploading files to HyperFlash
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Create new project using :ref:`espressif_esp32` or initialize project using
-   :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
+   :ref:`arm` and :ref:`cmd_project_init` (if you have not initialized it yet)
 2. Create ``data`` folder (it should be on the same level as ``src`` folder)
    and put files here. Also, you can specify own location for
    :ref:`projectconf_pio_data_dir`
-3. Run "Upload File System image" task in :ref:`espressif_esp32` or use :ref:`piocore`
+3. Run "Upload File System image" task in :ref:`espressif_esp32` or use :ref:`arm`
    and :option:`pio run --target` command with ``uploadfs`` target.
 
 Examples:

@@ -4,7 +4,7 @@
 Migrating from 4.x to 5.0
 =========================
 
-Guidance on how to upgrade from :ref:`piocore` v4.x to v5.x with emphasis on
+Guidance on how to upgrade from :ref:`arm` v4.x to v5.x with emphasis on
 major changes, what is new, and what has been removed.
 
 **PlatformIO Core 5.0 is fully backward compatible with PlatformIO 4.0 projects.**
@@ -26,7 +26,7 @@ What is new
 -----------
 
 In this section, we are going to highlight the most important changes and
-features introduced in :ref:`piocore` 5.0. Please visit
+features introduced in :ref:`arm` 5.0. Please visit
 :ref:`PlatformIO 5.0 Release Notes <release_notes_5>` for more detailed information.
 
 PlatformIO Trusted Registry

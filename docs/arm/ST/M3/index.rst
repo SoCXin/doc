@@ -1,7 +1,7 @@
 
-.. _cmd_account:
+.. _st_stm32f1:
 
-STM Cortex-M3
+STM32F1
 =============
 
 To print all available commands and options use:

@@ -3,13 +3,13 @@
 Get started with Arduino and ESP32-DevKitC: debugging and unit testing
 ======================================================================
 
-The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_vscode` to develop, run and debug a simple project with the :ref:`framework_arduino` framework for the ``ESP32-DevKitC`` board.
+The goal of this tutorial is to demonstrate how simple it is to use :ref:`stc_stc8g` to develop, run and debug a simple project with the :ref:`framework_arduino` framework for the ``ESP32-DevKitC`` board.
 
 * **Level:** Beginner
 * **Platforms:** Windows, Mac OS X, Linux
 
 **Requirements:**
-    - Downloaded and installed :ref:`ide_vscode`
+    - Downloaded and installed :ref:`stc_stc8g`
     - :ref:`board_espressif32_esp32dev`
     - :ref:`debugging_tool_olimex-arm-usb-ocd` or :ref:`debugging_tool_olimex-jtag-tiny` adapter for debugging
 

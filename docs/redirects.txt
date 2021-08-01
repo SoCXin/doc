@@ -33,8 +33,7 @@
 /ST/M3/cmd_forgot.html -> /ARM/ST/M3/cmd_forgot.html
 /ST/M0/cmd_monitor.html -> /ARM/ST/M0/cmd_monitor.html
 /ST/M3/index.html -> /ARM/ST/M3/index.html
-/ST/demo.html -> /ARM/ST/demo.html
-/ST/index.html -> /ARM/ST/index.html
+/ST.html -> /ARM/ST/index.html
 /ST/cmd_device.html -> /ARM/ST/M0/index.html
 /ST/cmd_init.html -> /ST/M7/cmd_init.html
 /ST/cmd_serialports.html -> /ST/cmd_device.html
@@ -43,7 +42,7 @@
 /history.html -> /ARM/history.html
 /installation.html -> /ARM/installation.html
 /core.html -> /ARM/index.html
-/ide.html -> /MCS51/STC/index.html
+/STC.html -> /MCS51/STC/index.html
 /STC/vscode.html -> /MCS51/STC/vscode.html
 /WCH/CH549.html -> /MCS51/WCH/CH549.html
 /WCH/CH545.html -> /MCS51/WCH/CH545.html

@@ -221,7 +221,7 @@ or using :ref:`mips` and :ref:`projectconf_monitor_filters`
 Device Monitor Filter API
 -------------------------
 
-:ref:`piocore` provides an API to extend device monitor with a custom filter declared
+:ref:`arm` provides an API to extend device monitor with a custom filter declared
 in "monitor" folder of :ref:`platforms`. See examples:
 
 - https://github.com/platformio/platform-espressif32/tree/develop/monitor

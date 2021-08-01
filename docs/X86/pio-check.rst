@@ -44,7 +44,7 @@ Key features
 .. warning::
   Before performing a static analysis check, make sure your project builds
   without errors. For information about how to build a project, see the
-  :ref:`cmd_run` command or :ref:`ide_vscode` guide.
+  :ref:`cmd_run` command or :ref:`stc_stc8g` guide.
 
 User Interface
 --------------

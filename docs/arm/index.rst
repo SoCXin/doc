@@ -1,7 +1,7 @@
 
 .. |PIOCORE| replace:: **PlatformIO Core**
 
-.. _piocore:
+.. _arm:
 
 ARM
 =====================
@@ -32,7 +32,7 @@ computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 .. toctree::
     :maxdepth: 2
 
-    ST/demo
+    ST/index
     installation
     quickstart
-    ST/index
+

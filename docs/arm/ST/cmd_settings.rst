@@ -124,11 +124,11 @@ source code of your project. All information shares **ANONYMOUSLY**.
 
 Which data do we collect and why?
 
-* **A version of Python Interpreter**. :ref:`piocore` is written in `Python language <https://www.python.org/>`__,
+* **A version of Python Interpreter**. :ref:`arm` is written in `Python language <https://www.python.org/>`__,
   including development :ref:`platforms`. We need to know which Python version produces
   such type of exceptions (see below), which is more popular, which version we should
   drop and focus on a new one
-* :ref:`piocore` **errors/exceptions**. We report automatically fatal exceptions raised
+* :ref:`arm` **errors/exceptions**. We report automatically fatal exceptions raised
   by `PlatformIO Core source code <https://github.com/platformio/platformio-core>`__ but NOT by your project
 * **The name of the used platform, board, framework**. We collect this type of information
   to have a clear picture which software products are the most widely used by our
@@ -137,7 +137,7 @@ Which data do we collect and why?
 * **The name of CLI command**. It helps us to improve our CLI. For example, "run",
   "lib list")
 * The name of :ref:`mcs51`. This is very important information for us. We create native
-  extensions based on the popularity of IDEs (for example, :ref:`ide_vscode`, :ref:`ide_clion`)
+  extensions based on the popularity of IDEs (for example, :ref:`stc_stc8g`, :ref:`ide_clion`)
 
 **Thanks a lot that you keep this setting enabled!**
 

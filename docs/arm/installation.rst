@@ -8,10 +8,10 @@ Installation
 
 .. note::
 
-    Please note that you do not need to install :ref:`piocore` if you are going
+    Please note that you do not need to install :ref:`arm` if you are going
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
-    If you need :ref:`piocore` outside PlatformIO IDE, please :ref:`piocore_install_shell_commands`.
+    If you need :ref:`arm` outside PlatformIO IDE, please :ref:`piocore_install_shell_commands`.
 
 |PIOCore| is written in `Python <https://www.python.org/downloads/>`_
 and works on Windows, macOS, Linux, FreeBSD and *ARM*-based credit-card sized
@@ -155,7 +155,7 @@ Development Version
 
     * :ref:`ide_atom`: "Menu PlatformIO: Settings > PlatformIO IDE > Use development
       version of PlatformIO Core"
-    * :ref:`ide_vscode`: Set ``platformio-ide.useDevelopmentPIOCore`` to ``true`` in
+    * :ref:`stc_stc8g`: Set ``platformio-ide.useDevelopmentPIOCore`` to ``true`` in
       :ref:`ide_vscode_settings`.
 
 Install the latest PlatformIO from the ``develop`` branch:
@@ -194,13 +194,13 @@ To revert to the latest stable version:
 Install Shell Commands
 ----------------------
 
-:ref:`piocore` consists of 2 standalone tools in a system:
+:ref:`arm` consists of 2 standalone tools in a system:
 
 * ``platformio`` or ``pio`` (short alias) - :ref:`stm32`
 * ``piodebuggdb`` - alias of :ref:`cmd_debug`
 
 If you have :ref:`espressif_esp32` already installed, you do not need to install
-:ref:`piocore` separately. Just link these tools with your shell:
+:ref:`arm` separately. Just link these tools with your shell:
 
 .. contents::
     :local:
@@ -330,7 +330,7 @@ A list of arguments and options for the installer script is available via
 Workflow
 ~~~~~~~~
 
-We will describe a simple workflow on how to automatically install :ref:`piocore` for
+We will describe a simple workflow on how to automatically install :ref:`arm` for
 end-user of your application/extension. We assume that ``get-platformio.py`` script
 is already copied/downloaded and exists on the end-user machine. See above how to get it.
 

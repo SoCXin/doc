@@ -1,4 +1,4 @@
-.. architecture:
+.. _architecture:
 
 About Architecture
 =======================
@@ -16,7 +16,7 @@ supports many different software development kits (SDKs) or :ref:`frameworks`, a
 includes sophisticated debugging (:ref:`mcs51`), unit testing (:ref:`unit_testing`),
 automated code analysis (:ref:`piocheck`), and remote management (:ref:`mcs51`).
 It is architected to maximize flexibility and choice by developers, who can use either
-graphical or command line editors (:ref:`piocore`), or both.
+graphical or command line editors (:ref:`arm`), or both.
 
 
 ARM

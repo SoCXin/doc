@@ -469,11 +469,11 @@ Uploading files to Filesystem
     information first.
 
 1. Create new project using :ref:`espressif_esp32` or initialize project using
-   :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
+   :ref:`arm` and :ref:`cmd_project_init` (if you have not initialized it yet)
 2. Create ``data`` folder (it should be on the same level as ``src`` folder)
    and put files here. Also, you can specify own location for
    :ref:`projectconf_pio_data_dir`
-3. Run "Upload File System image" task in :ref:`espressif_esp32` or use :ref:`piocore`
+3. Run "Upload File System image" task in :ref:`espressif_esp32` or use :ref:`arm`
    and :option:`pio run --target` command with ``uploadfs`` target.
 
 

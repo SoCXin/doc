@@ -1,7 +1,7 @@
 
-.. _ide_vscode:
+.. _stc_stc8g:
 
-VSCode
+STC8G
 ======
 
 .. include:: features.rst
@@ -25,8 +25,8 @@ Installation
 
 .. note::
 
-    Please note that you do not need to install :ref:`piocore` separately if
-    you are going to use :ref:`ide_vscode`. :ref:`piocore` is built into
+    Please note that you do not need to install :ref:`arm` separately if
+    you are going to use :ref:`stc_stc8g`. :ref:`arm` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
 0. `Download <https://code.visualstudio.com>`_ and install official Microsoft Visual Studio Code. PlatformIO IDE is built on top of it

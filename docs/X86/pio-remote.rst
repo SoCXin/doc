@@ -114,7 +114,7 @@ Installation
 and run ``pio remote --help`` command for usage (see :ref:`cmd_remote`).
 
 If you do not have :ref:`espressif_esp32`, or use :ref:`ide_cloud` or a card-sized PC
-(Raspberry Pi, BeagleBoard, etc.), please install :ref:`piocore`.
+(Raspberry Pi, BeagleBoard, etc.), please install :ref:`arm`.
 
 .. _pio_remote_quickstart:
 

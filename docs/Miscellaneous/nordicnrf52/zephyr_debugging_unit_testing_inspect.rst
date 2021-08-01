@@ -4,7 +4,7 @@
 Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis
 =====================================================================
 
-The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_vscode`
+The goal of this tutorial is to demonstrate how simple it is to use :ref:`stc_stc8g`
 to develop, run and debug a simple Bluetooth project using :ref:`framework_zephyr`
 framework for the ``Nordic nRF52-DK`` board.
 
@@ -12,7 +12,7 @@ framework for the ``Nordic nRF52-DK`` board.
 * **Platforms:** Windows, Mac OS X, Linux
 
 **Requirements:**
-  - Downloaded and installed :ref:`ide_vscode`
+  - Downloaded and installed :ref:`stc_stc8g`
   - Install drivers for :ref:`debugging_tool_jlink` debug tool
   - :ref:`board_nordicnrf52_nrf52_dk` development board
 

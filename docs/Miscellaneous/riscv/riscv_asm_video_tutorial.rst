@@ -1,4 +1,4 @@
- 
+
 .. _tutorial_riscv_asm_video:
 
 RISC-V ASM Video Tutorial
@@ -16,7 +16,7 @@ A demo source code is published on Github: https://github.com/martin-robert-fink
 It is already pre-configured PlatformIO project:
 
 * Clone it or `download <https://github.com/martin-robert-fink/superBlink/archive/master.zip>`_
-* Open in :ref:`ide_vscode`
+* Open in :ref:`stc_stc8g`
 * Happy coding and debugging!
 
 Video Collection
