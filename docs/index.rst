@@ -34,9 +34,9 @@ Classification
     :caption: ARM
     :maxdepth: 1
 
-    ARM/index
-    ARM/history
-    ARM/migration
+    CORTEX/index
+    CORTEX/history
+    CORTEX/migration
 
 .. toctree::
     :caption: RISC-V
