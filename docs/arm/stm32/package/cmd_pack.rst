@@ -28,9 +28,6 @@ depending on a package type:
 :Library:
   A :ref:`wch_ch573` is a manifest file of a library package.
 
-:Platform:
-  A ``platform.json`` is a manifest file of a development platform package. See :ref:`platform_creating_manifest_file`.
-
 :Tool:
   A ``package.json`` is a manifest file of a tool package. It is intended for toolchains,
   flashers, debugging servers, simulators, and other tools.

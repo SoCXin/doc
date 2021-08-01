@@ -94,7 +94,7 @@ Compiling and Uploading the Firmware
 ------------------------------------
 
 Now we can build the project. To compile firmware we can use next options:
-Build option on the ``Project Tasks`` menu, Build button on :ref:`ide_vscode_toolbar`, using Command Palette ``View: Command Palette > PlatformIO: Build``, using Task Menu ``Tasks: Run Task... > PlatformIO: Build`` or via hotkeys ``cmd-alt-b / ctrl-alt-b``:
+Build option on the ``Project Tasks`` menu, Build button on :ref:`espressif_esp32s3`, using Command Palette ``View: Command Palette > PlatformIO: Build``, using Task Menu ``Tasks: Run Task... > PlatformIO: Build`` or via hotkeys ``cmd-alt-b / ctrl-alt-b``:
 
 .. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-4.png
 
@@ -103,7 +103,7 @@ If everything went well, we should see the successful result in the terminal win
 .. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-5.png
 
 To upload the firmware to the board we can use next options:
-Upload option on the ``Project Tasks`` menu, Upload button on :ref:`ide_vscode_toolbar`, using Command Palette ``View: Command Palette > PlatformIO: Upload``, using Task Menu ``Tasks: Run Task... > PlatformIO: Upload`` or via hotkeys ``cmd-alt-u / ctrl-alt-u``:
+Upload option on the ``Project Tasks`` menu, Upload button on :ref:`espressif_esp32s3`, using Command Palette ``View: Command Palette > PlatformIO: Upload``, using Task Menu ``Tasks: Run Task... > PlatformIO: Upload`` or via hotkeys ``cmd-alt-u / ctrl-alt-u``:
 
 .. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-6.png
 
@@ -323,7 +323,7 @@ Let's add a new file ``test_main.c`` to the folder ``test``. Next basic tests fo
     }
 
 
-Now we are ready to upload tests to the board. To do this we can use ``Test`` option from the Project Tasks menu, ``Tasks: Run Task... > PlatformIO Test`` option from the top menu or Test button on :ref:`ide_vscode_toolbar`:
+Now we are ready to upload tests to the board. To do this we can use ``Test`` option from the Project Tasks menu, ``Tasks: Run Task... > PlatformIO Test`` option from the top menu or Test button on :ref:`espressif_esp32s3`:
 
 .. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-11.png
 

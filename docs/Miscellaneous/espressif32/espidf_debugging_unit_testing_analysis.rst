@@ -136,8 +136,8 @@ Adding Code to the Generated Project
 #. To compile the project use one of the following options:
 
     - Build option from the ``Project Tasks`` menu
-    - Build button in :ref:`ide_vscode_toolbar`
-    - Task Menu ``Tasks: Run Task... > PlatformIO: Build`` or in :ref:`ide_vscode_toolbar`
+    - Build button in :ref:`espressif_esp32s3`
+    - Task Menu ``Tasks: Run Task... > PlatformIO: Build`` or in :ref:`espressif_esp32s3`
     - Command Palette ``View: Command Palette > PlatformIO: Build``
     - Hotkeys ``cmd-alt-b / ctrl-alt-b``:
 
@@ -152,7 +152,7 @@ Adding Code to the Generated Project
 #. To upload the firmware to the board we can use the following options:
 
     - Upload option from the ``Project Tasks`` menu
-    - Upload button in :ref:`ide_vscode_toolbar`
+    - Upload button in :ref:`espressif_esp32s3`
     - Command Palette ``View: Command Palette > PlatformIO: Upload``
     - Task Menu ``Tasks: Run Task... > PlatformIO: Upload``
     - Hotkeys ``cmd-alt-u / ctrl-alt-u``:

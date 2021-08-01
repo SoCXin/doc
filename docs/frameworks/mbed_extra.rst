@@ -186,10 +186,6 @@ to :ref:`riscv` of :ref:`mips`:
   board = my_custom_board
   build_flags = -I$PROJECT_SRC_DIR/MY_CUSTOM_BOARD_TARGET
 
-Next, you need to inform PlatformIO that there is a new custom board. To do this, you can create
-``boards`` directory in the root folder of your project and add a board manifest file with your
-board name, e.g. ``my_custom_board.json`` as described here :ref:`board_creating`
-
 After these steps, your project structure should look like this:
 
 .. code-block:: bash

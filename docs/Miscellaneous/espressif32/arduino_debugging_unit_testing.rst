@@ -61,8 +61,8 @@ Compiling and Uploading the Firmware
 Now we can build the project. There are several ways to compile firmware:
 
 * Build option in the ``Project Tasks`` menu,
-* Build button in :ref:`ide_vscode_toolbar`,
-* Task Menu: ``Tasks: Run Task... > PlatformIO: Build``, or in the :ref:`ide_vscode_toolbar`,
+* Build button in :ref:`espressif_esp32s3`,
+* Task Menu: ``Tasks: Run Task... > PlatformIO: Build``, or in the :ref:`espressif_esp32s3`,
 * Command Palette: ``View: Command Palette > PlatformIO: Build``, or
 * via hotkeys ``cmd-alt-b / ctrl-alt-b``
 
@@ -77,7 +77,7 @@ If everything went well, we should see a Success message in the terminal window:
 There are also several ways to upload the firmware to the board:
 
 * Upload option in the ``Project Tasks`` menu,
-* Upload button in :ref:`ide_vscode_toolbar`,
+* Upload button in :ref:`espressif_esp32s3`,
 * Command Palette: ``View: Command Palette > PlatformIO: Upload``,
 * using the Task Menu: ``Tasks: Run Task... > PlatformIO: Upload``, or
 * via hotkeys: ``cmd-alt-u / ctrl-alt-u``:
@@ -87,7 +87,7 @@ There are also several ways to upload the firmware to the board:
 After uploading, we need to check if the firmware is uploaded correctly. To do this, open the serial monitor and check that the message from the board is received. To open the serial monitor, we can use the following options:
 
 * Monitor option in the ``Project Tasks`` menu,
-* Serial Monitor button in the :ref:`ide_vscode_toolbar`,
+* Serial Monitor button in the :ref:`espressif_esp32s3`,
 * Command Palette: ``View: Command Palette > PlatformIO: Monitor``, or
 * Task Menu: ``Tasks: Run Task... > PlatformIO: Monitor``:
 
@@ -246,7 +246,7 @@ Let's create a ``test`` folder in the root of the project and add a new file, ``
 
 Now we are ready to upload tests to the board. To do this we can use the following:
 
-* Test button on :ref:`ide_vscode_toolbar`,
+* Test button on :ref:`espressif_esp32s3`,
 * Test option in the ``Project Tasks`` menu, or
 * ``Tasks: Run Task... > PlatformIO Test`` in the top menu:
 

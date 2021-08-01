@@ -61,7 +61,7 @@ Compiling and Uploading the Firmware
 ------------------------------------
 
 Now we can build the project. To compile firmware we can use next options:
-Build option from the ``Project Tasks`` menu, Build button in :ref:`ide_vscode_toolbar`, Task Menu ``Tasks: Run Task... > PlatformIO: Build`` or in :ref:`ide_vscode_toolbar`, Command Palette ``View: Command Palette > PlatformIO: Build`` or via hotkeys ``cmd-alt-b / ctrl-alt-b``:
+Build option from the ``Project Tasks`` menu, Build button in :ref:`espressif_esp32s3`, Task Menu ``Tasks: Run Task... > PlatformIO: Build`` or in :ref:`espressif_esp32s3`, Command Palette ``View: Command Palette > PlatformIO: Build`` or via hotkeys ``cmd-alt-b / ctrl-alt-b``:
 
 .. image:: ../../_static/images/tutorials/nordicnrf52/arduino-debugging-unit-testing-4.png
 
@@ -70,7 +70,7 @@ If everything went well, we should see a successful result message in the termin
 .. image:: ../../_static/images/tutorials/nordicnrf52/arduino-debugging-unit-testing-5.png
 
 To upload the firmware to the board we can use next options:
-Upload option from the ``Project Tasks`` menu, Upload button in :ref:`ide_vscode_toolbar`, Command Palette ``View: Command Palette > PlatformIO: Upload``, using Task Menu ``Tasks: Run Task... > PlatformIO: Upload`` or via hotkeys ``cmd-alt-u / ctrl-alt-u``:
+Upload option from the ``Project Tasks`` menu, Upload button in :ref:`espressif_esp32s3`, Command Palette ``View: Command Palette > PlatformIO: Upload``, using Task Menu ``Tasks: Run Task... > PlatformIO: Upload`` or via hotkeys ``cmd-alt-u / ctrl-alt-u``:
 
 .. image:: ../../_static/images/tutorials/nordicnrf52/arduino-debugging-unit-testing-6.png
 
@@ -185,7 +185,7 @@ Let's create ``test`` folder in the root of the project and add a new file ``tes
 
 
 Now we are ready to upload tests to the board. To do this we can use next options:
-Test button on :ref:`ide_vscode_toolbar`, Test option from the ``Project Tasks`` menu or ``Tasks: Run Task... > PlatformIO Test`` from the top menu:
+Test button on :ref:`espressif_esp32s3`, Test option from the ``Project Tasks`` menu or ``Tasks: Run Task... > PlatformIO Test`` from the top menu:
 
 .. image:: ../../_static/images/tutorials/nordicnrf52/arduino-debugging-unit-testing-10.png
 

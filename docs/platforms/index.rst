@@ -1,8 +1,8 @@
 
 .. _platforms:
 
-Development Platforms
-=====================
+Platforms
+==========
 
 The PlatformIO ecosystem has a decentralized architecture, allowing
 development for a range of *development platforms*. A development
@@ -27,9 +27,6 @@ specific platform version can optionally be specified as well. As
 embedded boards are equipped with a particular microcontroller, each
 embedded board specifies what development platform it uses and this
 can not be changed.
-
-If a new board uses an architecture not in this list, a custom
-development platform can be created; see :ref:`platform_creating`.
 
 
 Embedded
