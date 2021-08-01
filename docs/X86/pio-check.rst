@@ -60,9 +60,6 @@ It allows you to filter messages or directly jump to an issue in a source code.
 Check tools
 -----------
 
-You can switch between or specify multiple tools used for finding defects
-using :ref:`arm` option:
-
 .. code-block:: ini
 
     [env:myenv]

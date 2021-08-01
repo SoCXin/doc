@@ -41,3 +41,19 @@ in a root of project:
     Import("env")
 
     env.Replace(COMPILATIONDB_PATH=os.path.join("$PROJECT_DIR", "compile_commands.json"))
+
+Options
+-------
+
+.. program:: pio run
+
+.. option::
+    -e, --environment
+
+.. option::
+    -t, --target
+
+Process specified targets. Multiple targets are allowed.
+
+.. option::
+    --list-targets

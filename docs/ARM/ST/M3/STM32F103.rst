@@ -17,16 +17,6 @@ Usage
 Description
 -----------
 
-:ref:`st_stm32f103` command is conceived of as "hot key" for building project with
-arbitrary source code structure. In a nutshell, using ``SRC`` and
-:option:`pio ci --lib` contents PlatformIO initializes via
-:ref:`stm32` new project in :option:`pio ci --build-dir`
-with the build environments (using :option:`pio ci --board` or
-:option:`pio ci --project-conf`) and processes them via :ref:`stm32`
-command.
-
-:ref:`st_stm32f103` command accepts **multiple** ``SRC`` arguments,
-:option:`pio ci --lib` and :option:`pio ci --exclude` options
 which can be a path to directory, file or
 `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_.
 Also, you can omit ``SRC`` argument and set path (multiple paths are allowed
@@ -50,17 +40,9 @@ Options
 
 Source code which will be copied to ``<BUILD_DIR>/lib`` directly.
 
-If :option:`pio ci --lib` is a path to file (not to directory), then
-PlatformIO will create temporary directory within ``<BUILD_DIR>/lib`` and copy
-the rest files into it.
-
 
 .. option::
     --exclude
-
-Exclude directories and/-or files from :option:`pio ci --build-dir`. The
-path must be relative to PlatformIO project within
-:option:`pio ci --build-dir`.
 
 For example, exclude from project ``src`` directory:
 
@@ -88,12 +70,10 @@ temporary directory within your operating system.
 .. note::
 
     This directory will be removed at the end of build process. If you want to
-    keep it, please use :option:`pio ci --keep-build-dir`.
+    keep it
 
 .. option::
     --keep-build-dir
-
-Don't remove :option:`pio ci --build-dir` after build process.
 
 .. option::
     -c, --project-conf

@@ -14,9 +14,6 @@ ESP32-S2
 
 Type: ``String`` | Multiple: ``No``
 
-Port, a number or a device name, or valid `URL Handlers <https://pyserial.readthedocs.io/en/latest/url_handlers.html#urls>`__.
-See :option:`pio device monitor --port`. To print all available serial ports please use :ref:`mips` command.
-
 Please note that you can use Unix shell-style wildcards:
 
 .. list-table::
@@ -60,7 +57,6 @@ Example:
 Type: ``Number`` | Multiple: ``No`` | Default: ``9600``
 
 A monitor speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_).
-See :option:`pio device monitor --baud`.
 
 Example:
 
@@ -93,8 +89,6 @@ Example:
 ^^^^^^^^^^^^^^^
 
 Type: ``Number (0 or 1)`` | Multiple: ``No``
-
-A monitor initial ``RTS`` line state. See :option:`pio device monitor --rts`.
 
 .. _projectconf_monitor_dtr:
 

@@ -165,9 +165,6 @@ You can also specify which environments should be processed by default using
 Filters
 -------
 
-A list of filters that can be applied for monitor output using :option:`pio device monitor --filter` or :ref:`mips` and :ref:`stm32` options.
-option.
-
 .. list-table::
     :header-rows:  1
 

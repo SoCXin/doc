@@ -158,8 +158,6 @@ Advanced configuration
 PlatformIO allows one to configure multiple build environments for the single
 source code using :ref:`mips`.
 
-Instead of ``--board`` option, please use :option:`pio ci --project-conf`
-
 .. code-block:: yaml
 
     script:
