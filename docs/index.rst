@@ -34,8 +34,8 @@ Classification
     :caption: ARM
     :maxdepth: 1
 
-    CORTEX/index
-    CORTEX/history
+    ARM/index
+    ARM/history
 
 .. toctree::
     :caption: RISC-V
@@ -45,7 +45,6 @@ Classification
     Platforms <platforms/index>
     frameworks/index
     level/index
-    platforms/custom_platform_and_board
 
 .. toctree::
     :caption: MIPS
