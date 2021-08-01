@@ -1,7 +1,7 @@
 
-.. _cmd_remote_agent:
+.. _stm32f407:
 
-PlatformIO Remote Agent
+STM32F407
 =======================
 
 Start :ref:`arm` on a host machine and work remotely with
@@ -15,7 +15,7 @@ network operations Over-The-Air (OTA).
 
 .. contents::
 
-.. _cmd_remote_agent_list:
+.. _stm32f407_list:
 
 pio remote agent list
 ---------------------
@@ -48,7 +48,7 @@ Example
 
 ------------
 
-.. _cmd_remote_agent_start:
+.. _stm32f407_start:
 
 pio remote agent start
 ----------------------

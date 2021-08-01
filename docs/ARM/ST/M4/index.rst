@@ -20,8 +20,5 @@ To print all available commands and options use:
 .. toctree::
     :maxdepth: 2
 
-    cmd_agent
-    cmd_device
-    cmd_run
-    cmd_test
-    cmd_update
+    STM32F407
+
