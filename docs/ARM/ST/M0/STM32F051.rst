@@ -158,7 +158,7 @@ to current working directory (``CWD``).
 Process specified environments.
 
 You can also specify which environments should be processed by default using
-:ref:`arm` option from :ref:`mips`.
+:ref:`stm32` option from :ref:`mips`.
 
 .. _cmd_device_monitor_filters:
 
@@ -212,7 +212,7 @@ or using :ref:`mips` and :ref:`stm32`
 Device Monitor Filter API
 -------------------------
 
-:ref:`arm` provides an API to extend device monitor with a custom filter declared
+:ref:`stm32` provides an API to extend device monitor with a custom filter declared
 in "monitor" folder of :ref:`stm32`. See examples:
 
 - https://github.com/platformio/platform-espressif32/tree/develop/monitor

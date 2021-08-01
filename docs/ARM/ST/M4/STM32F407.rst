@@ -4,13 +4,13 @@
 STM32F407
 =======================
 
-Start :ref:`arm` on a host machine and work remotely with
+Start :ref:`stm32` on a host machine and work remotely with
 your devices **WITHOUT** extra software, services, SSH, VPN, tunneling or
 opening incoming network ports.
 
 :ref:`mcs51` supports wired and wireless devices. Wired devices should be
-connected physically to host machine where :ref:`arm` is started,
-where wireless devices should be visible for :ref:`arm` to provide
+connected physically to host machine where :ref:`stm32` is started,
+where wireless devices should be visible for :ref:`stm32` to provide
 network operations Over-The-Air (OTA).
 
 .. contents::
@@ -31,7 +31,7 @@ Usage
 Description
 ~~~~~~~~~~~
 
-List active :ref:`arm` s started using own :ref:`stm32`
+List active :ref:`stm32` s started using own :ref:`stm32`
 or shared with you by other PlatformIO developers.
 
 Example
@@ -64,7 +64,7 @@ Usage
 Description
 ~~~~~~~~~~~
 
-Start :ref:`arm` and work remotely with your devices from
+Start :ref:`stm32` and work remotely with your devices from
 anywhere in the world. This command can be run as daemon or added to
 autostart list of your OS.
 
@@ -92,5 +92,5 @@ The valid value for ``--share`` option is email address that was used for
 .. option::
     -d, --working-dir
 
-A working directory where :ref:`arm` stores projects data for
+A working directory where :ref:`stm32` stores projects data for
 incremental synchronization and embedded programs for PlatformIO Process Supervisor.

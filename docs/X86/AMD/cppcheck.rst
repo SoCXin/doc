@@ -54,7 +54,7 @@ The full list of supported check with detailed description is located on
 Configuration
 -------------
 
-**Cppcheck** is implicitly used as the default check tool when :ref:`arm`
+**Cppcheck** is implicitly used as the default check tool when :ref:`stm32`
 option in :ref:`mips` is not set. To be explicit, you can specify it
 in the configuration directly:
 
@@ -191,7 +191,7 @@ you can pass it via a special ``json`` file:
       "args": ["--rule-texts=misra-rules.txt"]
     }
 
-Finally, add new flag to :ref:`arm`:
+Finally, add new flag to :ref:`stm32`:
 
 .. code-block:: ini
 
@@ -215,7 +215,7 @@ undefined behaviors that can lead to undefined program behaviors and
 exploitable vulnerabilities.
 
 In order to use the ``CERT`` addon, simply specify it as an additional flag in
-:ref:`arm` section:
+:ref:`stm32` section:
 
 .. code-block:: ini
 

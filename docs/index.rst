@@ -1,5 +1,5 @@
 
-SoC Documentation
+SoC Home
 ==================
 
 **A place where Developers find your chip! No more vendor lock-in!**
@@ -39,26 +39,25 @@ Classification
     :caption: RISC-V
     :maxdepth: 1
 
-    RISC-V <RISC-V/index>
+    WCH <RISC-V/WCH/index>
+    espressif <RISC-V/espressif/index>
 
 .. toctree::
     :caption: MIPS
     :maxdepth: 1
 
-    MIPS <MIPS/index>
-
+    espressif <MIPS/espressif/index>
 
 .. toctree::
     :caption: X86
     :maxdepth: 2
 
-    AMD <X86/AMD/index>
-    Intel <X86/Intel/index>
-
+    X64 <X86/AMD/index>
+    X86 <X86/Intel/index>
 
 .. toctree::
     :caption: Miscellaneous
     :maxdepth: 1
 
-    microchip <Miscellaneous/index>
+    PIC <Miscellaneous/PIC/index>
 

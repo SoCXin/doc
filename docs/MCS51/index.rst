@@ -19,7 +19,7 @@ A `compilation database <https://clang.llvm.org/docs/JSONCompilationDatabase.htm
 a `JSON-formatted <https://www.json.org/>`_ file named ``compile_commands.json`` that
 contains structured data about every compilation unit in your project.
 
-:ref:`arm` supports generating of compilation database using
+:ref:`stm32` supports generating of compilation database using
 :option:`pio run --target` command and ``compiledb`` target. For example,
 
 .. code::

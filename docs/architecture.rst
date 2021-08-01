@@ -1,6 +1,6 @@
 .. _architecture:
 
-About Architecture
+Architecture
 =======================
 
 .. contents:: Index
@@ -16,7 +16,7 @@ supports many different software development kits (SDKs) or :ref:`mips`, and
 includes sophisticated debugging (:ref:`mcs51`), unit testing (:ref:`stm32`),
 automated code analysis (:ref:`stm32`), and remote management (:ref:`mcs51`).
 It is architected to maximize flexibility and choice by developers, who can use either
-graphical or command line editors (:ref:`arm`), or both.
+graphical or command line editors (:ref:`stm32`), or both.
 
 
 ARM
@@ -46,6 +46,14 @@ MIPS
   to get a computer with OS where that software is supported.
 
 X86
+-----------
+
+* The main problem which repulses people from the embedded world is a complicated
+  process to setup development software for a specific MCU/board: toolchains,
+  proprietary vendor's IDE (which sometimes isn't free) and what is more,
+  to get a computer with OS where that software is supported.
+
+Miscellaneous
 -----------
 
 * The main problem which repulses people from the embedded world is a complicated

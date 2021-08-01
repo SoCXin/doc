@@ -1,7 +1,7 @@
 
-.. _riscv:
+.. _riscv_esp:
 
-RISC-V
+espressif
 ==================
 
 *PlatformIO Library Manager* is a tool for managing libraries of
@@ -24,6 +24,5 @@ up-to-date. PlatformIO Library Manager supports
 .. toctree::
     :maxdepth: 2
 
-    CH573
     ESP32-C6
     ESP32-C3

@@ -31,7 +31,7 @@ Some of the defects that might be detected include:
 Configuration
 -------------
 
-To enable **Clang-Tidy** tool simply add it to the :ref:`arm`
+To enable **Clang-Tidy** tool simply add it to the :ref:`stm32`
 option in :ref:`mips`:
 
 .. code-block:: ini

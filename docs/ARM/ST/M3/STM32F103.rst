@@ -98,7 +98,7 @@ library ``pio ci --project-option="lib_ignore=SomeLib"``.
 
 Shows detailed information when processing environments.
 
-This option can also be set globally using :ref:`arm` setting
+This option can also be set globally using :ref:`stm32` setting
 or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 
 Examples

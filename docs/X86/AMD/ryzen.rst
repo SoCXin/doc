@@ -34,7 +34,7 @@ The full list of supported checks can be found on
 Configuration
 -------------
 
-To enable **PVS-Studio** tool simply add it to the :ref:`arm`
+To enable **PVS-Studio** tool simply add it to the :ref:`stm32`
 option in :ref:`mips`:
 
 .. code-block:: ini
