@@ -1,7 +1,7 @@
 
-.. _check_tool_pvsstudio:
+.. _ryzen:
 
-PVS-Studio
+ryzen
 ==========
 
 **PVS-Studio** is a static code analysis tool for detecting bugs and security weaknesses

@@ -1,9 +1,19 @@
 
-
 .. _mcs51:
 
-MCS51
--------------------------------
+8051
+======================
+
+Vendor
+----------------------
+
+.. toctree::
+    :maxdepth: 1
+
+    STC <STC/index>
+    WCH <WCH/index>
+
+-----------------------
 
 A `compilation database <https://clang.llvm.org/docs/JSONCompilationDatabase.html>`_ is
 a `JSON-formatted <https://www.json.org/>`_ file named ``compile_commands.json`` that
@@ -42,18 +52,3 @@ in a root of project:
 
     env.Replace(COMPILATIONDB_PATH=os.path.join("$PROJECT_DIR", "compile_commands.json"))
 
-Options
--------
-
-.. program:: pio run
-
-.. option::
-    -e, --environment
-
-.. option::
-    -t, --target
-
-Process specified targets. Multiple targets are allowed.
-
-.. option::
-    --list-targets

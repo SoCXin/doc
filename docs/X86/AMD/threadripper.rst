@@ -1,8 +1,8 @@
 
-.. _check_tool_clangtidy:
+.. _threadripper:
 
-Clang-Tidy
-==========
+threadripper
+============
 
 **Clang-Tidy** is a clang-based C++ "linter" tool. Its purpose is to provide an
 extensible framework for diagnosing and fixing typical programming errors,

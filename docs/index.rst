@@ -26,22 +26,20 @@ Classification
     :caption: MCS51
     :maxdepth: 1
 
-    MCS51/index
-    MCS51/STC/index
-    MCS51/WCH/index
+    8051 <MCS51/index>
+
 
 .. toctree::
     :caption: ARM
     :maxdepth: 1
 
-    ARM/index
-    ARM/history
+    ARM <ARM/index>
 
 .. toctree::
     :caption: RISC-V
     :maxdepth: 1
 
-    RISC-V/index
+    RISC-V <RISC-V/index>
 
 .. toctree::
     :caption: MIPS
@@ -54,13 +52,13 @@ Classification
     :caption: X86
     :maxdepth: 2
 
-    X86 <X86/index>
-    Static Code Analysis <X86/pio-check>
-    Remote Development <X86/pio-remote>
+    AMD <X86/AMD/index>
+    Intel <X86/Intel/index>
 
 
 .. toctree::
     :caption: Miscellaneous
     :maxdepth: 1
 
-    Miscellaneous/index
+    microchip <Miscellaneous/index>
+

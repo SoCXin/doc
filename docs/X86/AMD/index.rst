@@ -1,10 +1,7 @@
 
-.. |PIOUTS| replace:: **PlatformIO Unit Testing Solution**
-.. |PIOUTE| replace:: **PlatformIO Unit Testing Engine**
-
 .. _x86:
 
-X86
+Vendor
 ============
 
 .. contents:: Contents
@@ -22,6 +19,6 @@ side with informative output and statistic.
 .. toctree::
   :maxdepth: 1
 
-  AMD/cppcheck
-  AMD/clang-tidy
-  AMD/pvs-studio
+  cppcheck
+  threadripper
+  ryzen

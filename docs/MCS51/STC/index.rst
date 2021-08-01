@@ -12,7 +12,7 @@ Native Extensions
     have found it easier to get started
 
 
-Desktop IDE
+STC
 -----------
 
 .. toctree::

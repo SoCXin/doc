@@ -1,13 +1,13 @@
 
-.. _miscellaneous:
+.. _microchip:
 
-Miscellaneous
+Microchip
 ======================
 
-Miscellaneous
+Vendor
 -------------
 
 .. toctree::
     :maxdepth: 1
 
-    PIC/PIC32
+    PIC32 <PIC/PIC32>

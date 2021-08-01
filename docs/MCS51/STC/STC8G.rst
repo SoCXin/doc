@@ -27,3 +27,19 @@ Installation
     if you are going to use Git for installing upstream development platforms, cloning
     external projects, installing library dependencies from a repository, etc.
 
+Options
+-------
+
+.. program:: pio run
+
+.. option::
+    -e, --environment
+
+.. option::
+    -t, --target
+
+Process specified targets. Multiple targets are allowed.
+
+.. option::
+    --list-targets
+
