@@ -47,9 +47,6 @@ X86
   to get a computer with OS where that software is supported.
 
 Miscellaneous
------------
+--------------
 
-* The main problem which repulses people from the embedded world is a complicated
-  process to setup development software for a specific MCU/board: toolchains,
-  proprietary vendor's IDE (which sometimes isn't free) and what is more,
-  to get a computer with OS where that software is supported.
+others
