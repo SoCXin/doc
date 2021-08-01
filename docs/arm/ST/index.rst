@@ -54,7 +54,7 @@ Commands
 
     cmd_boards
     cmd_check
-    STM32F103
+    STM32F103 <M3/STM32F103>
     cmd_debug
     pio device <M0/index>
     cmd_home

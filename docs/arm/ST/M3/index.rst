@@ -1,10 +1,8 @@
- 
+
 .. _cmd_account:
 
-pio account
-===========
-
-CLI helper command for :ref:`pioaccount`.
+STM Cortex-M3
+=============
 
 To print all available commands and options use:
 
@@ -17,12 +15,11 @@ To print all available commands and options use:
 .. toctree::
     :maxdepth: 2
 
-    cmd_destroy
+    STM32F103
     cmd_forgot
     cmd_login
     cmd_logout
     cmd_password
-    cmd_register
     cmd_show
     cmd_token
     cmd_update

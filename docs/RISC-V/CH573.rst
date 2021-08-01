@@ -2,7 +2,7 @@
 .. _wch_ch573:
 
 CH573
-===========
+======
 
 *PlatformIO Library Manager* is a tool for managing libraries of
 `PlatformIO Registry <https://www.soc.xin/lib>`__ and VCS repositories (Git,
@@ -15,11 +15,6 @@ There are 3 options how to find/manage libraries:
 * `Web Library Search <https://www.soc.xin/lib>`__
 * PlatformIO Core :ref:`Command Line Interface <cmd_lib_search>`
 
-You can manage different library storages using
-:option:`pio lib --global` or  :option:`pio lib --storage-dir`
-options. If you change current working directory in terminal to project folder,
-then :ref:`pio lib <cmd_lib>` command will manage automatically dependency
-storage in :ref:`projectconf_pio_libdeps_dir`.
 
 Project dependencies
 --------------------
@@ -35,15 +30,6 @@ The only one simple step is to define dependencies in :ref:`mips`. For example,
   platform = ...
   framework = ...
   board = ...
-  lib_deps =
-    knolleary/PubSubClient
-    bblanchon/ArduinoJson @ ~5,!=5.4
-    https://github.com/gioblu/PJON.git#v2.0
-    https://github.com/me-no-dev/ESPAsyncTCP.git
-    https://github.com/adafruit/DHT-sensor-library/archive/master.zip
-
-Please follow to :ref:`cmd_lib_install` for detailed documentation about
-possible values.
 
 .. warning::
 
@@ -71,10 +57,3 @@ PlatformIO Core
 
 .. image:: ../_static/images/platformio-demo-lib.gif
 
-CLI Guide
----------
-
-.. toctree::
-    :maxdepth: 3
-
-    ../ARM/ST/lib/index
