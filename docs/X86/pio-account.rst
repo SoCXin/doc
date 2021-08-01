@@ -19,4 +19,4 @@ CLI Guide
 .. toctree::
     :maxdepth: 2
 
-    ../arm/stm32/account/index
+    ../ARM/ST/M3/index

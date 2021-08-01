@@ -77,4 +77,4 @@ CLI Guide
 .. toctree::
     :maxdepth: 3
 
-    ../arm/stm32/lib/index
+    ../ARM/ST/lib/index

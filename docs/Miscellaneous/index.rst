@@ -25,22 +25,3 @@ Pre-configured projects with source code are located in
 `PlatformIO Examples <https://github.com/platformio/platformio-examples>`_
 repository.
 
-Community Projects
-------------------
-
-* `PlatformIO DIY Projects & Tutorials at Hackster.io <https://www.hackster.io/platformio/projects?utm_source=platformio.org&utm_medium=docs>`_
-
-Community Video Tutorials
--------------------------
-
-* `Getting Started with PlatformIO <https://www.youtube.com/watch?v=JmvMvIphMnY>`_ - **HIGHLY RECOMMENDED FOR BEGINNERS**
-* `PlatformIO Video Collection on YouTube <https://www.youtube.com/playlist?list=PLLnAiBnVrkALvk_IJhDBAQQuDozkj6C34>`_
-* `Next-generation IDE for your RISC-V Product in 20 Minutes by CEO of PlatformIO <https://www.youtube.com/watch?v=0eYDKION0Bs>`_
-* `Use the PlatformIO Debugger on the ESP32 Using an ESP-prog <https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6>`_
-* `RISC-V ASM Tutorial <https://www.youtube.com/playlist?list=PL6noQ0vZDAdh_aGvqKvxd0brXImHXMuLY>`_
-* `PlatformIO for Arduino, ESP8266, and ESP32 Tutorial <https://www.youtube.com/watch?v=0poh_2rBq7E>`_
-* `Free Inline Debugging for ESP32 and Arduino Sketches <https://www.youtube.com/watch?v=psMqilqlrRQ>`__
-* `PlatformIO или прощай, Arduino IDE <https://www.youtube.com/watch?v=OGCyKncOyNU>`_
-* `Отладка ESP32 в PlatformIO <https://www.youtube.com/watch?v=rreMOwEJcII>`_
-* `A Better Arduino IDE - Getting Started with PlatformIO <https://www.youtube.com/watch?v=EIkGTwLOD7o>`_
-* `PlatformIO - Using External Libraries <https://www.youtube.com/watch?v=EBlHNBNHESQ>`_

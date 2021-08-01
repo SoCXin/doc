@@ -32,7 +32,7 @@ computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 .. toctree::
     :maxdepth: 2
 
-    stm32/demo
+    ST/demo
     installation
     quickstart
-    stm32/index
+    ST/index

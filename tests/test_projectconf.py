@@ -213,8 +213,8 @@ def test_sysenv_options(config):
     ]
 
     # sysenv
-    os.environ["PLATFORMIO_HOME_DIR"] = "/custom/arm/dir"
-    assert config.get("platformio", "core_dir") == "/custom/arm/dir"
+    os.environ["PLATFORMIO_HOME_DIR"] = "/custom/ARM/dir"
+    assert config.get("platformio", "core_dir") == "/custom/ARM/dir"
 
     # cleanup system environment variables
     del os.environ["PLATFORMIO_BUILD_FLAGS"]

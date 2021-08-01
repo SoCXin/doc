@@ -115,4 +115,4 @@ of these commands can be found here:
 .. toctree::
   :maxdepth: 3
 
-  pio check <../arm/stm32/cmd_check>
+  pio check <../ARM/ST/cmd_check>
