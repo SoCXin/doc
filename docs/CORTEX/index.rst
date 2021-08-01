@@ -33,6 +33,3 @@ computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
     :maxdepth: 2
 
     ST/index
-    installation
-    quickstart
-

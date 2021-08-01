@@ -36,7 +36,6 @@ Classification
 
     CORTEX/index
     CORTEX/history
-    CORTEX/migration
 
 .. toctree::
     :caption: RISC-V
