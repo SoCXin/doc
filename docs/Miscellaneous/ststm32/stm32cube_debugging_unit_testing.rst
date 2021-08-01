@@ -34,7 +34,7 @@ Processing the selected project may take some amount of time (PlatformIO will do
 Adding Code to the Generated Project
 ------------------------------------
 
-Let's add some actual code to the project. Firstly, we create two main files ``main.c`` and ``main.h`` in the :ref:`projectconf_pio_src_dir` folder. Right click on the ``src`` in the project window:
+Let's add some actual code to the project. Firstly, we create two main files ``main.c`` and ``main.h`` in the :ref:`espressif_esp32s2` folder. Right click on the ``src`` in the project window:
 
 .. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-3.png
 

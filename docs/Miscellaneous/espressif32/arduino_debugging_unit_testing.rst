@@ -34,7 +34,7 @@ After that, we have a fully configured project that is ready for developing code
 Adding Code to the Generated Project
 ------------------------------------
 
-Let's add some actual code to the project. Firstly, we open a default main file named ``main.cpp`` in the :ref:`projectconf_pio_src_dir` folder and replace its content with following:
+Let's add some actual code to the project. Firstly, we open a default main file named ``main.cpp`` in the :ref:`espressif_esp32s2` folder and replace its content with following:
 
 .. code-block:: cpp
 

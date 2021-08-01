@@ -77,7 +77,7 @@ or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
     --disable-auto-clean
 
 Disable auto-clean of :ref:`mcs51` when :ref:`mips`
-or :ref:`projectconf_pio_src_dir` (project structure) have been modified.
+or :ref:`espressif_esp32s2` (project structure) have been modified.
 
 .. option::
     -r, --force-remote

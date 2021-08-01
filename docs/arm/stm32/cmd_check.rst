@@ -35,7 +35,7 @@ Process specified environments.
     --pattern
 
 You can specify which source files or folders should be included/excluded from check
-process. By default only :ref:`projectconf_pio_src_dir` and :ref:`projectconf_pio_include_dir`
+process. By default only :ref:`espressif_esp32s2` and :ref:`projectconf_pio_include_dir`
 are checked. Multiple ``--pattern`` options and `GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
 
 

@@ -35,7 +35,7 @@ Setting Up the Project
 Adding Code to the Generated Project
 ------------------------------------
 
-#. Create a new file ``main.c`` in :ref:`projectconf_pio_src_dir` folder and add the
+#. Create a new file ``main.c`` in :ref:`espressif_esp32s2` folder and add the
    following code:
 
     .. code-block:: c

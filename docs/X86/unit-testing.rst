@@ -251,7 +251,7 @@ Workflow
 Shared Code
 ~~~~~~~~~~~
 
-|PIOUTE| does not build source code from :ref:`projectconf_pio_src_dir` folder
+|PIOUTE| does not build source code from :ref:`espressif_esp32s2` folder
 by default. If you have a shared/common code between your "main" and "test"
 programs, you have 2 options:
 
@@ -265,7 +265,7 @@ programs, you have 2 options:
    component in :ref:`projectconf_pio_lib_dir` folder and include it in tests
    and the main program using ``#include <calculator.h>``.
 
-2. Manually instruct PlatformIO to build source code from :ref:`projectconf_pio_src_dir`
+2. Manually instruct PlatformIO to build source code from :ref:`espressif_esp32s2`
    folder using :ref:`projectconf_test_build_project_src` option in :ref:`mips`:
 
    .. code-block:: ini

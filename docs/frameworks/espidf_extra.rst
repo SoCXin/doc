@@ -85,7 +85,7 @@ A typical PlatformIO project for the ESP-IDF framework must have the following s
 
 .. tip::
     It's also possible to use the default ESP-IDF project structure with ``main`` folder.
-    To specify ``main`` as the folder with source files use :ref:`projectconf_pio_src_dir`
+    To specify ``main`` as the folder with source files use :ref:`espressif_esp32s2`
     option, for example:
 
     .. code-block:: ini
@@ -101,7 +101,7 @@ A typical PlatformIO project for the ESP-IDF framework must have the following s
 
 Besides the files related to PlatformIO project, there are several additional
 ESP-IDF-specific files: the main ``CMakeLists.txt``, project-specific ``CMakeLists.txt``
-in :ref:`projectconf_pio_src_dir` and optional default configuration file ``sdkconfig.defaults``.
+in :ref:`espressif_esp32s2` and optional default configuration file ``sdkconfig.defaults``.
 ``CMakeLists.txt`` files enable features supported by the ESP-IDF's build system, e.g.
 ULP configuration, adding extra components, etc. A typical ``CMakeLists.txt`` file in
 the root folder has the following content:
@@ -115,7 +115,7 @@ the root folder has the following content:
     include($ENV{IDF_PATH}/tools/cmake/project.cmake)
     project(project-name)
 
-The second ``CMakeLists.txt`` in :ref:`projectconf_pio_src_dir` is responsible for
+The second ``CMakeLists.txt`` in :ref:`espressif_esp32s2` is responsible for
 controlling the build process of the component and its MCS51 into the overall
 project. The minimal component ``CMakeLists.txt`` file simply registers the component to
 the build system using ``idf_component_register``:
@@ -186,7 +186,7 @@ An example of specifying ``esp-aws-iot`` as an extra component:
     project(subscribe_publish)
 
 .. warning::
-    Since :ref:`projectconf_pio_src_dir` is also passed to CMake as an extra component,
+    Since :ref:`espressif_esp32s2` is also passed to CMake as an extra component,
     you should only append to ``EXTRA_COMPONENT_DIRS`` variable in order not to override
     the default package.
 

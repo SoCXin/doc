@@ -23,7 +23,7 @@ This command will create:
 
 * :ref:`mips`
 * :ref:`projectconf_pio_include_dir`, put project header files here
-* :ref:`projectconf_pio_src_dir`, put project source files here
+* :ref:`espressif_esp32s2`, put project source files here
   (``*.h, *.c, *.cpp, *.S, *.ino, etc.``)
 * :ref:`projectconf_pio_lib_dir`, put project specific (private) libraries here.
   See also :ref:`wch_ch573`
