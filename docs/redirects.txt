@@ -1,7 +1,6 @@
 /ST/M4/cmd_update.html -> /ARM/ST/M4/cmd_update.html
 /ST/M4/cmd_test.html -> /ARM/ST/M4/cmd_test.html
 /ST/M4/cmd_run.html -> /ARM/ST/M4/cmd_run.html
-/ST/M4/cmd_device.html -> /ARM/ST/M4/cmd_device.html
 /ST/M4/cmd_agent.html -> /ARM/ST/M4/cmd_agent.html
 /ST/M4/index.html -> /ARM/ST/M4/index.html
 /ST/M7/cmd_init.html -> /ARM/ST/M7/cmd_init.html
@@ -19,7 +18,6 @@
 /STM32F1.html -> /ARM/ST/M3/index.html
 /ST.html -> /ARM/ST/index.html
 /ST/cmd_init.html -> /ST/M7/cmd_init.html
-/ST/cmd_serialports.html -> /ST/cmd_device.html
 /history.html -> /ARM/history.html
 /core.html -> /ARM/index.html
 /STC.html -> /MCS51/STC/index.html
