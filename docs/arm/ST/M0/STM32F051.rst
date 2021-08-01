@@ -1,7 +1,7 @@
 
-.. _cmd_device_monitor:
+.. _st_stm32f051:
 
-pio device monitor
+STM32F051
 ==================
 
 .. contents::

@@ -15,7 +15,7 @@ ESP32-S2
 Type: ``String`` | Multiple: ``No``
 
 Port, a number or a device name, or valid `URL Handlers <https://pyserial.readthedocs.io/en/latest/url_handlers.html#urls>`__.
-See :option:`pio device monitor --port`. To print all available serial ports please use :ref:`cmd_device_list` command.
+See :option:`pio device monitor --port`. To print all available serial ports please use :ref:`mips` command.
 
 Please note that you can use Unix shell-style wildcards:
 

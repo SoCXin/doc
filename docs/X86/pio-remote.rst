@@ -104,7 +104,7 @@ places, networks, etc.
 This technology allows one to work with remote devices in generic form as you
 do that with local devices using PlatformIO ecosystem. The only one difference
 is a prefix "remote" before each generic PlatformIO command. For example,
-listing of local and remote devices will look like :ref:`cmd_device_list` and
+listing of local and remote devices will look like :ref:`st_stm32f030` and
 :ref:`cmd_remote_device_list`.
 
 Installation

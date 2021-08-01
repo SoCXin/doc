@@ -69,7 +69,7 @@ For example, ``pio remote test --ignore "mytest*" -i "test[13]"``
     --upload-port
 
 A port that is intended for firmware uploading. To list available ports
-please use :ref:`cmd_device_list` command.
+please use :ref:`st_stm32f030` command.
 
 If upload port is not specified, PlatformIO will try to detect it automatically.
 
@@ -78,7 +78,7 @@ If upload port is not specified, PlatformIO will try to detect it automatically.
 
 A Serial/UART port that PlatformIO uses as communication interface between
 PlatformIO Unit Test Engine and target device. To list available ports
-please use :ref:`cmd_device_list` command.
+please use :ref:`st_stm32f030` command.
 
 If test port is not specified, PlatformIO will try to detect it automatically.
 

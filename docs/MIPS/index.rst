@@ -2,7 +2,7 @@
 .. _mips:
 
 MIPS
-=============================================
+=========
 
 Each PlatformIO project has a configuration file named
 ``platformio.ini`` in the root directory for the project. This is a

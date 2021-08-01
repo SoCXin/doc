@@ -76,7 +76,7 @@ Redirecting peripherals output
 
 It might be useful to redirect output from device peripherals to a more convenient
 communication channel. A typical example is redirecting UART output to a socket which
-can be opened by :ref:`cmd_device_monitor` while using Renode as the debug tool.
+can be opened by :ref:`st_stm32f051` while using Renode as the debug tool.
 The default debug flags can be overridden using the ``debug_server`` option. For
 example, the following configuration can be used to redirect output from the ``UART0``
 port on the ``hifive1-revb`` board:

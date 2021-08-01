@@ -1,7 +1,7 @@
- 
+
 .. _cmd_device:
 
-Device Manager CLI
+STM32F0/G0
 ==================
 
 To print all available commands and options use:
@@ -14,5 +14,6 @@ To print all available commands and options use:
 .. toctree::
     :maxdepth: 2
 
-    cmd_list
-    cmd_monitor
+    STM32F030
+    STM32F051
+
