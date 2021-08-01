@@ -27,7 +27,7 @@ pull requests. When that process has completed, it will notify a developer in
 the way it has been configured to do so — for example, by sending an email
 containing the build results (showing success or failure), or by posting a
 message on an IRC channel. It can be configured to build project on a range of
-different :ref:`platforms`.
+different :ref:`stm32`.
 
 .. contents::
 

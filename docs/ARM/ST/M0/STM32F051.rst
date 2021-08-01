@@ -222,7 +222,7 @@ Device Monitor Filter API
 -------------------------
 
 :ref:`arm` provides an API to extend device monitor with a custom filter declared
-in "monitor" folder of :ref:`platforms`. See examples:
+in "monitor" folder of :ref:`stm32`. See examples:
 
 - https://github.com/platformio/platform-espressif32/tree/develop/monitor
 - https://github.com/platformio/platform-espressif8266/tree/develop/monitor

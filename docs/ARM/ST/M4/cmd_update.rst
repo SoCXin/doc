@@ -19,7 +19,7 @@ Usage
 Description
 -----------
 
-Check or update installed :ref:`platforms` and global
+Check or update installed :ref:`stm32` and global
 :ref:`Libraries <RISC-V>` on the remote machine.
 
 Options

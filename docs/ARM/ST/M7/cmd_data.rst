@@ -1,4 +1,4 @@
- 
+
 .. _cmd_project_data:
 
 pio project data
@@ -26,8 +26,8 @@ Dump data intended for IDE extensions/plugins:
 - Defines/Macros
 - CPP Preprocessor includes/paths
 - Program path
-- SVD path if available for :ref:`platforms`
-- Targets by :ref:`platforms` (see :option:`pio run --list-targets` for details)
+- SVD path if available for :ref:`stm32`
+- Targets by :ref:`stm32` (see :option:`pio run --list-targets` for details)
 - Extra information.
 
 Options

@@ -19,7 +19,7 @@ all branches, not just to the master branch. Drone will also build and run
 pull requests. When that process has completed, it will notify a developer in
 the way it has been configured to do so — for example, by sending an email
 containing the build results (showing success or failure). It can be
-configured to build project on a range of different :ref:`platforms`.
+configured to build project on a range of different :ref:`stm32`.
 
 .. contents::
 

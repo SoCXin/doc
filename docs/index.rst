@@ -42,7 +42,6 @@ Classification
     :maxdepth: 1
 
     RISC-V/index
-    Platforms <platforms/index>
     frameworks/index
     level/index
 

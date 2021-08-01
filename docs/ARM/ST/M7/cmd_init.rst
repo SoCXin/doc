@@ -51,7 +51,7 @@ pre-fill these data:
 * :ref:`projectconf_env_framework`
 * :ref:`projectconf_env_board`
 
-The full list with pre-configured boards is available here :ref:`platforms`.
+The full list with pre-configured boards is available here :ref:`stm32`.
 
 .. option::
     --ide
