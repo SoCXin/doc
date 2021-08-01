@@ -42,7 +42,7 @@ Options
 Process specified environments.
 
 You can also specify which environments should be processed by default using
-:ref:`projectconf_pio_default_envs` option from :ref:`mips`.
+:ref:`arm` option from :ref:`mips`.
 
 
 .. option::
@@ -70,7 +70,7 @@ to current working directory (``CWD``).
 
 Shows detailed information when processing environments.
 
-This option can also be set globally using :ref:`setting_force_verbose` setting
+This option can also be set globally using :ref:`arm` setting
 or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 
 .. option::

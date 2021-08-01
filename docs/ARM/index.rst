@@ -11,7 +11,6 @@ ARM
 * Multi-platform Build System
 * Development platform and package managers
 * :ref:`wch_ch573`
-* :ref:`Serial Port Monitor <cmd_device_monitor>`
 * Integration components (:ref:`mcs51` and :ref:`wch`).
 
 |PIOCORE| is written in `Python <https://www.python.org/downloads/>`_
@@ -27,7 +26,7 @@ computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
     Please note that you do not need to install |PIOCORE| if you are going
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
-    If you need |PIOCORE| commands outside PlatformIO IDE, please :ref:`piocore_install_shell_commands`.
+    If you need |PIOCORE| commands outside PlatformIO IDE, please :ref:`arm`.
 
 .. toctree::
     :maxdepth: 2

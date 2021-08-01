@@ -15,7 +15,7 @@ Remote Development
 
 |PIORemote| allows you to work remotely with devices from
 *Anywhere In The World*. No matter where are you now! Run a small and
-cross-platform :ref:`cmd_remote_agent` on a remote machine and you are able to
+cross-platform :ref:`arm` on a remote machine and you are able to
 list active devices (wireless + wired), to upload firmware (program),
 to process remote unit tests, or to start remote debugging session via
 **Remote Serial Port Monitor**.
@@ -24,7 +24,7 @@ Using |PIORemote| you can share your devices with colleagues across your
 organization or friends. In combination with :ref:`ide_cloud`, you can create
 awesome things at any time when inspiration comes to you.
 
-You should have :ref:`pioaccount` to use |PIORemote|.
+You should have :ref:`stm32` to use |PIORemote|.
 A registration is **FREE**.
 
 
@@ -90,9 +90,9 @@ Technology
 for remote solutions without external dependencies to
 operating system or its software based on `client-server architecture <https://en.wikipedia.org/wiki/Client–server_model>`_.
 The Server component (|PIOCloud|) plays a role of coupling link between
-:ref:`cmd_remote_agent` and Client (:ref:`st_cortex_m4`, :ref:`ide_cloud`,
+:ref:`arm` and Client (:ref:`st_cortex_m4`, :ref:`ide_cloud`,
 :ref:`wch`, SDKs, etc.).
-When you start :ref:`cmd_remote_agent`, it connects over the Internet with
+When you start :ref:`arm`, it connects over the Internet with
 |PIOCloud| and listen for the actions/commands which you can send in Client
 role from anywhere in the world.
 

@@ -4,13 +4,13 @@
 PlatformIO Remote Agent
 =======================
 
-Start :ref:`cmd_remote_agent` on a host machine and work remotely with
+Start :ref:`arm` on a host machine and work remotely with
 your devices **WITHOUT** extra software, services, SSH, VPN, tunneling or
 opening incoming network ports.
 
 :ref:`mcs51` supports wired and wireless devices. Wired devices should be
-connected physically to host machine where :ref:`cmd_remote_agent` is started,
-where wireless devices should be visible for :ref:`cmd_remote_agent` to provide
+connected physically to host machine where :ref:`arm` is started,
+where wireless devices should be visible for :ref:`arm` to provide
 network operations Over-The-Air (OTA).
 
 .. contents::
@@ -31,7 +31,7 @@ Usage
 Description
 ~~~~~~~~~~~
 
-List active :ref:`cmd_remote_agent` s started using own :ref:`pioaccount`
+List active :ref:`arm` s started using own :ref:`stm32`
 or shared with you by other PlatformIO developers.
 
 Example
@@ -64,7 +64,7 @@ Usage
 Description
 ~~~~~~~~~~~
 
-Start :ref:`cmd_remote_agent` and work remotely with your devices from
+Start :ref:`arm` and work remotely with your devices from
 anywhere in the world. This command can be run as daemon or added to
 autostart list of your OS.
 
@@ -84,7 +84,7 @@ commands. Good names are home, office, lab or etc.
     -s, --share
 
 Share your agent/devices with other PlatformIO developers who have
-:ref:`pioaccount`: friends, co-workers, team, etc.
+:ref:`stm32`: friends, co-workers, team, etc.
 
 The valid value for ``--share`` option is email address that was used for
 :ref:`cmd_account_register` command.
@@ -92,5 +92,5 @@ The valid value for ``--share`` option is email address that was used for
 .. option::
     -d, --working-dir
 
-A working directory where :ref:`cmd_remote_agent` stores projects data for
+A working directory where :ref:`arm` stores projects data for
 incremental synchronization and embedded programs for PlatformIO Process Supervisor.

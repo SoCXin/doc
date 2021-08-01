@@ -16,7 +16,7 @@ Usage
 Description
 -----------
 
-Update :ref:`pioaccount` profile.
+Update :ref:`stm32` profile.
 
 Options
 ~~~~~~~

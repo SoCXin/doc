@@ -34,7 +34,7 @@ The full list of supported checks can be found on
 Configuration
 -------------
 
-To enable **PVS-Studio** tool simply add it to the :ref:`projectconf_check_tool`
+To enable **PVS-Studio** tool simply add it to the :ref:`arm`
 option in :ref:`mips`:
 
 .. code-block:: ini

@@ -61,7 +61,7 @@ Check tools
 -----------
 
 You can switch between or specify multiple tools used for finding defects
-using :ref:`projectconf_check_tool` option:
+using :ref:`arm` option:
 
 .. code-block:: ini
 
