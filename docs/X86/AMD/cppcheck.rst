@@ -122,7 +122,7 @@ from **Cppcheck** report using ``// cppcheck-suppress warningId`` syntax.
   Warning ID can be found in square brackets at the end of defect description, for example:
   ``src\Blink.cpp:17: [low:style] The function 'loop' is never used. [unusedFunction]``
 
-By default, :ref:`piocheck` command doesn't scan framework sources and that's
+By default, :ref:`stm32` command doesn't scan framework sources and that's
 why some functions from in your project might be reported as unused. For example,
 you can ignore warnings about ``setup`` and ``loop`` functions from
 Arduino-based projects:

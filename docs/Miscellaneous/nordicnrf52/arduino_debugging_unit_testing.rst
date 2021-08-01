@@ -3,14 +3,14 @@
 Arduino and Nordic nRF52-DK: debugging and unit testing
 =======================================================
 
-The goal of this tutorial is to demonstrate how simple it is to use :ref:`stc_stc8g` to develop, run and debug a simple project with :ref:`framework_arduino` framework for ``Nordic nRF52-DK`` board.
+The goal of this tutorial is to demonstrate how simple it is to use :ref:`stc_stc8g` to develop, run and debug a simple project with :ref:`wch` framework for ``Nordic nRF52-DK`` board.
 
 * **Level:** Beginner
 * **Platforms:** Windows, Mac OS X, Linux
 
 **Requirements:**
     - Downloaded and installed :ref:`stc_stc8g`
-    - Install drivers for :ref:`debugging_tool_jlink` debug tool
+    - Install drivers for :ref:`stm32` debug tool
     - :ref:`board_nordicnrf52_nrf52_dk` development board
 
 
@@ -24,12 +24,12 @@ At first step, we need to create a new project using PlatformIO Home Page (to op
 
 .. image:: ../../_static/images/tutorials/nordicnrf52/arduino-debugging-unit-testing-1.png
 
-On the next step we need to select ``Nordic nRF52-DK`` as a development board, :ref:`framework_arduino` as a framework and a path to the project location (or use the default one):
+On the next step we need to select ``Nordic nRF52-DK`` as a development board, :ref:`wch` as a framework and a path to the project location (or use the default one):
 
 .. image:: ../../_static/images/tutorials/nordicnrf52/arduino-debugging-unit-testing-2.png
 
 Processing the selected project may take some amount of time (PlatformIO will download and install all required packages)
-and after these steps, we have a fully configured project that is ready for developing code with :ref:`framework_arduino` framework.
+and after these steps, we have a fully configured project that is ready for developing code with :ref:`wch` framework.
 
 Adding Code to the Generated Project
 ------------------------------------
@@ -79,7 +79,7 @@ After successful uploading, the green LED1 should start blinking.
 Debugging the Firmware
 ----------------------
 
-:ref:`mcs51` offers the easiest way to debug the board. Firstly, we need to specify :ref:`projectconf_debug_tool` in :ref:`mips`. Since the board has an on-board ``JLink`` debug probe we can directly declare it in :ref:`mips`:
+:ref:`mcs51` offers the easiest way to debug the board. Firstly, we need to specify :ref:`wch` in :ref:`mips`. Since the board has an on-board ``JLink`` debug probe we can directly declare it in :ref:`mips`:
 
 .. code-block:: ini
 

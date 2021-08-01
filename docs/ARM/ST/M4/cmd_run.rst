@@ -55,7 +55,7 @@ for available targets.
     --upload-port
 
 Custom upload port of embedded board. To print all available ports use
-:ref:`cmd_remote_device` command.
+:ref:`stm32` command.
 
 If upload port is not specified, PlatformIO will try to detect it automatically.
 

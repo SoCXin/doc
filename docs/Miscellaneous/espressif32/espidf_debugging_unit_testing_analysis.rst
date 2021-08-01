@@ -13,8 +13,7 @@ framework for the ``ESP32-DevKitC`` board.
 
 **Requirements:**
     - Downloaded and installed :ref:`stc_stc8g`
-    - :ref:`board_espressif32_esp32dev`
-    - An external debug adapter (e.g. :ref:`debugging_tool_olimex-arm-usb-ocd`)
+    - :ref:`wch`
 
 .. contents:: Contents
     :local:
@@ -215,7 +214,6 @@ using the following pins:
       - ``Pin 13 (TDO)``
 
 #. Specify :ref:`projectconf_debug_tool` in :ref:`mips`. In this tutorial,
-   :ref:`debugging_tool_olimex-arm-usb-ocd-h` debug probe is used:
 
     .. code-block:: ini
 
@@ -250,9 +248,9 @@ Writing Unit Tests
 
 For the sake of simplicity, let's create a small library called ``calculator``,
 implement several basic functions ``addition``, ``subtraction``, ``multiplication``,
-``division`` and test them using :ref:`unit_testing` engine.
+``division`` and test them using :ref:`stm32` engine.
 
-#. Create a new folder ``calculator`` in the :ref:`projectconf_pio_lib_dir` folder and
+#. Create a new folder ``calculator`` in the :ref:`stm32` folder and
    add two new files ``calculator.h`` and ``calculator.c`` with the following contents:
 
     ``calculator.h``:
@@ -304,7 +302,7 @@ implement several basic functions ``addition``, ``subtraction``, ``multiplicatio
           return a / b;
       }
 
-#. Create a new file ``test_calc.c`` to the folder :ref:`projectconf_pio_test_dir`
+#. Create a new file ``test_calc.c`` to the folder :ref:`stm32`
    and add basic tests for the ``calculator`` library:
 
     .. code-block:: c
@@ -353,7 +351,7 @@ Project Inspection
 ------------------
 
 For illustrative purposes, let's imagine we need to find a function with the biggest
-memory footprint. Also, let's introduce a bug to our project so :ref:`piocheck` can
+memory footprint. Also, let's introduce a bug to our project so :ref:`stm32` can
 report it.
 
 #. Open ``PlatformIO Home`` and navigate to ``Inspect`` section, select the current

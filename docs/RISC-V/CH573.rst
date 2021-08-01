@@ -13,7 +13,7 @@ up-to-date. PlatformIO Library Manager supports
 There are 3 options how to find/manage libraries:
 
 * `Web Library Search <https://www.soc.xin/lib>`__
-* PlatformIO Core :ref:`Command Line Interface <cmd_lib_search>`
+* PlatformIO Core :ref:`Command Line Interface <wch>`
 
 
 Project dependencies

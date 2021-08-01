@@ -22,12 +22,12 @@ Initialize a new PlatformIO based project or update existing with new data.
 This command will create:
 
 * :ref:`mips`
-* :ref:`projectconf_pio_include_dir`, put project header files here
+* :ref:`stm32`, put project header files here
 * :ref:`espressif_esp32s2`, put project source files here
   (``*.h, *.c, *.cpp, *.S, *.ino, etc.``)
-* :ref:`projectconf_pio_lib_dir`, put project specific (private) libraries here.
+* :ref:`stm32`, put project specific (private) libraries here.
   See also :ref:`wch_ch573`
-* :ref:`projectconf_pio_test_dir`, put project tests here. More details :ref:`unit_testing`
+* :ref:`stm32`, put project tests here. More details :ref:`stm32`
 * Miscellaneous files for VCS and :ref:`wch` support.
 
 Options
@@ -47,9 +47,6 @@ If you specify board ``ID`` (you can pass multiple ``--board`` options), then
 *PlatformIO* will automatically generate environment for :ref:`mips` and
 pre-fill these data:
 
-* :ref:`projectconf_env_platform`
-* :ref:`projectconf_env_framework`
-* :ref:`projectconf_env_board`
 
 The full list with pre-configured boards is available here :ref:`stm32`.
 
@@ -79,8 +76,8 @@ Multiple options are allowed.
 .. option::
     --env-prefix
 
-An environment prefix which will be used with pair in :ref:`projectconf_env_board` ID.
-For example, the default environment name for :ref:`board_teensy_teensy31`
+An environment prefix which will be used with pair in :ref:`stm32` ID.
+For example, the default environment name for :ref:`wch`
 board will be ``[env:teensy31]``.
 
 .. option::
@@ -133,7 +130,7 @@ Examples
     `pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
     ...
 
-4. Initialize project for Teensy 3.1 board with custom :ref:`framework_mbed`
+4. Initialize project for Teensy 3.1 board with custom :ref:`wch`
 
 .. code::
 

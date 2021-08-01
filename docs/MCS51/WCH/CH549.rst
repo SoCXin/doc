@@ -39,7 +39,7 @@ and `general build configuration <http://docs.CH549-ci.com/user/customizing-the-
 guides first.
 
 .. note::
-    If you are going to use PlatformIO :ref:`unit_testing` or :ref:`mcs51`
+    If you are going to use PlatformIO :ref:`stm32` or :ref:`mcs51`
     you will need to define :envvar:`PLATFORMIO_AUTH_TOKEN` environment
     variable in project settings. See
     `Defining Variables in Repository Settings <https://docs.CH549-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings>`_

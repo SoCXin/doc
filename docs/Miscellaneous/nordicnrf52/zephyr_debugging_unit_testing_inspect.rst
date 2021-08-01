@@ -13,8 +13,8 @@ framework for the ``Nordic nRF52-DK`` board.
 
 **Requirements:**
   - Downloaded and installed :ref:`stc_stc8g`
-  - Install drivers for :ref:`debugging_tool_jlink` debug tool
-  - :ref:`board_nordicnrf52_nrf52_dk` development board
+  - Install drivers for :ref:`stm32` debug tool
+  - :ref:`wch` development board
 
 .. contents:: Contents
     :local:
@@ -27,7 +27,7 @@ Setting Up the Project
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-1.png
 
 #. Click on "New Project", select ``Nordic nRF52-DK`` as the development board,
-   :ref:`framework_zephyr` as the framework and a path to the project location
+   :ref:`wch` as the framework and a path to the project location
    (or use the default one):
 
     .. image:: ../../_static/images/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect-2.png
@@ -194,7 +194,7 @@ Writing Unit Tests
 
 For the sake of simplicity, let's create a small library called ``calculator``,
 implement several basic functions ``add``, ``sub``, ``mul``, ``div`` and test them using
-:ref:`unit_testing` engine.
+:ref:`stm32` engine.
 
 #. PlatformIO uses a unit testing framework called ``Unity``. ``Unity`` is not
    compatible with C library implemented in the framework. Let's enable standard
@@ -300,7 +300,7 @@ Project Inspection
 ------------------
 
 For illustrative purposes, let's imagine we need to find a function with the biggest
-memory footprint. Also, let's introduce a bug to our project so :ref:`piocheck` can
+memory footprint. Also, let's introduce a bug to our project so :ref:`stm32` can
 report it.
 
 #. Open ``PlatformIO Home`` and navigate to ``Inspect`` section, select the current

@@ -31,7 +31,7 @@ Version specifications can take any of the following forms:
 * ``>0.1.0,!=0.2.0,<0.3.0``: any version greater than ``0.1.0``, not equal to
   ``0.2.0`` and less than ``0.3.0``
 
-Other forms are the same as for the  :ref:`cmd_platform_install` command.
+Other forms are the same as for the  :ref:`wch` command.
 
 Examples:
 
@@ -115,7 +115,7 @@ Type: ``String (ID)`` | Multiple: ``No``
 - debugging configuration
 - connectivity information, etc.
 
-You can find a valid  ``board`` ID in :ref:`boards` catalog,
+You can find a valid  ``board`` ID in :ref:`wch` catalog,
 `Boards Explorer <https://www.soc.xin/boards>`_ or
 :ref:`stm32` command.
 

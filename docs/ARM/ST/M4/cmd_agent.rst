@@ -77,7 +77,7 @@ Options
     -n, --name
 
 Agent name/alias. By default, machine's ``hostname`` will be used.
-You can use this name later for :ref:`cmd_remote_device` and :ref:`cmd_remote_run`
+You can use this name later for :ref:`stm32` and :ref:`stm32`
 commands. Good names are home, office, lab or etc.
 
 .. option::
@@ -87,7 +87,7 @@ Share your agent/devices with other PlatformIO developers who have
 :ref:`stm32`: friends, co-workers, team, etc.
 
 The valid value for ``--share`` option is email address that was used for
-:ref:`cmd_account_register` command.
+:ref:`stm32` command.
 
 .. option::
     -d, --working-dir

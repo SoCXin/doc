@@ -4,15 +4,10 @@
 STM32Cube HAL and Nucleo-F401RE: debugging and unit testing
 ===========================================================
 
-The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_atom` to develop, run and debug a basic blink project with :ref:`framework_stm32cube` framework for ``STM32 Nucleo-F401RE`` board.
+The goal of this tutorial is to demonstrate how simple it is to use :ref:`wch` to develop, run and debug a basic blink project with :ref:`wch` framework for ``STM32 Nucleo-F401RE`` board.
 
 * **Level:** Intermediate
 * **Platforms:** Windows, Mac OS X, Linux
-
-**Requirements:**
-    - Downloaded and installed :ref:`ide_atom`
-    - Install drivers for :ref:`debugging_tool_stlink` debug tool
-    - :ref:`board_ststm32_nucleo_f401re` development board
 
 
 .. contents:: Contents
@@ -25,11 +20,11 @@ At first step, we need to create a new project using PlatformIO Home Page (to op
 
 .. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-1.png
 
-On the next step, we need to select ``ST Nucleo-F401RE`` as a development board, :ref:`framework_stm32cube` as a framework and a path to the project location (or use the default one):
+On the next step, we need to select ``ST Nucleo-F401RE`` as a development board, :ref:`wch` as a framework and a path to the project location (or use the default one):
 
 .. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-2.png
 
-Processing the selected project may take some amount of time (PlatformIO will download and install all required packages) and after these steps, we have a fully configured project that is ready for developing code with :ref:`framework_stm32cube` framework.
+Processing the selected project may take some amount of time (PlatformIO will download and install all required packages) and after these steps, we have a fully configured project that is ready for developing code with :ref:`wch` framework.
 
 Adding Code to the Generated Project
 ------------------------------------
@@ -135,11 +130,10 @@ Writing Unit Tests
   framework = stm32cube
   test_transport = custom
 
-Also, we need to create a new folder ``test`` where the tests and custom :ref:`projectconf_test_transport` implementation (described next) will be located:
+Also, we need to create a new folder ``test`` where the tests and custom :ref:`wch` implementation (described next) will be located:
 
 .. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-10.png
 
-We will use ``USART2`` on ``ST Nucleo-F401RE`` board because it's directly connected to the STLink debug interface and in OS it can be visible as a Virtual Com Port, so we don't need any additional USB-UART converter. To implement the custom :ref:`projectconf_test_transport` we need to create two files ``unittest_transport.h`` and ``unittest_transport.c`` and put them in the :ref:`projectconf_pio_test_dir` in the root folder of our project. In these files we need to implement the next four functions:
 
 .. code-block:: cpp
 

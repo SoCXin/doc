@@ -4,7 +4,7 @@
 pio remote test
 ===============
 
-Helper command for remote :ref:`unit_testing`.
+Helper command for remote :ref:`stm32`.
 
 .. contents::
 
@@ -22,7 +22,7 @@ Description
 -----------
 
 Run remotely tests from PlatformIO based project. More details about PlatformIO
-:ref:`unit_testing`.
+:ref:`stm32`.
 
 This command allows you to apply the tests for the environments specified
 in :ref:`mips`.
@@ -42,7 +42,7 @@ Process specified environments. More details :option:`pio run --environment`
 
 Ignore tests where the name matches specified patterns. More than one
 pattern is allowed. If you need to ignore some tests for the specific
-environment, please take a look at :ref:`projectconf_test_ignore` option from
+environment, please take a look at :ref:`stm32` option from
 :ref:`mips`.
 
 .. list-table::
@@ -121,4 +121,4 @@ or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 Examples
 --------
 
-For the examples please follow to :ref:`unit_testing` page.
+For the examples please follow to :ref:`stm32` page.

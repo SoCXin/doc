@@ -20,7 +20,7 @@ Description
 :ref:`st_stm32f103` command is conceived of as "hot key" for building project with
 arbitrary source code structure. In a nutshell, using ``SRC`` and
 :option:`pio ci --lib` contents PlatformIO initializes via
-:ref:`cmd_project_init` new project in :option:`pio ci --build-dir`
+:ref:`stm32` new project in :option:`pio ci --build-dir`
 with the build environments (using :option:`pio ci --board` or
 :option:`pio ci --project-conf`) and processes them via :ref:`stm32`
 command.
@@ -103,7 +103,7 @@ Build project using pre-configured :ref:`mips`.
 .. option::
     -O, --project-option
 
-Pass additional options from :ref:`mips` to :ref:`cmd_project_init` command.
+Pass additional options from :ref:`mips` to :ref:`stm32` command.
 For example, automatically install dependent libraries
 ``pio ci --project-option="lib_deps=ArduinoJSON"`` or ignore specific
 library ``pio ci --project-option="lib_ignore=SomeLib"``.

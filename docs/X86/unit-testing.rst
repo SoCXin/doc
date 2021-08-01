@@ -25,7 +25,7 @@ Demo
 ----
 
 This is a demo of `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`_, which demonstrates running embedded tests on physical hardware
-(:ref:`board_atmelavr_uno`) and native tests on host machine (desktop).
+(:ref:`stm32`) and native tests on host machine (desktop).
 
 Learn more about :ref:`stm32` command.
 
@@ -38,8 +38,7 @@ Tutorials and Examples
 Tutorials
 ~~~~~~~~~
 
-* :ref:`tutorial_unit_testing_blink`
-* :ref:`tutorial_stm32cube_debugging_unit_testing`
+* :ref:`stm32`
 * `ThingForward: Start Embedded Testing with PlatformIO <http://www.thingforward.io/techblog/2017-07-25-starting-embedded-testing-with-platformio.html>`_
 * `ThingForward: Embedded Testing with PlatformIO - Part 2 <http://www.thingforward.io/techblog/2017-08-08-embedded-testing-with-platformio-part-2.html>`_
 * `ThingForward: Embedded Testing with PlatformIO – Part 3: Remoting <http://www.thingforward.io/techblog/2017-09-06-embedded-testing-with-platformio-part-3-remoting.html>`_
@@ -65,35 +64,21 @@ Test Types
 Desktop
 ~~~~~~~
 
-|PIOUTE| builds a test program for a host machine using :ref:`platform_native` development platform. This test could be run only with the desktop or :ref:`wch` VM instance.
+|PIOUTE| builds a test program for a host machine using :ref:`stm32` development platform. This test could be run only with the desktop or :ref:`wch` VM instance.
 
 .. note::
     PlatformIO does not install any toolchains automatically for
-    :ref:`platform_native` and requires ``GCC`` toolchain to be installed
+    :ref:`stm32` and requires ``GCC`` toolchain to be installed
     on your host machine.
     Please open Terminal and check that the ``gcc`` command is installed.
 
-Embedded
-~~~~~~~~
-
-|PIOUTE| builds a special firmware for a target device (board) and programs it. Then, it connects to this device using configured Serial :ref:`projectconf_test_port` and communicates via :ref:`projectconf_test_transport`. Finally, it runs tests on the embedded side, collects results, analyzes them, and provides a summary on a host machine side (desktop).
-
-.. note::
-    Please note that the |PIOUTE| uses the first available ``Serial/UART``
-    implementation (depending on a :ref:`projectconf_env_framework`) as a
-    communication interface between the |PIOUTE| and target device. If you use
-    ``Serial`` in your project libraries, please wrap/hide Serial-based blocks
-    with ``#ifndef UNIT_TEST`` macro.
-
-    Also, you can create custom :ref:`projectconf_test_transport` and implement
-    the base interface.
 
 Test Runner
 -----------
 
 Test Runner allows you to process specific environments or ignore a test using
 "Glob patterns". You can also ignore a test for specific environments using a
-:ref:`projectconf_test_ignore` option from :ref:`mips`.
+:ref:`stm32` option from :ref:`mips`.
 
 Local
 ~~~~~
@@ -110,7 +95,7 @@ Remote
 Allows you to run test on a remote machine or remote target device (board)
 without having to depend on OS software, extra software, SSH, VPN or opening
 network ports. Remote Unit Testing works in pair with :ref:`mcs51`. In this
-case, you need to use the special command :ref:`cmd_remote_test`.
+case, you need to use the special command :ref:`stm32`.
 
 PlatformIO supports multiple :ref:`wch` systems where you can run unit tests
 at each MCS51 stage. See real
@@ -120,16 +105,6 @@ at each MCS51 stage. See real
 
 Test Transport
 --------------
-
-|PIOUTE| uses different transports to communicate with a
-target device. By default, it uses ``Serial/UART`` transport provided
-by a :ref:`projectconf_env_framework`. For example, when
-":ref:`projectconf_env_framework` = ``arduino``", the first available
-``Serial`` will be used.
-When :ref:`platform_native` dev-platform is used a ``native`` transport will be
-activated automatically. See example below.
-
-Default baudrate/speed is set to :ref:`projectconf_test_speed`.
 
 
 You can also define ``custom`` transport and implement its interface:
@@ -141,7 +116,7 @@ You can also define ``custom`` transport and implement its interface:
 
 **Examples**
 
-1. Custom transport for :ref:`platform_native` platform
+1. Custom transport for :ref:`stm32` platform
 
   * Set ``test_transport = custom`` in :ref:`mips`
 
@@ -179,13 +154,13 @@ You can also define ``custom`` transport and implement its interface:
 
     #endif
 
-2. :ref:`tutorial_stm32cube_debugging_unit_testing`
+2. :ref:`stm32`
 
 Workflow
 --------
 
-1. Create PlatformIO project using the :ref:`cmd_project_init` command. For Desktop Unit
-   Testing (on a host machine), you need to use :ref:`platform_native`.
+1. Create PlatformIO project using the :ref:`stm32` command. For Desktop Unit
+   Testing (on a host machine), you need to use :ref:`stm32`.
 
    .. code-block:: ini
 
@@ -220,8 +195,8 @@ Workflow
         [env:native]
         platform = native
 
-2. Create a ``test`` folder in a root of your project. See :ref:`projectconf_pio_test_dir`.
-3. Write a test using :ref:`unit_testing_api`. Each test is a small independent
+2. Create a ``test`` folder in a root of your project. See :ref:`stm32`.
+3. Write a test using :ref:`stm32`. Each test is a small independent
    program/firmware with its own ``main()`` or ``setup()/loop()`` functions.
    Test should start with ``UNITY_BEGIN()`` and finish with ``UNITY_END()``
    calls.
@@ -256,17 +231,17 @@ by default. If you have a shared/common code between your "main" and "test"
 programs, you have 2 options:
 
 1. **RECOMMENDED**. We recommend splitting the source code into multiple
-   components and placing them into :ref:`projectconf_pio_lib_dir` (project's
+   components and placing them into :ref:`stm32` (project's
    private libraries and components). :ref:`wch_ch573` will find and include these libraries
    automatically in the build process. You can include any library/component header file
    in your test or program source code via ``#include <MyComponent.h>``.
 
    See `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`__  for an example, where we have a "calculator"
-   component in :ref:`projectconf_pio_lib_dir` folder and include it in tests
+   component in :ref:`stm32` folder and include it in tests
    and the main program using ``#include <calculator.h>``.
 
 2. Manually instruct PlatformIO to build source code from :ref:`espressif_esp32s2`
-   folder using :ref:`projectconf_test_build_project_src` option in :ref:`mips`:
+   folder using :ref:`stm32` option in :ref:`mips`:
 
    .. code-block:: ini
 

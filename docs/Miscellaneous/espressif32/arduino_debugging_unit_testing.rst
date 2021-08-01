@@ -3,15 +3,10 @@
 Get started with Arduino and ESP32-DevKitC: debugging and unit testing
 ======================================================================
 
-The goal of this tutorial is to demonstrate how simple it is to use :ref:`stc_stc8g` to develop, run and debug a simple project with the :ref:`framework_arduino` framework for the ``ESP32-DevKitC`` board.
+The goal of this tutorial is to demonstrate how simple it is to use :ref:`stc_stc8g` to develop, run and debug a simple project with the :ref:`wch` framework for the ``ESP32-DevKitC`` board.
 
 * **Level:** Beginner
 * **Platforms:** Windows, Mac OS X, Linux
-
-**Requirements:**
-    - Downloaded and installed :ref:`stc_stc8g`
-    - :ref:`board_espressif32_esp32dev`
-    - :ref:`debugging_tool_olimex-arm-usb-ocd` or :ref:`debugging_tool_olimex-jtag-tiny` adapter for debugging
 
 
 .. contents:: Contents
@@ -24,12 +19,12 @@ First, we need to create a new project using the PlatformIO Home Page (to open t
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-1.png
 
-Next, we need to select ``Espressif ESP32 Dev Module`` as a development board, :ref:`framework_arduino` as a framework and a path to the project location (or use the default one):
+Next, we need to select ``Espressif ESP32 Dev Module`` as a development board, :ref:`wch` as a framework and a path to the project location (or use the default one):
 
 .. image:: ../../_static/images/tutorials/espressif32/arduino-debugging-unit-testing-2.png
 
 Processing the selected project may take some time (PlatformIO will download and install all required packages).
-After that, we have a fully configured project that is ready for developing code with the :ref:`framework_arduino` framework.
+After that, we have a fully configured project that is ready for developing code with the :ref:`wch` framework.
 
 Adding Code to the Generated Project
 ------------------------------------
@@ -131,8 +126,6 @@ In order to use a JTAG probe with an ESP32, we need to connect the following pin
 
     * - ``GPIO 15 (TDO)``
       - ``Pin 13 (TDO)``
-
-:ref:`mcs51` offers the easiest way to debug the board. Firstly, we need to specify :ref:`projectconf_debug_tool` in :ref:`mips`. In this tutorial, an :ref:`debugging_tool_olimex-arm-usb-ocd-h` debug probe is used:
 
 .. code-block:: ini
 
