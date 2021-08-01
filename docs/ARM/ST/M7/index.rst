@@ -1,7 +1,7 @@
- 
-.. _cmd_project:
 
-Project Manager CLI
+.. _st_cortex_m7:
+
+STM32 Cortex M7
 ===================
 
 To print all available commands and options use:
@@ -15,6 +15,5 @@ To print all available commands and options use:
 .. toctree::
     :maxdepth: 2
 
-    cmd_config
-    cmd_data
-    cmd_init
+    STM32H750
+

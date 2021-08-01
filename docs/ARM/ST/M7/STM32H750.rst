@@ -1,7 +1,7 @@
 
-.. _cmd_project_data:
+.. _stm32h750:
 
-pio project data
+STM32H750
 ================
 
 .. versionadded:: 5.0
@@ -27,7 +27,6 @@ Dump data intended for IDE extensions/plugins:
 - CPP Preprocessor includes/paths
 - Program path
 - SVD path if available for :ref:`stm32`
-- Targets by :ref:`stm32` (see :option:`pio run --list-targets` for details)
 - Extra information.
 
 Options
