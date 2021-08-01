@@ -10,14 +10,7 @@ Architecture
 MCS51
 ----------
 
-PlatformIO's unique philosophy in the embedded market provides developers with a modern
-integrated development environment (:ref:`mcs51`) that works cross-platform,
-supports many different software development kits (SDKs) or :ref:`mips`, and
-includes sophisticated debugging (:ref:`mcs51`), unit testing (:ref:`stm32`),
-automated code analysis (:ref:`stm32`), and remote management (:ref:`mcs51`).
-It is architected to maximize flexibility and choice by developers, who can use either
-graphical or command line editors (:ref:`stm32`), or both.
-
+MCS-51单片机是指由美国INTEL公司生产的一系列单片机的总称，这一系列单片机包括了许多品种，如8031，8051，8751，8032，8052，8752等，其中8051是最早最典型的产品，该系列其它单片机都是在8051的基础上进行功能的增、减、改变而来的，所以人们习惯于用8051来称呼MCS-51系列单片机
 
 ARM
 -----------
