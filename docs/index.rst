@@ -59,11 +59,9 @@ Classification
     :caption: X86
     :maxdepth: 2
 
-    Debugging <X86/debugging>
     Unit Testing <X86/unit-testing>
     Static Code Analysis <X86/pio-check>
     Remote Development <X86/pio-remote>
-    X86/pio-account
 
 
 .. toctree::

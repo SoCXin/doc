@@ -23,7 +23,7 @@
 /ST/M3/cmd_login.html -> /ARM/ST/M3/cmd_login.html
 /ST/M3/cmd_forgot.html -> /ARM/ST/M3/cmd_forgot.html
 /ST/M0/cmd_monitor.html -> /ARM/ST/M0/cmd_monitor.html
-/ST/M3/index.html -> /ARM/ST/M3/index.html
+/STM32F1.html -> /ARM/ST/M3/index.html
 /ST.html -> /ARM/ST/index.html
 /ST/cmd_device.html -> /ARM/ST/M0/index.html
 /ST/cmd_init.html -> /ST/M7/cmd_init.html
@@ -46,5 +46,3 @@
 /ESP32.html -> /MIPS/ESP32.html
 /ESP32-S2.html -> /MIPS/ESP32-S2.html
 /ESP32-S3.html -> /MIPS/ESP32-S3.html
-/platforms/unit_testing.html -> /X86/unit-testing.html
-/platforms/espressif.html -> /platforms/espressif8266.html
