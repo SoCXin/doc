@@ -13,9 +13,6 @@ Official reference can be found `here  <https://github.com/westerndigitalcorpora
 Configuration
 -------------
 
-You can configure debugging tool using :ref:`projectconf_debug_tool` option in
-:ref:`mips`:
-
 .. code-block:: ini
 
     [env:myenv]
@@ -62,20 +59,3 @@ Boards
 
 .. note::
     For more detailed ``board`` information please scroll tables below by horizontal.
-
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-      - On-board
-      -
-      - 320MHz
-      - 16MB
-      - 1.16MB
