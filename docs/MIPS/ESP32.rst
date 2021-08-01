@@ -98,7 +98,7 @@ Examples:
 
 Type: ``String`` | Multiple: ``Yes``
 
-:ref:`frameworks` name.
+:ref:`mips` name.
 
 
 .. _projectconf_env_board:

@@ -42,7 +42,6 @@ Classification
     :maxdepth: 1
 
     RISC-V/index
-    frameworks/index
     level/index
 
 .. toctree::
