@@ -77,9 +77,9 @@ process can be found on these pages:
 .. toctree::
   :maxdepth: 1
 
-  check-tools/cppcheck
-  check-tools/clang-tidy
-  check-tools/pvs-studio
+  AMD/cppcheck
+  AMD/clang-tidy
+  AMD/pvs-studio
 
 .. _check_severity:
 

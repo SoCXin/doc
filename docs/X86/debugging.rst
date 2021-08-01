@@ -87,54 +87,42 @@ option.
 .. toctree::
   :maxdepth: 1
 
-  debug-tools/altera-usb-blaster
-  debug-tools/atmel-ice
-  debug-tools/avr-stub
-  debug-tools/blackmagic
-  debug-tools/cmsis-dap
-  debug-tools/digilent-hs1
-  debug-tools/digilent-hs2
-  debug-tools/esp-prog
-  debug-tools/ftdi
-  debug-tools/gd-link
-  debug-tools/iot-bus-jtag
-  debug-tools/jlink
-  debug-tools/minimodule
-  debug-tools/mspdebug
-  debug-tools/olimex-arm-usb-ocd-h
-  debug-tools/olimex-arm-usb-ocd
-  debug-tools/olimex-arm-usb-tiny-h
-  debug-tools/olimex-jtag-tiny
-  debug-tools/ovpsim
-  debug-tools/qemu
-  debug-tools/raspberrypi-swd
-  debug-tools/renode
-  debug-tools/rv-link
-  debug-tools/simavr
-  debug-tools/sipeed-rv-debugger
-  debug-tools/stlink
-  debug-tools/ti-icdi
-  debug-tools/tumpa
-  debug-tools/um232h
-  debug-tools/verilator
-  debug-tools/whisper
-  debug-tools/custom
+  Intel/altera-usb-blaster
+  Intel/atmel-ice
+  Intel/avr-stub
+  Intel/blackmagic
+  Intel/cmsis-dap
+  Intel/digilent-hs1
+  Intel/digilent-hs2
+  Intel/esp-prog
+  Intel/ftdi
+  Intel/gd-link
+  Intel/iot-bus-jtag
+  Intel/jlink
+  Intel/minimodule
+  Intel/mspdebug
+  Intel/olimex-arm-usb-ocd-h
+  Intel/olimex-arm-usb-ocd
+  Intel/olimex-arm-usb-tiny-h
+  Intel/olimex-jtag-tiny
+  Intel/ovpsim
+  Intel/qemu
+  Intel/raspberrypi-swd
+  Intel/renode
+  Intel/rv-link
+  Intel/simavr
+  Intel/sipeed-rv-debugger
+  Intel/stlink
+  Intel/ti-icdi
+  Intel/tumpa
+  Intel/um232h
+  Intel/verilator
+  Intel/whisper
+  Intel/custom
 
 Debug Unit Tests
 ----------------
 
-|PIODebug| supports debugging of unit tests created with PlatformIO's
-:ref:`unit_testing` framework.
-
-Please use :ref:`projectconf_debug_test` option to set a name of a test to be debugged.
-
-CLI Guide
----------
-
-.. toctree::
-  :maxdepth: 3
-
-  pio debug <../ARM/ST/M3/STM32F103>
 
 
 .. _debugging_platforms:

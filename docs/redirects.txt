@@ -4,14 +4,6 @@
 /ST/M4/cmd_device.html -> /ARM/ST/M4/cmd_device.html
 /ST/M4/cmd_agent.html -> /ARM/ST/M4/cmd_agent.html
 /ST/M4/index.html -> /ARM/ST/M4/index.html
-/ST/platforms/cmd_update.html -> /ARM/ST/platforms/cmd_update.html
-/ST/platforms/cmd_uninstall.html -> /ARM/ST/platforms/cmd_uninstall.html
-/ST/platforms/cmd_show.html -> /ARM/ST/platforms/cmd_show.html
-/ST/platforms/cmd_search.html -> /ARM/ST/platforms/cmd_search.html
-/ST/platforms/cmd_list.html -> /ARM/ST/platforms/cmd_list.html
-/ST/platforms/cmd_install.html -> /ARM/ST/platforms/cmd_install.html
-/ST/platforms/cmd_frameworks.html -> /ARM/ST/platforms/cmd_frameworks.html
-/ST/platforms/index.html -> /ARM/ST/platforms/index.html
 /ST/cmd_upgrade.html -> /ARM/ST/cmd_upgrade.html
 /ST/cmd_update.html -> /ARM/ST/cmd_update.html
 /ST/cmd_test.html -> /ARM/ST/cmd_test.html
