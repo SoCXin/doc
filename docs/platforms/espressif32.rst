@@ -15,7 +15,6 @@ For more detailed information please visit `vendor site <https://espressif.com/?
     :local:
     :depth: 1
 
-.. include:: espressif8266.rst
 
 Examples
 --------
