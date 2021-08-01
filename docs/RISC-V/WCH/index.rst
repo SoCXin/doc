@@ -19,8 +19,6 @@ up-to-date. PlatformIO Library Manager supports
 * Updates for installed libraries
 * Multiple examples, trending libraries, and more.
 
-.. image:: ../_static/images/home/pio-home-library-search.png
-
 .. toctree::
     :maxdepth: 2
 
