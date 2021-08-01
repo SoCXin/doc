@@ -15,9 +15,6 @@ This option allows one to inherit configuration from other sections or build env
 in :ref:`mips`. Multiple items are allowed, split them with ``,`` or
 with a new line.
 
-If you need to extend only a few options from some section, please take a look at
-:ref:`projectconf_dynamic_vars`.
-
 Example:
 
 .. code-block:: ini
@@ -30,27 +27,3 @@ Example:
     platform = espressif32
     framework = arduino
 
-    [env:release]
-    extends = espressi32_base, strict_ldf
-    board = esp32dev
-    build_flags = -D RELEASE
-
-    [env:debug]
-    extends = env:release
-    build_type = debug
-    build_flags = -D DEBUG
-
-
-.. _projectconf_extra_scripts:
-
-``extra_scripts``
-^^^^^^^^^^^^^^^^^
-
-Type: ``FilePath`` | Multiple: ``Yes``
-
-A list of PRE and POST extra scripts.
-
-See details and examples in :ref:`mcs51` section.
-
-If you plan to share these scripts with :ref:`mcs51` machine, please
-put them to :ref:`projectconf_pio_shared_dir`.

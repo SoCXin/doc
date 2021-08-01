@@ -74,8 +74,6 @@ Boards
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_chipsalliance_swervolf_nexys`
-      - :ref:`platform_chipsalliance`
       - On-board
       -
       - 320MHz

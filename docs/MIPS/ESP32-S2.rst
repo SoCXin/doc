@@ -7,8 +7,6 @@ ESP32-S2
 .. contents::
     :local:
 
-Custom options for :ref:`cmd_device_monitor` command.
-
 .. _projectconf_monitor_port:
 
 ``monitor_port``
@@ -79,8 +77,6 @@ Example:
 
 Type: ``String`` | Multiple: ``Yes``
 
-Apply filters and text transformation for device output. See available filters at
-:ref:`cmd_device_monitor_filters`.
 
 Example:
 
@@ -104,24 +100,6 @@ A monitor initial ``RTS`` line state. See :option:`pio device monitor --rts`.
 
 ``monitor_dtr``
 ^^^^^^^^^^^^^^^
-
-Type: ``Number (0 or 1)`` | Multiple: ``No``
-
-A monitor initial ``DTR`` line state. See :option:`pio device monitor --dtr`.
-
-.. _projectconf_monitor_flags:
-
-``monitor_flags``
-^^^^^^^^^^^^^^^^^
-
-Type: ``String`` | Multiple: ``Yes``
-
-Pass extra flags and options to :ref:`cmd_device_monitor` command. Please note
-that each flag, option or its value should be passed in a new line. See
-example below.
-
-Available flags and options are the same which are documented for
-:ref:`cmd_device_monitor` command.
 
 Example:
 

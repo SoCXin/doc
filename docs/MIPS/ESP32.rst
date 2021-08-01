@@ -139,13 +139,6 @@ in *Boards* section of :ref:`platforms`. See "Microcontroller" column.
 
 Type: ``Number`` | Multiple: ``No``
 
-The option ``board_build.f_cpu`` is used to define MCU frequency (Hertz, Clock). A
-format of this option is ``C-like long integer`` value with ``L`` suffix. The
-1 Hertz is equal to ``1L``, then 16 MHz (Mega Hertz) is equal to ``16000000L``.
-
-The full list of ``board_build.f_cpu`` for the popular embedded platforms you can
-find in *Boards* section of :ref:`platforms`. See "Frequency" column. You can
-overclock a board by specifying a ``board_build.f_cpu`` value other than the default.
 
 .. _projectconf_board_build.ldscript:
 
@@ -164,11 +157,6 @@ More options
 ^^^^^^^^^^^^
 
 You can override any board option declared in manifest file using the next
-format ``board_{OBJECT.PATH}``, where ``{OBJECT.PATH}`` is an object path in
-JSON manifest. Please navigate to "boards" folder of `PlatfomIO development platforms <https://github.com/topics/platformio-platform>`_
-and open JSON file to list all available options.
-
-For example, `Manifest: Espressif ESP32 Dev Module <https://github.com/platformio/platform-espressif32/blob/master/level/esp32dev.json>`_:
 
 .. code-block:: ini
 
