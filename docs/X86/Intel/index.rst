@@ -1,3 +1,5 @@
+.. |PIOUTS| replace:: **PlatformIO Unit Testing Solution**
+.. |PIOUTE| replace:: **PlatformIO Unit Testing Engine**
 
 .. _intel:
 
