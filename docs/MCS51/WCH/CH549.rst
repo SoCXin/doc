@@ -21,7 +21,7 @@ directory of the GitHub repository.
 
 Travis CI automatically detects when a commit has been made and pushed to a
 repository that is using Travis CI, and each time this happens, it will
-try to build the project using :ref:`stm32f103` command. This includes commits to
+try to build the project using :ref:`wch` command. This includes commits to
 all branches, not just to the master branch. Travis CI will also build and run
 pull requests. When that process has completed, it will notify a developer in
 the way it has been configured to do so — for example, by sending an email
@@ -75,7 +75,7 @@ This variant is default choice for native PlatformIO projects:
         - pio run -e <ID_1> -e <ID_2> -e <ID_N>
 
 
-Using :ref:`stm32f103` command
+Using :ref:`st_stm32f103` command
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This variant is more convenient when project is written as a library (when there are

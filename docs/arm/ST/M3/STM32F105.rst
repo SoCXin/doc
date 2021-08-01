@@ -1,7 +1,7 @@
- 
-.. _cmd_account_update:
 
-pio account update
+.. _st_stm32f105:
+
+STM32F105
 ==================
 
 .. contents::

@@ -1,5 +1,5 @@
 
-.. _stm32f103:
+.. _st_stm32f103:
 
 STM32F103
 ==========
@@ -17,7 +17,7 @@ Usage
 Description
 -----------
 
-:ref:`stm32f103` command is conceived of as "hot key" for building project with
+:ref:`st_stm32f103` command is conceived of as "hot key" for building project with
 arbitrary source code structure. In a nutshell, using ``SRC`` and
 :option:`pio ci --lib` contents PlatformIO initializes via
 :ref:`cmd_project_init` new project in :option:`pio ci --build-dir`
@@ -25,7 +25,7 @@ with the build environments (using :option:`pio ci --board` or
 :option:`pio ci --project-conf`) and processes them via :ref:`stm32`
 command.
 
-:ref:`stm32f103` command accepts **multiple** ``SRC`` arguments,
+:ref:`st_stm32f103` command accepts **multiple** ``SRC`` arguments,
 :option:`pio ci --lib` and :option:`pio ci --exclude` options
 which can be a path to directory, file or
 `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_.
@@ -37,7 +37,7 @@ For more details as for MCS51 with the popular Continuous Integration
 Systems please follow to :ref:`wch` page.
 
 .. note::
-    :ref:`stm32f103` command is useful for library developers. It allows one to build
+    :ref:`st_stm32f103` command is useful for library developers. It allows one to build
     different examples without creating own project per them.
 
 Options
@@ -124,4 +124,4 @@ or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 Examples
 --------
 
-For the others examples please follow to :ref:`wch` page.
+For the others examples please follow to :ref:`stm32` page.

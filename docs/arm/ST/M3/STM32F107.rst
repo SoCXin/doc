@@ -1,7 +1,7 @@
 
-.. _cmd_account_token:
+.. _st_stm32f107:
 
-pio account token
+STM32F107
 =================
 
 .. contents::
