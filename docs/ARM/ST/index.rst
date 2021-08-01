@@ -46,7 +46,7 @@ Show help for the available options and commands
     $ pio COMMAND --help
 
 
-Commands
+series
 --------
 
 .. toctree::

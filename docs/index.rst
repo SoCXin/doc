@@ -33,7 +33,7 @@ Classification
     :caption: ARM
     :maxdepth: 1
 
-    ARM <ARM/index>
+    STM32 <ARM/ST/index>
 
 .. toctree::
     :caption: RISC-V
