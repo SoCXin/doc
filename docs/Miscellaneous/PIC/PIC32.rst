@@ -1,7 +1,7 @@
 
-.. _tutorial_unit_testing_blink:
+.. _microchip_pic32:
 
-Unit Testing of a "Blink" Project
+PIC32
 =================================
 
 The goal of this tutorial is to demonstrate how simple it is to use :ref:`stm32`.
