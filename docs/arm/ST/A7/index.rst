@@ -1,7 +1,7 @@
- 
-.. _cmd_package:
 
-pio package
+.. _st_cortex_a:
+
+STM32MP
 ===========
 
 Manage packages in the registry.
@@ -17,6 +17,6 @@ To print all available commands and options use:
 .. toctree::
     :maxdepth: 2
 
-    cmd_pack
-    cmd_publish
-    cmd_unpublish
+    STM32MP151
+    STM32MP153
+    STM32MP157

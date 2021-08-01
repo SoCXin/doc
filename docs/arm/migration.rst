@@ -52,7 +52,7 @@ packages (libraries, :ref:`platforms`, toolchains) with team members or collabor
 on open source projects. There are new CLI commands that help you to manage
 organizations, teams, team memberships, and resource access:
 
-* :ref:`cmd_package` – manage packages in the registry
+* :ref:`st_cortex_a` – manage packages in the registry
 * :ref:`cmd_org` - manage organizations
 * :ref:`cmd_team` - manage teams and team memberships
 * :ref:`cmd_access` – manage package access for users, teams, and maintainers.
@@ -73,7 +73,7 @@ PlatformIO Core 5.0 uses THE ONLY official **PlatformIO Trusted Registry** that
 supports not only the libraries but also :ref:`platforms` and toolchains.
 
 Package maintainers can publish their libraries, development platforms, and toolchains
-to the registry using :ref:`cmd_package` CLI.
+to the registry using :ref:`st_cortex_a` CLI.
 
 
 Build System

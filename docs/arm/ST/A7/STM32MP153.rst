@@ -1,7 +1,7 @@
 
-.. _cmd_package_pack:
+.. _st_stm32mp153:
 
-pio package pack
+STM32MP153
 ================
 
 .. versionadded:: 5.0
@@ -49,4 +49,4 @@ See Also
 --------
 
 * :ref:`wch_ch573`
-* :ref:`cmd_package_publish`
+* :ref:`st_stm32mp151`

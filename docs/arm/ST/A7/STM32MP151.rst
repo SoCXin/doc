@@ -1,7 +1,7 @@
 
-.. _cmd_package_publish:
+.. _st_stm32mp151:
 
-pio package publish
+STM32MP151
 ===================
 
 .. versionadded:: 5.0
@@ -26,11 +26,11 @@ The `next items <https://github.com/platformio/platformio-core/blob/master/platf
 automatically excluded.
 
 Please check which files will be included in the final package using the
-:ref:`cmd_package_pack` command.
+:ref:`st_stm32mp157` command.
 
 Once a package is published with a given name and version, that specific name and
 version combination can never be used again, even if it is removed with the
-:ref:`cmd_package_unpublish` command.
+:ref:`st_stm32mp153` command.
 
 If no arguments are supplied, then PlatformIO packs the current package folder.
 
@@ -75,5 +75,5 @@ See Also
 --------
 
 * :ref:`wch_ch573`
-* :ref:`cmd_package_pack`
-* :ref:`cmd_package_unpublish`
+* :ref:`st_stm32mp157`
+* :ref:`st_stm32mp153`

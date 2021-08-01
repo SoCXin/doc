@@ -79,12 +79,12 @@ Publishing
 ----------
 
 You can publish a library to the `PlatformIO Registry <https://www.soc.xin/lib>`__
-using :ref:`cmd_package_publish` command. Every time when you modify a source code of
+using :ref:`st_stm32mp151` command. Every time when you modify a source code of
 a library you will need to increment the "version" field in :ref:`wch_ch573` manifest
 and re-publish again.
 
 If the published library has an issue and you would like to remove it from the PlatformIO
-Registry, please use :ref:`cmd_package_unpublish` command.
+Registry, please use :ref:`st_stm32mp153` command.
 
 Examples
 --------

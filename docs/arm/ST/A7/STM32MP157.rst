@@ -1,7 +1,7 @@
 
-.. _cmd_package_unpublish:
+.. _st_stm32mp157:
 
-pio package unpublish
+STM32MP157
 =====================
 
 .. versionadded:: 5.0
@@ -45,6 +45,6 @@ Undo a remove, putting a version back into the registry.
 See Also
 --------
 
-* :ref:`wch_ch573`
-* :ref:`cmd_package_pack`
-* :ref:`cmd_package_publish`
+* :ref:`st_stm32mp157`
+* :ref:`st_stm32mp153`
+* :ref:`st_stm32mp151`

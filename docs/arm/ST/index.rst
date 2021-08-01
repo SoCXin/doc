@@ -56,11 +56,10 @@ Commands
     cmd_check
     STM32F103 <M3/STM32F103>
     STM32F0 <M0/index>
-    cmd_home
-    package/index
     pio platform <platforms/index>
     pio project <M7/index>
     pio remote <M4/index>
+    STM32MP <A7/index>
     cmd_run
     cmd_settings
     cmd_test
