@@ -27,6 +27,3 @@ sections and their allowed contents:
     ESP32-S2
     ESP32-S3
 
-**Example**
-
-For more examples, see :ref:`projectconf_examples`.
