@@ -2,9 +2,9 @@
 .. |PIOUTS| replace:: **PlatformIO Unit Testing Solution**
 .. |PIOUTE| replace:: **PlatformIO Unit Testing Engine**
 
-.. _microchip_pic32:
+.. _x86:
 
-PIC32
+X86
 ============
 
 .. contents:: Contents
@@ -19,5 +19,9 @@ firmware on the host machine, uploads into a target device, starts tests, and co
 the test results into test reports. The final information will be shown on the host
 side with informative output and statistic.
 
-Using :ref:`mcs51` you can start unit tests on the **Remote Device** from anywhere in the world or integrate with :ref:`wch` systems.
+.. toctree::
+  :maxdepth: 1
 
+  AMD/cppcheck
+  AMD/clang-tidy
+  AMD/pvs-studio

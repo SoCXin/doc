@@ -47,14 +47,14 @@ Classification
     :caption: MIPS
     :maxdepth: 1
 
-    platformio <MIPS/index>
+    MIPS <MIPS/index>
 
 
 .. toctree::
     :caption: X86
     :maxdepth: 2
 
-    Unit Testing <X86/unit-testing>
+    X86 <X86/index>
     Static Code Analysis <X86/pio-check>
     Remote Development <X86/pio-remote>
 
