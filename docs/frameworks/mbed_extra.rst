@@ -118,11 +118,6 @@ official page `ARM Mbed OS Build Profiles <https://os.mbed.com/docs/mbed-os/v5.1
 Ignoring particular components
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In case you don't need all parts of the framework or you want to reduce the compilation
-time, you can explicitly exclude folders with redundant sources. For example, to remove
-``cellular``, ``mbedtls`` and ``nanostack`` features from the build process, navigate
-to :ref:`projectconf_pio_packages_dir` and create a new file ``framework-mbed/features/.mbedignore``
-with the following contents:
 
 .. code-block:: ini
 

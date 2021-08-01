@@ -65,9 +65,6 @@ Examples:
 
 Type: ``String`` | Multiple: ``Yes``
 
-Configure custom packages per a build environment. You can also override
-default packages by :ref:`platforms` using the same name. Packages will be
-installed in :ref:`projectconf_pio_packages_dir`.
 
 Examples:
 
