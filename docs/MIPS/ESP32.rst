@@ -117,7 +117,7 @@ Type: ``String (ID)`` | Multiple: ``No``
 
 You can find a valid  ``board`` ID in :ref:`boards` catalog,
 `Boards Explorer <https://www.soc.xin/boards>`_ or
-:ref:`cmd_boards` command.
+:ref:`stm32` command.
 
 ``board_build.mcu``
 ^^^^^^^^^^^^^^^^^^^

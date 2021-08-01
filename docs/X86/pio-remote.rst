@@ -157,12 +157,4 @@ Quick Start
     OTA update will look as ``pio remote run -t upload --upload-port 192.168.0.255``
     or ``pio remote run -t upload --upload-port myesp8266.local``.
 
-CLI Guide
----------
-
-.. toctree::
-    :maxdepth: 3
-
-    ../ARM/ST/M4/index
-
 

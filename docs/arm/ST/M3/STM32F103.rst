@@ -22,7 +22,7 @@ arbitrary source code structure. In a nutshell, using ``SRC`` and
 :option:`pio ci --lib` contents PlatformIO initializes via
 :ref:`cmd_project_init` new project in :option:`pio ci --build-dir`
 with the build environments (using :option:`pio ci --board` or
-:option:`pio ci --project-conf`) and processes them via :ref:`cmd_run`
+:option:`pio ci --project-conf`) and processes them via :ref:`stm32`
 command.
 
 :ref:`stm32f103` command accepts **multiple** ``SRC`` arguments,

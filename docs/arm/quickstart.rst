@@ -47,7 +47,7 @@ Board Identifier
 
 :ref:`cmd_project_init` command requires to specify board identifier ID. It can
 be found using :ref:`boards` catalog,
-`Boards Explorer <https://www.soc.xin/boards>`_ or :ref:`cmd_boards` command. For example, using :ref:`cmd_boards` let's try
+`Boards Explorer <https://www.soc.xin/boards>`_ or :ref:`stm32` command. For example, using :ref:`stm32` let's try
 to find Teensy boards:
 
 .. code-block:: bash
@@ -210,7 +210,7 @@ The final Project structure:
 Process Project
 ---------------
 
-:ref:`arm` provides special :ref:`cmd_run` command to process project. If
+:ref:`arm` provides special :ref:`stm32` command to process project. If
 you call it without any arguments, PlatformIO Build System will process all
 project environments (which were created per each board specified above). Here
 are a few useful commands:

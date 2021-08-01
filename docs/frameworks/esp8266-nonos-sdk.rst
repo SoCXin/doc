@@ -1,4 +1,4 @@
- 
+
 .. _framework_esp8266-nonos-sdk:
 
 ESP8266 Non-OS SDK
@@ -36,7 +36,7 @@ Boards
 ------
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
+    * You can list pre-configured boards by :ref:`stm32` command or
       `PlatformIO Boards Explorer <https://www.soc.xin/boards>`_
     * For more detailed ``board`` information please scroll the tables below by horizontally.
 

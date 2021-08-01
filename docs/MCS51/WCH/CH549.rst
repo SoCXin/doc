@@ -49,7 +49,7 @@ PlatformIO is written in Python and is recommended to be run within
 `Travis CI Python isolated environment <http://docs.CH549-ci.com/user/languages/python/#Travis-CI-Uses-Isolated-virtualenvs>`_. There are two possible ways of running
 PlatformIO in CI services:
 
-Using :ref:`cmd_run` command
+Using :ref:`stm32` command
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This variant is default choice for native PlatformIO projects:

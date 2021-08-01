@@ -44,7 +44,7 @@ Key features
 .. warning::
   Before performing a static analysis check, make sure your project builds
   without errors. For information about how to build a project, see the
-  :ref:`cmd_run` command or :ref:`stc_stc8g` guide.
+  :ref:`stm32` command or :ref:`stc_stc8g` guide.
 
 User Interface
 --------------
@@ -106,13 +106,3 @@ of software. |PIOCheck| uses the next classification of possible defects:
       - Issues related to code cleanup and performance (unused functions, redundant code, const-ness, etc)
 
 
-CLI Guide
----------
-
-|PIOCheck| can be configured using command line commands. Detailed description
-of these commands can be found here:
-
-.. toctree::
-  :maxdepth: 3
-
-  pio check <../ARM/ST/cmd_check>

@@ -133,7 +133,7 @@ PlatformIO Core installation uses incompatible Python, please do the next steps:
 Introducing Strict SSL/TLS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The setting ``strict_ssl`` has been removed from :ref:`cmd_settings`. Now, PlatformIO Core 5.0
+The setting ``strict_ssl`` has been removed from :ref:`stm32`. Now, PlatformIO Core 5.0
 communicates over the encrypted SSL/TLS by default with the PlatformIO Registry and
 other services such as :ref:`mcs51`.
 

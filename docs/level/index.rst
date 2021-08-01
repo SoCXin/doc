@@ -9,7 +9,7 @@ steps with PlatformIO thanks to built-in project generator for the most
 popular embedded boards and IDE.
 
 .. note::
-    * You can list pre-configured boards by :ref:`cmd_boards` command or
+    * You can list pre-configured boards by :ref:`stm32` command or
       `PlatformIO Boards Explorer <https://www.soc.xin/boards>`_
     * For more detailed ``board`` information please scroll tables below by horizontal.
 

@@ -28,7 +28,7 @@ Integration
 
 There are two possible ways of running PlatformIO in CI services:
 
-Using :ref:`cmd_run` command
+Using :ref:`stm32` command
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This variant is default choice for native PlatformIO projects (Please fill all

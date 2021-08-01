@@ -52,16 +52,8 @@ Commands
 .. toctree::
     :maxdepth: 2
 
-    cmd_boards
-    cmd_check
-    STM32F103 <M3/STM32F103>
     STM32F0 <M0/index>
-    pio platform <platforms/index>
-    pio project <M7/index>
-    pio remote <M4/index>
+    STM32F1 <M3/index>
+    STM32F4 <M4/index>
+    STM32H7 <M7/index>
     STM32MP <A7/index>
-    cmd_run
-    cmd_settings
-    cmd_test
-    cmd_update
-    cmd_upgrade

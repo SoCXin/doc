@@ -18,7 +18,7 @@ Setting Up the Project
 1. Please navigate to the :ref:`core_quickstart` section and create the "Blink Project".
 2. Create a ``test`` directory in the project (on the same level as ``src``)
    and place a ``test_main.cpp`` file in it (the source code is located below).
-3. Run tests using the :ref:`cmd_test` command.
+3. Run tests using the :ref:`stm32` command.
 
 Project structure
 -----------------

@@ -27,7 +27,7 @@ Demo
 This is a demo of `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`_, which demonstrates running embedded tests on physical hardware
 (:ref:`board_atmelavr_uno`) and native tests on host machine (desktop).
 
-Learn more about :ref:`cmd_test` command.
+Learn more about :ref:`stm32` command.
 
 .. image:: ../_static/images/pioplus-unit-testing-demo.png
     :target: https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator
@@ -100,7 +100,7 @@ Local
 
 Allows you to run a test on a host machine or on a target device (board), which
 is directly connected to the host machine. In this case, you need to use the
-:ref:`cmd_test` command.
+:ref:`stm32` command.
 
 .. _unit_testing_remote:
 
@@ -243,7 +243,7 @@ Workflow
    split them into sub-folders. For example, ``test/test_1/*.[c,cpp,h]``,
    ``test_N/*.[c,cpp,h]``, etc. If there is no such directory in the ``test`` folder,
    then |PIOUTE| will treat the source code of ``test`` folder as SINGLE test.
-5. Run tests using the :ref:`cmd_test` command.
+5. Run tests using the :ref:`stm32` command.
 
 
 .. _unit_testing_shared_code:
@@ -366,12 +366,3 @@ Summary of the `Unity Test API <https://github.com/ThrowTheSwitch/Unity#unity-te
 
   - ``TEST_ASSERT_EQUAL_MEMORY(expected, actual, len)``
 
-
-CLI Guide
----------
-
-.. toctree::
-    :maxdepth: 3
-
-    pio test <../ARM/ST/cmd_test>
-    pio remote test <../ARM/ST/M4/cmd_test>

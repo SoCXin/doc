@@ -27,7 +27,7 @@ using :ref:`riscv` in :ref:`mips`:
 * ``-D TEENSY_OPT_SMALLEST_CODE_LTO``
 
 The only one macro can be used in per one build environment. Also, you can see
-verbose build using ``-v, --verbose`` option for :ref:`cmd_run` command.
+verbose build using ``-v, --verbose`` option for :ref:`stm32` command.
 
 Example:
 
