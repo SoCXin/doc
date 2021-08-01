@@ -62,7 +62,7 @@ This variant is default choice for native PlatformIO projects:
           - build
 
 Using :ref:`stm32f103` command
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This variant is more convenient if a project is written as a library (when there are
 several examples or test code available) as it has additional options for specifying

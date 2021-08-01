@@ -42,8 +42,6 @@ fields for your project in the Drone control panel):
     pio run -e <ID_1> -e <ID_2> -e <ID_N>
 
 
-Using :ref:`stm32f103` command
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This variant is more convenient when project is written as a library (when there are
 examples or testing code) as it has additional options for specifying extra libraries
