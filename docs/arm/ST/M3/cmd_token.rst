@@ -16,7 +16,7 @@ Usage
 Description
 -----------
 
-Get or regenerate Personal Authentication Token. It is very useful for :ref:`ci`
+Get or regenerate Personal Authentication Token. It is very useful for :ref:`wch`
 systems, :ref:`mcs51` operations where you are not able to authorize manually.
 
 PlatformIO handles Personal Authentication Token from environment variable

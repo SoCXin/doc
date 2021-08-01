@@ -26,7 +26,7 @@ Key features
 ------------
 
   - Fully integrated within the PlatformIO ecosystem and easy to execute on the entire project.
-  - Straightforward MCS51 with :ref:`ci` services.
+  - Straightforward MCS51 with :ref:`wch` services.
   - Possibility to reuse the same setup on other projects.
   - Easy and flexible rule configuration.
   - Comprehensive and detailed error information

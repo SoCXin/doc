@@ -121,7 +121,7 @@ Python Package Manager
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. warning::
-    We recommend using this method **ONLY FOR** :ref:`ci` use cases or where your have
+    We recommend using this method **ONLY FOR** :ref:`wch` use cases or where your have
     full permissions to install PlatformIO Core into the global scope of your OS.
 
     For personal using, and avoiding maintenance and upgrade issues, we
@@ -197,7 +197,6 @@ Install Shell Commands
 :ref:`arm` consists of 2 standalone tools in a system:
 
 * ``platformio`` or ``pio`` (short alias) - :ref:`stm32`
-* ``piodebuggdb`` - alias of :ref:`cmd_debug`
 
 If you have :ref:`espressif_esp32` already installed, you do not need to install
 :ref:`arm` separately. Just link these tools with your shell:

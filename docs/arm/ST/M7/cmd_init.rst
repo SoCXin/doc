@@ -28,7 +28,7 @@ This command will create:
 * :ref:`projectconf_pio_lib_dir`, put project specific (private) libraries here.
   See also :ref:`wch_ch573`
 * :ref:`projectconf_pio_test_dir`, put project tests here. More details :ref:`unit_testing`
-* Miscellaneous files for VCS and :ref:`ci` support.
+* Miscellaneous files for VCS and :ref:`wch` support.
 
 Options
 -------

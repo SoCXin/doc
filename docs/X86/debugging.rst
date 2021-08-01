@@ -134,7 +134,7 @@ CLI Guide
 .. toctree::
   :maxdepth: 3
 
-  pio debug <../ARM/ST/cmd_debug>
+  pio debug <../ARM/ST/M3/STM32F103>
 
 
 .. _debugging_platforms:

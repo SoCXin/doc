@@ -21,7 +21,6 @@
 /ST/M7/cmd_config.html -> /ARM/ST/M7/cmd_config.html
 /ST/M7/index.html -> /ARM/ST/M7/index.html
 /ST/cmd_home.html -> /ARM/ST/cmd_home.html
-/ST/cmd_debug.html -> /ARM/ST/cmd_debug.html
 /STM32F103.html -> /ARM/ST/M3/STM32F103.html
 /ST/cmd_check.html -> /ARM/ST/cmd_check.html
 /ST/cmd_boards.html -> /ARM/ST/cmd_boards.html

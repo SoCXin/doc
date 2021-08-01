@@ -53,16 +53,16 @@ Use Cases
   SSH ports, install any extra Linux packages, toolchains.
 
 :Remote Unit Testing:
-  Instruct any of :ref:`ci` services to run remote tests on a physical device.
+  Instruct any of :ref:`wch` services to run remote tests on a physical device.
   See the documentation for :ref:`Remote Test Runner <unit_testing_remote>`.
 
   How does it work?
 
   - You commit new changes to your source code repository
-  - :ref:`ci` service deploys unit tests to a remote agent
+  - :ref:`wch` service deploys unit tests to a remote agent
   - :ref:`unit_testing` engine runs tests on a physical device, process them,
     and send results
-  - :ref:`ci` service prints results in human readable format
+  - :ref:`wch` service prints results in human readable format
   - If one test fails, current CI build will fail too.
 
 :Board Farm:
@@ -90,8 +90,8 @@ Technology
 for remote solutions without external dependencies to
 operating system or its software based on `client-server architecture <https://en.wikipedia.org/wiki/Client–server_model>`_.
 The Server component (|PIOCloud|) plays a role of coupling link between
-:ref:`cmd_remote_agent` and Client (:ref:`cmd_remote`, :ref:`ide_cloud`,
-:ref:`ci`, SDKs, etc.).
+:ref:`cmd_remote_agent` and Client (:ref:`st_cortex_m4`, :ref:`ide_cloud`,
+:ref:`wch`, SDKs, etc.).
 When you start :ref:`cmd_remote_agent`, it connects over the Internet with
 |PIOCloud| and listen for the actions/commands which you can send in Client
 role from anywhere in the world.
@@ -111,7 +111,7 @@ Installation
 ------------
 
 |PIORemote| is built into :ref:`espressif_esp32`. Please open PlatformIO IDE Terminal
-and run ``pio remote --help`` command for usage (see :ref:`cmd_remote`).
+and run ``pio remote --help`` command for usage (see :ref:`st_cortex_m4`).
 
 If you do not have :ref:`espressif_esp32`, or use :ref:`ide_cloud` or a card-sized PC
 (Raspberry Pi, BeagleBoard, etc.), please install :ref:`arm`.
@@ -130,16 +130,16 @@ Quick Start
     You can share own devices/hardware with friends, team or other developers
     using :option:`pio remote agent start --share` option.
 
-2.  Using **host machine** (:ref:`cmd_remote`, :ref:`ide_cloud` Terminal in
+2.  Using **host machine** (:ref:`st_cortex_m4`, :ref:`ide_cloud` Terminal in
     a browser, SDKs, etc.), please authorize via :ref:`cmd_account_login`
     command with the same credentials that you used on the previous step.
-    Now, you can use :ref:`cmd_remote` commands to work with
+    Now, you can use :ref:`st_cortex_m4` commands to work with
     **remote machine** and its devices.
 
     You don't need to have networking or other access to **remote machine**
     where |PIORemote| Agent is started.
 
-    If you use |PIORemote| in pair with :ref:`ci` or want automatically authorize,
+    If you use |PIORemote| in pair with :ref:`wch` or want automatically authorize,
     please set :envvar:`PLATFORMIO_AUTH_TOKEN` system environment variable
     instead of using :ref:`cmd_account_login` command.
 

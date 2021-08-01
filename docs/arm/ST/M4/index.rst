@@ -1,7 +1,7 @@
 
-.. _cmd_remote:
+.. _st_cortex_m4:
 
-PlatformIO Remote CLI
+STM32 Cortex-M4
 =====================
 
 Helper command for :ref:`mcs51`.

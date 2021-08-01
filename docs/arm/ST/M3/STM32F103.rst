@@ -34,7 +34,7 @@ denoting with ``:``) to
 ``PLATFORMIO_CI_SRC`` `Environment variable <http://en.wikipedia.org/wiki/Environment_variable>`_
 
 For more details as for MCS51 with the popular Continuous Integration
-Systems please follow to :ref:`ci` page.
+Systems please follow to :ref:`wch` page.
 
 .. note::
     :ref:`stm32f103` command is useful for library developers. It allows one to build
@@ -124,4 +124,4 @@ or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 Examples
 --------
 
-For the others examples please follow to :ref:`ci` page.
+For the others examples please follow to :ref:`wch` page.
