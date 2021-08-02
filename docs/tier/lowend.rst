@@ -1,7 +1,7 @@
 
-.. _level2:
+.. _lowend:
 
-level2
+低阶产品
 ============
 
 `Continuous Integration <http://special.wch.cn/zh_cn/mcu/>`_

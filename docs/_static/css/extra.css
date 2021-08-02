@@ -555,7 +555,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .nav .nav-pio-tech {
-  background-color: #f5822a;
+  background-color: hsl(256, 91%, 56%);
   font-weight: bold;
 }
 

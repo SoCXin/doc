@@ -1,5 +1,5 @@
 
-SoC Home
+SoC Docs
 ==================
 
 **A place where Developers find your chip! No more vendor lock-in!**
@@ -16,8 +16,27 @@ SoC Home
 `Facebook <https://www.facebook.com/qitast>`_
 
 
+
 .. toctree::
-    :caption: architecture
+    :caption: 应用分类
+    :maxdepth: 1
+
+    低阶MCU <tier/lowend>
+    主流MCU <tier/main>
+
+
+.. toctree::
+    :caption: 芯片厂商
+    :maxdepth: 2
+
+    ST <vendor/ST/STM32>
+    WCH <vendor/WCH/index>
+    STC <vendor/STC/index>
+    AMD <vendor/AMD/index>
+    Intel <vendor/Intel/index>
+
+.. toctree::
+    :caption: 内核架构
     :maxdepth: 1
 
     ARM <architecture/cortex>
@@ -27,27 +46,9 @@ SoC Home
     PIC32  <architecture/PIC32>
 
 .. toctree::
-    :caption: level
+    :caption: 供需关系
     :maxdepth: 1
 
-    低阶MCU <level/level1>
-    主流MCU <level/level2>
-
-
-.. toctree::
-    :caption: vendor
-    :maxdepth: 2
-
-    ST <vendor/ST/STM32>
-    WCH <vendor/WCH/index>
-    STC <vendor/STC/index>
-    AMD <vendor/AMD/index>
-    Intel <vendor/Intel/index>
-
-
-.. toctree::
-    :caption: cost
-    :maxdepth: 1
-
-    lowend <cost/lowend>
-
+    极低成本 <market/lowcost>
+    高性价比 <market/lowend>
+    不可替代 <market/lowend>
