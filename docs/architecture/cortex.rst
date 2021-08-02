@@ -1,7 +1,7 @@
 
-.. _stm32:
+.. _cortex:
 
-STM32
+Cortex
 =========
 
 .. contents::
@@ -45,15 +45,3 @@ Show help for the available options and commands
     $ pio --help
     $ pio COMMAND --help
 
-
-series
---------
-
-.. toctree::
-    :maxdepth: 2
-
-    STM32F0 <M0/index>
-    STM32F1 <M3/index>
-    STM32F4 <M4/index>
-    STM32H7 <M7/index>
-    STM32MP <A7/index>
