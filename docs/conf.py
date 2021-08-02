@@ -118,10 +118,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "%s %s documentation" % (
-    project,
-    ("latest" if is_latest else "v" + version),
-)
+html_title = "soc documentation"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 # html_short_title = None
@@ -284,5 +281,4 @@ html_context = {
     "github_repo": "docs",
     "github_version": "master",
     "conf_py_path": "/",
-    "is_latest": is_latest,
 }
