@@ -23,17 +23,19 @@ SoC Docs
 
     低阶MCU <tier/lowend>
     主流MCU <tier/main>
-
+    多核MCU <tier/main>
+    通信SoC <tier/main>
+    测量SoC <tier/main>
+    计算SoC <tier/main>
 
 .. toctree::
-    :caption: 芯片厂商
-    :maxdepth: 2
+    :caption: 典型厂商
+    :maxdepth: 1
 
     ST <vendor/ST/STM32>
     WCH <vendor/WCH/index>
     STC <vendor/STC/index>
-    AMD <vendor/AMD/index>
-    Intel <vendor/Intel/index>
+    espressif <vendor/espressif/index>
 
 .. toctree::
     :caption: 内核架构
@@ -51,3 +53,4 @@ SoC Docs
 
     极低成本 <market/lowcost>
     高性价比 <market/economy>
+    无可替代 <market/economy>
