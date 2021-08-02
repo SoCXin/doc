@@ -30,7 +30,8 @@ SoC Home
     :caption: level
     :maxdepth: 1
 
-    level1 <level/level1>
+    低阶MCU <level/level1>
+    主流MCU <level/level2>
 
 
 .. toctree::
@@ -39,6 +40,7 @@ SoC Home
 
     ST <vendor/ST/STM32>
     WCH <vendor/WCH/index>
+    STC <vendor/STC/index>
     AMD <vendor/AMD/index>
     Intel <vendor/Intel/index>
 
