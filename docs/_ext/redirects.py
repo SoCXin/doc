@@ -94,7 +94,7 @@ def build_legacy_rtd_pages(app, exception):
                 out_dir = os.path.join(out_dir, relative_dir[1:])
             build_redirect_page(
                 os.path.join(out_dir, name),
-                "%s/latest%s/%s"
+                "%s/%s/%s"
                 % (
                     app.config.html_baseurl,
                     relative_dir,
