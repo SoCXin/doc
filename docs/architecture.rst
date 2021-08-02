@@ -38,7 +38,7 @@ MIPS
   proprietary vendor's IDE (which sometimes isn't free) and what is more,
   to get a computer with OS where that software is supported.
 
-X86
+vendor
 -----------
 
 * The main problem which repulses people from the embedded world is a complicated

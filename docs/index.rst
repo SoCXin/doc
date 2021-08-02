@@ -49,11 +49,11 @@ Classification
     espressif <MIPS/espressif/index>
 
 .. toctree::
-    :caption: X86
+    :caption: vendor
     :maxdepth: 2
 
-    X64 <X86/AMD/index>
-    X86 <X86/Intel/index>
+    AMD <vendor/AMD/index>
+    Intel <vendor/Intel/index>
 
 .. toctree::
     :caption: Miscellaneous
