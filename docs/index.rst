@@ -11,17 +11,15 @@ SoC Home
 * Comprehensive
 
 **Social:** `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
+`GitHub <https://GitHub.com/Qitas>`_ |
 `Twitter <https://twitter.com/QitasTang>`_ |
 `Facebook <https://www.facebook.com/qitast>`_
 
-Classification
----------------
 
 .. toctree::
     :caption: architecture
     :maxdepth: 1
 
-    architecture
     MISP <vendor/espressif/MIPS>
     RISC-V <vendor/espressif/RISC-V>
 

@@ -1,7 +1,7 @@
 
 .. _wch:
 
-WCH MCU
+WCH 8051
 ============
 
 `Continuous Integration <http://special.wch.cn/zh_cn/mcu/>`_
@@ -21,4 +21,3 @@ servers and the popular
     CH559
     CH545
     CH549
-    CH573
