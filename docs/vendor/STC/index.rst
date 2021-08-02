@@ -4,8 +4,6 @@
 STC
 ======
 
-Native Extensions
------------------
 
 .. note::
     In our experience, :ref:`stc_stc8g` offers better system performance, and users

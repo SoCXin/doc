@@ -4,10 +4,10 @@
 极低成本
 ======================
 
-8bit
+8bit MCU
 -------------
 
 .. toctree::
     :maxdepth: 1
 
-    PIC32 <../architecture/PIC32/PIC32>
+    STC <../vendor/STC/index>
