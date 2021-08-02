@@ -23,10 +23,10 @@ SoC Docs
 
     低阶MCU <tier/lowend>
     主流MCU <tier/main>
-    多核MCU <tier/main>
-    通信SoC <tier/main>
-    测量SoC <tier/main>
-    计算SoC <tier/main>
+    多核MCU <tier/core>
+    通信SoC <tier/IoT>
+    测量SoC <tier/asic>
+    计算SoC <tier/edge>
 
 .. toctree::
     :caption: 典型厂商
@@ -45,7 +45,6 @@ SoC Docs
     MIPS <architecture/MIPS>
     RISC-V <architecture/RISC-V>
     MCS51  <architecture/MCS51>
-    PIC32  <architecture/PIC32>
 
 .. toctree::
     :caption: 市场供应
