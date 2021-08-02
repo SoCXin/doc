@@ -41,10 +41,11 @@ SoC Docs
     :caption: 内核架构
     :maxdepth: 1
 
-    ARM <architecture/cortex>
-    MIPS <architecture/MIPS>
-    RISC-V <architecture/RISC-V>
-    MCS51  <architecture/MCS51>
+    MCS51   <architecture/MCS51>
+    ARM     <architecture/cortex>
+    MIPS    <architecture/MIPS>
+    RISC-V  <architecture/RISC-V>
+
 
 .. toctree::
     :caption: 市场供应
@@ -52,4 +53,4 @@ SoC Docs
 
     极低成本 <market/lowcost>
     高性价比 <market/economy>
-    无可替代 <market/economy>
+    无可替代 <market/unique>
