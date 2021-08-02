@@ -41,8 +41,8 @@ SoC Home
 
 
 .. toctree::
-    :caption: Miscellaneous
+    :caption: cost
     :maxdepth: 1
 
-    PIC <cost/index>
+    lowend <cost/lowend>
 

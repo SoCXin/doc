@@ -1,13 +1,13 @@
 
-.. _microchip:
+.. _lowend:
 
-Microchip
+极低成本
 ======================
 
-Vendor
+8bit
 -------------
 
 .. toctree::
     :maxdepth: 1
 
-    PIC32 <architecture/PIC32/PIC32>
+    PIC32 <../architecture/PIC32/PIC32>
