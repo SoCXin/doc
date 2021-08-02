@@ -18,15 +18,18 @@ Classification
 ---------------
 
 .. toctree::
-    :maxdepth: 2
-
-    architecture
-
-.. toctree::
-    :caption: MCS51
+    :caption: architecture
     :maxdepth: 1
 
-    8051 <MCS51/index>
+    architecture
+    MISP <vendor/espressif/MIPS>
+    RISC-V <vendor/espressif/RISC-V>
+
+.. toctree::
+    :caption: level
+    :maxdepth: 1
+
+    8051 <level/index>
 
 
 .. toctree::
@@ -35,13 +38,6 @@ Classification
 
     STM32 <ARM/ST/index>
 
-
-.. toctree::
-    :caption: architecture
-    :maxdepth: 1
-
-    MISP <vendor/espressif/MIPS>
-    RISC-V <vendor/espressif/RISC-V>
 
 .. toctree::
     :caption: vendor
