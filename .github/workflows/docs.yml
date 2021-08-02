@@ -76,9 +76,9 @@ jobs:
       - name: Synchronize Docs
         run: |
           rm -rf ${{ env.DOCS_DIR }}/.git
-          rm -rf ${{ env.DOCS_DIR }}/en/${{ steps.get-destination-dir.outputs.dst_dir }}
-          mkdir -p ${{ env.DOCS_DIR }}/en/${{ steps.get-destination-dir.outputs.dst_dir }}
-          cp -rf ${{ env.LATEST_DOCS_DIR }}/html/* ${{ env.DOCS_DIR }}/en/${{ steps.get-destination-dir.outputs.dst_dir }}
+          rm -rf ${{ env.DOCS_DIR }}/${{ steps.get-destination-dir.outputs.dst_dir }}
+          mkdir -p ${{ env.DOCS_DIR }}/${{ steps.get-destination-dir.outputs.dst_dir }}
+          cp -rf ${{ env.LATEST_DOCS_DIR }}/html/* ${{ env.DOCS_DIR }}/${{ steps.get-destination-dir.outputs.dst_dir }}
           if [[ ${{ env.RELEASE_BUILD }} == false ]]; then
             rm -rf ${{ env.DOCS_DIR }}/page
             mkdir -p ${{ env.DOCS_DIR }}/page

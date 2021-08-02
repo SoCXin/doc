@@ -7,7 +7,7 @@ ryzen
 **PVS-Studio** is a static code analysis tool for detecting bugs and security weaknesses
 in the source code of programs, written in C, C++, C# and Java. It analyze source code
 intended for 32-bit, 64-bit and embedded ARM platforms.
-Official page can be found `here  <https://www.viva64.com/en/pvs-studio/>`__.
+Official page can be found `here  <https://www.viva64.com/pvs-studio/>`__.
 
 .. contents:: Contents
     :local:
@@ -29,7 +29,7 @@ performed at a source code level. Some of the defects that might be detected inc
 - Illegal bitwise/shift operations
 
 The full list of supported checks can be found on
-`the official webpage  <https://www.viva64.com/en/w/>`__.
+`the official webpage  <https://www.viva64.com/w/>`__.
 
 Configuration
 -------------
@@ -93,10 +93,10 @@ An example with a special analysis mode, disabled errors and license file:
 Obtaining license
 -----------------
 
-Since **PVS-Studio** is a paid B2B solution, `a license <https://www.viva64.com/en/order>`__
+Since **PVS-Studio** is a paid B2B solution, `a license <https://www.viva64.com/order>`__
 should be purchased. But PVS-Studio can be used for free of charge, for example for
 checking open source projects. More information about the cases when you can get a free
-**PVS-Studio** license can be found on `the official webpage <https://www.viva64.com/en/open-source-license/>`__.
+**PVS-Studio** license can be found on `the official webpage <https://www.viva64.com/open-source-license/>`__.
 
 .. tip::
     If you're experiencing problems with the license file or see the following error message:

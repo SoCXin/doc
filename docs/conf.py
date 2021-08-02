@@ -285,10 +285,10 @@ html_context = {
     "github_user": "SoCXin",
     "github_repo": "docs",
     "github_version": "master",
-    "conf_py_path": "/docs/",
+    "conf_py_path": "/",
     "is_latest": is_latest,
     "versions": [
-        ("latest", "/en/"),
-        ("stable", "/en/stable/"),
+        ("latest", "/"),
+        ("stable", "/stable/"),
     ],
 }

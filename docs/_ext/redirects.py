@@ -64,7 +64,6 @@ def load_redirects(src_dir):
 def build_redirect_pages(app, exception):
     if app.builder.name != "html":
         return
-    is_latest = app.config.html_context.get("is_latest")
     redirects = load_redirects(app.srcdir)
     for from_path, to_path in redirects.items():
         out_dir = app.outdir
@@ -72,10 +71,9 @@ def build_redirect_pages(app, exception):
             out_dir = os.path.join(out_dir, os.path.dirname(from_path)[1:])
         build_redirect_page(
             os.path.join(out_dir, os.path.basename(from_path)),
-            "%s/en/%s/%s"
+            "%s/%s"
             % (
                 app.config.html_baseurl,
-                ("latest" if is_latest else "stable"),
                 to_path,
             ),
         )
@@ -96,7 +94,7 @@ def build_legacy_rtd_pages(app, exception):
                 out_dir = os.path.join(out_dir, relative_dir[1:])
             build_redirect_page(
                 os.path.join(out_dir, name),
-                "%s/en/latest%s/%s"
+                "%s/latest%s/%s"
                 % (
                     app.config.html_baseurl,
                     relative_dir,
