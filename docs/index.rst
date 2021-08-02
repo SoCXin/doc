@@ -41,13 +41,14 @@ SoC Home
     :caption: vendor
     :maxdepth: 2
 
+    WCH <vendor/WCH/index>
     AMD <vendor/AMD/index>
     Intel <vendor/Intel/index>
-    WCH <vendor/WCH/index>
+
 
 .. toctree::
     :caption: Miscellaneous
     :maxdepth: 1
 
-    PIC <Miscellaneous/PIC/index>
+    PIC <cost/index>
 

@@ -13,11 +13,11 @@ servers and the popular
 `Continuous Integration Software <http://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software>`_.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
-    CH552
-    CH554
-    CH557
-    CH559
-    CH545
-    CH549
+    CH552 <vendor/WCH/CH552>
+    CH554 <vendor/WCH/CH554>
+    CH557 <vendor/WCH/CH557>
+    CH559 <vendor/WCH/CH559>
+    CH545 <vendor/WCH/CH545>
+    CH549 <vendor/WCH/CH549>
