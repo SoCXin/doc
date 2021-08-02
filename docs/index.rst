@@ -46,9 +46,8 @@ SoC Docs
     PIC32  <architecture/PIC32>
 
 .. toctree::
-    :caption: 供需关系
+    :caption: 市场供应
     :maxdepth: 1
 
     极低成本 <market/lowcost>
-    高性价比 <market/lowend>
-    不可替代 <market/lowend>
+    高性价比 <market/economy>
