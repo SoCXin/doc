@@ -15,9 +15,9 @@ servers and the popular
 .. toctree::
     :maxdepth: 1
 
-    CH552 <vendor/WCH/CH552>
-    CH554 <vendor/WCH/CH554>
-    CH557 <vendor/WCH/CH557>
-    CH559 <vendor/WCH/CH559>
-    CH545 <vendor/WCH/CH545>
-    CH549 <vendor/WCH/CH549>
+    CH552 <../vendor/WCH/CH552>
+    CH554 <../vendor/WCH/CH554>
+    CH557 <../vendor/WCH/CH557>
+    CH559 <../vendor/WCH/CH559>
+    CH545 <../vendor/WCH/CH545>
+    CH549 <../vendor/WCH/CH549>

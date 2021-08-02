@@ -20,6 +20,7 @@ SoC Home
     :caption: architecture
     :maxdepth: 1
 
+    ARM <vendor/ST/index>
     MISP <vendor/espressif/MIPS>
     RISC-V <vendor/espressif/RISC-V>
 
@@ -27,14 +28,7 @@ SoC Home
     :caption: level
     :maxdepth: 1
 
-    8051 <level/index>
-
-
-.. toctree::
-    :caption: ARM
-    :maxdepth: 1
-
-    STM32 <ARM/ST/index>
+    level1 <level/level1>
 
 
 .. toctree::
