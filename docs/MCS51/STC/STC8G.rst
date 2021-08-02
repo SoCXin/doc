@@ -19,7 +19,7 @@ Installation
 2. **Search** for the official ``platformio ide`` `extension <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`_
 3. **Install** PlatformIO IDE.
 
-.. image:: ../../_static/images/STC/vscode/platformio-ide-vscode-pkg-installer.png
+.. image:: ../../_static/images/WCH/CH549.png
 
 .. note::
 
