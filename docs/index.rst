@@ -20,9 +20,9 @@ SoC Home
     :caption: architecture
     :maxdepth: 1
 
-    ARM <vendor/ST/index>
-    MISP <vendor/espressif/MIPS>
-    RISC-V <vendor/espressif/RISC-V>
+    MIPS <architecture/MIPS>
+    RISC-V <architecture/RISC-V>
+    MCS51  <architecture/MCS51>
 
 .. toctree::
     :caption: level
@@ -36,6 +36,7 @@ SoC Home
     :maxdepth: 2
 
     WCH <vendor/WCH/index>
+    STM32 <vendor/ST/STM32>
     AMD <vendor/AMD/index>
     Intel <vendor/Intel/index>
 
