@@ -15,3 +15,4 @@ MCS-51单片机是指由美国INTEL公司生产的一系列单片机的总称，
     :maxdepth: 1
 
     WCH <WCH51>
+    STC <../vendor/STC/index>

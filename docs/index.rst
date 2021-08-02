@@ -20,9 +20,11 @@ SoC Home
     :caption: architecture
     :maxdepth: 1
 
+    ARM <architecture/cortex>
     MIPS <architecture/MIPS>
     RISC-V <architecture/RISC-V>
     MCS51  <architecture/MCS51>
+    PIC32  <architecture/PIC32>
 
 .. toctree::
     :caption: level
