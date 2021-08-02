@@ -37,8 +37,8 @@ SoC Home
     :caption: vendor
     :maxdepth: 2
 
+    ST <vendor/ST/STM32>
     WCH <vendor/WCH/index>
-    STM32 <vendor/ST/STM32>
     AMD <vendor/AMD/index>
     Intel <vendor/Intel/index>
 
