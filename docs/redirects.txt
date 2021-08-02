@@ -18,7 +18,8 @@ CH549.html -> /MCS51/WCH/CH549.html
 /CH554.html -> /MCS51/WCH/CH554.html
 /CH552.html -> /MCS51/WCH/CH552.html
 /index.html -> /MCS51/WCH/index.html
-/MIPS.html -> /MIPS/index.html
-/ESP32.html -> /MIPS/ESP32.html
-/ESP32-S2.html -> /MIPS/ESP32-S2.html
-/ESP32-S3.html -> /MIPS/ESP32-S3.html
+ESP32.html -> /vendor/ESP32.html
+ESP32-S2.html -> /vendor/ESP32-S2.html
+ESP32-S3.html -> /vendor/ESP32-S3.html
+ESP32-C3.html -> /vendor/ESP32-C3.html
+ESP32-C6.html -> /vendor/ESP32-C6.html

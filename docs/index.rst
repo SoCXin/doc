@@ -35,18 +35,13 @@ Classification
 
     STM32 <ARM/ST/index>
 
-.. toctree::
-    :caption: RISC-V
-    :maxdepth: 1
-
-    WCH <RISC-V/WCH/index>
-    espressif <RISC-V/espressif/index>
 
 .. toctree::
-    :caption: MIPS
+    :caption: architecture
     :maxdepth: 1
 
-    espressif <MIPS/espressif/index>
+    MISP <vendor/espressif/MIPS>
+    RISC-V <vendor/espressif/RISC-V>
 
 .. toctree::
     :caption: vendor
@@ -54,6 +49,7 @@ Classification
 
     AMD <vendor/AMD/index>
     Intel <vendor/Intel/index>
+    WCH <vendor/WCH/index>
 
 .. toctree::
     :caption: Miscellaneous

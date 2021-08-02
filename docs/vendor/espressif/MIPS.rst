@@ -1,7 +1,7 @@
 
 .. _mips:
 
-MIPS
+architecture
 =========
 
 Each PlatformIO project has a configuration file named
