@@ -2,7 +2,7 @@
 {# Add rst-badge after rst-versions for small badge style. #}
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="{{ _('Versions') }}">
   <span class="rst-current-version" data-toggle="rst-current-version">
-    <span class="fa fa-book"> Documentation</span>
+    <span class="fa fa-book">探索芯世界</span>
     v{{ release }}
     <span class="fa fa-caret-down"></span>
   </span>
@@ -11,10 +11,6 @@
       <dt>{{ _('On Github') }}</dt>
         <dd><a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ page_source_suffix }}"> {{ _('View') }}</a></dd>
         <dd><a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/edit/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ page_source_suffix }}"> {{ _('Edit') }}</a></dd>
-    </dl>
-    <dl>
-      <dt>{{ _('Search') }}</dt>
-        <dd>{% include "searchbox.html" %}</dd>
     </dl>
   </div>
 </div>

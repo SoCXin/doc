@@ -33,8 +33,8 @@
     :maxdepth: 1
 
     ST <vendor/ST/STM32>
-    WCH <vendor/WCH/index>
-    espressif <vendor/espressif/index>
+    WCH <vendor/WCH/MCU>
+    espressif <vendor/espressif/SoC>
 
 .. toctree::
     :caption: 内核架构

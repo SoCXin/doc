@@ -1,7 +1,7 @@
 .. _espressif:
 
-espressif
-============
+espressif SoC
+==============
 
 .. toctree::
     :maxdepth: 1
