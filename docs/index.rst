@@ -1,5 +1,5 @@
 
-SoC Docs
+探索芯世界
 ==================
 
 **A place where Developers find your chip! No more vendor lock-in!**
@@ -34,7 +34,6 @@ SoC Docs
 
     ST <vendor/ST/STM32>
     WCH <vendor/WCH/index>
-    STC <vendor/STC/index>
     espressif <vendor/espressif/index>
 
 .. toctree::

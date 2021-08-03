@@ -1,17 +1,18 @@
 
-.. _stc_stc8g:
+.. _stc8:
 
-STC8G
+STC8
 ======
 
+.. image:: ./images/STC8.png
 
-Installation
+STC8G
 ------------
 
 .. note::
 
     Please note that you do not need to install :ref:`stm32` separately if
-    you are going to use :ref:`stc_stc8g`. :ref:`stm32` is built into
+    you are going to use :ref:`stc8`. :ref:`stm32` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
 0. `Download <https://code.visualstudio.com>`_ and install official Microsoft Visual Studio Code. PlatformIO IDE is built on top of it
@@ -19,7 +20,6 @@ Installation
 2. **Search** for the official ``platformio ide`` `extension <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`_
 3. **Install** PlatformIO IDE.
 
-.. image:: ./images/STC8.png
 
 .. note::
 
@@ -27,7 +27,7 @@ Installation
     if you are going to use Git for installing upstream development platforms, cloning
     external projects, installing library dependencies from a repository, etc.
 
-Options
+STC8H
 -------
 
 .. program:: pio run
