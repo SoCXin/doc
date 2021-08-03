@@ -14,5 +14,5 @@ up-to-date. PlatformIO Library Manager supports
 .. toctree::
     :maxdepth: 2
 
-    ESP32-C6 <../vendor/espressif/ESP32-C6>
-    ESP32-C3 <../vendor/espressif/ESP32-C3>
+    espressif <../vendor/espressif/riscv>
+    WCH <../vendor/WCH/riscv>

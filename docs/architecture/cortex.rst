@@ -6,8 +6,8 @@ Cortex
 
 .. contents::
 
-Usage
------
+Cortex-M
+---------
 
 .. code-block:: bash
 
@@ -16,8 +16,8 @@ Usage
     platformio [OPTIONS] COMMAND
 
 
-Options
--------
+Cortex-R
+----------
 
 .. program:: pio
 
@@ -45,3 +45,7 @@ Show help for the available options and commands
     $ pio --help
     $ pio COMMAND --help
 
+Cortex-A
+----------
+
+Show help for the available options and commands

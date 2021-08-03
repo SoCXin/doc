@@ -23,6 +23,4 @@ sections and their allowed contents:
 .. toctree::
     :maxdepth: 2
 
-    ESP32 <../vendor/espressif/ESP32>
-    ESP32-S2 <../vendor/espressif/ESP32-S2>
-    ESP32-S3 <../vendor/espressif/ESP32-S3>
+    espressif <../vendor/espressif/mips>
