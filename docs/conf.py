@@ -268,5 +268,5 @@ html_context = {
     "github_user": "SoCXin",
     "github_repo": "docs",
     "github_version": "master",
-    "conf_py_path": "",
+    "conf_py_path": "/",
 }
