@@ -7,9 +7,6 @@ Cortex-M3
 .. contents:: 目录
     :local:
 
-.. program:: Cortex-M3
-.. option::
-    -b, --MCU
 
 STM32F1系列
 --------------

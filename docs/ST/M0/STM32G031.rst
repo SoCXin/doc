@@ -20,7 +20,7 @@ xin简介
 
     pio device list [OPTIONS]
 
-关于内核性能可查看  :option:`Cortex-M0 -b`.
+Cortex内核相关可查看  :option:`Cortex -M0`.
 
 xin优势
 -----------
@@ -58,10 +58,10 @@ List multicast DNS services.
 
 Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
 
-Examples
---------
+点灯代码示例
+------------
 
-1. Unix OS
+1. 基于STM32Cube HAL库
 
 .. code-block:: bash
 
@@ -77,7 +77,7 @@ Examples
     Description: Texas Instruments MSP-FET430UIF
 
 
-2. Windows OS
+2. 基于STM32Cube LL库
 
 .. code-block:: bash
 
@@ -93,7 +93,7 @@ Examples
     Description: Silicon Labs CP210x USB to UART Bridge (COM3)
 
 
-3. List multicast DNS services and logical devices
+3. 基于ARM CMSIS库
 
 .. code-block:: bash
 
@@ -142,4 +142,10 @@ Examples
     --------------
     Name: PLUS
 
+
+
+开发板(STM32G031J6)
+-----------------------
+
 .. image:: ./images/B_STM32G031.jpg
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.5fcf7cd1dZFnby&id=636761611307&ns=1&abbucket=19#detail

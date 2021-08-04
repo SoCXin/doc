@@ -59,7 +59,7 @@ For example, exclude from project ``src`` directory:
 Build project with automatically pre-generated environments based on board
 settings.
 
-For more details please look into :option:`Cortex-M3 -b`.
+For more details please look into :option:`Cortex -M3`.
 
 .. option::
     --build-dir

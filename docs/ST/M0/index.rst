@@ -7,9 +7,6 @@ Cortex-M0
 .. contents:: 目录
     :local:
 
-.. program:: Cortex-M0
-.. option::
-    -b, --MCU
 
 STM32F0系列
 --------------

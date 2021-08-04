@@ -4,7 +4,12 @@
 Cortex
 =========
 
-.. contents::
+.. contents:: 目录
+    :local:
+
+.. program:: Cortex
+.. option::
+    -M0, M3
 
 Cortex-M
 ---------
@@ -48,4 +53,3 @@ Show help for the available options and commands
 Cortex-A
 ----------
 
-Show help for the available options and commands
