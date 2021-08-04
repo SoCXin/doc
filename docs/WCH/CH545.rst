@@ -2,7 +2,7 @@
 .. _wch_ch545:
 
 CH545
-=====
+==========
 
 `Drone <https://CH559.io>`_  is a hosted continuous MCS51 service.
 It enables you to conveniently set up projects to automatically build, test,
@@ -62,8 +62,6 @@ and boards from command line interface:
     pip install -U platformio
     pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
-.. image:: ../../_static/images/WCH/MCS51.png
-
 Examples
 --------
 
@@ -86,4 +84,3 @@ Examples
     unzip /tmp/spi4teensy3.zip -d /tmp
     pio ci --lib="." --lib="/tmp/spi4teensy3-master" --board=uno --board=teensy31 --board=due
 
-.. image:: ../../_static/images/level2.png
