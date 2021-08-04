@@ -8,7 +8,8 @@ Cortex-M3
     :local:
 
 .. program:: Cortex-M3
-
+.. option::
+    -b, --MCU
 
 STM32F1系列
 --------------
