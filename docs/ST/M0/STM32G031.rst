@@ -1,28 +1,35 @@
 
-.. _st_stm32f030:
+.. _st_stm32g031:
 
-STM32F030
+ST STM32G031
 ===============
+
+.. image:: ./images/STM32G031.jpg
 
 .. contents::
 
-Usage
------
+简介
+-----------
+
+`STM32G031 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_  是一款基于Cortex M0+内核MCU，相关资源可查看
+`GitHub <https://github.com/SoCXin/STM32G031>`_.
 
 .. code-block:: bash
 
     pio device list [OPTIONS]
 
 
-Description
+特性
 -----------
 
 List available devices.
 Default is set to ``--serial`` and all available
 `Serial Ports <http://en.wikipedia.org/wiki/Serial_port>`_ will be shown.
 
-Options
--------
+资源
+-----------
+
+.. image:: ./images/STM32G031.png
 
 .. program:: pio device list
 
@@ -130,3 +137,5 @@ Examples
     /Volumes/PLUS
     --------------
     Name: PLUS
+
+.. image:: ./images/B_STM32G031.jpg
