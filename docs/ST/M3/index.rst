@@ -4,6 +4,8 @@
 Cortex-M3
 =============
 
+关于内核可查看 :ref:`cortex`.
+
 .. contents:: 目录
     :local:
 

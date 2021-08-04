@@ -1,7 +1,7 @@
 
-.. _st_stm32f407:
+.. _st_stm32g474:
 
-STM32F407
+STM32G474
 =======================
 
 Start :ref:`st` on a host machine and work remotely with

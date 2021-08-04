@@ -9,7 +9,7 @@ Cortex
 
 .. program:: Cortex
 .. option::
-    -M0, M3
+    -M0, -M3
 
 Cortex-M
 ---------

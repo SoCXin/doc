@@ -1,24 +1,30 @@
 
 .. _st_cortex_m4:
 
-STM32 Cortex-M4
+Cortex-M4
 =====================
 
-Helper command for :ref:`mcs51`.
+关于内核可查看 :ref:`cortex`.
 
-To print all available commands and options use:
+.. contents:: 目录
+    :local:
 
-.. code-block:: bash
 
-    pio remote --help
-    pio remote COMMAND --help
-
-    # run command on the specified PlatformIO Remote Agents
-    pio remote --agent NAME_1 --agent NAME_N COMMAND
-
+STM32F4系列
+--------------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     STM32F407
+
+
+STM32G4系列
+--------------
+
+.. toctree::
+    :maxdepth: 1
+
+    STM32G474
+
 
