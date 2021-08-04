@@ -20,6 +20,7 @@ xin简介
 
     pio device list [OPTIONS]
 
+关于内核性能可查看 :option:`Cortex-M0 `.
 
 xin优势
 -----------
