@@ -1,7 +1,7 @@
 
 .. _st_cortex_m0:
 
-Cortex-M0
+ST Cortex-M0
 ==================
 
 .. contents:: 目录

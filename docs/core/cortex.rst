@@ -4,15 +4,16 @@
 Cortex
 =========
 
+
 .. contents:: 目录
     :local:
 
-.. program:: Cortex
-.. option::
-    -M0, -M3
 
 Cortex-M
 ---------
+.. program:: Cortex
+.. option::
+    -M0, -M3, -M4, -M7
 
 .. code-block:: bash
 

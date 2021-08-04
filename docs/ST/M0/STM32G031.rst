@@ -46,19 +46,9 @@ default.
 .. option::
     --logical
 
-List available logical devices.
-
-.. option::
-    --mdns
-
-List multicast DNS services.
-
-.. option::
-    --json-output
-
 Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
 
-点灯代码示例
+代码示例
 ------------
 
 1. 基于STM32Cube HAL库
@@ -144,8 +134,8 @@ Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
 
 
 
-开发板(STM32G031J6)
------------------------
+开发板
+--------------
 
 .. image:: ./images/B_STM32G031.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.5fcf7cd1dZFnby&id=636761611307&ns=1&abbucket=19#detail
