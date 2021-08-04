@@ -4,49 +4,51 @@
 STM32G031
 ===============
 
-.. contents:: Contents
+.. contents:: 目录
     :local:
 
 xin简介
 -----------
 
-`STM32G031 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_  是一款基于Cortex M0+内核MCU，相关资源可查看
+`STM32G031 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_  是Cortex M0+单核MCU，相关资源可查看
 `GitHub <https://github.com/SoCXin/STM32G031>`_.
+
+Cortex内核相关可查看  :option:`Cortex -M0`.
 
 .. image:: ./images/STM32G031.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
-.. code-block:: bash
 
-    pio device list [OPTIONS]
-
-Cortex内核相关可查看  :option:`Cortex -M0`.
 
 xin优势
 -----------
 
-List available devices.
-Default is set to ``--serial`` and all available
+相对自家前代产品STM32F031系列拥有更好的模拟性能，主频更高，相对市场同类产品，拥有自家完善的资源体系和可靠性，是``性价比``很高的国际大品牌产品。
+
 `Serial Ports <http://en.wikipedia.org/wiki/Serial_port>`_ will be shown.
 
+关键特性
+~~~~~~~~~
+
+* 64MHz主频
+* 精确的内部时钟
+* 高性能ADC（12bit 2.5 MSps）
+* 5ch x DMA
+* 丰富的产品系列
 
 xin资源
 -----------
 
 .. image:: ./images/STM32G031.png
 
-.. program:: pio device list
+获取datasheet `stm32g0x1 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_ .
 
-.. option::
-    --serial
+开发板
+--------------
 
-List available `Serial Ports <http://en.wikipedia.org/wiki/Serial_port>`_,
-default.
+.. image:: ./images/B_STM32G031.jpg
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.5fcf7cd1dZFnby&id=636761611307&ns=1&abbucket=19#detail
 
-.. option::
-    --logical
-
-Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
 
 代码示例
 ------------
@@ -134,8 +136,3 @@ Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
 
 
 
-开发板
---------------
-
-.. image:: ./images/B_STM32G031.jpg
-    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.5fcf7cd1dZFnby&id=636761611307&ns=1&abbucket=19#detail

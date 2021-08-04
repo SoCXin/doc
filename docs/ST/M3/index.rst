@@ -1,8 +1,8 @@
 
 .. _st_cortex_m3:
 
-Cortex-M3
-=============
+ST Cortex-M3 MCU
+================
 
 关于内核可查看 :ref:`cortex`.
 
@@ -30,7 +30,7 @@ STM32F2系列
     STM32F205
     STM32F207
 
-STM32F2系列
+STM32F3系列
 --------------
 
 .. toctree::
