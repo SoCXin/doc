@@ -83,7 +83,7 @@ Build project using pre-configured :ref:`mips`.
 .. option::
     -O, --project-option
 
-Pass additional options from :ref:`mips` to :ref:`stm32` command.
+Pass additional options from :ref:`mips` to :ref:`st` command.
 For example, automatically install dependent libraries
 ``pio ci --project-option="lib_deps=ArduinoJSON"`` or ignore specific
 library ``pio ci --project-option="lib_ignore=SomeLib"``.
@@ -98,10 +98,10 @@ library ``pio ci --project-option="lib_ignore=SomeLib"``.
 
 Shows detailed information when processing environments.
 
-This option can also be set globally using :ref:`stm32` setting
+This option can also be set globally using :ref:`st` setting
 or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 
 Examples
 --------
 
-For the others examples please follow to :ref:`stm32` page.
+For the others examples please follow to :ref:`st` page.

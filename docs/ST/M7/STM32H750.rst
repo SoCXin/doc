@@ -26,7 +26,7 @@ Dump data intended for IDE extensions/plugins:
 - Defines/Macros
 - CPP Preprocessor includes/paths
 - Program path
-- SVD path if available for :ref:`stm32`
+- SVD path if available for :ref:`st`
 - Extra information.
 
 Options

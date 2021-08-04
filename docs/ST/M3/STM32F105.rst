@@ -16,7 +16,7 @@ Usage
 Description
 -----------
 
-Update :ref:`stm32` profile.
+Update :ref:`st` profile.
 
 Options
 ~~~~~~~

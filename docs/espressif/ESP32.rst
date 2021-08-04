@@ -14,7 +14,7 @@ ESP32
 
 Type: ``String`` | Multiple: ``No``
 
-:ref:`stm32` name.
+:ref:`st` name.
 
 PlatformIO allows one to use specific version of platform using
 `Semantic Versioning <https://devhints.io/semver>`_ (X.Y.Z=MAJOR.MINOR.PATCH) or VCS
@@ -117,7 +117,7 @@ Type: ``String (ID)`` | Multiple: ``No``
 
 You can find a valid  ``board`` ID in :ref:`wch` catalog,
 `Boards Explorer <https://www.soc.xin/boards>`_ or
-:ref:`stm32` command.
+:ref:`st` command.
 
 ``board_build.mcu``
 ^^^^^^^^^^^^^^^^^^^
@@ -130,7 +130,7 @@ platform library. For example, the list of ``board_build.mcu`` for "megaAVR Devi
 is described `here <http://www.nongnu.org/avr-libc/user-manual/>`_.
 
 The full list of ``board_build.mcu`` for the popular embedded platforms you can find
-in *Boards* section of :ref:`stm32`. See "Microcontroller" column.
+in *Boards* section of :ref:`st`. See "Microcontroller" column.
 
 .. _projectconf_board_build.f_cpu:
 

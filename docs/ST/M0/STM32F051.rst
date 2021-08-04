@@ -46,7 +46,7 @@ Options
 
 Port, a number or a device name, or valid `URL Handlers <https://pyserial.readthedocs.io/latest/url_handlers.html#urls>`__.
 
-Can be customized in :ref:`mips` using :ref:`stm32`
+Can be customized in :ref:`mips` using :ref:`st`
 option.
 
 **URL Handlers**
@@ -63,7 +63,7 @@ option.
 
 Set baud rate, default ``9600``.
 
-Can be customized in :ref:`mips` using :ref:`stm32`
+Can be customized in :ref:`mips` using :ref:`st`
 option.
 
 .. option::
@@ -87,7 +87,7 @@ Enable software flow control, default ``Off``
 
 Set initial ``RTS`` line state (``0`` or ``1``).
 
-Can be customized in :ref:`mips` using :ref:`stm32`
+Can be customized in :ref:`mips` using :ref:`st`
 option.
 
 .. option::
@@ -95,7 +95,7 @@ option.
 
 Set initial ``DTR`` line state (``0`` or ``1``).
 
-Can be customized in :ref:`mips` using :ref:`stm32`
+Can be customized in :ref:`mips` using :ref:`st`
 option.
 
 .. option::
@@ -112,7 +112,7 @@ default ``UTF-8``.
 .. option::
     -f, --filter
 
-Add text transformation. See available filters at :ref:`stm32`.
+Add text transformation. See available filters at :ref:`st`.
 
 .. option::
     --eol
@@ -158,7 +158,7 @@ to current working directory (``CWD``).
 Process specified environments.
 
 You can also specify which environments should be processed by default using
-:ref:`stm32` option from :ref:`mips`.
+:ref:`st` option from :ref:`mips`.
 
 .. _cmd_device_monitor_filters:
 
@@ -192,14 +192,14 @@ Filters
 Capture output to a file
 ------------------------
 
-You need to use a ``log2file`` filter from :ref:`stm32`:
+You need to use a ``log2file`` filter from :ref:`st`:
 
 .. code-block:: bash
 
     > pio device monitor -f log2file -f default
 
 
-or using :ref:`mips` and :ref:`stm32`
+or using :ref:`mips` and :ref:`st`
 
 .. code-block:: ini
 
@@ -212,8 +212,8 @@ or using :ref:`mips` and :ref:`stm32`
 Device Monitor Filter API
 -------------------------
 
-:ref:`stm32` provides an API to extend device monitor with a custom filter declared
-in "monitor" folder of :ref:`stm32`. See examples:
+:ref:`st` provides an API to extend device monitor with a custom filter declared
+in "monitor" folder of :ref:`st`. See examples:
 
 - https://github.com/platformio/platform-espressif32/tree/develop/monitor
 - https://github.com/platformio/platform-espressif8266/tree/develop/monitor

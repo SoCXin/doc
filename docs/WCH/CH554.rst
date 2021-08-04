@@ -20,7 +20,7 @@ pull requests. When that process has completed, it will notify a developer in
 the way it has been configured to do so — for example, by sending an email
 containing the build results (showing success or failure), or by posting a
 message on an IRC channel. It can be configured to build project on a range of
-different :ref:`stm32`.
+different :ref:`st`.
 
 .. contents::
 
@@ -33,7 +33,7 @@ Integration
 
 There are two possible ways of running PlatformIO in CI services:
 
-Using :ref:`stm32` command
+Using :ref:`st` command
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This variant is default choice for native PlatformIO projects:

@@ -18,7 +18,7 @@ Usage
 Description
 -----------
 
-Create a tarball from a package (library, :ref:`stm32`, or tool).
+Create a tarball from a package (library, :ref:`st`, or tool).
 
 If no arguments are supplied, then platformio packs the current package folder.
 

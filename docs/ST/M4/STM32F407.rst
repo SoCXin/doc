@@ -4,13 +4,13 @@
 STM32F407
 =======================
 
-Start :ref:`stm32` on a host machine and work remotely with
+Start :ref:`st` on a host machine and work remotely with
 your devices **WITHOUT** extra software, services, SSH, VPN, tunneling or
 opening incoming network ports.
 
 :ref:`mcs51` supports wired and wireless devices. Wired devices should be
-connected physically to host machine where :ref:`stm32` is started,
-where wireless devices should be visible for :ref:`stm32` to provide
+connected physically to host machine where :ref:`st` is started,
+where wireless devices should be visible for :ref:`st` to provide
 network operations Over-The-Air (OTA).
 
 .. contents::
@@ -31,7 +31,7 @@ Usage
 Description
 ~~~~~~~~~~~
 
-List active :ref:`stm32` s started using own :ref:`stm32`
+List active :ref:`st` s started using own :ref:`st`
 or shared with you by other PlatformIO developers.
 
 Example
@@ -64,7 +64,7 @@ Usage
 Description
 ~~~~~~~~~~~
 
-Start :ref:`stm32` and work remotely with your devices from
+Start :ref:`st` and work remotely with your devices from
 anywhere in the world. This command can be run as daemon or added to
 autostart list of your OS.
 
@@ -77,20 +77,20 @@ Options
     -n, --name
 
 Agent name/alias. By default, machine's ``hostname`` will be used.
-You can use this name later for :ref:`stm32` and :ref:`stm32`
+You can use this name later for :ref:`st` and :ref:`st`
 commands. Good names are home, office, lab or etc.
 
 .. option::
     -s, --share
 
 Share your agent/devices with other PlatformIO developers who have
-:ref:`stm32`: friends, co-workers, team, etc.
+:ref:`st`: friends, co-workers, team, etc.
 
 The valid value for ``--share`` option is email address that was used for
-:ref:`stm32` command.
+:ref:`st` command.
 
 .. option::
     -d, --working-dir
 
-A working directory where :ref:`stm32` stores projects data for
+A working directory where :ref:`st` stores projects data for
 incremental synchronization and embedded programs for PlatformIO Process Supervisor.

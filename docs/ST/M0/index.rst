@@ -1,7 +1,7 @@
 
 .. _st_cortex_m0:
 
-STM32 Cortex-M0
+Cortex-M0
 ==================
 
 .. toctree::

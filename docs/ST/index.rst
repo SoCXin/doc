@@ -1,12 +1,13 @@
 
-.. _stm32:
+.. _st:
 
-STMicroelectronics
-==================
+ST Microelectronics
+======================
 
-.. contents::
+.. contents:: Contents
+    :local:
 
-厂商相关
+高性价比
 ----------
 
 .. code-block:: bash
@@ -15,8 +16,13 @@ STMicroelectronics
     # alias of "pio"
     platformio [OPTIONS] COMMAND
 
+.. toctree::
+    :maxdepth: 1
 
-产品优势
+    STM32F0 <M0/index>
+
+
+主流产品
 ----------
 
 .. program:: pio
@@ -45,15 +51,18 @@ Show help for the available options and commands
     $ pio --help
     $ pio COMMAND --help
 
+.. toctree::
+    :maxdepth: 1
 
-产品系列
+    STM32F1 <M3/index>
+    STM32F4 <M4/index>
+
+
+高性能
 ----------
 
 .. toctree::
     :maxdepth: 2
 
-    STM32F0 <M0/index>
-    STM32F1 <M3/index>
-    STM32F4 <M4/index>
     STM32H7 <M7/index>
     STM32MP <A7/index>

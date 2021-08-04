@@ -11,8 +11,8 @@ STC8G
 
 .. note::
 
-    Please note that you do not need to install :ref:`stm32` separately if
-    you are going to use :ref:`stc8`. :ref:`stm32` is built into
+    Please note that you do not need to install :ref:`st` separately if
+    you are going to use :ref:`stc8`. :ref:`st` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
 0. `Download <https://code.visualstudio.com>`_ and install official Microsoft Visual Studio Code. PlatformIO IDE is built on top of it

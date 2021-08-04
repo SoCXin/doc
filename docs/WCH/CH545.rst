@@ -19,7 +19,7 @@ all branches, not just to the master branch. Drone will also build and run
 pull requests. When that process has completed, it will notify a developer in
 the way it has been configured to do so — for example, by sending an email
 containing the build results (showing success or failure). It can be
-configured to build project on a range of different :ref:`stm32`.
+configured to build project on a range of different :ref:`st`.
 
 .. contents::
 
@@ -28,7 +28,7 @@ Integration
 
 There are two possible ways of running PlatformIO in CI services:
 
-Using :ref:`stm32` command
+Using :ref:`st` command
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This variant is default choice for native PlatformIO projects (Please fill all
