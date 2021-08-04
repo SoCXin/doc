@@ -10,7 +10,7 @@ STM32G031
 xin简介
 -----------
 
-`STM32G031 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_  是Cortex M0+单核MCU，相关资源可查看
+`STM32G031 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_  是 :ref:`cortex` M0+单核MCU，相关资源可查看
 `GitHub <https://github.com/SoCXin/STM32G031>`_.
 
 Cortex内核相关可查看  :option:`Cortex -M0`.
@@ -23,9 +23,7 @@ Cortex内核相关可查看  :option:`Cortex -M0`.
 xin优势
 -----------
 
-相对自家前代产品STM32F031系列拥有更好的模拟性能，主频更高，相对市场同类产品，拥有自家完善的资源体系和可靠性，是``性价比``很高的国际大品牌产品。
-
-`Serial Ports <http://en.wikipedia.org/wiki/Serial_port>`_ will be shown.
+相对自家前代产品 :ref:`st_stm32f030` 系列拥有更好的模拟性能，主频更高，相对市场同类产品，拥有自家完善的资源体系和可靠性，是新推出的 ``高性价比`` 的国际一线品牌MCU。
 
 关键特性
 ~~~~~~~~~
@@ -41,9 +39,9 @@ xin资源
 
 .. image:: ./images/STM32G031.png
 
-获取datasheet `stm32g0x1 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_ .
+获取 `stm32g0x1 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_ 官方文件.
 
-开发板
+xin实践
 --------------
 
 .. image:: ./images/B_STM32G031.jpg
@@ -51,7 +49,7 @@ xin资源
 
 
 代码示例
-------------
+~~~~~~~~~
 
 1. 基于STM32Cube HAL库
 
