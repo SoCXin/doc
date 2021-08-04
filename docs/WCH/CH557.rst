@@ -2,65 +2,21 @@
 .. _wch_ch557:
 
 CH557
-=====
-
-`Drone <https://CH559.io>`_  is a hosted continuous MCS51 service.
-It enables you to conveniently set up projects to automatically build, test,
-and deploy as you make changes to your code to
-`GitHub <http://en.wikipedia.org/wiki/GitHub>`_ and
-`BitBucket <http://en.wikipedia.org/wiki/Bitbucket>`_ repositories.
-
-Drone is configured by modifying settings in your project control panel.
-
-Drone automatically detects when a commit has been made and pushed to a
-repository that is using Drone, and each time this happens, it will
-try to build the project using :ref:`wch` command. This includes commits to
-all branches, not just to the master branch. Drone will also build and run
-pull requests. When that process has completed, it will notify a developer in
-the way it has been configured to do so — for example, by sending an email
-containing the build results (showing success or failure). It can be
-configured to build project on a range of different :ref:`stm32`.
-
-.. contents::
-
-Integration
------------
-
-There are two possible ways of running PlatformIO in CI services:
-
-Using :ref:`stm32` command
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This variant is default choice for native PlatformIO projects (Please fill all
-fields for your project in the Drone control panel):
-
-`Commands`:
-
-.. code-block:: bash
-
-    pip install -U platformio
-    pio run -e <ID_1> -e <ID_2> -e <ID_N>
-
-
-
-This variant is more convenient when project is written as a library (when there are
-examples or testing code) as it has additional options for specifying extra libraries
-and boards from command line interface:
-
-`Environment Variables`:
-
-.. code-block:: bash
-
-    PLATFORMIO_CI_SRC=path/to/source/file.c
-    PLATFORMIO_CI_SRC=path/to/source/file.ino
-    PLATFORMIO_CI_SRC=path/to/source/directory
-
-`Commands`:
-
-.. code-block:: bash
-
-    pip install -U platformio
-    pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
+==========
 
 .. image:: ./images/CH557.png
+    :target: https://github.com/SoCXin/CH557
 
+芯片简介
+-----------
+兼容MCS51的增强型E8051内核，79%指令是单字节单周期指令，3KB BootLoader + 60KB CodeFlash，8K xRAM + 256B iRAM，1K DataFlash。
+
+内置了USB主机控制器和收发器，内置4端口USB root-hub根集线器，支持USB 2.0全速12Mbps或者低速1.5Mbps，支持USB Host主机模式和USB Device设备模式。支持最大64字节数据包，内置FIFO，支持DMA。
+
+CH557提供丰富的接口资源，包括2组异步串口、6路PWM、14通道电容触摸按键、128组RGB三色LED控制器，其他包括2路SPI、IIC主机和IIC从机、14路12位ADC，支持电压比较；内置3组定时器和2路信号捕捉；支持最多58个GPIO。
+
+关键特性
+^^^^^^^^^^^^^
+
+* 4端口USB root-hub集线器
+* UART x 2 + SPI x 2

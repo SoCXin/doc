@@ -5,6 +5,7 @@ CH559
 ==========
 
 .. image:: ./images/CH559.png
+    :target: https://github.com/SoCXin/CH559
 
 `CH559 <http://www.wch.cn>`_  是一款基于8051增强内核的MCU，主要卖点在双USB外设，相关资源可查看
 `GitHub <https://github.com/SoCXin/CH559>`_.
@@ -21,7 +22,7 @@ CH559
 接口包括内置类485数据收发器、LED控制卡接口和快速电平捕捉功能，其他包括2组SPI、2路串口、8位并口等，UART1兼容16C550；内置4组定时器；提供1路16位PWM和2路8位PWM；支持8通道10/11位ADC。内置时钟和PLL，支持外部晶振。
 
 关键特性
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
 
 * 内嵌USB控制器和双USB收发器，支持USB2.0全速和低速主机或设备
 * USB主机模式下可以通过内嵌的双端口Root-HUB同时管理两个USB设备。
@@ -55,3 +56,5 @@ CH559
     pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
 
 .. image:: ./images/B_CH559.jpg
+.. image:: ./images/B_CH559.jpg
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.21.2a2f27eex4iIfZ&id=578043172571&ns=1&abbucket=18#detail
