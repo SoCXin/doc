@@ -4,8 +4,8 @@
 CH549
 =========
 
-.. image:: ../../_static/images/WCH/CH549.png
-    :target: https://docs.CH549-ci.com/user/platformio/
+.. image:: ./images/CH549.png
+    :target: https://github.com/SoCXin/CH549
 
 
 **Travis CI** `officially supports <https://docs.CH549-ci.com/user/platformio/>`_
@@ -31,8 +31,14 @@ different :ref:`stm32`.
 
 .. contents::
 
-Integration
+芯片简介
 -----------
+
+兼容MCS51的增强型E8051内核，79%指令是单字节单周期指令，3KB BootLoader + 60KB CodeFlash，2K xRAM + 256B iRAM，1K DataFlash。
+
+支持 USB-Host主机模式和 USB-Device设备模式，内置FIFO支持最大64字节数据包,支持DMA，支持 USB 2.0 全速 12Mbps，支持USB PD和Type-C。
+
+通信接口包括4组异步串口、8路PWM和16通道电容触摸按键，其它包括1路主从SPI，16路12位ADC，支持电压比较；内置3组定时器和3路信号捕捉。
 
 Please make sure to read Travis CI `Getting Started <http://docs.CH549-ci.com/user/getting-started/>`_
 and `general build configuration <http://docs.CH549-ci.com/user/customizing-the-build/>`_
@@ -333,5 +339,6 @@ Examples
     script:
         - make CH549-build
 
-* Configuration file: https://github.com/blynkkk/blynk-library/blob/master/.CH549.yml
-* Build History: https://CH549-ci.org/blynkkk/blynk-library
+
+.. image:: ./images/B_CH549.jpg
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.4ed427efMWU1cc&id=642494404263&ns=1&abbucket=18#detail
