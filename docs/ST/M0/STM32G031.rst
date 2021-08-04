@@ -4,7 +4,7 @@
 STM32G031
 ===============
 
-.. contents:: 目录
+.. contents:: 目录索引
     :local:
 
 xin简介
@@ -18,6 +18,13 @@ Cortex内核相关可查看  :option:`Cortex -M0`.
 .. image:: ./images/STM32G031.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
+
+xin资源
+-----------
+
+.. image:: ./images/STM32G031.png
+
+获取 `stm32g0x1 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_ 官方资源
 
 
 xin优势
@@ -34,18 +41,28 @@ xin优势
 * 5ch x DMA
 * 丰富的产品系列
 
-xin资源
------------
+竞品分析
+~~~~~~~~~
 
-.. image:: ./images/STM32G031.png
+同系列产品
 
-获取 `stm32g0x1 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_ 官方文件.
+不同厂商在这一主频段的产品线比较丰富，就处理器资源有大量替代，主要竞争力还是在功能稳定性及资源兼容性上，基于STM32Cube的开发生态，有大量资源和工程师团队。
+
 
 xin实践
 --------------
 
+STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发板中最常用的型号为 STM32G031J6 和 STM32G031K8，点击下图可购买
+
 .. image:: ./images/B_STM32G031.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.5fcf7cd1dZFnby&id=636761611307&ns=1&abbucket=19#detail
+
+开发框架
+~~~~~~~~~
+
+使用STM32芯片最直接方式是通过 `stm32cube <https://www.st.com/zh/ecosystems/stm32cube.html>`_ 代码生成工具，构建基本运行体。
+
+源圈OS-Q 认证 `PlatformIO STM32G0 Enhanced <https://github.com/OS-Q/P215>`_ 开源编译体系，拥有各种集成资源，便于多系统开发。
 
 
 代码示例
