@@ -10,7 +10,7 @@
 .. toctree::
     :maxdepth: 1
 
-    STC <../vendor/STC/STC8>
+    STC <../STC/STC8>
 
 32bit MCU
 -------------
@@ -18,4 +18,4 @@
 .. toctree::
     :maxdepth: 1
 
-    STM32 <../vendor/ST/M3/index>
+    STM32 <../ST/M3/index>

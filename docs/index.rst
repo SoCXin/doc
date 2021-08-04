@@ -32,24 +32,24 @@
     :caption: 典型厂商
     :maxdepth: 1
 
-    ST <vendor/ST/STM32>
-    WCH <vendor/WCH/MCU>
-    espressif <vendor/espressif/SoC>
+    ST <ST/STM32>
+    WCH <WCH/MCU>
+    espressif <espressif/SoC>
 
 .. toctree::
     :caption: 内核架构
     :maxdepth: 1
 
-    MCS51   <architecture/MCS51>
-    ARM     <architecture/cortex>
-    MIPS    <architecture/MIPS>
-    RISC-V  <architecture/RISC-V>
+    MCS51   <core/MCS51>
+    ARM     <core/cortex>
+    MIPS    <core/MIPS>
+    RISC-V  <core/RISC-V>
 
 
 .. toctree::
     :caption: 市场供应
     :maxdepth: 1
 
-    极低成本 <market/lowcost>
-    高性价比 <market/economy>
-    无可替代 <market/unique>
+    极低成本 <news/lowcost>
+    高性价比 <news/economy>
+    无可替代 <news/unique>

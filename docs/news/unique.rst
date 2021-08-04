@@ -7,4 +7,4 @@
 .. toctree::
     :maxdepth: 1
 
-    STC <../vendor/STC/STC8>
+    STC <../STC/STC8>

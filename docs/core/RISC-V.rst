@@ -14,5 +14,5 @@ up-to-date. PlatformIO Library Manager supports
 .. toctree::
     :maxdepth: 2
 
-    espressif <../vendor/espressif/riscv>
-    WCH <../vendor/WCH/riscv>
+    espressif <../espressif/riscv>
+    WCH <../WCH/riscv>

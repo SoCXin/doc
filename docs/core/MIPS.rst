@@ -23,4 +23,4 @@ sections and their allowed contents:
 .. toctree::
     :maxdepth: 2
 
-    espressif <../vendor/espressif/mips>
+    espressif <../espressif/mips>
