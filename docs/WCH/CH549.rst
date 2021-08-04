@@ -111,7 +111,7 @@ and boards from command line interface:
         - pio update
 
     script:
-        - pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
+        - pio ci --MCU=<ID_1> --MCU=<ID_2> --MCU=<ID_N>
 
 Then perform steps 1, 2 and 4 from http://docs.CH549-ci.com/user/getting-started/
 
@@ -139,7 +139,7 @@ Manually download dependent library and include in build process via ``--lib`` o
         - unzip /tmp/onewire_source.zip -d /tmp/
 
     script:
-        - pio ci --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
+        - pio ci --lib="/tmp/OneWire-master" --MCU=<ID_1> --MCU=<ID_2> --MCU=<ID_N>
 
 Custom Build Flags
 ------------------
@@ -211,7 +211,7 @@ Examples
         - pio lib -g install 416 417
 
     script:
-        - pio ci --board=uno --board=teensy31 --board=due --lib="."
+        - pio ci --MCU=uno --MCU=teensy31 --MCU=due --lib="."
 
 * Configuration file: https://github.com/felis/USB_Host_Shield_2.0/blob/master/.CH549.yml
 * Build History: https://CH549-ci.org/felis/USB_Host_Shield_2.0
@@ -247,7 +247,7 @@ Examples
         - unzip /tmp/gamebuino.zip -d /tmp
 
     script:
-        - pio ci --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --board=uno --board=megaatmega2560
+        - pio ci --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --MCU=uno --MCU=megaatmega2560
 
 * Configuration file: https://github.com/jcw/ethercard/blob/master/.CH549.yml
 * Build History: https://CH549-ci.org/jcw/ethercard
@@ -268,10 +268,10 @@ Examples
             - $HOME/.cache/pip
 
     env:
-        - PLATFORMIO_CI_SRC=examples/TimeArduinoDue PLATFORMIO_CI_EXTRA_ARGS="--board=due"
+        - PLATFORMIO_CI_SRC=examples/TimeArduinoDue PLATFORMIO_CI_EXTRA_ARGS="--MCU=due"
         - PLATFORMIO_CI_SRC=examples/TimeGPS
         - PLATFORMIO_CI_SRC=examples/TimeNTP
-        - PLATFORMIO_CI_SRC=examples/TimeTeensy3 PLATFORMIO_CI_EXTRA_ARGS="--board=teensy31"
+        - PLATFORMIO_CI_SRC=examples/TimeTeensy3 PLATFORMIO_CI_EXTRA_ARGS="--MCU=teensy31"
         # - ...
 
     install:
@@ -286,7 +286,7 @@ Examples
         - pio lib -g install 416 421 422
 
     script:
-        - pio ci --lib="." --board=uno --board=teensy20pp $PLATFORMIO_CI_EXTRA_ARGS
+        - pio ci --lib="." --MCU=uno --MCU=teensy20pp $PLATFORMIO_CI_EXTRA_ARGS
 
 * Configuration file: https://github.com/ivankravets/Time/blob/master/.CH549.yml
 * Build History: https://CH549-ci.org/ivankravets/Time
@@ -308,9 +308,9 @@ Examples
 
     env:
         - PLATFORMIO_CI_SRC=examples/Boards_Bluetooth/Adafruit_Bluefruit_LE
-        - PLATFORMIO_CI_SRC=examples/Boards_Bluetooth/Arduino_101_BLE PLATFORMIO_CI_EXTRA_ARGS="--board=genuino101"
-        - PLATFORMIO_CI_SRC=examples/Boards_USB_Serial/Blue_Pill_STM32F103C PLATFORMIO_CI_EXTRA_ARGS="--board=bluepill_f103c8 --project-option='framework=arduino'"
-        - PLATFORMIO_CI_SRC=examples/Export_Demo/myPlant_ESP8266 PLATFORMIO_CI_EXTRA_ARGS="--board=nodemcuv2 --project-option='lib_ignore=WiFi101'"
+        - PLATFORMIO_CI_SRC=examples/Boards_Bluetooth/Arduino_101_BLE PLATFORMIO_CI_EXTRA_ARGS="--MCU=genuino101"
+        - PLATFORMIO_CI_SRC=examples/Boards_USB_Serial/Blue_Pill_STM32F103C PLATFORMIO_CI_EXTRA_ARGS="--MCU=bluepill_f103c8 --project-option='framework=arduino'"
+        - PLATFORMIO_CI_SRC=examples/Export_Demo/myPlant_ESP8266 PLATFORMIO_CI_EXTRA_ARGS="--MCU=nodemcuv2 --project-option='lib_ignore=WiFi101'"
         # - ...
 
     install:

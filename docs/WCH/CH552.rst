@@ -59,7 +59,7 @@ and boards from command line interface:
         - cmd: pip install -U platformio
 
     test_script:
-        - cmd: pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
+        - cmd: pio ci --MCU=<ID_1> --MCU=<ID_2> --MCU=<ID_N>
 
 
 
@@ -85,4 +85,4 @@ Examples
         - cmd: git clone https://github.com/xxxajk/spi4teensy3.git C:\spi4teensy
 
     test_script:
-        - cmd: pio ci --lib="." --lib="C:\\spi4teensy" --board=uno --board=teensy31 --board=due
+        - cmd: pio ci --lib="." --lib="C:\\spi4teensy" --MCU=uno --MCU=teensy31 --MCU=due

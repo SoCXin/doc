@@ -89,7 +89,7 @@ extra libraries and boards from the command line interface:
               command: pip install -U platformio
           - run:
               name: Compile << parameters.ci_src >>
-              command: pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
+              command: pio ci --MCU=<ID_1> --MCU=<ID_2> --MCU=<ID_N>
 
     workflows:
       main:
@@ -125,7 +125,7 @@ Manually download dependent library and include in build process via ``--lib`` o
         unzip /tmp/onewire_source.zip -d /tmp/
   - run:
       name: Compile project
-      command: pio ci --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
+      command: pio ci --lib="/tmp/OneWire-master" --MCU=<ID_1> --MCU=<ID_2> --MCU=<ID_N>
 
 
 Custom Build Flags
@@ -148,7 +148,7 @@ Advanced configuration
 PlatformIO allows you to configure multiple build environments for the single
 source code using :ref:`mips`.
 
-Instead of ``--board``, please use the ``--project-conf`` option:
+Instead of ``--MCU``, please use the ``--project-conf`` option:
 
 .. code-block:: yaml
 
@@ -189,7 +189,7 @@ Integration for USB_Host_Shield_2.0 project. The ``config.yml`` configuration fi
               unzip /tmp/spi4teensy3.zip -d /tmp
         - run:
             name: Run PlatformIO
-            command: pio ci --lib="." --lib="/tmp/spi4teensy3-master" --board=uno --board=teensy31 --board=due
+            command: pio ci --lib="." --lib="/tmp/spi4teensy3-master" --MCU=uno --MCU=teensy31 --MCU=due
   workflows:
     main:
       jobs:

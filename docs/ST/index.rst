@@ -1,13 +1,13 @@
 
 .. _stm32:
 
-STM32
-=========
+STMicroelectronics
+==================
 
 .. contents::
 
-Usage
------
+厂商相关
+----------
 
 .. code-block:: bash
 
@@ -16,8 +16,8 @@ Usage
     platformio [OPTIONS] COMMAND
 
 
-Options
--------
+产品优势
+----------
 
 .. program:: pio
 
@@ -46,8 +46,8 @@ Show help for the available options and commands
     $ pio COMMAND --help
 
 
-series
---------
+产品系列
+----------
 
 .. toctree::
     :maxdepth: 2

@@ -6,7 +6,7 @@
 
 * open source
 * abundant
-* practical value
+* practical
 * meticulous
 * Comprehensive
 
@@ -32,7 +32,7 @@
     :caption: 典型厂商
     :maxdepth: 1
 
-    ST <ST/STM32>
+    ST <ST/index>
     WCH <WCH/MCU>
     espressif <espressif/SoC>
 
@@ -47,7 +47,7 @@
 
 
 .. toctree::
-    :caption: 市场供应
+    :caption: 市场动态
     :maxdepth: 1
 
     极低成本 <news/lowcost>

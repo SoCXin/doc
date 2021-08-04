@@ -54,12 +54,12 @@ For example, exclude from project ``src`` directory:
     pio ci --exclude=src/examples --exclude=src/foo/*.h [SRC]
 
 .. option::
-    -b, --board
+    -b, --MCU
 
 Build project with automatically pre-generated environments based on board
 settings.
 
-For more details please look into :option:`pio project init --board`.
+For more details please look into :option:`Cortex-M0 --MCU`.
 
 .. option::
     --build-dir

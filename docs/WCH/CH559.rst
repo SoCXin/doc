@@ -53,8 +53,7 @@ CH559
 .. code-block:: bash
 
     pip install -U platformio
-    pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
+    pio ci --MCU=<ID_1> --MCU=<ID_2> --MCU=<ID_N>
 
-.. image:: ./images/B_CH559.jpg
 .. image:: ./images/B_CH559.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.21.2a2f27eex4iIfZ&id=578043172571&ns=1&abbucket=18#detail
