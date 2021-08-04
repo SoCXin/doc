@@ -21,12 +21,13 @@ xin简介
     pio device list [OPTIONS]
 
 
-xin特性
+xin优势
 -----------
 
 List available devices.
 Default is set to ``--serial`` and all available
 `Serial Ports <http://en.wikipedia.org/wiki/Serial_port>`_ will be shown.
+
 
 xin资源
 -----------

@@ -7,7 +7,7 @@ ST Microelectronics
 .. contents:: Contents
     :local:
 
-高性价比
+性价比
 ----------
 
 .. code-block:: bash
@@ -65,4 +65,11 @@ Show help for the available options and commands
     :maxdepth: 2
 
     STM32H7 <M7/index>
-    STM32MP <A7/index>
+
+低功耗
+----------
+
+.. toctree::
+    :maxdepth: 2
+
+    STM32H7 <M0/ulp>
