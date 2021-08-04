@@ -4,10 +4,10 @@
 ST Microelectronics
 ======================
 
-.. contents:: Contents
+.. contents:: 目录
     :local:
 
-性价比
+高性价比
 ----------
 
 .. code-block:: bash
@@ -17,48 +17,31 @@ ST Microelectronics
     platformio [OPTIONS] COMMAND
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
-    STM32F0 <M0/index>
+    STM8 <STM8/index>
+    Cortex-M0 <M0/index>
 
 
-主流产品
+应用丰富
 ----------
-
-.. program:: pio
 
 .. option::
     --no-ansi
 
-Do not print ANSI control characters.
-
 See also :envvar:`PLATFORMIO_NO_ANSI` and :envvar:`PLATFORMIO_FORCE_ANSI`
 environment variables.
-
 
 .. option::
     --version
 
-Show the version of PlatformIO
-
-.. option::
-    --help, -h
-
-Show help for the available options and commands
-
-.. code-block:: bash
-
-    $ pio --help
-    $ pio COMMAND --help
-
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
-    STM32F1 <M3/index>
-    STM32F4 <M4/index>
+    Cortex-M3 <M3/index>
+    Cortex-M4 <M4/index>
 
-
-高性能
+性能至上
 ----------
 
 .. toctree::
@@ -66,10 +49,10 @@ Show help for the available options and commands
 
     STM32H7 <M7/index>
 
-低功耗
+功耗优化
 ----------
 
 .. toctree::
     :maxdepth: 2
 
-    STM32H7 <M0/ulp>
+    LOW Pwr <M0/ulp>

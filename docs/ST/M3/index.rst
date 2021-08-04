@@ -1,19 +1,14 @@
 
-.. _st_stm32f1:
+.. _st_cortex_m3:
 
-STM32F1
+Cortex-M3
 =============
 
-To print all available commands and options use:
-
-.. code-block:: bash
-
-    pio account --help
-    pio account COMMAND --help
-
+.. contents:: Contents
+    :local:
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     STM32F103
     STM32F105

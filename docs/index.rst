@@ -4,37 +4,38 @@
 
 **A place where Developers find your chip! No more vendor lock-in!**
 
-* open source
-* abundant
-* practical
-* meticulous
-* Comprehensive
-
 **Social:** `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
 `GitHub <https://GitHub.com/Qitas>`_ |
 `Twitter <https://twitter.com/QitasTang>`_ |
 `Facebook <https://www.facebook.com/qitast>`_
 
 
-
 .. toctree::
-    :caption: 应用分类
+    :caption: 新品速递
     :maxdepth: 1
 
-    低阶MCU <tier/lowend>
-    主流MCU <tier/main>
-    多核MCU <tier/core>
-    通信SoC <tier/IoT>
-    测量SoC <tier/asic>
-    计算SoC <tier/edge>
+    极低成本 <news/lowcost>
+    高性价比 <news/economy>
+    无可替代 <news/unique>
 
 .. toctree::
-    :caption: 典型厂商
+    :caption: 应用领域
     :maxdepth: 1
 
-    ST <ST/index>
+    机电控制 <tier/lowend>
+    数据采集 <tier/main>
+    人机交互 <tier/core>
+    无线通信 <tier/IoT>
+    网络连接 <tier/asic>
+    边缘计算 <tier/edge>
+
+.. toctree::
+    :caption: 经典厂商
+    :maxdepth: 1
+
+    STM <ST/index>
     WCH <WCH/MCU>
-    espressif <espressif/SoC>
+    ESP <espressif/SoC>
 
 .. toctree::
     :caption: 内核架构
@@ -45,11 +46,3 @@
     MIPS    <core/MIPS>
     RISC-V  <core/RISC-V>
 
-
-.. toctree::
-    :caption: 市场动态
-    :maxdepth: 1
-
-    极低成本 <news/lowcost>
-    高性价比 <news/economy>
-    无可替代 <news/unique>
