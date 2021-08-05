@@ -13,8 +13,6 @@ xin简介
 `STM32G031 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_  是 :ref:`cortex` M0+单核MCU，相关资源可查看
 `GitHub <https://github.com/SoCXin/STM32G031>`_.
 
-Cortex内核相关可查看  :option:`Cortex -M0`.
-
 .. image:: ./images/STM32G031.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 

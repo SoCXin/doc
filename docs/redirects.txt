@@ -1,5 +1,5 @@
-STM32F103.html -> ST/M3/STM32F103.html
-STM32G031.html -> ST/M0/STM32G031.html
+/STM32F103.html -> ST/M3/STM32F103.html
+/STM32G031.html -> ST/M0/STM32G031.html
 /CH549.html -> WCH/CH549.html
 /CH545.html -> WCH/CH545.html
 /CH559.html -> WCH/CH559.html

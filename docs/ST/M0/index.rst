@@ -1,15 +1,18 @@
 
 .. _st_cortex_m0:
 
-ST Cortex-M0系列
+ST Cortex-M0 MCU
 ==================
 
-.. contents:: 目录
+architecture  :option:`Cortex -M0`
+
+
+.. contents:: 目录索引
     :local:
 
 
-STM32F0系列
---------------
+STM32F0 series
+-----------------
 
 .. toctree::
     :maxdepth: 1
@@ -18,9 +21,11 @@ STM32F0系列
     STM32F051
 
 
-STM32G0系列
---------------
+STM32G0 series
+-----------------
 
+.. image:: ./images/STM32G0x1_line.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
 .. toctree::
     :maxdepth: 1
