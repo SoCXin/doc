@@ -7,33 +7,42 @@ Cortex
 .. contents:: 目录索引
     :local:
 
+.. _cortex_m:
 
 Cortex-M
----------
+-------------
 
 .. program:: Cortex
 
-Cortex-M0
-~~~~~~~~~~~
+.. _cortex_m0:
+
+``Cortex-M0``
+~~~~~~~~~~~~~~
 
 .. option::
     -M0
 
-Cortex-M3
-~~~~~~~~~~~
+.. _cortex_m3:
+
+``Cortex-M3``
+~~~~~~~~~~~~~~
 
 .. option::
     -M3
 
-Cortex-M4
-~~~~~~~~~~~
+.. _cortex_m4:
+
+``Cortex-M4``
+~~~~~~~~~~~~~~
 
 .. option::
     -M4
 
+.. _cortex_r:
 
 Cortex-R
 ----------
+
 
 Cortex-R5
 ~~~~~~~~~~~
@@ -41,31 +50,8 @@ Cortex-R5
 .. option::
     -R5
 
-.. program:: pio
 
-.. option::
-    --no-ansi
-
-Do not print ANSI control characters.
-
-See also :envvar:`PLATFORMIO_NO_ANSI` and :envvar:`PLATFORMIO_FORCE_ANSI`
-environment variables.
-
-
-.. option::
-    --version
-
-Show the version of PlatformIO
-
-.. option::
-    --help, -h
-
-Show help for the available options and commands
-
-.. code-block:: bash
-
-    $ pio --help
-    $ pio COMMAND --help
+.. _cortex_a:
 
 Cortex-A
 ----------

@@ -12,7 +12,7 @@ architecture  :option:`Cortex -M0`
 
 .. _st_stm32f0:
 
-``STM32F0 series``
+STM32F0 series
 --------------------
 
 .. toctree::
