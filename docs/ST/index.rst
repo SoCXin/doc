@@ -4,7 +4,9 @@
 ST Microelectronics
 ======================
 
-.. contents:: 目录
+ST 意法半导体是全球最大的半导体公司之一，是MCU领域的王者。
+
+.. contents:: 目录索引
     :local:
 
 高性价比
@@ -13,9 +15,9 @@ ST Microelectronics
 针对应用简单，对成本敏感的领域，低成本MCU产品
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
-    STM8系列    <STM8/index>
+    STM8        <STM8/index>
     Cortex-M0   <M0/index>
 
 

@@ -23,7 +23,7 @@ architecture  :option:`Cortex -M0`
 
 .. _st_stm32g0:
 
-``STM32G0 series``
+STM32G0 series
 --------------------
 
 .. image:: ./images/STM32G0x1_line.jpg
