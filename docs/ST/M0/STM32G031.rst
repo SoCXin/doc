@@ -23,14 +23,7 @@ xin资源
 -----------
 
 .. image:: ./images/STM32G031.png
-
-获取 `stm32g0x1 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_ 官方资源
-
-
-xin优势
------------
-
-相对自家前代产品 :ref:`st_stm32f030` 系列拥有更好的模拟性能，主频更高，相对市场同类产品，拥有自家完善的资源体系和可靠性，是新推出的 ``高性价比`` 的国际一线品牌MCU。
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
 关键特性
 ~~~~~~~~~
@@ -41,10 +34,19 @@ xin优势
 * 5ch x DMA
 * 丰富的产品系列
 
-竞品分析
+
+xin优势
+-----------
+
+相对自家前代产品 :ref:`st_stm32f030` 系列拥有更好的模拟性能，主频更高，相对市场同类产品，拥有自家完善的资源体系和可靠性，是新推出的 ``高性价比`` 的国际一线品牌MCU。
+
+规格选型
 ~~~~~~~~~
 
 同系列产品
+
+竞品对比
+~~~~~~~~~
 
 不同厂商在这一主频段的产品线比较丰富，就处理器资源有大量替代，主要竞争力还是在功能稳定性及资源兼容性上，基于STM32Cube的开发生态，有大量资源和工程师团队。
 
@@ -52,36 +54,66 @@ xin优势
 xin实践
 --------------
 
-STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发板中最常用的型号为 STM32G031J6 和 STM32G031K8，点击下图可购买
+STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发板中最常用的型号为 STM32G031J6 和 STM32G031K8
 
 .. image:: ./images/B_STM32G031.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.5fcf7cd1dZFnby&id=636761611307&ns=1&abbucket=19#detail
 
-开发框架
+开发工具
 ~~~~~~~~~
 
-使用STM32芯片最直接方式是通过 `stm32cube <https://www.st.com/zh/ecosystems/stm32cube.html>`_ 代码生成工具，构建基本运行体。
+使用STM32芯片最直接方式是通过 `stm32cube <https://www.st.com/zh/ecosystems/stm32cube.html>`_ 代码生成工具，构建基本运行体，通过图形化界面操作，不用开发者自己去初始化相应外设（但请注意使能）。
 
 源圈OS-Q 认证 `PlatformIO STM32G0 Enhanced <https://github.com/OS-Q/P215>`_ 开源编译体系，拥有各种集成资源，便于多系统开发。
 
 
-代码示例
+blink示例
 ~~~~~~~~~
 
 1. 基于STM32Cube HAL库
 
 .. code-block:: bash
 
-    > pio device list
-    /dev/cu.SLAB_USBtoUART
-    ----------
-    Hardware ID: USB VID:PID=10c4:ea60 SNR=0001
-    Description: CP2102 USB to UART Bridge Controller
+    int main(void)
+    {
+        /* USER CODE BEGIN 1 */
 
-    /dev/cu.uart-1CFF4676258F4543
-    ----------
-    Hardware ID: USB VID:PID=451:f432 SNR=1CFF4676258F4543
-    Description: Texas Instruments MSP-FET430UIF
+        /* USER CODE END 1 */
+
+        /* MCU Configuration--------------------------------------------------------*/
+
+        /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+        HAL_Init();
+
+        /* USER CODE BEGIN Init */
+
+        /* USER CODE END Init */
+
+        /* Configure the system clock */
+        SystemClock_Config();
+
+        /* USER CODE BEGIN SysInit */
+
+        /* USER CODE END SysInit */
+
+        /* Initialize all configured peripherals */
+        MX_GPIO_Init();
+        /* USER CODE BEGIN 2 */
+
+        /* USER CODE END 2 */
+
+        /* Infinite loop */
+        /* USER CODE BEGIN WHILE */
+        while (1)
+        {
+            /* USER CODE END WHILE */
+
+            /* USER CODE BEGIN 3 */
+            HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+            HAL_Delay(500);
+        }
+        /* USER CODE END 3 */
+    }
 
 
 2. 基于STM32Cube LL库
@@ -149,5 +181,19 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
     --------------
     Name: PLUS
 
+开源资源
+~~~~~~~~~
+
+如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
+
+关于 :ref:`st` MCU构建的 `开源项目 <https://github.com/search?q=STM32>`_ 有32000多个(和G0系列相关较少)，其中最主要的类别是arduino，STM32也是arduino的最佳运行平台之一。
+
+* [Arduino_Core_STM32](https://github.com/stm32duino/Arduino_Core_STM32)
+* [STM32CubeG0](https://github.com/STMicroelectronics/STM32CubeG0)
+* [rust API](https://github.com/stm32-rs/stm32g0xx-hal)
 
 
+xin总结
+--------------
+
+STM32G0系列属于较新的产品，也重点优化了ADC的性能，相较于使用最广泛的STM32F1系列，在ADC初始化阶段需要更长的时间，所以在采样的时候需要过滤开始阶段无效的数据。
