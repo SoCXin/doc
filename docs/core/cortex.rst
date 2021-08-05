@@ -1,8 +1,8 @@
 
 .. _cortex:
 
-Cortex
-=========
+Cortex Architecture
+====================
 
 .. contents:: 目录索引
     :local:
@@ -37,6 +37,15 @@ Cortex-M
 
 .. option::
     -M4
+
+.. _cortex_m7:
+
+``Cortex-M7``
+~~~~~~~~~~~~~~
+
+.. option::
+    -M7
+
 
 .. _cortex_r:
 

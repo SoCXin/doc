@@ -41,7 +41,7 @@ xin优势
 规格选型
 ~~~~~~~~~
 
-同系列产品 :ref:`st_stm32g0`
+ :ref:`st_stm32g0` 同系列产品中 :ref:`st_stm32g031` 定位入门级产品，在SON8封装限定下，可选STM32G030J、STM32G041J(flash升级64K)
 
 竞品对比
 ~~~~~~~~~
@@ -194,4 +194,16 @@ blink示例
 xin总结
 --------------
 
+STM32G031产品定位入门，FLASH和RAM资源都受限，所有不是RTOS的理想载体，作为项目开发更大概率是使用LL库。
+
+ADC使用
+~~~~~~~~~
+
 STM32G0系列属于较新的产品，也重点优化了ADC的性能，相较于使用最广泛的STM32F1系列，在ADC初始化阶段需要更长的时间，所以在采样的时候需要过滤开始阶段无效的数据。
+
+option bytes
+~~~~~~~~~~~~~
+
+芯片出厂默认从system flash启动，需要修改option bytes才能从用户代码启动，而boot 0 脚与调试口共用，在调试时很容易一开始跑到system flash 的BootLoader里面去了。通过修改option byte 将启动位置改为由Boot 0脚控制（Boot 0脚接100K电阻下拉）
+
+STM32G0x1的option bytes 太过牛叉，一不小心就把芯片锁死弄成砖了，所以做烧录器的貌似都比较火大。
