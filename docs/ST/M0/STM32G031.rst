@@ -28,9 +28,9 @@ Xin资源
 
 * 64MHz主频
 * 精确的内部时钟
-* 高性能ADC（12bit 2.5 MSps）
+* ADC（12bit 2.5 MSps）
 * 5ch x DMA
-* 丰富的产品系列
+* 1KB OTP
 
 
 Xin优势
@@ -38,7 +38,7 @@ Xin优势
 
 相对自家前代产品 :ref:`st_stm32f030` 系列拥有更好的模拟性能，主频更高同时如CRC等外设全系标配，相对市场同类产品，拥有自家完善的资源体系和可靠性，是新推出的 ``高性价比`` 的国际一线品牌MCU。
 
-规格选型
+选型对比
 ~~~~~~~~~
 
  :ref:`st_stm32g0` 系列产品中 :ref:`st_stm32g031` 定位入门级，相似有 `STM32G0x0 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html>`_ 超值系列，例如在SON8封装限定下，STM32G031J替换可选STM32G030J6、STM32G041J6
@@ -46,7 +46,7 @@ Xin优势
 .. image:: ./images/STM32G0.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
-竞品对比
+竞品分析
 ~~~~~~~~~
 
 不同厂商在这一主频段的产品线比较丰富，就处理器资源有大量替代，主要竞争力还是在功能稳定性及资源兼容性上，基于STM32Cube的开发生态，有大量资源和工程师团队。
@@ -175,20 +175,20 @@ blink示例
 
 * `Arduino_Core_STM32 <https://github.com/stm32duino/Arduino_Core_STM32>`_
 * `STM32CubeG0 <https://github.com/STMicroelectronics/STM32CubeG0>`_
-* `rust <https://github.com/stm32-rs/stm32g0xx-hal>`_
+* `stm32-rs <https://github.com/stm32-rs/stm32g0xx-hal>`_
 
 
-xin总结
+Xin总结
 --------------
 
 STM32G031产品定位入门，FLASH和RAM资源都受限，所有不是RTOS的理想载体，作为项目开发更大概率是使用LL库。
 
-ADC使用
+ADC
 ~~~~~~~~~
 
 STM32G0系列属于较新的产品，也重点优化了ADC的性能，相较于使用最广泛的STM32F1系列，在ADC初始化阶段需要更长的时间，所以在采样的时候需要过滤开始阶段无效的数据。
 
-option bytes
+BOOT
 ~~~~~~~~~~~~~
 
 芯片出厂默认从system flash启动，需要修改option bytes才能从用户代码启动，而boot 0 脚与调试口共用，在调试时很容易一开始跑到system flash 的BootLoader里面去了。通过修改option byte 将启动位置改为由Boot 0脚控制（Boot 0脚接100K电阻下拉）
