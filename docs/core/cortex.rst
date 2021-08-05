@@ -3,6 +3,7 @@
 
 Cortex Architecture
 ====================
+.. program:: Cortex
 
 .. contents:: 目录索引
     :local:
@@ -11,8 +12,6 @@ Cortex Architecture
 
 Cortex-M
 -------------
-
-.. program:: Cortex
 
 .. _cortex_m0:
 
@@ -26,7 +25,6 @@ Cortex-M
 
 ``Cortex-M3``
 ~~~~~~~~~~~~~~
-
 .. option::
     -M3
 
@@ -34,7 +32,6 @@ Cortex-M
 
 ``Cortex-M4``
 ~~~~~~~~~~~~~~
-
 .. option::
     -M4
 
@@ -42,7 +39,6 @@ Cortex-M
 
 ``Cortex-M7``
 ~~~~~~~~~~~~~~
-
 .. option::
     -M7
 
@@ -52,21 +48,24 @@ Cortex-M
 Cortex-R
 ----------
 
-
-Cortex-R5
-~~~~~~~~~~~
-
+``Cortex-R5``
+~~~~~~~~~~~~~~
 .. option::
     -R5
-
 
 .. _cortex_a:
 
 Cortex-A
 ----------
 
-Cortex-A7
-~~~~~~~~~~~
+``Cortex-A7``
+~~~~~~~~~~~~~~
 
 .. option::
     -A7
+
+``Cortex-A53``
+~~~~~~~~~~~~~~
+
+.. option::
+    -A53

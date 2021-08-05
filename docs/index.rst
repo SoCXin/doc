@@ -11,12 +11,12 @@
 
 
 .. toctree::
-    :caption: 新品速递
+    :caption: 新品速览
     :maxdepth: 1
 
-    极低成本 <news/lowcost>
-    高性价比 <news/economy>
-    无可替代 <news/unique>
+    热度榜单 <news/hot>
+    特色榜单 <news/spec>
+    性能榜单 <news/unique>
 
 .. toctree::
     :caption: 应用领域
@@ -30,12 +30,12 @@
     边缘计算 <tier/edge>
 
 .. toctree::
-    :caption: 经典厂商
+    :caption: 热荐厂商
     :maxdepth: 1
 
     STM <ST/index>
-    WCH <WCH/MCU>
-    ESP <espressif/SoC>
+    Wch <WCH/MCU>
+    Espressif <espressif/SoC>
 
 .. toctree::
     :caption: 内核架构
