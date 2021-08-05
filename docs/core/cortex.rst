@@ -4,26 +4,42 @@
 Cortex
 =========
 
-
-.. contents:: 目录
+.. contents:: 目录索引
     :local:
 
 
 Cortex-M
 ---------
+
 .. program:: Cortex
+
+Cortex-M0
+~~~~~~~~~~~
+
 .. option::
-    -M0, -M3, -M4, -M7
+    -M0
 
-.. code-block:: bash
+Cortex-M3
+~~~~~~~~~~~
 
-    pio [OPTIONS] COMMAND
-    # alias of "pio"
-    platformio [OPTIONS] COMMAND
+.. option::
+    -M3
+
+Cortex-M4
+~~~~~~~~~~~
+
+.. option::
+    -M4
 
 
 Cortex-R
 ----------
+
+Cortex-R5
+~~~~~~~~~~~
+
+.. option::
+    -R5
 
 .. program:: pio
 
@@ -54,3 +70,8 @@ Show help for the available options and commands
 Cortex-A
 ----------
 
+Cortex-A7
+~~~~~~~~~~~
+
+.. option::
+    -A7

@@ -20,6 +20,7 @@ STM32F0 series
     STM32F030
     STM32F051
 
+.. _st_stm32g0:
 
 STM32G0 series
 -----------------
