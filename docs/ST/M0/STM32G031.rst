@@ -186,9 +186,9 @@ blink示例
 
 关于 :ref:`st` MCU构建的 `开源项目 <https://github.com/search?q=STM32>`_ 有32000多个(和G0系列相关较少)，其中最主要的类别是arduino，STM32也是arduino的最佳运行平台之一。
 
-* [Arduino_Core_STM32](https://github.com/stm32duino/Arduino_Core_STM32)
-* [STM32CubeG0](https://github.com/STMicroelectronics/STM32CubeG0)
-* [rust API](https://github.com/stm32-rs/stm32g0xx-hal)
+* `Arduino_Core_STM32 <https://github.com/stm32duino/Arduino_Core_STM32>`_
+* `STM32CubeG0 <https://github.com/STMicroelectronics/STM32CubeG0>`_
+* `rust <https://github.com/stm32-rs/stm32g0xx-hal>`_
 
 
 xin总结
