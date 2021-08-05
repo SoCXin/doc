@@ -32,7 +32,7 @@ STM32G0
 
     STM32G030
     STM32G031
-
+    G0对比F0 <F0VSG0>
 
 .. _st_stm32l0:
 
