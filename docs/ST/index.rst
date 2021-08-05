@@ -15,7 +15,7 @@ ST 意法半导体是全球最大的半导体公司之一，是MCU领域的王�
 针对低阶和对成本敏感的领域，提供的低成本方案，主要包括 8bit MCU和 32bit Cortex-M0 系列
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     STM8        <STM8/index>
     Cortex-M0   <M0/index>

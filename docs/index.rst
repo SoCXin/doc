@@ -16,18 +16,28 @@
 
     热度榜单 <news/hot>
     特色榜单 <news/spec>
+    方案榜单 <news/scheme>
     性能榜单 <news/unique>
 
 .. toctree::
     :caption: 应用领域
     :maxdepth: 1
 
-    机电控制 <tier/lowend>
-    数据采集 <tier/main>
-    人机交互 <tier/core>
-    无线通信 <tier/IoT>
-    网络连接 <tier/asic>
-    边缘计算 <tier/edge>
+    人机交互 <field/hmi>
+    无线通信 <field/iot>
+    边缘计算 <field/edge>
+    传感器  <field/sensor>
+    机电控制 <field/motor>
+
+.. toctree::
+    :caption: 内核分类
+    :maxdepth: 1
+
+    ARM     <core/arm>
+    MIPS    <core/MIPS>
+    MCS51   <core/MCS51>
+    Cortex  <core/cortex>
+    RISC-V  <core/RISC-V>
 
 .. toctree::
     :caption: 热荐厂商
@@ -36,13 +46,4 @@
     STM <ST/index>
     Wch <WCH/MCU>
     Espressif <espressif/SoC>
-
-.. toctree::
-    :caption: 内核架构
-    :maxdepth: 1
-
-    MCS51   <core/MCS51>
-    ARM     <core/cortex>
-    MIPS    <core/MIPS>
-    RISC-V  <core/RISC-V>
 

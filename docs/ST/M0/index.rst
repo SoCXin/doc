@@ -1,7 +1,7 @@
 
 .. _st_cortex_m0:
 
-ST Cortex-M0 Series
+ST Cortex-M0
 ======================
 
 architecture  :option:`Cortex -M0`
@@ -12,7 +12,7 @@ architecture  :option:`Cortex -M0`
 
 .. _st_stm32f0:
 
-STM32F0 Series
+STM32F0
 --------------------
 
 .. toctree::
@@ -21,9 +21,10 @@ STM32F0 Series
     STM32F030
     STM32F051
 
+
 .. _st_stm32g0:
 
-STM32G0 Series
+STM32G0
 --------------------
 
 .. toctree::
@@ -32,16 +33,8 @@ STM32G0 Series
     STM32G030
     STM32G031
 
-.. _st_f0vsg0:
 
-STM32G0 vs STM32F0
-~~~~~~~~~~~~~~~~~~~
+.. _st_stm32l0:
 
-.. image:: ./images/F0VSG0_Core.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
-
-.. image:: ./images/F0VSG0_FLASH.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
-
-.. image:: ./images/F0VSG0_ADC.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
+STM32L0
+--------------------
