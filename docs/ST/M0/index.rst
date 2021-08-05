@@ -26,29 +26,22 @@ STM32F0 Series
 STM32G0 Series
 --------------------
 
-.. image:: ./images/STM32G0x1_line.jpg
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
-
 .. toctree::
     :maxdepth: 1
 
+    STM32G030
     STM32G031
 
 .. _st_f0vsg0:
 
-STM32G0系统更新
+STM32G0 vs STM32F0
 ~~~~~~~~~~~~~~~~~~~
 
 .. image:: ./images/F0VSG0_Core.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
-STM32G0存储更新
-~~~~~~~~~~~~~~~~~~~
-
 .. image:: ./images/F0VSG0_FLASH.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
-STM32G0 ADC更新
-~~~~~~~~~~~~~~~~~~~
 .. image:: ./images/F0VSG0_ADC.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html

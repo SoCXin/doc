@@ -1,7 +1,7 @@
 
-.. _st_stm32g031:
+.. _st_stm32g030:
 
-STM32G031
+STM32G030
 ===============
 
 .. contents:: 目录索引
@@ -10,8 +10,8 @@ STM32G031
 Xin简介
 -----------
 
-`STM32G031 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_  是ST :ref:`cortex_m0` 单核MCU，相关实用工程文件可查看
-`GitHub <https://github.com/SoCXin/STM32G031>`_
+`STM32G030 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html>`_  是ST :ref:`cortex_m0` 单核MCU，相关实用工程文件可查看
+`GitHub <https://github.com/SoCXin/STM32G030>`_
 
 .. image:: ./images/STM32G031.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
@@ -60,7 +60,7 @@ Xin实践
 
 STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发板中最常用的型号为 STM32G031J6 和 STM32G031K8
 
-.. image:: ./images/B_STM32G031.jpg
+.. image:: ./images/B_STM32G030.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.5fcf7cd1dZFnby&id=636761611307&ns=1&abbucket=19#detail
 
 开发工具
