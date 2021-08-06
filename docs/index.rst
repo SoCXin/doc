@@ -44,6 +44,6 @@
     :maxdepth: 1
 
     STM <ST/index>
-    Wch <WCH/MCU>
+    WCH <WCH/MCU>
     Espressif <espressif/SoC>
 

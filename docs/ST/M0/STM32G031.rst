@@ -68,7 +68,7 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
 
 使用STM32芯片最直接方式是通过 `stm32cube <https://www.st.com/zh/ecosystems/stm32cube.html>`_ 工具构建基本运行体，不用开发者自己去研究寄存器初始化相应外设（但请注意使能）。
 
-源圈OS-Q通过先验证的方式，集成了更多可信赖资源 `PlatformIO STM32G0 Enhanced <https://github.com/OS-Q/P215>`_ 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。
+源圈OS-Q验证后整合的开发框架 `P215 <https://github.com/OS-Q/P215>`_ ，集成了更多可用资源，兼容stm32cube及stm32cubeIDE，作为一个开源编译体系，便于多系统下开发和云端部署。
 
 
 示例代码
@@ -117,14 +117,21 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
 
     int main(void)
     {
-
-        HAL_UART_Receive_IT(&huart1, &RxData, 1);   //中断接收使能
-        HAL_TIM_PWM_Start(&htim16,TIM_CHANNEL_1);   //PWM输出使能
-        HAL_TIM_Base_Start_IT(&htim17);             //定时器使能
+        LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+        LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
+        LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
+        LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
+        LL_GPIO_ResetOutputPin(LED_GPIO_Port, LED_Pin);
+        GPIO_InitStruct.Pin = LED_Pin;
+        GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+        GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+        GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+        GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+        LL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
         while (1)
         {
-            HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-            HAL_Delay(500);
+            LL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+            LL_mDelay(400);
         }
     }
 
@@ -133,16 +140,17 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
 
 .. code-block:: bash
 
-    > pio device list --mdns --logical
-    Multicast DNS Services
-    ======================
+    int main(void)
+    {
+        ENABLE_GPIO_CLOCK;              // enable the clock to GPIO
+        LEDPORT->_MODER |= GPIOMODER;   // set pins to be general purpose output
+        for (;;) {
+        ms_delay(500);
+        LEDPORT->ODR ^= (1<<LED1);      // toggle diodes
+        }
+        return 0;
+    }
 
-    PlatformIO._bttremote._tcp.local.
-    ------------------------------
-    Type: _bttremote._tcp.local.
-    IP: ...
-    Port: 62941
-    Properties: ...
 
 
 开源项目
@@ -162,13 +170,15 @@ Xin总结
 
 STM32G031产品定位入门，FLASH和RAM资源都相对受限，虽然可以运行FreeRTOS等系统，但其并不是RTOS的理想载体，而且作为长期项目开发，需要通过使用LL库释放更多资源。
 
-注意点
-~~~~~~~~~
+
+ ``注意事项``
+~~~~~~~~~~~~~~
 
 STM32G0系列属于较新的产品，也重点优化了ADC的性能，相较于使用最广泛的STM32F1系列，在ADC初始化阶段需要更长的时间，所以在采样的时候需要过滤开始阶段无效的数据。
 
-槽点
-~~~~~~~~~~
+
+ ``使用槽点``
+~~~~~~~~~~~~~
 
 芯片出厂默认从system flash启动，需要修改option bytes才能从用户代码启动，而boot 0 脚与调试口共用，在调试时很容易一开始跑到system flash 的BootLoader里面去了。通过修改option byte 将启动位置改为由Boot 0脚控制（Boot 0脚接100K电阻下拉）
 
