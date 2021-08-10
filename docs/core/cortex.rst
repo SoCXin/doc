@@ -69,3 +69,12 @@ Cortex-A
 
 .. option::
     -A53
+
+总线通信
+----------
+
+.. toctree::
+    :maxdepth: 1
+
+    AMBA <amba>
+
