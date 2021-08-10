@@ -1,7 +1,7 @@
 
-.. _st_cortex_top:
+.. _st_top:
 
-ST Cortex TOP
+STM32 TOP
 ====================
 
 

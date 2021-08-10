@@ -1,20 +1,20 @@
 
 .. _hot:
 
-HOT Xin
-================
+热度Xin榜
+==============
 
-主要收录当下被广泛研究和使用的芯，趁热吃味道更佳。
 
-STM性价比Xin
+STM32
 -------------
 
 .. toctree::
     :maxdepth: 1
 
+    STM32G030 <../ST/M0/STM32G030>
     STM32G031 <../ST/M0/STM32G031>
 
-低阶全能MCU
+lowend
 -------------
 
 .. toctree::

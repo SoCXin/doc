@@ -21,6 +21,8 @@ Cortex-M
 .. option::
     -M0
 
+    STM32   <../ST/M0/index>
+
 .. _cortex_m3:
 
 ``Cortex-M3``
@@ -70,11 +72,5 @@ Cortex-A
 .. option::
     -A53
 
-总线通信
-----------
 
-.. toctree::
-    :maxdepth: 1
-
-    AMBA <amba>
-
+.. include:: amba.rst

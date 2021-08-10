@@ -114,21 +114,30 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
     }
 
 
-2. 基于STM32CubeMX生成LL库工程
+2. 通过后备寄存器判断是否初始化RTC时钟
 
 .. code-block:: bash
 
-    int main(void)
+    if (HAL_RTC_Init(&hrtc) != HAL_OK)
     {
+        Error_Handler();
+    }
+    /* USER CODE BEGIN Check_RTC_BKUP */
+    if(HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR1) == 0x1234) return;    //如果已设定则不再初始化
+    else HAL_RTCEx_BKUPWrite(&hrtc,RTC_BKP_DR1,0x1234);     //如果未设定过RTC时间，则初始化
+    /* USER CODE END Check_RTC_BKUP */
 
-        HAL_UART_Receive_IT(&huart1, &RxData, 1);   //中断接收使能
-        HAL_TIM_PWM_Start(&htim16,TIM_CHANNEL_1);   //PWM输出使能
-        HAL_TIM_Base_Start_IT(&htim17);             //定时器使能
-        while (1)
-        {
-            HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-            HAL_Delay(500);
-        }
+    /** Initialize RTC and set the Time and Date
+    */
+    sTime.Hours = 0x0;
+    sTime.Minutes = 0x0;
+    sTime.Seconds = 0x0;
+    sTime.SubSeconds = 0x0;
+    sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+    sTime.StoreOperation = RTC_STOREOPERATION_RESET;
+    if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
+    {
+        Error_Handler();
     }
 
 
