@@ -36,29 +36,33 @@ Cortex-M
 
     内核简介    <cortexM0>
 
-.. _cortex_m3:
 
 ``Cortex-M3``
 ~~~~~~~~~~~~~~
 .. option::
     -M3
 
-.. _cortex_m4:
+.. toctree::
+    :maxdepth: 1
+
+    内核简介    <cortexM3>
 
 ``Cortex-M4``
 ~~~~~~~~~~~~~~
 .. option::
     -M4
 
-.. _cortex_m7:
+.. toctree::
+    :maxdepth: 1
+
+    内核简介    <cortexM4>
+
 
 ``Cortex-M7``
 ~~~~~~~~~~~~~~
 .. option::
     -M7
 
-
-.. _cortex_r:
 
 Cortex-R
 ----------
@@ -67,8 +71,6 @@ Cortex-R
 ~~~~~~~~~~~~~~
 .. option::
     -R5
-
-.. _cortex_a:
 
 Cortex-A
 ----------

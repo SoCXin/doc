@@ -1,10 +1,10 @@
 
 .. _st_cortex_m3:
 
-ST Cortex-M3 MCU
+ST Cortex-M3
 ==================
 
-关于内核可查看 :ref:`cortex`.
+:ref:`cortex_m3`
 
 .. contents:: 目录
     :local:

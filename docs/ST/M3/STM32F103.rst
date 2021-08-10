@@ -2,106 +2,120 @@
 .. _st_stm32f103:
 
 STM32F103
-==========
+===============
 
-.. contents::
+:ref:`st` :ref:`cortex_m3` 单核 MCU，资源仓库 `GitHub <https://github.com/SoCXin/STM32F103>`_
 
-Usage
------
+.. contents:: 目录索引
+    :local:
 
-.. code-block:: bash
-
-    pio ci [OPTIONS] [SRC]
-
-
-Description
+Xin推荐
 -----------
 
-which can be a path to directory, file or
-`Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_.
-Also, you can omit ``SRC`` argument and set path (multiple paths are allowed
-denoting with ``:``) to
-``PLATFORMIO_CI_SRC`` `Environment variable <http://en.wikipedia.org/wiki/Environment_variable>`_
-
-For more details as for MCS51 with the popular Continuous Integration
-Systems please follow to :ref:`wch` page.
-
-.. note::
-    :ref:`st_stm32f103` command is useful for library developers. It allows one to build
-    different examples without creating own project per them.
-
-Options
--------
-
-.. program:: pio ci
-
-.. option::
-    -l, --lib
-
-Source code which will be copied to ``<BUILD_DIR>/lib`` directly.
+性能：``170MHz`` 、``213DMIPS`` 、``550CoreMark``
 
 
-.. option::
-    --exclude
 
-For example, exclude from project ``src`` directory:
+``关键特性``
+~~~~~~~~~~~~~~
 
-* ``examples`` folder
-* ``*.h`` files from ``foo`` folder
+* 5个超快速12位ADC（4 Msamples/s）
+* 7个12位DAC（15 Msamples/s）
+* 7个超快速比较器（17ns）
+* 6个具有可编程增益的运算放大器
+* 最多3个CAN-FD
+* USB Type-C接口以及物理层（PHY）
+* USB 2.0 FS
+* AES-256硬件
+
+Xin对比
+-----------
+
+
+竞品分析
+~~~~~~~~~
+
+
+
+型号对比
+~~~~~~~~~
+
+
+
+Xin实践
+-----------
+
+
+开发工具
+~~~~~~~~~~~
+
+使用STM32芯片最直接方式是通过 `stm32cube <https://www.st.com/zh/ecosystems/stm32cube.html>`_ 工具构建基本运行体，不用开发者自己去研究寄存器初始化相应外设（但请注意使能）。
+
+源圈OS-Q通过先验证的方式，集成了更多可信赖资源 `PlatformIO STM32G4 Enhanced <https://github.com/OS-Q/P211>`_ 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。
+
+
+示例代码
+~~~~~~~~~~~
+
+1. 基于STM32CubeMX生成HAL库工程
 
 .. code-block:: bash
 
-    pio ci --exclude=src/examples --exclude=src/foo/*.h [SRC]
+    uint8_t RxData;     //中断接收串口1数据
+    void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+    {
+        if(&huart1 == huart) {
+            HAL_UART_Receive_IT(huart, &RxData, 1);
+        }
+    }
 
-.. option::
-    -b, --MCU
+    void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+    {
+        if(htim==(&htim17)) //定时器中断函数
+        {
+            g_run_tick++;
+        }
+    }
 
-Build project with automatically pre-generated environments based on board
-settings.
+    int main(void)
+    {
+        /* USER CODE BEGIN 2 */
+        HAL_UART_Receive_IT(&huart1, &RxData, 1);   //中断接收使能
+        HAL_TIM_PWM_Start(&htim16,TIM_CHANNEL_1);   //PWM输出使能
+        HAL_TIM_Base_Start_IT(&htim17);             //定时器使能
+        /* USER CODE END 2 */
+        while (1)
+        {
+            /* USER CODE BEGIN 3 */
+            HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+            HAL_Delay(500);
+        }
+        /* USER CODE END 3 */
+    }
 
-For more details please look into :option:`Cortex -M3`.
 
-.. option::
-    --build-dir
 
-Path to directory where PlatformIO will initialise new project. By default it's
-temporary directory within your operating system.
+开源项目
+~~~~~~~~~
 
-.. note::
+如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
 
-    This directory will be removed at the end of build process. If you want to
-    keep it
+关于 :ref:`st` MCU构建的 `开源项目 <https://github.com/search?q=STM32>`_ 有32000多个(和G0系列相关较少)，其中最主要的类别是arduino，STM32也是arduino的最佳运行平台之一。
 
-.. option::
-    --keep-build-dir
+* `Arduino_Core_STM32 <https://github.com/stm32duino/Arduino_Core_STM32>`_
+* `STM32CubeG4 <https://github.com/STMicroelectronics/STM32CubeG4>`_
 
-.. option::
-    -c, --project-conf
 
-Build project using pre-configured :ref:`mips`.
+Xin总结
+--------------
 
-.. option::
-    -O, --project-option
 
-Pass additional options from :ref:`mips` to :ref:`st` command.
-For example, automatically install dependent libraries
-``pio ci --project-option="lib_deps=ArduinoJSON"`` or ignore specific
-library ``pio ci --project-option="lib_ignore=SomeLib"``.
 
-.. note::
-    Use multiple ``--project-option`` to pass multiple options to
-    :ref:`mips`. One option per one argument. For example,
-    ``pio ci --project-option="build_unflags = -std=gnu++11" --project-option="build_flags = -std=c++14"``
+``重点提示``
+~~~~~~~~~~~~~
 
-.. option::
-    -v, --verbose
 
-Shows detailed information when processing environments.
 
-This option can also be set globally using :ref:`st` setting
-or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
+``使用槽点``
+~~~~~~~~~~~~~
 
-Examples
---------
-
-For the others examples please follow to :ref:`st` page.

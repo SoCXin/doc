@@ -17,6 +17,8 @@ Xin推荐
 .. image:: ./images/STM32G474.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
+内嵌了数学运算加速器，具有丰富的内置数模外设，运放、比较器、DA、AD等，硬件加密使用的是AES-256，带有双安全存储区域。G4系列典型应用之一正是电机控制。
+
 
 ``关键特性``
 ~~~~~~~~~~~~~~
@@ -106,7 +108,6 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
 
 如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
 
-关于 :ref:`st` MCU构建的 `开源项目 <https://github.com/search?q=STM32>`_ 有32000多个(和G0系列相关较少)，其中最主要的类别是arduino，STM32也是arduino的最佳运行平台之一。
 
 * `Arduino_Core_STM32 <https://github.com/stm32duino/Arduino_Core_STM32>`_
 * `STM32CubeG4 <https://github.com/STMicroelectronics/STM32CubeG4>`_

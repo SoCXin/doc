@@ -1,10 +1,10 @@
 
 .. _st_cortex_m4:
 
-Cortex-M4
+ST Cortex-M4
 =====================
 
-关于内核可查看 :ref:`cortex`.
+:ref:`cortex_m4`
 
 .. contents:: 目录
     :local:
