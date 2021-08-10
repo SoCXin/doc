@@ -23,3 +23,11 @@ APB
 Advanced Peripheral Bus, APB主要用于低带宽的周边外设之间的连接，例如UART、1284等，它的总线架构不像 AHB支持多个主模块，在APB里面唯一的主模块就是APB 桥。再往下，APB2负责AD，I/O，高级TIM，串口1；APB1负责DA，USB，SPI，I2C，CAN，串口2345，普通TIM。
 
 APB主要用在低速且低功率的外围，可针对外围设备作功率消耗及复杂接口的最佳化。APB在AHB和低带宽的外围设备之间提供了通信的桥梁，所以APB是AHB或ASB的二级拓展总线。
+
+
+相关产品
+----------
+.. toctree::
+    :maxdepth: 1
+
+    STM32   <../ST/M0/index>

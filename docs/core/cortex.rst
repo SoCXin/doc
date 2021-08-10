@@ -30,8 +30,11 @@ Cortex-M
 
 .. option::
     -M0
+
+.. toctree::
+    :maxdepth: 1
+
     内核简介    <cortexM0>
-    STM32   <../ST/M0/index>
 
 .. _cortex_m3:
 
