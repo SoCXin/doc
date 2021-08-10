@@ -54,7 +54,6 @@ This variant is default choice for native PlatformIO projects:
               command: pip install --upgrade platformio
           - run:
               name: Compile Project
-              command: pio run
 
     workflows:
       main:

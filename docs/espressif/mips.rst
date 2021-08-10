@@ -1,6 +1,6 @@
 .. _espressif_mips:
 
-Espressif MIPS
+Espressif Xtensa
 ======================
 
 .. toctree::

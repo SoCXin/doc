@@ -4,6 +4,13 @@
 热度Xin榜
 ==============
 
+IoT
+-------------
+
+.. toctree::
+    :maxdepth: 1
+
+    ESP32 <../espressif/ESP32>
 
 STM32
 -------------

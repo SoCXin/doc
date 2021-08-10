@@ -3,7 +3,7 @@
 ESP32
 ===============
 
-:ref:`espressif` :ref:`cortex_m4` Dual Core SoC，资源仓库 `GitHub <https://github.com/SoCXin/ESP32>`_
+:ref:`espressif` :ref:`xtensa` Dual Core WiFi SoC，资源仓库 `GitHub <https://github.com/SoCXin/ESP32>`_
 
 .. contents:: 目录索引
     :local:
@@ -11,7 +11,7 @@ ESP32
 Xin推荐
 -----------
 
-性能：``240MHz`` 、``600DMIPS``
+标签：``240MHz`` ``600DMIPS`` ``WiFi``
 
 .. image:: ./images/ESP32.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
@@ -22,16 +22,14 @@ Xin推荐
 ``关键特性``
 ~~~~~~~~~~~~~~
 
-* Xtensa® LX6 240 MHz,40nm, 600 MIPS（ESP32-S0WD 200 MIPS，ESP32-D2WD 400 MIPS）
+* Xtensa® LX6 240 MHz,40nm, 600DMIPS
 * 520 KB SRAM (TCM)，448 KB ROM
-* 1T1R 802.11 b/g/n WiFi，802.11n速度可达 150 Mbps
+* WiFi 1T1R 802.11 b/g/n
 * BLE v4.2 +12 dBm，–97dBm
-* 3 x UART
 * CAN
-* Host SD/eMMC/SDIO
-* Slave SDIO/SPI
+* Host SD/eMMC/SDIO、Slave SDIO/SPI
 * IEEE 1588 MAC
-* 硬件加密单元： AES/RSA/ECC
+* 硬件加密单元AES/RSA/ECC
 * 霍尔传感器
 
 

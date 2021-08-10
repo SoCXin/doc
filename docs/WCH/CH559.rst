@@ -34,9 +34,6 @@ CH559
 
 .. code-block:: bash
 
-    pip install -U platformio
-    pio run -e <ID_1> -e <ID_2> -e <ID_N>
-
 * CH559L:LQFP48 (7*7mm)
 * CH559T:SSOP20 (5.3mm)
 

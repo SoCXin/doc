@@ -23,11 +23,11 @@
     :caption: 领域速览
     :maxdepth: 1
 
-    人机交互 <field/hmi>
-    无线通信 <field/iot>
-    边缘计算 <field/edge>
-    传感器  <field/sensor>
-    机电控制 <field/motor>
+    人机交互    <field/hmi>
+    无线通信    <field/iot>
+    边缘计算    <field/edge>
+    感知网络    <field/sensor>
+    机电控制    <field/motor>
 
 .. toctree::
     :caption: 架构速览

@@ -30,16 +30,3 @@ STC8G
 STC8H
 -------
 
-.. program:: pio run
-
-.. option::
-    -e, --environment
-
-.. option::
-    -t, --target
-
-Process specified targets. Multiple targets are allowed.
-
-.. option::
-    --list-targets
-
