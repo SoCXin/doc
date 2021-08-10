@@ -11,7 +11,7 @@
 
 
 .. toctree::
-    :caption: 新品速览
+    :caption: 榜单速览
     :maxdepth: 1
 
     热度榜单 <news/hot>
@@ -20,7 +20,7 @@
     性能榜单 <news/unique>
 
 .. toctree::
-    :caption: 应用领域
+    :caption: 领域速览
     :maxdepth: 1
 
     人机交互 <field/hmi>
@@ -30,7 +30,7 @@
     机电控制 <field/motor>
 
 .. toctree::
-    :caption: 内核分类
+    :caption: 架构速览
     :maxdepth: 1
 
     ARM     <core/arm>
@@ -40,10 +40,10 @@
     RISC-V  <core/RISC-V>
 
 .. toctree::
-    :caption: 热荐厂商
+    :caption: 厂商速览
     :maxdepth: 1
 
     STM <ST/index>
     WCH <WCH/MCU>
-    Espressif <espressif/SoC>
+    Espressif <espressif/index>
 

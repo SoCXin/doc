@@ -1,177 +1,127 @@
-
 .. _espressif_esp32:
 
 ESP32
-----------------
+===============
 
-.. contents::
+:ref:`espressif` :ref:`cortex_m4` Dual Core SoC，资源仓库 `GitHub <https://github.com/SoCXin/ESP32>`_
+
+.. contents:: 目录索引
     :local:
 
-.. _projectconf_env_platform:
+Xin推荐
+-----------
 
-``platform``
-^^^^^^^^^^^^
+性能：``240MHz`` 、``600DMIPS``
 
-Type: ``String`` | Multiple: ``No``
+.. image:: ./images/ESP32.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
-:ref:`st` name.
-
-PlatformIO allows one to use specific version of platform using
-`Semantic Versioning <https://devhints.io/semver>`_ (X.Y.Z=MAJOR.MINOR.PATCH) or VCS
-(Git, Mercurial and Subversion).
-
-Version specifications can take any of the following forms:
-
-* ``1.2.3``: an exact version number. Use only this exact version
-* ``^1.2.3``: any compatible version (exact version for ``1.x.x`` versions)
-* ``~1.2.3``: any version with the same major and minor versions, and an
-  equal or greater patch version
-* ``>1.2.3``: any version greater than ``1.2.3``. ``>=``, ``<``, and ``<=``
-  are also possible
-* ``>0.1.0,!=0.2.0,<0.3.0``: any version greater than ``0.1.0``, not equal to
-  ``0.2.0`` and less than ``0.3.0``
-
-Other forms are the same as for the  :ref:`wch` command.
-
-Examples:
-
-.. code-block:: ini
-
-    [env:the_latest_version]
-    platform = atmelavr
-
-    [env:exact_version]
-    platform = atmelavr@1.2.3
-
-    [env:specific_major_version]
-    platform = atmelavr@^1.2.3
-
-    [env:specific_major_and_minor_version]
-    platform = atmelavr@~1.2.3
-
-    [env:development_verion_by_git]
-    platform = https://github.com/platformio/platform-ststm32.git
-
-    [env:custom_git_branch]
-    platform = https://github.com/platformio/platform-espressif8266.git#feature/stage
-
-    [env:specific_git_commit]
-    platform = https://github.com/platformio/platform-espressif8266.git#921855a9c530082efddb5d48b44c3f4be0e2dfa2
-
-.. _projectconf_env_platform_packages:
-
-``platform_packages``
-^^^^^^^^^^^^^^^^^^^^^
-
-Type: ``String`` | Multiple: ``Yes``
+内嵌了数学运算加速器，具有丰富的内置数模外设，运放、比较器、DA、AD等，硬件加密使用的是AES-256，带有双安全存储区域。G4系列典型应用之一正是电机控制。
 
 
-Examples:
+``关键特性``
+~~~~~~~~~~~~~~
 
-.. code-block:: ini
-
-    [env:override_default_toolchain]
-    platform = atmelavr
-    platform_packages =
-      ; use GCC AVR 5.0+
-      toolchain-gccarmnoneeabi@>1.50000.0
-
-    [env:override_framework]
-    platform = espressif8266
-    platform_packages =
-      ; use upstream Git version
-      framework-arduinoespressif8266 @ https://github.com/esp8266/Arduino.git
-
-    [env:external_package]
-    platform = ststm32
-    platform_packages =
-      ; latest openOCD from PlatformIO Package Registry
-      tool-openocd
-
-      ; source code of ST-Link
-      tool-stlink-source @ https://github.com/texane/stlink.git
-
-.. _projectconf_env_framework:
-
-``framework``
-^^^^^^^^^^^^^
-
-Type: ``String`` | Multiple: ``Yes``
-
-:ref:`mips` name.
+* Xtensa® LX6 240 MHz,40nm, 600 MIPS（ESP32-S0WD 200 MIPS，ESP32-D2WD 400 MIPS）
+* 520 KB SRAM (TCM)，448 KB ROM
+* 1T1R 802.11 b/g/n WiFi，802.11n速度可达 150 Mbps
+* BLE v4.2 +12 dBm，–97dBm
+* 3 x UART
+* CAN
+* Host SD/eMMC/SDIO
+* Slave SDIO/SPI
+* IEEE 1588 MAC
+* 硬件加密单元： AES/RSA/ECC
+* 霍尔传感器
 
 
-.. _projectconf_env_board:
-
-``board``
-^^^^^^^^^
-
-Type: ``String (ID)`` | Multiple: ``No``
-
-*PlatformIO* has pre-configured settings for the most popular boards:
-
-- build configuration
-- upload configuration
-- debugging configuration
-- connectivity information, etc.
-
-You can find a valid  ``board`` ID in :ref:`wch` catalog,
-`Boards Explorer <https://www.soc.xin/boards>`_ or
-:ref:`st` command.
-
-``board_build.mcu``
-^^^^^^^^^^^^^^^^^^^
-
-Type: ``String`` | Multiple: ``No``
-
-``board_build.mcu`` is a microcontroller(MCU) type that is used by compiler to
-recognize MCU architecture. The correct type of ``board_build.mcu`` depends on
-platform library. For example, the list of ``board_build.mcu`` for "megaAVR Devices"
-is described `here <http://www.nongnu.org/avr-libc/user-manual/>`_.
-
-The full list of ``board_build.mcu`` for the popular embedded platforms you can find
-in *Boards* section of :ref:`st`. See "Microcontroller" column.
-
-.. _projectconf_board_build.f_cpu:
-
-``board_build.f_cpu``
-^^^^^^^^^^^^^^^^^^^^^
-
-Type: ``Number`` | Multiple: ``No``
+Xin对比
+-----------
 
 
-.. _projectconf_board_build.ldscript:
+竞品分析
+~~~~~~~~~
 
-``board_build.ldscript``
-^^^^^^^^^^^^^^^^^^^^^^^^
 
-Type: ``String`` | Multiple: ``No``
 
-Path to the linker script to be used instead of the one defined by a framework. This
-is useful for specifying a modified linker script, for example, when an application
-requires a special memory section for a bootloader.
+型号对比
+~~~~~~~~~
 
-.. _projectconf_board_more_options:
 
-More options
-^^^^^^^^^^^^
 
-You can override any board option declared in manifest file using the next
+Xin实践
+-----------
 
-.. code-block:: ini
 
-    [env:custom_board_options]
-    ; Custom CPU Frequency
-    board_build.f_cpu = 160000000L
+.. image:: ./images/B_ESP32.jpg
+    :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.28.50e564d3axhB7j&id=624276301887&ns=1&abbucket=19
 
-    ; Custom FLASH Frequency
-    board_build.f_flash = 80000000L
+开发工具
+~~~~~~~~~~~
 
-    ; Custom FLASH Mode
-    board_build.flash_mode = qio
+源圈OS-Q通过先验证的方式，集成了更多可信赖资源 `PlatformIO STM32G4 Enhanced <https://github.com/OS-Q/P511>`_ 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。
 
-    ; Custom linker script
-    board_build.ldscript = /path/to/ldscript.ld
 
-    ; Custom maximum program size
-    board_upload.maximum_size = 1310720
+示例代码
+~~~~~~~~~~~
+
+1. 基于STM32CubeMX生成HAL库工程
+
+.. code-block:: bash
+
+    uint8_t RxData;     //中断接收串口1数据
+    void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+    {
+        if(&huart1 == huart) {
+            HAL_UART_Receive_IT(huart, &RxData, 1);
+        }
+    }
+
+    void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+    {
+        if(htim==(&htim17)) //定时器中断函数
+        {
+            g_run_tick++;
+        }
+    }
+
+    int main(void)
+    {
+        /* USER CODE BEGIN 2 */
+        HAL_UART_Receive_IT(&huart1, &RxData, 1);   //中断接收使能
+        HAL_TIM_PWM_Start(&htim16,TIM_CHANNEL_1);   //PWM输出使能
+        HAL_TIM_Base_Start_IT(&htim17);             //定时器使能
+        /* USER CODE END 2 */
+        while (1)
+        {
+            /* USER CODE BEGIN 3 */
+            HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+            HAL_Delay(500);
+        }
+        /* USER CODE END 3 */
+    }
+
+
+
+开源项目
+~~~~~~~~~
+
+如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
+
+
+* `ESP-IDF <https://github.com/espressif/esp-idf>`_
+
+
+Xin总结
+--------------
+
+
+
+``重点提示``
+~~~~~~~~~~~~~
+
+
+
+``使用槽点``
+~~~~~~~~~~~~~
+
