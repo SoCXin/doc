@@ -4,29 +4,32 @@
 STM32G030
 ===============
 
+:ref:`st` :ref:`cortex_m0` 单核 MCU，资源收录：
+`GitHub <https://github.com/SoCXin/STM32G030>`_
+
 .. contents:: 目录索引
     :local:
 
-Xin简介
+Xin推荐
 -----------
 
-`STM32G030 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html>`_  是ST :ref:`cortex_m0` 单核MCU，相关实用工程文件可查看
-`GitHub <https://github.com/SoCXin/STM32G030>`_
+性能：``64MHz`` 、``59DMIPS`` 、``142CoreMark``
 
 .. image:: ./images/STM32G031.jpg
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
-关键特性
-~~~~~~~~~
+
+``关键特性``
+~~~~~~~~~~~~~~
 
 * 64MHz主频
 * 精确的内部时钟
 * ADC（12bit 2.5 MSps）
 * 5ch x DMA
 * 1KB OTP
+* I2S 接口
 
-
-Xin选择
+Xin对比
 -----------
 
 相对前代 :ref:`st_stm32f0` 系列进行了升级，差异可查看 :ref:`st_f0vsg0` ，拥有更好的模拟性能，主频更高同时如CRC等外设全系标配，相对市场同类产品，拥有自家完善的资源体系和可靠性，是新推出的 ``高性价比`` 的国际一线品牌MCU。
@@ -129,22 +132,6 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
     }
 
 
-3. 基于ARM CMSIS库
-
-.. code-block:: bash
-
-    > pio device list --mdns --logical
-    Multicast DNS Services
-    ======================
-
-    PlatformIO._bttremote._tcp.local.
-    ------------------------------
-    Type: _bttremote._tcp.local.
-    IP: ...
-    Port: 62941
-    Properties: ...
-
-
 开源项目
 ~~~~~~~~~
 
@@ -162,13 +149,15 @@ Xin总结
 
 STM32G031产品定位入门，FLASH和RAM资源都相对受限，虽然可以运行FreeRTOS等系统，但其并不是RTOS的理想载体，而且作为长期项目开发，需要通过使用LL库释放更多资源。
 
-注意点
-~~~~~~~~~
+
+``重点提示``
+~~~~~~~~~~~~~
 
 STM32G0系列属于较新的产品，也重点优化了ADC的性能，相较于使用最广泛的STM32F1系列，在ADC初始化阶段需要更长的时间，所以在采样的时候需要过滤开始阶段无效的数据。
 
-槽点
-~~~~~~~~~~
+
+``使用槽点``
+~~~~~~~~~~~~~
 
 芯片出厂默认从system flash启动，需要修改option bytes才能从用户代码启动，而boot 0 脚与调试口共用，在调试时很容易一开始跑到system flash 的BootLoader里面去了。通过修改option byte 将启动位置改为由Boot 0脚控制（Boot 0脚接100K电阻下拉）
 
