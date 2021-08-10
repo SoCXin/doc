@@ -2,21 +2,171 @@
 .. _st_stm32g474:
 
 STM32G474
-=======================
+===============
 
-Start :ref:`st` on a host machine and work remotely with
-your devices **WITHOUT** extra software, services, SSH, VPN, tunneling or
-opening incoming network ports.
+:ref:`st` :ref:`cortex_m4` 单核 MCU，资源仓库 `GitHub <https://github.com/SoCXin/STM32G474>`_
+
+.. contents:: 目录索引
+    :local:
+
+Xin推荐
+-----------
+
+性能：``64MHz`` 、``59DMIPS`` 、``142CoreMark``
+
+.. image:: ./images/STM32G031.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
 
-pio remote agent list
----------------------
+``关键特性``
+~~~~~~~~~~~~~~
+
+* 64MHz主频
+* 精确的内部时钟
+* ADC（12bit 2.5 MSps）
+* 5ch x DMA
+* 1KB OTP
+* I2S 接口
+
+Xin对比
+-----------
+
+相对前代 :ref:`st_stm32f0` 系列进行了升级，差异可查看 :ref:`st_f0vsg0` ，拥有更好的模拟性能，主频更高同时如CRC等外设全系标配，相对市场同类产品，拥有自家完善的资源体系和可靠性，是新推出的 ``高性价比`` 的国际一线品牌MCU。
 
 
+竞品分析
+~~~~~~~~~
 
-Description
-~~~~~~~~~~~
+命名为xx32F031 的MCU产品非常丰富，就规格而言有大量可替代品，主要竞争力还是在功能稳定性及资源兼容性上，基于STM32Cube的开发生态，有大量资源和工程师团队。
 
-List active :ref:`st` s started using own :ref:`st`
-or shared with you by other PlatformIO developers.
 
+型号对比
+~~~~~~~~~
+
+ :ref:`st_stm32g0` 系列产品中 :ref:`st_stm32g031` 定位入门级，相似有 `STM32G0x0 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html>`_ 超值系列，例如在SON8封装限定下，STM32G031J替换可选STM32G030J6、STM32G041J6
+
+.. image:: ./images/STM32G0.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
+
+
+规格选择
+~~~~~~~~~
+
+.. image:: ./images/STM32G031.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
+
+该系列最具有代表性的产品型号 STM32G031J6 和 STM32G031K8 可以作为标定对象
+
+Xin实践
+--------------
+
+STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发板中最常用的型号为 STM32G031J6 和 STM32G031K8
+
+.. image:: ./images/B_STM32G030.jpg
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.5fcf7cd1dZFnby&id=636761611307&ns=1&abbucket=19#detail
+
+开发工具
+~~~~~~~~~
+
+使用STM32芯片最直接方式是通过 `stm32cube <https://www.st.com/zh/ecosystems/stm32cube.html>`_ 工具构建基本运行体，不用开发者自己去研究寄存器初始化相应外设（但请注意使能）。
+
+源圈OS-Q通过先验证的方式，集成了更多可信赖资源 `PlatformIO STM32G0 Enhanced <https://github.com/OS-Q/P215>`_ 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。
+
+
+示例代码
+~~~~~~~~~
+
+1. 基于STM32CubeMX生成HAL库工程
+
+.. code-block:: bash
+
+    uint8_t RxData;     //中断接收串口1数据
+    void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+    {
+        if(&huart1 == huart) {
+            HAL_UART_Receive_IT(huart, &RxData, 1);
+        }
+    }
+
+    void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+    {
+        if(htim==(&htim17)) //定时器中断函数
+        {
+            g_run_tick++;
+        }
+    }
+
+    int main(void)
+    {
+        /* USER CODE BEGIN 2 */
+        HAL_UART_Receive_IT(&huart1, &RxData, 1);   //中断接收使能
+        HAL_TIM_PWM_Start(&htim16,TIM_CHANNEL_1);   //PWM输出使能
+        HAL_TIM_Base_Start_IT(&htim17);             //定时器使能
+        /* USER CODE END 2 */
+        while (1)
+        {
+            /* USER CODE BEGIN 3 */
+            HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+            HAL_Delay(500);
+        }
+        /* USER CODE END 3 */
+    }
+
+
+2. 通过后备寄存器判断是否初始化RTC时钟
+
+.. code-block:: bash
+
+    if (HAL_RTC_Init(&hrtc) != HAL_OK)
+    {
+        Error_Handler();
+    }
+    /* USER CODE BEGIN Check_RTC_BKUP */
+    if(HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR1) == 0x1234) return;    //如果已设定则不再初始化
+    else HAL_RTCEx_BKUPWrite(&hrtc,RTC_BKP_DR1,0x1234);     //如果未设定过RTC时间，则初始化
+    /* USER CODE END Check_RTC_BKUP */
+
+    /** Initialize RTC and set the Time and Date
+    */
+    sTime.Hours = 0x0;
+    sTime.Minutes = 0x0;
+    sTime.Seconds = 0x0;
+    sTime.SubSeconds = 0x0;
+    sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+    sTime.StoreOperation = RTC_STOREOPERATION_RESET;
+    if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
+    {
+        Error_Handler();
+    }
+
+
+开源项目
+~~~~~~~~~
+
+如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
+
+关于 :ref:`st` MCU构建的 `开源项目 <https://github.com/search?q=STM32>`_ 有32000多个(和G0系列相关较少)，其中最主要的类别是arduino，STM32也是arduino的最佳运行平台之一。
+
+* `Arduino_Core_STM32 <https://github.com/stm32duino/Arduino_Core_STM32>`_
+* `STM32CubeG0 <https://github.com/STMicroelectronics/STM32CubeG0>`_
+* `stm32-rs <https://github.com/stm32-rs/stm32g0xx-hal>`_
+
+
+Xin总结
+--------------
+
+STM32G031产品定位入门，FLASH和RAM资源都相对受限，虽然可以运行FreeRTOS等系统，但其并不是RTOS的理想载体，而且作为长期项目开发，需要通过使用LL库释放更多资源。
+
+
+``重点提示``
+~~~~~~~~~~~~~
+
+STM32G0系列属于较新的产品，也重点优化了ADC的性能，相较于使用最广泛的STM32F1系列，在ADC初始化阶段需要更长的时间，所以在采样的时候需要过滤开始阶段无效的数据。
+
+
+``使用槽点``
+~~~~~~~~~~~~~
+
+芯片出厂默认从system flash启动，需要修改option bytes才能从用户代码启动，而boot 0 脚与调试口共用，在调试时很容易一开始跑到system flash 的BootLoader里面去了。通过修改option byte 将启动位置改为由Boot 0脚控制（Boot 0脚接100K电阻下拉）
+
+STM32G0x1的option bytes 太过牛叉，一不小心就把芯片锁死弄成砖了，所以做烧录器的貌似都比较火大。

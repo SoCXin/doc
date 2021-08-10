@@ -13,13 +13,6 @@ setup(
         ],
         "scripts": ["99-platformio-udev.rules"],
     },
-    entry_points={
-        "console_scripts": [
-            "platformio = platformio.__main__:main",
-            "pio = platformio.__main__:main",
-            "piodebuggdb = platformio.__main__:debug_gdb_main",
-        ]
-    },
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Console",

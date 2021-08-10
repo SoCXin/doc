@@ -1,7 +1,7 @@
 
-.. _cortex_m0:
+.. _cortex_m4:
 
-Cortex-M0
+Cortex-M4
 ====================
 
 .. contents:: 目录索引
@@ -14,4 +14,4 @@ Cortex-M0
 .. toctree::
     :maxdepth: 2
 
-    STM32   <../ST/M0/index>
+    STM32   <../ST/M4/index>
