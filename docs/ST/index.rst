@@ -32,7 +32,7 @@ STMicroelectronics
     Cortex-M3 <M3/index>
     Cortex-M4 <M4/index>
 
-高性能系列
+性能担当
 ----------
 
 .. toctree::
@@ -40,7 +40,7 @@ STMicroelectronics
 
     STM32H7 <TOP/index>
 
-低功耗系列
+功耗优化
 ----------
 
 .. toctree::

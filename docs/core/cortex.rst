@@ -8,19 +8,29 @@ Cortex Architecture
 .. contents:: 目录索引
     :local:
 
+.. _cortex_spec:
+
+内核解读
+----------
+
+.. toctree::
+    :maxdepth: 1
+
+    AMBA <amba>
+
+
 .. _cortex_m:
 
 Cortex-M
 -------------
 
-.. _cortex_m0:
 
 ``Cortex-M0``
 ~~~~~~~~~~~~~~
 
 .. option::
     -M0
-
+    内核简介    <cortexM0>
     STM32   <../ST/M0/index>
 
 .. _cortex_m3:
@@ -73,4 +83,3 @@ Cortex-A
     -A53
 
 
-.. include:: amba.rst
