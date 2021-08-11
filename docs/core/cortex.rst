@@ -10,7 +10,7 @@ Cortex Architecture
 
 .. _cortex_spec:
 
-内核解读
+架构相关
 ----------
 
 .. toctree::

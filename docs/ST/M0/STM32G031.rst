@@ -180,6 +180,8 @@ STM32G0系列属于较新的产品，也重点优化了ADC的性能，相较于�
 ``使用槽点``
 ~~~~~~~~~~~~~
 
-芯片出厂默认从system flash启动，需要修改option bytes才能从用户代码启动，而boot 0 脚与调试口共用，在调试时很容易一开始跑到system flash 的BootLoader里面去了。通过修改option byte 将启动位置改为由Boot 0脚控制（Boot 0脚接100K电阻下拉）
+相较以往STM32的boot模式，新的G0系列芯片出厂默认从system flash启动，boot0管脚无论拉高或拉低都不能从系统存储区（system flash）启动（进入bootloader状态），也就是说如果烧录的程序没有配置SYS调试端口，将无法通过传统的boot0拉高来连接烧录器。
 
-STM32G0x1的option bytes 太过牛叉，一不小心就把芯片锁死弄成砖了，所以做烧录器的貌似都比较火大。
+如果要使能boot 0的功能，需要修改option bytes，将nboot_sel后面的勾选去掉，断电复位，此时芯片的启动方式就由boot0引脚决定了，上拉boot0进bootloader模式。
+
+一不小心就把芯片锁死弄成砖了，可以将PA0（NRST）接地，然后在连接STM32CubeProgrammer前断开接地，这是MCU可以被识别到，然后进行擦除或修改option bytes
