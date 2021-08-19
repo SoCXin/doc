@@ -13,3 +13,5 @@
 /CH557.html -> WCH/CH557.html
 /CH554.html -> WCH/CH554.html
 /CH552.html -> WCH/CH552.html
+/AT32F421.html -> arterytek/AT32F421.html
+/AT32F413.html -> arterytek/AT32F413.html

@@ -15,9 +15,9 @@
     :maxdepth: 1
 
     热度榜单 <news/hot>
+    方案榜单 <news/hop>
+    性能榜单 <news/top>
     特色榜单 <news/spec>
-    方案榜单 <news/scheme>
-    性能榜单 <news/unique>
 
 .. toctree::
     :caption: 领域速览

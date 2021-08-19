@@ -1,7 +1,7 @@
 
 .. _arterytek:
 
-雅特力arterytek
+雅特力
 =================
 
 .. note::

@@ -12,7 +12,7 @@ AT32F421
 Xin简介
 -----------
 
-性能：``120MHz`` 、``150DMIPS`` 、``390CoreMark``
+关键词：``120MHz``  ``Cortex-M4``  ``-40~105°C``
 
 超值型ARM® Cortex®-M4微控制器，高达120MHz的CPU运算速度与内建数字信号处理器(DSP)，最高可支持64KB闪存存储器(Flash)及16KB随机存取存储器(SRAM)，片上还集成了多达2个USART、2个SPI(可复用I²S)、2个I²C、1个16位高级定时器、5个16位通用定时器，和5通道DMA控制器。 同时还扩展了1个高速轨到轨输入/输出模拟电压比较器，1个采样率高达2M SPS的12位15通道高速ADC，可充分满足高速数据采集、混合信号处理和工业控制与电机应用要求。 几乎所有I/O口可容忍5V输入信号，且所有I/O口均为快速I/O，具有多种可选功能还支持端口重映射，极佳的灵活性和易用性满足多种应用需求。
 
@@ -20,10 +20,9 @@ Xin简介
 关键特性
 ~~~~~~~~~
 
-* Cortex®-M4主频最高120MHz
-* sLib执行代码安全库区
+* Cortex®-M4主频 120MHz
 * 工业级温度范围-40~105°C
-
+* sLib执行代码安全库区
 
 Xin选择
 -----------
@@ -64,9 +63,9 @@ Xin实践
 
 
 示例代码
-~~~~~~~~~
+~~~~~~~~~~~
 
-1. 基于STM32CubeMX生成HAL库工程
+1. 基于官方库工程
 
 .. code-block:: bash
 
@@ -103,56 +102,20 @@ Xin实践
     }
 
 
-2. 基于STM32CubeMX生成LL库工程
-
-.. code-block:: bash
-
-    int main(void)
-    {
-        LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
-        LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
-        LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
-        LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
-        LL_GPIO_ResetOutputPin(LED_GPIO_Port, LED_Pin);
-        GPIO_InitStruct.Pin = LED_Pin;
-        GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-        GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-        GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-        GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-        LL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
-        while (1)
-        {
-            LL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-            LL_mDelay(400);
-        }
-    }
-
-
-
-开源项目
-~~~~~~~~~
-
-如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
 
 
 
 Xin总结
 --------------
 
-STM32G031产品定位入门，FLASH和RAM资源都相对受限，虽然可以运行FreeRTOS等系统，但其并不是RTOS的理想载体，而且作为长期项目开发，需要通过使用LL库释放更多资源。
+AT32F421定位超值产品，直接对标对手的F030/F103系列，拥有更高的制程工艺和性能，具有很大的市场潜力。
 
 
 ``注意事项``
 ~~~~~~~~~~~~~~
 
-STM32G0系列属于较新的产品，也重点优化了ADC的性能，相较于使用最广泛的STM32F1系列，在ADC初始化阶段需要更长的时间，所以在采样的时候需要过滤开始阶段无效的数据。
 
 
 ``使用槽点``
 ~~~~~~~~~~~~~
 
-相较以往STM32的boot模式，新的G0系列芯片出厂默认从system flash启动，boot0管脚无论拉高或拉低都不能从系统存储区（system flash）启动（进入bootloader状态），也就是说如果烧录的程序没有配置SYS调试端口，将无法通过传统的boot0拉高来连接烧录器。
-
-如果要使能boot 0的功能，需要修改option bytes，将 ``nboot_sel`` 后面的勾选去掉，断电复位，此时芯片的启动方式就由boot0引脚决定了，上拉boot0进bootloader模式。
-
-一不小心就把芯片锁死弄成砖了，可以将PA0（NRST）接地，然后在连接STM32CubeProgrammer前断开接地，这是MCU可以被识别到，然后进行擦除或修改option bytes
