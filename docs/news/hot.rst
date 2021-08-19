@@ -28,3 +28,4 @@ lowend
     :maxdepth: 1
 
     STC8G/H <../STC/STC8>
+    AT32F421 <../arterytek/AT32F421>

@@ -46,4 +46,4 @@
     STM <ST/index>
     WCH <WCH/MCU>
     Espressif <espressif/index>
-
+    arterytek <arterytek/index>

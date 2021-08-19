@@ -4,7 +4,7 @@
 STM8
 =====================
 
-.. contents:: Contents
+.. contents:: 目录索引
     :local:
 
 STM8产品定位接近 :ref:`mcs51`

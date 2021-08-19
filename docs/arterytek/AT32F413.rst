@@ -1,8 +1,10 @@
 
-.. _st_stm32g031:
+.. _at_at32f413:
 
-STM32G031
+AT32F413
 ===============
+
+:ref:`arterytek` :ref:`cortex_m4` 单核 MCU，资源仓库 `GitHub <https://github.com/SoCXin/AT32F413>`_
 
 .. contents:: 目录索引
     :local:
@@ -10,11 +12,6 @@ STM32G031
 Xin简介
 -----------
 
-`STM32G031 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_  是ST :ref:`cortex_m0` 单核MCU，相关实用工程文件可查看
-`GitHub <https://github.com/SoCXin/STM32G031>`_
-
-.. image:: ./images/STM32G031.jpg
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
 关键特性
 ~~~~~~~~~
@@ -43,15 +40,10 @@ Xin选择
 
  :ref:`st_stm32g0` 系列产品中 :ref:`st_stm32g031` 定位入门级，相似有 `STM32G0x0 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html>`_ 超值系列，例如在SON8封装限定下，STM32G031J替换可选STM32G030J6、STM32G041J6
 
-.. image:: ./images/STM32G0.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
-
 
 规格选择
 ~~~~~~~~~
 
-.. image:: ./images/STM32G031.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
 该系列最具有代表性的产品型号 STM32G031J6 和 STM32G031K8 可以作为标定对象
 
@@ -60,8 +52,6 @@ Xin实践
 
 STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发板中最常用的型号为 STM32G031J6 和 STM32G031K8
 
-.. image:: ./images/B_STM32G031.jpg
-    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.5fcf7cd1dZFnby&id=636761611307&ns=1&abbucket=19#detail
 
 开发工具
 ~~~~~~~~~
@@ -111,45 +101,7 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
     }
 
 
-2. 基于STM32CubeMX生成LL库工程
 
-.. code-block:: bash
-
-    int main(void)
-    {
-        LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
-        LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
-        LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
-        LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
-        LL_GPIO_ResetOutputPin(LED_GPIO_Port, LED_Pin);
-        GPIO_InitStruct.Pin = LED_Pin;
-        GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-        GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-        GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-        GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-        LL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
-        while (1)
-        {
-            LL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-            LL_mDelay(400);
-        }
-    }
-
-
-3. 基于ARM CMSIS库
-
-.. code-block:: bash
-
-    int main(void)
-    {
-        ENABLE_GPIO_CLOCK;              // enable the clock to GPIO
-        LEDPORT->_MODER |= GPIOMODER;   // set pins to be general purpose output
-        for (;;) {
-        ms_delay(500);
-        LEDPORT->ODR ^= (1<<LED1);      // toggle diodes
-        }
-        return 0;
-    }
 
 
 
@@ -158,11 +110,6 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
 
 如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
 
-关于 :ref:`st` MCU构建的 `开源项目 <https://github.com/search?q=STM32>`_ 有32000多个(和G0系列相关较少)，其中最主要的类别是arduino，STM32也是arduino的最佳运行平台之一。
-
-* `Arduino_Core_STM32 <https://github.com/stm32duino/Arduino_Core_STM32>`_
-* `STM32CubeG0 <https://github.com/STMicroelectronics/STM32CubeG0>`_
-* `stm32-rs <https://github.com/stm32-rs/stm32g0xx-hal>`_
 
 
 Xin总结

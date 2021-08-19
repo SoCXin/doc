@@ -1,8 +1,10 @@
 
-.. _st_stm32g031:
+.. _at_at32f421:
 
-STM32G031
+AT32F421
 ===============
+
+:ref:`arterytek` :ref:`cortex_m4` 单核 MCU，资源仓库 `GitHub <https://github.com/SoCXin/AT32F421>`_
 
 .. contents:: 目录索引
     :local:
@@ -10,27 +12,23 @@ STM32G031
 Xin简介
 -----------
 
-`STM32G031 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_  是ST :ref:`cortex_m0` 单核MCU，相关实用工程文件可查看
-`GitHub <https://github.com/SoCXin/STM32G031>`_
+性能：``120MHz`` 、``150DMIPS`` 、``390CoreMark``
 
-.. image:: ./images/STM32G031.jpg
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
+超值型ARM® Cortex®-M4微控制器，高达120MHz的CPU运算速度与内建数字信号处理器(DSP)，最高可支持64KB闪存存储器(Flash)及16KB随机存取存储器(SRAM)，片上还集成了多达2个USART、2个SPI(可复用I²S)、2个I²C、1个16位高级定时器、5个16位通用定时器，和5通道DMA控制器。 同时还扩展了1个高速轨到轨输入/输出模拟电压比较器，1个采样率高达2M SPS的12位15通道高速ADC，可充分满足高速数据采集、混合信号处理和工业控制与电机应用要求。 几乎所有I/O口可容忍5V输入信号，且所有I/O口均为快速I/O，具有多种可选功能还支持端口重映射，极佳的灵活性和易用性满足多种应用需求。
+
 
 关键特性
 ~~~~~~~~~
 
-* 64MHz主频
-* 精确的内部时钟
-* ADC（12bit 2.5 MSps）
-* 5ch x DMA
-* 1KB OTP
+* Cortex®-M4主频最高120MHz
+* sLib执行代码安全库区
+* 工业级温度范围-40~105°C
 
 
 Xin选择
 -----------
 
-相对前代 :ref:`st_stm32f0` 系列进行了升级，差异可查看 :ref:`st_f0vsg0` ，拥有更好的模拟性能，主频更高同时如CRC等外设全系标配，相对市场同类产品，拥有自家完善的资源体系和可靠性，是新推出的 ``高性价比`` 的国际一线品牌MCU。
-
+该系列定位超值型，主要替代F030 F103 E230 F330等型号
 
 竞品分析
 ~~~~~~~~~
@@ -43,25 +41,19 @@ Xin选择
 
  :ref:`st_stm32g0` 系列产品中 :ref:`st_stm32g031` 定位入门级，相似有 `STM32G0x0 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html>`_ 超值系列，例如在SON8封装限定下，STM32G031J替换可选STM32G030J6、STM32G041J6
 
-.. image:: ./images/STM32G0.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
-
 
 规格选择
 ~~~~~~~~~
 
-.. image:: ./images/STM32G031.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
 该系列最具有代表性的产品型号 STM32G031J6 和 STM32G031K8 可以作为标定对象
 
 Xin实践
 --------------
 
-STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发板中最常用的型号为 STM32G031J6 和 STM32G031K8
 
-.. image:: ./images/B_STM32G031.jpg
-    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.5fcf7cd1dZFnby&id=636761611307&ns=1&abbucket=19#detail
+.. image:: images/B_AT32F421.jpg
+    :target: https://item.taobao.com/item.htm?_u=ogas3eu93a4&id=632845784689
 
 开发工具
 ~~~~~~~~~
@@ -136,33 +128,12 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
     }
 
 
-3. 基于ARM CMSIS库
-
-.. code-block:: bash
-
-    int main(void)
-    {
-        ENABLE_GPIO_CLOCK;              // enable the clock to GPIO
-        LEDPORT->_MODER |= GPIOMODER;   // set pins to be general purpose output
-        for (;;) {
-        ms_delay(500);
-        LEDPORT->ODR ^= (1<<LED1);      // toggle diodes
-        }
-        return 0;
-    }
-
-
 
 开源项目
 ~~~~~~~~~
 
 如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
 
-关于 :ref:`st` MCU构建的 `开源项目 <https://github.com/search?q=STM32>`_ 有32000多个(和G0系列相关较少)，其中最主要的类别是arduino，STM32也是arduino的最佳运行平台之一。
-
-* `Arduino_Core_STM32 <https://github.com/stm32duino/Arduino_Core_STM32>`_
-* `STM32CubeG0 <https://github.com/STMicroelectronics/STM32CubeG0>`_
-* `stm32-rs <https://github.com/stm32-rs/stm32g0xx-hal>`_
 
 
 Xin总结
