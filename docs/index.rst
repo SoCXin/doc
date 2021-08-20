@@ -4,7 +4,7 @@
 
 **A place where Developers find your chip! No more vendor lock-in!**
 
-**Social:** `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
+`LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
 `GitHub <https://GitHub.com/Qitas>`_ |
 `Twitter <https://twitter.com/QitasTang>`_ |
 `Facebook <https://www.facebook.com/qitast>`_
@@ -20,11 +20,11 @@
     特色榜单 <news/spec>
 
 .. toctree::
-    :caption: 领域速览
+    :caption: 应用速览
     :maxdepth: 1
 
-    传感网络    <field/sensor>
-    机电控制    <field/motor>
+    低功耗      <field/LP>
+    电机控制    <field/motor>
     人机交互    <field/hmi>
     无线通信    <field/iot>
     边缘计算    <field/edge>

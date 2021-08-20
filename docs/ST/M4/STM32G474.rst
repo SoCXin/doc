@@ -4,9 +4,9 @@
 STM32G474
 ===============
 
-:ref:`st` :ref:`cortex_m4` MCU
+关键词：``170MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``AES256``
 
-内嵌了数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，硬件加密使用的是AES-256，带有双安全存储区域。资源库 `GitHub <https://github.com/SoCXin/STM32G474>`_
+资源库 `GitHub <https://github.com/SoCXin/STM32G474>`_
 
 .. contents:: 内容索引
     :local:
@@ -14,35 +14,44 @@ STM32G474
 Xin简介
 -----------
 
-关键词：``170MHz`` ``15MSPS DAC`` ``4MSPS ADC`` ``Type-C`` ``ART``
+:ref:`st` :ref:`cortex_m4` MCU 内嵌了数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，硬件加密使用的是AES-256，带有双安全存储区域，ART加速提高Flash的读取运行速度。
 
 .. image:: ./images/STM32G474.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x4.html
 
 
-**关键特性**
+关键特性
 ~~~~~~~~~~~~~~
 
 * 5个超快速12位ADC（4 Msamples/s）
 * 7个12位DAC（15 Msamples/s）
 * 7个超快速比较器（17ns）
+* 高分辨率定时器（184ps）
 * 6个具有可编程增益的运算放大器
 * 最多3个CAN-FD
-* USB Type-C接口以及物理层（PHY）
-* USB 2.0 FS
-* AES-256硬件
+* USB Type-C™和电力传输控制器（UCPD）
 
-**内核性能**
+
+内核性能
 ~~~~~~~~~~~~~~
+
+**CoreMark** 已成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高意味着性能更高，使用C语言包含列举，数学矩阵操作和状态及CRC等运算法则。
 
 .. image:: ./images/STM32G4CoreMark.png
     :target: https://blog.csdn.net/xiaolaoban0413/article/details/107547516
 
-目前CoreMark已迅速成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高，意味着性能更高，代码使用C语言写成，包含：列举，数学矩阵操作和状态及CRC等运算法则。
+.. image:: ./images/STM32G4FIR.png
+    :target: https://blog.csdn.net/xiaolaoban0413/article/details/107547516
 
-Xin对比
+
+Xin选择
 -----------
 
+该系列是2012年推出的STM32F3系列的延续，它继承了很多STM32F3的理念和基因，带来更强劲的性能和数模效果。
+
+STM32G4系列最高工作温度可达到125°C，具有更强的抗电气干扰能力，可耐受4kV以上的瞬变电压，增强的可靠性也进一步扩展了其应用范围，特别是一些工业领域。
+
+STM32G4x4系列具有高分辨率定时器和复杂波形生成器，以及事件处理器，这使其特别适合于数字电源应用，如数字开关电源、照明、焊接、太阳能和无线充电等。
 
 竞品分析
 ~~~~~~~~~
@@ -52,12 +61,12 @@ Xin对比
 型号对比
 ~~~~~~~~~
 
+.. image:: ./images/en.obn_stm32g4_series_ss2024.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
 
-Xin实践
+Xin应用
 -----------
-
-STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发板中最常用的型号为 STM32G031J6 和 STM32G031K8
 
 .. image:: ./images/B_STM32G474.jpg
     :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.3.22c4235cqh3nCy&id=610087556700&ns=1&abbucket=7
@@ -126,11 +135,14 @@ Xin总结
 
 
 
-``重点提示``
+重点提示
 ~~~~~~~~~~~~~
 
 浮点运算一般需要在运算结果前写上（float）或者标注f，否则一律会被认为双精度，将会大大增加运算时间。
 
-``使用槽点``
+除法和开方的运算周期过长，如无必要，尽量不要用，尽量将其转化为运算周期较少的加减乘运算
+
+
+使用槽点
 ~~~~~~~~~~~~~
 
