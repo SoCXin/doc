@@ -18,7 +18,7 @@ STMicroelectronics
     :maxdepth: 1
 
     STM8        <STM8/index>
-    Cortex-M0   <M0/index>
+    Cortex-M0  <M0/index>
 
 
 主流产品

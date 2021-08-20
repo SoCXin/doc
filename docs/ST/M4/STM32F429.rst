@@ -1,7 +1,7 @@
 
-.. _st_stm32f407:
+.. _st_stm32f429:
 
-STM32F407
+STM32F429
 ===============
 
 * 关键词：``170MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``

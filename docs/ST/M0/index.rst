@@ -4,8 +4,6 @@
 ST Cortex-M0
 ======================
 
-architecture  :option:`Cortex -M0`
-
 
 .. contents:: 目录索引
     :local:

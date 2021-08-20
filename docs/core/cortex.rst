@@ -1,23 +1,29 @@
 
 .. _cortex:
 
-Cortex Architecture
-====================
-.. program:: Cortex
+Cortex
+===================
+
+ARM公司在经典处理器ARM11以后的产品改用Cortex命名，并分成A、R和M三类，旨在为各种不同的市场提供服务。
+
+Cortex系列属于ARMv7架构，这是2010年止ARM公司最新的指令集架构。ARMv7架构定义了三大分工明确的系列：
+
+* “A”系列面向尖端的基于虚拟内存的操作系统和用户应用；
+* “R”系列针对实时系统；
+* “M”系列对微控制器。
 
 .. contents:: 目录索引
     :local:
 
 .. _cortex_spec:
 
-架构相关
-----------
+Architecture
+-------------
 
 .. toctree::
     :maxdepth: 1
 
     AMBA <amba>
-
 
 .. _cortex_m:
 
@@ -28,9 +34,6 @@ Cortex-M
 ``Cortex-M0``
 ~~~~~~~~~~~~~~
 
-.. option::
-    -M0
-
 .. toctree::
     :maxdepth: 1
 
@@ -39,18 +42,15 @@ Cortex-M
 
 ``Cortex-M3``
 ~~~~~~~~~~~~~~
-.. option::
-    -M3
 
 .. toctree::
     :maxdepth: 1
 
     内核简介    <cortexM3>
 
+
 ``Cortex-M4``
 ~~~~~~~~~~~~~~
-.. option::
-    -M4
 
 .. toctree::
     :maxdepth: 1
@@ -60,8 +60,6 @@ Cortex-M
 
 ``Cortex-M7``
 ~~~~~~~~~~~~~~
-.. option::
-    -M7
 
 
 Cortex-R
@@ -69,22 +67,11 @@ Cortex-R
 
 ``Cortex-R5``
 ~~~~~~~~~~~~~~
-.. option::
-    -R5
 
 Cortex-A
 ----------
 
 ``Cortex-A7``
 ~~~~~~~~~~~~~~
-
-.. option::
-    -A7
-
-``Cortex-A53``
-~~~~~~~~~~~~~~
-
-.. option::
-    -A53
 
 

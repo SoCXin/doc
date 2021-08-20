@@ -1,8 +1,8 @@
 
-探索芯世界
+芯世界
 ==================
 
-**A place where Developers find your chip! No more vendor lock-in!**
+**芯独立运动!**
 
 `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
 `GitHub <https://GitHub.com/Qitas>`_ |
@@ -44,6 +44,6 @@
     :maxdepth: 1
 
     STM <ST/index>
-    WCH <WCH/MCU>
+    WCH <WCH/index>
     Espressif <espressif/index>
-    arterytek <arterytek/index>
+    Arterytek <arterytek/index>

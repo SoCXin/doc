@@ -14,8 +14,6 @@ STM32 TOP
 ST Cortex-A7 APU
 --------------------
 
-architecture  :option:`Cortex -A7`
-
 .. toctree::
     :maxdepth: 1
 
@@ -28,7 +26,6 @@ architecture  :option:`Cortex -A7`
 ST Cortex-M7 MCU
 --------------------
 
-architecture  :option:`Cortex -M7`
 
 .. toctree::
     :maxdepth: 1
