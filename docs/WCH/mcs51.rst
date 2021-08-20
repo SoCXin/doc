@@ -1,21 +1,28 @@
+.. _wch51:
 
-WCH 8051
+8051 MCU
 ============
 
-`Continuous Integration <http://special.wch.cn/zh_cn/mcu/>`_
-is the practice, in software engineering, of merging all developer working
-copies with a shared mainline several times a day.
+:ref:`mcs51`
 
-:ref:`mcs51` command is intended to be used in combination with the build
-servers and the popular
-`Continuous Integration Software <http://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software>`_.
+
+通用系列
+--------------------
 
 .. toctree::
     :maxdepth: 1
 
     CH552 <CH552>
     CH554 <CH554>
-    CH557 <CH557>
     CH559 <CH559>
-    CH545 <CH545>
     CH549 <CH549>
+
+功能系列
+--------------------
+
+.. toctree::
+    :maxdepth: 1
+
+    CH545 <CH545>
+    CH557 <CH557>
+

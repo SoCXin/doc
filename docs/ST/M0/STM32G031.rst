@@ -185,3 +185,6 @@ STM32G0系列属于较新的产品，也重点优化了ADC的性能，相较于�
 如果要使能boot 0的功能，需要修改option bytes，将 ``nboot_sel`` 后面的勾选去掉，断电复位，此时芯片的启动方式就由boot0引脚决定了，上拉boot0进bootloader模式。
 
 一不小心就把芯片锁死弄成砖了，可以将PA0（NRST）接地，然后在连接STM32CubeProgrammer前断开接地，这是MCU可以被识别到，然后进行擦除或修改option bytes
+
+.. warning::
+    SON8封装注意烧录口使能，小心变砖
