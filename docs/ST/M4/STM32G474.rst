@@ -6,14 +6,13 @@ STM32G474
 
 * 关键词：``170MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32G474>`_
-
 .. contents::
     :local:
 
 Xin简介
 -----------
 
-:ref:`st` :ref:`cortex_m4` MCU 内嵌了数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，硬件加密使用的是AES-256，带有双安全存储区域，ART加速提高Flash的读取运行速度。
+:ref:`st` :ref:`cortex_m4` MCU 内嵌数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，带有双安全存储区域，ART加速提高Flash读取运行速度。
 
 .. image:: ./images/STM32G474.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x4.html
@@ -31,7 +30,7 @@ Xin简介
 * USB Type-C™和电力传输控制器（UCPD）
 
 
-内核性能
+计算性能
 ~~~~~~~~~~~~~~
 
 **CoreMark** 已成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高意味着性能更高，使用C语言包含列举，数学矩阵操作和状态及CRC等运算法则。
@@ -65,7 +64,9 @@ STM32G4与STM32F3系列高度兼容，作为后者的升级选项，确保在设
 .. image:: ./images/en.obn_stm32g4_series_ss2024.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
-开发工具
+STM32G474在STM32G4系列中定位高分辨率，独有的复杂波形生成器和事件处理器HRTIM，该功能的另一配置者为STM32F334
+
+开发资源
 ~~~~~~~~~~~
 
 使用STM32芯片最直接方式是通过 `stm32cube <https://www.st.com/zh/ecosystems/stm32cube.html>`_ 工具构建基本运行体，不用开发者自己去研究寄存器初始化相应外设（但请注意使能）。
@@ -76,7 +77,7 @@ STM32G4与STM32F3系列高度兼容，作为后者的升级选项，确保在设
 Xin应用
 -----------
 
-该芯片的开发验证平台比较丰富，性价比不错的如下的 NUCLEO-STM32G474RE
+该芯片的开发验证平台比较丰富，性价比不错的选择如下 **NUCLEO-STM32G474RE**
 
 .. image:: ./images/B_STM32G474.jpg
     :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.3.22c4235cqh3nCy&id=610087556700&ns=1&abbucket=7
@@ -92,6 +93,8 @@ HRTIM
 .. image:: ./images/STM32HRTIM.png
     :target: https://st-onlinetraining.s3.amazonaws.com/STM32G4-WDG_TIMERS-High_Resolution_Timer_%28HRTIM%29/index.html
 
+HRTIM特性
+
 .. image:: ./images/STM32G4HRTIM.png
     :target: https://www.st.com/content/ccc/resource/technical/document/application_note/13/d6/48/9d/11/11/4c/08/DM00121475.pdf/files/DM00121475.pdf/jcr:content/translations/zh.DM00121475.pdf
 
@@ -105,13 +108,16 @@ HRTIM
     /* TIMD 计数器工作于连续模式，发生 REP 事件时使能预加载 */
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_D].TIMxCR =
     HRTIM_TIMCR_CONT + HRTIM_TIMCR_PREEN + HRTIM_TIMCR_TREPU;
+
     /* 周期设置为 100kHz， CMP1 设置为周期的 25%， CMP2 设置为周期的 75% */
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_D].PERxR = _100KHz_PERIOD;
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_D].CMP1xR = _100KHz_PERIOD/4;
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_D].CMP2xR = (3*_100KHz_PERIOD)/4;
+
     /* TD1 输出，在 TIMD 周期下置位，在 TIMD CMP1 事件下复位 */
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_D].SETx1R = HRTIM_SET1R_PER;
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_D].RSTx1R = HRTIM_RST1R_CMP1;
+
     /* TD2 输出，在 TIMD CMP2 下置位，在 TIMD 周期事件下复位 */
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_D].SETx2R = HRTIM_SET2R_CMP2;
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_D].RSTx2R = HRTIM_RST2R_PER;
@@ -121,33 +127,31 @@ HRTIM
     /* 在 REP 事件下使能预加载 */
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_A].TIMxCR = HRTIM_TIMCR_CONT
     + HRTIM_TIMCR_PREEN + HRTIM_TIMCR_TREPU + HRTIM_TIMCR_CK_PSC_1;
+
     /* 设置周期为 33kHz，且占空比为 25% */
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_A].PERxR = _33KHz_PERIOD;
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_A].CMP1xR = _33KHz_PERIOD/4;
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_A].CMP2xR = _33KHz_PERIOD/2;
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_A].CMP3xR = (3*_33KHz_PERIOD)/4;
+
     /* TA1 输出，在 TIMA 周期下置位，在 TIMA CMP1 事件下复位 */
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_A].SETx1R = HRTIM_SET1R_PER;
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_A].RSTx1R = HRTIM_RST1R_CMP1;
+
     /* TA2 输出，在 TIMA CMP2 下置位，在 TIMA 周期事件下复位 */
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_A].SETx2R = HRTIM_SET2R_CMP2;
     HRTIM1->sTimerxRegs[HRTIM_TIMERINDEX_TIMER_A].RSTx2R = HRTIM_RST2R_CMP3;
+
     /* 使能 TA1, TA2, TD1 和 TD2 输出 */
     HRTIM1->sCommonRegs.OENR = HRTIM_OENR_TA1OEN + HRTIM_OENR_TA2OEN +
     HRTIM_OENR_TD1OEN + HRTIM_OENR_TD2OEN;
-    GPIO_HRTIM_outputs_Config(); /* 初始化 HRTIM GPIO 输出 */
+
+    /* 初始化 HRTIM GPIO 输出 */
+    GPIO_HRTIM_outputs_Config();
     /* 启动定时器 A 和定时器 D */
     HRTIM1->sMasterRegs.MCR = HRTIM_MCR_TACEN + HRTIM_MCR_TDCEN;
 
 
-开源项目
-~~~~~~~~~
-
-如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
-
-
-* `Arduino_Core_STM32 <https://github.com/stm32duino/Arduino_Core_STM32>`_
-* `STM32CubeG4 <https://github.com/STMicroelectronics/STM32CubeG4>`_
 
 
 Xin总结

@@ -20,9 +20,13 @@ servers and the popular
     :local:
     :depth: 1
 
-.. include:: mcs51.rst
-.. include:: riscv.rst
-.. include:: cortex.rst
+.. toctree::
+    :maxdepth: 1
+
+    mcs51  <mcs51>
+    riscv  <riscv>
+    cortex  <cortex>
+
 
 .. warning::
     You will need to install debug tool drivers depending on your system.
