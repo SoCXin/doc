@@ -18,5 +18,5 @@ It is an example of a complex instruction set computer, and has separate memory 
 .. toctree::
     :maxdepth: 1
 
-    WCH <../WCH/WCH51>
+    WCH <../WCH/mcs51>
     STC <../STC/STC8>

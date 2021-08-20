@@ -4,7 +4,27 @@
 STC8
 ======
 
+* 关键词：``170MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
+* 资源库：`GitHub <https://github.com/SoCXin/STC8>`_
+
+ :ref:`mcs51`
+
+.. contents:: 目录索引
+    :local:
+
+选型表
+-----------
+
 .. image:: ./images/STC8.png
+    :target: https://www.stcmcudata.com/
+
+.. _stc8v6:
+
+Y6指令集
+---------------
+
+.. image:: ./images/STC.png
+    :target: https://www.stcmcudata.com/
 
 STC8G
 ------------
@@ -20,12 +40,6 @@ STC8G
 2. **Search** for the official ``platformio ide`` `extension <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`_
 3. **Install** PlatformIO IDE.
 
-
-.. note::
-
-    Please note that you need to install `a Git client <https://git-scm.com/book/v2/Getting-Started-Installing-Git>`_
-    if you are going to use Git for installing upstream development platforms, cloning
-    external projects, installing library dependencies from a repository, etc.
 
 STC8H
 -------
