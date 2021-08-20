@@ -20,9 +20,9 @@ servers and the popular
     :local:
     :depth: 1
 
-
-.. include:: WCH51.rst
+.. include:: mcs51.rst
 .. include:: riscv.rst
+.. include:: cortex.rst
 
 .. warning::
     You will need to install debug tool drivers depending on your system.

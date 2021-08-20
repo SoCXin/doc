@@ -1,8 +1,8 @@
 
-WCH RISC-V
+WCH Cortex
 ======================
 
 .. toctree::
     :maxdepth: 1
 
-    CH573 <CH573>
+    CH579 <CH579>
