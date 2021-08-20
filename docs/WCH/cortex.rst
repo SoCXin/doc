@@ -1,5 +1,6 @@
+.. _wch_cortex:
 
-WCH Cortex
+WCH Cortex-M系列
 ======================
 
 .. toctree::

@@ -2,53 +2,32 @@
 .. _wch_ch573:
 
 CH573
-======
-
-*PlatformIO Library Manager* is a tool for managing libraries of
-`PlatformIO Registry <https://www.soc.xin/lib>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date. PlatformIO Library Manager supports
-`Semantic Versioning <http://semver.org>`_ and its rules.
-
-There are 3 options how to find/manage libraries:
-
-* `Web Library Search <https://www.soc.xin/lib>`__
-* PlatformIO Core :ref:`Command Line Interface <wch>`
+===========
 
 
-Project dependencies
---------------------
+* 关键词：``USB`` ``BLE4.2`` ``RTC`` ``AES128``
+* 资源库：`GitHub <https://github.com/SoCXin/CH579>`_
 
-*PlatformIO Library Manager* allows one to specify project dependencies
-(:ref:`mcs51`) that will be installed automatically per project
-before environment processing. You do not need to install libraries manually.
-The only one simple step is to define dependencies in :ref:`mips`. For example,
+.. contents::
+    :local:
 
-.. code-block:: ini
+Xin简介
+-----------
 
-  [env:myenv]
-  platform = ...
-  framework = ...
-  board = ...
-
-.. warning::
-
-  If some libraries are not visible in :ref:`espressif_esp32` and Code Completion or
-  Code Linting does not work properly, please perform
-
-  * **VSCode**: "Menu: View > Command Palette... > PlatformIO: Rebuild C/C++
-    Project Index"
-
-PlatformIO IDE
---------------
-
-* Search for new libraries in PlatformIO Registry
-* "1-click" library installation, per-project libraries, extra storages
-* List installed libraries in multiple storages
-* List built-in libraries (by frameworks)
-* Updates for installed libraries
-* Multiple examples, trending libraries, and more.
+:ref:`wch` :ref:`cortex_m0` 内核SoC内嵌10M以太网PHY，集成BLE通信功能。
 
 .. image:: ./images/CH573.png
+    :target: http://www.wch.cn/products/CH573.html
+
+关键特性
+~~~~~~~~~~~~~~
+
+* 提供10M以太网接口，内置PHY
+* BLE 4.2，Zigbee兼容IEEE 802.15.4规范，单端RF接口无需外部电感
+* 支持3.3V和2.5V电源，范围2.1V～3.6V, 内置DC/DC转换
+* SPI x 2 + UART x 4 (16C550/6Mbps)
+* USB H/D
 
 
+Xin选择
+-----------
