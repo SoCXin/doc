@@ -4,7 +4,7 @@
 STC8
 ======
 
-* 关键词：``170MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
+* 关键词：``24MHz`` ``EEPROM``
 * 资源库：`GitHub <https://github.com/SoCXin/STC8>`_
 
  :ref:`mcs51`
@@ -20,7 +20,7 @@ STC8
 
 .. _stc8v6:
 
-Y6指令集
+指令集
 ---------------
 
 .. image:: ./images/STC.png

@@ -26,7 +26,7 @@ Xin简介
 * 7个12位DAC（15 Msamples/s）
 * 7个超快速比较器（17ns）
 * 高分辨率定时器 :ref:`stm32_hrtim`
-* 6个具有可编程增益的运算放大器
+* 6个可编程增益运算放大器 :ref:`stm32_opamp`
 * 最多3个CAN-FD
 * USB Type-C™和电力传输控制器（UCPD）
 
@@ -57,28 +57,33 @@ STM32G4x4系列具有高分辨率定时器和复杂波形生成器，以及事�
 竞品分析
 ~~~~~~~~~
 
-STM32G4与STM32F3系列高度兼容，作为后者的升级选项，确保在设计不同性能等级的衍生应用时提供卓越的效率。
+STM32G4与STM32F3系列高度兼容，作为后者的升级选项，确保在设计不同性能等级的衍生应用时提供卓越的效率。在模拟外设集成度上，国内尚没有可以媲美的厂商和产品。
 
-型号对比
+型号选择
 ~~~~~~~~~
 
 .. image:: ./images/en.obn_stm32g4_series_ss2024.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
-STM32G474在STM32G4系列中定位高分辨率，独有的复杂波形生成器和事件处理器HRTIM，该功能的另一配置者为STM32F334
+STM32G474在STM32G4系列中定位高分辨率，独有复杂波形生成器和事件处理器HRTIM，该功能继承自STM32F334，除该功能外，在G4系列中可选STM32G473系列，如果没有FSMC需求且对模拟外设数量要求不多，可选更高性价比的 :ref:`st_stm32g431`
+
+
 
 开发资源
 ~~~~~~~~~~~
 
 使用STM32芯片最直接方式是通过 `stm32cube <https://www.st.com/zh/ecosystems/stm32cube.html>`_ 工具构建基本运行体，不用开发者自己去研究寄存器初始化相应外设（但请注意使能）。
 
+使用ARM在线平台 `MBED <https://os.mbed.com/platforms/ST-Nucleo-G474RE/>`_ 支持NUCLEO-G474RE开发板的构建开发。
+
 源圈OS-Q通过先验证的方式，集成了更多可信赖资源 `PlatformIO STM32G4 <https://github.com/OS-Q/P216>`_ 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。
+
 
 
 Xin应用
 -----------
 
-该芯片的开发验证平台比较丰富，性价比不错的选择如下 **NUCLEO-STM32G474RE**
+该芯片的开发验证平台比较丰富，性价比不错的选择如下： **NUCLEO-STM32G474RE**
 
 .. image:: ./images/B_STM32G474.jpg
     :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.3.22c4235cqh3nCy&id=610087556700&ns=1&abbucket=7
@@ -98,7 +103,6 @@ HRTIM特性
 
 .. image:: ./images/STM32G4HRTIM.png
     :target: https://www.st.com/content/ccc/resource/technical/document/application_note/13/d6/48/9d/11/11/4c/08/DM00121475.pdf/files/DM00121475.pdf/jcr:content/translations/zh.DM00121475.pdf
-
 
 
 1. HRTIM控制PWM输出
@@ -153,6 +157,22 @@ HRTIM特性
     HRTIM1->sMasterRegs.MCR = HRTIM_MCR_TACEN + HRTIM_MCR_TDCEN;
 
 
+.. _stm32_opamp:
+
+OPAMP
+~~~~~~~~~~~
+
+* Input voltage offset: approx. +/- 3 mV (after built-in calibration of offset)
+* Bandwidth: approx. 13 MHz
+* Slew rate:Normal mode: approx. 6.5 V/µs; High speed mode: approx. 45 V/µs.
+* Output saturated voltage: less than 100 mV (rai-to-rail)
+* Gains: Positive +1, +2, +4, +8, +16, +32, +64; Negative -1, -3, -7, -15, -31, -63
+* Typical gain error: 2%.
+* Open loop gain: ~ 95 dB
+* Wakeup time: 3 µs.
+
+.. image:: ./images/STM32G4OPAMP.png
+    :target: https://www.st.com/content/ccc/resource/technical/document/application_note/group1/71/84/78/aa/6c/d5/4f/16/DM00605707/files/DM00605707.pdf/jcr:content/translations/en.DM00605707.pdf
 
 
 Xin总结
@@ -168,6 +188,9 @@ Xin总结
 除法和开方的运算周期过长，如无必要，尽量不要用，尽量将其转化为运算周期较少的加减乘运算
 
 
-使用槽点
+问题收集
 ~~~~~~~~~~~~~
 
+不管选用内部时钟源还是外部晶振，只要配置成170MHz,芯片肯定会复位。经过反复测试验证，发现设置PLL所产生的时钟只有在不高于80MHz时，芯片才能正常运行。
+
+主频的提高往往意味着功耗的增大或噪声及干扰方面可能加剧。于是试图从系统供电能力、电源稳定度、时钟稳定性方面查找原因，发现芯片的VDDA脚虚焊了，重新处理后芯片于170MHz运行稳健。

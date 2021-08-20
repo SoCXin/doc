@@ -14,3 +14,14 @@ Xin简介
 -----------
 
 :ref:`st` :ref:`cortex_m4` MCU 内嵌了数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，硬件加密使用的是AES-256，带有双安全存储区域，ART加速提高Flash的读取运行速度。
+
+
+
+.. _stm32_fsmc:
+
+静态存储控制器(FSMC)
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+STM32的FSMC真是一个万能的总线控制器,不仅可以控制SRAM,NOR FLASH,NAND FLASH,PC Card,还能控制LCD,TFT
