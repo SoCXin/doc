@@ -4,23 +4,23 @@
 STM32G474
 ===============
 
-:ref:`st` :ref:`cortex_m4` 单核 MCU，资源仓库 `GitHub <https://github.com/SoCXin/STM32G474>`_
+:ref:`st` :ref:`cortex_m4` MCU
 
-.. contents:: 目录索引
+内嵌了数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，硬件加密使用的是AES-256，带有双安全存储区域。资源库 `GitHub <https://github.com/SoCXin/STM32G474>`_
+
+.. contents:: 内容索引
     :local:
 
-Xin推荐
+Xin简介
 -----------
 
-性能：``170MHz`` 、``213DMIPS`` 、``550CoreMark``
+关键词：``170MHz`` ``15MSPS DAC`` ``4MSPS ADC`` ``Type-C`` ``ART``
 
 .. image:: ./images/STM32G474.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
-内嵌了数学运算加速器，具有丰富的内置数模外设，运放、比较器、DA、AD等，硬件加密使用的是AES-256，带有双安全存储区域。G4系列典型应用之一正是电机控制。
 
-
-``关键特性``
+**关键特性**
 ~~~~~~~~~~~~~~
 
 * 5个超快速12位ADC（4 Msamples/s）
@@ -31,6 +31,14 @@ Xin推荐
 * USB Type-C接口以及物理层（PHY）
 * USB 2.0 FS
 * AES-256硬件
+
+**内核性能**
+~~~~~~~~~~~~~~
+
+.. image:: ./images/STM32G4CoreMark.png
+    :target: https://blog.csdn.net/xiaolaoban0413/article/details/107547516
+
+目前CoreMark已迅速成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高，意味着性能更高，代码使用C语言写成，包含：列举，数学矩阵操作和状态及CRC等运算法则。
 
 Xin对比
 -----------
@@ -121,7 +129,7 @@ Xin总结
 ``重点提示``
 ~~~~~~~~~~~~~
 
-
+浮点运算一般需要在运算结果前写上（float）或者标注f，否则一律会被认为双精度，将会大大增加运算时间。
 
 ``使用槽点``
 ~~~~~~~~~~~~~
