@@ -10,6 +10,6 @@
 .. toctree::
     :maxdepth: 1
 
-    STM32G474 <../ST/M0/STM32G474>
+    STM32G474 <../ST/M4/STM32G474>
     CH579 <../WCH/CH579>
 
