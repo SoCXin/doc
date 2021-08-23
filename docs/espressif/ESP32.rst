@@ -47,6 +47,15 @@ Xin对比
 型号对比
 ~~~~~~~~~
 
+.. _esp_idf:
+
+ESP-IDF
+~~~~~~~~~~~
+
+ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 ESP32-C 系列 SoC。它基于 C/C++ 语言提供了一个自给自足的 SDK，方便用户在这些平台上开发通用应用程序。
+
+.. image:: ./images/idf.png
+    :target: https://www.espressif.com/zh-hans/products/sdks/esp-idf
 
 
 Xin实践
@@ -62,6 +71,8 @@ Xin实践
 源圈OS-Q通过先验证的方式，集成了更多可信赖资源 `PlatformIO ESP32 <https://github.com/OS-Q/P511>`_ 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。
 
 协处理的开发，使用汇编语言，需要单独的工具链，通过官方提供提供的IDF工具实现。
+
+
 
 示例代码
 ~~~~~~~~~~~
