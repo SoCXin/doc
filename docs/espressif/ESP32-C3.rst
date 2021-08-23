@@ -5,7 +5,7 @@ ESP32-C3
 ================
 
 * 关键词：``RISC-V`` ``160MHz`` ``RV32IMC`` ``BLE5.0`` ``Wi-Fi``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ `Docs <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_
+* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ , `Docs <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_
 
 .. contents::
     :local:
@@ -52,7 +52,7 @@ AES 模块
 基于 AES-128-XTS 算法的 flash 加密方案，确保应用程序与配置数据在 flash 中保持加密状态。
 flash 控制器支持执行加密的应用程序固件，这不仅为存储在 flash 中的敏感数据提供了必要保护，还防止了运行时由于固件更改造成的 TOCTTOU (time-of-check-to-time-of-use) 攻击。
 
-HMAC模块
+数字签名
 ^^^^^^^^^^^^^^^
 
 ESP32-C3 的数字签名外设，可以通过固件不可访问的私钥生成数字签名。同样地，其 HMAC 外设也可以生成固件不可访问的加密摘要。
@@ -78,7 +78,7 @@ Xin选择
 .. image:: ./images/C3vsESP8266.png
     :target: https://blog.csdn.net/fengfeng0328/article/details/112437659
 
-ESP8266EX的不足
+ESP8266EX的不足：
 
 * eFUSE不开放
 * RF信号质量不够高
@@ -103,19 +103,20 @@ ESP32-C3没有对 IRAM 和 DRAM 进行静态划分。SRAM 的前 16 KB 被配置
 ESP32-C3的蓝牙子系统不要求其存储必须为某固定位置的连续空间。反之，它使用标准的系统堆来分配存储空间，因此应用可以在需要的时候打开或禁用蓝牙。要实现这一点，仅需确保堆中有足够的存储空间即可。
 
 
-开发框架
-~~~~~~~~~
-
-ESP-IDF
-^^^^^^^^^^
-
-支持ESP32C3需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
-
-Arduino
+开发资源
 ~~~~~~~~~
 
 编译器
 ^^^^^^^^^^
+
+ESP-IDF框架
+^^^^^^^^^^^^
+
+支持ESP32C3需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
+
+Arduino框架
+^^^^^^^^^^^^
+
 
 
 Xin应用
