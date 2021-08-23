@@ -5,7 +5,7 @@ ESP32
 
 :ref:`espressif` :ref:`xtensa` Dual Core WiFi SoC，资源仓库 `GitHub <https://github.com/SoCXin/ESP32>`_
 
-.. contents:: 目录索引
+.. contents::
     :local:
 
 Xin推荐
