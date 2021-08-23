@@ -5,8 +5,8 @@ ESP32-S2
 ================
 
 
-* 关键词：``RISC-V`` ``160MHz`` ``RV32IMC`` ``BLE5.0`` ``Wi-Fi`` ``USB1.1``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ `Docs <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_
+* 关键词：``xtensa`` ``240MHz`` ``RV32IMC`` ``BLE5.0`` ``Wi-Fi`` ``USB1.1``
+* 资源池：`GitHub <https://github.com/SoCXin/ESP32-S2>`_
 
 .. contents::
     :local:
@@ -14,7 +14,7 @@ ESP32-S2
 Xin简介
 -----------
 
-:ref:`espressif` :ref:`riscv` WiFi & BLE SoC
+:ref:`espressif` :ref:`xtensa` WiFi & BLE SoC
 
 .. image:: ./images/ESP32C3.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32-C3
@@ -26,7 +26,7 @@ Xin简介
 * 400 KB SRAM (TCM)，384 KB ROM
 * Wi-Fi IEEE 802.11b/g/n
 * BLE 5.0，支持Mesh (Bluetooth Mesh)
-* USB1.1
+* USB OTG
 * 2 × UART
 * 22  x GPIO
 
@@ -77,7 +77,7 @@ ESP32-C3没有对 IRAM 和 DRAM 进行静态划分。SRAM 的前 16 KB 被配置
 基于应用需求，链接器脚本可将所需的空间配置为 IRAM，其后便为 DRAM 空间。因此相比 ESP32 来说，ESP32-C3 的存储空间使用效率更高。
 
 
-.. image:: ./images/RAM_VSESP32.jpg.jpg
+.. image:: ./images/RAM_VSESP32.jpg
     :target: https://zhuanlan.zhihu.com/p/369125251
 
 .. image:: ./images/RAM_ESP32C3.jpg
@@ -151,7 +151,6 @@ RGB LED
 
 * `ESP-IDF <https://github.com/espressif/esp-idf>`_
 * `arduino-esp32 <https://github.com/espressif/arduino-esp32/>`_
-* `RUST API <https://github.com/imheresamir/esp32c3>`_
 
 
 Xin总结
