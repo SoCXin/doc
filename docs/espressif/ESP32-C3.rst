@@ -27,7 +27,7 @@ Xin简介
 * USB1.1
 * 2 × UART
 * 22  x GPIO
-
+* RV32IMC ISA
 
 Xin选择
 -----------
@@ -40,16 +40,26 @@ Xin选择
 命名为xx32F031 的MCU产品非常丰富，就规格而言有大量可替代品，主要竞争力还是在功能稳定性及资源兼容性上，基于STM32Cube的开发生态，有大量资源和工程师团队。
 
 
-型号对比
-~~~~~~~~~
+对比ESP32
+~~~~~~~~~~~~
 
+在 ESP32-C3 中，没有对 IRAM 和 DRAM 进行静态划分。SRAM 的前 16 KB 被配置为 cache 专用。与 ESP32 不同的是，ESP32-C3 的 IRAM 和 DRAM 地址在相同方向递增。
+基于应用需求，链接器脚本可将所需的空间配置为 IRAM，其后便为 DRAM 空间。因此相比 ESP32 来说，ESP32-C3 的存储空间使用效率更高。
+
+
+ESP32-C3 的蓝牙子系统不要求其存储必须为某固定位置的连续空间。反之，它使用标准的系统堆来分配存储空间，因此应用可以在需要的时候打开或禁用蓝牙。要实现这一点，仅需确保堆中有足够的存储空间即可。
+
+.. image:: ./images/RAM_VSESP32.jpg.jpg
+    :target: https://zhuanlan.zhihu.com/p/369125251
+
+.. image:: ./images/RAM_ESP32C3.jpg
+    :target: https://zhuanlan.zhihu.com/p/369125251
 
 
 规格选择
 ~~~~~~~~~
 
 
-该系列最具有代表性的产品型号 STM32G031J6 和 STM32G031K8 可以作为标定对象
 
 Xin实践
 --------------
@@ -66,44 +76,7 @@ Xin实践
 示例代码
 ~~~~~~~~~
 
-1. 基于STM32CubeMX生成HAL库工程
-
-.. code-block:: bash
-
-    uint8_t RxData;     //中断接收串口1数据
-    void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-    {
-        if(&huart1 == huart) {
-            HAL_UART_Receive_IT(huart, &RxData, 1);
-        }
-    }
-
-    void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-    {
-        if(htim==(&htim17)) //定时器中断函数
-        {
-            g_run_tick++;
-        }
-    }
-
-    int main(void)
-    {
-        /* USER CODE BEGIN 2 */
-        HAL_UART_Receive_IT(&huart1, &RxData, 1);   //中断接收使能
-        HAL_TIM_PWM_Start(&htim16,TIM_CHANNEL_1);   //PWM输出使能
-        HAL_TIM_Base_Start_IT(&htim17);             //定时器使能
-        /* USER CODE END 2 */
-        while (1)
-        {
-            /* USER CODE BEGIN 3 */
-            HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-            HAL_Delay(500);
-        }
-        /* USER CODE END 3 */
-    }
-
-
-2. 基于STM32CubeMX生成LL库工程
+基于STM32CubeMX生成LL库工程
 
 .. code-block:: bash
 

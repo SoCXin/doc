@@ -3,23 +3,25 @@
 ESP32
 ===============
 
-:ref:`espressif` :ref:`xtensa` Dual Core WiFi SoC，资源仓库 `GitHub <https://github.com/SoCXin/ESP32>`_
+* 关键词：``240MHz`` ``600DMIPS`` ``WiFi`` ``BLE4.2 `` ``CAN``
+* 资源库：`GitHub <https://github.com/SoCXin/ESP32C3>`_
 
 .. contents::
     :local:
 
-Xin推荐
+Xin简介
 -----------
 
-标签：``240MHz`` ``600DMIPS`` ``WiFi``
+:ref:`espressif` :ref:`xtensa` Dual Core WiFi SoC
+
+.. contents::
+    :local:
 
 .. image:: ./images/ESP32.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
-内嵌了数学运算加速器，具有丰富的内置数模外设，运放、比较器、DA、AD等，硬件加密使用的是AES-256，带有双安全存储区域。G4系列典型应用之一正是电机控制。
 
-
-``关键特性``
+关键特性
 ~~~~~~~~~~~~~~
 
 * Xtensa® LX6 240 MHz,40nm, 600DMIPS
@@ -57,8 +59,9 @@ Xin实践
 开发工具
 ~~~~~~~~~~~
 
-源圈OS-Q通过先验证的方式，集成了更多可信赖资源 `PlatformIO STM32G4 Enhanced <https://github.com/OS-Q/P511>`_ 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。
+源圈OS-Q通过先验证的方式，集成了更多可信赖资源 `PlatformIO ESP32 <https://github.com/OS-Q/P511>`_ 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。
 
+协处理的开发，使用汇编语言，需要单独的工具链，通过官方提供提供的IDF工具实现。
 
 示例代码
 ~~~~~~~~~~~
@@ -83,22 +86,6 @@ Xin实践
         }
     }
 
-    int main(void)
-    {
-        /* USER CODE BEGIN 2 */
-        HAL_UART_Receive_IT(&huart1, &RxData, 1);   //中断接收使能
-        HAL_TIM_PWM_Start(&htim16,TIM_CHANNEL_1);   //PWM输出使能
-        HAL_TIM_Base_Start_IT(&htim17);             //定时器使能
-        /* USER CODE END 2 */
-        while (1)
-        {
-            /* USER CODE BEGIN 3 */
-            HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-            HAL_Delay(500);
-        }
-        /* USER CODE END 3 */
-    }
-
 
 
 开源项目
@@ -115,11 +102,57 @@ Xin总结
 
 
 
-``重点提示``
+重点提示
 ~~~~~~~~~~~~~
 
+烧录模式
+^^^^^^^^^^^^^
 
+因为esp32芯片进入烧写模式的条件是启动时检测boot引脚，因此需要摁着boot键才能下载程序。出现这种情况一般是启动配置的strapping引脚采样电平不符合启动模式，需要调整硬件电路。
 
-``使用槽点``
+串口权限
+^^^^^^^^^^^^^
+
+linux下面串口设备的一般是root权限，因此使用串口需要取得root权限或者修改dev目录下串口的权限。想串口支持当前用户，需要把当前用户添加到Group
+
+.. code-block:: bash
+    sudo usermode -a -G dialout $USER
+
+问题整理
 ~~~~~~~~~~~~~
 
+Brownout detector was triggered 已触发断电探测器
+
+原因在于: ESP32的电平低于某个值（这个值是可以设定的），然后触发了断电探测器，断电探测器会使得ESP32重新启动。
+
+解决：换个电源，要不就是ESP32板子设计本身有问题，最终的大招，禁用断电探测器
+
+
+make menuconfig->component config->ESP32-specific->Hardware brownout detect &reset禁用掉这个选项，将不再检测电平。或者也可在再这个选项的下面选择一个更合适的保护电平。
+
+这个问题描述的是：ESP32的电平低于某个值（这个值是可以设定的，后文会有介绍），然后触发了断电探测器，断电探测器会使得ESP32重新启动。
+
+
+LoadProhibited/StoreProhibited
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+<禁止加载、禁止存储>
+
+当应用程序尝试读取或写入无效的内存位置时,会发生此 CPU 异常。
+
+可能原因:写入/读取的地址可在寄存器转储中的 EXCVADDR寄存器(途中红色划线)中找到.
+
+1、如果此地址为零,则通常表示应用程序尝试引用 NULL 指针(勿忘对数组成员取地址)；
+
+2、如果此地址接近于零,则通常意味着应用程序尝试访问结构体的成员,但指向该结构的指针为 NULL；
+
+3、如果该地址是别的(垃圾值,不在 0x3fxxxxxx - 0x6xxxxxxx 范围内),则可能意味着用于访问数据的指针未初始化或已损坏。
+
+引用NULL指针(&地址引用错误、野指针....)
+
+在编译时出现error: unrecognized command line option '-mfix-esp32-psram-cache-issue'
+原因:这是因为ESP32的某些修订存在一些问题，这些问题会对外部RAM的使用产生影响。而这些内容都记录在ESP32 ECO文档中。
+
+
+.. warning::
+    ESP32最大的槽点就是编译效率，因为组件特别多，每次编译都非常耗时间
