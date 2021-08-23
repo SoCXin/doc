@@ -3,7 +3,7 @@
 ESP32
 ===============
 
-* 关键词：``240MHz`` ``600DMIPS`` ``WiFi`` ``BLE4.2 `` ``CAN``
+* 关键词：``240MHz`` ``600DMIPS`` ``WiFi`` ``BLE4.2`` ``CAN``
 * 资源库：`GitHub <https://github.com/SoCXin/ESP32C3>`_
 
 .. contents::
