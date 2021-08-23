@@ -15,7 +15,7 @@
     :maxdepth: 1
 
     ESP32 <../espressif/ESP32>
-    ESP32C3 <../espressif/ESP32C3>
+    ESP32C3 <../espressif/ESP32-C3>
 
 高性价比
 -------------

@@ -1,11 +1,11 @@
 
-.. _espressif_esp32c3:
+.. _espressif_esp32h2:
 
-ESP32-C3
+ESP32-H2
 ================
 
-* 关键词：``160MHz`` ``BLE5.0`` ``Wi-Fi`` ``USB``
-* 资源库：`GitHub <https://github.com/SoCXin/ESP32C3>`_
+* 关键词：``160MHz`` ``BLE5.2`` ``Wi-Fi`` ``USB``
+* 资源库：`GitHub <https://github.com/SoCXin/ESP32H2>`_
 
 .. contents::
     :local:
@@ -37,7 +37,6 @@ Xin选择
 竞品分析
 ~~~~~~~~~
 
-命名为xx32F031 的MCU产品非常丰富，就规格而言有大量可替代品，主要竞争力还是在功能稳定性及资源兼容性上，基于STM32Cube的开发生态，有大量资源和工程师团队。
 
 
 型号对比
@@ -49,7 +48,6 @@ Xin选择
 ~~~~~~~~~
 
 
-该系列最具有代表性的产品型号 STM32G031J6 和 STM32G031K8 可以作为标定对象
 
 Xin实践
 --------------
@@ -103,29 +101,6 @@ Xin实践
     }
 
 
-2. 基于STM32CubeMX生成LL库工程
-
-.. code-block:: bash
-
-    int main(void)
-    {
-        LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
-        LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
-        LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
-        LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
-        LL_GPIO_ResetOutputPin(LED_GPIO_Port, LED_Pin);
-        GPIO_InitStruct.Pin = LED_Pin;
-        GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-        GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-        GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-        GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-        LL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
-        while (1)
-        {
-            LL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-            LL_mDelay(400);
-        }
-    }
 
 
 
