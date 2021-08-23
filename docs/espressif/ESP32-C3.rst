@@ -28,6 +28,13 @@ Xin简介
 * TWAI 控制器
 * 22  x GPIO
 
+计算性能
+~~~~~~~~~~~~~~
+
+.. image:: ./images/ESP.png
+.. image:: ./images/ESPEC.png
+
+
 安全特性
 ~~~~~~~~~~~~~~
 
