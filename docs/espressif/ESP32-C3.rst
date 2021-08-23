@@ -4,8 +4,8 @@
 ESP32-C3
 ================
 
-* 关键词：``RISC-V`` ``160MHz`` ``RV32IMC`` ``BLE5.0`` ``Wi-Fi`` ``USB1.1``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_
+* 关键词：``RISC-V`` ``160MHz`` ``RV32IMC`` ``BLE5.0`` ``Wi-Fi``
+* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ `Docs <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_
 
 .. contents::
     :local:
@@ -20,32 +20,32 @@ Xin简介
 
 
 关键特性
-~~~~~~~~~
+~~~~~~~~~~~~~
 
 * 400 KB SRAM (TCM)，384 KB ROM
 * Wi-Fi IEEE 802.11b/g/n
 * BLE 5.0，支持Mesh (Bluetooth Mesh)
-* USB1.1
-* 2 × UART
+* TWAI 控制器
 * 22  x GPIO
 
-
-安全性能
+安全特性
 ~~~~~~~~~~~~~~
 
-安全启动
+内置安全硬件
+
+RSA 模块
 ^^^^^^^^^^^^^^^
 
 基于 RSA-3072 的标准身份验证方案，确保在设备上运行受信任的应用程序。该功能可阻止设备运行烧录在 flash 中的恶意程序。
 安全启动需要快速高效地进行，以满足即时启动设备（如球泡灯）的需求，ESP32-C3 的安全启动方案仅在设备启动过程中增加了不到 100 ms 的时间开销。
 
-Flash 加密
+AES 模块
 ^^^^^^^^^^^^^^^
 
 基于 AES-128-XTS 算法的 flash 加密方案，确保应用程序与配置数据在 flash 中保持加密状态。
 flash 控制器支持执行加密的应用程序固件，这不仅为存储在 flash 中的敏感数据提供了必要保护，还防止了运行时由于固件更改造成的 TOCTTOU (time-of-check-to-time-of-use) 攻击。
 
-数字签名
+HMAC模块
 ^^^^^^^^^^^^^^^
 
 ESP32-C3 的数字签名外设，可以通过固件不可访问的私钥生成数字签名。同样地，其 HMAC 外设也可以生成固件不可访问的加密摘要。
@@ -61,7 +61,23 @@ TEE 模块
 Xin选择
 -----------
 
-本部分用于明确需求点，明确该芯片的匹配度
+本部分明确该芯片的需求匹配度
+
+对比ESP8266
+~~~~~~~~~~~~
+
+与2014年发布的ESP8266相比，ESP32-C3更像是ESP32的简化版，QFN32(5*5)封装与ESP8266EX一致，价格也对标
+
+.. image:: ./images/C3vsESP8266.png
+    :target: https://blog.csdn.net/fengfeng0328/article/details/112437659
+
+ESP8266EX的不足
+
+* eFUSE不开放
+* RF信号质量不够高
+* DTIM保活功耗较高
+* 内存较小，无法支撑复杂的应用场合
+* 缺少硬件加密、没有安全启动和Flash加密，RSA耗时较长，TLS握手需要3-4秒
 
 
 对比ESP32
@@ -70,19 +86,26 @@ Xin选择
 ESP32-C3没有对 IRAM 和 DRAM 进行静态划分。SRAM 的前 16 KB 被配置为 cache 专用。与 ESP32 不同的是，ESP32-C3 的 IRAM 和 DRAM 地址在相同方向递增。
 基于应用需求，链接器脚本可将所需的空间配置为 IRAM，其后便为 DRAM 空间。因此相比 ESP32 来说，ESP32-C3 的存储空间使用效率更高。
 
-ESP32-C3 的蓝牙子系统不要求其存储必须为某固定位置的连续空间。反之，它使用标准的系统堆来分配存储空间，因此应用可以在需要的时候打开或禁用蓝牙。要实现这一点，仅需确保堆中有足够的存储空间即可。
 
-.. image:: ./images/RAM_VSESP32.jpg.jpg
+.. image:: ./images/RAM_VSESP32.jpg
     :target: https://zhuanlan.zhihu.com/p/369125251
 
 .. image:: ./images/RAM_ESP32C3.jpg
     :target: https://zhuanlan.zhihu.com/p/369125251
 
+ESP32-C3的蓝牙子系统不要求其存储必须为某固定位置的连续空间。反之，它使用标准的系统堆来分配存储空间，因此应用可以在需要的时候打开或禁用蓝牙。要实现这一点，仅需确保堆中有足够的存储空间即可。
 
-开发工具
+
+开发框架
 ~~~~~~~~~
 
-支持ESP32C3 :ref:`esp_idf` 需要release/v4.3及以上的版本
+ESP-IDF
+^^^^^^^^^^
+
+支持ESP32C3需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
+
+Arduino
+~~~~~~~~~
 
 编译器
 ^^^^^^^^^^
@@ -95,13 +118,10 @@ Xin应用
 .. image:: ./images/B_ESP32C3.jpg
     :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
 
-USB应用
+
+
+RGB LED
 ~~~~~~~~~~~
-
-
-
-Arduino
-~~~~~~~~~
 
 
 
@@ -128,7 +148,8 @@ Arduino
     }
 
 
-
+BLE Mesh
+~~~~~~~~~~~
 
 
 开源方案
