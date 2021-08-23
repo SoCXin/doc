@@ -115,8 +115,8 @@ Xin总结
 
 linux下面串口设备的一般是root权限，因此使用串口需要取得root权限或者修改dev目录下串口的权限。想串口支持当前用户，需要把当前用户添加到Group
 
-.. code-block:: bash
-    sudo usermode -a -G dialout $USER
+" sudo usermode -a -G dialout $USER "
+
 
 问题整理
 ~~~~~~~~~~~~~

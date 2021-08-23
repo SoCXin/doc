@@ -2,7 +2,7 @@
 芯世界
 ==================
 
-**芯独立运动!**
+用芯造好物，**芯独立运动!**
 
 `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
 `GitHub <https://GitHub.com/Qitas>`_ |
@@ -23,11 +23,11 @@
     :caption: 应用速览
     :maxdepth: 1
 
-    低功耗      <field/LP>
-    电机控制    <field/motor>
-    人机交互    <field/hmi>
-    无线通信    <field/iot>
-    边缘计算    <field/edge>
+    感知类      <field/LP>
+    控制类      <field/motor>
+    交互类      <field/hmi>
+    通信类      <field/iot>
+    计算类      <field/edge>
 
 .. toctree::
     :caption: 架构速览
@@ -45,5 +45,6 @@
 
     STM <ST/index>
     WCH <WCH/index>
+    ASR <ASR/index>
     Espressif <espressif/index>
     Arterytek <arterytek/index>
