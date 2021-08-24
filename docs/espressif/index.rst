@@ -30,3 +30,8 @@ RISC-V系列
     :maxdepth: 1
 
     RISC-V  <riscv>
+
+FQA
+------------
+
+https://docs.espressif.com/_/downloads/espressif-esp-faq/zh_CN/latest/pdf/

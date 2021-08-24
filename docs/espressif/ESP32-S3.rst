@@ -1,12 +1,12 @@
 
-.. _espressif_esp32s3:
+.. _esp32s3:
 
 ESP32-S3
 ================
 
 
-* 关键词：``xtensa`` ``240MHz`` ``RV32IMC`` ``BLE5.0`` ``Wi-Fi`` ``USB1.1``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32-S3>`_
+* 关键词：``Xtensa`` ``LX7`` ``240MHz`` ``RV32IMC`` ``BLE5.0`` ``Wi-Fi`` ``USB1.1``
+* 资源池：`GitHub <https://github.com/SoCXin/ESP32S3>`_
 
 .. contents::
     :local:
@@ -16,19 +16,23 @@ Xin简介
 
 :ref:`espressif` :ref:`xtensa` Dual Core WiFi & BLE SoC
 
-.. image:: ./images/ESP32C3.png
-    :target: https://www.espressif.com/zh-hans/products/socs/ESP32-C3
+.. image:: ./images/ESP32S3.png
+    :target: https://www.espressif.com/zh-hans/products/socs/ESP32-S3
 
 
 关键特性
 ~~~~~~~~~~~~~
 
-* 400 KB SRAM (TCM)，384 KB ROM
-* Wi-Fi IEEE 802.11b/g/n
-* BLE 5.0，支持Mesh (Bluetooth Mesh)
-* USB1.1
-* 2 × UART
-* 22  x GPIO
+* Xtensa® LX7 Dual Core 240 MHz
+* 512 KB SRAM (TCM)，384 KB ROM
+* Wi-Fi + Bluetooth 5 (LE)
+* USB OTG FS
+* 2 × SDIO 主机
+* DMA 5 接收 + 5 发送
+* 44 x GPIO，JTAG 接口
+* 超低功耗协处理器RISC-V (ULP)
+* 硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
+
 
 安全特性
 ~~~~~~~~~~~~~~
@@ -65,25 +69,6 @@ Xin选择
 
 本部分明确该芯片的需求匹配度
 
-对比ESP8266
-~~~~~~~~~~~~
-
-ESP32-C3
-
-对比ESP32
-~~~~~~~~~~~~
-
-ESP32-C3没有对 IRAM 和 DRAM 进行静态划分。SRAM 的前 16 KB 被配置为 cache 专用。与 ESP32 不同的是，ESP32-C3 的 IRAM 和 DRAM 地址在相同方向递增。
-基于应用需求，链接器脚本可将所需的空间配置为 IRAM，其后便为 DRAM 空间。因此相比 ESP32 来说，ESP32-C3 的存储空间使用效率更高。
-
-
-.. image:: ./images/RAM_VSESP32.jpg
-    :target: https://zhuanlan.zhihu.com/p/369125251
-
-.. image:: ./images/RAM_ESP32C3.jpg
-    :target: https://zhuanlan.zhihu.com/p/369125251
-
-ESP32-C3的蓝牙子系统不要求其存储必须为某固定位置的连续空间。反之，它使用标准的系统堆来分配存储空间，因此应用可以在需要的时候打开或禁用蓝牙。要实现这一点，仅需确保堆中有足够的存储空间即可。
 
 
 开发框架
@@ -95,7 +80,7 @@ ESP-IDF
 支持ESP32C3需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
 
 Arduino
-~~~~~~~~~
+^^^^^^^^^^
 
 编译器
 ^^^^^^^^^^
@@ -107,10 +92,6 @@ Xin应用
 
 .. image:: ./images/B_ESP32C3.jpg
     :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
-
-USB应用
-~~~~~~~~~~
-
 
 
 RGB LED
@@ -144,13 +125,6 @@ RGB LED
 
 
 
-开源方案
-~~~~~~~~~
-
-如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
-
-* `ESP-IDF <https://github.com/espressif/esp-idf>`_
-* `arduino-esp32 <https://github.com/espressif/arduino-esp32/>`_
 
 
 Xin总结
