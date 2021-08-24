@@ -13,7 +13,7 @@ RP2040
 Xin简介
 -----------
 
-:ref:`cortex_m0` MCU
+:ref:`cortex_m0` MCU，40 nm制程工艺，官方发布价格1美元
 
 .. image:: ./images/RP2040.png
     :target: https://www.raspberrypi.org/documentation/rp2040/getting-started
@@ -23,13 +23,19 @@ Xin简介
 ~~~~~~~~~~~~~~
 
 * Arm Cortex-M0+ @ 133MHz Dual Core
+* 6 组 264 kB SRAM
 * 264KB RAM, 128K-256K Flash
 * up to 16MB QSPI Flash
 * 2 × UART, 2 × SPI , 2 × I2C
 * USB1.1 OTG with UF2
+* 30 x GPIO (4 AIN)
 
 计算性能
 ~~~~~~~~~~~~~~
+
+.. image:: ./images/RP2040clk.png
+    :target: https://www.taterli.com/7517/
+
 
 **CoreMark** 已成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高意味着性能更高，使用C语言包含列举，数学矩阵操作和状态及CRC等运算法则。
 
@@ -45,26 +51,40 @@ Xin选择
 Xin应用
 -----------
 
+.. _rp2040_pio:
 
+PIO外设
+~~~~~~~~~~~
+
+RP2040中有2个相同的PIO块,每个PIO块都有专用的连接到总线结构,GPIO和中断控制器,每个块有四个状态机,可以独立执行顺序程序来操作GPIO和传输数据。
+
+与通用处理器不同的是,PIO状态机对IO的专业化程度很高(highly specialised),它注重确定性,精确的时序,并与固定功能硬件紧密结合。PIO状态机可以动态地配置和重新配置,以实现许多不同的接口,自由度很高。
+
+PIO可以支持多种IO标准包括:
+
+* 8080/6080 并行接口
+* I2C
+* I2S
+* SDIO
+* SPI/DSPI/QSPI
+* UART
+* DPI/VGA (利用电阻网络)
+
+.. image:: ./images/RP2040PIO.png
+    :target: https://www.taterli.com/7568/
 
 
 Xin总结
 --------------
 
+其中，一个完全连接的交换机将 ARM 内核和 DMA 引擎连接到六个独立的 RAM 组，使得用户可以充分利用系统的性能。
 
+RP2040 提供所有常用接口：硬件 UART、SPI 和 I2C 控制器、USB 1.1 和四通道 ADC。而可编程 I/O (PIO) 子系统使 RP2040 脱颖而出，支持包括 SDIO、DPI、I2S，甚至 DVI-D 在内的软件实现协议。
 
 重点提示
 ~~~~~~~~~~~~~
 
-浮点运算一般需要在运算结果前写上（float）或者标注f，否则一律会被认为双精度，将会大大增加运算时间。
-
-除法和开方的运算周期过长，如无必要，尽量不要用，尽量将其转化为运算周期较少的加减乘运算
-
+用户可以使用一个内核运行应用程序代码，另一个内核监督硬件；也可以使用 FreeRTOS 或 MicroPython 在两个内核上运行应用程序代码。
 
 问题收集
 ~~~~~~~~~~~~~
-
-不管选用内部时钟源还是外部晶振，只要配置成170MHz,芯片肯定会复位。经过反复测试验证，发现设置PLL所产生的时钟只有在不高于80MHz时，芯片才能正常运行。
-
-主频的提高往往意味着功耗的增大或噪声及干扰方面可能加剧。于是试图从系统供电能力、电源稳定度、时钟稳定性方面查找原因，发现芯片的VDDA脚虚焊了，重新处理后芯片于170MHz运行稳健。
-
