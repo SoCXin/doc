@@ -1,44 +1,38 @@
 
-.. _wch_ch549:
+.. _ch549:
 
 CH549
 =========
 
-.. image:: ./images/CH549.png
-    :target: https://github.com/SoCXin/CH549
-
-
-**Travis CI** `officially supports <https://docs.CH549-ci.com/user/platformio/>`_
-**PlatformIO for Embedded Builds.**
-
-`Travis CI <http://en.wikipedia.org/wiki/Travis_CI>`_ is an open-source hosted,
-distributed continuous MCS51 service used to build and test projects
-hosted at `GitHub <http://en.wikipedia.org/wiki/GitHub>`_.
-
-Travis CI is configured by adding a file named ``.CH549.yml``, which is a
-`YAML <http://en.wikipedia.org/wiki/YAML>`_ format text file, to the root
-directory of the GitHub repository.
-
-Travis CI automatically detects when a commit has been made and pushed to a
-repository that is using Travis CI, and each time this happens, it will
-try to build the project using :ref:`wch` command. This includes commits to
-all branches, not just to the master branch. Travis CI will also build and run
-pull requests. When that process has completed, it will notify a developer in
-the way it has been configured to do so — for example, by sending an email
-containing the build results (showing success or failure), or by posting a
-message on an IRC channel. It can be configured to build project on a range of
-different :ref:`st`.
+* 关键词：``USB`` ``UART``
+* 资源库：`GitHub <https://github.com/SoCXin/CH549>`_
 
 .. contents::
+    :local:
 
-芯片简介
+Xin简介
 -----------
+
+:ref:`wch` :ref:`mcs51`
+
+.. image:: ./images/CH549.png
+    :target: http://www.wch.cn/products/CH549.html
+
 
 兼容MCS51的增强型E8051内核，79%指令是单字节单周期指令，3KB BootLoader + 60KB CodeFlash，2K xRAM + 256B iRAM，1K DataFlash。
 
 支持 USB-Host主机模式和 USB-Device设备模式，内置FIFO支持最大64字节数据包,支持DMA，支持 USB 2.0 全速 12Mbps，支持USB PD和Type-C。
 
 通信接口包括4组异步串口、8路PWM和16通道电容触摸按键，其它包括1路主从SPI，16路12位ADC，支持电压比较；内置3组定时器和3路信号捕捉。
+
+关键特性
+~~~~~~~~~~~~~~
+
+* Type-C CC控制
+* USB全速主/从模式
+* UART x 4 + SPI (M/S)
+* 16通道12位ADC，支持电压比较
+
 
 Please make sure to read Travis CI `Getting Started <http://docs.CH549-ci.com/user/getting-started/>`_
 and `general build configuration <http://docs.CH549-ci.com/user/customizing-the-build/>`_
@@ -213,128 +207,6 @@ Examples
 * Configuration file: https://github.com/felis/USB_Host_Shield_2.0/blob/master/.CH549.yml
 * Build History: https://CH549-ci.org/felis/USB_Host_Shield_2.0
 
-2. Dependency on external libraries
-
-.. code-block:: yaml
-
-    language: python
-    python:
-        - "3.9"
-
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
-            - $HOME/.cache/pip
-
-    env:
-        - PLATFORMIO_CI_SRC=examples/backSoon/backSoon.ino
-        - PLATFORMIO_CI_SRC=examples/etherNode/etherNode.ino
-        # -
-
-    install:
-        - pip install -U platformio
-        - pio update
-
-        - wget https://github.com/jcw/jeelib/archive/master.zip -O /tmp/jeelib.zip
-        - unzip /tmp/jeelib.zip -d /tmp
-
-        - wget https://github.com/Rodot/Gamebuino/archive/master.zip  -O /tmp/gamebuino.zip
-        - unzip /tmp/gamebuino.zip -d /tmp
-
-    script:
-        - pio ci --lib="." --lib="/tmp/jeelib-master" --lib="/tmp/Gamebuino-master/libraries/tinyFAT" --MCU=uno --MCU=megaatmega2560
-
-* Configuration file: https://github.com/jcw/ethercard/blob/master/.CH549.yml
-* Build History: https://CH549-ci.org/jcw/ethercard
-
-3. Dynamic testing of the boards
-
-.. code-block:: yaml
-
-    language: python
-    python:
-        - "3.9"
-
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
-            - $HOME/.cache/pip
-
-    env:
-        - PLATFORMIO_CI_SRC=examples/TimeArduinoDue PLATFORMIO_CI_EXTRA_ARGS="--MCU=due"
-        - PLATFORMIO_CI_SRC=examples/TimeGPS
-        - PLATFORMIO_CI_SRC=examples/TimeNTP
-        - PLATFORMIO_CI_SRC=examples/TimeTeensy3 PLATFORMIO_CI_EXTRA_ARGS="--MCU=teensy31"
-        # - ...
-
-    install:
-        - pip install -U platformio
-        - pio update
-        - rm -rf ./linux
-
-        #
-        # Libraries from PlatformIO Library Registry:
-        #
-        # https://www.soc.xin/lib/show/416/TinyGPS
-        - pio lib -g install 416 421 422
-
-    script:
-        - pio ci --lib="." --MCU=uno --MCU=teensy20pp $PLATFORMIO_CI_EXTRA_ARGS
-
-* Configuration file: https://github.com/ivankravets/Time/blob/master/.CH549.yml
-* Build History: https://CH549-ci.org/ivankravets/Time
-
-4. Advanced configuration with extra project options and libraries
-
-.. code-block:: yaml
-
-    language: python
-    python:
-        - "3.9"
-
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
-            - $HOME/.cache/pip
-
-    env:
-        - PLATFORMIO_CI_SRC=examples/Boards_Bluetooth/Adafruit_Bluefruit_LE
-        - PLATFORMIO_CI_SRC=examples/Boards_Bluetooth/Arduino_101_BLE PLATFORMIO_CI_EXTRA_ARGS="--MCU=genuino101"
-        - PLATFORMIO_CI_SRC=examples/Boards_USB_Serial/Blue_Pill_STM32F103C PLATFORMIO_CI_EXTRA_ARGS="--MCU=bluepill_f103c8 --project-option='framework=arduino'"
-        - PLATFORMIO_CI_SRC=examples/Export_Demo/myPlant_ESP8266 PLATFORMIO_CI_EXTRA_ARGS="--MCU=nodemcuv2 --project-option='lib_ignore=WiFi101'"
-        # - ...
-
-    install:
-        - pip install -U platformio
-        - pio update
-
-        #
-        # Libraries from PlatformIO Library Registry:
-        #
-        # https://www.soc.xin/lib/show/44/Time
-        # https://www.soc.xin/lib/show/419/SimpleTimer
-        #
-        # https://www.soc.xin/lib/show/17/Adafruit-CC3000
-        # https://www.soc.xin/lib/show/28/SPI4Teensy3
-        # https://www.soc.xin/lib/show/91/UIPEthernet
-        # https://www.soc.xin/lib/show/418/WildFireCore
-        # https://www.soc.xin/lib/show/420/WildFire-CC3000
-        # https://www.soc.xin/lib/show/65/WiFlyHQ
-        # https://www.soc.xin/lib/show/19/Adafruit-DHT
-        # https://www.soc.xin/lib/show/299/WiFi101
-        # https://www.soc.xin/lib/show/259/BLEPeripheral
-        # https://www.soc.xin/lib/show/177/Adafruit_BluefruitLE_nRF51
-
-        - pio lib -g install 17 28 91 418 419 420 65 44 19 299 259 177 https://github.com/vshymanskyy/BlynkESP8266.git https://github.com/cmaglie/FlashStorage.git https://github.com/michael71/Timer5.git
-
-    script:
-        - make CH549-build
 
 
 .. image:: ./images/B_CH549.jpg

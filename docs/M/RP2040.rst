@@ -42,10 +42,19 @@ Xin简介
 Xin选择
 -----------
 
+:ref:`rp2040` 包含两个子系列，分别为支持无晶振USB FS device的RP2040xxU系列，不支持USB的 RP2040xxN(1.8V-3.6V)/RP2040x4NR(1.8V-5.5V)。预期在Arduino和Micropython生态资源上拥有无与伦比的优势。
 
 开发资源
 ~~~~~~~~~~~
 
+Arduino
+^^^^^^^^^^
+
+MicroPython
+^^^^^^^^^^^^^
+
+C++ SDK
+^^^^^^^^^^
 
 
 Xin应用
