@@ -38,7 +38,10 @@ STMicroelectronics
 .. toctree::
     :maxdepth: 1
 
-    STM32H7 <TOP/index>
+    STM32H750 <TOP/STM32H750>
+    STM32MP151 <TOP/STM32MP151>
+    STM32MP153 <TOP/STM32MP153>
+    STM32MP157 <TOP/STM32MP157>
 
 功耗优化
 ----------

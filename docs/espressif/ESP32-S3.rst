@@ -5,7 +5,7 @@ ESP32-S3
 ================
 
 
-* 关键词：``Xtensa`` ``LX7`` ``240MHz`` ``RV32IMC`` ``BLE5.0`` ``Wi-Fi`` ``USB1.1``
+* 关键词：``Xtensa`` ``LX7`` ``240MHz`` ``BLE5.0`` ``Wi-Fi`` ``USB1.1``
 * 资源池：`GitHub <https://github.com/SoCXin/ESP32S3>`_
 
 .. contents::
