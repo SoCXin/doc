@@ -11,7 +11,10 @@ MediaTek
     :local:
     :depth: 1
 
-MCU
+SoC
 --------------------
 
+.. toctree::
+    :maxdepth: 1
 
+    MT2503 <MT2503>

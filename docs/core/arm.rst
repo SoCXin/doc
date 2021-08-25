@@ -4,12 +4,18 @@
 ARM Architecture
 ====================
 
-.. contents:: 目录索引
+.. contents::
     :local:
 
 
 ARM7
 -------------
+
+.. toctree::
+    :maxdepth: 1
+
+    MT2503 <../MediaTek/MT2503>
+
 
 ARM9
 -------------
