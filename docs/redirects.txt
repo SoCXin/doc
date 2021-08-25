@@ -3,6 +3,7 @@
 /STM32G030.html -> ST/M0/STM32G030.html
 /STM32G031.html -> ST/M0/STM32G031.html
 /STM32G474.html -> ST/M4/STM32G474.html
+/STM32G431.html -> ST/M4/STM32G431.html
 /ESP32.html -> espressif/ESP32.html
 /ESP32-S2.html -> espressif/ESP32-S2.html
 /ESP32-S3.html -> espressif/ESP32-S3.html

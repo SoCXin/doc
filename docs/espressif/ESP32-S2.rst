@@ -65,10 +65,6 @@ Xin选择
 
 本部分明确该芯片的需求匹配度
 
-对比ESP8266
-~~~~~~~~~~~~
-
-ESP32-C3
 
 对比ESP32
 ~~~~~~~~~~~~
@@ -108,14 +104,8 @@ Xin应用
 .. image:: ./images/B_ESP32C3.jpg
     :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
 
-USB应用
+tinyUSB
 ~~~~~~~~~~
-
-
-
-RGB LED
-~~~~~~~~~~~
-
 
 
 .. code-block:: bash
@@ -169,4 +159,4 @@ Xin总结
 
 
 .. warning::
-    相对传统的MCU开发，最大的槽点就是ESP-IDF编译效率，因为要编译的组件特别多，编译非常耗时间
+    ESP32-S2为单核处理器，相对家族其他产品相对鸡肋

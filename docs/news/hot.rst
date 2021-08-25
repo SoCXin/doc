@@ -22,10 +22,10 @@ ST大法
 .. toctree::
     :maxdepth: 1
 
-    STM32G030 <../ST/M0/STM32G030>
+    STM32G474 <../ST/M4/STM32G474>
     STM32G031 <../ST/M0/STM32G031>
 
-国产好货
+国货之光
 -------------
 
 .. toctree::
