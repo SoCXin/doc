@@ -14,8 +14,6 @@ SoC芯
     :caption: 榜单速览
     :maxdepth: 1
 
-    用于归档最近比较火的芯片平台
-
     热度榜单 <news/hot>
     方案榜单 <news/hop>
     性能榜单 <news/top>
