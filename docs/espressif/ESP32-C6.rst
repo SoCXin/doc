@@ -1,92 +1,187 @@
 
-.. _espressif_esp32c6:
+.. _esp32c6:
 
 ESP32-C6
 ================
 
-Managing components between the projects is a historical issue. A common code
-is duplicated between different projects that lead to project complexity.
-A good practice is to organize interdependent components as the separate libraries
-where other projects can depend on them.
 
-We highly recommend using :ref:`wch_ch573` for better compatibility and avoiding any issues.
+* 关键词：``RISC-V`` ``160MHz`` ``RV32IMC`` ``BLE5.0`` ``Wi-Fi``
+* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ , `Docs <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_
 
-.. contents:: Contents
+.. contents::
     :local:
 
-Structure
----------
+Xin简介
+-----------
 
-We recommend to use ``src`` folder for your C/C++ source files and ``include`` folder
-for your headers. You can also have nested sub-folders in ``src`` or ``include``.
+:ref:`espressif` :ref:`riscv` WiFi & BLE SoC
 
-**Example**
+.. image:: ./images/ESP32C3.png
+    :target: https://www.espressif.com/zh-hans/products/socs/ESP32-C3
 
-.. code::
 
-    ├── examples
-    │   └── echo
-    ├── include
-    │   └── HelloWorld.h
-    ├── library.json
-    └── src
-        └── HelloWorld.cpp
+关键特性
+~~~~~~~~~~~~~
 
-Manifest
---------
+* 400 KB SRAM (TCM)，384 KB ROM
+* Wi-Fi IEEE 802.11b/g/n
+* BLE 5.0，支持Mesh (Bluetooth Mesh)
+* TWAI 控制器
+* 22  x GPIO
 
-A library package must contain a manifest. We recommend using :ref:`wch_ch573`.
+计算性能
+~~~~~~~~~~~~~~
 
-**Example**
+.. image:: ./images/ESP.png
+.. image:: ./images/ESPEC.png
 
-.. code-block:: javascript
 
+安全特性
+~~~~~~~~~~~~~~
+
+内置安全硬件
+
+RSA 模块
+^^^^^^^^^^^^^^^
+
+基于 RSA-3072 的标准身份验证方案，确保在设备上运行受信任的应用程序。该功能可阻止设备运行烧录在 flash 中的恶意程序。
+安全启动需要快速高效地进行，以满足即时启动设备（如球泡灯）的需求，ESP32-C3 的安全启动方案仅在设备启动过程中增加了不到 100 ms 的时间开销。
+
+AES 模块
+^^^^^^^^^^^^^^^
+
+基于 AES-128-XTS 算法的 flash 加密方案，确保应用程序与配置数据在 flash 中保持加密状态。
+flash 控制器支持执行加密的应用程序固件，这不仅为存储在 flash 中的敏感数据提供了必要保护，还防止了运行时由于固件更改造成的 TOCTTOU (time-of-check-to-time-of-use) 攻击。
+
+数字签名
+^^^^^^^^^^^^^^^
+
+ESP32-C3 的数字签名外设，可以通过固件不可访问的私钥生成数字签名。同样地，其 HMAC 外设也可以生成固件不可访问的加密摘要。
+目前，大多数物联网云服务使用基于 X.509 证书的身份验证，数字签名外设保护了定义设备身份的私钥。这样一来，即使出现软件漏洞，它也能为设备身份提供强大的保护
+
+TEE 模块
+^^^^^^^^^^^^^^^
+
+世界控制器模块提供了两个互不干扰的执行环境。根据配置，世界控制器使用可信执行环境 (TEE) 或权限分离机制。
+如果应用程序固件需要处理敏感的安全数据（如 DRM 服务），则可以利用世界控制器模块，在安全区域处理数据。
+
+
+Xin选择
+-----------
+
+本部分明确该芯片的需求匹配度
+
+对比ESP8266
+~~~~~~~~~~~~
+
+与2014年发布的ESP8266相比，ESP32-C3更像是ESP32的简化版，QFN32(5*5)封装与ESP8266EX一致，价格也对标
+
+.. image:: ./images/C3vsESP8266.png
+    :target: https://blog.csdn.net/fengfeng0328/article/details/112437659
+
+ESP8266EX的不足：
+
+* eFUSE不开放
+* RF信号质量不够高
+* DTIM保活功耗较高
+* 内存较小，无法支撑复杂的应用场合
+* 缺少硬件加密、没有安全启动和Flash加密，RSA耗时较长，TLS握手需要3-4秒
+
+
+对比ESP32
+~~~~~~~~~~~~
+
+ESP32-C3没有对 IRAM 和 DRAM 进行静态划分。SRAM 的前 16 KB 被配置为 cache 专用。与 ESP32 不同的是，ESP32-C3 的 IRAM 和 DRAM 地址在相同方向递增。
+基于应用需求，链接器脚本可将所需的空间配置为 IRAM，其后便为 DRAM 空间。因此相比 ESP32 来说，ESP32-C3 的存储空间使用效率更高。
+
+
+.. image:: ./images/RAM_VSESP32.jpg
+    :target: https://zhuanlan.zhihu.com/p/369125251
+
+.. image:: ./images/RAM_ESP32C3.jpg
+    :target: https://zhuanlan.zhihu.com/p/369125251
+
+ESP32-C3的蓝牙子系统不要求其存储必须为某固定位置的连续空间。反之，它使用标准的系统堆来分配存储空间，因此应用可以在需要的时候打开或禁用蓝牙。要实现这一点，仅需确保堆中有足够的存储空间即可。
+
+
+开发资源
+~~~~~~~~~
+
+编译器
+^^^^^^^^^^
+
+ESP-IDF框架
+^^^^^^^^^^^^
+
+支持ESP32C3需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
+
+Arduino框架
+^^^^^^^^^^^^
+
+
+
+Xin应用
+--------------
+
+
+.. image:: ./images/B_ESP32C3.jpg
+    :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
+
+
+
+RGB LED
+~~~~~~~~~~~
+
+
+
+.. code-block:: bash
+
+    int main(void)
     {
-      "name": "HelloWorld",
-      "version": "1.0.0",
-      "description": "A \"Hello world\" program is a computer program that outputs \"Hello World\" (or some variant) on a display device",
-      "keywords": "planet, happiness, people",
-      "repository":
-      {
-        "type": "git",
-        "url": "https://github.com/username/hello-world.git"
-      },
-      "authors":
-      [
+        LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+        LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
+        LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
+        LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
+        LL_GPIO_ResetOutputPin(LED_GPIO_Port, LED_Pin);
+        GPIO_InitStruct.Pin = LED_Pin;
+        GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+        GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+        GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+        GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+        LL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
+        while (1)
         {
-          "name": "John Smith",
-          "email": "me@john-smith.com",
-          "url": "https://www.john-smith/contact"
-        },
-        {
-          "name": "Andrew Smith",
-          "email": "me@andrew-smith.com",
-          "url": "https://www.andrew-smith/contact",
-          "maintainer": true
+            LL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+            LL_mDelay(400);
         }
-      ],
-      "license": "MIT",
-      "homepage": "https://www.helloworld.org/",
-      "dependencies": {
-        "ownername/print": "~1.3.0"
-      },
-      "frameworks": "*",
-      "platforms": "*"
     }
 
 
-Publishing
-----------
+BLE Mesh
+~~~~~~~~~~~
 
-You can publish a library to the `PlatformIO Registry <https://www.soc.xin/lib>`__
-using :ref:`st_stm32mp151` command. Every time when you modify a source code of
-a library you will need to increment the "version" field in :ref:`wch_ch573` manifest
-and re-publish again.
 
-If the published library has an issue and you would like to remove it from the PlatformIO
-Registry, please use :ref:`st_stm32mp153` command.
+开源方案
+~~~~~~~~~
 
-Examples
---------
+如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
 
-See the published libraries in `PlatformIO Registry <https://www.soc.xin/lib>`__.
+* `ESP-IDF <https://github.com/espressif/esp-idf>`_
+* `arduino-esp32 <https://github.com/espressif/arduino-esp32/>`_
+
+
+Xin总结
+--------------
+
+
+
+重点提示
+~~~~~~~~~~~~~~
+
+
+
+问题整理
+~~~~~~~~~~~~~
+
+
+
