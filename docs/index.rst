@@ -1,11 +1,11 @@
 
-`芯` 世界
+``芯``xin
 ==================
 
 用芯造好物，**芯独立运动!**
 
-`LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
 `GitHub <https://GitHub.com/Qitas>`_ |
+`LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
 `Twitter <https://twitter.com/QitasTang>`_ |
 `Facebook <https://www.facebook.com/qitast>`_
 
@@ -13,6 +13,8 @@
 .. toctree::
     :caption: 榜单速览
     :maxdepth: 1
+
+    用于归档最近比较火的芯片平台
 
     热度榜单 <news/hot>
     方案榜单 <news/hop>

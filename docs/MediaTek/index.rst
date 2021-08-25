@@ -18,3 +18,4 @@ SoC
     :maxdepth: 1
 
     MT2503 <MT2503>
+    MT2625 <MT2625>
