@@ -23,8 +23,8 @@ SoC 芯
     :caption: 应用速览
     :maxdepth: 1
 
-    感知类      <field/LP>
-    控制类      <field/motor>
+    感知类      <field/s>
+    控制类      <field/m>
     交互类      <field/hmi>
     通信类      <field/iot>
     计算类      <field/edge>

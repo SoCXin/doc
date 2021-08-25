@@ -1,0 +1,101 @@
+
+.. _cs32a039:
+
+CS32A039
+===============
+
+* 关键词：``Cortex-M0+`` ``QFN56`` ``48MHz`` ``ΣΔADC``
+* 资源库：`GitHub <https://github.com/SoCXin/CS32A039>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+:ref:`cortex_m0` MCU 芯海科技推出的32位工业级信号链MCU，采用ARM® Cortex®-M0 内核，频率48MHz，最高集成64Kbytes flash和8Kbytes SRAM，并提供丰富的通信接口（I2C、SPI/I2S和USART）和多达12个定时器，具备可靠性高、精度高、功耗低等特点。
+
+.. image:: ./images/RP2040.png
+    :target: https://www.raspberrypi.org/documentation/rp2040/getting-started
+
+
+关键特性
+~~~~~~~~~~~~~~
+
+* 1路12位ADC，1us转换时间，最多10个外部输入通道，INL低至1.2LSB
+* 输入电压转换范围: 0~3.6V
+* 内置1.22V参考电压，60ppm低温漂
+* 内置温度传感器,精度±2℃
+* VBAT内部监测,精度1%，工作电压：1.65~5.5V
+* 1路24位ΣΔADC，ENOB最高22.3位
+* 5个输入通道，可配置为单端或差分输入
+* 内置1.225V基准电压，30ppm低温漂
+* 全差分零漂移放大器，增益1/2/4/8/16/32/64/128倍可调
+
+计算性能
+~~~~~~~~~~~~~~
+
+.. image:: ./images/RP2040clk.png
+    :target: https://www.taterli.com/7517/
+
+
+**CoreMark** 已成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高意味着性能更高，使用C语言包含列举，数学矩阵操作和状态及CRC等运算法则。
+
+Xin选择
+-----------
+
+:ref:`rp2040` 包含两个子系列，分别为支持无晶振USB FS device的RP2040xxU系列，不支持USB的 RP2040xxN(1.8V-3.6V)/RP2040x4NR(1.8V-5.5V)。预期在Arduino和Micropython生态资源上拥有无与伦比的优势。
+
+开发资源
+~~~~~~~~~~~
+
+Arduino
+^^^^^^^^^^
+
+MicroPython
+^^^^^^^^^^^^^
+
+C++ SDK
+^^^^^^^^^^
+
+
+Xin应用
+-----------
+
+.. _rp2040_pio:
+
+PIO外设
+~~~~~~~~~~~
+
+RP2040中有2个相同的PIO块,每个PIO块都有专用的连接到总线结构,GPIO和中断控制器,每个块有四个状态机,可以独立执行顺序程序来操作GPIO和传输数据。
+
+与通用处理器不同的是,PIO状态机对IO的专业化程度很高(highly specialised),它注重确定性,精确的时序,并与固定功能硬件紧密结合。PIO状态机可以动态地配置和重新配置,以实现许多不同的接口,自由度很高。
+
+PIO可以支持多种IO标准包括:
+
+* 8080/6080 并行接口
+* I2C
+* I2S
+* SDIO
+* SPI/DSPI/QSPI
+* UART
+* DPI/VGA (利用电阻网络)
+
+.. image:: ./images/RP2040PIO.png
+    :target: https://www.taterli.com/7568/
+
+
+Xin总结
+--------------
+
+其中，一个完全连接的交换机将 ARM 内核和 DMA 引擎连接到六个独立的 RAM 组，使得用户可以充分利用系统的性能。
+
+RP2040 提供所有常用接口：硬件 UART、SPI 和 I2C 控制器、USB 1.1 和四通道 ADC。而可编程 I/O (PIO) 子系统使 RP2040 脱颖而出，支持包括 SDIO、DPI、I2S，甚至 DVI-D 在内的软件实现协议。
+
+重点提示
+~~~~~~~~~~~~~
+
+用户可以使用一个内核运行应用程序代码，另一个内核监督硬件；也可以使用 FreeRTOS 或 MicroPython 在两个内核上运行应用程序代码。
+
+问题收集
+~~~~~~~~~~~~~

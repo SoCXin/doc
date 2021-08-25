@@ -1,4 +1,6 @@
+/ZML165.html -> M/ZML165.html
 /RP2040.html -> M/RP2040.html
+/CS32A039.html -> M/CS32A039.html
 /STM32F103.html -> ST/M3/STM32F103.html
 /STM32G030.html -> ST/M0/STM32G030.html
 /STM32G031.html -> ST/M0/STM32G031.html
