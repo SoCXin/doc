@@ -10,5 +10,5 @@
 .. toctree::
     :maxdepth: 1
 
-    STM32H750 <../ST/TOP/STM32H750>
+    STM32H750 <../ST/STM32H750>
     AT32F403 <../arterytek/AT32F403>

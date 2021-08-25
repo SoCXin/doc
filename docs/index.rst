@@ -44,7 +44,8 @@
     :maxdepth: 1
 
     STM <ST/index>
-    WCH <WCH/index>
     ASR <ASR/index>
+    WCH <WCH/index>
+    MediaTek <MediaTek/index>
     Espressif <espressif/index>
     Arterytek <arterytek/index>
