@@ -62,27 +62,6 @@ C++ SDK
 Xin应用
 -----------
 
-.. _rp2040_pio:
-
-PIO外设
-~~~~~~~~~~~
-
-RP2040中有2个相同的PIO块,每个PIO块都有专用的连接到总线结构,GPIO和中断控制器,每个块有四个状态机,可以独立执行顺序程序来操作GPIO和传输数据。
-
-与通用处理器不同的是,PIO状态机对IO的专业化程度很高(highly specialised),它注重确定性,精确的时序,并与固定功能硬件紧密结合。PIO状态机可以动态地配置和重新配置,以实现许多不同的接口,自由度很高。
-
-PIO可以支持多种IO标准包括:
-
-* 8080/6080 并行接口
-* I2C
-* I2S
-* SDIO
-* SPI/DSPI/QSPI
-* UART
-* DPI/VGA (利用电阻网络)
-
-.. image:: ./images/RP2040PIO.png
-    :target: https://www.taterli.com/7568/
 
 
 Xin总结
