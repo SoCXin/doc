@@ -1,5 +1,5 @@
 
-芯世界
+`芯` 世界
 ==================
 
 用芯造好物，**芯独立运动!**
@@ -46,6 +46,6 @@
     STM <ST/index>
     ASR <ASR/index>
     WCH <WCH/index>
-    MediaTek <MediaTek/index>
     Espressif <espressif/index>
-    Arterytek <arterytek/index>
+    MediaTek <MediaTek/index>
+    ArteryTek <arterytek/index>

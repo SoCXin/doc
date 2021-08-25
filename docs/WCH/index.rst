@@ -11,16 +11,16 @@ WCH
     :local:
     :depth: 1
 
-MCU
+MCU产品
 --------------------
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     8051系列  <mcs51>
-    RISC-V系列  <riscv>
     Cortex系列  <cortex>
+    RISC-V系列  <riscv>
 
 
 .. warning::
-    非上市公司
+    非常有特色的一家公司，产品偏向有线连接
