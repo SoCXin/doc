@@ -16,4 +16,7 @@
     AT32F421
     AT32F413
     AT32F403
+    AT32F407
 
+.. hint::
+    非常有特色的一家公司，产品偏向有高性能 :ref:`cortex_m4` MCU

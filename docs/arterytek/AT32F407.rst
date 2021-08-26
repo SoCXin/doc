@@ -1,12 +1,11 @@
 
-.. _at_at32f413:
+.. _at_at32f407:
 
-AT32F413
+AT32F407
 ===============
 
-* 关键词：``240MHz``  ``Cortex-M4``  ``-40~105°C``  ``USB2.0``
-* 资源库：`GitHub <https://github.com/SoCXin/AT32F413>`_
-
+* 关键词：``240MHz``  ``Cortex-M4``  ``-40~105°C``  ``MII/RMII``
+* 资源库：`GitHub <https://github.com/SoCXin/AT32F407>`_
 
 .. contents::
     :local:
@@ -16,16 +15,17 @@ Xin简介
 
 :ref:`arterytek` :ref:`cortex_m4` 单核 MCU
 
-
 关键特性
 ~~~~~~~~~
 
+* 工业级温度范围-40~105°C
+* sLib执行代码安全库区
 * Cortex®-M4主频最高 240 MHz
 * 高达 16MB 外部 SPI Flash memory 扩展
 * 4 x USART + 4 x UART
 * 2 x CAN 2.0B
-* 2 x SDIO
 * Crystal-less USB2.0全速接口
+* 10/100M以太网MAC：专用DMA和4K SRAM，支持IEEE 1588，MII/RMII接口
 
 Xin选择
 -----------
@@ -33,26 +33,18 @@ Xin选择
 
 
 
-规格选择
-~~~~~~~~~
-
-
-该系列最具有代表性的产品型号 STM32G031J6 和 STM32G031K8 可以作为标定对象
-
 Xin实践
 --------------
 
-STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发板中最常用的型号为 STM32G031J6 和 STM32G031K8
 
-
-开发工具
-~~~~~~~~~
+.. image:: images/B_AT32F421.jpg
+    :target: https://item.taobao.com/item.htm?_u=ogas3eu93a4&id=632845784689
 
 
 示例代码
-~~~~~~~~~
+~~~~~~~~~~~
 
-1. 基于STM32CubeMX生成HAL库工程
+1. 基于官方库工程
 
 .. code-block:: bash
 
@@ -89,14 +81,6 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
     }
 
 
-
-
-
-
-开源项目
-~~~~~~~~~
-
-如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
 
 
 

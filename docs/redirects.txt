@@ -24,5 +24,6 @@
 /AT32F421.html -> arterytek/AT32F421.html
 /AT32F413.html -> arterytek/AT32F413.html
 /AT32F403.html -> arterytek/AT32F403.html
+/AT32F407.html -> arterytek/AT32F407.html
 /MT2503.html -> MediaTek/MT2503.html
 /MT2625.html -> MediaTek/MT2625.html
