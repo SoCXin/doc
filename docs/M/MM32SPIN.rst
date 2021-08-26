@@ -1,0 +1,48 @@
+
+.. _mm32spin:
+
+MM32SPIN
+===============
+
+* 关键词：``Cortex-M0+`` ``QFN20`` ``48MHz`` ``24bit Σ-∆ ADC``
+* 资源库：`GitHub <https://github.com/SoCXin/MM32SPIN05>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+:ref:`cortex_m0` MCU
+
+.. image:: ./images/RP2040.png
+    :target: https://www.raspberrypi.org/documentation/rp2040/getting-started
+
+
+关键特性
+~~~~~~~~~~~~~~
+
+* 2ch 24bit Σ-∆ ADC
+
+计算性能
+~~~~~~~~~~~~~~
+
+.. image:: ./images/RP2040clk.png
+    :target: https://www.taterli.com/7517/
+
+
+**CoreMark** 已成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高意味着性能更高，使用C语言包含列举，数学矩阵操作和状态及CRC等运算法则。
+
+Xin选择
+-----------
+
+
+
+Xin应用
+-----------
+
+
+
+Xin总结
+--------------
+

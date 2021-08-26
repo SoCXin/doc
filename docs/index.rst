@@ -23,11 +23,11 @@ SoC 芯
     :caption: 应用速览
     :maxdepth: 1
 
-    感知类      <field/s>
-    控制类      <field/m>
-    交互类      <field/hmi>
-    通信类      <field/iot>
-    计算类      <field/edge>
+    感知类      <for/s>
+    控制类      <for/m>
+    交互类      <for/u>
+    通信类      <for/iot>
+    计算类      <for/edge>
 
 .. toctree::
     :caption: 架构速览

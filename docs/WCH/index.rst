@@ -22,5 +22,5 @@ MCU产品
     RISC-V系列  <riscv>
 
 
-.. warning::
+.. hint::
     非常有特色的一家公司，产品偏向有线连接
