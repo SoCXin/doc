@@ -31,6 +31,5 @@ ST大法
 .. toctree::
     :maxdepth: 1
 
-    STC8H <../STC/STC8>
     AT32F421 <../arterytek/AT32F421>
     AT32F407 <../arterytek/AT32F407>

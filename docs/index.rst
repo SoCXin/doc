@@ -2,7 +2,7 @@
 SoC 芯
 ==================
 
-用芯造好物，**芯独立运动!**
+用芯造好物，**芯思想，芯独立!**
 
 `GitHub <https://GitHub.com/Qitas>`_ |
 `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
@@ -17,6 +17,7 @@ SoC 芯
     热度榜单 <news/hot>
     方案榜单 <news/hop>
     性能榜单 <news/top>
+    低端榜单 <news/low>
     特色榜单 <news/spec>
 
 .. toctree::
