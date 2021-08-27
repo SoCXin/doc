@@ -6,7 +6,7 @@ ST Cortex-M3
 
 :ref:`cortex_m3`
 
-.. contents:: 目录
+.. contents::
     :local:
 
 
@@ -25,16 +25,15 @@ STM32F2系列
 --------------
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
-    STM32F205
     STM32F207
 
 STM32F3系列
 --------------
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     STM32F303
 

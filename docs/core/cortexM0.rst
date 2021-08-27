@@ -4,14 +4,16 @@
 Cortex-M0
 ====================
 
-.. contents:: 目录索引
+.. contents::
     :local:
 
 
 
-相关产品
+Xin产品
 ----------
+
 .. toctree::
     :maxdepth: 2
 
     STM32   <../ST/M0/index>
+

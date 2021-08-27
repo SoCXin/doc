@@ -4,12 +4,74 @@
 STM32F207
 ==================
 
+* 关键词：``120MHz``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32F207>`_
+
 .. contents::
+    :local:
 
-Usage
------
+Xin简介
+-----------
 
-.. code-block:: bash
+:ref:`st` :ref:`cortex_m3` MCU
 
-    pio account logout
+Xin选择
+-----------
 
+.. contents::
+    :local:
+
+型号对比
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Mark
+      - RAM
+      - ROM
+      - UART
+      - CAN
+      - USB
+      - Ethernet
+    * - :ref:`at32f421`
+      - 150 DMIPS
+      - 8/16
+      - 16/32/64
+      - 2
+      - NO
+      - NO
+      - NO
+    * - :ref:`at32f415`
+      - 175 DMIPS
+      - 32
+      - 64/128/256
+      - 2/3/5
+      - 2.0B
+      - USB OTG
+      - NO
+    * - :ref:`at32f413`
+      - 250 DMIPS
+      - 16/32/64
+      - 64/128/256
+      - 2/3/5
+      - 2 x 2.0B
+      - USB2.0
+      - NO
+    * - :ref:`at32f403`
+      - 300 DMIPS
+      - 224
+      - 256/512/1024
+      - 7/8
+      - 2 x 2.0B
+      - USB2.0
+      - NO
+    * - :ref:`at32f407`
+      - 300 DMIPS
+      - 224
+      - 256/512/1024
+      - 8
+      - 2 x 2.0B
+      - USB2.0
+      - 10/100M
