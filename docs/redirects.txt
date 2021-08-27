@@ -8,6 +8,7 @@
 /STM32G431.html -> ST/M4/STM32G431.html
 /ESP32.html -> espressif/ESP32.html
 /ESP32-S2.html -> espressif/ESP32-S2.html
+/ESP32S2.html -> espressif/ESP32-S2.html
 /ESP32-S3.html -> espressif/ESP32-S3.html
 /ESP32S3.html -> espressif/ESP32-S3.html
 /ESP32-C3.html -> espressif/ESP32-C3.html
@@ -21,6 +22,8 @@
 /CH557.html -> WCH/CH557.html
 /CH554.html -> WCH/CH554.html
 /CH552.html -> WCH/CH552.html
+/CH32F103.html -> WCH/CH32F103.html
+/CH32V103.html -> WCH/CH32V103.html
 /AT32F421.html -> arterytek/AT32F421.html
 /AT32F413.html -> arterytek/AT32F413.html
 /AT32F415.html -> arterytek/AT32F415.html
