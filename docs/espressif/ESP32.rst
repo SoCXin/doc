@@ -3,7 +3,7 @@
 ESP32
 ===============
 
-* 关键词：``Xtensa LX6`` ``600DMIPS`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``100M MAC``
+* 关键词：``Xtensa LX6`` ``600DMIPS`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``100M MAC`` ``MII/RMII``
 * 资源库：`GitHub <https://github.com/SoCXin/ESP32>`_
 
 .. contents::

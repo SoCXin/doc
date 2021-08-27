@@ -1,10 +1,10 @@
 
-.. _at_at32f403:
+.. _at32f403:
 
 AT32F403
 ===============
 
-* 关键词：``240MHz``  ``Cortex-M4``  ``-40~105°C``  ``MII/RMII``
+* 关键词：``240MHz``  ``Cortex-M4``  ``-40~105°C``
 * 资源库：`GitHub <https://github.com/SoCXin/AT32F403>`_
 
 .. contents::

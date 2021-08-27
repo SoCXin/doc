@@ -163,15 +163,15 @@ ESP32-C3的蓝牙子系统不要求其存储必须为某固定位置的连续空
 ~~~~~~~~~
 
 
-`ESP-IDF <https://docs.os-q.com/espidf>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ESP-IDF
+^^^^^^^^^^^^^
 
 支持ESP32C3需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
 
+Arduino
+^^^^^^^^^^^^
+
 `Arduino <https://docs.os-q.com/arduino>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
 
 Xin应用
 --------------
