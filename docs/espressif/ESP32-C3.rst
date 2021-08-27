@@ -41,6 +41,9 @@ Xin简介
 
 内置安全硬件，硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
 
+.. contents::
+    :local:
+
 .. note::
     硬件安全单元十分利于物联网产品设计，特别是对加密算法的支持，在嵌入式领域配置如此多的安全外设，也是十分强大的
 
@@ -129,7 +132,7 @@ Xin选择
 .. image:: ./images/C3vsESP8266.png
     :target: https://blog.csdn.net/fengfeng0328/article/details/112437659
 
-`ESP8266EX <https://github.com/SoCXin/ESP8266EX>`_ 不足：
+`ESP8266EX <https://github.com/SoCXin/ESP8266>`_ 不足：
 
 * eFUSE不开放
 * RF信号质量不够高
@@ -156,17 +159,17 @@ ESP32-C3的蓝牙子系统不要求其存储必须为某固定位置的连续空
 编译工具
 ~~~~~~~~~
 
-开发资源
+开发框架
 ~~~~~~~~~
 
 
-ESP-IDF
-^^^^^^^^^^^^
+`ESP-IDF <https://docs.os-q.com/espidf>`_
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 支持ESP32C3需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
 
-Arduino
-^^^^^^^^^^^^
+`Arduino <https://docs.os-q.com/arduino>`_
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
