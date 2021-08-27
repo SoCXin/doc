@@ -70,6 +70,8 @@ Xin选择
 
 本部分明确该芯片的需求匹配度
 
+.. contents::
+    :local:
 
 编译器
 ~~~~~~~~~
@@ -94,6 +96,8 @@ Arduino
 Xin应用
 --------------
 
+.. contents::
+    :local:
 
 .. image:: ./images/B_ESP32C3.jpg
     :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
@@ -135,7 +139,8 @@ LEDC
 Xin总结
 --------------
 
-
+.. contents::
+    :local:
 
 重点提示
 ~~~~~~~~~~~~~~

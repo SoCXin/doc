@@ -1,5 +1,5 @@
 
-.. _espressif_esp32h2:
+.. _esp32h2:
 
 ESP32-H2
 ================
@@ -49,8 +49,11 @@ Xin选择
 
 
 
-Xin实践
+Xin应用
 --------------
+
+.. contents::
+    :local:
 
 
 .. image:: ./images/B_ESP32C3.jpg

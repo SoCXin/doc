@@ -14,9 +14,6 @@ Xin简介
 
 :ref:`espressif` :ref:`xtensa` Dual Core WiFi & BT SoC
 
-.. contents::
-    :local:
-
 .. image:: ./images/ESP32.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32
 
@@ -87,7 +84,8 @@ Xin应用
 Xin总结
 --------------
 
-
+.. contents::
+    :local:
 
 重点提示
 ~~~~~~~~~~~~~

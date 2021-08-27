@@ -25,7 +25,7 @@ Xin简介
 
 * 400 KB SRAM (TCM)，384 KB ROM
 * Wi-Fi IEEE 802.11b/g/n
-* BLE 5.0，支持Mesh (Bluetooth Mesh)
+* BLE 5.0 (Bluetooth Mesh)
 * USB OTG
 * 2 × UART
 * 22  x GPIO
