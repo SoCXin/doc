@@ -14,7 +14,7 @@ CH573
 Xin简介
 -----------
 
-:ref:`wch` :ref:`cortex_m0` 内核SoC内嵌10M以太网PHY，集成BLE通信功能。
+:ref:`wch` :ref:`riscv` 内核SoC
 
 .. image:: ./images/CH573.png
     :target: http://www.wch.cn/products/CH573.html

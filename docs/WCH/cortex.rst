@@ -7,3 +7,4 @@ WCH Cortex-M系列
     :maxdepth: 1
 
     CH579 <CH579>
+    CH32F103 <CH32F103>

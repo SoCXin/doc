@@ -1,11 +1,11 @@
 
-.. _wch_ch579:
+.. _ch32v103:
 
-CH579
-========
+CH32V103
+============
 
 * 关键词：``USB`` ``10M-ETH-PHY`` ``BLE4.2`` ``RTC`` ``AES128``
-* 资源库：`GitHub <https://github.com/SoCXin/CH579>`_
+* 资源库：`GitHub <https://github.com/SoCXin/CH32F103>`_
 
 .. contents::
     :local:
@@ -13,7 +13,7 @@ CH579
 Xin简介
 -----------
 
-:ref:`wch` :ref:`cortex_m0` 内核SoC内嵌10M以太网PHY，集成BLE通信功能。
+:ref:`wch` :ref:`wch_riscv`
 
 .. image:: ./images/CH579.png
     :target: http://www.wch.cn/products/CH579.html

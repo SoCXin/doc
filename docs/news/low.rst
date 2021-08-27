@@ -11,3 +11,4 @@
     :maxdepth: 1
 
     STC8H <../STC/STC8>
+    CH552 <../WCH/CH552>
