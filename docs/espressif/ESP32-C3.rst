@@ -4,8 +4,8 @@
 ESP32-C3
 ================
 
-* 关键词：``RISC-V`` ``160MHz`` ``RV32IMC`` ``BLE5.0`` ``Wi-Fi``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ , `Docs <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_
+* 关键词：``RISC-V`` ``160MHz`` ``RV32IMC`` ``QFN32`` ``BLE5.0`` ``Wi-Fi``
+* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_
 
 .. contents::
     :local:
@@ -35,10 +35,14 @@ Xin简介
 .. image:: ./images/ESPEC.png
 
 
+
 安全特性
 ~~~~~~~~~~~~~~
 
-内置安全硬件
+内置安全硬件，硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
+
+.. note::
+    硬件安全单元十分利于物联网产品设计，特别是对加密算法的支持，在嵌入式领域配置如此多的安全外设，也是十分强大的
 
 RSA 模块
 ^^^^^^^^^^^^^^^
@@ -69,13 +73,56 @@ ESP32-C3 的数字签名外设，可以通过固件不可访问的私钥生成�
 Xin选择
 -----------
 
-本部分明确该芯片的需求匹配度
+
+.. contents::
+    :local:
 
 .. hint::
     :ref:`esp32c3` 发布于2020年12月1日，是乐鑫基于RISC-V内核设计的MCU产品
 
+型号对比
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - DMIPS
+      - RAM
+      - WiFi
+      - BLE
+      - USB
+      - MAC
+    * - :ref:`esp32`
+      - Dual LX6
+      - 600 DMIPS
+      - 520 KB
+      - 802.11 b/g/n
+      - BT/BLE v4.2
+      - NO
+      - 100M
+    * - :ref:`esp32s3`
+      - Dual LX7
+      - 600 DMIPS
+      - 512 KB
+      - 802.11 b/g/n
+      - BLE v5.0
+      - USB1.1 OTG
+      - NO
+    * - :ref:`esp32c3`
+      - RV32IMC
+      - 200 DMIPS
+      - 400 KB
+      - 802.11 b/g/n
+      - BLE v5.0
+      - NO
+      - NO
+
+
+
 对比ESP8266
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 与2014年发布的ESP8266相比，ESP32-C3更像是ESP32的简化版，QFN32(5*5)封装与ESP8266EX一致，价格也对标
 
@@ -92,7 +139,7 @@ Xin选择
 
 
 对比ESP32
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 ESP32-C3没有对 IRAM 和 DRAM 进行静态划分。SRAM 的前 16 KB 被配置为 cache 专用。与 ESP32 不同的是，ESP32-C3 的 IRAM 和 DRAM 地址在相同方向递增。
 基于应用需求，链接器脚本可将所需的空间配置为 IRAM，其后便为 DRAM 空间。因此相比 ESP32 来说，ESP32-C3 的存储空间使用效率更高。
@@ -106,19 +153,19 @@ ESP32-C3没有对 IRAM 和 DRAM 进行静态划分。SRAM 的前 16 KB 被配置
 
 ESP32-C3的蓝牙子系统不要求其存储必须为某固定位置的连续空间。反之，它使用标准的系统堆来分配存储空间，因此应用可以在需要的时候打开或禁用蓝牙。要实现这一点，仅需确保堆中有足够的存储空间即可。
 
+编译工具
+~~~~~~~~~
 
 开发资源
 ~~~~~~~~~
 
-编译工具
-^^^^^^^^^^
 
-ESP-IDF框架
+ESP-IDF
 ^^^^^^^^^^^^
 
 支持ESP32C3需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
 
-Arduino框架
+Arduino
 ^^^^^^^^^^^^
 
 
@@ -168,8 +215,6 @@ LEDC
 
 
 
-
-
 开源方案
 ~~~~~~~~~
 
@@ -183,7 +228,8 @@ LEDC
 Xin总结
 --------------
 
-
+.. contents::
+    :local:
 
 重点提示
 ~~~~~~~~~~~~~~

@@ -26,19 +26,21 @@ Xin简介
 * Xtensa® LX7 Dual Core 240 MHz
 * 512 KB SRAM (TCM)，384 KB ROM
 * Wi-Fi + Bluetooth 5 (LE)
-* USB1.1 OTG FS
+* USB1.1 OTG
 * TWAI 控制器
 * 2 × SDIO 主机
 * DMA 5 接收 + 5 发送
 * 44 x GPIO，JTAG 接口
 * 超低功耗协处理器RISC-V (ULP)
-* 硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
 
 
 安全特性
 ~~~~~~~~~~~~~~
 
-内置安全硬件
+内置安全硬件，硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
+
+.. contents::
+    :local:
 
 RSA 模块
 ^^^^^^^^^^^^^^^
@@ -61,8 +63,11 @@ TEE 模块
 数字签名
 ^^^^^^^^^^^^^^^
 
-ESP32-C3 的数字签名外设，可以通过固件不可访问的私钥生成数字签名。同样地，其 HMAC 外设也可以生成固件不可访问的加密摘要。
+可以通过固件不可访问的私钥生成数字签名。同样地，其 HMAC 外设也可以生成固件不可访问的加密摘要。
 目前，大多数物联网云服务使用基于 X.509 证书的身份验证，数字签名外设保护了定义设备身份的私钥。这样一来，即使出现软件漏洞，它也能为设备身份提供强大的保护
+
+.. note::
+    硬件安全单元十分利于物联网产品设计，特别是对加密算法的支持，在嵌入式领域配置如此多的安全外设，也是十分强大的
 
 
 Xin选择
@@ -70,10 +75,51 @@ Xin选择
 
 本部分明确该芯片的需求匹配度
 
+
 .. contents::
     :local:
 
-编译器
+
+型号对比
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - DMIPS
+      - RAM
+      - WiFi
+      - BLE
+      - USB
+      - MAC
+    * - :ref:`esp32`
+      - Dual LX6
+      - 600 DMIPS
+      - 520 KB
+      - 802.11 b/g/n
+      - BT/BLE v4.2
+      - NO
+      - 100M
+    * - :ref:`esp32s2`
+      - LX7
+      - 300 DMIPS
+      - 520 KB
+      - 802.11 b/g/n
+      - BLE v5.0
+      - NO
+      - NO
+    * - :ref:`esp32s3`
+      - Dual LX7
+      - 600 DMIPS
+      - 512 KB
+      - 802.11 b/g/n
+      - BLE v5.0
+      - USB1.1 OTG
+      - NO
+
+编译工具
 ~~~~~~~~~
 
 开发框架
@@ -142,7 +188,7 @@ Xin总结
 .. contents::
     :local:
 
-重点提示
+要点提示
 ~~~~~~~~~~~~~~
 
 
