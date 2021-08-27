@@ -1,10 +1,10 @@
 
-.. _at32f407:
+.. _at32f415:
 
-AT32F407
+AT32F415
 ===============
 
-* 关键词：``Cortex-M4`` ``240MHz`` ``8 UART`` ``2 CAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
+* 关键词：``Cortex-M4`` ``240MHz`` ``8 UART`` ``2xCAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
 * 资源库：`GitHub <https://github.com/SoCXin/AT32F407>`_
 
 .. contents::
@@ -91,8 +91,6 @@ Xin选择
       - USB2.0
       - 10/100M
 
-.. hint::
-    基于 :ref:`cortex_m4` 的高性能产品，拥有丰富的通信外设资源，适用于网关类产品
 
 Xin应用
 -----------
