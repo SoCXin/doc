@@ -1,10 +1,10 @@
-.. _espressif_esp32:
+.. _esp32:
 
 ESP32
 ===============
 
-* 关键词：``240MHz`` ``600DMIPS`` ``WiFi`` ``BLE4.2`` ``CAN``
-* 资源库：`GitHub <https://github.com/SoCXin/ESP32C3>`_
+* 关键词：``Xtensa LX6`` ``600DMIPS`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``100M MAC``
+* 资源库：`GitHub <https://github.com/SoCXin/ESP32>`_
 
 .. contents::
     :local:
@@ -12,32 +12,35 @@ ESP32
 Xin简介
 -----------
 
-:ref:`espressif` :ref:`xtensa` Dual Core WiFi SoC
+:ref:`espressif` :ref:`xtensa` Dual Core WiFi & BT SoC
 
 .. contents::
     :local:
 
 .. image:: ./images/ESP32.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
+    :target: https://www.espressif.com/zh-hans/products/socs/ESP32
 
 
 关键特性
 ~~~~~~~~~~~~~~
 
-* Xtensa® LX6 240 MHz,40nm, 600DMIPS
+* Xtensa® LX6 240 MHz,600DMIPS
 * 520 KB SRAM (TCM)，448 KB ROM
 * WiFi 1T1R 802.11 b/g/n
-* BLE v4.2 +12 dBm，–97dBm
-* CAN
+* BLE/BR/EDR v4.2 +12 dBm，–97dBm
+* TWAI 控制器
 * Host SD/eMMC/SDIO、Slave SDIO/SPI
-* IEEE 1588 MAC
+* IEEE 1588 MAC,10 Mbps和100 Mbps
 * 硬件加密单元AES/RSA/ECC
 * 霍尔传感器
 
 
-Xin对比
+Xin选择
 -----------
 
+
+.. hint::
+    :ref:`esp32` 发布于2016年9月，是物联网领域的一名老将
 
 竞品分析
 ~~~~~~~~~
@@ -52,15 +55,14 @@ Xin对比
 ESP-IDF
 ~~~~~~~~~~~
 
-ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 ESP32-C 系列 SoC。它基于 C/C++ 语言提供了一个自给自足的 SDK，方便用户在这些平台上开发通用应用程序。
+ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 ESP32-C 系列 SoC。它基于 C/C++ 语言提供了一个自给自足的 SDK。
 
 .. image:: ./images/idf.png
-    :target: https://www.espressif.com/zh-hans/products/sdks/esp-idf
+    :target: https://docs.os-q.com/espidf.html
 
 
-Xin实践
+Xin应用
 -----------
-
 
 .. image:: ./images/B_ESP32.jpg
     :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.28.50e564d3axhB7j&id=624276301887&ns=1&abbucket=19
@@ -74,35 +76,9 @@ Xin实践
 
 
 
-示例代码
-~~~~~~~~~~~
 
-1. 基于STM32CubeMX生成HAL库工程
-
-.. code-block:: bash
-
-    uint8_t RxData;     //中断接收串口1数据
-    void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-    {
-        if(&huart1 == huart) {
-            HAL_UART_Receive_IT(huart, &RxData, 1);
-        }
-    }
-
-    void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-    {
-        if(htim==(&htim17)) //定时器中断函数
-        {
-            g_run_tick++;
-        }
-    }
-
-
-
-开源项目
+开源探索
 ~~~~~~~~~
-
-如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
 
 
 * `ESP-IDF <https://github.com/espressif/esp-idf>`_
