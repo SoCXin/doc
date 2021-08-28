@@ -27,6 +27,7 @@
 /CH32V103.html -> WCH/CH32V103.html
 /CH32F208.html -> WCH/CH32F208.html
 /CH32V307.html -> WCH/CH32V307.html
+/CH32V208.html -> WCH/CH32V208.html
 /AT32F421.html -> arterytek/AT32F421.html
 /AT32F413.html -> arterytek/AT32F413.html
 /AT32F415.html -> arterytek/AT32F415.html

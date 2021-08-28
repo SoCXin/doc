@@ -7,8 +7,6 @@
 CMSIS-DAP
 -------------
 
-实现烧录和调试功能
-
 .. toctree::
     :maxdepth: 1
 
