@@ -14,6 +14,7 @@ IoT
     :maxdepth: 1
 
     AT32F407 <../arterytek/AT32F407>
+    CH32F208 <../WCH/CH32F208>
 
 
 WiFi

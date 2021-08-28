@@ -1,6 +1,6 @@
 .. _wch_cortex:
 
-WCH Cortex-M系列
+WCH Cortex-M
 ======================
 
 .. toctree::
@@ -8,3 +8,4 @@ WCH Cortex-M系列
 
     CH579 <CH579>
     CH32F103 <CH32F103>
+    CH32F208 <CH32F208>

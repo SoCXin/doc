@@ -1,0 +1,73 @@
+
+.. _ch32f208:
+
+CH32F208
+============
+
+* 关键词：``USB`` ``10M-ETH-PHY`` ``BLE5.1`` ``CAN`` ``AES128``
+* 资源库：`GitHub <https://github.com/SoCXin/CH32F208>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+:ref:`wch` :ref:`cortex_m3` CH32F208是基于Cortex-M3内核设计的无线型微控制器，此系列主频高达144MHz。片上集成2Mbps低功耗蓝牙BLE 通讯模块、10M以太网MAC+PHY模块、USB2.0全速设备+主机/设备接口、CAN控制器等。
+
+.. image:: ./images/CH32F208.png
+    :target: http://www.wch.cn/products/CH32F208.html
+
+关键特性
+~~~~~~~~~~~~
+
+* 10M以太网控制器（MAC+PHY）
+* 4个USART接口
+* USB2.0全速主机/设备
+* 低功耗蓝牙5.1
+* 1个CAN接口（2.0B主动）
+
+芯片架构
+~~~~~~~~~~~
+
+.. image:: ./images/CH32F20X.png
+    :target: http://www.wch.cn/products/CH32F208.html
+
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+.. image:: ./images/CH32F20.png
+    :target: http://www.wch.cn/products/CH32F208.html
+
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+
+执行器
+~~~~~~~~~~~
+
+
+
+Xin总结
+--------------
+
+.. contents::
+    :local:
+
+要点提示
+~~~~~~~~~~~~~
+
+
+
+问题整理
+~~~~~~~~~~~~~
+
