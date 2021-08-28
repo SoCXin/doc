@@ -4,7 +4,7 @@
 CH583
 ============
 
-* 关键词：``RISC-V`` ``20MHz`` ``USB`` ``10M-ETH-PHY`` ``CAN`` ``AES128``
+* 关键词：``RISC-V4A`` ``20MHz`` ``USB`` ``AES128`` ``BLE5.1``
 * 资源库：`GitHub <https://github.com/SoCXin/CH32F208>`_
 
 .. contents::
@@ -13,7 +13,9 @@ CH583
 Xin简介
 -----------
 
-:ref:`wch_riscv` CH583集成BLE无线通讯的32位RISC微控制器。片上集成2Mbps低功耗蓝牙BLE 通讯模块、2个全速USB主机和设备控制器及收发器、2个SPI、4个串口、ADC、触摸按键检测模块、RTC等丰富的外设资源。
+:ref:`wch_riscv` CH583集成BLE无线通讯的32位RISC微控制器。
+
+片上集成2Mbps低功耗蓝牙BLE 通讯模块、2个全速USB主机和设备控制器及收发器、2个SPI、4个串口、ADC、触摸按键检测模块、RTC等丰富的外设资源。
 
 .. contents::
     :local:
@@ -23,15 +25,23 @@ Xin简介
 关键特性
 ~~~~~~~~~~~~
 
+* 32位RISC-V4A，支持RV32IMAC指令集，支持硬件乘法和除法
 * 32KB SRAM，1MB Flash，支持ICP、ISP和IAP，支持OTA无线升级
 * 2.4GHz RF收发器和基带及链路控制，支持BLE5.1
-* 接收灵敏度-98dBm，可编程+7dBm发送功率
+* 支持2Mbps、1Mbps、500Kbps、125Kbps，接收灵敏度-98dBm，可编程+7dBm发送功率
 * 2组USB2.0 全速Host/Device
 * 4组UART，2组SPI，12路PWM，1路IIC
-
+* 内置温度传感器
+* 内置RTC，支持定时和触发两种模式
+* 提供2组USB2.0 全速Host/Device
+* 40个GPIO，其中4个支持5V信号输入
+* 最低支持1.7V电源电压
 
 芯片架构
 ~~~~~~~~~~~
+
+.. image:: ./images/CH583Core.png
+    :target: http://www.wch.cn/products/CH583.html
 
 
 
@@ -53,7 +63,7 @@ Xin应用
     :local:
 
 
-执行器
+蓝牙设备
 ~~~~~~~~~~~
 
 
