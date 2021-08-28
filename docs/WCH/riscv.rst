@@ -5,17 +5,10 @@ WCH RISC-V
 
 :ref:`wch` :ref:`riscv`
 
+.. contents::
+    :local:
 .. image:: ./images/CH32V.png
     :target: http://special.wch.cn/zh_cn/mcu/
-
-
-SoC产品
---------------------
-.. toctree::
-    :maxdepth: 1
-
-    CH573 <CH573>
-    CH583 <CH583>
 
 
 MCU产品
@@ -25,3 +18,12 @@ MCU产品
 
     CH32V103 <CH32V103>
     CH32V307 <CH32V307>
+
+
+SoC产品
+--------------------
+.. toctree::
+    :maxdepth: 1
+
+    CH573 <CH573>
+    CH583 <CH583>
