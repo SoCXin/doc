@@ -43,7 +43,60 @@ Xin选择
 .. image:: ./images/CH32V2.png
     :target: http://www.wch.cn/products/CH32V307.html
 
+型号对比
+~~~~~~~~~
 
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Mark
+      - RAM
+      - ROM
+      - UART
+      - CAN
+      - USB
+      - Ethernet
+    * - :ref:`ch32f208`
+      - 150 DMIPS
+      - 8/16
+      - 16/32/64
+      - 2
+      - NO
+      - NO
+      - NO
+    * - :ref:`ch32f103`
+      - 175 DMIPS
+      - 32
+      - 64/128/256
+      - 2/3/5
+      - 2.0B
+      - USB OTG
+      - NO
+    * - :ref:`ch32v103`
+      - 250 DMIPS
+      - 16/32/64
+      - 64/128/256
+      - 2/3/5
+      - 2 x 2.0B
+      - USB2.0
+      - NO
+    * - :ref:`ch32v208`
+      - 300 DMIPS
+      - 224
+      - 256/512/1024
+      - 7/8
+      - 2 x 2.0B
+      - USB2.0
+      - NO
+    * - :ref:`ch32v307`
+      - 300 DMIPS
+      - 224
+      - 256/512/1024
+      - 8
+      - 2 x 2.0B
+      - USB2.0
+      - 10/100M
 
 Xin应用
 -----------
@@ -52,7 +105,7 @@ Xin应用
     :local:
 
 
-执行器
+串口网关
 ~~~~~~~~~~~
 
 

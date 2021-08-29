@@ -55,16 +55,6 @@ Xin实践
 
 
 
-
-
-开源项目
-~~~~~~~~~
-
-如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
-
-* `ESP-IDF <https://github.com/espressif/esp-idf>`_
-
-
 Xin总结
 --------------
 
