@@ -23,15 +23,6 @@ Xin简介
 关键特性
 ~~~~~~~~~~~~
 
-* 32位RISC-V4A，支持RV32IMAC指令集，支持硬件乘法和除法
-* 32KB SRAM，1MB Flash，支持ICP、ISP和IAP，支持OTA无线升级
-* 2.4GHz RF收发器和基带及链路控制，支持BLE5.1
-* 支持2Mbps、1Mbps、500Kbps、125Kbps，接收灵敏度-98dBm，可编程+7dBm发送功率
-* 2组USB2.0 全速Host/Device
-* 4组UART，2组SPI，12路PWM，1路IIC
-* 内置温度传感器
-* 内置RTC，支持定时和触发两种模式
-* 40个GPIO，其中4个支持5V信号输入
 * 最低支持1.7V电源电压
 
 .. hint::

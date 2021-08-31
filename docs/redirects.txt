@@ -1,7 +1,9 @@
-/ZML165.html -> M/ZML165.html
-/RP2040.html -> M/RP2040.html
-/CS32A039.html -> M/CS32A039.html
 /STM32F103.html -> ST/M3/STM32F103.html
+/STM32F207.html -> ST/M3/STM32F207.html
+/STM32F401.html -> ST/M3/STM32F401.html
+/STM32F407.html -> ST/M3/STM32F407.html
+/STM32F429.html -> ST/M3/STM32F429.html
+/STM32H750.html -> ST/M3/STM32H750.html
 /STM32G030.html -> ST/M0/STM32G030.html
 /STM32G031.html -> ST/M0/STM32G031.html
 /STM32G474.html -> ST/M4/STM32G474.html
@@ -35,3 +37,6 @@
 /AT32F407.html -> arterytek/AT32F407.html
 /MT2503.html -> MediaTek/MT2503.html
 /MT2625.html -> MediaTek/MT2625.html
+/ZML165.html -> M/ZML165.html
+/RP2040.html -> M/RP2040.html
+/CS32A039.html -> M/CS32A039.html

@@ -4,27 +4,61 @@
 STM32MP157
 =====================
 
-.. versionadded:: 5.0
+* 关键词：``RISC-V4C`` ``144MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE5.1`` ``QFN28``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32MP15>`_
 
 .. contents::
+    :local:
 
-Usage
------
-
-.. code-block:: bash
-
-    pio package unpublish [<organization>/]<pkgname>[@<version>] [OPTIONS]
-
-Description
+Xin简介
 -----------
 
-This removes a package version from the registry, deleting its entry and removing the
-tarball.
+.. contents::
+    :local:
 
-If no version is specified, or if all versions are removed then the root package entry
-is removed from the registry entirely.
 
-You can only remove a package version within 72 hours since the published date.
+关键特性
+~~~~~~~~~~~~
 
-Options
-~~~~~~~
+
+
+芯片架构
+~~~~~~~~~~~
+
+
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+
+执行器
+~~~~~~~~~~~
+
+
+
+Xin总结
+--------------
+
+.. contents::
+    :local:
+
+要点提示
+~~~~~~~~~~~~~
+
+
+
+问题整理
+~~~~~~~~~~~~~
+

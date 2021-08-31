@@ -1,51 +1,63 @@
-
 .. _stm32h750:
 
 STM32H750
 ================
 
-.. versionadded:: 5.0
+* 关键词：``480MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32H750>`_
 
 .. contents::
+    :local:
 
-Usage
------
-
-.. code-block:: bash
-
-    pio project data [OPTIONS]
-
-
-Description
+Xin简介
 -----------
 
-Dump data intended for IDE extensions/plugins:
+.. contents::
+    :local:
 
-- Toolchain type and location
-- Compiler flags
-- Defines/Macros
-- CPP Preprocessor includes/paths
-- Program path
-- SVD path if available for :ref:`st`
-- Extra information.
 
-Options
-~~~~~~~
+关键特性
+~~~~~~~~~~~~
 
-.. program:: pio project data
 
-.. option::
-    -d, --project-dir
 
-Specify the path to project directory. By default, ``--project-dir`` is equal
-to current working directory (``CWD``).
+芯片架构
+~~~~~~~~~~~
 
-.. option::
-    -e, --environment
 
-Dump specified environments. Multiple environments are allowed.
 
-.. option::
-    --json-output
 
-Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+
+执行器
+~~~~~~~~~~~
+
+
+
+Xin总结
+--------------
+
+.. contents::
+    :local:
+
+要点提示
+~~~~~~~~~~~~~
+
+
+
+问题整理
+~~~~~~~~~~~~~
+

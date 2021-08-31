@@ -1,52 +1,64 @@
 
-.. _st_stm32f303:
+.. _stm32f303:
 
 STM32F303
 ==================
 
+* 关键词：``RISC-V4C`` ``144MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE5.1`` ``QFN28``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32F303>`_
+
 .. contents::
+    :local:
 
-Usage
------
-
-.. code-block:: bash
-
-    pio account update [OPTIONS]
-
-Description
+Xin简介
 -----------
 
-Update :ref:`st` profile.
+.. contents::
+    :local:
 
-Options
-~~~~~~~
 
-You can omit these options and enter them later in update Wizard.
+关键特性
+~~~~~~~~~~~~
 
-.. program:: pio account register
 
-.. option::
-    --username, -u
 
-A username that must contain at least 4 characters including single hyphens, and cannot
-begin or end with a hyphen.
+芯片架构
+~~~~~~~~~~~
 
-.. option::
-    --email, -e
 
-An email. Please enter existing email, you will receive a confirmation letter.
 
-.. option::
-    --firstname
 
-A first name.
+Xin选择
+-----------
 
-.. option::
-    --lastname
+.. contents::
+    :local:
 
-A last name.
 
-.. option::
-    --current-password
 
-A current password to confirm this operation.
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+
+执行器
+~~~~~~~~~~~
+
+
+
+Xin总结
+--------------
+
+.. contents::
+    :local:
+
+要点提示
+~~~~~~~~~~~~~
+
+
+
+问题整理
+~~~~~~~~~~~~~
+

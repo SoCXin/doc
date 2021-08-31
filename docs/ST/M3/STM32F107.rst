@@ -4,35 +4,61 @@
 STM32F107
 =================
 
+* 关键词：``RISC-V4C`` ``144MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE5.1`` ``QFN28``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32MP15>`_
+
 .. contents::
+    :local:
 
-Usage
------
-
-.. code-block:: bash
-
-    pio account token
-
-Description
+Xin简介
 -----------
 
-Get or regenerate Personal Authentication Token. It is very useful for :ref:`wch`
-systems, :ref:`mcs51` operations where you are not able to authorize manually.
+.. contents::
+    :local:
 
-PlatformIO handles Personal Authentication Token from environment variable
-:envvar:`PLATFORMIO_AUTH_TOKEN`.
 
-Options
-~~~~~~~
+关键特性
+~~~~~~~~~~~~
 
-.. program:: pio account token
 
-.. option::
-    --regenerate
 
-    If this option is specified a new authentication token will be generated.
+芯片架构
+~~~~~~~~~~~
 
-.. option::
-    --json-output
 
-Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+
+执行器
+~~~~~~~~~~~
+
+
+
+Xin总结
+--------------
+
+.. contents::
+    :local:
+
+要点提示
+~~~~~~~~~~~~~
+
+
+
+问题整理
+~~~~~~~~~~~~~
+
