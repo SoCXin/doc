@@ -57,14 +57,6 @@ Xin选择
       - CAN
       - USB
       - Ethernet
-    * - :ref:`ch32f208`
-      - 150 DMIPS
-      - 8/16
-      - 16/32/64
-      - 2
-      - NO
-      - NO
-      - NO
     * - :ref:`ch32f103`
       - 175 DMIPS
       - 32
@@ -72,6 +64,14 @@ Xin选择
       - 2/3/5
       - 2.0B
       - USB OTG
+      - NO
+    * - :ref:`ch32f208`
+      - 150 DMIPS
+      - 8/16
+      - 16/32/64
+      - 2
+      - NO
+      - NO
       - NO
     * - :ref:`ch32v103`
       - 250 DMIPS
@@ -88,7 +88,7 @@ Xin选择
       - 7/8
       - 2 x 2.0B
       - USB2.0
-      - NO
+      - 10M(PHY)
     * - :ref:`ch32v307`
       - 300 DMIPS
       - 224
@@ -96,7 +96,7 @@ Xin选择
       - 8
       - 2 x 2.0B
       - USB2.0
-      - 10/100M
+      - 10(PHY)/1000M(MAC)
 
 Xin应用
 -----------

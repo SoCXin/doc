@@ -22,7 +22,7 @@ Ethernet
     :maxdepth: 1
 
     AT32F407 <../arterytek/AT32F407>
-    CH32F208 <../WCH/CH32F208>
+    CH32V307 <../WCH/CH32V307>
 
 配置8串口，实现串口数据网关
 
@@ -35,7 +35,7 @@ Ethernet
     :maxdepth: 1
 
     CH579 <../WCH/CH579>
-    CH32V307 <../WCH/CH32V307>
+    CH32F208 <../WCH/CH32F208>
 
 
 WiFi

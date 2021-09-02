@@ -13,7 +13,7 @@ ARMv7架构定义了三大分工明确的系列：
 * “R”系列针对实时系统；
 * “M”系列对微控制器。
 
-.. contents:: 目录索引
+.. contents::
     :local:
 
 .. _cortex_spec:
