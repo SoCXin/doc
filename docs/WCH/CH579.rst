@@ -30,6 +30,44 @@ Xin简介
 
 Xin选择
 -----------
+型号对比
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - RAM
+      - ROM
+      - UART
+      - BLE
+      - USB
+      - Ethernet
+    * - :ref:`ch573`
+      - :ref:`wch_riscv`
+      - 18
+      - 512
+      - 4
+      - 4.2
+      - USB H/D
+      - NO
+    * - :ref:`ch583`
+      - :ref:`wch_riscv`
+      - 32
+      - 1024
+      - 4
+      - 5.1
+      - 2 x USB H/D
+      - NO
+    * - :ref:`ch579`
+      - :ref:`wch_cortex`
+      - 32
+      - 250
+      - 4
+      - 4.2
+      - USB H/D
+      - 10M PHY
 
 Xin应用
 -----------

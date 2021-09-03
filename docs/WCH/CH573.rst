@@ -1,12 +1,11 @@
 
-.. _wch_ch573:
+.. _ch573:
 
 CH573
 ===========
 
-
-* 关键词：``USB`` ``BLE4.2`` ``RTC`` ``AES128``
-* 资源库：`GitHub <https://github.com/SoCXin/CH579>`_
+* 关键词：``USB`` ``BLE4.2`` ``AES128`` ``4 UART`` ``QFN28``
+* 资源库：`GitHub <https://github.com/SoCXin/CH573>`_
 
 .. contents::
     :local:
@@ -14,7 +13,7 @@ CH573
 Xin简介
 -----------
 
-:ref:`wch` :ref:`riscv` 内核SoC
+:ref:`wch_riscv` BLE SoC
 
 .. image:: ./images/CH573.png
     :target: http://www.wch.cn/products/CH573.html
@@ -22,12 +21,92 @@ Xin简介
 关键特性
 ~~~~~~~~~~~~~~
 
-* 提供10M以太网接口，内置PHY
-* BLE 4.2，Zigbee兼容IEEE 802.15.4规范，单端RF接口无需外部电感
-* 支持3.3V和2.5V电源，范围2.1V～3.6V, 内置DC/DC转换
 * SPI x 2 + UART x 4 (16C550/6Mbps)
+* BLE4.2
 * USB H/D
+* 支持2.1V～3.6V, 内置DC/DC转换
+
+
+芯片架构
+~~~~~~~~~~~
+
+
 
 
 Xin选择
 -----------
+
+.. contents::
+    :local:
+
+.. image:: ./images/CH32V2.png
+    :target: http://www.wch.cn/products/CH573.html
+
+
+型号对比
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - RAM
+      - ROM
+      - UART
+      - BLE
+      - USB
+      - Ethernet
+    * - :ref:`ch573`
+      - :ref:`wch_riscv`
+      - 18
+      - 512
+      - 4
+      - 4.2
+      - USB H/D
+      - NO
+    * - :ref:`ch583`
+      - :ref:`wch_riscv`
+      - 32
+      - 1024
+      - 4
+      - 5.1
+      - 2 x USB H/D
+      - NO
+    * - :ref:`ch579`
+      - :ref:`wch_cortex`
+      - 32
+      - 250
+      - 4
+      - 4.2
+      - USB H/D
+      - 10M PHY
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+
+串口控制器
+~~~~~~~~~~~
+
+
+
+Xin总结
+--------------
+
+.. contents::
+    :local:
+
+要点提示
+~~~~~~~~~~~~~
+
+
+
+问题整理
+~~~~~~~~~~~~~
+
+
