@@ -124,6 +124,18 @@ Xin应用
 
 通过USB连接PC端实现实时数据上报和指令接收，通过下行的串口控制下行通信设备，同时可以连接蓝牙网络组合控制
 
+CH573F端口
+^^^^^^^^^^^^^^
+
+* USB: PB10/PB11/
+* SPI: PA12/PA13/PA14/PA15
+* UART0: PB4/PB7/PB12
+* UART1: PA8/PA9/PB13
+* UART2: PB23/PB22/PB14
+* UART3: PA4/PA5/PB15
+
+.. warning::
+     :ref:`ch573` 没有配置I2C
 
 Xin总结
 --------------
