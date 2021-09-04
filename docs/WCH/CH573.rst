@@ -22,9 +22,10 @@ Xin简介
 ~~~~~~~~~~~~~~
 
 * SPI x 2 + UART x 4 (16C550/6Mbps)
-* BLE4.2
+* BLE4.2 (RX-96dBm，TX+5dBm)
 * USB H/D
 * 支持2.1V～3.6V, 内置DC/DC转换
+* 2 组端口PA和PB，22 x GPIO
 
 .. hint::
     :ref:`ch573` 最吸引人的地方在QFN28封装下，包括4个串口、BLE和USB外设，性价比十分高。
@@ -64,35 +65,44 @@ CH573 相同，可直接参考 CH573 手册和资料。
       - Core
       - RAM
       - Flash
-      - UART
+      - UART/SPI
       - BLE
       - USB
       - Ethernet
+    * - :ref:`ch579`
+      - :ref:`cortex_m0` 40M
+      - 32K
+      - 250K
+      - 4/2
+      - 4.2(+5dBm)
+      - USB H/D
+      - 10M PHY
     * - :ref:`ch573`
-      - :ref:`riscv`
+      - :ref:`riscv` 20M
       - 18K
       - 512K
-      - 4
+      - 4/2
       - 4.2(+5dBm)
       - USB H/D
       - NO
     * - :ref:`ch583`
-      - :ref:`riscv`
+      - :ref:`riscv` 20M
       - 32K
       - 1024K
-      - 4
-      - 5.1
-      - 2 x USB H/D
+      - 4/2
+      - 5.1(+5dBm)
+      - 2 x USB
       - NO
-    * - :ref:`ch579`
-      - :ref:`cortex_m0`
-      - 32K
-      - 250K
-      - 4
-      - 4.2
-      - USB.H/D
-      - 10M.PHY
 
+:ref:`wch_riscv` 和 :ref:`wch_cortex` 在内核性能上比较中规中矩，主要差异在于外设配置。
+
+
+品牌对比
+~~~~~~~~~
+
+
+.. note::
+    南京沁恒微电子股份有限公司成立于2004年，是一家专注于连接技术和MCU内核研究的射频与高速数模混合集成电路设计公司，提供以太网、蓝牙无线网络、USB和PCI类等接口芯片及集成上述接口的MCU+单片机。
 
 
 Xin应用
@@ -101,6 +111,8 @@ Xin应用
 .. contents::
     :local:
 
+.. image:: ./images/B_CH573.jpg
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.23.27ff8325Ct03Hk&id=638956144135&ns=1&abbucket=19#detail
 
 串口控制器
 ~~~~~~~~~~~

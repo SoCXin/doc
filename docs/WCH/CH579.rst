@@ -13,7 +13,7 @@ CH579
 Xin简介
 -----------
 
-:ref:`wch` :ref:`cortex_m0` 内核SoC内嵌10M以太网PHY，集成BLE通信功能。
+:ref:`wch_cortex` 内核SoC内嵌10M以太网PHY，集成BLE通信功能。
 
 .. image:: ./images/CH579.png
     :target: http://www.wch.cn/products/CH579.html
