@@ -13,7 +13,7 @@ CH583
 Xin简介
 -----------
 
-:ref:`wch_riscv` CH583集成BLE无线通讯的32位RISC微控制器。
+:ref:`wch_riscv4a` CH583集成BLE无线通讯的32位RISC微控制器。
 
 片上集成2Mbps低功耗蓝牙BLE 通讯模块、2个全速USB主机和设备控制器及收发器、2个SPI、4个串口、ADC、触摸按键检测模块、RTC等丰富的外设资源。
 

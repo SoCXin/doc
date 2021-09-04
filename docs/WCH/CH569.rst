@@ -1,10 +1,10 @@
 
-.. _ch573:
+.. _ch569:
 
-CH573
+CH569
 ===========
 
-* 关键词：``RISC-V3A`` ``USB`` ``BLE4.2`` ``AES128`` ``4 UART`` ``QFN28``
+* 关键词：``RISC-V3A`` ``USB3.0`` ``HSPI`` ``SerDes`` ``1000M Ethernet`` ``120MHz``
 * 资源库：`GitHub <https://github.com/SoCXin/CH573>`_
 
 .. contents::
@@ -13,7 +13,7 @@ CH573
 Xin简介
 -----------
 
-:ref:`wch_riscv3a` BLE SoC
+:ref:`wch_riscv3a` 支持RISC-V指令的IMAC子集。系统主频为120 MHz，片上集成超高速USB3.0主机和设备控制器（内置 PHY）、千兆以太网控制器、专用高速 SerDes 控制器（内置PHY，可直接驱动光纤）、高速并行接口HSPI、数字视频接口（DVP）、SD/EMMC接口控制器、加解密模块，片上128位宽 DMA设计可保障大数据量的高速传输，可广泛应用于流媒体、即时存储、超高速USB3.0 FIFO、通信延长、安防监控等应用场景。
 
 .. image:: ./images/CH573.png
     :target: http://www.wch.cn/products/CH573.html
@@ -28,7 +28,7 @@ Xin简介
 * 2 组端口PA和PB，22 x GPIO
 
 .. hint::
-    :ref:`ch573` 最吸引人的地方在QFN28封装下，包括4个串口、BLE和USB外设，性价比十分高。
+    :ref:`ch569` 最吸引人的地方在强悍的高速外设配置。
 
 
 芯片架构
