@@ -4,7 +4,7 @@
 CH573
 ===========
 
-* 关键词：``USB`` ``BLE4.2`` ``AES128`` ``4 UART`` ``QFN28``
+* 关键词：``RISC-V3A`` ``USB`` ``BLE4.2`` ``AES128`` ``4 UART`` ``QFN28``
 * 资源库：`GitHub <https://github.com/SoCXin/CH573>`_
 
 .. contents::
@@ -26,11 +26,15 @@ Xin简介
 * USB H/D
 * 支持2.1V～3.6V, 内置DC/DC转换
 
+.. hint::
+    :ref:`ch573` 最吸引人的地方在QFN28封装下，包括4个串口、BLE和USB外设，性价比十分高。
+
 
 芯片架构
 ~~~~~~~~~~~
 
-
+.. image:: ./images/CH573s.png
+    :target: http://www.wch.cn/downloads/CH573DS1_PDF.html
 
 
 Xin选择
@@ -39,8 +43,15 @@ Xin选择
 .. contents::
     :local:
 
-.. image:: ./images/CH32V2.png
+版本对比
+~~~~~~~~~
+
+.. image:: ./images/CH573list.png
     :target: http://www.wch.cn/products/CH573.html
+
+CH571 基于 CH573 去掉了 USB host 主机和触摸按键检测模块、8 位 PWM 模块和两个串口，
+FlashROM 总容量仅 256KB，ADC 不支持 DMA，只支持 2.3V 以上电源电压。除了上述差异，其它基本与
+CH573 相同，可直接参考 CH573 手册和资料。
 
 
 型号对比
@@ -52,35 +63,36 @@ Xin选择
     * - Name
       - Core
       - RAM
-      - ROM
+      - Flash
       - UART
       - BLE
       - USB
       - Ethernet
     * - :ref:`ch573`
-      - :ref:`wch_riscv`
-      - 18
-      - 512
+      - :ref:`riscv`
+      - 18K
+      - 512K
       - 4
-      - 4.2
+      - 4.2(+5dBm)
       - USB H/D
       - NO
     * - :ref:`ch583`
-      - :ref:`wch_riscv`
-      - 32
-      - 1024
+      - :ref:`riscv`
+      - 32K
+      - 1024K
       - 4
       - 5.1
       - 2 x USB H/D
       - NO
     * - :ref:`ch579`
-      - :ref:`wch_cortex`
-      - 32
-      - 250
+      - :ref:`cortex_m0`
+      - 32K
+      - 250K
       - 4
       - 4.2
-      - USB H/D
-      - 10M PHY
+      - USB.H/D
+      - 10M.PHY
+
 
 
 Xin应用
