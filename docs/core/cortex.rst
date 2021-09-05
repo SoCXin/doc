@@ -52,61 +52,62 @@ Cortex-M
     :header-rows:  1
 
     * - Core
-      - DMIPS/MHz
-      - CoreMark/MHz
       - Architecture
-      - NVIC
-      - MPU
       - Pipeline
       - ISA
+      - Version
+      - Instruction
+      - DMIPS/MHz
+      - CoreMark/MHz
     * - :ref:`cortex_m0`
+      - Von Neumann
+      - 2
+      - Thumb
+      - ARMv6-M
+      - 56
       - 0.94
       - 2.42
-      - ARMv6-M
-      - 4/2
-      - 4.2
-      - 3
-      - Thumb/Thumb-2
     * - :ref:`cortex_m23`
+      - Von Neumann
+      - 2
+      - Thumb/Thumb-2
+      - ARMv8-M
+      - 80
       - 0.94
       - 2.42
-      - ARMv6-M
-      - 4/2
-      - 4.2
+    * - :ref:`cortex_m3`
+      - Von Neumann
       - 3
       - Thumb/Thumb-2
-    * - :ref:`cortex_m3`
+      - ARMv7-M
+      - 80
       - 1.25
       - 3.32
-      - ARMv7-M
-      - 4/1
-      - 4.2
-      - USB H/D
-      - NO
     * - :ref:`cortex_m4`
+      - Von Neumann
+      - 3
+      - Thumb/Thumb-2
+      - ARMv7-M
+      - 80
       - 1.25
-      - 3.34
-      - ARMv7-M
-      - 4/1
-      - 5.1
-      - 2
-      - NO
+      - 3.32
     * - :ref:`cortex_m33`
-      - 1.50
-      - 2
+      - Von Neumann
+      - 3
+      - Thumb/Thumb-2
       - ARMv7-M
-      - 4/1
-      - 5.1
-      - 2
-      - NO
+      - 80
+      - 1.25
+      - 3.32
     * - :ref:`cortex_m7`
+      - Von Neumann
+      - 3
+      - Thumb/Thumb-2
+      - ARMv7-M
+      - 80
       - 2.14
       - 5.04
-      - ARMv7-M
-      - 4/1
-      - 5.1
-      - 2
-      - NO
+
 
 
 Cortex-R

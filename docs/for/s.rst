@@ -7,6 +7,14 @@
 .. contents::
     :local:
 
+安全性
+-----------
+.. toctree::
+    :maxdepth: 1
+
+
+
+
 低功耗
 -----------
 .. toctree::
@@ -14,8 +22,12 @@
 
     STM32L011 <../ST/M0/STM32L011>
 
-高速ADC
+
+AD转换
 -----------
+
+高速率ADC
+~~~~~~~~~~~~~~
 
 .. toctree::
     :maxdepth: 1
@@ -24,8 +36,8 @@
     STM32G474 <../ST/M4/STM32G474>
 
 
-24bit高精度
------------
+高精度ADC
+~~~~~~~~~~~~~~
 
 .. toctree::
     :maxdepth: 1

@@ -4,7 +4,7 @@
 HC32F460
 ===============
 
-* 关键词：``Cortex-M4`` ``PGA`` ``200MHz`` `` 2.5MSPS ADC``
+* 关键词：``Cortex-M4`` ``PGA`` ``200MHz`` ``2.5MSPS ADC``
 * 资源库：`GitHub <https://github.com/SoCXin/HC32F460>`_
 
 .. contents::
@@ -15,8 +15,6 @@ Xin简介
 
 :ref:`cortex_m4` MCU
 
-.. image:: ./images/RP2040.png
-    :target: https://www.raspberrypi.org/documentation/rp2040/getting-started
 
 
 关键特性
