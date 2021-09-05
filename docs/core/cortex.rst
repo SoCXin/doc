@@ -31,36 +31,69 @@ Architecture
 Cortex-M
 -------------
 
-
-``Cortex-M0``
-~~~~~~~~~~~~~~
-
 .. toctree::
     :maxdepth: 1
 
-    内核简介    <cortexM0>
+    cortexM0
+    cortexM3
+    cortexM4
+    cortexM33
+    cortexM7
 
-
-``Cortex-M3``
+内核对比
 ~~~~~~~~~~~~~~
 
-.. toctree::
-    :maxdepth: 1
+.. list-table::
+    :header-rows:  1
 
-    内核简介    <cortexM3>
-
-
-``Cortex-M4``
-~~~~~~~~~~~~~~
-
-.. toctree::
-    :maxdepth: 1
-
-    内核简介    <cortexM4>
-
-
-``Cortex-M7``
-~~~~~~~~~~~~~~
+    * - Core
+      - DMIPS/MHz
+      - CoreMark/MHz
+      - Flash
+      - UART/SPI
+      - BLE
+      - USB
+      - Ethernet
+    * - :ref:`cortex_m0`
+      - 0.95
+      - 1.62
+      - 250K
+      - 4/2
+      - 4.2
+      - USB
+      - 10M
+    * - :ref:`cortex_m3`
+      - 1.25
+      - 2.19
+      - 512K
+      - 4/1
+      - 4.2
+      - USB H/D
+      - NO
+    * - :ref:`cortex_m4`
+      - 1.25
+      - 2.19
+      - 1024
+      - 4/1
+      - 5.1
+      - 2
+      - NO
+    * - :ref:`cortex_m33`
+      - 1.50
+      - 2.
+      - 1024
+      - 4/1
+      - 5.1
+      - 2
+      - NO
+    * - :ref:`cortex_m7`
+      - 2.14
+      - 2.
+      - 1024
+      - 4/1
+      - 5.1
+      - 2
+      - NO
 
 
 Cortex-R

@@ -58,11 +58,17 @@ CH573 相同，可直接参考 CH573 手册和资料。
 型号对比
 ~~~~~~~~~
 
+.. image:: ./images/ch5x.png
+    :target: http://special.wch.cn/zh_cn/mcu/
+
+关键参数
+^^^^^^^^^^^^^
+
 .. list-table::
     :header-rows:  1
 
     * - Name
-      - Core
+      - Mark
       - RAM
       - Flash
       - UART/SPI
@@ -70,7 +76,7 @@ CH573 相同，可直接参考 CH573 手册和资料。
       - USB
       - Ethernet
     * - :ref:`ch579`
-      - :ref:`cortex_m0`
+      - 40MHz
       - 32K
       - 250K
       - 4/2
@@ -96,8 +102,6 @@ CH573 相同，可直接参考 CH573 手册和资料。
 
 :ref:`wch_riscv` 和 :ref:`wch_cortex` 在内核性能上比较中规中矩，主要差异在于外设配置。
 
-.. image:: ./images/ch5x.png
-    :target: http://special.wch.cn/zh_cn/mcu/
 
 品牌对比
 ~~~~~~~~~
@@ -127,12 +131,12 @@ Xin应用
 CH573F端口
 ^^^^^^^^^^^^^^
 
-* USB: PB10/PB11/
+* USB: PB10/PB11
 * SPI: PA12/PA13/PA14/PA15
-* UART0: PB4/PB7/PB12
-* UART1: PA8/PA9/PB13
-* UART2: PB23/PB22/PB14
-* UART3: PA4/PA5/PB15
+* UART0: PB4/PB7
+* UART1: PA8/PA9
+* UART2: PB23/PB22
+* UART3: PA4/PA5
 
 .. warning::
      :ref:`ch573` 没有配置I2C

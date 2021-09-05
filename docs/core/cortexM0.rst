@@ -8,6 +8,53 @@ Cortex-M0
     :local:
 
 
+内核对比
+---------------
+
+.. list-table::
+    :header-rows:  1
+
+    * - Core
+      - DMIPS/MHz
+      - CoreMark/MHz
+      - Flash
+      - UART/SPI
+      - BLE
+      - USB
+      - Ethernet
+    * - :ref:`cortex_m0`
+      - 0.95
+      - 1.62
+      - 250K
+      - 4/2
+      - 4.2
+      - USB
+      - 10M
+    * - :ref:`cortex_m3`
+      - 1.25
+      - 2.19
+      - 512K
+      - 4/1
+      - 4.2
+      - USB H/D
+      - NO
+    * - :ref:`cortex_m4`
+      - 1.25
+      - 2.19
+      - 1024
+      - 4/1
+      - 5.1
+      - 2
+      - NO
+    * - :ref:`cortex_m33`
+      - 1.50
+      - 2.19
+      - 1024
+      - 4/1
+      - 5.1
+      - 2
+      - NO
+
 中断管理
 ---------------
 
@@ -41,4 +88,5 @@ Xin产品
     :maxdepth: 2
 
     STM32   <../ST/M0/index>
+
 
