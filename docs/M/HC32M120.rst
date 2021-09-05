@@ -4,8 +4,8 @@
 HC32M120
 ===============
 
-* 关键词：``Cortex-M0+`` ``QFN20`` ``48MHz`` ``24bit Σ-∆ ADC``
-* 资源库：`GitHub <https://github.com/SoCXin/ZML165>`_
+* 关键词：``Cortex-M0+`` ``48MHz`` ``OPA``
+* 资源库：`GitHub <https://github.com/SoCXin/HC32M120>`_
 
 .. contents::
     :local:
@@ -22,7 +22,10 @@ Xin简介
 关键特性
 ~~~~~~~~~~~~~~
 
-* 2ch 24bit Σ-∆ ADC
+* 12bit 1MSPS ADC支持Timer事件触发
+* 2 x OPA，最大驱动电流30mA
+* 2 x CMP，支持窗口比较功能
+* -40~105 ℃，2.7-5.5V
 
 计算性能
 ~~~~~~~~~~~~~~
