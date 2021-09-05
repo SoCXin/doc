@@ -12,3 +12,4 @@
 
     STC8H <../STC/STC8>
     CH552 <../WCH/CH552>
+    CH573 <../WCH/CH573>

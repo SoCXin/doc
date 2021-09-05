@@ -1,0 +1,110 @@
+
+.. _stm32f401:
+
+STM32F401
+===============
+
+* 关键词：``84MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32F401>`_
+
+.. contents::
+    :local:
+
+
+Xin简介
+-----------
+
+:ref:`st_cortex_m4`
+
+
+关键特性
+~~~~~~~~~~~~~~
+
+* SPI x 2 + UART x 4 (16C550/6Mbps)
+* BLE4.2 (RX-96dBm，TX+5dBm)
+* USB H/D
+* 支持2.1V～3.6V, 内置DC/DC转换
+* 2 组端口PA和PB，22 x GPIO
+
+
+芯片架构
+~~~~~~~~~~~
+
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+版本对比
+~~~~~~~~~
+
+
+
+型号对比
+~~~~~~~~~
+
+
+关键参数
+^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Mark
+      - RAM
+      - Flash
+      - UART
+      - BLE
+      - USB
+      - Ethernet
+    * - :ref:`stm32f401`
+      - 40MHz
+      - 32K
+      - 250K
+      - 4/2
+      - 4.2
+      - USB
+      - 10M
+
+
+
+
+品牌对比
+~~~~~~~~~
+
+
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+
+Marlin
+~~~~~~~~~~~
+
+方案简介
+^^^^^^^^^^^^
+
+
+Xin总结
+--------------
+
+.. contents::
+    :local:
+
+要点提示
+~~~~~~~~~~~~~
+
+
+
+问题整理
+~~~~~~~~~~~~~
+
+

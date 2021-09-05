@@ -8,14 +8,17 @@
     特色榜单收录非常具有创新性，或者非常具有创造性的产品
 
 
+.. contents::
+    :local:
 
-以太网SoC
+
+通信类
 -------------
 
-QFN28+PHY
+PHY in QFN28
 ~~~~~~~~~~~~~
-
-在小封装内同时集成以太网MAC+PHY
+.. hint::
+    在QFN28小封装内同时集成以太网MAC+PHY
 
 .. toctree::
     :maxdepth: 1
@@ -23,14 +26,12 @@ QFN28+PHY
     CH579F <../WCH/CH579>
     CH32V208GB <../WCH/CH32V208>
 
-.. hint::
-    在以太网SoC集成方案中，:ref:`wch` 有很多尝试，但是尚未引爆，MCU外置PHY的方案拥有更多的选择
 
-信号链SoC
+计量类
 -------------
 
-24bit Σ-∆ ADC
-~~~~~~~~~~~~~~~
+24bit ADC
+~~~~~~~~~~~~~
 
 .. toctree::
     :maxdepth: 1

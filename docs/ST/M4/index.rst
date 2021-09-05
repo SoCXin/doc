@@ -6,7 +6,7 @@ STM32F4/G4
 
 :ref:`cortex_m4`
 
-.. contents:: 产品目录
+.. contents::
     :local:
 
 
@@ -16,6 +16,7 @@ STM32F4
 .. toctree::
     :maxdepth: 1
 
+    STM32F401
     STM32F407
     STM32F429
 

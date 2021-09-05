@@ -16,3 +16,11 @@
     HC32M120 <../M/HC32M120>
     MM32SPIN <../M/MM32SPIN>
 
+数控电源
+-----------
+
+.. toctree::
+    :maxdepth: 1
+
+    STM32G474 <../ST/M4/STM32G474>
+

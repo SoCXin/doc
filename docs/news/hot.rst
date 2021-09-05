@@ -7,14 +7,16 @@
 .. note::
     被推广和热荐的产品，拥有非常不错的市场潜力
 
-物联网
+开源拥趸
 -------------
 
 .. toctree::
     :maxdepth: 1
 
-    ESP32S3 <../espressif/ESP32-S3>
+    RP2040 <../M/RP2040>
+    ESP32 <../espressif/ESP32>
     ESP32C3 <../espressif/ESP32-C3>
+
 
 ST大法
 -------------

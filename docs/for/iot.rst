@@ -12,12 +12,11 @@ Ethernet
 .. hint::
     具备以太网通信硬件，至少片上集成以太网MAC。
 
-
 .. contents::
     :local:
 
 
-串口网关
+串口通信(下行)
 ~~~~~~~~~~~~~~
 
 .. hint::
@@ -28,11 +27,10 @@ Ethernet
 
     AT32F407 <../arterytek/AT32F407>
     CH32V307 <../WCH/CH32V307>
-    CH32F208 <../WCH/CH32F208>
     CH32F207 <../WCH/CH32F207>
 
 
-数据中继
+无线通信(下行)
 ~~~~~~~~~~~~~~
 
 .. hint::
@@ -50,13 +48,20 @@ Ethernet
 WiFi
 -----------
 
+.. hint::
+    具备Wi-Fi接入能力。
+
 .. toctree::
     :maxdepth: 1
 
     ESP32S2 <../espressif/ESP32-S2>
+    ESP32C3 <../espressif/ESP32-C3>
+
+Mesh
+----------
 
 BLE
------------
+~~~~~~~~~~
 
 .. toctree::
     :maxdepth: 1
@@ -66,7 +71,7 @@ BLE
     ESP32-H2 <../espressif/ESP32-H2>
 
 LoRa
------------
+~~~~~~~~~~
 
 .. toctree::
     :maxdepth: 1

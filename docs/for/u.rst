@@ -7,7 +7,7 @@
 .. contents::
     :local:
 
-显示
+大屏显示
 -----------
 
 .. toctree::
