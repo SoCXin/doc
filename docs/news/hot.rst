@@ -32,6 +32,3 @@ ST大法
     :maxdepth: 1
 
     AT32F421 <../arterytek/AT32F421>
-    AT32F407 <../arterytek/AT32F407>
-    CH32F208 <../WCH/CH32F208>
-    CH32V307 <../WCH/CH32V307>
