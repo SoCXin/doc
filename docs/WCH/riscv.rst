@@ -13,8 +13,7 @@ WCH RISC-V
     :local:
 
 
-
-RISC-V4
+RISC-V版本
 --------------------
 
 
@@ -29,56 +28,78 @@ RISC-V4
       - BLE
       - USB
       - Ethernet
-    * - :ref:`ch579`
-      - :ref:`cortex_m0`
+    * - :ref:`wch_riscv4a`
+      - 1
       - 32K
       - 250K
       - 4/2
       - 4.2(+5dBm)
       - USB H/D
       - 10M
-    * - :ref:`ch573`
-      - :ref:`riscv` 20M
+    * - :ref:`wch_riscv4b`
+      - 20M
       - 18K
       - 512K
       - 4/1
       - 4.2(+5dBm)
       - USB H/D
       - NO
-    * - :ref:`ch583`
-      - :ref:`riscv` 20M
-      - 32K
-      - 1024K
-      - 4/1
-      - 5.1(+5dBm)
-      - 2 x USB
+    * - :ref:`wch_riscv4c`
+      - 20
+      - 32
+      - 10
+      - 4
+      - 5
+      - 2
+      - NO
+    * - :ref:`wch_riscv4f`
+      - 20
+      - 32
+      - 10
+      - 4
+      - 5
+      - 2
+      - NO
+    * - :ref:`wch_riscv3a`
+      - 20
+      - 32
+      - 10
+      - 4
+      - 5
+      - 2
       - NO
 
 
 .. _wch_riscv4a:
+
 RISC-V4A
 ~~~~~~~~~~~~~~
-
 
 .. toctree::
     :maxdepth: 1
 
     CH583 <CH583>
 
+.. _wch_riscv4b:
 
 RISC-V4B
 ~~~~~~~~~~~~~~
 
+.. _wch_riscv4c:
+
 RISC-V4C
 ~~~~~~~~~~~~~~
+
+.. _wch_riscv4f:
 
 RISC-V4F
 ~~~~~~~~~~~~~~
 
+
 .. _wch_riscv3a:
 
 RISC-V3A
---------------------
+~~~~~~~~~~~~~~
 
 .. toctree::
     :maxdepth: 1
@@ -87,7 +108,7 @@ RISC-V3A
     CH569 <CH569>
 
 
-RISC-V集合
+RISC-V产品
 --------------------
 .. contents::
     :local:
