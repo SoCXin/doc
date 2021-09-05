@@ -67,6 +67,14 @@ Cortex-M
       - 4.2
       - 3
       - Thumb/Thumb-2
+    * - :ref:`cortex_m23`
+      - 0.94
+      - 2.42
+      - ARMv6-M
+      - 4/2
+      - 4.2
+      - 3
+      - Thumb/Thumb-2
     * - :ref:`cortex_m3`
       - 1.25
       - 3.32
@@ -94,7 +102,7 @@ Cortex-M
     * - :ref:`cortex_m7`
       - 2.14
       - 5.04
-      - 1ARMv7-M
+      - ARMv7-M
       - 4/1
       - 5.1
       - 2

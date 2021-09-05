@@ -21,6 +21,7 @@ WCH Cortex-M
     :maxdepth: 1
 
     CH32F103 <CH32F103>
+    CH32F207 <CH32F207>
     CH32F208 <CH32F208>
 
 低功耗产品
