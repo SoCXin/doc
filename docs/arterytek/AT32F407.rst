@@ -54,11 +54,20 @@ Xin选择
     :header-rows:  1
 
     * - Name
-      - Mark
+      - DMIPS
       - RAM
-      - ROM
+      - FLASH
       - UART
-      - CAN
+      - CAN2.0B
+      - USB
+      - SPIM
+
+    * - Name
+      - DMIPS
+      - RAM
+      - FLASH
+      - UART
+      - CAN2.0B
       - USB
       - Ethernet
     * - :ref:`at32f415`
@@ -109,6 +118,9 @@ Xin选择
       - 1
       - 2 x OTG
       - 10/100M
+
+.. note::
+    :ref:`arterytek` 高性能系列标配 :ref:`arterytek_spim` 和 :ref:`arterytek_slib` 功能
 
 版本对比
 ~~~~~~~~~

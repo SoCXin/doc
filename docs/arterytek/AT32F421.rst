@@ -28,18 +28,19 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
+* 内核频率：120 MHz
 * 供电电压：2.4V - 3.6V
 * 工作温度：-40°C - 105°C
-* 内核频率：120 MHz
+* HBM:6 KV, CDM:1000 V
 
 特征参数
 ^^^^^^^^^^^
 
-* 15ch ADC（12bit 2MSPS）
+* 15ch ADC (12bit 2MSPS)
 * 2 x USART
-* 2 x I2C + 2 x SPI
+* 2 x I2C + 2 x SPI/I2S
 * ERTC (1ppm的分辨率)
-* COMP (轨到轨比较器)
+* COMP (轨到轨比较器,1/4、1/2、3/4 VREF)
 * sLib安全库 (Security Library)
 
 .. note::
@@ -57,10 +58,13 @@ Xin简介
 .. image:: images/AT32F421C.png
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
 
+:ref:`at32f421` 系列产品包含最多1个高级定时器(16bit)、5个普通定时器(16bit)、1个基本定时器(16bit)、以及2个看门狗定时器、和1个系统滴答定时器。
 
 
 Xin选择
 -----------
+
+通过对比不同品牌不同型号差异，明确具体选型和关注指标，评估替代性和兼容性
 
 .. contents::
     :local:
@@ -182,7 +186,8 @@ Xin选择
       - D/H
       - 16M
 
-:ref:`arterytek` 目前只有 :ref:`cortex_m4` 单核的 MCU产品，均具备 :ref:`arterytek_slib` 功能，高性能系列才具备 :ref:`arterytek_spim` 功能
+.. note::
+    :ref:`arterytek` 目前只有 :ref:`cortex_m4` 单核的 MCU产品，均具备 :ref:`arterytek_slib` 功能，高性能系列才具备 :ref:`arterytek_spim` 功能
 
 版本对比
 ~~~~~~~~~
@@ -203,16 +208,185 @@ Xin应用
 .. image:: images/B_AT32F421.jpg
     :target: https://item.taobao.com/item.htm?_u=ogas3eu93a4&id=632845784689
 
-
-通信应用
-~~~~~~~~~~~
-
 .. warning::
      :ref:`at32f421` 除了高主频并没有配置太多外设，存储资源少，只用于控制通信器件实现数据转发较合适
 
-控制应用
+USART应用
 ~~~~~~~~~~~
 
+中断收发数据
+^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+    /* ----------------- USART1 and USART2 configuration -------------------- */
+    USART_StructInit(&USART_InitStructure);
+    USART_InitStructure.USART_BaudRate = 9600;
+    USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+    USART_InitStructure.USART_StopBits = USART_StopBits_1;
+    USART_InitStructure.USART_Parity = USART_Parity_No;
+    USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+    USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+
+    /* Configure USART1 */
+    USART_Init(USART1, &USART_InitStructure);
+    /* Configure USART2 */
+    USART_Init(USART2, &USART_InitStructure);
+
+    /* Enable USART1 Receive and Transmit interrupts */
+    USART_INTConfig(USART1, USART_INT_RDNE, ENABLE);
+    USART_INTConfig(USART1, USART_INT_TDE, ENABLE);
+
+    /* Enable USART2 Receive and Transmit interrupts */
+    USART_INTConfig(USART2, USART_INT_RDNE, ENABLE);
+    USART_INTConfig(USART2, USART_INT_TDE, ENABLE);
+
+    /* Enable the USART1 */
+    USART_Cmd(USART1, ENABLE);
+    /* Enable the USART2 */
+    USART_Cmd(USART2, ENABLE);
+
+    ...
+
+    void USART1_IRQHandler(void)
+    {
+        if(USART_GetITStatus(USART1, USART_INT_RDNE) != RESET)
+        {
+            /* Read one byte from the receive data register */
+            RxBuffer1[RxCounter1++] = USART_ReceiveData(USART1);
+
+            if(RxCounter1 == NbrOfDataToRead1)
+            {
+                /* Disable the USART1 Receive interrupt */
+                USART_INTConfig(USART1, USART_INT_RDNE, DISABLE);
+            }
+        }
+        if(USART_GetITStatus(USART1, USART_INT_TDE) != RESET)
+        {
+            /* Write one byte to the transmit data register */
+            USART_SendData(USART1, TxBuffer1[TxCounter1++]);
+
+            if(TxCounter1 == NbrOfDataToTransfer1)
+            {
+                /* Disable the USART1 Transmit interrupt */
+                USART_INTConfig(USART1, USART_INT_TDE, DISABLE);
+            }
+        }
+    }
+
+
+ERTC应用
+~~~~~~~~~~~
+
+Tamper
+^^^^^^^^^^^
+
+.. code-block:: bash
+
+    void ERTC_Config(void)
+    {
+        NVIC_InitType NVIC_InitStructure;
+        EXTI_InitType  EXTI_InitStructure;
+
+        /* Enable the PWR clock */
+        RCC_APB1PeriphClockCmd(RCC_APB1PERIPH_PWR, ENABLE);
+
+        /* Allow access to ERTC */
+        PWR_BackupAccessCtrl(ENABLE);
+
+        /* Reset BKP Domain */
+        RCC_BackupResetCmd(ENABLE);
+        RCC_BackupResetCmd(DISABLE);
+
+        /* Enable the LSI OSC */
+        RCC_LSICmd(ENABLE);
+
+        /* Wait till LSI is ready */
+        while(RCC_GetFlagStatus(RCC_FLAG_LSISTBL) == RESET)
+        {
+        }
+        /* Select the ERTC Clock Source */
+        RCC_ERTCCLKConfig(RCC_ERTCCLKSelection_LSI);
+
+        /* Enable the ERTC Clock */
+        RCC_ERTCCLKCmd(ENABLE);
+
+        /* Deinitializes the ERTC registers */
+        ERTC_Reset();
+
+        /* Wait for ERTC APB registers synchronisation */
+        ERTC_WaitForSynchro();
+
+        /* Enable The external line21 interrupt */
+        EXTI_ClearIntPendingBit(EXTI_Line19);
+        EXTI_InitStructure.EXTI_Line = EXTI_Line19;
+        EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+        EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;
+        EXTI_InitStructure.EXTI_LineEnable = ENABLE;
+        EXTI_Init(&EXTI_InitStructure);
+
+        /* Enable TAMPER IRQChannel */
+        NVIC_InitStructure.NVIC_IRQChannel =  ERTC_IRQn;
+        NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+        NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+        NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+        NVIC_Init(&NVIC_InitStructure);
+
+        /* Disable the Tamper 1 detection */
+        ERTC_TamperCmd(ERTC_TAMP_1, DISABLE);
+
+        /* Clear Tamper 1 pin Event(TAMP1F) pending flag */
+        ERTC_ClearFlag(ERTC_FLAG_TP1F);
+
+        /* Configure the Tamper 1 Trigger */
+        ERTC_TamperTriggerConfig(ERTC_TAMP_1, ERTC_TamperTrig_FallingEdge);
+
+        /* Enable the Tamper interrupt */
+        ERTC_INTConfig(ERTC_INT_TAMP, ENABLE);
+
+        /* Clear Tamper 1 pin interrupt pending bit */
+        ERTC_ClearINTPendingBINT(ERTC_INT_TAMP1);
+
+        /* Enable the Tamper 1 detection */
+        ERTC_TamperCmd(ERTC_TAMP_1, ENABLE);
+    }
+
+    int main(void)
+    {
+        /* ERTC configuration */
+        ERTC_Config();
+        /* Write To ERTC Backup Data registers */
+        WriteToERTC_BKP_DT(0xA53C);
+        /* Check if the written data are correct */
+        if(CheckERTC_BKP_DT(0xA53C) == 0)
+        {
+            /* Turn on LED2 */
+        }
+        while (1)
+        {
+        }
+    }
+
+    void ERTC_IRQHandler(void)
+    {
+        if(ERTC_GetFlagStatus(ERTC_FLAG_TP1F) != RESET)
+        {
+            /* Tamper 1 detection event occurred */
+            /* Check if ERTC Backup Data registers are cleared */
+            if(IsBackupRegReset() == 0)
+            {
+                /* OK, ERTC Backup Data registers are reset as expected */
+            }
+            /* Clear Tamper 1 pin Event pending flag */
+            ERTC_ClearFlag(ERTC_FLAG_TP1F);
+
+            /* Disable Tamper pin 1 */
+            ERTC_TamperCmd(ERTC_TAMP_1, DISABLE);
+
+            /* Enable Tamper pin */
+            ERTC_TamperCmd(ERTC_TAMP_1, ENABLE);
+        }
+    }
 
 
 Xin总结
