@@ -7,8 +7,8 @@ CH559
 * 关键词：``USB`` ``E8051`` ``56MHz``
 * 资源库：`GitHub <https://github.com/SoCXin/CH559>`_
 
-
 .. contents::
+    :local:
 
 芯片简介
 -----------
@@ -33,27 +33,10 @@ CH559
 * SPI0内置FIFO，支持主/从模式，SPI1支持主模式
 * 8通道 1MSPS 10/11bit ADC
 
-`封装规格`:
-
-.. code-block:: bash
 
 * CH559L:LQFP48 (7*7mm)
 * CH559T:SSOP20 (5.3mm)
 
-`Environment Variables`:
-
-.. code-block:: bash
-
-    PLATFORMIO_CI_SRC=path/to/source/file.c
-    PLATFORMIO_CI_SRC=path/to/source/file.ino
-    PLATFORMIO_CI_SRC=path/to/source/directory
-
-`开发板`:
-
-.. code-block:: bash
-
-    pip install -U platformio
-    pio ci --MCU=<ID_1> --MCU=<ID_2> --MCU=<ID_N>
 
 .. image:: ./images/B_CH559.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.21.2a2f27eex4iIfZ&id=578043172571&ns=1&abbucket=18#detail

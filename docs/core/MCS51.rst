@@ -2,7 +2,7 @@
 .. _mcs51:
 
 MCS51
---------------
+===============
 
 `MCS-51 <https://en.wikipedia.org/wiki/8051>`_ is a single chip microcontroller (MCU) series developed by Intel in 1980 for use in embedded systems.
 The architect of the instruction set of the Intel MCS-51 was John H.
@@ -12,11 +12,9 @@ It is an example of a complex instruction set computer, and has separate memory 
 
 
 8051
-===============
-
+--------------
 
 .. toctree::
     :maxdepth: 1
 
     WCH <../WCH/mcs51>
-    STC <../STC/STC8>

@@ -10,7 +10,7 @@
 .. toctree::
     :maxdepth: 1
 
-    STC8H <../STC/STC8>
+    STC8H <../L/STC8>
 
 .. list-table::
     :header-rows:  1
@@ -24,7 +24,7 @@
       - SPEC
       - Package
     * - :ref:`stc8`
-      - 16MHz
+      - 24MHz
       - 1K
       - 8K
       - 2
