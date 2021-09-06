@@ -93,22 +93,22 @@ Xin选择
       - 16/32/64
       - 2
       - 2MSPS
-      - 5+1
+      - 5+1+1
       - 1
     * - :ref:`stm32f030`
       - 44
-      - 32
-      - 64/128/256
-      - 2/3/5
-      - 2.0B
+      - 4
+      - 32/64/128
+      - 2
+      - 1.0MSPS
       - 5+1
       - NO
     * - :ref:`stm32f103`
       - 90
-      - 32
-      - 64/128/256
-      - 2/3/5
-      - 2.0B
+      - 20
+      - 32/64/128
+      - 2/4
+      - 1.0MSPS
       - 5+1
       - NO
     * - GD32F330
@@ -117,7 +117,7 @@ Xin选择
       - 16/32/64/128
       - 2
       - 2.6MSPS
-      - 5+1
+      - 5+1+1
       - 1
     * - GD32E230
       - 90
@@ -125,7 +125,7 @@ Xin选择
       - 16/32/64
       - 2
       - 2.6MSPS
-      - 5+1
+      - 5+1+1
       - 1
 
 :ref:`at32f421` 系列与 :ref:`stm32f030` 系列管脚兼容
@@ -211,10 +211,10 @@ Xin应用
 .. warning::
      :ref:`at32f421` 除了高主频并没有配置太多外设，存储资源少，只用于控制通信器件实现数据转发较合适
 
-USART应用
+UART应用
 ~~~~~~~~~~~
 
-USART中断
+中断接收
 ^^^^^^^^^^^^
 
 .. code-block:: bash
@@ -245,18 +245,19 @@ USART中断
 
     void USART1_NVIC_Config(void)
     {
-    NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
-    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=0 ;
-    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
-    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-    NVIC_Init(&NVIC_InitStructure);
+        NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
+        NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=0 ;
+        NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+        NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+        NVIC_Init(&NVIC_InitStructure);
     }
 
     ...
 
-    //Request to enter STOP mode with regulator in low power mode
+
+    /* ---- Request to enter STOP mode with regulator in low power mode ----- */
     PWR_EnterSleepMode(PWR_SLEEPEntry_WFI);
-    //<Configures system clock after wake-up from STOP
+    /* ---- Configures system clock after wake-up from STOP ----- */
     SysTick->CTRL |= 0x1;
 
     ...
@@ -364,7 +365,7 @@ TIM应用
 ADC应用
 ~~~~~~~~~~~
 
-temperature
+温度转换
 ^^^^^^^^^^^^
 
 .. code-block:: bash
@@ -439,8 +440,11 @@ temperature
 RTC应用
 ~~~~~~~~~~~
 
+
 Tamper
 ^^^^^^^^^^^
+
+改变 PC13 上的电平，当检测到下降沿时，将触发入侵检测；当发生入侵事件时通过串口打印
 
 .. code-block:: bash
 
@@ -559,11 +563,14 @@ Xin总结
 要点提示
 ~~~~~~~~~~~~~
 
+* ADC使用APB时钟,只能通过软件实现过采样
+* ERTC只支持入侵检测0（tamper0），不支持入侵检测1（tamper1）
 
 
 问题整理
 ~~~~~~~~~~~~~
 
+待整理。。。
 
 
 
