@@ -45,7 +45,6 @@ SoC 芯
     :maxdepth: 1
 
     STM <ST/index>
-    ASR <ASR/index>
     WCH <WCH/index>
     Espressif <espressif/index>
     MediaTek <MediaTek/index>

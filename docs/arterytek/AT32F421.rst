@@ -13,19 +13,31 @@ AT32F421
 Xin简介
 -----------
 
-:ref:`arterytek` :ref:`cortex_m4` 单核 MCU，超值型ARM® Cortex®-M4微控制器，高达120MHz的CPU运算速度与内建数字信号处理器(DSP)，最高可支持64KB闪存存储器(Flash)及16KB随机存取存储器(SRAM)，片上还集成了多达2个USART、2个SPI(可复用I²S)、2个I²C、1个16位高级定时器、5个16位通用定时器，和5通道DMA控制器。 同时还扩展了1个高速轨到轨输入/输出模拟电压比较器，1个采样率高达2M SPS的12位15通道高速ADC，可充分满足高速数据采集、混合信号处理和工业控制与电机应用要求。 几乎所有I/O口可容忍5V输入信号，且所有I/O口均为快速I/O，具有多种可选功能还支持端口重映射，极佳的灵活性和易用性满足多种应用需求。
+:ref:`arterytek` :ref:`cortex_m4` 单核 MCU，高达120MHz的CPU运算速度与内建数字信号处理器(DSP)，最高可支持64KB闪存存储器(Flash)及16KB随机存取存储器(SRAM)
 
-搭载了雅特力自行开发的sLib安全库 (Security Library) ，可支持密码保护指定范围程序区，方案商烧录核心算法到此区域，提供给下游客户做二次开发，强化了产品本身的安全性、可靠性和二次开发的使用便利度。
+片上集成了多达2个USART、2个SPI(可复用I²S)、2个I²C、1个16位高级定时器、5个16位通用定时器，和5通道DMA控制器。 同时还扩展了1个高速轨到轨输入/输出模拟电压比较器，1个采样率高达2M SPS的12位15通道高速ADC。
+
+几乎所有I/O口可容忍5V输入信号，且所有I/O口均为快速I/O，具有多种可选功能还支持端口重映射，极佳的灵活性和易用性满足多种应用需求。
+
 
 关键特性
 ~~~~~~~~~
 
-* 120MHz Cortex®-M4
-* 工业级温度范围-40~105°C
+* Cortex-M4 120MHz
+* 15ch ADC（12bit 2MSPS）
+* 2 x USART
+* 2 x I2C + 2 x SPI
 * sLib执行代码安全库区
+
+.. hint::
+    :ref:`arterytek` 自行开发的 :ref:`arterytek_slib` 可支持密码保护指定范围程序区，方案商烧录核心算法到此区域，提供给下游客户做二次开发，强化了产品本身的安全性、可靠性和二次开发的使用便利度。
+
 
 芯片架构
 ~~~~~~~~~~~
+
+.. image:: images/AT32F421.png
+    :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
 
 .. image:: images/AT32F421S.png
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
@@ -149,11 +161,15 @@ Xin应用
     :target: https://item.taobao.com/item.htm?_u=ogas3eu93a4&id=632845784689
 
 
-通信网关
+通信应用
 ~~~~~~~~~~~
 
 .. warning::
      :ref:`at32f421` 除了高主频并没有配置太多外设，存储资源少，只用于控制通信器件实现数据转发较合适
+
+控制应用
+~~~~~~~~~~~
+
 
 
 Xin总结
