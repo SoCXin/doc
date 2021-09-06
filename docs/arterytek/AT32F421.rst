@@ -142,7 +142,7 @@ Xin选择
       - USB
       - SPIM
     * - :ref:`at32f421`
-      - 150
+      - 150 (120MHz)
       - 8/16
       - 16/32/64
       - 2
@@ -150,7 +150,7 @@ Xin选择
       - NO
       - NO
     * - AT32F425
-      - 120
+      - 120 (96MHz)
       - 20
       - 32/64
       - 4
@@ -182,7 +182,7 @@ Xin选择
       - D/H
       - 16M
 
-:ref:`arterytek` 目前只有 :ref:`cortex_m4` 单核的 MCU产品，均具备 :ref:`arterytek_slib` 功能
+:ref:`arterytek` 目前只有 :ref:`cortex_m4` 单核的 MCU产品，均具备 :ref:`arterytek_slib` 功能，高性能系列才具备 :ref:`arterytek_spim` 功能
 
 版本对比
 ~~~~~~~~~
