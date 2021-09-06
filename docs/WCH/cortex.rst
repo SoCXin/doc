@@ -3,14 +3,12 @@
 WCH Cortex-M
 ======================
 
-:ref:`wch` :ref:`cortex`
-
-2012年起陆续引入ARM等32位内核，我们加入了网络、USB2.0等高速接口，并设计了高速DMA仲裁机制。 后期又推出CH32F103等通用MCU芯片，适用于软件兼容、硬件引脚兼容、接口更专业的成熟生态应用。
+:ref:`wch` 2012年起陆续引入 :ref:`cortex` 内核，我们加入了网络、USB2.0等高速接口，并设计了高速DMA仲裁机制，推出CH32F103等通用MCU芯片，适用于软件兼容、硬件引脚兼容、接口更专业的成熟生态应用。
 
 .. contents::
     :local:
 
-高性能产品
+Cortex-M3
 --------------------
 
 .. image:: ./images/CH32F.png
@@ -24,8 +22,13 @@ WCH Cortex-M
     CH32F207 <CH32F207>
     CH32F208 <CH32F208>
 
-低功耗产品
+
+Cortex-M0
 --------------------
+
+.. image:: ./images/ch5x.png
+    :target: http://special.wch.cn/zh_cn/mcu/
+
 .. toctree::
     :maxdepth: 1
 

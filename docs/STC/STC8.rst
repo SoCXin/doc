@@ -1,7 +1,7 @@
 
 .. _stc8:
 
-STC8
+STC8H
 ======
 
 * 关键词：``24MHz`` ``EEPROM`` ``8051`` ``cheap``
@@ -32,8 +32,3 @@ STC的最大特点价格低，然后是够用和使用广泛，不需要烧录�
 .. image:: ./images/STC.png
     :target: https://www.stcmcudata.com/
 
-
-STC8H
--------
-
- :ref:`mcs51`

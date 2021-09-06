@@ -16,7 +16,7 @@ Xin简介
 :ref:`wch` :ref:`cortex_m3`
 
 .. image:: ./images/CH579.png
-    :target: http://www.wch.cn/products/CH579.html
+    :target: http://www.wch.cn/products/CH32F103.html
 
 关键特性
 ~~~~~~~~~~~~~~

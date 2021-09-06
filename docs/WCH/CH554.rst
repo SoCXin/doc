@@ -1,8 +1,14 @@
 
-.. _wch_ch554:
+.. _ch554:
 
 CH554
 ========
 
-.. contents::
+* 关键词：``USB`` ``E8051`` ``24MHz`` ``LDO`` ``Type-C``
+* 资源库：`GitHub <https://github.com/SoCXin/CH552>`_
 
+.. contents::
+    :local:
+
+Xin简介
+-----------
