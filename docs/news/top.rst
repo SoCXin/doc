@@ -6,6 +6,10 @@
 
 .. note::
     具有不俗性能
+.. toctree::
+    :maxdepth: 1
+
+    HC32F460 <../M/HC32F460>
 
 .. list-table::
     :header-rows:  1
