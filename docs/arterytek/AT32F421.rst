@@ -219,32 +219,45 @@ USART应用
 
 .. code-block:: bash
 
-    /* ----------------- USART1 and USART2 configuration -------------------- */
-    USART_StructInit(&USART_InitStructure);
-    USART_InitStructure.USART_BaudRate = 9600;
-    USART_InitStructure.USART_WordLength = USART_WordLength_8b;
-    USART_InitStructure.USART_StopBits = USART_StopBits_1;
-    USART_InitStructure.USART_Parity = USART_Parity_No;
-    USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
-    USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+    void UART_Print_Init(uint32_t bound)
+    {
+        /* ----------------- USART1 and USART2 configuration -------------------- */
+        USART_StructInit(&USART_InitStructure);
+        USART_InitStructure.USART_BaudRate = 9600;
+        USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+        USART_InitStructure.USART_StopBits = USART_StopBits_1;
+        USART_InitStructure.USART_Parity = USART_Parity_No;
+        USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+        USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
 
-    /* Configure USART1 */
-    USART_Init(USART1, &USART_InitStructure);
-    /* Configure USART2 */
-    USART_Init(USART2, &USART_InitStructure);
+        USART_Init(USART1, &USART_InitStructure);
+        USART_Init(USART2, &USART_InitStructure);
 
-    /* Enable USART1 Receive and Transmit interrupts */
-    USART_INTConfig(USART1, USART_INT_RDNE, ENABLE);
-    USART_INTConfig(USART1, USART_INT_TDE, ENABLE);
+        /* Enable Receive and Transmit interrupts */
+        USART_INTConfig(USART1, USART_INT_RDNE, ENABLE);
+        USART_INTConfig(USART1, USART_INT_TDE, ENABLE);
+        USART_INTConfig(USART2, USART_INT_RDNE, ENABLE);
+        USART_INTConfig(USART2, USART_INT_TDE, ENABLE);
 
-    /* Enable USART2 Receive and Transmit interrupts */
-    USART_INTConfig(USART2, USART_INT_RDNE, ENABLE);
-    USART_INTConfig(USART2, USART_INT_TDE, ENABLE);
+        USART_Cmd(USART1, ENABLE);
+        USART_Cmd(USART2, ENABLE);
+    }
 
-    /* Enable the USART1 */
-    USART_Cmd(USART1, ENABLE);
-    /* Enable the USART2 */
-    USART_Cmd(USART2, ENABLE);
+    void USART1_NVIC_Config(void)
+    {
+    NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=0 ;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_Init(&NVIC_InitStructure);
+    }
+
+    ...
+
+    //Request to enter STOP mode with regulator in low power mode
+    PWR_EnterSleepMode(PWR_SLEEPEntry_WFI);
+    //<Configures system clock after wake-up from STOP
+    SysTick->CTRL |= 0x1;
 
     ...
 
@@ -252,25 +265,9 @@ USART应用
     {
         if(USART_GetITStatus(USART1, USART_INT_RDNE) != RESET)
         {
-            /* Read one byte from the receive data register */
-            RxBuffer1[RxCounter1++] = USART_ReceiveData(USART1);
-
-            if(RxCounter1 == NbrOfDataToRead1)
-            {
-                /* Disable the USART1 Receive interrupt */
-                USART_INTConfig(USART1, USART_INT_RDNE, DISABLE);
-            }
         }
         if(USART_GetITStatus(USART1, USART_INT_TDE) != RESET)
         {
-            /* Write one byte to the transmit data register */
-            USART_SendData(USART1, TxBuffer1[TxCounter1++]);
-
-            if(TxCounter1 == NbrOfDataToTransfer1)
-            {
-                /* Disable the USART1 Transmit interrupt */
-                USART_INTConfig(USART1, USART_INT_TDE, DISABLE);
-            }
         }
     }
 
