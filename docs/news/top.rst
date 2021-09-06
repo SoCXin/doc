@@ -7,12 +7,38 @@
 .. note::
     具有不俗性能
 
-MCU
--------------
+.. list-table::
+    :header-rows:  1
 
-.. toctree::
-    :maxdepth: 1
-
-    STM32H750 <../ST/STM32H750>
-    AT32F403 <../arterytek/AT32F403>
-    HC32F460 <../M/HC32F460>
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - SPEC
+      - Package
+    * - :ref:`stm32h750`
+      - 480MHz
+      - 1K
+      - 8K
+      - 2
+      - 18
+      - I2C
+      - TSSOP20
+    * - :ref:`at32f403`
+      - 240MHz
+      - 1K
+      - 16K
+      - 2
+      - 16
+      - USB-D
+      - TSSOP20
+    * - :ref:`hc32f460`
+      - 200MHz
+      - 18K
+      - 512K
+      - 4
+      - 24
+      - USB-H/D
+      - QFN28
