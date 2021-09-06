@@ -19,19 +19,27 @@ Xin简介
 
 几乎所有I/O口可容忍5V输入信号，且所有I/O口均为快速I/O，具有多种可选功能还支持端口重映射，极佳的灵活性和易用性满足多种应用需求。
 
+.. contents::
+    :local:
 
-关键特性
+基本参数
+~~~~~~~~~
+
+* 供电电压：2.4V - 3.6V
+* 工作温度：-40°C - +105°C
+
+特征参数
 ~~~~~~~~~
 
 * Cortex-M4 120MHz
 * 15ch ADC（12bit 2MSPS）
 * 2 x USART
 * 2 x I2C + 2 x SPI
-* sLib执行代码安全库区
+* ERTC (1ppm的分辨率)
+* 一轨到轨比较器(COMP)
 
 .. note::
     :ref:`arterytek` 自行开发的 :ref:`arterytek_slib` 可支持密码保护指定范围程序区，方案商烧录核心算法到此区域，提供给下游客户做二次开发，强化了产品本身的安全性、可靠性和二次开发的使用便利度。
-
 
 芯片架构
 ~~~~~~~~~~~
@@ -39,8 +47,11 @@ Xin简介
 .. image:: images/AT32F421S.png
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
 
-计算性能
+时钟体系
 ~~~~~~~~~~~~
+
+.. image:: images/AT32F421C.png
+    :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
 
 
 
@@ -142,9 +153,6 @@ Xin选择
 ~~~~~~~~~
 
 .. image:: images/AT32F421.png
-    :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
-
-.. image:: images/AT32F421.svg
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
 
 .. note::

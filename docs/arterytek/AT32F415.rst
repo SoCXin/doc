@@ -5,7 +5,7 @@ AT32F415
 ===============
 
 * 关键词：``Cortex-M4`` ``240MHz`` ``8 UART`` ``2xCAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
-* 资源库：`GitHub <https://github.com/SoCXin/AT32F407>`_
+* 资源库：`GitHub <https://github.com/SoCXin/AT32F415>`_
 
 .. contents::
     :local:

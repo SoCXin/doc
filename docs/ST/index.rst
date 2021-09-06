@@ -41,13 +41,6 @@ STMicroelectronics
     STM32H750 <STM32H750>
     STM32MP157 <STM32MP157>
 
-功耗优化
-----------
-
-.. toctree::
-    :maxdepth: 1
-
-    STM32L <L>
 
 无线通信
 ----------
@@ -55,4 +48,4 @@ STMicroelectronics
 .. toctree::
     :maxdepth: 1
 
-    STM32W <W>
+    STM32WLE5 <M4/STM32WLE5>

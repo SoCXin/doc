@@ -22,12 +22,57 @@ Ethernet
 .. hint::
     要求配置6串口以上，可用于实现以太网和串口上下通信。
 
-.. toctree::
-    :maxdepth: 1
+.. list-table::
+    :header-rows:  1
 
-    AT32F407 <../arterytek/AT32F407>
-    CH32V307 <../WCH/CH32V307>
-    CH32F207 <../WCH/CH32F207>
+    * - Name
+      - Mark
+      - RAM
+      - ROM
+      - UART
+      - CAN
+      - USB
+      - MAC
+    * - :ref:`stm32f207`
+      - 150 DMIPS
+      - 8/16
+      - 16/32/64
+      - 2
+      - NO
+      - NO
+      - NO
+    * - :ref:`stm32f407`
+      - 175 DMIPS
+      - 32
+      - 64/128/256
+      - 2/3/5
+      - 2.0B
+      - USB OTG
+      - NO
+    * - :ref:`ch32f207`
+      - 250 DMIPS
+      - 16/32/64
+      - 64/128/256
+      - 2/3/5
+      - 2 x 2.0B
+      - USB2.0
+      - NO
+    * - :ref:`ch32v307`
+      - 300 DMIPS
+      - 224
+      - 256/512/1024
+      - 7/8
+      - 2 x 2.0B
+      - USB2.0
+      - NO
+    * - :ref:`at32f407`
+      - 300 DMIPS
+      - 224
+      - 256/512/1024
+      - 8
+      - 2 x 2.0B
+      - USB2.0
+      - 10/100M
 
 
 无线通信(下行)
@@ -36,14 +81,49 @@ Ethernet
 .. hint::
     要求配置下行无线通信能力，可以连接以太网并通过无线网络分发。
 
-.. toctree::
-    :maxdepth: 1
+.. list-table::
+    :header-rows:  1
 
-    ESP32 <../espressif/ESP32>
-    CH579 <../WCH/CH579>
-    CH32F208 <../WCH/CH32F208>
-    CH32V208 <../WCH/CH32V208>
-
+    * - Name
+      - Mark
+      - RAM
+      - ROM
+      - BLE
+      - CAN
+      - USB
+      - MAC
+    * - :ref:`esp32`
+      - 150 DMIPS
+      - 8/16
+      - 16/32/64
+      - 2
+      - NO
+      - NO
+      - NO
+    * - :ref:`ch579`
+      - 175 DMIPS
+      - 32
+      - 64/128/256
+      - 2/3/5
+      - 2.0B
+      - USB OTG
+      - NO
+    * - :ref:`ch32f208`
+      - 150 DMIPS
+      - 8/16
+      - 16/32/64
+      - 2
+      - NO
+      - NO
+      - NO
+    * - :ref:`ch32v208`
+      - 175 DMIPS
+      - 32
+      - 64/128/256
+      - 2/3/5
+      - 2.0B
+      - USB OTG
+      - NO
 
 WiFi
 -----------
