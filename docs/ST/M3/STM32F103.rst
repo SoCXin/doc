@@ -1,22 +1,21 @@
 
-.. _st_stm32f103:
+.. _stm32f103:
 
 STM32F103
 ===============
 
-:ref:`st` :ref:`cortex_m3` 单核 MCU，资源仓库 `GitHub <https://github.com/SoCXin/STM32F103>`_
+* 关键词：``72MHz``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32F103>`_
 
-.. contents:: 目录索引
+.. contents::
     :local:
 
-Xin推荐
+Xin简介
 -----------
 
-性能：``170MHz`` 、``213DMIPS`` 、``550CoreMark``
+ :ref:`st_cortex_m3`
 
-
-
-``关键特性``
+关键特性
 ~~~~~~~~~~~~~~
 
 * 5个超快速12位ADC（4 Msamples/s）
@@ -95,27 +94,22 @@ Xin实践
 
 
 
-开源项目
-~~~~~~~~~
 
-如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
-
-关于 :ref:`st` MCU构建的 `开源项目 <https://github.com/search?q=STM32>`_ 有32000多个(和G0系列相关较少)，其中最主要的类别是arduino，STM32也是arduino的最佳运行平台之一。
-
-* `Arduino_Core_STM32 <https://github.com/stm32duino/Arduino_Core_STM32>`_
-* `STM32CubeG4 <https://github.com/STMicroelectronics/STM32CubeG4>`_
-
+.. warning::
+     :ref:`stm32f103` 太过火爆，主要考虑市场因素
 
 Xin总结
 --------------
 
+.. contents::
+    :local:
 
-
-``重点提示``
+要点提示
 ~~~~~~~~~~~~~
 
 
 
-``使用槽点``
+问题整理
 ~~~~~~~~~~~~~
+
 

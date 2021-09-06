@@ -27,6 +27,8 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~
 
+.. image:: images/AT32F421S.png
+    :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
 
 计算性能
 ~~~~~~~~~~~~
@@ -35,11 +37,13 @@ Xin简介
 
 Xin选择
 -----------
-.. hint::
-    :ref:`at32f421` 基于 :ref:`cortex_m4`，定位超值产品，主要替代F030 F103 E230 F330等型号，拥有更高的制程工艺和性能，具有很大的市场潜力。
 
 .. contents::
     :local:
+
+.. hint::
+    :ref:`at32f421` 基于 :ref:`cortex_m4`，定位超值产品，主要替代F030 F103 E230 F330等型号，拥有更高的制程工艺和性能，具有很大的市场潜力。
+
 
 品牌对比
 ~~~~~~~~~
@@ -73,9 +77,20 @@ Xin选择
       - 2.0B
       - USB OTG
       - NO
+    * - :ref:`stm32f103`
+      - 175 DMIPS
+      - 32
+      - 64/128/256
+      - 2/3/5
+      - 2.0B
+      - USB OTG
+      - NO
+
 
 型号对比
 ~~~~~~~~~
+
+:ref:`arterytek` 目前只有 :ref:`cortex_m4` 单核的 MCU产品，均具备 :ref:`arterytek_slib` 功能
 
 .. list-table::
     :header-rows:  1
@@ -113,14 +128,15 @@ Xin选择
       - USB2.0
       - NO
 
-.. warning::
-     :ref:`at32f421` 没有配置太多超值的外设
 
 版本对比
 ~~~~~~~~~
 
 .. image:: images/AT32F421.svg
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
+
+.. note::
+    基于TSSOP20封装的 :ref:`cortex_m4` 120MHz主频的MCU规格实属少见。
 
 
 Xin应用
@@ -135,6 +151,9 @@ Xin应用
 
 通信网关
 ~~~~~~~~~~~
+
+.. warning::
+     :ref:`at32f421` 除了高主频并没有配置太多外设，存储资源少，只用于控制通信器件实现数据转发较合适
 
 
 Xin总结

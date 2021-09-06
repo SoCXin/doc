@@ -72,7 +72,7 @@ This variant is default choice for native PlatformIO projects:
         - pio update
 
 
-Using :ref:`st_stm32f103` command
+Using :ref:`stm32f103` command
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This variant is more convenient when project is written as a library (when there are
