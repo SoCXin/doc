@@ -61,11 +61,3 @@ Cortex-M4处理器采用一个扩展的单时钟周期乘法累加（MAC）单�
 * Cortex-M4支持快速MAC和乘法指令。
 * Cortex-M4支持饱和运算指令。
 
-Xin产品
-----------
-
-.. toctree::
-    :maxdepth: 2
-
-    STM32   <../ST/M4/index>
-    ArteryTek <../arterytek/index>
