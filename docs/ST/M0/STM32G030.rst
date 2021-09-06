@@ -4,21 +4,22 @@
 STM32G030
 ===============
 
-:ref:`st` :ref:`cortex_m0` 单核 MCU，资源仓库 `GitHub <https://github.com/SoCXin/STM32G030>`_
+* 关键词：``USB`` ``64MHz`` ``BLE5.1`` ``CAN`` ``AES128``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32G030>`_
 
-.. contents:: 目录索引
+.. contents::
     :local:
 
-Xin推荐
+Xin简介
 -----------
 
-性能：``64MHz`` 、``59DMIPS`` 、``142CoreMark``
+:ref:`st` :ref:`cortex_m0` 单核 MCU
 
 .. image:: ./images/STM32G031.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
 
-``关键特性``
+关键特性
 ~~~~~~~~~~~~~~
 
 * 64MHz主频

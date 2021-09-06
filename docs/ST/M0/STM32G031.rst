@@ -4,14 +4,15 @@
 STM32G031
 ===============
 
-.. contents:: 目录索引
+* 关键词：``ADC`` ``64MHz``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32G031>`_
+
+.. contents::
     :local:
+
 
 Xin简介
 -----------
-
-`STM32G031 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html>`_  是ST :ref:`cortex_m0` 单核MCU，相关实用工程文件可查看
-`GitHub <https://github.com/SoCXin/STM32G031>`_
 
 .. image:: ./images/STM32G031.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
