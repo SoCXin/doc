@@ -4,7 +4,7 @@
 AT32F421
 ===============
 
-* 关键词：``Cortex-M4`` ``150DMIPS`` ``120MHz`` ``sLib`` ``2 UART`` ``TSSOP20``
+* 关键词：``Cortex-M4`` ``120MHz`` ``COMP`` ``sLib`` ``ERTC`` ``TSSOP20``
 * 资源库：`GitHub <https://github.com/SoCXin/AT32F421>`_
 
 .. contents::
@@ -22,21 +22,25 @@ Xin简介
 .. contents::
     :local:
 
+规格参数
+~~~~~~~~~~~
+
 基本参数
-~~~~~~~~~
+^^^^^^^^^^^
 
 * 供电电压：2.4V - 3.6V
-* 工作温度：-40°C - +105°C
+* 工作温度：-40°C - 105°C
+* 内核频率：120MHz
 
 特征参数
-~~~~~~~~~
+^^^^^^^^^^^
 
-* Cortex-M4 120MHz
 * 15ch ADC（12bit 2MSPS）
 * 2 x USART
 * 2 x I2C + 2 x SPI
 * ERTC (1ppm的分辨率)
-* 一轨到轨比较器(COMP)
+* COMP (轨到轨比较器)
+* sLib安全库(Security Library)
 
 .. note::
     :ref:`arterytek` 自行开发的 :ref:`arterytek_slib` 可支持密码保护指定范围程序区，方案商烧录核心算法到此区域，提供给下游客户做二次开发，强化了产品本身的安全性、可靠性和二次开发的使用便利度。
@@ -48,7 +52,7 @@ Xin简介
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
 
 时钟体系
-~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 .. image:: images/AT32F421C.png
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
@@ -62,35 +66,33 @@ Xin选择
     :local:
 
 .. hint::
-    :ref:`at32f421` 定位超值，主要替代F030 F103 E230 F330等型号，相对而言拥有更高的制程工艺和性能。
+    :ref:`at32f421` 定位超值产品，主要替代F030、F103、E230、F330等型号，相对对标产品而言拥有更高的制程工艺和主频性能。
 
 
 品牌对比
 ~~~~~~~~~
 
-主要替代STM32F030,STM32F103,GD32E230,GD32F330等型号，与 :ref:`stm32f030` 管脚兼容
-
 .. list-table::
     :header-rows:  1
 
-    * - Name
-      - Mark
+    * - Xin
+      - DMIPS
       - RAM
-      - ROM
+      - FLASH
       - UART
-      - CAN
-      - USB
-      - Ethernet
+      - ADC
+      - TIM
+      - COMP
     * - :ref:`at32f421`
-      - 150 DMIPS
+      - 150
       - 8/16
       - 16/32/64
       - 2
-      - NO
-      - NO
-      - NO
+      - 2MSPS
+      - 5+1
+      - 1
     * - :ref:`stm32f030`
-      - 44 DMIPS
+      - 44
       - 32
       - 64/128/256
       - 2/3/5
@@ -98,14 +100,31 @@ Xin选择
       - USB OTG
       - NO
     * - :ref:`stm32f103`
-      - 90 DMIPS
+      - 90
       - 32
       - 64/128/256
       - 2/3/5
       - 2.0B
       - USB OTG
       - NO
+    * - GD32F330
+      - 135
+      - 4/8/16
+      - 16/32/64/128
+      - 2
+      - 2.6MSPS
+      - 5+1
+      - 1
+    * - GD32E230
+      - 90
+      - 4/8
+      - 16/32/64
+      - 2
+      - 2.6MSPS
+      - 5+1
+      - 1
 
+与 :ref:`stm32f030` 系列管脚兼容
 
 型号对比
 ~~~~~~~~~
@@ -116,15 +135,15 @@ Xin选择
     :header-rows:  1
 
     * - Name
-      - Mark
+      - DMIPS
       - RAM
-      - ROM
+      - FLASH
       - UART
       - CAN
       - USB
-      - Ethernet
+      - SPIM
     * - :ref:`at32f421`
-      - 150 DMIPS
+      - 150
       - 8/16
       - 16/32/64
       - 2
@@ -132,21 +151,29 @@ Xin选择
       - NO
       - NO
     * - :ref:`at32f415`
-      - 175 DMIPS
+      - 175
       - 32
       - 64/128/256
       - 2/3/5
       - 2.0B
       - USB OTG
-      - NO
+      - 16M
     * - :ref:`at32f413`
-      - 250 DMIPS
+      - 250
       - 16/32/64
       - 64/128/256
       - 2/3/5
       - 2 x 2.0B
       - USB2.0
-      - NO
+      - 16M
+    * - :ref:`at32f403`
+      - 250/300
+      - 16/32/64
+      - 64/128/256
+      - 2/3/5
+      - 2 x 2.0B
+      - USB2.0
+      - 16M
 
 
 版本对比
