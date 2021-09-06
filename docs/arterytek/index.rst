@@ -1,7 +1,7 @@
 
 .. _arterytek:
 
-雅特力Arterytek
+Arterytek
 =================
 
 .. contents::
@@ -31,7 +31,7 @@
     AT32F421
     AT32F415
 
-主流产品
+性能产品
 -----------
 .. toctree::
     :maxdepth: 1

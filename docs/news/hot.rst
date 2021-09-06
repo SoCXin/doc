@@ -18,19 +18,66 @@
     ESP32C3 <../espressif/ESP32-C3>
 
 
-ST大法
--------------
-
-.. toctree::
-    :maxdepth: 1
-
-    STM32G474 <../ST/M4/STM32G474>
-    STM32G031 <../ST/M0/STM32G031>
 
 国货之光
 -------------
 
-.. toctree::
-    :maxdepth: 1
+.. list-table::
+    :header-rows:  1
 
-    AT32F421 <../arterytek/AT32F421>
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - SPEC
+      - Package
+    * - :ref:`at32f421`
+      - 120MHz
+      - 1K
+      - 8K
+      - 2
+      - 18
+      - I2C
+      - TSSOP20
+
+
+ST大法
+-------------
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - SPEC
+      - Package
+    * - :ref:`stm32g030`
+      - 480MHz
+      - 1K
+      - 8K
+      - 2
+      - 18
+      - I2C
+      - TSSOP20
+    * - :ref:`stm32g031`
+      - 240MHz
+      - 1K
+      - 16K
+      - 2
+      - 16
+      - USB-D
+      - TSSOP20
+    * - :ref:`stm32g431`
+      - 200MHz
+      - 18K
+      - 512K
+      - 4
+      - 24
+      - USB-H/D
+      - QFN28
