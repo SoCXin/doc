@@ -4,129 +4,63 @@
 STM32F030
 ===============
 
+* 关键词：``USB`` ``10M-ETH-PHY`` ``BLE5.1`` ``CAN`` ``AES128``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32F051>`_
+
 .. contents::
+    :local:
 
-Usage
------
-
-.. code-block:: bash
-
-    pio device list [OPTIONS]
-
-
-Description
+Xin简介
 -----------
 
-List available devices.
-Default is set to ``--serial`` and all available
-`Serial Ports <http://en.wikipedia.org/wiki/Serial_port>`_ will be shown.
 
-Options
--------
+关键特性
+~~~~~~~~~~~~
 
-.. program:: pio device list
-
-.. option::
-    --serial
-
-List available `Serial Ports <http://en.wikipedia.org/wiki/Serial_port>`_,
-default.
-
-.. option::
-    --logical
-
-List available logical devices.
-
-.. option::
-    --mdns
-
-List multicast DNS services.
-
-.. option::
-    --json-output
-
-Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
-
-Examples
---------
-
-1. Unix OS
-
-.. code-block:: bash
-
-    > pio device list
-    /dev/cu.SLAB_USBtoUART
-    ----------
-    Hardware ID: USB VID:PID=10c4:ea60 SNR=0001
-    Description: CP2102 USB to UART Bridge Controller
-
-    /dev/cu.uart-1CFF4676258F4543
-    ----------
-    Hardware ID: USB VID:PID=451:f432 SNR=1CFF4676258F4543
-    Description: Texas Instruments MSP-FET430UIF
+* 10M以太网
+* 4个USART接口
 
 
-2. Windows OS
-
-.. code-block:: bash
-
-    > pio device list
-    COM4
-    ----------
-    Hardware ID: USB VID:PID=0451:F432
-    Description: MSP430 Application UART (COM4)
-
-    COM3
-    ----------
-    Hardware ID: USB VID:PID=10C4:EA60 SNR=0001
-    Description: Silicon Labs CP210x USB to UART Bridge (COM3)
+芯片架构
+~~~~~~~~~~~
 
 
-3. List multicast DNS services and logical devices
 
-.. code-block:: bash
+Xin选择
+-----------
 
-    > pio device list --mdns --logical
-    Multicast DNS Services
-    ======================
+.. contents::
+    :local:
 
-    PlatformIO._bttremote._tcp.local.
-    ------------------------------
-    Type: _bttremote._tcp.local.
-    IP: ...
-    Port: 62941
-    Properties: ...
+品牌对比
+~~~~~~~~~
 
-    Time for PlatformIO._adisk._tcp.local.
-    ---------------------------------
-    Type: _adisk._tcp.local.
-    IP: 192.168.0.1
-    Port: 9
-    Properties: ...
+型号对比
+~~~~~~~~~
 
-    PlatformIO._ssh._tcp.local.
-    ------------------------
-    Type: _ssh._tcp.local.
-    IP: ...
-    Port: 22
-
-    PlatformIO._sftp-ssh._tcp.local.
-    -----------------------------
-    Type: _sftp-ssh._tcp.local.
-    IP: ...
-    Port: 22
+版本对比
+~~~~~~~~~
 
 
-    Logical Devices
-    ===============
-    /
-    -
-    Name:
+Xin应用
+-----------
 
-    /Volumes/PIO
-    -------------
-    Name: PIO
+.. contents::
+    :local:
 
-    /Volumes/PLUS
-    --------------
-    Name: PLUS
+
+
+Xin总结
+--------------
+
+.. contents::
+    :local:
+
+要点提示
+~~~~~~~~~~~~~
+
+
+
+问题整理
+~~~~~~~~~~~~~
+

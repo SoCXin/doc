@@ -29,15 +29,12 @@ Xin简介
 * 2 x I2C + 2 x SPI
 * sLib执行代码安全库区
 
-.. hint::
+.. note::
     :ref:`arterytek` 自行开发的 :ref:`arterytek_slib` 可支持密码保护指定范围程序区，方案商烧录核心算法到此区域，提供给下游客户做二次开发，强化了产品本身的安全性、可靠性和二次开发的使用便利度。
 
 
 芯片架构
 ~~~~~~~~~~~
-
-.. image:: images/AT32F421.png
-    :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
 
 .. image:: images/AT32F421S.png
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
@@ -54,7 +51,7 @@ Xin选择
     :local:
 
 .. hint::
-    :ref:`at32f421` 基于 :ref:`cortex_m4`，定位超值产品，主要替代F030 F103 E230 F330等型号，拥有更高的制程工艺和性能，具有很大的市场潜力。
+    :ref:`at32f421` 定位超值，主要替代F030 F103 E230 F330等型号，相对而言拥有更高的制程工艺和性能。
 
 
 品牌对比
@@ -82,7 +79,7 @@ Xin选择
       - NO
       - NO
     * - :ref:`stm32f030`
-      - 175 DMIPS
+      - 44 DMIPS
       - 32
       - 64/128/256
       - 2/3/5
@@ -90,7 +87,7 @@ Xin选择
       - USB OTG
       - NO
     * - :ref:`stm32f103`
-      - 175 DMIPS
+      - 90 DMIPS
       - 32
       - 64/128/256
       - 2/3/5
@@ -143,6 +140,9 @@ Xin选择
 
 版本对比
 ~~~~~~~~~
+
+.. image:: images/AT32F421.png
+    :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
 
 .. image:: images/AT32F421.svg
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
