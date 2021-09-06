@@ -30,7 +30,7 @@ Xin简介
 
 * 供电电压：2.4V - 3.6V
 * 工作温度：-40°C - 105°C
-* 内核频率：120MHz
+* 内核频率：120 MHz
 
 特征参数
 ^^^^^^^^^^^
@@ -40,7 +40,7 @@ Xin简介
 * 2 x I2C + 2 x SPI
 * ERTC (1ppm的分辨率)
 * COMP (轨到轨比较器)
-* sLib安全库(Security Library)
+* sLib安全库 (Security Library)
 
 .. note::
     :ref:`arterytek` 自行开发的 :ref:`arterytek_slib` 可支持密码保护指定范围程序区，方案商烧录核心算法到此区域，提供给下游客户做二次开发，强化了产品本身的安全性、可靠性和二次开发的使用便利度。
@@ -129,7 +129,6 @@ Xin选择
 型号对比
 ~~~~~~~~~
 
-:ref:`arterytek` 目前只有 :ref:`cortex_m4` 单核的 MCU产品，均具备 :ref:`arterytek_slib` 功能
 
 .. list-table::
     :header-rows:  1
@@ -175,6 +174,7 @@ Xin选择
       - USB2.0
       - 16M
 
+:ref:`arterytek` 目前只有 :ref:`cortex_m4` 单核的 MCU产品，均具备 :ref:`arterytek_slib` 功能
 
 版本对比
 ~~~~~~~~~

@@ -4,7 +4,7 @@
 AT32F415
 ===============
 
-* 关键词：``Cortex-M4`` ``240MHz`` ``8 UART`` ``2xCAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
+* 关键词：``Cortex-M4`` ``150MHz`` ``USB OTG``
 * 资源库：`GitHub <https://github.com/SoCXin/AT32F415>`_
 
 .. contents::
@@ -15,26 +15,44 @@ Xin简介
 
 :ref:`arterytek` :ref:`cortex_m4` 单核 MCU
 
-关键特性
-~~~~~~~~~
+.. contents::
+    :local:
 
-* 工业级温度范围-40~105°C
-* sLib执行代码安全库区
-* Cortex®-M4主频最高 240 MHz
-* 高达 16MB 外部 SPI Flash memory 扩展
-* 4 x USART + 4 x UART
-* 2 x CAN 2.0B
-* Crystal-less USB2.0全速接口
-* IEEE 1588 10/100M以太网MAC，专用DMA和4K SRAM，MII/RMII接口
+规格参数
+~~~~~~~~~~~
 
-计算性能
-~~~~~~~~~~~~
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：2.4V - 3.6V
+* 工作温度：-40°C - 105°C
+* 内核频率：150 MHz
+
+特征参数
+^^^^^^^^^^^
+
+* 15ch ADC（12bit 2MSPS）
+* 3 x USART + 2 x UART
+* SDIO
+* CAN 2.0B
+* USB 2.0 OTG，内置1280 Byte专用SRAM
+* 2 x I2C + 2 x SPI
+* ERTC (1ppm的分辨率)
+* 2 x COMP (轨到轨比较器)
+* sLib安全库 (Security Library)
+
+.. note::
+    :ref:`arterytek` 自行开发的 :ref:`arterytek_slib` 可支持密码保护指定范围程序区，方案商烧录核心算法到此区域，提供给下游客户做二次开发，强化了产品本身的安全性、可靠性和二次开发的使用便利度。
+
 
 Xin选择
 -----------
 
 .. contents::
     :local:
+
+品牌对比
+~~~~~~~~~
 
 型号对比
 ~~~~~~~~~
@@ -92,13 +110,12 @@ Xin选择
       - 10/100M
 
 
+版本对比
+~~~~~~~~~
+
 Xin应用
 -----------
 
-
-
-以太网
-~~~~~~~~~~~
 
 
 
@@ -117,5 +134,3 @@ Xin总结
 ~~~~~~~~~~~~~
 
 
-.. hint::
-    非常有特色的一家公司，产品偏向有高性能 :ref:`cortex_m4` MCU

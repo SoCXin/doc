@@ -15,13 +15,28 @@ Xin简介
 
 :ref:`arterytek` :ref:`cortex_m4` 单核 MCU
 
+基本参数
+^^^^^^^^^^^
 
-关键特性
-~~~~~~~~~
+* 供电电压：2.4V - 3.6V
+* 工作温度：-40°C - 105°C
+* 内核频率：240 MHz
 
-* Cortex®-M4主频 240MHz
-* 工业级温度范围-40~105°C
-* sLib执行代码安全库区
+特征参数
+^^^^^^^^^^^
+
+* 16MB SPI Flash 扩展
+* 4 x USART + 4 x UART
+* 2 x SDIO
+* 2 x CAN 2.0B
+* USB 2.0 FS
+* 2 x I2C + 2 x SPI
+* 15ch ADC（12bit 2MSPS）
+* ERTC (1ppm的分辨率)
+* 2 x COMP (轨到轨比较器)
+* sLib安全库 (Security Library)
+
+
 
 芯片架构
 ~~~~~~~~~~~
