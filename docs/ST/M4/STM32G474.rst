@@ -65,7 +65,7 @@ STM32G4与STM32F3系列高度兼容，作为后者的升级选项，确保在设
 .. image:: ./images/en.obn_stm32g4_series_ss2024.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
-STM32G474在STM32G4系列中定位高分辨率，独有复杂波形生成器和事件处理器HRTIM，该功能继承自STM32F334，除该功能外，在G4系列中可选STM32G473系列，如果没有FSMC需求且对模拟外设数量要求不多，可选更高性价比的 :ref:`st_stm32g431`
+STM32G474在STM32G4系列中定位高分辨率，独有复杂波形生成器和事件处理器HRTIM，该功能继承自STM32F334，除该功能外，在G4系列中可选STM32G473系列，如果没有FSMC需求且对模拟外设数量要求不多，可选更高性价比的 :ref:`stm32g431`
 
 
 

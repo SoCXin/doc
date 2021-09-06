@@ -41,7 +41,7 @@ Xin选择
 型号对比
 ~~~~~~~~~
 
- :ref:`st_stm32g0` 系列产品中 :ref:`st_stm32g031` 定位入门级，相似有 `STM32G0x0 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html>`_ 超值系列，例如在SON8封装限定下，STM32G031J替换可选STM32G030J6、STM32G041J6
+ :ref:`st_stm32g0` 系列产品中 :ref:`stm32g031` 定位入门级，相似有 `STM32G0x0 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html>`_ 超值系列，例如在SON8封装限定下，STM32G031J替换可选STM32G030J6、STM32G041J6
 
 .. image:: ./images/STM32G0.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
