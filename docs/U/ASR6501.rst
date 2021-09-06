@@ -13,7 +13,6 @@ ASR6501
 Xin简介
 -----------
 
-:ref:`asr` :ref:`cortex_m0`
 
 
 关键特性
