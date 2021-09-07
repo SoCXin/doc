@@ -24,7 +24,7 @@ SoC 芯
     :caption: 应用速览
     :maxdepth: 1
 
-    感知类      <for/s>
+    感知类      <for/sensor>
     控制类      <for/m>
     交互类      <for/u>
     通信类      <for/iot>

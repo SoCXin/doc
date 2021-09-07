@@ -22,31 +22,35 @@
       - Core
       - C++
       - Lua
-      - mPY
+      - mPy
       - xGo
-      - rust
+      - Rust
+      - Arduino
       - other
     * - :ref:`esp32`
-      - Y
+      - dual
       - Y
       - Y
       - N
+      - Y
       - Y
       - Y
       - N
     * - :ref:`esp32c3`
-      - Y
+      - single
       - Y
       - Y
       - N
+      - Y
       - Y
       - Y
       - N
     * - :ref:`rp2040`
-      - Y
+      - dual
       - Y
       - N
       - N
+      - Y
       - Y
       - Y
       - N
