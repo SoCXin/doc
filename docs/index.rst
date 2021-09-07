@@ -2,7 +2,7 @@
 SoC 芯
 ==================
 
-用芯造好物，**芯思想，芯独立!**
+**用芯造好物，芯思想，芯文化!**
 
 `GitHub <https://GitHub.com/Qitas>`_ |
 `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
@@ -36,9 +36,9 @@ SoC 芯
 
     ARM     <core/arm>
     MIPS    <core/MIPS>
-    MCS51   <core/MCS51>
     Cortex  <core/cortex>
     RISC-V  <core/RISC-V>
+    MCS51   <core/MCS51>
 
 .. toctree::
     :caption: 厂商速览

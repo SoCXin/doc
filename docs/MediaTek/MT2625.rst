@@ -4,8 +4,8 @@
 MT2625
 ================
 
-* 关键词：``260MHz`` ``MT6261`` ``ARM7EJ`` ``GSM``
-* 资源库：`GitHub <https://github.com/SoCXin/MT2503>`_
+* 关键词：``Cortex-M4`` ``125MHz`` ``NB-IoT``
+* 资源库：`GitHub <https://github.com/SoCXin/MT2625>`_
 
 .. contents::
     :local:
@@ -13,48 +13,20 @@ MT2625
 Xin简介
 -----------
 
-:ref:`mediatek` :ref:`arm` GSM SoC
+:ref:`mediatek` :ref:`arm` NB-IoT SoC
 
 
-关键特性
-~~~~~~~~~
-
-
-* 2G modem
-* BeiDou, Galileo, GPS+GLONASS
-* BT 2.1+EDR,3.0
 
 Xin选择
 -----------
 
 
 
-竞品分析
-~~~~~~~~~
-
-
-
-型号对比
-~~~~~~~~~
-
-
-
-规格选择
-~~~~~~~~~
-
-
-
 Xin实践
---------------
-
-
-
-开发工具
-~~~~~~~~~
-
+-----------
 
 
 
 Xin总结
---------------
+-----------
 
