@@ -22,4 +22,4 @@
 
     HC32M120 <../M/HC32M120>
     MM32SPIN <../M/MM32SPIN>
-
+    SWM181 <../M/SWM181>

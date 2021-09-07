@@ -13,4 +13,5 @@
 .. toctree::
     :maxdepth: 1
 
-    SWM320 <../M/SWM320>
+    SWM32S <../M/SWM32S>
+    SWM341 <../M/SWM341>
