@@ -134,6 +134,9 @@
 ST大法
 -------------
 
+.. contents::
+    :local:
+
 F030范式
 ~~~~~~~~~~~~~
 
@@ -187,11 +190,35 @@ F103范式
       - GPIO
       - SPEC
       - Package
-    * - :ref:`stm32g103`
+    * - :ref:`stm32f103`
       - 72 MHz
-      - 1K
-      - 8K
+      - 20K
+      - 64K
       - 2
-      - 18
-      - I2C
+      - 40
+      - USB
+      - LQFP48
+
+
+F407范式
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - SPEC
+      - Package
+    * - :ref:`stm32f407`
+      - 72 MHz
+      - 20K
+      - 64K
+      - 2
+      - 40
+      - USB
       - LQFP48
