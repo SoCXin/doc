@@ -156,5 +156,5 @@ LoRa
 .. toctree::
     :maxdepth: 1
 
-    ASR6501 <../U/ASR6501>
+    ASR6501 <../H/ASR6501>
     STM32WLE5 <../ST/M4/STM32WLE5>

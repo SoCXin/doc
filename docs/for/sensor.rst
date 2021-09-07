@@ -8,19 +8,35 @@
     :local:
 
 
-低功耗
+极低功耗
 -----------
-.. toctree::
-    :maxdepth: 1
 
-    STM32L011 <../ST/M0/STM32L011>
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - SPEC
+      - Package
+    * - :ref:`stm32l011`
+      - 32MHz
+      - 1K
+      - 8K
+      - 2
+      - 18
+      - 1
+      - QFN20
 
 
 A/D转换
 -----------
 
-高速率ADC
-~~~~~~~~~~~~~~
+高速率
+~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -43,7 +59,7 @@ A/D转换
       - TSSOP20
 
 
-高精度ADC
+高精度
 ~~~~~~~~~~~~~~
 
 .. list-table::
@@ -78,3 +94,23 @@ A/D转换
 
 D/A转换
 -----------
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - SPEC
+      - Package
+    * - :ref:`stm32g431`
+      - 170MHz
+      - 1K
+      - 8K
+      - 2
+      - 18
+      - I2C
+      - TSSOP20
