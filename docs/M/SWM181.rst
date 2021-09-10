@@ -4,7 +4,7 @@
 SWM181
 ===============
 
-* 关键词：``Cortex-M0`` ``Synwit`` ``48MHz``
+* 关键词：``Cortex-M0`` ``Synwit`` ``48MHz`` ``16bit ADC``
 * 资源库：`GitHub <https://github.com/SoCXin/SWM181>`_
 
 .. contents::
@@ -31,10 +31,16 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
+* 16bit 6ch SIGMA-DELTA ADC (16KSPS)
+* 12bit 8ch SAR ADC (1MSPS)
+
 
 
 芯片架构
 ~~~~~~~~~~~
+
+.. image:: images/SWM181S.png
+    :target: https://huaxin2021.yswebportal.cc/col.jsp?id=120
 
 
 时钟体系
@@ -53,6 +59,9 @@ Xin选择
 
 版本对比
 ~~~~~~~~~
+
+.. image:: images/SWM181list.png
+    :target: https://huaxin2021.yswebportal.cc/col.jsp?id=120
 
 
 Xin总结
