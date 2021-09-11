@@ -35,29 +35,40 @@ Xin简介
 * 4608 LUT4、3456 FF
 * Cortex-M3硬核处理器
 * 180Kbit SRAM、256Kbit Flash
-* 12bit SAR ADC (1MSPS)
+* 8ch 12bit SAR ADC (1MSPS)
 * USB2.0 PHY（480Mbps）
-
+* 支持 I3C/MIPI 接口
 
 芯片架构
 ~~~~~~~~~~~
 
-GW1NSR-2C 和 GW1NSR-4C 是 SoC 芯片，以 ARM Cortex-M3 硬核处理器为核心，具备了实现系统功能所需要的最小内存。
+GW1NSR-2C 和 GW1NSR-4C是SoC芯片，以ARM Cortex-M3 硬核处理器为核心，具备了实现系统功能所需要的最小内存。
 
-GW1NSR-2C 最高支持 30MHz 的工作频率，GW1NSR-4C 最高支持 80MHz 的工作频率。
+GW1NSR-2C最高支持 30MHz 的工作频率，GW1NSR-4C 最高支持 80MHz 的工作频率。
+
+GW1NSR-2C器件的 NVIC 提供了两个外部用户中断，GW1NSR-4C器件支持六个外部用户中断。每个中断支持 8 种可编程的优先级（0~7），7 表示最低级的优先级，0 表示最高级的优先级
+
+.. _gw1nsr_2c:
 
 GW1NSR-2C
 ^^^^^^^^^^^
 
+GW1NSR-2C 内嵌 USB2.0 PHY 和 ADC
+
 .. image:: images/GW1NSR-2C.png
     :target: http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&FId=t3:10:3&Id=168
 
+.. _gw1nsr_4c:
 
 GW1NSR-4C
 ^^^^^^^^^^^
 
 .. image:: images/GW1NSR-2C.png
     :target: http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&FId=t3:10:3&Id=168
+
+
+.. warning::
+    UART0 和 UART1可以通过 APB1 总线进行控制和访问，支持的最大波特率为 921.6Kbits/s。UART0 和 UART1 支持 8 位数据位和 1 位停止位，不支持校验位。
 
 Xin选择
 -----------
