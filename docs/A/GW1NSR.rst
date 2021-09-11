@@ -65,7 +65,7 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
-`Gowin <http://www.gowinsemi.com.cn/>`_ 是全球增长最快的可编程逻辑公司的中国FPGA厂商，在低阶产品上具有恒高的性价比。
+`Gowin <http://www.gowinsemi.com.cn/>`_ 是全球增长最快的可编程逻辑公司，作为中国的FPGA厂商，相对传统的国际巨头，在低阶产品上具有很高的性价比。
 
 
 型号对比
@@ -96,6 +96,29 @@ Xin选择
     :target: http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&FId=t3:10:3&Id=168
 
 
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+硬件资源
+~~~~~~~~~~~~~
+
+Tang Nano 4K
+^^^^^^^^^^^^^^
+
+Tang Nano 4K FPGA 板是Tang Nano FPGA板的一个升级，采用了更强大的 GOWIN GW1NSR-LV4C FPGA，它配备的是 4608 LUT（不再是之前的1152）和嵌入到芯片中的 Cortex-M3 微控制器。
+
+.. image:: images/TangNano4K
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.13.7c7b6cffifPv3h&id=653059006630&ns=1&abbucket=0#detail
+
+
+Tang Nano对比
+^^^^^^^^^^^^^^
+
+.. image:: images/TangNano
+    :target: http://tangnano.sipeed.com/zh/
 
 Xin总结
 --------------
