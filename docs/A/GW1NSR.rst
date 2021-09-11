@@ -13,11 +13,9 @@ GW1NSR
 Xin简介
 -----------
 
-高云半导体 GW1NSR 系列 FPGA 产品是高云半导体小蜜蜂(LittleBee)家族第一代 FPGA 产品，是一款系统级封装芯片(55nm)，内部集成了 GW1NS 系列 FPGA 产品和 PSRAM 存储芯片。
+高云半导体 GW1NSR 系列 FPGA 产品是高云半导体小蜜蜂(LittleBee)家族第一代 FPGA 产品，是一款SIP芯片(55nm)，集成GW1NS系列FPGA和PSRAM存储芯片。
 
-GW1NSR-2C 和 GW1NSR-4C 是 SoC 芯片，以 ARM Cortex-M3 硬核处理器为核心，具备了实现系统功能所需要的最小内存。
 
-GW1NSR-2C 最高支持 30MHz 的工作频率，GW1NSR-4C 最高支持 80MHz 的工作频率
 
 .. contents::
     :local:
@@ -43,12 +41,15 @@ GW1NSR-2C 最高支持 30MHz 的工作频率，GW1NSR-4C 最高支持 80MHz 的�
 芯片架构
 ~~~~~~~~~~~
 
+GW1NSR-2C 和 GW1NSR-4C 是 SoC 芯片，以 ARM Cortex-M3 硬核处理器为核心，具备了实现系统功能所需要的最小内存。
+
+GW1NSR-2C 最高支持 30MHz 的工作频率，GW1NSR-4C 最高支持 80MHz 的工作频率。
+
 GW1NSR-2C
 ^^^^^^^^^^^
 
 .. image:: images/GW1NSR-2C.png
     :target: http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&FId=t3:10:3&Id=168
-
 
 
 GW1NSR-4C
@@ -67,6 +68,16 @@ Xin选择
 
 `Gowin <http://www.gowinsemi.com.cn/>`_ 是全球增长最快的可编程逻辑公司，作为中国的FPGA厂商，相对传统的国际巨头，在低阶产品上具有很高的性价比。
 
+Lattice iCE40
+^^^^^^^^^^^^^^^
+
+使用开源工具链fpga-toolchain，可以基于`PlatformIO <https://platformio.org/platforms/lattice_ice40>`_ 开发，开源工具链有以下几个优点：
+
+* 开源工具链的中所有组件均有源代码提供，可以自行编译或者使用已经构建好的二进制文件，不需要任何厂商许可证。
+* 体积小，包含了 Lattice iCE40 系列、ECP5 系列 FPGA 支持的工具链压缩包大小在 100 MB 左右，而厂商提供的安装包有几个到几十个 GB。
+* 速度快，节省上板调试时间，以笔者测试用的几个小工程为例，完成代码综合、布局布线并下载到 FPGA 中仅需几秒钟的时间。
+* 跨平台支持，开源工具链不仅支持 Windows，Linux 和 Mac OS 等操作系统，而且支持 x86 之外的处理器平台。
+
 
 型号对比
 ~~~~~~~~~
@@ -74,7 +85,11 @@ Xin选择
 .. image:: images/GW1N.png
     :target: http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&FId=t3:10:3&Id=168
 
+GW2A系列(晨熙)
+^^^^^^^^^^^^^^^
 
+.. image:: images/GW2A.png
+    :target: http://cdn.gowinsemi.com.cn/DS102-2.3_GW2A%E7%B3%BB%E5%88%97FPGA%E4%BA%A7%E5%93%81%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C.pdf
 
 版本对比
 ~~~~~~~~~
@@ -119,12 +134,6 @@ Tang Nano对比
     :target: http://tangnano.sipeed.com/zh/
 
 
-DK-GoAI-GW1NSR
-^^^^^^^^^^^^^^^^^
-
-.. image:: images/DK-GoAI-GW1NSR.png
-    :target: http://www.gowinsemi.com.cn/clients_view.aspx?TypeId=21&Id=709&FId=t19:21:19
-
 
 工具资源
 ~~~~~~~~~~~~~
@@ -143,6 +152,9 @@ Gowin IDE
 GoAI开发套件
 ^^^^^^^^^^^^^^
 
+.. image:: images/GoAI.png
+    :target: https://github.com/gowinsemi/GoAI
+
 GoAI 2.0是一个通过在高云FPGA器件上部署卷积神经网络(CNNs)的机器学习开发平台。它包含用于转换TensorFlow文件和加速器FPGA IP的软件脚本，以运行训练好的机器学习模型以及教程和示例。
 
 GoAI 2.0集成到TensorFlow和TensorFlow Lite框架中，比起遗留平台及其他可替代平台更加方便使用。
@@ -150,13 +162,16 @@ GoAI 2.0集成到TensorFlow和TensorFlow Lite框架中，比起遗留平台及�
 基于TensorFlow的广泛软件开发环境，GoAI 2.0通过生成所需的所有固件，将机器学习模型直接部署到高云FPGA中，不需编写任何额外的RTL或C代码。完全支持Windows和Linux系统，包括Ubuntu。
 
 
+* ARM Keil v5
+* Gowin IDE or Gowin Programmer
+
 Xin总结
 --------------
 
 .. contents::
     :local:
 
-经验建构
+能力构建
 ~~~~~~~~~~~~~
 
 要点提示
