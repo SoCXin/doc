@@ -158,29 +158,29 @@ F030范式
       - SPEC
       - Package
     * - :ref:`stm32f030`
-      - 480MHz
-      - 1K
+      - 48MHz
       - 8K
+      - 64K
       - 2
-      - 18
+      - 16
       - I2C
       - TSSOP20
     * - :ref:`stm32g031`
-      - 240MHz
+      - 64MHz
       - 1K
-      - 16K
+      - 64K
       - 2
       - 16
-      - USB-D
+      - ADC
       - TSSOP20
     * - :ref:`stm32g030`
-      - 200MHz
-      - 18K
-      - 512K
-      - 4
-      - 24
-      - USB-H/D
-      - QFN28
+      - 64MHz
+      - 8K
+      - 64K
+      - 2
+      - 16
+      - ADC
+      - TSSOP20
 
 F103范式
 ~~~~~~~~~~~~~
@@ -216,15 +216,15 @@ F407范式
       - Core
       - RAM
       - Flash
-      - UART
-      - GPIO
+      - DAC
+      - CON
       - SPEC
       - Package
     * - :ref:`stm32f407`
-      - 72 MHz
-      - 20K
+      - 168 MHz
       - 64K
+      - 256K
       - 2
-      - 40
-      - USB
-      - LQFP48
+      - 15
+      - USB/CAN
+      - LQFP64

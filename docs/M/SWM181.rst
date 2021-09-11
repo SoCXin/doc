@@ -33,6 +33,7 @@ Xin简介
 
 * 16bit 6ch SIGMA-DELTA ADC (16KSPS)
 * 12bit 8ch SAR ADC (1MSPS)
+* 16KB SRAM、120KB Flash
 
 
 

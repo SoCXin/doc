@@ -69,26 +69,34 @@ A/D转换
       - Core
       - RAM
       - Flash
-      - UART
-      - GPIO
+      - CHAN
+      - ADC
       - SPEC
       - Package
     * - :ref:`cs32a039`
-      - 170MHz
-      - 1K
-      - 8K
+      - 48MHz
+      - 4K
+      - 64K
       - 2
-      - 18
-      - I2C
-      - TSSOP20
+      - SIGMA-DELTA
+      - 24bit
+      - LQFP48
     * - :ref:`zml165`
+      - 48MHz
+      - 4K
+      - 64K
+      - 2
+      - SIGMA-DELTA
+      - 24bit
+      - LQFP48
+    * - :ref:`swm181`
       - 48MHz
       - 1K
       - 8K
       - 2
-      - 18
-      - I2C
-      - TSSOP20
+      - SIGMA-DELTA
+      - 16bit
+      - LQFP48
 
 
 
