@@ -44,3 +44,4 @@
 /CS32A039.html -> M/CS32A039.html
 /STC8.html -> L/STC8.html
 /K210.html -> H/K210.html
+/GW1NSR.html -> A/GW1NSR.html
