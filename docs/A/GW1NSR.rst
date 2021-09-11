@@ -4,7 +4,7 @@
 GW1NSR
 ===============
 
-* 关键词：``Gowin`` ``FPGA`` ``SIP`` ``Cortex-M3`` ``USB2.0 PHY``
+* 关键词：``Gowin`` ``LittleBee`` ``FPGA`` ``SIP`` ``Cortex-M3`` ``USB2.0 PHY``
 * 资源库：`GitHub <https://github.com/SoCXin/GW1NSR>`_
 
 .. contents::
@@ -13,7 +13,7 @@ GW1NSR
 Xin简介
 -----------
 
-高云半导体 GW1NSR 系列 FPGA 产品是高云半导体小蜜蜂(LittleBee)家族第一代 FPGA 产品，是一款SIP芯片(55nm)，集成GW1NS系列FPGA和PSRAM存储芯片。
+高云半导体 GW1NSR 系列 FPGA 产品是高云半导体小蜜蜂(LittleBee)家族第一代 FPGA 产品，是一款SIP芯片(55nm)，片上集成GW1NS系列FPGA和PSRAM存储芯片。
 
 
 
@@ -26,16 +26,17 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：1.8V - 3.6V
+* 供电电压：1.2V(LV)、2.5V/3.3V(UV)
 * 工作温度：-40°C - 105°C
 
 特征参数
 ^^^^^^^^^^^
 
-* 4 输入LUT(LUT4)
-* 免费使用 LittlevGL 软件库
-* 轻松创建图形软件（SUD）
-* 支持各式液晶显示模块（LCM）
+* 4608 LUT4、3456 FF
+* Cortex-M3硬核处理器
+* 180Kbit SRAM、256Kbit Flash
+* 12bit SAR ADC (1MSPS)
+* USB2.0 PHY（480Mbps）
 
 
 芯片架构
@@ -60,6 +61,9 @@ GW1NSR-4C
 
 Xin选择
 -----------
+
+相比 MCU，FPGA 在可编程性、IO 配置灵活性、实时处理能力等方面都有无可比拟的优势，MCU 能做的事情，FPGA 基本上都做到，FPGA 还能做许多 MCU 做不到的事情。随着芯片规模越来越大，成本逐渐降低，低端FPGA已逐步取代了传统的数字元件
+
 .. contents::
     :local:
 
@@ -71,7 +75,7 @@ Xin选择
 Lattice iCE40
 ^^^^^^^^^^^^^^^
 
-使用开源工具链fpga-toolchain，可以基于`PlatformIO <https://platformio.org/platforms/lattice_ice40>`_ 开发，开源工具链有以下几个优点：
+使用开源工具链fpga-toolchain，可以基于 `PlatformIO <https://platformio.org/platforms/lattice_ice40>`_ 开发，开源工具链有以下几个优点：
 
 * 开源工具链的中所有组件均有源代码提供，可以自行编译或者使用已经构建好的二进制文件，不需要任何厂商许可证。
 * 体积小，包含了 Lattice iCE40 系列、ECP5 系列 FPGA 支持的工具链压缩包大小在 100 MB 左右，而厂商提供的安装包有几个到几十个 GB。
@@ -97,15 +101,17 @@ GW2A系列(晨熙)
 .. image:: images/GW1NSR.png
     :target: http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&FId=t3:10:3&Id=168
 
+GW1NRF
+^^^^^^^^^^^
 
-配置规格
+ GW1NRF系列蓝牙 FPGA 产品是一款系统级封装芯片，是一 款 SoC 芯片。器件以 32 位硬核微处理器 为核心，支持蓝牙 5.0 低功耗射频功能，具有丰富的逻辑单元、内嵌 B-SRAM 和 DSP 资源，IO 资源丰富，系统内部有电源管理模块和安全加密模块。
+
+规格型号
 ^^^^^^^^^^^
 
 .. image:: images/GW1NSR-R.png
     :target: http://cdn.gowinsemi.com.cn/DS861-1.4.4_GW1NSR%E7%B3%BB%E5%88%97FPGA%E4%BA%A7%E5%93%81%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C.pdf
 
-封装规格
-^^^^^^^^^^^
 
 .. image:: images/GW1NSR-P.png
     :target: http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&FId=t3:10:3&Id=168
@@ -143,6 +149,7 @@ Gowin IDE
 .. image:: images/GowinIDE.png
     :target: http://dl.sipeed.com/shareURL/TANG/Nano%204K/IDE
 
+Gowin IDE的License目前是免费向客户提供的，使用期限为自取得代码之日起一年，过期失效后可以再次申请License分配是和本机Mac地址挂钩的，一套软件只能在一台电脑上运行。如需多台电脑运行，可申请多个License。
 
 
 框架资源
@@ -161,6 +168,7 @@ GoAI 2.0集成到TensorFlow和TensorFlow Lite框架中，比起遗留平台及�
 
 基于TensorFlow的广泛软件开发环境，GoAI 2.0通过生成所需的所有固件，将机器学习模型直接部署到高云FPGA中，不需编写任何额外的RTL或C代码。完全支持Windows和Linux系统，包括Ubuntu。
 
+依赖的开发资源：
 
 * ARM Keil v5
 * Gowin IDE or Gowin Programmer
