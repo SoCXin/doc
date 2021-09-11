@@ -4,7 +4,7 @@
 GW1NSR
 ===============
 
-* 关键词：``Gowin`` ``LittleBee`` ``FPGA`` ``SIP`` ``Cortex-M3`` ``USB2.0 PHY``
+* 关键词：``Gowin`` ``LittleBee`` ``FPGA`` ``4608LUT4`` ``SIP`` ``Cortex-M3`` ``USB2.0PHY``
 * 资源库：`GitHub <https://github.com/SoCXin/GW1NSR>`_
 
 .. contents::
@@ -27,7 +27,7 @@ Xin简介
 ^^^^^^^^^^^
 
 * 供电电压：1.2V(LV)、2.5V/3.3V(UV)
-* 片内晶振时钟精度可达±5%
+* 时钟精度：片内晶振±5%
 
 特征参数
 ^^^^^^^^^^^
@@ -68,12 +68,12 @@ GW1NSR-4C
 
 
 .. warning::
-    UART0 和 UART1可以通过 APB1 总线进行控制和访问，支持的最大波特率为 921.6Kbits/s。UART0 和 UART1 支持 8 位数据位和 1 位停止位，不支持校验位。
+    UART0和UART1通过APB1总线进行控制和访问，最大波特率921.6Kbits/s，支持8位数据位和1位停止位，不支持校验位。
 
 Xin选择
 -----------
 
-相比 MCU，FPGA 在可编程性、IO 配置灵活性、实时处理能力等方面都有无可比拟的优势，MCU 能做的事情，FPGA 基本上都做到，FPGA 还能做许多 MCU 做不到的事情。随着芯片规模越来越大，成本逐渐降低，低端FPGA已逐步取代了传统的数字元件
+相比 MCU，FPGA 在可编程性、IO 配置灵活性、实时处理能力等方面都有无可比拟的优势，MCU能做的事情FPGA基本上都做到，FPGA还能做许多MCU做不到的事情。随着芯片规模越来越大，成本逐渐降低，低端FPGA已逐步取代了传统的数字元件。
 
 .. contents::
     :local:
@@ -88,9 +88,9 @@ Lattice iCE40
 
 使用开源工具链fpga-toolchain，可以基于 `PlatformIO <https://platformio.org/platforms/lattice_ice40>`_ 开发，开源工具链有以下几个优点：
 
-* 开源工具链的中所有组件均有源代码提供，可以自行编译或者使用已经构建好的二进制文件，不需要任何厂商许可证。
-* 体积小，包含了 Lattice iCE40 系列、ECP5 系列 FPGA 支持的工具链压缩包大小在 100 MB 左右，而厂商提供的安装包有几个到几十个 GB。
-* 速度快，节省上板调试时间，以笔者测试用的几个小工程为例，完成代码综合、布局布线并下载到 FPGA 中仅需几秒钟的时间。
+* 开源工具链的中所有组件均有源代码提供，可以自行编译或者使用已经构建好的二进制文件，不需要厂商许可证。
+* 体积小，包含了 Lattice iCE40 系列、ECP5 系列 FPGA 支持的工具链压缩包大小在 100 MB 左右。
+* 速度快，节省上板调试时间，以几个小工程为例完成代码综合、布局布线并下载到 FPGA 中仅需几秒钟的时间。
 * 跨平台支持，开源工具链不仅支持 Windows，Linux 和 Mac OS 等操作系统，而且支持 x86 之外的处理器平台。
 
 
@@ -109,7 +109,17 @@ GW2A系列(晨熙)
 GW1NRF
 ^^^^^^^^^^^
 
-GW1NRF系列蓝牙 FPGA 产品是一款系统级封装芯片，是一 款 SoC 芯片。器件以 32 位硬核微处理器 为核心，支持蓝牙 5.0 低功耗射频功能，具有丰富的逻辑单元、内嵌 B-SRAM 和 DSP 资源，IO 资源丰富，系统内部有电源管理模块和安全加密模块。
+GW1NRF系列蓝牙FPGA产品是一款系统级封装芯片，以 32位硬核微处理器为核心，支持蓝牙5.0低功耗射频功能，具有丰富的逻辑单元、内嵌B-SRAM 和 DSP 资源，IO 资源丰富，系统内部有电源管理模块和安全加密模块。
+
+* 内嵌32bits低功耗ARC EM4处理器 (QFN48)
+* BLE 5.0
+* 136kB ROM
+* 128kB OTP for power efficiency ：128KB OTP
+* 48kB IRAM and 28kB DRAM
+* AES-128硬核加密、ECC-P256密钥生成器
+
+.. hint::
+    GW1NRF系列同 :ref:`gw1nsr` 在FPGA性能上规格相同，主要差异在SIP封装的硬核资源。
 
 版本对比
 ~~~~~~~~~
@@ -117,12 +127,14 @@ GW1NRF系列蓝牙 FPGA 产品是一款系统级封装芯片，是一 款 SoC �
 .. image:: images/GW1NSR.png
     :target: http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&FId=t3:10:3&Id=168
 
-规格参数
+配置参数
 ^^^^^^^^^^^
 
 .. image:: images/GW1NSR-R.png
     :target: http://cdn.gowinsemi.com.cn/DS861-1.4.4_GW1NSR%E7%B3%BB%E5%88%97FPGA%E4%BA%A7%E5%93%81%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C.pdf
 
+封装参数
+^^^^^^^^^^^
 
 .. image:: images/GW1NSR-P.png
     :target: http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&FId=t3:10:3&Id=168
@@ -146,6 +158,7 @@ Tang Nano 4K FPGA 板是Tang Nano FPGA板的一个升级，采用了更强大的
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.13.7c7b6cffifPv3h&id=653059006630&ns=1&abbucket=0#detail
 
 Tang Nano对比
+^^^^^^^^^^^^^^
 
 .. image:: images/TangNano.png
     :target: http://tangnano.sipeed.com/zh/
