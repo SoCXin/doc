@@ -27,7 +27,7 @@ Xin简介
 ^^^^^^^^^^^
 
 * 供电电压：1.2V(LV)、2.5V/3.3V(UV)
-* 工作温度：-40°C - 105°C
+* 片内晶振时钟精度可达±5%
 
 特征参数
 ^^^^^^^^^^^
@@ -106,18 +106,18 @@ GW2A系列(晨熙)
 .. image:: images/GW2A.png
     :target: http://cdn.gowinsemi.com.cn/DS102-2.3_GW2A%E7%B3%BB%E5%88%97FPGA%E4%BA%A7%E5%93%81%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C.pdf
 
+GW1NRF
+^^^^^^^^^^^
+
+GW1NRF系列蓝牙 FPGA 产品是一款系统级封装芯片，是一 款 SoC 芯片。器件以 32 位硬核微处理器 为核心，支持蓝牙 5.0 低功耗射频功能，具有丰富的逻辑单元、内嵌 B-SRAM 和 DSP 资源，IO 资源丰富，系统内部有电源管理模块和安全加密模块。
+
 版本对比
 ~~~~~~~~~
 
 .. image:: images/GW1NSR.png
     :target: http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&FId=t3:10:3&Id=168
 
-GW1NRF
-^^^^^^^^^^^
-
- GW1NRF系列蓝牙 FPGA 产品是一款系统级封装芯片，是一 款 SoC 芯片。器件以 32 位硬核微处理器 为核心，支持蓝牙 5.0 低功耗射频功能，具有丰富的逻辑单元、内嵌 B-SRAM 和 DSP 资源，IO 资源丰富，系统内部有电源管理模块和安全加密模块。
-
-规格型号
+规格参数
 ^^^^^^^^^^^
 
 .. image:: images/GW1NSR-R.png
