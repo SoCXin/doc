@@ -110,15 +110,45 @@ Tang Nano 4K
 
 Tang Nano 4K FPGA 板是Tang Nano FPGA板的一个升级，采用了更强大的 GOWIN GW1NSR-LV4C FPGA，它配备的是 4608 LUT（不再是之前的1152）和嵌入到芯片中的 Cortex-M3 微控制器。
 
-.. image:: images/TangNano4K
+.. image:: images/TangNano4K.png
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.13.7c7b6cffifPv3h&id=653059006630&ns=1&abbucket=0#detail
 
-
 Tang Nano对比
+
+.. image:: images/TangNano.png
+    :target: http://tangnano.sipeed.com/zh/
+
+
+DK-GoAI-GW1NSR
+^^^^^^^^^^^^^^^^^
+
+.. image:: images/DK-GoAI-GW1NSR.png
+    :target: http://www.gowinsemi.com.cn/clients_view.aspx?TypeId=21&Id=709&FId=t19:21:19
+
+
+工具资源
+~~~~~~~~~~~~~
+
+Gowin IDE
+^^^^^^^^^^^^^^
+.. image:: images/GowinIDE.png
+    :target: http://dl.sipeed.com/shareURL/TANG/Nano%204K/IDE
+
+
+
+框架资源
+~~~~~~~~~~~~~
+
+
+GoAI开发套件
 ^^^^^^^^^^^^^^
 
-.. image:: images/TangNano
-    :target: http://tangnano.sipeed.com/zh/
+GoAI 2.0是一个通过在高云FPGA器件上部署卷积神经网络(CNNs)的机器学习开发平台。它包含用于转换TensorFlow文件和加速器FPGA IP的软件脚本，以运行训练好的机器学习模型以及教程和示例。
+
+GoAI 2.0集成到TensorFlow和TensorFlow Lite框架中，比起遗留平台及其他可替代平台更加方便使用。
+
+基于TensorFlow的广泛软件开发环境，GoAI 2.0通过生成所需的所有固件，将机器学习模型直接部署到高云FPGA中，不需编写任何额外的RTL或C代码。完全支持Windows和Linux系统，包括Ubuntu。
+
 
 Xin总结
 --------------
