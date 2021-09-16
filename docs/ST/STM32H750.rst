@@ -3,7 +3,7 @@
 STM32H750
 ================
 
-* 关键词：``480MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
+* 关键词：``Cortex-M7`` ``480MHz`` ``1027DMIPS`` ``16bit-ADC`` ``USB-HS-OTG`` ``HDMI-CEC``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32H750>`_
 
 .. contents::
@@ -12,14 +12,28 @@ STM32H750
 Xin简介
 -----------
 
-.. contents::
-    :local:
+规格参数
+~~~~~~~~~~~
 
+基本参数
+^^^^^^^^^^^
 
-关键特性
-~~~~~~~~~~~~
+* 供电电压：
+* 时钟精度：
+* 处理性能：1027DMIPS
+* SRAM容量：1M
+* Flash容量：128K
 
+特征参数
+^^^^^^^^^^^
 
+* Cortex-M7 480MHz
+* 5 x UART + 5 x USART + LPUSART
+* 2×16-bit ADC 22ch, 3.6 MSPS in 16-bit, 7.2 MSPS in doubleinterleaved mode
+* 1 x 12-bit ADC 12ch, up to 5 MSPS in 12-bit
+* 2 x Octo-SPI interface with XiP
+* LCD-TFT controller supporting up to XGA resolution
+* HDMI-CEC
 
 芯片架构
 ~~~~~~~~~~~
@@ -42,9 +56,12 @@ Xin应用
     :local:
 
 
-执行器
+仪器仪表
 ~~~~~~~~~~~
 
+
+控温设备
+^^^^^^^^^^^
 
 
 Xin总结
