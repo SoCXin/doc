@@ -1,10 +1,10 @@
 
-.. _stm32mp157:
+.. _stm32mp15:
 
-STM32MP157
+STM32MP15
 =====================
 
-* 关键词：``RISC-V4C`` ``144MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE5.1`` ``QFN28``
+* 关键词：``Cortex-A7`` ``Cortex-M4``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32MP15>`_
 
 .. contents::
@@ -41,10 +41,6 @@ Xin应用
 
 .. contents::
     :local:
-
-
-执行器
-~~~~~~~~~~~
 
 
 

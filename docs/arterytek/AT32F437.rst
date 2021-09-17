@@ -1,11 +1,11 @@
 
-.. _at32f407:
+.. _at32f437:
 
-AT32F407
+AT32F437
 ===============
 
 * 关键词：``Cortex-M4`` ``300DMIPS`` ``240MHz`` ``8 UART`` ``2 CAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
-* 资源库：`GitHub <https://github.com/SoCXin/AT32F407>`_
+* 资源库：`GitHub <https://github.com/SoCXin/AT32F437>`_
 
 .. contents::
     :local:
@@ -60,6 +60,15 @@ Xin选择
       - UART
       - CAN2.0B
       - USB
+      - SPIM
+
+    * - Name
+      - DMIPS
+      - RAM
+      - FLASH
+      - UART
+      - CAN2.0B
+      - USB
       - Ethernet
     * - :ref:`at32f415`
       - 175 DMIPS
@@ -93,7 +102,15 @@ Xin选择
       - 2 x 2.0B
       - USB2.0
       - 10/100M
-    * - :ref:`at32f437`
+    * - AT32F435
+      - 360 (288MHz)
+      - 512
+      - 4032
+      - 4
+      - 1
+      - 2 x OTG
+      - NO
+    * - AT32F437
       - 360 (288MHz)
       - 512
       - 4032
@@ -111,8 +128,6 @@ Xin选择
 Xin应用
 -----------
 
-.. contents::
-    :local:
 
 
 以太网
@@ -135,5 +150,4 @@ Xin总结
 
 问题整理
 ~~~~~~~~~~~~~
-
 
