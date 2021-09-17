@@ -4,7 +4,7 @@
 STM32MP15
 =====================
 
-* 关键词：``Cortex-A7`` ``144MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE5.1`` ``QFN28``
+* 关键词：``Cortex-A7`` ``Cortex-M4``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32MP15>`_
 
 .. contents::

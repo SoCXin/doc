@@ -24,22 +24,30 @@
       - SRAM
       - FLASH
       - GUI
-      - DIS
-      - HDMI
+      - reslution
+      - interface
       - GPU
     * - :ref:`stm32h7b3`
       - 599 (280MHz)
       - 1.4 MB
       - 1/2 MB
-      - TouchGFX
-      - LCM:XGA
-      - CEC
-      - Chrom-ART/JPEG
+      - TouchGFX/STemWin
+      - XGA(1024x768)
+      - RGB/CEC
+      - DMA2D/JPEC
     * - :ref:`swm32s`
       - 150 (120MHz)
       - 512 KB
       - 512 KB
       - LittlevGL
-      - LCM:WVGA
+      - WVGA(800x480)
+      - RGB
       - No
+    * - :ref:`gw1nsr`
+      - 75 (60MHz)
+      - 24 KB
+      - 32 KB
+      - LittlevGL
+      - XGA(1024x768)
+      - FPGA
       - No
