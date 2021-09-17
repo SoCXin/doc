@@ -4,9 +4,8 @@
 AT32F413
 ===============
 
-* 关键词：``240MHz``  ``Cortex-M4``  ``-40~105°C``  ``USB2.0``
+* 关键词：``Cortex-M4`` ``200MHz``  ``-40~105°C`` ``USB2.0``
 * 资源库：`GitHub <https://github.com/SoCXin/AT32F413>`_
-
 
 .. contents::
     :local:
@@ -30,76 +29,41 @@ Xin简介
 Xin选择
 -----------
 
+.. contents::
+    :local:
 
-
-
-规格选择
+品牌对比
 ~~~~~~~~~
 
-
-该系列最具有代表性的产品型号 STM32G031J6 和 STM32G031K8 可以作为标定对象
-
-Xin实践
---------------
-
-STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发板中最常用的型号为 STM32G031J6 和 STM32G031K8
-
-
-开发工具
+型号对比
 ~~~~~~~~~
 
-
-示例代码
+版本对比
 ~~~~~~~~~
 
-1. 基于STM32CubeMX生成HAL库工程
+Xin应用
+-----------
 
-.. code-block:: bash
+.. contents::
+    :local:
 
-    uint8_t RxData;     //中断接收串口1数据
-    void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-    {
-        if(&huart1 == huart) {
-            HAL_UART_Receive_IT(huart, &RxData, 1);
-        }
-    }
-
-    void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-    {
-        if(htim==(&htim17)) //定时器中断函数
-        {
-            g_run_tick++;
-        }
-    }
-
-    int main(void)
-    {
-        /* USER CODE BEGIN 2 */
-        HAL_UART_Receive_IT(&huart1, &RxData, 1);   //中断接收使能
-        HAL_TIM_PWM_Start(&htim16,TIM_CHANNEL_1);   //PWM输出使能
-        HAL_TIM_Base_Start_IT(&htim17);             //定时器使能
-        /* USER CODE END 2 */
-        while (1)
-        {
-            /* USER CODE BEGIN 3 */
-            HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-            HAL_Delay(500);
-        }
-        /* USER CODE END 3 */
-    }
-
-
-
-
-
-
-开源项目
-~~~~~~~~~
-
-如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
-
+网关产品
+~~~~~~~~~~~~~
 
 
 Xin总结
 --------------
+
+.. contents::
+    :local:
+
+
+能力构建
+~~~~~~~~~~~~~
+
+要点提示
+~~~~~~~~~~~~~
+
+问题整理
+~~~~~~~~~~~~~
 

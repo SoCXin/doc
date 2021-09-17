@@ -60,15 +60,6 @@ Xin选择
       - UART
       - CAN2.0B
       - USB
-      - SPIM
-
-    * - Name
-      - DMIPS
-      - RAM
-      - FLASH
-      - UART
-      - CAN2.0B
-      - USB
       - Ethernet
     * - :ref:`at32f415`
       - 175 DMIPS
@@ -102,15 +93,7 @@ Xin选择
       - 2 x 2.0B
       - USB2.0
       - 10/100M
-    * - AT32F435
-      - 360 (288MHz)
-      - 512
-      - 4032
-      - 4
-      - 1
-      - 2 x OTG
-      - NO
-    * - AT32F437
+    * - :ref:`at32f437`
       - 360 (288MHz)
       - 512
       - 4032
@@ -128,6 +111,8 @@ Xin选择
 Xin应用
 -----------
 
+.. contents::
+    :local:
 
 
 以太网
@@ -141,10 +126,12 @@ Xin总结
 .. contents::
     :local:
 
-要点提示
+
+能力构建
 ~~~~~~~~~~~~~
 
-
+要点提示
+~~~~~~~~~~~~~
 
 问题整理
 ~~~~~~~~~~~~~
