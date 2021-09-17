@@ -1,13 +1,25 @@
 
-.. _st_cortex_m4:
+.. _st_medi:
 
-STM32F4/G4
-=====================
+ST主流产品
+================
 
 :ref:`cortex_m4`
 
 .. contents::
     :local:
+
+STM32F1
+--------------
+
+.. toctree::
+    :maxdepth: 1
+
+    STM32F103
+    STM32F107
+    STM32F303
+    STM32F207
+
 
 
 STM32F4

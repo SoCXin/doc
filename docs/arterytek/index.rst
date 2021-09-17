@@ -70,4 +70,5 @@ sLib
     AT32F413
     AT32F403
     AT32F407
+    AT32F437
 

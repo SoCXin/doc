@@ -157,4 +157,4 @@ LoRa
     :maxdepth: 1
 
     ASR6501 <../H/ASR6501>
-    STM32WLE5 <../ST/M4/STM32WLE5>
+    STM32WLE5 <../ST/M/STM32WLE5>

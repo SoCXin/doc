@@ -37,5 +37,5 @@ Marlin 是 RepRap 系列复制式快速原型机--俗称"3D 打印机 "的一个
     :maxdepth: 1
 
     ESP32 <../espressif/ESP32>
-    STM32F103 <../ST/M3/STM32F103>
-    STM32F401 <../ST/M4/STM32F401>
+    STM32F103 <../ST/M/STM32F103>
+    STM32F401 <../ST/M/STM32F401>
