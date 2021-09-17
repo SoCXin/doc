@@ -3,7 +3,7 @@
 STM32H750
 ================
 
-* 关键词：``Cortex-M7`` ``480MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
+* 关键词：``Cortex-M7`` ``480MHz`` ``1027DMIPS`` ``16bit-ADC`` ``USB-HS-OTG`` ``HDMI-CEC``  ``11 UART``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32H750>`_
 
 .. contents::
@@ -11,6 +11,12 @@ STM32H750
 
 Xin简介
 -----------
+
+.. image:: ./images/stm32h750.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h750-value-line.html
+
+.. contents::
+    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -48,6 +54,16 @@ Xin选择
     :local:
 
 
+品牌对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
+
+
 
 Xin应用
 -----------
@@ -55,13 +71,13 @@ Xin应用
 .. contents::
     :local:
 
+开发板
+~~~~~~~~~~
 
-移动工具
-~~~~~~~~~~~
 
+H7-TOOL
+~~~~~~~~~~
 
-控温设备
-^^^^^^^^^^^
 
 
 Xin总结
@@ -70,10 +86,11 @@ Xin总结
 .. contents::
     :local:
 
-要点提示
+能力构建
 ~~~~~~~~~~~~~
 
-
+要点提示
+~~~~~~~~~~~~~
 
 问题整理
 ~~~~~~~~~~~~~

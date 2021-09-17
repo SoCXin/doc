@@ -11,7 +11,6 @@ STMicroelectronics
 
 MCU产品
 ----------
-
 .. toctree::
     :maxdepth: 1
 
@@ -19,7 +18,16 @@ MCU产品
     主流产品  <M/index>
 
 
-高性能产品
+SoC产品
+----------
+.. toctree::
+    :maxdepth: 1
+
+    STM32WLE5 <M/STM32WLE5>
+    STM32WB55 <M/STM32WB55>
+
+
+性能担当
 ----------
 
 .. toctree::
@@ -30,10 +38,3 @@ MCU产品
     STM32MP15 <H/STM32MP15>
 
 
-无线通信
-----------
-
-.. toctree::
-    :maxdepth: 1
-
-    STM32WLE5 <M/STM32WLE5>
