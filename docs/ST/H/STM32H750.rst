@@ -3,7 +3,7 @@
 STM32H750
 ================
 
-* 关键词：``480MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
+* 关键词：``Cortex-M7`` ``480MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32H750>`_
 
 .. contents::
@@ -42,7 +42,7 @@ Xin应用
     :local:
 
 
-执行器
+移动工具
 ~~~~~~~~~~~
 
 

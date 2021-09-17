@@ -3,7 +3,7 @@
 STM32H7B3
 ================
 
-* 关键词：``280MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
+* 关键词：``Cortex-M7`` ``280MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32H7B3>`_
 
 .. contents::
@@ -27,6 +27,8 @@ Xin简介
 
 * 多达35个通信接口，包括FD-CAN、USB2.0高速/全速、照相机接口、并行同步数据输入/输出从接口（PSSI）
 
+STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.4 MB SRAM：192 KB的TCM RAM（包括64 KB的ITCM RAM和128 KB的DTCM RAM，用于时间关键型程序或数据），1.18 MB的用户SRAM，以及用于在最低功耗模式下保存数据的备份域4 KB SRAM。另外，它提供64至225引脚的BGA和LQFP封装型号。
+
 芯片架构
 ~~~~~~~~~~~
 
@@ -43,6 +45,9 @@ Xin选择
 
 Xin应用
 -----------
+
+.. image:: images/B_STM32H7B3.png
+    :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.39.5bcd1376PALjIA&id=635717279033&ns=1&abbucket=10
 
 .. contents::
     :local:
