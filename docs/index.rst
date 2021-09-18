@@ -44,7 +44,7 @@ SoC 芯
     :caption: 厂商速览
     :maxdepth: 1
 
-    STM <ST/index>
+    ST <ST/index>
     WCH <WCH/index>
     Espressif <espressif/index>
     MediaTek <MediaTek/index>
