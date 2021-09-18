@@ -33,7 +33,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* Cortex-M7 550 MHz
+* :ref:`cortex_m7` 550 MHz
 * 564KB RAM,128KB flash
 * OctoSPI
 * Ethernet
@@ -99,7 +99,7 @@ Xin选择
       - 1.4 MB
       - 16+16
       - ART/JPEG
-      - 2 Quad
+      - 2 Octo
       - OTG HS
       - No
       - 35

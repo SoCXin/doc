@@ -24,7 +24,7 @@ SoC产品
     :maxdepth: 1
 
     LoRa SoC: STM32WLE5 <M/STM32WLE5>
-    BLE/ZigBee SoC: STM32WB55 <M/STM32WB55>
+    BLE SoC: STM32WB55 <M/STM32WB55>
 
 
 性能担当
@@ -33,7 +33,7 @@ SoC产品
 .. toctree::
     :maxdepth: 1
 
-    大内存低功耗 STM32H7B0 <H/STM32H7B0>
+    超值低功耗 STM32H7B0 <H/STM32H7B0>
     超值大内存 STM32H750 <H/STM32H750>
     高频低功耗 STM32H730 <H/STM32H730>
     双核MCU: STM32H745 <H/STM32H745>

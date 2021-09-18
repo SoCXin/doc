@@ -12,6 +12,9 @@ STM32H7B0
 Xin简介
 -----------
 
+.. image:: ./images/stm32h7b0.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html
+
 内置SMPS，用于降低电源电压。还可用于为外部电路供电，以及特定应用情况下结合LDO共同使用。
 在内核运行模式（外设外设关）和SMPS情况下，典型功耗为120 µA/MHz @VDD = 3.3 V和25 °C
 低功耗停止模式下的典型功耗电流为32 µA
@@ -43,14 +46,14 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
-型号对比
+版本对比
 ~~~~~~~~~
 
 .. image:: ./images/STM32H7.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
 
-超值系列关键对比
-^^^^^^^^^^^^^^^^^
+超值系列对比
+^^^^^^^^^^^^^^
 
 .. list-table::
     :header-rows:  1
@@ -87,14 +90,38 @@ Xin选择
       - 1.4 MB
       - 16+16
       - ART/JPEG
-      - 2 Quad
+      - 2 Octo
       - OTG HS
       - No
       - 35
 
-版本对比
+型号对比
 ~~~~~~~~~
 
+.. image:: ./images/STM32H7B0l.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - DMIPS
+      - RAM
+      - Cache
+      - GPU
+      - SPI
+      - USB
+      - Ethernet
+      - Interface
+    * - :ref:`stm32h7b0`
+      - 1177
+      - 564KB
+      - 32+32
+      - ART
+      - 2 Octo
+      - OTG HS
+      - 100M
+      - 35
 
 Xin应用
 -----------
