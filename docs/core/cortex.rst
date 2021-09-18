@@ -113,20 +113,22 @@ Cortex-M
 Cortex-R
 ----------
 
-``Cortex-R5``
+Cortex-R5
 ~~~~~~~~~~~~~~
 
 Cortex-A
 ----------
 
-``Cortex-A7``
+Cortex-A7
 ~~~~~~~~~~~~~~
 
 
 性能测试
 ----------
 
-Dhrystone标准
+.. _DMIPS:
+
+DMIPS
 ~~~~~~~~~~~~~~
 
 Dhrystone是由Reinhold P. Weicker在1984年提出来的一个基准测试程序，其主要目的是测试处理器的整数运算和逻辑运算的性能。
@@ -135,8 +137,9 @@ Dhrystone程序最初用Ada语言发布，后来Rick Richardson为Unix开发了�
 
 Dhrystone标准的测试方法很简单，就是单位时间内跑了多少次Dhrystone程序，其指标单位为DMIPS/MHz。MIPS是Million Instructions Per Second的缩写，每秒处理的百万级的机器语言指令数。DMIPS中的D是Dhrystone的缩写，它表示了在Dhrystone标准的测试方法下的MIPS。
 
+.. _CoreMark:
 
-CoreMark标准
+CoreMark
 ~~~~~~~~~~~~~~
 
 CoreMark是由嵌入式微处理器基准评测协会EEMBC的Shay Gla-On于2009年提出的一项基准测试程序，其主要目标是测试处理器核心性能，这个标准被认为比陈旧的Dhrystone标准更有实际价值。

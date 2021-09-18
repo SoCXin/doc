@@ -24,9 +24,9 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：
-* 时钟精度：
-* 处理性能：1177 DMIPS
+* 供电电压：1.71 to 3.6 V
+* 工作温度：40°C to +85°C
+* 处理性能：1177 :ref:`DMIPS`
 * RAM容量：564 KB
 * Flash容量：128 KB
 
@@ -35,13 +35,15 @@ Xin简介
 
 * :ref:`cortex_m7` 550 MHz
 * 564KB RAM,128KB flash
-* OctoSPI
+* 2 Octo-SPI
 * Ethernet
 * USB OTG HS
 
 芯片架构
 ~~~~~~~~~~~
 
+.. image:: ./images/STM32H730s.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html
 
 
 
@@ -55,13 +57,13 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
-型号对比
+版本对比
 ~~~~~~~~~
 
 .. image:: ./images/STM32H7.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
 
-超值系列关键对比
+超值系列对比
 ^^^^^^^^^^^^^^^^^
 
 .. list-table::
@@ -105,14 +107,93 @@ Xin选择
       - 35
 
 
-版本对比
+型号对比
 ~~~~~~~~~
 
-.. image:: ./images/STM32H730l.png
+.. image:: ./images/STM32H730diff.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html
 
 
+相似系列对比
+^^^^^^^^^^^^^^^^^
 
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - DMIPS
+      - RAM
+      - Cache
+      - GPU
+      - SPI
+      - USB
+      - Ethernet
+      - Interface
+    * - :ref:`stm32h730`
+      - 1177
+      - 564KB
+      - 32+32
+      - ART
+      - 2 Octo
+      - OTG HS
+      - 100M
+      - 35
+    * - STM32H725
+      - 1027
+      - 1 MB
+      - 16+16
+      - ART
+      - 2 Quad
+      - OTG HS
+      - 100M
+      - 35
+
+封装规格对比
+^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Price
+      - Package
+      - Size
+      - Interface
+    * - STM32H730IBH
+      - $3.67
+      - UFBGA176
+      - 10×10mm
+      - 35
+    * - STM32H730ABH
+      - $3.37
+      - UFBGA169
+      - 7x7mm
+      - 35
+    * - STM32H730ZBH
+      - $3.24
+      - UFBGA144
+      - 7x7mm
+      - 35
+    * - STM32H730VBH
+      - $2.83
+      - TFBGA100
+      - 8x8mm
+      - 35
+    * - STM32H730IBT
+      - $3.67
+      - LQFP176
+      - 24×24mm
+      - 35
+    * - STM32H730ZBT
+      - $3.24
+      - LQFP144
+      - 20×20mm
+      - 35
+    * - STM32H730VBT
+      - $2.83
+      - LQFP100
+      - 14×14mm
+      - 35
 
 Xin应用
 -----------
