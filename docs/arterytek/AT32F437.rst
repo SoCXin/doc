@@ -32,7 +32,7 @@ Xin简介
 ~~~~~~~~~~~
 
 时钟体系
-^^^^^^^^^^^^^
+^^^^^^^^^^^
 
 Xin选择
 -----------
@@ -52,15 +52,6 @@ Xin选择
 
 .. list-table::
     :header-rows:  1
-
-    * - Name
-      - DMIPS
-      - RAM
-      - FLASH
-      - UART
-      - CAN2.0B
-      - USB
-      - SPIM
 
     * - Name
       - DMIPS

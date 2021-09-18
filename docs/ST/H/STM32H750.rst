@@ -60,6 +60,34 @@ Xin选择
 型号对比
 ~~~~~~~~~
 
+.. image:: ./images/STM32H7.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
+
+
+关键参数
+^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - SRAM
+      - FLASH
+      - CONN
+      - GPU
+      - AD/DA
+      - SPI
+    * - :ref:`stm32h750`
+      - M7:480 MHz
+      - 1 MB
+      - 128 KB
+      - 35
+      - ART/JPEC
+      - 16/12
+      - dual Quad
+
+
 版本对比
 ~~~~~~~~~
 
