@@ -64,34 +64,6 @@ Xin选择
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
 
 
-H7系列关键参数对比
-^^^^^^^^^^^^^^^^^^^^
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - :ref:`stm32h750`
-      - :ref:`stm32h7b3`
-      - FLASH
-      - CONN
-    * - :ref:`stm32h750`
-      - 480 MHz
-      - 1 MB
-      - 128 KB
-      - 35
-      - ART/JPEC
-      - 16/12
-      - dual Quad
-    * - :ref:`stm32h7b3`
-      - 480 MHz
-      - 1 MB
-      - 128 KB
-      - 35
-      - ART/JPEC
-      - 16/12
-      - dual Quad
-
 
 
 版本对比
