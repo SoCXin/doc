@@ -46,6 +46,52 @@ Xin选择
 型号对比
 ~~~~~~~~~
 
+.. image:: ./images/STM32H7.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
+
+超值系列关键对比
+^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - DMIPS
+      - RAM
+      - Cache
+      - GPU
+      - SPI
+      - USB
+      - Ethernet
+      - Interface
+    * - :ref:`stm32h730`
+      - 1177
+      - 564KB
+      - 32+32
+      - ART
+      - 2 Octo
+      - OTG HS
+      - 100M
+      - 35
+    * - :ref:`stm32h750`
+      - 1027
+      - 1 MB
+      - 16+16
+      - ART
+      - 2 Quad
+      - OTG HS
+      - 100M
+      - 35
+    * - :ref:`stm32h7b0`
+      - 599
+      - 1.4 MB
+      - 16+16
+      - ART/JPEG
+      - 2 Quad
+      - OTG HS
+      - No
+      - 35
+
 版本对比
 ~~~~~~~~~
 

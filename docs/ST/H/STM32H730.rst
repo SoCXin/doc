@@ -27,8 +27,8 @@ Xin简介
 * 供电电压：
 * 时钟精度：
 * 处理性能：1177 DMIPS
-* RAM容量：564KB
-* Flash容量：128K
+* RAM容量：564 KB
+* Flash容量：128 KB
 
 特征参数
 ^^^^^^^^^^^
@@ -80,19 +80,28 @@ Xin选择
       - 1177
       - 564KB
       - 32+32
-      - Chrom-ART
-      - 2 Octo-SPI
-      - USB OTG HS
+      - ART
+      - 2 Octo
+      - OTG HS
       - 100M
       - 35
     * - :ref:`stm32h750`
       - 1027
       - 1 MB
       - 16+16
-      - Chrom-ART
-      - 2 Quad-SPI
-      - USB OTG HS
+      - ART
+      - 2 Quad
+      - OTG HS
       - 100M
+      - 35
+    * - :ref:`stm32h7b0`
+      - 599
+      - 1.4 MB
+      - 16+16
+      - ART/JPEG
+      - 2 Quad
+      - OTG HS
+      - No
       - 35
 
 
