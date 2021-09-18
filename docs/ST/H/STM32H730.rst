@@ -1,10 +1,10 @@
-.. _stm32h750:
+.. _stm32h730:
 
-STM32H750
+STM32H730
 ================
 
-* 关键词：``Cortex-M7`` ``480MHz`` ``1027DMIPS`` ``16bit-ADC`` ``USB-HS-OTG`` ``HDMI-CEC``  ``11 UART``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32H750>`_
+* 关键词：``Cortex-M7`` ``550MHz`` ``1027DMIPS`` ``16bit-ADC`` ``USB-HS-OTG`` ``HDMI-CEC``  ``11 UART``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32H730>`_
 
 .. contents::
     :local:
@@ -71,22 +71,26 @@ H7系列关键参数对比
     :header-rows:  1
 
     * - Name
-      - :ref:`stm32h730`
       - :ref:`stm32h750`
-      - :ref:`stm32h7b0`
-    * - :ref:`stm32h730`
-      -
-      - OctoSPI
-      - Ethernet
+      - :ref:`stm32h7b3`
+      - FLASH
+      - CONN
     * - :ref:`stm32h750`
-      - 1 MB RAM
-      -
-      - 480MHz
-    * - :ref:`stm32h7b0`
-      - 1.4 MB RAM
-      - SMPS
-      -
-
+      - 480 MHz
+      - 1 MB
+      - 128 KB
+      - 35
+      - ART/JPEC
+      - 16/12
+      - dual Quad
+    * - :ref:`stm32h7b3`
+      - 480 MHz
+      - 1 MB
+      - 128 KB
+      - 35
+      - ART/JPEC
+      - 16/12
+      - dual Quad
 
 
 

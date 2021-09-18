@@ -1,10 +1,10 @@
-.. _stm32h7b3:
+.. _stm32h7b0:
 
-STM32H7B3
+STM32H7B0
 ================
 
 * 关键词：``Cortex-M7`` ``280MHz`` ``599DMIPS`` ``1414CoreMark`` ``SMPS`` ``Chrom-ART`` ``STemWin`` ``JPEC`` ``HDMI-CEC``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32H7B3>`_
+* 资源库：`GitHub <https://github.com/SoCXin/STM32H7B0>`_
 
 .. contents::
     :local:

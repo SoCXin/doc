@@ -7,8 +7,9 @@
 /STM32F429.html -> ST/M/STM32F429.html
 /STM32G431.html -> ST/M/STM32G431.html
 /STM32G474.html -> ST/M/STM32G474.html
+/STM32H730.html -> ST/H/STM32H730.html
 /STM32H750.html -> ST/H/STM32H750.html
-/STM32H7B3.html -> ST/H/STM32H7B3.html
+/STM32H7B0.html -> ST/H/STM32H7B0.html
 /STM32MP15.html -> ST/H/STM32MP15.html
 /ESP32.html -> espressif/ESP32.html
 /ESP32-S2.html -> espressif/ESP32-S2.html

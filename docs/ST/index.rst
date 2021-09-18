@@ -33,8 +33,9 @@ SoC产品
 .. toctree::
     :maxdepth: 1
 
-    STM32H7B3 <H/STM32H7B3>
-    STM32H750 <H/STM32H750>
+    大内存低功耗 STM32H7B0 <H/STM32H7B0>
+    超值大内存 STM32H750 <H/STM32H750>
+    高频低功耗 STM32H730 <H/STM32H730>
     STM32MP15 <H/STM32MP15>
 
 
