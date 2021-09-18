@@ -1,5 +1,5 @@
 
-.. _st_medi:
+.. _st_main:
 
 ST主流产品
 ================
@@ -14,8 +14,9 @@ Cortex-M3
     :maxdepth: 1
 
     STM32F103
-    STM32F303
     STM32F207
+    STM32F303
+
 
 Cortex-M4
 --------------
@@ -28,5 +29,5 @@ Cortex-M4
     STM32F429
     STM32G431
     STM32G474
-
+    STM32L412
 

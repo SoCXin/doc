@@ -24,29 +24,29 @@ MCU
       - Flash
       - UART
       - GPIO
-      - SPEC
+      - Arch
       - Package
     * - :ref:`stm32h750`
-      - 480MHz
+      - 480 MHz
       - 1K
       - 8K
       - 2
       - 18
-      - I2C
-      - TSSOP20
-    * - :ref:`at32f403`
-      - 240MHz
-      - 1K
-      - 16K
-      - 2
-      - 16
-      - USB-D
-      - TSSOP20
-    * - :ref:`hc32f460`
-      - 200MHz
-      - 18K
-      - 512K
-      - 4
-      - 24
-      - USB-H/D
-      - QFN28
+      - :ref:`cortex_m7`
+      - LQFP100
+    * - :ref:`stm32h730`
+      - 550 MHz
+      -
+      -
+      -
+      -
+      -  :ref:`cortex_m7`
+      - LQFP64
+    * - :ref:`at32f437`
+      - 288 MHz
+      -
+      -
+      -
+      -
+      - :ref:`cortex_m4`
+      - LQFP64

@@ -116,8 +116,12 @@ Cortex-R
 Cortex-R5
 ~~~~~~~~~~~~~~
 
+.. _cortex_a:
+
 Cortex-A
 ----------
+
+.. _cortex_a7:
 
 Cortex-A7
 ~~~~~~~~~~~~~~
