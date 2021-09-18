@@ -27,7 +27,7 @@
       - reslution
       - interface
       - GPU
-    * - :ref:`stm32h7b3`
+    * - :ref:`stm32h7b0`
       - 599 (280MHz)
       - 1.4 MB
       - 1/2 MB
