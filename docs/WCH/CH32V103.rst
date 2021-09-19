@@ -4,7 +4,7 @@
 CH32V103
 ============
 
-* 关键词：``RISC-V3A`` ``80MHz`` ``USB-D``
+* 关键词：``RISC-V3A`` ``80MHz`` ``USB``
 * 资源库：`GitHub <https://github.com/SoCXin/CH32V103>`_
 
 .. contents::
@@ -47,8 +47,54 @@ Xin简介
     :target: http://www.wch.cn/products/CH32V103.html
 
 
+
 Xin选择
 -----------
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - DMIPS
+      - RAM
+      - Flash
+      - UART
+      - SPI
+      - USB
+      - CAN
+      - Interface
+    * - :ref:`ch32v103`
+      - 90
+      - 20KB
+      - 64/128KB
+      - 3
+      - 2
+      - H/D
+      - 2.0B
+      - 9
+    * - GD32V103
+      - 90
+      - 20KB
+      - 64KB
+      - 3
+      - 2
+      - H/D
+      - 2.0B
+      - 9
+
+
+型号对比
+~~~~~~~~~~
+
+.. image:: ./images/CH32V103l.png
+    :target: http://www.wch.cn/products/CH32V103.html
+
 
 Xin应用
 -----------
@@ -56,9 +102,6 @@ Xin应用
 .. contents::
     :local:
 
-
-执行器
-~~~~~~~~~~~
 
 
 

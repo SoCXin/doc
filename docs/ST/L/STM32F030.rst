@@ -4,8 +4,8 @@
 STM32F030
 ===============
 
-* 关键词：``USB`` ``10M-ETH-PHY`` ``BLE5.1`` ``CAN`` ``AES128``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32F051>`_
+* 关键词：``Cortex-M0``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32F030>`_
 
 .. contents::
     :local:
@@ -13,12 +13,23 @@ STM32F030
 Xin简介
 -----------
 
+.. contents::
+    :local:
 
-关键特性
-~~~~~~~~~~~~
+规格参数
+~~~~~~~~~~~
 
-* 10M以太网
-* 4个USART接口
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：1.71 to 3.6 V
+* 工作温度：40°C to +85°C
+* 处理性能：60 :ref:`DMIPS`
+* RAM容量：40 KB
+* Flash容量：128 KB
+
+特征参数
+^^^^^^^^^^^
 
 
 芯片架构
