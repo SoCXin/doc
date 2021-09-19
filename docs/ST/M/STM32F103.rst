@@ -28,20 +28,21 @@ Xin简介
 
 * 供电电压：2.0 to 3.6 V
 * 工作温度：40°C to +85°C
-* 处理性能：244 ULPBench
+* 处理性能：90 :ref:`DMIPS`
 * RAM容量：20 KB
-* Flash容量：192 KB
+* Flash容量：128 KB
 
 特征参数
 ^^^^^^^^^^^
 
 * :ref:`cortex_m3` 72 MHz
+* 2xI2C,3xUSART,2xSPI,CAN2.0B,USB2.0
 
 
 芯片架构
 ~~~~~~~~~~~~
 
-.. image:: ./images/STM32L011s.png
+.. image:: ./images/STM32F103s.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f1-series/stm32f103.html
 
 
@@ -53,10 +54,10 @@ Xin选择
     :local:
 
 品牌对比
-~~~~~~~~~
+~~~~~~~~~~
 
-兼容产品
-^^^^^^^^^
+兼容替换
+^^^^^^^^^^
 
 .. list-table::
     :header-rows:  1
@@ -64,34 +65,36 @@ Xin选择
     * - Name
       - DMIPS
       - RAM
-      - Cache
-      - GPU
+      - Flash
+      - UART
       - SPI
       - USB
-      - Ethernet
+      - CAN
       - Interface
     * - :ref:`stm32f103`
-      - 1177
-      - 564KB
-      - 32+32
-      - ART
-      - 2 Octo
-      - OTG HS
-      - 100M
-      - 35
+      - 90
+      - 20KB
+      - 64/128KB
+      - 3
+      - 2
+      - Device
+      - 2.0B
+      - 9
     * - :ref:`ch32f103`
-      - 1027
-      - 1 MB
-      - 16+16
-      - ART
-      - 2 Quad
-      - OTG HS
-      - 100M
-      - 35
+      - 90
+      - 20KB
+      - 64KB
+      - 3
+      - 2
+      - H/D+D
+      - 2.0B
+      - 9
 
 
 系列对比
 ~~~~~~~~~
+
+
 
 型号对比
 ~~~~~~~~~
@@ -106,6 +109,20 @@ Xin应用
 .. contents::
     :local:
 
+.. _stm32f103_marlin:
+
+Marlin
+~~~~~~~~~~~~~
+
+* ``MKS Robin``
+
+:ref:`marlin_3d` 方案
+
+
+.. _stm32f103_dap:
+
+CMSIS-DAP
+~~~~~~~~~~~~~
 
 
 

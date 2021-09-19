@@ -51,10 +51,12 @@ ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含�
 .. hint::
     基于 :ref:`ch552` 芯片的方案应该是成本最低的 :ref:`ch552_dap` 实现。
 
+.. _marlin_3d:
+
 Marlin
 -------------
 
-Marlin 是 RepRap 系列复制式快速原型机--俗称"3D 打印机 "的一个开源固件。它源于Sprinter和grbl，并于2011年8月12日在Github发布，成为一个独立的开源项目。Marlin是根据GPLv3许可的，对所有应用都是免费的。
+`Marlin <https://github.com/MarlinFirmware/Marlin>`_ 是 RepRap 系列复制式快速原型机--俗称"3D 打印机 "的一个开源固件。它源于Sprinter和grbl，并于2011年8月12日在Github发布，成为一个独立的开源项目。Marlin是根据GPLv3许可的，对所有应用都是免费的。
 
 作为其质量的证明，Marlin被几个受人尊敬的商业3D打印机使用。Ultimaker、Printrbot、AlephObjects（Lulzbot）和Prusa Research只是运送Marlin变体的几个供应商。Marlin也能够驱动CNC和激光雕刻机。
 
