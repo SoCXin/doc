@@ -11,7 +11,7 @@ Wharton.[1][2] Intel's original versions were popular in the 1980s and early 199
 It is an example of a complex instruction set computer, and has separate memory spaces for program instructions and data.
 
 
-8051
+8051内核
 --------------
 
 .. toctree::
