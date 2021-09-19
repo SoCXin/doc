@@ -4,7 +4,7 @@
 STM32F303
 ==================
 
-* 关键词：``RISC-V4C`` ``144MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE5.1`` ``QFN28``
+* 关键词：``Cortex-M3`` ``72MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE5.1`` ``QFN28``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32F303>`_
 
 .. contents::

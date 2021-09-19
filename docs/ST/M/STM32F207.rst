@@ -4,7 +4,7 @@
 STM32F207
 ==================
 
-* 关键词：``120MHz``
+* 关键词：``Cortex-M3`` ``120MHz``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32F207>`_
 
 .. contents::
