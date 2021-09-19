@@ -16,7 +16,7 @@ SoC 芯
 
     热度榜单 <news/hot>
     方案榜单 <news/hop>
-    性能榜单 <news/top>
+    全能榜单 <news/top>
     低端榜单 <news/low>
     特色榜单 <news/spec>
 

@@ -8,32 +8,37 @@
     :maxdepth: 1
 
     K210 <../H/K210>
-
+    V831 <../H/V831>
 
 .. list-table::
     :header-rows:  1
 
     * - Name
       - Core
+      - Freq
       - RAM
       - Flash
-      - UART
-      - GPIO
-      - Arch
+      - Process
       - Package
     * - :ref:`stm32mp15`
-      - 480 MHz
-      - 1K
-      - 8K
-      - 2
-      - 18
       - :ref:`cortex_a7`
-      - LQFP100
+      - 800 MHz
+      -
+      -
+      - 55nm
+      - TFBGA257
     * - :ref:`k210`
-      - 550 MHz
-      - 1K
-      - 8K
-      - 2
-      - 18
       - :ref:`riscv`
-      - LQFP64
+      - 400 MHz
+      - 8MB
+      -
+      - TSMC 28nm
+      - BGA144
+    * - :ref:`v831`
+      - :ref:`cortex_a7`
+      - 800 MHz
+      - 64MB DDR2
+      -
+      - TSMC 28nm
+      - QFN88
+

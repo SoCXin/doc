@@ -4,7 +4,7 @@
 K210
 =============
 
-* 关键词：``0.2TOPS`` ``RISC-V`` ``400MHz``
+* 关键词：``RISC-V`` ``400MHz`` ``0.2TOPS``  ``Dual Core`` ``KPU`` ``$3``
 * 资源库：`GitHub <https://github.com/SoCXin/K210>`_
 
 .. contents::

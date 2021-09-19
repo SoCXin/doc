@@ -1,19 +1,14 @@
 
 .. _top:
 
-性能Xin榜
+全能Xin榜
 ============
 
 .. warning::
-    主要收录高主频特点产品，该产品在其他配置上可以无亮点，所以不一定是全局最佳
+    主要收录配置全面，比较能打的产品
 
-MCU
--------------
 
-.. toctree::
-    :maxdepth: 1
 
-    HC32F460 <../M/HC32F460>
 
 .. list-table::
     :header-rows:  1
@@ -28,10 +23,10 @@ MCU
       - Package
     * - :ref:`stm32h750`
       - 480 MHz
-      - 1K
-      - 8K
-      - 2
-      - 18
+      -
+      -
+      -
+      -
       - :ref:`cortex_m7`
       - LQFP100
     * - :ref:`stm32h730`
