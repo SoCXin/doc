@@ -15,6 +15,7 @@
 
     SWM32S <../M/SWM32S>
     SWM341 <../M/SWM341>
+    TKM32F499 <../M/TKM32F499>
 
 .. list-table::
     :header-rows:  1
