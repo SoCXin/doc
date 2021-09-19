@@ -72,32 +72,34 @@ Marlin
       - Special
       - Package
     * - :ref:`esp32`
-      - 40MHz
-      - 1K
-      - 8K
+      - 240MHz
+      - 512K
+      - 4MB
       - 2
       - 18
-      - 10M-PHY
-      - QFN28/48
+      - WIFI
+      - QFN48
     * - :ref:`stm32f103`
-      - 40MHz
-      - 1K
-      - 8K
+      - 72MHz
+      - 20KB
+      - 128KB
       - 2
-      - 18
-      - 10M-PHY
-      - QFN28/48
-     * - :ref:`stm32f401`
-      - 40MHz
-      - 1K
-      - 8K
+      - 40
+      -
+      - LQFP48
+    * - :ref:`stm32f401`
+      - 100MHz
+      -
+      -
       - 2
-      - 18
-      - 10M-PHY
-      - QFN28/48
+      -
+      -
+      - QFN48
 
 
+.. _usb_pd:
 
 USB-PD
 -------------
 
+`USB PD <https://github.com/Qful/PD>`_ (USB Power Delivery)功率传输协议，USB功率2013年的新标准名为USBPD，USB PD 协议基于USB3.1，是USB3.1 中即type-c端口后提出的功率传输概念。可以为这种技术带来更大的灵活性，将充电能力扩大为目前的10倍：最高可达100瓦。
