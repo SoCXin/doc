@@ -44,6 +44,9 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~~
 
+.. image:: ./images/CH32F103s.png
+    :target: http://www.wch.cn/products/CH32F103.html
+
 
 
 Xin选择
@@ -55,10 +58,129 @@ Xin选择
 品牌对比
 ~~~~~~~~~~
 
+ :ref:`ch32f103` 在某种程度上将就是为了替代 :ref:`stm32f103` 而存在，管脚全部兼容，寄存器全部兼容，但增强了USB功能。
+
+寄存器、存储器地址映射决定了芯片外设是否兼容，能否可以使用st官方驱动库。
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - DMIPS
+      - RAM
+      - Flash
+      - UART
+      - SPI
+      - USB
+      - CAN
+      - Interface
+    * - :ref:`stm32f103`
+      - 90
+      - 20KB
+      - 64/128KB
+      - 3
+      - 2
+      - USBD
+      - 2.0B
+      - 9
+    * - :ref:`ch32f103`
+      - 90
+      - 20KB
+      - 64KB
+      - 3
+      - 2
+      - H/D+D
+      - 2.0B
+      - 9
+    * - GD32F103
+      - 90
+      - 20KB
+      - 64KB
+      - 3
+      - 2
+      - USBD
+      - 2.0B
+      - 9
+    * - APM32F103
+      - 90
+      - 20KB
+      - 64KB
+      - 3
+      - 2
+      - USBD
+      - 2.0B
+      - 9
+    * - HK32F103
+      - 90
+      - 20KB
+      - 64KB
+      - 3
+      - 2
+      - USBD
+      - 2.0B
+      - 9
+    * - CKSF103
+      - 90
+      - 20KB
+      - 64KB
+      - 3
+      - 2
+      - USBD
+      - 2.0B
+      - 9
+
+
+USB差异
+^^^^^^^^^^
+
+CH32F103的USBD接口功能兼容了STM32F103的USB接口，而且额外还提供了一个USBHD接口。
+
+:ref:`stm32f103` 需要增加1.5K上拉电阻（UD+），推荐电路传输线路上串接22Ω电阻； :ref:`ch32f103` 内部接口做了阻抗匹配，外部无需任何电阻，芯片引脚直接连接通讯端子或信号线；
+
+ :ref:`ch32f103` USBD端口设计兼容 STM32F103 的USB，代码完全兼容，USBHD端口提供寄存器和函数库方式，相比代码结构简单，代码量小。
+
+其他差异
+^^^^^^^^^^
+
+CH32F103芯片基本使用上和STM32F103的一样，兼容性也比较好，但在flash算法上兼容性不一致，不能使用ST的下载软件。
+
+GD32、APM32、HS32、CSK32都可以可以正常下载，只有CH32不可以，说明只有CH32的flash算法和ST不兼容。
+
+GD32、APM32可以通过此软件下载，其它几种不可以，说明GD32和APM的BootLoader是和STM32兼容的
 
 系列对比
 ~~~~~~~~~~
 
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - DAC
+      - USB
+      - CAN
+      - Freq
+    * - :ref:`ch32f103`
+      - :ref:`cortex_m3`
+      - 20/10KB
+      - 64/32KB
+      - 3
+      - 1x12bit
+      - H/D+D
+      - 2.0B
+      - 72MHz
+    * - :ref:`ch32v103`
+      - :ref:`wch_riscv3a`
+      - 20/10KB
+      - 64/32KB
+      - 3
+      - 0
+      - H/D
+      - 0
+      - 80MHz
 
 型号对比
 ~~~~~~~~~~

@@ -4,8 +4,8 @@
 CH32V103
 ============
 
-* 关键词：``USB`` ``10M-ETH-PHY`` ``BLE4.2`` ``RTC`` ``AES128``
-* 资源库：`GitHub <https://github.com/SoCXin/CH32F103>`_
+* 关键词：``RISC-V3A`` ``80MHz`` ``USB-D``
+* 资源库：`GitHub <https://github.com/SoCXin/CH32V103>`_
 
 .. contents::
     :local:
@@ -13,19 +13,38 @@ CH32V103
 Xin简介
 -----------
 
-:ref:`wch` :ref:`wch_riscv`
+.. image:: ./images/CH32V103.png
+    :target: http://www.wch.cn/products/CH32V103.html
 
-.. image:: ./images/CH579.png
-    :target: http://www.wch.cn/products/CH579.html
+.. contents::
+    :local:
 
-关键特性
-~~~~~~~~~~~~~~
 
-* 提供10M以太网接口，内置PHY
-* BLE 4.2，Zigbee兼容IEEE 802.15.4规范，单端RF接口无需外部电感
-* 支持3.3V和2.5V电源，范围2.1V～3.6V, 内置DC/DC转换
-* SPI x 2 + UART x 4 (16C550/6Mbps)
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：2.7V ~ 5.5V
+* 工作温度：40°C to +85°C
+* 处理性能：120 :ref:`DMIPS`
+* RAM容量：20 KB
+* Flash容量：64 KB
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`wch_riscv3a` 80 MHz
 * USB H/D
+
+
+
+芯片架构
+~~~~~~~~~~~~
+
+.. image:: ./images/CH32V103s.png
+    :target: http://www.wch.cn/products/CH32V103.html
 
 
 Xin选择
