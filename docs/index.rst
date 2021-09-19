@@ -31,12 +31,12 @@ SoC 芯
     计算类      <for/edge>
 
 .. toctree::
-    :caption: 架构速览
+    :caption: 内核速览
     :maxdepth: 1
 
     ARM     <core/arm>
     MIPS    <core/MIPS>
-    Cortex  <core/cortex>
+    ASIC    <core/asic>
     RISC-V  <core/RISC-V>
     MCS51   <core/MCS51>
 

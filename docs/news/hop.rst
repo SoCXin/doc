@@ -4,10 +4,12 @@
 方案Xin榜
 =============
 .. note::
-    具有成熟应用领域或项目方案，特别是被流行的开源项目所支持适配
+    本榜单收录具有成熟应用领域或项目方案，特别是被流行的开源项目所支持适配的芯片方案
 
 .. contents::
     :local:
+
+.. _cmsis_dap:
 
 CMSIS-DAP
 -------------
@@ -17,14 +19,37 @@ CMSIS(Cortex-M Software Interface Standard)是ARM Cortex-M MCU软件接口标准
 CMSIS-DAP是用于将调试端口连接到USB的调试单元的接口固件。在主机上执行的调试器通过USB连接到调试单元和运行应用程序软甲的设备。调试单元通过JTAG或SW连接到目标设备。
 ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含一个或多个Cortex处理器的目标设备。
 
-.. toctree::
-    :maxdepth: 1
+.. list-table::
+    :header-rows:  1
 
-    CH549 <../WCH/CH549>
-    CH554 <../WCH/CH554>
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - Special
+      - Package
+    * - :ref:`ch549`
+      - :ref:`mcs51`
+      - 1K
+      - 8K
+      - 2
+      - 18
+      - 10M-PHY
+      - QFN28/48
+    * - :ref:`ch552`
+      - :ref:`mcs51`
+      - 1K
+      - 8K
+      - 2
+      - 18
+      - 10M-PHY
+      - QFN28/48
+
 
 .. hint::
-    :ref:`ch552` 的方案应该是Xin价格最低的实现方案了。
+    基于 :ref:`ch552` 芯片的方案应该是成本最低的 :ref:`ch552_dap` 实现。
 
 Marlin
 -------------
@@ -33,9 +58,44 @@ Marlin 是 RepRap 系列复制式快速原型机--俗称"3D 打印机 "的一个
 
 作为其质量的证明，Marlin被几个受人尊敬的商业3D打印机使用。Ultimaker、Printrbot、AlephObjects（Lulzbot）和Prusa Research只是运送Marlin变体的几个供应商。Marlin也能够驱动CNC和激光雕刻机。
 
-.. toctree::
-    :maxdepth: 1
+.. list-table::
+    :header-rows:  1
 
-    ESP32 <../espressif/ESP32>
-    STM32F103 <../ST/M/STM32F103>
-    STM32F401 <../ST/M/STM32F401>
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - Special
+      - Package
+    * - :ref:`esp32`
+      - 40MHz
+      - 1K
+      - 8K
+      - 2
+      - 18
+      - 10M-PHY
+      - QFN28/48
+    * - :ref:`stm32f103`
+      - 40MHz
+      - 1K
+      - 8K
+      - 2
+      - 18
+      - 10M-PHY
+      - QFN28/48
+     * - :ref:`stm32f401`
+      - 40MHz
+      - 1K
+      - 8K
+      - 2
+      - 18
+      - 10M-PHY
+      - QFN28/48
+
+
+
+USB-PD
+-------------
+
