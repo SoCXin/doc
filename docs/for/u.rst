@@ -7,6 +7,11 @@
 .. contents::
     :local:
 
+
+
+平台对比
+-----------
+
 .. toctree::
     :maxdepth: 1
 
@@ -14,17 +19,13 @@
     SWM341 <../M/SWM341>
     TKM32F499 <../M/TKM32F499>
 
-
-平台对比
------------
-
 .. list-table::
     :header-rows:  1
 
     * - Name
       - DMIPS
-      - SRAM
-      - FLASH
+      - RAM
+      - Flash
       - GUI
       - reslution
       - interface
@@ -73,12 +74,12 @@
 GUI框架
 -----------
 
-.. _TouchGFX:
+.. _touchgfx:
 
 TouchGFX
 ~~~~~~~~~~~
 
-`TouchGFX <https://www.touchgfx.com>`_ 属于Draupner Graphics公司的GUI产品，2018年7月被ST收购，在STM32上可以免费使用TouchGFX。
+ `TouchGFX <https://www.touchgfx.com>`_ 属于Draupner Graphics公司的GUI产品，2018年7月被ST收购，在STM32上可以免费使用TouchGFX。
 
 
 .. _LittlevGL:
@@ -133,7 +134,7 @@ MiniGUI丰富的功能和可配置性使得它既适用于运行在30MHz CPU的�
     :header-rows:  1
 
     * - Name
-      - :ref:`TouchGFX`
+      - :ref:`touchgfx`
       - :ref:`LittlevGL`
       - :ref:`emWin`
       - :ref:`MiniGUI`
