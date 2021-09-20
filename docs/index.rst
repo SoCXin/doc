@@ -18,7 +18,7 @@ SoC 芯
     方案榜单 <news/hop>
     全能榜单 <news/top>
     低端榜单 <news/low>
-    特色榜单 <news/spec>
+    创新榜单 <news/spec>
 
 .. toctree::
     :caption: 领域速览

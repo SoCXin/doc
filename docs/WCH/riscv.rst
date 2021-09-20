@@ -16,6 +16,9 @@ WCH RISC-V
 RISC-V版本
 --------------------
 
+.. image:: ./images/wch_riscv.png
+    :target: http://special.wch.cn/zh_cn/RISCV_MCU_Index/
+
 
 .. list-table::
     :header-rows:  1

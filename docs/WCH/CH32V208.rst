@@ -18,10 +18,23 @@ Xin简介
 .. image:: ./images/CH32V208.png
     :target: http://www.wch.cn/products/CH32V208.html
 
-关键特性
-~~~~~~~~~~~~
+规格参数
+~~~~~~~~~~~
 
-* 64KB SRAM，128KB Flash
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40 °C to 85/125 °C
+* 封装规格： 28 to 68 pin
+* 处理性能：324 :ref:`DMIPS`
+* RAM容量：64 KB
+* Flash容量：128 KB
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`wch_riscv4c` 144 MHz
 * BLE 5.1
 * 10M以太网控制器（MAC+PHY）
 * 2组运放比较器
@@ -29,12 +42,17 @@ Xin简介
 * 1个CAN接口（2.0B主动）
 
 
-
 芯片架构
-~~~~~~~~~~~
+~~~~~~~~~~~~
 
+.. image:: ./images/CH32V208s.png
+    :target: http://www.wch.cn/products/CH32V208.html
 
+Timer
+^^^^^^^^^^^
 
+.. image:: ./images/CH32V208t.png
+    :target: http://www.wch.cn/products/CH32V208.html
 
 Xin选择
 -----------
