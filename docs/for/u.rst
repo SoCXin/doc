@@ -36,14 +36,14 @@
       - XGA(1024x768)
       - RGB888
       - DMA2D/JPEC
-    * - :ref:`esp32`
-      - 600(240MHz)
+    * - :ref:`stm32f429`
+      - 225(180MHz)
       - 8 MB
-      - 4 MB
-      - LittlevGL
-      - WVGA(800x480)
-      - SPI
-      - No
+      - 16 MB
+      - TouchGFX
+      - XGA(1024x768)
+      - RGB888
+      - DMA2D/JPEC
     * - :ref:`tkm32f499`
       - 300(240MHz)
       - 8 MB
@@ -59,6 +59,14 @@
       - LittlevGL
       - WVGA(800x480)
       - RGB565
+      - No
+    * - :ref:`esp32`
+      - 600(240MHz)
+      - 8 MB
+      - 4 MB
+      - LittlevGL
+      - WVGA(800x480)
+      - SPI
       - No
     * - :ref:`gw1nsr`
       - 75(60MHz)
