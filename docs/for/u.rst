@@ -80,14 +80,14 @@ TouchGFX
 Draupner Graphics公司的GUI产品，2018年7月被ST收购，在STM32上可以免费使用TouchGFX。
 
 
-.. _LittlevGL:
+.. _littlevgl:
 
 LittlevGL
 ~~~~~~~~~~~
 
 免费的开源图形库，具有易于使用的图形元素以及良好的视觉效果和内存占用低等特点，可构建嵌入式 GUI。LittlevGL 是一个完整的图形框架，开发者不需要考虑原始图形如何绘制，可以使用已有图形元素来构建自己的  GUI，例如按钮，图表，图像，列表，滑块，开关，键盘等。
 
-.. _emWin:
+.. _emwin:
 
 emWin
 ~~~~~~~~~~~
@@ -108,7 +108,7 @@ STemWin
 
 STemWin由SEGGER公司授权给ST（意法半导体），使用ST芯片的用户可以免费使用STemWin。同时，还针对ST的微控制器做了专门的优化，比如在使用STM32F4带FPU的芯片时，STemWin在需要浮点处理的地方专门做了优化。
 
-.. _MiniGUI:
+.. _minigui:
 
 MiniGUI
 ~~~~~~~~~~~
@@ -117,7 +117,7 @@ MiniGUI是一款国产GUI，一款面向嵌入式系统的高级窗口系统和�
 
 MiniGUI丰富的功能和可配置性使得它既适用于运行在30MHz CPU的低端设备，也适用于使用GPU的高端设备。为嵌入式和智能物联网设备提供一个成熟的、经过验证的跨平台GUI系统。
 
-.. _μGFX:
+.. _μgfx:
 
 μGFX
 ~~~~~~~~~~~
@@ -133,10 +133,10 @@ MiniGUI丰富的功能和可配置性使得它既适用于运行在30MHz CPU的�
 
     * - Name
       - :ref:`touchgfx`
-      - :ref:`LittlevGL`
-      - :ref:`emWin`
-      - :ref:`MiniGUI`
-      - :ref:`μGFX`
+      - :ref:`littlevgl`
+      - :ref:`emwin`
+      - :ref:`minigui`
+      - :ref:`μgfx`
     * - :ref:`esp32`
       -
       - yes
