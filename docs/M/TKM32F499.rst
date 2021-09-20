@@ -24,6 +24,7 @@ Xin简介
 
 * 供电电压：2.0 to 3.6 V
 * 工作温度：40°C to +85°C
+* 封装规格：LQFP128
 * 处理性能：300 :ref:`DMIPS`
 * RAM容量：8MB
 * Flash容量：8MB QSPI FLASH
