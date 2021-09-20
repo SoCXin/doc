@@ -7,8 +7,6 @@
 .. contents::
     :local:
 
-
-
 平台对比
 -----------
 
@@ -79,7 +77,7 @@ GUI框架
 TouchGFX
 ~~~~~~~~~~~
 
- `TouchGFX <https://www.touchgfx.com>`_ 属于Draupner Graphics公司的GUI产品，2018年7月被ST收购，在STM32上可以免费使用TouchGFX。
+Draupner Graphics公司的GUI产品，2018年7月被ST收购，在STM32上可以免费使用TouchGFX。
 
 
 .. _LittlevGL:
