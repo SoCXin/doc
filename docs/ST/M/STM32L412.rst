@@ -4,7 +4,7 @@
 STM32L412
 ===============
 
-* 关键词：``Cortex-M4``
+* 关键词：``Cortex-M4`` ``80MHz`` ``12bit 5MSPS-ADC`` ``XIP`` ``USB FS`` ``PGA``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32L412>`_
 
 .. contents::
@@ -27,19 +27,24 @@ Xin简介
 ^^^^^^^^^^^
 
 * 供电电压：1.71 to 3.6 V
-* 工作温度：40°C to +85°C
-* 处理性能：100 :ref:`DMIPS`
+* 工作温度：-40 °C to 85/125 °C
+* 封装规格： 32 to 64 pin, LQFP32/48/64
+* 处理性能：100 :ref:`DMIPS` , 273.55 :ref:`CoreMark`
 * RAM容量：40 KB
 * Flash容量：128 KB
 
 特征参数
 ^^^^^^^^^^^
 
+* 442 :ref:`ulpmark_cp`
+* 165 :ref:`ulpmark_pp`
 * :ref:`cortex_m4` 80 MHz
-* 2 x 12-bit ADC 5 Msps
+* 2 x 12-bit ADC 5 Msps, 200 µA/Msps
+* 2 x PGA
 * USB FS
 * 1.00 to 1.32V VDD12
 * Quad SPI with XIP
+* IRTIM (Infrared interface)
 
 芯片架构
 ~~~~~~~~~~~~
@@ -47,7 +52,17 @@ Xin简介
 .. image:: ./images/STM32L412s.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32l4-series/stm32l4x2/stm32l412kb.html
 
+Timer
+^^^^^^^^^^^
 
+.. image:: ./images/STM32L412t.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32l4-series/stm32l4x2/stm32l412kb.html
+
+模式功耗
+^^^^^^^^^^^
+
+.. image:: ./images/STM32L412p.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32l4-series/stm32l4x2/stm32l412kb.html
 
 
 Xin选择

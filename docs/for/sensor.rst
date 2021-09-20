@@ -18,9 +18,9 @@
       - Core
       - RAM
       - Flash
-      - UART
-      - GPIO
-      - SPEC
+      - PWR
+      - RMB
+      - ADC
       - Package
     * - :ref:`stm32l011`
       - 32MHz
@@ -30,7 +30,16 @@
       - 18
       - 1
       - QFN20
+    * - :ref:`stm32l412`
+      - 80MHz
+      - 1K
+      - 8K
+      - 2
+      - 18
+      - 1
+      - QFN20
 
+.. _adc:
 
 A/D转换
 -----------
@@ -56,7 +65,7 @@ A/D转换
       - 2
       - 18
       - I2C
-      - TSSOP20
+      - LQFP48
 
 
 高精度
@@ -99,6 +108,7 @@ A/D转换
       - LQFP48
 
 
+.. _dac:
 
 D/A转换
 -----------

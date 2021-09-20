@@ -44,4 +44,23 @@ STMicroelectronics
     STM32L412 <M/STM32L412>
 
 
+ULPMark
+~~~~~~~~~~~
 
+ULPMark 测试目前有三个部分，分别是 ULPMark-CoreProfile、ULPMark-PeripheralProfile 和 ULPMark-CoreMark。
+
+* ULPMark-CoreProfile 核心在深度睡眠模式下真正的能量消耗
+* ULPMark-PeripheralProfile 普通外围设备的能量对深度睡眠的影响
+* ULPMark-CoreMark 活跃功耗，使用 CoreMark 作为工作负载
+
+.. _ulpmark_cp:
+
+ULPMark-CP
+^^^^^^^^^^^
+
+在深度睡眠下整个芯片的能量消耗；因为在低功耗的应用场景下，该芯片设备可能是单电池供电，需要运行长达 10 年的时间，所以芯片设备绝大部分时间应该都是处在深度睡眠的模式，偶尔唤醒处理部分任务。
+
+.. _ulpmark_pp:
+
+ULPMark-PP
+^^^^^^^^^^^

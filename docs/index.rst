@@ -21,14 +21,14 @@ SoC 芯
     特色榜单 <news/spec>
 
 .. toctree::
-    :caption: 应用速览
+    :caption: 领域速览
     :maxdepth: 1
 
-    感知类      <for/sensor>
     控制类      <for/m>
     交互类      <for/u>
     通信类      <for/iot>
     计算类      <for/edge>
+    感知类      <for/sensor>
 
 .. toctree::
     :caption: 内核速览
