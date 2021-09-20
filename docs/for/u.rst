@@ -92,7 +92,7 @@ LittlevGL
 emWin
 ~~~~~~~~~~~
 
-`emWin <https://www.segger.com/products/user-interface/emwin>`_ 属于SEGGER公司下面的一种GUI产品，一种嵌入式GUI解决方案。业界领先的嵌入式图形库，专业的嵌入式GUI。
+属于SEGGER公司下面的一种GUI产品，一种嵌入式GUI解决方案。业界领先的嵌入式图形库，专业的嵌入式GUI。
 
 emWin支持在任何嵌入式系统上创建高效、高质量的图形用户界面，emWin支持资源受限的微控制器的系统，运行令人惊叹的交互界面。
 
