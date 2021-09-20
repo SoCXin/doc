@@ -14,11 +14,16 @@ WCH RISC-V
 
 
 RISC-V版本
---------------------
+--------------
+
+参数对比
+~~~~~~~~~~~~~~
 
 .. image:: ./images/wch_riscv.png
     :target: http://special.wch.cn/zh_cn/RISCV_MCU_Index/
 
+差异对比
+~~~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -27,50 +32,50 @@ RISC-V版本
       - Core
       - RAM
       - Flash
-      - UART/SPI
+      - DMIPS
       - BLE
       - USB
       - Ethernet
     * - :ref:`wch_riscv4a`
-      - 1
-      - 32K
-      - 250K
-      - 4/2
-      - 4.2(+5dBm)
-      - USB H/D
-      - 10M
+      -
+      -
+      -
+      -
+      -
+      -
+      -
     * - :ref:`wch_riscv4b`
-      - 20M
-      - 18K
-      - 512K
-      - 4/1
-      - 4.2(+5dBm)
-      - USB H/D
-      - NO
+      -
+      -
+      -
+      -
+      -
+      -
+      -
     * - :ref:`wch_riscv4c`
-      - 20
-      - 32
-      - 10
-      - 4
-      - 5
-      - 2
-      - NO
+      -
+      -
+      -
+      -
+      -
+      -
+      -
     * - :ref:`wch_riscv4f`
-      - 20
-      - 32
-      - 10
-      - 4
-      - 5
-      - 2
-      - NO
+      -
+      -
+      -
+      -
+      -
+      -
+      -
     * - :ref:`wch_riscv3a`
-      - 20
-      - 32
-      - 10
-      - 4
-      - 5
-      - 2
-      - NO
+      -
+      -
+      -
+      -
+      -
+      -
+      -
 
 
 .. _wch_riscv4a:

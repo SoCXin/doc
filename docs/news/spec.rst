@@ -14,10 +14,8 @@
 通信相关
 -------------
 
-tiny PHY
+Tiny PHY
 ~~~~~~~~~~~~~
-.. hint::
-    在小封装内同时集成以太网MAC+PHY
 
 .. list-table::
     :header-rows:  1
@@ -47,6 +45,9 @@ tiny PHY
       - 10M
       - :ref:`qfn28`
 
+.. hint::
+    在小封装内同时集成以太网MAC+PHY
+
 .. _qfn28:
 
 QFN28
@@ -75,18 +76,18 @@ QFN28
       - RAM
       - Flash
       - USB
-      - BLE
-      - Ethernet
+      - Type
+      - ENOB
       - Package
-    * - :ref:`ch32v208`
-      - :ref:`wch_riscv4c`
+    * - :ref:`cs32a039`
+      - :ref:`cortex_m0`
       - 64KB
       - 128KB
       - 2 x H/D
-      - 5.1
-      - 10M
-      - :ref:`qfn28`
-    * - :ref:`ch579`
+      - Sigma-Delta
+      - 22.3bit
+      - LQFP64
+    * - :ref:`zml165`
       - :ref:`cortex_m0`
       - 32KB
       - 250KB
