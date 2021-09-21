@@ -9,6 +9,7 @@ SoC 芯
 `Twitter <https://twitter.com/QitasTang>`_ |
 `Facebook <https://www.facebook.com/qitast>`_
 
+结合不同的应用场景和现有的生态资源，更立体给出选型建议，同时通过汇整，提供更加清晰的发展迭代路径。
 
 .. toctree::
     :caption: 榜单速览
@@ -49,3 +50,33 @@ SoC 芯
     Espressif <espressif/index>
     MediaTek <MediaTek/index>
     ArteryTek <arterytek/index>
+
+收录的厂商不是很多，但是相对具有代表性，通过汇总有代表性的厂商信息，提供小范围的精炼方案。
+
+.. list-table::
+    :header-rows:  1
+
+    * - Vendor
+      - classic
+      - prime
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`st`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`wch`
+      -
+      -
+      -
+      -
+      -
+      -
+      -

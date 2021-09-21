@@ -4,7 +4,7 @@
 CH579
 ========
 
-* 关键词：``USB`` ``10M-ETH-PHY`` ``BLE4.2`` ``RTC`` ``AES128``
+* 关键词：``Cortex-M0`` ``40MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE4.2`` ``RTC`` ``AES128``
 * 资源库：`GitHub <https://github.com/SoCXin/CH579>`_
 
 .. contents::
@@ -13,24 +13,81 @@ CH579
 Xin简介
 -----------
 
-:ref:`wch_cortex` 内核SoC内嵌10M以太网PHY，集成BLE通信功能。
-
 .. image:: ./images/CH579.png
     :target: http://www.wch.cn/products/CH579.html
 
-关键特性
-~~~~~~~~~~~~~~
+规格参数
+~~~~~~~~~~~
 
-* 提供10M以太网接口，内置PHY
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40 °C to 85/125 °C
+* 封装规格： 28 to 68 pin
+* 处理性能：324 :ref:`DMIPS`
+* RAM容量：64 KB
+* Flash容量：128 KB
+
+特征参数
+^^^^^^^^^^^
+
+* 10M以太网接口，内置PHY
 * BLE 4.2，Zigbee兼容IEEE 802.15.4规范，单端RF接口无需外部电感
 * 支持3.3V和2.5V电源，范围2.1V～3.6V, 内置DC/DC转换
 * SPI x 2 + UART x 4 (16C550/6Mbps)
 * USB H/D
 
+芯片架构
+~~~~~~~~~~~~
+
+.. image:: ./images/CH579s.png
+    :target: http://www.wch.cn/products/CH579.html
+
 
 Xin选择
 -----------
-型号对比
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~
+
+ :ref:`ch579` 的定位非常细分小众，相比传统的BLE SoC的主要竞争优势在于以太网高度集成后带来的高性价比，特别是能够对WiFi+BLE的架构形成一种替代，特别适合在一些物联网网关类产品中。
+
+就功能而言，需要网络连接和局域低功耗无线连接的设计，可以考虑WiFi+BLE架构的无线类芯片，这就是 :ref:`espressif` 的看家本领了。
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - BLE
+      - USB
+      - Net
+    * - :ref:`ch579`
+      - :ref:`cortex_m0`
+      - 32
+      - 250
+      - 4
+      - 4.2
+      - H/D
+      - 10M w PHY
+    * - :ref:`esp32`
+      - :ref:`xtensa_lx6`
+      - 32
+      - 250
+      - 4
+      - 4.2
+      - H/D
+      - 10M w PHY
+
+
+系列对比
 ~~~~~~~~~
 
 .. list-table::
@@ -39,59 +96,35 @@ Xin选择
     * - Name
       - Core
       - RAM
-      - ROM
+      - Flash
       - UART
       - BLE
       - USB
       - Ethernet
     * - :ref:`ch573`
-      - :ref:`wch_riscv`
+      - :ref:`wch_riscv3a`
       - 18
       - 512
       - 4
       - 4.2
-      - USB H/D
-      - NO
+      - H/D
+      -
     * - :ref:`ch583`
-      - :ref:`wch_riscv`
+      - :ref:`wch_riscv4a`
       - 32
       - 1024
       - 4
       - 5.1
-      - 2 x USB H/D
-      - NO
+      - 2 x H/D
+      -
     * - :ref:`ch579`
-      - :ref:`wch_cortex`
+      - :ref:`cortex_m0`
       - 32
       - 250
       - 4
       - 4.2
-      - USB H/D
-      - 10M PHY
+      - H/D
+      - 10M w PHY
 
-Xin应用
------------
-
-.. contents::
-    :local:
-
-
-执行器
-~~~~~~~~~~~
-
-
-
-Xin总结
---------------
-
-.. contents::
-    :local:
-
-要点提示
-~~~~~~~~~~~~~
-
-
-
-问题整理
-~~~~~~~~~~~~~
-
+版本对比
+~~~~~~~~~

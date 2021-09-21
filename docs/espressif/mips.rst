@@ -15,7 +15,9 @@ LX7内核
     ESP32-S2 <ESP32-S2>
     ESP32-S3 <ESP32-S3>
 
-LX6内核
+.. _xtensa_lx6:
+
+Xtensa LX6
 ------------
 
 .. toctree::

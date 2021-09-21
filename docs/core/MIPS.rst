@@ -11,13 +11,10 @@ Tensilica 公司的 Xtensa 处理器是一个可以自由装组、可以弹性�
 
 Tensilica公司于2013年3月被Cadence公司以3.8亿的价格收购
 
-.. toctree::
-    :maxdepth: 1
-
-    Xtensa    <xtensa>
 
 Xtensa LX7
 ~~~~~~~~~~~~~
 
 .. image:: images/XtensaLX7.png
     :target: https://www.pianshen.com/article/64631295742/
+
