@@ -3,7 +3,7 @@
 ESP32
 ===============
 
-* 关键词：``Xtensa LX6`` ``600DMIPS`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``100M MAC`` ``MII/RMII``
+* 关键词：``Xtensa LX6`` ``600DMIPS`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``100M MAC`` ``IEEE 1588`` ``MII/RMII``  ``TSMC40``
 * 资源库：`GitHub <https://github.com/SoCXin/ESP32>`_
 
 .. contents::
@@ -12,40 +12,62 @@ ESP32
 Xin简介
 -----------
 
-:ref:`espressif` :ref:`xtensa` Dual Core WiFi & BT SoC
 
 .. image:: ./images/ESP32.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32
 
+规格参数
+~~~~~~~~~~~
 
-关键特性
-~~~~~~~~~~~~~~
+:ref:`espressif` :ref:`xtensa_lx6` Dual Core WiFi & BT SoC
 
-* Xtensa® LX6 240 MHz,600DMIPS
-* 520 KB SRAM (TCM)，448 KB ROM
-* WiFi 1T1R 802.11 b/g/n
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40 °C to 85/125 °C
+* 封装规格：QFN48 (6x6mm)
+* 处理性能：600 :ref:`DMIPS`
+* RAM容量：520 KB
+* Flash容量：448 KB
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`xtensa_lx6` 240 MHz
+* WiFi 1T1R 802.11 b/g/n，150 Mbps
 * BLE/BR/EDR v4.2 +12 dBm，–97dBm
 * TWAI 控制器
 * Host SD/eMMC/SDIO、Slave SDIO/SPI
-* IEEE 1588 MAC,10 Mbps和100 Mbps
+* IEEE 1588 MAC,100 Mbps
 * 硬件加密单元AES/RSA/ECC
 * 霍尔传感器
-
+* 12-bit SAR ADC 18ch
+* 2 x 8-bit DAC
 
 Xin选择
 -----------
 
+.. contents::
+    :local:
 
 .. hint::
     :ref:`esp32` 发布于2016年9月，是物联网领域的一名老将
 
-竞品分析
+品牌对比
 ~~~~~~~~~
-
-
 
 型号对比
 ~~~~~~~~~
+
+
+Xin应用
+-----------
+
+.. image:: ./images/B_ESP32.jpg
+    :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.28.50e564d3axhB7j&id=624276301887&ns=1&abbucket=19
+.. contents::
+    :local:
 
 .. _esp_idf:
 
@@ -57,12 +79,6 @@ ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 
 .. image:: ./images/idf.png
     :target: https://docs.os-q.com/espidf.html
 
-
-Xin应用
------------
-
-.. image:: ./images/B_ESP32.jpg
-    :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.28.50e564d3axhB7j&id=624276301887&ns=1&abbucket=19
 
 开发工具
 ~~~~~~~~~~~

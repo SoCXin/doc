@@ -20,6 +20,8 @@ LX7内核
 Xtensa LX6
 ------------
 
+7 级流水线架构
+
 .. toctree::
     :maxdepth: 1
 

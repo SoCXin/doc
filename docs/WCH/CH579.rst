@@ -4,7 +4,7 @@
 CH579
 ========
 
-* 关键词：``Cortex-M0`` ``40MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE4.2`` ``RTC`` ``AES128``
+* 关键词：``Cortex-M0`` ``40MHz`` ``USB`` ``Ethernet`` ``10M-ETH-PHY`` ``BLE4.2`` ``RTC`` ``AES128``
 * 资源库：`GitHub <https://github.com/SoCXin/CH579>`_
 
 .. contents::
