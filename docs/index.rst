@@ -59,24 +59,30 @@ SoC 芯
     * - Vendor
       - Classic
       - Prime
-      - Famous
+      - Available
       - Peak
-      - Failed
+      - Latest
     * - :ref:`st`
       - :ref:`stm32f103`
-      - :ref:`stm32f407`
-      - :ref:`stm32h730`
+      - :ref:`stm32f401`
+      - :ref:`stm32g030`
       - :ref:`stm32mp15`
-      -
+      - :ref:`stm32g474`
     * - :ref:`wch`
       - :ref:`ch554`
       - :ref:`ch573`
       - :ref:`ch579`
-      - :ref:`CH32V307`
-      -
+      - :ref:`ch32v307`
+      - :ref:`ch32f208`
+    * - :ref:`espressif`
+      - :ref:`esp32`
+      - :ref:`esp32c3`
+      - :ref:`esp32s2`
+      - :ref:`esp32s3`
+      - :ref:`esp32h2`
     * - :ref:`arterytek`
       - :ref:`at32f421`
       - :ref:`at32f421`
-      - :ref:`at32f421`
+      - :ref:`at32f403`
       - :ref:`at32f407`
-      - :ref:`at32f413`
+      - :ref:`at32f437`
