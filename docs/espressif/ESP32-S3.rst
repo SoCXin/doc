@@ -14,8 +14,6 @@ ESP32-S3
 Xin简介
 -----------
 
-:ref:`espressif` :ref:`xtensa` Dual Core WiFi & BLE SoC
-
 .. image:: ./images/ESP32S3.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32-S3
 

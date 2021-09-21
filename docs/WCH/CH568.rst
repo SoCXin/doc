@@ -1,0 +1,41 @@
+
+.. _ch568:
+
+CH568
+==========
+
+* 关键词：``RISC-V3A`` ``USB HS`` ``SM4/AES`` ``SATA`` ``120MHz``
+* 资源库：`GitHub <https://github.com/SoCXin/CH568>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. image:: ./images/CH568.png
+    :target: http://www.wch.cn/products/CH568.html
+
+规格参数
+~~~~~~~~~~~
+
+CH568是一款高性能32位精简指令集微控制器，系统主频可达120MHZ。片上集成高速USB控制器、SATA2.0控制器以及多组SDIO控制器接口等外设资源，并提供SM4和AES两种加解密算法，支持8种加解密模式。可广泛应用高速传输、信息安全领域。
+
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40°C to 85°C
+* 封装规格：LQFP48 (7x7mm)
+* 处理性能：600 :ref:`DMIPS`
+* RAM容量：32 KB
+* Flash容量：192 KB
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`wch_riscv3a` 120 MHz
+* SATA主机/设备控制器
+* USB2.0 高速主/从接口（内置PHY），支持DMA
+* 4组SDIO接口
+* 支持SM4/AES加密算法，8种加密模式

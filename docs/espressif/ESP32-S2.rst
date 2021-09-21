@@ -13,8 +13,6 @@ ESP32-S2
 Xin简介
 -----------
 
-:ref:`espressif` :ref:`xtensa` WiFi SoC
-
 .. image:: ./images/ESP32S2.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32-S2
 

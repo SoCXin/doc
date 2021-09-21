@@ -116,6 +116,7 @@ RISC-V3A 是 32 位嵌入式处理器，内部模块化管理，支持 RISC-V �
     :maxdepth: 1
 
     CH573 <CH573>
+    CH568 <CH568>
     CH569 <CH569>
 
 
