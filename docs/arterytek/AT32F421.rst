@@ -13,34 +13,40 @@ AT32F421
 Xin简介
 -----------
 
-:ref:`arterytek` :ref:`cortex_m4` 单核 MCU，高达120MHz的CPU运算速度与内建数字信号处理器(DSP)，最高可支持64KB闪存存储器(Flash)及16KB随机存取存储器(SRAM)
-
-片上集成了多达2个USART、2个SPI(可复用I²S)、2个I²C、1个16位高级定时器、5个16位通用定时器，和5通道DMA控制器。 同时还扩展了1个高速轨到轨输入/输出模拟电压比较器，1个采样率高达2M SPS的12位15通道高速ADC。
-
-几乎所有I/O口可容忍5V输入信号，且所有I/O口均为快速I/O，具有多种可选功能还支持端口重映射，极佳的灵活性和易用性满足多种应用需求。
-
 .. contents::
     :local:
 
 规格参数
 ~~~~~~~~~~~
 
+:ref:`arterytek` :ref:`cortex_m4` 单核 MCU，高达120MHz的CPU运算速度与内建数字信号处理器(DSP)，最高可支持64KB闪存存储器(Flash)及16KB随机存取存储器(SRAM)
+
+片上集成了多达2个USART、2个SPI(可复用I²S)、2个I²C、1个16位高级定时器、5个16位通用定时器，和5通道DMA控制器。 同时还扩展了1个高速轨到轨输入/输出模拟电压比较器，1个采样率高达2M SPS的12位15通道高速ADC。
+
+几乎所有I/O口可容忍5V输入信号，且所有I/O口均为快速I/O，具有多种可选功能还支持端口重映射，极佳的灵活性和易用性满足多种应用需求。
+
 基本参数
 ^^^^^^^^^^^
 
-* 内核频率：120 MHz
 * 供电电压：2.4V - 3.6V
-* 工作温度：-40°C - 105°C
-* HBM:6 KV, CDM:1000 V
+* 工作温度：-40 °C to 105 °C
+* 封装规格：TSSOP20/QFN28/QFN32/LQFP32/LQFP48
+* 处理性能：150 :ref:`DMIPS`
+* RAM容量：16 KB
+* Flash容量：64 KB
+* 量产时间：2020年10月
+* ESD HBM: 6 KV
+* ESD CDM: 1000 V
 
 特征参数
 ^^^^^^^^^^^
 
+* :ref:`cortex_m4` 120 MHz
 * 15ch ADC (12bit 2MSPS)
 * 2 x USART
 * 2 x I2C + 2 x SPI/I2S
 * ERTC (1ppm的分辨率)
-* COMP (轨到轨比较器,1/4、1/2、3/4 VREF)
+* COMP (轨到轨比较器1/4、1/2、3/4Vref)
 * sLib安全库 (Security Library)
 
 .. note::
@@ -53,18 +59,33 @@ Xin简介
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
 
 时钟体系
-^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
 .. image:: images/AT32F421C.png
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
 
 :ref:`at32f421` 系列产品包含最多1个高级定时器(16bit)、5个普通定时器(16bit)、1个基本定时器(16bit)、以及2个看门狗定时器、和1个系统滴答定时器。
 
+Timer
+^^^^^^^^^^^
+
+.. image:: images/AT32F421t.png
+    :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
+
+.. _at32f421_tssop20:
+
+TSSOP20
+^^^^^^^^^^^
+
+.. image:: images/AT32F421p.png
+    :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
+
+.. hint::
+    :ref:`at32f421` 封装管脚兼容 :ref:`stm32f030`
+
 
 Xin选择
 -----------
-
-通过对比不同品牌不同型号差异，明确具体选型和关注指标，评估替代性和兼容性
 
 .. contents::
     :local:
@@ -130,9 +151,8 @@ Xin选择
 
 :ref:`at32f421` 系列与 :ref:`stm32f030` 系列管脚兼容
 
-型号对比
+系列对比
 ~~~~~~~~~
-
 
 .. list-table::
     :header-rows:  1
@@ -189,15 +209,46 @@ Xin选择
 .. note::
     :ref:`arterytek` 目前只有 :ref:`cortex_m4` 单核的 MCU产品，均具备 :ref:`arterytek_slib` 功能，高性能系列才具备 :ref:`arterytek_spim` 功能
 
-版本对比
+型号对比
 ~~~~~~~~~
 
 .. image:: images/AT32F421.png
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
 
 .. note::
-    基于TSSOP20封装的 :ref:`cortex_m4` 120MHz主频的MCU规格实属少见。
+    TSSOP20封装 :ref:`cortex_m4` 120MHz主频的MCU规格实属少见。:ref:`at32f421` TSSOP20封装上仅支持SPI1，USART1仅有TX和RX脚，因此只能作UART用。
 
+封装对比
+^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Price
+      - Package
+      - Size
+      - Interface
+    * - AT32F421C
+      - ￥3.67
+      - LQFP48
+      - 7×7mm
+      - 35
+    * - AT32F421K
+      - ￥3.67
+      - LQFP32/QFN32
+      - 7x7mm/4x4mm
+      - 35
+    * - AT32F421G
+      - ￥3.67
+      - QFN28
+      - 4x4mm
+      - 35
+    * - AT32F421F
+      - $0.195
+      - TSSOP20
+      - 6.5x4.4mm
+      - 16
 
 Xin应用
 -----------

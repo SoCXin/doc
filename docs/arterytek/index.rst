@@ -35,7 +35,7 @@ Arterytek
 .. contents::
     :local:
 
-主频降维打击
+高主频高性价比
 ~~~~~~~~~~~~~~~
 
 基于 :ref:`cortex_m4` 内核120MHz主频的 :ref:`at32f421` 直接对标 :ref:`cortex_m0` 的入门级产品，公司不多的几个产品系列基本上都是以高主频的方式降维竞争，配备更多的外设资源，让参数看上去十分抢眼。
@@ -75,6 +75,9 @@ sLib安全库区
 .. image:: images/arterytek.jpg
     :target: https://www.arterytek.com/cn/index.jsp
 
+.. hint::
+    2016年成立，2018年正式对外销售芯片，AT32系列MCU采用55nm制程工艺，全系列搭载 :ref:`cortex_m4` 内核，系列较少定位清晰。
+
 .. contents::
     :local:
 
@@ -83,8 +86,11 @@ sLib安全库区
 .. toctree::
     :maxdepth: 1
 
-    超高性价比 AT32F421 <AT32F421>
-    USB-OTG AT32F415 <AT32F415>
+    120MHz: AT32F421 <AT32F421>
+    150MHz: AT32F415 <AT32F415>
+
+.. hint::
+    2016年成立，2018年正式对外销售芯片，AT32系列高效能MCU，采用55nm制程先进工艺，全系列搭载 :ref:`cortex_m4` 内核，产品系列较少定位清晰。
 
 性能产品
 ~~~~~~~~~~~
@@ -96,5 +102,5 @@ sLib安全库区
     240MHz: AT32F407 <AT32F407>
     288MHz: AT32F437 <AT32F437>
 
-.. hint::
-    2016年成立，2018年正式对外销售芯片，AT32系列高效能MCU，采用55nm制程先进工艺，全系列搭载 :ref:`cortex_m4` 内核，产品系列较少定位清晰。
+.. warning::
+    AT32F437/AT32F435尚未上市
