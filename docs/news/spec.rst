@@ -73,8 +73,6 @@ QFN28
 
     * - Name
       - Core
-      - RAM
-      - Flash
       - Chan
       - Rate
       - ENOB
@@ -82,17 +80,13 @@ QFN28
       - Package
     * - :ref:`cs32a039`
       - :ref:`cortex_m0`
-      - 8KB
-      - 64KB
       - 1x5ch
       - 10~1280Hz
-      - 22.3bit
+      - 20.7/20.2
       - :ref:`sigma_delta`
       - LQFP64
     * - :ref:`zml165`
       - :ref:`cortex_m0`
-      - 4KB
-      - 32KB
       - 1x2ch
       - 10~1280Hz
       - 20.7/20.2
