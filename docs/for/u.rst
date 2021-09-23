@@ -7,7 +7,7 @@
 .. contents::
     :local:
 
-芯片平台
+MCU平台
 -----------
 
 .. toctree::
@@ -76,6 +76,7 @@
       - XGA(1024x768)
       - FPGA
       - No
+
 
 GUI框架
 -----------

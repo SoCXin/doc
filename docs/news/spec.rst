@@ -14,7 +14,7 @@
 通信相关
 -------------
 
-Tiny PHY
+Tiny ETH-PHY
 ~~~~~~~~~~~~~
 
 .. list-table::
@@ -75,7 +75,7 @@ QFN28
       - Core
       - RAM
       - Flash
-      - USB
+      - Chan
       - Type
       - ENOB
       - Package
@@ -84,18 +84,24 @@ QFN28
       - 64KB
       - 128KB
       - 2 x H/D
-      - Sigma-Delta
+      - :ref:`sigma_delta`
       - 22.3bit
       - LQFP64
     * - :ref:`zml165`
       - :ref:`cortex_m0`
       - 32KB
       - 250KB
-      - H/D
-      - 4.2
+      - 2
+      - :ref:`sigma_delta`
       - 10M
-      - :ref:`qfn28`
+      - QFN20
 
 
 .. warning::
     单芯片集成的高精度ADC外设采样率往往不高
+
+
+.. _sigma_delta:
+
+Sigma-Delta
+^^^^^^^^^^^^^^^
