@@ -4,7 +4,7 @@
 ZML165
 ===============
 
-* 关键词：``Cortex-M0`` ``QFN20`` ``48MHz`` ``24bit ADC``
+* 关键词：``Cortex-M0`` ``QFN20`` ``48MHz`` ``24bit ADC`` ``￥15``
 * 资源库：`GitHub <https://github.com/SoCXin/ZML165>`_
 
 .. contents::
@@ -45,5 +45,10 @@ ZML165 包括1个16位通用定时器、1个32 位通用定时器、1个高级PW
 ~~~~~~~~~~~~
 
 .. image:: ./images/ZML165l.png
-    :target: http://www.wch.cn/products/CH32V208.html
+    :target: https://www.zlgmcu.com/zlgiotmcu/zlgiotmcu/product/id/27.html
+
+.. _qfn20:
+
+QFN20
+^^^^^^^^^^^
 

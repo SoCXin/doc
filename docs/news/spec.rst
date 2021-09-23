@@ -76,25 +76,28 @@ QFN28
       - RAM
       - Flash
       - Chan
-      - Type
+      - Rate
       - ENOB
+      - Type
       - Package
     * - :ref:`cs32a039`
       - :ref:`cortex_m0`
+      - 8KB
       - 64KB
-      - 128KB
-      - 2 x H/D
-      - :ref:`sigma_delta`
+      - 1x5ch
+      - 10~1280Hz
       - 22.3bit
+      - :ref:`sigma_delta`
       - LQFP64
     * - :ref:`zml165`
       - :ref:`cortex_m0`
+      - 4KB
       - 32KB
-      - 250KB
-      - 2
+      - 1x2ch
+      - 10~1280Hz
+      - 20.7/20.2
       - :ref:`sigma_delta`
-      - 10M
-      - QFN20
+      - :ref:`qfn20`
 
 
 .. warning::
@@ -105,3 +108,8 @@ QFN28
 
 Sigma-Delta
 ^^^^^^^^^^^^^^^
+
+.. image:: ./images/sigma_delta.jpg
+    :target: https://zhuanlan.zhihu.com/p/22308055
+
+在精度达到20位以上的场合，Sigma-Delta是必选的结构。通过采用过采样、噪声整形以及数字滤波技术，降低对模拟电路的设计要求，实现了其他类型的ADC无法达到的高精度和低功耗。

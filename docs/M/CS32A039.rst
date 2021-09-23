@@ -4,7 +4,7 @@
 CS32A039
 ===============
 
-* 关键词：``Cortex-M0`` ``48MHz`` ``24bit ΣΔADC``
+* 关键词：``Cortex-M0`` ``48MHz`` ``24bit ΣΔADC`` ``信号链``
 * 资源库：`GitHub <https://github.com/SoCXin/CS32A039>`_
 
 .. contents::
@@ -18,6 +18,9 @@ Xin简介
 .. image:: ./images/CS32A039.png
     :target: http://www.chipsea.com/32weimcu/CS32A039R8T6.html
 
+.. contents::
+    :local:
+
 规格参数
 ~~~~~~~~~~~
 
@@ -26,7 +29,7 @@ Xin简介
 
 * 供电电压：2.0 to 5.5V
 * 工作温度：-40 °C to 105 °C
-* 封装规格：LQFP64
+* 封装规格：LQFP64 (7x7mm)
 * 处理性能：45 :ref:`DMIPS`
 * RAM容量：8 KB
 * Flash容量：64 KB
@@ -59,7 +62,8 @@ PGA + ADC
 
 高精度模数转换器 Sigma-Delta ADC（简称为 ADC2）通过一个低噪声，低漂移的 PGA 放大器将输入信号放大后送入一个 2 阶的 Sigma-Delta ADC 进行模数转换。
 
-如图 PAG 和 Sigma-Delta ADC 结构图所示，其中 PGA 的增益由 PGA[1:0]选择，具有 1\8\16\32 四档可选；ADC 的增益由 ADGN[1:0]所选择、具有 1\2\4\8 四档可选；参考电压来自输入的 REFP-REFN。
+如图 PAG 和 Sigma-Delta ADC 结构图所示，其中 PGA 的增益由 PGA[1:0]选择，具有 1\8\16\32 四档可选；
+ADC 的增益由 ADGN[1:0]所选择、具有 1\2\4\8 四档可选；参考电压来自输入的 REFP-REFN。
 
 .. image:: ./images/CS32A039adc.png
     :target: http://www.chipsea.com/32weimcu/CS32A039R8T6.html
