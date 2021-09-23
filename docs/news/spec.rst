@@ -113,3 +113,23 @@ Sigma-Delta
     :target: https://zhuanlan.zhihu.com/p/22308055
 
 在精度达到20位以上的场合，Sigma-Delta是必选的结构。通过采用过采样、噪声整形以及数字滤波技术，降低对模拟电路的设计要求，实现了其他类型的ADC无法达到的高精度和低功耗。
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Chan
+      - Rate
+      - ENOB
+      - Type
+    * - :ref:`sigma_delta`
+      -
+      -
+      -
+      -
+    * - SAR
+      -
+      -
+      -
+      -
