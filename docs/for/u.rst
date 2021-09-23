@@ -48,10 +48,10 @@
       - 300(240MHz)
       - 8 MB
       - 16 MB
-      - LittlevGL
-      - WVGA(800x480)
+      - :ref:`emwin`
+      - 1024x600
       - RGB8080
-      - No
+      - LTDC
     * - :ref:`swm32s`
       - 150(120MHz)
       - 512 KB
@@ -64,7 +64,7 @@
       - 600(240MHz)
       - 8 MB
       - 4 MB
-      - LittlevGL
+      - :ref:`littlevgl`
       - WVGA(800x480)
       - SPI
       - No
