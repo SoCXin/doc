@@ -95,6 +95,8 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
+F1C内置的DRAM是DDR1，带宽比TK499的SDRAM应该要强不少。
+
 型号对比
 ~~~~~~~~~
 
@@ -126,8 +128,16 @@ Xin总结
 官方推荐的下载方式是USB drag-and-drop，为此提供了一个二级bootloader。在复位时按住PA13，此时进入一级Bootloader即内置固化的BL，用来烧录二级BL至QSPI Flash。已经烧录二级BL后在复位时按住PA11将进入二级BL，此时就可以拖拽下载主程序。
 
 
-
-问题整理
+入坑提示
 ~~~~~~~~~~~~~
 
+相关资源基本上是粗劣复制MM32和STM32, 具体对比型号是MM32F103，STM32是STM32F429，总结一下就是大部分外设理论上都可以直接copy MM32F103的库文件，TIM稍微改改就能用，I2C、BKP只需小改，RCC需要对照F429和手册改动，SPI需要对着手册改动，LCD/TK80应该是自己家的IP，这两个和I2S/QSPI还只能依靠官方库
 
+Tiky官方提供的库就是MM32F103改出来的，全是MM32的库函数，官方就改了几个函数将就能跑起来就放那了，一堆函数不能用，官方支持力度小。
+
+.. image:: ./images/TKM32F499b.jpg
+    :target: https://whycan.com/p_59878.html
+
+原版F429跑在Flash里配合art加速能拿到3以上的Coremark/MHz，没有art加速的F303能拿到2.5左右的分数，同样运行在SDRAM的F1C100S就算arm9内核也能到2以上。没有Cache的情况下在SDRAM中运行性能损失是真的大，-Oz比-O3/LTO的性能能高出一倍说明SDRAM带宽的瓶颈很明显，在平时使用中如果接RGB屏的话，带宽还会被占用一大截，性能下降还会更明显。另外提供个之前测过的数据，NXP KV58，240MHz的CortexM7，Flash频率只有20-25MHz，开启Cache的情况下能拿到5 Coremark/MHz，关闭Cache分数暴跌到1.5。
+
+同时测了下TK499的功耗，默认GPIO工程，移植Coremark，没有开启其他外设，240MHz空载大概115ma，运行Coremark时125ma；超频到312MHz空载128ma，满载145ma。运行时芯片手摸上去温热，估计30几度左右。
