@@ -100,7 +100,14 @@ Sigma-Delta
       - 128
       - 1.2LSB
       - :ref:`qfn20`
-
+    * - :ref:`swm181`
+      - :ref:`cortex_m0`
+      - 1x2ch
+      - 10~1280Hz
+      - 20.7/20.2
+      - 128
+      - 1.2LSB
+      - :ref:`qfn20`
 
 .. warning::
     :ref:`sigma_delta` 以时间上换极高的精度的特性，采样率都很低，但在精度达到20位以上的场合，实现了其他类型的ADC无法达到的高精度和低功耗。
