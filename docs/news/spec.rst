@@ -14,6 +14,8 @@
 通信相关
 -------------
 
+.. _eth_phy:
+
 Tiny ETH-PHY
 ~~~~~~~~~~~~~
 
@@ -80,7 +82,7 @@ Sigma-Delta
       - Rate
       - ENOB
       - PGA
-      - Type
+      - INL
       - Package
     * - :ref:`cs32a039`
       - :ref:`cortex_m0`
@@ -88,7 +90,7 @@ Sigma-Delta
       - 10~1280Hz
       - 20.7/20.2
       - 1/2/64/128
-      - :ref:`sigma_delta`
+      - 1.2LSB
       - LQFP64
     * - :ref:`zml165`
       - :ref:`cortex_m0`
@@ -96,7 +98,7 @@ Sigma-Delta
       - 10~1280Hz
       - 20.7/20.2
       - 1/2/4/8/16/32/64/128
-      - :ref:`sigma_delta`
+      - 1.2LSB
       - :ref:`qfn20`
 
 
