@@ -13,11 +13,11 @@ TKM32F499
 Xin简介
 -----------
 
-.. contents::
-    :local:
-
 .. note::
     :ref:`tkm32f499` 极有可能是 :ref:`stm32f429` 的核心设计，阉割内置的Flash和SRAM，外挂8M的32bit sdram，程序存在外置spi flash上(启动时拷贝到sdram执行,不再支持从QSPI XIP启动)，所以启动流程跟ARM9和CortexA系列比较相似。
+
+.. contents::
+    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -56,11 +56,16 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~
 
+.. image:: ./images/TKM32F499s.png
+    :target: http://hjrkj.com/product/13.html
+
+
 .. _tk80:
 
 TK80接口
 ^^^^^^^^^^^
 
+* 向下兼容 intel 8080 接口
 * AHB2.0 总线接口
 * 支持读写命令和读写数据操作
 * 读（数据或命令）支持直接读和中断/查询读两种模式
