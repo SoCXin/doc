@@ -59,14 +59,17 @@ QFN28
 计量相关
 -------------
 
-24bit ADC
+.. _sigma_delta:
+
+Sigma-Delta
 ~~~~~~~~~~~~~
 
 .. toctree::
     :maxdepth: 1
 
-    CS32A039 <../M/CS32A039>
     ZML165 <../M/ZML165>
+    CS32A039 <../M/CS32A039>
+
 
 .. list-table::
     :header-rows:  1
@@ -76,6 +79,7 @@ QFN28
       - Chan
       - Rate
       - ENOB
+      - PGA
       - Type
       - Package
     * - :ref:`cs32a039`
@@ -83,6 +87,7 @@ QFN28
       - 1x5ch
       - 10~1280Hz
       - 20.7/20.2
+      - 1/2/64/128
       - :ref:`sigma_delta`
       - LQFP64
     * - :ref:`zml165`
@@ -90,23 +95,17 @@ QFN28
       - 1x2ch
       - 10~1280Hz
       - 20.7/20.2
+      - 1/2/4/8/16/32/64/128
       - :ref:`sigma_delta`
       - :ref:`qfn20`
 
 
 .. warning::
-    单芯片集成的高精度ADC外设采样率往往不高
+    :ref:`sigma_delta` 以时间上换极高的精度的特性，采样率都很低，但在精度达到20位以上的场合，实现了其他类型的ADC无法达到的高精度和低功耗。
 
-
-.. _sigma_delta:
-
-Sigma-Delta
-^^^^^^^^^^^^^^^
 
 .. image:: ./images/sigma_delta.jpg
     :target: https://zhuanlan.zhihu.com/p/22308055
-
-在精度达到20位以上的场合，Sigma-Delta是必选的结构。通过采用过采样、噪声整形以及数字滤波技术，降低对模拟电路的设计要求，实现了其他类型的ADC无法达到的高精度和低功耗。
 
 
 .. list-table::
@@ -123,6 +122,11 @@ Sigma-Delta
       -
       -
     * - SAR
+      -
+      -
+      -
+      -
+    * - Pipeline
       -
       -
       -

@@ -23,10 +23,12 @@
 /ESP32-C3.html -> espressif/ESP32-C3.html
 /ESP32C3.html -> espressif/ESP32-C3.html
 /ESP32-C6.html -> espressif/ESP32-C6.html
+/ESP32-H2.html -> espressif/ESP32-H2.html
 /CH583.html -> WCH/CH583.html
 /CH579.html -> WCH/CH579.html
 /CH573.html -> WCH/CH573.html
 /CH569.html -> WCH/CH569.html
+/CH568.html -> WCH/CH568.html
 /CH549.html -> WCH/CH549.html
 /CH545.html -> WCH/CH545.html
 /CH557.html -> WCH/CH557.html
@@ -50,6 +52,9 @@
 /RP2040.html -> M/RP2040.html
 /GD32V103.html -> M/GD32V103.html
 /CS32A039.html -> M/CS32A039.html
+/CS32G020.html -> M/CS32G020.html
+/TKM32F499.html -> M/TKM32F499.html
 /STC8.html -> L/STC8.html
 /K210.html -> H/K210.html
+/V831.html -> H/V831.html
 /GW1NSR.html -> A/GW1NSR.html
