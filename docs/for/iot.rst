@@ -134,7 +134,7 @@ WiFi
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - Rank
       - Core
       - RAM
       - Flash
@@ -165,12 +165,35 @@ Mesh
 BLE
 ~~~~~~~~~~
 
-.. toctree::
-    :maxdepth: 1
+.. list-table::
+    :header-rows:  1
 
-    CH583 <../WCH/CH583>
-    CH573 <../WCH/CH573>
-    ESP32-H2 <../espressif/ESP32-H2>
+    * - Rank
+      - Core
+      - RAM
+      - Flash
+      - WiFi
+      - Rate
+      - More
+      - Package
+    * - :ref:`ch583`
+      - :ref:`wch_riscv4a`
+      -
+      -
+      -
+      -
+      -
+      - QFN28
+    * - :ref:`ch573`
+      - :ref:`wch_riscv3a`
+      -
+      -
+      -
+      -
+      -
+      - QFN28
+
+
 
 LoRa
 ~~~~~~~~~~
@@ -178,5 +201,34 @@ LoRa
 .. toctree::
     :maxdepth: 1
 
-    ASR6501 <../H/ASR6501>
-    STM32WLE5 <../ST/M/STM32WLE5>
+    ASR6501 <../M/ASR6501>
+
+.. list-table::
+    :header-rows:  1
+
+    * - Rank
+      - Core
+      - RAM
+      - Flash
+      - LoRa
+      - Rate
+      - More
+      - Package
+    * - :ref:`asr6501`
+      - :ref:`cortex_m0`
+      -
+      -
+      -
+      -
+      -
+      - QFN48
+    * - :ref:`stm32wl5`
+      - :ref:`cortex_m4`
+      -
+      -
+      -
+      -
+      -
+      - QFN48
+
+
