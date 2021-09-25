@@ -13,28 +13,55 @@ STM32G474
 Xin简介
 -----------
 
-:ref:`st` :ref:`cortex_m4` MCU 内嵌数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，带有双安全存储区域，ART加速提高Flash读取运行速度。
-
 .. image:: ./images/STM32G474.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x4.html
 
+.. contents::
+    :local:
 
-关键特性
-~~~~~~~~~~~~~~
+规格参数
+~~~~~~~~~~~
 
+:ref:`st` :ref:`cortex_m4` MCU 内嵌数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，带有双安全存储区域，ART加速提高Flash读取运行速度。
+
+
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：2.0 to 3.6 V
+* 工作温度：-40°C to +125°C
+* 封装规格：LQFP128(0.4mm pitch)
+* 处理性能：300 :ref:`DMIPS`
+* RAM容量：8MB
+* Flash容量：8MB QSPI FLASH
+
+.. note::
+    :ref:`tkm32f499` 是0.4 pitch的LQFP128，体积跟0.5 pitch的LQFP100一样。
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`cortex_m4` 170 MHz
 * 5个超快速12位ADC（4 Msamples/s）
 * 7个12位DAC（15 Msamples/s）
 * 7个超快速比较器（17ns）
 * 高分辨率定时器 :ref:`stm32_hrtim`
 * 6个可编程增益运算放大器 :ref:`stm32_opamp`
 * 最多3个CAN-FD
-* USB Type-C™和电力传输控制器（UCPD）
+* USB Type-C™和电力传输控制器 :ref:`stm32_ucpd`
+
+
+相对短板
+^^^^^^^^^^^
+
+* 定位较高端，性价比不高
+
 
 
 计算性能
 ~~~~~~~~~~~~~~
 
-**CoreMark** 已成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高意味着性能更高，使用C语言包含列举，数学矩阵操作和状态及CRC等运算法则。
+:ref:`CoreMark` 已成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高意味着性能更高，使用C语言包含列举，数学矩阵操作和状态及CRC等运算法则。
 
 .. image:: ./images/STM32G4CoreMark.png
     :target: https://blog.csdn.net/xiaolaoban0413/article/details/107547516

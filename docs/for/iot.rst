@@ -129,13 +129,35 @@ WiFi
 -----------
 
 .. hint::
-    具备Wi-Fi接入能力。
+    具备无线网络接入能力。
 
-.. toctree::
-    :maxdepth: 1
+.. list-table::
+    :header-rows:  1
 
-    ESP32S2 <../espressif/ESP32-S2>
-    ESP32C3 <../espressif/ESP32-C3>
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - WiFi
+      - Rate
+      - More
+      - Package
+    * - :ref:`esp32`
+      - :ref:`xtensa_lx6`
+      - 520KB
+      - XIP
+      - 1T1R b/g/n
+      - 150 Mbps
+      - BLE v4.2
+      - QFN48
+    * - :ref:`esp32c3`
+      - :ref:`riscv`
+      - 400KB
+      - 384KB
+      - 1T1R b/g/n
+      - 150 Mbps
+      - BLE 5.0
+      - QFN32
 
 Mesh
 ----------
