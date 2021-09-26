@@ -19,28 +19,31 @@ Xin简介
 规格参数
 ~~~~~~~~~~~
 
-.. warning::
-    网络库是以库文件提供的，MRU只有500多字节。
-
-
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：1.71 to 3.6 V
+* 供电电压：2.1 to 3.6 V
 * 工作温度：-40 °C to 85/125 °C
-* 封装规格： 28 to 68 pin
-* 处理性能：324 :ref:`DMIPS`
-* RAM容量：64 KB
-* Flash容量：128 KB
+* 封装规格：QFN28/QFN48
+* 处理性能：34 :ref:`DMIPS`
+* RAM容量：32 KB
+* Flash容量：250 KB
 
 特征参数
 ^^^^^^^^^^^
 
+* :ref:`cortex_m0` 40 MHz
 * 10M以太网接口，内置PHY
 * BLE 4.2，Zigbee兼容IEEE 802.15.4规范，单端RF接口无需外部电感
 * 支持3.3V和2.5V电源，范围2.1V～3.6V, 内置DC/DC转换
 * SPI x 2 + UART x 4 (16C550/6Mbps)
 * USB H/D
+* 低功耗模式：Idle，Halt，Sleep，Shutdown，内置电池电压低压监控，最低电流0.2uA
+* 内置AES-128加解密单元，芯片唯一ID
+
+
+.. warning::
+    网络库是以库文件提供的，MRU只有500多字节。
 
 芯片架构
 ~~~~~~~~~~~~
@@ -58,7 +61,7 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
- :ref:`ch579` 的定位非常细分小众，相比传统的BLE SoC的主要竞争优势在于以太网高度集成后带来的高性价比，特别是能够对WiFi+BLE的架构形成一种替代，特别适合在一些物联网网关类产品中。
+:ref:`ch579` 的定位非常细分小众，相比传统的BLE SoC的主要竞争优势在于以太网高度集成后带来的高性价比，特别是能够对WiFi+BLE的架构形成一种替代，特别适合在一些物联网网关类产品中。
 
 就功能而言，需要网络连接和局域低功耗无线连接的设计，可以考虑WiFi+BLE架构的无线类芯片，这就是 :ref:`espressif` 的看家本领了。
 
@@ -115,22 +118,6 @@ Xin选择
       - BLE
       - USB
       - Ethernet
-    * - :ref:`ch573`
-      - :ref:`wch_riscv3a`
-      - 18
-      - 512
-      - 4
-      - 4.2
-      - H/D
-      -
-    * - :ref:`ch583`
-      - :ref:`wch_riscv4a`
-      - 32
-      - 1024
-      - 4
-      - 5.1
-      - 2 x H/D
-      -
     * - :ref:`ch579`
       - :ref:`cortex_m0`
       - 32
@@ -139,6 +126,25 @@ Xin选择
       - 4.2
       - H/D
       - 10M w PHY
+    * - :ref:`ch573`
+      - :ref:`wch_riscv3a`
+      - 18
+      - 512
+      - 4
+      - 4.2
+      - H/D
+      -
+    * - :ref:`ch563`
+      - :ref:`arm7`
+      - 64
+      - 224
+      - 4
+      -
+      - 2 x H/D
+      - 100M w PHY
 
 版本对比
 ~~~~~~~~~
+
+.. image:: ./images/CH579l.png
+    :target: http://www.wch.cn/products/CH579.html
