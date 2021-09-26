@@ -10,11 +10,3 @@ The architect of the instruction set of the Intel MCS-51 was John H.
 Wharton.[1][2] Intel's original versions were popular in the 1980s and early 1990s and enhanced binary compatible derivatives remain popular today.
 It is an example of a complex instruction set computer, and has separate memory spaces for program instructions and data.
 
-
-8051内核
---------------
-
-.. toctree::
-    :maxdepth: 1
-
-    WCH <../WCH/mcs51>
