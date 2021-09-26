@@ -16,7 +16,7 @@
 
 .. _eth_phy:
 
-Tiny ETH-PHY
+ETH-PHY Tiny
 ~~~~~~~~~~~~~
 
 .. list-table::
@@ -48,15 +48,37 @@ Tiny ETH-PHY
       - :ref:`qfn28`
 
 .. hint::
-    在小封装内同时集成以太网MAC+PHY
+    在小封装内同时集成以太网MAC+PHY，集成以太网phy发热严重，特别是小芯片存在适用性问题。
 
 .. _qfn28:
 
-QFN28
+QFN28(4x4)
 ^^^^^^^^^^^
 
 .. image:: ./images/QFN28.png
 
+
+ETH-PHY Full
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - USB
+      - BLE
+      - Ethernet
+      - Package
+    * - :ref:`ch563`
+      - :ref:`arm7`
+      - 64KB
+      - 224KB
+      -
+      -
+      - 100M
 
 计量相关
 -------------
