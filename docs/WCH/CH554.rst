@@ -5,10 +5,35 @@ CH554
 ========
 
 * 关键词：``USB`` ``E8051`` ``24MHz`` ``LDO`` ``Type-C``
-* 资源库：`GitHub <https://github.com/SoCXin/CH552>`_
+* 资源库：`GitHub <https://github.com/SoCXin/CH554>`_
 
 .. contents::
     :local:
 
 Xin简介
 -----------
+
+
+.. image:: ./images/CH554.png
+    :target: http://www.wch.cn/products/CH554.html
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：3.0 to 5.5 V
+* 工作温度：-40 °C to 85 °C
+* 封装规格：
+* 处理性能：14 :ref:`DMIPS`
+* RAM容量：2 KB
+* Flash容量：16 KB
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`mcs51` 24 MHz
+* SPI x 2 + UART x 2 (16C550/6Mbps)
+* USB H/D
+
