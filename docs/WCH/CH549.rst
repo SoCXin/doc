@@ -4,7 +4,7 @@
 CH549
 =========
 
-* 关键词：``USB`` ``UART``
+* 关键词：``E8051`` ``48MHz`` ``USB`` ``4UART`` ``LDO`` ``USB-PD``
 * 资源库：`GitHub <https://github.com/SoCXin/CH549>`_
 
 .. contents::
@@ -13,11 +13,11 @@ CH549
 Xin简介
 -----------
 
-:ref:`wch` :ref:`mcs51`
-
 .. image:: ./images/CH549.png
     :target: http://www.wch.cn/products/CH549.html
 
+规格参数
+~~~~~~~~~~~
 
 兼容MCS51的增强型E8051内核，79%指令是单字节单周期指令，3KB BootLoader + 60KB CodeFlash，2K xRAM + 256B iRAM，1K DataFlash。
 
@@ -25,187 +25,24 @@ Xin简介
 
 通信接口包括4组异步串口、8路PWM和16通道电容触摸按键，其它包括1路主从SPI，16路12位ADC，支持电压比较；内置3组定时器和3路信号捕捉。
 
-关键特性
-~~~~~~~~~~~~~~
+基本参数
+^^^^^^^^^^^
 
+* 供电电压：3.0 to 5.5 V
+* 工作温度：-40 °C to 85 °C
+* 封装规格：SOP16/QFN28/LQFP48
+* 处理性能：28 :ref:`DMIPS`
+* RAM容量：2 KB
+* Flash容量：63 KB
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`mcs51` 12/48 MHz
+* SPI x 2 + UART x 4 (16C550/6Mbps)
+* USB H/D
 * Type-C CC控制
-* USB全速主/从模式
-* UART x 4 + SPI (M/S)
 * 16通道12位ADC，支持电压比较
-
-
-Please make sure to read Travis CI `Getting Started <http://docs.CH549-ci.com/user/getting-started/>`_
-and `general build configuration <http://docs.CH549-ci.com/user/customizing-the-build/>`_
-guides first.
-
-.. note::
-    If you are going to use PlatformIO :ref:`st` or :ref:`mcs51`
-    you will need to define :envvar:`PLATFORMIO_AUTH_TOKEN` environment
-    variable in project settings. See
-    `Defining Variables in Repository Settings <https://docs.CH549-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings>`_
-    guide.
-
-PlatformIO is written in Python and is recommended to be run within
-`Travis CI Python isolated environment <http://docs.CH549-ci.com/user/languages/python/#Travis-CI-Uses-Isolated-virtualenvs>`_. There are two possible ways of running
-PlatformIO in CI services:
-
-Using :ref:`st` command
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This variant is default choice for native PlatformIO projects:
-
-.. code-block:: yaml
-
-    language: python
-    python:
-        - "3.9"
-
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
-            - $HOME/.cache/pip
-
-    install:
-        - pip install -U platformio
-        - pio update
-
-
-Using :ref:`stm32f103` command
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This variant is more convenient when project is written as a library (when there are
-examples or testing code) as it has additional options for specifying extra libraries
-and boards from command line interface:
-
-.. code-block:: yaml
-
-    language: python
-    python:
-        - "3.9"
-
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
-            - $HOME/.cache/pip
-
-    env:
-        - PLATFORMIO_CI_SRC=path/to/test/file.c
-        - PLATFORMIO_CI_SRC=examples/file.ino
-        - PLATFORMIO_CI_SRC=path/to/test/directory
-
-    install:
-        - pip install -U platformio
-        - pio update
-
-    script:
-        - pio ci --MCU=<ID_1> --MCU=<ID_2> --MCU=<ID_N>
-
-Then perform steps 1, 2 and 4 from http://docs.CH549-ci.com/user/getting-started/
-
-.. code-block:: yaml
-
-    install:
-        - pip install -U platformio
-
-        #
-        # Libraries from PlatformIO Library Registry:
-        #
-        # https://www.soc.xin/lib/show/1/OneWire
-        - pio lib -g install 1
-
-Manually download dependent library and include in build process via ``--lib`` option
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: yaml
-
-    install:
-        - pip install -U platformio
-
-        # download library to the temporary directory
-        - wget https://github.com/PaulStoffregen/OneWire/archive/master.zip -O /tmp/onewire_source.zip
-        - unzip /tmp/onewire_source.zip -d /tmp/
-
-    script:
-        - pio ci --lib="/tmp/OneWire-master" --MCU=<ID_1> --MCU=<ID_2> --MCU=<ID_N>
-
-Custom Build Flags
-------------------
-
-PlatformIO allows one to specify own build flags using :envvar:`PLATFORMIO_BUILD_FLAGS` environment
-
-.. code-block:: yaml
-
-    env:
-        - PLATFORMIO_CI_SRC=path/to/test/file.c PLATFORMIO_BUILD_FLAGS="-D SPECIFIC_MACROS_PER_TEST_ENV -I/extra/inc"
-        - PLATFORMIO_CI_SRC=examples/file.ino
-        - PLATFORMIO_CI_SRC=path/to/test/directory
-
-    install:
-        - pip install -U platformio
-        - export PLATFORMIO_BUILD_FLAGS="-D GLOBAL_MACROS_FOR_ALL_TEST_ENV"
-
-
-Advanced configuration
-----------------------
-
-PlatformIO allows one to configure multiple build environments for the single
-source code using :ref:`mips`.
-
-.. code-block:: yaml
-
-    script:
-        - pio ci --project-conf=/path/to/platoformio.ini
-
-Unit Testing
-------------
-
-See `PlatformIO Remote Unit Testing Example <https://github.com/platformio/platformio-remote-unit-testing-example>`_.
-
-Examples
---------
-
-1. Custom build flags
-
-.. code-block:: yaml
-
-    language: python
-    python:
-        - "3.9"
-
-    # Cache PlatformIO packages using Travis CI container-based infrastructure
-    sudo: false
-    cache:
-        directories:
-            - "~/.platformio"
-            - $HOME/.cache/pip
-
-    env:
-        - PLATFORMIO_CI_SRC=examples/acm/acm_terminal
-        - PLATFORMIO_CI_SRC=examples/Bluetooth/WiiIRCamera PLATFORMIO_BUILD_FLAGS="-DWIICAMERA"
-        - PLATFORMIO_CI_SRC=examples/ftdi/USBFTDILoopback
-        - PLATFORMIO_CI_SRC=examples/Xbox/XBOXUSB
-        # - ...
-
-    install:
-        - pip install -U platformio
-        - pio update
-
-        #
-        # Libraries from PlatformIO Library Registry:
-        #
-        # https://www.soc.xin/lib/show/416/TinyGPS
-        # https://www.soc.xin/lib/show/417/SPI4Teensy3
-        - pio lib -g install 416 417
-
-    script:
-        - pio ci --MCU=uno --MCU=teensy31 --MCU=due --lib="."
-
-* Configuration file: https://github.com/felis/USB_Host_Shield_2.0/blob/master/.CH549.yml
-* Build History: https://CH549-ci.org/felis/USB_Host_Shield_2.0
 
 
 
