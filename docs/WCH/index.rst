@@ -15,6 +15,27 @@ WCH
 .. note::
     南京沁恒微电子成立于2004年，是一家专注于连接技术和MCU内核研究的射频与高速数模混合集成电路设计公司，提供以太网、蓝牙无线网络、USB和PCI类等接口芯片及集成上述接口的MCU+单片机。
 
+转换类产品
+~~~~~~~~~~~~
+
+.. image:: ./images/wch.png
+    :target: http://special.wch.cn/zh_cn/interface_conversion_expert/
+
+USB产品
+^^^^^^^^^^^
+
+.. image:: ./images/wchusb.png
+    :target: http://special.wch.cn/zh_cn/USBChips/#/
+
+
+控制类产品
+~~~~~~~~~~~~
+
+
+
+.. warning::
+    软件生态策略保守，关键的代码资源都是通过lib方式提供，不开放源码，代码集成十分难用。
+
 
 方案分类
 -------------
@@ -44,7 +65,7 @@ BLE +
       - USB
       - Ethernet
     * - :ref:`ch579`
-      - 40MHz
+      - :ref:`cortex_m0`
       - 32K
       - 250K
       - 4/2
@@ -85,8 +106,6 @@ USB +
     CH557 <CH557>
 
 
-
-
 .. hint::
     :ref:`wch` 非常有特色的一家公司，产品线偏向于富裕的通信外设，基本标配USB外设，然后在集成度上比较高。
 
@@ -96,7 +115,7 @@ USB +
 .. contents::
     :local:
 
-MCS-51
+MCS51
 ~~~~~~~~~~~~
 .. toctree::
     :maxdepth: 1
@@ -127,7 +146,7 @@ RISC-V
 .. toctree::
     :maxdepth: 1
 
-    RISC-V  <riscv>
+    内核版本  <riscv>
     CH32V103 <CH32V103>
     CH32V307 <CH32V307>
     CH32V208 <CH32V208>
