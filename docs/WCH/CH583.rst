@@ -87,7 +87,7 @@ Xin选择
       - 2 x USB H/D
       - NO
     * - :ref:`ch579`
-      - :ref:`wch_cortex`
+      - :ref:`cortex_m0`
       - 32
       - 250
       - 4

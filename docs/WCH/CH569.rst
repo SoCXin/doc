@@ -94,8 +94,6 @@ CH573 相同，可直接参考 CH573 手册和资料。
       - 2 x USB
       - NO
 
-:ref:`wch_riscv` 和 :ref:`wch_cortex` 在内核性能上比较中规中矩，主要差异在于外设配置。
-
 .. image:: ./images/ch5x.png
     :target: http://special.wch.cn/zh_cn/mcu/
 

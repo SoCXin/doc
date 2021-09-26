@@ -13,14 +13,27 @@ CH573
 Xin简介
 -----------
 
-:ref:`wch_riscv3a` BLE SoC
 
 .. image:: ./images/CH573.png
     :target: http://www.wch.cn/products/CH573.html
 
-关键特性
-~~~~~~~~~~~~~~
+规格参数
+~~~~~~~~~~~
 
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：2.1 to 3.6 V
+* 工作温度：-40 °C to 85/125 °C
+* 封装规格：QFN28/QFN48
+* 处理性能：34 :ref:`DMIPS`
+* RAM容量：32 KB
+* Flash容量：250 KB
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`wch_riscv3a` 20 MHz
 * SPI x 2 + UART x 4 (16C550/6Mbps)
 * BLE4.2 (RX-96dBm，TX+5dBm)
 * USB H/D
@@ -100,7 +113,6 @@ CH573 相同，可直接参考 CH573 手册和资料。
       - 2 x USB
       - NO
 
-:ref:`wch_riscv` 和 :ref:`wch_cortex` 在内核性能上比较中规中矩，主要差异在于外设配置。
 
 
 品牌对比
