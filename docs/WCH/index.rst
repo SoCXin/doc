@@ -15,7 +15,7 @@ WCH
 .. note::
     南京沁恒微电子成立于2004年，是一家专注于连接技术和MCU内核研究的射频与高速数模混合集成电路设计公司，提供以太网、蓝牙无线网络、USB和PCI类等接口芯片及集成上述接口的MCU+单片机。
 
-<http://www.wch.cn/>`_
+`<http://www.wch.cn/>`_
 
 .. contents::
     :local:
@@ -26,11 +26,18 @@ WCH
 .. image:: ./images/wch.png
     :target: http://special.wch.cn/zh_cn/interface_conversion_expert/
 
-USB产品
+USB/UART
 ^^^^^^^^^^^
 
 .. image:: ./images/wchusb.png
     :target: http://special.wch.cn/zh_cn/USBChips/#/
+
+PCI/PCIE
+^^^^^^^^^^^
+
+Ethernet
+^^^^^^^^^^^
+
 
 
 控制类产品
@@ -171,6 +178,42 @@ MCS51
     CH552 <CH552>
     CH554 <CH554>
     CH549 <CH549>
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Mark
+      - RAM
+      - Flash
+      - UART/SPI
+      - BLE
+      - USB
+      - Ethernet
+    * - :ref:`ch552`
+      - :ref:`mcs51`
+      - 2KB
+      - 16KB
+      -
+      -
+      -
+      -
+    * - :ref:`ch554`
+      - :ref:`mcs51`
+      - 2KB
+      - 16KB
+      -
+      -
+      -
+      -
+    * - :ref:`ch549`
+      - :ref:`mcs51`
+      - 2KB
+      - 60KB
+      -
+      -
+      -
+      -
 
 
 Cortex

@@ -87,23 +87,23 @@ A/D转换
       - 4K
       - 64K
       - 2
-      - SIGMA-DELTA
+      - :ref:`sigma_delta`
       - 24bit
-      - LQFP48
+      - LQFP64
     * - :ref:`zml165`
       - 48MHz
       - 4K
       - 64K
       - 2
-      - SIGMA-DELTA
+      - :ref:`sigma_delta`
       - 24bit
-      - LQFP48
+      - QFN20
     * - :ref:`swm181`
       - 48MHz
-      - 1K
-      - 8K
-      - 2
-      - SIGMA-DELTA
+      - 16KB
+      - 120KB
+      - 4
+      - :ref:`sigma_delta`
       - 16bit
       - LQFP48
 
