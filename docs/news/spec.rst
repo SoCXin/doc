@@ -52,7 +52,7 @@ ETH-PHY Tiny
 
 .. _qfn28:
 
-QFN28(4x4)
+QFN28
 ^^^^^^^^^^^
 
 .. image:: ./images/QFN28.png
@@ -69,17 +69,15 @@ ETH-PHY Full
       - RAM
       - Flash
       - USB
-      - BLE
       - Ethernet
       - Package
     * - :ref:`ch563`
       - :ref:`arm7`
       - 64KB
       - 224KB
-      -
-      -
+      - 480M
       - 100M
-      - LQFP128
+      - LQFP64M(10x10)
 
 计量相关
 -------------

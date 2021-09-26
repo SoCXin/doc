@@ -25,6 +25,12 @@ WCH
 
 BLE +
 ~~~~~~~~~~~~
+.. toctree::
+    :maxdepth: 1
+
+    CH573 <CH573>
+    CH583 <CH583>
+
 
 .. list-table::
     :header-rows:  1
@@ -62,6 +68,13 @@ BLE +
       - 2 x USB
       - NO
 
+ETH +
+~~~~~~~~~~~~
+.. toctree::
+    :maxdepth: 1
+
+    CH579 <CH579>
+    CH563 <CH563>
 
 USB +
 ~~~~~~~~~~~~
@@ -72,25 +85,49 @@ USB +
     CH557 <CH557>
 
 
-MCU +
-~~~~~~~~~~~~
-.. toctree::
-    :maxdepth: 1
-
-    CH563 <CH563>
 
 
 .. hint::
     :ref:`wch` 非常有特色的一家公司，产品线偏向于富裕的通信外设，基本标配USB外设，然后在集成度上比较高。
 
+
 内核分类
---------------------
+------------------
+.. contents::
+    :local:
+
+MCS-51
+~~~~~~~~~~~~
+.. toctree::
+    :maxdepth: 1
+
+    CH552 <CH552>
+    CH554 <CH554>
+    CH549 <CH549>
+
+
+Cortex
+~~~~~~~~~~~~
+.. toctree::
+    :maxdepth: 1
+
+    CH32F103 <CH32F103>
+    CH32F207 <CH32F207>
+    CH32F208 <CH32F208>
+
+RISC-V
+~~~~~~~~~~~~
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
-    8051产品  <mcs51>
-    Cortex产品  <cortex>
-    RISC-V产品  <riscv>
+    RISC-V  <riscv>
+    CH32V103 <CH32V103>
+    CH32V307 <CH32V307>
+    CH32V208 <CH32V208>
+    CH568 <CH568>
+    CH569 <CH569>
 
+.. image:: ./images/CH32V.png
+    :target: http://special.wch.cn/zh_cn/mcu/
 

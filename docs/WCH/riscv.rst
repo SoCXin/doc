@@ -83,10 +83,7 @@ RISC-V版本
 RISC-V4A
 ~~~~~~~~~~~~~~
 
-.. toctree::
-    :maxdepth: 1
 
-    CH583 <CH583>
 
 .. _wch_riscv4b:
 
@@ -112,42 +109,4 @@ RISC-V3A
 RISC-V3A 是 32 位嵌入式处理器，内部模块化管理，支持 RISC-V 开源指令集 IMAC 子集。
 包含快速可编程中断控制器（FPIC），提供了 4 个向量可编程的快速中断通道及 44 个优先级可配的普通中断，通过硬件现场保存和恢复的方式实现中断的最短周期响应；包含 2 线串行调试接口，支持用户在线升级和调试；包括多组总线连接处理器外部单元模块，实现外部功能模块和内核的交互。
 
-.. toctree::
-    :maxdepth: 1
-
-    CH573 <CH573>
-    CH568 <CH568>
-    CH569 <CH569>
-
-
-
-RISC-V产品
---------------------
-
-.. contents::
-    :local:
-
-
-通用系列
-~~~~~~~~~~~~
-
-.. image:: ./images/CH32V.png
-    :target: http://special.wch.cn/zh_cn/mcu/
-
-
-.. toctree::
-    :maxdepth: 1
-
-    CH32V103 <CH32V103>
-    CH32V307 <CH32V307>
-    CH32V208 <CH32V208>
-
-无线系列
-~~~~~~~~~~~~
-
-.. toctree::
-    :maxdepth: 1
-
-    CH573 <CH573>
-    CH583 <CH583>
 

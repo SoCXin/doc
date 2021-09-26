@@ -4,7 +4,7 @@
 CH563
 ==========
 
-* 关键词：``ARM7`` ``USB HS`` ``SM4/AES`` ``SATA`` ``130MHz``
+* 关键词：``ARM7`` ``ARMv5TE`` ``USB-HS`` ``100M-ETH-PHY`` ``DataFlash`` ``130MHz``
 * 资源库：`GitHub <https://github.com/SoCXin/CH563>`_
 
 .. contents::
@@ -23,7 +23,7 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：1.71 to 3.6 V
+* 供电电压：3.0 to 3.6 V
 * 工作温度：-40°C to 85°C
 * 封装规格：LQFP64/LQFP128
 * 处理性能：300 :ref:`DMIPS`
