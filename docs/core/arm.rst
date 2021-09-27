@@ -17,6 +17,9 @@ Architecture
 
     AMBA <amba>
 
+Von Neumann
+~~~~~~~~~~~~~~
+
 架构演化
 ~~~~~~~~~~~~~~
 
@@ -34,12 +37,6 @@ ARMv6
 
 ARM7
 ~~~~~~~~~~~~~~
-
-.. toctree::
-    :maxdepth: 1
-
-    MT2503 <../MediaTek/MT2503>
-
 
 .. _arm9:
 
@@ -82,7 +79,7 @@ Cortex-M
     cortexM33
     cortexM7
 
-M系列内核对比
+M内核对比
 ^^^^^^^^^^^^^
 
 .. list-table::
@@ -97,7 +94,7 @@ M系列内核对比
       - DMIPS/MHz
       - CoreMark/MHz
     * - :ref:`cortex_m0`
-      - Von Neumann
+      -
       - 2
       - Thumb
       - ARMv6-M
@@ -105,7 +102,7 @@ M系列内核对比
       - 0.94
       - 2.42
     * - :ref:`cortex_m23`
-      - Von Neumann
+      -
       - 2
       - Thumb/Thumb-2
       - ARMv8-M
@@ -113,7 +110,7 @@ M系列内核对比
       - 0.94
       - 2.42
     * - :ref:`cortex_m3`
-      - Von Neumann
+      -
       - 3
       - Thumb/Thumb-2
       - ARMv7-M
@@ -121,7 +118,7 @@ M系列内核对比
       - 1.25
       - 3.32
     * - :ref:`cortex_m4`
-      - Von Neumann
+      -
       - 3
       - Thumb/Thumb-2
       - ARMv7-M
@@ -129,7 +126,7 @@ M系列内核对比
       - 1.25
       - 3.32
     * - :ref:`cortex_m33`
-      - Von Neumann
+      -
       - 3
       - Thumb/Thumb-2
       - ARMv7-M
@@ -137,7 +134,7 @@ M系列内核对比
       - 1.25
       - 3.32
     * - :ref:`cortex_m7`
-      - Von Neumann
+      -
       - 3
       - Thumb/Thumb-2
       - ARMv7-M
@@ -146,12 +143,18 @@ M系列内核对比
       - 5.04
 
 
-
+.. _cortex_r:
 Cortex-R
 ~~~~~~~~~~~~~~
 
+.. _cortex_r5:
+
 Cortex-R5
 ^^^^^^^^^^^^^
+
+R内核对比
+^^^^^^^^^^^^^
+
 
 .. _cortex_a:
 
@@ -161,6 +164,8 @@ Cortex-A
 .. _cortex_a7:
 
 Cortex-A7
+^^^^^^^^^^^^^
+A内核对比
 ^^^^^^^^^^^^^
 
 .. _armv8:
