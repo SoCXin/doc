@@ -1,38 +1,39 @@
 
 .. _st_lowend:
 
-ST Lowend
+Lowend
 ===============
 
 .. contents::
     :local:
 
-
-STM32F0系列
---------------------
-
-基于 :ref:`cortex_m0` 内核，传承了STM32系列特性，适合成本敏感型应用，在传统8位和16位市场极具竞争力，并且无需管理不同的架构和相关的开发成本。
-
 .. toctree::
     :maxdepth: 1
 
-    STM32F030
-    STM32F051
+    STM32F030 <STM32F030>
+    STM32F051 <STM32F051>
+    STM32G030 <STM32G030>
+    STM32G031 <STM32G031>
+
+.. _st_f0vsg0:
+
+Xin对比
+--------------------
+
+STM32F0系列
+~~~~~~~~~~~~~~~~~~~~
+
+基于 :ref:`cortex_m0` 内核，传承了STM32系列特性，适合成本敏感型应用，在传统8位和16位市场极具竞争力，并且无需管理不同的架构和相关的开发成本。
+
 
 .. image:: ./images/STM32F0_series.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32f0-series.html
 
 
 STM32G0系列
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 基于 :ref:`cortex_m0` 内核，传承了STM32系列特性，适合成本敏感型应用
-
-.. toctree::
-    :maxdepth: 1
-
-    STM32G030
-    STM32G031
 
 .. image:: ./images/STM32G0_series.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0-series.html
@@ -45,9 +46,7 @@ STM32G0系列达到了59 DMIPS，在针对内存的评分上CoreMark测试成绩
 G0配备的高速的时钟可以在0-90度达到1%的精度，在-40到125度可以达到2%的精度。
 
 
-.. _st_f0vsg0:
-
-STM32G0 vs STM32F0
+升级对比
 ~~~~~~~~~~~~~~~~~~~~
 
 核心更新
