@@ -1,10 +1,10 @@
-
+.. _NO_004:
 .. _stm32g474:
 
 STM32G474
 ===============
 
-* 关键词：``170MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
+* 关键词：``Cortex-M4`` ``170MHz`` ``CAN-FD`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32G474>`_
 
 .. contents::
@@ -22,40 +22,54 @@ Xin简介
 规格参数
 ~~~~~~~~~~~
 
-:ref:`st` :ref:`cortex_m4` MCU 内嵌数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，带有双安全存储区域，ART加速提高Flash读取运行速度。
-
+内嵌数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，带有双安全存储区域，ART加速提高Flash读取运行速度。支持FPU和DSP指令，以及3种不同的硬件加速器：ART Accelerator™、CCM-SRAM程序执行加速器、以及数学运算加速器。
 
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：2.0 to 3.6 V
-* 工作温度：-40°C to +125°C
-* 封装规格：LQFP128(0.4mm pitch)
-* 处理性能：300 :ref:`DMIPS`
-* RAM容量：8MB
-* Flash容量：8MB QSPI FLASH
-
-.. note::
-    :ref:`tkm32f499` 是0.4 pitch的LQFP128，体积跟0.5 pitch的LQFP100一样。
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40°C to +85°C/+125°C
+* 封装规格：48 to 128 Pin
+* 处理性能：550 :ref:`CoreMark`
+* RAM容量：128 KB
+* Flash容量：128/256/512 KB
 
 特征参数
 ^^^^^^^^^^^
 
 * :ref:`cortex_m4` 170 MHz
+* 最多3个 :ref:`stm32_canfd`
+* :ref:`stm32_fsmc`
 * 5个超快速12位ADC（4 Msamples/s）
 * 7个12位DAC（15 Msamples/s）
 * 7个超快速比较器（17ns）
 * 高分辨率定时器 :ref:`stm32_hrtim`
 * 6个可编程增益运算放大器 :ref:`stm32_opamp`
-* 最多3个CAN-FD
 * USB Type-C™和电力传输控制器 :ref:`stm32_ucpd`
 
 
-相对短板
-^^^^^^^^^^^
+芯片架构
+~~~~~~~~~~~~
 
-* 定位较高端，性价比不高
+.. image:: ./images/STM32G474s.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x4.html
 
+
+.. _stm32_hrtim:
+
+HRTIM
+~~~~~~~~~~~
+
+继承自STM32F334xx系列的高分辨率定时器HRTIM外设，在G4系列更高的主频下可以到达 ``184ps`` 分辨率,易于编程实现的简单高分辨率执行流程（等同于4.6 GHz的定时器）
+
+.. image:: ./images/STM32HRTIM.png
+    :target: https://st-onlinetraining.s3.amazonaws.com/STM32G4-WDG_TIMERS-High_Resolution_Timer_%28HRTIM%29/index.html
+
+
+.. _stm32_canfd:
+
+CAN-FD
+~~~~~~~~~~~
 
 
 计算性能
@@ -75,28 +89,87 @@ Xin简介
 Xin选择
 -----------
 
+.. contents::
+    :local:
+
 该系列是2012年推出的STM32F3系列的延续，它继承了很多STM32F3的理念和基因，带来更强劲的性能和数模效果。
 
 STM32G4系列最高工作温度可达到125°C，具有更强的抗电气干扰能力，可耐受4kV以上的瞬变电压，增强的可靠性也进一步扩展了其应用范围，特别是一些工业领域。
 
 STM32G4x4系列具有高分辨率定时器和复杂波形生成器，以及事件处理器，这使其特别适合于数字电源应用，如数字开关电源、照明、焊接、太阳能和无线充电等。
 
-竞品分析
-~~~~~~~~~
+品牌对比
+~~~~~~~~~~
 
-STM32G4与STM32F3系列高度兼容，作为后者的升级选项，确保在设计不同性能等级的衍生应用时提供卓越的效率。在模拟外设集成度上，国内尚没有可以媲美的厂商和产品。
+在模拟外设集成度和技术指标上，国内尚没有可以媲美的产品。
 
-型号选择
-~~~~~~~~~
+
+系列对比
+~~~~~~~~~~
+
+STM32G4与STM32F3系列高度兼容，作为后者的升级选项，确保在设计不同性能等级的衍生应用时提供卓越的效率。
 
 .. image:: ./images/en.obn_stm32g4_series_ss2024.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
 STM32G474在STM32G4系列中定位高分辨率，独有复杂波形生成器和事件处理器HRTIM，该功能继承自STM32F334，除该功能外，在G4系列中可选STM32G473系列，如果没有FSMC需求且对模拟外设数量要求不多，可选更高性价比的 :ref:`stm32g431`
 
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Mark
+      - RAM
+      - Flash
+      - UART
+      - BLE
+      - USB
+      - Ethernet
+    * - :ref:`stm32g474`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`stm32g431`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`stm32h730`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+
+.. note::
+    STM32G474系列配备的 :ref:`stm32_hrtim` 竞争者还包括前代 STM32F334 和高性能 :ref:`stm32h730` 系列，也就从成本和性能两端限制了该系列的扩展。
+
+版本对比
+~~~~~~~~~~
 
 
-开发资源
+.. image:: ./images/STM32G474l.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
+
+.. note::
+    STM32G474、STM32G484型号共有24种封装规格，全系标配128KB RAM，存储器范围为128KB到512 KB，封装为48到128引脚。
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+资源简介
 ~~~~~~~~~~~
 
 使用STM32芯片最直接方式是通过 `stm32cube <https://www.st.com/zh/ecosystems/stm32cube.html>`_ 工具构建基本运行体，不用开发者自己去研究寄存器初始化相应外设（但请注意使能）。
@@ -105,29 +178,25 @@ STM32G474在STM32G4系列中定位高分辨率，独有复杂波形生成器和�
 
 源圈OS-Q通过先验证的方式，集成了更多可信赖资源 `PlatformIO STM32G4 <https://github.com/OS-Q/P216>`_ 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。
 
+硬件原型
+~~~~~~~~~~~
 
+.. _nucleo_stm32g474:
 
-Xin应用
------------
-
-该芯片的开发验证平台比较丰富，性价比不错的选择如下： **NUCLEO-STM32G474RE**
+NUCLEO-STM32G474RE
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ./images/B_STM32G474.jpg
     :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.3.22c4235cqh3nCy&id=610087556700&ns=1&abbucket=7
 
-
-.. _stm32_hrtim:
-
-HRTIM
+外设使用
 ~~~~~~~~~~~
 
-继承自STM32F334xx系列的高分辨率定时器HRTIM外设，在G4系列更高的主频下可以到达 ``184ps`` 分辨率
+.. contents::
+    :local:
 
-.. image:: ./images/STM32HRTIM.png
-    :target: https://st-onlinetraining.s3.amazonaws.com/STM32G4-WDG_TIMERS-High_Resolution_Timer_%28HRTIM%29/index.html
-
-HRTIM特性
-^^^^^^^^^^^^^
+HRTIM
+^^^^^^^^^^^^
 
 .. image:: ./images/STM32G4HRTIM.png
     :target: https://www.st.com/content/ccc/resource/technical/document/application_note/13/d6/48/9d/11/11/4c/08/DM00121475.pdf/files/DM00121475.pdf/jcr:content/translations/zh.DM00121475.pdf
@@ -188,7 +257,7 @@ HRTIM特性
 .. _stm32_opamp:
 
 OPAMP
-~~~~~~~~~~~
+^^^^^^^^^^^^
 
 * Input voltage offset: approx. +/- 3 mV (after built-in calibration of offset)
 * Bandwidth: approx. 13 MHz
@@ -206,17 +275,20 @@ OPAMP
 Xin总结
 --------------
 
+.. contents::
+    :local:
 
+能力构建
+~~~~~~~~~~~~~
 
-重点提示
+要点提示
 ~~~~~~~~~~~~~
 
 浮点运算一般需要在运算结果前写上（float）或者标注f，否则一律会被认为双精度，将会大大增加运算时间。
 
 除法和开方的运算周期过长，如无必要，尽量不要用，尽量将其转化为运算周期较少的加减乘运算
 
-
-问题收集
+问题整理
 ~~~~~~~~~~~~~
 
 不管选用内部时钟源还是外部晶振，只要配置成170MHz,芯片肯定会复位。经过反复测试验证，发现设置PLL所产生的时钟只有在不高于80MHz时，芯片才能正常运行。

@@ -40,9 +40,7 @@ Xin简介
 
 .. _stm32_fsmc:
 
-静态存储控制器(FSMC)
-~~~~~~~~~~~~~~~~~~~~~~
-
-
+FSMC
+^^^^^^^^^^^
 
 STM32的FSMC真是一个万能的总线控制器,不仅可以控制SRAM,NOR FLASH,NAND FLASH,PC Card,还能控制LCD,TFT
