@@ -26,6 +26,41 @@ STMicroelectronics
     双核MCU: STM32H745 <H/STM32H745>
     异构MPU: STM32MP15 <H/STM32MP15>
 
+.. list-table::
+    :header-rows:  1
+
+    * - Rank
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - BLE
+      - USB
+      - DMIPS
+    * - :ref:`stm32h730`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`stm32h750`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`stm32h7b0`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
 
 无线通信
 ----------

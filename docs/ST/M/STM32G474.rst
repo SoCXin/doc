@@ -176,7 +176,7 @@ Xin应用
 .. contents::
     :local:
 
-资源简介
+开发工具
 ~~~~~~~~~~~
 
 使用STM32芯片最直接方式是通过 `stm32cube <https://www.st.com/zh/ecosystems/stm32cube.html>`_ 工具构建基本运行体，不用开发者自己去研究寄存器初始化相应外设（但请注意使能）。
@@ -185,7 +185,7 @@ Xin应用
 
 源圈OS-Q通过先验证的方式，集成了更多可信赖资源 `PlatformIO STM32G4 <https://github.com/OS-Q/P216>`_ 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。
 
-硬件原型
+硬件平台
 ~~~~~~~~~~~
 
 .. _nucleo_stm32g474:

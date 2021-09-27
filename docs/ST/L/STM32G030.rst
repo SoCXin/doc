@@ -32,7 +32,7 @@ Xin简介
 Xin对比
 -----------
 
-相对前代 :ref:`st_stm32f0` 系列进行了升级，差异可查看 :ref:`st_f0vsg0` ，拥有更好的模拟性能，主频更高同时如CRC等外设全系标配，相对市场同类产品，拥有自家完善的资源体系和可靠性，是新推出的 ``高性价比`` 的国际一线品牌MCU。
+相对前代 :ref:`stm32f030` 系列进行了升级，差异可查看 :ref:`st_f0vsg0` ，拥有更好的模拟性能，主频更高同时如CRC等外设全系标配，相对市场同类产品，拥有自家完善的资源体系和可靠性，是新推出的 ``高性价比`` 的国际一线品牌MCU。
 
 
 竞品分析
@@ -44,7 +44,7 @@ Xin对比
 型号对比
 ~~~~~~~~~
 
- :ref:`st_stm32g0` 系列产品中 :ref:`stm32g031` 定位入门级，相似有 `STM32G0x0 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html>`_ 超值系列，例如在SON8封装限定下，STM32G031J替换可选STM32G030J6、STM32G041J6
+ :ref:`stm32g031` 定位入门级，相似有 `STM32G0x0 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html>`_ 超值系列，例如在SON8封装限定下，STM32G031J替换可选STM32G030J6、STM32G041J6
 
 .. image:: ./images/STM32G0.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
