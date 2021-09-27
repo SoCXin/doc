@@ -4,7 +4,7 @@
 STM32F303
 ==================
 
-* 关键词：``Cortex-M3`` ``72MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE5.1`` ``QFN28``
+* 关键词：``Cortex-M4`` ``72MHz`` ``ADC`` ``DAC``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32F303>`_
 
 .. contents::
@@ -13,18 +13,43 @@ STM32F303
 Xin简介
 -----------
 
+.. image:: ./images/stm32f303.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/STM32F303cb.html#
+
 .. contents::
     :local:
 
 
-关键特性
-~~~~~~~~~~~~
+规格参数
+~~~~~~~~~~~
 
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：2.4 to 3.6 V
+* 工作温度：-40 °C to 85 °C
+* 封装规格：LQFP64
+* 处理性能：90 :ref:`DMIPS`
+* RAM容量：20 KB
+* Flash容量：128 KB
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`cortex_m4` 72 MHz
+* 最多7个快速和超快速比较器（25 ns）
+* 最多4个具有可编程增益的运算放大器
+* 多达2个12位DAC
+* 多达4个每秒5MSPS的超快速12位ADC
+* 多达3个144 MHz的快速电机控制定时器（分辨率 < 7 ns）
+* 全速USB和CAN 2.0B通信接口
 
 
 芯片架构
 ~~~~~~~~~~~
 
+.. image:: ./images/STM32F303s.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f3-series/stm32f303/stm32f303c8.html
 
 
 
@@ -34,31 +59,48 @@ Xin选择
 .. contents::
     :local:
 
+是STM32F30x系列中集成最多功能的器件，最多7个快速和超快速比较器(25 ns)
 
-
-Xin应用
------------
-
-.. contents::
-    :local:
-
-
-执行器
-~~~~~~~~~~~
+STM32F301、STM32F302、STM32F303通用产品线范围包括了基本型产品、包含高性价比外设组合的产品，以及具有更高性能和更多模拟功能并可管理高达三个FOC电机控制的产品。
+STM32F334具有高分辨率定时器（217 ps）和用于数字电源转换的复杂波形生成器和事件处理器（HRTIM），适用于数字开关模式电源、照明、焊接、太阳能和无线充电等应用。
+STM32F373具有16位sigma-delta ADC和7种内置增益，能够在生物识别传感器或智能计量等应用中实现高精度测量。
+STM32F3x8产品线支持1.8 V的工作电压。
 
 
 
-Xin总结
---------------
+系列对比
+~~~~~~~~~~
 
-.. contents::
-    :local:
+.. list-table::
+    :header-rows:  1
 
-要点提示
-~~~~~~~~~~~~~
+    * - Name
+      - Mark
+      - RAM
+      - ROM
+      - UART
+      - CAN
+      - USB
+      - Ethernet
+    * - :ref:`stm32f303`
+      - 90 DMIPS
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`stm32g431`
+      - 150 DMIPS
+      -
+      -
+      -
+      -
+      -
+      -
 
+型号对比
+~~~~~~~~~
 
-
-问题整理
-~~~~~~~~~~~~~
-
+.. image:: ./images/STM32F303l.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f3-series/stm32f303/stm32f303c8.html
