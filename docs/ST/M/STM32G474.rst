@@ -5,7 +5,7 @@ STM32G474
 ===============
 
 * 关键词：``Cortex-M4`` ``170MHz`` ``CAN-FD`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32G474>`_
+* 工程库：`GitHub <https://github.com/SoCXin/STM32G474>`_  `Gitee <https://github.com/SoCXin/STM32G474>`_
 
 .. contents::
     :local:
@@ -19,7 +19,7 @@ Xin简介
 .. contents::
     :local:
 
-规格参数
+规格配置
 ~~~~~~~~~~~
 
 内嵌数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，带有双安全存储区域，ART加速提高Flash读取运行速度。支持FPU和DSP指令，以及3种不同的硬件加速器：ART Accelerator™、CCM-SRAM程序执行加速器、以及数学运算加速器。
@@ -30,7 +30,7 @@ Xin简介
 * 供电电压：1.71 to 3.6 V
 * 工作温度：-40°C to +85°C/+125°C
 * 封装规格：48 to 128 Pin
-* 处理性能：550 :ref:`CoreMark`
+* 处理性能：550 :ref:`CoreMark`，212 :ref:`DMIPS`
 * RAM容量：128 KB
 * Flash容量：128/256/512 KB
 
@@ -58,7 +58,7 @@ Xin简介
 .. _stm32_hrtim:
 
 HRTIM
-~~~~~~~~~~~
+^^^^^^^^^^^
 
 继承自STM32F334xx系列的高分辨率定时器HRTIM外设，在G4系列更高的主频下可以到达 ``184ps`` 分辨率,易于编程实现的简单高分辨率执行流程（等同于4.6 GHz的定时器）
 
@@ -69,7 +69,14 @@ HRTIM
 .. _stm32_canfd:
 
 CAN-FD
-~~~~~~~~~~~
+^^^^^^^^^^^
+
+在工厂自动化中， 数据连接是必不可少的， 尤其是在工业4.0概念不断扩大其覆盖范围的今天。
+许多标准被用于支持专门开发的现场总线， 包括经典CAN （Modbus和CANopen）、 RS-485（PROFIBUS、 CC-Link和Modbus）、 以及新的CAN FD和实时以太网。
+
+.. image:: ./images/canfd.png
+    :target: https://www.st.com/zh/applications/connectivity/fieldbus-and-industrial-ethernet.html#overview
+
 
 
 计算性能
