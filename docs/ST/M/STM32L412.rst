@@ -36,8 +36,8 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 442 :ref:`ulpmark_cp`
-* 165 :ref:`ulpmark_pp`
+* 442 :ref:`ulp_cp`
+* 165 :ref:`ulp_pp`
 * :ref:`cortex_m4` 80 MHz
 * 2 x 12-bit ADC 5 Msps, 200 µA/Msps
 * 2 x PGA

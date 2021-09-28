@@ -21,6 +21,28 @@ SoC 芯
     低端榜单 <news/low>
     创新榜单 <news/spec>
 
+.. list-table::
+    :header-rows:  1
+
+    * - Rank
+      - 热度榜单
+      - 方案榜单
+      - 全能榜单
+      - 低端榜单
+      - 创新榜单
+    * - No.1
+      - :ref:`esp32`
+      - :ref:`stm32f103`
+      - :ref:`stm32h750`
+      - :ref:`stc8`
+      - :ref:`ch579`
+    * - No.2
+      - :ref:`rp2040`
+      - :ref:`esp32`
+      - :ref:`stm32f103`
+      - :ref:`ch552`
+      - :ref:`ch32v208`
+
 .. toctree::
     :caption: 领域速览
     :maxdepth: 1
@@ -30,6 +52,28 @@ SoC 芯
     通信类      <for/iot>
     计算类      <for/edge>
     感知类      <for/sensor>
+
+.. list-table::
+    :header-rows:  1
+
+    * - Rank
+      - 控制类
+      - 交互类
+      - 通信类
+      - 计算类
+      - 感知类
+    * - No.1
+      - :ref:`stm32g474`
+      - :ref:`stm32f429`
+      - :ref:`esp32`
+      - :ref:`k210`
+      - :ref:`stm32l011`
+    * - No.2
+      - :ref:`swm181`
+      - :ref:`esp32`
+      - :ref:`esp32c3`
+      - :ref:`v831`
+      - :ref:`stm32g431`
 
 .. toctree::
     :caption: 内核速览

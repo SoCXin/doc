@@ -20,3 +20,34 @@ ST主流MCU
     全兜行:STM32G474 <STM32G474>
 
 
+
+模拟性能排序
+--------------
+
+.. list-table::
+    :header-rows:  1
+
+    * - Rank
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - BLE
+      - USB
+      - DMIPS
+    * - :ref:`stm32g474`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`stm32g431`
+      -
+      -
+      -
+      -
+      -
+      -
+      -

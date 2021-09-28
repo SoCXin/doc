@@ -125,19 +125,48 @@ STMicroelectronics
 超低功耗
 ~~~~~~~~~~~
 
+.. image:: images/stm32ulp.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32-ultra-low-power-mcus.html
+
 .. toctree::
     :maxdepth: 1
 
     STM32L011 <L/STM32L011>
     STM32L412 <M/STM32L412>
 
-.. image:: images/stm32ulp.jpg
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32-ultra-low-power-mcus.html
+.. list-table::
+    :header-rows:  1
+
+    * - Rank
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - BLE
+      - USB
+      - DMIPS
+    * - :ref:`stm32l011`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`stm32l412`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+
 
 ULPMark
 ^^^^^^^^^^^
 
-ULPMark 测试目前有三个部分，分别是 ULPMark-CoreProfile、ULPMark-PeripheralProfile 和 ULPMark-CoreMark。
+ULPMark 测试目前有三个部分，分别是 :ref:`ulp_cp`、 :ref:`ulp_pp` 和 ULPMark-CoreMark。
 
 * ULPMark-CoreProfile 核心在深度睡眠模式下真正的能量消耗
 * ULPMark-PeripheralProfile 普通外围设备的能量对深度睡眠的影响
