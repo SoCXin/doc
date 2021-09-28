@@ -17,5 +17,7 @@ SoC
 .. toctree::
     :maxdepth: 1
 
-    MT2503 <MT2503>
-    MT2625 <MT2625>
+    GSM老将 MT2503 <MT2503>
+    NB-IoT老将 MT2625 <MT2625>
+    交换机平台 MT7621 <MT7621>
+

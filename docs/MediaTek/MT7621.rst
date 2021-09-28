@@ -1,0 +1,57 @@
+
+.. _mt2625:
+
+MT7621
+================
+
+* 关键词：``MIPS`` ``1004KEc`` ``880MHz`` ``Gigabit``
+* 资源库：`GitHub <https://github.com/SoCXin/MT7621>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+包含功能强大的 880 MHz MIPS 1004KEc™ 双核心中心处理器 (CPU)、5 端口 Gigabit 以太网络交换器，以及RGMII、PCIe、USB、SD-XC 等众多连接选项。这款全新系统单芯片亦随附我们经现场验证的硬件支持，涵盖网络地址转换 (NAT)、服务流量质量 (QoS)、网络芳邻 (SAMBA)、虚拟私有网络 (VPN)，以及其他路由与通道建立应用，适合高效能 802.11ac、LTE cat4/5、edge、热点、VPN 路由器、网络连接储存设备 (NAS)、 (无线设备管理器 (AC) 及智能型路由器。
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：2.4V - 3.6V
+* 工作温度：-40 °C to 105 °C
+* 封装规格：TSSOP20/QFN28/QFN32/LQFP32/LQFP48
+* 处理性能：150 :ref:`DMIPS`
+* RAM容量：16 KB
+* Flash容量：64 KB
+* 量产时间：2020年10月
+* ESD HBM: 6 KV
+* ESD CDM: 1000 V
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`cortex_m4` 120 MHz
+* USB 3.0
+* 5p GbE Switch
+
+
+
+
+Xin选择
+-----------
+
+LQFP100 (14×14mm)
+LQFP144 (20×20mm)
+
+Xin实践
+-----------
+
+
+
+Xin总结
+-----------
+

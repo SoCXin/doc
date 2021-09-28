@@ -31,6 +31,7 @@ Xin简介
 * 工作温度：-40°C to +85°C/+125°C
 * 封装规格：48 to 128 Pin
 * 处理性能：550 :ref:`CoreMark`，212 :ref:`DMIPS`
+* 发布时间：2019年5月29日
 * RAM容量：128 KB
 * Flash容量：128/256/512 KB
 
@@ -278,6 +279,29 @@ OPAMP
 .. image:: ./images/STM32G4OPAMP.png
     :target: https://www.st.com/content/ccc/resource/technical/document/application_note/group1/71/84/78/aa/6c/d5/4f/16/DM00605707/files/DM00605707.pdf/jcr:content/translations/en.DM00605707.pdf
 
+参考方案
+~~~~~~~~~~~
+
+15KW三相双向充电桩
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: ./images/STM32G474_S1.png
+    :target: https://baijiahao.baidu.com/s?id=1699331101062214851&wfr=spider&for=pc
+
+
+核心技术优势
+
+* 三相维也纳，可以实现AC/DC DC/AC双相逆变，主要用于大功率充电桩等前级应用。
+* ST新一代数字电源控制芯片STM32G474，实现纯数字控制，灵活配置。
+* 方案尺寸小，频率高达100KHz。
+* 控制芯片可以输出12路高精度PWM，频率可以配置2-3级拓扑。
+
+方案规格
+
+* 三相三电平双向AC/DC转换。
+* AC交流电压：380±10%Vac，DC直流电压：800Vdc。
+* AC to DC模式：PF> 0.99，支持软启动，抑制浪涌电流。
+* 整机效率高达99%。
 
 Xin总结
 --------------
