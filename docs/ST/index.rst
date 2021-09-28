@@ -12,10 +12,13 @@ STMicroelectronics
 公司简介
 -----------
 
+作为MCU领域的龙头企业，特别是最为广泛使用的一种技术范式，拥有庞大的开发团队和资源，如果你想找一颗满足需求的MCU，那么第一步就是去ST找一找。
+
 .. note::
     意法半导体ST是全球最大的半导体公司之一，是MCU领域的王者，其产品系列丰富，应用广泛。
 
-作为MCU领域的龙头企业，特别是最为广泛使用的一种技术范式，拥有庞大的开发团队和资源，如果你想找一颗满足需求的MCU，那么第一步就是去ST找一找。
+技术特征
+-----------
 
 产品分类
 -----------
@@ -117,6 +120,7 @@ STMicroelectronics
     BLE SoC: STM32WB55 <M/STM32WB55>
     LoRa SoC: STM32WLE5 <M/STM32WLE5>
 
+.. _stm32ulp:
 
 超低功耗
 ~~~~~~~~~~~
@@ -142,14 +146,14 @@ ULPMark 测试目前有三个部分，分别是 ULPMark-CoreProfile、ULPMark-Pe
 * ULPMark-PeripheralProfile 普通外围设备的能量对深度睡眠的影响
 * ULPMark-CoreMark 活跃功耗，使用 CoreMark 作为工作负载
 
-.. _ulpmark_cp:
+.. _ulp_cp:
 
 ULPMark-CP
 ^^^^^^^^^^^
 
 ULPMark-CoreProfile 在深度睡眠下整个芯片的能量消耗；因为在低功耗的应用场景下，该芯片设备可能是单电池供电，需要运行长达 10 年的时间，所以芯片设备绝大部分时间应该都是处在深度睡眠的模式，偶尔唤醒处理部分任务。
 
-.. _ulpmark_pp:
+.. _ulp_pp:
 
 ULPMark-PP
 ^^^^^^^^^^^
