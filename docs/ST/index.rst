@@ -125,9 +125,6 @@ STMicroelectronics
 超低功耗
 ~~~~~~~~~~~
 
-.. note::
-    `ST <https://www.st.com/zh/microcontrollers-microprocessors/stm32-ultra-low-power-mcus.html>`_ 超低功耗产品是一个大分类。
-
 .. toctree::
     :maxdepth: 1
 
