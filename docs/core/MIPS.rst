@@ -18,3 +18,13 @@ Xtensa LX7
 .. image:: images/XtensaLX7.png
     :target: https://www.pianshen.com/article/64631295742/
 
+.. _1004KEc:
+
+1004KEc
+~~~~~~~~~~~~~
+
+
+.. image:: images/1004K.jpg
+    :target: https://blog.csdn.net/lightrain0/article/details/84979245
+
+MIPS已明显后劲不足，不过贵在工艺成熟价格便宜，目前低端路由完全离不开它。
