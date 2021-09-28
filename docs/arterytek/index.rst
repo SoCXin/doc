@@ -12,7 +12,7 @@ Arterytek
 公司简介
 -----------
 
-单独对厂商 :ref:`arterytek` 进行整理的理由是公司成立至今不久，目前的产品比较聚焦ARM® Cortex®-M4，更是掀起替换GD等“国产”芯片的内卷风，对用户来说值得被关注，若以MCU领域的 :ref:`st` 为基线对比，Arterytek的定位更加细分，由于STM32F4/STM32G4主流高性能产品主频低于200MHz，在和以 :ref:`cortex_m7` 内核为主的STM32H7系列间存在一段空白区域，国产众多 :ref:`cortex_m4` MCU产品凭借高主频(制程工艺)、性价比实现突围，同时也避开了国产 :ref:`cortex_m0` 产品的围剿。
+单独对 :ref:`arterytek` 进行整理是因为该公司成立至今不久，目前的产品比较聚焦Cortex-M4，掀起替换GD等国产芯片的内卷风，更有想象空间，若以MCU领域的 :ref:`st` 为基线，Arterytek的产品定位更加细分，STM32F4/STM32G4主流高性能产品主频<200MHz，和以 :ref:`cortex_m7` 内核构建的STM32H7系列间存在一段性能空白区，众多国产 :ref:`cortex_m4` MCU凭借主频(制程工艺)和性价比突围，也避开了和低端 :ref:`cortex_m0` 的竞争。
 
 .. note::
     `雅特力科技 <https://www.arterytek.com/cn/index.jsp>`_ （重庆）有限公司于2016年6月成立，专注于ARM® Cortex®-M4 的32位微控制器研发与创新，拥有领先高端芯片研发技术、完整的硅智财库及专业灵活的整合经验，创造了MCU 业界Cortex®-M4最高CPU主频288MHz运算效能，并致力于成为中国32位微控制器的创新领导者。
@@ -100,4 +100,4 @@ sLib安全库区
     288MHz: AT32F437 <AT32F437>
 
 .. warning::
-    AT32F437/AT32F435尚未上市
+    AT32F437/AT32F435目前仍是PPT产品
