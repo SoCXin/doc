@@ -50,3 +50,27 @@ CoreMark是由嵌入式微处理器基准评测协会EEMBC的Shay Gla-On于2009�
 CoreMark程序使用C语言写成，包含如下的运算法则：列举（寻找并排序），数学矩阵操作（普通矩阵运算）和状态机（用来确定输入流中是否包含有效数字），最后还包括CRC（循环冗余校验）。CoreMark程序的最新版本是Version 1.0。
 
 CoreMark标准的测试方法也很简单，就是在某配置参数组合下单位时间内跑了多少次CoreMark程序，其指标单位为CoreMark/MHz。CoreMark数字越高，意味着性能更高。
+
+.. _ULPMark:
+
+ULPMark
+~~~~~~~~~~~~~~
+
+ULPMark 测试目前有三个部分，分别是 :ref:`ulp_cp` 、 :ref:`ulp_pp` 和 ULPMark-CoreMark。
+
+.. _ulp_cp:
+
+ULPMark-CP
+^^^^^^^^^^^^^^
+ULPMark-CoreProfile 在深度睡眠下整个芯片的能量消耗；因为在低功耗的应用场景下，该芯片设备可能是单电池供电，需要运行长达 10 年的时间，所以芯片设备绝大部分时间应该都是处在深度睡眠的模式，偶尔唤醒处理部分任务。
+
+.. _ulp_pp:
+
+ULPMark-PP
+^^^^^^^^^^^^^^
+
+ULPMark-PeripheralProfile 普通外围设备的能量对深度睡眠的影响
+
+
+
+* ULPMark-CoreMark 活跃功耗，使用 CoreMark 作为工作负载
