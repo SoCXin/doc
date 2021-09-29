@@ -4,7 +4,7 @@
 STM32F407
 ===============
 
-* 关键词：``Cortex-M4`` ``168MHz`` ``FSMC``
+* 关键词：``Cortex-M4`` ``168MHz`` ``FSMC`` ``Ethernet``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32F407>`_
 
 .. contents::

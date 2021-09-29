@@ -16,30 +16,36 @@ SoC 芯
     :maxdepth: 1
 
     热度榜单 <news/hot>
-    方案榜单 <news/hop>
-    全能榜单 <news/top>
-    低端榜单 <news/low>
-    创新榜单 <news/spec>
+    方案榜单 <news/pop>
+    高能榜单 <news/top>
+    白菜榜单 <news/low>
+    创新榜单 <news/sss>
 
 .. list-table::
     :header-rows:  1
 
     * - Rank
-      - 热度榜单
-      - 方案榜单
-      - 全能榜单
-      - 低端榜单
-      - 创新榜单
+      - :ref:`hot`
+      - :ref:`pop`
+      - :ref:`top`
+      - :ref:`low`
+      - :ref:`sss`
     * - No.1
       - :ref:`esp32`
       - :ref:`stm32f103`
-      - :ref:`stm32h750`
+      - :ref:`stm32h730`
       - :ref:`stc8`
       - :ref:`ch579`
     * - No.2
       - :ref:`rp2040`
       - :ref:`esp32`
-      - :ref:`stm32f103`
+      - :ref:`stm32h750`
+      - :ref:`ch552`
+      - :ref:`ch32v208`
+    * - No.3
+      - :ref:`rp2040`
+      - :ref:`esp32`
+      - :ref:`stm32h750`
       - :ref:`ch552`
       - :ref:`ch32v208`
 

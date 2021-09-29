@@ -17,58 +17,8 @@ STMicroelectronics
 .. note::
     意法半导体ST是全球最大的半导体公司之一，是MCU领域的王者，其产品系列丰富，应用广泛。
 
-技术简介
------------
 
-.. _stm32_adc:
-
-ADC
-~~~~~~~~~~~
-
-.. _stm32_dac:
-
-DAC
-~~~~~~~~~~~
-
-
-.. _stm32_art:
-
-ART
-~~~~~~~~~~~
-
-.. _stm32_fmac:
-
-FMAC
-^^^^^^^^^^^
-
-Filter mathematical accelerator
-
-* 16 x 16-bit multiplier
-* 24+2-bit accumulator with addition and subtraction
-* 16-bit input and output data
-* 256 x 16-bit local memory
-* Up to three areas can be defined in memory for data buffers (two input, one output),defined by programmable base address pointers and associated size registers
-* Input and output sample buffers can be circular
-* Buffer “watermark” feature reduces overhead in interrupt mode
-* Filter functions: FIR, IIR (direct form 1)
-* AHB slave interface
-* DMA read and write data channels
-
-
-.. _stm32_dma2d:
-
-DMA2D
-~~~~~~~~~~~
-
-DMA2D首先是一个DMA，DMA能做的内存操作DMA2D肯定是不成问题，其次DMA2D有自己独有的颜色填充（也叫寄存器到存储器）、颜色格式转换、透明度混合（层混合）
-
-* 颜色填充（矩形区域）（寄存器到存储器）
-* 图像（内存）复制（存储器到存储器）
-* 颜色格式转换（如YCbCr转RGB或RGB888转RGB565）
-* 透明度混合（Alpha Blend）
-
-
-产品分类
+产品简介
 -----------
 
 .. list-table::
@@ -208,4 +158,57 @@ DMA2D首先是一个DMA，DMA能做的内存操作DMA2D肯定是不成问题，�
       -
       -
       -
+
+
+
+技术简介
+-----------
+
+.. _stm32_adc:
+
+ADC
+~~~~~~~~~~~
+
+.. _stm32_dac:
+
+DAC
+~~~~~~~~~~~
+
+
+.. _stm32_art:
+
+ART
+~~~~~~~~~~~
+
+.. _stm32_fmac:
+
+FMAC
+^^^^^^^^^^^
+
+Filter mathematical accelerator
+
+* 16 x 16-bit multiplier
+* 24+2-bit accumulator with addition and subtraction
+* 16-bit input and output data
+* 256 x 16-bit local memory
+* Up to three areas can be defined in memory for data buffers (two input, one output),defined by programmable base address pointers and associated size registers
+* Input and output sample buffers can be circular
+* Buffer “watermark” feature reduces overhead in interrupt mode
+* Filter functions: FIR, IIR (direct form 1)
+* AHB slave interface
+* DMA read and write data channels
+
+
+.. _stm32_dma2d:
+
+DMA2D
+~~~~~~~~~~~
+
+DMA2D首先是一个DMA，DMA能做的内存操作DMA2D肯定是不成问题，其次DMA2D有自己独有的颜色填充（也叫寄存器到存储器）、颜色格式转换、透明度混合（层混合）
+
+* 颜色填充（矩形区域）（寄存器到存储器）
+* 图像（内存）复制（存储器到存储器）
+* 颜色格式转换（如YCbCr转RGB或RGB888转RGB565）
+* 透明度混合（Alpha Blend）
+
 

@@ -13,22 +13,9 @@ Espressif
 
 `FQA <https://docs.espressif.com/_/downloads/espressif-esp-faq/zh_CN/latest/pdf/>`_
 
-技术特点
------------
-
-.. contents::
-    :local:
-
-.. _espressif_WiFi:
-
-WiFi
-~~~~~~~~~~~~
-
-
 
 产品简介
 -----------
-
 
 .. toctree::
     :maxdepth: 1
@@ -40,4 +27,65 @@ WiFi
     ESP32-C6 <ESP32-C6>
     ESP32-H2 <ESP32-H2>
 
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - DMIPS
+      - RAM
+      - WiFi
+      - BLE
+      - USB
+      - Ethernet
+    * - :ref:`esp32`
+      - :ref:`xtensa_lx6`
+      - 600 DMIPS
+      - 520 KB
+      - 802.11 b/g/n
+      - BT/BLE v4.2
+      - NO
+      - MAC100
+    * - :ref:`esp32s2`
+      - :ref:`xtensa_lx7`
+      - 600 DMIPS
+      - 512 KB
+      - 802.11 b/g/n
+      - BLE v5.0
+      - USB1.1 OTG
+      - NO
+    * - :ref:`esp32s3`
+      - :ref:`xtensa_lx7`
+      - 600 DMIPS
+      - 512 KB
+      - 802.11 b/g/n
+      - BLE v5.0
+      - USB1.1 OTG
+      - NO
+    * - :ref:`esp32c3`
+      - :ref:`espressif_rv32`
+      - 200 DMIPS
+      - 400 KB
+      - 802.11 b/g/n
+      - BLE v5.0
+      - NO
+      - NO
+
+
+技术简介
+-----------
+
+.. contents::
+    :local:
+
+.. _espressif_WiFi:
+
+WiFi
+~~~~~~~~~~~~
+
+
+.. _espressif_rv32:
+
+RV32IMC
+~~~~~~~~~~~~
 
