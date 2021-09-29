@@ -38,11 +38,10 @@ Xin简介
 
 * :ref:`cortex_m4` 170 MHz
 * 最多3个 :ref:`stm32_canfd`
-* :ref:`stm32_fsmc`
-* 5个超快速12位ADC（4 Msamples/s）
-* 7个12位DAC（15 Msamples/s）
-* 7个超快速比较器（17ns）
-* 6个可编程增益运算放大器 :ref:`stm32_opamp`
+* 2x 12bit ADC（4 Msamples/s）
+* 4x 12bit DAC（15 Msamples/s）
+* 3x :ref:`stm32_fcmp`（17ns）
+* 4x :ref:`stm32_opamp`
 * USB Type-C™和电力传输控制器 :ref:`stm32_ucpd`
 
 芯片架构
@@ -75,22 +74,39 @@ FIR计算
 Xin选择
 -----------
 
+.. contents::
+    :local:
+
 该系列是2012年推出的STM32F3系列的延续，它继承了很多STM32F3的理念和基因，带来更强劲的性能和数模效果。
 
 STM32G4系列最高工作温度可达到125°C，具有更强的抗电气干扰能力，可耐受4kV以上的瞬变电压，增强的可靠性也进一步扩展了其应用范围，特别是一些工业领域。
 
 STM32G4x4系列具有高分辨率定时器和复杂波形生成器，以及事件处理器，这使其特别适合于数字电源应用，如数字开关电源、照明、焊接、太阳能和无线充电等。
 
-竞品分析
-~~~~~~~~~
+品牌对比
+~~~~~~~~~~
 
 STM32G4与STM32F3系列高度兼容，作为后者的升级选项，确保在设计不同性能等级的衍生应用时提供卓越的效率。
+
+系列对比
+~~~~~~~~~~
+
+.. image:: ./images/stm32g4_series.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
 型号对比
 ~~~~~~~~~
 
-.. image:: ./images/en.obn_stm32g4_series_ss2024.jpg
+.. image:: ./images/STM32G431l.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+
 
 开发工具
 ~~~~~~~~~~~
@@ -100,21 +116,33 @@ STM32G4与STM32F3系列高度兼容，作为后者的升级选项，确保在设
 源圈OS-Q通过先验证的方式，集成了更多可信赖资源 `PlatformIO STM32G4 <https://github.com/OS-Q/P216>`_ 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。
 
 
-Xin应用
------------
+硬件平台
+~~~~~~~~~~~
 
-该芯片的开发验证平台比较丰富，性价比不错的如下的: NUCLEO-STM32G431RE
+.. _nucleo_stm32g431:
 
-.. image:: ./images/B_STM32G474.jpg
-    :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.3.22c4235cqh3nCy&id=610087556700&ns=1&abbucket=7
+NUCLEO-STM32G431RE
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+外设使用
+~~~~~~~~~~~
+
+.. contents::
+    :local:
+
+.. _stm32_fcmp:
+
+COMP
+^^^^^^^^^^^^
+
 
 .. _stm32_ucpd:
 
 UCPD
-~~~~~~~~~
+^^^^^^^^^^^^
 
 
-开源项目
+开源生态
 ~~~~~~~~~
 
 如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
@@ -127,9 +155,13 @@ UCPD
 Xin总结
 --------------
 
+.. contents::
+    :local:
 
+能力构建
+~~~~~~~~~~~~~
 
-重点提示
+要点提示
 ~~~~~~~~~~~~~
 
 浮点运算一般需要在运算结果前写上（float）或者标注f，否则一律会被认为双精度，将会大大增加运算时间。
@@ -137,7 +169,7 @@ Xin总结
 除法和开方的运算周期过长，如无必要，尽量不要用，尽量将其转化为运算周期较少的加减乘运算
 
 
-问题收集
+问题整理
 ~~~~~~~~~~~~~
 
 不管选用内部时钟源还是外部晶振，只要配置成170MHz,芯片肯定会复位。经过反复测试验证，发现设置PLL所产生的时钟只有在不高于80MHz时，芯片才能正常运行。
