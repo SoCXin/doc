@@ -122,6 +122,14 @@ STM32G4与STM32F3系列高度兼容，作为后者的升级选项，确保在设
 .. image:: ./images/STM32G431l.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
+
+替换方案
+~~~~~~~~~~
+
+就规格配置而言 :ref:`stm32g431` 规格升级为 :ref:`stm32g474` 后者拥有更多资源数量和更高的配置，特别是 :ref:`stm32_fsmc` 和 :ref:`stm32_hrtim`。
+
+就封装而言，主要差异在LQFP32和LQFP128这两端
+
 Xin应用
 -----------
 

@@ -569,6 +569,21 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-weight: bold;
 }
 
+.nav .nav-qio-tech {
+  background-color: hsl(197, 74%, 46%);
+  font-weight: bold;
+}
+
+.nav .nav-qio-tech:hover {
+  background-color: #12a34a;
+  font-weight: bold;
+}
+
+.nav .nav-qio-tech > a {
+  color: white !important;
+  font-weight: bold;
+}
+
 /* Banners */
 
 /* TOP Banner */
