@@ -4,8 +4,8 @@
 STM32G431
 ===============
 
-* 关键词：``Cortex-M4`` ``170MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``CAN-FD`` ``UCPD`` ``AES256``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32G431>`_
+* 关键词：``Cortex-M4`` ``170MHz`` ``FSMC`` ``CAN-FD`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``CAN-FD`` ``UCPD`` ``AES256``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32G431>`_ , `Gitee <https://gitee.com/socxin/STM32G431>`_
 
 .. contents::
     :local:
@@ -27,25 +27,26 @@ Xin简介
 
 * 供电电压：1.71 to 3.6 V
 * 工作温度：-40°C to +85°C/125°C
-* 封装规格：32 to 100 Pin
 * 处理性能：213 :ref:`DMIPS`, 550 :ref:`CoreMark`
-* 发布时间：2019年5月29日
 * RAM容量：32 KB
 * Flash容量：32/64/128 KB
-
+* 封装规格：32 to 100 Pin
 .. image:: ./images/STM32G431p.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x1/stm32g431kb.html
 
 特征参数
 ^^^^^^^^^^^
 
+* 发布时间：2019年5月29日
 * :ref:`cortex_m4` 170 MHz
 * 最多3个 :ref:`stm32_canfd`
-* 2x 12bit ADC（4 Msamples/s）
-* 4x 12bit DAC（15 Msamples/s）
-* 3x :ref:`stm32_fcmp` （17ns）
+* 2x 12bit ADC (4 MSPS)
+* 4x 12bit DAC (15 MSPS)
+* 3x :ref:`stm32_fcmp` (17ns)
 * 4x :ref:`stm32_opamp`
-* USB Type-C™和电力传输控制器 :ref:`stm32_ucpd`
+* Type-C™和电力传输控制器 :ref:`stm32_ucpd`
+
+
 
 芯片架构
 ~~~~~~~~~~~~
@@ -53,29 +54,30 @@ Xin简介
 .. image:: ./images/STM32G431s.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x1/stm32g431kb.html
 
+通信接口
+^^^^^^^^^^^
+
 .. list-table::
     :header-rows:  1
 
-    * - UART
+    * - USART
       - SPI
       - I2C
-      - USB
-      - CAN
-      - ADC
-      - DAC
-      - Ethernet
-    * -
+      - USB-H
+      - USB-D
+      - OTG-HS
+      - CAN-FD
+    * - 5
+      - 3
       -
       -
       -
       -
-      -
-      -
-      -
+      - 3
 
 .. _stm32g431_calculate:
 
-性能分析
+性能测试
 ~~~~~~~~~~~
 
 计算性能
@@ -171,6 +173,18 @@ COMP
 
 UCPD
 ^^^^^^^^^^^^
+
+
+.. _stm32_canfd:
+
+CAN-FD
+^^^^^^^^^^^
+
+在工厂自动化中， 数据连接是必不可少的， 尤其是在工业4.0概念不断扩大其覆盖范围的今天。
+许多标准被用于支持专门开发的现场总线， 包括经典CAN （Modbus和CANopen）、 RS-485（PROFIBUS、 CC-Link和Modbus）、 以及新的CAN FD和实时以太网。
+
+.. image:: ./images/canfd.png
+    :target: https://www.st.com/zh/applications/connectivity/fieldbus-and-industrial-ethernet.html#overview
 
 
 开源生态

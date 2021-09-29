@@ -30,6 +30,31 @@ ADC
 DAC
 ~~~~~~~~~~~
 
+
+.. _stm32_art:
+
+ART
+~~~~~~~~~~~
+
+.. _stm32_fmac:
+
+FMAC
+^^^^^^^^^^^
+
+Filter mathematical accelerator
+
+* 16 x 16-bit multiplier
+* 24+2-bit accumulator with addition and subtraction
+* 16-bit input and output data
+* 256 x 16-bit local memory
+* Up to three areas can be defined in memory for data buffers (two input, one output),defined by programmable base address pointers and associated size registers
+* Input and output sample buffers can be circular
+* Buffer “watermark” feature reduces overhead in interrupt mode
+* Filter functions: FIR, IIR (direct form 1)
+* AHB slave interface
+* DMA read and write data channels
+
+
 .. _stm32_dma2d:
 
 DMA2D

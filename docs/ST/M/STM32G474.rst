@@ -4,7 +4,7 @@
 STM32G474
 ===============
 
-* 关键词：``Cortex-M4`` ``170MHz`` ``CAN-FD`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
+* 关键词：``Cortex-M4`` ``170MHz`` ``FSMC`` ``CAN-FD`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
 * 工程库：`GitHub <https://github.com/SoCXin/STM32G474>`_ , `Gitee <https://gitee.com/socxin/STM32G474>`_
 
 .. contents::
@@ -19,22 +19,22 @@ Xin简介
 .. contents::
     :local:
 
-规格参数
+规格配置
 ~~~~~~~~~~~
 
-内嵌数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，带有双安全存储区域，ART加速提高Flash读取运行速度。支持FPU和DSP指令，以及3种不同的硬件加速器：ART Accelerator™、CCM-SRAM程序执行加速器、以及数学运算加速器。
+内嵌数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，带有双安全存储区域，ART加速提高Flash读取运行速度。支持FPU和DSP指令，以及3种不同的硬件加速器： :ref:`stm32_art` Accelerator™、CCM-SRAM程序执行加速器、以及数学运算加速器。
+
 
 基本参数
 ^^^^^^^^^^^
 
 * 供电电压：1.71 to 3.6 V
 * 工作温度：-40°C to +85°C/125°C
-* 封装规格：48 to 128 Pin
 * 处理性能：212 :ref:`DMIPS`, 550 :ref:`CoreMark`
 * 发布时间：2019年5月29日
 * RAM容量：128 KB
 * Flash容量：128/256/512 KB
-
+* 封装规格：48 to 128 Pin
 .. image:: ./images/STM32G474p.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x1/stm32g431kb.html
 
@@ -42,14 +42,14 @@ Xin简介
 ^^^^^^^^^^^
 
 * :ref:`cortex_m4` 170 MHz
-* 最多3个 :ref:`stm32_canfd`
 * :ref:`stm32_fsmc`
-* 5个超快速12位ADC（4 Msamples/s）
-* 7个12位DAC（15 Msamples/s）
-* 7个超快速比较器（17ns）
-* 高分辨率定时器 :ref:`stm32_hrtim`
-* 6个可编程增益运算放大器 :ref:`stm32_opamp`
+* 高分辨率定时器 :ref:`stm32_hrtim` (184ps)
+* 5x 12bit ADC (4 MSPS)
+* 7x 12bit DAC (15 MSPS)
+* 7x :ref:`stm32_fcmp` (17ns)
+* 6x :ref:`stm32_opamp`
 * USB Type-C™和电力传输控制器 :ref:`stm32_ucpd`
+* 3x :ref:`stm32_canfd`
 
 
 芯片架构
@@ -70,22 +70,11 @@ HRTIM
     :target: https://st-onlinetraining.s3.amazonaws.com/STM32G4-WDG_TIMERS-High_Resolution_Timer_%28HRTIM%29/index.html
 
 
-.. _stm32_canfd:
-
-CAN-FD
-^^^^^^^^^^^
-
-在工厂自动化中， 数据连接是必不可少的， 尤其是在工业4.0概念不断扩大其覆盖范围的今天。
-许多标准被用于支持专门开发的现场总线， 包括经典CAN （Modbus和CANopen）、 RS-485（PROFIBUS、 CC-Link和Modbus）、 以及新的CAN FD和实时以太网。
-
-.. image:: ./images/canfd.png
-    :target: https://www.st.com/zh/applications/connectivity/fieldbus-and-industrial-ethernet.html#overview
-
 
 性能分析
 ~~~~~~~~~~~
 
- :ref:`stm32g431_calculate`
+内核相关同 :ref:`stm32g431_calculate`
 
 
 Xin选择
