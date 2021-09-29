@@ -4,7 +4,7 @@
 STM32G431
 ===============
 
-* 关键词：``Cortex-M4`` ``170MHz`` ``FSMC`` ``CAN-FD`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``CAN-FD`` ``UCPD`` ``AES256``
+* 关键词：``Cortex-M4`` ``170MHz`` ``CAN-FD`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``CAN-FD`` ``UCPD`` ``AES256``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32G431>`_ , `Gitee <https://gitee.com/socxin/STM32G431>`_
 
 .. contents::
@@ -12,7 +12,6 @@ STM32G431
 
 Xin简介
 -----------
-
 
 .. image:: ./images/stm32g431.jpg
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x1/stm32g431kb.html
@@ -31,6 +30,7 @@ Xin简介
 * RAM容量：32 KB
 * Flash容量：32/64/128 KB
 * 封装规格：32 to 100 Pin
+
 .. image:: ./images/STM32G431p.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x1/stm32g431kb.html
 

@@ -35,6 +35,7 @@ Xin简介
 * RAM容量：128 KB
 * Flash容量：128/256/512 KB
 * 封装规格：48 to 128 Pin
+
 .. image:: ./images/STM32G474p.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x1/stm32g431kb.html
 

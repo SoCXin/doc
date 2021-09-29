@@ -5,9 +5,6 @@ Espressif
 
 ``Xtensa-LX7`` ``Xtensa-LX6`` ``WiFi`` ``BT/BLE``  ``ESP32`` ``ESP8266`` ``Arduino``
 
-.. contents::
-    :local:
-
 公司简介
 -----------
 
