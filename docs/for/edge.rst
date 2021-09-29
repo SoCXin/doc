@@ -1,7 +1,7 @@
 
 .. _edge:
 
-EdgeX
+Edge
 ============
 
 .. toctree::

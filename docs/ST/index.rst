@@ -64,6 +64,8 @@ STMicroelectronics
 
 性能担当
 ~~~~~~~~~~~
+
+
 .. toctree::
     :maxdepth: 1
 
@@ -72,6 +74,13 @@ STMicroelectronics
     高频低功耗 STM32H730 <H/STM32H730>
     双核MCU: STM32H745 <H/STM32H745>
     异构MPU: STM32MP15 <H/STM32MP15>
+
+.. _stm32h7:
+
+STM32H7
+^^^^^^^^^^^^
+.. image:: ./H/images/STM32H7.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
 
 .. list-table::
     :header-rows:  1
@@ -164,20 +173,20 @@ STMicroelectronics
 技术简介
 -----------
 
+AD/DA
+~~~~~~~~~~~
+
 .. _stm32_adc:
 
 ADC
-~~~~~~~~~~~
+^^^^^^^^^^^
 
 .. _stm32_dac:
 
 DAC
-~~~~~~~~~~~
+^^^^^^^^^^^
 
-
-.. _stm32_art:
-
-ART
+DSP
 ~~~~~~~~~~~
 
 .. _stm32_fmac:
@@ -199,10 +208,13 @@ Filter mathematical accelerator
 * DMA read and write data channels
 
 
+GUI
+~~~~~~~~~~~
+
 .. _stm32_dma2d:
 
 DMA2D
-~~~~~~~~~~~
+^^^^^^^^^^^
 
 DMA2D首先是一个DMA，DMA能做的内存操作DMA2D肯定是不成问题，其次DMA2D有自己独有的颜色填充（也叫寄存器到存储器）、颜色格式转换、透明度混合（层混合）
 
@@ -212,3 +224,7 @@ DMA2D首先是一个DMA，DMA能做的内存操作DMA2D肯定是不成问题，�
 * 透明度混合（Alpha Blend）
 
 
+.. _stm32_art:
+
+ART
+^^^^^^^^^^^

@@ -87,9 +87,9 @@ SoC 芯
     * - No.3
       - :ref:`mm32spin`
       - :ref:`tkm32f499`
-      - :ref:`esp32s3`
+      - :ref:`nrf52832`
       -
-      -
+      - :ref:`stm32h7b0`
       -
 
 
