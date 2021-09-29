@@ -57,6 +57,9 @@ Xin选择
 品牌对比
 ~~~~~~~~~~
 
+.. image:: ./images/STM32F103vendor.png
+    :target: https://blog.csdn.net/weixin_34246598/article/details/112651024
+
 兼容替换
 ^^^^^^^^^^
 

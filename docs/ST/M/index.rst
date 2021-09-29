@@ -1,11 +1,8 @@
 
 .. _st_main:
 
-ST主流MCU
+mainstream
 ================
-
-.. contents::
-    :local:
 
 .. image:: images/main.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32-mainstream-mcus.html
@@ -22,7 +19,8 @@ ST主流MCU
     最新型:STM32G431 <STM32G431>
     全兜行:STM32G474 <STM32G474>
 
-
+.. contents::
+    :local:
 
 模拟性能排序
 --------------
