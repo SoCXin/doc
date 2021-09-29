@@ -4,7 +4,7 @@
 STM32G431
 ===============
 
-* 关键词：``Cortex-M4`` ``170MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``AES256``
+* 关键词：``Cortex-M4`` ``170MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``CAN-FD`` ``UCPD`` ``AES256``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32G431>`_
 
 .. contents::
@@ -28,10 +28,13 @@ Xin简介
 * 供电电压：1.71 to 3.6 V
 * 工作温度：-40°C to +85°C/125°C
 * 封装规格：32 to 100 Pin
-* 处理性能：212 :ref:`DMIPS`, 550 :ref:`CoreMark`
+* 处理性能：213 :ref:`DMIPS`, 550 :ref:`CoreMark`
 * 发布时间：2019年5月29日
 * RAM容量：32 KB
 * Flash容量：32/64/128 KB
+
+.. image:: ./images/STM32G431p.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x1/stm32g431kb.html
 
 特征参数
 ^^^^^^^^^^^
@@ -40,7 +43,7 @@ Xin简介
 * 最多3个 :ref:`stm32_canfd`
 * 2x 12bit ADC（4 Msamples/s）
 * 4x 12bit DAC（15 Msamples/s）
-* 3x :ref:`stm32_fcmp`（17ns）
+* 3x :ref:`stm32_fcmp` （17ns）
 * 4x :ref:`stm32_opamp`
 * USB Type-C™和电力传输控制器 :ref:`stm32_ucpd`
 
@@ -50,6 +53,25 @@ Xin简介
 .. image:: ./images/STM32G431s.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x1/stm32g431kb.html
 
+.. list-table::
+    :header-rows:  1
+
+    * - UART
+      - SPI
+      - I2C
+      - USB
+      - CAN
+      - ADC
+      - DAC
+      - Ethernet
+    * -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
 
 .. _stm32g431_calculate:
 
@@ -135,6 +157,7 @@ NUCLEO-STM32G431RE
 COMP
 ^^^^^^^^^^^^
 
+4 x ultra-fast rail-to-rail analog comparators
 
 .. _stm32_ucpd:
 
