@@ -15,11 +15,11 @@ SoC 芯
     :caption: 榜单速览
     :maxdepth: 1
 
-    风靡极客圈高热度Xin <news/hot>
-    拥有很多成熟应用Xin <news/pop>
-    基本上啥都行旗舰Xin <news/top>
-    不能拒绝低价高品Xin <news/low>
-    特立独行封装集成Xin <news/sss>
+    风靡极客圈高热度 <news/hot>
+    拥有很多成熟应用 <news/pop>
+    基本上啥都行旗舰 <news/top>
+    不能拒绝低价高品 <news/low>
+    特立独行封装集成 <news/sss>
 
 .. list-table::
     :header-rows:  1
@@ -53,12 +53,12 @@ SoC 芯
     :caption: 领域速览
     :maxdepth: 1
 
-    电机控制类Xin   <for/foc>
-    人机交互类Xin   <for/hmi>
-    通信连接类Xin   <for/iot>
-    边缘计算类Xin   <for/edge>
-    功耗优化类Xin   <for/ulp>
-    模拟转换类Xin   <for/adc>
+    电机控制类   <for/foc>
+    人机交互类   <for/hmi>
+    通信连接类   <for/iot>
+    边缘计算类   <for/edge>
+    功耗优化类   <for/ulp>
+    模拟转换类   <for/adc>
 
 .. list-table::
     :header-rows:  1
