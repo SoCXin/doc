@@ -19,7 +19,7 @@ SoC 芯
     拥有很多成熟应用Xin <news/pop>
     基本上啥都行旗舰Xin <news/top>
     不能拒绝低价高品Xin <news/low>
-    特立独行硬件集成Xin <news/sss>
+    特立独行封装集成Xin <news/sss>
 
 .. list-table::
     :header-rows:  1
@@ -53,33 +53,45 @@ SoC 芯
     :caption: 领域速览
     :maxdepth: 1
 
-    控制类      <for/m>
-    交互类      <for/u>
-    通信类      <for/iot>
-    计算类      <for/edge>
-    感知类      <for/sensor>
+    电机控制类Xin   <for/foc>
+    人机交互类Xin   <for/hmi>
+    通信连接类Xin   <for/iot>
+    边缘计算类Xin   <for/edge>
+    功耗优化类Xin   <for/ulp>
+    模拟转换类Xin   <for/adc>
 
 .. list-table::
     :header-rows:  1
 
-    * - Rank
-      - 控制类
-      - 交互类
-      - 通信类
-      - 计算类
-      - 感知类
+    * - Classification
+      - :ref:`foc`
+      - :ref:`hmi`
+      - :ref:`iot`
+      - :ref:`edge`
+      - :ref:`ulp`
+      - :ref:`adc`
     * - No.1
-      - :ref:`stm32g474`
+      - :ref:`hc32m120`
       - :ref:`stm32f429`
       - :ref:`esp32`
       - :ref:`k210`
       - :ref:`stm32l011`
+      - :ref:`stm32g474`
     * - No.2
       - :ref:`swm181`
-      - :ref:`esp32`
+      - :ref:`gw1nsr`
       - :ref:`esp32c3`
       - :ref:`v831`
+      - :ref:`stm32l412`
       - :ref:`stm32g431`
+    * - No.3
+      - :ref:`mm32spin`
+      - :ref:`tkm32f499`
+      - :ref:`esp32s3`
+      -
+      -
+      -
+
 
 .. toctree::
     :caption: 内核速览
