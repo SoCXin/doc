@@ -50,7 +50,7 @@ Xin简介
 
 .. _stm32_usb_otg_hs:
 
-USB-OTG HS
+OTG HS
 ^^^^^^^^^^^
 
 
@@ -99,6 +99,22 @@ Xin选择
       -
       - OTG-HS
       - MAC1000/PHY10
+    * - :ref:`gd32f207`
+      - 150
+      -
+      -
+      -
+      -
+      - OTG
+      - MAC100
+
+.. _gd32f207:
+
+GD32F207
+^^^^^^^^^^^
+
+.. image:: ./images/GD32F207.png
+    :target: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m3/performance-line/gd32f207-series/
 
 
 系列对比
@@ -108,7 +124,7 @@ Xin选择
     :header-rows:  1
 
     * - Name
-      - Mark
+      - DMIPS
       - RAM
       - ROM
       - UART
@@ -116,7 +132,7 @@ Xin选择
       - USB
       - Ethernet
     * - :ref:`stm32f207`
-      - 150 DMIPS
+      - 150
       -
       -
       -
@@ -124,7 +140,7 @@ Xin选择
       -  :ref:`stm32_usb_otg_hs`
       - MAC100
     * - :ref:`stm32f407`
-      - 210 DMIPS
+      - 210
       -
       -
       -
@@ -132,7 +148,7 @@ Xin选择
       -
       - MAC100
     * - :ref:`stm32f107`
-      - 90 DMIPS
+      - 90
       -
       -
       -
@@ -157,7 +173,7 @@ STM32F107
     :header-rows:  1
 
     * - Name
-      - Mark
+      - DMIPS
       - RAM
       - ROM
       - UART
@@ -165,7 +181,7 @@ STM32F107
       - USB
       - Ethernet
     * - :ref:`stm32f207`
-      - 150 DMIPS
+      - 150
       -
       -
       -
@@ -173,7 +189,7 @@ STM32F107
       -
       -
     * - :ref:`stm32f205`
-      - 150 DMIPS
+      - 150
       -
       -
       -
