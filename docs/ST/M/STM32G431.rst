@@ -4,8 +4,8 @@
 STM32G431
 ===============
 
-* 关键词：``Cortex-M4`` ``170MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32G474>`_
+* 关键词：``Cortex-M4`` ``170MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``AES256``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32G431>`_
 
 .. contents::
     :local:
@@ -13,33 +13,60 @@ STM32G431
 Xin简介
 -----------
 
+
+.. image:: ./images/stm32g431.jpg
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x1/stm32g431kb.html
+
+规格参数
+~~~~~~~~~~~
+
 :ref:`st` :ref:`cortex_m4` MCU 内嵌了数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，硬件加密使用的是AES-256，带有双安全存储区域，ART加速提高Flash的读取运行速度。
 
-.. image:: ./images/STM32G474.png
-    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x4.html
+基本参数
+^^^^^^^^^^^
 
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40°C to +85°C/125°C
+* 封装规格：32 to 100 Pin
+* 处理性能：212 :ref:`DMIPS`, 550 :ref:`CoreMark`
+* 发布时间：2019年5月29日
+* RAM容量：32 KB
+* Flash容量：32/64/128 KB
 
-关键特性
-~~~~~~~~~~~~~~
+特征参数
+^^^^^^^^^^^
 
+* :ref:`cortex_m4` 170 MHz
+* 最多3个 :ref:`stm32_canfd`
+* :ref:`stm32_fsmc`
 * 5个超快速12位ADC（4 Msamples/s）
 * 7个12位DAC（15 Msamples/s）
 * 7个超快速比较器（17ns）
-* 高分辨率定时器 :ref:`stm32_hrtim`
-* 6个具有可编程增益的运算放大器
-* 最多3个CAN-FD
-* USB Type-C™和电力传输控制器（UCPD）
+* 6个可编程增益运算放大器 :ref:`stm32_opamp`
+* USB Type-C™和电力传输控制器 :ref:`stm32_ucpd`
+
+芯片架构
+~~~~~~~~~~~~
+
+.. image:: ./images/STM32G431s.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x1/stm32g431kb.html
 
 
-内核性能
-~~~~~~~~~~~~~~
+.. _stm32g431_calculate:
 
-**CoreMark** 已成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高意味着性能更高，使用C语言包含列举，数学矩阵操作和状态及CRC等运算法则。
+性能分析
+~~~~~~~~~~~
+
+计算性能
+^^^^^^^^^^^
+
+:ref:`CoreMark` 已成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高意味着性能更高，使用C语言包含列举，数学矩阵操作和状态及CRC等运算法则。
 
 .. image:: ./images/STM32G4CoreMark.png
     :target: https://blog.csdn.net/xiaolaoban0413/article/details/107547516
 
-**浮点运算** (FIR滤波)
+FIR计算
+^^^^^^^^^^^
 
 .. image:: ./images/STM32G4FIR.png
     :target: https://blog.csdn.net/xiaolaoban0413/article/details/107547516

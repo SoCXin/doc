@@ -5,7 +5,7 @@ STM32G474
 ===============
 
 * 关键词：``Cortex-M4`` ``170MHz`` ``CAN-FD`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
-* 工程库：`GitHub <https://github.com/SoCXin/STM32G474>`_  `Gitee <https://github.com/SoCXin/STM32G474>`_
+* 工程库：`GitHub <https://github.com/SoCXin/STM32G474>`_ , `Gitee <https://gitee.com/socxin/STM32G474>`_
 
 .. contents::
     :local:
@@ -19,7 +19,7 @@ Xin简介
 .. contents::
     :local:
 
-规格配置
+规格参数
 ~~~~~~~~~~~
 
 内嵌数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，带有双安全存储区域，ART加速提高Flash读取运行速度。支持FPU和DSP指令，以及3种不同的硬件加速器：ART Accelerator™、CCM-SRAM程序执行加速器、以及数学运算加速器。
@@ -28,9 +28,9 @@ Xin简介
 ^^^^^^^^^^^
 
 * 供电电压：1.71 to 3.6 V
-* 工作温度：-40°C to +85°C/+125°C
+* 工作温度：-40°C to +85°C/125°C
 * 封装规格：48 to 128 Pin
-* 处理性能：550 :ref:`CoreMark`，212 :ref:`DMIPS`
+* 处理性能：212 :ref:`DMIPS`, 550 :ref:`CoreMark`
 * 发布时间：2019年5月29日
 * RAM容量：128 KB
 * Flash容量：128/256/512 KB
@@ -79,19 +79,10 @@ CAN-FD
     :target: https://www.st.com/zh/applications/connectivity/fieldbus-and-industrial-ethernet.html#overview
 
 
+性能分析
+~~~~~~~~~~~
 
-计算性能
-~~~~~~~~~~~~~~
-
-:ref:`CoreMark` 已成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高意味着性能更高，使用C语言包含列举，数学矩阵操作和状态及CRC等运算法则。
-
-.. image:: ./images/STM32G4CoreMark.png
-    :target: https://blog.csdn.net/xiaolaoban0413/article/details/107547516
-
-**浮点运算** (FIR滤波)
-
-.. image:: ./images/STM32G4FIR.png
-    :target: https://blog.csdn.net/xiaolaoban0413/article/details/107547516
+ :ref:`stm32g431_calculate`
 
 
 Xin选择
@@ -161,9 +152,9 @@ STM32G474在STM32G4系列中定位高分辨率，独有复杂波形生成器和�
 .. note::
     STM32G474系列配备的 :ref:`stm32_hrtim` 竞争者还包括前代 STM32F334 和高性能 :ref:`stm32h730` 系列，也就从成本和性能两端限制了该系列的扩展。
 
-版本对比
-~~~~~~~~~~
 
+型号对比
+~~~~~~~~~
 
 .. image:: ./images/STM32G474l.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
