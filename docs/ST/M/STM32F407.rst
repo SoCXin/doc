@@ -4,7 +4,7 @@
 STM32F407
 ===============
 
-* 关键词：``Cortex-M4`` ``168MHz``
+* 关键词：``Cortex-M4`` ``168MHz`` ``FSMC``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32F407>`_
 
 .. contents::
@@ -13,26 +13,35 @@ STM32F407
 Xin简介
 -----------
 
-:ref:`st` :ref:`cortex_m4` MCU 内嵌了数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，硬件加密使用的是AES-256，带有双安全存储区域，ART加速提高Flash的读取运行速度。
+.. image:: ./images/STM32F407.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32f407-417.html
+
+.. contents::
+    :local:
 
 规格参数
 ~~~~~~~~~~~
+
+:ref:`st` :ref:`cortex_m4` MCU 内嵌了数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，硬件加密使用的是AES-256，带有双安全存储区域，ART加速提高Flash的读取运行速度。
 
 基本参数
 ^^^^^^^^^^^
 
 * 供电电压：2.4 to 3.6 V
 * 工作温度：-40 °C to 85 °C
-* 封装规格：LQFP64
-* 处理性能：150 :ref:`DMIPS`
-* RAM容量：64 KB
-* Flash容量：256 KB
+* 封装规格：LQFP100/LQFP144/LQFP176/BGA176
+* 处理性能：210 :ref:`DMIPS`, 566 :ref:`CoreMark`
+* RAM容量：192 KB
+* Flash容量：512/1024 KB
 
 特征参数
 ^^^^^^^^^^^
 
 * :ref:`cortex_m4` 168 MHz
-
+* 2个USB OTG（其中一个支持HS）
+* 2个12位DAC、3个速度为2.4 MSPS或7.2 MSPS（交错模式）的12位ADC
+* 以太网MAC10/100
+* 8~14位并行照相机接口
 
 芯片架构
 ~~~~~~~~~~~
@@ -44,3 +53,22 @@ FSMC
 ^^^^^^^^^^^
 
 STM32的FSMC真是一个万能的总线控制器,不仅可以控制SRAM,NOR FLASH,NAND FLASH,PC Card,还能控制LCD,TFT
+
+
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+硬件平台
+~~~~~~~~~~~
+
+
+开发板
+^^^^^^^^^^^
+
+.. image:: ./images/B_STM32F407.jpg
+    :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.3.22c4235cqh3nCy&id=610087556700&ns=1&abbucket=7

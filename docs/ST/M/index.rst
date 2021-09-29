@@ -7,6 +7,9 @@ ST主流MCU
 .. contents::
     :local:
 
+.. image:: images/main.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32-mainstream-mcus.html
+
 .. toctree::
     :maxdepth: 1
 
