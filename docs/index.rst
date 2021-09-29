@@ -15,11 +15,11 @@ SoC 芯
     :caption: 榜单速览
     :maxdepth: 1
 
-    风靡极客圈高热度 <news/hot>
-    拥有很多成熟应用 <news/pop>
-    基本上啥都行旗舰 <news/top>
-    不能拒绝低价高品 <news/low>
-    特立独行封装集成 <news/sss>
+    极客最爱用资源多 <news/hot>
+    很多著名项目适配 <news/pop>
+    旗舰基本上啥都行 <news/top>
+    不能拒绝低价好货 <news/low>
+    封装集成针对性强 <news/sss>
 
 .. list-table::
     :header-rows:  1

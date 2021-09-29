@@ -108,3 +108,12 @@ USB-PD
     :maxdepth: 1
 
     CS32G020 <../M/CS32G020>
+
+
+.. _trezor:
+
+Trezor Wallet
+---------------
+
+`Trezor Wallet <https://wallet.trezor.io/#/>`_
+
