@@ -165,6 +165,12 @@ Mesh
 BLE
 ~~~~~~~~~~
 
+.. toctree::
+    :maxdepth: 1
+
+    nRF52832 <../M/nRF52832>
+
+
 .. list-table::
     :header-rows:  1
 

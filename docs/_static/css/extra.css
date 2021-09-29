@@ -554,32 +554,47 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-right: 5px;
 }
 
-.nav .nav-pio-tech {
-  background-color: hsl(256, 91%, 56%);
+.nav .nav-soc-b {
+  background-color: hsl(261, 90%, 49%);
   font-weight: bold;
 }
 
-.nav .nav-pio-tech:hover {
-  background-color: #ee6d0b;
+.nav .nav-soc-b:hover {
+  background-color: #3111e9;
   font-weight: bold;
 }
 
-.nav .nav-pio-tech > a {
+.nav .nav-soc-b > a {
   color: white !important;
   font-weight: bold;
 }
 
-.nav .nav-qio-tech {
-  background-color: hsl(197, 74%, 46%);
+.nav .nav-soc-g {
+  background-color: hsl(177, 90%, 53%);
   font-weight: bold;
 }
 
-.nav .nav-qio-tech:hover {
-  background-color: #12a34a;
+.nav .nav-soc-g:hover {
+  background-color: #1ef164;
   font-weight: bold;
 }
 
-.nav .nav-qio-tech > a {
+.nav .nav-soc-g > a {
+  color: white !important;
+  font-weight: bold;
+}
+
+.nav .nav-soc-r {
+  background-color: hsl(345, 74%, 46%);
+  font-weight: bold;
+}
+
+.nav .nav-soc-r:hover {
+  background-color: #a35812;
+  font-weight: bold;
+}
+
+.nav .nav-soc-r > a {
   color: white !important;
   font-weight: bold;
 }

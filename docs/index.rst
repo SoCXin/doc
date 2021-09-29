@@ -15,11 +15,11 @@ SoC 芯
     :caption: 榜单速览
     :maxdepth: 1
 
-    热度榜单 <news/hot>
-    方案榜单 <news/pop>
-    高能榜单 <news/top>
-    白菜榜单 <news/low>
-    创新榜单 <news/sss>
+    风靡极客圈高热度Xin <news/hot>
+    拥有很多成熟应用Xin <news/pop>
+    基本上啥都行旗舰Xin <news/top>
+    不能拒绝低价高品Xin <news/low>
+    特立独行硬件集成Xin <news/sss>
 
 .. list-table::
     :header-rows:  1
@@ -30,24 +30,24 @@ SoC 芯
       - :ref:`top`
       - :ref:`low`
       - :ref:`sss`
-    * - No.1
+    * - Top.1
       - :ref:`esp32`
-      - :ref:`stm32f103`
+      - :ref:`esp32`
       - :ref:`stm32h730`
       - :ref:`stc8`
       - :ref:`ch579`
-    * - No.2
+    * - Top.2
       - :ref:`rp2040`
-      - :ref:`esp32`
+      - :ref:`stm32f103`
       - :ref:`stm32h750`
       - :ref:`ch552`
       - :ref:`ch32v208`
-    * - No.3
-      - :ref:`rp2040`
-      - :ref:`esp32`
-      - :ref:`stm32h750`
-      - :ref:`ch552`
-      - :ref:`ch32v208`
+    * - Top.3
+      - :ref:`stm32f401`
+      - :ref:`nrf52832`
+      - :ref:`stm32h745`
+      - :ref:`ch573`
+      - :ref:`zml165`
 
 .. toctree::
     :caption: 领域速览
