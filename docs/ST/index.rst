@@ -6,9 +6,6 @@ STMicroelectronics
 
 ``MCU`` ``MPU`` ``MEMS``
 
-.. contents::
-    :local:
-
 公司简介
 -----------
 

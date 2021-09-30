@@ -78,6 +78,15 @@ Espressif
 .. contents::
     :local:
 
+.. _esp_idf:
+
+ESP-IDF
+~~~~~~~~~~~
+
+ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 ESP32-C 系列 SoC。它基于 C/C++ 语言提供了一个自给自足的 SDK。
+
+.. image:: ./images/idf.png
+    :target: https://docs.os-q.com/espidf.html
 
 
 通信连接
@@ -87,6 +96,8 @@ Espressif
 
 WiFi
 ^^^^^^^^^^^^^^
+
+802.11 n (2.4 GHz) 速度高达 150 Mbps
 
 .. _esp_ble:
 
@@ -129,8 +140,12 @@ RV32IMC
 QFN56
 ^^^^^^^^^^^^^^
 
-.. _espressif_qfn48:
+.. _esp_qfn48:
 
 QFN48
 ^^^^^^^^^^^^^^
 
+.. image:: ./images/ESP32p5.png
+    :target: https://www.espressif.com/zh-hans/products/socs/ESP32
+.. image:: ./images/ESP32p6.png
+    :target: https://www.espressif.com/zh-hans/products/socs/ESP32
