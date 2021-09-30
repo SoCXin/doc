@@ -4,8 +4,6 @@
 MIPS
 =========
 
-* 资源库：`MIPS <https://github.com/SoCXin/MIPS>`_
-
 .. _tensilica:
 
 Tensilica
