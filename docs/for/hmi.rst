@@ -31,7 +31,6 @@ HMI
       - 599(280MHz)
       - 1.4 MB
       - 1/2 MB
-      -
       - XGA(1024x768)
       - RGB888
       - DMA2D/JPEC

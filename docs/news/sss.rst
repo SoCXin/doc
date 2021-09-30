@@ -10,11 +10,41 @@
 .. contents::
     :local:
 
+.. _eth_phy:
 
-通信相关
+Ethernet
 -------------
 
-.. _eth_phy:
+ETH-PHY Full
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - USB
+      - ETH-PHY
+      - Package
+    * - :ref:`ch563`
+      - :ref:`arm7`
+      - 64KB
+      - 224KB
+      - 480M
+      - 100M
+      - LQFP64M(10x10)
+    * - W7500P
+      - :ref:`cortex_m0`
+      - 32KB
+      - 128KB
+      -
+      - 10M
+      - LQFP64(7x7)
+
+.. hint::
+    在封装内同时集成以太网MAC+PHY，集成以太网phy发热巨大影响芯片稳定性，特别是空间足够的情况下需要慎重考量。
 
 ETH-PHY Tiny
 ~~~~~~~~~~~~~
@@ -28,7 +58,7 @@ ETH-PHY Tiny
       - Flash
       - USB
       - BLE
-      - Ethernet
+      - ETH-PHY
       - Package
     * - :ref:`ch32v208`
       - :ref:`wch_riscv4c`
@@ -47,8 +77,6 @@ ETH-PHY Tiny
       - 10M
       - :ref:`qfn28`
 
-.. hint::
-    在小封装内同时集成以太网MAC+PHY，集成以太网phy发热严重，特别是小芯片存在适用性问题。
 
 .. _qfn28:
 
@@ -58,28 +86,12 @@ QFN28
 .. image:: ./images/QFN28.png
 
 
-ETH-PHY Full
-~~~~~~~~~~~~~
+.. hint::
+    如果在受限的体积内实现以太网功能，QFN28是个不错的选择。
 
-.. list-table::
-    :header-rows:  1
+.. _measure:
 
-    * - Name
-      - Core
-      - RAM
-      - Flash
-      - USB
-      - Ethernet
-      - Package
-    * - :ref:`ch563`
-      - :ref:`arm7`
-      - 64KB
-      - 224KB
-      - 480M
-      - 100M
-      - LQFP64M(10x10)
-
-计量相关
+Measure
 -------------
 
 .. _sigma_delta:
@@ -138,26 +150,3 @@ Sigma-Delta
     :target: https://zhuanlan.zhihu.com/p/22308055
 
 
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Chan
-      - Rate
-      - ENOB
-      - Type
-    * - :ref:`sigma_delta`
-      -
-      -
-      -
-      -
-    * - SAR
-      -
-      -
-      -
-      -
-    * - Pipeline
-      -
-      -
-      -
-      -

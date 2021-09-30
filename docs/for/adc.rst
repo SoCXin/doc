@@ -1,7 +1,7 @@
 
 .. _adc:
 
-ADC
+AD/DA
 ============
 
 .. contents::
@@ -73,6 +73,32 @@ A/D转换
       - 16bit
       - LQFP48
 
+技术对比
+^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Chan
+      - Rate
+      - ENOB
+      - Type
+    * - :ref:`sigma_delta`
+      -
+      -
+      -
+      -
+    * - SAR
+      -
+      -
+      -
+      -
+    * - Pipeline
+      -
+      -
+      -
+      -
 
 .. _dac:
 
