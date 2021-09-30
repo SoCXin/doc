@@ -6,7 +6,7 @@ ESP32-S3
 
 
 * 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``QFN56`` ``WiFi`` ``BLE5.0`` ``USB OTG`` ``TWAI``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32S3>`_ , `Gitee <https://gitee.com/socxin/ESP32S3>`_
+* 代码库：`GitHub <https://github.com/SoCXin/ESP32S3>`_ , `Gitee <https://gitee.com/socxin/ESP32S3>`_
 
 .. contents::
     :local:
@@ -32,19 +32,19 @@ Xin简介
 * 处理性能：600 :ref:`DMIPS`, 1400 :ref:`CoreMark`
 * RAM容量：512 KB
 * ROM容量：384 KB
-* 封装规格：:ref:`espressif_qfn56`
+* 封装规格：:ref:`esp_qfn56`
 
 
 特征参数
 ^^^^^^^^^^^
 
 * 240 MHz :ref:`xtensa_lx7` Dual Core
-* 超低功耗协处理器RISC-V (ULP)
-* Wi-Fi + Bluetooth 5 (LE)
-* USB1.1 OTG
-* TWAI 控制器
+* 超低功耗协处理器 :ref:`esp_ulp`
+* :ref:`esp_wifi`
+* :ref:`esp_ble` v5
+* :ref:`esp_usb`
+* :ref:`esp_twai`
 * 2 × SDIO 主机
-* DMA 5 接收 + 5 发送
 * 44 x GPIO，JTAG 接口
 * 2x 12bit ADC (20ch)
 
@@ -54,9 +54,8 @@ Xin简介
 安全特性
 ~~~~~~~~~~~~~~
 
-内置安全硬件，硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
+内置安全硬件，4096 bit OTP，硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
 
-4096 bit OTP
 
 .. contents::
     :local:
@@ -109,13 +108,13 @@ Xin选择
       - WiFi
       - BLE
       - USB
-      - :ref:`eth_mac`
+      - MAC
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 600 DMIPS
       - 520 KB
       - 802.11 b/g/n
-      - BT/BLE v4.2
+      - BLE v4.2
       - NO
       - 100M
     * - :ref:`esp32s2`

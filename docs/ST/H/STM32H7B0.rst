@@ -75,11 +75,12 @@ Xin选择
 STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.4 MB SRAM：192 KB的TCM RAM（包括64 KB的ITCM RAM和128 KB的DTCM RAM，用于时间关键型程序或数据），1.18 MB的用户SRAM，以及用于在最低功耗模式下保存数据的备份域4 KB SRAM。另外，它提供64至225引脚的BGA和LQFP封装型号。
 
 
-.. image:: ./images/STM32H7.jpg
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
 
 超值系列对比
 ^^^^^^^^^^^^^^
+
+.. image:: ./images/STM32H7x0.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
 
 .. list-table::
     :header-rows:  1

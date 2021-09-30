@@ -26,7 +26,6 @@
       - Flash
       - DMIPS
       - Interface
-      - AD/DA
       - Package
     * - :ref:`stm32h750`
       - :ref:`cortex_m7`
@@ -34,7 +33,6 @@
       - 128KB
       - 1027
       - 35
-      - 7.2MSPS/5MSPS
       - 100/144/176
     * - :ref:`stm32h730`
       - :ref:`cortex_m7`
@@ -42,7 +40,6 @@
       - 128KB
       - 599
       - 35
-      - 7.2MSPS/5MSPS
       - 100/144/176
     * - :ref:`stm32h7b0`
       - :ref:`cortex_m7`
@@ -50,7 +47,6 @@
       - 128KB
       - 599
       - 35
-      - 7.2MSPS/5MSPS
       - 100/144/176
     * - :ref:`stm32h745`
       - :ref:`cortex_m7`
@@ -58,11 +54,9 @@
       - 128KB
       - 1027
       - 35
-      - 7.2MSPS/5MSPS
       - 100/144/176
     * - :ref:`at32f437`
       - :ref:`cortex_m4`
-      -
       -
       -
       -
@@ -74,7 +68,6 @@
       -
       -
       -
-      -
-      - QFN48
+      - :ref:`esp_qfn56`
 
 
