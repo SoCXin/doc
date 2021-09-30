@@ -4,7 +4,7 @@
 ESP32-C3
 ================
 
-* 关键词：``RISC-V`` ``160MHz`` ``RV32IMC`` ``QFN32`` ``BLE5.0`` ``Wi-Fi``
+* 关键词：``RISC-V`` ``160MHz`` ``QFN32`` ``BLE5.0`` ``WiFi``
 * 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_
 
 .. contents::
@@ -216,6 +216,10 @@ LEDC
         }
     }
 
+LCD
+~~~~~~~~~~~
+
+ESP32-C3支持QSPI 适合4.3寸以下，SPI QSPI，MCU（8080）接口的屏。
 
 
 开源方案

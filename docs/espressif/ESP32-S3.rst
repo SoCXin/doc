@@ -5,7 +5,7 @@ ESP32-S3
 ================
 
 
-* 关键词：``Xtensa LX7`` ``240MHz`` ``QFN56`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``TWAI``
+* 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``QFN56`` ``WiFi`` ``BLE5.0`` ``USB OTG`` ``TWAI``
 * 资源池：`GitHub <https://github.com/SoCXin/ESP32S3>`_ , `Gitee <https://gitee.com/socxin/ESP32S3>`_
 
 .. contents::
@@ -29,10 +29,10 @@ Xin简介
 * 发布时间：2020年12月31日
 * 供电电压：2.3 to 3.6 V
 * 工作温度：-40°C to +105°C
-* 处理性能：599 :ref:`DMIPS`, 1414 :ref:`CoreMark`
+* 处理性能：600 :ref:`DMIPS`, 1400 :ref:`CoreMark`
 * RAM容量：512 KB
 * ROM容量：384 KB
-* 封装规格： :ref:`espressif_qfn56`
+* 封装规格：:ref:`espressif_qfn56`
 
 
 特征参数
@@ -48,6 +48,8 @@ Xin简介
 * 44 x GPIO，JTAG 接口
 * 2x 12bit ADC (20ch)
 
+.. hint::
+    2020年12月发布，2021年8月量产供货
 
 安全特性
 ~~~~~~~~~~~~~~
@@ -90,9 +92,6 @@ TEE 模块
 Xin选择
 -----------
 
-本部分明确该芯片的需求匹配度
-
-
 .. contents::
     :local:
 
@@ -110,9 +109,9 @@ Xin选择
       - WiFi
       - BLE
       - USB
-      - MAC
+      - :ref:`eth_mac`
     * - :ref:`esp32`
-      - Dual LX6
+      - :ref:`xtensa_lx6`
       - 600 DMIPS
       - 520 KB
       - 802.11 b/g/n
@@ -120,7 +119,7 @@ Xin选择
       - NO
       - 100M
     * - :ref:`esp32s2`
-      - LX7
+      - :ref:`xtensa_lx7`
       - 300 DMIPS
       - 520 KB
       - 802.11 b/g/n
@@ -128,13 +127,20 @@ Xin选择
       - NO
       - NO
     * - :ref:`esp32s3`
-      - Dual LX7
+      - :ref:`xtensa_lx7`
       - 600 DMIPS
       - 512 KB
       - 802.11 b/g/n
       - BLE v5.0
       - USB1.1 OTG
       - NO
+
+
+Xin应用
+--------------
+
+.. contents::
+    :local:
 
 编译工具
 ~~~~~~~~~
@@ -151,19 +157,6 @@ Arduino
 ^^^^^^^^^^
 
 暂时不支持
-
-.. hint::
-    2020年12月30日发布，2021年8月量产供货
-
-
-Xin应用
---------------
-
-.. contents::
-    :local:
-
-.. image:: ./images/B_ESP32C3.jpg
-    :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
 
 
 LEDC

@@ -10,10 +10,17 @@ IoT
 Ethernet
 -----------
 .. hint::
-    具备以太网通信硬件，至少片上集成以太网MAC。
+    此处收录的具备以太网通信MCU，至少片上集成以太网 :ref:`eth_mac`
 
 .. contents::
     :local:
+
+.. _eth_mac:
+
+ETH-MAC
+~~~~~~~~~~~~~~
+
+ ``MII/RMII``
 
 
 串口通信(下行)
@@ -32,7 +39,7 @@ Ethernet
       - UART
       - CAN
       - USB
-      - MAC
+      - :ref:`eth_mac`
     * - :ref:`stm32f207`
       - 150 DMIPS
       - 8/16

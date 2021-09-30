@@ -12,7 +12,7 @@
 
 .. _eth_phy:
 
-Ethernet
+ETH-PHY
 -------------
 
 ETH-PHY Full
@@ -26,7 +26,7 @@ ETH-PHY Full
       - RAM
       - Flash
       - USB
-      - ETH-PHY
+      - :ref:`eth_phy`
       - Package
     * - :ref:`ch563`
       - :ref:`arm7`
