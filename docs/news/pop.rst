@@ -9,47 +9,6 @@
 .. contents::
     :local:
 
-.. _cmsis_dap:
-
-CMSIS-DAP
--------------
-
-CMSIS(Cortex-M Software Interface Standard)是ARM Cortex-M MCU软件接口标准。DAP(DebugAccess Port) 是调试访问口。
-
-CMSIS-DAP是用于将调试端口连接到USB的调试单元的接口固件。在主机上执行的调试器通过USB连接到调试单元和运行应用程序软甲的设备。调试单元通过JTAG或SW连接到目标设备。
-ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含一个或多个Cortex处理器的目标设备。
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Core
-      - RAM
-      - Flash
-      - UART
-      - GPIO
-      - Special
-      - Package
-    * - :ref:`ch549`
-      - :ref:`mcs51`
-      - 1K
-      - 8K
-      - 2
-      - 18
-      - 10M-PHY
-      - QFN28/48
-    * - :ref:`ch552`
-      - :ref:`mcs51`
-      - 1K
-      - 8K
-      - 2
-      - 18
-      - 10M-PHY
-      - QFN28/48
-
-
-.. hint::
-    基于 :ref:`ch552` 芯片的方案应该是成本最低的 :ref:`ch552_dap` 实现。
 
 .. _marlin_3d:
 
@@ -109,6 +68,48 @@ USB-PD
 
     CS32G020 <../M/CS32G020>
 
+.. _cmsis_dap:
+
+CMSIS-DAP
+-------------
+
+* CMSIS(Cortex-M Software Interface Standard)是ARM Cortex-M MCU软件接口标准。
+* DAP(DebugAccess Port) 是调试访问口。
+
+CMSIS-DAP是用于将调试端口连接到USB的调试单元的接口固件。在主机上执行的调试器通过USB连接到调试单元和运行应用程序软甲的设备。调试单元通过JTAG或SW连接到目标设备。
+ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含一个或多个Cortex处理器的目标设备。
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - Special
+      - Package
+    * - :ref:`ch549`
+      - :ref:`mcs51`
+      - 1K
+      - 8K
+      - 2
+      - 18
+      - 10M-PHY
+      - QFN28/48
+    * - :ref:`ch552`
+      - :ref:`mcs51`
+      - 1K
+      - 8K
+      - 2
+      - 18
+      - 10M-PHY
+      - QFN16/TSSOP20
+
+
+.. hint::
+    基于 :ref:`ch552` 芯片应该是当下成本最低的 :ref:`ch552_dap` 实现方案，并且通过小封装可以获得更小的体积
 
 .. _trezor:
 

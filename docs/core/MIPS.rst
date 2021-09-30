@@ -4,7 +4,7 @@
 MIPS
 =========
 
-`MIPS <https://github.com/SoCXin/MIPS>`_
+* `MIPS <https://github.com/SoCXin/MIPS>`_
 
 .. _tensilica:
 
@@ -23,7 +23,7 @@ Tensilica 公司的 Xtensa 处理器是一个可以自由装组、可以弹性�
 Xtensa LX7
 ~~~~~~~~~~~~~
 
-`Xtensa LX <https://www.cadence.com/zh_CN/home/tools/ip/tensilica-ip/tensilica-xtensa-controllers-and-extensible-processors/xtensa-lx-processor-platform.html>`_
+关于 `Xtensa LX <https://www.cadence.com/zh_CN/home/tools/ip/tensilica-ip/tensilica-xtensa-controllers-and-extensible-processors/xtensa-lx-processor-platform.html>`_
 
 .. image:: images/XtensaLX7.png
     :target: https://www.pianshen.com/article/64631295742/
