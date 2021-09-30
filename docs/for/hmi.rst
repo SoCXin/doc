@@ -7,7 +7,7 @@ HMI
 .. contents::
     :local:
 
-芯片平台
+嵌入平台
 -----------
 
 .. toctree::
@@ -24,7 +24,6 @@ HMI
       - DMIPS
       - RAM
       - Flash
-      - touch
       - reslution
       - interface
       - accelerator
@@ -40,7 +39,6 @@ HMI
       - 225(180MHz)
       - 8 MB
       - 16 MB
-      -
       - XGA(1024x768)
       - RGB888
       - DMA2D/JPEC
@@ -48,7 +46,6 @@ HMI
       - 300(240MHz)
       - 8MB
       - 8MB(QSPI)
-      - yes
       - 1024x600
       - RGB888/TK80
       - :ref:`tk_ltdc`
@@ -56,15 +53,13 @@ HMI
       - 150(120MHz)
       - 512 KB
       - 512 KB
-      -
       - WVGA(800x480)
       - RGB565
       - No
-    * - :ref:`esp32`
+    * - :ref:`esp32s3`
       - 600(240MHz)
       - 8 MB
       - 4 MB
-      -
       - WVGA(800x480)
       - SPI
       - No
@@ -72,7 +67,6 @@ HMI
       - 75(60MHz)
       - 24 KB
       - 32 KB
-      -
       - XGA(1024x768)
       - :ref:`hdmi`
       - No
@@ -83,11 +77,13 @@ HMI
 图形框架
 -----------
 
+.. contents::
+    :local:
 
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - Mark
       - :ref:`touchgfx`
       - :ref:`littlevgl`
       - :ref:`emwin`
@@ -95,33 +91,32 @@ HMI
       - :ref:`μgfx`
       - :ref:`awtk`
       - :ref:`qt`
-    * - :ref:`esp32`
+    * - 1
+      - :ref:`esp32`
+      - yes
+      - :ref:`tkm32f499`
       -
       - yes
       -
       -
+    * - 2
+      - :ref:`stm32f429`
       - yes
-      -
-      -
-    * - :ref:`stm32f429`
-      - yes
-      - yes
-      - yes
+      - :ref:`tkm32f499`
       -
       -
       -
       -
-    * - :ref:`tkm32f499`
-      - yes
-      - yes
-      - yes
+    * - 3
+      - :ref:`tkm32f499`
+      -
+      - :ref:`tkm32f499`
       -
       -
       -
       -
 
-.. contents::
-    :local:
+
 
 
 .. _touchgfx:

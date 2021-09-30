@@ -6,7 +6,7 @@ ESP32-S3
 
 
 * 关键词：``Xtensa LX7`` ``240MHz`` ``QFN56`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``TWAI``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32S3>`_
+* 资源池：`GitHub <https://github.com/SoCXin/ESP32S3>`_ , `Gitee <https://gitee.com/socxin/ESP32S3>`_
 
 .. contents::
     :local:
@@ -17,12 +17,28 @@ Xin简介
 .. image:: ./images/ESP32S3.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32-S3
 
+.. contents::
+    :local:
 
-关键特性
-~~~~~~~~~~~~~
+规格配置
+~~~~~~~~~~~
 
-* Xtensa® LX7 Dual Core 240 MHz
-* 512 KB SRAM (TCM)，384 KB ROM
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2020年12月31日
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40°C to +85°C/125°C
+* 处理性能：599 :ref:`DMIPS`, 1414 :ref:`CoreMark`
+* RAM容量：512 KB
+* ROM容量：384 KB
+* 封装规格： :ref:`espressif_qfn48`
+
+
+特征参数
+^^^^^^^^^^^
+
+* 240 MHz :ref:`xtensa_lx7` Dual Core
 * Wi-Fi + Bluetooth 5 (LE)
 * USB1.1 OTG
 * TWAI 控制器

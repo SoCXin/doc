@@ -89,3 +89,8 @@ WiFi
 RV32IMC
 ~~~~~~~~~~~~
 
+.. _espressif_qfn48:
+
+QFN48
+~~~~~~~~~~~~
+
