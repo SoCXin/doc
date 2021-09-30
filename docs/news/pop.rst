@@ -76,7 +76,7 @@ CMSIS-DAP
 * CMSIS(Cortex-M Software Interface Standard)是ARM Cortex-M MCU软件接口标准。
 * DAP(DebugAccess Port) 是调试访问口。
 
-CMSIS-DAP是用于将调试端口连接到USB的调试单元的接口固件。在主机上执行的调试器通过USB连接到调试单元和运行应用程序软甲的设备。调试单元通过JTAG或SW连接到目标设备。
+`CMSIS-DAP <https://github.com/ARMmbed/DAPLink>`_ 是用于将调试端口连接到USB的调试单元的接口固件。在主机上执行的调试器通过USB连接到调试单元和运行应用程序软甲的设备。调试单元通过JTAG或SW连接到目标设备。
 ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含一个或多个Cortex处理器的目标设备。
 
 .. list-table::
@@ -88,7 +88,6 @@ ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含�
       - Flash
       - UART
       - GPIO
-      - Special
       - Package
     * - :ref:`ch549`
       - :ref:`mcs51`
@@ -96,7 +95,6 @@ ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含�
       - 8K
       - 2
       - 18
-      - 10M-PHY
       - QFN28/48
     * - :ref:`ch552`
       - :ref:`mcs51`
@@ -104,7 +102,6 @@ ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含�
       - 8K
       - 2
       - 18
-      - 10M-PHY
       - QFN16/TSSOP20
 
 
