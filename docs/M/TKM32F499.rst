@@ -27,11 +27,11 @@ Xin简介
 ^^^^^^^^^^^
 
 * 供电电压：2.0 to 3.6 V
-* 工作温度：40°C to +85°C
-* 封装规格：LQFP128(0.4mm pitch)
+* 工作温度：-40°C to +85°C/125°C
 * 处理性能：300 :ref:`DMIPS`
 * RAM容量：8MB
 * Flash容量：8MB QSPI FLASH
+* 封装规格：LQFP128(0.4mm pitch)
 
 .. note::
     :ref:`tkm32f499` 是0.4 pitch的LQFP128，体积跟0.5 pitch的LQFP100一样。
@@ -76,6 +76,8 @@ TK80接口
 * CS_n 支持硬件自动生成和软件生成两种方式
 * 支持读传输完成和写传输完成中断
 * 双向口半双工数据传输
+
+.. _tk_ltdc:
 
 LCD-TFT
 ^^^^^^^^^^^
