@@ -37,39 +37,39 @@ Espressif
       - WiFi
       - BLE
       - USB
-      - Ethernet
+      - MAC
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 600 DMIPS
       - 520 KB
       - 802.11 b/g/n
-      - BT/BLE v4.2
-      - NO
+      - :ref:`esp_ble` v4.2
+      -
       - MAC100
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 600 DMIPS
       - 512 KB
       - 802.11 b/g/n
-      - BLE v5.0
-      - USB1.1 OTG
-      - NO
+      - :ref:`esp_ble` v5.0
+      - :ref:`esp_usb`
+      -
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 600 DMIPS
       - 512 KB
       - 802.11 b/g/n
-      - BLE v5.0
-      - USB1.1 OTG
-      - NO
+      - :ref:`esp_ble` v5.0
+      - :ref:`esp_usb`
+      -
     * - :ref:`esp32c3`
       - :ref:`espressif_rv32`
       - 200 DMIPS
       - 400 KB
       - 802.11 b/g/n
-      - BLE v5.0
-      - NO
-      - NO
+      - :ref:`esp_ble` v5.0
+      -
+      -
 
 
 技术简介
@@ -140,12 +140,24 @@ RV32IMC
 QFN56
 ^^^^^^^^^^^^^^
 
+主要是 :ref:`esp32s3` 使用
+
 .. _esp_qfn48:
 
 QFN48
 ^^^^^^^^^^^^^^
 
+主要是 :ref:`esp32` 使用
+
 .. image:: ./images/ESP32p5.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32
 .. image:: ./images/ESP32p6.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32
+
+.. _esp_qfn32:
+
+QFN32
+^^^^^^^^^^^^^^
+
+主要是 :ref:`esp32c3` 使用
+
