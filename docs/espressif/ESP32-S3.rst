@@ -27,31 +27,34 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2020年12月31日
-* 供电电压：1.71 to 3.6 V
-* 工作温度：-40°C to +85°C/125°C
+* 供电电压：2.3 to 3.6 V
+* 工作温度：-40°C to +105°C
 * 处理性能：599 :ref:`DMIPS`, 1414 :ref:`CoreMark`
 * RAM容量：512 KB
 * ROM容量：384 KB
-* 封装规格： :ref:`espressif_qfn48`
+* 封装规格： :ref:`espressif_qfn56`
 
 
 特征参数
 ^^^^^^^^^^^
 
 * 240 MHz :ref:`xtensa_lx7` Dual Core
+* 超低功耗协处理器RISC-V (ULP)
 * Wi-Fi + Bluetooth 5 (LE)
 * USB1.1 OTG
 * TWAI 控制器
 * 2 × SDIO 主机
 * DMA 5 接收 + 5 发送
 * 44 x GPIO，JTAG 接口
-* 超低功耗协处理器RISC-V (ULP)
+* 2x 12bit ADC (20ch)
 
 
 安全特性
 ~~~~~~~~~~~~~~
 
 内置安全硬件，硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
+
+4096 bit OTP
 
 .. contents::
     :local:
