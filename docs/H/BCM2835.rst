@@ -4,7 +4,7 @@
 BCM2835
 =============
 
-* 关键词：``Raspberry Pi`` ``1GHz`` ``ARM11``
+* 关键词：``Raspberry Pi`` ``ARM1176JZF`` ``700MHz``
 * 资源库：`GitHub <https://github.com/SoCXin/BCM2835>`_
 
 .. contents::
@@ -15,6 +15,8 @@ Xin简介
 
 Xin选择
 -----------
+
+.. image:: ./images/rpi.png
 
 
 Xin应用

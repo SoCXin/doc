@@ -134,7 +134,9 @@ ARM926EJ-S
 ARM11
 ~~~~~~~~~~~~~~
 
-指令集ARMv6，8级流水线，1.25DMIPS/MHz
+.. hint::
+    指令集ARMv6，8级流水线，1.25DMIPS/MHz
+
 
 .. list-table::
     :header-rows:  1
@@ -147,7 +149,7 @@ ARM11
       - Process
       - Package
     * - :ref:`bcm2835`
-      - :ref:`arm11`
+      - :ref:`arm1176jz`
       - 1.0 GHz
       -
       -
@@ -155,6 +157,12 @@ ARM11
       -
 
 
+.. _arm1176jz:
+
+ARM1176JZF-S
+^^^^^^^^^^^^^
+
+共有40个32位寄存器，其中有33个通用寄存器，7个状态寄存器，其中R0-R12用于作为通用寄存器使用，用于存储数据或者数据的地址。R13,R14,R15有特殊用途
 
 
 .. _armv7:
