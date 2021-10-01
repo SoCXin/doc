@@ -4,7 +4,7 @@
 SP7021
 =============
 
-* 关键词：``Cortex-A7`` ``1GHz`` ``ARM926EJS`` ``8051``  ``LQFP176``
+* 关键词：``Cortex-A7`` ``Quad Core`` ``1GHz`` ``ARM926EJS`` ``8051``  ``LQFP176``
 * 资源库：`GitHub <https://github.com/SoCXin/SP7021>`_
 
 .. contents::
@@ -26,29 +26,28 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 发布时间：2019年5月
 * 供电电压：1.71 to 3.6 V
-* 工作温度：-40°C to +85°C/125°C
+* 工作温度：-40°C to +85°C
 * 处理性能：599 :ref:`DMIPS`, 1414 :ref:`CoreMark`
-* RAM容量：128 KB
-* Flash容量：128/256/512 KB
-* 封装规格：64 to 176 Pin
+* RAM容量：128/512 MB
+* 封装规格：LQFP176-EP(20mmX20mm)
 
-.. image:: ./images/STM32H7B0p.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html
+.. note::
+    Embedded 128MB(SP7021-IS)/512MB(SP7021-IF) DDR3 1066 DRAM
+
 
 特征参数
 ^^^^^^^^^^^
 
-* 960 MHz :ref:`cortex_a7`
+* 960 MHz :ref:`cortex_a7` Quad core
 * 202 MHz :ref:`arm926ejs`
-
+* 8051 Core Selectable 32KHz or 202MHz operating speed
+* Two IEEE 802.3 10/100M ports with RMII interface
+* HDMI TX 1.4, resolution up to 720P
 
 芯片架构
 ~~~~~~~~~~~~
 
-.. image:: ./images/STM32H7B0s.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html
 
 Xin选择
 -----------
