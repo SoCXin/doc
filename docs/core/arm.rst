@@ -17,9 +17,6 @@ Architecture
 
     AMBA <amba>
 
-Von Neumann
-~~~~~~~~~~~~~~
-
 架构演化
 ~~~~~~~~~~~~~~
 
@@ -28,6 +25,10 @@ Von Neumann
 
 .. note::
     ARM公司在经典处理器ARM11以后的产品改用Cortex命名，并分成A、R和M三类，旨在为各种不同的市场提供服务。Cortex系列属于ARMv7架构，这是2010年止ARM公司最新的指令集架构。
+
+
+Von Neumann
+~~~~~~~~~~~~~~
 
 
 ARMv6
@@ -47,6 +48,27 @@ ARM9
 
 ARM11
 ~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - Freq
+      - RAM
+      - Flash
+      - Process
+      - Package
+    * - :ref:`bcm2835`
+      - :ref:`arm11`
+      - 1.0 GHz
+      -
+      -
+      -
+      -
+
+
+
 
 .. _armv7:
 
@@ -166,6 +188,7 @@ Cortex-A
 
 Cortex-A7
 ^^^^^^^^^^^^^
+
 A内核对比
 ^^^^^^^^^^^^^
 

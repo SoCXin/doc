@@ -9,6 +9,8 @@
 
     K210 <../H/K210>
     V831 <../H/V831>
+    BCM2835 <../H/BCM2835>
+    BCM2711 <../H/BCM2711>
 
 .. list-table::
     :header-rows:  1
@@ -41,4 +43,11 @@
       -
       - TSMC 28nm
       - QFN88
+    * - :ref:`bcm2835`
+      - :ref:`arm11`
+      - 1.0 GHz
+      - 64MB DDR2
+      -
+      -
+      -
 
