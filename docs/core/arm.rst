@@ -17,14 +17,6 @@ Architecture
 
     AMBA <amba>
 
-架构演化
-~~~~~~~~~~~~~~
-
-.. image:: ./images/arm.png
-    :target: https://developer.arm.com/ip-products/processors
-
-.. note::
-    ARM公司在经典处理器ARM11以后的产品改用Cortex命名，并分成A、R和M三类，旨在为各种不同的市场提供服务。Cortex系列属于ARMv7架构，这是2010年止ARM公司最新的指令集架构。
 
 
 Von Neumann
@@ -51,6 +43,10 @@ Harvard
 
 Classic
 -------------
+
+.. image:: ./images/arm.png
+    :target: https://developer.arm.com/ip-products/processors
+
 
 ARMv4：ARM7TDMI、ARM720T、ARM9TDMI、ARM940T、ARM920T、Intel的StrongARM等。
 
@@ -169,6 +165,12 @@ ARM11
 ARMv7
 -------------
 
+.. contents::
+    :local:
+
+.. note::
+    ARM公司在经典处理器ARM11以后的产品改用Cortex命名，并分成A、R和M三类，旨在为各种不同的市场提供服务。Cortex系列属于ARMv7架构，这是2010年止ARM公司最新的指令集架构。
+
 
 ARMv7架构定义了三大分工明确的系列：
 
@@ -195,8 +197,6 @@ Cortex-M
     cortexM33
     cortexM7
 
-M内核对比
-^^^^^^^^^^^^^
 
 .. list-table::
     :header-rows:  1

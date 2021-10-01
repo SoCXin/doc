@@ -4,7 +4,7 @@
 SP7021
 =============
 
-* 关键词：``Cortex-A7`` ``Quad Core`` ``1GHz`` ``ARM926EJS`` ``8051``  ``LQFP176``
+* 关键词：``Cortex-A7`` ``Quad Core`` ``1GHz`` ``ARM926EJS`` ``8051``  ``SunPlus`` ``BPI-F2S``  ``LQFP176``
 * 资源库：`GitHub <https://github.com/SoCXin/SP7021>`_
 
 .. contents::
@@ -33,7 +33,7 @@ Xin简介
 * 封装规格：LQFP176-EP(20mmX20mm)
 
 .. note::
-    Embedded 128MB(SP7021-IS)/512MB(SP7021-IF) DDR3 1066 DRAM
+    Embedded 1066MHz DDR3 DRAM: 128MB(SP7021-IS)/ 512MB(SP7021-IF)
 
 
 特征参数
@@ -48,6 +48,8 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~~
 
+.. image:: ./images/SP7021s.png
+    :target: https://w3.sunplus.com/products/SP7021.asp
 
 Xin选择
 -----------
@@ -55,6 +57,18 @@ Xin选择
 
 Xin应用
 -----------
+
+硬件平台
+~~~~~~~~~~~
+
+.. _BPI_F2S:
+
+BPI-F2S
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: ./images/BPI-F2S.png
+    :target: https://wiki.banana-pi.org/Banana_Pi_BPI-F2S
+
 
 
 Xin总结
