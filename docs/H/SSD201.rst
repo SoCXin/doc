@@ -1,0 +1,29 @@
+
+.. _ssd201:
+
+SSD201
+=============
+
+* 关键词：``SigmaStar`` ``1.2GHz`` ``Cortex-A7``
+* 资源库：`GitHub <https://github.com/SoCXin/SSD201>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+SigmaStar公司的一颗高度集成的嵌入式SOC芯片。它基于arm Cortex-A7双核1.2GHz，集成了硬件H.264/H.265视频解码器、内置了DDR，内置2D图形引擎、支持TTL/mipi屏显示驱动接口内置了以太网mac和PHY等。
+
+Xin选择
+-----------
+
+
+Xin应用
+-----------
+
+
+Xin总结
+-----------
+
+

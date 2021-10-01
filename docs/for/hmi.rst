@@ -197,3 +197,7 @@ VGA
 
 HDMI
 ~~~~~~~~~~~
+
+.. image:: ./images/HDMI.png
+    :target: http://www.360doc.com/content/18/0130/07/34657313_726310561.shtml
+
