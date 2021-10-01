@@ -4,8 +4,8 @@
 STM32G474
 ===============
 
-* 关键词：``Cortex-M4`` ``170MHz`` ``CAN-FD`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
-* 工程库：`GitHub <https://github.com/SoCXin/STM32G474>`_  `Gitee <https://github.com/SoCXin/STM32G474>`_
+* 关键词：``Cortex-M4`` ``170MHz`` ``FSMC`` ``CAN-FD`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
+* 工程库：`GitHub <https://github.com/SoCXin/STM32G474>`_ , `Gitee <https://gitee.com/socxin/STM32G474>`_
 
 .. contents::
     :local:
@@ -22,31 +22,35 @@ Xin简介
 规格配置
 ~~~~~~~~~~~
 
-内嵌数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，带有双安全存储区域，ART加速提高Flash读取运行速度。支持FPU和DSP指令，以及3种不同的硬件加速器：ART Accelerator™、CCM-SRAM程序执行加速器、以及数学运算加速器。
+内嵌数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，带有双安全存储区域，ART加速提高Flash读取运行速度。支持FPU和DSP指令，以及3种不同的硬件加速器： :ref:`stm32_art` Accelerator™、CCM-SRAM程序执行加速器、以及数学运算加速器。
+
 
 基本参数
 ^^^^^^^^^^^
 
+* 发布时间：2019年5月
 * 供电电压：1.71 to 3.6 V
-* 工作温度：-40°C to +85°C/+125°C
-* 封装规格：48 to 128 Pin
-* 处理性能：550 :ref:`CoreMark`，212 :ref:`DMIPS`
-* 发布时间：2019年5月29日
+* 工作温度：-40°C to +85°C/125°C
+* 处理性能：212 :ref:`DMIPS`, 550 :ref:`CoreMark`
 * RAM容量：128 KB
 * Flash容量：128/256/512 KB
+* 封装规格：48 to 128 Pin
+
+.. image:: ./images/STM32G474p.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x1/stm32g431kb.html
 
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`cortex_m4` 170 MHz
-* 最多3个 :ref:`stm32_canfd`
+* 170 MHz :ref:`cortex_m4`
 * :ref:`stm32_fsmc`
-* 5个超快速12位ADC（4 Msamples/s）
-* 7个12位DAC（15 Msamples/s）
-* 7个超快速比较器（17ns）
-* 高分辨率定时器 :ref:`stm32_hrtim`
-* 6个可编程增益运算放大器 :ref:`stm32_opamp`
+* 高分辨率定时器 :ref:`stm32_hrtim` (184ps)
+* 5x 12bit ADC (4 MSPS)
+* 7x 12bit DAC (15 MSPS)
+* 7x :ref:`stm32_fcmp` (17ns)
+* 6x :ref:`stm32_opamp`
 * USB Type-C™和电力传输控制器 :ref:`stm32_ucpd`
+* 3x :ref:`stm32_canfd`
 
 
 芯片架构
@@ -67,31 +71,11 @@ HRTIM
     :target: https://st-onlinetraining.s3.amazonaws.com/STM32G4-WDG_TIMERS-High_Resolution_Timer_%28HRTIM%29/index.html
 
 
-.. _stm32_canfd:
 
-CAN-FD
-^^^^^^^^^^^
+性能分析
+~~~~~~~~~~~
 
-在工厂自动化中， 数据连接是必不可少的， 尤其是在工业4.0概念不断扩大其覆盖范围的今天。
-许多标准被用于支持专门开发的现场总线， 包括经典CAN （Modbus和CANopen）、 RS-485（PROFIBUS、 CC-Link和Modbus）、 以及新的CAN FD和实时以太网。
-
-.. image:: ./images/canfd.png
-    :target: https://www.st.com/zh/applications/connectivity/fieldbus-and-industrial-ethernet.html#overview
-
-
-
-计算性能
-~~~~~~~~~~~~~~
-
-:ref:`CoreMark` 已成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高意味着性能更高，使用C语言包含列举，数学矩阵操作和状态及CRC等运算法则。
-
-.. image:: ./images/STM32G4CoreMark.png
-    :target: https://blog.csdn.net/xiaolaoban0413/article/details/107547516
-
-**浮点运算** (FIR滤波)
-
-.. image:: ./images/STM32G4FIR.png
-    :target: https://blog.csdn.net/xiaolaoban0413/article/details/107547516
+内核相关性能同 :ref:`stm32g431` :ref:`stm32g431_calculate`
 
 
 Xin选择
@@ -117,7 +101,7 @@ STM32G4x4系列具有高分辨率定时器和复杂波形生成器，以及事�
 
 STM32G4与STM32F3系列高度兼容，作为后者的升级选项，确保在设计不同性能等级的衍生应用时提供卓越的效率。
 
-.. image:: ./images/en.obn_stm32g4_series_ss2024.jpg
+.. image:: ./images/stm32g4_series.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
 STM32G474在STM32G4系列中定位高分辨率，独有复杂波形生成器和事件处理器HRTIM，该功能继承自STM32F334，除该功能外，在G4系列中可选STM32G473系列，如果没有FSMC需求且对模拟外设数量要求不多，可选更高性价比的 :ref:`stm32g431`
@@ -161,15 +145,22 @@ STM32G474在STM32G4系列中定位高分辨率，独有复杂波形生成器和�
 .. note::
     STM32G474系列配备的 :ref:`stm32_hrtim` 竞争者还包括前代 STM32F334 和高性能 :ref:`stm32h730` 系列，也就从成本和性能两端限制了该系列的扩展。
 
-版本对比
-~~~~~~~~~~
 
+型号对比
+~~~~~~~~~
 
 .. image:: ./images/STM32G474l.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
 .. note::
     STM32G474、STM32G484型号共有24种封装规格，全系标配128KB RAM，存储器范围为128KB到512 KB，封装为48到128引脚。
+
+
+必选推介
+~~~~~~~~~~
+
+就规格配置而言，:ref:`stm32g474` 降配方案为 :ref:`stm32g431` , 后者的相应资源数量更少，封装和存储规格也更小，特别是LQFP32的封装是其独有的。
+
 
 Xin应用
 -----------

@@ -3,8 +3,8 @@
 ESP32
 ===============
 
-* 关键词：``Xtensa LX6`` ``600DMIPS`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``100M MAC`` ``IEEE 1588`` ``MII/RMII``  ``TSMC40``
-* 资源库：`GitHub <https://github.com/SoCXin/ESP32>`_
+* 关键词：``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``  ``TSMC40``
+* 资源库：`GitHub <https://github.com/SoCXin/ESP32>`_ , `Gitee <https://gitee.com/socxin/ESP32>`_
 
 .. contents::
     :local:
@@ -12,38 +12,45 @@ ESP32
 Xin简介
 -----------
 
-
 .. image:: ./images/ESP32.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32
 
-规格参数
+规格配置
 ~~~~~~~~~~~
 
-:ref:`espressif` :ref:`xtensa_lx6` Dual Core WiFi & BT SoC
 
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：1.71 to 3.6 V
-* 工作温度：-40 °C to 85/125 °C
-* 封装规格：QFN48 (6x6mm)
+* 发布时间：2016年9月
+* 供电电压：2.3 to 3.6 V
+* 工作温度：-40°C to +105°C
 * 处理性能：600 :ref:`DMIPS`
-* RAM容量：520 KB
-* Flash容量：448 KB
+* RAM容量：520 KB (8 MB SPI)
+* ROM容量：448 KB (16 MB SPI)
+* 封装规格：:ref:`esp_qfn48`
+
 
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`xtensa_lx6` 240 MHz
-* WiFi 1T1R 802.11 b/g/n，150 Mbps
-* BLE/BR/EDR v4.2 +12 dBm，–97dBm
-* TWAI 控制器
-* Host SD/eMMC/SDIO、Slave SDIO/SPI
+* 240 MHz :ref:`xtensa_lx6` Dual Core
+* 超低功耗协处理器 :ref:`esp_ulp`
+* 1T1R 802.11 b/g/n :ref:`esp_wifi`
+*  +12 dBm，–97dBm :ref:`esp_ble` v4.2
+* :ref:`esp_twai`
 * IEEE 1588 MAC,100 Mbps
+* Host SD/eMMC/SDIO、Slave SDIO/SPI
 * 硬件加密单元AES/RSA/ECC
 * 霍尔传感器
 * 12-bit SAR ADC 18ch
 * 2 x 8-bit DAC
+* `ESP-IDF <https://github.com/espressif/esp-idf>`_
+
+`datasheet <https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf>`_
+
+
+
 
 Xin选择
 -----------
@@ -51,33 +58,69 @@ Xin选择
 .. contents::
     :local:
 
-.. hint::
-    :ref:`esp32` 发布于2016年9月，是物联网领域的一名老将
 
 品牌对比
 ~~~~~~~~~
 
+对标的对手包括 Realtek 和 :ref:`mediatek`
+
+系列对比
+~~~~~~~~~
+
+相对较早的产品ESP8266，具有更强的性能，同时集成蓝牙功能
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - DMIPS
+      - RAM
+      - WiFi
+      - BLE
+      - USB
+      - Ethernet
+    * - :ref:`esp32`
+      - :ref:`xtensa_lx6`
+      - 600 DMIPS
+      - 520 KB
+      - 802.11 b/g/n
+      - BT/BLE v4.2
+      - NO
+      - MAC100
+    * - :ref:`esp32c3`
+      - :ref:`espressif_rv32`
+      - 200 DMIPS
+      - 400 KB
+      - 802.11 b/g/n
+      - BLE v5.0
+      - NO
+      - NO
+
+
 型号对比
+~~~~~~~~~
+
+
+
+必选理由
 ~~~~~~~~~
 
 
 Xin应用
 -----------
 
+.. contents::
+    :local:
+
+硬件平台
+~~~~~~~~~~~
+
 .. image:: ./images/B_ESP32.jpg
     :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.28.50e564d3axhB7j&id=624276301887&ns=1&abbucket=19
 .. contents::
     :local:
 
-.. _esp_idf:
-
-ESP-IDF
-~~~~~~~~~~~
-
-ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 ESP32-C 系列 SoC。它基于 C/C++ 语言提供了一个自给自足的 SDK。
-
-.. image:: ./images/idf.png
-    :target: https://docs.os-q.com/espidf.html
 
 
 开发工具
@@ -89,12 +132,6 @@ ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 
 
 
 
-
-开源探索
-~~~~~~~~~
-
-
-* `ESP-IDF <https://github.com/espressif/esp-idf>`_
 
 
 Xin总结
@@ -121,6 +158,8 @@ linux下面串口设备的一般是root权限，因此使用串口需要取得ro
 
 问题整理
 ~~~~~~~~~~~~~
+
+`bugs <https://www.espressif.com/sites/default/files/documentation/eco_and_workarounds_for_bugs_in_esp32_cn.pdf>`_
 
 Brownout detector was triggered 已触发断电探测器
 

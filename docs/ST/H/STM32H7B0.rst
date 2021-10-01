@@ -3,8 +3,8 @@
 STM32H7B0
 ================
 
-* 关键词：``Cortex-M7`` ``280MHz`` ``599DMIPS`` ``1414CoreMark`` ``SMPS`` ``Chrom-ART`` ``STemWin`` ``JPEC`` ``HDMI-CEC``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32H7B0>`_
+* 关键词：``Cortex-M7`` ``280MHz`` ``SMPS`` ``Chrom-ART`` ``STemWin`` ``JPEC`` ``HDMI-CEC``
+* 代码库：`GitHub <https://github.com/SoCXin/STM32H7B0>`_ , `Gitee <https://gitee.com/socxin/STM32H7B0>`_
 
 .. contents::
     :local:
@@ -15,25 +15,48 @@ Xin简介
 .. image:: ./images/stm32h7b0.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html
 
-内置SMPS，用于降低电源电压。还可用于为外部电路供电，以及特定应用情况下结合LDO共同使用。
-在内核运行模式（外设外设关）和SMPS情况下，典型功耗为120 µA/MHz @VDD = 3.3 V和25 °C
-低功耗停止模式下的典型功耗电流为32 µA
-低功耗待机模式下的典型功耗电流为2.2 µA
-带RTC的VBAT模式（低功耗模式）下通常为0.74 µA
-
 .. contents::
     :local:
 
+规格配置
+~~~~~~~~~~~
 
-关键特性
-~~~~~~~~~~~~
+基本参数
+^^^^^^^^^^^
 
+* 发布时间：2019年5月
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40°C to +85°C/125°C
+* 处理性能：599 :ref:`DMIPS`, 1414 :ref:`CoreMark`
+* RAM容量：128 KB
+* Flash容量：128/256/512 KB
+* 封装规格：64 to 176 Pin
+
+.. image:: ./images/STM32H7B0p.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html
+
+特征参数
+^^^^^^^^^^^
+
+* 280 MHz :ref:`cortex_m7`
+* :ref:`stm32_smps`,可用于为外部电路供电，特定应用情况下结合LDO共同使用
+* 在内核运行模式（外设外设关）和SMPS情况下，典型功耗为120 µA/MHz
+* 低功耗停止模式下的典型功耗电流为32 µA
+* 低功耗待机模式下的典型功耗电流为2.2 µA
 * 多达35个通信接口，包括FD-CAN、USB2.0高速/全速、照相机接口、并行同步数据输入/输出从接口（PSSI）
 
-STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.4 MB SRAM：192 KB的TCM RAM（包括64 KB的ITCM RAM和128 KB的DTCM RAM，用于时间关键型程序或数据），1.18 MB的用户SRAM，以及用于在最低功耗模式下保存数据的备份域4 KB SRAM。另外，它提供64至225引脚的BGA和LQFP封装型号。
 
 芯片架构
-~~~~~~~~~~~
+~~~~~~~~~~~~
+
+.. image:: ./images/STM32H7B0s.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html
+
+.. _stm32_smps:
+
+SMPS
+^^^^^^^^^^^
+
 
 
 
@@ -49,11 +72,15 @@ Xin选择
 版本对比
 ~~~~~~~~~
 
-.. image:: ./images/STM32H7.jpg
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
+STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.4 MB SRAM：192 KB的TCM RAM（包括64 KB的ITCM RAM和128 KB的DTCM RAM，用于时间关键型程序或数据），1.18 MB的用户SRAM，以及用于在最低功耗模式下保存数据的备份域4 KB SRAM。另外，它提供64至225引脚的BGA和LQFP封装型号。
+
+
 
 超值系列对比
 ^^^^^^^^^^^^^^
+
+.. image:: ./images/STM32H7x0.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
 
 .. list-table::
     :header-rows:  1

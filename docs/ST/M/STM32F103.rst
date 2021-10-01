@@ -29,7 +29,7 @@ Xin简介
 * 供电电压：2.0 to 3.6 V
 * 工作温度：-40 °C to 85 °C
 * 封装规格：LQFP48
-* 处理性能：90 :ref:`DMIPS`
+* 处理性能：61 :ref:`DMIPS`
 * RAM容量：20 KB
 * Flash容量：128 KB
 
@@ -56,6 +56,9 @@ Xin选择
 
 品牌对比
 ~~~~~~~~~~
+
+.. image:: ./images/STM32F103vendor.png
+    :target: https://blog.csdn.net/weixin_34246598/article/details/112651024
 
 兼容替换
 ^^^^^^^^^^

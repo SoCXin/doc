@@ -7,7 +7,7 @@ HMI
 .. contents::
     :local:
 
-芯片平台
+嵌入平台
 -----------
 
 .. toctree::
@@ -20,11 +20,10 @@ HMI
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - Xin
       - DMIPS
       - RAM
       - Flash
-      - GUI
       - reslution
       - interface
       - accelerator
@@ -32,7 +31,6 @@ HMI
       - 599(280MHz)
       - 1.4 MB
       - 1/2 MB
-      - TouchGFX
       - XGA(1024x768)
       - RGB888
       - DMA2D/JPEC
@@ -40,31 +38,27 @@ HMI
       - 225(180MHz)
       - 8 MB
       - 16 MB
-      - TouchGFX
       - XGA(1024x768)
       - RGB888
       - DMA2D/JPEC
     * - :ref:`tkm32f499`
       - 300(240MHz)
-      - 8 MB
-      - 16 MB
-      - :ref:`emwin`
+      - 8MB
+      - 8MB(QSPI)
       - 1024x600
-      - RGB8080
-      - LTDC
+      - RGB888/TK80
+      - :ref:`tk_ltdc`
     * - :ref:`swm32s`
       - 150(120MHz)
       - 512 KB
       - 512 KB
-      - LittlevGL
       - WVGA(800x480)
       - RGB565
       - No
-    * - :ref:`esp32`
+    * - :ref:`esp32s3`
       - 600(240MHz)
       - 8 MB
       - 4 MB
-      - :ref:`littlevgl`
       - WVGA(800x480)
       - SPI
       - No
@@ -72,20 +66,23 @@ HMI
       - 75(60MHz)
       - 24 KB
       - 32 KB
-      - LittlevGL
       - XGA(1024x768)
-      - FPGA
+      - :ref:`hdmi`
       - No
+
+
 
 
 图形框架
 -----------
 
+.. contents::
+    :local:
 
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - Mark
       - :ref:`touchgfx`
       - :ref:`littlevgl`
       - :ref:`emwin`
@@ -93,30 +90,32 @@ HMI
       - :ref:`μgfx`
       - :ref:`awtk`
       - :ref:`qt`
-    * - :ref:`esp32`
+    * - 1
+      - :ref:`esp32`
+      - yes
+      - :ref:`tkm32f499`
       -
       - yes
       -
       -
+    * - 2
+      - :ref:`stm32f429`
       - yes
-      -
-      -
-    * - :ref:`stm32f429`
-      - yes
-      - yes
-      - yes
+      - :ref:`tkm32f499`
       -
       -
       -
       -
-    * - :ref:`tkm32f499`
-      - yes
-      - yes
-      - yes
+    * - 3
+      - :ref:`tkm32f499`
+      -
+      - :ref:`tkm32f499`
       -
       -
       -
       -
+
+
 
 
 .. _touchgfx:
@@ -173,7 +172,7 @@ MiniGUI丰富的功能和可配置性使得它既适用于运行在30MHz CPU的�
 AWTK
 ~~~~~~~~~~~
 
-	ZLG开发的的一套基于C语言开发的GUI框架。支持跨平台同步开发
+ZLG开发的的一套基于C语言开发的GUI框架。支持跨平台同步开发
 
 .. _qt:
 
@@ -181,3 +180,20 @@ QT
 ~~~~~~~~~~~
 
 QT专门为 ARM Cortex-M 单片机开发的，目前用在 ARM Cortex M7 的微控制器上
+
+
+接口驱动
+-----------
+
+.. contents::
+    :local:
+
+.. _vga:
+
+VGA
+~~~~~~~~~~~
+
+.. _hdmi:
+
+HDMI
+~~~~~~~~~~~

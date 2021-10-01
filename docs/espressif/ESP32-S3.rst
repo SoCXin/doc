@@ -5,8 +5,8 @@ ESP32-S3
 ================
 
 
-* 关键词：``Xtensa LX7`` ``240MHz`` ``QFN56`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``TWAI``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32S3>`_
+* 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``QFN56`` ``WiFi`` ``BLE5.0`` ``USB OTG`` ``TWAI``
+* 代码库：`GitHub <https://github.com/SoCXin/ESP32S3>`_ , `Gitee <https://gitee.com/socxin/ESP32S3>`_
 
 .. contents::
     :local:
@@ -17,25 +17,45 @@ Xin简介
 .. image:: ./images/ESP32S3.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32-S3
 
+.. contents::
+    :local:
 
-关键特性
-~~~~~~~~~~~~~
+规格配置
+~~~~~~~~~~~
 
-* Xtensa® LX7 Dual Core 240 MHz
-* 512 KB SRAM (TCM)，384 KB ROM
-* Wi-Fi + Bluetooth 5 (LE)
-* USB1.1 OTG
-* TWAI 控制器
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2020年12月31日
+* 供电电压：2.3 to 3.6 V
+* 工作温度：-40°C to +105°C
+* 处理性能：600 :ref:`DMIPS`, 1400 :ref:`CoreMark`
+* RAM容量：512 KB
+* ROM容量：384 KB
+* 封装规格：:ref:`esp_qfn56`
+
+
+特征参数
+^^^^^^^^^^^
+
+* 240 MHz :ref:`xtensa_lx7` Dual Core
+* 超低功耗协处理器 :ref:`esp_ulp`
+* :ref:`esp_wifi`
+* :ref:`esp_ble` v5
+* :ref:`esp_usb`
+* :ref:`esp_twai`
 * 2 × SDIO 主机
-* DMA 5 接收 + 5 发送
 * 44 x GPIO，JTAG 接口
-* 超低功耗协处理器RISC-V (ULP)
+* 2x 12bit ADC (20ch)
 
+.. hint::
+    2020年12月发布，2021年8月量产供货
 
 安全特性
 ~~~~~~~~~~~~~~
 
-内置安全硬件，硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
+内置安全硬件，4096 bit OTP，硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
+
 
 .. contents::
     :local:
@@ -71,9 +91,6 @@ TEE 模块
 Xin选择
 -----------
 
-本部分明确该芯片的需求匹配度
-
-
 .. contents::
     :local:
 
@@ -93,15 +110,15 @@ Xin选择
       - USB
       - MAC
     * - :ref:`esp32`
-      - Dual LX6
+      - :ref:`xtensa_lx6`
       - 600 DMIPS
       - 520 KB
       - 802.11 b/g/n
-      - BT/BLE v4.2
+      - BLE v4.2
       - NO
       - 100M
     * - :ref:`esp32s2`
-      - LX7
+      - :ref:`xtensa_lx7`
       - 300 DMIPS
       - 520 KB
       - 802.11 b/g/n
@@ -109,13 +126,20 @@ Xin选择
       - NO
       - NO
     * - :ref:`esp32s3`
-      - Dual LX7
+      - :ref:`xtensa_lx7`
       - 600 DMIPS
       - 512 KB
       - 802.11 b/g/n
       - BLE v5.0
       - USB1.1 OTG
       - NO
+
+
+Xin应用
+--------------
+
+.. contents::
+    :local:
 
 编译工具
 ~~~~~~~~~
@@ -132,19 +156,6 @@ Arduino
 ^^^^^^^^^^
 
 暂时不支持
-
-.. hint::
-    2020年12月30日发布，2021年8月量产供货
-
-
-Xin应用
---------------
-
-.. contents::
-    :local:
-
-.. image:: ./images/B_ESP32C3.jpg
-    :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
 
 
 LEDC

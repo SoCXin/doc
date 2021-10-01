@@ -1,0 +1,24 @@
+
+.. _nrf52832:
+
+nRF52832
+=========
+
+* 关键词：``BLE``
+* 资源库：`GitHub <https://github.com/SoCXin/nRF52832>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+
+
+关键特性
+~~~~~~~~~~~~~~
+
+* LoRa:150M-960MHZ,-140dBm,21dBm
+
+Xin选择
+-----------

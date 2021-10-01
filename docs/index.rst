@@ -15,65 +15,83 @@ SoC 芯
     :caption: 榜单速览
     :maxdepth: 1
 
-    热度榜单 <news/hot>
-    方案榜单 <news/hop>
-    全能榜单 <news/top>
-    低端榜单 <news/low>
-    创新榜单 <news/spec>
+    极客最爱用资源多 <news/hot>
+    很多著名项目适配 <news/pop>
+    旗舰基本上啥都行 <news/top>
+    不能拒绝低价好货 <news/low>
+    封装集成针对性强 <news/sss>
 
 .. list-table::
     :header-rows:  1
 
     * - Rank
-      - 热度榜单
-      - 方案榜单
-      - 全能榜单
-      - 低端榜单
-      - 创新榜单
-    * - No.1
+      - :ref:`hot`
+      - :ref:`pop`
+      - :ref:`top`
+      - :ref:`low`
+      - :ref:`sss`
+    * - Top.1
       - :ref:`esp32`
-      - :ref:`stm32f103`
-      - :ref:`stm32h750`
+      - :ref:`esp32`
+      - :ref:`stm32h730`
       - :ref:`stc8`
       - :ref:`ch579`
-    * - No.2
+    * - Top.2
       - :ref:`rp2040`
-      - :ref:`esp32`
       - :ref:`stm32f103`
+      - :ref:`stm32h750`
       - :ref:`ch552`
       - :ref:`ch32v208`
+    * - Top.3
+      - :ref:`stm32f401`
+      - :ref:`nrf52832`
+      - :ref:`stm32h745`
+      - :ref:`ch573`
+      - :ref:`zml165`
 
 .. toctree::
     :caption: 领域速览
     :maxdepth: 1
 
-    控制类      <for/m>
-    交互类      <for/u>
-    通信类      <for/iot>
-    计算类      <for/edge>
-    感知类      <for/sensor>
+    电机控制类   <for/foc>
+    人机交互类   <for/hmi>
+    通信连接类   <for/iot>
+    边缘计算类   <for/edge>
+    功耗优化类   <for/ulp>
+    模拟转换类   <for/adc>
 
 .. list-table::
     :header-rows:  1
 
-    * - Rank
-      - 控制类
-      - 交互类
-      - 通信类
-      - 计算类
-      - 感知类
+    * - Classification
+      - :ref:`foc`
+      - :ref:`hmi`
+      - :ref:`iot`
+      - :ref:`edge`
+      - :ref:`ulp`
+      - :ref:`adc`
     * - No.1
-      - :ref:`stm32g474`
+      - :ref:`hc32m120`
       - :ref:`stm32f429`
       - :ref:`esp32`
       - :ref:`k210`
       - :ref:`stm32l011`
+      - :ref:`stm32g474`
     * - No.2
       - :ref:`swm181`
-      - :ref:`esp32`
+      - :ref:`gw1nsr`
       - :ref:`esp32c3`
       - :ref:`v831`
+      - :ref:`stm32l412`
       - :ref:`stm32g431`
+    * - No.3
+      - :ref:`mm32spin`
+      - :ref:`tkm32f499`
+      - :ref:`nrf52832`
+      -
+      - :ref:`stm32h7b0`
+      -
+
 
 .. toctree::
     :caption: 内核速览

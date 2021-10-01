@@ -6,8 +6,6 @@ WCH
 
 ``RISC-V`` ``USB`` ``Ethernet`` ``BLE``
 
-.. contents::
-    :local:
 
 公司简介
 -----------

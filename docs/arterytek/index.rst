@@ -6,8 +6,6 @@ Arterytek
 
 ``Cortex-M4`` ``MCU`` ``AT32F421``
 
-.. contents::
-    :local:
 
 公司简介
 -----------
@@ -22,11 +20,46 @@ Arterytek
 
 官方提供少量示例工程，厂商无开发环境，支持KEIL/IAR
 
-* 重庆市九龙坡区科城路60号康田西锦荟1栋10F
-* 86-23-6868 8899
 
 
-技术特点
+产品简介
+-----------
+
+.. image:: images/arterytek.jpg
+    :target: https://www.arterytek.com/cn/index.jsp
+
+.. hint::
+    2016年成立，2018年正式对外销售芯片，AT32系列MCU采用55nm制程工艺，全系列搭载 :ref:`cortex_m4` 内核，系列较少定位清晰。
+
+.. contents::
+    :local:
+
+超值产品
+~~~~~~~~~~~
+.. toctree::
+    :maxdepth: 1
+
+    120MHz: AT32F421 <AT32F421>
+    150MHz: AT32F415 <AT32F415>
+
+.. hint::
+    2016年成立，2018年正式对外销售芯片，AT32系列高效能MCU，采用55nm制程先进工艺，全系列搭载 :ref:`cortex_m4` 内核，产品系列较少定位清晰。
+
+性能产品
+~~~~~~~~~~~
+.. toctree::
+    :maxdepth: 1
+
+    200MHz: AT32F413 <AT32F413>
+    240MHz: AT32F403 <AT32F403>
+    240MHz: AT32F407 <AT32F407>
+    288MHz: AT32F437 <AT32F437>
+
+.. warning::
+    AT32F437/AT32F435目前仍是PPT产品
+
+
+技术简介
 -----------
 
 .. contents::
@@ -66,38 +99,3 @@ sLib安全库区
 * 终端用户执行主闪存的整片擦除时，安全库区的程序代码及数据不会被擦除。
 
 
-产品简介
------------
-
-.. image:: images/arterytek.jpg
-    :target: https://www.arterytek.com/cn/index.jsp
-
-.. hint::
-    2016年成立，2018年正式对外销售芯片，AT32系列MCU采用55nm制程工艺，全系列搭载 :ref:`cortex_m4` 内核，系列较少定位清晰。
-
-.. contents::
-    :local:
-
-超值产品
-~~~~~~~~~~~
-.. toctree::
-    :maxdepth: 1
-
-    120MHz: AT32F421 <AT32F421>
-    150MHz: AT32F415 <AT32F415>
-
-.. hint::
-    2016年成立，2018年正式对外销售芯片，AT32系列高效能MCU，采用55nm制程先进工艺，全系列搭载 :ref:`cortex_m4` 内核，产品系列较少定位清晰。
-
-性能产品
-~~~~~~~~~~~
-.. toctree::
-    :maxdepth: 1
-
-    200MHz: AT32F413 <AT32F413>
-    240MHz: AT32F403 <AT32F403>
-    240MHz: AT32F407 <AT32F407>
-    288MHz: AT32F437 <AT32F437>
-
-.. warning::
-    AT32F437/AT32F435目前仍是PPT产品

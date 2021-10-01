@@ -4,7 +4,7 @@
 STM32F207
 ==================
 
-* 关键词：``Cortex-M3`` ``120MHz``
+* 关键词：``Cortex-M3`` ``120MHz`` ``USB-OTG-HS`` ``Ethernet`` ``MAC100``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32F207>`_
 
 .. contents::
@@ -13,33 +13,158 @@ STM32F207
 Xin简介
 -----------
 
+.. image:: ./images/STM32F207.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32f2x7.html
+
 规格参数
 ~~~~~~~~~~~
 
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：2.4 to 3.6 V
-* 工作温度：-40 °C to 85 °C
-* 封装规格：LQFP64
-* 处理性能：150 :ref:`DMIPS`
-* RAM容量：64 KB
-* Flash容量：256 KB
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40°C to +85°C
+* 封装规格：LQFP100/LQFP144/LQFP176/BGA176
+* 处理性能：150 :ref:`DMIPS` , 398 :ref:`CoreMark`
+* RAM容量：128 KB
+* Flash容量：128/256/512 KB
 
 特征参数
 ^^^^^^^^^^^
 
 * :ref:`cortex_m3` 120 MHz
+* 符合IEEE 1588 v2标准要求的以太网MAC10/100
+* 8~14位并行摄像头接口
+* 2个USB OTG（其中一个支持HS）
+* 2个12位DAC、3个速度为2 MSPS或6 MSPS（交错模式）的12位ADC
+* 通信接口多达15个（包括6个速度高达7.5 Mb/s的USART、3个速度高达30 Mb/s的SPI、3个I²C、2个CAN、SDIO）
+* 定时器多达17个：16和32位定时器
 
 
 芯片架构
 ~~~~~~~~~~~
+
+.. image:: ./images/STM32F207s.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32f2x7.html
+
+
+.. _stm32_usb_otg_hs:
+
+OTG HS
+^^^^^^^^^^^
+
+
 
 Xin选择
 -----------
 
 .. contents::
     :local:
+
+品牌对比
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - DMIPS
+      - RAM
+      - ROM
+      - FSMC
+      - CAN
+      - USB
+      - Ethernet
+    * - :ref:`stm32f207`
+      - 150
+      -
+      -
+      -
+      -
+      - OTG-HS
+      - MAC100
+    * - :ref:`at32f407`
+      - 210
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`ch32f207`
+      - 180
+      -
+      -
+      -
+      -
+      - OTG-HS
+      - MAC1000/PHY10
+    * - :ref:`gd32f207`
+      - 150
+      -
+      -
+      -
+      -
+      - OTG
+      - MAC100
+
+.. _gd32f207:
+
+GD32F207
+^^^^^^^^^^^
+
+.. image:: ./images/GD32F207.png
+    :target: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m3/performance-line/gd32f207-series/
+
+
+系列对比
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - DMIPS
+      - RAM
+      - ROM
+      - UART
+      - CAN
+      - USB
+      - Ethernet
+    * - :ref:`stm32f207`
+      - 150
+      -
+      -
+      -
+      -
+      -  :ref:`stm32_usb_otg_hs`
+      - MAC100
+    * - :ref:`stm32f407`
+      - 210
+      -
+      -
+      -
+      -
+      -
+      - MAC100
+    * - :ref:`stm32f107`
+      - 90
+      -
+      -
+      -
+      -
+      -
+      - MAC100
+
+.. _stm32f107:
+
+STM32F107
+^^^^^^^^^^^
+
+
+.. image:: ./images/stm32f107.jpg
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f1-series/stm32f105-107/stm32f105vc.html
+
 
 型号对比
 ~~~~~~~~~
@@ -48,7 +173,7 @@ Xin选择
     :header-rows:  1
 
     * - Name
-      - Mark
+      - DMIPS
       - RAM
       - ROM
       - UART
@@ -56,18 +181,50 @@ Xin选择
       - USB
       - Ethernet
     * - :ref:`stm32f207`
-      - 150 DMIPS
+      - 150
       -
       -
       -
       -
       -
       -
-    * - :ref:`stm32f407`
-      - 150 DMIPS
+    * - :ref:`stm32f205`
+      - 150
       -
       -
       -
       -
       -
       -
+
+
+* 相比STM32F205增加了符合IEEE 1588 v2标准要求的以太网MAC10/100和能够连接CMOS照相机传感器的8~14位并行摄像头接口。
+* 相比STM32F217，后者整合了加密/HASH处理器，为AES 128、192、256、Triple DES和HASH（MD5、SHA-1）提供硬件加速。
+
+.. _stm32f205:
+
+STM32F205
+^^^^^^^^^^^
+
+.. image:: ./images/stm32f107.jpg
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f1-series/stm32f105-107/stm32f105vc.html
+
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+硬件平台
+~~~~~~~~~~~
+
+.. _nucleo_stm32f207zg:
+
+NUCLEO-STM32F207ZG
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: ./images/B_STM32F207.jpg
+    :target: https://www.st.com/zh/evaluation-tools/nucleo-f207zg.html
+
