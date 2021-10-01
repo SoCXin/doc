@@ -47,3 +47,11 @@
       - 24
       - USB-H/D
       - :ref:`qfn28`
+    * - :ref:`stm8s003`
+      - 16MHz
+      - 1 KB
+      - 8 KB
+      -
+      -
+      -
+      - :ref:`tssop20`

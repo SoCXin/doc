@@ -1,7 +1,7 @@
 
-.. _sss:
+.. _sip:
 
-独特Xin榜
+集成Xin榜
 ====================
 
 .. note::
@@ -14,9 +14,6 @@
 
 ETH-PHY
 -------------
-
-ETH-PHY Full
-~~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -46,7 +43,9 @@ ETH-PHY Full
 .. hint::
     在封装内同时集成以太网MAC+PHY，集成以太网phy发热巨大影响芯片稳定性，特别是空间足够的情况下需要慎重考量。
 
-ETH-PHY Tiny
+.. _eth_phy_tiny:
+
+ETH-Tiny
 ~~~~~~~~~~~~~
 
 .. list-table::

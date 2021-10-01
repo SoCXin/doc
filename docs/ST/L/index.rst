@@ -10,6 +10,7 @@ Lowend
 .. toctree::
     :maxdepth: 1
 
+    STM8S003 <STM8S003>
     STM32F030 <STM32F030>
     STM32F051 <STM32F051>
     STM32G030 <STM32G030>

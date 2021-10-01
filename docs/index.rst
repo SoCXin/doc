@@ -19,7 +19,7 @@ SoC 芯
     很多著名项目适配 <news/pop>
     旗舰基本上啥都行 <news/top>
     不能拒绝低价好货 <news/low>
-    封装集成针对性强 <news/sss>
+    封装集成针对性强 <news/sip>
 
 .. list-table::
     :header-rows:  1
@@ -29,7 +29,7 @@ SoC 芯
       - :ref:`pop`
       - :ref:`top`
       - :ref:`low`
-      - :ref:`sss`
+      - :ref:`sip`
     * - Top.1
       - :ref:`esp32`
       - :ref:`esp32`

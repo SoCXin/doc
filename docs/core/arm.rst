@@ -81,13 +81,10 @@ ARM7
 主频最高可达130MIPS。
 
 
-ARM7TDMI微处理器
+ARM7TDMI微处理器4种类型：ARM7TDMI、ARM7TDMI-S、ARM720T、ARM7EJ。
 
-4种类型：
-ARM7TDMI、ARM7TDMI-S、ARM720T、ARM7EJ。
-
-ARM7TMDI是目前使用最广泛的32位嵌入式RISC处理器，属低端ARM处理器核。
-
+.. note::
+    ARM7TMDI是使用很广泛的32位嵌入式RISC处理器，属低端ARM处理器核。
 
 ARM7EJ
 ^^^^^^^^^^^^^
