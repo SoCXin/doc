@@ -17,13 +17,10 @@ Architecture
 
     AMBA <amba>
 
-
-
 Von Neumann
 ~~~~~~~~~~~~~~
 
 冯·诺依曼结构，又称为普林斯顿体系结构，是一种将程序指令存储器和数据存储器合并在一起的存储器结构。取指令和取操作数都在同一总线上，通过分时复用的方式进行；缺点是在高速运行时，不能达到同时取指令和取操作数，从而形成了传输过程的瓶颈。由于程序指令存储地址和数据存储地址指向同一个存储器的不同物理位置，因此程序指令和数据的宽度相同。
-
 
 .. image:: ./images/Neumann.png
     :target: https://blog.csdn.net/u014470361/article/details/79774331
@@ -40,17 +37,20 @@ Harvard
 .. image:: ./images/Harvarde.png
     :target: https://blog.csdn.net/u014470361/article/details/79774331
 
+.. note::
+    :ref:`cortex_m` 系列是哈佛结构，而 :ref:`cortex_a` 是冯诺依曼结构（更准确说SoC是混合结构）
 
 Classic
 -------------
+
+``ARMv6`` ``ARMv5`` ``ARM7`` ``ARM9`` ``ARM11``
 
 .. image:: ./images/arm.png
     :target: https://developer.arm.com/ip-products/processors
 
 
-ARMv4：ARM7TDMI、ARM720T、ARM9TDMI、ARM940T、ARM920T、Intel的StrongARM等。
-
-ARMv5：ARM9E-S、ARM966E-S、ARM1020E、ARM 1022E以及XScale是ARMv5TE的，ARM9EJ-S、ARM926EJ-S、ARM7EJ-S、ARM1026EJ-S是基于ARMv5EJ的。
+* ARMv4：ARM7TDMI、ARM720T、ARM9TDMI、ARM940T、ARM920T、Intel的StrongARM等。
+* ARMv5：ARM9E-S、ARM966E-S、ARM1020E、ARM 1022E以及XScale是ARMv5TE的，ARM9EJ-S、ARM926EJ-S、ARM7EJ-S、ARM1026EJ-S是基于ARMv5EJ的。
 
 其中后缀意义如下：
 
