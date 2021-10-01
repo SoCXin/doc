@@ -4,7 +4,7 @@
 SP7021
 =============
 
-* 关键词：``Cortex-A7`` ``1GHz`` ``ARM926EJS`` ``8051``
+* 关键词：``Cortex-A7`` ``1GHz`` ``ARM926EJS`` ``8051``  ``LQFP176``
 * 资源库：`GitHub <https://github.com/SoCXin/SP7021>`_
 
 .. contents::
@@ -16,6 +16,39 @@ Xin简介
 .. image:: ./images/SP7021.png
     :target: https://w3.sunplus.com/products/SP7021.asp
 
+
+.. contents::
+    :local:
+
+规格配置
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2019年5月
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40°C to +85°C/125°C
+* 处理性能：599 :ref:`DMIPS`, 1414 :ref:`CoreMark`
+* RAM容量：128 KB
+* Flash容量：128/256/512 KB
+* 封装规格：64 to 176 Pin
+
+.. image:: ./images/STM32H7B0p.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html
+
+特征参数
+^^^^^^^^^^^
+
+* 960 MHz :ref:`cortex_a7`
+* 202 MHz :ref:`arm926ejs`
+
+
+芯片架构
+~~~~~~~~~~~~
+
+.. image:: ./images/STM32H7B0s.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html
 
 Xin选择
 -----------

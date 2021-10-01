@@ -30,29 +30,118 @@ Architecture
 Von Neumann
 ~~~~~~~~~~~~~~
 
+冯·诺依曼结构，又称为普林斯顿体系结构，是一种将程序指令存储器和数据存储器合并在一起的存储器结构。取指令和取操作数都在同一总线上，通过分时复用的方式进行；缺点是在高速运行时，不能达到同时取指令和取操作数，从而形成了传输过程的瓶颈。由于程序指令存储地址和数据存储地址指向同一个存储器的不同物理位置，因此程序指令和数据的宽度相同。
 
-ARMv6
+
+.. image:: ./images/Neumann.png
+    :target: https://blog.csdn.net/u014470361/article/details/79774331
+
+Harvard
+~~~~~~~~~~~~~~
+
+哈佛结构是一种将程序指令存储和数据存储分开的存储器结构，它的主要特点是将程序和数据存储在不同的存储空间中，即程序存储器和数据存储器是两个独立的存储器，每个存储器独立编址、独立访问，目的是为了减轻程序运行时的访存瓶颈。
+
+哈佛结构的中央处理器首先到程序指令储存器中读取程序指令内容，解码后得到数据地址，再到相应的数据储存器中读取数据，并进行下一步的操作（通常是执行）。程序指令储存和数据储存分开，数据和指令的储存可以同时进行，可以使指令和数据有不同的数据宽度，如Microchip公司的PIC16芯片的程序指令是14位宽度，而数据是8位宽度。
+
+.. image:: ./images/Harvard.png
+    :target: https://blog.csdn.net/u014470361/article/details/79774331
+.. image:: ./images/Harvarde.png
+    :target: https://blog.csdn.net/u014470361/article/details/79774331
+
+
+Classic
 -------------
+
+ARMv4：ARM7TDMI、ARM720T、ARM9TDMI、ARM940T、ARM920T、Intel的StrongARM等。
+
+ARMv5：ARM9E-S、ARM966E-S、ARM1020E、ARM 1022E以及XScale是ARMv5TE的，ARM9EJ-S、ARM926EJ-S、ARM7EJ-S、ARM1026EJ-S是基于ARMv5EJ的。
+
+其中后缀意义如下：
+
+* E：增强型DSP指令集。包括全部算法和16位乘法操作。
+* J：支持新的Java。
+
+ARMv6(ARM11系列)：
+
+ARM1136J(F)-S基于ARMv6主要特性有SIMD、Thumb、Jazelle、DBX、(VFP)、MMU。
+
+ARM1156T2(F)-S基于ARMv6T2 主要特性有SIMD、Thumb-2、(VFP)、MPU。
+
+ARM1176JZ(F)-S基于ARMv6KZ 在 ARM1136EJ(F)-S 基础上增加MMU、TrustZone。
+
+ARM11 MPCore基于ARMv6K 在ARM1136EJ(F)-S基础上可以包括1-4 核SMP、MMU。
 
 .. _arm7:
 
 ARM7
 ~~~~~~~~~~~~~~
 
+低功耗的32位RISC处理器，冯·诺依曼结构。
+具有嵌入式ICE－RT逻辑，调试开发方便。
+3级流水线结构。能够提供0.9MIPS的三级流水线结构
+代码密度高，兼容16位的Thumb指令集。
+对操作系统的支持广泛，包括Windows CE、Linux、Palm OS等。
+指令系统与ARM9系列、ARM9E系列和ARM10E系列兼容，便于用户的产品升级换代。
+主频最高可达130MIPS。
+
+
+ARM7TDMI微处理器
+
+4种类型：
+ARM7TDMI、ARM7TDMI-S、ARM720T、ARM7EJ。
+
+ARM7TMDI是目前使用最广泛的32位嵌入式RISC处理器，属低端ARM处理器核。
+
+
 ARM7EJ
 ^^^^^^^^^^^^^
-
-
 
 .. _arm9:
 
 ARM9
 ~~~~~~~~~~~~~~
 
+5级整数流水线，哈佛体系结构。支持32位ARM指令集和16位Thumb指令集。全性能的MMU，支持Windows CE、Linux、Palm OS等多种主流嵌入式操作系统。支持数据Cache和指令Cache，具有更高的指令和数据处理能力。
+
+* ARM9类型：ARM920T、ARM922T和ARM940T
+* ARM9E类型：ARM926EJ-S、ARM946E-S和ARM966E-S
+
+.. hint::
+    ARM9E支持DSP指令集，支持VFP9浮点处理协处理器，主频最高可达300MIPS。
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - Freq
+      - RAM
+      - Flash
+      - Process
+      - Package
+    * - :ref:`sp7021`
+      - :ref:`arm926ejs`
+      - 1.0 GHz
+      -
+      -
+      -
+      -
+
+
+
+.. _arm926ejs:
+
+ARM926EJ-S
+^^^^^^^^^^^^^
+
+
 .. _arm11:
 
 ARM11
 ~~~~~~~~~~~~~~
+
+指令集ARMv6，8级流水线，1.25DMIPS/MHz
 
 .. list-table::
     :header-rows:  1
