@@ -1,0 +1,31 @@
+
+.. _sp7021:
+
+SP7021
+=============
+
+* 关键词：``Cortex-A7`` ``1GHz`` ``ARM926EJS`` ``8051``
+* 资源库：`GitHub <https://github.com/SoCXin/SP7021>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. image:: ./images/SP7021.png
+    :target: https://w3.sunplus.com/products/SP7021.asp
+
+
+Xin选择
+-----------
+
+
+Xin应用
+-----------
+
+
+Xin总结
+-----------
+
+
