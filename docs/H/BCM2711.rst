@@ -4,7 +4,7 @@
 BCM2711
 =============
 
-* 关键词：``Raspberry Pi`` ``1.5GHz`` ``Cortex-A72``
+* 关键词：``Raspberry Pi`` ``Cortex-A72`` ``1.5GHz``
 * 资源库：`GitHub <https://github.com/SoCXin/BCM2711>`_
 
 .. contents::
@@ -26,3 +26,4 @@ Xin总结
 -----------
 
 
+https://datasheets.raspberrypi.org/

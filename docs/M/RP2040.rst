@@ -4,7 +4,7 @@
 RP2040
 ===============
 
-* 关键词：``Dual Core`` ``QFN56`` ``133MHz`` ``USB1.1 OTG``
+* 关键词：``Raspberry Pi`` ``Cortex-M0`` ``Dual Core`` ``QFN56`` ``133MHz`` ``USB OTG`` ``$1.0``
 * 资源库：`GitHub <https://github.com/SoCXin/RP2040>`_
 
 .. contents::
@@ -25,12 +25,13 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 发布时间：2019年5月
+* 发布时间：2021年1月
+* 发布价格：$1.0
 * 供电电压：1.71 to 3.6 V
 * 工作温度：-40°C to +85°C/125°C
 * 处理性能：212 :ref:`DMIPS`, 550 :ref:`CoreMark`
 * RAM容量：264 KB
-* Flash容量：128/256 KB
+* Flash容量：128/256 KB (16MB QSPI)
 * 封装规格：QFN56
 
 
@@ -38,7 +39,6 @@ Xin简介
 ^^^^^^^^^^^
 
 * 133 MHz :ref:`cortex_m0` Dual Core
-* up to 16MB QSPI Flash
 * 2 × UART, 2 × SPI , 2 × I2C
 * USB1.1 OTG with UF2
 * 30 x GPIO (4 AIN)
@@ -47,10 +47,9 @@ Xin简介
 ~~~~~~~~~~~~~~
 
 .. image:: ./images/RP2040clk.png
-    :target: https://www.taterli.com/7517/
+    :target: https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf
 
 
-**CoreMark** 已成为测量与比较处理器性能的业界标准基准测试，CoreMark的得分越高意味着性能更高，使用C语言包含列举，数学矩阵操作和状态及CRC等运算法则。
 
 Xin选择
 -----------
@@ -70,8 +69,19 @@ C++ SDK
 ^^^^^^^^^^
 
 
+封装规格
+~~~~~~~~~~~
+
+.. image:: ./images/RP2040qfn.png
+    :target: https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf
+
+
+
 Xin应用
 -----------
+
+.. contents::
+    :local:
 
 .. _rp2040_pio:
 
@@ -96,8 +106,17 @@ PIO可以支持多种IO标准包括:
     :target: https://www.taterli.com/7568/
 
 
+.. _rp2040_vga:
+
+VGA
+~~~~~~~~~~~
+
+
 Xin总结
 --------------
+
+.. contents::
+    :local:
 
 其中，一个完全连接的交换机将 ARM 内核和 DMA 引擎连接到六个独立的 RAM 组，使得用户可以充分利用系统的性能。
 

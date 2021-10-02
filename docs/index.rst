@@ -74,23 +74,23 @@ SoC 芯
       - :ref:`hc32m120`
       - :ref:`stm32f429`
       - :ref:`esp32`
-      - :ref:`k210`
+      - :ref:`bcm2711`
       - :ref:`stm32l011`
       - :ref:`stm32g474`
     * - No.2
       - :ref:`swm181`
       - :ref:`gw1nsr`
       - :ref:`esp32c3`
-      - :ref:`v831`
+      - :ref:`k210`
       - :ref:`stm32l412`
       - :ref:`stm32g431`
     * - No.3
       - :ref:`mm32spin`
       - :ref:`tkm32f499`
       - :ref:`nrf52832`
-      -
+      - :ref:`k210`
       - :ref:`stm32h7b0`
-      -
+      - :ref:`stm32h730`
 
 
 .. toctree::

@@ -34,40 +34,35 @@ Espressif
       - Core
       - DMIPS
       - RAM
-      - WiFi
-      - BLE
+      - :ref:`esp_ble`
       - USB
       - MAC
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 600 DMIPS
       - 520 KB
-      - 802.11 b/g/n
-      - :ref:`esp_ble` v4.2
+      - v4.2
       -
       - MAC100
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 600 DMIPS
       - 512 KB
-      - 802.11 b/g/n
-      - :ref:`esp_ble` v5.0
+      - v5.0
       - :ref:`esp_usb`
       -
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 600 DMIPS
       - 512 KB
-      - 802.11 b/g/n
-      - :ref:`esp_ble` v5.0
+      -  v5.0
       - :ref:`esp_usb`
       -
     * - :ref:`esp32c3`
       - :ref:`espressif_rv32`
       - 200 DMIPS
       - 400 KB
-      - 802.11 b/g/n
-      - :ref:`esp_ble` v5.0
+      - v5.0
       -
       -
 
@@ -78,15 +73,25 @@ Espressif
 .. contents::
     :local:
 
+编程开发
+~~~~~~~~~~~~
+
 .. _esp_idf:
 
 ESP-IDF
-~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 ESP32-C 系列 SoC。它基于 C/C++ 语言提供了一个自给自足的 SDK。
 
 .. image:: ./images/idf.png
     :target: https://docs.os-q.com/espidf.html
+
+
+.. _esp_arduino:
+
+Arduino
+^^^^^^^^^^^^^^
+
 
 
 通信连接
