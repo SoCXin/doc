@@ -26,13 +26,6 @@ Edge
       - Flash
       - Process
       - Package
-    * - :ref:`stm32mp15`
-      - :ref:`cortex_a7`
-      - 800 MHz
-      -
-      -
-      - 55nm
-      - TFBGA257
     * - :ref:`k210`
       - :ref:`riscv`
       - 400 MHz
@@ -47,11 +40,26 @@ Edge
       -
       - TSMC 28nm
       - QFN88
+    * - :ref:`stm32mp15`
+      - :ref:`cortex_a7`
+      - 800 MHz
+      -
+      -
+      - 55nm
+      - TFBGA257
     * - :ref:`bcm2835`
       - :ref:`arm11`
-      - 1.0 GHz
-      - 64MB DDR2
+      - 800 MHz
+      - 512 MB
       -
       -
       -
+    * - :ref:`bcm2711`
+      - :ref:`cortex_a72`
+      - 1.8 GHz
+      -
+      -
+      -
+      -
+
 

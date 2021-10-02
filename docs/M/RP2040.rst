@@ -40,11 +40,11 @@ Xin简介
 ^^^^^^^^^^^
 
 * 133 MHz :ref:`cortex_m0` Dual Core
-* 2 × UART, 2 × SPI , 2 × I2C
 * :ref:`rp2040_usb` with UF2
+* 8 :ref:`rp2040_pio` state machines
+* 2 × UART, 2 × SPI , 2 × I2C
 * 30 x GPIO (4 AIN)
 * 16 PWM channels
-* 8 PIO state machines
 
 计算性能
 ~~~~~~~~~~~~~~
@@ -130,7 +130,7 @@ VGA
 
 .. _rp2040_usb:
 
-USB OTG
+USB
 ~~~~~~~~~~~
 
 

@@ -88,7 +88,7 @@ SoC 芯
       - :ref:`mm32spin`
       - :ref:`tkm32f499`
       - :ref:`nrf52832`
-      - :ref:`k210`
+      - :ref:`v831`
       - :ref:`stm32h7b0`
       - :ref:`stm32h730`
 
@@ -102,6 +102,24 @@ SoC 芯
     ASIC    <core/asic>
     RISC-V  <core/RISC-V>
     MCS51   <core/MCS51>
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - Classification
+      - :ref:`arm`
+      - :ref:`asic`
+      - :ref:`mips`
+      - :ref:`riscv`
+      - :ref:`mcs51`
+    * - No.1
+      - :ref:`sp7021`
+      - :ref:`gw1nsr`
+      - :ref:`esp32`
+      - :ref:`gd32v103`
+      - :ref:`stc8`
+
 
 .. toctree::
     :caption: 厂商速览
