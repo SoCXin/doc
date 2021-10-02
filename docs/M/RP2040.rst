@@ -18,13 +18,26 @@ Xin简介
 .. image:: ./images/RP2040.png
     :target: https://www.raspberrypi.org/documentation/rp2040/getting-started
 
+规格配置
+~~~~~~~~~~~
 
-关键特性
-~~~~~~~~~~~~~~
 
-* Arm Cortex-M0+ @ 133MHz Dual Core
-* 6 组 264 kB SRAM
-* 264KB RAM, 128K-256K Flash
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2019年5月
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40°C to +85°C/125°C
+* 处理性能：212 :ref:`DMIPS`, 550 :ref:`CoreMark`
+* RAM容量：264 KB
+* Flash容量：128/256 KB
+* 封装规格：QFN56
+
+
+特征参数
+^^^^^^^^^^^
+
+* 133 MHz :ref:`cortex_m0` Dual Core
 * up to 16MB QSPI Flash
 * 2 × UART, 2 × SPI , 2 × I2C
 * USB1.1 OTG with UF2

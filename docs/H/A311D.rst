@@ -1,0 +1,26 @@
+
+.. _a311d:
+
+A311D
+=============
+
+* 关键词：``Cortex-A73`` ``2.2GHz`` ``5TOPS``  ``Dual Core`` ``NPU`` ``S922X``
+* 资源库：`GitHub <https://github.com/SoCXin/A311D>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+Xin选择
+-----------
+
+
+Xin应用
+-----------
+
+
+Xin总结
+-----------
+
