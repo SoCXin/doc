@@ -193,6 +193,9 @@ QT专门为 ARM Cortex-M 单片机开发的，目前用在 ARM Cortex M7 的微�
 VGA
 ~~~~~~~~~~~
 
+:ref:`rp2040`
+
+
 .. _hdmi:
 
 HDMI
