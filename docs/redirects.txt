@@ -55,7 +55,9 @@
 /CS32G020.html -> M/CS32G020.html
 /TKM32F499.html -> M/TKM32F499.html
 /STC8.html -> L/STC8.html
+/EAI80.html -> H/EAI80.html
 /K210.html -> H/K210.html
+/K510.html -> H/K510.html
 /V831.html -> H/V831.html
 /SP7021.html -> H/SP7021.html
 /SSD201.html -> H/SSD201.html

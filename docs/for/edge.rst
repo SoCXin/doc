@@ -61,7 +61,6 @@ Edge
       -
       -
       - QFN88
-      - TFBGA257
     * - :ref:`bcm2835`
       - :ref:`arm1176jz`
       - 700 MHz
