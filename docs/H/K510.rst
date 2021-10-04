@@ -1,11 +1,11 @@
 
-.. _k210:
+.. _k510:
 
-K210
+K510
 =============
 
-* 关键词：``RISC-V`` ``400MHz`` ``0.2TOPS``  ``Dual Core`` ``KPU`` ``$3`` ``0.3W``
-* 资源库：`GitHub <https://github.com/SoCXin/K210>`_
+* 关键词：``canaan`` ``RISC-V`` ``800MHz`` ``2.5TOPS``  ``Dual Core`` ``KPU``
+* 资源库：`GitHub <https://github.com/SoCXin/K510>`_
 
 .. contents::
     :local:
@@ -26,7 +26,7 @@ Xin简介
 
 * 供电电压：1.8 to 3.6 V
 * 工作温度：-40°C to +85°C
-* 处理性能：500 :ref:`DMIPS`
+* 处理性能：
 * RAM容量：8MB
 * Flash容量：
 * 封装规格：BGA144 (8x8x0.953mm)
@@ -35,15 +35,15 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 400 MHz :ref:`rv64` Dual Core
-* 0.23TOPS :ref:`k210_npu`
+* 800 MHz :ref:`rv64` Dual Core
+* 2.5TOPS :ref:`k510_npu`
 
 芯片架构
 ~~~~~~~~~~~
 
 TSMC28nm
 
-.. _k210_npu:
+.. _k510_npu:
 
 KPU
 ^^^^^^^^^^^
