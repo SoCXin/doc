@@ -34,10 +34,11 @@ STM32F401微控制器属于STM32 Dynamic Efficiency™器件范围。这些器�
 * RAM容量：64 KB
 * Flash容量：256 KB
 
+
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`cortex_m4` 84 MHz
+* 84 MHz :ref:`cortex_m4`
 * 3路USART，速度高达10.5 Mbit/s
 * 4路SPI，速度高达42 Mbit/s，3路I²C，1路SDIO
 * 1个USB 2.0 OTG（全速）
@@ -60,7 +61,7 @@ Xin选择
 型号对比
 ~~~~~~~~~
 
-.. image:: ./images/STM32F4_series.jpg
+.. image:: ./images/STM32F4x1.jpg
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32f4-series.html
 
 关键参数

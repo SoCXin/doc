@@ -53,6 +53,9 @@ Xin简介
 USB OTG HS
 ^^^^^^^^^^^
 
+.. image:: ./images/STM32F4USB.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32f429-439.html
+
 .. _stm32_eth_mac:
 
 Ethernet MAC

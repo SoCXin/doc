@@ -222,7 +222,7 @@ Xin选择
       - 35
 
 .. note::
-    :ref:`stm32h730` 系列 STM32H730IBK拥有STM32系列中数量最多的16bit ADC 36通道
+    :ref:`stm32h730` 系列 STM32H730IBK拥有STM32系列中数量最多的16bit ADC = 36通道
 
 
 Xin应用

@@ -54,7 +54,12 @@ FSMC
 
 STM32的FSMC真是一个万能的总线控制器,不仅可以控制SRAM,NOR FLASH,NAND FLASH,PC Card,还能控制LCD,TFT
 
+.. _stm32_cam:
 
+CAM
+^^^^^^^^^^^
+
+8~14 位并行照相机接口：速度高达 54MB/s
 
 
 Xin应用
