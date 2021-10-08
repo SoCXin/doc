@@ -37,7 +37,7 @@ Xin简介
 * 5 x UART + 5 x USART + LPUSART
 * 2×16-bit ADC 22ch, 3.6 MSPS in 16-bit, 7.2 MSPS in doubleinterleaved mode
 * 1 x 12-bit ADC 12ch, up to 5 MSPS in 12-bit
-* 2 x Octo-SPI interface with XiP
+* 2 x Quad-SPI interface with XiP
 * LCD-TFT controller supporting up to XGA resolution
 * HDMI-CEC
 

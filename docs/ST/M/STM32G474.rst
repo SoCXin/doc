@@ -153,8 +153,7 @@ STM32G474在STM32G4系列中定位高分辨率，独有复杂波形生成器和�
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html
 
 .. note::
-    STM32G474、STM32G484型号共有24种封装规格，全系标配128KB RAM，存储器范围为128KB到512 KB，封装为48到128引脚。
-
+    STM32G474、STM32G484型号共有24种封装规格，全系标配128KB RAM，存储器范围为128KB到512 KB，封装为48到128引脚。该系列拥有STM32系列中数量最多的12bit ADC= 42通道
 
 必选推介
 ~~~~~~~~~~

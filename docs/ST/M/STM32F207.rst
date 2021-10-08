@@ -33,7 +33,7 @@ Xin简介
 ^^^^^^^^^^^
 
 * 120 MHz :ref:`cortex_m3`
-* 符合IEEE 1588 v2标准要求的以太网MAC10/100
+* 符合IEEE 1588 v2标准要求的 :ref:`stm32_eth_mac`
 * 8~14位并行摄像头接口
 * :ref:`stm32_otg_hs` + USB OTG FS
 * 2个12位DAC、3个速度为2 MSPS或6 MSPS（交错模式）的12位ADC
@@ -53,6 +53,12 @@ Xin简介
 USB OTG HS
 ^^^^^^^^^^^
 
+.. _stm32_eth_mac:
+
+Ethernet MAC
+^^^^^^^^^^^^^^
+
+10/100 Ethernet MAC with dedicated DMA: supports IEEE 1588v2 hardware, MII/RMII
 
 
 Xin选择

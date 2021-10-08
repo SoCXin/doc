@@ -40,9 +40,11 @@ Xin简介
 ^^^^^^^^^^^
 
 * 550 MHz :ref:`cortex_m7`
-* 2x Octo-SPI
-* Ethernet
+* 2x :ref:`stm32_ospi`
+* :ref:`stm32_eth_mac`
 * :ref:`stm32_otg_hs`
+* 安全启动和安全固件升级 :ref:`stm32_sbsfu`
+
 
 .. note::
     :ref:`stm32h730` 所有MCU应该具备的属性都拥有且顶级，同时具有高性能和低价优势，是一颗无法忽略的战略级MCU
@@ -53,6 +55,22 @@ Xin简介
 .. image:: ./images/STM32H730s.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html
 
+.. _stm32_cache:
+
+Cache
+^^^^^^^^^^^
+
+32-Kbyte data cache and 32-Kbyte instruction cache allowing 0-wait state
+
+.. _stm32_sbsfu:
+
+SBSFU
+^^^^^^^^^^^
+
+.. _stm32_ospi:
+
+Octo-SPI
+^^^^^^^^^^^
 
 
 Xin选择
@@ -202,6 +220,10 @@ Xin选择
       - LQFP100
       - 14×14mm
       - 35
+
+.. note::
+    :ref:`stm32h730` 系列 STM32H730IBK拥有STM32系列中数量最多的16bit ADC 36通道
+
 
 Xin应用
 -----------
