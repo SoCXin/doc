@@ -32,10 +32,10 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`cortex_m3` 120 MHz
+* 120 MHz :ref:`cortex_m3`
 * 符合IEEE 1588 v2标准要求的以太网MAC10/100
 * 8~14位并行摄像头接口
-* 2个USB OTG（其中一个支持HS）
+* :ref:`stm32_otg_hs` + USB OTG FS
 * 2个12位DAC、3个速度为2 MSPS或6 MSPS（交错模式）的12位ADC
 * 通信接口多达15个（包括6个速度高达7.5 Mb/s的USART、3个速度高达30 Mb/s的SPI、3个I²C、2个CAN、SDIO）
 * 定时器多达17个：16和32位定时器
@@ -48,9 +48,9 @@ Xin简介
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32f2x7.html
 
 
-.. _stm32_usb_otg_hs:
+.. _stm32_otg_hs:
 
-OTG HS
+USB OTG HS
 ^^^^^^^^^^^
 
 
@@ -137,7 +137,7 @@ GD32F207
       -
       -
       -
-      -  :ref:`stm32_usb_otg_hs`
+      - :ref:`stm32_otg_hs`
       - MAC100
     * - :ref:`stm32f407`
       - 210
