@@ -113,13 +113,14 @@ SoC 芯
       - :ref:`mips`
       - :ref:`riscv`
       - :ref:`mcs51`
+      - others
     * - No.1
       - :ref:`sp7021`
       - :ref:`gw1nsr`
       - :ref:`esp32`
       - :ref:`gd32v103`
       - :ref:`stc8`
-
+      - :ref:`w806`
 
 .. toctree::
     :caption: 厂商速览

@@ -132,11 +132,17 @@ ETH-MAC
       - USB OTG
       - NO
 
-WiFi
+IoT WiFi
 -----------
 
+.. toctree::
+    :maxdepth: 1
+
+    W806 <../M/W806>
+    W800 <../M/W800>
+
 .. hint::
-    具备无线网络接入能力。
+    大部分此类芯片不仅具备WiFi接入能力，还同时具有BLE连接能力。
 
 .. list-table::
     :header-rows:  1
@@ -165,6 +171,16 @@ WiFi
       - 150 Mbps
       - BLE 5.0
       - QFN32
+    * - :ref:`w800`
+      - :ref:`xt804`
+      - 288 KB
+      - 2 MB
+      - 1T1R b/g/n
+      - 150 Mbps
+      - BLE v4.2
+      - :ref:`w800_qfn32`
+
+
 
 Mesh
 ----------

@@ -50,6 +50,8 @@
 /MT2625.html -> MediaTek/MT2625.html
 /ZML165.html -> M/ZML165.html
 /RP2040.html -> M/RP2040.html
+/W806.html -> M/W806.html
+/W800.html -> M/W800.html
 /GD32V103.html -> M/GD32V103.html
 /CS32A039.html -> M/CS32A039.html
 /CS32G020.html -> M/CS32G020.html
