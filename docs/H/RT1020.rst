@@ -42,7 +42,6 @@ Xin简介
 * 500 MHz :ref:`cortex_m7`
 
 
-
 Xin选择
 -----------
 
@@ -62,8 +61,9 @@ Xin选择
 型号对比
 ~~~~~~~~~
 
-.. image:: ./images/IMXRT.png
+RT1020相对 :ref:`rt1010` 拥有以太网和CAN外设配置，同时存储资源加倍
+
+.. image:: ./images/RT.png
     :target: https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus:IMX-RT-SERIES
 
 
- :ref:`rt1020` 相对 :ref:`rt1010` 拥有以太网和CAN外设配置，同时存储资源加倍
