@@ -15,7 +15,6 @@ CH573
 Xin简介
 -----------
 
-
 .. image:: ./images/CH573.png
     :target: http://www.wch.cn/products/CH573.html
 
@@ -35,10 +34,10 @@ L2R2
 
 * 供电电压：2.1 to 3.6 V
 * 工作温度：-40 °C to 85/125 °C
-* 封装规格：QFN28/QFN48
 * 处理性能：34 :ref:`DMIPS`
 * RAM容量：32 KB
 * Flash容量：250 KB
+* 封装规格：:ref:`qfn28` /QFN48
 
 特征参数
 ^^^^^^^^^^^

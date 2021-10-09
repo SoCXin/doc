@@ -4,9 +4,6 @@
 集成Xin榜
 ====================
 
-.. note::
-    特色榜单收录非常具有创新性，或者非常具有创造性的产品
-
 .. contents::
     :local:
 
@@ -15,6 +12,8 @@
 ETH-PHY
 -------------
 
+芯片集成以太网PHY器件，不再需要外部连接PHY芯片
+
 .. list-table::
     :header-rows:  1
 
@@ -22,7 +21,7 @@ ETH-PHY
       - Core
       - RAM
       - Flash
-      - USB
+      - :ref:`usb_phy`
       - :ref:`eth_phy`
       - Package
     * - :ref:`ch563`
@@ -57,7 +56,7 @@ ETH-Tiny
       - Flash
       - USB
       - BLE
-      - ETH-PHY
+      - :ref:`eth_phy`
       - Package
     * - :ref:`ch32v208`
       - :ref:`wch_riscv4c`
@@ -87,6 +86,46 @@ QFN28
 
 .. hint::
     如果在受限的体积内实现以太网功能，QFN28是个不错的选择。
+
+.. _usb_phy:
+
+USB-PHY
+-------------
+
+芯片集成USB HS PHY器件实现高速通信
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - :ref:`usb_phy`
+      - :ref:`eth_phy`
+      - :ref:`eth_mac`
+    * - :ref:`ch563`
+      - :ref:`arm7`
+      - 64 KB
+      - 224 KB
+      - 480M
+      - 100M
+      - 1000M
+    * - :ref:`ch32f207`
+      - :ref:`cortex_m3`
+      - 64 KB
+      - 256 KB
+      - 480M
+      - 100M
+      - 1000M
+    * - :ref:`ch32v307`
+      - :ref:`wch_riscv4a`
+      - 64 KB
+      - 256 KB
+      - 480M
+      - 100M
+      - 1000M
+
 
 .. _measure:
 

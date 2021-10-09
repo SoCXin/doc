@@ -5,7 +5,7 @@ CH32V307
 ============
 
 * 关键词：``RISC-V`` ``144MHz`` ``USB`` ``10M-ETH-PHY`` ``CAN`` ``AES128``
-* 资源库：`GitHub <https://github.com/SoCXin/CH32F208>`_
+* 资源库：`GitHub <https://github.com/SoCXin/CH32V307>`_
 
 .. contents::
     :local:
@@ -18,10 +18,26 @@ Xin简介
 .. image:: ./images/CH32V307.png
     :target: http://www.wch.cn/products/CH32V307.html
 
-关键特性
-~~~~~~~~~~~~
+规格配置
+~~~~~~~~~~~
 
-* 64KB SRAM，256KB Flash
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 发布价格：
+* 供电电压：3.0 to 5.5 V
+* 工作温度：-40°C to +85°C
+* 处理性能：
+* RAM容量：64 KB
+* Flash容量：256 KB
+* 封装规格：
+
+
+特征参数
+^^^^^^^^^^^
+
+* 144MHz :ref:`wch_riscv4a`
 * USB2.0全速OTG接口
 * USB2.0高速主机/设备接口（480Mbps 内置PHY）
 * 3个USART接口和5个UART接口

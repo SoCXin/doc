@@ -17,10 +17,26 @@ Xin简介
 
 .. image:: ./images/CH32F207.png
     :target: http://www.wch.cn/products/CH32F207.html
+规格配置
+~~~~~~~~~~~
 
-关键特性
-~~~~~~~~~~~~
+基本参数
+^^^^^^^^^^^
 
+* 发布时间：
+* 发布价格：
+* 供电电压：3.0 to 5.5 V
+* 工作温度：-40°C to +85°C
+* 处理性能：
+* RAM容量：64 KB
+* Flash容量：256 KB
+* 封装规格：
+
+
+特征参数
+^^^^^^^^^^^
+
+* 144MHz :ref:`cortex_m3`
 * 千兆以太网控制器ETH（内置10M PHY）
 * SDIO接口、FSMC接口、DVP数字图像接口
 * USB2.0高速主机/设备接口（480Mbps 内置PHY）
