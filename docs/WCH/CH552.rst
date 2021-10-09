@@ -9,11 +9,12 @@ CH552
 
 .. contents::
     :local:
+
 Xin简介
 -----------
 
-.. image:: ./images/RP2040.png
-    :target: https://www.raspberrypi.org/documentation/microcontrollers/rp2040.html
+.. image:: ./images/CH552.png
+    :target: http://www.wch.cn/products/CH552.html
 
 .. contents::
     :local:
@@ -37,13 +38,13 @@ L1R1
 * 处理性能：
 * RAM容量：
 * Flash容量：
-* 封装规格：TSSOP20/SOP16/MSOP10/QFN16
+* 封装规格：TSSOP20/SOP16/QFN16/MSOP10
 
 
 特征参数
 ^^^^^^^^^^^
 
-*  12/24 MHz :ref:`mcs51`
+* 12/24 MHz :ref:`mcs51`
 * USB Device
 * UART x 2 + SPI
 
@@ -61,6 +62,8 @@ Xin应用
 
 CMSIS-DAP
 ~~~~~~~~~~~~~
+
+:ref:`cmsis_dap`
 
 
 Xin总结
