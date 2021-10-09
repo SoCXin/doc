@@ -4,18 +4,51 @@
 CH552
 ========
 
-* 关键词：``USB`` ``E8051`` ``24MHz`` ``LDO`` ``Type-C``
+* 关键词：``USB`` ``8051`` ``24MHz`` ``LDO`` ``Type-C``
 * 资源库：`GitHub <https://github.com/SoCXin/CH552>`_
 
 .. contents::
     :local:
-
 Xin简介
 -----------
 
-.. warning::
-     CH551G已经停产
+.. image:: ./images/RP2040.png
+    :target: https://www.raspberrypi.org/documentation/microcontrollers/rp2040.html
 
+.. contents::
+    :local:
+
+规格配置
+~~~~~~~~~~~
+
+.. _LR_002:
+
+L1R1
+^^^^^^^^^^^
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 发布价格：
+* 供电电压：3.0 to 5.5 V
+* 工作温度：-40°C to +85°C
+* 处理性能：
+* RAM容量：
+* Flash容量：
+* 封装规格：TSSOP20/SOP16/MSOP10/QFN16
+
+
+特征参数
+^^^^^^^^^^^
+
+*  12/24 MHz :ref:`mcs51`
+* USB Device
+* UART x 2 + SPI
+
+.. warning::
+     其简配的CH551G已经停产，该型号也许性价比过高，不再是官方推荐
 
 
 Xin应用
