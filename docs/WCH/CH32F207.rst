@@ -13,12 +13,14 @@ CH32F207
 Xin简介
 -----------
 
-:ref:`wch` :ref:`cortex_m3` CH32F207系列主频高达144MHz，独立了GPIO电压（与系统供电分离）。资源同比增加了随机数单元，4组运放比较器；提高串口U(S)ART数量到8组，电机定时器到4组。搭配时钟安全、电源管理、双组DMA、DAC、SDIO、CAN、FSMC等资源。提供USB2.0高速接口（480Mbps）并内置了PHY收发器，以太网MAC升级到千兆并集成了10M-PHY模块。
 
 .. image:: ./images/CH32F207.png
     :target: http://www.wch.cn/products/CH32F207.html
+
 规格配置
 ~~~~~~~~~~~
+
+主频高达144MHz，独立了GPIO电压（与系统供电分离）。资源同比增加了随机数单元，4组运放比较器；提高串口U(S)ART数量到8组，电机定时器到4组。搭配时钟安全、电源管理、双组DMA、DAC、SDIO、CAN、FSMC等资源。提供USB2.0高速接口（480Mbps）并内置了PHY收发器，以太网MAC升级到千兆并集成了10M-PHY模块。
 
 基本参数
 ^^^^^^^^^^^
