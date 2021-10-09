@@ -12,6 +12,11 @@ SoC 芯
 结合不同的需求、场景和生态资源，立体给出相关建议，通过信息汇整、比较和迭代，呈现更清晰的xin体系。
 
 .. toctree::
+    :maxdepth: 1
+
+    推荐清单 <list>
+
+.. toctree::
     :caption: 榜单速览
     :maxdepth: 1
 
