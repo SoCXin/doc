@@ -3,7 +3,7 @@
 STM32H750
 ================
 
-* 关键词：``Cortex-M7`` ``480MHz`` ``1027DMIPS`` ``16bit-ADC`` ``USB-HS-OTG`` ``HDMI-CEC``  ``11 UART``
+* 关键词：``Cortex-M7`` ``480MHz`` ``16bit-ADC`` ``USB-HS-OTG`` ``HDMI-CEC``  ``40nm`` ``11 UART``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32H750>`_
 
 .. contents::
@@ -24,27 +24,44 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：
-* 时钟精度：
-* 处理性能：1027DMIPS
-* SRAM容量：1M
-* Flash容量：128K
+* 发布时间：
+* 供电电压：1.71 to 3.6 V
+* 工作温度：40°C to +85°C
+* 处理性能：1027 :ref:`DMIPS`, 2778 :ref:`CoreMark`
+* RAM容量：1 MB
+* Flash容量：128 KB
+* 封装规格：:ref:`stm32_lqfp100` /LQFP144/LQFP176/UFBGA176/UFBGA169/UFBGA144/TFBGA100
+
+.. note::
+    :ref:`stm32h750` 作为超值系列降低了内部Flash配置，但并不是flashless芯片
+
+
 
 特征参数
 ^^^^^^^^^^^
 
-* Cortex-M7 480MHz
+* 480 MHz :ref:`cortex_m7`
+* 2x :ref:`stm32_ospi`
+* :ref:`stm32_eth_mac`
+* :ref:`stm32_otg_hs`
+* :ref:`hdmi_cec`
+* 安全启动和安全固件升级 :ref:`stm32_sbsfu`
 * 5 x UART + 5 x USART + LPUSART
 * 2×16-bit ADC 22ch, 3.6 MSPS in 16-bit, 7.2 MSPS in doubleinterleaved mode
 * 1 x 12-bit ADC 12ch, up to 5 MSPS in 12-bit
 * 2 x Quad-SPI interface with XiP
 * LCD-TFT controller supporting up to XGA resolution
-* HDMI-CEC
+
 
 芯片架构
 ~~~~~~~~~~~
 
+.. _stm32_lqfp100:
 
+LQFP100
+^^^^^^^^^^^
+
+14×14mm
 
 
 Xin选择
@@ -56,6 +73,14 @@ Xin选择
 
 品牌对比
 ~~~~~~~~~
+
+STM32H7系列的主要竞争对手是NXP的i.MX RT系列
+
+* STM32H7支持32位SDRAM，RT1050仅支持16位SDRAM
+* STM32H7有JPEG硬解，RT的分辨率是1368 * 768，H7是1024*768
+* RT带的两个USB都带高速PHY，H7系列无，得外置
+* RT1060系列带双网口，H7系列仅一个
+
 
 型号对比
 ~~~~~~~~~

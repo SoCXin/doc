@@ -31,7 +31,7 @@ Xin简介
 * 处理性能：1177 :ref:`DMIPS`, 2778 :ref:`CoreMark`
 * RAM容量：564 KB
 * Flash容量：128 KB
-* 封装规格：LQFP100/LQFP144/LQFP176/UFBGA176/UFBGA169/UFBGA144/TFBGA100
+* 封装规格：:ref:`stm32_lqfp100` /LQFP144/LQFP176/UFBGA176/UFBGA169/UFBGA144/TFBGA100
 
 .. image:: ./images/STM32H730p.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html
@@ -69,7 +69,7 @@ SBSFU
 
 .. _stm32_ospi:
 
-Octo-SPI
+OctoSPI
 ^^^^^^^^^^^
 
 
@@ -165,6 +165,16 @@ Xin选择
       - :ref:`stm32_otg_hs`
       - 100M
       - 35
+    * - STM32H723
+      - 1027
+      - 1 MB
+      - 16+16
+      - ART
+      - 2 Quad
+      - :ref:`stm32_otg_hs`
+      - 100M
+      - 35
+
 
 型号对比
 ~~~~~~~~~

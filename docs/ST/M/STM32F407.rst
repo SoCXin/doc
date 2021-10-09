@@ -77,3 +77,12 @@ Xin应用
 
 .. image:: ./images/B_STM32F407.jpg
     :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.3.22c4235cqh3nCy&id=610087556700&ns=1&abbucket=7
+
+
+.. _trezor:
+
+Trezor Wallet
+~~~~~~~~~~~~~~
+
+`Trezor Wallet <https://wallet.trezor.io/#/>`_
+

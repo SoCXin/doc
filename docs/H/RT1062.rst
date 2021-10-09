@@ -1,0 +1,15 @@
+
+.. _rt1062:
+
+RT1062
+=============
+
+* 关键词：``Cortex-M7`` ``600MHz`` ``64M DDR2`` ``0.2TOPS`` ``QFN88``
+* 资源库：`GitHub <https://github.com/SoCXin/RT1062>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+

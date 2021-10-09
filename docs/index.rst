@@ -20,11 +20,11 @@ SoC 芯
     :caption: 榜单速览
     :maxdepth: 1
 
-    极客最爱用资源多 <news/hot>
-    很多著名项目适配 <news/pop>
-    旗舰基本上啥都行 <news/top>
-    不能拒绝低价好货 <news/low>
-    封装集成针对性强 <news/sip>
+    极客最爱开源超多 <news/hot>
+    著名项目适配支持 <news/pop>
+    旗舰基本干啥都行 <news/top>
+    难以拒绝低价好货 <news/low>
+    小封装集成很紧凑 <news/sip>
 
 .. list-table::
     :header-rows:  1
@@ -58,12 +58,12 @@ SoC 芯
     :caption: 领域速览
     :maxdepth: 1
 
-    电机控制类   <for/foc>
-    人机交互类   <for/hmi>
-    通信连接类   <for/iot>
-    边缘计算类   <for/edge>
-    功耗优化类   <for/ulp>
-    模拟转换类   <for/adc>
+    电机控制   <for/foc>
+    人机交互   <for/hmi>
+    通信连接   <for/iot>
+    边缘计算   <for/edge>
+    功耗优化   <for/ulp>
+    模拟转换   <for/adc>
 
 .. list-table::
     :header-rows:  1

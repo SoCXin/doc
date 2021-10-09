@@ -4,7 +4,7 @@
 CH563
 ==========
 
-* 关键词：``ARM7`` ``ARMv5TE`` ``USB-HS`` ``100M-ETH-PHY`` ``DataFlash`` ``130MHz``
+* 关键词：``ARMv5TE`` ``130MHz`` ``USB-HS-PHY`` ``ETH-PHY-100M``
 * 资源库：`GitHub <https://github.com/SoCXin/CH563>`_
 
 .. contents::
@@ -23,17 +23,21 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
+* 发布时间：
+* 发布价格：
 * 供电电压：3.0 to 3.6 V
 * 工作温度：-40°C to 85°C
-* 封装规格：LQFP64/LQFP128
+
 * 处理性能：300 :ref:`DMIPS`
 * RAM容量：64 KB
 * Flash容量：224 KB
+* 封装规格：LQFP64/LQFP128
+
 
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`arm7` 130 MHz
+* 130 MHz :ref:`arm7`
 * USB2.0高速主从接口（内置PHY）
 * 10/100M网络接口（内置PHY）
 * 4组28位定时器

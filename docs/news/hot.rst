@@ -189,7 +189,7 @@ STM32F103范式
       - USB
       -
 
-STM32F4范式
+STM32F4xx范式
 ^^^^^^^^^^^^^^
 
 .. list-table::
