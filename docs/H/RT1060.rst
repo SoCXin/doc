@@ -63,7 +63,5 @@ Xin选择
 
 .. image:: ./images/NXPRT.png
     :target: https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus:IMX-RT-SERIES
-.. image:: ./images/IMXRT.png
-    :target: https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus:IMX-RT-SERIES
 
 RT1060相对RT1050系列主要差异在于RAM资源后者只有前者的一半

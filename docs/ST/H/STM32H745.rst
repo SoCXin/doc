@@ -3,7 +3,7 @@
 STM32H745
 ================
 
-* 关键词：``Cortex-M7`` ``480MHz``
+* 关键词：``Cortex-M7`` ``480MHz`` ``Dual Core``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32H745>`_
 
 .. contents::
@@ -12,6 +12,8 @@ STM32H745
 Xin简介
 -----------
 
+.. image:: ./images/stm32h745.jpg
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32h7-series/stm32h745-755/stm32h745zi.html
 
 .. contents::
     :local:
@@ -22,12 +24,29 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
+* 发布时间：
+* 供电电压：1.71 to 3.6 V
+* 工作温度：40°C to +85°C
+* 处理性能：1327 :ref:`DMIPS`, 3224 :ref:`CoreMark`
+* RAM容量：1 MB
+* Flash容量：128 KB
+* 封装规格：LQFP144/LQFP176/UFBGA176/UFBGA169
+
+.. image:: ./images/STM32H745p.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32h7-series/stm32h745-755/stm32h745zi.html
+
 特征参数
 ^^^^^^^^^^^
+
+* 480 MHz :ref:`cortex_m7` + 240 MHz :ref:`cortex_m4`
+* 安全固件安装（SFI）
 
 
 芯片架构
 ~~~~~~~~~~~
+
+.. image:: ./images/STM32H745s.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32h7-series/stm32h745-755/stm32h745zi.html
 
 
 
