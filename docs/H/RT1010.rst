@@ -13,3 +13,5 @@ RT1010
 Xin简介
 -----------
 
+.. image:: ./images/RT1010.png
+    :target: https://www.nxp.com.cn/docs/en/data-sheet/IMXRT1010IEC.pdf

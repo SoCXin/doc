@@ -35,24 +35,28 @@ SoC 芯
       - :ref:`top`
       - :ref:`low`
       - :ref:`sip`
+      - 推荐Xin榜
     * - Top.1
       - :ref:`esp32`
       - :ref:`esp32`
       - :ref:`stm32h730`
       - :ref:`stc8`
       - :ref:`ch579`
+      - :ref:`NO_001`
     * - Top.2
       - :ref:`rp2040`
       - :ref:`stm32f103`
       - :ref:`stm32h750`
       - :ref:`ch552`
       - :ref:`ch32v208`
+      - :ref:`NO_002`
     * - Top.3
       - :ref:`stm32f401`
       - :ref:`nrf52832`
-      - :ref:`stm32h745`
+      - :ref:`rt1060`
       - :ref:`ch573`
       - :ref:`zml165`
+      - :ref:`NO_003`
 
 .. toctree::
     :caption: 领域速览
