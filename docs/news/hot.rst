@@ -30,7 +30,7 @@
 .. list-table::
     :header-rows:  1
 
-    * - Xin
+    * - :ref:`list`
       - C++
       - Arduino
       - Lua
@@ -70,12 +70,13 @@
 .. list-table::
     :header-rows:  1
 
-    * - Xin
-      - PlatformIO
+    * - :ref:`list`
+      - :ref:`platformio`
       - freeRTOS
       - Zephyr
       - RT-Thread
-      - Arduino
+      - :ref:`arduino`
+      - CMSIS
       - mbed
     * - :ref:`esp32`
       - √
@@ -84,6 +85,7 @@
       - √
       - √
       - X
+      - X
     * - :ref:`rp2040`
       - √
       - √
@@ -91,6 +93,7 @@
       - √
       - √
       - √
+      - X
     * - :ref:`stm32f103`
       - √
       - √
@@ -98,13 +101,16 @@
       - √
       - √
       - √
+      - √
 
 
-
-经典范式
+硬件范式
 -------------
 
-ST大法
+.. contents::
+    :local:
+
+STM大法
 ~~~~~~~~~~~~~
 
 .. note::
@@ -113,7 +119,7 @@ ST大法
 .. contents::
     :local:
 
-F030范式
+STM32F030范式
 ^^^^^^^^^^^^^^
 
 .. list-table::
@@ -144,7 +150,7 @@ F030范式
       - I2C
       -
 
-F103范式
+STM32F103范式
 ^^^^^^^^^^^^^^
 
 .. list-table::
@@ -183,7 +189,7 @@ F103范式
       - USB
       -
 
-F407范式
+STM32F4范式
 ^^^^^^^^^^^^^^
 
 .. list-table::
@@ -197,11 +203,44 @@ F407范式
       - CON
       - SPEC
       - Package
+    * - :ref:`stm32f401`
+      - 168 MHz
+      - 64 KB
+      - 256 KB
+      - 2
+      - 15
+      -
+      -
     * - :ref:`stm32f407`
       - 168 MHz
       - 64 KB
       - 256 KB
       - 2
       - 15
-      - USB/CAN
-      - LQFP100
+      -
+      -
+    * - :ref:`stm32f429`
+      - 168 MHz
+      - 64 KB
+      - 256 KB
+      - 2
+      - 15
+      -
+      -
+
+
+ESP大法
+~~~~~~~~~~~~~
+
+.. note::
+    :ref:`espressif` 作为开源先锋，通过拥抱开源的基础设施，被全世界的极客认可。
+
+.. _arduino:
+
+Arduino
+^^^^^^^^^^^^^^
+
+.. _platformio:
+
+PlatformIO
+^^^^^^^^^^^^^^
