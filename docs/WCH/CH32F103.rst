@@ -34,7 +34,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`cortex_m3` 72 MHz
+* 72 MHz :ref:`cortex_m3`
 * USB 2.0 x 2
 * CAN 2.0B
 * SPI(M/S) x 2 + UART x 3 + IIC x 2

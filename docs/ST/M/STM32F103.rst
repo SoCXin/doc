@@ -54,14 +54,15 @@ Xin选择
 .. contents::
     :local:
 
+
 品牌对比
 ~~~~~~~~~~
+
+:ref:`ch32f103` 在某种程度上将就是为了替代 :ref:`stm32f103` 而存在，管脚全部兼容，寄存器全部兼容，增强了USB功能。寄存器、存储器地址映射决定了芯片外设是否兼容，能否可以使用st官方驱动库。
 
 .. image:: ./images/STM32F103vendor.png
     :target: https://blog.csdn.net/weixin_34246598/article/details/112651024
 
-兼容替换
-^^^^^^^^^^
 
 .. list-table::
     :header-rows:  1
@@ -81,7 +82,7 @@ Xin选择
       - 64/128KB
       - 3
       - 2
-      - Device
+      - USBD
       - 2.0B
       - 9
     * - :ref:`ch32f103`
@@ -93,7 +94,42 @@ Xin选择
       - H/D+D
       - 2.0B
       - 9
-
+    * - GD32F103
+      - 90
+      - 20KB
+      - 64KB
+      - 3
+      - 2
+      - USBD
+      - 2.0B
+      - 9
+    * - APM32F103
+      - 90
+      - 20KB
+      - 64KB
+      - 3
+      - 2
+      - USBD
+      - 2.0B
+      - 9
+    * - HK32F103
+      - 90
+      - 20KB
+      - 64KB
+      - 3
+      - 2
+      - USBD
+      - 2.0B
+      - 9
+    * - CKS32F103
+      - 90
+      - 20KB
+      - 64KB
+      - 3
+      - 2
+      - USBD
+      - 2.0B
+      - 9
 
 系列对比
 ~~~~~~~~~
