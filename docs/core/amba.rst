@@ -1,21 +1,13 @@
 
 .. _amba:
 
-AMBA 片上总线
+AMBA
 ====================
 
-AMBA (Advanced Microcontroller Bus Architecture) 高级处理器总线架构
+**AMBA (Advanced Microcontroller Bus Architecture) 高级处理器总线架构**
 
 .. contents:: 目录索引
     :local:
-
-
-AHB
-----------
-
-Advanced High performance Bus,主要用于高性能模块(如CPU、DMA和DSP等)之间的连接。AHB 系统由主模块、从模块和基础结构(Infrastructure)3部分组成，整个AHB总线上的传输都由主模块发出，由从模块负责回应。
-
-AHB主要是针对高效率、高频宽及快速系统模块所设计的总线，它可以连接如微处理器、芯片上或芯片外的内存模块和DMA等高效率模块。
 
 APB
 ----------
@@ -25,9 +17,48 @@ Advanced Peripheral Bus, APB主要用于低带宽的周边外设之间的连接�
 APB主要用在低速且低功率的外围，可针对外围设备作功率消耗及复杂接口的最佳化。APB在AHB和低带宽的外围设备之间提供了通信的桥梁，所以APB是AHB或ASB的二级拓展总线。
 
 
+AHB
+----------
+
+Advanced High performance Bus,主要用于高性能模块(如CPU、DMA和DSP等)之间的连接。AHB 系统由主模块、从模块和基础结构(Infrastructure)3部分组成，整个AHB总线上的传输都由主模块发出，由从模块负责回应。
+
+AHB主要是针对高效率、高频宽及快速系统模块所设计的总线，它可以连接如微处理器、芯片上或芯片外的内存模块和DMA等高效率模块。
+
 
 性能测试
 ----------
+
+.. list-table::
+    :header-rows:  1
+
+    * - 内核
+      - DMIPS/MHz
+      - CoreMark/MHz
+    * - :ref:`cortex_m0`
+      - 0.95
+      - 1.62
+    * - :ref:`cortex_m3`
+      - 1.25
+      - 2.19
+    * - :ref:`cortex_m4`
+      - 1.25
+      - 2.19
+    * - :ref:`cortex_m7`
+      - 2.14
+      -
+    * - :ref:`cortex_m23`
+      -
+      -
+    * - :ref:`cortex_m33`
+      - 1.5
+      -
+    * - :ref:`24KEc`
+      - 1.55
+      - 3.05
+    * - :ref:`1004KEc`
+      -
+      -
+
 
 .. _DMIPS:
 
