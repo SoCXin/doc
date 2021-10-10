@@ -148,3 +148,9 @@ Xin选择
 
 .. image:: ./images/CH579l.png
     :target: http://www.wch.cn/products/CH579.html
+
+.. _wch_qfn48:
+
+QFN48
+^^^^^^^^^^^
+

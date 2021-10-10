@@ -92,7 +92,7 @@ QFN28
 USB-PHY
 -------------
 
-芯片集成USB HS PHY器件实现高速通信
+芯片集成USB2.0 HS PHY器件实现高速通信(480Mbps)，在该细分领域上 :ref:`st` 的STM32F7系列部分型号有USB2.0 PHY集成的方案。
 
 .. list-table::
     :header-rows:  1
@@ -122,6 +122,31 @@ USB-PHY
       - :ref:`wch_riscv4a`
       - 64 KB
       - 256 KB
+      - 480M
+      - 100M
+      - 1000M
+
+.. _usb3_phy:
+
+USB3.0 PHY
+~~~~~~~~~~~~~
+
+集成USB3.0 PHY器件，实现更高速率的USB通信连接
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Core
+      - RAM
+      - Flash
+      - :ref:`usb_phy`
+      - :ref:`eth_phy`
+      - :ref:`eth_mac`
+    * - :ref:`ch569`
+      - :ref:`arm7`
+      - 64 KB
+      - 224 KB
       - 480M
       - 100M
       - 1000M

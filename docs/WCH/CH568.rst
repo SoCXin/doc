@@ -34,7 +34,7 @@ CH568是一款高性能32位精简指令集微控制器，系统主频可达120M
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`wch_riscv3a` 120 MHz
+* 120 MHz :ref:`wch_riscv3a`
 * SATA主机/设备控制器
 * USB2.0 高速主/从接口（内置PHY），支持DMA
 * 4组SDIO接口

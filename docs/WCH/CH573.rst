@@ -37,7 +37,8 @@ L2R2
 * 处理性能：34 :ref:`DMIPS`
 * RAM容量：32 KB
 * Flash容量：250 KB
-* 封装规格：:ref:`qfn28` /QFN48
+* 封装规格：:ref:`qfn28` / :ref:`wch_qfn48`
+
 
 特征参数
 ^^^^^^^^^^^

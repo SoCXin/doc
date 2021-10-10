@@ -4,7 +4,7 @@
 WCH
 ============
 
-``RISC-V`` ``USB`` ``Ethernet`` ``BLE``
+``RISC-V`` ``8051`` ``USB`` ``Ethernet`` ``BLE``
 
 
 公司简介
@@ -14,7 +14,6 @@ WCH
 
 .. note::
     南京沁恒微电子成立于2004年，是一家专注于连接技术和MCU内核研究的射频与高速数模混合集成电路设计公司，提供以太网、蓝牙无线网络、USB和PCI类等接口芯片及集成上述接口的MCU+单片机。
-
 
 
 .. contents::
@@ -35,14 +34,20 @@ USB/UART
 PCI/PCIE
 ^^^^^^^^^^^
 
+.. image:: ./images/pci.png
+    :target: http://www.wch.cn/products/category/2.html#data
+
 Ethernet
 ^^^^^^^^^^^
 
+.. image:: ./images/eth.png
+    :target: http://www.wch.cn/products/category/4.html#data
 
 
 控制类产品
 ~~~~~~~~~~~~
 
+包括多个系列的 :ref:`mcs51` 内核单片机， :ref:`wch_riscv3a` / :ref:`cortex_m0` 内核的无线SoC
 
 .. warning::
     :ref:`wch` 硬件非常有性价比，基本标配USB外设，集成度比较高，但其软件生态策略保守，关键的代码资源都是通过lib方式提供，不开放源码，代码集成十分难用。
@@ -161,6 +166,8 @@ BLE +
       - 2 x USB
       - NO
 
+.. image:: ./images/ch5x.png
+    :target: http://special.wch.cn/zh_cn/mcu/
 
 内核分类
 ------------------
@@ -234,8 +241,10 @@ Cortex
 
 RISC-V
 ~~~~~~~~~~~~
-.. note::
-    在 :ref:`riscv` 内核的开发和迭代效率比价快，是国内该领域的先行者
+
+.. image:: ./images/CH32V.png
+    :target: http://special.wch.cn/zh_cn/mcu/
+
 
 .. toctree::
     :maxdepth: 1
@@ -247,6 +256,6 @@ RISC-V
     CH568 <CH568>
     CH569 <CH569>
 
-.. image:: ./images/CH32V.png
+.. image:: ./images/CH5V.png
     :target: http://special.wch.cn/zh_cn/mcu/
 

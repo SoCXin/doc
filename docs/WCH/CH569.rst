@@ -1,11 +1,11 @@
-
+.. _NO_009:
 .. _ch569:
 
 CH569
 ===========
 
 * 关键词：``RISC-V3A`` ``USB3.0`` ``HSPI`` ``SerDes`` ``1000M Ethernet`` ``120MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/CH573>`_
+* 资源库：`GitHub <https://github.com/SoCXin/CH569>`_
 
 .. contents::
     :local:
@@ -13,22 +13,39 @@ CH569
 Xin简介
 -----------
 
+
+.. image:: ./images/CH569.png
+    :target: http://www.wch.cn/products/CH569.html
+
+规格参数
+~~~~~~~~~~~
+
 :ref:`wch_riscv3a` 支持RISC-V指令的IMAC子集。系统主频为120 MHz，片上集成超高速USB3.0主机和设备控制器（内置 PHY）、千兆以太网控制器、专用高速 SerDes 控制器（内置PHY，可直接驱动光纤）、高速并行接口HSPI、数字视频接口（DVP）、SD/EMMC接口控制器、加解密模块，片上128位宽 DMA设计可保障大数据量的高速传输，可广泛应用于流媒体、即时存储、超高速USB3.0 FIFO、通信延长、安防监控等应用场景。
 
-.. image:: ./images/CH573.png
-    :target: http://www.wch.cn/products/CH573.html
 
-关键特性
-~~~~~~~~~~~~~~
+基本参数
+^^^^^^^^^^^
 
-* SPI x 2 + UART x 4 (16C550/6Mbps)
-* BLE4.2 (RX-96dBm，TX+5dBm)
-* USB H/D
-* 支持2.1V～3.6V, 内置DC/DC转换
-* 2 组端口PA和PB，22 x GPIO
+* 供电电压：2.1 to 3.6 V
+* 工作温度：-40 °C to 85/125 °C
+* 处理性能：34 :ref:`DMIPS`
+* RAM容量：32 KB
+* Flash容量：250 KB
+* 封装规格：:ref:`qfn28`
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`wch_riscv3a`
+
 
 .. hint::
     :ref:`ch569` 最吸引人的地方在强悍的高速外设配置。
+
+.. _LR_009:
+
+L4R5
+^^^^^^^^^^^
 
 
 芯片架构
@@ -94,47 +111,6 @@ CH573 相同，可直接参考 CH573 手册和资料。
       - 2 x USB
       - NO
 
-.. image:: ./images/ch5x.png
+.. image:: ./images/CH5V.png
     :target: http://special.wch.cn/zh_cn/mcu/
-
-品牌对比
-~~~~~~~~~
-
-
-.. note::
-    :ref:`wch` 专注于连接技术和MCU内核研究，提供以太网、蓝牙无线网络、USB和PCI类等接口芯片及集成上述接口的MCU+单片机。
-
-
-Xin应用
------------
-
-.. contents::
-    :local:
-
-.. image:: ./images/B_CH573.jpg
-    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.23.27ff8325Ct03Hk&id=638956144135&ns=1&abbucket=19#detail
-
-串口控制器
-~~~~~~~~~~~
-
-方案简介
-^^^^^^^^^^^^
-
-通过USB连接PC端实现实时数据上报和指令接收，通过下行的串口控制下行通信设备，同时可以连接蓝牙网络组合控制
-
-
-Xin总结
---------------
-
-.. contents::
-    :local:
-
-要点提示
-~~~~~~~~~~~~~
-
-
-
-问题整理
-~~~~~~~~~~~~~
-
 
