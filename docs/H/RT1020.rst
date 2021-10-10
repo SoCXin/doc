@@ -4,7 +4,7 @@
 RT1020
 =============
 
-* 关键词：``Cortex-M7`` ``500MHz``
+* 关键词：``Cortex-M7`` ``500MHz`` ``USB-HS-PHY`` ``ETH-MAC-100``
 * 资源库：`GitHub <https://github.com/SoCXin/RT1020>`_
 
 .. contents::
@@ -41,6 +41,9 @@ Xin简介
 
 * 500 MHz :ref:`cortex_m7`
 
+.. note::
+    :ref:`rt1020` 基于其自身定位MPU，除了 :ref:`cortex_m7` 高主频之外，几乎没什么外设配置上的亮点，而基于纯计算的需求，完全不需要要局限在 :ref:`cortex_m` 范围内
+
 
 Xin选择
 -----------
@@ -57,9 +60,11 @@ Xin选择
 * :ref:`rt1020` USB HS 带有 PHY
 * :ref:`rt1020` 成本更低，RAM更少，封装规格只有两种
 
+如果只是为了USB HS PHY集成和以太网功能，可以考虑下 :ref:`usb_phy` 和 :ref:`eth_phy` 的方案
 
-型号对比
-~~~~~~~~~
+
+系列对比
+~~~~~~~~~~
 
 RT1020相对 :ref:`rt1010` 拥有以太网和CAN外设配置，同时存储资源加倍
 
@@ -67,3 +72,5 @@ RT1020相对 :ref:`rt1010` 拥有以太网和CAN外设配置，同时存储资�
     :target: https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus:IMX-RT-SERIES
 
 
+型号对比
+~~~~~~~~~

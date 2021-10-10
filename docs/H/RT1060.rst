@@ -26,8 +26,8 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
-* 供电电压：1.71 to 3.6 V
-* 工作温度：40°C to +95°C
+* 供电电压：
+* 工作温度：-40°C to +105°C
 * 处理性能：1284 :ref:`DMIPS`, 3020 :ref:`CoreMark`
 * RAM容量：1 MB
 * Flash容量：
@@ -52,16 +52,32 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
-* STM32H7支持32位SDRAM，:ref:`rt1060` 仅支持16位SDRAM
-* STM32H7有JPEG硬解，RT的分辨率是1368*768，STM32H7是1024*768
-* RT带的两个USB都带高速PHY
-* :ref:`rt1060` 带双网口， :ref:`stm32h750` 系列仅一个
+典型的竞品为 :ref:`st` 高性能H7系列：
+
+* :ref:`stm32h730` 支持32位SDRAM，:ref:`rt1060` 仅支持16位SDRAM
+* :ref:`stm32h730` 有JPEG硬解，分辨率1024*768，:ref:`rt1060` 支持的分辨率是1368*768
+* :ref:`rt1060` 两个USB带``高速PHY``
+* :ref:`rt1060` 带 ``双网口`` 可以作为网关中继， :ref:`stm32h750` 系列仅一个，都不带PHY
 
 
-型号对比
-~~~~~~~~~
+系列对比
+~~~~~~~~~~
+
+RT1060系列相对RT1050系列主要差异在于RAM资源和以太网数量，后者只有前者的一半
 
 .. image:: ./images/NXPRT.png
     :target: https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus:IMX-RT-SERIES
 
-RT1060相对RT1050系列主要差异在于RAM资源后者只有前者的一半
+型号对比
+~~~~~~~~~
+
+RT1060系列包括RT1062、RT1064等常用型号
+
+.. image:: ./images/RT1060lt.png
+    :target: https://www.nxp.com/docs/en/nxp/data-sheets/IMXRT1060CEC.pdf
+
+.. image:: ./images/RT1060l.png
+    :target: https://www.nxp.com/docs/en/nxp/data-sheets/IMXRT1060CEC.pdf
+
+.. note::
+    RT1062在开源领域的参与度还是蛮高的。
