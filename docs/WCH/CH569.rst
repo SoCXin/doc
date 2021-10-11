@@ -54,12 +54,6 @@ Xin简介
     :target: http://www.wch.cn/products/CH569.html
 
 
-.. _LR_009:
-
-L4R5
-^^^^^^^^^^^
-
-
 芯片架构
 ~~~~~~~~~~~
 

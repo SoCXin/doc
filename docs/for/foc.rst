@@ -23,7 +23,7 @@ FOC按照电机有无传感器来区分可以分为有传感器FOC和无传感�
 .. _simplefoc:
 
 SimpleFOC
--------------
+~~~~~~~~~~~
 
 `GitHub <https://GitHub.com/simplefoc>`_ |
 `Website <https://docs.simplefoc.com//>`_
@@ -36,7 +36,7 @@ SimpleFOC
       - 4 PWM
       - 3 PWM
       - 6 PWM
-      - PWM freq config
+      - PWM Freq
       - Package
     * - :ref:`esp32`
       - √

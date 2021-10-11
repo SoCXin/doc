@@ -73,32 +73,37 @@ A/D转换
       - 16bit
       - LQFP48
 
-技术对比
-^^^^^^^^^^^
+多通道
+~~~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`list`
-      - Chan
-      - Rate
-      - ENOB
-      - Type
-    * - :ref:`sigma_delta`
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - SPEC
+      - Package
+    * - :ref:`stm32g474`
       -
       -
       -
       -
-    * - SAR
+      -
+      -
+      -
+    * - :ref:`stm32h730`
       -
       -
       -
       -
-    * - Pipeline
       -
       -
       -
-      -
+
 
 .. _dac:
 

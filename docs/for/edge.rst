@@ -63,8 +63,7 @@ X-CUBE-AI
     A311D <../H/A311D>
     SSD201 <../H/SSD201>
     SP7021 <../H/SP7021>
-    BCM2835 <../H/BCM2835>
-    BCM2711 <../H/BCM2711>
+
 
 .. list-table::
     :header-rows:  1
@@ -104,17 +103,16 @@ X-CUBE-AI
       -
       -
       - QFN88
-    * - :ref:`bcm2835`
-      - :ref:`arm1176jz`
-      - 700 MHz
-      - DDR2
-      -
-      -
-      -
-    * - :ref:`bcm2711`
-      - :ref:`cortex_a72`
-      - 1.8 GHz
-      - DDR4
-      -
-      -
-      -
+
+
+对比平台
+~~~~~~~~~~~
+
+树莓派
+^^^^^^^^^^^
+
+.. toctree::
+    :maxdepth: 1
+
+    BCM2835 <../H/BCM2835>
+    BCM2711 <../H/BCM2711>
