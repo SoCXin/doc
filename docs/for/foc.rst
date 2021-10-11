@@ -19,7 +19,64 @@ FOC按照电机有无传感器来区分可以分为有传感器FOC和无传感�
 对于无传感器FOC，由于电机不带任何传感器，因此不能通过简单读取传感器的测量值来得到电机转子的位置信息，所以在控制中需要通过采集电机相电流，使用位置估算算法来计算转子位置。虽然无感FOC的控制难度较大，但是它可以避免传感器故障的风险，并且省去了传感器的成本，同时简化了电机与驱动板间的布线。目前，无感FOC多应用在风机类的场合中。
 
 
-相关方案
+
+.. _simplefoc:
+
+SimpleFOC
+-------------
+
+`GitHub <https://GitHub.com/simplefoc>`_ |
+`Website <https://docs.simplefoc.com//>`_
+
+.. list-table::
+    :header-rows:  1
+
+    * - MCU
+      - 2 PWM
+      - 4 PWM
+      - 3 PWM
+      - 6 PWM
+      - PWM freq config
+      - Package
+    * - :ref:`esp32`
+      - √
+      - √
+      - √
+      - √
+      - √
+      -
+    * - :ref:`rp2040`
+      - √
+      - √
+      - √
+      - √
+      - √
+      -
+    * - :ref:`stm32h747`
+      - √
+      - √
+      - √
+      - X
+      - √
+      -
+    * - :ref:`stm32g431`
+      - √
+      - √
+      - √
+      - √
+      - √
+      -
+    * - :ref:`stm32f103`
+      - √
+      - √
+      - √
+      - √
+      - √
+      -
+
+
+
+嵌入平台
 -----------
 .. toctree::
     :maxdepth: 1
@@ -32,7 +89,7 @@ FOC按照电机有无传感器来区分可以分为有传感器FOC和无传感�
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -48,3 +105,4 @@ FOC按照电机有无传感器来区分可以分为有传感器FOC和无传感�
       - 12
       - :ref:`stm32_hrtim`
       - LQFP64
+

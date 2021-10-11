@@ -89,7 +89,7 @@ STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - DMIPS
       - RAM
       - Cache
@@ -135,7 +135,7 @@ STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - DMIPS
       - RAM
       - Cache

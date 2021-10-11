@@ -9,22 +9,21 @@ IoT
 
 Ethernet
 -----------
-.. hint::
-    此处收录的具备以太网通信MCU，至少片上集成以太网 :ref:`eth_mac`
 
 .. contents::
     :local:
 
-.. _eth_mac:
 
-ETH-MAC
+网络协议
 ~~~~~~~~~~~~~~
 
- ``MII/RMII``
+LWIP
 
-
-串口通信(下行)
+嵌入平台
 ~~~~~~~~~~~~~~
+
+串口网关
+^^^^^^^^^^^
 
 .. hint::
     要求配置6串口以上，可用于实现以太网和串口上下通信。
@@ -32,7 +31,7 @@ ETH-MAC
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Mark
       - RAM
       - ROM
@@ -82,8 +81,8 @@ ETH-MAC
       - 10/100M
 
 
-无线通信(下行)
-~~~~~~~~~~~~~~
+无线网关
+^^^^^^^^^^^
 
 .. hint::
     要求配置下行无线通信能力，可以连接以太网并通过无线网络分发。
@@ -91,7 +90,7 @@ ETH-MAC
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Mark
       - RAM
       - ROM
@@ -132,8 +131,13 @@ ETH-MAC
       - USB OTG
       - NO
 
-IoT WiFi
+.. _wifi:
+
+WiFi
 -----------
+
+嵌入平台
+~~~~~~~~~~
 
 .. toctree::
     :maxdepth: 1
@@ -180,12 +184,12 @@ IoT WiFi
       - BLE v4.2
       - :ref:`w800_qfn32`
 
-
-
-Mesh
-----------
+.. _ble:
 
 BLE
+----------
+
+嵌入平台
 ~~~~~~~~~~
 
 .. toctree::
@@ -223,8 +227,13 @@ BLE
       - QFN28
 
 
+.. _lora:
 
 LoRa
+----------
+
+
+嵌入平台
 ~~~~~~~~~~
 
 .. toctree::

@@ -16,7 +16,7 @@ A/D转换
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -40,7 +40,7 @@ A/D转换
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -79,7 +79,7 @@ A/D转换
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Chan
       - Rate
       - ENOB
@@ -108,7 +108,7 @@ D/A转换
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash

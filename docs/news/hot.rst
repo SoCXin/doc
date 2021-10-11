@@ -24,7 +24,7 @@
 .. contents::
     :local:
 
-编程语言
+语言
 ~~~~~~~~~~~~~
 
 .. list-table::
@@ -32,7 +32,7 @@
 
     * - :ref:`list`
       - C++
-      - Arduino
+      - :ref:`arduino`
       - :ref:`lua`
       - mPy
       - :ref:`rust`
@@ -73,9 +73,14 @@ Lua
 Rust
 ^^^^^^^^^^^^
 
+.. _arduino:
+
+Arduino
+^^^^^^^^^^^^^^
 
 
-框架支持
+
+框架
 ~~~~~~~~~~~~~
 
 .. list-table::
@@ -124,6 +129,11 @@ CMSIS
 mbed
 ^^^^^^^^^^^^
 
+.. _platformio:
+
+PlatformIO
+^^^^^^^^^^^^^^
+
 
 硬件范式
 -------------
@@ -146,7 +156,7 @@ STM32F030范式
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -186,7 +196,7 @@ STM32F103范式
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -225,7 +235,7 @@ STM32F407范式
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -272,12 +282,6 @@ ESP大法
 .. note::
     :ref:`espressif` 作为开源先锋，通过拥抱开源的基础设施，被全世界的极客认可。
 
-.. _arduino:
 
-Arduino
-^^^^^^^^^^^^^^
-
-.. _platformio:
-
-PlatformIO
+ULP
 ^^^^^^^^^^^^^^

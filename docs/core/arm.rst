@@ -105,7 +105,7 @@ ARM9
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - Freq
       - RAM
@@ -140,7 +140,7 @@ ARM11
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - Freq
       - RAM

@@ -81,7 +81,7 @@ USB2.0 HS（480Mbps内置PHY）和千兆以太网控制器ETH（内置10M PHY）
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Mark
       - RAM
       - ROM

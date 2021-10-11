@@ -157,7 +157,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - DMIPS
       - RAM
       - FLASH
@@ -224,7 +224,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Price
       - Package
       - Size

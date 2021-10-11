@@ -22,7 +22,7 @@ Marlin
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -71,7 +71,7 @@ USB-PD
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -108,7 +108,7 @@ ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含�
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -134,57 +134,3 @@ ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含�
 .. hint::
     基于 :ref:`ch552` 芯片应该是当下成本最低的 :ref:`ch552_dap` 实现方案，并且通过小封装可以获得更小的体积
 
-
-.. _simplefoc:
-
-SimpleFOC
--------------
-
-`GitHub <https://GitHub.com/simplefoc>`_ |
-`Website <https://docs.simplefoc.com//>`_
-
-.. list-table::
-    :header-rows:  1
-
-    * - MCU
-      - 2 PWM
-      - 4 PWM
-      - 3 PWM
-      - 6 PWM
-      - PWM freq config
-      - Package
-    * - :ref:`esp32`
-      - √
-      - √
-      - √
-      - √
-      - √
-      -
-    * - :ref:`rp2040`
-      - √
-      - √
-      - √
-      - √
-      - √
-      -
-    * - :ref:`stm32h747`
-      - √
-      - √
-      - √
-      - X
-      - √
-      -
-    * - :ref:`stm32g431`
-      - √
-      - √
-      - √
-      - √
-      - √
-      -
-    * - :ref:`stm32f103`
-      - √
-      - √
-      - √
-      - √
-      - √
-      -

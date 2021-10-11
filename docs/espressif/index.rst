@@ -30,7 +30,7 @@ Espressif
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - DMIPS
       - RAM

@@ -68,7 +68,7 @@ ETH +
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -94,7 +94,7 @@ USB +
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Mark
       - RAM
       - Flash
@@ -131,7 +131,7 @@ BLE +
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Mark
       - RAM
       - Flash
@@ -187,7 +187,7 @@ MCS51
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Mark
       - RAM
       - Flash

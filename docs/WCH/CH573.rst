@@ -90,7 +90,7 @@ CH573 相同，可直接参考 CH573 手册和资料。
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Mark
       - RAM
       - Flash

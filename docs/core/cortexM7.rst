@@ -18,7 +18,7 @@ Cortex-M7
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - DMIPS
       - RAM
       - Cache

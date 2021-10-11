@@ -7,71 +7,6 @@ HMI
 .. contents::
     :local:
 
-嵌入平台
------------
-
-.. toctree::
-    :maxdepth: 1
-
-    SWM32S <../M/SWM32S>
-    SWM341 <../M/SWM341>
-    TKM32F499 <../M/TKM32F499>
-
-.. list-table::
-    :header-rows:  1
-
-    * - Xin
-      - DMIPS
-      - RAM
-      - Flash
-      - reslution
-      - interface
-      - accelerator
-    * - :ref:`stm32h7b0`
-      - 599(280MHz)
-      - 1.4 MB
-      - 1/2 MB
-      - XGA(1024x768)
-      - RGB888
-      - DMA2D/JPEC
-    * - :ref:`stm32f429`
-      - 225(180MHz)
-      - 8 MB
-      - 16 MB
-      - XGA(1024x768)
-      - RGB888
-      - DMA2D/JPEC
-    * - :ref:`tkm32f499`
-      - 300(240MHz)
-      - 8MB
-      - 8MB(QSPI)
-      - 1024x600
-      - RGB888/TK80
-      - :ref:`tk_ltdc`
-    * - :ref:`swm32s`
-      - 150(120MHz)
-      - 512 KB
-      - 512 KB
-      - WVGA(800x480)
-      - RGB565
-      - No
-    * - :ref:`esp32s3`
-      - 600(240MHz)
-      - 8 MB
-      - 4 MB
-      - WVGA(800x480)
-      - SPI
-      - No
-    * - :ref:`gw1nsr`
-      - 75(60MHz)
-      - 24 KB
-      - 32 KB
-      - XGA(1024x768)
-      - :ref:`hdmi`
-      - No
-
-
-
 
 图形框架
 -----------
@@ -193,7 +128,7 @@ QT专门为 ARM Cortex-M 单片机开发的，目前用在 ARM Cortex M7 的微�
 VGA
 ~~~~~~~~~~~
 
-:ref:`rp2040`
+参考方案 :ref:`rp2040`
 
 
 .. _hdmi:
@@ -203,4 +138,69 @@ HDMI
 
 .. image:: ./images/HDMI.png
     :target: http://www.360doc.com/content/18/0130/07/34657313_726310561.shtml
+
+
+嵌入平台
+-----------
+
+.. toctree::
+    :maxdepth: 1
+
+    SWM32S <../M/SWM32S>
+    SWM341 <../M/SWM341>
+    TKM32F499 <../M/TKM32F499>
+
+.. list-table::
+    :header-rows:  1
+
+    * - Xin
+      - DMIPS
+      - RAM
+      - Flash
+      - reslution
+      - interface
+      - accelerator
+    * - :ref:`stm32h7b0`
+      - 599(280MHz)
+      - 1.4 MB
+      - 1/2 MB
+      - XGA(1024x768)
+      - RGB888
+      - DMA2D/JPEC
+    * - :ref:`stm32f429`
+      - 225(180MHz)
+      - 8 MB
+      - 16 MB
+      - XGA(1024x768)
+      - RGB888
+      - DMA2D/JPEC
+    * - :ref:`tkm32f499`
+      - 300(240MHz)
+      - 8MB
+      - 8MB(QSPI)
+      - 1024x600
+      - RGB888/TK80
+      - :ref:`tk_ltdc`
+    * - :ref:`swm32s`
+      - 150(120MHz)
+      - 512 KB
+      - 512 KB
+      - WVGA(800x480)
+      - RGB565
+      - No
+    * - :ref:`esp32s3`
+      - 600(240MHz)
+      - 8 MB
+      - 4 MB
+      - WVGA(800x480)
+      - SPI
+      - No
+    * - :ref:`gw1nsr`
+      - 75(60MHz)
+      - 24 KB
+      - 32 KB
+      - XGA(1024x768)
+      - :ref:`hdmi`
+      - No
+
 

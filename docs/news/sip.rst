@@ -12,12 +12,21 @@
 ETH-PHY
 -------------
 
+.. _eth_mac:
+
+ETH-MAC
+~~~~~~~~~~~~~~
+
+ ``MII/RMII``
+
+
+
 芯片集成以太网PHY器件，不再需要外部连接PHY芯片
 
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -50,7 +59,7 @@ ETH-Tiny
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -97,7 +106,7 @@ USB-PHY
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -136,7 +145,7 @@ USB3.0 PHY
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - RAM
       - Flash
@@ -172,7 +181,7 @@ Sigma-Delta
 .. list-table::
     :header-rows:  1
 
-    * - Name
+    * - :ref:`list`
       - Core
       - Chan
       - Rate
