@@ -4,7 +4,7 @@
 CH569
 ===========
 
-* 关键词：``RISC-V3A`` ``120MHz`` ``USB3.0`` ``HSPI`` ``SerDes`` ``Ethernet`` ``ETH-MAC-1000M``
+* 关键词：``RISC-V3A`` ``120MHz`` ``USB3.0`` ``HSPI`` ``SerDes`` ``Ethernet`` ``ETH-MAC1000``
 * 资源库：`GitHub <https://github.com/SoCXin/CH569>`_
 
 .. contents::

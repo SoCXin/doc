@@ -4,8 +4,8 @@
 STM32F207
 ==================
 
-* 关键词：``Cortex-M3`` ``120MHz`` ``USB-OTG-HS`` ``Ethernet`` ``MAC100``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32F207>`_
+* 关键词：``Cortex-M3`` ``120MHz`` ``USB-OTG-HS`` ``Ethernet`` ``ETH-MAC100``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32F207>`_ , `Gitee <https://gitee.com/socxin/STM32F207>`_
 
 .. contents::
     :local:
@@ -22,23 +22,30 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：1.71 to 3.6 V
 * 工作温度：-40°C to +85°C
-* 封装规格：LQFP100/LQFP144/LQFP176/BGA176
+* 制程工艺：90 nm
 * 处理性能：150 :ref:`DMIPS` , 398 :ref:`CoreMark`
 * RAM容量：128 KB
 * Flash容量：128/256/512 KB
+* 封装规格：LQFP100/LQFP144/LQFP176/BGA176
 
 特征参数
 ^^^^^^^^^^^
 
 * 120 MHz :ref:`cortex_m3`
-* 符合IEEE 1588 v2标准要求的 :ref:`stm32_eth_mac`
-* 8~14位并行摄像头接口
+* :ref:`stm32_eth_mac`
+* 8~14位并行摄像头接口 :ref:`stm32_cam`
 * :ref:`stm32_otg_hs` + USB OTG FS
 * 2个12位DAC、3个速度为2 MSPS或6 MSPS（交错模式）的12位ADC
 * 通信接口多达15个（包括6个速度高达7.5 Mb/s的USART、3个速度高达30 Mb/s的SPI、3个I²C、2个CAN、SDIO）
 * 定时器多达17个：16和32位定时器
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：1.62 to 3.6 V
+* Standby: 2.95 μA (Backup SRAM OFF, RTC/LSE ON)
+* 175 µA/MHz
 
 
 芯片架构
@@ -56,12 +63,15 @@ USB OTG HS
 .. image:: ./images/STM32F4USB.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32f429-439.html
 
+
 .. _stm32_eth_mac:
 
 Ethernet MAC
 ^^^^^^^^^^^^^^
 
 10/100 Ethernet MAC with dedicated DMA: supports IEEE 1588v2 hardware, MII/RMII
+
+符合IEEE 1588 v2标准要求
 
 
 Xin选择
@@ -207,17 +217,22 @@ STM32F107
       -
 
 
-* 相比STM32F205增加了符合IEEE 1588 v2标准要求的以太网MAC10/100和能够连接CMOS照相机传感器的8~14位并行摄像头接口。
+* 相比 STM32F205 增加了符合IEEE 1588 v2标准要求的以太网MAC10/100和能够连接CMOS照相机传感器的8~14位并行摄像头接口。
 * 相比STM32F217，后者整合了加密/HASH处理器，为AES 128、192、256、Triple DES和HASH（MD5、SHA-1）提供硬件加速。
+
+.. image:: ./images/STM32F207v.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32f2-series.html
+
 
 .. _stm32f205:
 
 STM32F205
 ^^^^^^^^^^^
 
-.. image:: ./images/stm32f107.jpg
-    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f1-series/stm32f105-107/stm32f105vc.html
+.. image:: ./images/stm32f205.jpg
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32f2-series/stm32f2x5.html
 
+相较而言，STM32F215 整合了加密/HASH处理器，为AES 128、192、256、Triple DES和HASH（MD5、SHA-1）提供硬件加速
 
 
 Xin应用
