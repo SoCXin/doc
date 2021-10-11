@@ -47,7 +47,6 @@ Xin简介
 
 * 供电电压：1.62 to 3.6 V
 * Standby: 2.95 μA (Backup SRAM OFF, RTC/LSE ON)
-*
 
 
 

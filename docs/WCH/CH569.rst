@@ -20,15 +20,12 @@ Xin简介
 规格参数
 ~~~~~~~~~~~
 
-:ref:`wch_riscv3a` 支持RISC-V指令的IMAC子集。系统主频为120 MHz，片上集成超高速USB3.0主机和设备控制器（内置 PHY）、千兆以太网控制器、专用高速 SerDes 控制器（内置PHY，可直接驱动光纤）、高速并行接口HSPI、数字视频接口（DVP）、SD/EMMC接口控制器、加解密模块，片上128位宽 DMA设计可保障大数据量的高速传输，可广泛应用于流媒体、即时存储、超高速USB3.0 FIFO、通信延长、安防监控等应用场景。
-
-片上采取 128 位数据宽度的 DMA 以支持多个高速外设的高带宽需求，实现大数据量的高速传输。外设包括 USB3.0 超速、USB2.0高速主机和设备控制器及收发器 PHY、千兆以太网控制器、专用高速 SerDes 控制器及收发器 PHY、SD/EMMC接口控制器、加解密模块、高速并行接口、数字视频接口 DVP 等，可广泛应用于流媒体、即时存储、超高速 FIFO、通讯延长、安防监控等应用场景。
+:ref:`wch_riscv3a` 支持RISC-V指令的IMAC子集。片上采取 128 位数据宽度的 DMA 以支持多个高速外设的高带宽需求，实现大数据量的高速传输。外设包括 USB3.0 超速、USB2.0高速主机和设备控制器及收发器 PHY、千兆以太网控制器、专用高速 SerDes 控制器及收发器 PHY、SD/EMMC接口控制器、加解密模块、高速并行接口、数字视频接口 DVP 等，可广泛应用于流媒体、即时存储、超高速 FIFO、通讯延长、安防监控等应用场景。
 
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：2.1 to 3.6 V
-* 工作温度：-40 °C to 85/125 °C
+* 工作温度：-20 °C to 85 °C
 * 处理性能：145 :ref:`DMIPS`
 * RAM容量：16 KB + 32/64/96 KB
 * Flash容量：448 KB
@@ -41,13 +38,21 @@ Xin简介
 * USB3.0控制及收发器（内置PHY），支持USB3.0 主机Host/设备Device模式、OTG功能，支持USB3.0 HUB
 * USB2.0控制及收发器（内置PHY），支持USB2.0 主机Host/设备Device模式，支持控制/批量/中断/同步传输
 * 千兆以太网控制器（Ethernet），提供RGMII和RMII PHY接口，支持10/100/1000Mbps的传输速率
-* DVP，可配置8/10/12位数据宽度，支持YUV、RGB、JPEG压缩数据
-* HSPI，可配置8/16/32位数据宽度，内置FIFO，支持DMA，最快传输速度约为3.8Gbps
-* SerDes控制及收发器（内置PHY，可直接驱动光纤），支持网线（仅使用1组差分线）传输90米，支持1.25Gbps高速差分信号通讯
+* :ref:`wch_hspi`，可配置8/16/32位数据宽度，内置FIFO，支持DMA，最快传输速度约为3.8Gbps
+* :ref:`wch_serdes` 控制及收发器（内置PHY，可直接驱动光纤），支持网线（仅使用1组差分线）传输90米，支持1.25Gbps高速差分信号通讯
 * 内置EMMC控制器，支持单线、4线、8线数据通讯模式，符合EMMC卡4.4和4.5.1规范，兼容5.0规范
 
 .. hint::
     :ref:`ch569` 最吸引人的地方在强悍的高速外设配置。
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：2.1 to 3.6 V
+
+.. image:: ./images/CH569pwr.png
+    :target: http://www.wch.cn/products/CH569.html
+
 
 .. _LR_009:
 
@@ -61,16 +66,37 @@ L4R5
 .. image:: ./images/CH569s.png
     :target: http://www.wch.cn/products/CH569.html
 
+.. _wch_serdes:
+
+SerDes
+^^^^^^^^^^^
+
+.. _wch_hspi:
+
+HSPI
+^^^^^^^^^^^
+
+芯片封装
+~~~~~~~~~~~
+
 .. _wch_qfn68:
 
 QFN68
 ^^^^^^^^^^^
+
+* 8x8mm pitch 0.4mm
+
+.. image:: ./images/CH569p68.png
+
 
 .. _wch_qfn40:
 
 QFN40
 ^^^^^^^^^^^
 
+* 5x5mm pitch 0.4mm
+
+.. image:: ./images/CH569p40.png
 
 
 Xin选择
@@ -88,6 +114,8 @@ Xin选择
 
 型号对比
 ~~~~~~~~~
+
+CH569相较于CH565没有DVP接口，多了 :ref:`wch_hspi`
 
 .. image:: ./images/CH569l.png
     :target: http://www.wch.cn/products/CH569.html
