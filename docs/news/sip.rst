@@ -12,8 +12,6 @@
 ETH-PHY
 -------------
 
-
-
 芯片集成以太网PHY器件，不再需要外部连接PHY芯片
 
 .. list-table::
@@ -43,14 +41,6 @@ ETH-PHY
 
 .. hint::
     在封装内同时集成以太网MAC+PHY，集成以太网phy发热巨大影响芯片稳定性，特别是空间足够的情况下需要慎重考量。
-
-.. _eth_mac:
-
-ETH-MAC
-~~~~~~~~~~~~~~
-
- ``MII/RMII``
-
 
 
 .. _eth_phy_tiny:
@@ -97,6 +87,42 @@ QFN28
 
 .. hint::
     如果在受限的体积内实现以太网功能，QFN28是个不错的选择。
+
+.. _eth_phy_chip:
+
+PHY Chip
+~~~~~~~~~~~~~~
+
+LAN8720
+^^^^^^^^^^^
+
+LAN8742与LAN8720比较看，两者管脚兼容，LAN8742是LAN8720 的升级版，多了一个MCO管脚，其他的芯片特性一样，寄存器配置完全一样。
+
+LAN8742和LAN8720的默认地址却是0x00
+
+DP83848
+^^^^^^^^^^^
+
+DP83848芯片，支持MII模式和RMII模式；而LAN8742，和LAN8720，只支持RMII模式；另外，三者之间的，寄存器是一样的。
+
+DP83848的默认地址，是0x01
+
+.. _eth_mac:
+
+ETH-MAC
+~~~~~~~~~~~~~~
+
+ ``MII/RMII``
+
+.. _rmii:
+
+RMII
+^^^^^^^^^^^
+
+.. image:: ./images/RMII.png
+    :target: https://blog.csdn.net/weixin_44529321/article/details/105957152
+
+
 
 .. _usb_phy:
 
