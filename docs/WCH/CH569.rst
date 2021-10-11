@@ -4,7 +4,7 @@
 CH569
 ===========
 
-* 关键词：``RISC-V3A`` ``USB3.0`` ``HSPI`` ``SerDes`` ``1000M Ethernet`` ``120MHz``
+* 关键词：``RISC-V3A`` ``120MHz`` ``USB3.0`` ``HSPI`` ``SerDes`` ``Ethernet`` ``ETH-MAC-1000M``
 * 资源库：`GitHub <https://github.com/SoCXin/CH569>`_
 
 .. contents::
@@ -22,22 +22,29 @@ Xin简介
 
 :ref:`wch_riscv3a` 支持RISC-V指令的IMAC子集。系统主频为120 MHz，片上集成超高速USB3.0主机和设备控制器（内置 PHY）、千兆以太网控制器、专用高速 SerDes 控制器（内置PHY，可直接驱动光纤）、高速并行接口HSPI、数字视频接口（DVP）、SD/EMMC接口控制器、加解密模块，片上128位宽 DMA设计可保障大数据量的高速传输，可广泛应用于流媒体、即时存储、超高速USB3.0 FIFO、通信延长、安防监控等应用场景。
 
+片上采取 128 位数据宽度的 DMA 以支持多个高速外设的高带宽需求，实现大数据量的高速传输。外设包括 USB3.0 超速、USB2.0高速主机和设备控制器及收发器 PHY、千兆以太网控制器、专用高速 SerDes 控制器及收发器 PHY、SD/EMMC接口控制器、加解密模块、高速并行接口、数字视频接口 DVP 等，可广泛应用于流媒体、即时存储、超高速 FIFO、通讯延长、安防监控等应用场景。
 
 基本参数
 ^^^^^^^^^^^
 
 * 供电电压：2.1 to 3.6 V
 * 工作温度：-40 °C to 85/125 °C
-* 处理性能：34 :ref:`DMIPS`
-* RAM容量：32 KB
-* Flash容量：250 KB
-* 封装规格：:ref:`qfn28`
+* 处理性能：145 :ref:`DMIPS`
+* RAM容量：16 KB + 32/64/96 KB
+* Flash容量：448 KB
+* 封装规格：:ref:`wch_qfn68`/ :ref:`wch_qfn40`
 
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`wch_riscv3a`
-
+* 120 MHz :ref:`wch_riscv3a`
+* USB3.0控制及收发器（内置PHY），支持USB3.0 主机Host/设备Device模式、OTG功能，支持USB3.0 HUB
+* USB2.0控制及收发器（内置PHY），支持USB2.0 主机Host/设备Device模式，支持控制/批量/中断/同步传输
+* 千兆以太网控制器（Ethernet），提供RGMII和RMII PHY接口，支持10/100/1000Mbps的传输速率
+* DVP，可配置8/10/12位数据宽度，支持YUV、RGB、JPEG压缩数据
+* HSPI，可配置8/16/32位数据宽度，内置FIFO，支持DMA，最快传输速度约为3.8Gbps
+* SerDes控制及收发器（内置PHY，可直接驱动光纤），支持网线（仅使用1组差分线）传输90米，支持1.25Gbps高速差分信号通讯
+* 内置EMMC控制器，支持单线、4线、8线数据通讯模式，符合EMMC卡4.4和4.5.1规范，兼容5.0规范
 
 .. hint::
     :ref:`ch569` 最吸引人的地方在强悍的高速外设配置。
@@ -51,8 +58,19 @@ L4R5
 芯片架构
 ~~~~~~~~~~~
 
-.. image:: ./images/CH573s.png
-    :target: http://www.wch.cn/downloads/CH573DS1_PDF.html
+.. image:: ./images/CH569s.png
+    :target: http://www.wch.cn/products/CH569.html
+
+.. _wch_qfn68:
+
+QFN68
+^^^^^^^^^^^
+
+.. _wch_qfn40:
+
+QFN40
+^^^^^^^^^^^
+
 
 
 Xin选择
@@ -61,56 +79,15 @@ Xin选择
 .. contents::
     :local:
 
-版本对比
+
+品牌对比
 ~~~~~~~~~
 
-.. image:: ./images/CH573list.png
-    :target: http://www.wch.cn/products/CH573.html
-
-CH571 基于 CH573 去掉了 USB host 主机和触摸按键检测模块、8 位 PWM 模块和两个串口，
-FlashROM 总容量仅 256KB，ADC 不支持 DMA，只支持 2.3V 以上电源电压。除了上述差异，其它基本与
-CH573 相同，可直接参考 CH573 手册和资料。
-
+系列对比
+~~~~~~~~~
 
 型号对比
 ~~~~~~~~~
 
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Core
-      - RAM
-      - Flash
-      - UART/SPI
-      - BLE
-      - USB
-      - Ethernet
-    * - :ref:`ch579`
-      - :ref:`cortex_m0`
-      - 32K
-      - 250K
-      - 4/2
-      - 4.2(+5dBm)
-      - USB H/D
-      - 10M
-    * - :ref:`ch573`
-      - :ref:`riscv` 20M
-      - 18K
-      - 512K
-      - 4/1
-      - 4.2(+5dBm)
-      - USB H/D
-      - NO
-    * - :ref:`ch583`
-      - :ref:`riscv` 20M
-      - 32K
-      - 1024K
-      - 4/1
-      - 5.1(+5dBm)
-      - 2 x USB
-      - NO
-
-.. image:: ./images/CH5V.png
-    :target: http://special.wch.cn/zh_cn/mcu/
-
+.. image:: ./images/CH569l.png
+    :target: http://www.wch.cn/products/CH569.html

@@ -46,7 +46,7 @@ SoC 芯
     * - Top.2
       - :ref:`rp2040`
       - :ref:`stm32f103`
-      - :ref:`stm32h750`
+      - :ref:`stm32h745`
       - :ref:`ch552`
       - :ref:`ch32v208`
       - :ref:`NO_002`
