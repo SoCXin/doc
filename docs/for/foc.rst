@@ -83,7 +83,6 @@ SimpleFOC
 
     HC32M120 <../M/HC32M120>
     MM32SPIN <../M/MM32SPIN>
-    SWM181 <../M/SWM181>
     N32G452 <../M/N32G452>
 
 .. list-table::

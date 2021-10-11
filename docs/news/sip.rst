@@ -23,21 +23,21 @@ ETH-PHY
       - Core
       - RAM
       - Flash
-      - :ref:`usb_phy`
+      - :ref:`eth_mac`
       - :ref:`eth_phy`
       - Package
     * - :ref:`ch563`
       - :ref:`arm7`
       - 64KB
       - 224KB
-      - 480M
+      - 100M
       - 100M
       - LQFP64M(10x10)
     * - W7500P
       - :ref:`cortex_m0`
       - 32KB
       - 128KB
-      -
+      - 10M
       - 10M
       - LQFP64(7x7)
 
@@ -105,7 +105,7 @@ USB-PHY
 
 .. _usb_hs_phy:
 
-USB HS PHY
+USB-HS-PHY
 ~~~~~~~~~~~~~
 
 ``USB HS PHY`` ``480Mbps``
@@ -119,7 +119,7 @@ USB HS PHY
       - Core
       - RAM
       - Flash
-      - :ref:`usb_phy`
+      - :ref:`usb_hs_phy`
       - :ref:`eth_phy`
       - :ref:`eth_mac`
     * - :ref:`ch563`
@@ -146,23 +146,21 @@ USB HS PHY
 
 .. _usb_ss_phy:
 
-USB SS PHY
+USB-SS-PHY
 ~~~~~~~~~~~~~
 
-``USB HS PHY`` ``5Gbps``
-
-集成USB SS PHY器件，实现更高速率的USB通信连接
+``USB SS PHY`` ``5Gbps``
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`list`
       - Core
-      - Num
-      - Type
+      - USB Num
+      - USB Type
       - :ref:`usb_hs_phy`
       - :ref:`usb_ss_phy`
-      - Hub
+      - USB Hub
     * - :ref:`ch569`
       - :ref:`wch_riscv3a`
       - 1
@@ -170,66 +168,4 @@ USB SS PHY
       - √
       - √
       - √
-
-
-.. _measure:
-
-Measure
--------------
-
-.. _sigma_delta:
-
-Sigma-Delta
-~~~~~~~~~~~~~
-
-.. toctree::
-    :maxdepth: 1
-
-    ZML165 <../M/ZML165>
-    CS32A039 <../M/CS32A039>
-
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`list`
-      - Core
-      - Chan
-      - Rate
-      - ENOB
-      - PGA
-      - INL
-      - Package
-    * - :ref:`cs32a039`
-      - :ref:`cortex_m0`
-      - 1x5ch
-      - 10~1280Hz
-      - 20.7/20.2
-      - 128
-      - 1.2LSB
-      - LQFP64
-    * - :ref:`zml165`
-      - :ref:`cortex_m0`
-      - 1x2ch
-      - 10~1280Hz
-      - 20.7/20.2
-      - 128
-      - 1.2LSB
-      - :ref:`qfn20`
-    * - :ref:`swm181`
-      - :ref:`cortex_m0`
-      - 1x4ch
-      - 16KSPS
-      - 20.7/20.2
-      - 128
-      - 1.2LSB
-      - LQFP48
-
-.. warning::
-    :ref:`sigma_delta` 以时间上换极高的精度的特性，采样率都很低，但在精度达到20位以上的场合，实现了其他类型的ADC无法达到的高精度和低功耗。
-
-
-.. image:: ./images/sigma_delta.jpg
-    :target: https://zhuanlan.zhihu.com/p/22308055
-
 
