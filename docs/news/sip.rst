@@ -12,13 +12,6 @@
 ETH-PHY
 -------------
 
-.. _eth_mac:
-
-ETH-MAC
-~~~~~~~~~~~~~~
-
- ``MII/RMII``
-
 
 
 芯片集成以太网PHY器件，不再需要外部连接PHY芯片
@@ -50,6 +43,15 @@ ETH-MAC
 
 .. hint::
     在封装内同时集成以太网MAC+PHY，集成以太网phy发热巨大影响芯片稳定性，特别是空间足够的情况下需要慎重考量。
+
+.. _eth_mac:
+
+ETH-MAC
+~~~~~~~~~~~~~~
+
+ ``MII/RMII``
+
+
 
 .. _eth_phy_tiny:
 
@@ -101,6 +103,13 @@ QFN28
 USB-PHY
 -------------
 
+.. _usb_hs_phy:
+
+USB HS PHY
+~~~~~~~~~~~~~
+
+``USB HS PHY`` ``480Mbps``
+
 芯片集成USB2.0 HS PHY器件实现高速通信(480Mbps)，在该细分领域上 :ref:`st` 的STM32F7系列部分型号有USB2.0 PHY集成的方案。
 
 .. list-table::
@@ -135,30 +144,32 @@ USB-PHY
       - 100M
       - 1000M
 
-.. _usb3_phy:
+.. _usb_ss_phy:
 
-USB3.0 PHY
+USB SS PHY
 ~~~~~~~~~~~~~
 
-集成USB3.0 PHY器件，实现更高速率的USB通信连接
+``USB HS PHY`` ``5Gbps``
+
+集成USB SS PHY器件，实现更高速率的USB通信连接
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`list`
       - Core
-      - RAM
-      - Flash
-      - :ref:`usb_phy`
-      - :ref:`eth_phy`
-      - :ref:`eth_mac`
+      - Num
+      - Type
+      - :ref:`usb_hs_phy`
+      - :ref:`usb_ss_phy`
+      - Hub
     * - :ref:`ch569`
-      - :ref:`arm7`
-      - 64 KB
-      - 224 KB
-      - 480M
-      - 100M
-      - 1000M
+      - :ref:`wch_riscv3a`
+      - 1
+      - OTG
+      - √
+      - √
+      - √
 
 
 .. _measure:
