@@ -87,7 +87,7 @@ STM32H745系列的L1缓存(16 KB I +16 KB D)相对超值系列 :ref:`stm32h730` 
 STM32H747
 ^^^^^^^^^^^
 
-``Portenta H7``
+``Arduino: Portenta H7``
 
 * STM32H747: TFT-LCD, JPEG codec, ``MIPI-DSI``
-* STM32H745: TFT-LCD, JPEG codec, optional industrial temperature grade ``-40°C to 125°C``
+* STM32H745: TFT-LCD, JPEG codec, optional ``-40°C to 125°C``

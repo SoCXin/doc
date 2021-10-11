@@ -146,31 +146,45 @@ SimpleFOC
 .. list-table::
     :header-rows:  1
 
-    * - Name
-      - Core
-      - RAM
-      - Flash
-      - UART
-      - GPIO
+    * - MCU
+      - 2 PWM
+      - 4 PWM
+      - 3 PWM
+      - 6 PWM
+      - PWM freq config
       - Package
     * - :ref:`esp32`
+      - √
+      - √
+      - √
+      - √
+      - √
       -
-      -
-      -
-      -
-      -
+    * - :ref:`rp2040`
+      - √
+      - √
+      - √
+      - √
+      - √
       -
     * - :ref:`stm32h747`
-      -
-      -
-      -
-      -
-      -
+      - √
+      - √
+      - √
+      - X
+      - √
       -
     * - :ref:`stm32g431`
+      - √
+      - √
+      - √
+      - √
+      - √
       -
-      -
-      -
-      -
-      -
+    * - :ref:`stm32f103`
+      - √
+      - √
+      - √
+      - √
+      - √
       -

@@ -72,10 +72,7 @@ STMicroelectronics
     双核MCU: STM32H745 <H/STM32H745>
     异构MPU: STM32MP15 <H/STM32MP15>
 
-.. _stm32h7:
 
-STM32H7
-^^^^^^^^^^^^
 .. image:: ./H/images/STM32H7.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
 

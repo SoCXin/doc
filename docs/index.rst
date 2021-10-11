@@ -9,7 +9,7 @@ SoC 芯
 `Twitter <https://twitter.com/QitasTang>`_ |
 `Facebook <https://www.facebook.com/qitast>`_
 
-结合不同的需求、场景和生态资源，立体给出相关建议，通过信息汇整、比较和迭代，呈现更清晰的xin体系。
+结合不同的需求、场景和生态资源，跨品牌给出建议，通过汇整、排序和迭代，从用户视角呈现xin体系。
 
 .. toctree::
     :maxdepth: 1
