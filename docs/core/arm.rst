@@ -182,118 +182,7 @@ ARMv7架构定义了三大分工明确的系列：
 * “R”系列针对实时系统；
 * “M”系列对微控制器。
 
-.. contents::
-    :local:
 
-
-.. _cortex_m:
-
-Cortex-M
-~~~~~~~~~~~~~~
-
-.. toctree::
-    :maxdepth: 1
-
-    cortexM0
-    cortexM23
-    cortexM3
-    cortexM4
-    cortexM33
-    cortexM7
-
-
-.. list-table::
-    :header-rows:  1
-
-    * - Core
-      - Architecture
-      - Pipeline
-      - ISA
-      - Version
-      - Instruction
-      - DMIPS/MHz
-      - CoreMark/MHz
-    * - :ref:`cortex_m0`
-      -
-      - 2
-      - Thumb
-      - ARMv6-M
-      - 56
-      - 0.94
-      - 2.42
-    * - :ref:`cortex_m23`
-      -
-      - 2
-      - Thumb/Thumb-2
-      - ARMv8-M
-      - 80
-      - 0.94
-      - 2.42
-    * - :ref:`cortex_m3`
-      -
-      - 3
-      - Thumb/Thumb-2
-      - ARMv7-M
-      - 80
-      - 1.25
-      - 3.32
-    * - :ref:`cortex_m4`
-      -
-      - 3
-      - Thumb/Thumb-2
-      - ARMv7-M
-      - 80
-      - 1.25
-      - 3.32
-    * - :ref:`cortex_m33`
-      -
-      - 3
-      - Thumb/Thumb-2
-      - ARMv7-M
-      - 80
-      - 1.25
-      - 3.32
-    * - :ref:`cortex_m7`
-      -
-      - 3
-      - Thumb/Thumb-2
-      - ARMv7-M
-      - 80
-      - 2.14
-      - 5.04
-
-
-.. _cortex_r:
-
-Cortex-R
-~~~~~~~~~~~~~~
-
-.. _cortex_r5:
-
-Cortex-R5
-^^^^^^^^^^^^^
-
-R内核对比
-^^^^^^^^^^^^^
-
-
-.. _cortex_a:
-
-Cortex-A
-~~~~~~~~~~~~~~
-
-.. _cortex_a7:
-
-Cortex-A7
-^^^^^^^^^^^^^
-
-.. _cortex_a72:
-
-Cortex-A72
-^^^^^^^^^^^^^
-
-A内核对比
-^^^^^^^^^^^^^
 
 .. _armv8:
 
@@ -316,3 +205,101 @@ ARMv9
 ARMv9指令集在兼容ARMv8的基础上，提升处理器性能，同时提升安全性、增强矢量计算、机器学习及数字信号处理。基于ARMv9开发的处理器预计将在2022年初正式商用，可能高通下一代骁龙895等SoC。
 
 与上一代的ARMv8相比，ARMv9处理器将不再局限于移动/嵌入式市场，现已经扩展到PC、HPC高性能计算、深度学习等新市场，以满足全球对功能日益强大的安全、人工智能(AI)和无处不在的专用处理的需求。
+
+
+
+.. _cortex_m:
+
+Cortex-M
+-------------
+
+.. toctree::
+    :maxdepth: 1
+
+    cortexM0
+    cortexM23
+    cortexM3
+    cortexM4
+    cortexM33
+    cortexM7
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - Architecture
+      - Pipeline
+      - ISA
+      - Version
+      - Instruction
+      - DMIPS/MHz
+      - CoreMark/MHz
+    * - :ref:`cortex_m0`
+      - 2
+      - Thumb
+      - ARMv6-M
+      - 56
+      - 0.94
+      - 2.42
+    * - :ref:`cortex_m23`
+      - 2
+      - Thumb/Thumb-2
+      - :ref:`armv8`
+      - 80
+      - 0.94
+      - 2.42
+    * - :ref:`cortex_m3`
+      - 3
+      - Thumb/Thumb-2
+      - :ref:`armv7`
+      - 80
+      - 1.25
+      - 3.32
+    * - :ref:`cortex_m4`
+      - 3
+      - Thumb/Thumb-2
+      - :ref:`armv7`
+      - 80
+      - 1.25
+      - 3.32
+    * - :ref:`cortex_m33`
+      - 3
+      - Thumb/Thumb-2
+      - :ref:`armv8`
+      - 80
+      - 1.25
+      - 3.32
+    * - :ref:`cortex_m7`
+      - 3
+      - Thumb/Thumb-2
+      - :ref:`armv7`
+      - 80
+      - 2.14
+      - 5.04
+
+
+.. _cortex_r:
+
+Cortex-R
+-------------
+
+.. _cortex_r5:
+
+Cortex-R5
+~~~~~~~~~~~~~~
+
+
+.. _cortex_a:
+
+Cortex-A
+-------------
+
+.. _cortex_a7:
+
+Cortex-A7
+~~~~~~~~~~~~~~
+
+.. _cortex_a72:
+
+Cortex-A72
+~~~~~~~~~~~~~~
