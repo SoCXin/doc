@@ -31,6 +31,9 @@ Xin简介
 Xin选择
 -----------
 
+.. image:: ./images/STM32WB.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32wb-series.html
+
 .. contents::
     :local:
 

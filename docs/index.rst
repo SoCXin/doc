@@ -56,7 +56,7 @@ SoC 芯
       - :ref:`rt1060`
       - :ref:`ch573`
       - :ref:`zml165`
-      - :ref:`NO_003`
+      - :ref:`stm32g030`
 
 .. toctree::
     :caption: 领域速览

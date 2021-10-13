@@ -37,11 +37,12 @@ Xin简介
 Xin选择
 -----------
 
-.. contents::
-    :local:
+
 .. image:: ./images/STM32WL_series.jpg
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-wireless-mcus/stm32wl-series.html
 
+.. contents::
+    :local:
 
 Xin应用
 -----------

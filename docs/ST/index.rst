@@ -9,7 +9,7 @@ STMicroelectronics
 公司简介
 -----------
 
-作为MCU领域的龙头企业，是被广泛使用的一种范式，拥有庞大的开发团队和资源，如果你想找一颗满足需求的MCU，第一步就去https://www.st.com找一找。
+作为MCU领域的龙头企业，是被过内外广泛使用的一种范式，拥有庞大的工程师群众基础和开发资源。
 
 .. note::
     意法半导体ST是全球最大的半导体公司之一，是MCU领域的王者，其产品系列丰富，应用广泛。
@@ -62,31 +62,17 @@ STMicroelectronics
 性能担当
 ~~~~~~~~~~~
 
-
-.. toctree::
-    :maxdepth: 1
-
-    超值低功耗 STM32H7B0 <H/STM32H7B0>
-    超值大内存 STM32H750 <H/STM32H750>
-    高频低功耗 STM32H730 <H/STM32H730>
-    双核MCU: STM32H745 <H/STM32H745>
-    异构MPU: STM32MP15 <H/STM32MP15>
-
-
-.. image:: ./H/images/STM32H7.jpg
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
-
 .. list-table::
     :header-rows:  1
 
     * - Rank
       - Core
+      - DMIPS
       - RAM
       - Flash
-      - UART
       - BLE
       - USB
-      - DMIPS
+      - Package
     * - :ref:`stm32h730`
       -
       -
@@ -111,14 +97,44 @@ STMicroelectronics
       -
       -
       -
+    * - :ref:`stm32h745`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+
+
+.. image:: ./H/images/STM32H7.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
+
+.. toctree::
+    :maxdepth: 1
+
+    超值低功耗 STM32H7B0 <H/STM32H7B0>
+    超值大内存 STM32H750 <H/STM32H750>
+    高频低功耗 STM32H730 <H/STM32H730>
+    双核MCU: STM32H745 <H/STM32H745>
+    异构MPU: STM32MP15 <H/STM32MP15>
+
+
 
 无线通信
 ~~~~~~~~~~~
+
+.. image:: ./M/images/stm32wb_series.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32wb-series.html
+.. image:: ./M/images/STM32WL_series.jpg
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-wireless-mcus/stm32wl-series.html
+
 .. toctree::
     :maxdepth: 1
 
     BLE SoC: STM32WB55 <M/STM32WB55>
     LoRa SoC: STM32WLE5 <M/STM32WLE5>
+
 
 .. _stm32ulp:
 
