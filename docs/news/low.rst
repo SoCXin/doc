@@ -11,12 +11,12 @@
     :header-rows:  1
 
     * - :ref:`list`
-      - Core
-      - RAM
+      - Frequency
+      - SRAM
       - Flash
       - UART
       - GPIO
-      - Spec
+      - Special
       - Price
     * - :ref:`stm32g030`
       - 64 MHz
@@ -25,7 +25,7 @@
       - 2
       - 8/20/32/48
       - RTC/I2S
-      - 0.4-0.6
+      - $0.4~0.6
     * - :ref:`stm8s003`
       - 16 MHz
       - 1 KB
@@ -40,15 +40,15 @@
       - 16 KB
       - 2
       - 16
-      - USB-D
-      - 0.2-0.3
+      - USB D
+      - $0.2~0.3
     * - :ref:`ch573`
       - 20 MHz
       - 18 KB
       - 512 KB
       - 4
       -
-      - USB-H/D
+      - USB H/D
       -
     * - :ref:`stc8`
       - 24 MHz
@@ -60,13 +60,14 @@
       -
 
 
-散装方案
--------------
-
 .. toctree::
     :maxdepth: 1
 
     STC8H <../L/STC8>
 
-应用探索
+基线标准
+-------------
+
+
+方案探索
 -------------
