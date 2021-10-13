@@ -16,50 +16,51 @@
       - Flash
       - UART
       - GPIO
-      - SPEC
+      - Spec
       - Price
-    * - :ref:`stc8`
-      - 24 MHz
-      - 1K
-      - 8K
-      - 2
-      - 18
-      - I2C
-      -
-    * - :ref:`ch552`
-      - 24 MHz
-      - 1K
-      - 16K
-      - 2
-      - 16
-      - USB-D
-      -
-    * - :ref:`ch573`
-      - 20 MHz
-      - 18K
-      - 512K
-      - 4
-      - 24板
-      - USB-H/D
-      -
-    * - :ref:`stm8s003`
-      - 16MHz
-      - 1 KB
-      - 8 KB
-      -
-      -
-      -
-      -
     * - :ref:`stm32g030`
       - 64 MHz
       - 8 KB
       - 32/64 KB
-      -
-      -
-      -
+      - 2
+      - 8/20/32/48
+      - RTC/I2S
       - 0.4-0.6
+    * - :ref:`stm8s003`
+      - 16 MHz
+      - 1 KB
+      - 8 KB
+      - 1
+      -
+      -
+      -
+    * - :ref:`ch552`
+      - 24 MHz
+      - 1 KB
+      - 16 KB
+      - 2
+      - 16
+      - USB-D
+      - 0.2-0.3
+    * - :ref:`ch573`
+      - 20 MHz
+      - 18 KB
+      - 512 KB
+      - 4
+      -
+      - USB-H/D
+      -
+    * - :ref:`stc8`
+      - 24 MHz
+      - 1 KB
+      - 8 KB
+      - 2
+      -
+      -
+      -
 
-USB-PD
+
+散装方案
 -------------
 
 .. toctree::
@@ -67,5 +68,5 @@ USB-PD
 
     STC8H <../L/STC8>
 
-USB-PD
+应用探索
 -------------

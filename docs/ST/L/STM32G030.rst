@@ -49,6 +49,11 @@ Xin简介
 * 运行功耗: 100μA/MHz
 
 
+封装相关
+^^^^^^^^^^^
+
+
+
 芯片架构
 ~~~~~~~~~~~
 
@@ -101,26 +106,28 @@ ADC更新
 
 型号对比
 ~~~~~~~~~
-该系列最具有代表性的产品型号 STM32G031J6 和 STM32G031K8 可以作为标定对象
 
 .. image:: ./images/STM32G030list.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
-价格对比
+官方定价
 ^^^^^^^^^^
 
 .. image:: ./images/STM32G030l.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
+.. note::
+    就官方定价而言，差不多是STM32系列中最低的一个系列，算是获得STM32生态便利的低成本之选，可以作为 :ref:`low` 的参考坐标。
 
 
 Xin应用
 -----------
 
+.. note::
+    STM32G030系列的FLASH和RAM资源都相对受限，虽然可以运行FreeRTOS等系统（基于CMSISv1版本），但该系列8K SRAM并不是RTOS的理想载体。
+
 .. contents::
     :local:
-
-STM32G030系列的FLASH和RAM资源都相对受限，虽然可以运行FreeRTOS等系统（基于CMSISv1版本），但该芯片并不是RTOS的理想载体。
 
 硬件平台
 ~~~~~~~~~~~
