@@ -30,9 +30,6 @@ Xin简介
 Xin选择
 -----------
 
-相对前代 :ref:`stm32f030` 系列进行了升级，差异可查看 :ref:`st_f0vsg0` ，拥有更好的模拟性能，主频更高同时如CRC等外设全系标配，相对市场同类产品，拥有自家完善的资源体系和可靠性，是新推出的 ``高性价比`` 的国际一线品牌MCU。
-
-
 竞品分析
 ~~~~~~~~~
 
@@ -55,6 +52,8 @@ Xin选择
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
 该系列最具有代表性的产品型号 STM32G031J6 和 STM32G031K8 可以作为标定对象
+
+
 
 Xin实践
 --------------

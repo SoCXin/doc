@@ -22,31 +22,31 @@
       - UART
       - GPIO
       - SPEC
-      - Package
+      - Price
     * - :ref:`stc8`
-      - 24MHz
+      - 24 MHz
       - 1K
       - 8K
       - 2
       - 18
       - I2C
-      - TSSOP20
+      -
     * - :ref:`ch552`
-      - 24MHz
+      - 24 MHz
       - 1K
       - 16K
       - 2
       - 16
       - USB-D
-      - TSSOP20
+      -
     * - :ref:`ch573`
-      - 20MHz
+      - 20 MHz
       - 18K
       - 512K
       - 4
       - 24
       - USB-H/D
-      - :ref:`qfn28`
+      -
     * - :ref:`stm8s003`
       - 16MHz
       - 1 KB
@@ -54,4 +54,14 @@
       -
       -
       -
-      - :ref:`tssop20`
+      -
+    * - :ref:`stm32g030`
+      - 64 MHz
+      - 8 KB
+      - 32/64 KB
+      -
+      -
+      -
+      - 0.4-0.6
+
+

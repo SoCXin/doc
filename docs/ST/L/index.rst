@@ -12,7 +12,6 @@ Lowend
 
     STM8S003 <STM8S003>
     STM32F030 <STM32F030>
-    STM32F051 <STM32F051>
     STM32G030 <STM32G030>
     STM32G031 <STM32G031>
 
@@ -47,24 +46,6 @@ STM32G0系列达到了59 DMIPS，在针对内存的评分上CoreMark测试成绩
 G0配备的高速的时钟可以在0-90度达到1%的精度，在-40到125度可以达到2%的精度。
 
 
-升级对比
-~~~~~~~~~~~~~~~~~~~~
 
-核心更新
-^^^^^^^^^^^^
 
-.. image:: ./images/F0VSG0_Core.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
-
-存储更新
-^^^^^^^^^^^^
-
-.. image:: ./images/F0VSG0_FLASH.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
-
-ADC更新
-^^^^^^^^^^^^
-
-.. image:: ./images/F0VSG0_ADC.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
-
+why do why not
