@@ -13,20 +13,37 @@ ESP32-C3
 Xin简介
 -----------
 
-:ref:`espressif` :ref:`riscv` WiFi & BLE SoC
+:ref:`espressif` WiFi & BLE SoC
 
 .. image:: ./images/ESP32C3.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32-C3
 
+规格参数
+~~~~~~~~~~~
 
-关键特性
-~~~~~~~~~~~~~
+基本参数
+^^^^^^^^^^^
 
-* 400 KB SRAM (TCM)，384 KB ROM
+* 发布时间：
+* 制程工艺：45 nm
+* 工作温度：-40°C to +105°C
+* 处理性能：150 :ref:`DMIPS` , 398 :ref:`CoreMark`
+* RAM容量：400 KB (TCM)
+* Flash容量：384 KB
+* 封装规格：QFN32
+
+特征参数
+^^^^^^^^^^^
+
+* 160 MHz :ref:`riscv`
 * Wi-Fi IEEE 802.11b/g/n
 * BLE 5.0，支持Mesh (Bluetooth Mesh)
 * TWAI 控制器
 * 22  x GPIO
+
+
+电源参数
+^^^^^^^^^^^
 
 计算性能
 ~~~~~~~~~~~~~~
