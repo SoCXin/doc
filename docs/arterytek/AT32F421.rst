@@ -81,7 +81,7 @@ TSSOP20
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
 
 .. hint::
-    :ref:`at32f421` 封装管脚兼容 :ref:`stm32f030`
+    :ref:`at32f421` 封装兼容 :ref:`stm32f030` :ref:`stm32_tssop20`
 
 
 Xin选择

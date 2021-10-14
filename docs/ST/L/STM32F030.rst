@@ -66,6 +66,9 @@ TSSOP20
 
 .. image:: ./images/STM32F030p20.png
 
+.. hint::
+    封装兼容 :ref:`at32f421` :ref:`at32f421_tssop20`
+
 
 Xin选择
 -----------
@@ -75,6 +78,8 @@ Xin选择
 
 品牌对比
 ~~~~~~~~~
+
+ :ref:`at32f421`
 
 系列对比
 ~~~~~~~~~

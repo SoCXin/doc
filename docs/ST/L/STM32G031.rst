@@ -17,14 +17,65 @@ Xin简介
 .. image:: ./images/STM32G031.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
-关键特性
-~~~~~~~~~
+规格参数
+~~~~~~~~~~~
 
-* 64MHz主频
-* 精确的内部时钟
-* ADC（12bit 2.5 MSps）
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 制程工艺：90 nm
+* 工作温度：-40°C to +125°C
+* 处理性能：59 :ref:`DMIPS`, 142 :ref:`CoreMark`
+* RAM容量：8 KB
+* Flash容量：32/64 KB
+* 封装规格：LQFP48/LQFP32/TSSOP20/ :ref:`stm32_so8`
+
+.. image:: ./images/STM32G031p.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
+
+特征参数
+^^^^^^^^^^^
+
+* 64 MHz :ref:`cortex_m0`
+* :ref:`stm32_lpuart`
+* 2x :ref:`stm32_lptim`
+* MOTOR C timer
+* 12-bit SAR ADC (2.5 MSPS)
 * 5ch x DMA
 * 1KB OTP
+* I2S
+* RTC
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压: 1.7 to 3.6 V
+* 运行功耗: 100μA/MHz
+
+
+芯片架构
+~~~~~~~~~~~
+
+.. image:: ./images/STM32G031s.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
+
+时钟相关
+^^^^^^^^^^^
+
+* HSI RC 16 MHz(±1%)
+* LSI RC 32 kHz(±5%)
+
+.. _stm32_lpuart:
+
+LPUART
+^^^^^^^^^^^
+
+.. _stm32_lptim:
+
+LPTIM
+^^^^^^^^^^^
 
 
 Xin选择

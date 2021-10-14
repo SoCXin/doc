@@ -73,11 +73,11 @@ Xin简介
 SON8
 ^^^^^^^^^^^
 
-.. image:: ./images/STM32G030p8.png
-
 * 封装尺寸：4.9 x 6 mm
 
-.. image:: ./images/SON8.png
+.. image:: ./images/STM32G030p8.png
+
+
 
 Xin选择
 -----------
