@@ -4,8 +4,8 @@
 STM32G031
 ===============
 
-* 关键词：``ADC`` ``64MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32G031>`_
+* 关键词：``Cortex-M0`` ``64MHz`` ``LPUART`` ``LPTIM``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32G031>`_ , `Gitee <https://gitee.com/socxin/STM32G031>`_
 
 .. contents::
     :local:
@@ -219,23 +219,24 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
 Xin总结
 --------------
 
-STM32G031产品定位入门，FLASH和RAM资源都相对受限，虽然可以运行FreeRTOS等系统，但其并不是RTOS的理想载体，而且作为长期项目开发，需要通过使用LL库释放更多资源。
+.. contents::
+    :local:
 
+能力构建
+~~~~~~~~~~~~~
 
-``注意事项``
-~~~~~~~~~~~~~~
+要点提示
+~~~~~~~~~~~~~
 
 STM32G0系列属于较新的产品，也重点优化了ADC的性能，相较于使用最广泛的STM32F1系列，在ADC初始化阶段需要更长的时间，所以在采样的时候需要过滤开始阶段无效的数据。
 
-
-``使用槽点``
+问题整理
 ~~~~~~~~~~~~~
 
 相较以往STM32的boot模式，新的G0系列芯片出厂默认从system flash启动，boot0管脚无论拉高或拉低都不能从系统存储区（system flash）启动（进入bootloader状态），也就是说如果烧录的程序没有配置SYS调试端口，将无法通过传统的boot0拉高来连接烧录器。
 
-如果要使能boot 0的功能，需要修改option bytes，将 ``nboot_sel`` 后面的勾选去掉，断电复位，此时芯片的启动方式就由boot0引脚决定了，上拉boot0进bootloader模式。
+如果要使能boot 0的功能，需要修改option bytes，将nboot_sel后面的勾选去掉，断电复位，此时芯片的启动方式就由boot0引脚决定了，上拉boot0进bootloader模式。
 
 一不小心就把芯片锁死弄成砖了，可以将PA0（NRST）接地，然后在连接STM32CubeProgrammer前断开接地，这是MCU可以被识别到，然后进行擦除或修改option bytes
 
-.. warning::
-    SON8封装注意烧录口使能，小心变砖
+
