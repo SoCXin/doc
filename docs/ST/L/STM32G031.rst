@@ -81,29 +81,30 @@ LPTIM
 Xin选择
 -----------
 
-竞品分析
+.. contents::
+    :local:
+
+品牌对比
 ~~~~~~~~~
 
-命名为xx32F031 的MCU产品非常丰富，就规格而言有大量可替代品，主要竞争力还是在功能稳定性及资源兼容性上，基于STM32Cube的开发生态，有大量资源和工程师团队。
 
-
-型号对比
+系列对比
 ~~~~~~~~~
 
- :ref:`stm32g031` 定位入门级，相似有 `STM32G0x0 <https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html>`_ 超值系列，例如在SON8封装限定下，STM32G031J替换可选STM32G030J6、STM32G041J6
+超值系列
+^^^^^^^^^^
 
 .. image:: ./images/STM32G0.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
+.. warning::
+    对比  :ref:`stm32g030` 多了 :ref:`stm32_lpuart` 和  :ref:`stm32_lptim` ，内部高速时钟精度可达1%，同时拥有更多可选的型号
 
-规格选择
+型号对比
 ~~~~~~~~~
 
 .. image:: ./images/STM32G031.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
-
-该系列最具有代表性的产品型号 STM32G031J6 和 STM32G031K8 可以作为标定对象
-
 
 
 Xin实践
