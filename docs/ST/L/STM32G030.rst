@@ -152,6 +152,43 @@ Xin应用
 
 源圈OS-Q通过先验证的方式，集成了更多可信赖资源 `PlatformIO STM32G0 Enhanced <https://github.com/OS-Q/P215>`_ 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。
 
+外设使用
+~~~~~~~~~
+
+.. _stm32g030_crc:
+
+CRC
+^^^^^^^^^^
+
+.. code-block:: bash
+
+    __IO uint32_t uwCRCValue = 0;
+    uint32_t uwExpectedCRCValue = 0x379E9F06;
+
+    static const uint32_t aDataBuffer[12] =
+    {
+        0x00001021, 0x20423063, 0x408450a5, 0x60c670e7, 0x9129a14a, 0xb16bc18c,
+        0xdf7caf9b, 0xbfba8fd9, 0x9ff86e17, 0x7e364e55, 0x2e933eb2, 0x0ed11ef0
+    };
+
+    uwCRCValue = HAL_CRC_Calculate(&hcrc, (uint32_t *)aDataBuffer, 12);
+    if (uwCRCValue != uwExpectedCRCValue)
+    {
+    }
+
+    void MX_CRC_Init(void)
+    {
+        hcrc.Instance = CRC;
+        hcrc.Init.DefaultPolynomialUse = DEFAULT_POLYNOMIAL_ENABLE;
+        hcrc.Init.DefaultInitValueUse = DEFAULT_INIT_VALUE_ENABLE;
+        hcrc.Init.InputDataInversionMode = CRC_INPUTDATA_INVERSION_NONE;
+        hcrc.Init.OutputDataInversionMode = CRC_OUTPUTDATA_INVERSION_DISABLE;
+        hcrc.InputDataFormat = CRC_INPUTDATA_FORMAT_WORDS;
+        if (HAL_CRC_Init(&hcrc) != HAL_OK)
+        {
+            Error_Handler();
+        }
+    }
 
 示例代码
 ~~~~~~~~~
