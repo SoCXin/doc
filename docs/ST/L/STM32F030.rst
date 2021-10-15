@@ -13,6 +13,8 @@ STM32F030
 Xin简介
 -----------
 
+ :ref:`low` , :ref:`ref030` 经典范式产品
+
 .. image:: ./images/STM32F030.jpg
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f0-series/stm32f0x0-value-line.html
 
@@ -81,18 +83,59 @@ Xin选择
 
  :ref:`at32f421`
 
-HK32F030
-^^^^^^^^^^
+.. _stm32f030_pin2pin:
 
-CKS32F030
+PIN2PIN
 ^^^^^^^^^^
 
 PIN to PIN 软硬件兼容
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Frequency
+      - RAM+ROM
+      - Series
+      - UART/SPI/I2C
+      - GPIO
+    * - :ref:`stm32f030`
+      - 48 MHz
+      - 4/8+16/32/64
+      - 7
+      - 1/1/1
+      - 20/32/48/64
+    * - :ref:`at32f421`
+      - 120 MHz
+      - 8/16+16/32/64
+      - 6
+      - 2/2/2
+      - 20/28/32/48
+    * - CKS32F030
+      - 48 MHz
+      - 4/8+16/32/64
+      - 7
+      - 1/1/1
+      - 20/32/48/64
+    * - HK32F030
+      - 72 MHz
+      - 4/8+16/32/64
+      - 7
+      - 1/1/1
+      - 20/32/48/64
+    * - MM32F031
+      - 72 MHz
+      -
+      -
+      -
+      -
 
 
 系列对比
 ~~~~~~~~~
+
+相对升级版 :ref:`stm32g030` 在性能、外设、价格全面落后。
+
 
 型号对比
 ~~~~~~~~~
