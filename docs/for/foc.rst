@@ -18,6 +18,44 @@ FOC按照电机有无传感器来区分可以分为有传感器FOC和无传感�
 
 对于无传感器FOC，由于电机不带任何传感器，因此不能通过简单读取传感器的测量值来得到电机转子的位置信息，所以在控制中需要通过采集电机相电流，使用位置估算算法来计算转子位置。虽然无感FOC的控制难度较大，但是它可以避免传感器故障的风险，并且省去了传感器的成本，同时简化了电机与驱动板间的布线。目前，无感FOC多应用在风机类的场合中。
 
+* 1. FOC则完全没有转速的限制，不论在什么转速下都可以实现精确的控制。
+* 2. FOC的换向性能极其优秀，最高转速下正反转切换可以非常顺畅。
+* 3. FOC还可以以能量回收的形式进行刹车控制。
+* 4. FOC可以实现力矩、速度、位置三个闭环控制。
+* 5. FOC驱动器的噪音会比电调小很多，效率也比电调高很多。
+
+
+
+解决方案
+-----------
+
+.. list-table::
+    :header-rows:  1
+
+    * - Solution
+      - MCU
+      - Driver
+      - PID(Max)
+      - Power
+      - Price
+    * - :ref:`simplefoc`
+      - ATmega328P
+      - L6234
+      - 830Hz
+      - 120W
+      - ¥100
+    * - :ref:`ODrive`
+      - STM32F405
+      - DRV8301
+      - 8kHz
+      - 960W
+      - ¥300
+    * - :ref:`minifoc`
+      - :ref:`gd32f130`
+      - EG2133
+      - 30kHz
+      - 90W
+      - ¥30
 
 
 .. _simplefoc:
@@ -26,7 +64,7 @@ SimpleFOC
 ~~~~~~~~~~~
 
 `GitHub <https://GitHub.com/simplefoc>`_ |
-`Website <https://docs.simplefoc.com//>`_
+`Website <https://docs.simplefoc.com>`_
 
 .. list-table::
     :header-rows:  1
@@ -74,10 +112,25 @@ SimpleFOC
       - √
       -
 
+.. _ODrive:
+
+ODrive
+~~~~~~~~~~~
+
+`GitHub <https://github.com/odriverobotics/ODrive>`_ |
+`Website <https://odriverobotics.com/>`_
+
+.. _minifoc:
+
+miniFOC
+~~~~~~~~~~~
+
+`GitHub <https://github.com/ZhuYanzhen1/miniFOC>`_
 
 
-嵌入平台
+控制芯片
 -----------
+
 .. toctree::
     :maxdepth: 1
 
