@@ -25,10 +25,10 @@ Xin简介
 * 发布时间：
 * 制程工艺：
 * 工作温度：-40°C to +85°C
-* 处理性能：
+* 处理性能：20 MIPS
 * RAM容量：2 KB
 * Flash容量：32 KB
-* 封装规格：TQFP32
+* 封装规格：TQFP32/QFN32/DIP28
 
 
 特征参数
@@ -42,7 +42,7 @@ Xin简介
 ^^^^^^^^^^^
 
 * 供电电压: 1.8 to 5.5 V
-* 运行功耗:
+* 运行功耗: 1.8v x 0.2mA (@1MHz)
 
 芯片架构
 ~~~~~~~~~~~
@@ -58,7 +58,6 @@ Xin选择
 .. contents::
     :local:
 
-
 品牌对比
 ~~~~~~~~~
 
@@ -67,12 +66,9 @@ Xin选择
 LGT328P
 ^^^^^^^^^^^
 
-* 关键词：``AVR`` ``16MHz`` ``8bit``
-* 资源库：`GitHub <https://github.com/SoCXin/LGT8F328P>`_
-
 兼容 :ref:`mega328p` 生态，同时具有更高的主频32MHz ,具有更丰富的外设如 DAC/OPA/CMP
 
-* QFP48 (7×7mm)
-* QFP32 (7×7mm)
-* SSOP20
+* 封装规格：QFP48/QFP32/SSOP20
 
+
+* 资源库：`GitHub <https://github.com/SoCXin/LGT8F328P>`_
