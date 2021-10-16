@@ -52,6 +52,9 @@ Xin简介
 * 供电电压: 2.4 to 3.6 V
 * 运行功耗: 100μA/MHz
 
+.. note::
+    由于 :ref:`stm32f030` 的定位，对比的对象是8/16位MCU，重点列出相关差异
+
 
 芯片架构
 ~~~~~~~~~~~
@@ -64,12 +67,12 @@ Xin简介
 TSSOP20
 ^^^^^^^^^^^
 
-* 封装尺寸：6.5 x 4.4 mm, 0.65mm pitch
+* 封装尺寸(STM32F030F4)：6.5 x 4.4 mm, 0.65mm pitch
 
 .. image:: ./images/STM32F030p20.png
 
 .. hint::
-    封装兼容 :ref:`at32f421` :ref:`at32f421_tssop20`
+    TSSOP20封装兼容产品较多，例如 :ref:`at32f421` :ref:`at32f421_tssop20` 还有众多软硬件兼容款 :ref:`stm32f030_pin2pin`
 
 
 Xin选择
@@ -87,8 +90,6 @@ Xin选择
 
 PIN2PIN
 ^^^^^^^^^^
-
-PIN to PIN 软硬件兼容
 
 .. list-table::
     :header-rows:  1
@@ -130,6 +131,8 @@ PIN to PIN 软硬件兼容
       -
       -
 
+.. note::
+    PIN to PIN 软硬件兼容，主要指封装对应的管脚定义和相关的外设寄存器地址兼容，更多对比 :ref:`ref030`
 
 系列对比
 ~~~~~~~~~
@@ -141,3 +144,6 @@ PIN to PIN 软硬件兼容
 ~~~~~~~~~
 
 .. image:: ./images/STM32F030l.png
+
+.. warning::
+    作为简单应用的 :ref:`stm32_tssop20` 只有一个型号STM32F030F4，只有一个串口是非常大的限制
