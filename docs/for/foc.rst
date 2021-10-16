@@ -38,7 +38,7 @@ FOC按照电机有无传感器来区分可以分为有传感器FOC和无传感�
       - Power
       - Price
     * - :ref:`simplefoc`
-      - ATmega328P
+      - :ref:`mega328p`
       - L6234
       - 830Hz
       - 120W
@@ -113,14 +113,19 @@ SimpleFOC
 
 .. _minifoc:
 
-miniFOC
+MiniFOC
 ~~~~~~~~~~~
+
+* 链接：`GitHub <https://github.com/ZhuYanzhen1/miniFOC>`_
+
 
 
 .. _ODrive:
 
 ODrive
 ~~~~~~~~~~~
+
+* 链接：`Home <https://odriverobotics.com/>`_ , `GitHub <https://github.com/odriverobotics/ODrive>`_
 
 
 控制芯片

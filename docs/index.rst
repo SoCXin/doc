@@ -1,8 +1,8 @@
 
-SoC·Xin (芯/新/信)
+SoC·Xin
 =====================
 
-**用芯造好物，芯思想，芯文化!**
+**新产品用心，芯产品用新**
 
 `GitHub <https://GitHub.com/Qitas>`_ |
 `LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
@@ -112,6 +112,7 @@ SoC·Xin (芯/新/信)
     RISC-V  <core/RISC-V>
     MCS51   <core/MCS51>
 
+X·in，内核决定性能和定位
 
 .. list-table::
     :header-rows:  1
