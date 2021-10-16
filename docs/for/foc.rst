@@ -62,6 +62,9 @@ FOC按照电机有无传感器来区分可以分为有传感器FOC和无传感�
 SimpleFOC
 ~~~~~~~~~~~
 
+链接：`GitHub <https://github.com/SoCXin/STM32H730>`_ , `Gitee <https://gitee.com/socxin/STM32H730>`_
+
+
 .. list-table::
     :header-rows:  1
 
