@@ -22,34 +22,63 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：2.1 to 3.6 V
-* 工作温度：-40 °C to 85/125 °C
-* 封装规格：QFN28/QFN48
-* 处理性能：34 :ref:`DMIPS`
+* 发布时间：
+* 制程工艺：
+* 工作温度：-40°C to +85°C
+* 处理性能：36 :ref:`DMIPS`, 78 :ref:`CoreMark`
 * RAM容量：32 KB
 * Flash容量：250 KB
+* 封装规格： :ref:`qfn28` / :ref:`wch_qfn48`
+
 
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`cortex_m0` 40 MHz
+* 40 MHz :ref:`cortex_m0`
 * 10M以太网接口，内置PHY
 * BLE 4.2，Zigbee兼容IEEE 802.15.4规范，单端RF接口无需外部电感
-* 支持3.3V和2.5V电源，范围2.1V～3.6V, 内置DC/DC转换
 * SPI x 2 + UART x 4 (16C550/6Mbps)
 * USB H/D
 * 低功耗模式：Idle，Halt，Sleep，Shutdown，内置电池电压低压监控，最低电流0.2uA
 * 内置AES-128加解密单元，芯片唯一ID
 
-
-.. warning::
+.. note::
     网络库是以库文件提供的，MRU只有500多字节。
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压: 2.1 to 3.6 V (内置DC/DC转换)
+* 运行功耗: 100μA/MHz
+* 0dBm发送功率时电流6mA
+
+.. image:: ./images/CH579pwr1.png
+    :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
+
 
 芯片架构
 ~~~~~~~~~~~~
 
 .. image:: ./images/CH579s.png
-    :target: http://www.wch.cn/products/CH579.html
+    :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
+
+电源体系
+^^^^^^^^^^^
+
+.. image:: ./images/CH579pwr.png
+    :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
+
+
+
+.. _wch_qfn48:
+
+QFN48
+^^^^^^^^^^^
+
+* 封装尺寸(CH579M)：5 x 5 mm, 0.35mm pitch
+
+.. image:: ./images/CH579p48.png
+    :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
 
 
 Xin选择
@@ -149,8 +178,4 @@ Xin选择
 .. image:: ./images/CH579l.png
     :target: http://www.wch.cn/products/CH579.html
 
-.. _wch_qfn48:
-
-QFN48
-^^^^^^^^^^^
 

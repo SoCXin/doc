@@ -112,24 +112,38 @@ SoC·Xin
     RISC-V  <core/RISC-V>
     MCS51   <core/MCS51>
 
-X·in，内核决定性能和定位
+内核决定性能和定位 X·in
 
 .. list-table::
     :header-rows:  1
 
-    * - Classification
-      - :ref:`arm`
-      - :ref:`asic`
-      - :ref:`mips`
+    * - Class
+      - :ref:`cortex_m0`
+      - :ref:`cortex_m4`
+      - :ref:`cortex_m7`
       - :ref:`riscv`
       - :ref:`mcs51`
-      - others
+      - miscellaneous
     * - No.1
-      - :ref:`sp7021`
-      - :ref:`gw1nsr`
-      - :ref:`esp32`
+      - :ref:`rp2040`
+      - :ref:`nrf52832`
+      - :ref:`rt1060`
       - :ref:`gd32v103`
       - :ref:`stc8`
+      - :ref:`gw1nsr`
+    * - No.2
+      - :ref:`stm32g031`
+      - :ref:`stm32g431`
+      - :ref:`stm32h750`
+      - :ref:`esp32c3`
+      - :ref:`ch549`
+      - :ref:`sp7021`
+    * - No.3
+      - :ref:`asr6501`
+      - :ref:`at32f421`
+      - :ref:`rt1010`
+      - :ref:`ch32v103`
+      - :ref:`ch554`
       - :ref:`w806`
 
 .. toctree::
@@ -161,8 +175,8 @@ X·in，内核决定性能和定位
       - :ref:`stm32g474`
     * - :ref:`wch`
       - :ref:`ch554`
-      - :ref:`ch573`
       - :ref:`ch579`
+      - :ref:`ch32f103`
       - :ref:`ch32v307`
       - :ref:`ch32f208`
     * - :ref:`espressif`
