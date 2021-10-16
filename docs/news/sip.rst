@@ -1,7 +1,7 @@
 
 .. _sip:
 
-集成Xin榜
+集成Xin
 ====================
 
 .. contents::
@@ -26,18 +26,18 @@ ETH-PHY
       - Package
     * - :ref:`ch563`
       - :ref:`arm7`
-      - 64KB
-      - 224KB
+      - 64 KB
+      - 224 KB
       - 100M
       - 100M
       - LQFP64M(10x10)
-    * - W7500P
+    * - :ref:`W7500P`
       - :ref:`cortex_m0`
-      - 32KB
-      - 128KB
+      - 16+32 KB
+      - 128 KB
       - 10M
       - 10M
-      - LQFP64(7x7)
+      - TQFP64(7x7)
 
 .. hint::
     在封装内同时集成以太网MAC+PHY，集成以太网phy发热巨大影响芯片稳定性，特别是空间足够的情况下需要慎重考量。

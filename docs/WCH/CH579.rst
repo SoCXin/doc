@@ -13,6 +13,8 @@ CH579
 Xin简介
 -----------
 
+ :ref:`sip` :ref:`eth_phy_tiny`
+
 .. image:: ./images/CH579.png
     :target: http://www.wch.cn/products/CH579.html
 
@@ -35,11 +37,11 @@ Xin简介
 ^^^^^^^^^^^
 
 * 40 MHz :ref:`cortex_m0`
-* 10M以太网接口，内置PHY
-* BLE 4.2，Zigbee兼容IEEE 802.15.4规范，单端RF接口无需外部电感
+* 1x :ref:`wch_usb` FS H/D
+* 以太网接口 :ref:`wch_eth_10m`
+* :ref:`wch_ble` 4.2，Zigbee兼容IEEE 802.15.4规范
 * SPI x 2 + UART x 4 (16C550/6Mbps)
-* USB H/D
-* 低功耗模式：Idle，Halt，Sleep，Shutdown，内置电池电压低压监控，最低电流0.2uA
+* 内置电池电压低压监控，最低电流0.2uA
 * 内置AES-128加解密单元，芯片唯一ID
 
 .. note::
@@ -48,9 +50,8 @@ Xin简介
 电源参数
 ^^^^^^^^^^^
 
-* 供电电压: 2.1 to 3.6 V (内置DC/DC转换)
+* 供电电压: 2.1 to 3.6 V (内置DC/DC)
 * 运行功耗: 100μA/MHz
-* 0dBm发送功率时电流6mA
 
 .. image:: ./images/CH579pwr1.png
     :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
@@ -68,6 +69,27 @@ Xin简介
 .. image:: ./images/CH579pwr.png
     :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
 
+.. _wch_ble:
+
+BLE
+^^^^^^^^^^^
+
+接收灵敏度-93dBm，可编程+3dBm发送功率
+
+.. _wch_usb:
+
+USB
+^^^^^^^^^^^
+
+集成 USB 2.0 FS PHY
+支持 USB type-C 主从/电流检测
+
+.. _wch_eth_10m:
+
+ETH-PHY-10M
+^^^^^^^^^^^^^
+
+支持帧过滤，支持 DMA ，内置50Ω匹配电阻
 
 
 .. _wch_qfn48:
@@ -101,37 +123,47 @@ Xin选择
       - Core
       - RAM
       - Flash
-      - UART
-      - BLE
-      - USB
-      - Net
+      - :ref:`ble`
+      - :ref:`eth_phy`
+      - :ref:`eth_mac`
     * - :ref:`ch579`
       - :ref:`cortex_m0`
-      - 32
-      - 250
-      - 4
+      - 32 KB
+      - 250 KB
       - 4.2
-      -
-      - 10M w PHY
+      - 10M
+      - 10M
+    * - :ref:`W7500P`
+      - :ref:`cortex_m0`
+      - 16+32 KB
+      - 128 KB
+      - X
+      - 10M
+      - 10M
+    * - :ref:`ch563`
+      - :ref:`arm7`
+      - 64 KB
+      - 224 KB
+      - X
+      - 100M
+      - 100M
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
-      - 520
-      - 480
-      - 4
+      - 520 KB
+      - 480 KB
       - 4.2
-      - H/D
-      - 10M w/o PHY
-    * - W7500
-      - :ref:`cortex_m0`
-      -
-      -
-      -
-      -
-      -
-      - 10M w PHY
+      - X
+      - 100M
+
+.. _W7500P:
+
+W7500P
+^^^^^^^^^^^
+
+`W7500P Repo <https://github.com/SoCXin/W7500P>`_
 
 .. warning::
-    W7500是工业级的，W7500P是商用级的，后者多个PHY
+    W7500是工业级的，W7500P是商用级的，后者片上集成10MHz以太网PHY
 
 系列对比
 ~~~~~~~~~
