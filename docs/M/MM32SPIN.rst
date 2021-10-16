@@ -13,9 +13,6 @@ MM32SPIN
 Xin简介
 -----------
 
-.. image:: ./images/STM32H730.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html
-
 .. contents::
     :local:
 
@@ -26,21 +23,52 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
-* 供电电压：1.71 to 3.6 V
+* 制程工艺：
+* 供电电压：2.0 to 5.5 V
 * 工作温度：40°C to +85°C
-* 处理性能：1177 :ref:`DMIPS`, 2778 :ref:`CoreMark`
-* RAM容量：564 KB
-* Flash容量：128 KB
-* 封装规格：:ref:`stm32_lqfp100` /LQFP144/LQFP176/UFBGA176/UFBGA169/UFBGA144/TFBGA100
-
-.. image:: ./images/STM32H730p.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html
+* 处理性能：68 :ref:`DMIPS`
+* RAM容量：4 KB
+* Flash容量：32 KB
+* 封装规格：LQFP48/LQFP32/QFN32/QFN20/ :ref:`mm32_tssop20`
 
 特征参数
 ^^^^^^^^^^^
 
-* 550 MHz :ref:`cortex_m7`
-* 2x :ref:`stm32_ospi`
-* :ref:`stm32_eth_mac`
-* :ref:`stm32_otg_hs`
-* 安全启动和安全固件升级 :ref:`stm32_sbsfu`
+* 72 MHz :ref:`cortex_m0`
+
+芯片架构
+~~~~~~~~~~~
+
+.. image:: ./images/MM32SPIN05s.png
+    :target: https://www.mindmotion.com.cn/download.aspx?cid=2575
+
+
+.. _mm32_tssop20:
+
+TSSOP20
+^^^^^^^^^^^
+
+* 封装尺寸：6.5 x 4.4 mm, 0.65mm pitch
+
+.. image:: ./images/MM32SPIN05p20.png
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+.. image:: ./images/MM32SPIN05l.png
+    :target: https://www.mindmotion.com.cn/product.aspx
+
