@@ -62,7 +62,7 @@ FOC按照电机有无传感器来区分可以分为有传感器FOC和无传感�
 SimpleFOC
 ~~~~~~~~~~~
 
-* 链接：`Home <https://www.simplefoc.com>`_ , `Docs <https://docs.simplefoc.com>`_ , `GitHub <https://GitHub.com/simplefoc>`_
+* 链接：`SimpleFOC Home <https://www.simplefoc.com>`_ , `SimpleFOC Docs <https://docs.simplefoc.com>`_ , `SimpleFOC GitHub <https://GitHub.com/simplefoc>`_
 
 .. list-table::
     :header-rows:  1
@@ -116,7 +116,7 @@ SimpleFOC
 MiniFOC
 ~~~~~~~~~~~
 
-* 链接：`GitHub <https://github.com/ZhuYanzhen1/miniFOC>`_
+* 链接：`MiniFOC GitHub <https://github.com/ZhuYanzhen1/miniFOC>`_
 
 
 
@@ -125,7 +125,7 @@ MiniFOC
 ODrive
 ~~~~~~~~~~~
 
-* 链接：`Home <https://odriverobotics.com/>`_ , `GitHub <https://github.com/odriverobotics/ODrive>`_
+* 链接：`ODrive Home <https://odriverobotics.com/>`_ , `ODrive GitHub <https://github.com/odriverobotics/ODrive>`_
 
 
 控制芯片
