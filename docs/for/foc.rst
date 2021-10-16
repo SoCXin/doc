@@ -43,18 +43,18 @@ FOC按照电机有无传感器来区分可以分为有传感器FOC和无传感�
       - 830Hz
       - 120W
       - ¥100
-    * - :ref:`ODrive`
-      - STM32F405
-      - DRV8301
-      - 8kHz
-      - 960W
-      - ¥300
     * - :ref:`minifoc`
       - :ref:`gd32f130`
       - EG2133
       - 30kHz
       - 90W
       - ¥30
+    * - :ref:`ODrive`
+      - STM32F405
+      - DRV8301
+      - 8kHz
+      - 960W
+      - ¥300
 
 
 .. _simplefoc:
@@ -62,8 +62,7 @@ FOC按照电机有无传感器来区分可以分为有传感器FOC和无传感�
 SimpleFOC
 ~~~~~~~~~~~
 
-链接：`Website <https://docs.simplefoc.com>`_ , `GitHub <https://GitHub.com/simplefoc>`_
-
+* 链接：`Home <https://www.simplefoc.com>`_ , `Docs <https://docs.simplefoc.com>`_ , `GitHub <https://GitHub.com/simplefoc>`_
 
 .. list-table::
     :header-rows:  1
@@ -111,19 +110,17 @@ SimpleFOC
       - √
       -
 
-.. _ODrive:
-
-ODrive
-~~~~~~~~~~~
-
-链接：`Website <https://odriverobotics.com/>`_ , `GitHub <https://github.com/odriverobotics/ODrive>`_
 
 .. _minifoc:
 
 miniFOC
 ~~~~~~~~~~~
 
-链接：`GitHub <https://github.com/ZhuYanzhen1/miniFOC>`_
+
+.. _ODrive:
+
+ODrive
+~~~~~~~~~~~
 
 
 控制芯片
