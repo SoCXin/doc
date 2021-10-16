@@ -149,6 +149,7 @@ STMicroelectronics
 
     STM32L011 <L/STM32L011>
     STM32L412 <M/STM32L412>
+    STM32U575 <M/STM32U575>
 
 .. list-table::
     :header-rows:  1
@@ -177,7 +178,14 @@ STMicroelectronics
       -
       -
       -
-
+    * - :ref:`stm32u575`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
 
 
 技术简介

@@ -112,7 +112,7 @@ SoC·Xin
     RISC-V  <core/RISC-V>
     MCS51   <core/MCS51>
 
-内核决定性能和定位 X·in
+内核决定性能和定位 ``X·in``
 
 .. list-table::
     :header-rows:  1
@@ -123,7 +123,7 @@ SoC·Xin
       - :ref:`cortex_m7`
       - :ref:`riscv`
       - :ref:`mcs51`
-      - miscellaneous
+      - Miscellaneous
     * - No.1
       - :ref:`rp2040`
       - :ref:`nrf52832`
@@ -156,7 +156,7 @@ SoC·Xin
     MediaTek <MediaTek/index>
     ArteryTek <arterytek/index>
 
-在速览中收录的厂商不是很多，但相对具有代表性，覆盖的解决方案比较全面，通过汇总有代表性的厂商信息，提供小范围的精炼方案。
+收录的厂商不是很多但相对具有代表性，覆盖的解决方案比较全，通过汇总有代表性的厂商信息，提供精炼方案
 
 .. list-table::
     :header-rows:  1
@@ -172,7 +172,7 @@ SoC·Xin
       - :ref:`stm32f401`
       - :ref:`stm32g030`
       - :ref:`stm32mp15`
-      - :ref:`stm32g474`
+      - :ref:`stm32u575`
     * - :ref:`wch`
       - :ref:`ch554`
       - :ref:`ch579`

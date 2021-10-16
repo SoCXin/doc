@@ -4,8 +4,8 @@
 CH579
 ========
 
-* 关键词：``Cortex-M0`` ``40MHz`` ``USB`` ``Ethernet`` ``10M-ETH-PHY`` ``BLE4.2`` ``RTC`` ``AES128``
-* 资源库：`GitHub <https://github.com/SoCXin/CH579>`_
+* 关键词：``Cortex-M0`` ``40MHz`` ``QFN28`` ``USB FS`` ``Ethernet`` ``10M-ETH-PHY`` ``BLEv4.2`` ``RTC`` ``AES128``
+* 资源库：`GitHub <https://github.com/SoCXin/CH579>`_ , `Gitee <https://gitee.com/socxin/CH579>`_
 
 .. contents::
     :local:
@@ -114,20 +114,22 @@ Xin选择
 
 :ref:`ch579` 的定位非常细分小众，相比传统的BLE SoC的主要竞争优势在于以太网高度集成后带来的高性价比，特别是能够对WiFi+BLE的架构形成一种替代，特别适合在一些物联网网关类产品中。
 
-就功能而言，需要网络连接和局域低功耗无线连接的设计，可以考虑WiFi+BLE架构的无线类芯片，这就是 :ref:`espressif` 的看家本领了。
+就功能而言，需要网络连接和局域低功耗无线连接的设计还有WiFi+BLE架构的无线类芯片，这就是 :ref:`espressif` 的看家本领了。
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`list`
       - Core
-      - RAM
+      - Freq
+      - SRAM
       - Flash
       - :ref:`ble`
       - :ref:`eth_phy`
       - :ref:`eth_mac`
     * - :ref:`ch579`
       - :ref:`cortex_m0`
+      - 40 MHz
       - 32 KB
       - 250 KB
       - 4.2
@@ -135,20 +137,15 @@ Xin选择
       - 10M
     * - :ref:`W7500P`
       - :ref:`cortex_m0`
+      - 48 MHz
       - 16+32 KB
       - 128 KB
       - X
       - 10M
       - 10M
-    * - :ref:`ch563`
-      - :ref:`arm7`
-      - 64 KB
-      - 224 KB
-      - X
-      - 100M
-      - 100M
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
+      - 160 MHz
       - 520 KB
       - 480 KB
       - 4.2
@@ -160,7 +157,7 @@ Xin选择
 W7500P
 ^^^^^^^^^^^
 
-`W7500P Repo <https://github.com/SoCXin/W7500P>`_
+`W7500P GitHub <https://github.com/SoCXin/W7500P>`_
 
 .. warning::
     W7500是工业级的，W7500P是商用级的，后者片上集成10MHz以太网PHY
@@ -186,7 +183,7 @@ W7500P
       - 4
       - 4.2
       - H/D
-      - 10M w PHY
+      - 10M PHY
     * - :ref:`ch573`
       - :ref:`wch_riscv3a`
       - 18
@@ -194,15 +191,15 @@ W7500P
       - 4
       - 4.2
       - H/D
-      -
+      - X
     * - :ref:`ch563`
       - :ref:`arm7`
       - 64
       - 224
       - 4
-      -
+      - X
       - 2 x H/D
-      - 100M w PHY
+      - 100M PHY
 
 版本对比
 ~~~~~~~~~

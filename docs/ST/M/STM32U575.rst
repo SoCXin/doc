@@ -1,0 +1,38 @@
+
+.. _stm32u575:
+
+STM32U575
+===============
+
+* 关键词：``Cortex-M33`` ``160MHz``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32U575>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. image:: ./images/STM32U575.jpg
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32u5-series/stm32u575-585/stm32u575cg.html
+
+.. contents::
+    :local:
+
+规格配置
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+
+特征参数
+^^^^^^^^^^^
+
+
+Xin选择
+-----------
+
+.. image:: ./images/stm32u5_series.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32u5-series.html
