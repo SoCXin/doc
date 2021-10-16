@@ -70,5 +70,3 @@ LGT328P
 
 * 封装规格：QFP48/QFP32/SSOP20
 
-
-* 资源库：`GitHub <https://github.com/SoCXin/LGT8F328P>`_
