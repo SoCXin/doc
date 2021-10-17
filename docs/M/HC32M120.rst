@@ -7,14 +7,16 @@ HC32M120
 * 关键词：``Cortex-M0`` ``48MHz`` ``OPA`` ``CMP``
 * 资源库：`GitHub <https://github.com/SoCXin/HC32M120>`_
 
-.. contents::
-    :local:
-
 Xin简介
 -----------
 
 .. contents::
     :local:
+
+规格参数
+~~~~~~~~~~~
+
+ARM Cortex-M0+ 32bit MCU，48MHz，32KB Flash，4KB SRAM，DMA, 8 Timers，12bit ADC，2 OPAs， 2 CMPs，5 个通信接口
 
 基本参数
 ^^^^^^^^^^^
@@ -35,14 +37,13 @@ Xin简介
 * 2x :ref:`hc32_cmp`
 * 12ch 12bit ADC (1.0 MSPS,内部基准电压1.575V)
 
-
-
-
 电源参数
 ^^^^^^^^^^^
 
 * 供电电压: 2.7 to 5.5 V
 * 运行功耗:
+
+
 
 芯片架构
 ~~~~~~~~~~~~
