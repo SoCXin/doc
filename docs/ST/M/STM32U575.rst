@@ -19,16 +19,35 @@ Xin简介
 .. contents::
     :local:
 
-规格配置
-~~~~~~~~~~~
 
+规格参数
+~~~~~~~~~~~
 
 基本参数
 ^^^^^^^^^^^
 
+* 发布时间：
+* 制程工艺：40nm
+* 工作温度：-40°C to +125°C
+* 处理性能：240 :ref:`DMIPS`, 651 :ref:`CoreMark`
+* RAM容量：786 KB
+* Flash容量：1/2 MB
+* 封装规格：LQFP48/QFN48/LQFP64/WLCSP90/LQFP100/UFBGA132/LQFP144/UFBGA169
 
 特征参数
 ^^^^^^^^^^^
+
+* 160 MHz :ref:`cortex_m33`
+* 535 :ref:`ulp_cp`
+* 149 :ref:`ulp_pp`
+* 133000 SecureMark-TLS
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压: 1.71 to 3.6 V
+* 运行功耗: 19 µA/MHz
+
 
 
 Xin选择

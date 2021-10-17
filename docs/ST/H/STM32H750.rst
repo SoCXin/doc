@@ -26,7 +26,7 @@ Xin简介
 
 * 发布时间：
 * 供电电压：1.71 to 3.6 V
-* 工作温度：40°C to +85°C
+* 工作温度：-40°C to +85°C
 * 处理性能：1027 :ref:`DMIPS`, 2778 :ref:`CoreMark`
 * RAM容量：1 MB
 * Flash容量：128 KB

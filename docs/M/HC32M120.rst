@@ -4,7 +4,7 @@
 HC32M120
 ===============
 
-* 关键词：``Cortex-M0`` ``48MHz`` ``OPA``
+* 关键词：``Cortex-M0`` ``48MHz`` ``OPA`` ``CMP``
 * 资源库：`GitHub <https://github.com/SoCXin/HC32M120>`_
 
 .. contents::
@@ -13,3 +13,67 @@ HC32M120
 Xin简介
 -----------
 
+.. contents::
+    :local:
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 制程工艺：
+* 工作温度：-40°C to +105°C
+* 处理性能：44 :ref:`DMIPS`
+* RAM容量：4 KB
+* Flash容量：32 KB
+* 封装规格：LQFP48/LQFP32
+
+特征参数
+^^^^^^^^^^^
+
+* 48 MHz :ref:`cortex_m0`
+* 2x :ref:`hc32_opa`
+* 2x :ref:`hc32_cmp`
+* 12ch 12bit ADC (1.0 MSPS,内部基准电压1.575V)
+
+
+
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压: 2.7 to 5.5 V
+* 运行功耗:
+
+芯片架构
+~~~~~~~~~~~~
+
+.. image:: ./images/HC32M120s.png
+    :target: https://www.hdsc.com.cn/Category84
+
+
+
+.. _hc32_cmp:
+
+CMP
+^^^^^^^^^^^
+
+电压比较器（Comparator，简称CMP）是将两个模拟电压进行比较的外设模块
+
+.. image:: ./images/HC32M120cmp1.png
+
+.. image:: ./images/HC32M120cmp2.png
+
+.. _hc32_opa:
+
+OPA
+^^^^^^^^^^^
+
+.. image:: ./images/HC32M120opa.png
+
+
+
+Xin选择
+-----------
+
+.. image:: ./images/HC32M120l.png
+    :target: https://www.hdsc.com.cn/Category84
