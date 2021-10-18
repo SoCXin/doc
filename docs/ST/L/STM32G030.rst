@@ -374,11 +374,9 @@ STM32大多数产品ADC属于SAR型（逐次逼近型），转换需要一定的
 开源应用
 ~~~~~~~~~
 
-*官方开源库 `STM32CubeG0 <https://github.com/STMicroelectronics/STM32CubeG0>`_
-
-
 如果你要探索一些开源项目，可基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。更多开源趋势可查看 :ref:`hot`
 
+* `STM32CubeG0 <https://github.com/STMicroelectronics/STM32CubeG0>`_
 
 .. _stm32g030_arduino:
 
