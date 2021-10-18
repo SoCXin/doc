@@ -179,7 +179,9 @@ CRC
 可以简单理解成对有用数据按照一定的算法进行计算后，提取出一个特征值，并附加在有用数据后。
 在应用中将有用数据按照特定的算法提取特征值与预先存储的特征值进行比对，如相等则校验通过，反之校验失败，从而识别出数据是否异常。
 
-内置一个CRC-32硬件计算单元
+STM32内置一个CRC-32硬件计算单元，CRC-16/MODBUS：
+
+* width=16 poly=0x8005 init=0xffff refin=true refout=true xorout=0x0000 check=0x4b37 residue=0x0000
 
 .. code-block:: bash
 
@@ -202,24 +204,36 @@ CRC
     }
 
     __IO uint16_t uwCRCValue = 0;
-    uint16_t uwExpectedCRCValue = 0xCB91; //高字节在前
-
+    uint16_t uwExpectedCRCValue = 0xCB91; //高位在左低位在右，使用时请注意高低位顺序
+    ...
     static const uint8_t aDataBuffer[BUFFER_SIZE] =
     {
-        0x1, 0x2, 0x3, 0x4, 0x5, 0x6,0x7,
-        0x8, 0x9, 0xa, 0xb, 0xc,0xd, 0xe,
+        0x1, 0x2, 0x3, 0x4, 0x5, 0x6,0x7,0x8, 0x9, 0xa, 0xb, 0xc,0xd, 0xe,
     };
 
     uwCRCValue = HAL_CRC_Calculate(&hcrc, (uint32_t *)aDataBuffer, 14);
     if (uwCRCValue != uwExpectedCRCValue)
     {
     }
+    ...
 
 
-示例代码
-~~~~~~~~~
+生成多项式：当进行CRC检验时，发送方和接受方事先约定一个除数，即生成多项式G（x），常用的CRC码的生成多项式为：
 
-1. 基于STM32CubeMX生成HAL库工程
+* CRC8=X8+X5+X4+1
+* CRC-CCITT=X16+X12+X5+1
+* CRC16=X16+X15+X5+1
+* CRC12=X12+X11+X3+X2+1
+* CRC32=X32+X26+X23+X22+X16+X12+X11+X10+X8+X7+X5+X4+X2+X1+1
+
+每一个生成二项式与一个二进制序列对应，如CRC8对应的二进制序列为：100110001 (X8+X5+X4+1)
+
+.. _stm32g030_uart:
+
+UART
+^^^^^^^^^^
+
+基于STM32CubeMX生成HAL库工程
 
 .. code-block:: bash
 
@@ -255,8 +269,12 @@ CRC
         /* USER CODE END 3 */
     }
 
+.. _stm32g030_rtc:
 
-2. 通过后备寄存器判断是否初始化RTC时钟
+RTC
+^^^^^^^^^^
+
+通过后备寄存器判断是否初始化RTC时钟
 
 .. code-block:: bash
 
