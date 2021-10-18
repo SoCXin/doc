@@ -114,11 +114,14 @@ ADC更新
 .. image:: ./images/F0VSG0_ADC.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
+.. note::
+    就官方给出的定价而言，STM32G030差不多是STM32所有系列中最低的，是获得STM32生态便利的低成本首选。
+
 型号对比
 ~~~~~~~~~
 
-.. image:: ./images/STM32G030list.png
-    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
+作为入门级超值产品，STM32G030同族的还包括STM32G050、STM32G070和STM32G0B0，除了常规的SRAM和Flash差异，STM32G0B0支持 USB FS
+
 
 官方定价
 ^^^^^^^^^^
@@ -126,22 +129,27 @@ ADC更新
 .. image:: ./images/STM32G030l.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
-.. note::
-    就官方定价而言，差不多是STM32系列中最低的一个系列，算是获得STM32生态便利的低成本之选，可以作为 :ref:`low` 的参考坐标。
+外设资源
+^^^^^^^^^^
+
+.. image:: ./images/STM32G030list.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
 
 替换方案
 ~~~~~~~~~
 
-ADD
+升级方案
 ^^^^^^^^^^
 
-增加外设资源和性能
+ :ref:`stm32g030` 并不支持USB PD功能，如果需要该功能的升级，可以选择参考方案 `USB Type-C™ and Power Delivery <https://www.st.com/content/st_com/en/ecosystems/stm32-usb-c.html>`_
 
-CUT
+
+
+降本方案
 ^^^^^^^^^^
 
-降低成本或封装
+ :ref:`stm32g030` 由于已经是STM32系列中成本最低的系列之一了，更多可能的降本方案为市场供给导致，更多可以选择国产 :ref:`cortex_m0` 入门级产品，可参考 :ref:`low`  :ref:`ref030`
 
 
 
@@ -165,7 +173,7 @@ Xin应用
 
 使用STM32芯片最直接方式是通过 `stm32cube <https://www.st.com/zh/ecosystems/stm32cube.html>`_ 工具构建基本运行体，不用开发者自己去研究寄存器初始化相应外设（但请注意使能）。
 
-源圈OS-Q通过先验证的方式，集成了更多可信赖资源 `PlatformIO STM32G0 Enhanced <https://github.com/OS-Q/P215>`_ 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。
+ `源圈OS-Q <https://www.os-q.com/>`_ 通过先验证的方式，集成了更多资源 `PlatformIO STM32G0 Enhanced <https://github.com/OS-Q/P215>`_
 
 外设使用
 ~~~~~~~~~
@@ -301,16 +309,17 @@ RTC
     }
 
 
-开源项目
+开源应用
 ~~~~~~~~~
 
-如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
+如果你要探索一些开源项目，可基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
 
-关于 :ref:`st` MCU构建的 `开源项目 <https://github.com/search?q=STM32>`_ ，其中最主要的类别是arduino，STM32也是arduino的最佳运行平台之一。
+关于 :ref:`st` MCU构建的 `STM32G0开源资源 <https://github.com/search?q=STM32G0>`_ ，其中最主要的包括 :ref:`arduino` ，STM32也是Arduino的最佳运行平台之一。
 
 * `Arduino_Core_STM32 <https://github.com/stm32duino/Arduino_Core_STM32>`_
 * `STM32CubeG0 <https://github.com/STMicroelectronics/STM32CubeG0>`_
 
+更多开源趋势可查看 :ref:`hot`
 
 
 Xin总结

@@ -35,7 +35,7 @@ SoC·Xin
       - :ref:`top`
       - :ref:`low`
       - :ref:`sip`
-      - 推荐Xin榜
+      - 推荐Xin
     * - Top.1
       - :ref:`esp32`
       - :ref:`esp32`
