@@ -51,6 +51,7 @@
 /RP2040.html -> M/RP2040.html
 /W806.html -> M/W806.html
 /W800.html -> M/W800.html
+/Hi3861.html -> M/Hi3861.html
 /MM32SPIN05.html -> M/MM32SPIN.html
 /HC32M120.html -> M/HC32M120.html
 /GD32V103.html -> M/GD32V103.html
