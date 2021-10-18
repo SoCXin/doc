@@ -309,6 +309,59 @@ RTC
     }
 
 
+.. _stm32g030_adc:
+
+ADC
+^^^^^^^^^^
+
+ADC初始化后要进行校准，使用下面函数校准，可以放在ADC初始化函数后面校准
+
+.. code-block:: bash
+
+    if (HAL_ADCEx_Calibration_Start(&hadc1) != HAL_OK)
+    {
+        /* Calibration Error */
+        while(1);   //传入ADC的电压不超过参考电压3.3V
+    }
+
+
+ADC的单次模式和连续模式：假如你同时开了ch0，ch1，ch4，ch5这四个通道，单次模式下会把这四个通道采集一边就停止了，而连续模式就是这四个通道转换完以后再循环过来再从ch0开始。
+
+用非DMA和中断模式只有这样配置可以正确进行多通道转换：扫描模式+单次转换+间断转换模式。
+
+.. code-block:: bash
+
+    HAL_ADC_Start(&hadc1);
+    HAL_ADC_PollForConversion(&hadc1,0xffff);           //等待ADC转换完成
+    aADCxConvertedData[0]=HAL_ADC_GetValue(&hadc1);     //Vrefint通道
+    VrefData = __LL_ADC_CALC_VREFANALOG_VOLTAGE(aADCxConvertedData[0],ADC_RESOLUTION_12B);  //转换为mv电压
+
+扫描模式是在配置为多个通道必须打开的！
+
+.. code-block:: bash
+
+    for(i=0;i<4;i++)
+    {
+        HAL_ADC_Start(&hadc1);
+        HAL_ADC_PollForConversion(&hadc1,0xffff);//等待ADC转换完成
+        adcBuf[i]=HAL_ADC_GetValue(&hadc1);
+    }
+    HAL_ADC_Stop(&hadc1);
+
+
+无论是中断还是查询采样,都需要占用处理时间，通过DMA方式可以提高转换率。
+STM32大多数产品ADC属于SAR型（逐次逼近型），转换需要一定的时间，尤其是需要多个通道同时转换的场合，不同的程序设计方式对系统效率有着极大的影响。
+举例来说，假设每次adc采样需要1us，采样率8k，每次采样需要采4个通道，使用阻塞的方式进行AD转换，如果这4个通道共用一个ADC，那么AD转换将会占用系统约3%的资源，若这4个通道每个通道用一个ADC，那么4个通道的转换可以并行进行，系统资源占用降到了1%以下，如果4个通道采样使用DMA实现，系统资源占用可以忽略。
+
+.. code-block:: bash
+
+    HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&aADCxConvertedData, 4); //启用DMA的ADC转换，其中数量4为通道数量
+
+
+.. warning::
+    ADC是12位的，只需要用Half Word就可以，但 HAL_ADC_Start_DMA(ADC_HandleTypeDef* hadc, uint32_t* pData, uint32_t Length) 函数中pData为32位的，DMA参数必须配置Word,否则调用HAL_ADC_Start_DMA会``不断复位``。
+
+
 开源应用
 ~~~~~~~~~
 
