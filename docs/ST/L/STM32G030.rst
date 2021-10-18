@@ -139,17 +139,18 @@ ADC更新
 替换方案
 ~~~~~~~~~
 
+由于STM32G0系列是ST最近推出的产品，所有不会存在明显落后的情况，更多的替换需求来源功能/产品的衍生和市场因素
+
 升级方案
 ^^^^^^^^^^
 
  :ref:`stm32g030` 并不支持USB PD功能，如果需要该功能的升级，可以选择参考方案 `USB Type-C™ and Power Delivery <https://www.st.com/content/st_com/en/ecosystems/stm32-usb-c.html>`_
 
 
-
 降本方案
 ^^^^^^^^^^
 
- :ref:`stm32g030` 由于已经是STM32系列中成本最低的系列之一了，更多可能的降本方案为市场供给导致，更多可以选择国产 :ref:`cortex_m0` 入门级产品，可参考 :ref:`low`  :ref:`ref030`
+ :ref:`stm32g030` 由于已经是STM32系列中成本最低的系列之一了，更多可能的降本方案为市场供给导致，更多可以选择国产 :ref:`cortex_m0` 入门级产品，可参考 :ref:`ref030`
 
 
 
@@ -157,7 +158,7 @@ Xin应用
 -----------
 
 .. note::
-    STM32G030系列的FLASH和RAM资源都相对受限，虽然可以运行FreeRTOS等系统（基于CMSISv1版本），但该系列8K SRAM并不是RTOS的理想载体。
+    STM32G030系列的FLASH和RAM资源都相对受限，虽然可以运行FreeRTOS（基于CMSISv1），但8K SRAM并不是RTOS理想载体。
 
 .. contents::
     :local:
@@ -314,66 +315,79 @@ RTC
 ADC
 ^^^^^^^^^^
 
-ADC初始化后要进行校准，使用下面函数校准，可以放在ADC初始化函数后面校准
+传入ADC通道的电压不超过参考电压 & 3.3V
+
+ADC初始化后要进行校准，放在ADC初始化函数后面校准
 
 .. code-block:: bash
 
     if (HAL_ADCEx_Calibration_Start(&hadc1) != HAL_OK)
     {
         /* Calibration Error */
-        while(1);   //传入ADC的电压不超过参考电压3.3V
+        while(1);
     }
 
-
-ADC的单次模式和连续模式：假如你同时开了ch0，ch1，ch4，ch5这四个通道，单次模式下会把这四个通道采集一边就停止了，而连续模式就是这四个通道转换完以后再循环过来再从ch0开始。
-
-用非DMA和中断模式只有这样配置可以正确进行多通道转换：扫描模式+单次转换+间断转换模式。
+轮询方式读取ADC值 ``轮询``
 
 .. code-block:: bash
 
     HAL_ADC_Start(&hadc1);
-    HAL_ADC_PollForConversion(&hadc1,0xffff);           //等待ADC转换完成
-    aADCxConvertedData[0]=HAL_ADC_GetValue(&hadc1);     //Vrefint通道
-    VrefData = __LL_ADC_CALC_VREFANALOG_VOLTAGE(aADCxConvertedData[0],ADC_RESOLUTION_12B);  //转换为mv电压
+    HAL_ADC_PollForConversion(&hadc1,0xffff);                       //等待ADC转换完成
+    uint32_t aADCxConvertedData = HAL_ADC_GetValue(&hadc1);         //轮询Vrefint通道
+    VrefData = __LL_ADC_CALC_VREFANALOG_VOLTAGE(aADCxConvertedData,ADC_RESOLUTION_12B);  //转换为电压：单位mv
 
-扫描模式是在配置为多个通道必须打开的！
+
+同时开ch0，ch1，ch4，ch5这四个通道进行轮询，需要正确配置配置Rank的输入通道：扫描模式+单次转换+间断转换模式。 ``多通道``
+
 
 .. code-block:: bash
 
-    for(i=0;i<4;i++)
+    for(i=0;i<2;i++)
     {
         HAL_ADC_Start(&hadc1);
         HAL_ADC_PollForConversion(&hadc1,0xffff);//等待ADC转换完成
         adcBuf[i]=HAL_ADC_GetValue(&hadc1);
     }
     HAL_ADC_Stop(&hadc1);
+    VrefData = __LL_ADC_CALC_VREFANALOG_VOLTAGE(aADCxConvertedData[0],ADC_RESOLUTION_12B);
+    Tempruate=__HAL_ADC_CALC_TEMPERATURE(VrefData,aADCxConvertedData[1],ADC_RESOLUTION_12B); //轮询内部温度通道
 
+.. note::
+    查询有可能会丢失数据，扫描模式是在配置为多个通道必须打开的！
 
-无论是中断还是查询采样,都需要占用处理时间，通过DMA方式可以提高转换率。
-STM32大多数产品ADC属于SAR型（逐次逼近型），转换需要一定的时间，尤其是需要多个通道同时转换的场合，不同的程序设计方式对系统效率有着极大的影响。
-举例来说，假设每次adc采样需要1us，采样率8k，每次采样需要采4个通道，使用阻塞的方式进行AD转换，如果这4个通道共用一个ADC，那么AD转换将会占用系统约3%的资源，若这4个通道每个通道用一个ADC，那么4个通道的转换可以并行进行，系统资源占用降到了1%以下，如果4个通道采样使用DMA实现，系统资源占用可以忽略。
+单次模式和连续模式：单次模式下会把这四个通道采集一边就停止了，而连续模式就是这四个通道转换完以后再循环过来再从ch0开始。
+
+STM32大多数产品ADC属于SAR型（逐次逼近型），转换需要一定的时间，尤其是需要多个通道同时转换的场合，不同的程序设计方式对系统效率有着极大的影响，通过DMA方式可以提高转换率。
+
+假设每次adc采样需要1us，采样率8k，每次采样需要采4个通道，使用阻塞的方式进行AD转换，如果这4个通道共用一个ADC，那么AD转换将会占用系统约3%的资源，若这4个通道每个通道用一个ADC，那么4个通道的转换可以并行进行，系统资源占用降到了1%以下，如果4个通道采样使用DMA实现，系统资源占用可以忽略。
 
 .. code-block:: bash
 
     HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&aADCxConvertedData, 4); //启用DMA的ADC转换，其中数量4为通道数量
 
+如果配置的Rank在开启的通道中不连续，DMA无法将转换的数据传到对应的缓冲区，也就和无法读取到该通道的数据
 
 .. warning::
-    ADC是12位的，只需要用Half Word就可以，但 HAL_ADC_Start_DMA(ADC_HandleTypeDef* hadc, uint32_t* pData, uint32_t Length) 函数中pData为32位的，DMA参数必须配置Word,否则调用HAL_ADC_Start_DMA会``不断复位``。
+    ADC是12位的，只需要用Half Word就可以，但 HAL_ADC_Start_DMA(ADC_HandleTypeDef* hadc, uint32_t* pData, uint32_t Length) 函数中pData为32位的，DMA参数必须配置Word。
 
 
 开源应用
 ~~~~~~~~~
 
-如果你要探索一些开源项目，可基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
+*官方开源库 `STM32CubeG0 <https://github.com/STMicroelectronics/STM32CubeG0>`_
+
+
+如果你要探索一些开源项目，可基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。更多开源趋势可查看 :ref:`hot`
+
+
+.. _stm32g030_arduino:
+
+Arduino
+^^^^^^^^^^
 
 关于 :ref:`st` MCU构建的 `STM32G0开源资源 <https://github.com/search?q=STM32G0>`_ ，其中最主要的包括 :ref:`arduino` ，STM32也是Arduino的最佳运行平台之一。
 
 * `Arduino_Core_STM32 <https://github.com/stm32duino/Arduino_Core_STM32>`_
-* `STM32CubeG0 <https://github.com/STMicroelectronics/STM32CubeG0>`_
-
-更多开源趋势可查看 :ref:`hot`
-
 
 Xin总结
 --------------
@@ -383,6 +397,8 @@ Xin总结
 
 能力构建
 ~~~~~~~~~~~~~
+
+STM32G0系列沿用成熟的STM32开源工具和资源，通过STM32CubeMX进行构建，全体系工具链可跨平台使用。
 
 要点提示
 ~~~~~~~~~~~~~
