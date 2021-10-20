@@ -13,7 +13,7 @@ STM32G030
 Xin简介
 -----------
 
- :ref:`low` , :ref:`ref030` , 作为新一代低阶入门级32位MCU, 作为标尺衡量一段时期内的类似产品
+ :ref:`low` :ref:`ref030` 作为ST新一代入门级32位MCU, 将继续作为标尺衡量同时期的竞品
 
 .. image:: ./images/STM32G030.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
@@ -31,7 +31,7 @@ Xin简介
 * 处理性能：59 :ref:`DMIPS`, 142 :ref:`CoreMark`
 * RAM容量：8 KB
 * Flash容量：32/64 KB
-* 封装规格：LQFP48/LQFP32/TSSOP20/ :ref:`stm32_so8`
+* 封装规格：LQFP48/LQFP32/ :ref:`stm32g030_tssop20` / :ref:`stm32_so8`
 
 .. image:: ./images/STM32G030p.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
@@ -40,11 +40,11 @@ Xin简介
 ^^^^^^^^^^^
 
 * 64 MHz :ref:`cortex_m0`
-* 12-bit ADC (2.5 MSps)
+* 1x 12bit 16ch :ref:`stm32g030_adc` (2.5 MSPS)
+* :ref:`stm32g030_rtc`
 * 5ch x DMA
 * 1KB OTP
 * I2S
-* RTC
 
 电源参数
 ^^^^^^^^^^^
@@ -59,24 +59,43 @@ Xin简介
 .. image:: ./images/STM32G030s.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
-时钟相关
+.. _stm32g030_rcc:
+
+RCC
 ^^^^^^^^^^^
 
 * HSI 16 MHz
 * LSI 32 kHz(±5 %)
 
+ :ref:`stm32g031` 系列的HSI精度有提升到±1%
+
+.. _stm32g030_timer:
+
+Timer
+^^^^^^^^^^^
+
 .. image:: ./images/STM32G030tim.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
+
+芯片封装
+~~~~~~~~~~~
 
 .. _stm32_so8:
 
 SON8
 ^^^^^^^^^^^
 
-* 封装尺寸：4.9 x 6 mm
+* 封装尺寸(STM32G030J6)：4.9 x 6 mm
+
+作为新推出的小封装型号，配备非常丰富的资源非常有针对性，针对单位IO的性能在一段时期内不会落后
 
 .. image:: ./images/STM32G030p8.png
 
+
+.. _stm32g030_tssop20:
+
+TSSOP20
+^^^^^^^^^^^
 
 
 Xin选择
@@ -114,14 +133,14 @@ ADC更新
 .. image:: ./images/F0VSG0_ADC.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
-.. note::
-    就官方给出的定价而言，STM32G030差不多是STM32所有系列中最低的，是获得STM32生态便利的低成本首选。
 
 型号对比
 ~~~~~~~~~
 
 作为入门级超值产品，STM32G030同族的还包括STM32G050、STM32G070和STM32G0B0，除了常规的SRAM和Flash差异，STM32G0B0支持 USB FS
 
+.. note::
+    就官方给出的定价而言，STM32G030差不多是STM32所有系列中最低的，是获得STM32生态便利的低成本首选。
 
 官方定价
 ^^^^^^^^^^
@@ -184,11 +203,20 @@ Xin应用
 CRC
 ^^^^^^^^^^
 
+``输入翻转`` ``输出翻转`` ``长度可调`` ``多项式可调``
+
 循环冗余校验(CRC：Cyclic Redundancy Check)是一种错误检测算法，通常在通信协议中或存储设备中用于检测原始数据的意外变动。
 可以简单理解成对有用数据按照一定的算法进行计算后，提取出一个特征值，并附加在有用数据后。
 在应用中将有用数据按照特定的算法提取特征值与预先存储的特征值进行比对，如相等则校验通过，反之校验失败，从而识别出数据是否异常。
 
-STM32内置一个CRC-32硬件计算单元，CRC-16/MODBUS：
+.. code-block:: bash
+
+    uint32_t HAL_CRC_Calculate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength);
+    //累积CRC计算数值,不清空之前的计算数值
+    uint32_t HAL_CRC_Accumulate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength);
+
+
+内置一个CRC-32硬件计算单元，配置CRC-16/MODBUS：
 
 * width=16 poly=0x8005 init=0xffff refin=true refout=true xorout=0x0000 check=0x4b37 residue=0x0000
 
@@ -315,7 +343,8 @@ RTC
 ADC
 ^^^^^^^^^^
 
-传入ADC通道的电压不超过参考电压 & 3.3V
+.. hint::
+    注意传入ADC通道的电压不超过参考电压，也不能超过 3.3V
 
 ADC初始化后要进行校准，放在ADC初始化函数后面校准
 
@@ -323,11 +352,10 @@ ADC初始化后要进行校准，放在ADC初始化函数后面校准
 
     if (HAL_ADCEx_Calibration_Start(&hadc1) != HAL_OK)
     {
-        /* Calibration Error */
-        while(1);
+        while(1);        /* Calibration Error */
     }
 
-轮询方式读取ADC值 ``轮询``
+轮询方式读取ADC值    ``轮询``
 
 .. code-block:: bash
 
@@ -337,7 +365,7 @@ ADC初始化后要进行校准，放在ADC初始化函数后面校准
     VrefData = __LL_ADC_CALC_VREFANALOG_VOLTAGE(aADCxConvertedData,ADC_RESOLUTION_12B);  //转换为电压：单位mv
 
 
-同时开ch0，ch1，ch4，ch5这四个通道进行轮询，需要正确配置配置Rank的输入通道：扫描模式+单次转换+间断转换模式。 ``多通道``
+同时开多个通道进行轮询，需要正确配置配置Rank的输入通道：扫描模式+单次转换+间断转换模式。 ``多通道``
 
 
 .. code-block:: bash
@@ -386,6 +414,14 @@ Arduino
 关于 :ref:`st` MCU构建的 `STM32G0开源资源 <https://github.com/search?q=STM32G0>`_ ，其中最主要的包括 :ref:`arduino` ，STM32也是Arduino的最佳运行平台之一。
 
 * `Arduino_Core_STM32 <https://github.com/stm32duino/Arduino_Core_STM32>`_
+
+.. _stm32g030_rust:
+
+Rust
+^^^^^^^^^^
+
+* `rust API <https://github.com/stm32-rs/stm32g0xx-hal>`_
+
 
 Xin总结
 --------------
