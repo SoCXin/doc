@@ -34,6 +34,13 @@ A/D转换
       - LQFP48
 
 
+
+`米联客 <https://www.uisrc.com/portal.php>`_ 数据采集卡
+
+* DAQ9481 250MSPS
+* DAQ4225 125MSPS
+
+
 高精度
 ~~~~~~~~~~~~~~
 

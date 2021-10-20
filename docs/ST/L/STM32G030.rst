@@ -7,13 +7,14 @@ STM32G030
 * 关键词：``Cortex-M0`` ``64MHz`` ``I2S`` ``RTC`` ``BaseLine``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32G030>`_ , `Gitee <https://gitee.com/socxin/STM32G030>`_
 
+ :ref:`ref030` 作为ST新一代入门级32位MCU, 将继续作为标尺衡量同期竞品 :ref:`low`
+
 .. contents::
     :local:
 
 Xin简介
 -----------
 
- :ref:`low` :ref:`ref030` 作为ST新一代入门级32位MCU, 将继续作为标尺衡量同时期的竞品
 
 .. image:: ./images/STM32G030.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
@@ -46,7 +47,7 @@ Xin简介
 * 1KB OTP
 * I2S
 
-电源参数
+电源相关
 ^^^^^^^^^^^
 
 * 供电电压: 2.0 to 3.6 V
@@ -182,20 +183,28 @@ Xin应用
 .. contents::
     :local:
 
-硬件平台
+硬件资源
 ~~~~~~~~~~~
+
+开发板A
+^^^^^^^^^^
 
 .. image:: ./images/B_STM32G030.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.5fcf7cd1dZFnby&id=636761611307&ns=1&abbucket=19#detail
 
-开发工具
+工具资源
 ~~~~~~~~~
 
 使用STM32芯片最直接方式是通过 `stm32cube <https://www.st.com/zh/ecosystems/stm32cube.html>`_ 工具构建基本运行体，不用开发者自己去研究寄存器初始化相应外设（但请注意使能）。
 
- `源圈OS-Q <https://www.os-q.com/>`_ 通过先验证的方式，集成了更多资源 `PlatformIO STM32G0 Enhanced <https://github.com/OS-Q/P215>`_
 
-外设使用
+PlatformIO
+^^^^^^^^^^^^^
+
+如果你要探索一些开源项目，可基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。 `源圈OS-Q <https://www.os-q.com/>`_ 先验证 `PlatformIO STM32G0 Enhanced <https://github.com/OS-Q/P215>`_
+
+
+功能使用
 ~~~~~~~~~
 
 .. _stm32g030_crc:
@@ -402,7 +411,7 @@ STM32大多数产品ADC属于SAR型（逐次逼近型），转换需要一定的
 开源应用
 ~~~~~~~~~
 
-如果你要探索一些开源项目，可基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。更多开源趋势可查看 :ref:`hot`
+更多开源趋势可查看 :ref:`hot`
 
 * `STM32CubeG0 <https://github.com/STMicroelectronics/STM32CubeG0>`_
 
