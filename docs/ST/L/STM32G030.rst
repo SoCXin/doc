@@ -320,7 +320,9 @@ UART
 RTC
 ^^^^^^^^^^
 
-通过后备寄存器判断是否初始化RTC时钟
+``BKP`` ``RTC``
+
+通常通过后备寄存器写入标记判断是否已经初始化RTC时钟，如果已经初始化了就不再重复初始化
 
 .. code-block:: bash
 
@@ -330,21 +332,24 @@ RTC
     }
     /* USER CODE BEGIN Check_RTC_BKUP */
     if(HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR1) == 0x1234) return;    //如果已设定则不再初始化
-    else HAL_RTCEx_BKUPWrite(&hrtc,RTC_BKP_DR1,0x1234);     //如果未设定过RTC时间，则初始化
+    else HAL_RTCEx_BKUPWrite(&hrtc,RTC_BKP_DR1,0x1234);         //如果未设定过RTC时间，则初始化
     /* USER CODE END Check_RTC_BKUP */
 
-    /** Initialize RTC and set the Time and Date
-    */
-    sTime.Hours = 0x0;
-    sTime.Minutes = 0x0;
-    sTime.Seconds = 0x0;
-    sTime.SubSeconds = 0x0;
-    sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
-    sTime.StoreOperation = RTC_STOREOPERATION_RESET;
-    if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
+
+在使用STM32CubeMX生成LL库文件时，屏蔽复位备份寄存器时钟域复位，维持备份寄存器正常
+
+.. code-block:: bash
+
+    LL_PWR_EnableBkUpAccess();
+    if(LL_RCC_GetRTCClockSource() != LL_RCC_RTC_CLKSOURCE_LSI)
     {
-        Error_Handler();
+        // LL_RCC_ForceBackupDomainReset();
+        // LL_RCC_ReleaseBackupDomainReset();
+        LL_RCC_SetRTCClockSource(LL_RCC_RTC_CLKSOURCE_LSI);
     }
+
+.. note::
+    备份寄存器共 20 bytes，实际读取 RTC_BKP_DR0 - RTC_BKP_DR4 这5个32bit寄存器
 
 
 .. _stm32g030_adc:
