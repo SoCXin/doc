@@ -33,16 +33,81 @@ A/D转换
       -
       - LQFP48
 
-
+DAQ
+^^^^^^^^^^^^^
 
 `米联客 <https://www.uisrc.com/portal.php>`_ 数据采集卡
 
-* DAQ9481 250MSPS
-* DAQ4225 125MSPS
+* DAQ9481(250MSPS)
+
+AD9481 是一款8位单芯片模数转换器（ADC），专门针对高速和低功耗进行了优化。转换速率为250 MSaps，模拟输入范围1Vpp，积分非线性±0.26LSB（典型值），差分非线性±0.35LSB（典型值），在整个工作范围内都具有出色的线性度和动态性能，最高速率下功耗小于450mW。
+
+
+* DAQ4225(125MSPS)
+
+
+相关具体参数规格比较
+
+* ADS4225: Dual-Channel, 12-Bit, 125-MSPS Analog-to-Digital Converter
+* ADS4229: Dual-Channel, 12-Bit, 250-MSPS Analog-to-Digital Converter
+
+.. list-table::
+    :header-rows:  1
+
+    * - Type
+      - MSPS
+      - Resolution
+      - Interface
+      - Power
+      - Arch
+      - Package
+    * - ADS4222
+      - 65
+      - 12Bit
+      - DDR LVDS
+      - 183mW
+      - Pipeline
+      - VQFN64
+    * - ADS4225
+      - 125
+      - 12Bit
+      - DDR LVDS
+      - 183mW
+      - Pipeline
+      - VQFN64
+    * - ADS4229
+      - 250
+      - 12Bit
+      - DDR LVDS
+      - 545mW
+      - Pipeline
+      - VQFN64
+
 
 
 高精度
 ~~~~~~~~~~~~~~
+
+.. _sar:
+
+SAR
+^^^^^^^^^^^^^
+
+逐次逼近式模拟数字转换器SAR(Successive Approximation Register)，在每一次转换过程中，通过遍历所有的量化值并将其转化为模拟值，将输入信号与其逐一比较，最终得到要输出的数字信号。
+
+逐次逼近模数转换器是采样速率低于5Msps的中高分辨率ADC应用的常见结构，SAR式ADC的分辨率一般为8-16位。具有低功耗，小尺寸等特点。
+
+.. _pipeline:
+
+Pipeline
+^^^^^^^^^^^^^
+
+pipeline 更适合高速中等精度的，如 100M 14bit 以上的应用。
+
+ 100MHz Conversion Rate 12-bit , :ref:`sar` 就要1.4GHz的Clock，而 Pipelined ADC 只需100MHz的 Clock
+
+随着工艺的进步，:ref:`sar` 和 :ref:`sigma_delta` 的速度也上来 ，Pipeline 正在全面被SAR取代，除了12bit以上且大于200MSPS
+
 
 .. _sigma_delta:
 
@@ -173,6 +238,9 @@ D/A转换
 
 高速率
 ~~~~~~~~~~~~
+
+* AD9751(300 MSPS)
+
 
 高精度
 ~~~~~~~~~~~~
