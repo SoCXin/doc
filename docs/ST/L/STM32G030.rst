@@ -15,16 +15,12 @@ STM32G030
 Xin简介
 -----------
 
-
 .. image:: ./images/STM32G030.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
-规格参数
-~~~~~~~~~~~
-
 
 基本参数
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 * 发布时间：
 * 制程工艺：90 nm
@@ -38,7 +34,7 @@ Xin简介
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
 特征参数
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 * 64 MHz :ref:`cortex_m0`
 * 1x 12bit 16ch :ref:`stm32g030_adc` (2.5 MSPS)
@@ -47,15 +43,6 @@ Xin简介
 * 1KB OTP
 * I2S
 
-电源相关
-^^^^^^^^^^^
-
-* 供电电压: 2.0 to 3.6 V
-* 运行功耗: 100μA/MHz
-
-
-芯片架构
-~~~~~~~~~~~
 
 .. image:: ./images/STM32G030s.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
@@ -78,7 +65,18 @@ Timer
 .. image:: ./images/STM32G030tim.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
-芯片封装
+电源体系
+~~~~~~~~~~~
+
+* 供电电压: 2.0 to 3.6 V
+* 运行功耗: 100μA/MHz
+
+
+低功耗模式
+^^^^^^^^^^^
+
+
+封装尺寸
 ~~~~~~~~~~~
 
 .. _stm32_so8:
@@ -190,7 +188,7 @@ Xin应用
 ^^^^^^^^^^
 
 .. image:: ./images/B_STM32G030.jpg
-    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.5fcf7cd1dZFnby&id=636761611307&ns=1&abbucket=19#detail
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.13.4492136cOK1nOg&id=615829096702&ns=1&abbucket=3#detail
 
 工具资源
 ~~~~~~~~~
