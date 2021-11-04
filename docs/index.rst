@@ -38,18 +38,18 @@ SoC·Xin
       - :ref:`list`
     * - Top.1
       - :ref:`esp32`
-      - :ref:`esp32`
+      - :ref:`stm32f103`
       - :ref:`stm32h730`
       - :ref:`stc8`
       - :ref:`ch579`
-      - :ref:`NO_001`
+      - :ref:`NO_008`
     * - Top.2
       - :ref:`rp2040`
-      - :ref:`stm32f103`
+      - :ref:`esp32`
       - :ref:`stm32h745`
       - :ref:`ch552`
       - :ref:`ch32v208`
-      - :ref:`NO_002`
+      - :ref:`NO_009`
     * - Top.3
       - :ref:`stm32f401`
       - :ref:`nrf52832`
