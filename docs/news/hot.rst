@@ -34,7 +34,7 @@
       - C++
       - :ref:`arduino`
       - :ref:`lua`
-      - mPy
+      - :ref:`mpy`
       - :ref:`rust`
       - xGo
       - Assembly
@@ -68,15 +68,29 @@
 Lua
 ^^^^^^^^^^^^
 
+`Lua <https://docs.os-q.com/lua>`_
+
 .. _rust:
 
 Rust
 ^^^^^^^^^^^^
 
+`Rust <https://docs.os-q.com/rust>`_
+
+.. _mpy:
+
+mPy
+^^^^^^^^^^^^
+
+`MicroPython <https://docs.os-q.com/mpy>`_
+
+
 .. _arduino:
 
 Arduino
 ^^^^^^^^^^^^^^
+
+`Arduino <https://docs.os-q.com/arduino>`_
 
 
 

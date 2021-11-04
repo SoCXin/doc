@@ -9,7 +9,7 @@ SoC·Xin
 `Twitter <https://twitter.com/QitasTang>`_ |
 `Facebook <https://www.facebook.com/qitast>`_
 
-结合不同的需求、场景和生态资源，跨品牌给出建议，通过汇整、排序和迭代，从用户视角呈现xin体系。
+结合不同的需求、场景和生态资源，跨品牌给出建议，通过汇整、排序和迭代，从用户视角呈现 ``Xin 体系``
 
 .. toctree::
     :maxdepth: 1
@@ -35,7 +35,7 @@ SoC·Xin
       - :ref:`top`
       - :ref:`low`
       - :ref:`sip`
-      - 推荐Xin
+      - :ref:`list`
     * - Top.1
       - :ref:`esp32`
       - :ref:`esp32`
@@ -56,7 +56,7 @@ SoC·Xin
       - :ref:`rt1060`
       - :ref:`ch573`
       - :ref:`zml165`
-      - :ref:`stm32g030`
+      - :ref:`NO_010`
 
 .. toctree::
     :caption: 领域速览
