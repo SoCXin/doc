@@ -68,21 +68,21 @@
 Lua
 ^^^^^^^^^^^^
 
-`Lua <https://docs.os-q.com/lua>`_
+`Lua语言 <https://docs.os-q.com/lua>`_
 
 .. _rust:
 
 Rust
 ^^^^^^^^^^^^
 
-`Rust <https://docs.os-q.com/rust>`_
+`Rust语言 <https://docs.os-q.com/rust>`_
 
 .. _mpy:
 
 mPy
 ^^^^^^^^^^^^
 
-`MicroPython <https://docs.os-q.com/mpy>`_
+`MicroPython语言 <https://docs.os-q.com/mpy>`_
 
 
 .. _arduino:
@@ -90,7 +90,7 @@ mPy
 Arduino
 ^^^^^^^^^^^^^^
 
-`Arduino <https://docs.os-q.com/arduino>`_
+`Arduino语言 <https://docs.os-q.com/arduino>`_
 
 
 
