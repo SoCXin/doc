@@ -89,7 +89,6 @@
     :maxdepth: 1
 
     STC8H <../L/STC8>
-    ATMEGA328P <../L/ATMEGA328P>
 
 
 方案探索

@@ -10,7 +10,7 @@
 .. contents::
     :local:
 
-生态范式
+软件生态
 -------------
 
 不同的厂商市场策略不同，其中包括凭借开源社区崛起，拥抱和践行开源策略的芯片制造商，这些产品被Geek广泛尝试，拥有很多开源的软硬件方案，十分利于敏捷开发和原型搭建。
@@ -24,7 +24,7 @@
 .. contents::
     :local:
 
-语言
+编程语言
 ~~~~~~~~~~~~~
 
 .. list-table::
@@ -36,7 +36,7 @@
       - :ref:`lua`
       - :ref:`mpy`
       - :ref:`rust`
-      - xGo
+      - :ref:`xgo`
       - Assembly
     * - :ref:`esp32`
       - √
@@ -84,6 +84,11 @@ mPy
 
 `MicroPython语言 <https://docs.os-q.com/mpy>`_
 
+.. _xgo:
+
+xGo
+^^^^^^^^^^^^
+
 
 .. _arduino:
 
@@ -94,14 +99,14 @@ Arduino
 
 
 
-框架
+框架支持
 ~~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`list`
-      - :ref:`platformio`
+      - :ref:`pio`
       - freeRTOS
       - Zephyr
       - RT-Thread
@@ -133,29 +138,58 @@ Arduino
       - √
       - √
 
-.. _cmsis:
 
-CMSIS
-^^^^^^^^^^^^
+
+.. _pio:
+
+PlatformIO
+^^^^^^^^^^^^^
+
+.. _qio:
+
+QIO
+^^^^^^^^^^^^^
 
 .. _mbed:
 
 mbed
 ^^^^^^^^^^^^
 
-.. _platformio:
+.. _cmsis:
 
-PlatformIO
-^^^^^^^^^^^^^^
+CMSIS
+^^^^^^^^^^^^
 
 
-硬件范式
+硬件生态
 -------------
 
 .. contents::
     :local:
 
-STM大法
+Arduino
+~~~~~~~~~~~~~
+
+  ATMEGA328P <../L/ATMEGA328P>
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - C++
+      - :ref:`lua`
+      - :ref:`mpy`
+      - :ref:`rust`
+      - xGo
+    * - :ref:`mega328p`
+      - √
+      - √
+      - √
+      - √
+      - √
+
+
+经典范式
 ~~~~~~~~~~~~~
 
 .. note::
@@ -169,63 +203,72 @@ STM大法
 STM32F030范式
 ^^^^^^^^^^^^^^
 
-入门级32位MCU，高性价比，主要用于替换8/16位单片机
+该型范式定位入门级32位MCU，高性价比用于替换8/16位单片机，市场需求量大，开发需要更高效释放资源，选择和升级空间广泛
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`list`
+      - Core
       - Frequency
       - RAM+ROM
-      - Series
+      - Price
       - UART/SPI/I2C
       - GPIO
     * - :ref:`stm32f030`
+      - :ref:`cortex_m0`
       - 48 MHz
       - 4/8+16/32/64
-      - 7
+      -
       - 1/1/1
       - 20/32/48/64
     * - :ref:`stm32g030`
+      - :ref:`cortex_m0`
       - 64 MHz
       - 8+32/64
-      - 6
+      -
       - 2/2/2
       - 8/20/32/48
     * - :ref:`at32f421`
+        - :ref:`cortex_m4`
       - 120 MHz
       - 8/16+16/32/64
-      - 6
+      -
       - 2/2/2
       - 20/28/32/48
     * - CKS32F030
+      - :ref:`cortex_m0`
       - 48 MHz
       - 4/8+16/32/64
-      - 7
+      -
       - 1/1/1
       - 20/32/48/64
     * - HK32F030
+      - :ref:`cortex_m0`
       - 72 MHz
       - 4/8+16/32/64
-      - 7
+      -
       - 1/1/1
       - 20/32/48/64
-    * - MM32F031
+    * - :ref:`mm32f031`
+      - :ref:`cortex_m0`
       - 72 MHz
       -
       -
       -
       -
     * - :ref:`gd32f130`
+      - :ref:`cortex_m3`
       - 48 MHz
       - 4/8+16/32/64
-      - 7
+      -
       - 1/1/1
       - 20/32/48/64
     * - GD32F330
+      - :ref:`cortex_m3`
       - 84 MHz
       - 4/8+16/32/64
-      - 7
+      -
       - 1/1/1
       - 20/32/48/64
 
@@ -234,7 +277,7 @@ STM32F030范式
     :maxdepth: 1
 
     GD32F130 <../L/GD32F130>
-
+    MM32F031 <../L/MM32F031>
 
 .. _ref103:
 
