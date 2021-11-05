@@ -169,27 +169,11 @@ CMSIS
 
 Arduino
 ~~~~~~~~~~~~~
-
 .. toctree::
     :maxdepth: 1
 
-  ATMEGA328P <../L/ATMEGA328P>
+    ATMEGA328P <../L/ATMEGA328P>
 
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`list`
-      - C++
-      - :ref:`lua`
-      - :ref:`mpy`
-      - :ref:`rust`
-      - xGo
-    * - :ref:`mega328p`
-      - √
-      - √
-      - √
-      - √
-      - √
 
 
 经典范式
