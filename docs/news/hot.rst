@@ -170,6 +170,9 @@ CMSIS
 Arduino
 ~~~~~~~~~~~~~
 
+.. toctree::
+    :maxdepth: 1
+
   ATMEGA328P <../L/ATMEGA328P>
 
 .. list-table::
