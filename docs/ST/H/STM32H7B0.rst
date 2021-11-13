@@ -156,6 +156,13 @@ Xin应用
 开发板
 ~~~~~~~~~~~~~~~
 
+STM32H7B0-DK
+^^^^^^^^^^^^^^^
+
+.. image:: images/STM32H7B0_dk.jpg
+    :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.6e7a2e8d6nHM8d&id=658976139303&_u=dgas3eu21a0
+
+
 STM32H7B3I-DK
 ^^^^^^^^^^^^^^^
 .. image:: images/B_STM32H7B3.png
@@ -189,6 +196,14 @@ STM32H7B3I-DK
 低功耗HMI
 ~~~~~~~~~~~
 
+TouchGFX
+^^^^^^^^^^^^^^^
+
+littleVGL
+^^^^^^^^^^^^^^^
+
+emWin
+^^^^^^^^^^^^^^^
 
 
 Xin总结
