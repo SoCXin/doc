@@ -54,7 +54,7 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`list`
-      - DMIPS
+      - :ref:`DMIPS`
       - RAM
       - FLASH
       - UART
@@ -62,7 +62,7 @@ Xin选择
       - USB
       - Ethernet
     * - :ref:`at32f415`
-      - 175 DMIPS
+      - 175
       - 32
       - 64/128/256
       - 2/3/5
@@ -70,7 +70,7 @@ Xin选择
       - USB OTG
       - NO
     * - :ref:`at32f413`
-      - 250 DMIPS
+      - 250
       - 16/32/64
       - 64/128/256
       - 2/3/5
@@ -78,7 +78,7 @@ Xin选择
       - USB2.0
       - NO
     * - :ref:`at32f403`
-      - 300 DMIPS
+      - 300
       - 224
       - 256/512/1024
       - 7/8
@@ -86,7 +86,7 @@ Xin选择
       - USB2.0
       - NO
     * - :ref:`at32f407`
-      - 300 DMIPS
+      - 300
       - 224
       - 256/512/1024
       - 8

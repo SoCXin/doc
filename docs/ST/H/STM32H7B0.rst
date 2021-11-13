@@ -90,8 +90,8 @@ STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - DMIPS
+    * - Name
+      - :ref:`DMIPS`
       - RAM
       - Cache
       - GPU
@@ -105,7 +105,7 @@ STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.
       - 32+32
       - ART
       - 2 Octo
-      - OTG HS
+      - :ref:`stm32_otg_hs`
       - 100M
       - 35
     * - :ref:`stm32h750`
@@ -114,7 +114,7 @@ STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.
       - 16+16
       - ART
       - 2 Quad
-      - OTG HS
+      - :ref:`stm32_otg_hs`
       - 100M
       - 35
     * - :ref:`stm32h7b0`
@@ -123,10 +123,12 @@ STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.
       - 16+16
       - ART/JPEG
       - 2 Octo
-      - OTG HS
+      - :ref:`stm32_otg_hs`
       - No
       - 35
 
+.. hint::
+    :ref:`stm32h7b0` 不具备以太网通信能力，就性能而言在H7系列中没有优势，更多适用于高集成度低功耗场景
 
 
 
@@ -136,28 +138,8 @@ STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.
 .. image:: ./images/STM32H7B0l.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html
 
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`list`
-      - DMIPS
-      - RAM
-      - Cache
-      - GPU
-      - SPI
-      - USB
-      - Ethernet
-      - Interface
-    * - :ref:`stm32h7b0`
-      - 1177
-      - 564KB
-      - 32+32
-      - ART
-      - 2 Octo
-      - OTG HS
-      - 100M
-      - 35
-
+图形性能
+~~~~~~~~~
 
 .. image:: ./images/DMA2D.jpg
 
@@ -181,7 +163,7 @@ STM32H7B3I-DK
 
 * 4.3" (480x272) TFT color LCD module including a capacitive touch panel with RGB interface
 * Wi‑Fi® module compliant with 802.11 b/g/n
-* USB OTG HS
+* USB :ref:`stm32_otg_hs`
 * Audio codec
 * 512-Mbit Octo-SPI NOR Flash memory
 * 128-Mbit SDRAM
@@ -200,7 +182,7 @@ STM32H7B3I-DK
 * STMod+ expansion connector
 * Audio daughterboard expansion connector
 * External I2C expansion connector
-* Flexible power-supply options: ST-LINK USB VBUS, USB OTG HS connector, or external sources
+* Flexible power-supply options: ST-LINK USB VBUS, USB :ref:`stm32_otg_hs` connector, or external sources
 * On-board STLINK-V3E debugger/programmer
 
 

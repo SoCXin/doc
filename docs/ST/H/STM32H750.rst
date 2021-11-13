@@ -125,7 +125,7 @@ H7系列关键参数对比
     :header-rows:  1
 
     * - :ref:`list`
-      - DMIPS
+      - :ref:`DMIPS`
       - RAM
       - Cache
       - GPU
@@ -139,7 +139,7 @@ H7系列关键参数对比
       - 32+32
       - ART
       - 2 Octo
-      - OTG HS
+      - :ref:`stm32_otg_hs`
       - 100M
       - 35
     * - :ref:`stm32h750`
@@ -148,7 +148,7 @@ H7系列关键参数对比
       - 16+16
       - ART
       - 2 Quad
-      - OTG HS
+      - :ref:`stm32_otg_hs`
       - 100M
       - 35
     * - :ref:`stm32h7b0`
@@ -157,7 +157,7 @@ H7系列关键参数对比
       - 16+16
       - ART/JPEG
       - 2 Quad
-      - OTG HS
+      - :ref:`stm32_otg_hs`
       - No
       - 35
 

@@ -33,7 +33,7 @@ Cortex-M7
       - 32+32
       - ART
       - 2 Octo
-      - OTG HS
+      - :ref:`stm32_otg_hs`
       - 100M
       - 35
     * - :ref:`stm32h750`
@@ -42,7 +42,7 @@ Cortex-M7
       - 16+16
       - ART
       - 2 Quad
-      - OTG HS
+      - :ref:`stm32_otg_hs`
       - 100M
       - 35
     * - :ref:`stm32h7b0`
@@ -51,6 +51,6 @@ Cortex-M7
       - 16+16
       - ART/JPEG
       - 2 Quad
-      - OTG HS
+      - :ref:`stm32_otg_hs`
       - No
       - 35
