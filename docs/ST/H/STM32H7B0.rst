@@ -29,11 +29,15 @@ Xin简介
 * 工作温度：-40°C to +85°C/125°C
 * 处理性能：599 :ref:`DMIPS`, 1414 :ref:`CoreMark`
 * RAM容量：1.4 MB
-* Flash容量：128 KB
+* Flash容量：128 KB (由多个8 KB扇区组成)
 * 封装规格：64 to 176 Pin
 
 .. image:: ./images/STM32H7B0p.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html
+
+.. note::
+    分散的1.4 MB SRAM组成包括 192 KB TCM RAM（64 KB ITCM RAM和128 KB DTCM RAM），1.18 MB 用户SRAM，备份域4 KB SRAM
+
 
 特征参数
 ^^^^^^^^^^^
@@ -63,6 +67,7 @@ Xin简介
 SMPS
 ^^^^^^^^^^^
 
+用于降低电源电压还可用于为外部电路供电，以及特定应用情况下结合LDO共同使用
 
 .. _stm32_gfxmmu:
 
@@ -133,17 +138,22 @@ STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.
 
 
 
-型号对比
+封装型号
 ~~~~~~~~~
 
 .. image:: ./images/STM32H7B0l.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html
+
+.. warning::
+    :ref:`stm32h7b0` 的UFBGA封装型号STM32H7B0AB/STM32H7B0IB才集成 :ref:`stm32_smps`
 
 图形性能
 ~~~~~~~~~
 
 .. image:: ./images/DMA2D.jpg
 
+.. note::
+    LCD-TFT控制器接口支持双层图形，JPEG硬件加速器，可进行快速JPEG编码和解码
 
 Xin应用
 -----------

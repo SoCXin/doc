@@ -115,7 +115,7 @@ H7系列关键参数对比
       - 480MHz
     * - :ref:`stm32h7b0`
       - 1.4 MB RAM
-      - SMPS
+      - :ref:`stm32_smps`
       -
 
 超值系列关键对比
