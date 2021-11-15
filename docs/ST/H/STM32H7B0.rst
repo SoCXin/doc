@@ -157,12 +157,17 @@ Xin应用
 开发板
 ~~~~~~~~~~~~~~~
 
-STM32H7B0-DK
+FK7B0M1-VBT6
 ^^^^^^^^^^^^^^^
 
 .. image:: images/STM32H7B0_dk.jpg
     :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.6e7a2e8d6nHM8d&id=658976139303&_u=dgas3eu21a0
 
+电容触控屏排线接口(800x480/480x272)，用于实践交互控制，板上资源较少，通过IO扩展外设
+
+* W25Q64(SPI)+W25Q64(OSPI)
+* 25MHz HSE + 32.768KHz RTC
+* Type C USB
 
 STM32H7B3I-DK
 ^^^^^^^^^^^^^^^
