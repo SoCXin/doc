@@ -4,7 +4,7 @@
 CH569
 ===========
 
-* 关键词：``RISC-V3A`` ``120MHz`` ``USB3.0`` ``HSPI`` ``SerDes`` ``Ethernet`` ``ETH-MAC1000``
+* 关键词：``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``1G-Ethernet`` ``EMMC``
 * 资源库：`GitHub <https://github.com/SoCXin/CH569>`_
 
 .. contents::
@@ -13,11 +13,13 @@ CH569
 Xin简介
 -----------
 
-
 .. image:: ./images/CH569.png
     :target: http://www.wch.cn/products/CH569.html
 
-规格参数
+.. contents::
+    :local:
+
+规格配置
 ~~~~~~~~~~~
 
 :ref:`wch_riscv3a` 支持RISC-V指令的IMAC子集。片上采取 128 位数据宽度的 DMA 以支持多个高速外设的高带宽需求，实现大数据量的高速传输。外设包括 USB3.0 超速、USB2.0高速主机和设备控制器及收发器 PHY、千兆以太网控制器、专用高速 SerDes 控制器及收发器 PHY、SD/EMMC接口控制器、加解密模块、高速并行接口、数字视频接口 DVP 等，可广泛应用于流媒体、即时存储、超高速 FIFO、通讯延长、安防监控等应用场景。
@@ -25,25 +27,31 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
+* 发布时间：
 * 工作温度：-20 °C to 85 °C
 * 处理性能：145 :ref:`DMIPS`
 * RAM容量：16 KB + 32/64/96 KB
 * Flash容量：448 KB
-* 封装规格：:ref:`wch_qfn68`/ :ref:`wch_qfn40`
+* 封装规格：:ref:`wch_qfn68`
+
+.. hint::
+    :ref:`ch569` 型号目前无QFN40(CH565M)封装
+
 
 特征参数
 ^^^^^^^^^^^
 
 * 120 MHz :ref:`wch_riscv3a`
-* USB3.0控制及收发器（内置PHY），支持USB3.0 主机Host/设备Device模式、OTG功能，支持USB3.0 HUB
-* USB2.0控制及收发器（内置PHY），支持USB2.0 主机Host/设备Device模式，支持控制/批量/中断/同步传输
-* 千兆以太网控制器（Ethernet），提供RGMII和RMII PHY接口，支持10/100/1000Mbps的传输速率
+* USB3.0控制及收发器（内置PHY），支持主机Host/设备Device模式、OTG功能，支持USB3.0 HUB
+* USB2.0控制及收发器（内置PHY），支持主机Host/设备Device模式，支持控制/批量/中断/同步传输
+* 千兆以太网控制器（Ethernet），提供RGMII和RMII PHY接口，支持10/100/1000Mbps速率
 * :ref:`wch_hspi`，可配置8/16/32位数据宽度，内置FIFO，支持DMA，最快传输速度约为3.8Gbps
-* :ref:`wch_serdes` 控制及收发器（内置PHY，可直接驱动光纤），支持网线（仅使用1组差分线）传输90米，支持1.25Gbps高速差分信号通讯
+* :ref:`wch_serdes` 内置PHY，可直接驱动光纤，支持网线（仅使用1组差分线）传输90米，支持1.25Gbps高速差分信号通讯
 * 内置EMMC控制器，支持单线、4线、8线数据通讯模式，符合EMMC卡4.4和4.5.1规范，兼容5.0规范
 
 .. hint::
-    :ref:`ch569` 最吸引人的地方在强悍的高速外设配置。
+    :ref:`ch569` 强悍的高速外设配置十分有冲击力，但是受限于内核性能无法进行数据处理，更多是作为桥接芯片，官方给出的U盘方案读写速率
+
 
 电源参数
 ^^^^^^^^^^^
@@ -70,6 +78,8 @@ SerDes
 HSPI
 ^^^^^^^^^^^
 
+HSPI接口通讯FPGA功能
+
 芯片封装
 ~~~~~~~~~~~
 
@@ -78,19 +88,10 @@ HSPI
 QFN68
 ^^^^^^^^^^^
 
-* 8x8mm pitch 0.4mm
+* 封装尺寸 8x8mm ，pitch 0.4mm
 
 .. image:: ./images/CH569p68.png
 
-
-.. _wch_qfn40:
-
-QFN40
-^^^^^^^^^^^
-
-* 5x5mm pitch 0.4mm
-
-.. image:: ./images/CH569p40.png
 
 
 Xin选择
@@ -109,7 +110,58 @@ Xin选择
 型号对比
 ~~~~~~~~~
 
-CH569相较于CH565没有DVP接口，多了 :ref:`wch_hspi`
-
 .. image:: ./images/CH569l.png
     :target: http://www.wch.cn/products/CH569.html
+
+.. note::
+    CH569相较于CH565没有DVP接口，多了 :ref:`wch_hspi`
+
+Xin应用
+-----------
+
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+
+CH569W-R0-1V0
+^^^^^^^^^^^^^^^
+
+.. image:: ./images/B_CH569.jpg
+    :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c262e8d9Mj4QY&id=659151805793&_u=kgas3eu034d
+
+
+官方方案
+~~~~~~~~~~
+
+`USB3.0超高速U盘 <http://www.wch.cn/application/532.html>`_ ，CH569配有EMMC卡控制器和USB3.0 OTG控制器及收发器，通过EMMC接口挂载SD/TF/EMMC卡后即可具备U盘设计的基本物理资源。
+
+软件设计上，缓冲区资源共享，划分队列管理，USB3.0端数据和EMMC卡数据只进行DMA地址修改，不参与任何数据拷贝，减少MCU处理时间；添加了EMMC卡协议命令处理及USB3.0设备端命令响应过程。
+
+实测使用一款16G EMMC卡作为存储介质(工作在HS200模式下)，在Win10平台下进行大数据拷贝，读出速度不低于90MB/s，写入速度不低于40MB/s
+
+.. hint::
+    这个方案的速率连USB HS的性能都远远没发挥出来！
+
+
+Xin总结
+--------------
+
+.. contents::
+    :local:
+
+
+能力构建
+~~~~~~~~~~~~~
+
+要点提示
+~~~~~~~~~~~~~
+
+由于端口复用问题，所以烧录固件进入BOOT模式有点麻烦，特别是CH569W-R0-1V0并没有带有任何按键，在调试过程中需要自己附带更多的外部接线环境，没法开箱即用。
+
+问题整理
+~~~~~~~~~~~~~
+
+
