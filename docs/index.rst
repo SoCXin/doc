@@ -62,12 +62,12 @@ SoC·Xin
     :caption: 领域速览
     :maxdepth: 1
 
-    电机控制   <for/foc>
-    人机交互   <for/hmi>
+    驱动控制   <for/foc>
+    显示交互   <for/hmi>
     通信连接   <for/iot>
     边缘计算   <for/edge>
     功耗优化   <for/ulp>
-    模拟转换   <for/adc>
+    数模转换   <for/adc>
 
 .. list-table::
     :header-rows:  1
@@ -142,7 +142,7 @@ SoC·Xin
       - :ref:`asr6501`
       - :ref:`at32f421`
       - :ref:`rt1010`
-      - :ref:`ch32v103`
+      - :ref:`ch569`
       - :ref:`ch554`
       - :ref:`w806`
 

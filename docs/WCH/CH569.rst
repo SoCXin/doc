@@ -35,7 +35,7 @@ Xin简介
 * 封装规格：:ref:`wch_qfn68`
 
 .. hint::
-    :ref:`ch569` 型号目前无QFN40(CH565M)封装
+    :ref:`ch569` 型号目前无QFN40封装
 
 
 特征参数
@@ -46,11 +46,11 @@ Xin简介
 * USB2.0控制及收发器（内置PHY），支持主机Host/设备Device模式，支持控制/批量/中断/同步传输
 * 千兆以太网控制器（Ethernet），提供RGMII和RMII PHY接口，支持10/100/1000Mbps速率
 * :ref:`wch_hspi`，可配置8/16/32位数据宽度，内置FIFO，支持DMA，最快传输速度约为3.8Gbps
-* :ref:`wch_serdes` 内置PHY，可直接驱动光纤，支持网线（仅使用1组差分线）传输90米，支持1.25Gbps高速差分信号通讯
+* :ref:`wch_serdes` 可直接驱动光纤，支持网线（仅使用1组差分线）传输90米，支持1.25Gbps高速差分信号通讯
 * 内置EMMC控制器，支持单线、4线、8线数据通讯模式，符合EMMC卡4.4和4.5.1规范，兼容5.0规范
 
 .. hint::
-    :ref:`ch569` 强悍的高速外设配置十分有冲击力，但是受限于内核性能无法进行数据处理，更多是作为桥接芯片，官方给出的U盘方案读写速率
+    :ref:`ch569` 强悍的高速外设配置十分有冲击力，但是受限于内核性能无法进行数据处理，更多是作为桥接芯片
 
 
 电源参数
@@ -80,17 +80,6 @@ HSPI
 
 HSPI接口通讯FPGA功能
 
-芯片封装
-~~~~~~~~~~~
-
-.. _wch_qfn68:
-
-QFN68
-^^^^^^^^^^^
-
-* 封装尺寸 8x8mm ，pitch 0.4mm
-
-.. image:: ./images/CH569p68.png
 
 
 
@@ -110,11 +99,36 @@ Xin选择
 型号对比
 ~~~~~~~~~
 
+
 .. image:: ./images/CH569l.png
     :target: http://www.wch.cn/products/CH569.html
 
-.. note::
-    CH569相较于CH565没有DVP接口，多了 :ref:`wch_hspi`
+
+.. _ch565:
+
+CH565
+^^^^^^^^^^^
+
+ :ref:`ch565` 相较于 :ref:`ch569` 多了DVP接口，去掉了 :ref:`wch_hspi` ，甚至在更小QFN40上去掉了以太网和调试端口。
+
+.. image:: ./images/CH569p40.png
+
+
+封装规格
+~~~~~~~~~~~
+
+ :ref:`ch569` 目前仅有一个封装规格，而 :ref:`ch565` 具有QFN68/QFN40
+
+.. _wch_qfn68:
+
+QFN68
+^^^^^^^^^^^
+
+* 封装尺寸 8x8mm ，pitch 0.4mm
+
+.. image:: ./images/CH569p68.png
+
+
 
 Xin应用
 -----------
