@@ -48,7 +48,7 @@ SoC·Xin
       - :ref:`esp32`
       - :ref:`stm32h745`
       - :ref:`ch552`
-      - :ref:`ch32v208`
+      - :ref:`ch32v307`
       - :ref:`NO_009`
     * - Top.3
       - :ref:`stm32f401`
