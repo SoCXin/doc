@@ -97,7 +97,7 @@ X-CUBE-AI
       - :ref:`k510_npu`
       - BGA144
     * - :ref:`v831`
-      - :ref:`cortex_a7`
+      - Cortex-A7
       - 800 MHz
       - 64MB DDR2
       -

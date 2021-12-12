@@ -39,7 +39,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 960 MHz :ref:`cortex_a7` Quad core
+* 960 MHz Cortex-A7 Quad core
 * 202 MHz :ref:`arm926ejs`
 * 8051 Core Selectable 32KHz or 202MHz operating speed
 * Two IEEE 802.3 10/100M ports with RMII interface

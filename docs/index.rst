@@ -107,8 +107,8 @@ SoC·Xin
     :maxdepth: 1
 
     ARM     <core/arm>
-    MIPS    <core/MIPS>
     ASIC    <core/asic>
+    MIPS    <core/MIPS>
     RISC-V  <core/RISC-V>
     MCS51   <core/MCS51>
 
@@ -150,11 +150,11 @@ SoC·Xin
     :caption: 厂商速览
     :maxdepth: 1
 
-    ST <ST/index>
-    WCH <WCH/index>
-    Espressif <espressif/index>
-    MediaTek <MediaTek/index>
-    ArteryTek <arterytek/index>
+    STM 微控制器 <ST/index>
+    WCH 有线连接 <WCH/index>
+    Espressif 无线连接 <espressif/index>
+    MediaTek 路由节点 <MediaTek/index>
+    ArteryTek 高性价比 <arterytek/index>
 
 收录的厂商不是很多但相对具有代表性，覆盖的解决方案比较全，通过汇总有代表性的厂商信息，提供精炼方案
 
