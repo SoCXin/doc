@@ -45,7 +45,7 @@ Espressif
       - ETH
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
-      - 504.85/994.26
+      - 504.8/994.2
       - 520KB/448KB
       - 1T1R+v4.2
       - No
@@ -69,7 +69,7 @@ Espressif
       - No
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
-      - 407.22
+      - 407.2
       - 400KB/384KB
       - 1T1R+v5.0
       - No
