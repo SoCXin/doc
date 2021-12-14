@@ -4,8 +4,8 @@
 ESP32-C3
 ================
 
-* 关键词：``RISC-V`` ``160MHz`` ``QFN32`` ``BLE5.0`` ``WiFi``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_
+* 关键词：``RISC-V`` ``160MHz`` ``BLE5.0`` ``WiFi`` ``QFN32``
+* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ , `Gitee <https://gitee.com/socxin/ESP32C3>`_
 
 .. contents::
     :local:
@@ -157,6 +157,8 @@ Xin选择
 * 内存较小，无法支撑复杂的应用场合
 * 缺少硬件加密、没有安全启动和Flash加密，RSA耗时较长，TLS握手需要3-4秒
 
+对比ESP8685
+^^^^^^^^^^^^
 
 对比ESP32
 ^^^^^^^^^^^^
@@ -249,21 +251,24 @@ ESP32-C3支持QSPI 适合4.3寸以下，SPI QSPI，MCU（8080）接口的屏。
 * `RUST API <https://github.com/imheresamir/esp32c3>`_
 
 
+
+
 Xin总结
 --------------
 
 .. contents::
     :local:
 
-重点提示
-~~~~~~~~~~~~~~
+能力构建
+~~~~~~~~~~~~~
+
+.. note::
+    相对传统的MCU使用的强大IDE环境，最大的槽点就是缺乏高度集成的工具环境，ESP-IDF的编译效率较低，文件修改后编译非常耗时
 
 
+要点提示
+~~~~~~~~~~~~~
 
 问题整理
 ~~~~~~~~~~~~~
 
-
-
-.. warning::
-    相对传统的MCU开发，最大的槽点就是ESP-IDF编译效率，因为要编译的组件特别多，编译非常耗时间

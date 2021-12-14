@@ -89,7 +89,7 @@ Xin选择
       - NO
       - MAC100
     * - :ref:`esp32c3`
-      - :ref:`espressif_rv32`
+      - :ref:`esp_rv32`
       - 200 DMIPS
       - 400 KB
       - 802.11 b/g/n

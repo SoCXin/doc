@@ -34,3 +34,7 @@
       - 致敬STM32F429，片上8M SRAM支持RGB888
     * - :ref:`NO_013` (QFN28)
       - 芯片虽小，却支持BLE5.1和两个USB外设
+    * - :ref:`NO_014`
+      - 集成USB HS和1G 以太网MAC，有线连接全家桶
+    * - :ref:`NO_015` (QFN56)
+      - 高性能双核WiFi/BLE5.0 SoC，带USB OTG

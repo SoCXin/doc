@@ -1,11 +1,10 @@
-
+.. _NO_015:
 .. _esp32s3:
 
 ESP32-S3
 ================
 
-
-* 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``QFN56`` ``WiFi`` ``BLE5.0`` ``USB OTG`` ``TWAI``
+* 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE5.0`` ``USB OTG`` ``TWAI`` ``QFN56``
 * 代码库：`GitHub <https://github.com/SoCXin/ESP32S3>`_ , `Gitee <https://gitee.com/socxin/ESP32S3>`_
 
 .. contents::
@@ -49,7 +48,7 @@ Xin简介
 * 2x 12bit ADC (20ch)
 
 .. hint::
-    2020年12月发布，2021年8月量产供货
+    2020年12月发布，预计2021年8月开始供货
 
 安全特性
 ~~~~~~~~~~~~~~
