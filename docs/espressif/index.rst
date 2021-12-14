@@ -38,7 +38,7 @@ Espressif
     * - :ref:`list`
       - :ref:`esp_core`
       - :ref:`CoreMark`
-      - SRAM
+      - SRAM/ROM
       - WiFi+BLE
       - :ref:`esp_usb`
       - UART/SPI/I2C
@@ -53,28 +53,28 @@ Espressif
       - 100Mbps
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
-      -
-      - 512 KB
-      - 1T1R+v5.0
-      - USB1.1 OTG
-      -
-      -
+      - No
+      - 320KB/128KB
+      - v5.0
+      - FS OTG
+      - 2/4/2
+      - No
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6
-      - 512 KB
+      - 512KB/384KB
       - 1T1R+v5.0
-      - USB1.1 OTG
+      - FS OTG
       - 3/4/2
-      -
+      - No
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       -
-      - 400 KB
+      - 400KB/384KB
       - 1T1R+v5.0
       -
       - 2/3/1
-      -
+      - No
     * - :ref:`esp32c6`
       - :ref:`esp_rv32`
       -
@@ -82,7 +82,7 @@ Espressif
       - 1T1R+v5.0
       -
       -
-      -
+      - No
     * - :ref:`esp32h2`
       - :ref:`esp_rv32`
       -
@@ -90,7 +90,7 @@ Espressif
       - v5.0
       -
       -
-      -
+      - No
 
 应用简介
 -----------
@@ -173,7 +173,6 @@ QFN56
 .. image:: ./images/ESP32S3P.png
     :target: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
 
-主要是 :ref:`esp32s3` 使用
 
 .. _esp_qfn48:
 
@@ -186,15 +185,12 @@ QFN48
 .. image:: ./images/ESP32p6.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32
 
-主要是 :ref:`esp32` 使用
 
 .. _esp_qfn32:
 
 QFN32
 ^^^^^^^^^^^^^^
 
-
 .. image:: ./images/ESP32C3P.png
-    https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_cn.pdf
+    :target: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_cn.pdf
 
-主要是 :ref:`esp32c3` 使用

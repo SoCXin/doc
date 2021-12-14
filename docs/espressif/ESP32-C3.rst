@@ -25,7 +25,7 @@ Xin简介
 * 发布时间：
 * 制程工艺：45 nm
 * 工作温度：-40°C to +105°C
-* 处理性能：150 :ref:`DMIPS` , 398 :ref:`CoreMark`
+* 处理性能：407.22 :ref:`CoreMark`
 * RAM容量：400 KB (TCM)
 * Flash容量：384 KB
 * 封装规格：QFN32
