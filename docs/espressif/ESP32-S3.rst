@@ -35,8 +35,6 @@ Xin简介
 * Flash容量：384 KB
 * 封装规格：:ref:`esp_qfn56`
 
-.. image:: ./images/ESP32S3P.png
-    :target: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
 
 
 特征参数

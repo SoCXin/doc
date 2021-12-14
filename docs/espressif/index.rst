@@ -29,7 +29,7 @@ Espressif
     ESP32-C6 <ESP32-C6>
     ESP32-H2 <ESP32-H2>
 
-关键参数
+参数对比
 ~~~~~~~~~~~~
 
 .. list-table::
@@ -37,55 +37,55 @@ Espressif
 
     * - :ref:`list`
       - :ref:`esp_core`
-      - DMIPS
+      - :ref:`CoreMark`
       - SRAM
-      - :ref:`esp_ble`
+      - WiFi+BLE
       - :ref:`esp_usb`
       - UART/SPI/I2C
-      - ETH MAC
+      - ETH
     * - :ref:`esp32`
-      - 2 x :ref:`xtensa_lx6`
-      - 600 DMIPS
+      - :ref:`xtensa_lx6`
+      -
       - 520 KB
-      - v4.2
+      - 1T1R+v4.2
       -
       -
       - 100Mbps
     * - :ref:`esp32s2`
-      - 1 x :ref:`xtensa_lx7`
-      - 600 DMIPS
+      - :ref:`xtensa_lx7`
+      -
       - 512 KB
-      - v5.0
+      - 1T1R+v5.0
       - USB1.1 OTG
       -
       -
     * - :ref:`esp32s3`
-      - 2 x :ref:`xtensa_lx7`
-      - 600 DMIPS
+      - :ref:`xtensa_lx7`
+      - 1181.6
       - 512 KB
-      - v5.0
+      - 1T1R+v5.0
       - USB1.1 OTG
       - 3/4/2
       -
     * - :ref:`esp32c3`
-      - 1 x :ref:`esp_rv32`
-      - 200 DMIPS
+      - :ref:`esp_rv32`
+      -
       - 400 KB
-      - v5.0
+      - 1T1R+v5.0
       -
       - 2/3/1
       -
     * - :ref:`esp32c6`
-      - 1 x :ref:`esp_rv32`
-      - 200 DMIPS
+      - :ref:`esp_rv32`
+      -
       - 400 KB
-      - v5.0
+      - 1T1R+v5.0
       -
       -
       -
     * - :ref:`esp32h2`
-      - 1 x :ref:`esp_rv32`
-      - 200 DMIPS
+      - :ref:`esp_rv32`
+      -
       - 400 KB
       - v5.0
       -
@@ -155,7 +155,6 @@ Core
 ULP
 ^^^^^^^^^^^^^^
 
-
 .. _esp_rv32:
 
 RV32 IMC
@@ -163,13 +162,16 @@ RV32 IMC
 
 .. _espressif_package:
 
-封装管脚
+封装规格
 ~~~~~~~~~~~~
 
 .. _esp_qfn56:
 
 QFN56
 ^^^^^^^^^^^^^^
+
+.. image:: ./images/ESP32S3P.png
+    :target: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
 
 主要是 :ref:`esp32s3` 使用
 
@@ -178,17 +180,21 @@ QFN56
 QFN48
 ^^^^^^^^^^^^^^
 
-主要是 :ref:`esp32` 使用
 
 .. image:: ./images/ESP32p5.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32
 .. image:: ./images/ESP32p6.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32
 
+主要是 :ref:`esp32` 使用
+
 .. _esp_qfn32:
 
 QFN32
 ^^^^^^^^^^^^^^
 
-主要是 :ref:`esp32c3` 使用
 
+.. image:: ./images/ESP32C3P.png
+    https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_cn.pdf
+
+主要是 :ref:`esp32c3` 使用

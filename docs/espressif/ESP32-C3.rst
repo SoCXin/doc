@@ -13,8 +13,6 @@ ESP32-C3
 Xin简介
 -----------
 
-:ref:`espressif` WiFi & BLE SoC
-
 .. image:: ./images/ESP32C3.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32-C3
 
