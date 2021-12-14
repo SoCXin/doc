@@ -25,7 +25,7 @@ Xin简介
 * 发布时间：2016年9月
 * 供电电压：2.3 to 3.6 V
 * 工作温度：-40°C to +105°C
-* 处理性能：600 :ref:`DMIPS`
+* 处理性能：504.85 :ref:`CoreMark`, 994.26 :ref:`CoreMark` (Dual)
 * RAM容量：520 KB (8 MB SPI)
 * ROM容量：448 KB (16 MB SPI)
 * 封装规格：:ref:`esp_qfn48`

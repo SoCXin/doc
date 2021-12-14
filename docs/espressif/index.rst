@@ -45,50 +45,42 @@ Espressif
       - ETH
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
-      -
-      - 520 KB
+      - 504.85/994.26
+      - 520KB/448KB
       - 1T1R+v4.2
-      -
-      -
+      - No
+      - 3/4/2(34P)
       - 100Mbps
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
-      - No
+      - 613.8
       - 320KB/128KB
       - v5.0
       - FS OTG
-      - 2/4/2
+      - 2/4/2(43P)
       - No
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
-      - 1181.6
+      - 613.8/1181.6
       - 512KB/384KB
       - 1T1R+v5.0
       - FS OTG
-      - 3/4/2
+      - 3/4/2(44P)
       - No
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
-      -
+      - 407.22
       - 400KB/384KB
       - 1T1R+v5.0
-      -
-      - 2/3/1
       - No
-    * - :ref:`esp32c6`
-      - :ref:`esp_rv32`
-      -
-      - 400 KB
-      - 1T1R+v5.0
-      -
-      -
+      - 2/3/1(22P)
       - No
     * - :ref:`esp32h2`
       - :ref:`esp_rv32`
       -
-      - 400 KB
+      - 400KB/384KB
       - v5.0
-      -
+      - No
       -
       - No
 
