@@ -41,36 +41,56 @@ Espressif
       - SRAM
       - :ref:`esp_ble`
       - :ref:`esp_usb`
+      - UART/SPI/I2C
       - ETH MAC
     * - :ref:`esp32`
-      - :ref:`xtensa_lx6`
+      - 2 x :ref:`xtensa_lx6`
       - 600 DMIPS
       - 520 KB
       - v4.2
       -
-      - 100M
+      -
+      - 100Mbps
     * - :ref:`esp32s2`
-      - :ref:`xtensa_lx7`
+      - 1 x :ref:`xtensa_lx7`
       - 600 DMIPS
       - 512 KB
       - v5.0
-      - USB2.0 OTG
+      - USB1.1 OTG
+      -
       -
     * - :ref:`esp32s3`
-      - 2x :ref:`xtensa_lx7`
+      - 2 x :ref:`xtensa_lx7`
       - 600 DMIPS
       - 512 KB
-      -  v5.0
-      - USB2.0 OTG
+      - v5.0
+      - USB1.1 OTG
+      - 3/4/2
       -
     * - :ref:`esp32c3`
-      - :ref:`esp_rv32`
+      - 1 x :ref:`esp_rv32`
+      - 200 DMIPS
+      - 400 KB
+      - v5.0
+      -
+      - 2/3/1
+      -
+    * - :ref:`esp32c6`
+      - 1 x :ref:`esp_rv32`
       - 200 DMIPS
       - 400 KB
       - v5.0
       -
       -
-
+      -
+    * - :ref:`esp32h2`
+      - 1 x :ref:`esp_rv32`
+      - 200 DMIPS
+      - 400 KB
+      - v5.0
+      -
+      -
+      -
 
 应用简介
 -----------

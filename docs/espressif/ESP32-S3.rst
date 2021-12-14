@@ -22,33 +22,45 @@ Xin简介
 规格配置
 ~~~~~~~~~~~
 
+.. hint::
+    2020年12月发布，预计2021年8月开始供货
+
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：2020年12月31日
-* 供电电压：2.3 to 3.6 V
-* 工作温度：-40°C to +105°C
-* 处理性能：600 :ref:`DMIPS`, 1400 :ref:`CoreMark`
+* 工作温度：-40°C to 105°C
+* 处理性能：613.8 :ref:`CoreMark`, 1181.6 :ref:`CoreMark` (Dual)
 * RAM容量：512 KB
-* ROM容量：384 KB
+* Flash容量：384 KB
 * 封装规格：:ref:`esp_qfn56`
+
+.. image:: ./images/ESP32S3P.png
+    :target: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
 
 
 特征参数
 ^^^^^^^^^^^
 
 * 240 MHz :ref:`xtensa_lx7` Dual Core
-* 超低功耗协处理器 :ref:`esp_ulp`
+* :ref:`esp_ulp`
 * :ref:`esp_wifi`
 * :ref:`esp_ble` v5
 * :ref:`esp_usb`
 * :ref:`esp_twai`
+* 4 Kbit eFuse
+* 1 × 16bit DVP, 1 × 16bit LCD
 * 2 × SDIO 主机
 * 44 x GPIO，JTAG 接口
 * 2x 12bit ADC (20ch)
 
-.. hint::
-    2020年12月发布，预计2021年8月开始供货
+
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：2.3 to 3.6 V
+
 
 安全特性
 ~~~~~~~~~~~~~~
