@@ -28,7 +28,7 @@ Xin简介
 * 处理性能：407.22 :ref:`CoreMark`
 * RAM容量：400 KB (TCM)
 * Flash容量：384 KB
-* 封装规格：QFN32
+* 封装规格：:ref:`esp_qfn32` (5x5mm)
 
 特征参数
 ^^^^^^^^^^^
@@ -42,6 +42,9 @@ Xin简介
 
 电源参数
 ^^^^^^^^^^^
+
+* 供电电压：2.3 to 3.6 V
+
 
 计算性能
 ~~~~~~~~~~~~~~
@@ -98,6 +101,34 @@ Xin选择
 .. hint::
     :ref:`esp32c3` 发布于2020年12月1日，是乐鑫基于RISC-V内核设计的MCU产品
 
+品牌对比
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Core
+      - Performance
+      - SRAM/ROM
+      - WiFi/BLE
+      - UART/SPI/SDIO
+      - Package
+    * - :ref:`w806`
+      - :ref:`xt804`
+      - 300 DMIPS
+      - 288KB/1MB
+      - 1T1R
+      - 6/2/1
+      - :ref:`w806_qfn56` (6x6mm)
+    * - :ref:`esp32c3`
+      - :ref:`esp_rv32`
+      - 407.22 :ref:`CoreMark`
+      - 512KB/384KB
+      - 1T1R/v5.0
+      - 2/3/No
+      - :ref:`esp_qfn32` (5x5mm)
+
 型号对比
 ~~~~~~~~~
 
@@ -137,8 +168,6 @@ Xin选择
       - NO
       - NO
 
-
-
 对比ESP8266
 ^^^^^^^^^^^^
 
@@ -173,6 +202,24 @@ ESP32-C3没有对 IRAM 和 DRAM 进行静态划分。SRAM 的前 16 KB 被配置
 
 ESP32-C3的蓝牙子系统不要求其存储必须为某固定位置的连续空间。反之，它使用标准的系统堆来分配存储空间，因此应用可以在需要的时候打开或禁用蓝牙。要实现这一点，仅需确保堆中有足够的存储空间即可。
 
+
+
+版本对比
+~~~~~~~~~
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+
+.. image:: ./images/B_ESP32C3.jpg
+    :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
+
+
 编译工具
 ~~~~~~~~~
 
@@ -181,7 +228,7 @@ ESP32-C3的蓝牙子系统不要求其存储必须为某固定位置的连续空
 
 
 ESP-IDF
-^^^^^^^^^^^^^
+^^^^^^^^^^^
 
 支持ESP32C3需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
 
@@ -190,26 +237,17 @@ Arduino
 
 `Arduino <https://docs.os-q.com/arduino>`_
 
-Xin应用
---------------
+应用笔记
+~~~~~~~~~
 
-.. contents::
-    :local:
 
-.. image:: ./images/B_ESP32C3.jpg
-    :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
 
-Mesh
-~~~~~~~~~~~
 
-WiFi
-^^^^^^^^^^^
-
-BLE
+WiFi Mesh
 ^^^^^^^^^^^
 
 LEDC
-~~~~~~~~~~~
+^^^^^^^^^^^
 
 .. code-block:: bash
 
@@ -233,8 +271,8 @@ LEDC
         }
     }
 
-LCD
-~~~~~~~~~~~
+LCD - LV
+^^^^^^^^^^^
 
 ESP32-C3支持QSPI 适合4.3寸以下，SPI QSPI，MCU（8080）接口的屏。
 
