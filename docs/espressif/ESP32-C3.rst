@@ -117,13 +117,6 @@ Xin选择
       - WiFi/BLE
       - UART/SPI/SDIO
       - Package
-    * - :ref:`w806`
-      - :ref:`xt804`
-      - 300 DMIPS
-      - 288KB/1MB
-      - 1T1R
-      - 6/2/1
-      - :ref:`w806_qfn56`
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407 :ref:`CoreMark`
@@ -131,8 +124,23 @@ Xin选择
       - 1T1R/v5.0
       - 2/3/No
       - :ref:`esp_qfn32`
+    * - :ref:`w806`
+      - :ref:`xt804`
+      - 300 :ref:`DMIPS`
+      - 288KB/1MB
+      - 1T1R
+      - 6/2/1
+      - :ref:`w806_qfn56`
+    * - :ref:`hi3861`
+      - :ref:`riscv`
+      -
+      - 352KB/288KB
+      - 72Mbps@HT20
+      - 3/2/1
+      - QFN32
 
-ESP32-C3 和 W806 相比封装更小，扩展能力和计算能力规格更低，支持BLE 5.0, 更偏向无线数据节点，后者配置更多的IO，更多的UART,以及16bit SD ADC和SDIO接口，更偏向有针对性的，更复杂的终端网关设备
+.. note::
+    ESP32-C3 和 W806 相比封装更小，扩展能力和计算能力规格更低，支持BLE 5.0, 更偏向无线数据节点，后者配置更多的IO，更多的UART,以及16bit SD ADC和SDIO接口，更偏向有针对性的，更复杂的终端网关设备
 
 型号对比
 ~~~~~~~~~

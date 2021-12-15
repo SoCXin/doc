@@ -4,7 +4,7 @@
 Hi3861
 ===============
 
-* 关键词：``RISC-V`` ``160MHz``
+* 关键词：``RISC-V`` ``160MHz`` ``BLE`` ``WiFi`` ``QFN32``
 * 资源库：`GitHub <https://github.com/SoCXin/Hi3861>`_
 
 .. contents::
@@ -13,29 +13,47 @@ Hi3861
 Xin简介
 -----------
 
+.. image:: ./images/Hi3861.png
+    :target: https://www.hisilicon.com/cn/products/smart-iot/ShortRangeWirelessIOT/Hi3861LV100
+
 .. contents::
     :local:
 
 规格参数
 ~~~~~~~~~~~
 
+Hi3861V100是一款高度集成的2.4GHz SoC WiFi芯片，集成IEEE 802.11b/g/n基带和RF电路，RF电路包括功率放大器PA、低 噪声放大器LNA、RF balun、天线开关以及电源管理等模块；
+支持20MHz标准带宽和5MHz/10MHz窄带宽，提供最大72.2Mbit/s 物理层速率。
+Hi3861V100 WiFi基带支持正交频分复用（OFDM）技术，并向下兼容直接序列扩频（DSSS）和补码键控（CCK）技术，支 持IEEE 802.11 b/g/n协议的各种数据速率。
+Hi3861V100芯片集成高性能32bit微处理器、硬件安全引擎以及丰富的外设接口，外设接口包括SPI、UART、I2C、PWM、 GPIO和多路ADC，同时支持高速SDIO2.0 Slave接口，最高时钟可达50MHz；芯片内置SRAM和Flash，可独立运行，并支持 在Flash上运行程序。
+Hi3861V100支持HUAWEI LiteOS和第三方组件，并配套提供开放、易用的开发和调试运行环境。
+Hi3861V100芯片适应于智能家电等物联网智能终端领域。
+
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
 * 制程工艺：
-* 供电电压：2.0 to 3.6 V
 * 工作温度：-40°C to +85°C
 * 处理性能：
 * RAM容量：352 KB
-* Flash容量：2 MB
+* ROM容量：288KB (2 MB)
 * 封装规格：QFN32
 
 特征参数
 ^^^^^^^^^^^
 
 * 160 MHz :ref:`riscv`
+* 支持 IEEE802.11b/g/n 单天线所有的数据速率
+* 支持最大速率：72.2Mbps@HT20 MCS7
+* 支持标准 20MHz 带宽和 5M/10M 窄带宽
+* 支持 STBC
+* 支持 Short-GI
 
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：2.0 to 3.6 V
 
 Xin选择
 -----------
@@ -53,3 +71,19 @@ Xin选择
 型号对比
 ~~~~~~~~~
 
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+
+.. image:: ./images/B_Hi3861.jpg
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.4.65352042pbNUuk&id=633296694816&ns=1&abbucket=7#detail
+
+
+
+https://gitee.com/bearpi/bearpi-hm_nano.git

@@ -205,7 +205,7 @@ WiFi
       - 150 Mbps
       - BLE 5.0
       - QFN32
-    * - :ref:`w800`
+    * - :ref:`w806`
       - :ref:`xt804`
       - 288 KB
       - 2 MB
