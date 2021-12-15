@@ -104,6 +104,9 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
+对比W806
+^^^^^^^^^^^^
+
 .. list-table::
     :header-rows:  1
 
@@ -120,17 +123,22 @@ Xin选择
       - 288KB/1MB
       - 1T1R
       - 6/2/1
-      - :ref:`w806_qfn56` (6x6mm)
+      - :ref:`w806_qfn56`
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
-      - 407.22 :ref:`CoreMark`
+      - 407 :ref:`CoreMark`
       - 512KB/384KB
       - 1T1R/v5.0
       - 2/3/No
-      - :ref:`esp_qfn32` (5x5mm)
+      - :ref:`esp_qfn32`
+
+ :ref:`w806` 相对 :ref:`esp32c3` 而言连接能力和计算能力更好，拥有更多资源扩展能力，:ref:`esp32c3` 更偏向无线数据节点，两者在MCU方面的差异类比STM32F和STM8S
 
 型号对比
 ~~~~~~~~~
+
+.. contents::
+    :local:
 
 .. list-table::
     :header-rows:  1
@@ -203,9 +211,13 @@ ESP32-C3没有对 IRAM 和 DRAM 进行静态划分。SRAM 的前 16 KB 被配置
 ESP32-C3的蓝牙子系统不要求其存储必须为某固定位置的连续空间。反之，它使用标准的系统堆来分配存储空间，因此应用可以在需要的时候打开或禁用蓝牙。要实现这一点，仅需确保堆中有足够的存储空间即可。
 
 
-
 版本对比
 ~~~~~~~~~
+
+量产芯片版本包括：
+
+.. image:: ./images/B_ESP32C3S.png
+
 
 Xin应用
 -----------
@@ -246,32 +258,7 @@ Arduino
 WiFi Mesh
 ^^^^^^^^^^^
 
-LEDC
-^^^^^^^^^^^
-
-.. code-block:: bash
-
-    int main(void)
-    {
-        LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
-        LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
-        LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
-        LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
-        LL_GPIO_ResetOutputPin(LED_GPIO_Port, LED_Pin);
-        GPIO_InitStruct.Pin = LED_Pin;
-        GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-        GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-        GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-        GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-        LL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
-        while (1)
-        {
-            LL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-            LL_mDelay(400);
-        }
-    }
-
-LCD - LV
+LittlevGL
 ^^^^^^^^^^^
 
 ESP32-C3支持QSPI 适合4.3寸以下，SPI QSPI，MCU（8080）接口的屏。
