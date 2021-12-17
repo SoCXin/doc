@@ -163,6 +163,12 @@ HPLC
 .. note::
     电力线载波通信（power line carrier communication）以输电线路为载波信号的传输媒介的电力系统通信。
 
+.. toctree::
+    :maxdepth: 1
+
+    CR600 <../M/CR600>
+
+
 
 .. _wifi:
 

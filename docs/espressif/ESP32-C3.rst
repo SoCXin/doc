@@ -104,8 +104,6 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
-对比W806
-^^^^^^^^^^^^
 
 .. list-table::
     :header-rows:  1
@@ -114,7 +112,7 @@ Xin选择
       - Core
       - Performance
       - SRAM/ROM
-      - WiFi/BLE
+      - Characteristics
       - UART/SPI/SDIO
       - Package
     * - :ref:`esp32c3`
@@ -124,13 +122,6 @@ Xin选择
       - 1T1R/v5.0
       - 2/3/No
       - :ref:`esp_qfn32`
-    * - :ref:`w806`
-      - :ref:`xt804`
-      - 300 :ref:`DMIPS`
-      - 288KB/1MB
-      - 1T1R
-      - 6/2/1
-      - :ref:`w806_qfn56`
     * - :ref:`hi3861`
       - :ref:`riscv`
       -
@@ -138,9 +129,30 @@ Xin选择
       - 72Mbps@HT20
       - 3/2/1
       - QFN32
+    * - :ref:`w806`
+      - :ref:`xt804`
+      - 300 :ref:`DMIPS`
+      - 288KB/1MB
+      - 1T1R
+      - 6/2/1
+      - :ref:`w806_qfn56`
+
+
+对比Hi3861
+^^^^^^^^^^^^
+
+封装规格相同QFN32但不兼容，在该领域  :ref:`esp32c3` 凭借开源生态优势和IDF框架，和海思生态及HarmonyOS各有千秋。
+
+对比W806
+^^^^^^^^^^^^
+
+在一定程度上W806对标对手应该是ESP32-S系列，产品定位差异交叠处较多。
+
 
 .. note::
     ESP32-C3 和 W806 相比封装更小，扩展能力和计算能力规格更低，支持BLE 5.0, 更偏向无线数据节点，后者配置更多的IO，更多的UART,以及16bit SD ADC和SDIO接口，更偏向有针对性的，更复杂的终端网关设备
+
+
 
 型号对比
 ~~~~~~~~~
@@ -200,8 +212,6 @@ Xin选择
 * 内存较小，无法支撑复杂的应用场合
 * 缺少硬件加密、没有安全启动和Flash加密，RSA耗时较长，TLS握手需要3-4秒
 
-对比ESP8685
-^^^^^^^^^^^^
 
 对比ESP32
 ^^^^^^^^^^^^

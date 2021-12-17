@@ -4,7 +4,7 @@ SoC·Xin
 
 **新产品用心，芯产品用新**
 
-`芯芸 SoC·Xin <https://www.soc.xin>`_ 期望求解如下问题：
+`SoC·Xin(芯芸) <https://www.soc.xin>`_ 期望求解如下问题：
 
 * 有新需求，缺乏技术积累，求解范围；
 * 有芯需求，已知应用场景，求最新解；
@@ -16,7 +16,7 @@ SoC·Xin
 .. toctree::
     :maxdepth: 1
 
-    最小推荐清单(15X·in) <list>
+    最小推荐清单(15X·IN) <list>
 
 .. toctree::
     :caption: 排序速览
@@ -119,34 +119,58 @@ SoC·Xin
 .. list-table::
     :header-rows:  1
 
-    * - Class
-      - :ref:`cortex_m0`
-      - :ref:`cortex_m4`
-      - :ref:`cortex_m7`
-      - :ref:`riscv`
-      - :ref:`mcs51`
-      - Miscellaneous
-    * - No.1
-      - :ref:`rp2040`
-      - :ref:`nrf52832`
-      - :ref:`rt1060`
-      - :ref:`gd32v103`
+    * - #define
+      - L1(≤24MHz)
+      - L2(≤48MHz)
+      - L3(≤96MHz)
+      - L4(≤160MHz)
+      - L5(≤280MHz)
+      - L6(≤600MHz)
+    * - :ref:`mcs51`
       - :ref:`stc8`
-      - :ref:`gw1nsr`
-    * - No.2
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`cortex_m0`
+      -
+      -
       - :ref:`stm32g031`
-      - :ref:`stm32g431`
-      - :ref:`stm32h750`
-      - :ref:`esp32c3`
-      - :ref:`ch549`
-      - :ref:`sp7021`
-    * - No.3
-      - :ref:`asr6501`
-      - :ref:`at32f421`
-      - :ref:`rt1010`
-      - :ref:`ch569`
-      - :ref:`ch554`
-      - :ref:`w806`
+      - :ref:`rp2040`
+      -
+      -
+    * - :ref:`cortex_m3`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`cortex_m4`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`cortex_m7`
+      -
+      -
+      -
+      -
+      - :ref:`stm32h7b0`
+      - :ref:`rt1060`
+    * - :ref:`riscv`
+      - :ref:`ch583`
+      - :ref:`esp32h2`
+      - :ref:`ch32v103`
+      - :ref:`gd32v103`
+      -
+      - :ref:`k210`
+
+
+
 
 .. toctree::
     :caption: 品牌速览
