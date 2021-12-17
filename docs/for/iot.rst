@@ -7,6 +7,29 @@ IoT
 .. contents::
     :local:
 
+
+主要收录典型的连接类SoC芯片，覆盖典型的IoT场景中，本业列举都是作者推荐的产品。
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - :ref:`ethernet`
+      - :ref:`hplc`
+      - :ref:`wifi`
+      - :ref:`ble`
+      - :ref:`lora`
+      - :ref:`nbiot`
+    * - 连接性
+      - 150
+      - 8
+      - 16
+      - 2
+      - NO
+      - NO
+
+.. _ethernet:
+
 Ethernet
 -----------
 
@@ -14,20 +37,7 @@ Ethernet
     :local:
 
 
-网络协议
-~~~~~~~~~~~~~~
-
-.. _lwip:
-
-LwIP
-^^^^^^^^^^^
-
-``TCP`` ``BSD``
-
-`Website <http://savannah.nongnu.org/projects/lwip/>`_
-
-
-LwIP(Light weight IP) 用少量的资源消耗(RAM)实现一个较为完整的 TCP/IP 协议栈，其中“完整”主要指的是 TCP 协议的完整性， 实现的重点是在保持 TCP 协议主要功能的基础上减少对 RAM 的占用，LwIP也可以在无操作系统的情况下独立运行。
+`LwIP <http://savannah.nongnu.org/projects/lwip/>`_ (Light weight IP) 用少量的资源消耗(RAM)实现一个较为完整的 TCP/IP 协议栈，其中“完整”主要指的是 TCP 协议的完整性， 实现的重点是在保持 TCP 协议主要功能的基础上减少对 RAM 的占用，LwIP也可以在无操作系统的情况下独立运行。
 
 LwIP实现的重点是在保持TCP协议主要功能的基础上减少对RAM 的占用，它只需十几KB的RAM和40K左右的ROM就可以运行，这使LwIP协议栈适合在低端的嵌入式系统中使用。
 
@@ -48,14 +58,8 @@ LwIP具有主要特性：
 * 13）提供可选择的 Socket API、 NETCONN API (在多线程情况下使用) 。
 
 
-嵌入平台
-~~~~~~~~~~~~~~
-
-串口网关
-^^^^^^^^^^^
-
 .. hint::
-    要求配置6串口以上，可用于实现以太网和串口上下通信。
+    要求配置多串口，可用于实现以太网和串口上下通信。
 
 .. list-table::
     :header-rows:  1
@@ -108,25 +112,6 @@ LwIP具有主要特性：
       - 2 x 2.0B
       - USB2.0
       - 10/100M
-
-
-无线网关
-^^^^^^^^^^^
-
-.. hint::
-    要求配置下行无线通信能力，可以连接以太网并通过无线网络分发。
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`list`
-      - Mark
-      - RAM
-      - ROM
-      - BLE
-      - CAN
-      - USB
-      - MAC
     * - :ref:`esp32`
       - 150 DMIPS
       - 8/16
@@ -160,13 +145,18 @@ LwIP具有主要特性：
       - USB OTG
       - NO
 
+.. _hplc:
+
+HPLC
+----------
+
+
+
 .. _wifi:
 
 WiFi
 -----------
 
-嵌入平台
-~~~~~~~~~~
 
 .. toctree::
     :maxdepth: 1
@@ -219,9 +209,6 @@ WiFi
 BLE
 ----------
 
-嵌入平台
-~~~~~~~~~~
-
 .. toctree::
     :maxdepth: 1
 
@@ -262,10 +249,6 @@ BLE
 LoRa
 ----------
 
-
-嵌入平台
-~~~~~~~~~~
-
 .. toctree::
     :maxdepth: 1
 
@@ -298,5 +281,17 @@ LoRa
       -
       -
       - QFN48
+
+
+.. _nbiot:
+
+NB-IoT
+-----------
+
+.. toctree::
+    :maxdepth: 1
+
+    XY1100 <../M/XY1100>
+
 
 
