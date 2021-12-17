@@ -24,6 +24,8 @@
 /ESP32C3.html -> espressif/ESP32-C3.html
 /ESP32-C6.html -> espressif/ESP32-C6.html
 /ESP32-H2.html -> espressif/ESP32-H2.html
+/CH581.html -> WCH/CH583.html
+/CH582.html -> WCH/CH583.html
 /CH583.html -> WCH/CH583.html
 /CH579.html -> WCH/CH579.html
 /CH573.html -> WCH/CH573.html

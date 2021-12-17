@@ -13,49 +13,59 @@ IoT
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - 对比项目
       - :ref:`ethernet`
       - :ref:`hplc`
       - :ref:`wifi`
       - :ref:`ble`
       - :ref:`lora`
       - :ref:`nbiot`
-    * - 连接性
-      - 150
-      - 8
-      - 16
-      - 2
-      - NO
-      - NO
+    * - 通信距离
+      -
+      -
+      -
+      -
+      -
+      -
+    * - 易用性
+      -
+      -
+      -
+      -
+      -
+      -
+    * - 扩展性
+      -
+      -
+      -
+      -
+      -
+      -
+    * - 部署成本
+      -
+      -
+      -
+      -
+      -
+      -
+    * - 改造成本
+      -
+      -
+      -
+      -
+      -
+      -
+
 
 .. _ethernet:
 
 Ethernet
 -----------
 
+`延伸阅读 <https://docs.qitas.cn/interface/bus.html#id5>`_
+
 .. contents::
     :local:
-
-
-`LwIP <http://savannah.nongnu.org/projects/lwip/>`_ (Light weight IP) 用少量的资源消耗(RAM)实现一个较为完整的 TCP/IP 协议栈，其中“完整”主要指的是 TCP 协议的完整性， 实现的重点是在保持 TCP 协议主要功能的基础上减少对 RAM 的占用，LwIP也可以在无操作系统的情况下独立运行。
-
-LwIP实现的重点是在保持TCP协议主要功能的基础上减少对RAM 的占用，它只需十几KB的RAM和40K左右的ROM就可以运行，这使LwIP协议栈适合在低端的嵌入式系统中使用。
-
-LwIP具有主要特性：
-
-* 1）支持 ARP 协议（以太网地址解析协议）。
-* 2）支持 ICMP 协议（控制报文协议），用于网络的调试与维护。
-* 3）支持 IGMP 协议（互联网组管理协议），可以实现多播数据的接收。
-* 4）支持 UDP 协议(用户数据报协议)。
-* 5）支持 TCP 协议(传输控制协议)，包括阻塞控制、 RTT 估算、快速恢复和快速转发。
-* 6）支持 PPP 协议（点对点通信协议） ，支持 PPPoE。
-* 7）支持 DNS（域名解析）。
-* 8）支持 DHCP 协议，动态分配 IP 地址。
-* 9）支持 IP 协议，包括 IPv4、 IPv6 协议，支持 IP 分片与重装功能，多网络接口下的数据包转发。
-* 10）支持 SNMP 协议（简单网络管理协议）。
-* 11）支持 AUTOIP，自动 IP 地址配置。
-* 12）提供专门的内部回调接口(Raw API)，用于提高应用程序性能。
-* 13）提供可选择的 Socket API、 NETCONN API (在多线程情况下使用) 。
 
 
 .. hint::
@@ -150,6 +160,8 @@ LwIP具有主要特性：
 HPLC
 ----------
 
+.. note::
+    电力线载波通信（power line carrier communication）以输电线路为载波信号的传输媒介的电力系统通信。
 
 
 .. _wifi:

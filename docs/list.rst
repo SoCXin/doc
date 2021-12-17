@@ -6,10 +6,10 @@
 .. list-table::
     :header-rows:  1
 
-    * - 芯片
-      - 简介
-    * - :ref:`NO_001` (QFN56)
-      - 对称M0双核，Raspberry Pi资源背书
+    * - 芯片简介
+      - 推荐理由
+    * - :ref:`NO_001` (264KB SRAM/QFN56)
+      - $1,Cortex-M0双核，Arduino/MicroPython/USB
     * - :ref:`NO_002`
       - 非常具有性价比的低端USB方案，国外拥趸多
     * - :ref:`NO_003`
@@ -32,8 +32,8 @@
       - 高性能低功耗旗舰，片上1.4M SRAM支持RGB565
     * - :ref:`NO_012`
       - 致敬STM32F429，片上8M SRAM支持RGB888
-    * - :ref:`NO_013` (QFN28)
-      - 芯片虽小，却支持BLE5.1和两个USB外设
+    * - :ref:`NO_013` (32KB SRAM/QFN48/QFN28)
+      - 1MB Flash，2x USB OTG，4x Uart，BLE5.3
     * - :ref:`NO_014`
       - 集成USB HS和1G 以太网MAC，有线连接全家桶
     * - :ref:`NO_015` (QFN56)

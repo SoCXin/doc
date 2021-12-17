@@ -4,20 +4,22 @@ SoC·Xin
 
 **新产品用心，芯产品用新**
 
-`GitHub <https://GitHub.com/Qitas>`_ |
-`LinkedIn <https://www.linkedin.com/in/qitas/>`_ |
-`Twitter <https://twitter.com/QitasTang>`_ |
-`Facebook <https://www.facebook.com/qitast>`_
+`SoC·Xin <https://www.soc.xin>`_ 期望解决如下问题：
 
-结合不同的需求、场景和生态资源，跨品牌给出建议，通过汇整、排序和迭代，从用户视角呈现 ``Xin体系``
+* 有芯需求，已知应用场景，求最新解；
+* 有芯需求，限定成本配置，求最优解；
+* 有新需求，缺乏技术积累，求解范围；
+* 有薪需求，寻求职场突破，求最小值；
+
+结合不同的需求、场景和生态，脱离品牌利益关联，从使用者角度给出选择和建议，通过汇整和迭代，呈现实用的 ``Xin体系``
 
 .. toctree::
     :maxdepth: 1
 
-    推荐清单 <list>
+    最小推荐清单(15xin) <list>
 
 .. toctree::
-    :caption: 榜单速览
+    :caption: 排序速览
     :maxdepth: 1
 
     极客最爱开源超多 <news/hot>
@@ -147,7 +149,7 @@ SoC·Xin
       - :ref:`w806`
 
 .. toctree::
-    :caption: 厂商速览
+    :caption: 品牌速览
     :maxdepth: 1
 
     STM 微控制器 <ST/index>
@@ -156,38 +158,40 @@ SoC·Xin
     MediaTek 路由节点 <MediaTek/index>
     ArteryTek 高性价比 <arterytek/index>
 
-收录的厂商不是很多但相对具有代表性，覆盖的解决方案比较全，通过汇总有代表性的厂商信息，提供精炼方案
+收录的厂商不是很多但相对具有代表性，覆盖的解决方案比较全，通过汇总有代表性的厂商信息，提供精炼方案。
 
 .. list-table::
     :header-rows:  1
 
     * - Vendor
-      - Classic
-      - Prime
-      - Available
-      - Peak
-      - Latest
-    * - :ref:`st`
-      - :ref:`stm32f103`
-      - :ref:`stm32f401`
-      - :ref:`stm32g030`
-      - :ref:`stm32mp15`
+      - :ref:`st`
+      - :ref:`wch`
+      - :ref:`espressif`
+      - :ref:`mediatek`
+      - :ref:`arterytek`
+    * - 最新作品
       - :ref:`stm32u575`
-    * - :ref:`wch`
-      - :ref:`ch554`
-      - :ref:`ch579`
-      - :ref:`ch32f103`
       - :ref:`ch32v307`
-      - :ref:`ch32f208`
-    * - :ref:`espressif`
-      - :ref:`esp32`
-      - :ref:`esp32c3`
-      - :ref:`esp32s2`
       - :ref:`esp32s3`
-      - :ref:`esp32h2`
-    * - :ref:`arterytek`
-      - :ref:`at32f421`
-      - :ref:`at32f421`
-      - :ref:`at32f403`
-      - :ref:`at32f407`
+      - :ref:`mt7621`
       - :ref:`at32f437`
+    * - 经典作品
+      - :ref:`stm32f103`
+      - :ref:`ch579`
+      - :ref:`esp32`
+      - :ref:`mt7688`
+      - :ref:`at32f421`
+    * - 畅销作品
+      - :ref:`stm32g030`
+      - :ref:`ch554`
+      - :ref:`esp32c3`
+      - :ref:`mt2625`
+      - :ref:`at32f421`
+    * - 集大成者
+      - :ref:`stm32mp15`
+      - :ref:`ch32f208`
+      -
+      -
+      -
+
+

@@ -4,8 +4,8 @@
 CH583
 ============
 
-* 关键词：``RISC-V4A`` ``20MHz`` ``2xUSB`` ``AES128`` ``BLE5.1``
-* 资源库：`GitHub <https://github.com/SoCXin/CH583>`_
+* 关键词：``RISC-V4A`` ``20MHz`` ``USB`` ``AES128`` ``BLE5.3``  ``QFN48`` ``QFN28``
+* 资源库：`GitHub <https://github.com/SoCXin/CH583>`_ , `Gitee <https://gitee.com/socxin/CH583>`_
 
 .. contents::
     :local:
