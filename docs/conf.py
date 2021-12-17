@@ -35,7 +35,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = u"SoCXin"
+project = u"芯芸文档"
 copyright = u"2021, www.SoC.Xin"
 
 # The version info for the project you're documenting, acts as replacement for

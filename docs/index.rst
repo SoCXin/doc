@@ -152,11 +152,11 @@ SoC·Xin
     :caption: 品牌速览
     :maxdepth: 1
 
-    ST 微控制器 <ST/index>
-    WCH 有线连接 <WCH/index>
-    ESPRESSIF 无线连接 <espressif/index>
-    MediaTek 路由节点 <MediaTek/index>
-    ArteryTek 高性价比 <arterytek/index>
+    ST @微控制器 <ST/index>
+    WCH @有线连接 <WCH/index>
+    Espressif @无线连接 <espressif/index>
+    MediaTek @路由节点 <MediaTek/index>
+    ArteryTek @高性价比 <arterytek/index>
 
 收录的厂商不是很多但相对具有代表性，覆盖的解决方案比较全，通过汇总有代表性的厂商信息，提供精炼方案。
 
@@ -186,7 +186,7 @@ SoC·Xin
       - :ref:`ch554`
       - :ref:`esp32c3`
       - :ref:`mt2625`
-      - :ref:`at32f421`
+      -
     * - 集大成者
       - :ref:`stm32mp15`
       - :ref:`ch32f208`
