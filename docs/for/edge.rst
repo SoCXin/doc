@@ -56,6 +56,7 @@ X-CUBE-AI
 .. toctree::
     :maxdepth: 1
 
+    D1  <../H/D1>
     K210 <../H/K210>
     K510 <../H/K510>
     V831 <../H/V831>

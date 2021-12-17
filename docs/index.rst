@@ -114,18 +114,18 @@ SoC·Xin
     RISC-V  <core/RISC-V>
     MCS51   <core/MCS51>
 
-内核决定性能和定位 ``X·in``
+内核架构和主频相关定义 ``X·IN``
 
 .. list-table::
     :header-rows:  1
 
     * - #define
-      - L1(≤24MHz)
-      - L2(≤48MHz)
-      - L3(≤96MHz)
-      - L4(≤160MHz)
-      - L5(≤280MHz)
-      - L6(≤600MHz)
+      - L1(≤32MHz)
+      - L2(≤64MHz)
+      - L3(≤128MHz)
+      - L4(≤400DMIPS)
+      - L5(≤800DMIPS)
+      - L6(≤1600DMIPS)
     * - :ref:`mcs51`
       - :ref:`stc8`
       -
@@ -134,24 +134,24 @@ SoC·Xin
       -
       -
     * - :ref:`cortex_m0`
-      -
-      -
+      - :ref:`stm32l011`
       - :ref:`stm32g031`
       - :ref:`rp2040`
       -
       -
+      -
     * - :ref:`cortex_m3`
       -
-      -
-      -
+      - :ref:`gd32f130`
+      - :ref:`stm32f207`
       -
       -
       -
     * - :ref:`cortex_m4`
       -
-      -
-      -
-      -
+      - :ref:`nrf52832`
+      - :ref:`at32f421`
+      - :ref:`at32f437`
       -
       -
     * - :ref:`cortex_m7`
@@ -163,11 +163,11 @@ SoC·Xin
       - :ref:`rt1060`
     * - :ref:`riscv`
       - :ref:`ch583`
-      - :ref:`esp32h2`
-      - :ref:`ch32v103`
-      - :ref:`gd32v103`
       -
+      - :ref:`esp32h2`
+      - :ref:`gd32v103`
       - :ref:`k210`
+      - :ref:`k510`
 
 
 
