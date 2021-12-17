@@ -16,7 +16,7 @@ SoC·Xin
 .. toctree::
     :maxdepth: 1
 
-    最小推荐清单(15X·IN) <list>
+    推荐清单(15X·IN) <list>
 
 .. toctree::
     :caption: 排序速览
@@ -51,12 +51,12 @@ SoC·Xin
       - :ref:`stm32h745`
       - :ref:`ch552`
       - :ref:`ch32v307`
-      - :ref:`NO_009`
+      - :ref:`NO_013`
     * - Top.3
       - :ref:`stm32f401`
       - :ref:`nrf52832`
       - :ref:`rt1060`
-      - :ref:`ch573`
+      - :ref:`esp32c3`
       - :ref:`zml165`
       - :ref:`NO_010`
 
@@ -120,15 +120,15 @@ SoC·Xin
     :header-rows:  1
 
     * - #define
-      - L1(≤32MHz)
-      - L2(≤64MHz)
-      - L3(≤128MHz)
+      - L1(≤40MHz)
+      - L2(≤80MHz)
+      - L3(≤160MHz)
       - L4(≤400DMIPS)
       - L5(≤800DMIPS)
       - L6(≤1600DMIPS)
     * - :ref:`mcs51`
       - :ref:`stc8`
-      -
+      - :ref:`ch549`
       -
       -
       -
@@ -163,11 +163,11 @@ SoC·Xin
       - :ref:`rt1060`
     * - :ref:`riscv`
       - :ref:`ch583`
+      - :ref:`ch32v103`
+      - :ref:`esp32c3`
       -
-      - :ref:`esp32h2`
-      - :ref:`gd32v103`
       - :ref:`k210`
-      - :ref:`k510`
+      - :ref:`D1`
 
 
 
@@ -176,13 +176,13 @@ SoC·Xin
     :caption: 品牌速览
     :maxdepth: 1
 
-    ST @微控制器 <ST/index>
-    WCH @有线连接 <WCH/index>
-    Espressif @无线连接 <espressif/index>
-    MediaTek @路由节点 <MediaTek/index>
-    ArteryTek @高性价比 <arterytek/index>
+    微控制器 @ST <ST/index>
+    有线连接 @WCH <WCH/index>
+    无线连接 @Espressif <espressif/index>
+    路由节点 @MediaTek  <MediaTek/index>
+    高性价比 @ArteryTek <arterytek/index>
 
-收录的厂商不是很多但相对具有代表性，覆盖的解决方案比较全，通过汇总有代表性的厂商信息，提供精炼方案。
+收录汇整5大具有代表性厂商，覆盖的解决方案比较全，通过汇总有代表性的厂商信息，提供精炼方案。
 
 .. list-table::
     :header-rows:  1

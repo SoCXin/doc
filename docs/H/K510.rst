@@ -4,7 +4,7 @@
 K510
 =============
 
-* 关键词：``canaan`` ``RISC-V`` ``800MHz`` ``2.5TOPS``  ``Dual Core`` ``KPU``
+* 关键词：``kendryte`` ``RISC-V`` ``800MHz`` ``2.5TOPS`` ``Dual Core`` ``KPU2.0`` ``BF16``
 * 资源库：`GitHub <https://github.com/SoCXin/K510>`_
 
 .. contents::
@@ -20,6 +20,8 @@ Xin简介
 规格参数
 ~~~~~~~~~~~
 
+K510支持丰富的网络模型算子，包括常见的CNN、RNN和各类向量计算和数据处理操作。
+支持裸机、嵌入式RTOS和Linux，并且移植了 OpenCV Python Numpy。同时，K510支持TensorFlow、PyTorch、ONNX和TVM等主流深度学习框架，兼容性更强。
 
 基本参数
 ^^^^^^^^^^^

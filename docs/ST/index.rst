@@ -1,7 +1,7 @@
 
 .. _st:
 
-STMicroelectronics
+STM
 ======================
 
 ``MCU`` ``MPU`` ``MEMS``

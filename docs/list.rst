@@ -10,10 +10,10 @@
       - 推荐理由
     * - :ref:`NO_001` (264KB SRAM/QFN56)
       - $1==Cortex-M0双核，Arduino/MicroPython/USB
-    * - :ref:`NO_002`
-      - 非常具有性价比的低端USB方案，国外拥趸多
-    * - :ref:`NO_003`
-      - 内存大 :ref:`wch_riscv3a` 内核，低成本小封装BLE
+    * - :ref:`NO_002` (2KB SRAM/QFN28)
+      - 非常具有性价比的8051 USB方案，兼容强拥趸多
+    * - :ref:`NO_003` (288KB SRAM/QFN56)
+      - 扩展性强，4x16 bit :ref:`sigma_delta` ADC(1KMSPS)
     * - :ref:`NO_004`
       - 拥有5个独立12bit ADC，拥有 :ref:`stm32_hrtim`
     * - :ref:`NO_005`
