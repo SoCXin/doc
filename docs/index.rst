@@ -4,19 +4,19 @@ SoC·Xin
 
 **新产品用心，芯产品用新**
 
-`SoC·Xin <https://www.soc.xin>`_ 期望解决如下问题：
+`芯芸 SoC·Xin <https://www.soc.xin>`_ 期望求解如下问题：
 
-* 有芯需求，已知应用场景，求最新解；
-* 有芯需求，限定成本配置，求最优解；
 * 有新需求，缺乏技术积累，求解范围；
+* 有芯需求，已知应用场景，求最新解；
+* 有芯需求，限定规格成本，求最优解；
 * 有薪需求，寻求职场突破，求最小值；
 
-结合不同的需求、场景和生态，脱离品牌利益关联，从使用者角度给出选择和建议，通过汇整和迭代，呈现实用的 ``Xin体系``
+结合不同的需求、场景和生态，脱离品牌利益关联，从使用者角度给出选择和建议，通过汇整和迭代，呈现实用 ``Xin体系``
 
 .. toctree::
     :maxdepth: 1
 
-    最小推荐清单(15xin) <list>
+    最小推荐清单(15X·in) <list>
 
 .. toctree::
     :caption: 排序速览
@@ -152,9 +152,9 @@ SoC·Xin
     :caption: 品牌速览
     :maxdepth: 1
 
-    STM 微控制器 <ST/index>
+    ST 微控制器 <ST/index>
     WCH 有线连接 <WCH/index>
-    Espressif 无线连接 <espressif/index>
+    ESPRESSIF 无线连接 <espressif/index>
     MediaTek 路由节点 <MediaTek/index>
     ArteryTek 高性价比 <arterytek/index>
 
@@ -163,7 +163,7 @@ SoC·Xin
 .. list-table::
     :header-rows:  1
 
-    * - Vendor
+    * - #define
       - :ref:`st`
       - :ref:`wch`
       - :ref:`espressif`
