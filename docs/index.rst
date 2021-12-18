@@ -187,10 +187,11 @@ SoC·Xin
     微控制器 @ST <ST/index>
     有线连接 @WCH <WCH/index>
     无线连接 @Espressif <espressif/index>
+    蜂窝网络 @ASR <ASR/index>
     路由节点 @MediaTek  <MediaTek/index>
     种子选手 @ArteryTek <arterytek/index>
 
-收录汇整5大具有代表性厂商，覆盖的解决方案比较全，通过汇总有代表性的厂商信息，提供精炼方案。
+收录汇整具有代表性厂商，覆盖的解决方案比较全，通过汇总有代表性的厂商信息，提供精炼方案。
 
 .. list-table::
     :header-rows:  1
@@ -199,24 +200,28 @@ SoC·Xin
       - :ref:`st`
       - :ref:`wch`
       - :ref:`espressif`
+      - :ref:`asr`
       - :ref:`mediatek`
       - :ref:`arterytek`
     * - 最新作品
       - :ref:`stm32u575`
       - :ref:`ch32v307`
       - :ref:`esp32s3`
+      -
       - :ref:`mt7621`
       - :ref:`at32f437`
     * - 经典作品
       - :ref:`stm32f103`
       - :ref:`ch579`
       - :ref:`esp32`
+      - :ref:`asr6501`
       - :ref:`mt7688`
       - :ref:`at32f421`
     * - 畅销作品
       - :ref:`stm32g030`
       - :ref:`ch554`
       - :ref:`esp32c3`
+      -
       - :ref:`mt2625`
       -
     * - 集大成者
@@ -225,5 +230,13 @@ SoC·Xin
       -
       -
       -
+      -
 
 
+芯问题之后的新问题
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+在经历一轮芯片短缺之后，在无形的大手作用下，必然面临竞争和淘汰，这会发生在芯片设计制造等市场上游，也波及到芯片应用和产品迭代。
+
+技术驱动的产业，必然产生更多的“必须要，应该有，可以做”。

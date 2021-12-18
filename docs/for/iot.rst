@@ -271,8 +271,6 @@ LoRa
 .. toctree::
     :maxdepth: 1
 
-    ASR6501 <../M/ASR6501>
-
 .. list-table::
     :header-rows:  1
 
