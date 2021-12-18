@@ -103,6 +103,43 @@ Xin选择
 .. contents::
     :local:
 
+品牌对比
+~~~~~~~~~
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Core
+      - Performance
+      - SRAM/ROM
+      - Characteristics
+      - UART/SPI/SDIO
+      - Package
+    * - :ref:`esp32s3`
+      - :ref:`xtensa_lx7`
+      - 1181 :ref:`CoreMark`
+      - 512KB/384KB
+      -
+      - :ref:`esp_qfn56`
+      - :ref:`esp_qfn32`
+    * - :ref:`w801`
+      - :ref:`xt804`
+      - 300 :ref:`DMIPS`
+      - 288KB/2MB
+      -
+      - 6/2/1
+      - QFN56
+    * - :ref:`w806`
+      - :ref:`xt804`
+      - 300 :ref:`DMIPS`
+      - 288KB/1MB
+      -
+      - 6/2/1
+      - :ref:`w806_qfn56`
+
+
 
 型号对比
 ~~~~~~~~~

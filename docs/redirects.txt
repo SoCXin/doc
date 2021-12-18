@@ -56,9 +56,11 @@
 /ZML165.html -> M/ZML165.html
 /RP2040.html -> M/RP2040.html
 /W806.html -> M/W806.html
-/W800.html -> M/W800.html
+/W801.html -> M/W801.html
 /CR600.html -> M/CR600.html
+/CR710.html -> M/CR710.html
 /Hi3861.html -> M/Hi3861.html
+/Hi3921.html -> M/Hi3921.html
 /XY1100.html -> M/XY1100.html
 /MM32SPIN05.html -> M/MM32SPIN.html
 /HC32M120.html -> M/HC32M120.html
