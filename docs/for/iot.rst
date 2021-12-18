@@ -62,97 +62,58 @@ IoT
 Ethernet
 -----------
 
-
-.. contents::
-    :local:
-
-
-.. hint::
-    要求配置多串口，可用于实现以太网和串口上下通信。
-
 .. list-table::
     :header-rows:  1
 
     * - :ref:`list`
-      - Mark
-      - RAM
-      - ROM
-      - UART
-      - CAN
-      - USB
-      - :ref:`eth_mac`
+      - Performance
+      - SRAM/ROM
+      - UART/SPI
+      - USB/CAN
+      - ETH-MAC
+      - ETH-PHY
     * - :ref:`stm32f207`
-      - 150 DMIPS
-      - 8/16
-      - 16/32/64
-      - 2
-      - NO
-      - NO
+      - 150DMIPS
+      - 128KB/512KB
+      - 6/3
+      - HSOTG/2.0B
+      - 100Mbps
       - NO
     * - :ref:`stm32f407`
-      - 175 DMIPS
-      - 32
-      - 64/128/256
-      - 2/3/5
-      - 2.0B
-      - USB OTG
-      - NO
-    * - :ref:`ch32f207`
-      - 250 DMIPS
-      - 16/32/64
-      - 64/128/256
-      - 2/3/5
-      - 2 x 2.0B
-      - USB2.0
-      - NO
-    * - :ref:`ch32v307`
-      - 300 DMIPS
-      - 224
-      - 256/512/1024
-      - 7/8
-      - 2 x 2.0B
-      - USB2.0
+      - 210DMIPS
+      - 192KB/1MB
+      - 6/3
+      - HSOTG/2.0B
+      - 100Mbps
       - NO
     * - :ref:`at32f407`
-      - 300 DMIPS
-      - 224
-      - 256/512/1024
-      - 8
-      - 2 x 2.0B
-      - USB2.0
-      - 10/100M
+      - 360DMIPS
+      - 192KB/1MB
+      - 8/3
+      - OTG/2.0B
+      - 100Mbps
+      - NO
     * - :ref:`esp32`
-      - 150 DMIPS
-      - 8/16
-      - 16/32/64
-      - 2
-      - NO
-      - NO
+      - 600DMIPS
+      - 520KB/4MB
+      - 2/2
+      -
+      - 100Mbps
       - NO
     * - :ref:`ch579`
-      - 175 DMIPS
-      - 32
-      - 64/128/256
-      - 2/3/5
-      - 2.0B
-      - USB OTG
-      - NO
-    * - :ref:`ch32f208`
-      - 150 DMIPS
-      - 8/16
-      - 16/32/64
-      - 2
-      - NO
-      - NO
-      - NO
-    * - :ref:`ch32v208`
-      - 175 DMIPS
-      - 32
-      - 64/128/256
-      - 2/3/5
-      - 2.0B
-      - USB OTG
-      - NO
+      - 36DMIPS
+      - 32KB/256KB
+      - 4/2
+      - OTG
+      - 10Mbps
+      - 10Mbps
+    * - :ref:`ch32v307`
+      - 240DMIPS
+      - 64KB/256KB
+      - 8/3
+      - HS-OTG/2.0B
+      - 1000Mbps
+      - 10Mbps
 
 
 `延伸阅读 <https://docs.qitas.cn/interface/bus.html#id5>`_

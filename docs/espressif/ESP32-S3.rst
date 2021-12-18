@@ -4,7 +4,7 @@
 ESP32-S3
 ================
 
-* 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE5.0`` ``USB OTG`` ``TWAI`` ``QFN56``
+* 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE5.0`` ``USB FS OTG`` ``TWAI`` ``QFN56``
 * 代码库：`GitHub <https://github.com/SoCXin/ESP32S3>`_ , `Gitee <https://gitee.com/socxin/ESP32S3>`_
 
 .. contents::
@@ -31,7 +31,7 @@ Xin简介
 * 发布时间：2020年12月31日
 * 工作温度：-40°C to 105°C
 * 处理性能：613.8 :ref:`CoreMark`, 1181.6 :ref:`CoreMark` (Dual)
-* RAM容量：512 KB
+* RAM容量：512 KB (TCM)
 * Flash容量：384 KB
 * 封装规格：:ref:`esp_qfn56`
 
@@ -52,7 +52,7 @@ Xin简介
 * 44 x GPIO，JTAG 接口
 * 2x 12bit ADC (20ch)
 
-
+ESP32-S3 增加了用于加速神经网络计算和信号处理等工作的向量指令 (vector instructions)
 
 电源参数
 ^^^^^^^^^^^
@@ -111,35 +111,34 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`list`
-      - Core
       - Performance
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
       - Package
     * - :ref:`esp32s3`
-      - :ref:`xtensa_lx7`
       - 1181 :ref:`CoreMark`
       - 512KB/384KB
-      -
+      - USB FS OTG
+      - 3/2/1
       - :ref:`esp_qfn56`
-      - :ref:`esp_qfn32`
     * - :ref:`w801`
-      - :ref:`xt804`
       - 300 :ref:`DMIPS`
       - 288KB/2MB
-      -
+      - 16 bit :ref:`sigma_delta` ADC
       - 6/2/1
       - QFN56
     * - :ref:`w806`
-      - :ref:`xt804`
       - 300 :ref:`DMIPS`
       - 288KB/1MB
-      -
+      - 6x UART
       - 6/2/1
       - :ref:`w806_qfn56`
 
+对比W801
+^^^^^^^^^^^
 
+两者的封装规格相同，主频配置基本相同，差异主要在： :ref:`esp32s3` 是双核带有USB，  :ref:`w801` 拥有更多外设数量
 
 型号对比
 ~~~~~~~~~
@@ -180,6 +179,10 @@ Xin选择
       - USB1.1 OTG
       - NO
 
+版本对比
+~~~~~~~~~
+
+
 
 Xin应用
 --------------
@@ -187,50 +190,20 @@ Xin应用
 .. contents::
     :local:
 
+探索套件
+~~~~~~~~~
+
 编译工具
 ~~~~~~~~~
 
 开发框架
 ~~~~~~~~~
 
+
 ESP-IDF
 ^^^^^^^^^^
 
 支持ESP32-S3需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
-
-Arduino
-^^^^^^^^^^
-
-暂时不支持
-
-
-LEDC
-~~~~~~~~~~~
-
-
-
-.. code-block:: bash
-
-    int main(void)
-    {
-        LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
-        LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
-        LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
-        LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
-        LL_GPIO_ResetOutputPin(LED_GPIO_Port, LED_Pin);
-        GPIO_InitStruct.Pin = LED_Pin;
-        GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-        GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-        GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-        GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-        LL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
-        while (1)
-        {
-            LL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-            LL_mDelay(400);
-        }
-    }
-
 
 
 
@@ -243,15 +216,16 @@ Xin总结
 .. contents::
     :local:
 
+能力构建
+~~~~~~~~~~~~~
+
+.. note::
+    相对传统的MCU使用的强大IDE环境，最大的槽点就是缺乏高度集成的工具环境，ESP-IDF的编译效率较低，文件修改后编译非常耗时
+
+
 要点提示
-~~~~~~~~~~~~~~
-
-
+~~~~~~~~~~~~~
 
 问题整理
 ~~~~~~~~~~~~~
 
-
-
-.. warning::
-    相对传统的MCU开发，最大的槽点就是ESP-IDF编译效率，因为要编译的组件特别多，编译非常耗时间
