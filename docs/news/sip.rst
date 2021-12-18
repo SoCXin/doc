@@ -1,8 +1,14 @@
 
 .. _sip:
 
-集成Xin
+合封Xin
 ====================
+
+.. note::
+    SIP(System In a Package)是将多种功能晶圆，包括处理器、存储器等功能晶圆根据应用场景、封装基板层数等因素，集成在一个封装内，从而实现一个基本完整功能的封装方案。
+
+.. image:: ./images/sip.jpg
+
 
 .. contents::
     :local:

@@ -26,7 +26,7 @@ SoC·Xin
     著名项目适配支持 <news/pop>
     旗舰基本干啥都行 <news/top>
     难以拒绝低价好货 <news/low>
-    小封装集成很紧凑 <news/sip>
+    封装小功能很强大 <news/sip>
 
 .. list-table::
     :header-rows:  1

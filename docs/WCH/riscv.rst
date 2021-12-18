@@ -52,15 +52,11 @@ RISC-V4F
 RISC-V对比
 --------------
 
-参数对比
-~~~~~~~~~~~~~~
 
 .. image:: ./images/wch_riscv.png
     :target: http://special.wch.cn/zh_cn/RISCV_MCU_Index/
 
 
-差异对比
-~~~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
