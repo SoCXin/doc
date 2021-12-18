@@ -47,6 +47,28 @@ X-CUBE-AI
 * 5.使用经过培训的ANN处理和分析新数据
 
 
+性能分级
+-----------
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - #define
+      - L4(≤400DMIPS)
+      - L5(≤800DMIPS)
+      - L6(≤1600DMIPS)
+      - L7(≤4TOPS)
+      - L8(≤20TOPS)
+      - L9(＞20TOPS)
+    * - RANK 1
+      -
+      -
+      -
+      -
+      -
+      -
+
 
 嵌入平台
 -----------

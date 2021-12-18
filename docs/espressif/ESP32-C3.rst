@@ -129,6 +129,13 @@ Xin选择
       - 72Mbps@HT20
       - 3/2/1
       - QFN32
+    * - :ref:`air101`
+      - :ref:`riscv`
+      -
+      - 288KB/1MB
+      -
+      - 5/2/1
+      - QFN32
     * - :ref:`w806`
       - :ref:`xt804`
       - 300 :ref:`DMIPS`

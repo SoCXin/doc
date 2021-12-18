@@ -168,6 +168,14 @@ SoC·Xin
       -
       - :ref:`k210`
       - :ref:`D1`
+    * - :ref:`mips`
+      -
+      -
+      -
+      - :ref:`esp32s3`
+      -
+      - :ref:`mt7621`
+
 
 
 
@@ -180,7 +188,7 @@ SoC·Xin
     有线连接 @WCH <WCH/index>
     无线连接 @Espressif <espressif/index>
     路由节点 @MediaTek  <MediaTek/index>
-    高性价比 @ArteryTek <arterytek/index>
+    种子选手 @ArteryTek <arterytek/index>
 
 收录汇整5大具有代表性厂商，覆盖的解决方案比较全，通过汇总有代表性的厂商信息，提供精炼方案。
 
