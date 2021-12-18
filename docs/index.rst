@@ -191,7 +191,7 @@ SoC·Xin
     路由节点 @MediaTek  <MediaTek/index>
     种子选手 @ArteryTek <arterytek/index>
 
-收录汇整具有代表性厂商，覆盖的解决方案比较全，通过汇总有代表性的厂商信息，提供精炼方案。
+收录汇整具有代表性厂商，对用户开放程度高，覆盖的解决方案比较全，通过汇总提供更精炼方案。
 
 .. list-table::
     :header-rows:  1

@@ -15,7 +15,7 @@ IoT
 
     * - 对比项目
       - :ref:`ethernet`
-      - :ref:`hplc`
+      - :ref:`plc`
       - :ref:`wifi`
       - :ref:`ble`
       - :ref:`lora`
@@ -155,10 +155,12 @@ Ethernet
       - USB OTG
       - NO
 
-.. _hplc:
+.. _plc:
 
-HPLC
+PLC
 ----------
+
+电力线载波通信(PLC,即Power Line Communication)是电力系统特有的通信方式，这是一种利用现有交流或直流电力线，通过载波方式将模拟或数字信号进行高速传输的技术。其最大的特点是不需要重新架设网络，只要有电线，就能进行数据传输。该技术是通过调制把原有信号变成高频信号加载到电力线进行传输，在接收端通过滤波器将调制信号取出解调，得到原有信号，实现信息传递。
 
 .. note::
     电力线载波通信（power line carrier communication）以输电线路为载波信号的传输媒介的电力系统通信。
@@ -167,8 +169,7 @@ HPLC
     :maxdepth: 1
 
     CR600 <../M/CR600>
-
-
+    Hi3921 <../M/Hi3921>
 
 .. _wifi:
 
@@ -187,41 +188,6 @@ WiFi
 .. hint::
     大部分此类芯片不仅具备WiFi接入能力，还同时具有BLE连接能力。
 
-.. list-table::
-    :header-rows:  1
-
-    * - Rank
-      - Core
-      - RAM
-      - Flash
-      - WiFi
-      - Rate
-      - More
-      - Package
-    * - :ref:`esp32`
-      - :ref:`xtensa_lx6`
-      - 520KB
-      - XIP
-      - 1T1R b/g/n
-      - 150 Mbps
-      - BLE v4.2
-      - QFN48
-    * - :ref:`esp32c3`
-      - :ref:`riscv`
-      - 400KB
-      - 384KB
-      - 1T1R b/g/n
-      - 150 Mbps
-      - BLE 5.0
-      - QFN32
-    * - :ref:`w806`
-      - :ref:`xt804`
-      - 288 KB
-      - 2 MB
-      - 1T1R b/g/n
-      - 150 Mbps
-      - BLE v4.2
-      - :ref:`w800_qfn32`
 
 .. _ble:
 
