@@ -10,6 +10,14 @@ AD/DA
 A/D转换
 -----------
 
+相关芯片
+~~~~~~~~~~~~
+
+* TI-ADS127L11 ($5.7, 400KSPS、24bit、18.6mW、120dB SNR、Δ-Σ)
+* ADI-ADAQ4001 ($20.95, 16bit、2 MSPS)
+* Maxim-MAX11214 ($39.18, 24bit、5mW、140dB SNR、32ksps Δ-Σ ADC，PGA)
+
+
 高速率
 ~~~~~~~~~~~~
 
