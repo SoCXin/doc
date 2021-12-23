@@ -57,17 +57,12 @@ ESP32-C2 芯片比 ESP8266 面积更小、性能更强。ESP32-C2 在满足简�
 .. note::
     硬件安全单元十分利于物联网产品设计，特别是对加密算法的支持，在嵌入式领域配置如此多的安全外设，也是十分强大的
 
-RSA 模块
+ECC 模块
 ^^^^^^^^^^^^^^^
 
-基于 RSA-3072 的标准身份验证方案，确保在设备上运行受信任的应用程序。该功能可阻止设备运行烧录在 flash 中的恶意程序。
-安全启动需要快速高效地进行，以满足即时启动设备（如球泡灯）的需求，ESP32-C3 的安全启动方案仅在设备启动过程中增加了不到 100 ms 的时间开销。
 
-AES 模块
+SHA 模块
 ^^^^^^^^^^^^^^^
-
-基于 AES-128-XTS 算法的 flash 加密方案，确保应用程序与配置数据在 flash 中保持加密状态。
-flash 控制器支持执行加密的应用程序固件，这不仅为存储在 flash 中的敏感数据提供了必要保护，还防止了运行时由于固件更改造成的 TOCTTOU (time-of-check-to-time-of-use) 攻击。
 
 
 
@@ -137,36 +132,28 @@ Xin选择
 
     * - :ref:`list`
       - Core
-      - DMIPS
-      - RAM
+      - Performance
+      - SRAM/ROM
       - WiFi
       - BLE
-      - USB
-      - MAC
-    * - :ref:`esp32`
-      - Dual LX6
-      - 600 DMIPS
-      - 520 KB
-      - 802.11 b/g/n
-      - BT/BLE v4.2
-      - NO
-      - 100M
-    * - :ref:`esp32s3`
-      - Dual LX7
-      - 600 DMIPS
-      - 512 KB
+      - UART/SPI/IO
+      - Package
+    * - :ref:`esp32c2`
+      - RV32IMC
+      - 300 :ref:`CoreMark`
+      - 272KB/576KB
       - 802.11 b/g/n
       - BLE v5.0
-      - USB1.1 OTG
-      - NO
+      - 1/2/14
+      - QFN40
     * - :ref:`esp32c3`
       - RV32IMC
-      - 200 DMIPS
-      - 400 KB
+      - 407 :ref:`CoreMark`
+      - 400KB/384KB
       - 802.11 b/g/n
-      - BLE v5.0
-      - NO
-      - NO
+      - v5.0
+      - 1/3/22
+      - QFN32
 
 
 
