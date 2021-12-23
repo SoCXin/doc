@@ -47,19 +47,9 @@ ESP32-C2 芯片比 ESP8266 面积更小、性能更强。ESP32-C2 在满足简�
 
 * 供电电压：2.3 to 3.6 V
 
-
-计算性能
-~~~~~~~~~~~~~~
-
-.. image:: ./images/ESP.png
-.. image:: ./images/ESPEC.png
-
-
-
 安全特性
 ~~~~~~~~~~~~~~
 
-内置安全硬件，硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
 
 .. contents::
     :local:
@@ -79,18 +69,7 @@ AES 模块
 基于 AES-128-XTS 算法的 flash 加密方案，确保应用程序与配置数据在 flash 中保持加密状态。
 flash 控制器支持执行加密的应用程序固件，这不仅为存储在 flash 中的敏感数据提供了必要保护，还防止了运行时由于固件更改造成的 TOCTTOU (time-of-check-to-time-of-use) 攻击。
 
-TEE 模块
-^^^^^^^^^^^^^^^
 
-世界控制器模块提供了两个互不干扰的执行环境。根据配置，世界控制器使用可信执行环境 (TEE) 或权限分离机制。
-如果应用程序固件需要处理敏感的安全数据（如 DRM 服务），则可以利用世界控制器模块，在安全区域处理数据。
-
-
-数字签名
-^^^^^^^^^^^^^^^
-
-ESP32-C3 的数字签名外设，可以通过固件不可访问的私钥生成数字签名。同样地，其 HMAC 外设也可以生成固件不可访问的加密摘要。
-目前，大多数物联网云服务使用基于 X.509 证书的身份验证，数字签名外设保护了定义设备身份的私钥。这样一来，即使出现软件漏洞，它也能为设备身份提供强大的保护
 
 
 Xin选择
@@ -207,9 +186,6 @@ Xin应用
 开发板
 ~~~~~~~~~~
 
-.. image:: ./images/B_ESP32C3.jpg
-    :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
-
 
 编译工具
 ~~~~~~~~~
@@ -221,7 +197,7 @@ Xin应用
 ESP-IDF
 ^^^^^^^^^^^
 
-支持ESP32C3需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
+需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
 
 Arduino
 ^^^^^^^^^^^^
@@ -234,24 +210,6 @@ Arduino
 
 
 
-WiFi Mesh
-^^^^^^^^^^^
-
-LittlevGL
-^^^^^^^^^^^
-
-ESP32-C3支持QSPI 适合4.3寸以下，SPI QSPI，MCU（8080）接口的屏。
-
-
-开源方案
-~~~~~~~~~
-
-如果你要探索一些开源项目，可能时常遇到基于 `PlatformIO <https://platformio.org/platforms/ststm32>`_ 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。
-
-* `ESP-IDF <https://github.com/espressif/esp-idf>`_
-* `arduino-esp32 <https://github.com/espressif/arduino-esp32/>`_
-* `RUST API <https://github.com/imheresamir/esp32c3>`_
-
 
 
 
@@ -263,10 +221,6 @@ Xin总结
 
 能力构建
 ~~~~~~~~~~~~~
-
-.. note::
-    相对传统的MCU使用的强大IDE环境，最大的槽点就是缺乏高度集成的工具环境，ESP-IDF的编译效率较低，文件修改后编译非常耗时
-
 
 要点提示
 ~~~~~~~~~~~~~
