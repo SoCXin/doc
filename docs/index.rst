@@ -16,7 +16,7 @@ SoC·Xin
 .. toctree::
     :maxdepth: 1
 
-    推荐清单(15X·IN) <list>
+    推荐清单 <list>
     芯芸期刊 <magazine>
 
 .. toctree::

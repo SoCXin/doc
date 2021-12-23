@@ -9,7 +9,7 @@ Espressif
 -----------
 
 .. note::
-    Espressif是一家全球化的无晶圆厂半导体公司，成立于 2008 年，总部位于中国上海，主要产品为WiFi&BLE SoC和相关的物联网解决方案。
+    Espressif是一家全球化的无晶圆厂半导体公司，总部位于中国上海，主要产品为WiFi&BLE SoC和相关的物联网解决方案。
 
 `FQA <https://docs.espressif.com/_/downloads/espressif-esp-faq/zh_CN/latest/pdf/>`_
 
@@ -59,6 +59,14 @@ Espressif
       - :ref:`esp_rv32`
       - 407.2
       - 400KB/384KB
+      - 1T1R+v5.0
+      - No
+      - 2/3/1(22P)
+      - No
+    * - :ref:`esp32c2`
+      - :ref:`esp_rv32`
+      - 300
+      - 272KB/576KB
       - 1T1R+v5.0
       - No
       - 2/3/1(22P)
@@ -152,10 +160,10 @@ ULP
 
 .. _esp_rv32:
 
-RV32 IMC
+RV32
 ^^^^^^^^^^^^^^
 
-.. _espressif_package:
+.. _esp_package:
 
 封装规格
 ~~~~~~~~~~~~

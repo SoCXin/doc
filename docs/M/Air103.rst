@@ -16,16 +16,15 @@ Xin简介
 规格配置
 ~~~~~~~~~~~
 
-
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
-* 发布价格：￥6.66
+* 发布价格：￥5.9
 * 工作温度：-40°C to +125°C
 * 处理性能：
 * RAM容量：288KB
-* Flash容量：1MB/2MB
+* Flash容量：2MB
 * 封装规格：QFN56 (6X6mm)
 
 
@@ -51,5 +50,5 @@ Xin应用
 开发板
 ~~~~~~~~~~
 
-.. image:: ./images/B_Air101.png
-    :target: https://doc.openluat.com/article/3508
+.. image:: ./images/B_Air103.png
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.19.6fa22e49dS8gPj&id=661796285257&ns=1&abbucket=13#detail
