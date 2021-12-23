@@ -57,17 +57,19 @@
 /RP2040.html -> M/RP2040.html
 /W806.html -> M/W806.html
 /W801.html -> M/W801.html
+/Air101.html -> M/Air101.html
+/Air103.html -> M/Air103.html
 /CR600.html -> M/CR600.html
 /CR710.html -> M/CR710.html
 /Hi3861.html -> M/Hi3861.html
 /Hi3921.html -> M/Hi3921.html
 /XY1100.html -> M/XY1100.html
 /MM32SPIN05.html -> M/MM32SPIN.html
+/TKM32F499.html -> M/TKM32F499.html
 /HC32M120.html -> M/HC32M120.html
 /GD32V103.html -> M/GD32V103.html
 /CS32A039.html -> M/CS32A039.html
 /CS32G020.html -> M/CS32G020.html
-/TKM32F499.html -> M/TKM32F499.html
 /EAI80.html -> H/EAI80.html
 /K210.html -> H/K210.html
 /K510.html -> H/K510.html
@@ -77,3 +79,6 @@
 /BCM2835.html -> H/BCM2835.html
 /BCM2711.html -> H/BCM2711.html
 /GW1NSR.html -> A/GW1NSR.html
+/ASR1601.html -> ASR/ASR1601.html
+/ASR6501.html -> ASR/ASR6501.html
+/ASR1802.html -> ASR/ASR1802.html

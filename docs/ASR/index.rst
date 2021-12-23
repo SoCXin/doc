@@ -19,6 +19,8 @@ ASR
 
     LoRa: ASR6501 <ASR6501>
     Cat1: ASR1601 <ASR1601>
+    Cat4: ASR1802 <ASR1802>
+
 
 
 

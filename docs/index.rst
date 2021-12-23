@@ -17,6 +17,7 @@ SoC·Xin
     :maxdepth: 1
 
     推荐清单(15X·IN) <list>
+    芯芸月刊 <magazine>
 
 .. toctree::
     :caption: 排序速览
