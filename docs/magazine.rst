@@ -1,6 +1,6 @@
 .. _magazine:
 
-magazine
+芯芸期刊
 ==================
 
 .. list-table::

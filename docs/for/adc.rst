@@ -10,7 +10,7 @@ AD/DA
 A/D转换
 -----------
 
-相关芯片
+独立器件
 ~~~~~~~~~~~~
 
 * TI-ADS127L11 ($5.7, 400KSPS、24bit、18.6mW、120dB SNR、Δ-Σ)
@@ -18,30 +18,8 @@ A/D转换
 * Maxim-MAX11214 ($39.18, 24bit、5mW、140dB SNR、32ksps Δ-Σ ADC，PGA)
 
 
-高速率
-~~~~~~~~~~~~
 
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`list`
-      - Core
-      - RAM
-      - Flash
-      - UART
-      - GPIO
-      - SPEC
-      - Package
-    * - :ref:`stm32g431`
-      - 170MHz
-      -
-      -
-      -
-      -
-      -
-      - LQFP48
-
-DAQ
+DAQ板卡
 ^^^^^^^^^^^^^
 
 `米联客 <https://www.uisrc.com/portal.php>`_ 数据采集卡
@@ -92,6 +70,28 @@ AD9481 是一款8位单芯片模数转换器（ADC），专门针对高速和低
       - VQFN64
 
 
+高速率
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - SPEC
+      - Package
+    * - :ref:`stm32g431`
+      - 170MHz
+      -
+      -
+      -
+      -
+      -
+      - LQFP48
 
 高精度
 ~~~~~~~~~~~~~~

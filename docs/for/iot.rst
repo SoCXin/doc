@@ -221,30 +221,41 @@ WiFi
 .. list-table::
     :header-rows:  1
 
-    * - #define
+    * - :ref:`list`
       - Core
-      - RAM
-      - Flash
-      - WiFi
-      - Rate
-      - More
+      - Performance
+      - SRAM/ROM
+      - Characteristics
+      - UART/SPI/SDIO
       - Package
-    * - :ref:`ch583`
-      - :ref:`wch_riscv4a`
+    * - :ref:`esp32c3`
+      - :ref:`esp_rv32`
+      - 407 :ref:`CoreMark`
+      - 512KB/384KB
+      - 1T1R/v5.0
+      - 2/3/No
+      - :ref:`esp_qfn32`
+    * - :ref:`hi3861`
+      - :ref:`riscv`
       -
+      - 352KB/288KB
+      - 72Mbps@HT20
+      - 3/2/1
+      - QFN32
+    * - :ref:`air101`
+      - :ref:`riscv`
       -
+      - 288KB/1MB
       -
-      -
-      -
-      - QFN28
-    * - :ref:`ch573`
-      - :ref:`wch_riscv3a`
-      -
-      -
-      -
-      -
-      -
-      - QFN28
+      - 5/2/1
+      - QFN32
+    * - :ref:`w806`
+      - :ref:`xt804`
+      - 300 :ref:`DMIPS`
+      - 288KB/1MB
+      - 1T1R
+      - 6/2/1
+      - :ref:`w806_qfn56`
 
 
 .. toctree::
@@ -255,6 +266,8 @@ WiFi
     Air101 <../M/Air101>
     Air103 <../M/Air103>
     Hi3861 <../M/Hi3861>
+
+
 
 .. hint::
     大部分此类芯片不仅具备WiFi接入能力，还同时具有BLE连接能力。
@@ -303,6 +316,11 @@ LoRa
 
 NB-IoT
 -----------
+
+
+
+.. list-table::
+    :header-rows:  1
 
     * - #define
       - Core
