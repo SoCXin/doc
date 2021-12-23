@@ -17,7 +17,7 @@ SoC·Xin
     :maxdepth: 1
 
     推荐清单(15X·IN) <list>
-    芯芸月刊 <magazine>
+    芯芸期刊 <magazine>
 
 .. toctree::
     :caption: 排序速览
@@ -208,7 +208,7 @@ SoC·Xin
       - :ref:`stm32u575`
       - :ref:`ch32v307`
       - :ref:`esp32s3`
-      -
+      - :ref:`asr1601`
       - :ref:`mt7621`
       - :ref:`at32f437`
     * - 经典作品
@@ -222,14 +222,14 @@ SoC·Xin
       - :ref:`stm32g030`
       - :ref:`ch554`
       - :ref:`esp32c3`
-      -
+      - :ref:`asr1601`
       - :ref:`mt2625`
       -
     * - 集大成者
       - :ref:`stm32mp15`
       - :ref:`ch32f208`
       -
-      -
+      - :ref:`asr1802`
       -
       -
 
