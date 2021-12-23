@@ -4,6 +4,8 @@
 Edge
 ============
 
+.. contents::
+    :local:
 
 
 
@@ -60,7 +62,7 @@ X-CUBE-AI
       - L6(≤1600DMIPS)
       - L7(≤4TOPS)
       - L8(≤20TOPS)
-      - L9(＞20TOPS)
+      - L9(above)
     * - RANK 1
       -
       -
@@ -74,18 +76,6 @@ X-CUBE-AI
 -----------
 
 可以在端侧部署算法的嵌入式平台，相对传统的计算分离体系，拥有更高的集成度和灵活度
-
-.. toctree::
-    :maxdepth: 1
-
-    D1  <../H/D1>
-    K210 <../H/K210>
-    K510 <../H/K510>
-    V831 <../H/V831>
-    EAI80 <../H/EAI80>
-    A311D <../H/A311D>
-    SSD201 <../H/SSD201>
-    SP7021 <../H/SP7021>
 
 
 .. list-table::
@@ -127,12 +117,53 @@ X-CUBE-AI
       -
       - QFN88
 
+.. toctree::
+    :maxdepth: 1
 
-对比平台
+    D1  <../H/D1>
+    K210 <../H/K210>
+    K510 <../H/K510>
+    V831 <../H/V831>
+    EAI80 <../H/EAI80>
+    A311D <../H/A311D>
+    SSD201 <../H/SSD201>
+    SP7021 <../H/SP7021>
+
+
+ARM平台
 ~~~~~~~~~~~
 
 树莓派
 ^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - #define
+      - Core
+      - Performance
+      - High
+      - WiFi
+      - Rate
+      - More
+      - Package
+    * - :ref:`bcm2711`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`bcm2835`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+
 
 .. toctree::
     :maxdepth: 1

@@ -139,18 +139,18 @@ Xin选择
       - UART/SPI/IO
       - Package
     * - :ref:`esp32c2`
-      - RV32IMC
+      - RV32 @120MHz
       - 300 :ref:`CoreMark`
       - 272KB/576KB
-      - 802.11 b/g/n
-      - BLE v5.0
+      - 1024-QAM
+      - v5.0
       - 1/2/14
       - QFN40
     * - :ref:`esp32c3`
-      - RV32IMC
+      - RV32 @160MHz
       - 407 :ref:`CoreMark`
       - 400KB/384KB
-      - 802.11 b/g/n
+      -
       - v5.0
       - 1/3/22
       - QFN32
