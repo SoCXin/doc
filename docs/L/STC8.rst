@@ -4,7 +4,7 @@
 STC8H
 ======
 
-* 关键词：``24MHz`` ``EEPROM`` ``8051`` ``cheap``
+* 关键词：``STC`` ``8051`` ``24MHz`` ``EEPROM`` ``cheap``
 * 资源库：`GitHub <https://github.com/SoCXin/STC8>`_
 
 .. contents::

@@ -18,6 +18,7 @@ ASR
     :maxdepth: 1
 
     LoRa: ASR6501 <ASR6501>
+    Cat1: ASR1601 <ASR1601>
 
 
 

@@ -16,25 +16,12 @@ IoT
     * - 对比项目
       - :ref:`ethernet`
       - :ref:`plc`
-      - :ref:`wifi`
       - :ref:`ble`
+      - :ref:`wifi`
       - :ref:`lora`
       - :ref:`nbiot`
+      - :ref:`cat1`
     * - 通信距离
-      -
-      -
-      -
-      -
-      -
-      -
-    * - 易用性
-      -
-      -
-      -
-      -
-      -
-      -
-    * - 扩展性
       -
       -
       -
@@ -55,7 +42,20 @@ IoT
       -
       -
       -
-
+    * - 易用性
+      -
+      -
+      -
+      -
+      -
+      -
+    * - 扩展性
+      -
+      -
+      -
+      -
+      -
+      -
 
 .. _ethernet:
 
@@ -135,33 +135,11 @@ PLC
 .. note::
     电力线载波通信（power line carrier communication）以输电线路为载波信号的传输媒介的电力系统通信。
 
-.. _wifi:
-
-WiFi
------------
-
-
-.. toctree::
-    :maxdepth: 1
-
-    W806 <../M/W806>
-    W801 <../M/W801>
-    Air101 <../M/Air101>
-    Hi3861 <../M/Hi3861>
-
-.. hint::
-    大部分此类芯片不仅具备WiFi接入能力，还同时具有BLE连接能力。
-
 
 .. _ble:
 
 BLE
 ----------
-
-.. toctree::
-    :maxdepth: 1
-
-    nRF52832 <../M/nRF52832>
 
 
 .. list-table::
@@ -191,6 +169,61 @@ BLE
       -
       -
       - QFN28
+
+.. toctree::
+    :maxdepth: 1
+
+    nRF52832 <../M/nRF52832>
+
+
+
+.. _wifi:
+
+WiFi
+-----------
+
+.. list-table::
+    :header-rows:  1
+
+    * - #define
+      - Core
+      - RAM
+      - Flash
+      - WiFi
+      - Rate
+      - More
+      - Package
+    * - :ref:`ch583`
+      - :ref:`wch_riscv4a`
+      -
+      -
+      -
+      -
+      -
+      - QFN28
+    * - :ref:`ch573`
+      - :ref:`wch_riscv3a`
+      -
+      -
+      -
+      -
+      -
+      - QFN28
+
+
+.. toctree::
+    :maxdepth: 1
+
+    W801 <../M/W801>
+    W806 <../M/W806>
+    Air101 <../M/Air101>
+    Air103 <../M/Air103>
+    Hi3861 <../M/Hi3861>
+
+.. hint::
+    大部分此类芯片不仅具备WiFi接入能力，还同时具有BLE连接能力。
+
+
 
 
 .. _lora:
@@ -235,10 +268,80 @@ LoRa
 NB-IoT
 -----------
 
+    * - #define
+      - Core
+      - RAM
+      - Flash
+      - LoRa
+      - Rate
+      - More
+      - Package
+    * - :ref:`mt2625`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`xy1100`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+
 .. toctree::
     :maxdepth: 1
 
     XY1100 <../M/XY1100>
+
+
+.. _cat1:
+
+Cat.1
+-----------
+
+.. image:: ./images/VS.jpg
+
+.. image:: ./images/cat.jpg
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - #define
+      - Core
+      - RAM
+      - Flash
+      - LoRa
+      - Rate
+      - More
+      - Package
+    * - :ref:`asr1601`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`usi8910`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+
+.. toctree::
+    :maxdepth: 1
+
+    USI8910DM <../H/USI8910DM>
+
 
 
 
