@@ -89,6 +89,13 @@ Xin选择
       - Characteristics
       - UART/SPI/SDIO
       - Package
+    * - :ref:`esp32c2`
+      - :ref:`esp_rv32`
+      - 300 :ref:`CoreMark`
+      - 272KB/576KB
+      -
+      -
+      - QFN40
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407 :ref:`CoreMark`
@@ -150,7 +157,7 @@ Xin选择
       - RV32 @160MHz
       - 407 :ref:`CoreMark`
       - 400KB/384KB
-      -
+      - 256-QAM
       - v5.0
       - 1/3/22
       - QFN32

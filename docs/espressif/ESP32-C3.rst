@@ -136,6 +136,13 @@ Xin选择
       -
       - 5/2/1
       - QFN32
+    * - :ref:`air103`
+      - :ref:`riscv`
+      -
+      - 288KB/2MB
+      -
+      - 5/2/1
+      - QFN56
     * - :ref:`w806`
       - :ref:`xt804`
       - 300 :ref:`DMIPS`

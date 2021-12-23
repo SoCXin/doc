@@ -49,9 +49,8 @@ X-CUBE-AI
 * 5.使用经过培训的ANN处理和分析新数据
 
 
-性能分级
+边缘平台
 -----------
-
 
 .. list-table::
     :header-rows:  1
@@ -62,8 +61,8 @@ X-CUBE-AI
       - L6(≤1600DMIPS)
       - L7(≤4TOPS)
       - L8(≤20TOPS)
-      - L9(above)
-    * - RANK 1
+      - L9(Above)
+    * - Xin
       -
       -
       -
@@ -71,11 +70,24 @@ X-CUBE-AI
       -
       -
 
-
-嵌入平台
------------
 
 可以在端侧部署算法的嵌入式平台，相对传统的计算分离体系，拥有更高的集成度和灵活度
+
+.. toctree::
+    :maxdepth: 1
+
+    D1  <../H/D1>
+    K210 <../H/K210>
+    K510 <../H/K510>
+    V831 <../H/V831>
+    EAI80 <../H/EAI80>
+    A311D <../H/A311D>
+    SSD201 <../H/SSD201>
+    SP7021 <../H/SP7021>
+
+
+SoC平台
+~~~~~~~~~~~
 
 
 .. list-table::
@@ -117,24 +129,10 @@ X-CUBE-AI
       -
       - QFN88
 
-.. toctree::
-    :maxdepth: 1
-
-    D1  <../H/D1>
-    K210 <../H/K210>
-    K510 <../H/K510>
-    V831 <../H/V831>
-    EAI80 <../H/EAI80>
-    A311D <../H/A311D>
-    SSD201 <../H/SSD201>
-    SP7021 <../H/SP7021>
 
 
 ARM平台
 ~~~~~~~~~~~
-
-树莓派
-^^^^^^^^^^^
 
 .. list-table::
     :header-rows:  1
