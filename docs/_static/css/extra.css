@@ -433,7 +433,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .dropdown-menu > .active > a:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #337ab7;
+  background-color: #21c3c9;
   outline: 0;
 }
 .dropdown-menu > .disabled > a,
