@@ -9,7 +9,7 @@ ARM
 
 .. _cortex_spec:
 
-Architecture
+架构简介
 -------------
 
 .. toctree::
@@ -298,4 +298,10 @@ Cortex-R
 
 Cortex-A
 ~~~~~~~~~~~
+
+
+.. toctree::
+    :maxdepth: 1
+
+    cortexA7
 
