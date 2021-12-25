@@ -130,17 +130,17 @@ SoC·Xin
     * - :ref:`mcs51`
       - :ref:`stc8`
       - :ref:`ch549`
-      -
-      -
-      -
-      -
+      - X
+      - X
+      - X
+      - X
     * - :ref:`cortex_m0`
       - :ref:`stm32l011`
       - :ref:`stm32g031`
       - :ref:`rp2040`
-      -
-      -
-      -
+      - X
+      - X
+      - X
     * - :ref:`cortex_m3`
       -
       - :ref:`gd32f130`
@@ -174,7 +174,7 @@ SoC·Xin
       -
       -
       - :ref:`esp32s3`
-      -
+      - :ref:`mt7688`
       - :ref:`mt7621`
 
 

@@ -149,6 +149,7 @@ HDMI
     SWM32S <../M/SWM32S>
     SWM341 <../M/SWM341>
     TKM32F499 <../M/TKM32F499>
+    APT32F706 <../H/APT32F706>
 
 .. list-table::
     :header-rows:  1

@@ -4,6 +4,9 @@
 MIPS
 =========
 
+.. contents::
+    :local:
+
 .. _tensilica:
 
 Tensilica

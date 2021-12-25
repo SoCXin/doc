@@ -1,7 +1,7 @@
 
 .. _cortex_m0:
 
-Cortex-M0+
+Cortex-M0
 ====================
 
 .. contents::

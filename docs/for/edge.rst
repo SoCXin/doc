@@ -56,9 +56,9 @@ Cube-AI
 .. list-table::
     :header-rows:  1
 
-    * - #define
-      - L4(≤400 DMIPS)
-      - L5(≤800 DMIPS)
+    * - 性能分级
+      - L4(≤400DMIPS)
+      - L5(≤800DMIPS)
       - L6(≤1600DMIPS)
       - L7(≤4 TOPS)
       - L8(≤20TOPS)
@@ -125,40 +125,6 @@ SoC平台
     V831 <../H/V831>
     SP7021 <../H/SP7021>
 
-MCU平台
-~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`list`
-      - Core
-      - Freq
-      - RAM
-      - Flash
-      - NPU
-      - Package
-    * - :ref:`eai80`
-      - :ref:`cortex_m4`
-      - 200 MHz
-      - 8 MB
-      - 8 MB
-      - :ref:`eai80_npu`
-      - LQFP100
-    * - :ref:`eai80`
-      - :ref:`cortex_m4`
-      - 200 MHz
-      - 8 MB
-      - 8 MB
-      - :ref:`eai80_npu`
-      - LQFP100
-
-
-.. toctree::
-    :maxdepth: 1
-
-    EAI80 <../H/EAI80>
-
 
 NPU平台
 ~~~~~~~~~~~
@@ -208,3 +174,31 @@ ARM平台
     BCM2711 <../H/BCM2711>
     SSD201 <../H/SSD201>
     A311D <../H/A311D>
+
+MCU平台
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Core
+      - Freq
+      - RAM
+      - Flash
+      - NPU
+      - Package
+    * - :ref:`eai80`
+      - :ref:`cortex_m4`
+      - 200 MHz
+      - 8 MB
+      - 8 MB
+      - :ref:`eai80_npu`
+      - LQFP100
+
+
+.. toctree::
+    :maxdepth: 1
+
+    EAI80 <../H/EAI80>
+
