@@ -79,12 +79,27 @@ Xin选择
 
 
 
+
 Xin应用
 -----------
 
 .. contents::
     :local:
 
+开发板
+~~~~~~~~~~
+
+PanGu湃兔核
+^^^^^^^^^^^^^^^
+
+.. image:: images/B_STM32MP157.png
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.24.71cc6da0Vr8eCp&id=599303130310&ns=1&abbucket=12#detail
+
+BearPi-HM
+^^^^^^^^^^^^^^^
+
+.. image:: images/B_BearPi.png
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.18.71cc6da0Vr8eCp&id=662078665554&ns=1&abbucket=12#detail
 
 
 Xin总结
@@ -93,10 +108,11 @@ Xin总结
 .. contents::
     :local:
 
-要点提示
+能力构建
 ~~~~~~~~~~~~~
 
-
+要点提示
+~~~~~~~~~~~~~
 
 问题整理
 ~~~~~~~~~~~~~

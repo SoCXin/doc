@@ -222,14 +222,14 @@ SoC·Xin
       - :ref:`stm32g030`
       - :ref:`ch554`
       - :ref:`esp32c3`
-      - :ref:`asr1601`
+      - :ref:`asr1802`
       - :ref:`mt2625`
       -
     * - 集大成者
       - :ref:`stm32mp15`
       - :ref:`ch32f208`
       -
-      - :ref:`asr1802`
+      -
       -
       -
 

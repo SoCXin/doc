@@ -141,7 +141,7 @@ STM
 超低功耗
 ~~~~~~~~~~~
 
-.. image:: images/stm32ulp.jpg
+.. image:: H/images/stm32ulp.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32-ultra-low-power-mcus.html
 
 .. toctree::
@@ -254,6 +254,6 @@ HDMI CEC
 
 CEC协议是一个单总线，低速协议传输速度只有0.3Kbps。它使用HDMI线缆的第13号引脚。
 
-.. image:: images/cec.jpg
+.. image:: H/images/cec.jpg
 
 CEC使用类似DS18B20的单总线协议，分为数据位和起始位，每个数据位有严格的时序定义，其中数据位时长为2.4ms，起始位时长为4.7ms。由于CEC总线传输速率很低，总线协议又不是很复杂，非常适合MCU来处理。一个完整的CEC数据帧
