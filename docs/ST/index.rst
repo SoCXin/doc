@@ -1,18 +1,16 @@
 
 .. _st:
 
-STM
+ST
 ======================
 
-``MCU`` ``MPU`` ``MEMS``
+``MCU`` ``STM32`` ``MPU`` ``MEMS``
 
 公司简介
 -----------
 
-作为MCU领域的龙头企业，是被过内外广泛使用的一种范式，拥有庞大的工程师群众基础和开发资源。
-
 .. note::
-    意法半导体ST是全球最大的半导体公司之一，是MCU领域的王者，其产品系列丰富，应用广泛。
+    意法半导体ST是全球最大的半导体公司之一，是MCU领域的王者，其产品系列丰富应用广泛，拥有庞大的工程师群众基础和开发资源。
 
 
 产品简介
@@ -141,7 +139,7 @@ STM
 超低功耗
 ~~~~~~~~~~~
 
-.. image:: H/images/stm32ulp.jpg
+.. image:: M/images/stm32ulp.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32-ultra-low-power-mcus.html
 
 .. toctree::

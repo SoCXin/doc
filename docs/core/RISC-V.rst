@@ -24,8 +24,16 @@ RV64
 
 .. _xt:
 
-玄铁
+XuanTie
 --------------
+
+.. image:: ./images/xt.png
+    :target: https://occ.t-head.cn/
+
+.. _c906:
+
+C906
+~~~~~~~~~~~~~~
 
 .. _xt804:
 
