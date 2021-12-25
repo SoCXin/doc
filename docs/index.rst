@@ -69,7 +69,7 @@ SoC·Xin
     显示交互   <for/hmi>
     通信连接   <for/iot>
     边缘计算   <for/edge>
-    功耗优化   <for/pwr>
+    电源设计   <for/pwr>
     数模转换   <for/adc>
 
 .. list-table::

@@ -13,13 +13,21 @@ V831
 Xin简介
 -----------
 
+.. image:: ./images/stm32mp157.jpg
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-arm-cortex-mpus/stm32mp1-series/stm32mp157/stm32mp157c.html
+
+.. contents::
+    :local:
+
+
 规格参数
 ~~~~~~~~~~~
 
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：2.0 to 3.6 V
+* 发布时间：
+* 发布价格：
 * 工作温度：-40°C to +85°C
 * 封装规格：QFN88
 * 处理性能：3000 :ref:`DMIPS` + 0.2TOPS
@@ -30,14 +38,15 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-Xin选择
------------
+* 800MHz :ref:`cortex_a7`
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：2.0 to 3.6 V
 
 
-Xin应用
------------
+芯片架构
+~~~~~~~~~~~
 
-
-Xin总结
------------
 

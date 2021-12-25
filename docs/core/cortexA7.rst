@@ -19,12 +19,12 @@ Cortex-A7
       - USB
       - Ethernet
       - Interface
-    * - :ref:`stm32h730`
-      - 1177
-      - 564KB
-      - 32+32
-      - ART
-      - 2 Octo
+    * - :ref:`v831`
       -
-      - 100M
-      - 35
+      -
+      -
+      -
+      -
+      -
+      -
+      -

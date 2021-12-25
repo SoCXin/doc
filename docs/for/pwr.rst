@@ -1,8 +1,11 @@
 
 .. _pwr:
 
-Power
+电源设计
 ============
+
+.. contents::
+    :local:
 
 
 .. _ulp:

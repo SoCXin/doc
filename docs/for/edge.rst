@@ -27,7 +27,7 @@ TinyML
 
 .. _cube_ai:
 
-X-CUBE-AI
+Cube-AI
 ~~~~~~~~~~~
 
 使用基于STM32 MCU的嵌入式系统的开发人员可能不熟悉神经网络。同样，从事机器学习的数据科学家更习惯基于云的海量计算资源，并且对嵌入式开发的内存和计算约束不太满意。STM32Cube.AI揭开了AI和嵌入式系统的神秘面纱，能够充分利用更多的开发人员的专业知识，从而将神经网络带入嵌入式边缘开发领域，进一步拓展了物联网应用。
@@ -57,25 +57,75 @@ X-CUBE-AI
     :header-rows:  1
 
     * - #define
-      - L4(≤400DMIPS)
-      - L5(≤800DMIPS)
+      - L4(≤400 DMIPS)
+      - L5(≤800 DMIPS)
       - L6(≤1600DMIPS)
-      - L7(≤4TOPS)
+      - L7(≤4 TOPS)
       - L8(≤20TOPS)
       - L9 (Above)
-    * - Xin
+    * - :ref:`esp32s3`
       -
       -
       -
       -
       -
       -
-
+    * - :ref:`eai80`
+      -
+      -
+      -
+      -
+      -
+      -
 
 可以在端侧部署算法的嵌入式平台，相对传统的计算分离体系，拥有更高的集成度和灵活度
 
 
 SoC平台
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Core
+      - Freq
+      - RAM
+      - Flash
+      - NPU
+      - Package
+    * - :ref:`k210`
+      - :ref:`riscv`
+      - 400 MHz
+      - 8 MB
+      -
+      - :ref:`k210_npu`
+      - BGA144
+    * - :ref:`k510`
+      - :ref:`riscv`
+      - 800 MHz
+      -
+      -
+      - :ref:`k510_npu`
+      - BGA144
+    * - :ref:`v831`
+      - :ref:`cortex_a7`
+      - 800 MHz
+      - 64MB DDR2
+      -
+      -
+      - QFN88
+
+.. toctree::
+    :maxdepth: 1
+
+    D1  <../H/D1>
+    K210 <../H/K210>
+    K510 <../H/K510>
+    V831 <../H/V831>
+    SP7021 <../H/SP7021>
+
+MCU平台
 ~~~~~~~~~~~
 
 .. list-table::
@@ -95,55 +145,28 @@ SoC平台
       - 8 MB
       - :ref:`eai80_npu`
       - LQFP100
-    * - :ref:`k210`
-      - :ref:`riscv`
-      - 400 MHz
+    * - :ref:`eai80`
+      - :ref:`cortex_m4`
+      - 200 MHz
       - 8 MB
-      -
-      - :ref:`k210_npu`
-      - BGA144
-    * - :ref:`k510`
-      - :ref:`riscv`
-      - 800 MHz
-      -
-      -
-      - :ref:`k510_npu`
-      - BGA144
-    * - :ref:`v831`
-      - Cortex-A7
-      - 800 MHz
-      - 64MB DDR2
-      -
-      -
-      - QFN88
+      - 8 MB
+      - :ref:`eai80_npu`
+      - LQFP100
+
 
 .. toctree::
     :maxdepth: 1
 
-    D1  <../H/D1>
-    K210 <../H/K210>
-    K510 <../H/K510>
-    V831 <../H/V831>
     EAI80 <../H/EAI80>
-    A311D <../H/A311D>
-    SSD201 <../H/SSD201>
-    SP7021 <../H/SP7021>
+
 
 NPU平台
 ~~~~~~~~~~~
 
-Coral TPU
-^^^^^^^^^^^^
+.. toctree::
+    :maxdepth: 1
 
-.. image:: images/Coral.jpg
-    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.9.39a3655bgbMNxy&id=630541857283&ns=1&abbucket=12#detail
-
-SOM模组具有双边缘TPU的Coral M.2加速器是一个M.2模块，为具有可用M.2 E键槽的现有系统提供两个Edge TPU协处理器。
-
-具有双边缘TPU的Coral M.2加速器使每秒推理次数增加一倍（8 TOPS）。该模块是一个M.2模块（E键），包括两个Edge TPU ML加速器，每个加速器都有自己的PCIe Gen2 x1接口。例如，可以通过并行运行两个模型或在两个Edge TPU上流水线化一个模型来实现。小型（22.0mm x 30.0mm x 2.8mm）模块使用2瓦功率（每瓦2 TOPS）以节能的方式加速TensorFlow Lite模块。一个Edge TPU可以以每秒近400帧的速度执行最新的移动视觉模型，例如MobileNet v2。
-
-* 8TOPS
-* 2TOPS/W
+    Coral TPU <coral>
 
 
 ARM平台
@@ -183,4 +206,5 @@ ARM平台
 
     BCM2835 <../H/BCM2835>
     BCM2711 <../H/BCM2711>
+    SSD201 <../H/SSD201>
     A311D <../H/A311D>
