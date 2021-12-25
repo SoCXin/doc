@@ -27,7 +27,7 @@ RV64
 XuanTie
 --------------
 
-.. image:: ./images/xt.png
+.. image:: ./images/xt.jpg
     :target: https://occ.t-head.cn/
 
 .. _c906:

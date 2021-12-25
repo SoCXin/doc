@@ -4,7 +4,7 @@
 D1
 =============
 
-* 关键词：``Allwinner`` ``C906`` ``RISC-V`` ``1.1GHz``
+* 关键词：``Allwinner`` ``RISC-V`` ``C906`` ``1.1GHz``
 * 资源库：`GitHub <https://github.com/SoCXin/D1>`_
 
 .. contents::
@@ -22,15 +22,17 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2021年4月15日
+* 发布价格：
 * 制程工艺：22nm
 * 工作温度：
 * 处理性能：
-* 封装规格：LFBGA(13*13*0.65mm)，337 PINS
+* 封装规格：LFBGA337 (13*13*0.65mm)
 
 
 特征参数
 ^^^^^^^^^^^
 
+* 1.1 GHz :ref:`c906`
 
 电源参数
 ^^^^^^^^^^^
@@ -44,5 +46,19 @@ Xin简介
 计算性能
 ~~~~~~~~~~~
 
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+
+Sipeed Lichee RV
+^^^^^^^^^^^^^^^^^^^
+
+.. image:: images/B_D1_RV.png
+    :target: https://item.taobao.com/item.htm?spm=a1z0d.6639537.1997196601.227.1a477484PGp2WO&id=660478137105
 
 

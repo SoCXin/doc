@@ -68,7 +68,8 @@ STM32系列主要用于解决客户对实时任务和功耗限制的重要要求
 芯片架构
 ~~~~~~~~~~~
 
-
+.. image:: images/STM32MP15s.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32mp1-series.html
 
 
 Xin选择
@@ -78,6 +79,14 @@ Xin选择
     :local:
 
 
+品牌对比
+~~~~~~~~~
+
+系列对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
 
 
 Xin应用
