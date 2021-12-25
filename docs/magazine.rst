@@ -15,21 +15,20 @@
 .. contents::
     :local:
 
+按月度持续更新，包括Xin产品和技术方案探索，Xin替换验证等
+
 2022-01期
 ~~~~~~~~~~~~
-
 
 .. list-table::
     :header-rows:  1
 
-    * - 芯片简介
+    * - 方案简介
       - 推荐理由
     * - :ref:`NO_001` (264KB SRAM/QFN56)
       - $1==Cortex-M0双核，Arduino/MicroPython/USB
     * - :ref:`NO_002` (2KB SRAM/QFN28)
       - 非常具有性价比的8051 USB方案，兼容强拥趸多
-    * - :ref:`NO_003` (288KB SRAM/QFN56)
-      - 扩展性强，4x16 bit :ref:`sigma_delta` ADC(1KMSPS)
     * - :ref:`NO_005`
       - 靠Cortex-M4性能针对 :ref:`stm32f030`,sLib安全库
     * - :ref:`NO_006`

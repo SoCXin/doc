@@ -128,7 +128,7 @@ ODrive
 * 链接：`ODrive Home <https://odriverobotics.com/>`_ , `ODrive GitHub <https://github.com/odriverobotics/ODrive>`_
 
 
-控制芯片
+主控方案
 -----------
 
 .. toctree::

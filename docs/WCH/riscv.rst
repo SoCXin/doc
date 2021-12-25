@@ -1,9 +1,9 @@
 .. _wch_riscv:
 
-WCH RISC-V
+RISC-V
 ======================
 
-:ref:`wch` :ref:`riscv` 针对安全类产品，早期外购第三方RISC-V内核，但当时该IP尚未成熟只支持4线JTAG调试占用IO多，内核架构庞大未针对嵌入式应用优化。
+:ref:`wch` 厂商基于 :ref:`riscv` 构建的内核方案，早期外购第三方RISC-V内核，但当时该IP尚未成熟只支持4线JTAG调试占用IO多，内核架构庞大未针对嵌入式应用优化。
 
 
 .. contents::
