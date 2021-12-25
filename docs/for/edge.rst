@@ -64,15 +64,15 @@ Cube-AI
       - L8(≤20TOPS)
       - L9 (Above)
     * - :ref:`esp32s3`
-      -
+      - √
       -
       -
       -
       -
       -
     * - :ref:`eai80`
-      -
-      -
+      - √
+      - 500 DMIPS
       -
       -
       -

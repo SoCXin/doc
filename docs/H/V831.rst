@@ -13,8 +13,8 @@ V831
 Xin简介
 -----------
 
-.. image:: ./images/stm32mp157.jpg
-    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-arm-cortex-mpus/stm32mp1-series/stm32mp157/stm32mp157c.html
+.. image:: ./images/V831.jpg
+    :target: https://linux-sunxi.org/images/b/b9/V833%EF%BC%8FV831_Datasheet_V1.0.pdf
 
 .. contents::
     :local:
@@ -49,4 +49,43 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~
 
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+系列对比
+~~~~~~~~~
+
+.. image:: images/VS831.jpg
+    :target: https://zhuanlan.zhihu.com/p/337674885
+
+
+型号对比
+~~~~~~~~~
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+
+Sipeed MAIX-II
+^^^^^^^^^^^^^^^^^^^
+
+.. image:: images/B_V831.jpg
+
+.. image:: images/B_V831H.jpg
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.19.1e9e53f7IwX1sQ&id=637829431223&ns=1&abbucket=12#detail
+
+.. image:: images/VS_V831.jpeg
+    :target: https://baijiahao.baidu.com/s?id=1689929535408242635&wfr=spider&for=pc
 
