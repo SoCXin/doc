@@ -13,7 +13,7 @@ V831
 Xin简介
 -----------
 
-.. image:: ./images/V831.jpg
+.. image:: ./images/V831.png
     :target: https://linux-sunxi.org/images/b/b9/V833%EF%BC%8FV831_Datasheet_V1.0.pdf
 
 .. contents::
