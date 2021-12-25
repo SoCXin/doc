@@ -57,7 +57,7 @@ CoWare专为24K®、24KE™ 和 34K™ Pro Series内核提供的CORXpert™个�
 24KEc
 ~~~~~~~~~~~~~
 
-``1.55 DMIPS/MHz`` ``0.886mm2``
+``1.46 DMIPS/MHz`` ``0.886mm2``
 
 .. _1004KEc:
 
