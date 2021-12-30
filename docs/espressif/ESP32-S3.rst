@@ -5,7 +5,7 @@ ESP32-S3
 ================
 
 * 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE5.0`` ``USB FS OTG`` ``TWAI`` ``QFN56``
-* 代码库：`GitHub <https://github.com/SoCXin/ESP32S3>`_ , `Gitee <https://gitee.com/socxin/ESP32S3>`_
+* 代码库：`GitHub <https://github.com/SoCXin/ESP32S3>`_ , `Gitee <https://gitee.com/socxin/ESP32S3>`_ , `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html>`_
 
 .. contents::
     :local:
@@ -29,7 +29,8 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2020年12月31日
-* 发布价格：￥5.9
+* 发布价格：
+* 制程工艺：40 nm
 * 工作温度：-40°C to 105°C
 * 处理性能：613.8 :ref:`CoreMark`, 1181.6 :ref:`CoreMark` (Dual)
 * RAM容量：512 KB (TCM)
@@ -41,7 +42,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 240 MHz :ref:`xtensa_lx7` Dual Core
+* 240 MHz :ref:`esp_lx7` Dual Core
 * :ref:`esp_ulp`
 * :ref:`esp_wifi`
 * :ref:`esp_ble` v5

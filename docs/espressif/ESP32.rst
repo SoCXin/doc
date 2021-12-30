@@ -4,7 +4,9 @@ ESP32
 ===============
 
 * 关键词：``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``  ``TSMC40``
-* 资源库：`GitHub <https://github.com/SoCXin/ESP32>`_ , `Gitee <https://gitee.com/socxin/ESP32>`_
+* 资源库：`GitHub <https://github.com/SoCXin/ESP32>`_ , `Gitee <https://gitee.com/socxin/ESP32>`_ , `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-reference/index.html>`_
+
+
 
 .. contents::
     :local:
@@ -23,7 +25,8 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2016年9月
-* 供电电压：2.3 to 3.6 V
+* 发布价格：
+* 制程工艺：40 nm
 * 工作温度：-40°C to +105°C
 * 处理性能：504.85 :ref:`CoreMark`, 994.26 :ref:`CoreMark` (Dual)
 * RAM容量：520 KB (8 MB SPI)
@@ -34,7 +37,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 240 MHz :ref:`xtensa_lx6` Dual Core
+* 240 MHz :ref:`esp_lx6` Dual Core
 * 超低功耗协处理器 :ref:`esp_ulp`
 * 1T1R 802.11 b/g/n :ref:`esp_wifi`
 *  +12 dBm，–97dBm :ref:`esp_ble` v4.2
@@ -47,10 +50,13 @@ Xin简介
 * 2 x 8-bit DAC
 * `ESP-IDF <https://github.com/espressif/esp-idf>`_
 
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：2.3 to 3.6 V
+
 `datasheet <https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf>`_
-
-
-
 
 Xin选择
 -----------
@@ -60,12 +66,13 @@ Xin选择
 
 
 品牌对比
-~~~~~~~~~
+~~~~~~~~~~~
 
 对标的对手包括 Realtek 和 :ref:`mediatek`
 
-系列对比
-~~~~~~~~~
+
+型号对比
+~~~~~~~~~~~
 
 相对较早的产品ESP8266，具有更强的性能，同时集成蓝牙功能
 
@@ -98,13 +105,8 @@ Xin选择
       - NO
 
 
-型号对比
-~~~~~~~~~
-
-
-
-必选理由
-~~~~~~~~~
+版本对比
+~~~~~~~~~~~
 
 
 Xin应用

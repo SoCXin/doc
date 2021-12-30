@@ -87,21 +87,57 @@ Espressif
     ESP32 <ESP32>
     ESP32-S2 <ESP32-S2>
     ESP32-S3 <ESP32-S3>
-    ESP32-C2 <ESP32-C2>
     ESP32-C3 <ESP32-C3>
     ESP32-H2 <ESP32-H2>
+    ESP32-C2 <ESP32-C2>
 
 
 
 
-应用简介
+技术简介
 -----------
 
 .. contents::
     :local:
 
-编程开发
+内核相关
 ~~~~~~~~~~~~
+
+.. _esp_ulp:
+
+ULP
+^^^^^^^^^^^^^^
+
+.. _esp_rv32:
+
+RISC-V
+^^^^^^^^^^^^^^
+
+.. _esp_lx6:
+
+Xtensa LX6
+^^^^^^^^^^^^^^
+
+``MIPS`` ``Xtensa LX6``
+
+:ref:`xtensa_lx6`
+
+
+.. _esp_lx7:
+
+Xtensa LX7
+^^^^^^^^^^^^^^
+
+``MIPS`` ``Xtensa LX7``
+
+:ref:`xtensa_lx7`
+
+
+框架相关
+~~~~~~~~~~~~
+
+.. contents::
+    :local:
 
 .. _esp_idf:
 
@@ -120,9 +156,12 @@ Arduino
 ^^^^^^^^^^^^^^
 
 
-
-通信连接
+外设相关
 ~~~~~~~~~~~~
+
+
+.. contents::
+    :local:
 
 .. _esp_wifi:
 
@@ -148,24 +187,15 @@ TWAI
 
 .. _esp_core:
 
-Core
-~~~~~~~~~~~~
 
-
-.. _esp_ulp:
-
-ULP
-^^^^^^^^^^^^^^
-
-.. _esp_rv32:
-
-RV32
-^^^^^^^^^^^^^^
 
 .. _esp_package:
 
 封装规格
 ~~~~~~~~~~~~
+
+.. contents::
+    :local:
 
 .. _esp_qfn56:
 

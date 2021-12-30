@@ -5,7 +5,7 @@ ESP32-C3
 ================
 
 * 关键词：``RISC-V`` ``160MHz`` ``BLE5.0`` ``WiFi`` ``QFN32``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ , `Gitee <https://gitee.com/socxin/ESP32C3>`_
+* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ , `Gitee <https://gitee.com/socxin/ESP32C3>`_ , `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_
 
 .. contents::
     :local:
@@ -24,7 +24,7 @@ Xin简介
 
 * 发布时间：
 * 发布价格：
-* 制程工艺：45 nm
+* 制程工艺：40 nm
 * 工作温度：-40°C to +105°C
 * 处理性能：407.22 :ref:`CoreMark`
 * RAM容量：400 KB (TCM)
@@ -34,7 +34,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 160 MHz :ref:`riscv`
+* 160 MHz :ref:`esp_rv32`
 * Wi-Fi IEEE 802.11b/g/n
 * BLE 5.0，支持Mesh (Bluetooth Mesh)
 * TWAI 控制器
