@@ -56,6 +56,30 @@ Marlin
       -
       - QFN48
 
+.. _grblHAL:
+
+grblHAL
+-------------
+
+`grblHAL <https://github.com/grblHAL>`_ is a rewrite of grbl 1.1 aimed at 32-bit processors.
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - Package
+    * - :ref:`rp2040`
+      -
+      -
+      -
+      -
+      -
+      - QFN56
 
 
 

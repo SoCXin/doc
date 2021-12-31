@@ -28,13 +28,13 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2021年1月
+* 制程工艺：
 * 发布价格：$1.0
 * 工作温度：-40°C to +85°C/125°C
 * 处理性能：120 :ref:`DMIPS`
 * RAM容量：264 KB
 * Flash容量：128/256 KB (16MB QSPI)
-* 封装规格：:ref:`rp2040_qfn56`
-
+* 封装规格：:ref:`rp2040_qfn56` (7×7mm)
 
 特征参数
 ^^^^^^^^^^^
@@ -46,38 +46,10 @@ Xin简介
 * 30 x GPIO (4 AIN)
 * 16 PWM channels
 
-
-
 电源参数
 ^^^^^^^^^^^
 
 * 供电电压：1.71 to 3.6 V
-
-计算性能
-~~~~~~~~~~~~~~
-
-.. image:: ./images/RP2040clk.png
-    :target: https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf
-
-
-
-Xin选择
------------
-
-:ref:`rp2040` 包含两个子系列，分别为支持无晶振USB FS device的RP2040xxU系列，不支持USB的 RP2040xxN(1.8V-3.6V)/RP2040x4NR(1.8V-5.5V)。预期在Arduino和Micropython生态资源上拥有无与伦比的优势。
-
-开发资源
-~~~~~~~~~~~
-
-Arduino
-^^^^^^^^^^
-
-MicroPython
-^^^^^^^^^^^^^
-
-C++ SDK
-^^^^^^^^^^
-
 
 封装规格
 ~~~~~~~~~~~
@@ -87,13 +59,55 @@ C++ SDK
 QFN56
 ^^^^^^^^^^
 
-7 × 7 mm
-
 .. image:: ./images/RP2040qfn.png
     :target: https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf
 .. image:: ./images/RP2040p.png
     :target: https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf
 
+
+
+计算性能
+~~~~~~~~~~~
+
+.. image:: ./images/RP2040clk.png
+    :target: https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf
+
+
+芯片架构
+~~~~~~~~~~~
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+
+系列对比
+~~~~~~~~~
+
+
+版本对比
+~~~~~~~~~
+
+:ref:`rp2040` 包含两个子系列，分别为支持无晶振USB FS device的RP2040xxU系列，不支持USB的 RP2040xxN(1.8V-3.6V)/RP2040x4NR(1.8V-5.5V)。预期在Arduino和Micropython生态资源上拥有无与伦比的优势。
+
+
+开发框架
+~~~~~~~~~~~
+
+C++ SDK
+^^^^^^^^^^^^^
+Arduino
+^^^^^^^^^^^^^
+
+MicroPython
+^^^^^^^^^^^^^
 
 
 
@@ -102,6 +116,28 @@ Xin应用
 
 .. contents::
     :local:
+
+Micropython
+~~~~~~~~~~~~~~~~~~
+
+ `Editor <https://github.com/robert-hh/Micropython-Editor>`_
+
+
+logic-analyzer
+~~~~~~~~~~~~~~~~~~
+
+ `logic-analyzer <https://github.com/gamblor21/rp2040-logic-analyzer>`_
+
+grblHAL
+~~~~~~~~~~~~~~~~~~
+
+ `grblHAL <https://github.com/grblHAL/RP2040>`_
+
+.. _rp2040_usb:
+
+USB
+~~~~~~~~~~~
+
 
 .. _rp2040_pio:
 
@@ -135,10 +171,6 @@ VGA
     :target: https://datasheets.raspberrypi.org/rp2040/hardware-design-with-rp2040.pdf
 
 
-.. _rp2040_usb:
-
-USB
-~~~~~~~~~~~
 
 
 

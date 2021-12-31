@@ -83,3 +83,4 @@
 /ASR1601.html -> ASR/ASR1601.html
 /ASR6501.html -> ASR/ASR6501.html
 /ASR1802.html -> ASR/ASR1802.html
+/RDA8910.html -> H/USI8910DM.html
