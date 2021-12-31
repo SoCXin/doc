@@ -56,12 +56,12 @@ Marlin
       -
       - QFN48
 
-.. _grblHAL:
+.. _grblhal:
 
 grblHAL
 -------------
 
-`grblHAL <https://github.com/grblHAL>`_ is a rewrite of grbl 1.1 aimed at 32-bit processors.
+`grblHAL (GitHub) <https://github.com/grblHAL>`_ is a rewrite of grbl 1.1 aimed at 32-bit processors.
 
 .. list-table::
     :header-rows:  1

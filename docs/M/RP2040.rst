@@ -131,7 +131,7 @@ logic-analyzer
 grblHAL
 ~~~~~~~~~~~~~~~~~~
 
- `grblHAL <https://github.com/grblHAL/RP2040>`_
+ `grblHAL RP2040 <https://github.com/grblHAL/RP2040>`_
 
 .. _rp2040_usb:
 
