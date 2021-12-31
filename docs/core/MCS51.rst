@@ -21,3 +21,35 @@ It is an example of a complex instruction set computer, and has separate memory 
 
 参考芯片
 --------------
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Performance
+      - RAM
+      - Cache
+      - GPU
+      - SPI
+      - USB
+      - Ethernet
+      - Interface
+    * - :ref:`ch549`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`stc8`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
