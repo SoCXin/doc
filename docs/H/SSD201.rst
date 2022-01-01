@@ -4,7 +4,7 @@
 SSD201
 =============
 
-* 关键词：``SigmaStar`` ``1.2GHz`` ``Cortex-A7``
+* 关键词：``SigmaStar`` ``Cortex-A7`` ``1.2GHz``  ``Dual-core``
 * 资源库：`GitHub <https://github.com/SoCXin/SSD201>`_
 
 .. contents::
@@ -13,17 +13,59 @@ SSD201
 Xin简介
 -----------
 
+
+规格参数
+~~~~~~~~~~~
+
 SigmaStar公司的一颗高度集成的嵌入式SOC芯片。它基于arm Cortex-A7双核1.2GHz，集成了硬件H.264/H.265视频解码器、内置了DDR，内置2D图形引擎、支持TTL/mipi屏显示驱动接口内置了以太网mac和PHY等。
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2021年4月15日
+* 制程工艺：22nm
+* 发布价格：
+* 工作温度：
+* 处理性能：
+* 封装规格：LFBGA231
+
+
+特征参数
+^^^^^^^^^^^
+
+* 1.2 GHz :ref:`cortex_a7` Dual-core
+* 32 KB L1 I-cache and 32 KB L1 D-cache
+* 64 MB DDR3 SIP
+
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：
+
+
+
 
 Xin选择
 -----------
 
+.. contents::
+    :local:
 
-Xin应用
------------
 
 
-Xin总结
------------
+品牌对比
+~~~~~~~~~
+
+
+系列对比
+~~~~~~~~~~
+
+
+型号对比
+~~~~~~~~~
+
+SSD202的SIP DDR3为128MB，SSD201为64MB
 
 

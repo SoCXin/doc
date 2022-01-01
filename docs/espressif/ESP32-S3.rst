@@ -162,7 +162,7 @@ Xin选择
       - 520 KB
       - 802.11 b/g/n
       - BLE v4.2
-      - NO
+      - X
       - 100M
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
@@ -170,8 +170,8 @@ Xin选择
       - 520 KB
       - 802.11 b/g/n
       - BLE v5.0
-      - NO
-      - NO
+      - X
+      - X
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 600 DMIPS
@@ -179,7 +179,7 @@ Xin选择
       - 802.11 b/g/n
       - BLE v5.0
       - USB1.1 OTG
-      - NO
+      - X
 
 版本对比
 ~~~~~~~~~

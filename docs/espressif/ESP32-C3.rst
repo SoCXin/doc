@@ -197,7 +197,7 @@ Air101凭借OpenLuat生态，支持Lua脚本化开发，实现免编译开发，
       - 520 KB
       - 802.11 b/g/n
       - BT/BLE v4.2
-      - NO
+      - X
       - 100M
     * - :ref:`esp32s3`
       - Dual LX7
@@ -206,15 +206,15 @@ Air101凭借OpenLuat生态，支持Lua脚本化开发，实现免编译开发，
       - 802.11 b/g/n
       - BLE v5.0
       - USB1.1 OTG
-      - NO
+      - X
     * - :ref:`esp32c3`
       - RV32IMC
       - 200 DMIPS
       - 400 KB
       - 802.11 b/g/n
       - BLE v5.0
-      - NO
-      - NO
+      - X
+      - X
 
 对比ESP8266
 ^^^^^^^^^^^^

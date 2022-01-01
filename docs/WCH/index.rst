@@ -154,7 +154,7 @@ BLE ++
       - 4/1
       - 4.2(+5dBm)
       - USB H/D
-      - NO
+      - X
     * - :ref:`ch583`
       - :ref:`wch_riscv4a`
       - 32K
@@ -162,7 +162,7 @@ BLE ++
       - 4/1
       - 5.1(+5dBm)
       - 2 x USB
-      - NO
+      - X
 
 .. image:: ./images/ch5x.png
     :target: http://special.wch.cn/zh_cn/mcu/

@@ -105,7 +105,7 @@ Xin选择
       - 4
       - 4.2
       - USB H/D
-      - NO
+      - X
     * - :ref:`ch583`
       - :ref:`wch_riscv`
       - 32
@@ -113,7 +113,7 @@ Xin选择
       - 4
       - 5.1
       - 2 x USB H/D
-      - NO
+      - X
     * - :ref:`ch579`
       - :ref:`cortex_m0`
       - 32
