@@ -1,13 +1,13 @@
 
 .. _edge:
 
-Edge
+计数平台
 ============
 
 .. contents::
     :local:
 
-算法平台
+算法基础
 -----------
 
 .. _tflite:
@@ -50,8 +50,19 @@ Cube-AI
 * 5.使用经过培训的ANN处理和分析新数据
 
 
+中心平台
+-----------
+
+.. contents::
+    :local:
+
+
 边缘平台
 -----------
+
+.. contents::
+    :local:
+
 
 .. list-table::
     :header-rows:  1

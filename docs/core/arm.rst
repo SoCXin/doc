@@ -304,4 +304,4 @@ Cortex-A
     :maxdepth: 1
 
     cortexA7
-
+    cortexA53

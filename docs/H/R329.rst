@@ -28,14 +28,18 @@ Xin简介
 * 发布价格：
 * 工作温度：
 * 处理性能：
-* 封装规格：LFBGA337 (13*13*0.65mm)
+* 封装规格：LFBGA231
 
 
 特征参数
 ^^^^^^^^^^^
 
-* 1.5 GHz Cortex-A53 Dual-core
+* 1.5 GHz :ref:`cortex_a53` Dual-core
 * 32 KB L1 I-cache and 32 KB L1 D-cache
+* 256MB DDR3 SIP
+* HiFi4 DSP Dual-core
+* TZ1 AIPU 0.25TOPS @800MHz
+
 
 电源参数
 ^^^^^^^^^^^
@@ -68,6 +72,9 @@ Xin选择
 .. image:: ./images/R328.jpg
     :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=85
 
+型号对比
+~~~~~~~~~
+
 
 Xin应用
 -----------
@@ -78,7 +85,7 @@ Xin应用
 开发板
 ~~~~~~~~~~
 
-Sipeed MAIX-II
+Sipeed MAIX-II-A
 ^^^^^^^^^^^^^^^^^^^
 
 .. image:: images/B_R329.png
