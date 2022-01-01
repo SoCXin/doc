@@ -4,7 +4,7 @@
 D1
 =============
 
-* 关键词：``Allwinner`` ``RISC-V`` ``C906`` ``1.1GHz``
+* 关键词：``Allwinner`` ``RISC-V`` ``C906`` ``1.1GHz`` ``WAFT``
 * 资源库：`GitHub <https://github.com/SoCXin/D1>`_
 
 .. contents::
@@ -12,6 +12,9 @@ D1
 
 Xin简介
 -----------
+
+.. image:: ./images/D1.png
+    :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=97
 
 
 规格参数
@@ -22,8 +25,8 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2021年4月15日
-* 发布价格：
 * 制程工艺：22nm
+* 发布价格：
 * 工作温度：
 * 处理性能：
 * 封装规格：LFBGA337 (13*13*0.65mm)
@@ -32,7 +35,9 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 1.1 GHz :ref:`c906`
+* 1.1 GHz XuanTie :ref:`c906`
+* HiFi4 DSP
+* 32 KB L1 I-cache and 32 KB L1 D-cache
 
 电源参数
 ^^^^^^^^^^^

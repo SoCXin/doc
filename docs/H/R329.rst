@@ -1,0 +1,85 @@
+
+.. _R329:
+
+R329
+=============
+
+* 关键词：``Allwinner`` ``Cortex-A53`` ``1.5GHz`` ``Dual-core`` ``Tina``
+* 资源库：`GitHub <https://github.com/SoCXin/R329>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. image:: ./images/R329.jpg
+    :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=91
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2021年4月15日
+* 制程工艺：22nm
+* 发布价格：
+* 工作温度：
+* 处理性能：
+* 封装规格：LFBGA337 (13*13*0.65mm)
+
+
+特征参数
+^^^^^^^^^^^
+
+* 1.5 GHz Cortex-A53 Dual-core
+* 32 KB L1 I-cache and 32 KB L1 D-cache
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：
+
+芯片架构
+~~~~~~~~~~~
+
+
+计算性能
+~~~~~~~~~~~
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+
+品牌对比
+~~~~~~~~~
+
+
+系列对比
+~~~~~~~~~~
+
+.. image:: ./images/R328.jpg
+    :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=85
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+
+Sipeed MAIX-II
+^^^^^^^^^^^^^^^^^^^
+
+.. image:: images/B_R329.png
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.18.162553f8dQc68Z&id=653462798753&ns=1&abbucket=12#detail
