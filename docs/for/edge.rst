@@ -1,13 +1,13 @@
 
 .. _edge:
 
-计数平台
+计算平台
 ============
 
 .. contents::
     :local:
 
-算法基础
+算法框架
 -----------
 
 .. _tflite:
@@ -126,6 +126,13 @@ SoC平台
       -
       -
       - QFN88
+    * - :ref:`R329`
+      - :ref:`cortex_a53`
+      - 1.50 GHz
+      - 64MB DDR2
+      -
+      -
+      -
 
 .. toctree::
     :maxdepth: 1
@@ -135,7 +142,7 @@ SoC平台
     K510 <../H/K510>
     V831 <../H/V831>
     R329 <../H/R329>
-    SP7021 <../H/SP7021>
+    SSD201 <../H/SSD201>
 
 
 NPU平台
@@ -184,7 +191,6 @@ ARM平台
 
     BCM2835 <../H/BCM2835>
     BCM2711 <../H/BCM2711>
-    SSD201 <../H/SSD201>
     A311D <../H/A311D>
 
 MCU平台
@@ -213,4 +219,4 @@ MCU平台
     :maxdepth: 1
 
     EAI80 <../H/EAI80>
-
+    SP7021 <../H/SP7021>
