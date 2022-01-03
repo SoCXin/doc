@@ -148,10 +148,10 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - X
       - X
     * - :ref:`cortex_m3`
-      -
+      - √
       - :ref:`gd32f130`
       - :ref:`stm32f207`
-      -
+      - √
       -
       -
     * - :ref:`cortex_m4`
@@ -165,20 +165,20 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       -
       -
       -
-      -
+      - √
       - :ref:`stm32h7b0`
       - :ref:`rt1060`
     * - :ref:`riscv`
       - :ref:`ch583`
       - :ref:`ch32v103`
       - :ref:`esp32c3`
-      -
+      - √
       - :ref:`k210`
       - :ref:`D1`
     * - :ref:`mips`
       -
-      -
-      -
+      - √
+      - √
       - :ref:`esp32s3`
       - :ref:`mt7688`
       - :ref:`mt7621`
