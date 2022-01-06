@@ -40,7 +40,7 @@ Xin简介
 * :ref:`esp_ulp`
 * :ref:`esp_wifi`
 * :ref:`esp_usb`
-* :ref:`esp_twai`
+* :ref:`esp_can`
 * 4 Kbit eFuse
 * 1× 16bit DVP, 1× 8bit LCD
 * 2x 13bit SAR ADC

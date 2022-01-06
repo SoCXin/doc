@@ -41,7 +41,7 @@ Xin简介
 * 超低功耗协处理器 :ref:`esp_ulp`
 * 1T1R 802.11 b/g/n :ref:`esp_wifi`
 *  +12 dBm，–97dBm :ref:`esp_ble` v4.2
-* :ref:`esp_twai`
+* :ref:`esp_can`
 * IEEE 1588 MAC,100 Mbps
 * Host SD/eMMC/SDIO、Slave SDIO/SPI
 * 硬件加密单元AES/RSA/ECC

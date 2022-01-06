@@ -26,59 +26,59 @@ Espressif
     * - :ref:`list`
       - :ref:`esp_core`
       - :ref:`CoreMark`
-      - SRAM/ROM
-      - WiFi+BLE
-      - :ref:`esp_usb`
+      - SRAM / ROM
+      - WiFi / BLE
+      - :ref:`esp_usb` / :ref:`esp_can`
       - UART/SPI/I2C
       - ETH
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 504.8/994.2
       - 520KB/448KB
-      - 1T1R+v4.2
-      - No
+      - √ / 4.2
+      - X / √
       - 3/4/2(34P)
       - 100Mbps
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
       - 320KB/128KB
-      - v5.0
-      - FS OTG
+      - √ / X
+      - OTG / X
       - 2/4/2(43P)
-      - No
+      - X
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 613.8/1181.6
       - 512KB/384KB
-      - 1T1R+v5.0
-      - FS OTG
+      - √ / 5.0
+      - OTG / √
       - 3/4/2(44P)
-      - No
+      - X
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.2
       - 400KB/384KB
-      - 1T1R+v5.0
+      - √ / 5.0
       - No
       - 2/3/1(22P)
-      - No
+      - X / √
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
       - 300
       - 272KB/576KB
-      - 1T1R+v5.0
-      - No
+      - √ / 5.0
+      - X / √
       - 2/3/1(22P)
-      - No
+      - X
     * - :ref:`esp32h2`
       - :ref:`esp_rv32`
       -
       - 400KB/384KB
-      - v5.0
-      - No
+      - X / 5.0
+      - X
       -
-      - No
+      - X
 
 
 .. toctree::
@@ -100,18 +100,13 @@ Espressif
 .. contents::
     :local:
 
-内核相关
+.. _esp_core:
+
+内核架构
 ~~~~~~~~~~~~
 
-.. _esp_ulp:
-
-ULP
-^^^^^^^^^^^^^^
-
-.. _esp_rv32:
-
-RISC-V
-^^^^^^^^^^^^^^
+.. contents::
+    :local:
 
 .. _esp_lx6:
 
@@ -120,7 +115,7 @@ Xtensa LX6
 
 ``MIPS`` ``Xtensa LX6``
 
-:ref:`xtensa_lx6`
+基于 :ref:`xtensa_lx6` MIPS内核
 
 
 .. _esp_lx7:
@@ -130,7 +125,20 @@ Xtensa LX7
 
 ``MIPS`` ``Xtensa LX7``
 
-:ref:`xtensa_lx7`
+基于 :ref:`xtensa_lx7` MIPS内核
+
+
+.. _esp_rv32:
+
+RISC-V
+^^^^^^^^^^^^^^
+
+
+.. _esp_ulp:
+
+ULP
+^^^^^^^^^^^^^^
+
 
 
 框架相关
@@ -149,11 +157,31 @@ ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 
 .. image:: ./images/idf.png
     :target: https://docs.os-q.com/espidf.html
 
-
 .. _esp_arduino:
 
 Arduino
 ^^^^^^^^^^^^^^
+
+
+.. _esp_adf:
+
+ESP-ADF
+^^^^^^^^^^^^^^
+
+`ESP-ADF <https://github.com/espressif/esp-adf>`_  用于开发各类音频应用，还提供多种语音平台的连接服务，方便用户直连云平台开发语音产品。
+
+.. _esp_skainet:
+
+ESP-Skainet
+^^^^^^^^^^^^^^
+
+``WakeNet``
+
+`ESP-Skainet <https://github.com/espressif/esp-skainet>`_ 是乐鑫针对语音控制设备推出的智能语音助手。
+它不依赖云连接，可以完全实现离线运行，在本地乐鑫 SoC 上即可进行唤醒词检测和语音命令词（短语）识别。
+ESP-Skainet 集成多种声学算法，如语音活动检测、声学回声消除、降噪和波束成形等，提供了增强的声学性能。
+
+
 
 
 外设相关
@@ -180,12 +208,11 @@ BLE
 USB
 ^^^^^^^^^^^^^^
 
-.. _esp_twai:
+.. _esp_can:
 
 TWAI
 ^^^^^^^^^^^^^^
 
-.. _esp_core:
 
 
 
