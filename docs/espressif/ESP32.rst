@@ -120,9 +120,6 @@ Xin应用
 
 .. image:: ./images/B_ESP32.jpg
     :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.28.50e564d3axhB7j&id=624276301887&ns=1&abbucket=19
-.. contents::
-    :local:
-
 
 
 开发工具
@@ -134,15 +131,16 @@ Xin应用
 
 
 
-
-
 Xin总结
 --------------
 
 .. contents::
     :local:
 
-重点提示
+能力构建
+~~~~~~~~~~~~~
+
+要点提示
 ~~~~~~~~~~~~~
 
 烧录模式

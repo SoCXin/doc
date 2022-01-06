@@ -9,7 +9,7 @@ Espressif
 -----------
 
 .. note::
-    Espressif是一家全球化的无晶圆厂半导体公司，总部位于中国上海，主要产品为WiFi&BLE SoC和相关的物联网解决方案。
+    `Espressif <http://www.espressif.com>`_ 是一家全球化的无晶圆厂半导体公司，总部位于中国上海，主要产品为WiFi&BLE SoC和相关的物联网解决方案。
 
 `FQA <https://docs.espressif.com/_/downloads/espressif-esp-faq/zh_CN/latest/pdf/>`_
 
@@ -28,7 +28,7 @@ Espressif
       - :ref:`CoreMark`
       - SRAM / ROM
       - WiFi / BLE
-      - :ref:`esp_usb` / :ref:`esp_can`
+      - :ref:`esp_usb`/ :ref:`esp_can`
       - UART/SPI/I2C
       - ETH
     * - :ref:`esp32`
@@ -37,7 +37,7 @@ Espressif
       - 520KB/448KB
       - √ / 4.2
       - X / √
-      - 3/4/2(34P)
+      - 3/4/2(QFN48)
       - 100Mbps
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
@@ -45,7 +45,7 @@ Espressif
       - 320KB/128KB
       - √ / X
       - OTG / X
-      - 2/4/2(43P)
+      - 2/4/2(QFN48)
       - X
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
@@ -53,23 +53,23 @@ Espressif
       - 512KB/384KB
       - √ / 5.0
       - OTG / √
-      - 3/4/2(44P)
+      - 3/4/2(QFN56)
       - X
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.2
       - 400KB/384KB
       - √ / 5.0
-      - No
-      - 2/3/1(22P)
-      - X / √
+      - X
+      - 2/3/1(QFN32)
+      - X
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
       - 300
       - 272KB/576KB
       - √ / 5.0
       - X / √
-      - 2/3/1(22P)
+      - 2/3/1(QFN40)
       - X
     * - :ref:`esp32h2`
       - :ref:`esp_rv32`
@@ -210,7 +210,7 @@ USB
 
 .. _esp_can:
 
-TWAI
+CAN
 ^^^^^^^^^^^^^^
 
 
