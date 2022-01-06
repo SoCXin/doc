@@ -9,7 +9,7 @@ Espressif
 -----------
 
 .. note::
-    `Espressif <http://www.espressif.com>`_ 是一家全球化的无晶圆厂半导体公司，总部位于中国上海，主要产品为WiFi&BLE SoC和相关的物联网解决方案。
+    `乐鑫 <http://www.espressif.com>`_ 是一家全球化的无晶圆厂半导体公司，总部位于中国上海，主营WiFi&BLE AIoT SoC及相关解决方案。
 
 `FQA <https://docs.espressif.com/_/downloads/espressif-esp-faq/zh_CN/latest/pdf/>`_
 
