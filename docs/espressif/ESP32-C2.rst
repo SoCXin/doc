@@ -147,21 +147,21 @@ Xin选择
       - UART/SPI/IO
       - Package
     * - :ref:`esp32c2`
-      - RV32 @120MHz
-      - 300 :ref:`CoreMark`
+      - 120MHz
+      -
       - 272KB/576KB
       - 1024-QAM
       - v5.0
       - 1/2/14
       - QFN40
     * - :ref:`esp32c3`
-      - RV32 @160MHz
-      - 407 :ref:`CoreMark`
+      - 160MHz
+      -
       - 400KB/384KB
       - 256-QAM
       - v5.0
       - 1/3/22
-      - QFN32
+      - :ref:`esp_qfn32`
 
 
 
