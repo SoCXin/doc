@@ -94,11 +94,7 @@ Sigma-Delta
 .. contents::
     :local:
 
-通信接口
-~~~~~~~~~~~~
 
-LVDS
-^^^^^^^^^^^^
 
 独立器件
 ~~~~~~~~~~~~
@@ -121,7 +117,7 @@ MXT2088
 
 MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
 
-`官方介绍 <http://www.mxtronics.com/n107/n124/n181/n184/c692/content.html>`_
+`MXT2088资料 <http://www.mxtronics.com/n107/n124/n181/n184/c692/content.html>`_
 
 AD9481
 ^^^^^^^^^^^^
@@ -138,8 +134,7 @@ ADS4229
 
 ``12-Bit`` ``250MSPS`` ``Dual-Channel`` ``545mW`` ``VQFN64`` ``$36.30``
 
-
-`官方介绍 <https://www.ti.com.cn/product/cn/ADS4229#order-quality>`_
+`ADS4229资料 <https://www.ti.com.cn/product/cn/ADS4229#order-quality>`_
 
 
 .. list-table::
@@ -182,6 +177,12 @@ ADS4229
       - VQFN64
 
 
+通信接口
+~~~~~~~~~~~~
+
+LVDS
+^^^^^^^^^^^^
+
 集成方案
 ~~~~~~~~~~~~
 
@@ -221,11 +222,34 @@ ADS4229
 LTC2508-32
 ^^^^^^^^^^^^
 
-``32bit@1MSPS``
+``32-Bit @1MSPS`` ``24mW`` ``SAR ADC`` ``DFN24``
+
+* ±0.5ppm INL (典型值)
+* 61sps 时的 145dB 动态范围 (典型值)
+* 4ksps 时的 131dB 动态范围 (典型值)
+* 双输出 32 位 SAR ADC
+* 32 位数字滤波低噪声输出
+* 14 位差分 + 8 位共模 1Msps 无延迟输出
+
+LTC2508-32 是一款低噪声、低功率、高性能 32 位 ADC，其具有一个集成的可配置数字滤波器。
+LTC2508-32 采用单个 2.5V 工作电源，具有一个高达 ±VREF 的全差分输入范围，且 VREF 的范围从 2.5V 至 5.1V。
+LTC2508-32 支持 0V 至 VREF 的宽共模范围，从而简化了模拟信号调理要求。
+LTC2508-32 同时提供两个输出代码：(1) 一个 32 位数字滤波高精度低噪声代码；和 (2) 一个 22 位无延迟复合代码。
+可配置数字滤波器通过对来自 SAR ADC 内核的数据流实施低通滤波和降频采样以降低测量噪声，产生了 32 位滤波输出代码。
+22 位复合代码由一个代表差分电压的 14 位代码和一个代表共模电压的 8 位代码组成。
+22 位复合代码可在每个转换周期中提供，并没有延迟周期。
+可通过引脚搭接方便地针对 4 种不同的降频转换因子配置数字滤波器。
+这些配置提供一个 131dB (在 3.9ksps) 和 145dB (在 61sps) 的动态范围。数字低通滤波器放宽了对于模拟抗混迭的要求。
+采用 SYNC 引脚可以很容易地实现多个 LTC2508-32 器件的同步。
+
+`LTC2508资料 <https://www.analog.com/cn/products/ltc2508-32.html>`_
+
 
 
 集成方案
 ~~~~~~~~~~~~
+
+目前MCU集成高精度ADC，主流技术以24-Bit为主，多以SiP封装为主。
 
 .. list-table::
     :header-rows:  1
@@ -238,14 +262,6 @@ LTC2508-32
       - ADC
       - SPEC
       - Package
-    * - :ref:`cs32a039`
-      - 48 MHz
-      - 4 KB
-      - 64 KB
-      - 2
-      - :ref:`sigma_delta`
-      - 24bit
-      - LQFP64
     * - :ref:`zml165`
       - 48 MHz
       - 4 KB
@@ -262,4 +278,11 @@ LTC2508-32
       - :ref:`sigma_delta`
       - 16bit
       - LQFP48
-
+    * - :ref:`cs32a039`
+      - 48 MHz
+      - 4 KB
+      - 64 KB
+      - 2
+      - :ref:`sigma_delta`
+      - 24bit
+      - LQFP64
