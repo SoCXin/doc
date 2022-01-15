@@ -7,109 +7,8 @@ A/D转换
 .. contents::
     :local:
 
-超高速率
-------------
 
-独立器件
-~~~~~~~~~~~~
-
-参考器件
-^^^^^^^^^^^^
-
-* TI-ADS127L11 ($5.7, 400KSPS、24bit、18.6mW、120dB SNR、Δ-Σ)
-* ADI-ADAQ4001 ($20.95, 16bit、2 MSPS)
-* Maxim-MAX11214 ($39.18, 24bit、5mW、140dB SNR、32ksps Δ-Σ ADC，PGA)
-
-
-DAQ板卡
-^^^^^^^^^^^^
-
-`米联客 <https://www.uisrc.com/portal.php>`_ 数据采集卡
-
-* DAQ9481(250MSPS)
-
-AD9481 是一款8位单芯片模数转换器（ADC），专门针对高速和低功耗进行了优化。转换速率为250 MSaps，模拟输入范围1Vpp，积分非线性±0.26LSB（典型值），差分非线性±0.35LSB（典型值），在整个工作范围内都具有出色的线性度和动态性能，最高速率下功耗小于450mW。
-
-
-* DAQ4225(125MSPS)
-
-
-相关具体参数规格比较
-
-* ADS4225: Dual-Channel, 12-Bit, 125-MSPS Analog-to-Digital Converter
-* ADS4229: Dual-Channel, 12-Bit, 250-MSPS Analog-to-Digital Converter
-
-.. list-table::
-    :header-rows:  1
-
-    * - Type
-      - MSPS
-      - Resolution
-      - Interface
-      - Power
-      - Arch
-      - Package
-    * - ADS4222
-      - 65
-      - 12Bit
-      - DDR LVDS
-      - 183mW
-      - Pipeline
-      - VQFN64
-    * - ADS4225
-      - 125
-      - 12Bit
-      - DDR LVDS
-      - 183mW
-      - Pipeline
-      - VQFN64
-    * - ADS4229
-      - 250
-      - 12Bit
-      - DDR LVDS
-      - 545mW
-      - Pipeline
-      - VQFN64
-
-
-超高精度
-------------
-
-独立方案
-~~~~~~~~~~~~
-
-LTC2508-32
-^^^^^^^^^^^^
-
-``32bit@1MSPS``
-
-
-
-集成方案
-~~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`list`
-      - Core
-      - RAM
-      - Flash
-      - UART
-      - GPIO
-      - SPEC
-      - Package
-    * - :ref:`stm32g431`
-      - 170MHz
-      -
-      -
-      -
-      -
-      -
-      - LQFP48
-
-
-技术简介
+技术分类
 ------------
 
 .. contents::
@@ -189,6 +88,123 @@ Sigma-Delta
     :ref:`sigma_delta` 以时间上换极高的精度的特性，采样率都很低，但在精度达到20位以上的场合，实现了其他类型的ADC无法达到的高精度和低功耗。
 
 
+超高速率
+------------
+
+.. contents::
+    :local:
+
+独立器件
+~~~~~~~~~~~~
+
+MXT2088
+^^^^^^^^^^^^
+
+``8bit`` ``100MSPS``
+
+* 双通道8bit，100MSPS ADC
+* 低功耗，在100MSPS下，单通道功耗为90mW
+* 片内的基准和采样保持电路
+* 每个通道有475MHz的模拟带宽
+* SNR=47dB@41MHz
+* 每个通道有1Vp-p的模拟输入范围
+* 单电源电压，标准为3V，可以接受2.7V~3.6V
+* 每个通道可单独工作
+* 2的补码和偏移2进制输出
+* 输出数据对齐模式
+
+MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
+
+`官方介绍 <http://www.mxtronics.com/n107/n124/n181/n184/c692/content.html>`_
+
+AD9481
+^^^^^^^^^^^^
+
+``8bit`` ``250MSPS``
+
+`米联客DAQ9481 <https://www.uisrc.com/portal.php>`_ 数据采集卡
+
+AD9481 是一款8位单芯片模数转换器（ADC），专门针对高速和低功耗进行了优化。转换速率为250 MSaps，模拟输入范围1Vpp，积分非线性±0.26LSB（典型值），差分非线性±0.35LSB（典型值），在整个工作范围内都具有出色的线性度和动态性能，最高速率下功耗小于450mW。
+
+相关具体参数规格比较
+
+* ADS4225: Dual-Channel, 12-Bit, 125-MSPS Analog-to-Digita*Converter
+* ADS4229: Dual-Channel, 12-Bit, 250-MSPS Analog-to-Digita*Converter
+
+.. list-table::
+    :header-rows:  1
+
+    * - Type
+      - MSPS
+      - Resolution
+      - Interface
+      - Power
+      - Arch
+      - Package
+    * - ADS4222
+      - 65
+      - 12Bit
+      - DDR LVDS
+      - 183mW
+      - Pipeline
+      - VQFN64
+    * - ADS4225
+      - 125
+      - 12Bit
+      - DDR LVDS
+      - 183mW
+      - Pipeline
+      - VQFN64
+    * - ADS4229
+      - 250
+      - 12Bit
+      - DDR LVDS
+      - 545mW
+      - Pipeline
+      - VQFN64
+
+集成方案
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - SPEC
+      - Package
+    * - :ref:`stm32g431`
+      - 170MHz
+      -
+      -
+      -
+      -
+      -
+      - LQFP48
+
+
+
+超高精度
+------------
+
+.. contents::
+    :local:
+
+独立方案
+~~~~~~~~~~~~
+
+LTC2508-32
+^^^^^^^^^^^^
+
+``32bit@1MSPS``
+
+
+集成方案
+~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -225,7 +241,4 @@ Sigma-Delta
       - :ref:`sigma_delta`
       - 16bit
       - LQFP48
-
-
-
 

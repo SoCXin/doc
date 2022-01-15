@@ -253,35 +253,35 @@ Cortex-M
       - 2.42
     * - :ref:`cortex_m23`
       - 2
-      - Thumb/Thumb-2
+      - Thumb-2
       - :ref:`armv8`
       - 80
       - 0.94
       - 2.42
     * - :ref:`cortex_m3`
       - 3
-      - Thumb/Thumb-2
+      - Thumb-2
       - :ref:`armv7`
       - 80
       - 1.25
       - 3.32
     * - :ref:`cortex_m4`
       - 3
-      - Thumb/Thumb-2
+      - Thumb-2
       - :ref:`armv7`
       - 80
       - 1.25
       - 3.32
     * - :ref:`cortex_m33`
       - 3
-      - Thumb/Thumb-2
+      - Thumb-2
       - :ref:`armv8`
       - 80
       - 1.25
       - 3.32
     * - :ref:`cortex_m7`
       - 3
-      - Thumb/Thumb-2
+      - Thumb-2
       - :ref:`armv7`
       - 80
       - 2.14

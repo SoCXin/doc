@@ -82,19 +82,21 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
 .. list-table::
     :header-rows:  1
 
-    * - Classification
+    * - Rank
       - :ref:`foc`
       - :ref:`hmi`
       - :ref:`iot`
       - :ref:`edge`
       - :ref:`ulp`
       - :ref:`adc`
+      - :ref:`dac`
     * - No.1
       - :ref:`hc32m120`
       - :ref:`stm32f429`
       - :ref:`esp32`
       - :ref:`bcm2711`
       - :ref:`stm32l011`
+      - :ref:`stm32g474`
       - :ref:`stm32g474`
     * - No.2
       - :ref:`swm181`
@@ -103,6 +105,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`k210`
       - :ref:`stm32l412`
       - :ref:`stm32g431`
+      -
     * - No.3
       - :ref:`mm32spin`
       - :ref:`tkm32f499`
@@ -110,6 +113,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`v831`
       - :ref:`stm32h7b0`
       - :ref:`stm32h730`
+      -
 
 
 .. toctree::
