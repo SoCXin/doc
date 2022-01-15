@@ -17,7 +17,7 @@
     * - :ref:`NO_002` (2KB SRAM/QFN28)
       - 非常具有性价比的8051 USB方案，兼容强拥趸多
     * - :ref:`NO_003` (288KB SRAM/QFN56)
-      - 扩展性强，4x16 bit :ref:`sigma_delta` ADC(1KMSPS)
+      - 扩展性强，4x16 bit :ref:`sigma_delta` ADC(1KSPS)
     * - :ref:`NO_004`
       - 拥有5个独立12bit ADC，拥有 :ref:`stm32_hrtim`
     * - :ref:`NO_005`

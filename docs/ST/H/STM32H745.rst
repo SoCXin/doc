@@ -91,3 +91,12 @@ STM32H747
 
 * STM32H747: TFT-LCD, JPEG codec, ``MIPI-DSI``
 * STM32H745: TFT-LCD, JPEG codec, optional ``-40°C to 125°C``
+
+.. _stm32h743:
+
+STM32H743
+^^^^^^^^^^^
+
+``2424 CoreMark /1027 DMIPS``
+
+STM32H743属于STM32H7早期方案，更精简的STM32H742简配了TFT-LCD相关配置

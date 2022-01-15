@@ -38,7 +38,7 @@ Xin简介
 * WiFi 2.4GHz
 * BT/BLE v4.2
 * 6x UART
-* 4x 16 bit :ref:`sigma_delta` ADC(1KMSPS)
+* 4x 16 bit :ref:`sigma_delta` ADC(1KSPS)
 
 电源参数
 ^^^^^^^^^^^

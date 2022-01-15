@@ -27,23 +27,23 @@ HMI
       - :ref:`qt`
     * - 1
       - :ref:`esp32`
-      - yes
+      - √
       - :ref:`tkm32f499`
-      -
-      - yes
-      -
-      -
+      - X
+      - √
+      - X
+      - X
     * - 2
       - :ref:`stm32f429`
-      - yes
+      - √
       - :ref:`tkm32f499`
       -
       -
       -
-      -
+      - X
     * - 3
       - :ref:`tkm32f499`
-      -
+      - X
       - :ref:`tkm32f499`
       -
       -

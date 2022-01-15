@@ -39,7 +39,7 @@ Xin简介
 
 * 240MHz :ref:`xt804` 内置 DSP、浮点运算单元与安全引擎
 * 6x UART 高速接口
-* 4ch 16 bit :ref:`sigma_delta` ADC(1KMSPS)
+* 4ch 16-bit :ref:`sigma_delta` ADC(1KSPS)
 * 内置 Tee 安全引擎
 
 

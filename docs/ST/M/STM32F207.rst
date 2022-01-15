@@ -57,7 +57,7 @@ Xin简介
 
 .. _stm32_otg_hs:
 
-USB OTG HS
+OTG HS
 ^^^^^^^^^^^
 
 .. image:: ./images/STM32F4USB.png

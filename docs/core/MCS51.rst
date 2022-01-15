@@ -19,7 +19,7 @@ Wharton.[1][2] Intel's original versions were popular in the 1980s and early 199
 It is an example of a complex instruction set computer, and has separate memory spaces for program instructions and data.
 
 
-参考芯片
+推荐方案
 --------------
 
 

@@ -37,7 +37,7 @@ Espressif
       - 520KB/448KB
       - √ / 4.2
       - X / √
-      - 3/4/2( :ref:`esp_qfn48`)
+      - 3/4/2
       - 100Mbps
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
@@ -45,7 +45,7 @@ Espressif
       - 320KB/128KB
       - √ / X
       - OTG / X
-      - 2/4/2( :ref:`esp_qfn48`)
+      - 2/4/2
       - X
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
@@ -53,7 +53,7 @@ Espressif
       - 512KB/384KB
       - √ / 5.0
       - OTG / √
-      - 3/4/2( :ref:`esp_qfn56`)
+      - 3/4/2
       - X
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
@@ -61,7 +61,7 @@ Espressif
       - 400KB/384KB
       - √ / 5.0
       - X / √
-      - 2/3/1(QFN32)
+      - 2/3/1
       - X
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
@@ -69,7 +69,7 @@ Espressif
       - 272KB/576KB
       - √ / 5.0
       - X / X
-      - 2/3/1(QFN40)
+      - 2/3/1
       - X
     * - :ref:`esp32h2`
       - :ref:`esp_rv32`
@@ -88,8 +88,8 @@ Espressif
     ESP32-S2 <ESP32-S2>
     ESP32-S3 <ESP32-S3>
     ESP32-C3 <ESP32-C3>
-    ESP32-H2 <ESP32-H2>
     ESP32-C2 <ESP32-C2>
+    ESP32-H2 <ESP32-H2>
 
 
 
