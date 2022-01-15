@@ -68,15 +68,16 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`NO_010`
 
 .. toctree::
-    :caption: 领域速览
+    :caption: 应用速览
     :maxdepth: 1
 
-    驱动控制   <for/foc>
-    显示交互   <for/hmi>
-    通信连接   <for/iot>
-    计算平台   <for/edge>
-    电源设计   <for/pwr>
-    数模转换   <for/adc>
+    显示交互   <application/hmi>
+    通信连接   <application/iot>
+    计算平台   <application/edge>
+    电源设计   <application/pwr>
+    数模转换   <application/adc>
+    模数转换   <application/dac>
+    驱动控制   <application/foc>
 
 .. list-table::
     :header-rows:  1
@@ -240,10 +241,3 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       -
 
 
-芯问题之后的新问题
-^^^^^^^^^^^^^^^^^^^^^^
-
-
-在经历一轮芯片短缺之后，在无形的大手作用下，必然面临竞争和淘汰，这会发生在芯片设计制造等市场上游，也波及到芯片应用和产品迭代。
-
-技术驱动的产业，必然产生更多的“必须要，应该有，可以做”。
