@@ -154,6 +154,11 @@ ADC更新
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
 
 
+STM32G070
+^^^^^^^^^^^^
+
+相对STM32G030系列的8K SRAM提升到36K，更高规格配置144K SRAM的STM32G0B0
+
 替换方案
 ~~~~~~~~~
 

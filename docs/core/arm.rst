@@ -137,24 +137,6 @@ ARM11
     指令集ARMv6，8级流水线，1.25DMIPS/MHz
 
 
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`list`
-      - Core
-      - Freq
-      - RAM
-      - Flash
-      - Process
-      - Package
-    * - :ref:`bcm2835`
-      - :ref:`arm1176jz`
-      - 700 MHz
-      -
-      -
-      -
-      -
-
 
 .. _arm1176jz:
 

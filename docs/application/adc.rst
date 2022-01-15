@@ -185,6 +185,8 @@ ADS4229
 集成方案
 ~~~~~~~~~~~~
 
+目前MCU集成的ADC性能，以STM32为参考，精度可到16-Bit，速率可达5MSPS
+
 .. list-table::
     :header-rows:  1
 
