@@ -305,3 +305,4 @@ Cortex-A
 
     cortexA7
     cortexA53
+    cortexA72

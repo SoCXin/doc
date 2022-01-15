@@ -183,7 +183,6 @@ ARM平台
 .. toctree::
     :maxdepth: 1
 
-    BCM2835 <../H/BCM2835>
     BCM2711 <../H/BCM2711>
     A311D <../H/A311D>
 

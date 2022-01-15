@@ -77,7 +77,6 @@
 /V831.html -> H/V831.html
 /SP7021.html -> H/SP7021.html
 /SSD201.html -> H/SSD201.html
-/BCM2835.html -> H/BCM2835.html
 /BCM2711.html -> H/BCM2711.html
 /GW1NSR.html -> A/GW1NSR.html
 /ASR1601.html -> ASR/ASR1601.html

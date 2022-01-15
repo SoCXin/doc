@@ -4,7 +4,7 @@
 BCM2711
 =============
 
-* 关键词：``Raspberry Pi`` ``Cortex-A72`` ``1.5GHz``
+* 关键词：``Broadcom`` ``Cortex-A72`` ``Quad-Core`` ``1.8GHz``
 * 资源库：`GitHub <https://github.com/SoCXin/BCM2711>`_
 
 .. contents::
@@ -13,17 +13,61 @@ BCM2711
 Xin简介
 -----------
 
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 制程工艺：
+* 发布价格：
+* 工作温度：
+* 处理性能：
+* 封装规格：
+
+
+特征参数
+^^^^^^^^^^^
+
+* 1.8 GHz :ref:`cortex_a72` Quad-Core
+* 6x UART
+* 6x I2C
+* 5x SPI
+* 1x SDIO interface
+
 Xin选择
 -----------
 
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~
+
+系列对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+
 .. image:: ./images/rpi.png
+
+
+BCM2710
+^^^^^^^^^^^
+
+``Cortex-A53`` ``Quad-core`` ``1.0GHz``
+
+
+
 
 Xin应用
 -----------
 
-
-Xin总结
------------
-
+.. contents::
+    :local:
 
 https://datasheets.raspberrypi.org/

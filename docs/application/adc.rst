@@ -31,7 +31,7 @@ Pipeline
 
 pipeline 更适合高速中等精度的，如 100M 14bit 以上的应用。
 
- 100MHz Conversion Rate 12-bit , :ref:`sar` 就要1.4GHz的Clock，而 Pipelined ADC 只需100MHz的 Clock
+100MHz Conversion Rate 12-bit , :ref:`sar` 就要1.4GHz的Clock，而 Pipelined ADC 只需100MHz的 Clock
 
 随着工艺的进步，:ref:`sar` 和 :ref:`sigma_delta` 的速度也上来 ，Pipeline 正在全面被SAR取代，除了12bit以上且大于200MSPS
 
@@ -94,6 +94,12 @@ Sigma-Delta
 .. contents::
     :local:
 
+通信接口
+~~~~~~~~~~~~
+
+LVDS
+^^^^^^^^^^^^
+
 独立器件
 ~~~~~~~~~~~~
 
@@ -106,7 +112,7 @@ MXT2088
 * 低功耗，在100MSPS下，单通道功耗为90mW
 * 片内的基准和采样保持电路
 * 每个通道有475MHz的模拟带宽
-* SNR=47dB@41MHz
+* 47dB SNR @41MHz
 * 每个通道有1Vp-p的模拟输入范围
 * 单电源电压，标准为3V，可以接受2.7V~3.6V
 * 每个通道可单独工作
@@ -126,10 +132,15 @@ AD9481
 
 AD9481 是一款8位单芯片模数转换器（ADC），专门针对高速和低功耗进行了优化。转换速率为250 MSaps，模拟输入范围1Vpp，积分非线性±0.26LSB（典型值），差分非线性±0.35LSB（典型值），在整个工作范围内都具有出色的线性度和动态性能，最高速率下功耗小于450mW。
 
-相关具体参数规格比较
 
-* ADS4225: Dual-Channel, 12-Bit, 125-MSPS Analog-to-Digita*Converter
-* ADS4229: Dual-Channel, 12-Bit, 250-MSPS Analog-to-Digita*Converter
+ADS4229
+^^^^^^^^^^^^
+
+``12-Bit`` ``250MSPS`` ``Dual-Channel`` ``545mW`` ``VQFN64`` ``$36.30``
+
+
+`官方介绍 <https://www.ti.com.cn/product/cn/ADS4229#order-quality>`_
+
 
 .. list-table::
     :header-rows:  1
@@ -157,11 +168,19 @@ AD9481 是一款8位单芯片模数转换器（ADC），专门针对高速和低
       - VQFN64
     * - ADS4229
       - 250
-      - 12Bit
+      - 12-Bit
       - DDR LVDS
       - 545mW
       - Pipeline
       - VQFN64
+    * - ADS4249
+      - 250
+      - 14-Bit
+      - DDR LVDS
+      - 545mW
+      - Pipeline
+      - VQFN64
+
 
 集成方案
 ~~~~~~~~~~~~
