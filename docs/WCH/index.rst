@@ -172,6 +172,7 @@ BLE ++
 .. contents::
     :local:
 
+
 MCS51
 ~~~~~~~~~~~~
 .. note::
@@ -240,6 +241,16 @@ Cortex
 RISC-V
 ~~~~~~~~~~~~
 
+.. toctree::
+    :maxdepth: 1
+
+    内核版本  <riscv>
+
+* 2017年开始关注并研究RISC-V开源指令集的32位MCU架构，针对快速中断响应、高带宽数据DMA进行优化。形成了侧重于低功耗或高性能等多版本的RISC-V处理器
+* 2019年推出基于RISC-V3A处理器的CH32V103单片机，内嵌BLE低功耗蓝牙的CH57X系列
+* 2020年初推出128位数据宽度和双层DMA架构的高吞吐量的CH56X系列，现已扩展出浮点型V4F，精简型V2A，增强型V3A/V4A/V4B/V4C等内核产品
+
+
 .. image:: ./images/CH32V.png
     :target: http://special.wch.cn/zh_cn/mcu/
 
@@ -247,7 +258,6 @@ RISC-V
 .. toctree::
     :maxdepth: 1
 
-    内核版本  <riscv>
     CH32V103 <CH32V103>
     CH32V307 <CH32V307>
     CH32V208 <CH32V208>

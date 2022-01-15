@@ -4,7 +4,7 @@
 CH569
 ===========
 
-* 关键词：``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``1G-Ethernet`` ``EMMC``
+* 关键词：``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``Ethernet`` ``EMMC``
 * 资源库：`GitHub <https://github.com/SoCXin/CH569>`_
 
 .. contents::
@@ -22,12 +22,16 @@ Xin简介
 规格配置
 ~~~~~~~~~~~
 
-:ref:`wch_riscv3a` 支持RISC-V指令的IMAC子集。片上采取 128 位数据宽度的 DMA 以支持多个高速外设的高带宽需求，实现大数据量的高速传输。外设包括 USB3.0 超速、USB2.0高速主机和设备控制器及收发器 PHY、千兆以太网控制器、专用高速 SerDes 控制器及收发器 PHY、SD/EMMC接口控制器、加解密模块、高速并行接口、数字视频接口 DVP 等，可广泛应用于流媒体、即时存储、超高速 FIFO、通讯延长、安防监控等应用场景。
+:ref:`wch_riscv3a` 支持RISC-V指令的IMAC子集。
+片上采取 128 位数据宽度的 DMA 以支持多个高速外设的高带宽需求，实现大数据量的高速传输。
+外设包括 USB3.0 超速、USB2.0高速主机和设备控制器及收发器 PHY、千兆以太网控制器、专用高速 SerDes 控制器及收发器 PHY、SD/EMMC接口控制器、加解密模块、高速并行接口、数字视频接口 DVP 等，可广泛应用于流媒体、即时存储、超高速 FIFO、通讯延长、安防监控等应用场景。
 
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
+* 制程工艺：
+* 发布价格：
 * 工作温度：-20 °C to 85 °C
 * 处理性能：145 :ref:`DMIPS`
 * RAM容量：16 KB + 32/64/96 KB
@@ -35,7 +39,7 @@ Xin简介
 * 封装规格：:ref:`wch_qfn68`
 
 .. hint::
-    :ref:`ch569` 型号目前无QFN40封装
+    :ref:`ch569` 型号目前并无QFN40封装
 
 
 特征参数
@@ -73,13 +77,42 @@ Xin简介
 SerDes
 ^^^^^^^^^^^
 
+SerDes是Serializer/Deserializer的缩写，即串行器和解串器，顾名思义是一种将并行数据转换成串行数据发送，将接收的串行数据转换成并行数据的”器件“。
+
+SerDes主要具有以下优点：
+
+* 减少布线冲突（串行，并且无单独的时钟线，时钟嵌入在数据流中，从而也解决了限制数据传输速率的信号时钟偏移问题）；
+* 抗噪声、抗干扰能力强（差分传输）；
+* 降低开关噪声；
+* 扩展能力强；
+* 更低的功耗和封装成本；
+
+SerDes有四种架构：1）并行时钟SerDes；2）嵌入式时钟SerDes；3）8b/10b编码SerDes；4）位交错SerDes。
+
+`基础知识 <https://www.cnblogs.com/rouwawa/p/13524703.html>`_
+
+
 .. _wch_hspi:
 
 HSPI
 ^^^^^^^^^^^
 
-HSPI接口通讯FPGA功能
+HSPI接口通讯可比拟FPGA功能，最典型的应用场景是获取高速ADC器件数据 :ref:`adc`
 
+
+封装规格
+~~~~~~~~~~~
+
+ :ref:`ch569` 目前仅有一个封装规格，而 :ref:`ch565` 具有QFN68/QFN40
+
+.. _wch_qfn68:
+
+QFN68
+^^^^^^^^^^^
+
+* 封装尺寸 8x8mm ，pitch 0.4mm
+
+.. image:: ./images/CH569p68.png
 
 
 
@@ -114,20 +147,6 @@ CH565
 .. image:: ./images/CH569p40.png
 
 
-封装规格
-~~~~~~~~~~~
-
- :ref:`ch569` 目前仅有一个封装规格，而 :ref:`ch565` 具有QFN68/QFN40
-
-.. _wch_qfn68:
-
-QFN68
-^^^^^^^^^^^
-
-* 封装尺寸 8x8mm ，pitch 0.4mm
-
-.. image:: ./images/CH569p68.png
-
 
 
 Xin应用
@@ -147,7 +166,7 @@ CH569W-R0-1V0
     :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c262e8d9Mj4QY&id=659151805793&_u=kgas3eu034d
 
 
-官方方案
+官方示例
 ~~~~~~~~~~
 
 `USB3.0超高速U盘 <http://www.wch.cn/application/532.html>`_ ，CH569配有EMMC卡控制器和USB3.0 OTG控制器及收发器，通过EMMC接口挂载SD/TF/EMMC卡后即可具备U盘设计的基本物理资源。
@@ -157,7 +176,7 @@ CH569W-R0-1V0
 实测使用一款16G EMMC卡作为存储介质(工作在HS200模式下)，在Win10平台下进行大数据拷贝，读出速度不低于90MB/s，写入速度不低于40MB/s
 
 .. hint::
-    这个方案的速率连USB HS的性能都远远没发挥出来！
+    这个方案测试速率连USB-HS的性能都远远没发挥出来！
 
 
 Xin总结
