@@ -119,22 +119,34 @@ MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
 
 `MXT2088资料 <http://www.mxtronics.com/n107/n124/n181/n184/c692/content.html>`_
 
+
+
+
 AD9481
 ^^^^^^^^^^^^
 
 ``8bit`` ``250MSPS``
 
-`米联客DAQ9481 <https://www.uisrc.com/portal.php>`_ 数据采集卡
+`米联客数据采集卡DAQ9481 <https://www.uisrc.com/portal.php>`_
 
 AD9481 是一款8位单芯片模数转换器（ADC），专门针对高速和低功耗进行了优化。转换速率为250 MSaps，模拟输入范围1Vpp，积分非线性±0.26LSB（典型值），差分非线性±0.35LSB（典型值），在整个工作范围内都具有出色的线性度和动态性能，最高速率下功耗小于450mW。
+
+AD9767
+^^^^^^^^^^^^
+
+``14bit`` ``125MSPS`` ``Dual-Channel`` ``75dBc`` ``LQFP48`` ``$21.70``
+
+`AD9767芯片 <https://www.analog.com/cn/products/ad9767.html#product-overview>`_
+
+`米联客数据采集卡 <https://www.uisrc.com/portal.php?mod=view&aid=330>`_
 
 
 ADS4229
 ^^^^^^^^^^^^
 
-``12-Bit`` ``250MSPS`` ``Dual-Channel`` ``545mW`` ``VQFN64`` ``$36.30``
+``12bit`` ``250MSPS`` ``Dual-Channel`` ``545mW`` ``VQFN64`` ``$36.30``
 
-`ADS4229资料 <https://www.ti.com.cn/product/cn/ADS4229#order-quality>`_
+`ADS4229芯片 <https://www.ti.com.cn/product/cn/ADS4229#order-quality>`_
 
 
 .. list-table::

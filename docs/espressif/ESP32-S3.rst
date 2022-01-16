@@ -49,7 +49,7 @@ Xin简介
 * 1 × 16bit DVP, 1 × 16bit LCD
 * 2 × SDIO 主机
 * 44 x GPIO，JTAG 接口
-* 2x 12bit ADC (20ch)
+* 2x 12bit 100KSPS ADC (20ch)
 
 ESP32-S3 增加了用于加速神经网络计算和信号处理等工作的向量指令 (vector instructions)
 
