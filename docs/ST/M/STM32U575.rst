@@ -4,7 +4,7 @@
 STM32U575
 ===============
 
-* 关键词：``Cortex-M33`` ``160MHz``
+* 关键词：``Cortex-M33`` ``160MHz`` ``2.5MSPS-14bit-ADC`` ``USB FS OTG`` ``USB PD`` ``512B OTP``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32U575>`_
 
 .. contents::
@@ -27,8 +27,9 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
-* 制程工艺：40nm
-* 工作温度：-40°C to +125°C
+* 制程工艺：
+* 发布价格：
+* 工作温度：-40°C to 85/125°C
 * 处理性能：240 :ref:`DMIPS`, 651 :ref:`CoreMark`
 * RAM容量：786 KB
 * Flash容量：1/2 MB
@@ -41,6 +42,8 @@ Xin简介
 * 535 :ref:`ulp_cp`
 * 149 :ref:`ulp_pp`
 * 133000 SecureMark-TLS
+* 2x 12bit DAC
+* 2x PGA
 
 电源参数
 ^^^^^^^^^^^
@@ -49,9 +52,38 @@ Xin简介
 * 运行功耗: 19 µA/MHz
 
 
-
 Xin选择
 -----------
 
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+系列对比
+~~~~~~~~~
+
 .. image:: ./images/stm32u5_series.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32u5-series.html
+
+
+版本对比
+~~~~~~~~~
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+硬件平台
+~~~~~~~~~~~~~
+
+NUCLEO-U575ZI-Q
+^^^^^^^^^^^^^^^^^^
+
+.. image:: ./images/B_STM32U575.png
+    :target: https://item.taobao.com/item.htm?spm=a1z0d.6639537.1997196601.310.4dd27484uTziYx&id=659070612428
