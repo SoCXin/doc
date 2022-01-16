@@ -22,8 +22,6 @@ Xin简介
 规格配置
 ~~~~~~~~~~~
 
-.. hint::
-    2020年12月发布，预计2021年8月开始供货
 
 基本参数
 ^^^^^^^^^^^
@@ -44,8 +42,7 @@ Xin简介
 
 * 240 MHz :ref:`esp_lx7` Dual Core
 * :ref:`esp_ulp`
-* :ref:`esp_wifi`
-* :ref:`esp_ble` v5
+* :ref:`esp_wifi` + :ref:`esp_ble`
 * :ref:`esp_usb`
 * :ref:`esp_can`
 * 4 Kbit eFuse
@@ -60,6 +57,14 @@ ESP32-S3 增加了用于加速神经网络计算和信号处理等工作的向�
 ^^^^^^^^^^^
 
 * 供电电压：2.3 to 3.6 V
+
+外设资源
+~~~~~~~~~~~~~~
+
+.. _esp_eFuse:
+
+eFuse
+^^^^^^^^^^^^^^
 
 
 安全特性
@@ -127,7 +132,7 @@ Xin选择
     * - :ref:`w801`
       - 300 :ref:`DMIPS`
       - 288KB/2MB
-      - 16 bit :ref:`sigma_delta` ADC
+      - 16-bit ADC
       - 6/2/1
       - QFN56
     * - :ref:`w806`
@@ -192,7 +197,7 @@ Xin应用
 .. contents::
     :local:
 
-探索套件
+硬件平台
 ~~~~~~~~~
 
 ESP32-S3-BOX
@@ -213,8 +218,21 @@ ESP32-S3-BOX
 开发框架
 ~~~~~~~~~
 
+ESP-IDF
+^^^^^^^^^^^
 
-支持ESP32-S3需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
+需要release/v4.3以上版本 :ref:`esp_idf` ，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
+
+.. _esp_skainet:
+
+ESP-Skainet
+^^^^^^^^^^^^^^
+
+``WakeNet``
+
+`ESP-Skainet <https://github.com/espressif/esp-skainet>`_ 是乐鑫针对语音控制设备推出的智能语音助手。
+它不依赖云连接，可以完全实现离线运行，在本地乐鑫 SoC 上即可进行唤醒词检测和语音命令词（短语）识别。
+ESP-Skainet 集成多种声学算法，如语音活动检测、声学回声消除、降噪和波束成形等，提供了增强的声学性能。
 
 
 

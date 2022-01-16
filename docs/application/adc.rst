@@ -286,3 +286,25 @@ LTC2508-32 同时提供两个输出代码：(1) 一个 32 位数字滤波高精�
       - :ref:`sigma_delta`
       - 24bit
       - LQFP64
+
+
+Audio ADC
+------------
+
+.. contents::
+    :local:
+
+
+技术特点
+~~~~~~~~~~~~
+
+
+ES7210
+^^^^^^^^^^^^
+
+``24-bit`` ``102dB`` ``4 Channel`` ``400 kbps`` ``QFN32`` ``￥4.0``
+
+`Everest-semi <http://www.everest-semi.com/cn_products.php>`_
+
+
+

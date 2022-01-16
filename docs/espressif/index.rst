@@ -122,7 +122,17 @@ Xtensa LX7
 
 ``MIPS`` ``Xtensa LX7``
 
-基于 :ref:`xtensa_lx7` MIPS内核
+基于 :ref:`xtensa_lx7` MIPS内核，五级流水线架构，支持高达 240 MHz 的时钟频率
+
+* 16 位/24 位指令集提供高代码密度
+* 32 位定制化指令集及 128 位宽数据总线，提供高运算性能
+* 支持单精度浮点运算单元 (FPU)
+* 支持 32 位乘法器、32 位除法器
+* 非缓存 GPIO 指令
+* 支持六级 32 个中断
+* 支持 windowed ABI，64 个物理通用寄存器
+* 支持带 TRAX 压缩模块的 trace 功能，最大 16 KB 的记录存储器 (trace memory)
+* 用于调试的 JTAG 接口
 
 
 .. _esp_rv32:
@@ -135,6 +145,9 @@ RISC-V
 
 ULP
 ^^^^^^^^^^^^^^
+
+``RISC-V`` ``8KB SRAM`` ``17.5MHz``
+
 
 
 
@@ -167,16 +180,17 @@ ESP-ADF
 
 `ESP-ADF <https://github.com/espressif/esp-adf>`_  用于开发各类音频应用，还提供多种语音平台的连接服务，方便用户直连云平台开发语音产品。
 
-.. _esp_skainet:
 
-ESP-Skainet
+.. _esp_now:
+
+ESP-NOW
 ^^^^^^^^^^^^^^
 
-``WakeNet``
+`ESP-NOW简介 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/network/esp_now.html>`_
 
-`ESP-Skainet <https://github.com/espressif/esp-skainet>`_ 是乐鑫针对语音控制设备推出的智能语音助手。
-它不依赖云连接，可以完全实现离线运行，在本地乐鑫 SoC 上即可进行唤醒词检测和语音命令词（短语）识别。
-ESP-Skainet 集成多种声学算法，如语音活动检测、声学回声消除、降噪和波束成形等，提供了增强的声学性能。
+由乐鑫定义的 Wi-Fi 通信协议，采用 CCMP 方法保护供应商特定动作帧的安全，ESP-NOW 广泛应用于智能照明、远程控制、传感器等领域。
+
+
 
 
 
@@ -198,16 +212,6 @@ WiFi
 .. _esp_ble:
 
 BLE
-^^^^^^^^^^^^^^
-
-.. _esp_usb:
-
-USB
-^^^^^^^^^^^^^^
-
-.. _esp_can:
-
-CAN
 ^^^^^^^^^^^^^^
 
 
