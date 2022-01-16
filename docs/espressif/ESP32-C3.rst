@@ -177,9 +177,6 @@ Air101凭借OpenLuat生态，支持Lua脚本化开发，实现免编译开发，
 型号对比
 ~~~~~~~~~
 
-.. contents::
-    :local:
-
 .. list-table::
     :header-rows:  1
 
@@ -195,24 +192,24 @@ Air101凭借OpenLuat生态，支持Lua脚本化开发，实现免编译开发，
       - Dual LX6
       - 600 DMIPS
       - 520 KB
-      - 802.11 b/g/n
-      - BT/BLE v4.2
+      - √
+      - v4.2
       - X
       - 100M
     * - :ref:`esp32s3`
       - Dual LX7
       - 600 DMIPS
       - 512 KB
-      - 802.11 b/g/n
-      - BLE v5.0
+      - √
+      - v5.0
       - USB1.1 OTG
       - X
     * - :ref:`esp32c3`
       - RV32IMC
       - 200 DMIPS
       - 400 KB
-      - 802.11 b/g/n
-      - BLE v5.0
+      - √
+      - v5.0
       - X
       - X
 
@@ -300,7 +297,7 @@ WiFi Mesh
 LittlevGL
 ^^^^^^^^^^^
 
-ESP32-C3支持QSPI 适合4.3寸以下，SPI QSPI，MCU（8080）接口的屏。
+ESP32-C3支持 :ref:`littlevgl` ，适配QSPI和8080接口的屏(QSPI适合4.3寸以下)。
 
 
 开源方案

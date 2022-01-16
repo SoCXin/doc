@@ -77,7 +77,7 @@ Espressif
       - 400KB/384KB
       - X / 5.0
       - X / X
-      - 3/4/2( :ref:`esp_qfn32`)
+      - 3/4/2
       - X
 
 
@@ -96,9 +96,6 @@ Espressif
 
 技术简介
 -----------
-
-.. contents::
-    :local:
 
 .. _esp_core:
 
@@ -141,11 +138,17 @@ ULP
 
 
 
-框架相关
+开发框架
 ~~~~~~~~~~~~
 
 .. contents::
     :local:
+
+.. _esp_arduino:
+
+Arduino
+^^^^^^^^^^^^^^
+
 
 .. _esp_idf:
 
@@ -156,12 +159,6 @@ ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 
 
 .. image:: ./images/idf.png
     :target: https://docs.os-q.com/espidf.html
-
-.. _esp_arduino:
-
-Arduino
-^^^^^^^^^^^^^^
-
 
 .. _esp_adf:
 

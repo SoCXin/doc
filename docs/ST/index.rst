@@ -10,7 +10,7 @@ ST
 -----------
 
 .. note::
-    意法半导体ST是全球最大的半导体公司之一，是MCU领域的王者，其产品系列丰富应用广泛，拥有庞大的工程师群众基础和开发资源。
+    意法半导体是全球最大的半导体公司之一，MCU领域的王者，其产品拥有庞大的工程师群众基础和开发资源。
 
 
 产品简介
@@ -130,8 +130,8 @@ ST
 .. toctree::
     :maxdepth: 1
 
-    BLE SoC: STM32WB55 <M/STM32WB55>
-    LoRa SoC: STM32WLE5 <M/STM32WLE5>
+    BLE: STM32WB55 <M/STM32WB55>
+    LoRa: STM32WLE5 <M/STM32WLE5>
 
 
 .. _stm32ulp:
