@@ -186,6 +186,10 @@ Xin选择
       - USB1.1 OTG
       - X
 
+`芯片系列对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
+
+
+
 版本对比
 ~~~~~~~~~
 

@@ -25,8 +25,9 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
+* 官方价格：$0.8
 * 制程工艺：90 nm
-* 工作温度：-40°C to +125°C
+* 工作温度：-40°C to 85°C/105°C/125°C
 * 处理性能：59 :ref:`DMIPS`, 142 :ref:`CoreMark`
 * RAM容量：8 KB
 * Flash容量：32/64 KB
@@ -87,6 +88,7 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
+STM32G0系列产品，就性能和市场定位而言，十分精准，弥补了STM32F0的性能不足和模拟外设过弱，让低阶MCU同各种SoC芯片相比再次具备竞争力。
 
 系列对比
 ~~~~~~~~~
@@ -98,7 +100,18 @@ Xin选择
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
 .. warning::
-    对比  :ref:`stm32g030` 多了 :ref:`stm32_lpuart` 和  :ref:`stm32_lptim` ，内部高速时钟精度可达1%，同时拥有更多可选的型号
+    STM32G0X1系列对比 :ref:`stm32g030` 多了 :ref:`stm32_lpuart` 和  :ref:`stm32_lptim` ，内部高速时钟精度可达1%，同时拥有更多可选的型号
+
+.. _stm32g0c1:
+
+STM32G0C1
+^^^^^^^^^^^^
+
+.. image:: ./images/STM32G0C1.jpg
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g0-series/stm32g0x1/stm32g0c1ce.html
+
+STM32G0C1是STM32G0系列中配置最齐全，外设最丰富的产品，相对STM32G0B1具有AES256和RNG外设，相对STM32G031系列配置的USB和CAN能够满足常用通信场景，和STM32F1系列功能具有交叠。
+
 
 型号对比
 ~~~~~~~~~
