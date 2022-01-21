@@ -1,0 +1,76 @@
+
+.. _S3:
+
+S3
+=============
+
+* 关键词：``Cortex-A7`` ``1.2GHz``
+* 资源库：`GitHub <https://github.com/SoCXin/S3>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. image:: ./images/V831.png
+    :target: https://linux-sunxi.org/images/b/b9/V833%EF%BC%8FV831_Datasheet_V1.0.pdf
+
+.. contents::
+    :local:
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 发布价格：
+* 工作温度：-40°C to +85°C
+* 封装规格：
+* 处理性能：
+* RAM容量：64MB DDR2
+* Flash容量：
+
+
+特征参数
+^^^^^^^^^^^
+
+* 1.2GHz :ref:`cortex_a7`
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：2.0 to 3.6 V
+
+
+芯片架构
+~~~~~~~~~~~
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+系列对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+

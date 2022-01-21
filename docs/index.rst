@@ -199,7 +199,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
     微控制器芯片领域的王者 @ST <ST/index>
     专注设备连接和接口扩展 @WCH <WCH/index>
     WiFi &AIoT无线解决方案 @Espressif <espressif/index>
-    高性能高带宽多核通信SoC @MediaTek  <MediaTek/index>
+    高性能基带&网关路由SoC @MediaTek  <MediaTek/index>
     高性能多媒体应用处理器 @allwinner  <allwinner/index>
     基于Cortex-M4的高性价 @ArteryTek <arterytek/index>
     基于LoRa/Cat1长距网络 @ASR <ASR/index>
@@ -226,7 +226,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`asr1601`
       - :ref:`mt7621`
       - :ref:`at32f437`
-      -
+      - :ref:`D1`
     * - 经典作品
       - :ref:`stm32f103`
       - :ref:`ch579`
@@ -234,15 +234,15 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`asr6501`
       - :ref:`mt7688`
       - :ref:`at32f421`
-      -
+      - :ref:`S3`
     * - 畅销作品
       - :ref:`stm32g030`
       - :ref:`ch554`
       - :ref:`esp32c3`
       - :ref:`asr1802`
       - :ref:`mt2625`
-      -
-      -
+      - :ref:`at32f403`
+      - :ref:`v831`
     * - 集大成者
       - :ref:`stm32mp15`
       - :ref:`ch32f208`
