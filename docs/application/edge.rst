@@ -131,11 +131,11 @@ SoC平台
 .. toctree::
     :maxdepth: 1
 
-    D1  <../H/D1>
+    D1  <../allwinner/D1>
+    V831 <../allwinner/V831>
+    R329 <../allwinner/R329>
     K210 <../H/K210>
     K510 <../H/K510>
-    V831 <../H/V831>
-    R329 <../H/R329>
     SSD201 <../H/SSD201>
 
 

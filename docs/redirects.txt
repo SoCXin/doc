@@ -74,7 +74,9 @@
 /EAI80.html -> H/EAI80.html
 /K210.html -> H/K210.html
 /K510.html -> H/K510.html
-/V831.html -> H/V831.html
+/V831.html -> allwinner/V831.html
+/R329.html -> allwinner/R329.html
+/D1.html -> allwinner/D1.html
 /SP7021.html -> H/SP7021.html
 /SSD201.html -> H/SSD201.html
 /BCM2711.html -> H/BCM2711.html

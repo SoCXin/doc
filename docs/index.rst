@@ -198,14 +198,15 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
 
     微控制器芯片领域的王者 @ST <ST/index>
     专注设备连接和接口扩展 @WCH <WCH/index>
-    WiFi AIoT无线解决方案 @Espressif <espressif/index>
-    基于LoRa/Cat1长距网络 @ASR <ASR/index>
-    高性能高带宽及路由设备 @MediaTek  <MediaTek/index>
+    WiFi &AIoT无线解决方案 @Espressif <espressif/index>
+    高性能高带宽多核通信SoC @MediaTek  <MediaTek/index>
+    高性能多媒体应用处理器 @allwinner  <allwinner/index>
     基于Cortex-M4的高性价 @ArteryTek <arterytek/index>
+    基于LoRa/Cat1长距网络 @ASR <ASR/index>
 
 收录汇整具有代表性厂商，对用户开放程度高，覆盖的解决方案比较全，通过汇总提供更精炼方案。
 
-在国产单片机领域，鄙人想向大家推荐两家非常具有代表性的厂商： ``倚天ESP，屠龙WCH``。
+在国产单片机领域，鄙人向大家推荐两家非常典型的厂商： ``倚天ESP，屠龙WCH``
 
 .. list-table::
     :header-rows:  1
@@ -217,6 +218,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`asr`
       - :ref:`mediatek`
       - :ref:`arterytek`
+      - :ref:`allwinner`
     * - 最新作品
       - :ref:`stm32u575`
       - :ref:`ch32v307`
@@ -224,6 +226,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`asr1601`
       - :ref:`mt7621`
       - :ref:`at32f437`
+      -
     * - 经典作品
       - :ref:`stm32f103`
       - :ref:`ch579`
@@ -231,6 +234,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`asr6501`
       - :ref:`mt7688`
       - :ref:`at32f421`
+      -
     * - 畅销作品
       - :ref:`stm32g030`
       - :ref:`ch554`
@@ -238,9 +242,11 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`asr1802`
       - :ref:`mt2625`
       -
+      -
     * - 集大成者
       - :ref:`stm32mp15`
       - :ref:`ch32f208`
+      -
       -
       -
       -
