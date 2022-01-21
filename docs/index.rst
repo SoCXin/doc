@@ -196,14 +196,16 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
     :caption: 品牌速览
     :maxdepth: 1
 
-    微控制器 @ST <ST/index>
-    有线连接 @WCH <WCH/index>
-    无线连接 @Espressif <espressif/index>
-    蜂窝网络 @ASR <ASR/index>
-    路由节点 @MediaTek  <MediaTek/index>
-    种子选手 @ArteryTek <arterytek/index>
+    微控制器芯片领域的王者 @ST <ST/index>
+    专注设备连接和接口扩展 @WCH <WCH/index>
+    WiFi AIoT无线解决方案 @Espressif <espressif/index>
+    基于LoRa/Cat1长距网络 @ASR <ASR/index>
+    高性能高带宽及路由设备 @MediaTek  <MediaTek/index>
+    基于Cortex-M4的高性价 @ArteryTek <arterytek/index>
 
 收录汇整具有代表性厂商，对用户开放程度高，覆盖的解决方案比较全，通过汇总提供更精炼方案。
+
+在国产单片机领域，鄙人想向大家推荐两家非常具有代表性的厂商： ``倚天ESP，屠龙WCH``。
 
 .. list-table::
     :header-rows:  1
