@@ -34,7 +34,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
     旗舰小贵干啥都行 <news/top>
     难以拒绝低价好货 <news/low>
     封装紧凑功能强大 <news/sip>
-    性能中庸供应稳定 <news/stable>
+    定位中庸供应稳定 <news/stable>
 
 .. list-table::
     :header-rows:  1
@@ -53,23 +53,23 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`stm32h730`
       - :ref:`stc8`
       - :ref:`ch579`
-      -
+      - :ref:`gd32f130`
       - :ref:`NO_008`
     * - Top.2
       - :ref:`rp2040`
       - :ref:`esp32`
       - :ref:`stm32h745`
       - :ref:`ch552`
-      - :ref:`ch32v307`
-      -
+      - :ref:`zml165`
+      - :ref:`gd32e230`
       - :ref:`NO_013`
     * - Top.3
       - :ref:`stm32f401`
       - :ref:`nrf52832`
       - :ref:`rt1060`
       - :ref:`esp32c3`
-      - :ref:`zml165`
-      -
+      - :ref:`ch32v307`
+      - :ref:`mm32f031`
       - :ref:`NO_010`
 
 .. toctree::
@@ -178,6 +178,20 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - √
       - :ref:`stm32h7b0`
       - :ref:`rt1060`
+    * - :ref:`cortex_r`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`cortex_a`
+      -
+      -
+      -
+      -
+      -
+      -
     * - :ref:`riscv`
       - :ref:`ch583`
       - :ref:`ch32v103`
@@ -186,7 +200,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`k210`
       - :ref:`D1`
     * - :ref:`mips`
-      -
+      - X
       - √
       - √
       - :ref:`esp32s3`
@@ -206,7 +220,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
     WiFi &AIoT无线解决方案 @Espressif <espressif/index>
     高性能基带网关路由SoC @MediaTek  <MediaTek/index>
     高性能多媒体应用处理器 @Allwinner  <allwinner/index>
-    基于Cortex-M4的高性价 @ArteryTek <arterytek/index>
+    专注Cortex-M4核高性价 @ArteryTek <arterytek/index>
     基于LoRa/Cat1长距网络 @ASR <ASR/index>
 
 收录汇整具有代表性厂商，对用户开放程度高，覆盖的解决方案比较全，通过汇总提供更精炼方案。
@@ -227,7 +241,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
     * - 最新作品
       - :ref:`stm32u575`
       - :ref:`ch32v307`
-      - :ref:`esp32s3`
+      - :ref:`esp32h2`
       - :ref:`asr1601`
       - :ref:`mt7621`
       - :ref:`at32f437`
@@ -242,19 +256,19 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`S3`
     * - 畅销作品
       - :ref:`stm32g030`
-      - :ref:`ch554`
+      - :ref:`ch549`
       - :ref:`esp32c3`
       - :ref:`asr1802`
       - :ref:`mt2625`
       - :ref:`at32f403`
-      - :ref:`v831`
+      - :ref:`R329`
     * - 集大成者
       - :ref:`stm32mp15`
-      - :ref:`ch32f208`
+      - :ref:`ch569`
+      - :ref:`esp32s3`
       -
       -
       -
-      -
-      -
+      - :ref:`v831`
 
 
