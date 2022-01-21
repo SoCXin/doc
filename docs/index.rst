@@ -34,6 +34,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
     旗舰小贵干啥都行 <news/top>
     难以拒绝低价好货 <news/low>
     封装紧凑功能强大 <news/sip>
+    性能中庸供应稳定 <news/stable>
 
 .. list-table::
     :header-rows:  1
@@ -44,6 +45,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`top`
       - :ref:`low`
       - :ref:`sip`
+      - :ref:`stable`
       - :ref:`list`
     * - Top.1
       - :ref:`esp32`
@@ -51,6 +53,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`stm32h730`
       - :ref:`stc8`
       - :ref:`ch579`
+      -
       - :ref:`NO_008`
     * - Top.2
       - :ref:`rp2040`
@@ -58,6 +61,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`stm32h745`
       - :ref:`ch552`
       - :ref:`ch32v307`
+      -
       - :ref:`NO_013`
     * - Top.3
       - :ref:`stm32f401`
@@ -65,6 +69,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
       - :ref:`rt1060`
       - :ref:`esp32c3`
       - :ref:`zml165`
+      -
       - :ref:`NO_010`
 
 .. toctree::
@@ -199,8 +204,8 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
     微控制器芯片领域的王者 @ST <ST/index>
     专注设备连接和接口扩展 @WCH <WCH/index>
     WiFi &AIoT无线解决方案 @Espressif <espressif/index>
-    高性能基带&网关路由SoC @MediaTek  <MediaTek/index>
-    高性能多媒体应用处理器 @allwinner  <allwinner/index>
+    高性能基带网关路由SoC @MediaTek  <MediaTek/index>
+    高性能多媒体应用处理器 @Allwinner  <allwinner/index>
     基于Cortex-M4的高性价 @ArteryTek <arterytek/index>
     基于LoRa/Cat1长距网络 @ASR <ASR/index>
 
