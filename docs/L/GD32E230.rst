@@ -4,7 +4,7 @@
 GD32E230
 ============
 
-* 关键词：``Cortex-M3`` ``48MHz``
+* 关键词：``Cortex-M23`` ``48MHz``
 * 资源库：`GitHub <https://github.com/SoCXin/GD32E230>`_
 
 .. contents::
@@ -21,8 +21,9 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 发布时间：
-* 制程工艺：
+* 发布时间：2018年11月1日
+* 制程工艺：55nm
+* 发布价格：
 * 工作温度：-40°C to 85°C
 * 处理性能：60 :ref:`DMIPS`, 140 :ref:`CoreMark`
 * RAM容量：4/8 KB
@@ -33,14 +34,14 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 48 MHz :ref:`cortex_m23`
+* 72 MHz :ref:`cortex_m23`
 * 1x12bit ADC (2.5 MSps)
 
 
 电源参数
 ^^^^^^^^^^^
 
-* 供电电压: 2.6 to 3.6 V
+* 供电电压: 1.8V - 3.6V
 * 运行功耗: 100μA/MHz
 
 
