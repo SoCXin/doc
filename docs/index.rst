@@ -11,9 +11,7 @@ SoC·Xin
 * 有芯需求，限定规格成本，求最优解；
 * 有薪需求，寻求技能升级，求边界值；
 
-从 ``有什么用什么`` 过渡到  ``用什么有什么`` 的Xin时代，同时过渡的还有 ``学得快`` 和 ``眼光好``。
-
-SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和建议，呈现更新迅速可信任的 ``实用Xin体系``
+SoC·Xin试图打破不同厂商间的利益边界，从使用者出发多维度给出选择和建议，呈现更新迅速可信任的 ``实用Xin体系``
 
 .. toctree::
     :maxdepth: 1
@@ -217,7 +215,7 @@ SoC·Xin试图脱离芯片厂商利益关联，从使用者角度给出选择和
 
     微控制器芯片领域的王者 @ST <ST/index>
     专注设备连接和接口扩展 @WCH <WCH/index>
-    WiFi &AIoT无线解决方案 @Espressif <espressif/index>
+    Wi-Fi&AIoT无线解决方案 @Espressif <espressif/index>
     高性能基带网关路由SoC @MediaTek  <MediaTek/index>
     高性能多媒体应用处理器 @Allwinner  <allwinner/index>
     专注Cortex-M4核高性价 @ArteryTek <arterytek/index>
