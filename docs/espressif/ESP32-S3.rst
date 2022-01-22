@@ -219,13 +219,23 @@ ESP32-S3-BOX
 编译工具
 ~~~~~~~~~
 
+PlatformIO
+^^^^^^^^^^^^^
+
+.. warning::
+    目前还没有支持到ESP32-S3，板级资源已适配平台包括ESP32、ESP32-S2、ESP32-C3
+
+
 开发框架
 ~~~~~~~~~
 
 ESP-IDF
 ^^^^^^^^^^^
 
-需要release/v4.3以上版本 :ref:`esp_idf` ，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
+.. image:: ./images/idf-v.png
+    :target: https://github.com/espressif/esp-idf
+
+
 
 .. _esp_skainet:
 
