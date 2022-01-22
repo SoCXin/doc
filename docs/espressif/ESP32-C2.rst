@@ -192,7 +192,6 @@ Xin应用
 ESP-IDF
 ^^^^^^^^^^^
 
-需要release/v4.3及以上版本 :ref:`esp_idf` ，围绕 ESP32-C3构建固件，需要安装一些必备工具包括 Python、Git、交叉编译器、CMake 和 Ninja等。
 
 Arduino
 ^^^^^^^^^^^^

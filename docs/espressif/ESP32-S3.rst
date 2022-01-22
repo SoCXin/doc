@@ -22,6 +22,7 @@ Xin简介
 规格配置
 ~~~~~~~~~~~
 
+ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基于wireless连接能力实现对传统MCU的降维打击。
 
 基本参数
 ^^^^^^^^^^^
@@ -51,7 +52,8 @@ Xin简介
 * 44 x GPIO，JTAG 接口
 * 2x 12bit 100KSPS ADC (20ch)
 
-ESP32-S3 增加了用于加速神经网络计算和信号处理等工作的向量指令 (vector instructions)
+.. note::
+    ESP32-S3 增加了用于加速神经网络计算和信号处理等工作的向量指令 (vector instructions)
 
 电源参数
 ^^^^^^^^^^^

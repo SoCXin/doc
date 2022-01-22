@@ -8,8 +8,11 @@ Espressif
 公司简介
 -----------
 
+`乐鑫科技 <http://www.espressif.com>`_ (股票代码：688018)是一家全球化的无晶圆厂半导体公司，成立于 2008 年，总部位于中国上海，主营 Wi-Fi&BLE AIoT SoC及相关解决方案。
+
+
 .. note::
-    `乐鑫 <http://www.espressif.com>`_ 是一家全球化的无晶圆厂半导体公司，总部位于中国上海，主营WiFi&BLE AIoT SoC及相关解决方案。
+    乐鑫伴随物联网崛起，就早期狭义的技术实现而言，物联网≈ESP32/ESP8266，嵌入式工程师入门最经典的莫过于 STM32F103+ESP8266
 
 `FQA <https://docs.espressif.com/_/downloads/espressif-esp-faq/zh_CN/latest/pdf/>`_
 
@@ -173,6 +176,10 @@ ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 
 .. image:: ./images/idf.png
     :target: https://docs.os-q.com/espidf.html
 
+.. image:: ./images/idf-v.png
+    :target: https://github.com/espressif/esp-idf
+
+
 .. _esp_adf:
 
 ESP-ADF
@@ -190,10 +197,17 @@ ESP-NOW
 
 由乐鑫定义的 Wi-Fi 通信协议，采用 CCMP 方法保护供应商特定动作帧的安全，ESP-NOW 广泛应用于智能照明、远程控制、传感器等领域。
 
+标准相关
+~~~~~~~~~~~~
 
+.. _esp_matter:
 
+Matter
+^^^^^^^^^^^^^^
 
+Matter 成立于 2019 年，由连接标准联盟（Connectivity Standards Alliance，前称 Zigbee Alliance）发起并领导，旨在提高不同厂商智能家居产品间的兼容性和互操作性。
 
+是一个统一的智能家居互联标准，能够为家庭自动化项目提供安全可靠的无线连接。
 
 外设相关
 ~~~~~~~~~~~~
