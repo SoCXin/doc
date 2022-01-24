@@ -26,7 +26,7 @@
     * - 方案简介
       - 推荐理由
     * - :ref:`NO_001` (264KB SRAM/QFN56)
-      - $1==Cortex-M0双核，Arduino/MicroPython/USB
+      - $0.70==Cortex-M0双核，Arduino/MicroPython/USB
     * - :ref:`NO_002` (2KB SRAM/QFN28)
       - 非常具有性价比的8051 USB方案，兼容强拥趸多
     * - :ref:`NO_005`

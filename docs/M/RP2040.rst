@@ -4,7 +4,7 @@
 RP2040
 ===============
 
-* 关键词：``Raspberry Pi`` ``Cortex-M0`` ``Dual Core`` ``133MHz`` ``USB OTG`` ``QFN56`` ``$1.0``
+* 关键词：``Raspberry Pi`` ``Cortex-M0`` ``MicroPython`` ``Dual Core`` ``133MHz`` ``USB OTG`` ``QFN56`` ``$0.7``
 * 资源库：`GitHub <https://github.com/SoCXin/RP2040>`_
 
 .. contents::
@@ -28,8 +28,9 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2021年1月
-* 制程工艺：
-* 发布价格：$1.0
+* 制程工艺：TSMC 40LP
+* 晶元面积：2 mm² (2.1K/300mm²)
+* 参考价格：$0.7 ($2380/3400)
 * 工作温度：-40°C to +85°C/125°C
 * 处理性能：120 :ref:`DMIPS`
 * RAM容量：264 KB
@@ -66,15 +67,37 @@ QFN56
 
 
 
-计算性能
+芯片架构
 ~~~~~~~~~~~
+
+时钟架构
+^^^^^^^^^^^^^
 
 .. image:: ./images/RP2040clk.png
     :target: https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf
 
 
-芯片架构
-~~~~~~~~~~~
+.. _rp2040_pio:
+
+PIO
+^^^^^^^^^^^^^
+
+RP2040中有2个相同的PIO块,每个PIO块都有专用的连接到总线结构,GPIO和中断控制器,每个块有四个状态机,可以独立执行顺序程序来操作GPIO和传输数据。
+
+与通用处理器不同的是,PIO状态机对IO的专业化程度很高(highly specialised),它注重确定性,精确的时序,并与固定功能硬件紧密结合。PIO状态机可以动态地配置和重新配置,以实现许多不同的接口,自由度很高。
+
+PIO可以支持多种IO标准包括:
+
+* 8080/6080 并行接口
+* I2C
+* I2S
+* SDIO
+* SPI/DSPI/QSPI
+* UART
+* DPI/VGA (利用电阻网络)
+
+.. image:: ./images/RP2040PIO.png
+    :target: https://www.taterli.com/7568/
 
 
 Xin选择
@@ -138,28 +161,6 @@ grblHAL
 USB
 ~~~~~~~~~~~
 
-
-.. _rp2040_pio:
-
-PIO
-~~~~~~~~~~~
-
-RP2040中有2个相同的PIO块,每个PIO块都有专用的连接到总线结构,GPIO和中断控制器,每个块有四个状态机,可以独立执行顺序程序来操作GPIO和传输数据。
-
-与通用处理器不同的是,PIO状态机对IO的专业化程度很高(highly specialised),它注重确定性,精确的时序,并与固定功能硬件紧密结合。PIO状态机可以动态地配置和重新配置,以实现许多不同的接口,自由度很高。
-
-PIO可以支持多种IO标准包括:
-
-* 8080/6080 并行接口
-* I2C
-* I2S
-* SDIO
-* SPI/DSPI/QSPI
-* UART
-* DPI/VGA (利用电阻网络)
-
-.. image:: ./images/RP2040PIO.png
-    :target: https://www.taterli.com/7568/
 
 
 .. _rp2040_vga:

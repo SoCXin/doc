@@ -13,7 +13,6 @@ CH32V307
 Xin简介
 -----------
 
-:ref:`wch_riscv` CH32V305/7系列是基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈区、快速中断入口，在标准RISC-V基础上大大提高了中断响应速度。加入单精度浮点指令集，扩充堆栈区，具有更高的运算性能。扩展串口U(S)ART数量到8组，电机定时器到4组。提供USB2.0高速接口（480Mbps）并内置了PHY收发器，以太网MAC升级到千兆并集成了10M-PHY模块。
 
 .. image:: ./images/CH32V307.png
     :target: http://www.wch.cn/products/CH32V307.html
@@ -21,17 +20,18 @@ Xin简介
 规格配置
 ~~~~~~~~~~~
 
+CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈区、快速中断入口，在标准RISC-V基础上大大提高了中断响应速度。加入单精度浮点指令集，扩充堆栈区，具有更高的运算性能。扩展串口U(S)ART数量到8组，电机定时器到4组。提供USB2.0高速接口（480Mbps）并内置了PHY收发器，以太网MAC升级到千兆并集成了10M-PHY模块。
+
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
 * 发布价格：
-* 供电电压：3.0 to 5.5 V
 * 工作温度：-40°C to +85°C
 * 处理性能：
 * RAM容量：64 KB
 * Flash容量：256 KB
-* 封装规格：
+* 封装规格：LQFP64M/LQFP100
 
 
 特征参数
@@ -40,12 +40,17 @@ Xin简介
 * 144MHz :ref:`wch_riscv4a`
 * USB2.0全速OTG接口
 * USB2.0高速主机/设备接口（480Mbps 内置PHY）
-* 3个USART接口和5个UART接口
+* 3x USART + 5x UART
 * 2个CAN接口（2.0B主动）
 * 千兆以太网控制器ETH（内置10M PHY）
 
 .. hint::
     最大特色千兆以太网控制器MAC和10M PHY，高速USB设备，非常强大的有线连接能力
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：2.5V/3.3V
 
 
 芯片架构
@@ -59,25 +64,26 @@ Xin选择
 
 .. contents::
     :local:
-.. image:: ./images/CH32V2.png
-    :target: http://www.wch.cn/products/CH32V307.html
+
+品牌对比
+~~~~~~~~~~
 
 型号对比
-~~~~~~~~~
+~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`list`
-      - Mark
-      - RAM
-      - ROM
+      - DMIPS
+      - SRAM/ROM
+      - Package
       - UART
       - CAN
       - USB
       - Ethernet
     * - :ref:`ch32f103`
-      - 175 DMIPS
+      - 175
       - 32
       - 64/128/256
       - 2/3/5
@@ -85,7 +91,7 @@ Xin选择
       - USB OTG
       - NO
     * - :ref:`ch32f208`
-      - 150 DMIPS
+      - 150
       - 8/16
       - 16/32/64
       - 2
@@ -93,7 +99,7 @@ Xin选择
       - NO
       - NO
     * - :ref:`ch32v103`
-      - 250 DMIPS
+      - 250
       - 16/32/64
       - 64/128/256
       - 2/3/5
@@ -101,21 +107,29 @@ Xin选择
       - USB2.0
       - NO
     * - :ref:`ch32v208`
-      - 300 DMIPS
+      - 300
       - 224
       - 256/512/1024
       - 7/8
       - 2 x 2.0B
       - USB2.0
-      - 10M(PHY)
+      - PHY-10Mbps
     * - :ref:`ch32v307`
-      - 300 DMIPS
-      - 224
-      - 256/512/1024
+      - 300
+      - 64KB/256KB
+      - LQFP64M/LQFP100
       - 8
       - 2 x 2.0B
       - USB2.0
-      - 10(PHY)/1000M(MAC)
+      - PHY10M/MAC1000M
+
+
+版本对比
+~~~~~~~~~~
+
+.. image:: ./images/CH32V2.png
+    :target: http://www.wch.cn/products/CH32V307.html
+
 
 Xin应用
 -----------
