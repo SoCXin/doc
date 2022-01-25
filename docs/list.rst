@@ -5,7 +5,7 @@
 
 * 小众芯片不适合小众产品，基础资源太少意味着投入太多，成果和经验价值变现也更加困难;
 * 要将价值最大化，就需要和更多的项目分摊投入，同时降低维护成本，这就需要评估通用性;
-* 每个选择都只会是一段时间的最优方案，但只要其短板限定还在接受范围，就可以继续使用;
+* 每个选择都只会是一段时间的最优方案，但只要其明显短板还在接受范围，就可以继续使用;
 
 .. list-table::
     :header-rows:  1
@@ -13,7 +13,7 @@
     * - 芯片简介
       - 推荐理由
     * - :ref:`NO_001` (264KB SRAM/QFN56)
-      - $0.70==Cortex-M0双核，Arduino/MicroPython/USB-OTG
+      - $0.70==Dual Cortex-M0，Arduino/MicroPython/USB-OTG
     * - :ref:`NO_002` (2KB SRAM/QFN28)
       - 非常具有性价比的8051 USB方案，兼容强拥趸多
     * - :ref:`NO_003` (288KB SRAM/QFN56)
@@ -22,8 +22,8 @@
       - 拥有5个独立12bit ADC，拥有 :ref:`stm32_hrtim`
     * - :ref:`NO_005`
       - 靠Cortex-M4性能针对 :ref:`stm32f030`,sLib安全库
-    * - :ref:`NO_006`
-      - ESP跨界WiFi/BLE的MCU :ref:`riscv` 核心
+    * - :ref:`NO_006` (272KB SRAM/QFN40)
+      - WiFi/BLE :ref:`riscv` MCU
     * - :ref:`NO_007`
       - 战略级MCU，STM32全家桶外设主频都顶配
     * - :ref:`NO_008` (32KB SRAM/QFN28)
