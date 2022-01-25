@@ -234,14 +234,12 @@ LVDS
 LTC2508-32
 ^^^^^^^^^^^^
 
-``32-Bit @1MSPS`` ``24mW`` ``SAR ADC`` ``DFN24``
+``32-bit @1MSPS`` ``24mW`` ``SAR ADC`` ``Dual Channel`` ``DFN24`` ``$12.02``
 
 * ±0.5ppm INL (典型值)
 * 61sps 时的 145dB 动态范围 (典型值)
 * 4ksps 时的 131dB 动态范围 (典型值)
-* 双输出 32 位 SAR ADC
-* 32 位数字滤波低噪声输出
-* 14 位差分 + 8 位共模 1Msps 无延迟输出
+* 双输出 32 位 SAR ADC，32 位数字滤波低噪声输出，14 位差分 + 8 位共模 1Msps 无延迟输出
 
 LTC2508-32 是一款低噪声、低功率、高性能 32 位 ADC，其具有一个集成的可配置数字滤波器。
 LTC2508-32 采用单个 2.5V 工作电源，具有一个高达 ±VREF 的全差分输入范围，且 VREF 的范围从 2.5V 至 5.1V。
@@ -256,6 +254,22 @@ LTC2508-32 同时提供两个输出代码：(1) 一个 32 位数字滤波高精�
 
 `LTC2508资料 <https://www.analog.com/cn/products/ltc2508-32.html>`_
 
+AD4630
+^^^^^^^^^^^^
+
+``24-bit @2MSPS`` ``24mW`` ``SAR ADC`` ``Dual Channel`` ``CSP_BGA64`` ``$37.14``
+
+* 积分非线性：从 −40°C to +125°C，最大值为 ±0.9 ppm
+* SNR：105.7 dB（典型值）
+* 总谐波失真：−127 dB（典型值）
+* NSD−166 dBFS/Hz （典型值）
+* 2 MSPS 时每通道 15 mW
+* 直流输入的极低 0.6 μA 输入电流
+* 宽输入共模电压范围：−(1/128) × VREF 至 +(129/128) × VREF
+* 灵活的外部基准电压源范围：4.096 V 至 5 V
+
+
+`AD4630资料 <https://www.analog.com/cn/products/ad4630-24.html#product-overview>`_
 
 
 集成方案
