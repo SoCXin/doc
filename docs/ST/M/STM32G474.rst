@@ -256,7 +256,7 @@ HRTIM
 
 .. _stm32_opamp:
 
-OPAMP
+PGA
 ^^^^^^^^^^^^
 
 * Input voltage offset: approx. +/- 3 mV (after built-in calibration of offset)

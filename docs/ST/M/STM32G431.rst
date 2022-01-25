@@ -170,7 +170,7 @@ NUCLEO-STM32G431RE
 
 .. _stm32_fcmp:
 
-COMP
+CMP
 ^^^^^^^^^^^^
 
 4 x ultra-fast rail-to-rail analog comparators

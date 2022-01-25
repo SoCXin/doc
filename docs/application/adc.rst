@@ -41,48 +41,7 @@ pipeline 更适合高速中等精度的，如 100M 14bit 以上的应用。
 Sigma-Delta
 ~~~~~~~~~~~~~~
 
-.. toctree::
-    :maxdepth: 1
 
-    ZML165 <../M/ZML165>
-    SWM181 <../M/SWM181>
-    CS32A039 <../M/CS32A039>
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`list`
-      - Core
-      - Chan
-      - Rate
-      - ENOB
-      - PGA
-      - INL
-      - Package
-    * - :ref:`cs32a039`
-      - :ref:`cortex_m0`
-      - 1x5ch
-      - 10~1280Hz
-      - 20.7/20.2
-      - 128
-      - 1.2LSB
-      - LQFP64
-    * - :ref:`zml165`
-      - :ref:`cortex_m0`
-      - 1x2ch
-      - 10~1280Hz
-      - 20.7/20.2
-      - 128
-      - 1.2LSB
-      - :ref:`qfn20`
-    * - :ref:`swm181`
-      - :ref:`cortex_m0`
-      - 1x4ch
-      - 16KSPS
-      - 16
-      - 128
-      - 1.2LSB
-      - LQFP48
 
 .. warning::
     :ref:`sigma_delta` 以时间上换极高的精度的特性，采样率都很低，但在精度达到20位以上的场合，实现了其他类型的ADC无法达到的高精度和低功耗。
@@ -214,7 +173,7 @@ LVDS
     * - :ref:`stm32g431`
       - 170MHz
       - 212 :ref:`DMIPS`
-      - 128 KB/512 KB
+      - 128K/512K
       - 2x4MSPS
       - X
       - 4/3
@@ -222,7 +181,7 @@ LVDS
     * - :ref:`stm32g474`
       - 170MHz
       - 212 :ref:`DMIPS`
-      - 128 KB/512 KB
+      - 128K/512K
       - 5x4MSPS
       - X
       - 7/6
@@ -230,7 +189,7 @@ LVDS
     * - :ref:`stm32h730`
       - 550MHz
       - 1177 :ref:`DMIPS`
-      - 564 KB/128 KB
+      - 564K/128K
       - 1x5MSPS
       - 2x3.6MSPS
       - 2/2
@@ -238,11 +197,19 @@ LVDS
     * - :ref:`stm32h750`
       - 480MHz
       - 1027 :ref:`DMIPS`
-      - 1 MB/128 KB
+      - 1 M/128K
       - X
       - 3x3.6MSPS
       - 2/2
       - LQFP100
+    * - :ref:`stm32h7b0`
+      - 280MHz
+      - 599 :ref:`DMIPS`
+      - 1.4M/128K
+      - X
+      - 2x3.6MSPS
+      - 2/2
+      - LQFP64
 
 .. note::
     2x16bit+1x12bit 通信带宽 3.6M x 2 x 16 + 5M x 1 x 12 = 175.2Mbps，3x16bit 通信带宽 3.6M x 3 x 16 = 172.8Mbps
@@ -342,6 +309,14 @@ AD4630
       - :ref:`sigma_delta`
       - 24bit
       - LQFP64
+
+.. toctree::
+    :maxdepth: 1
+
+    ZML165 <../M/ZML165>
+    SWM181 <../M/SWM181>
+    CS32A039 <../M/CS32A039>
+
 
 
 Audio ADC
