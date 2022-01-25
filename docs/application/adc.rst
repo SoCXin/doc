@@ -8,7 +8,7 @@ A/D转换
     :local:
 
 
-技术分类
+技术流派
 ------------
 
 .. contents::
@@ -204,26 +204,56 @@ LVDS
     :header-rows:  1
 
     * - :ref:`list`
-      - Core
-      - RAM
-      - Flash
-      - UART
-      - GPIO
-      - SPEC
+      - Frequency
+      - Performance
+      - SRAM/ROM
+      - 12Bit
+      - 16Bit
+      - :ref:`stm32_fcmp`/ :ref:`stm32_opamp`
       - Package
     * - :ref:`stm32g431`
       - 170MHz
-      -
-      -
-      -
-      -
-      -
+      - 212 :ref:`DMIPS`
+      - 128 KB/512 KB
+      - 2x4MSPS
+      - X
+      - 4/3
       - LQFP48
+    * - :ref:`stm32g474`
+      - 170MHz
+      - 212 :ref:`DMIPS`
+      - 128 KB/512 KB
+      - 5x4MSPS
+      - X
+      - 7/6
+      - LQFP100
+    * - :ref:`stm32h730`
+      - 550MHz
+      - 1177 :ref:`DMIPS`
+      - 564 KB/128 KB
+      - 1x5MSPS
+      - 2x3.6MSPS
+      - 2/2
+      - LQFP100
+    * - :ref:`stm32h750`
+      - 480MHz
+      - 1027 :ref:`DMIPS`
+      - 1 MB/128 KB
+      - X
+      - 3x3.6MSPS
+      - 2/2
+      - LQFP100
 
+.. note::
+    2x16bit+1x12bit 通信带宽 3.6M x 2 x 16 + 5M x 1 x 12 = 175.2Mbps，3x16bit 通信带宽 3.6M x 3 x 16 = 172.8Mbps
 
 
 超高精度
 ------------
+
+一般把8位及以下的A/D转换器称为低分辨率ADC，9~12位称为中分辨率ADC，13位以上为高分辨率。
+
+A/D器件的位数越高，分辨率越高，量化误差越小，能达到的精度越高。
 
 .. contents::
     :local:
@@ -231,7 +261,7 @@ LVDS
 独立方案
 ~~~~~~~~~~~~
 
-LTC2508-32
+LTC2508
 ^^^^^^^^^^^^
 
 ``32-bit @1MSPS`` ``24mW`` ``SAR ADC`` ``Dual Channel`` ``DFN24`` ``$12.02``

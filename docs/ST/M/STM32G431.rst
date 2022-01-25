@@ -42,8 +42,8 @@ Xin简介
 * 最多3个 :ref:`stm32_canfd`
 * 2x 12bit ADC (4 MSPS)
 * 4x 12bit DAC (15 MSPS)
-* 3x :ref:`stm32_fcmp` (17ns)
-* 4x :ref:`stm32_opamp`
+* 4x :ref:`stm32_fcmp` (17ns)
+* 3x :ref:`stm32_opamp`
 * Type-C™和电力传输控制器 :ref:`stm32_ucpd`
 
 
