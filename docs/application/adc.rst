@@ -58,6 +58,121 @@ Sigma-Delta
 独立器件
 ~~~~~~~~~~~~
 
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - MSaps
+      - Resolution
+      - Channel
+      - Interface
+      - Power
+      - Arch
+      - Package
+      - Price
+    * - ADS4222
+      - 65
+      - 12-bit
+      - 2
+      - LVDS
+      - 183mW
+      - Pipeline
+      - VQFN64
+      - $36.30
+    * - ADS4225
+      - 125
+      - 12-bit
+      - 2
+      - LVDS
+      - 183mW
+      - Pipeline
+      - VQFN64
+      - $36.30
+    * - :ref:`ADS4229`
+      - 250
+      - 12-bit
+      - 2
+      - LVDS
+      - 545mW
+      - Pipeline
+      - VQFN64
+      - $36.30
+    * - ADS4249
+      - 250
+      - 14-bit
+      - 2
+      - LVDS
+      - 545mW
+      - Pipeline
+      - VQFN64
+      - $36.30
+    * - :ref:`AD9767`
+      - 125
+      - 14-bit
+      - 2
+      - LVDS
+      - 545mW
+      - Pipeline
+      - LQFP48
+      - $21.70
+    * - :ref:`AD9481`
+      - 250
+      - 8-bit
+      - 1
+      - LVDS
+      -
+      -
+      -
+      -
+
+.. _AD9481:
+
+AD9481
+^^^^^^^^^^^^
+
+``8bit`` ``250MSPS``
+
+`米联客数据采集卡DAQ9481 <https://www.uisrc.com/portal.php>`_
+
+AD9481 是一款8位单芯片模数转换器（ADC），专门针对高速和低功耗进行了优化。转换速率为250 MSaps，模拟输入范围1Vpp，积分非线性±0.26LSB（典型值），差分非线性±0.35LSB（典型值），在整个工作范围内都具有出色的线性度和动态性能，最高速率下功耗小于450mW。
+
+.. _9248:
+
+AD9248
+^^^^^^^^^^^^
+
+``14bit`` ``65MSPS`` ``Dual-Channel`` ``SNR71.6dBc`` ``800mW`` ``LQFP48`` ``$21.70``
+
+`AD9248芯片 <https://www.analog.com/cn/products/ad9248.html>`_
+
+`FEP-DAQ9248 <https://www.uisrc.com/portal.php?mod=view&aid=331>`_
+
+AD9248是一款双核、3 V、14位、20/40/65 MSPS模数转换器（ADC），集成了两个高性能采样保持放大器和一个基准电压源。它采用多级差分流水线架构，内置输出纠错逻辑，在最高65 MSPS数据速率时可提供14位精度，并保证在整个工作温度范围内无失码。
+
+.. _AD9767:
+
+AD9767
+^^^^^^^^^^^^
+
+``14bit`` ``125MSPS`` ``Dual-Channel`` ``75dBc`` ``LQFP48`` ``$21.70``
+
+`AD9767芯片 <https://www.analog.com/cn/products/ad9767.html#product-overview>`_
+
+`FEP-DAQ9767 <https://www.uisrc.com/portal.php?mod=view&aid=330>`_
+
+
+
+.. _ADS4229:
+
+ADS4229
+^^^^^^^^^^^^
+
+``12bit`` ``250MSPS`` ``Dual-Channel`` ``545mW`` ``VQFN64`` ``$36.30``
+
+`ADS4229芯片 <https://www.ti.com.cn/product/cn/ADS4229#order-quality>`_
+
+.. _MXT2088:
+
 MXT2088
 ^^^^^^^^^^^^
 
@@ -77,75 +192,6 @@ MXT2088
 MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
 
 `MXT2088资料 <http://www.mxtronics.com/n107/n124/n181/n184/c692/content.html>`_
-
-
-
-
-AD9481
-^^^^^^^^^^^^
-
-``8bit`` ``250MSPS``
-
-`米联客数据采集卡DAQ9481 <https://www.uisrc.com/portal.php>`_
-
-AD9481 是一款8位单芯片模数转换器（ADC），专门针对高速和低功耗进行了优化。转换速率为250 MSaps，模拟输入范围1Vpp，积分非线性±0.26LSB（典型值），差分非线性±0.35LSB（典型值），在整个工作范围内都具有出色的线性度和动态性能，最高速率下功耗小于450mW。
-
-AD9767
-^^^^^^^^^^^^
-
-``14bit`` ``125MSPS`` ``Dual-Channel`` ``75dBc`` ``LQFP48`` ``$21.70``
-
-`AD9767芯片 <https://www.analog.com/cn/products/ad9767.html#product-overview>`_
-
-`米联客数据采集卡 <https://www.uisrc.com/portal.php?mod=view&aid=330>`_
-
-
-ADS4229
-^^^^^^^^^^^^
-
-``12bit`` ``250MSPS`` ``Dual-Channel`` ``545mW`` ``VQFN64`` ``$36.30``
-
-`ADS4229芯片 <https://www.ti.com.cn/product/cn/ADS4229#order-quality>`_
-
-
-.. list-table::
-    :header-rows:  1
-
-    * - Type
-      - MSPS
-      - Resolution
-      - Interface
-      - Power
-      - Arch
-      - Package
-    * - ADS4222
-      - 65
-      - 12Bit
-      - DDR LVDS
-      - 183mW
-      - Pipeline
-      - VQFN64
-    * - ADS4225
-      - 125
-      - 12Bit
-      - DDR LVDS
-      - 183mW
-      - Pipeline
-      - VQFN64
-    * - ADS4229
-      - 250
-      - 12-Bit
-      - DDR LVDS
-      - 545mW
-      - Pipeline
-      - VQFN64
-    * - ADS4249
-      - 250
-      - 14-Bit
-      - DDR LVDS
-      - 545mW
-      - Pipeline
-      - VQFN64
 
 
 通信接口
