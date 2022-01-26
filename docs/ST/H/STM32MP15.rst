@@ -20,14 +20,13 @@ Xin简介
     :local:
 
 
-规格配置
+规格参数
 ~~~~~~~~~~~
 
 STM32MP1系列依托STM32成熟的生态系统，ST可为客户提供加快成功应用STM32MP1设计开发的工具。包括STM32的Cube，CubeMX，CubeProgrammer等软件工具，探索板和全功能评估板等硬件工具，以及为客户提供全方位的客户支持等。
 
 STM32系列主要用于解决客户对实时任务和功耗限制的重要要求，OpenSTLinux作为市场上主流的开源Linux发行版发布，将STM32系列从以实时任务和功耗限制为主的应用扩大到更广泛的市场。
-规格参数
-~~~~~~~~~~~
+
 
 基本参数
 ^^^^^^^^^^^
@@ -86,15 +85,26 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
-``NXP i.MX``
+``NXP`` ``i.MX6`` ``i.MX7`` ``i.MX8``
 
-应用类处理器异构控制器的方案厂商不少，ST可对标的主要对象为NXP，STM32MP15x系列重点对比i.MX7系列
+应用类处理器异构控制器的方案厂商不少，ST可对标的主要对象为NXP，STM32MP15x系列重点对比i.MX系列
+
+NXP i.MX 7
+^^^^^^^^^^^^^^^
 
 .. image:: images/imx7.png
     :target: https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-7-processors:IMX7-SERIES
 
+其中配置的应用处理器规格相当，处理器为 800MHz :ref:`cortex_a7` 内核, 控制器为 200 MHz :ref:`cortex_m4` 内核
 
-如果需要更强的性能进行升级，可以选择i.MX 8系列产品或者采用独立的应用处理器和控制器
+.. image:: images/IMX7ULP-BD.webp
+    :target: https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-7-processors/i-mx-7ulp-family-ultra-low-power-with-graphics:i.MX7ULP
+
+
+如果需要更强的性能进行升级，可以选择i.MX8系列产品，或者采用独立的应用处理器和控制器
+
+NXP i.MX 8
+^^^^^^^^^^^^^^^
 
 .. image:: images/imx8.png
     :target: https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors:IMX8-SERIES
