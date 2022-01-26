@@ -26,17 +26,26 @@ Xin简介
 STM32MP1系列依托STM32成熟的生态系统，ST可为客户提供加快成功应用STM32MP1设计开发的工具。包括STM32的Cube，CubeMX，CubeProgrammer等软件工具，探索板和全功能评估板等硬件工具，以及为客户提供全方位的客户支持等。
 
 STM32系列主要用于解决客户对实时任务和功耗限制的重要要求，OpenSTLinux作为市场上主流的开源Linux发行版发布，将STM32系列从以实时任务和功耗限制为主的应用扩大到更广泛的市场。
-
+规格参数
+~~~~~~~~~~~
 
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
-* 发布价格：$6-$11
-* 工作温度：-40°C to 105°C/125°C
-* 处理性能：599 :ref:`DMIPS` + 703 :ref:`CoreMark`
-* RAM容量：708KB
+* 制程工艺：
+* 参考价格：$6-$11
+* 供货周期：
+* 处理性能：MCU 599 :ref:`DMIPS`
+* RAM容量：708 KB
 * Flash容量：
+
+硬件参数
+^^^^^^^^^^^
+
+* 电压范围：1.71 to 3.6 V
+* 功耗范围：
+* 工作温度：-40°C to 105°C/125°C
 * 封装规格：LFBGA448/LFBGA354/TFBGA361/TFBGA257
 
 .. image:: ./images/STM32MP15p.png
@@ -59,11 +68,6 @@ STM32系列主要用于解决客户对实时任务和功耗限制的重要要求
 * 4× UART + 4 × USART (12.5 Mbit/s)
 * 6× SPI (50 Mbit/s)
 
-电源参数
-^^^^^^^^^^^
-
-* 供电电压：1.71 to 3.6 V
-
 
 芯片架构
 ~~~~~~~~~~~
@@ -82,21 +86,43 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
+``NXP i.MX``
+
+应用类处理器异构控制器的方案厂商不少，ST可对标的主要对象为NXP，STM32MP15x系列重点对比i.MX7系列
+
+.. image:: images/imx7.png
+    :target: https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-7-processors:IMX7-SERIES
+
+
+如果需要更强的性能进行升级，可以选择i.MX 8系列产品或者采用独立的应用处理器和控制器
+
+.. image:: images/imx8.png
+    :target: https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors:IMX8-SERIES
+
+
 系列对比
 ~~~~~~~~~
+
+.. image:: images/STM32MP1_series.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32mp1-series.html
+
 
 版本对比
 ~~~~~~~~~
 
 
+
 必选理由
 ~~~~~~~~~
 
+STM32MP15x系列异构处理器，是ST向上突破的探索产物，凭借自身强大的外设配置和开发框架，十分适合用于实现复杂交互和通信的硬件终端。
 
-
+选择这款芯片的出发点包括在控制器MCU之外部署嵌入式Linux处理设备，通过集成的SoC方案实现空间和能耗上的优化，数据的处理效率和通信效率更高，同时实现了ST的品质和资源接入。
 
 Xin应用
 -----------
+
+``OpenSTLinux``
 
 .. contents::
     :local:

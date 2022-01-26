@@ -276,6 +276,14 @@ Cortex-R
 ~~~~~~~~~~~
 
 
+.. _cortex_r5:
+
+Cortex-R5
+^^^^^^^^^^^^^
+
+`官方介绍 <https://developer.arm.com/ip-products/processors/cortex-r/cortex-r5>`_
+
+
 .. _cortex_a:
 
 Cortex-A
