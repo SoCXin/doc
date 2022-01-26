@@ -157,7 +157,7 @@ LVDS
 集成方案
 ~~~~~~~~~~~~
 
-目前MCU集成的ADC性能，以STM32为参考，精度可到16-Bit，速率可达5MSPS
+目前MCU集成的高速ADC性能，精度可到16bit(普遍12bit)，速率可达5MSPS(普遍2MSPS)，独立器件数量可达5个(普遍2个)
 
 .. list-table::
     :header-rows:  1
@@ -170,6 +170,14 @@ LVDS
       - 16Bit
       - :ref:`stm32_fcmp`/ :ref:`stm32_opamp`
       - Package
+    * - :ref:`stm32l412`
+      - 80 MHz
+      - 100 :ref:`DMIPS`
+      - 40K/128K
+      - 2x5MSPS
+      - X
+      - 1/1
+      - LQFP32
     * - :ref:`stm32g431`
       - 170MHz
       - 212 :ref:`DMIPS`

@@ -4,7 +4,7 @@
 STM32L412
 ===============
 
-* 关键词：``Cortex-M4`` ``80MHz`` ``12bit 5MSPS-ADC`` ``XIP`` ``USB FS`` ``PGA``
+* 关键词：``Cortex-M4`` ``80MHz`` ``12bit 5MSPS-ADC`` ``PGA``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32L412>`_
 
 .. contents::
@@ -19,32 +19,36 @@ Xin简介
 .. contents::
     :local:
 
-
 规格参数
 ~~~~~~~~~~~
 
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：1.71 to 3.6 V
-* 工作温度：-40 °C to 85/125 °C
-* 封装规格： 32 to 64 pin, LQFP32/48/64
+* 发布时间：
+* 制程工艺：
+* 参考价格：
+* 供货周期：
 * 处理性能：100 :ref:`DMIPS` , 273.55 :ref:`CoreMark`
 * RAM容量：40 KB
 * Flash容量：128 KB
 
+硬件参数
+^^^^^^^^^^^
+
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40°C to 85/125 °C
+* 封装规格：LQFP32/48/64
+
 特征参数
 ^^^^^^^^^^^
 
+* :ref:`cortex_m4` 80 MHz
 * 442 :ref:`ulp_cp`
 * 165 :ref:`ulp_pp`
-* :ref:`cortex_m4` 80 MHz
 * 2 x 12-bit ADC 5 Msps, 200 µA/Msps
-* 2 x PGA
-* USB FS
-* 1.00 to 1.32V VDD12
-* Quad SPI with XIP
-* IRTIM (Infrared interface)
+* PGA
+
 
 芯片架构
 ~~~~~~~~~~~~

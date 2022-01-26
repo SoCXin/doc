@@ -28,42 +28,32 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2021年1月
-* 制程工艺：TSMC 40LP
-* 晶元面积：2 mm² (2.1K/300mm²)
+* 制程工艺：TSMC 40LP (2.1K/300mm²)
 * 参考价格：$0.7 ($2380/3400)
-* 工作温度：-40°C to +85°C/125°C
+* 供货周期：
 * 处理性能：120 :ref:`DMIPS`
 * RAM容量：264 KB
 * Flash容量：128/256 KB (16MB QSPI)
-* 封装规格：:ref:`rp2040_qfn56` (7×7mm)
+
+硬件参数
+^^^^^^^^^^^
+
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40°C to 85°C/125°C
+* 封装规格：QFN56 (7×7mm)
+
+.. image:: ./images/RP2040qfn.png
+    :target: https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf
 
 特征参数
 ^^^^^^^^^^^
 
 * 133 MHz :ref:`cortex_m0` Dual Core
-* :ref:`rp2040_usb` with UF2
+* USB 1.1 OTG with UF2
 * 8 :ref:`rp2040_pio` state machines
 * 2 × UART, 2 × SPI , 2 × I2C
 * 30 x GPIO (4 AIN)
 * 16 PWM channels
-
-电源参数
-^^^^^^^^^^^
-
-* 供电电压：1.71 to 3.6 V
-
-封装规格
-~~~~~~~~~~~
-
-.. _rp2040_qfn56:
-
-QFN56
-^^^^^^^^^^
-
-.. image:: ./images/RP2040qfn.png
-    :target: https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf
-.. image:: ./images/RP2040p.png
-    :target: https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf
 
 
 
@@ -110,16 +100,29 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
+就双核MCU配置而言，市场比较罕见，ST双核都是定位较高端的，ESP32双核SoC侧重通信连接是一个强力的对手。
 
 系列对比
 ~~~~~~~~~
 
+目前没有更多系列。
 
 版本对比
 ~~~~~~~~~
 
 :ref:`rp2040` 包含两个子系列，分别为支持无晶振USB FS device的RP2040xxU系列，不支持USB的 RP2040xxN(1.8V-3.6V)/RP2040x4NR(1.8V-5.5V)。预期在Arduino和Micropython生态资源上拥有无与伦比的优势。
 
+
+选型建议
+~~~~~~~~~
+
+RP2040无论从芯片性价比还是生态资源上都具有后发优势，继STM32F103C8、ESP8266之后成为开源硬件项目的基准平台，就配置而言，后续可升级的方向包括更强大的ADC性能，高速通信接口。
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
 
 开发框架
 ~~~~~~~~~~~
@@ -132,41 +135,28 @@ Arduino
 MicroPython
 ^^^^^^^^^^^^^
 
-
-
-Xin应用
------------
-
-.. contents::
-    :local:
-
-Micropython
-~~~~~~~~~~~~~~~~~~
-
  `Editor <https://github.com/robert-hh/Micropython-Editor>`_
 
 
+
+项目案例
+~~~~~~~~~~~
+
 logic-analyzer
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
  `logic-analyzer <https://github.com/gamblor21/rp2040-logic-analyzer>`_
 
 grblHAL
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
  `grblHAL RP2040 <https://github.com/grblHAL/RP2040>`_
-
-.. _rp2040_usb:
-
-USB
-~~~~~~~~~~~
-
 
 
 .. _rp2040_vga:
 
 VGA
-~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 .. image:: ./images/RP2040vga.png
     :target: https://datasheets.raspberrypi.org/rp2040/hardware-design-with-rp2040.pdf
@@ -181,14 +171,18 @@ Xin总结
 .. contents::
     :local:
 
-其中，一个完全连接的交换机将 ARM 内核和 DMA 引擎连接到六个独立的 RAM 组，使得用户可以充分利用系统的性能。
+能力构建
+~~~~~~~~~~~~~
 
 RP2040 提供所有常用接口：硬件 UART、SPI 和 I2C 控制器、USB 1.1 和四通道 ADC。而可编程 I/O (PIO) 子系统使 RP2040 脱颖而出，支持包括 SDIO、DPI、I2S，甚至 DVI-D 在内的软件实现协议。
 
-重点提示
+其中，一个完全连接的交换机将 ARM 内核和 DMA 引擎连接到六个独立的 RAM 组，使得用户可以充分利用系统的性能。
+
+要点提示
 ~~~~~~~~~~~~~
 
 用户可以使用一个内核运行应用程序代码，另一个内核监督硬件；也可以使用 FreeRTOS 或 MicroPython 在两个内核上运行应用程序代码。
 
-问题收集
+问题整理
 ~~~~~~~~~~~~~
+
