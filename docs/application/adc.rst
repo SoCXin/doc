@@ -46,6 +46,13 @@ Sigma-Delta
 .. warning::
     :ref:`sigma_delta` 以时间上换极高的精度的特性，采样率都很低，但在精度达到20位以上的场合，实现了其他类型的ADC无法达到的高精度和低功耗。
 
+数据接口
+~~~~~~~~~~~~
+
+LVDS
+^^^^^^^^^^^^
+
+
 
 超高速率
 ------------
@@ -115,26 +122,7 @@ Sigma-Delta
       - Pipeline
       - LQFP48
       - $21.70
-    * - :ref:`AD9481`
-      - 250
-      - 8-bit
-      - 1
-      - LVDS
-      -
-      -
-      -
-      -
 
-.. _AD9481:
-
-AD9481
-^^^^^^^^^^^^
-
-``8bit`` ``250MSPS``
-
-`米联客数据采集卡DAQ9481 <https://www.uisrc.com/portal.php>`_
-
-AD9481 是一款8位单芯片模数转换器（ADC），专门针对高速和低功耗进行了优化。转换速率为250 MSaps，模拟输入范围1Vpp，积分非线性±0.26LSB（典型值），差分非线性±0.35LSB（典型值），在整个工作范围内都具有出色的线性度和动态性能，最高速率下功耗小于450mW。
 
 .. _9248:
 
@@ -144,7 +132,6 @@ AD9248
 ``14bit`` ``65MSPS`` ``Dual-Channel`` ``SNR71.6dBc`` ``800mW`` ``LQFP48`` ``$21.70``
 
 `AD9248芯片 <https://www.analog.com/cn/products/ad9248.html>`_
-
 `FEP-DAQ9248 <https://www.uisrc.com/portal.php?mod=view&aid=331>`_
 
 AD9248是一款双核、3 V、14位、20/40/65 MSPS模数转换器（ADC），集成了两个高性能采样保持放大器和一个基准电压源。它采用多级差分流水线架构，内置输出纠错逻辑，在最高65 MSPS数据速率时可提供14位精度，并保证在整个工作温度范围内无失码。
@@ -157,7 +144,6 @@ AD9767
 ``14bit`` ``125MSPS`` ``Dual-Channel`` ``75dBc`` ``LQFP48`` ``$21.70``
 
 `AD9767芯片 <https://www.analog.com/cn/products/ad9767.html#product-overview>`_
-
 `FEP-DAQ9767 <https://www.uisrc.com/portal.php?mod=view&aid=330>`_
 
 
@@ -194,11 +180,7 @@ MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
 `MXT2088资料 <http://www.mxtronics.com/n107/n124/n181/n184/c692/content.html>`_
 
 
-通信接口
-~~~~~~~~~~~~
 
-LVDS
-^^^^^^^^^^^^
 
 集成方案
 ~~~~~~~~~~~~
@@ -272,15 +254,80 @@ LVDS
 超高精度
 ------------
 
-一般把8位及以下的A/D转换器称为低分辨率ADC，9~12位称为中分辨率ADC，13位以上为高分辨率。
-
-A/D器件的位数越高，分辨率越高，量化误差越小，能达到的精度越高。
+A/D器件的位数越高，分辨率越高，量化误差越小，能达到的精度越高，一般把8位及以下的A/D转换器称为低分辨率ADC，9~12位称为中分辨率ADC，13位以上为高分辨率，此处所指的超高精度特指24bit及以上。
 
 .. contents::
     :local:
 
-独立方案
+独立芯片
 ~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Type
+      - Resolution
+      - Power&Chan
+      - Interface
+      - SNR/INL
+      - Package
+      - Price
+    * - :ref:`LTC2508`
+      - :ref:`sar`
+      - 32bit 1MSPS
+      - 24mW x1
+      - Serial SPI
+      - 145dB/2147
+      - DFN24
+      - $12.02
+    * - :ref:`AD4630`
+      - :ref:`sar`
+      - 24bit 2MSPS
+      - 30mW x2
+      - Serial SPI
+      - 105.7dB/±0.9
+      - CSP-BGA64
+      - $37.14
+
+.. _AD4630:
+
+AD4630
+^^^^^^^^^^^^
+
+``24-bit @2MSPS`` ``24mW`` ``SAR ADC`` ``Dual Channel`` ``CSP-BGA64`` ``$37.14``
+
+* 积分非线性：从 −40°C to +125°C，最大值为 ±0.9 ppm
+* SNR：105.7 dB（典型值）
+* 总谐波失真：−127 dB（典型值）
+* NSD−166 dBFS/Hz （典型值）
+* 2 MSPS 时每通道 15 mW
+* 直流输入的极低 0.6 μA 输入电流
+* 宽输入共模电压范围：−(1/128) × VREF 至 +(129/128) × VREF
+* 灵活的外部基准电压源范围：4.096 V 至 5 V
+
+
+`AD4630芯片 <https://www.analog.com/cn/products/ad4630-24.html#product-overview>`_
+
+.. _AD7768:
+
+AD7768
+^^^^^^^^^^^^
+
+``24-bit @1MSPS`` ``24mW`` ``Sigma-Delta`` ``26.4mW`` ``LFCSP-28`` ``$7.5``
+
+AD7768-1是一款低功率、高性能 Σ-Δ 模数转换器 (ADC) ，其具有一个 Σ-Δ 调制器和数字滤波器，可实现AC 和 DC 信号的精确转换。AD7768-1 是 AD7768 的单通道版本，后者是一款 8 通道同步采样 Σ-Δ ADC。
+
+* 温度范围：−40°C 至 +125°C
+* 108.5 dB 动态范围
+* −120 dB THD
+* NSD−166 dBFS/Hz （典型值）
+* ±1.1 ppm FSR INL，±30 µV 偏置误差，±30 ppm FSR 增益误差
+
+
+`AD7768芯片 <https://www.analog.com/cn/products/ad7768-1.html#product-overview>`_
+
+.. _LTC2508:
 
 LTC2508
 ^^^^^^^^^^^^
@@ -304,23 +351,6 @@ LTC2508-32 同时提供两个输出代码：(1) 一个 32 位数字滤波高精�
 采用 SYNC 引脚可以很容易地实现多个 LTC2508-32 器件的同步。
 
 `LTC2508资料 <https://www.analog.com/cn/products/ltc2508-32.html>`_
-
-AD4630
-^^^^^^^^^^^^
-
-``24-bit @2MSPS`` ``24mW`` ``SAR ADC`` ``Dual Channel`` ``CSP_BGA64`` ``$37.14``
-
-* 积分非线性：从 −40°C to +125°C，最大值为 ±0.9 ppm
-* SNR：105.7 dB（典型值）
-* 总谐波失真：−127 dB（典型值）
-* NSD−166 dBFS/Hz （典型值）
-* 2 MSPS 时每通道 15 mW
-* 直流输入的极低 0.6 μA 输入电流
-* 宽输入共模电压范围：−(1/128) × VREF 至 +(129/128) × VREF
-* 灵活的外部基准电压源范围：4.096 V 至 5 V
-
-
-`AD4630资料 <https://www.analog.com/cn/products/ad4630-24.html#product-overview>`_
 
 
 集成方案
@@ -347,14 +377,6 @@ AD4630
       - :ref:`sigma_delta`
       - 24bit
       - QFN20
-    * - :ref:`swm181`
-      - 48 MHz
-      - 16 KB
-      - 120 KB
-      - 4
-      - :ref:`sigma_delta`
-      - 16bit
-      - LQFP48
     * - :ref:`cs32a039`
       - 48 MHz
       - 4 KB
@@ -368,7 +390,6 @@ AD4630
     :maxdepth: 1
 
     ZML165 <../M/ZML165>
-    SWM181 <../M/SWM181>
     CS32A039 <../M/CS32A039>
 
 
@@ -376,16 +397,17 @@ AD4630
 Audio ADC
 ------------
 
+`技术简介 <https://docs.qitas.cn/interface/analog.html#audio-adc>`_
+
 .. contents::
     :local:
 
 
-技术特点
-~~~~~~~~~~~~
 
+.. _ES7210:
 
 ES7210
-^^^^^^^^^^^^
+~~~~~~~~~~~~
 
 ``24-bit`` ``102dB`` ``4 Channel`` ``400 kbps`` ``QFN32`` ``￥4.0``
 
