@@ -254,10 +254,13 @@ MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
 超高精度
 ------------
 
-A/D器件的位数越高，分辨率越高，量化误差越小，能达到的精度越高，一般把8位及以下的A/D转换器称为低分辨率ADC，9~12位称为中分辨率ADC，13位以上为高分辨率，此处所指的超高精度特指24bit及以上。
-
 .. contents::
     :local:
+
+.. hint::
+    A/D器件的位数越高，分辨率越高，量化误差越小，能达到的精度越高，一般把8位及以下的A/D转换器称为低分辨率ADC，9~12位称为中分辨率ADC，13位以上为高分辨率，此处所指的超高精度特指24bit及以上。
+
+
 
 独立芯片
 ~~~~~~~~~~~~
@@ -268,25 +271,25 @@ A/D器件的位数越高，分辨率越高，量化误差越小，能达到的�
     * - Name
       - Type
       - Resolution
-      - Power&Chan
-      - Interface
-      - SNR/INL
+      - Power Chan
+      - INL
+      - SNR
       - Package
       - Price
     * - :ref:`LTC2508`
       - :ref:`sar`
       - 32bit 1MSPS
       - 24mW x1
-      - Serial SPI
-      - 145dB/2147
+      - ±0.5ppm
+      - 145dB
       - DFN24
       - $12.02
     * - :ref:`AD4630`
       - :ref:`sar`
       - 24bit 2MSPS
-      - 30mW x2
-      - Serial SPI
-      - 105.7dB/±0.9
+      - 15mW x2
+      - ±0.9ppm
+      - 105.7dB
       - CSP-BGA64
       - $37.14
 

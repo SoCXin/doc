@@ -74,6 +74,14 @@ SMPS
 GFXMMU
 ^^^^^^^^^^^
 
+图形性能
+~~~~~~~~~~~
+
+.. image:: ./images/DMA2D.jpg
+
+.. note::
+    LCD-TFT控制器接口支持双层图形，JPEG硬件加速器，可进行快速JPEG编码和解码
+
 
 Xin选择
 -----------
@@ -84,7 +92,7 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
-版本对比
+系列对比
 ~~~~~~~~~
 
 STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.4 MB SRAM：192 KB的TCM RAM（包括64 KB的ITCM RAM和128 KB的DTCM RAM，用于时间关键型程序或数据），1.18 MB的用户SRAM，以及用于在最低功耗模式下保存数据的备份域4 KB SRAM。另外，它提供64至225引脚的BGA和LQFP封装型号。
@@ -137,8 +145,7 @@ STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.
     :ref:`stm32h7b0` 不具备以太网通信能力，单纯就性能而言在H7系列中没有优势，其特性更适用于低功耗交互类设备
 
 
-
-封装型号
+版本对比
 ~~~~~~~~~
 
 .. image:: ./images/STM32H7B0l.png
@@ -147,13 +154,6 @@ STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.
 .. warning::
     :ref:`stm32h7b0` 的UFBGA封装型号STM32H7B0AB/STM32H7B0IB才集成 :ref:`stm32_smps`
 
-图形性能
-~~~~~~~~~
-
-.. image:: ./images/DMA2D.jpg
-
-.. note::
-    LCD-TFT控制器接口支持双层图形，JPEG硬件加速器，可进行快速JPEG编码和解码
 
 Xin应用
 -----------
