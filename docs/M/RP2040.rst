@@ -50,8 +50,8 @@ Xin简介
 
 * 133 MHz :ref:`cortex_m0` Dual Core
 * USB 1.1 OTG with UF2
-* 8 :ref:`rp2040_pio` state machines
-* 2 × UART, 2 × SPI , 2 × I2C
+* 8x :ref:`rp2040_pio`
+* 2× UART, 2 × SPI , 2 × I2C
 * 30 x GPIO (4 AIN)
 * 16 PWM channels
 
@@ -119,13 +119,19 @@ RP2040目前没有更多系列
 ~~~~~~~~~
 
 .. note::
-    RP2040无论从芯片性价比还是生态资源上都具有后发优势，继STM32F103C8、ESP8266之后成为开源硬件项目的基准平台，就配置而言，后续可升级的方向包括更强大的ADC性能，高速通信接口。
+    RP2040从性价比和生态资源上都具有后发优势，继STM32F103C8、ESP8266之后成为开源硬件项目的基准平台。
 
-* MicroPython生态
+* MicroPython
 * Cortex Dual Core
 * PIO状态机
-* USB 1.1 OTG with UF2
+* USB 1.1 OTG UF2
 * $0.7
+
+美中不足
+^^^^^^^^^^^^^
+
+* ADC配置过弱，和STM32新产品相比无法凸显出作为MCU定位的核心价值；
+* 和STM32产品相比，定位低端性能过剩，定位高端则接口过少，缺少成熟商用化工具和IDE支持；
 
 
 Xin应用
