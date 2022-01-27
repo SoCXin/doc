@@ -56,7 +56,7 @@ SoC·Xin试图打破不同厂商间的利益边界，从使用者出发多维度
     * - Top.2
       - :ref:`rp2040`
       - :ref:`esp32`
-      - :ref:`stm32h745`
+      - :ref:`stm32mp15`
       - :ref:`ch552`
       - :ref:`zml165`
       - :ref:`gd32e230`
@@ -65,7 +65,7 @@ SoC·Xin试图打破不同厂商间的利益边界，从使用者出发多维度
       - :ref:`stm32f401`
       - :ref:`nrf52832`
       - :ref:`rt1060`
-      - :ref:`esp32c3`
+      - :ref:`esp32c2`
       - :ref:`ch32v307`
       - :ref:`mm32f031`
       - :ref:`NO_010`

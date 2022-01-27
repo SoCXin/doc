@@ -177,9 +177,7 @@ MXT2088
 
 MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
 
-`MXT2088资料 <http://www.mxtronics.com/n107/n124/n181/n184/c692/content.html>`_
-
-
+`MXT2088芯片 <http://www.mxtronics.com/n107/n124/n181/n184/c692/content.html>`_
 
 
 集成方案
@@ -248,7 +246,20 @@ MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
       - LQFP64
 
 .. note::
-    2x16bit+1x12bit 通信带宽 3.6M x 2 x 16 + 5M x 1 x 12 = 175.2Mbps，3x16bit 通信带宽 3.6M x 3 x 16 = 172.8Mbps
+    2x16bit+1x12bit数据带宽3.6M x 2 x 16 + 5M x 1 x 12 = 175.2Mbps，3x16bit 数据带宽3.6M x 3 x 16 = 172.8Mbps
+
+
+.. _ADCNN:
+
+ADCNN
+^^^^^^^^^^^^
+
+``ADC`` ``CNN`` ``MCU``
+
+`ADCNN GitHub <https://github.com/tfmcu/ADCNN>`_
+
+通过深度学习算法模型方式，直接处理ADC原始数据，实现事件判定和响应。
+
 
 
 超高精度
@@ -271,7 +282,7 @@ MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
     * - Name
       - Type
       - Resolution
-      - Power Chan
+      - Power &Chan
       - INL
       - SNR
       - Package
@@ -359,35 +370,37 @@ LTC2508-32 同时提供两个输出代码：(1) 一个 32 位数字滤波高精�
 集成方案
 ~~~~~~~~~~~~
 
-目前MCU集成高精度ADC，主流技术以24-Bit为主，多以SiP封装为主。
-
 .. list-table::
     :header-rows:  1
 
     * - :ref:`list`
-      - Core
-      - RAM
-      - Flash
-      - CHAN
-      - ADC
-      - SPEC
+      - Frequency
+      - SRAM/ROM
+      - SNR
+      - INL
+      - Type
+      - Spec
       - Package
     * - :ref:`zml165`
       - 48 MHz
-      - 4 KB
-      - 64 KB
-      - 2
+      - 4KB/64KB
+      -
+      -
       - :ref:`sigma_delta`
       - 24bit
       - QFN20
     * - :ref:`cs32a039`
       - 48 MHz
-      - 4 KB
-      - 64 KB
-      - 2
+      - 4KB/64KB
+      -
+      -
       - :ref:`sigma_delta`
       - 24bit
       - LQFP64
+
+.. note::
+    目前MCU集成高精度ADC，主流技术以24-Bit为主，多以SiP封装为主。
+
 
 .. toctree::
     :maxdepth: 1

@@ -95,7 +95,7 @@ NXP i.MX 7
 .. image:: images/imx7.png
     :target: https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-7-processors:IMX7-SERIES
 
-其中配置的应用处理器规格相当，处理器为 800MHz :ref:`cortex_a7` 内核, 控制器为 200 MHz :ref:`cortex_m4` 内核
+其中基础版本配置规格相当，处理器 800MHz :ref:`cortex_a7` 内核, 控制器 200 MHz :ref:`cortex_m4` 内核，但是i.MX7具备千兆以太网等高速接口，同系列向上升级扩展非常容易。
 
 .. image:: images/IMX7ULP-BD.webp
     :target: https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-7-processors/i-mx-7ulp-family-ultra-low-power-with-graphics:i.MX7ULP
@@ -109,6 +109,11 @@ NXP i.MX 8
 .. image:: images/imx8.png
     :target: https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors:IMX8-SERIES
 
+.. image:: images/IMX8MPLUS-BD2.webp
+    :target: https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS
+
+.. note::
+    就1.8 GHz Cortex-A53应用处理性能而言i.MX 8M Plus已经优于树莓派3B，800 MHz Cortex-M7、双千兆以太网、PCIe Gen3、2.3TOPS NPU都是硬货，所以基本面上不再和STM32MP15系列对比
 
 系列对比
 ~~~~~~~~~
