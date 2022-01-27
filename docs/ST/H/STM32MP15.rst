@@ -115,6 +115,13 @@ NXP i.MX 8
 .. note::
     就1.8 GHz Cortex-A53应用处理性能而言i.MX 8M Plus已经优于树莓派3B，800 MHz Cortex-M7、双千兆以太网、PCIe Gen3、2.3TOPS NPU都是硬货，所以基本面上不再和STM32MP15系列对比
 
+
+独立芯片方案
+^^^^^^^^^^^^^^^
+
+性能接近的应用处理器可采用 :ref:`allwinner` :ref:`v831`, :ref:`R329`，控制器MCU可选方案较多包括 :ref:`ref407` ， :ref:`arterytek` :ref:`at32f413`
+
+
 系列对比
 ~~~~~~~~~
 

@@ -19,16 +19,26 @@ Xin简介
 规格参数
 ~~~~~~~~~~~
 
+R329定位是AI语音专用芯片，性能特点是Cortex-A53双核，HiFi4 DSP双核
 
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：2021年4月15日
-* 制程工艺：22nm
-* 发布价格：
-* 工作温度：
+* 制程工艺：28nm HPC+
+* 供货周期：
 * 处理性能：
-* 封装规格：LFBGA231
+* RAM容量： 256MB DDR3(SIP)
+* Flash容量：
+
+
+硬件参数
+^^^^^^^^^^^
+
+* 电压范围：1.71 to 3.6 V
+* 功耗范围：
+* 工作温度：-40°C to 105°C/125°C
+* 封装规格：BGA231 (12mmx12mm)
 
 
 特征参数
@@ -36,15 +46,9 @@ Xin简介
 
 * 1.5 GHz :ref:`cortex_a53` Dual-core
 * 32 KB L1 I-cache and 32 KB L1 D-cache
-* 256MB DDR3 SIP
 * HiFi4 DSP Dual-core
 * TZ1 AIPU 0.25TOPS @800MHz
 
-
-电源参数
-^^^^^^^^^^^
-
-* 供电电压：
 
 芯片架构
 ~~~~~~~~~~~
@@ -61,9 +65,8 @@ Xin选择
     :local:
 
 
-
 品牌对比
-~~~~~~~~~
+~~~~~~~~~~
 
 
 系列对比
@@ -73,7 +76,7 @@ Xin选择
     :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=85
 
 型号对比
-~~~~~~~~~
+~~~~~~~~~~
 
 
 Xin应用

@@ -126,7 +126,14 @@ SoC平台
       - 64MB DDR2
       -
       -
+      - BGA231
+    * - :ref:`ssd201`
+      - :ref:`cortex_a7`
+      - 1.20 GHz
+      - 64MB DDR3
       -
+      -
+      - LFBGA231
 
 .. toctree::
     :maxdepth: 1
