@@ -25,14 +25,21 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2016年9月
-* 发布价格：
-* 制程工艺：40 nm
-* 工作温度：-40°C to +105°C
-* 处理性能：504.85 :ref:`CoreMark`, 994.26 :ref:`CoreMark` (Dual)
-* RAM容量：520 KB (8 MB SPI)
-* ROM容量：448 KB (16 MB SPI)
-* 封装规格：:ref:`esp_qfn48`
+* 制程工艺：TSMC 40nm
+* 参考价格：
+* 供货周期：
+* 处理性能：504.85 :ref:`CoreMark`, 994.26 :ref:`CoreMark` (Dual Core)
+* SRAM容量：520 KB (8 MB SPI)
+* Flash容量：448 KB (16 MB SPI)
 
+
+限定参数
+^^^^^^^^^^^
+
+* 电压范围：2.3 to 3.6 V
+* 功耗范围：
+* 温度范围：-40°C to 105°C
+* 封装规格：:ref:`esp_qfn48`
 
 特征参数
 ^^^^^^^^^^^
@@ -51,11 +58,6 @@ Xin简介
 * `ESP-IDF <https://github.com/espressif/esp-idf>`_
 
 
-电源参数
-^^^^^^^^^^^
-
-* 供电电压：2.3 to 3.6 V
-
 `datasheet <https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf>`_
 
 Xin选择
@@ -70,6 +72,11 @@ Xin选择
 
 对标的对手包括 Realtek 和 :ref:`mediatek`
 
+
+MicroPython
+^^^^^^^^^^^^
+
+如果是因为需要 `MicroPython <http://micropython.org/>`_ 开发而选择ESP32产品，相应的对比平台包括 :ref:`rp2040` 和 :ref:`stm32f405`
 
 型号对比
 ~~~~~~~~~~~
@@ -109,11 +116,13 @@ Xin选择
 ESP8266
 ^^^^^^^^^^^^
 
- `wireless-esp8266-dap <https://github.com/windowsair/wireless-esp8266-dap>`_
-
  `ESP8266芯片简介 <https://www.espressif.com/zh-hans/products/socs/esp8266>`_
 
+就发布时间而言，ESP32是ESP8266继任者，增加了CPU核数量，更快的Wi-Fi，更多的GPIO，并支持蓝牙4.2和蓝牙低功耗。此外，ESP32配有触摸感应针脚，可用于唤醒ESP32深度睡眠，内置霍尔效应传感器和内置温度传感器。
 
+ESP8266发布较早拥有更多生态资源，同时开发灵活度更高，开发者接受度很高，同时由于定价更低，在没有足够替换动力下，很多项目继续使用该芯片。
+
+ `wireless-esp8266-dap <https://github.com/windowsair/wireless-esp8266-dap>`_
 
 
 版本对比
