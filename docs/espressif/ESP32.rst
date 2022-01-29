@@ -104,6 +104,17 @@ Xin选择
       - NO
       - NO
 
+.. _esp8266:
+
+ESP8266
+^^^^^^^^^^^^
+
+ `wireless-esp8266-dap <https://github.com/windowsair/wireless-esp8266-dap>`_
+
+ `ESP8266芯片简介 <https://www.espressif.com/zh-hans/products/socs/esp8266>`_
+
+
+
 
 版本对比
 ~~~~~~~~~~~
