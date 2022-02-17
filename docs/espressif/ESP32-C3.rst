@@ -5,7 +5,7 @@ ESP32-C3
 ================
 
 * 关键词：``RISC-V`` ``160MHz`` ``BLE5.0`` ``WiFi`` ``QFN32``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ , `Gitee <https://gitee.com/socxin/ESP32C3>`_ , `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_
+* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ ,  `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_
 
 .. contents::
     :local:
@@ -25,11 +25,20 @@ Xin简介
 * 发布时间：
 * 发布价格：
 * 制程工艺：40 nm
-* 工作温度：-40°C to +105°C
-* 处理性能：407.22 :ref:`CoreMark`
-* RAM容量：400 KB (TCM)
+* 供货周期：
+* 处理性能：407.22 :ref:`CoreMark` , 2.55 CoreMark/MHz
+* SRAM容量：400 KB (16K cache)
 * Flash容量：384 KB
+
+
+限定参数
+^^^^^^^^^^^
+
+* 电压范围：2.3 to 3.6 V
+* 功耗范围：
+* 温度范围：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn32` (5x5mm)
+
 
 特征参数
 ^^^^^^^^^^^
@@ -37,14 +46,9 @@ Xin简介
 * 160 MHz :ref:`esp_rv32`
 * Wi-Fi IEEE 802.11b/g/n
 * BLE 5.0，支持Mesh (Bluetooth Mesh)
-* TWAI 控制器
+* TWAI 控制器, 兼容 ISO11898-1
 * 22  x GPIO
 
-
-电源参数
-^^^^^^^^^^^
-
-* 供电电压：2.3 to 3.6 V
 
 
 计算性能
@@ -58,13 +62,10 @@ Xin简介
 安全特性
 ~~~~~~~~~~~~~~
 
-内置安全硬件，硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
-
 .. contents::
     :local:
 
-.. note::
-    硬件安全单元十分利于物联网产品设计，特别是对加密算法的支持，在嵌入式领域配置如此多的安全外设，也是十分强大的
+
 
 RSA 模块
 ^^^^^^^^^^^^^^^
@@ -78,11 +79,8 @@ AES 模块
 基于 AES-128-XTS 算法的 flash 加密方案，确保应用程序与配置数据在 flash 中保持加密状态。
 flash 控制器支持执行加密的应用程序固件，这不仅为存储在 flash 中的敏感数据提供了必要保护，还防止了运行时由于固件更改造成的 TOCTTOU (time-of-check-to-time-of-use) 攻击。
 
-TEE 模块
+SHA 模块
 ^^^^^^^^^^^^^^^
-
-世界控制器模块提供了两个互不干扰的执行环境。根据配置，世界控制器使用可信执行环境 (TEE) 或权限分离机制。
-如果应用程序固件需要处理敏感的安全数据（如 DRM 服务），则可以利用世界控制器模块，在安全区域处理数据。
 
 
 数字签名
@@ -253,7 +251,13 @@ ESP32-C3没有对 IRAM 和 DRAM 进行静态划分。SRAM 的前 16 KB 被配置
 量产芯片版本包括：
 
 .. image:: ./images/ESP32C3S.png
+    :target: https://products.espressif.com/#/product-selector?language=zh&names=
 
+
+对比ESP8625
+^^^^^^^^^^^^
+
+相对ESP32-C3FH4版本，主要差异在于封装更小QFN28(4*4)，但是没有BT SIG认证，集成的Flash只有2M
 
 Xin应用
 -----------
@@ -289,6 +293,8 @@ Arduino
 ~~~~~~~~~
 
 
+LEDC
+^^^^^^^^^^^
 
 
 WiFi Mesh
