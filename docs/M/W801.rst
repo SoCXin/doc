@@ -4,7 +4,7 @@
 W801
 ===============
 
-* 关键词：``XT804`` ``240MHz`` ``UART`` ``Tee`` ``BLE4.2`` ``WiFi`` ``QFN32``
+* 关键词：``XT804`` ``240MHz`` ``UART`` ``Tee`` ``BLE4.2`` ``WiFi`` ``QFN56``
 * 资源库：`GitHub <https://github.com/SoCXin/W801>`_
 
 .. contents::
@@ -15,19 +15,31 @@ Xin简介
 
 安全IoT MCU芯片，支持平头哥CDK开发环境
 
-规格配置
-~~~~~~~~~~~
+.. image:: ./images/W801.png
+    :target: http://r0.hlktech.com/download/HLK-W801/1/W801%E8%8A%AF%E7%89%87%E8%A7%84%E6%A0%BC%E4%B9%A6V1.0.pdf
 
+
+规格参数
+~~~~~~~~~~~
 
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
 * 发布价格：
-* 工作温度：-40°C to +125°C
-* 处理性能：300 :ref:`DMIPS`
-* RAM容量：288 KB (PSRAM-64MB)
+* 制程工艺：40 nm
+* 供货周期：
+* 处理性能：
+* SRAM容量：288 KB (PSRAM-64MB)
 * Flash容量：2 MB
+
+
+限定参数
+^^^^^^^^^^^
+
+* 电压范围：3.0 to 3.6 V
+* 功耗范围：
+* 温度范围：-40°C to 125°C
 * 封装规格：QFN56 (6x6mm)
 
 
@@ -40,12 +52,6 @@ Xin简介
 * 6x UART
 * 4x 16 bit :ref:`sigma_delta` ADC(1KSPS)
 
-电源参数
-^^^^^^^^^^^
-
-* 供电电压：3.0 to 3.6 V
-
-
 
 Xin选择
 -----------
@@ -57,8 +63,43 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
-版本对比
+
+型号对比
 ~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Core
+      - Performance
+      - SRAM/ROM
+      - Characteristics
+      - UART/SPI/SDIO
+      - Package
+    * - W800
+      - :ref:`xt804`
+      -
+      - 288KB/2 MB
+      -
+      -
+      - QFN32
+    * - :ref:`w801`
+      - :ref:`xt804`
+      -
+      - 288KB/2 MB
+      -
+      -
+      - QFN56
+    * - :ref:`w806`
+      - :ref:`xt804`
+      -
+      - 288KB/1 MB
+      -
+      -
+      - QFN56
+
+
 
 对比W800
 ^^^^^^^^^^^
@@ -72,6 +113,6 @@ Xin选择
 而兼具了蓝牙传输功能的WIFI+蓝牙二合一模块芯片，使得产品开发可以拥有更多方向和更多功能，如让智能家居兼具APP和语音双控制等等，从而让产品自身更具有市场竞争力。支持WIFI低功耗节能模式，功耗低，待机低于10uA。
 
 
-型号对比
+版本对比
 ~~~~~~~~~
 
