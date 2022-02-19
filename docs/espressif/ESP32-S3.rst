@@ -32,7 +32,7 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * 制程工艺：40 nm
 * 供货周期：
 * 处理性能：613.8 :ref:`CoreMark`, 1181.6 :ref:`CoreMark` (Dual)
-* RAM容量：512 KB (TCM)
+* SRAM容量：512 KB (TCM)
 * Flash容量：384 KB
 
 限定参数

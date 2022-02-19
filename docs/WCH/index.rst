@@ -184,6 +184,7 @@ MCS51
     CH552 <CH552>
     CH554 <CH554>
     CH549 <CH549>
+    CH543 <CH543>
 
 .. list-table::
     :header-rows:  1
