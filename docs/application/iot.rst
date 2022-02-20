@@ -16,12 +16,15 @@ IoT
     * - 对比项目
       - :ref:`ethernet`
       - :ref:`plc`
+      - :ref:`802_15_4`
       - :ref:`ble`
       - :ref:`wifi`
       - :ref:`lora`
       - :ref:`nbiot`
       - :ref:`cat1`
+      - Cat.4
     * - 通信距离
+      -
       -
       -
       -
@@ -37,7 +40,9 @@ IoT
       -
       -
       -
+      -
     * - 改造成本
+      -
       -
       -
       -
@@ -53,7 +58,9 @@ IoT
       -
       -
       -
+      -
     * - 扩展性
+      -
       -
       -
       -
@@ -170,6 +177,36 @@ PLC
 
 .. note::
     电力线载波通信（power line carrier communication）以输电线路为载波信号的传输媒介的电力系统通信。
+
+
+
+
+.. _802_15_4:
+
+802.15.4
+----------
+
+IEEE 802.15.4是一种技术标准，它定义了低速率无线个域网 （LR-WPAN）的协议。 它规定了LR-WPAN的物理层和媒体访问控制 ，并由IEEE 802.15工作组维护，该工作组在2003年定义了该标准。它是Zigbee的基础，诸如 ISA100.11a ， WirelessHART ， MiWi ， 6LoWPAN ， 线程和SNAP规范，每个规范通过开发IEEE 802.15.4中未定义的上层进一步扩展了标准。
+
+.. list-table::
+    :header-rows:  1
+
+    * - Rank
+      - Core
+      - RAM
+      - Flash
+      - WiFi
+      - Rate
+      - More
+      - Package
+    * - :ref:`esp32h2`
+      - :ref:`esp_rv32`
+      -
+      -
+      -
+      -
+      -
+      -
 
 
 .. _ble:

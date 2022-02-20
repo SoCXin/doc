@@ -217,7 +217,7 @@ SoC·Xin试图打破不同厂商间的利益边界，从使用者出发多维度
     专注设备连接和接口扩展 @WCH <WCH/index>
     基于LoRa/Cat1长距网络 @ASR <ASR/index>
     移动通信和物联网新领袖 @RDA <RDA/index>
-    Wi-Fi&AIoT无线解决方案 @Espressif <espressif/index>
+    Wi-Fi AIoT无线解决方案 @Espressif <espressif/index>
     高性能基带网关路由SoC @MediaTek  <MediaTek/index>
     高性能多媒体应用处理器 @Allwinner  <allwinner/index>
     专注Cortex-M4核高性价 @ArteryTek <arterytek/index>
