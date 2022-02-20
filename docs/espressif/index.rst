@@ -81,7 +81,7 @@ Espressif
       - √ / 5.0
       - OTG / √
       - 3/4/2
-      - PIE扩展指令
+      - :ref:`esp_pie`
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.2
@@ -89,7 +89,7 @@ Espressif
       - √ / 5.0
       - X / √
       - 2/3/1
-      -
+      - JTAG
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
       -
@@ -105,7 +105,7 @@ Espressif
       - X / 5.0
       - X / X
       - 3/4/2
-      -
+      - Zigbee
 
 .. note::
     在中国的MCU芯片市场，目前有两家具有对比性的厂商： :ref:`espressif` 和 :ref:`wch` ，在产品附加值上就是前者更注重软件生态反哺，后者注重硬件差异覆盖协同。
