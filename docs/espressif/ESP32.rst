@@ -26,8 +26,8 @@ Xin简介
 * 参考价格：
 * 供货周期：
 * 处理性能：504.85 :ref:`CoreMark`, 994.26 :ref:`CoreMark` (Dual Core)
-* SRAM容量：520 KB (8 MB SPI)
-* Flash容量：448 KB (16 MB SPI)
+* RAM容量：520 KB (8 MB SPI)
+* Flash容量：448 KB (16 MB PSRAM)
 
 
 限定参数
@@ -81,7 +81,7 @@ Xin选择
     * - :ref:`esp32`
       - 994.26 :ref:`CoreMark`
       - 512KB/384KB
-      - USB FS OTG
+      -
       - 3/2/1
       - :ref:`esp_qfn48`
     * - :ref:`w801`
@@ -119,7 +119,7 @@ MicroPython
       - 520 KB
       - 802.11 b/g/n
       - BT/BLE v4.2
-      - NO
+      -
       - MAC100
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
@@ -127,8 +127,8 @@ MicroPython
       - 400 KB
       - 802.11 b/g/n
       - BLE v5.0
-      - NO
-      - NO
+      -
+      -
 
 .. _esp8266:
 

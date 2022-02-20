@@ -26,6 +26,8 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 
 * 芯片大小 (die size)：:ref:`esp32c3` < :ref:`esp32s2` < :ref:`esp32s3` < :ref:`esp32`
 
+
+
 基本参数
 ^^^^^^^^^^^
 
@@ -34,8 +36,10 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * 制程工艺：40 nm
 * 供货周期：
 * 处理性能：613.8 :ref:`CoreMark`, 1181.6 :ref:`CoreMark` (Dual)
-* RAM容量：512 KB (TCM)
+* RAM容量：512 KB (TCM，16 KB RTC SRAM)
 * Flash容量：384 KB
+
+
 
 限定参数
 ^^^^^^^^^^^
@@ -46,6 +50,8 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * 封装规格：:ref:`esp_qfn56`
 
 
+
+
 特征参数
 ^^^^^^^^^^^
 
@@ -54,11 +60,11 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * :ref:`esp_wifi` + :ref:`esp_ble`
 * :ref:`esp_usb`
 * :ref:`esp_can`
-* 4 Kbit eFuse
 * 1 × 16bit DVP, 1 × 16bit LCD
 * 2 × SDIO 主机
 * 44 x GPIO，JTAG 接口
 * 2x 12bit 100KSPS ADC (20ch)
+* 14 × 电容式传感 GPIO
 
 .. note::
     ESP32-S3增加了用于加速神经网络计算和信号处理等工作的向量指令 (vector instructions)
@@ -80,10 +86,28 @@ PIE
 * 取饱和操作
 
 
+
+无线性能
+~~~~~~~~~~~~~~
+
+WiFi
+^^^^^^^^^^^^^^^
+
+在 2.4 GHz 频带支持 20 MHz 和 40 MHz 频宽，支持 1T1R 模式，数据速率高达 150 Mbps
+
+* 天线分集
+* 802.11 mc FTM
+* 支持外部功率放大器
+
+BLE
+^^^^^^^^^^^^^^^
+
+* 高功率模式（20 dBm，与 Wi-Fi 共用 PA）
+
 安全特性
 ~~~~~~~~~~~~~~
 
-内置安全硬件，4096 bit OTP，硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
+内置安全硬件，4096 bit eFuse(其中1566 bit用户可用)，硬件加密加速器可支持 AES-128/256、Hash、RSA、HMAC，RNG
 
 
 .. contents::
@@ -112,6 +136,7 @@ TEE 模块
 ^^^^^^^^^^^^^^^
 
 可以通过固件不可访问的私钥生成数字签名。同样地，其 HMAC 外设也可以生成固件不可访问的加密摘要。
+
 目前，大多数物联网云服务使用基于 X.509 证书的身份验证，数字签名外设保护了定义设备身份的私钥。这样一来，即使出现软件漏洞，它也能为设备身份提供强大的保护
 
 .. note::
@@ -140,7 +165,7 @@ Xin选择
     * - :ref:`esp32s3`
       - 1181 :ref:`CoreMark`
       - 512KB/384KB
-      - USB FS OTG
+      - USB1.1 OTG
       - 3/2/1
       - :ref:`esp_qfn56`
     * - :ref:`w801`
@@ -164,7 +189,7 @@ Xin选择
     * - :ref:`list`
       - Core
       - DMIPS
-      - RAM
+      - SRAM
       - WiFi
       - BLE
       - USB
@@ -248,11 +273,25 @@ ESP-Skainet
 
 ``WakeNet``
 
-`ESP-Skainet <https://github.com/espressif/esp-skainet>`_ 是乐鑫针对语音控制设备推出的智能语音助手。
+`ESP-Skainet <https://github.com/espressif/esp-skainet>`_ 是乐鑫针对语音控制设备推出的智能语音助手。集成多种声学算法，如语音活动检测、声学回声消除、降噪和波束成形等，提供了增强的声学性能。
+
 它不依赖云连接，可以完全实现离线运行，在本地乐鑫 SoC 上即可进行唤醒词检测和语音命令词（短语）识别。
-ESP-Skainet 集成多种声学算法，如语音活动检测、声学回声消除、降噪和波束成形等，提供了增强的声学性能。
 
 
+外设应用
+~~~~~~~~~
+
+IO MUX
+^^^^^^^^^^^
+
+支持快速信号如 SPI、JTAG、UART 等可以旁路 GPIO 交换矩阵以实现更好的高频数字特性。所以高速信号会直接通过 IO MUX 输入和输出。
+
+RTC IO MUX
+^^^^^^^^^^^
+
+* 控制 22 个 RTC GPIO 管脚的低功耗特性；
+* 控制 22 个 RTC GPIO 管脚的模拟功能；
+* 将 22 个 RTC 输入输出信号引入 RTC 系统。
 
 Xin总结
 --------------
