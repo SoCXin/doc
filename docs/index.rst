@@ -215,11 +215,13 @@ SoC·Xin试图打破不同厂商间的利益边界，从使用者出发多维度
 
     微控制器芯片领域的王者 @ST <ST/index>
     专注设备连接和接口扩展 @WCH <WCH/index>
+    基于LoRa/Cat1长距网络 @ASR <ASR/index>
+    移动通信和物联网新领袖 @RDA <RDA/index>
     Wi-Fi&AIoT无线解决方案 @Espressif <espressif/index>
     高性能基带网关路由SoC @MediaTek  <MediaTek/index>
     高性能多媒体应用处理器 @Allwinner  <allwinner/index>
     专注Cortex-M4核高性价 @ArteryTek <arterytek/index>
-    基于LoRa/Cat1长距网络 @ASR <ASR/index>
+
 
 收录汇整具有代表性厂商，对用户开放程度高，覆盖的解决方案比较全，通过汇总提供更精炼方案。
 
@@ -231,40 +233,45 @@ SoC·Xin试图打破不同厂商间的利益边界，从使用者出发多维度
     * - #define
       - :ref:`st`
       - :ref:`wch`
-      - :ref:`espressif`
       - :ref:`asr`
+      - :ref:`rda`
+      - :ref:`espressif`
       - :ref:`mediatek`
       - :ref:`arterytek`
       - :ref:`allwinner`
     * - 最新作品
       - :ref:`stm32u575`
       - :ref:`ch32v307`
-      - :ref:`esp32h2`
       - :ref:`asr1601`
+      -
+      - :ref:`esp32h2`
       - :ref:`mt7621`
       - :ref:`at32f437`
       - :ref:`D1`
     * - 经典作品
       - :ref:`stm32f103`
       - :ref:`ch579`
-      - :ref:`esp32`
       - :ref:`asr6501`
+      -
+      - :ref:`esp32`
       - :ref:`mt7688`
       - :ref:`at32f421`
       - :ref:`S3`
     * - 畅销作品
       - :ref:`stm32g030`
       - :ref:`ch549`
-      - :ref:`esp32c3`
       - :ref:`asr1802`
+      -
+      - :ref:`esp32c3`
       - :ref:`mt2625`
       - :ref:`at32f403`
       - :ref:`R329`
     * - 集大成者
       - :ref:`stm32mp15`
       - :ref:`ch569`
-      - :ref:`esp32s3`
       -
+      -
+      - :ref:`esp32s3`
       -
       -
       - :ref:`v831`
