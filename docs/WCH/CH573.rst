@@ -4,7 +4,7 @@
 CH573
 ===========
 
-* 关键词：``RISC-V3A`` ``USB`` ``BLE4.2`` ``AES128`` ``4 UART`` ``QFN28``
+* 关键词：``RISC-V3A`` ``USB`` ``BLE4.2`` ``AES128`` ``UART`` ``QFN28``
 * 资源库：`GitHub <https://github.com/SoCXin/CH573>`_
 
 .. contents::
@@ -30,28 +30,36 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* RAM容量：32 KB
-* Flash容量：250 KB
+* RAM容量：18 KB
+* Flash容量：512 KB
 
+.. note::
+    支持ICP、ISP和IAP，支持OTA无线升级
 
 限定参数
 ^^^^^^^^^^^
 
-* 电压范围：2.1 to 3.6 V
+* 电压范围：22.5V/3.3V (内置DC/DC转换)
 * 功耗范围：
 * 温度范围：-40 °C to 85/125 °C
-* 封装规格：:ref:`qfn28` / :ref:`wch_qfn48`
+* 封装规格：:ref:`qfn28` (4x4mm) / :ref:`wch_qfn48`
 
 
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`wch_riscv3a` 20 MHz
+* :ref:`wch_riscv3a` 20 MHz，支持RV32 IMAC指令集，支持单周期乘法和硬件除法
 * SPI x 2 + UART x 4 (16C550/6Mbps)
 * BLE4.2 (RX-96dBm，TX+5dBm)
-* USB H/D
-* 支持2.1V～3.6V, 内置DC/DC转换
+* 内置USB控制器和USB收发器，支持USB2.0全速和低速主机或设备
+* 多种低功耗模式：Idle，Halt, Sleep, Shutdown, 内置电池电压低压监控，最低睡眠电流0.3uA
 * 2 组端口PA和PB，22 x GPIO
+* 内置温度传感器
+* 集成2.4GHz RF收发器和基带及链路控制，提高优化的协议栈和应用层API，支持组网 (0dBm发送功率时电流为6mA)
+* 内置实时时钟RTC，支持定时和触发两种模式
+* 提供8通道12位ADC模数转换器，支持8通道触摸按键
+* 提供20个GPIO，其中4个支持5V信号输入，所有GPIO支持中断和唤醒功能
+* 内置AES-128加解密单元，芯片唯一ID
 
 .. hint::
     :ref:`ch573` 最吸引人的地方在QFN28封装下，包括4个串口、BLE和USB外设，性价比十分高。

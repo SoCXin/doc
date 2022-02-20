@@ -128,6 +128,45 @@ Xin选择
 
 
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Core
+      - Performance
+      - SRAM/ROM
+      - Characteristics
+      - UART/SPI/SDIO
+      - Package
+    * - :ref:`esp32c2`
+      - :ref:`esp_rv32`
+      - 300 :ref:`CoreMark`
+      - 272KB/576KB
+      -
+      -
+      - QFN40
+    * - :ref:`esp32c3`
+      - :ref:`esp_rv32`
+      -
+      - 512KB/384KB
+      -
+      -
+      - QFN32
+    * - :ref:`esp8625`
+      - :ref:`esp_rv32`
+      -
+      - 512KB/384KB
+      -
+      -
+      - QFN28
+    * - :ref:`ch573`
+      - :ref:`riscv`
+      - 300 :ref:`CoreMark`
+      - 18KB/512KB
+      -
+      -
+      - QFN28
+
 
 型号对比
 ~~~~~~~~~

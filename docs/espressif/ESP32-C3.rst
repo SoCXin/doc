@@ -171,6 +171,38 @@ Air101凭借OpenLuat生态，支持Lua脚本化开发，实现免编译开发，
     ESP32-C3 和 W806 相比封装更小，扩展能力和计算能力规格更低，支持BLE 5.0, 更偏向无线数据节点，后者配置更多的IO，更多的UART,以及16bit SD ADC和SDIO接口，更偏向有针对性的，更复杂的终端网关设备
 
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Core
+      - Performance
+      - SRAM/ROM
+      - Characteristics
+      - UART/SPI/SDIO
+      - Package
+    * - :ref:`esp32c3`
+      - :ref:`esp_rv32`
+      -
+      - 512KB/384KB
+      -
+      -
+      - QFN32
+    * - :ref:`esp8625`
+      - :ref:`esp_rv32`
+      -
+      - 512KB/384KB
+      -
+      -
+      - QFN28
+    * - :ref:`ch573`
+      - :ref:`riscv`
+      -
+      - 18KB/512KB
+      -
+      -
+      - QFN28
+
 
 型号对比
 ~~~~~~~~~
@@ -248,13 +280,12 @@ ESP32-C3没有对 IRAM 和 DRAM 进行静态划分。SRAM 的前 16 KB 被配置
 版本对比
 ~~~~~~~~~
 
-量产芯片版本包括：
-
 .. image:: ./images/ESP32C3S.png
     :target: https://products.espressif.com/#/product-selector?language=zh&names=
 
+.. _esp8625:
 
-对比ESP8625
+ESP8625
 ^^^^^^^^^^^^
 
 相对ESP32-C3FH4版本，主要差异在于封装更小QFN28(4*4)，但是没有BT SIG认证，集成的Flash只有2M
@@ -272,8 +303,6 @@ Xin应用
     :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
 
 
-编译工具
-~~~~~~~~~
 
 开发框架
 ~~~~~~~~~
@@ -292,6 +321,8 @@ Arduino
 应用笔记
 ~~~~~~~~~
 
+.. contents::
+    :local:
 
 LEDC
 ^^^^^^^^^^^

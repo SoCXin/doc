@@ -23,8 +23,8 @@ WCH
 .. contents::
     :local:
 
-转换类产品
-~~~~~~~~~~~~
+接口转换芯片
+~~~~~~~~~~~~~~~~
 
 .. image:: ./images/wch.png
     :target: http://special.wch.cn/zh_cn/interface_conversion_expert/
@@ -52,8 +52,8 @@ Ethernet
     :target: http://www.wch.cn/products/category/4.html#data
 
 
-控制类产品
-~~~~~~~~~~~~
+编程控制类芯片
+~~~~~~~~~~~~~~~~
 
 包括多个系列的 :ref:`mcs51` 内核单片机， :ref:`wch_riscv3a` / :ref:`cortex_m0` 内核的无线SoC
 
@@ -130,6 +130,8 @@ USB ++
 BLE ++
 ^^^^^^^^^^^
 
+.. image:: ./images/BLE.png
+    :target: http://special.wch.cn/zh_cn/mcu/
 
 .. list-table::
     :header-rows:  1
@@ -167,8 +169,6 @@ BLE ++
       - 2 x USB
       - X
 
-.. image:: ./images/ch5x.png
-    :target: http://special.wch.cn/zh_cn/mcu/
 
 .. toctree::
     :maxdepth: 1
