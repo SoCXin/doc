@@ -1,7 +1,7 @@
 
 .. _esp32s2:
 
-ESP32-S2
+ESP32S2
 ================
 
 * 关键词：``Xtensa LX7`` ``240MHz`` ``QFN48`` ``Wi-Fi`` ``USB OTG`` ``ULP``

@@ -1,7 +1,7 @@
 .. _NO_015:
 .. _esp32s3:
 
-ESP32-S3
+ESP32S3
 ================
 
 * 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE5.0`` ``USB FS OTG`` ``TWAI`` ``QFN56``
