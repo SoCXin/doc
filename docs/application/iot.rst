@@ -4,11 +4,8 @@
 IoT
 ============
 
-.. contents::
-    :local:
+主要收录典型的连接类SoC，覆盖典型的IoT场景中，本业列举都是作者推荐的产品
 
-
-主要收录典型的连接类SoC芯片，覆盖典型的IoT场景中，本业列举都是作者推荐的产品。
 
 .. list-table::
     :header-rows:  1
@@ -22,8 +19,9 @@ IoT
       - :ref:`lora`
       - :ref:`nbiot`
       - :ref:`cat1`
-      - Cat.4
+      - :ref:`cat4`
     * - 通信距离
+      -
       -
       -
       -
@@ -41,7 +39,9 @@ IoT
       -
       -
       -
+      -
     * - 改造成本
+      -
       -
       -
       -
@@ -59,6 +59,7 @@ IoT
       -
       -
       -
+      -
     * - 扩展性
       -
       -
@@ -68,6 +69,13 @@ IoT
       -
       -
       -
+      -
+
+
+.. contents::
+    :local:
+
+
 
 .. _ethernet:
 
@@ -390,7 +398,6 @@ NB-IoT
 Cat.1
 -----------
 
-.. image:: ./images/VS.jpg
 
 .. image:: ./images/cat.jpg
 
@@ -431,3 +438,9 @@ Cat.1
 
 
 
+.. _cat4:
+
+Cat.4
+-----------
+
+.. image:: ./images/VS.jpg
