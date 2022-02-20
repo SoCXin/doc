@@ -12,9 +12,12 @@ Espressif
 
 
 .. note::
-    乐鑫伴随物联网崛起，就早期狭义的技术实现而言，物联网≈ESP32/ESP8266，嵌入式工程师入门最经典的莫过于：STM32F103C8 & ESP8266
+    乐鑫伴随物联网崛起，就早期狭义的技术实现而言物联网≈ESP32/ESP8266，嵌入式工程师入门最经典的莫过于：STM32F103C8 & ESP8266
 
 `FQA <https://docs.espressif.com/_/downloads/espressif-esp-faq/zh_CN/latest/pdf/>`_
+
+.. contents::
+    :local:
 
 核心优势
 ~~~~~~~~~~~~
@@ -53,77 +56,60 @@ Espressif
       - :ref:`CoreMark`
       - SRAM / ROM
       - WiFi / BLE
-      - :ref:`esp_usb`/ :ref:`esp_can`
+      - :ref:`esp_usb`/ :ref:`esp_can`/ETH
       - UART/SPI/I2C
-      - ETH
+      - Package
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
-      - 504.8/994.2
+      - 994.2
       - 520KB/448KB
       - √ / 4.2
-      - X / √
+      - X / √ /100Mbps
       - 3/4/2
-      - 100Mbps
+      - QFN48
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
       - 320KB/128KB
-      - √ / X
+      - √ / X / X
       - OTG / X
       - 2/4/2
-      - X
+      - QFN56
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
-      - 613.8/1181.6
+      - 1181.6
       - 512KB/384KB
       - √ / 5.0
-      - OTG / √
+      - OTG / √ / X
       - 3/4/2
-      - X
+      - :ref:`esp_qfn56`
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.2
       - 400KB/384KB
       - √ / 5.0
-      - X / √
+      - X / √ / X
       - 2/3/1
-      - X
+      - QFN32
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
       - 300
       - 272KB/576KB
       - √ / 5.0
-      - X / X
+      - X / X / X
       - 2/3/1
-      - X
+      - QFN32
     * - :ref:`esp32h2`
       - :ref:`esp_rv32`
       -
       - 400KB/384KB
       - X / 5.0
-      - X / X
+      - X / X / X
       - 3/4/2
-      - X
+      - QFN32
 
 .. note::
     就乐鑫目前的产品系列而言，并没有像其他老牌芯片厂商一样花团锦簇，靠着为数不多但足够经典的产品，有着明确的发展脉络。
-
-
-性价比路线
-~~~~~~~~~~~~
-
-这一分类下，主要是单核低成本方案，适用于对成本敏感的无线连接领域。
-
-.. toctree::
-    :maxdepth: 1
-
-    ESP32-C3 <ESP32-C3>
-    ESP32-C2 <ESP32-C2>
-    ESP32-H2 <ESP32-H2>
-    ESP32-S2 <ESP32-S2>
-
-.. note::
-    在老将ESP8266逐渐淡出之后，ESP32-C系列将扛起性价比的大旗直面内卷的国产MCU市场。
 
 高性能路线
 ~~~~~~~~~~~~
@@ -138,6 +124,32 @@ Espressif
 
 .. note::
     就目前已有的软硬件生态资源而言，:ref:`esp32` 依然占据较大的优势，主要在于ESP32-S3任然是以降本为核心，芯片的性能相对提升了了，而升级力度不够导致庞大的开源生态没有足够动力去做适配，离开丰富的开源生态导致开发成本提高。
+
+
+性价比路线
+~~~~~~~~~~~~
+
+这一分类下，主要是单核低成本方案，适用于对成本敏感的无线连接领域。
+
+.. toctree::
+    :maxdepth: 1
+
+    ESP32-C3 <ESP32-C3>
+    ESP32-C2 <ESP32-C2>
+
+.. note::
+    在老将ESP8266逐渐淡出之后，ESP32-C系列将扛起性价比的大旗直面内卷的国产MCU市场。
+
+新领域探索
+~~~~~~~~~~~~
+
+.. toctree::
+    :maxdepth: 1
+
+    ESP32-H2 <ESP32-H2>
+    ESP32-S2 <ESP32-S2>
+
+
 
 技术简介
 -----------

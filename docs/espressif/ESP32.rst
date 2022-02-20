@@ -72,6 +72,28 @@ Xin选择
 
 对标的对手包括 Realtek 和 :ref:`mediatek`
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Performance
+      - SRAM/ROM
+      - Characteristics
+      - UART/SPI/SDIO
+      - Package
+    * - :ref:`esp32`
+      - 994.26 :ref:`CoreMark`
+      - 512KB/384KB
+      - USB FS OTG
+      - 3/2/1
+      - :ref:`esp_qfn48`
+    * - :ref:`w801`
+      - 300 :ref:`DMIPS`
+      - 288KB/2MB
+      - 16-bit ADC
+      - 6/2/1
+      - QFN56
+
 
 MicroPython
 ^^^^^^^^^^^^
