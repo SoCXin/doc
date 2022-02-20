@@ -29,6 +29,10 @@ WCH
 .. image:: ./images/wch.png
     :target: http://special.wch.cn/zh_cn/interface_conversion_expert/
 
+.. contents::
+    :local:
+
+
 USB/UART
 ^^^^^^^^^^^
 
@@ -59,11 +63,7 @@ Ethernet
 
 ETH ++
 ^^^^^^^^^^^
-.. toctree::
-    :maxdepth: 1
 
-    CH579 <CH579>
-    CH563 <CH563>
 
 .. list-table::
     :header-rows:  1
@@ -83,13 +83,14 @@ ETH ++
       - 100M
       - LQFP64M(10x10)
 
-USB ++
-^^^^^^^^^^^
 .. toctree::
     :maxdepth: 1
 
-    CH545 <CH545>
-    CH557 <CH557>
+    CH579 <CH579>
+    CH563 <CH563>
+
+USB ++
+^^^^^^^^^^^
 
 .. list-table::
     :header-rows:  1
@@ -119,13 +120,15 @@ USB ++
       -
       -
 
-BLE ++
-^^^^^^^^^^^
 .. toctree::
     :maxdepth: 1
 
-    CH573 <CH573>
-    CH583 <CH583>
+    CH545 <CH545>
+    CH557 <CH557>
+
+
+BLE ++
+^^^^^^^^^^^
 
 
 .. list-table::
@@ -167,6 +170,13 @@ BLE ++
 .. image:: ./images/ch5x.png
     :target: http://special.wch.cn/zh_cn/mcu/
 
+.. toctree::
+    :maxdepth: 1
+
+    CH573 <CH573>
+    CH583 <CH583>
+
+
 内核简介
 ------------------
 .. contents::
@@ -175,8 +185,55 @@ BLE ++
 
 MCS51
 ~~~~~~~~~~~~
-.. note::
-    基本上都是增强的8051内核，执行效率高。
+
+.. image:: ./images/8051.png
+    :target: http://special.wch.cn/zh_cn/mcu/
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Core
+      - SRAM
+      - Flash
+      - UART/SPI
+      - BLE
+      - USB
+      - Ethernet
+    * - :ref:`ch552`
+      - 24MHz
+      - 2KB
+      - 16KB
+      -
+      -
+      -
+      -
+    * - :ref:`ch554`
+      - 24MHz
+      - 2KB
+      - 16KB
+      -
+      -
+      -
+      -
+    * - :ref:`ch549`
+      - 48MHz
+      - 2KB
+      - 60KB
+      -
+      -
+      -
+      -
+    * - :ref:`ch543`
+      - 48MHz
+      - 512B
+      - 16KB
+      -
+      -
+      -
+      -
+
 
 .. toctree::
     :maxdepth: 1
@@ -186,45 +243,12 @@ MCS51
     CH549 <CH549>
     CH543 <CH543>
 
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`list`
-      - Mark
-      - RAM
-      - Flash
-      - UART/SPI
-      - BLE
-      - USB
-      - Ethernet
-    * - :ref:`ch552`
-      - :ref:`mcs51`
-      - 2KB
-      - 16KB
-      -
-      -
-      -
-      -
-    * - :ref:`ch554`
-      - :ref:`mcs51`
-      - 2KB
-      - 16KB
-      -
-      -
-      -
-      -
-    * - :ref:`ch549`
-      - :ref:`mcs51`
-      - 2KB
-      - 60KB
-      -
-      -
-      -
-      -
-
-
 Cortex
 ~~~~~~~~~~~~
+
+.. image:: ./images/CH32F.png
+    :target: http://special.wch.cn/zh_cn/mcu/
+
 .. note::
     2012年起陆续引入Cortex-M内核，我们加入了网络、USB2.0等高速接口，并设计了高速DMA仲裁机制，推出CH32F103等通用MCU芯片，适用于软件兼容、硬件引脚兼容、接口更专业的成熟生态应用。
 
@@ -236,20 +260,19 @@ Cortex
     CH32F208 <CH32F208>
 
 
-.. image:: ./images/CH32F.png
-    :target: http://special.wch.cn/zh_cn/mcu/
 
 RISC-V
 ~~~~~~~~~~~~
+
+
+* 2017年开始关注并研究RISC-V开源指令集的32位MCU架构，针对快速中断响应、高带宽数据DMA进行优化
+* 2019年推出基于RISC-V3A处理器的CH32V103单片机，内嵌BLE低功耗蓝牙的CH57X系列
+* 2020年初推出128位数据宽度和双层DMA架构的高吞吐量的CH56X系列，现已扩展出浮点型V4F，精简型V2A，增强型V3A/V4A/V4B/V4C等内核产品
 
 .. toctree::
     :maxdepth: 1
 
     内核版本  <riscv>
-
-* 2017年开始关注并研究RISC-V开源指令集的32位MCU架构，针对快速中断响应、高带宽数据DMA进行优化
-* 2019年推出基于RISC-V3A处理器的CH32V103单片机，内嵌BLE低功耗蓝牙的CH57X系列
-* 2020年初推出128位数据宽度和双层DMA架构的高吞吐量的CH56X系列，现已扩展出浮点型V4F，精简型V2A，增强型V3A/V4A/V4B/V4C等内核产品
 
 
 .. image:: ./images/CH32V.png
@@ -262,9 +285,12 @@ RISC-V
     CH32V103 <CH32V103>
     CH32V307 <CH32V307>
     CH32V208 <CH32V208>
-    CH568 <CH568>
-    CH569 <CH569>
 
 .. image:: ./images/CH5V.png
     :target: http://special.wch.cn/zh_cn/mcu/
 
+.. toctree::
+    :maxdepth: 1
+
+    CH568 <CH568>
+    CH569 <CH569>

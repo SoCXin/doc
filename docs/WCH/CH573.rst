@@ -22,15 +22,24 @@ Xin简介
 规格参数
 ~~~~~~~~~~~
 
-
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：2.1 to 3.6 V
-* 工作温度：-40 °C to 85/125 °C
-* 处理性能：34 :ref:`DMIPS`
+* 发布时间：
+* 发布价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
 * RAM容量：32 KB
 * Flash容量：250 KB
+
+
+限定参数
+^^^^^^^^^^^
+
+* 电压范围：2.1 to 3.6 V
+* 功耗范围：
+* 温度范围：-40 °C to 85/125 °C
 * 封装规格：:ref:`qfn28` / :ref:`wch_qfn48`
 
 
@@ -61,19 +70,18 @@ Xin选择
 .. contents::
     :local:
 
-版本对比
+
+品牌对比
 ~~~~~~~~~
 
-.. image:: ./images/CH573list.png
-    :target: http://www.wch.cn/products/CH573.html
-
-CH571 基于 CH573 去掉了 USB host 主机和触摸按键检测模块、8 位 PWM 模块和两个串口，
-FlashROM 总容量仅 256KB，ADC 不支持 DMA，只支持 2.3V 以上电源电压。除了上述差异，其它基本与
-CH573 相同，可直接参考 CH573 手册和资料。
+.. note::
+    :ref:`wch` 专注于连接技术和MCU内核研究，提供以太网、蓝牙无线网络、USB和PCI类等接口芯片及集成上述接口的MCU+单片机。
 
 
-型号对比
+
+系列对比
 ~~~~~~~~~
+
 
 .. image:: ./images/ch5x.png
     :target: http://special.wch.cn/zh_cn/mcu/
@@ -92,14 +100,6 @@ CH573 相同，可直接参考 CH573 手册和资料。
       - BLE
       - USB
       - Ethernet
-    * - :ref:`ch579`
-      - 40MHz
-      - 32K
-      - 250K
-      - 4/2
-      - 4.2(+5dBm)
-      - USB H/D
-      - 10M
     * - :ref:`ch573`
       - :ref:`riscv` 20M
       - 18K
@@ -116,14 +116,26 @@ CH573 相同，可直接参考 CH573 手册和资料。
       - 5.1(+5dBm)
       - 2 x USB
       - NO
+    * - :ref:`ch579`
+      - 40MHz
+      - 32K
+      - 250K
+      - 4/2
+      - 4.2(+5dBm)
+      - USB H/D
+      - 10M
 
 
-
-品牌对比
+版本对比
 ~~~~~~~~~
 
-.. note::
-    :ref:`wch` 专注于连接技术和MCU内核研究，提供以太网、蓝牙无线网络、USB和PCI类等接口芯片及集成上述接口的MCU+单片机。
+.. image:: ./images/CH573list.png
+    :target: http://www.wch.cn/products/CH573.html
+
+CH571 基于 CH573 去掉了 USB host 主机和触摸按键检测模块、8 位 PWM 模块和两个串口，
+FlashROM 总容量仅 256KB，ADC 不支持 DMA，只支持 2.3V 以上电源电压。除了上述差异，其它基本与
+CH573 相同，可直接参考 CH573 手册和资料。
+
 
 
 Xin应用
@@ -155,19 +167,4 @@ CH573F端口
 
 .. warning::
      :ref:`ch573` 没有配置I2C
-
-Xin总结
---------------
-
-.. contents::
-    :local:
-
-要点提示
-~~~~~~~~~~~~~
-
-
-
-问题整理
-~~~~~~~~~~~~~
-
 
