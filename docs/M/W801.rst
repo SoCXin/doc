@@ -1,4 +1,4 @@
-
+.. _NO_003:
 .. _w801:
 
 W801
@@ -27,7 +27,7 @@ Xin简介
 
 * 发布时间：
 * 发布价格：
-* 制程工艺：40 nm
+* 制程工艺：
 * 供货周期：
 * 处理性能：
 * SRAM容量：288 KB (PSRAM-64MB)
@@ -51,7 +51,7 @@ Xin简介
 * BT/BLE v4.2
 * 6x UART
 * 4x 16 bit :ref:`sigma_delta` ADC(1KSPS)
-
+* 15x Touch Sensor
 
 Xin选择
 -----------

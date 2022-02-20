@@ -252,20 +252,12 @@ WiFi
       -
       - 5/2/1
       - QFN32
-    * - :ref:`w806`
-      - :ref:`xt804`
-      - 300 :ref:`DMIPS`
-      - 288KB/1MB
-      - 1T1R
-      - 6/2/1
-      - :ref:`w806_qfn56`
 
 
 .. toctree::
     :maxdepth: 1
 
     W801 <../M/W801>
-    W806 <../M/W806>
     Air101 <../M/Air101>
     Air103 <../M/Air103>
     Hi3861 <../M/Hi3861>

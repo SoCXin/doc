@@ -1,10 +1,10 @@
-.. _NO_003:
+
 .. _w806:
 
 W806
 ===============
 
-* 关键词：``XT804`` ``240MHz`` ``UART`` ``Tee``
+* 关键词：``XT804`` ``240MHz`` ``UART`` ``Tee`` ``DSP``
 * 资源库：`GitHub <https://github.com/SoCXin/W806>`_
 
 .. contents::
@@ -17,20 +17,28 @@ Xin简介
     :target: https://h.hlktech.com/Mobile/download/fdetail/143.html
 
 
-规格配置
+规格参数
 ~~~~~~~~~~~
-
 
 基本参数
 ^^^^^^^^^^^
 
-* 发布时间：2021年9月
+* 发布时间：
 * 发布价格：
-* 工作温度：-40°C to +125°C
-* 处理性能：300 :ref:`DMIPS`
-* RAM容量：288 KB (64MB PSRAM)
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* SRAM容量：288 KB (PSRAM-64MB)
 * Flash容量：1 MB
-* 封装规格：:ref:`w806_qfn56` (6x6mm)
+
+
+限定参数
+^^^^^^^^^^^
+
+* 电压范围：3.0 to 3.6 V
+* 功耗范围：
+* 温度范围：-40°C to 125°C
+* 封装规格：QFN56 (6x6mm)
 
 
 特征参数
@@ -38,26 +46,11 @@ Xin简介
 
 
 * 240MHz :ref:`xt804` 内置 DSP、浮点运算单元与安全引擎
-* 6x UART 高速接口
+* 6x UART
 * 4ch 16-bit :ref:`sigma_delta` ADC(1KSPS)
 * 内置 Tee 安全引擎
-
-
-电源参数
-^^^^^^^^^^^
-
-* 供电电压：3.0 to 3.6 V
-
-封装规格
-~~~~~~~~~~~
-
-.. _w806_qfn56:
-
-QFN56
-^^^^^^^^^^
-
-QFN56 封装，至多44组GPIO可用
-
+* 15x Touch Sensor
+* 集成 SASC/TIPC，内存及内部模块/接口可配置安全属性，防止非安全代码访问
 
 
 Xin选择
@@ -69,7 +62,11 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
-主要对标为 :ref:`espressif` 的 :ref:`esp32c3`
+.. note::
+    W806作为单纯的MCU，主要对比品牌为传统MCU厂商
+
+型号对比
+~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -78,23 +75,30 @@ Xin选择
       - Core
       - Performance
       - SRAM/ROM
-      - WiFi/BLE
+      - Characteristics
       - UART/SPI/SDIO
       - Package
+    * - W800
+      - :ref:`xt804`
+      -
+      - 288KB/2 MB
+      -
+      - 6/2/1
+      - QFN32
+    * - :ref:`w801`
+      - :ref:`xt804`
+      -
+      - 288KB/2 MB
+      -
+      - 6/2/1
+      - QFN56
     * - :ref:`w806`
       - :ref:`xt804`
-      - 300 DMIPS
-      - 288KB/1MB
-      - 1T1R
+      -
+      - 288KB/1 MB
+      -
       - 6/2/1
-      - :ref:`w806_qfn56` (6x6mm)
-    * - :ref:`esp32c3`
-      - :ref:`esp_rv32`
-      - 407.22 :ref:`CoreMark`
-      - 512KB/384KB
-      - 1T1R/v5.0
-      - 2/3/No
-      - :ref:`esp_qfn32` (5x5mm)
+      - QFN56
 
 
 Xin应用

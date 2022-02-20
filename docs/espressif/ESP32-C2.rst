@@ -118,13 +118,13 @@ Xin选择
       -
       - 5/2/1
       - QFN32
-    * - :ref:`w806`
+    * - :ref:`w801`
       - :ref:`xt804`
       - 300 :ref:`DMIPS`
       - 288KB/1MB
       - 1T1R
       - 6/2/1
-      - :ref:`w806_qfn56`
+      - QFN56
 
 
 
