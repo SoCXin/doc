@@ -23,7 +23,7 @@ WCH
 .. contents::
     :local:
 
-接口转换芯片
+接口转换类芯片
 ~~~~~~~~~~~~~~~~
 
 .. image:: ./images/wch.png

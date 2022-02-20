@@ -13,7 +13,6 @@ ESP32S2
 Xin简介
 -----------
 
-由于ESP32-S2产品定位问题，在产品系列中没有足够突出点
 
 .. image:: ./images/ESP32S2.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32-S2
@@ -63,7 +62,7 @@ Xin简介
 
 
 .. warning::
-    ESP32-S2为单核WiFi SoC，并不支持蓝牙，支持TOF，并且配置有8bit DAC
+    ESP32-S2为单核WiFi SoC，并不支持蓝牙，支持TOF，并且配置有8bit DAC，软件增加RainMaker支持
 
 
 安全特性
@@ -136,6 +135,9 @@ Xin选择
 版本对比
 ~~~~~~~~~
 
+.. warning::
+    由于ESP32-S2产品定位问题，在产品系列中没有足够突出点
+
 
 Xin应用
 --------------
@@ -175,14 +177,9 @@ Xin总结
 能力构建
 ~~~~~~~~~~~~~
 
-
 要点提示
 ~~~~~~~~~~~~~
 
 问题整理
 ~~~~~~~~~~~~~
-
-esp32s2现在的外部ram无法使用，模块出的psram纯属摆设，现在sdk还没修复，估计这个是硬件bug。
-
-https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_cn.pdf
 

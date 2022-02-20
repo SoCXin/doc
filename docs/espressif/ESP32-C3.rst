@@ -39,6 +39,8 @@ Xin简介
 * 温度范围：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn32` (5x5mm)
 
+.. note::
+    耐高温由125°降到105°
 
 特征参数
 ^^^^^^^^^^^
@@ -49,7 +51,8 @@ Xin简介
 * TWAI 控制器, 兼容 ISO11898-1
 * 22  x GPIO
 
-
+.. hint::
+    支持蓝牙5.0、支持蓝牙与WiFi共存机制，软件支持TCP/IP、MQTT、HTTP、COAP等常见协议，支持AT指令，支持OTA升级，支持WiFi+BLE MESH组网
 
 计算性能
 ~~~~~~~~~~~~~~
@@ -61,6 +64,8 @@ Xin简介
 
 安全特性
 ~~~~~~~~~~~~~~
+
+支持硬件加密，包括安全启动和Flash加密（填补ESP8266EX安全性问题）
 
 .. contents::
     :local:
@@ -170,35 +175,37 @@ Air101凭借OpenLuat生态，支持Lua脚本化开发，实现免编译开发，
 .. note::
     ESP32-C3 和 W806 相比封装更小，扩展能力和计算能力规格更低，支持BLE 5.0, 更偏向无线数据节点，后者配置更多的IO，更多的UART,以及16bit SD ADC和SDIO接口，更偏向有针对性的，更复杂的终端网关设备
 
+对比BLE
+^^^^^^^^^^^^
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`list`
-      - Core
+      - BLE
       - Performance
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
       - Package
     * - :ref:`esp32c3`
-      - :ref:`esp_rv32`
+      - 5.0
       -
       - 512KB/384KB
       -
       -
       - QFN32
     * - :ref:`esp8625`
-      - :ref:`esp_rv32`
+      - 5.0
       -
       - 512KB/384KB
       -
       -
       - QFN28
     * - :ref:`ch573`
-      - :ref:`riscv`
+      - 4.2
       -
-      - 18KB/512KB
+      - 18 KB/512KB
       -
       -
       - QFN28
@@ -247,6 +254,8 @@ Air101凭借OpenLuat生态，支持Lua脚本化开发，实现免编译开发，
 ^^^^^^^^^^^^
 
 与2014年发布的ESP8266相比，ESP32-C3更像是ESP32的简化版，QFN32(5*5)封装与ESP8266EX一致，价格也对标
+
+支持2.4GHz HT20/40、带宽150Mbps（同比ESP8266EX高了一倍带宽）
 
 .. image:: ./images/C3vsESP8266.png
     :target: https://blog.csdn.net/fengfeng0328/article/details/112437659

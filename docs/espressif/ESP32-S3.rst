@@ -34,7 +34,7 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * 制程工艺：40 nm
 * 供货周期：
 * 处理性能：613.8 :ref:`CoreMark`, 1181.6 :ref:`CoreMark` (Dual)
-* SRAM容量：512 KB (TCM)
+* RAM容量：512 KB (TCM)
 * Flash容量：384 KB
 
 限定参数
@@ -71,13 +71,14 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 PIE
 ^^^^^^^^^^^^^^^
 
-为了提高特定 AI 和 DSP (Digital Signal Processing) 算法的运算效率，在 ESP32-S3 中新增了一组扩展指令。处
-理器指令拓展 (PIE) 支持以下特性：
+为了提高特定 AI 和 DSP (Digital Signal Processing) 算法的运算效率，ESP32-S3 中新增了一组扩展指令。处理器指令拓展 (PIE) 支持以下特性：
+
 * 新增 128-bit 位宽通用寄存器
 * 128-bit 位宽的向量数据操作，包括：乘法、加法、减法、累加、移位、比较等
 * 合并数据处理指令与加载/存储运算指令
 * 非对齐 128-bit 带宽的向量数据
 * 取饱和操作
+
 
 安全特性
 ~~~~~~~~~~~~~~
@@ -172,7 +173,7 @@ Xin选择
       - :ref:`xtensa_lx6`
       - 600 DMIPS
       - 520 KB
-      - 802.11 b/g/n
+      - b/g/n
       - BLE v4.2
       - X
       - 100M
@@ -180,7 +181,7 @@ Xin选择
       - :ref:`xtensa_lx7`
       - 300 DMIPS
       - 520 KB
-      - 802.11 b/g/n
+      - b/g/n
       - BLE v5.0
       - X
       - X
@@ -188,7 +189,7 @@ Xin选择
       - :ref:`xtensa_lx7`
       - 600 DMIPS
       - 512 KB
-      - 802.11 b/g/n
+      - b/g/n
       - BLE v5.0
       - USB1.1 OTG
       - X

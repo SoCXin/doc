@@ -4,9 +4,7 @@ ESP32
 ===============
 
 * 关键词：``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``  ``TSMC40``
-* 资源库：`GitHub <https://github.com/SoCXin/ESP32>`_ , `Gitee <https://gitee.com/socxin/ESP32>`_ , `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-reference/index.html>`_
-
-
+* 资源库：`GitHub <https://github.com/SoCXin/ESP32>`_ , `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-reference/index.html>`_
 
 .. contents::
     :local:
@@ -17,9 +15,8 @@ Xin简介
 .. image:: ./images/ESP32.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32
 
-规格配置
+规格参数
 ~~~~~~~~~~~
-
 
 基本参数
 ^^^^^^^^^^^
@@ -140,16 +137,41 @@ ESP8266
 
  `ESP8266芯片简介 <https://www.espressif.com/zh-hans/products/socs/esp8266>`_
 
-就发布时间而言，ESP32是ESP8266继任者，增加了CPU核数量，更快的Wi-Fi，更多的GPIO，并支持蓝牙4.2和蓝牙低功耗。此外，ESP32配有触摸感应针脚，可用于唤醒ESP32深度睡眠，内置霍尔效应传感器和内置温度传感器。
+* 支持2.4GHz HT20、带宽75Mbps
+* 主频160MHz、160KB SRAM、QFN32(5*5)
+* 软件支持TCP/IP、MQTT、HTTP、COAP等常见协议，支持AT指令，支持OTA升级
+
+就发布时间而言，ESP32是ESP8266继任者，增加了CPU核数量，更快的Wi-Fi，更多的GPIO，并支持蓝牙4.2和蓝牙低功耗。
+
+此外，ESP32配有触摸感应针脚，可用于唤醒ESP32深度睡眠，内置霍尔效应传感器和内置温度传感器。
 
 ESP8266发布较早拥有更多生态资源，同时开发灵活度更高，开发者接受度很高，同时由于定价更低，在没有足够替换动力下，很多项目继续使用该芯片。
 
  `wireless-esp8266-dap <https://github.com/windowsair/wireless-esp8266-dap>`_
 
+ESP8266方案缺陷：
+
+* eFUSE不开放
+* RF信号质量不够高
+* DTIM保活功耗较高
+* 内存较小，无法支撑复杂的应用场合
+* 缺少硬件加密、没有安全启动和Flash加密，RSA耗时较长，TLS握手需要3-4秒
+
 
 版本对比
-~~~~~~~~~~~
+~~~~~~~~~~~~~
 
+ESP32-D0WD-V3
+^^^^^^^^^^^^^^^
+
+* 双核、高主频240MHz、内存容量达520 KB SRAM、eFUSE可用、支持外接PSRAM、QFN48(5*5)
+* 支持2.4GHz HT20/40、带宽150Mbps
+* 支持蓝牙双模、支持蓝牙与WiFi共存机制
+* 支持硬件加密，包括安全启动和Flash加密
+* 外设硬件支持，包括硬件PWM、红外、以太网口、显示屏、音频采集/播放、视频采集/传输、支持更多的低功耗模式
+* 软件支持TCP/IP、MQTT、HTTP、COAP等常见协议，支持AT指令，支持OTA升级，支持语音识别、人脸识别，支持WiFi+BLE MESH组网
+
+尽管是双核，但是性能上同比单核SL没有较为明显的提高（一些芯片厂商也专门对乐鑫的双核方案进行过评估，但最终仍选用单核方案）
 
 Xin应用
 -----------
