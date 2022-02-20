@@ -4,8 +4,8 @@
 ESP32S3
 ================
 
-* 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE5.0`` ``USB FS OTG`` ``TWAI`` ``QFN56``
-* 代码库：`GitHub <https://github.com/SoCXin/ESP32S3>`_ , `Gitee <https://gitee.com/socxin/ESP32S3>`_ , `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html>`_
+* 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE5.0`` ``USB OTG`` ``TWAI`` ``QFN56``
+* 代码库：`GitHub <https://github.com/SoCXin/ESP32S3>`_ , `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html>`_
 
 .. contents::
     :local:
@@ -19,10 +19,12 @@ Xin简介
 .. contents::
     :local:
 
-规格配置
+规格参数
 ~~~~~~~~~~~
 
 ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基于wireless连接能力实现对传统MCU的降维打击。
+
+* 芯片大小 (die size)：:ref:`esp32c3` < :ref:`esp32s2` < :ref:`esp32s3` < :ref:`esp32`
 
 基本参数
 ^^^^^^^^^^^
@@ -194,6 +196,9 @@ Xin应用
 硬件平台
 ~~~~~~~~~
 
+ESP-S3-EYE
+^^^^^^^^^^^^^^^^
+
 ESP32-S3-BOX
 ^^^^^^^^^^^^^^^^
 
@@ -206,24 +211,15 @@ ESP32-S3-BOX
     :target: https://github.com/espressif/esp-box
 
 
-编译工具
-~~~~~~~~~
-
-PlatformIO
-^^^^^^^^^^^^^
-
-.. warning::
-    目前还没有支持到ESP32-S3，板级资源已适配平台包括ESP32、ESP32-S2、ESP32-C3
-
 
 开发框架
 ~~~~~~~~~
 
-ESP-IDF
+ESP-WHO
 ^^^^^^^^^^^
 
-.. image:: ./images/idf-v.png
-    :target: https://github.com/espressif/esp-idf
+.. image:: https://github.com/espressif/esp-who/blob/master/img/architecture_en.drawio.svg
+    :target: https://github.com/espressif/esp-who
 
 
 

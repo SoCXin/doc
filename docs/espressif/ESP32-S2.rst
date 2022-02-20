@@ -4,7 +4,7 @@
 ESP32S2
 ================
 
-* 关键词：``Xtensa LX7`` ``240MHz`` ``QFN48`` ``Wi-Fi`` ``USB OTG`` ``ULP``
+* 关键词：``Xtensa LX7`` ``240MHz`` ``QFN56`` ``Wi-Fi`` ``USB OTG`` ``ULP`` ``DAC``
 * 资源池：`GitHub <https://github.com/SoCXin/ESP32-S2>`_
 
 .. contents::
@@ -13,24 +13,36 @@ ESP32S2
 Xin简介
 -----------
 
+由于ESP32-S2产品定位问题，在产品系列中没有足够突出点
+
 .. image:: ./images/ESP32S2.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32-S2
 
 .. contents::
     :local:
 
-规格配置
+规格参数
 ~~~~~~~~~~~
 
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
-* 工作温度：-40°C to 105°C
+* 发布价格：
+* 制程工艺：40 nm
+* 供货周期：
 * 处理性能：613.8 :ref:`CoreMark`
 * RAM容量：320 KB
 * Flash容量：128 KB
-* 封装规格：:ref:`esp_qfn48`
+
+
+限定参数
+^^^^^^^^^^^
+
+* 电压范围：2.3 to 3.6 V
+* 功耗范围：
+* 温度范围：-40°C to 105°C
+* 封装规格：:ref:`esp_qfn56` (7x7mm)
 
 
 特征参数
@@ -51,13 +63,7 @@ Xin简介
 
 
 .. warning::
-    ESP32-S2为单核 WiFi SoC，注意并没有蓝牙
-
-
-电源参数
-^^^^^^^^^^^
-
-* 供电电压：2.3 to 3.6 V
+    ESP32-S2为单核WiFi SoC，并不支持蓝牙，支持TOF，并且配置有8bit DAC
 
 
 安全特性
@@ -114,15 +120,21 @@ Xin选择
 .. contents::
     :local:
 
+
+品牌对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
 .. hint::
     :ref:`esp32s2` 发布于2019年，在:ref:`esp32` 基础上移除了蓝牙，增加了USB OTG，Xtensa LX7单核
 
-编译工具
-~~~~~~~~~
 
-开发框架
-~~~~~~~~~
+`芯片系列对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
 
+版本对比
+~~~~~~~~~
 
 
 Xin应用

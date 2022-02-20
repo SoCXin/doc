@@ -12,7 +12,7 @@ Espressif
 
 
 .. note::
-    乐鑫伴随物联网崛起，就早期狭义的技术实现而言物联网≈ESP32/ESP8266，嵌入式工程师入门最经典的莫过于：STM32F103C8 & ESP8266
+    乐鑫伴随物联网崛起，就早期狭义的技术实现而言物联网≈ESP32/ESP8266，入门经典莫过于：STM32F103C8 & ESP8266
 
 `FQA <https://docs.espressif.com/_/downloads/espressif-esp-faq/zh_CN/latest/pdf/>`_
 
@@ -45,7 +45,6 @@ Espressif
 产品简介
 -----------
 
-在中国的MCU芯片市场，目前有两家具有对比性的厂商： :ref:`espressif` 和 :ref:`wch` ，在产品附加值上就是前者更注重软件生态反哺，后者注重硬件差异覆盖协同。
 
 
 .. list-table::
@@ -56,60 +55,61 @@ Espressif
       - :ref:`CoreMark`
       - SRAM / ROM
       - WiFi / BLE
-      - :ref:`esp_usb`/ :ref:`esp_can`/ETH
+      - :ref:`esp_usb`/ :ref:`esp_can`
       - UART/SPI/I2C
-      - Package
+      - More
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 994.2
       - 520KB/448KB
       - √ / 4.2
-      - X / √ /100Mbps
+      - X / √
       - 3/4/2
-      - QFN48
+      - :ref:`ethernet`
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
       - 320KB/128KB
-      - √ / X / X
+      - √ / X
       - OTG / X
       - 2/4/2
-      - QFN56
+      - :ref:`esp_touch`
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6
       - 512KB/384KB
       - √ / 5.0
-      - OTG / √ / X
+      - OTG / √
       - 3/4/2
-      - :ref:`esp_qfn56`
+      - PIE扩展指令
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.2
       - 400KB/384KB
       - √ / 5.0
-      - X / √ / X
+      - X / √
       - 2/3/1
-      - QFN32
+      -
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
-      - 300
+      -
       - 272KB/576KB
       - √ / 5.0
-      - X / X / X
+      - X / X
       - 2/3/1
-      - QFN32
+      -
     * - :ref:`esp32h2`
       - :ref:`esp_rv32`
       -
       - 400KB/384KB
       - X / 5.0
-      - X / X / X
+      - X / X
       - 3/4/2
-      - QFN32
+      -
 
 .. note::
-    就乐鑫目前的产品系列而言，并没有像其他老牌芯片厂商一样花团锦簇，靠着为数不多但足够经典的产品，有着明确的发展脉络。
+    在中国的MCU芯片市场，目前有两家具有对比性的厂商： :ref:`espressif` 和 :ref:`wch` ，在产品附加值上就是前者更注重软件生态反哺，后者注重硬件差异覆盖协同。
+
 
 高性能路线
 ~~~~~~~~~~~~
@@ -274,6 +274,12 @@ Matter 成立于 2019 年，由连接标准联盟（Connectivity Standards Allia
 .. contents::
     :local:
 
+.. _esp_ble:
+
+BLE
+^^^^^^^^^^^^^^
+
+
 .. _esp_wifi:
 
 WiFi
@@ -281,11 +287,12 @@ WiFi
 
 802.11 n (2.4 GHz) 速度高达 150 Mbps
 
-.. _esp_ble:
 
-BLE
+
+.. _esp_touch:
+
+Touch
 ^^^^^^^^^^^^^^
-
 
 
 
