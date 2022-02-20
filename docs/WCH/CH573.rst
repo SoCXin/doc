@@ -91,12 +91,6 @@ Xin选择
 ~~~~~~~~~
 
 
-.. image:: ./images/ch5x.png
-    :target: http://special.wch.cn/zh_cn/mcu/
-
-关键参数
-^^^^^^^^^^^^^
-
 .. list-table::
     :header-rows:  1
 
@@ -137,12 +131,11 @@ Xin选择
 版本对比
 ~~~~~~~~~
 
+CH571 基于 CH573 去掉了 USB host 主机和触摸按键检测模块、8 位 PWM 模块和两个串口，FlashROM 总容量仅 256KB，ADC 不支持 DMA，只支持 2.3V 以上电源电压。除了上述差异，其它基本与CH573 相同，可直接参考 CH573 手册和资料。
+
+
 .. image:: ./images/CH573list.png
     :target: http://www.wch.cn/products/CH573.html
-
-CH571 基于 CH573 去掉了 USB host 主机和触摸按键检测模块、8 位 PWM 模块和两个串口，
-FlashROM 总容量仅 256KB，ADC 不支持 DMA，只支持 2.3V 以上电源电压。除了上述差异，其它基本与
-CH573 相同，可直接参考 CH573 手册和资料。
 
 
 
