@@ -103,7 +103,7 @@ Xin选择
       - Characteristics
       - UART/SPI/SDIO
       - Package
-    * - W800
+    * - :ref:`w800`
       - :ref:`xt804`
       -
       - 288KB/2 MB
@@ -128,14 +128,20 @@ Xin选择
 .. note::
     W801是联盛德在 W806 和 W800 基础上的一次技术升级
 
-对比W800
+
+.. _w800:
+
+W800
 ^^^^^^^^^^^
 
 从功能上来看，W801与W800的主要区别在于，W801的接口和管脚更加丰富。
 
 W801不仅将W800原有的UART、Touch Sensor、ADC等接口的数量增加，而且新增了主/从SPI接口、PSRAM扩展接口、LCD控制器接口和7816接口。
 
-对比W806
+
+.. _w806:
+
+W806
 ^^^^^^^^^^^
 
 联盛德W801与W806在功能上的主要区别是，W801在W806的基础上新增了WiFi+蓝牙功能。智能化时代大背景下，WIFI模块成为了很多智能化终端产品的标配。
@@ -143,6 +149,26 @@ W801不仅将W800原有的UART、Touch Sensor、ADC等接口的数量增加，�
 而兼具了蓝牙传输功能的WIFI+蓝牙二合一模块芯片，使得产品开发可以拥有更多方向和更多功能，如让智能家居兼具APP和语音双控制等等，从而让产品自身更具有市场竞争力。
 
 支持WIFI低功耗节能模式，功耗低，待机低于10uA。
+
+* 240MHz :ref:`xt804` 内置 DSP、浮点运算单元与安全引擎
+* 6x UART
+* 4ch 16-bit :ref:`sigma_delta` ADC(1KSPS)
+* 内置 Tee 安全引擎
+* 15x Touch Sensor
+* 集成 SASC/TIPC，内存及内部模块/接口可配置安全属性，防止非安全代码访问
+
+
+
+`SDK <https://github.com/IOsetting/wm-sdk-w806/>`_
+
+芯片相关资料下载链接：https://h.hlktech.com/Mobile/download/fdetail/143.html
+
+
+.. note::
+    W806作为单纯的MCU，主要对比品牌为传统MCU厂商
+
+.. image:: ./images/W806.png
+    :target: https://h.hlktech.com/Mobile/download/fdetail/143.html
 
 
 版本对比

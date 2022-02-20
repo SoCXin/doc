@@ -57,7 +57,6 @@
 /MM32F031.html -> L/MM32F031.html
 /ZML165.html -> M/ZML165.html
 /RP2040.html -> M/RP2040.html
-/W806.html -> M/W806.html
 /W801.html -> M/W801.html
 /Air101.html -> M/Air101.html
 /Air103.html -> M/Air103.html
