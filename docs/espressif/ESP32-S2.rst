@@ -135,6 +135,10 @@ Xin选择
 版本对比
 ~~~~~~~~~
 
+.. image:: ./images/ESP32S2ser.png
+    :target: https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_cn.pdf
+
+
 .. warning::
     由于ESP32-S2产品定位问题，在产品系列中没有足够突出点
 

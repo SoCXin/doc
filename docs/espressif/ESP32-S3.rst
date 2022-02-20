@@ -201,6 +201,8 @@ Xin选择
 版本对比
 ~~~~~~~~~
 
+.. image:: ./images/ESP32S3ser.png
+    :target: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_cn.pdf
 
 
 Xin应用
