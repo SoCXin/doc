@@ -120,7 +120,7 @@ Espressif
     :maxdepth: 1
 
     ESP32 <ESP32>
-    ESP32-S3 <ESP32-S3>
+    ESP32S3 <ESP32-S3>
 
 .. note::
     就目前已有的软硬件生态资源而言，:ref:`esp32` 依然占据较大的优势，主要在于ESP32-S3任然是以降本为核心，芯片的性能相对提升了了，而升级力度不够导致庞大的开源生态没有足够动力去做适配，离开丰富的开源生态导致开发成本提高。
@@ -134,8 +134,8 @@ Espressif
 .. toctree::
     :maxdepth: 1
 
-    ESP32-C3 <ESP32-C3>
-    ESP32-C2 <ESP32-C2>
+    ESP32C3 <ESP32-C3>
+    ESP32C2 <ESP32-C2>
 
 .. note::
     在老将ESP8266逐渐淡出之后，ESP32-C系列将扛起性价比的大旗直面内卷的国产MCU市场。
@@ -146,8 +146,9 @@ Espressif
 .. toctree::
     :maxdepth: 1
 
-    ESP32-H2 <ESP32-H2>
-    ESP32-S2 <ESP32-S2>
+    USB-OTG ESP32S2 <ESP32-S2>
+    802.15.4 ESP32H2 <ESP32-H2>
+
 
 
 
