@@ -40,6 +40,40 @@ Xin简介
 
 * 供电电压：3.0 to 3.6 V
 
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~
+
+
+型号对比
+~~~~~~~~~
+
+.. _air103:
+
+Air103
+^^^^^^^^^^^^
+
+
+* RAM容量：288KB
+* Flash容量：2MB
+* 封装规格：QFN56 (6X6mm)
+
+.. image:: ./images/B_Air103.png
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.19.6fa22e49dS8gPj&id=661796285257&ns=1&abbucket=13#detail
+
+.. _air105:
+
+Air105
+^^^^^^^^^^^^
+
+* RAM容量：288KB
+* Flash容量：2MB
+* 封装规格：QFN88
 
 
 Xin应用

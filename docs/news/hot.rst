@@ -70,6 +70,11 @@ Lua
 
 `Lua语言 <https://docs.os-q.com/lua>`_
 
+.. toctree::
+    :maxdepth: 1
+
+    Air101 <../M/Air101>
+
 .. _rust:
 
 Rust

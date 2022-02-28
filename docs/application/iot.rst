@@ -283,8 +283,6 @@ WiFi
     :maxdepth: 1
 
     W801 <../M/W801>
-    Air101 <../M/Air101>
-    Air103 <../M/Air103>
     Hi3861 <../M/Hi3861>
 
 
