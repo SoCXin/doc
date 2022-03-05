@@ -57,7 +57,7 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 
 * 240 MHz :ref:`esp_lx7` Dual Core
 * 低功耗协处理器 :ref:`esp_ulp` （FSM/RISC-V二选一）
-* :ref:`esp_wifi` + :ref:`esp_ble`
+* :ref:`esp32s3_wifi` + :ref:`esp32s3_ble`
 * :ref:`esp_usb`
 * :ref:`esp_can`
 * 1 × 16bit DVP, 1 × 16bit LCD
@@ -90,6 +90,8 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 连接能力
 ~~~~~~~~~~~~~~
 
+.. _esp32s3_wifi:
+
 WiFi
 ^^^^^^^^^^^^^^^
 
@@ -98,6 +100,8 @@ WiFi
 * 天线分集
 * 802.11 mc FTM
 * 支持外部功率放大器
+
+.. _esp32s3_ble:
 
 BLE
 ^^^^^^^^^^^^^^^
@@ -157,19 +161,19 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`list`
-      - Performance
+      - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
       - Package
     * - :ref:`esp32s3`
-      - 1181 :ref:`CoreMark`
+      - 1181.6 
       - 512KB/384KB
       - USB1.1 OTG
       - 3/2/1
       - :ref:`esp_qfn56`
     * - :ref:`w801`
-      - 300 :ref:`DMIPS`
+      - 
       - 288KB/2MB
       - 16-bit ADC
       - 6/2/1
@@ -242,8 +246,19 @@ Xin应用
 ESP-S3-EYE
 ^^^^^^^^^^^^^^^^
 
+`ESP-S3-EYE <https://github.com/espressif/esp-who/blob/master/docs/en/get-started/ESP32-S3-EYE_Getting_Started_Guide.md>`_
+
+ESP-S3-USB-OTG
+^^^^^^^^^^^^^^^^
+
+`ESP-S3-USB-OTG <https://docs.espressif.com/projects/espressif-esp-dev-kits/zh_CN/latest/esp32s3/esp32-s3-usb-otg/user_guide.html>`_
+
+
+
 ESP32-S3-BOX
 ^^^^^^^^^^^^^^^^
+
+`ESP32-S3-BOX <https://github.com/espressif/esp-box>`_
 
 .. image:: ./images/S3-BOX.png
     :target: https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-22443450244.17.348167d8ZD5hBc&id=658634202331
@@ -252,6 +267,7 @@ ESP32-S3-BOX
 
 .. image:: ./images/S3-Box-SCH.png
     :target: https://github.com/espressif/esp-box
+
 
 
 
@@ -280,6 +296,13 @@ ESP-Skainet
 
 外设应用
 ~~~~~~~~~
+
+.. _esp_touch:
+
+Touch
+^^^^^^^^^^^
+
+
 
 IO MUX
 ^^^^^^^^^^^

@@ -49,7 +49,7 @@ Xin简介
 
 * 240 MHz :ref:`xtensa_lx7`
 * :ref:`esp_ulp`
-* :ref:`esp_wifi`
+* :ref:`esp32s2_wifi`
 * :ref:`esp_usb`
 * :ref:`esp_can`
 * 4 Kbit eFuse
@@ -63,6 +63,21 @@ Xin简介
 
 .. warning::
     ESP32-S2为单核WiFi SoC，并不支持蓝牙，支持TOF，并且配置有8bit DAC，软件增加RainMaker支持
+
+连接能力
+~~~~~~~~~~~~~~
+
+.. _esp32s2_wifi:
+
+WiFi
+^^^^^^^^^^^^^^^
+
+在 2.4 GHz 频带支持 20 MHz 和 40 MHz 频宽，支持 1T1R 模式，数据速率高达 150 Mbps
+
+* 天线分集
+* 802.11 mc FTM
+* 支持外部功率放大器
+
 
 
 安全特性

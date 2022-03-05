@@ -72,7 +72,7 @@ Espressif
       - HT40 / X
       - OTG / X
       - 2/4/2
-      - :ref:`esp_touch`
+      - 
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6
@@ -268,32 +268,6 @@ Matter 成立于 2019 年，由连接标准联盟（Connectivity Standards Allia
 
 是一个统一的智能家居互联标准，能够为家庭自动化项目提供安全可靠的无线连接。
 
-外设相关
-~~~~~~~~~~~~
-
-
-.. contents::
-    :local:
-
-.. _esp_ble:
-
-BLE
-^^^^^^^^^^^^^^
-
-
-.. _esp_wifi:
-
-WiFi
-^^^^^^^^^^^^^^
-
-802.11 n (2.4 GHz) 速度高达 150 Mbps
-
-
-
-.. _esp_touch:
-
-Touch
-^^^^^^^^^^^^^^
 
 
 

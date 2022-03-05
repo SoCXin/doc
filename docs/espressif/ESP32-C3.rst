@@ -114,7 +114,7 @@ Xin选择
 
     * - :ref:`list`
       - Core
-      - Performance
+      - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
@@ -165,7 +165,7 @@ Xin选择
 
     * - :ref:`list`
       - BLE
-      - Performance
+      - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO

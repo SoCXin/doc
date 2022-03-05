@@ -45,8 +45,8 @@ Xin简介
 
 * 240 MHz :ref:`esp_lx6` Dual Core
 * 低功耗协处理器 :ref:`esp_ulp`
-* 1T1R 802.11 b/g/n :ref:`esp_wifi`
-*  +12 dBm，–97dBm :ref:`esp_ble` v4.2
+* 1T1R 802.11 b/g/n :ref:`esp32_wifi`
+*  +12 dBm，–97dBm :ref:`esp32_ble` v4.2
 * :ref:`esp_can`
 * IEEE 1588 MAC,100 Mbps
 * Host SD/eMMC/SDIO、Slave SDIO/SPI
@@ -55,6 +55,28 @@ Xin简介
 * 12-bit SAR ADC 18ch
 * 2 x 8-bit DAC
 
+连接能力
+~~~~~~~~~~~~~~
+
+.. _esp32_wifi:
+
+WiFi
+^^^^^^^^^^^^^^^
+
+``802.11b/g/n``
+
+* 支持HT20和HT40, 1T1R 150 Mbps
+* 802.11b 无线传输功率可达 +20.5 dBm
+* 802.11n 无线传输功率可达 +18 dBm
+
+.. _esp32_ble:
+
+蓝牙
+^^^^^^^^^^^^^^^
+
+``v4.2``
+
+* +12 dBm，–97dBm
 
 Xin选择
 -----------
@@ -66,7 +88,7 @@ Xin选择
 品牌对比
 ~~~~~~~~~~~
 
-对标的对手包括 Realtek 和 :ref:`mediatek`
+在WiFi MCU领域，ESP的主要对比品牌有 :ref:`realtek` 和 :ref:`mediatek`
 
 .. list-table::
     :header-rows:  1
@@ -94,21 +116,20 @@ Xin选择
 型号对比
 ~~~~~~~~~~~
 
-
 .. list-table::
     :header-rows:  1
 
     * - :ref:`list`
       - Core
-      - DMIPS
-      - RAM
+      - :ref:`CoreMark`
+      - SRAM/ROM
       - WiFi
       - BLE
       - USB
-      - Ethernet
+      - More
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
-      - 600 DMIPS
+      - 994.26
       - 520 KB
       - 802.11 b/g/n
       - BT/BLE v4.2
@@ -116,12 +137,16 @@ Xin选择
       - MAC100
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
-      - 200 DMIPS
+      - 407.22
       - 400 KB
       - 802.11 b/g/n
       - BLE v5.0
       -
       -
+
+     
+`官方提供的芯片系列对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
+
 
 
 相对较早的产品ESP8266，具有更强的性能，同时集成蓝牙功能
