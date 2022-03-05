@@ -15,6 +15,9 @@ Xin简介
 .. image:: ./images/ESP32.png
     :target: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf
 
+规格参数
+~~~~~~~~~~~
+
 
 基本参数
 ^^^^^^^^^^^
@@ -22,10 +25,10 @@ Xin简介
 * 发布时间：2016年9月
 * 发布价格：
 * 制程工艺：40 nm (TSMC)
-* 供货周期：
+* 供货周期：至2028年
 * 处理性能：504.85 :ref:`CoreMark`, 994.26 :ref:`CoreMark` (Dual Core)
 * RAM容量：520 KB (8 MB SPI)
-* Flash容量：448 KB (16 MB PSRAM)
+* Flash容量：448 KB (16MB PSRAM)
 
 
 限定参数
@@ -88,12 +91,9 @@ Xin选择
       - QFN56
 
 
-
-
 型号对比
 ~~~~~~~~~~~
 
-相对较早的产品ESP8266，具有更强的性能，同时集成蓝牙功能
 
 .. list-table::
     :header-rows:  1
@@ -122,6 +122,10 @@ Xin选择
       - BLE v5.0
       -
       -
+
+
+相对较早的产品ESP8266，具有更强的性能，同时集成蓝牙功能
+
 
 .. _esp8266:
 
@@ -152,7 +156,7 @@ ESP8266方案缺陷：
 
 
 版本对比
-~~~~~~~~~~~~~
+~~~~~~~~~~~
 
 ESP32-D0WD-V3
 ^^^^^^^^^^^^^^^

@@ -34,7 +34,7 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * 发布时间：2020年12月31日
 * 发布价格：
 * 制程工艺：40 nm
-* 供货周期：
+* 供货周期：至2033年
 * 处理性能：613.8 :ref:`CoreMark`, 1181.6 :ref:`CoreMark` (Dual)
 * RAM容量：512 KB (TCM，16 KB RTC SRAM)
 * Flash容量：384 KB
