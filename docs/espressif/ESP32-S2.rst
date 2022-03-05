@@ -141,6 +141,50 @@ Xin选择
 型号对比
 ~~~~~~~~~
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`espressif`
+      - Architecture
+      - :ref:`CoreMark`
+      - SRAM/ROM
+      - WiFi
+      - BLE
+      - USB
+      - Package
+    * - :ref:`esp32`
+      - :ref:`xtensa_lx6`
+      - 994.26
+      - 520KB/448KB
+      - b/g/n
+      - BLE v4.2
+      - X
+      - QFN48
+    * - :ref:`esp32s2`
+      - :ref:`xtensa_lx7`
+      - 613.8
+      - 320KB/128KB
+      - b/g/n
+      - BLE v5.0
+      - USB1.1 OTG
+      - QFN56
+    * - :ref:`esp32s3`
+      - :ref:`xtensa_lx7`
+      - 1181.6
+      - 512KB/384KB
+      - b/g/n
+      - BLE v5.0
+      - USB1.1 OTG
+      - QFN56
+    * - :ref:`esp32c3`
+      - :ref:`esp_rv32`
+      - 407.22
+      - 400KB/384KB
+      - √
+      - v5.0
+      - X
+      - QFN32/QFN28
+      
 .. hint::
     :ref:`esp32s2` 发布于2019年，在:ref:`esp32` 基础上移除了蓝牙，增加了USB OTG，Xtensa LX7单核
 
@@ -196,9 +240,10 @@ Xin总结
 能力构建
 ~~~~~~~~~~~~~
 
-要点提示
-~~~~~~~~~~~~~
-
 问题整理
 ~~~~~~~~~~~~~
 
+应用总结
+~~~~~~~~~~~~~
+
+ESP32-S2的市场定位及市场竞争力存在短板，就配置而言作为 :ref:`esp8266` 的继任者性价比不够，而作为高性能产品又显得配置过低，与 :ref:`esp32` 、:ref:`esp32s3` 相比没有足够的吸引力，只能作为一个短暂的过渡产品。

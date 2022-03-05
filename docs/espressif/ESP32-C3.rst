@@ -199,38 +199,39 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
-      - DMIPS
-      - RAM
+    * - :ref:`espressif`
+      - Architecture
+      - :ref:`CoreMark`
+      - SRAM/ROM
       - WiFi
       - BLE
       - USB
-      - MAC
-    * - :ref:`esp32`
-      - Dual LX6
-      - 600 DMIPS
-      - 520 KB
-      - √
-      - v4.2
-      - X
-      - 100M
-    * - :ref:`esp32s3`
-      - Dual LX7
-      - 600 DMIPS
-      - 512 KB
-      - √
-      - v5.0
-      - USB1.1 OTG
-      - X
+      - Package
     * - :ref:`esp32c3`
-      - RV32IMC
-      - 200 DMIPS
-      - 400 KB
+      - :ref:`esp_rv32`
+      - 407.22
+      - 400KB/384KB
       - √
       - v5.0
       - X
+      - QFN32/QFN28
+    * - :ref:`esp32`
+      - :ref:`xtensa_lx6`
+      - 994.26
+      - 520KB/448KB
+      - b/g/n
+      - BLE v4.2
       - X
+      - QFN48
+    * - :ref:`esp32s3`
+      - :ref:`xtensa_lx7`
+      - 1181.6
+      - 512KB/384KB
+      - b/g/n
+      - BLE v5.0
+      - USB1.1 OTG
+      - QFN56
+
 
 对比ESP8266
 ^^^^^^^^^^^^

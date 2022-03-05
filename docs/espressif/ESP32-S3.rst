@@ -190,38 +190,46 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
-      - DMIPS
-      - SRAM
+    * - :ref:`espressif`
+      - Architecture
+      - :ref:`CoreMark`
+      - SRAM/ROM
       - WiFi
       - BLE
       - USB
-      - MAC
+      - Package
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
-      - 600 DMIPS
-      - 520 KB
+      - 994.26
+      - 520KB/448KB
       - b/g/n
       - BLE v4.2
       - X
-      - 100M
+      - QFN48
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
-      - 300 DMIPS
-      - 520 KB
-      - b/g/n
-      - BLE v5.0
-      - X
-      - X
-    * - :ref:`esp32s3`
-      - :ref:`xtensa_lx7`
-      - 600 DMIPS
-      - 512 KB
+      - 613.8
+      - 320KB/128KB
       - b/g/n
       - BLE v5.0
       - USB1.1 OTG
+      - QFN56
+    * - :ref:`esp32s3`
+      - :ref:`xtensa_lx7`
+      - 1181.6
+      - 512KB/384KB
+      - b/g/n
+      - BLE v5.0
+      - USB1.1 OTG
+      - QFN56
+    * - :ref:`esp32c3`
+      - :ref:`esp_rv32`
+      - 407.22
+      - 400KB/384KB
+      - √
+      - v5.0
       - X
+      - QFN32/QFN28
 
 `芯片系列对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
 
@@ -265,10 +273,6 @@ ESP32-S3-BOX
 
 除了智能语音助手以外，还集触摸屏控制、传感器、红外控制器和智能网关等多功能于一体，拥有完善的 SDK 和丰富的例程。
 
-.. image:: ./images/S3-Box-SCH.png
-    :target: https://github.com/espressif/esp-box
-
-
 
 
 开发框架
@@ -276,10 +280,6 @@ ESP32-S3-BOX
 
 ESP-WHO
 ^^^^^^^^^^^
-
-.. image:: https://github.com/espressif/esp-who/blob/master/img/architecture_en.drawio.svg
-    :target: https://github.com/espressif/esp-who
-
 
 
 .. _esp_skainet:
@@ -294,8 +294,8 @@ ESP-Skainet
 它不依赖云连接，可以完全实现离线运行，在本地乐鑫 SoC 上即可进行唤醒词检测和语音命令词（短语）识别。
 
 
-外设应用
-~~~~~~~~~
+交互应用
+~~~~~~~~~~~
 
 .. _esp_touch:
 
@@ -303,14 +303,16 @@ Touch
 ^^^^^^^^^^^
 
 
+数字外设
+~~~~~~~~~~~
+
 
 IO MUX
 ^^^^^^^^^^^
 
 支持快速信号如 SPI、JTAG、UART 等可以旁路 GPIO 交换矩阵以实现更好的高频数字特性。所以高速信号会直接通过 IO MUX 输入和输出。
 
-RTC IO MUX
-^^^^^^^^^^^
+基于RTC控制IO MUX
 
 * 控制 22 个 RTC GPIO 管脚的低功耗特性；
 * 控制 22 个 RTC GPIO 管脚的模拟功能；
@@ -329,9 +331,8 @@ Xin总结
     相对传统的MCU使用的强大IDE环境，最大的槽点就是缺乏高度集成的工具环境，ESP-IDF的编译效率较低，文件修改后编译非常耗时
 
 
-要点提示
-~~~~~~~~~~~~~
-
 问题整理
 ~~~~~~~~~~~~~
 
+应用总结
+~~~~~~~~~~~~~

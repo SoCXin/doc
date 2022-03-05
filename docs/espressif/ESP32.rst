@@ -133,44 +133,50 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
-      - DMIPS
-      - SRAM
+    * - :ref:`espressif`
+      - Architecture
+      - :ref:`CoreMark`
+      - SRAM/ROM
       - WiFi
       - BLE
       - USB
-      - MAC
+      - Package
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
-      - 600 DMIPS
-      - 520 KB
+      - 994.26
+      - 520KB/448KB
       - b/g/n
       - BLE v4.2
       - X
-      - 100M
+      - QFN48
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
-      - 300 DMIPS
-      - 520 KB
-      - b/g/n
-      - BLE v5.0
-      - X
-      - X
-    * - :ref:`esp32s3`
-      - :ref:`xtensa_lx7`
-      - 600 DMIPS
-      - 512 KB
+      - 613.8
+      - 320KB/128KB
       - b/g/n
       - BLE v5.0
       - USB1.1 OTG
+      - QFN56
+    * - :ref:`esp32s3`
+      - :ref:`xtensa_lx7`
+      - 1181.6
+      - 512KB/384KB
+      - b/g/n
+      - BLE v5.0
+      - USB1.1 OTG
+      - QFN56
+    * - :ref:`esp32c3`
+      - :ref:`esp_rv32`
+      - 407.22
+      - 400KB/384KB
+      - √
+      - v5.0
       - X
-
+      - QFN32/QFN28
 
 `官方提供的芯片系列对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
 
-* 芯片大小 (die size)：:ref:`esp32c3` < :ref:`esp32s2` < :ref:`esp32s3` < :ref:`esp32`
-
+* 芯片晶圆面积比较 (40nm)：:ref:`esp32c3` < :ref:`esp32s2` < :ref:`esp32s3` < :ref:`esp32`
 
 .. _esp8266:
 
