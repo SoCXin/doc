@@ -93,6 +93,7 @@ CoreMark程序使用C语言写成，包含如下的运算法则：列举（寻�
 
 CoreMark标准的测试方法也很简单，就是在某配置参数组合下单位时间内跑了多少次CoreMark程序，其指标单位为CoreMark/MHz。CoreMark数字越高，意味着性能更高。
 
+跑分对编译器的优化等级 -O 参数有严重倚赖
 
 .. _ULPMark:
 

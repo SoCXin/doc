@@ -13,17 +13,15 @@ Xin简介
 -----------
 
 .. image:: ./images/ESP32.png
-    :target: https://www.espressif.com/zh-hans/products/socs/ESP32
+    :target: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf
 
-规格参数
-~~~~~~~~~~~
 
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：2016年9月
-* 制程工艺：TSMC 40nm
-* 参考价格：
+* 发布价格：
+* 制程工艺：40 nm (TSMC)
 * 供货周期：
 * 处理性能：504.85 :ref:`CoreMark`, 994.26 :ref:`CoreMark` (Dual Core)
 * RAM容量：520 KB (8 MB SPI)
@@ -37,6 +35,7 @@ Xin简介
 * 功耗范围：
 * 温度范围：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn48`
+
 
 特征参数
 ^^^^^^^^^^^
@@ -52,10 +51,7 @@ Xin简介
 * 霍尔传感器
 * 12-bit SAR ADC 18ch
 * 2 x 8-bit DAC
-* `ESP-IDF <https://github.com/espressif/esp-idf>`_
 
-
-`datasheet <https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf>`_
 
 Xin选择
 -----------
@@ -92,10 +88,7 @@ Xin选择
       - QFN56
 
 
-MicroPython
-^^^^^^^^^^^^
 
-如果是因为需要 `MicroPython <http://micropython.org/>`_ 开发而选择ESP32产品，相应的对比平台包括 :ref:`rp2040` 和 :ref:`stm32f405`
 
 型号对比
 ~~~~~~~~~~~
@@ -135,7 +128,7 @@ MicroPython
 ESP8266
 ^^^^^^^^^^^^
 
- `ESP8266芯片简介 <https://www.espressif.com/zh-hans/products/socs/esp8266>`_
+`ESP8266芯片 <https://www.espressif.com/zh-hans/products/socs/esp8266>`_
 
 * 支持2.4GHz HT20、带宽75Mbps
 * 主频160MHz、160KB SRAM、QFN32(5*5)
@@ -207,6 +200,8 @@ Xin总结
 要点提示
 ~~~~~~~~~~~~~
 
+* ESP32的Touch功能灵敏度不够
+
 烧录模式
 ^^^^^^^^^^^^^
 
@@ -223,6 +218,8 @@ linux下面串口设备的一般是root权限，因此使用串口需要取得ro
 问题整理
 ~~~~~~~~~~~~~
 
+`FQA <https://docs.espressif.com/_/downloads/espressif-esp-faq/zh_CN/latest/pdf/>`_
+
 `bugs <https://www.espressif.com/sites/default/files/documentation/eco_and_workarounds_for_bugs_in_esp32_cn.pdf>`_
 
 Brownout detector was triggered 已触发断电探测器
@@ -236,26 +233,6 @@ make menuconfig->component config->ESP32-specific->Hardware brownout detect &res
 
 这个问题描述的是：ESP32的电平低于某个值（这个值是可以设定的，后文会有介绍），然后触发了断电探测器，断电探测器会使得ESP32重新启动。
 
-
-LoadProhibited/StoreProhibited
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-<禁止加载、禁止存储>
-
-当应用程序尝试读取或写入无效的内存位置时,会发生此 CPU 异常。
-
-可能原因:写入/读取的地址可在寄存器转储中的 EXCVADDR寄存器(途中红色划线)中找到.
-
-1、如果此地址为零,则通常表示应用程序尝试引用 NULL 指针(勿忘对数组成员取地址)；
-
-2、如果此地址接近于零,则通常意味着应用程序尝试访问结构体的成员,但指向该结构的指针为 NULL；
-
-3、如果该地址是别的(垃圾值,不在 0x3fxxxxxx - 0x6xxxxxxx 范围内),则可能意味着用于访问数据的指针未初始化或已损坏。
-
-引用NULL指针(&地址引用错误、野指针....)
-
-在编译时出现error: unrecognized command line option '-mfix-esp32-psram-cache-issue'
-原因:这是因为ESP32的某些修订存在一些问题，这些问题会对外部RAM的使用产生影响。而这些内容都记录在ESP32 ECO文档中。
 
 
 .. warning::

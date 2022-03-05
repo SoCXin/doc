@@ -35,7 +35,7 @@ STM32系列主要用于解决客户对实时任务和功耗限制的重要要求
 * 制程工艺：
 * 参考价格：$6-$11
 * 供货周期：
-* 处理性能：MCU 599 :ref:`DMIPS`
+* 处理性能：? CoreMark (Cortex-A7)，703 CoreMark (Cortex-M4)
 * RAM容量：708 KB
 * Flash容量：
 

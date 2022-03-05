@@ -68,7 +68,7 @@
 Lua
 ^^^^^^^^^^^^
 
-`Lua语言 <https://docs.os-q.com/lua>`_
+`Lua语言 <https://docs.os-q.com/lua>`_ 运行平台包括 :ref:`air101` 
 
 .. toctree::
     :maxdepth: 1
@@ -80,14 +80,51 @@ Lua
 Rust
 ^^^^^^^^^^^^
 
-`Rust语言 <https://docs.os-q.com/rust>`_
+`Rust <https://docs.os-q.com/rust>`_ 运行平台包括 :ref:`esp32` 、:ref:`rp2040` 和 :ref:`stm32f103`
+
 
 .. _mpy:
 
 mPy
 ^^^^^^^^^^^^
 
-`MicroPython语言 <https://docs.os-q.com/mpy>`_
+`MicroPython <https://docs.os-q.com/mpy>`_ 运行平台包括 :ref:`esp32` 、:ref:`rp2040` 和 :ref:`stm32f405`
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+    * - :ref:`esp32`
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+    * - :ref:`rp2040`
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+    * - :ref:`stm32f405`
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
 
 .. _xgo:
 

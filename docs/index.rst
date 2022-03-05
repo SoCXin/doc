@@ -134,13 +134,13 @@ SoC·Xin试图打破不同厂商间的利益边界，从使用者出发多维度
 .. list-table::
     :header-rows:  1
 
-    * - #define
-      - L1(≤40MHz)
-      - L2(≤80MHz)
-      - L3(≤200MHz)
-      - L4(≤1.2KCoreMark)
-      - L5(≤2.5KCoreMark)
-      - L6(≤4.0KCoreMark)
+    * - :ref:`CoreMark`
+      - L1(≤100)
+      - L2(≤200)
+      - L3(≤400)
+      - L4(≤1200)
+      - L5(≤2000)
+      - L6(≤3600)
     * - :ref:`mcs51`
       - :ref:`stc8`
       - :ref:`ch549`

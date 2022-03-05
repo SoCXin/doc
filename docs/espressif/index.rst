@@ -14,7 +14,6 @@ Espressif
 .. note::
     乐鑫伴随物联网崛起，就早期狭义的技术实现而言物联网≈ESP32/ESP8266，入门经典莫过于：STM32F103C8 & ESP8266
 
-`FQA <https://docs.espressif.com/_/downloads/espressif-esp-faq/zh_CN/latest/pdf/>`_
 
 .. contents::
     :local:
@@ -62,7 +61,7 @@ Espressif
       - :ref:`xtensa_lx6`
       - 994.2
       - 520KB/448KB
-      - √ / 4.2
+      - HT40 / 4.2
       - X / √
       - 3/4/2
       - :ref:`ethernet`
@@ -70,7 +69,7 @@ Espressif
       - :ref:`xtensa_lx7`
       - 613.8
       - 320KB/128KB
-      - √ / X
+      - HT40 / X
       - OTG / X
       - 2/4/2
       - :ref:`esp_touch`
@@ -78,7 +77,7 @@ Espressif
       - :ref:`xtensa_lx7`
       - 1181.6
       - 512KB/384KB
-      - √ / 5.0
+      - HT40 / 5.0
       - OTG / √
       - 3/4/2
       - :ref:`esp_pie`
@@ -86,7 +85,7 @@ Espressif
       - :ref:`esp_rv32`
       - 407.2
       - 400KB/384KB
-      - √ / 5.0
+      - HT40 / 5.0
       - X / √
       - 2/3/1
       - JTAG
@@ -129,16 +128,12 @@ Espressif
 性价比路线
 ~~~~~~~~~~~~
 
-这一分类下，主要是单核低成本方案，适用于对成本敏感的无线连接领域。
-
 .. toctree::
     :maxdepth: 1
 
     ESP32C3 <ESP32-C3>
     ESP32C2 <ESP32-C2>
 
-.. note::
-    在老将ESP8266逐渐淡出之后，ESP32-C系列将扛起性价比的大旗直面内卷的国产MCU市场。
 
 新领域探索
 ~~~~~~~~~~~~
@@ -147,7 +142,7 @@ Espressif
     :maxdepth: 1
 
     ESP32S2(USB-OTG) <ESP32-S2>
-    ESP32H2(802.15.4) <ESP32-H2>
+    ESP32H2 (802.15.4) <ESP32-H2>
 
 
 
