@@ -146,8 +146,8 @@ Espressif
 .. toctree::
     :maxdepth: 1
 
-    USB-OTG ESP32S2 <ESP32-S2>
-    802.15.4 ESP32H2 <ESP32-H2>
+    ESP32S2(USB-OTG) <ESP32-S2>
+    ESP32H2(802.15.4) <ESP32-H2>
 
 
 

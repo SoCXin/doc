@@ -4,7 +4,7 @@ SoC·Xin
 
 **新产品用心，芯产品用新**
 
-`SoC·Xin(芯芸) <https://www.soc.xin>`_ 期望求解如下问题：
+`SoC·Xin <https://www.soc.xin>`_ 期望求解如下问题：
 
 * 有新需求，缺乏技术积累，求解区间；
 * 有芯需求，已知应用场景，求最新解；
@@ -137,10 +137,10 @@ SoC·Xin试图打破不同厂商间的利益边界，从使用者出发多维度
     * - #define
       - L1(≤40MHz)
       - L2(≤80MHz)
-      - L3(≤160MHz)
-      - L4(≤400DMIPS)
-      - L5(≤800DMIPS)
-      - L6(≤1600DMIPS)
+      - L3(≤200MHz)
+      - L4(≤1.2KCoreMark)
+      - L5(≤2.5KCoreMark)
+      - L6(≤4.0KCoreMark)
     * - :ref:`mcs51`
       - :ref:`stc8`
       - :ref:`ch549`

@@ -56,7 +56,7 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 ^^^^^^^^^^^
 
 * 240 MHz :ref:`esp_lx7` Dual Core
-* :ref:`esp_ulp`
+* 低功耗协处理器 :ref:`esp_ulp` （FSM/RISC-V二选一）
 * :ref:`esp_wifi` + :ref:`esp_ble`
 * :ref:`esp_usb`
 * :ref:`esp_can`
