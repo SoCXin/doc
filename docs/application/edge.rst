@@ -104,14 +104,14 @@ SoC平台
       - 400 MHz
       - 8 MB
       -
-      - :ref:`k210_npu`
+      - 0.23TOPS INT8
       - BGA144
     * - :ref:`k510`
       - :ref:`riscv`
       - 800 MHz
       -
       -
-      - :ref:`k510_npu`
+      - 2.5TOPS INT8
       - BGA144
     * - :ref:`v831`
       - :ref:`cortex_a7`

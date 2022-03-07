@@ -56,3 +56,26 @@ K510支持丰富的网络模型算子，包括常见的CNN、RNN和各类向量�
 * MIPI CSI2和DVP接口，可同时支持最多3个摄像头输入
 * 集成了3个图像处理单元ISP, 其中一个ISP支持3D 功能
 * DPHY v1.2标准，最高速率每lane 可达2.5Gbps，支持RAW, RGB, YUV等各种流行格式。
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Performance
+      - SRAM/ROM
+      - Characteristics
+      - UART/SPI/SDIO
+      - Package
+    * - :ref:`k510`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`k210`
+      -
+      -
+      -
+      -
+      -
