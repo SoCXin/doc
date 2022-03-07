@@ -14,10 +14,14 @@ Xin简介
 -----------
 
 .. image:: ./images/K210.jpg
-    :target: https://canaan-creative.com/product/kendryteai
+    :target: https://canaan.io/product/kendryte-k510
 
+该芯片定位于中高端边缘推理市场，搭载自主研发IP核的升级版本KPU2.0，采用独创计算数据流与复用方式，在算力提升3倍的同时降低芯片功耗。K510集成新一代图像处理单元，搭载3D ISP，支持TOF深度摄像头，以及2D/3D降噪、WDR宽动态、鱼眼矫正和硬件3A等功能。在应用方面，K510支持高清视频会议、高清航拍和机器人等边缘侧场景。
 
-规格参数
+.. contents::
+    :local:
+
+规格配置
 ~~~~~~~~~~~
 
 K510支持丰富的网络模型算子，包括常见的CNN、RNN和各类向量计算和数据处理操作。
@@ -26,38 +30,29 @@ K510支持丰富的网络模型算子，包括常见的CNN、RNN和各类向量�
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：1.8 to 3.6 V
-* 工作温度：-40°C to +85°C
-* 处理性能：
-* RAM容量：8MB
+* 发布时间：2021-07-08
+* 发布价格：
+* 制程工艺：28 nm
+* 供货周期：
+* 处理性能：? :ref:`CoreMark`, ? :ref:`CoreMark` (Dual)
+* SRAM容量：8 MB
 * Flash容量：
+
+限定参数
+^^^^^^^^^^^
+
+* 电压范围：1.8 to 3.6 V
+* 功耗范围：2W (Standby < 2mA)
+* 温度范围：-40°C to +85°C
 * 封装规格：BGA144 (8x8x0.953mm)
 
 
 特征参数
 ^^^^^^^^^^^
 
-* 800 MHz :ref:`rv64` Dual Core
-* 2.5TOPS :ref:`k510_npu`
-
-芯片架构
-~~~~~~~~~~~
-
-TSMC28nm
-
-.. _k510_npu:
-
-KPU
-^^^^^^^^^^^
-
-Xin选择
------------
-
-
-Xin应用
------------
-
-
-Xin总结
------------
-
+* 800 MHz RISC-V 64bit Dual Core
+* 2.5TFLOPS BF16 / 2.5TOPS INT8
+* Supports external x32 bits LPDDR3/4, up to 16Gbits
+* MIPI CSI2和DVP接口，可同时支持最多3个摄像头输入
+* 集成了3个图像处理单元ISP, 其中一个ISP支持3D 功能
+* DPHY v1.2标准，最高速率每lane 可达2.5Gbps，支持RAW, RGB, YUV等各种流行格式。
