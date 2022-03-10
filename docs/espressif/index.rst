@@ -3,12 +3,12 @@
 Espressif
 ==============
 
-``Xtensa-LX7`` ``Xtensa-LX6`` ``RISC-V`` ``WiFi`` ``BT/BLE``  ``ESP32`` ``ESP8266`` ``Arduino``
+``Xtensa-LX7`` ``Xtensa-LX6`` ``RISC-V`` ``Audio`` ``Wi-Fi`` ``BT/BLE``  ``ESP32-S3`` ``ESP32-C3`` ``ESP32`` ``ESP8266`` ``Arduino``
 
 公司简介
 -----------
 
-`乐鑫科技 <http://www.espressif.com>`_ (股票代码：688018)是一家全球化的无晶圆厂半导体公司，成立于 2008 年，总部位于中国上海张江，主营 Wi-Fi&BLE AIoT SoC及相关解决方案。
+`乐鑫科技 <http://www.espressif.com>`_ (股票代码：688018)是一家全球化的无晶圆厂半导体公司，成立于2008年，总部中国上海张江，主营 Wi-Fi&BLE SoC及相关解决方案，核心竞争力：低成本、开源、Wi-Fi、Audio。
 
 
 .. note::
@@ -37,7 +37,7 @@ Espressif
 
 乐鑫Espressif相对其他MCU厂商而言，更积极开源，也拥有大量的开源学习资源，但是这些资源的商业产业化价值有限(大部分是Arduino)，独家芯片的强绑定关系和与Cortex内核不兼容的生态，难以给予客户安全感；
 
-乐鑫成名作品ESP8266基于非典型MIPS架构LX106内核，开发依赖资源和开发模式上和传统MCU是有区别的，凭借完全开源的策略，让开发者获得了无与伦比的自由度，从而在开源社区积累了大量的拥趸，但这些方案并没有随着乐鑫的产品更新脚步同步到新产品上，导致继任者如ESP32-C3、ESP32-S3并没有获得同样的吸引力。
+乐鑫成名作品ESP8266基于非典型MIPS架构LX106内核，开发依赖资源和开发模式上和传统MCU是有区别的，凭借完全开源的策略，让开发者获得了无与伦比的自由度，从而在开源社区积累了大量的拥趸，但这些方案并没有随着乐鑫的产品更新脚步同步到新产品上，导致继任者吸引力不够。
 
 随着更多厂商拥抱开源，且更有市场针对性的产品设计（乐鑫产品设计策略和应用开发策略偏向于大一统），将分流走很多客户和开发者。
 
@@ -285,7 +285,7 @@ QFN56
 ^^^^^^^^^^^^^^
 
 .. image:: ./images/ESP32S3P.png
-    :target: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
+    :target: https://docs.soc.xin/espressif/ESP32-S3.html
 
 
 .. _esp_qfn48:
@@ -295,7 +295,7 @@ QFN48
 
 
 .. image:: ./images/ESP32p5.png
-    :target: https://www.espressif.com/zh-hans/products/socs/ESP32
+    :target: https://docs.soc.xin/espressif/ESP32.html
 .. image:: ./images/ESP32p6.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32
 
@@ -306,5 +306,5 @@ QFN32
 ^^^^^^^^^^^^^^
 
 .. image:: ./images/ESP32C3P.png
-    :target: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_cn.pdf
+    :target: https://docs.soc.xin/espressif/ESP32-C3.html
 

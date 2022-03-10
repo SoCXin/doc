@@ -5,7 +5,7 @@ ESP32S2
 ================
 
 * 关键词：``Xtensa LX7`` ``240MHz`` ``QFN56`` ``Wi-Fi`` ``USB OTG`` ``ULP`` ``DAC``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32-S2>`_
+* 资源池：`GitHub <https://github.com/SoCXin/ESP32-S2>`_ , `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s2/get-started/index.html>`_
 
 .. contents::
     :local:

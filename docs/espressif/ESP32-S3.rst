@@ -4,7 +4,7 @@
 ESP32S3
 ================
 
-* 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE5.0`` ``USB OTG`` ``TWAI`` ``QFN56``
+* 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``TWAI`` ``Touch`` ``QFN56``
 * 代码库：`GitHub <https://github.com/SoCXin/ESP32S3>`_ , `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html>`_
 
 .. contents::
@@ -129,22 +129,13 @@ AES 模块
 基于 AES-128-XTS 算法的 flash 加密方案，确保应用程序与配置数据在 flash 中保持加密状态。
 flash 控制器支持执行加密的应用程序固件，这不仅为存储在 flash 中的敏感数据提供了必要保护，还防止了运行时由于固件更改造成的 TOCTTOU (time-of-check-to-time-of-use) 攻击。
 
-TEE 模块
-^^^^^^^^^^^^^^^
-
-世界控制器模块提供了两个互不干扰的执行环境。根据配置，世界控制器使用可信执行环境 (TEE) 或权限分离机制。
-如果应用程序固件需要处理敏感的安全数据（如 DRM 服务），则可以利用世界控制器模块，在安全区域处理数据。
-
 
 数字签名
 ^^^^^^^^^^^^^^^
 
-可以通过固件不可访问的私钥生成数字签名。同样地，其 HMAC 外设也可以生成固件不可访问的加密摘要。
+`数字签名DS(Digital Signature) <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/peripherals/ds.html>`_  可以通过固件不可访问的私钥生成，同样地，其 HMAC 外设也可以生成固件不可访问的加密摘要。
 
 目前，大多数物联网云服务使用基于 X.509 证书的身份验证，数字签名外设保护了定义设备身份的私钥。这样一来，即使出现软件漏洞，它也能为设备身份提供强大的保护
-
-.. note::
-    硬件安全单元十分利于物联网产品设计，特别是对加密算法的支持，在嵌入式领域配置如此多的安全外设，也是十分强大的
 
 
 Xin选择
