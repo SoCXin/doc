@@ -136,7 +136,7 @@ SoC·Xin
       - L1(≤40)
       - L2(≤100)
       - L3(≤240)
-      - L4(≤600)
+      - L4(≤700)
       - L5(≤1500)
       - L6(≤3600)
     * - :ref:`mcs51`
@@ -203,8 +203,8 @@ SoC·Xin
       - :ref:`mt7688`
       - :ref:`mt7621`
 
-
-在L6之上，还有L7-L9用于划分高性能CPU
+.. note::
+    在L6分级之上，还有L7-L9用于划分高性能CPU
 
 
 .. toctree::
@@ -223,7 +223,6 @@ SoC·Xin
 
 收录汇整具有代表性厂商，对用户开放程度高，覆盖的解决方案比较全，通过汇总提供更精炼方案。
 
-在国产MCU领域 ``倚天 ESP，屠龙 WCH``
 
 .. list-table::
     :header-rows:  1
@@ -240,7 +239,7 @@ SoC·Xin
     * - 最新作品
       - :ref:`stm32u575`
       - :ref:`ch32v307`
-      - :ref:`asr1601`
+      - :ref:`asr6601`
       -
       - :ref:`esp32h2`
       - :ref:`mt7621`
@@ -249,8 +248,8 @@ SoC·Xin
     * - 经典作品
       - :ref:`stm32f103`
       - :ref:`ch579`
-      - :ref:`asr6601`
-      -
+      - :ref:`asr6501`
+      - :ref:`usi8910`
       - :ref:`esp32`
       - :ref:`mt7688`
       - :ref:`at32f421`
@@ -267,11 +266,12 @@ SoC·Xin
     * - 集大成者
       - :ref:`stm32mp15`
       - :ref:`ch569`
-      -
+      - :ref:`asr1601`
       -
       - :ref:`esp32s3`
       -
       -
       - :ref:`v831`
+
 
 
