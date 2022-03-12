@@ -1,10 +1,10 @@
-
+.. _NO_002:
 .. _ch573:
 
 CH573
 ===========
 
-* 关键词：``RISC-V3A`` ``USB`` ``BLE4.2`` ``AES128`` ``UART`` ``Touch`` ``QFN28``
+* 关键词：``RISC-V3A`` ``USB`` ``BLE4.2`` ``AES128`` ``UART`` ``TouchKey`` ``QFN28``
 * 资源库：`GitHub <https://github.com/SoCXin/CH573>`_ , `官方资源 <http://www.wch.cn/products/CH573.html>`_
 
 .. contents::
@@ -48,7 +48,7 @@ Xin简介
 * 内置温度传感器
 * 集成2.4GHz RF收发器和基带及链路控制，提高优化的协议栈和应用层API，支持组网 (0dBm发送功率时电流为6mA)
 * 内置实时时钟RTC，支持定时和触发两种模式
-* 提供8通道12位ADC模数转换器，支持8通道触摸按键
+* 提供8通道12位ADC模数转换器，支持8通道触摸按键 TouchKey
 * 提供20个GPIO，其中4个支持5V信号输入，所有GPIO支持中断和唤醒功能
 * 内置AES-128加解密单元，芯片唯一ID
 
@@ -86,7 +86,7 @@ BLE
 USB
 ^^^^^^^^^^^^
 
-* 集成 USB 2.0 全速收发器 PHY，无需外围
+* 集成 USB 2.0 全速收发器 PHY
 
 Xin选择
 -----------
@@ -109,17 +109,17 @@ Xin选择
       - Core
       - SRAM/ROM
       - Characteristics
-      - UART/SPI
+      - USB/CAN
       - wireless
-      - USB
+      - UART/SPI
       - Package
     * - :ref:`ch573`
       - :ref:`riscv`
       - 18KB/512KB
       -
+      - USB
+      - BLE4.2
       - 4/1
-      - 4.2(+5dBm)
-      - USB H/D
       - QFN28
     * - :ref:`nrf52832`
       -
@@ -129,8 +129,30 @@ Xin选择
       -
       -
       -
+    * - :ref:`ab32vg1`
+      -
+      -
+      -
+      -
+      -
+      -
+      - LQFP48
 
 
+.. _ab32vg1:
+
+AB32VG1
+^^^^^^^^^^^^^^^
+
+蓝讯骄龙 AB32VG1 是中科蓝讯在 2020 RT-Thread 开发者大会上首度面向通用市场发布的其自主 RISC-V 内核 32 位 MCU 芯片，AB32VG1 主频 120M ，片上集成 RAM 192K, Flash 4Mbit，ADC，PWM，USB，UART，IIC 等资源。
+
+* 符合蓝牙 5.0 和 BLE 规范
+* TX 输出功率 +2dBm（典型值）；RX 灵敏度 -90.5dBm @Basic Rate
+* 带 16 位立体声 DAC 和两通道 16 位 ADC；支持灵活的音频EQ调节；支持采样率 8、11.025、12、16、22.05、32、44.1 和 48KHz；
+* 4 通道立体声模拟 MUX；两路MIC功放输入；
+* 具有 90dB SNR 的高性能立体声音频 ADC；具有 95dB SNR 的高性能立体声音频 DAC，带耳机放大器输出；
+
+主要针对音频应用场景，零售价格在￥5
 
 系列对比
 ~~~~~~~~~
@@ -182,7 +204,7 @@ CH571 基于 CH573 去掉了 USB host 主机和触摸按键检测模块、8 位 
 .. image:: ./images/CH573list.png
     :target: http://www.wch.cn/products/CH573.html
 
-
+CH573Q 和 CH571K 因封装形式所限，射频性能相比 QFN 封装形式略有下降
 
 Xin应用
 -----------

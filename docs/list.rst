@@ -14,8 +14,8 @@
       - 推荐理由
     * - :ref:`NO_001` (264KB SRAM/QFN56)
       - $0.70==Dual Cortex-M0，Arduino/MicroPython/USB-OTG
-    * - :ref:`NO_002` (2KB SRAM/QFN28)
-      - 非常具有性价比的8051 USB方案，兼容强拥趸多
+    * - :ref:`NO_002` (18KB SRAM/QFN28)
+      - 超高性价比￥2.0 BLE MCU，USB-OTG及多串口、8 TouchKey
     * - :ref:`NO_003` (288KB SRAM/QFN56)
       - 6x UART，WiFi+BT，4x16 bit :ref:`sigma_delta` ADC(1KSPS)
     * - :ref:`NO_004`
