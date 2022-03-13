@@ -35,6 +35,3 @@ Xin简介
 
 * 64 MHz :ref:`cortex_m4`
 
-
-Xin选择
------------
