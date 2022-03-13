@@ -54,10 +54,25 @@ nRF52840基于带有浮点单元的32位ARM® Cortex™-M4 CPU，主频为64 MHz
 芯片架构
 ~~~~~~~~~~~
 
-
-
 功耗参数
 ^^^^^^^^^^^
 
 .. image:: ./images/nRF52840Pwr.png
     :target: https://www.nordicsemi.com/Products/nRF52840
+
+
+
+连接能力
+~~~~~~~~~~~~~~
+
+BLE
+^^^^^^^^^^^^^^^
+
+.. image:: ./images/nRF52840BLE.png
+    :target: https://www.nordicsemi.com/Products/nRF52840
+
+NFC
+^^^^^^^^^^^^^^^
+
+USB
+^^^^^^^^^^^^^^^
