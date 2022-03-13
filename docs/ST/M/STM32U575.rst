@@ -23,11 +23,18 @@ Xin简介
 规格参数
 ~~~~~~~~~~~
 
+STM32U5 的定义是一个低功耗旗舰级产品线，最大的3个特点：
+
+* 超低功耗
+* 在超低功耗平台上提升了性能，是基于高性能和超低功耗两者结合的集合
+* 增强了安全可靠方面的功能，适合IoT 应用
+
+
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
-* 制程工艺：
+* 制程工艺：40 nm
 * 发布价格：
 * 工作温度：-40°C to 85/125°C
 * 处理性能：240 :ref:`DMIPS`, 651 :ref:`CoreMark`
@@ -45,11 +52,25 @@ Xin简介
 * 2x 12bit DAC
 * 2x PGA
 
+芯片架构
+~~~~~~~~~~~
+
+.. image:: images/STM32U575s.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32u5-series/stm32u575-585/stm32u575cg.html
+
+
 电源参数
 ^^^^^^^^^^^
 
-* 供电电压: 1.71 to 3.6 V
+* 电压范围：1.71 to 3.6 V
+* 功耗范围：
 * 运行功耗: 19 µA/MHz
+* 温度范围：-40°C to 105°C
+
+
+.. image:: ./images/STM32U575Pwr.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32u5-series.html
+
 
 
 Xin选择
