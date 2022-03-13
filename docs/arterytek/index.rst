@@ -41,6 +41,7 @@ Arterytek
 
     120MHz: AT32F421 <AT32F421>
     150MHz: AT32F415 <AT32F415>
+    USBOTG: AT32F425 <AT32F425>
 
 .. hint::
     2016年成立，2018年正式对外销售芯片，AT32系列高效能MCU，采用55nm制程先进工艺，全系列搭载 :ref:`cortex_m4` 内核，产品系列较少定位清晰。
