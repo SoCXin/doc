@@ -227,8 +227,7 @@ SoC·Xin
 .. list-table::
     :header-rows:  1
 
-    * - #define
-      - :ref:`st`
+    * - Vendor
       - :ref:`wch`
       - :ref:`asr`
       - :ref:`rda`
@@ -236,8 +235,7 @@ SoC·Xin
       - :ref:`mediatek`
       - :ref:`arterytek`
       - :ref:`allwinner`
-    * - 最新作品
-      - :ref:`stm32u575`
+    * - 新作
       - :ref:`ch32v307`
       - :ref:`asr6601`
       -
@@ -245,8 +243,7 @@ SoC·Xin
       - :ref:`mt7621`
       - :ref:`at32f437`
       - :ref:`D1`
-    * - 经典作品
-      - :ref:`stm32f103`
+    * - 经典
       - :ref:`ch579`
       - :ref:`asr6501`
       - :ref:`usi8910`
@@ -254,8 +251,7 @@ SoC·Xin
       - :ref:`mt7688`
       - :ref:`at32f421`
       - :ref:`S3`
-    * - 畅销作品
-      - :ref:`stm32g030`
+    * - 畅销
       - :ref:`ch549`
       - :ref:`asr1802`
       -
@@ -263,8 +259,7 @@ SoC·Xin
       - :ref:`mt2625`
       - :ref:`at32f403`
       - :ref:`R329`
-    * - 集大成者
-      - :ref:`stm32mp15`
+    * - 大成
       - :ref:`ch569`
       - :ref:`asr1601`
       -

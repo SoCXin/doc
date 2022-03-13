@@ -5,7 +5,7 @@ AT32F421
 ===============
 
 * 关键词：``Cortex-M4`` ``120MHz`` ``COMP`` ``sLib`` ``ERTC`` ``TSSOP20``
-* 资源库：`GitHub <https://github.com/SoCXin/AT32F421>`_
+* 资源库：`GitHub <https://github.com/SoCXin/AT32F421>`_ , `官方资源 <https://www.arterytek.com/cn/product/AT32F421.jsp>`_
 
 .. contents::
     :local:
@@ -25,18 +25,19 @@ Xin简介
 
 几乎所有I/O口可容忍5V输入信号，且所有I/O口均为快速I/O，具有多种可选功能还支持端口重映射，极佳的灵活性和易用性满足多种应用需求。
 
+
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：2.4V - 3.6V
-* 工作温度：-40 °C to 105 °C
-* 封装规格：TSSOP20/QFN28/QFN32/LQFP32/LQFP48
-* 处理性能：150 :ref:`DMIPS`
+* 发布时间：2020年10月
+* 发布价格：$0.195
+* 制程工艺：55 nm
+* 供货周期：
+* 处理性能：504.85 :ref:`CoreMark`
 * RAM容量：16 KB
 * Flash容量：64 KB
-* 量产时间：2020年10月
-* ESD HBM: 6 KV
-* ESD CDM: 1000 V
+* 封装规格：TSSOP20/QFN28/QFN32/LQFP32/LQFP48
+
 
 特征参数
 ^^^^^^^^^^^
@@ -57,6 +58,16 @@ Xin简介
 
 .. image:: images/AT32F421S.png
     :target: https://www.arterytek.com/cn/product/AT32F421.jsp#Resource
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：2.3 to 3.6 V
+* 功耗范围：
+* 温度范围：-40°C to 105°C
+* ESD HBM: 6 KV
+* ESD CDM: 1000 V
+
 
 时钟体系
 ^^^^^^^^^^^^
