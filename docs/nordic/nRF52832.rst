@@ -2,7 +2,7 @@
 .. _nrf52832:
 
 nRF52832
-=========
+============
 
 * 关键词：``BLE``
 * 资源库：`GitHub <https://github.com/SoCXin/nRF52832>`_
