@@ -16,28 +16,38 @@ Xin简介
 高云半导体 GW1NSR 系列 FPGA 产品是高云半导体小蜜蜂(LittleBee)家族第一代 FPGA 产品，是一款SIP芯片(55nm)，片上集成GW1NS系列FPGA和PSRAM存储芯片。
 
 
-
 .. contents::
     :local:
 
 规格参数
 ~~~~~~~~~~~
 
+
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：1.2V(LV)、2.5V/3.3V(UV)
-* 时钟精度：片内晶振±5%
+* 发布时间：
+* 发布价格：
+* 制程工艺：55 nm
+* 供货周期：
+* 处理性能：? :ref:`CoreMark`
+* RAM容量：180Kbit
+* Flash容量：256Kbit
+
+
+
 
 特征参数
 ^^^^^^^^^^^
 
 * 4608 LUT4、3456 FF
-* Cortex-M3硬核处理器
-* 180Kbit SRAM、256Kbit Flash
+* Cortex-M3 硬核处理器
 * 8ch 12bit SAR ADC (1MSPS)
 * USB2.0 PHY（480Mbps）
 * 支持 I3C/MIPI 接口
+* 供电电压：1.2V(LV)、2.5V/3.3V(UV)
+* 时钟精度：片内晶振±5%
+
 
 芯片架构
 ~~~~~~~~~~~
@@ -83,6 +93,8 @@ Xin选择
 
 `Gowin <http://www.gowinsemi.com.cn/>`_ 是全球增长最快的可编程逻辑公司，作为中国的FPGA厂商，相对传统的国际巨头，在低阶产品上具有很高的性价比。
 
+.. _ice40:
+
 Lattice iCE40
 ^^^^^^^^^^^^^^^
 
@@ -103,8 +115,16 @@ Lattice iCE40
 GW2A系列(晨熙)
 ^^^^^^^^^^^^^^^
 
-.. image:: images/GW2A.png
+.. image:: images/GW2A-L.png
     :target: http://cdn.gowinsemi.com.cn/DS102-2.3_GW2A%E7%B3%BB%E5%88%97FPGA%E4%BA%A7%E5%93%81%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C.pdf
+
+高云可提供基于GW2A系列FPGA的RISC-V软核IP，包含一个32-bit的RISC-V微处理器和系统外设
+
+.. image:: images/gw2a-core.jpg
+    :target: http://www.gowinsemi.com.cn/prodshow_view.aspx?TypeId=70&Id=172&FId=t31:70:31
+
+
+.. _gw1nrf:
 
 GW1NRF
 ^^^^^^^^^^^
@@ -117,6 +137,9 @@ GW1NRF系列蓝牙FPGA产品是一款系统级封装芯片，以 32位硬核微�
 * 128kB OTP for power efficiency ：128KB OTP
 * 48kB IRAM and 28kB DRAM
 * AES-128硬核加密、ECC-P256密钥生成器
+
+.. image:: images/GW1NRF-B.png
+    :target: http://cdn.gowinsemi.com.cn/DS891-1.01-GW1NRF%E7%B3%BB%E5%88%97%E8%93%9D%E7%89%99FPGA%E4%BA%A7%E5%93%81%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C.pdf
 
 .. hint::
     GW1NRF系列同 :ref:`gw1nsr` 在FPGA性能上规格相同，主要差异在SIP封装的硬核资源。
