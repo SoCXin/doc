@@ -122,7 +122,7 @@ SoC·Xin
     :maxdepth: 1
 
     ARM     <core/arm>
-    ASIC    <core/asic>
+    ASIC    <ASIC/index>
     MIPS    <core/MIPS>
     RISC-V  <core/RISC-V>
     MCS51   <core/MCS51>

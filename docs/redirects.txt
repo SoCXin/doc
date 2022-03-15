@@ -82,7 +82,7 @@
 /SP7021.html -> H/SP7021.html
 /SSD201.html -> H/SSD201.html
 /BCM2711.html -> H/BCM2711.html
-/GW1NSR.html -> A/GW1NSR.html
+/GW1NSR.html -> ASIC/GW1NSR.html
 /ASR1601.html -> ASR/ASR1601.html
 /ASR6501.html -> ASR/ASR6501.html
 /ASR1802.html -> ASR/ASR1802.html
