@@ -5,7 +5,7 @@ CH579
 ========
 
 * 关键词：``Cortex-M0`` ``40MHz`` ``QFN28`` ``USB FS`` ``Ethernet`` ``10M-ETH-PHY`` ``BLEv4.2`` ``RTC`` ``AES128``
-* 资源库：`GitHub <https://github.com/SoCXin/CH579>`_ , `Gitee <https://gitee.com/socxin/CH579>`_
+* 资源库：`GitHub <https://github.com/SoCXin/CH579>`_ , `官方资源 <http://www.wch.cn/products/CH579.html>`_
 
 .. contents::
     :local:
@@ -13,24 +13,25 @@ CH579
 Xin简介
 -----------
 
- :ref:`sip` :ref:`eth_phy_tiny`
-
 .. image:: ./images/CH579.png
     :target: http://www.wch.cn/products/CH579.html
 
 规格参数
 ~~~~~~~~~~~
 
+ :ref:`sip` :ref:`eth_phy_tiny`
+
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
+* 发布价格：
 * 制程工艺：
-* 工作温度：-40°C to +85°C
-* 处理性能：36 :ref:`DMIPS`, 78 :ref:`CoreMark`
+* 供货周期：
+* 处理性能：
 * RAM容量：32 KB
 * Flash容量：250 KB
-* 封装规格： :ref:`qfn28` / :ref:`wch_qfn48`
+* 封装规格：:ref:`qfn28` (4x4mm) / :ref:`wch_qfn48`
 
 
 特征参数
@@ -63,11 +64,14 @@ Xin简介
 .. image:: ./images/CH579s.png
     :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
 
-电源体系
+功耗参数
 ^^^^^^^^^^^
 
 .. image:: ./images/CH579pwr.png
     :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
+
+连接能力
+~~~~~~~~~~~
 
 .. _wch_ble:
 
@@ -91,16 +95,6 @@ ETH-PHY-10M
 
 支持帧过滤，支持 DMA ，内置50Ω匹配电阻
 
-
-.. _wch_qfn48:
-
-QFN48
-^^^^^^^^^^^
-
-* 封装尺寸(CH579M)：5 x 5 mm, 0.35mm pitch
-
-.. image:: ./images/CH579p48.png
-    :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
 
 
 Xin选择
@@ -157,7 +151,16 @@ Xin选择
 W7500P
 ^^^^^^^^^^^
 
-`W7500P GitHub <https://github.com/SoCXin/W7500P>`_
+``WIZnet`` ``Cortex-M0`` ``IOP`` ``全硬件TCP/IP协议栈``
+
+`W7500P仓库 <https://github.com/SoCXin/W7500P>`_ , `W7500P官网 <https://www.iwiznet.cn/products/mcu/w7500p/>`_
+
+* 48 MHz :ref:`cortex_m0`
+* 全硬件TCP/IP核，8个socket，每个socket拥有最大32KB SRAM
+* 128KB Flash
+* 16KB-48KB SRAM（如32KB socket 缓存已用，最小可用16KB，如果socket缓存未用，最大可用48KB）
+* 6KB用于Boot的ROM
+* TQFP64 , 53 I/Os (16 IO x 3ea, 5 IO x 1ea)
 
 .. warning::
     W7500是工业级的，W7500P是商用级的，后者片上集成10MHz以太网PHY
@@ -207,4 +210,24 @@ W7500P
 .. image:: ./images/CH579l.png
     :target: http://www.wch.cn/products/CH579.html
 
+.. _ch578:
+
+CH578
+^^^^^^^^^^^
+
+CH578是集成BLE无线通讯的ARM 内核32 位微控制器。片上集成低功耗蓝牙BLE通讯模块、以太网控制器及收发器、全速USB主机和设备控制器及收发器、段式LCD驱动模块、ADC、触摸按键检测模块、RTC等丰富的外设资源。
+CH577是CH578的简化版，闪存和RAM仅128KB和16KB，去掉了以太网、USB、段式LCD、ADC 等模拟模块，其它与CH578相同。
+
+* 6x TouchKey
+* 160 KB Flash
+
+.. _wch_qfn48:
+
+QFN48
+^^^^^^^^^^^
+
+* 封装尺寸：5 x 5 mm, 0.35mm pitch
+
+.. image:: ./images/CH579p48.png
+    :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
 
