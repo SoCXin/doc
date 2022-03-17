@@ -37,7 +37,7 @@ nRF52840基于带有浮点单元的32位ARM® Cortex™-M4 CPU，主频为64 MHz
 * 处理性能：
 * RAM容量：256 KB
 * Flash容量：1 MB
-* 封装规格：:ref:`qfn28` (4x4mm) / :ref:`wch_qfn48`
+* 封装规格：
 
 
 特征参数

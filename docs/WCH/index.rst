@@ -10,10 +10,13 @@ WCH
 公司简介
 -----------
 
-`南京沁恒微电子 <http://www.wch.cn/>`_ 的传统转换芯片如CH340非常普及，凭借在连接上的积累和口碑，所推出的可编程器件都具备非常丰富的连接外设资源如USB/UART/Ethernet，就产品品类而言可谓非常丰富，同时作为国产芯片也具备很高的性价比。
+`南京沁恒微电子 <http://www.wch.cn/>`_ 成立于2004年，是一家专注于连接技术和MCU内核研究的射频与高速数模混合集成电路设计公司，提供以太网、蓝牙无线网络、USB和PCI类等接口芯片及集成上述接口的MCU+单片机。
 
-.. note::
-    南京沁恒微电子成立于2004年，是一家专注于连接技术和MCU内核研究的射频与高速数模混合集成电路设计公司，提供以太网、蓝牙无线网络、USB和PCI类等接口芯片及集成上述接口的MCU+单片机。
+该厂商的转换芯片如CH340普及率非常高，凭借在有线连接上的积累，推出的可编程器件都具备非常丰富的连接资源如USB/UART/Ethernet，产品品类非常丰富，同时也具备很高的性价比。
+
+
+市场分析
+~~~~~~~~~~~~~
 
 
 
@@ -23,8 +26,8 @@ WCH
 .. contents::
     :local:
 
-接口转换类芯片
-~~~~~~~~~~~~~~~~
+转换类
+~~~~~~~~~~~~~
 
 .. image:: ./images/wch.png
     :target: http://special.wch.cn/zh_cn/interface_conversion_expert/
@@ -52,7 +55,7 @@ Ethernet
     :target: http://www.wch.cn/products/category/4.html#data
 
 
-编程控制类芯片
+编程类
 ~~~~~~~~~~~~~~~~
 
 包括多个系列的 :ref:`mcs51` 内核单片机， :ref:`wch_riscv3a` / :ref:`cortex_m0` 内核的无线SoC
@@ -64,24 +67,45 @@ Ethernet
 ETH ++
 ^^^^^^^^^^^
 
-
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`wch`
       - Core
-      - RAM
-      - Flash
-      - USB
+      - Performance
+      - SRAM/ROM
+      - Characteristics
       - Ethernet
       - Package
     * - :ref:`ch563`
       - :ref:`arm7`
-      - 64KB
-      - 224KB
-      - 480M
-      - 100M
-      - LQFP64M(10x10)
+      -
+      - 64KB/224KB
+      - 480M USB
+      - 100M PHY
+      - LQFP64M
+    * - :ref:`ch579`
+      - :ref:`cortex_m0`
+      -
+      - 32KB/250KB
+      - BLE 4.2
+      - 10M PHY
+      - QFN48/QFN28
+    * - :ref:`ch32v208`
+      - :ref:`wch_riscv4c`
+      -
+      -
+      - BLE 5.3
+      - 10M PHY
+      -
+    * - :ref:`ch32f208`
+      - :ref:`cortex_m3`
+      -
+      -
+      - BLE 5.3
+      - 10M PHY
+      -
+
 
 .. toctree::
     :maxdepth: 1
@@ -177,14 +201,17 @@ BLE ++
     CH583 <CH583>
 
 
-内核简介
-------------------
+技术简介
+-------------
 .. contents::
     :local:
 
+内核简介
+~~~~~~~~~~~~
+
 
 MCS51
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 .. image:: ./images/8051.png
     :target: http://special.wch.cn/zh_cn/mcu/
@@ -244,7 +271,7 @@ MCS51
     CH543 <CH543>
 
 Cortex
-~~~~~~~~~~~~
+^^^^^^^^^^^
 
 .. image:: ./images/CH32F.png
     :target: http://special.wch.cn/zh_cn/mcu/
@@ -262,7 +289,7 @@ Cortex
 
 
 RISC-V
-~~~~~~~~~~~~
+^^^^^^^^^^^
 
 
 * 2017年开始关注并研究RISC-V开源指令集的32位MCU架构，针对快速中断响应、高带宽数据DMA进行优化
@@ -294,3 +321,22 @@ RISC-V
 
     CH568 <CH568>
     CH569 <CH569>
+
+
+封装规格
+~~~~~~~~~~~~
+
+.. _wch_qfn48:
+
+QFN48
+^^^^^^^^^^^
+
+* 封装尺寸：5 x 5 mm, 0.35mm pitch
+
+.. image:: ./images/CH579p48.png
+    :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
+
+.. _wch_qfn28:
+
+QFN28
+^^^^^^^^^^^
