@@ -68,7 +68,47 @@ Xin简介
 .. image:: ./images/CH583Core.png
     :target: http://www.wch.cn/products/CH583.html
 
+
+功耗参数
+^^^^^^^^^^^
+
+* 支持 3.3V 和 2.5V 电源，CH583M 支持 1.8V
+* 内置 DC-DC 转换，可降低功耗
+* 空闲模式 Idle：1.6mA
+* 暂停模式 Halt：320uA
+* 睡眠模式 Sleep：0.7uA～2.8uA 多档
+* 下电模式 Shutdown：0.2uA～2.3uA 多档
+
 低功耗两级流水线
+
+
+连接能力
+~~~~~~~~~~~
+
+.. _ch583_ble:
+
+BLE
+^^^^^^^^^^^
+
+``BLE 5.0`` ``-98dBm``
+
+* 接收灵敏度-98dBm，可编程+6dBm 发送功率
+* BLE 符合 Bluetooth Low Energy 5.0 规范
+
+pathloss=40+25log(d)
+
+.. image:: ./images/路径损耗.jpg
+    :target: https://blog.csdn.net/qq_15391889/article/details/87937452
+
+
+.. _ch583_usb:
+
+USB
+^^^^^^^^^^^
+
+* 2 组独立的 USB 控制器和收发器
+* 15 个端点，支持 DMA，支持 64 字节数据包
+* 集成 USB 2.0 全速收发器 PHY，无需外围器件支持全/低速的 Host 主机和 Device 设备模式
 
 
 Xin选择
@@ -161,6 +201,15 @@ Xin选择
 
 .. image:: ./images/CH58x.png
     :target: http://www.wch.cn/products/CH583.html
+
+.. _ch582:
+
+CH582
+^^^^^^^^^^^
+
+* CH583 相比 CH582 多了 SPI1 主机和 512KB 闪存用于存储数据或备份代码，支持最低 1.7V 电源电压。
+* CH581 基于 CH582 简化，去掉了一组 USB、触摸按键检测模块、I2C 模块和两个串口，FlashROM总容量仅 256KB，ADC 不支持 DMA。
+
 
 
 Xin应用
