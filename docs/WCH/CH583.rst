@@ -131,7 +131,7 @@ Xin选择
       - Package
     * - :ref:`ch583`
       - 31 DMIPS
-      - 18KB/512KB
+      - 32KB/1 MB
       - BLE5.1
       - Sleep 0.7uA
       - 2/4/2
@@ -157,26 +157,27 @@ Xin选择
       - SRAM/ROM
       - wireless
       - USB/UART/ETH
-      - Sleep
+      - Sleep Mode
+    * - :ref:`ch583`
+      - :ref:`wch_riscv4a`
+      - 20MHz
+      - 32KB/1 MB
+      - BLE5.1(104dBm)
+      - 2xOTG/4/X
+      - 0.7-2.8uA
     * - :ref:`ch573`
       - :ref:`wch_riscv3a`
       - 20MHz
       - 18KB/512KB
-      - BLE4.2
+      - BLE4.2(101dBm)
       - OTG/4/X
       - 0.3-6.0uA
-    * - :ref:`ch583`
-      - :ref:`wch_riscv4a`
-      - 20MHz
-      - 18KB/512KB
-      - BLE5.1
-      - 2xOTG/4/X
-      - 0.7-2.8uA
+
     * - :ref:`ch579`
       - :ref:`cortex_m0`
       - 40MHz
       - 32KB/250KB
-      - BLE4.2
+      - BLE4.2(96dBm)
       - OTG/4/10Mbps
       - 0.3-3.0uA
 
