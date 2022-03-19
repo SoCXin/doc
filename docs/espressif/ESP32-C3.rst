@@ -5,7 +5,7 @@ ESP32C3
 ================
 
 * 关键词：``RISC-V`` ``160MHz`` ``BLE5.0`` ``WiFi`` ``QFN32``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ ,  `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_
+* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ ,  `开发指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_
 
 .. contents::
     :local:
@@ -23,36 +23,66 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2020年12月1日
-* 发布价格：
+* 参考价格：
 * 制程工艺：40 nm
 * 供货周期：至2033年
 * 处理性能：407.22 :ref:`CoreMark` , 2.55 CoreMark/MHz
+* 运行环境：-40°C to 105°C
+* 封装规格：:ref:`esp_qfn32` (5x5mm)
 * SRAM容量：400 KB (16K cache)
 * Flash容量：384 KB
 
-
-限定参数
-^^^^^^^^^^^
-
-* 电压范围：2.3 to 3.6 V
-* 功耗范围：
-* 温度范围：-40°C to 105°C
-* 封装规格：:ref:`esp_qfn32` (5x5mm)
-
 .. note::
-    耐高温由125°降到105°
+    相较之前的产品，耐高温由125°降到105°
+
 
 特征参数
 ^^^^^^^^^^^
 
 * 160 MHz :ref:`esp_rv32`
-* Wi-Fi IEEE 802.11b/g/n
-* BLE 5.0，支持Mesh (Bluetooth Mesh)
-* TWAI 控制器, 兼容 ISO11898-1
+*  :ref:`esp32c3_wifi`
+*  :ref:`esp32c3_ble`
+* :ref:`esp32c3_twai` 控制器
 * 22  x GPIO
 
 .. hint::
     支持蓝牙5.0、支持蓝牙与WiFi共存机制，软件支持TCP/IP、MQTT、HTTP、COAP等常见协议，支持AT指令，支持OTA升级，支持WiFi+BLE MESH组网
+
+芯片架构
+~~~~~~~~~~~
+
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：2.3 to 3.6 V
+* 功耗范围：
+
+连接能力
+~~~~~~~~~~~
+
+.. _esp32c3_wifi:
+
+Wi-Fi
+^^^^^^^^^^^
+
+``802.11b/g/n`` ``21dBm``
+
+
+.. _esp32c3_ble:
+
+BLE
+^^^^^^^^^^^
+
+``BLE 5.0`` ``-94dBm`` ``Mesh``
+
+.. _esp32c3_twai:
+
+TWAI
+^^^^^^^^^^^
+
+``ISO11898-1``
+
 
 计算性能
 ~~~~~~~~~~~~~~
@@ -83,9 +113,6 @@ AES 模块
 
 基于 AES-128-XTS 算法的 flash 加密方案，确保应用程序与配置数据在 flash 中保持加密状态。
 flash 控制器支持执行加密的应用程序固件，这不仅为存储在 flash 中的敏感数据提供了必要保护，还防止了运行时由于固件更改造成的 TOCTTOU (time-of-check-to-time-of-use) 攻击。
-
-SHA 模块
-^^^^^^^^^^^^^^^
 
 
 数字签名
