@@ -32,10 +32,11 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
+* 封装规格：QFN48
 * 运行环境：-40°C to 85°C
 * RAM容量：32 KB
 * Flash容量：1 MB
-* 封装规格：QFN48
+
 
 特征参数
 ^^^^^^^^^^^
@@ -134,7 +135,7 @@ Xin选择
       - BLE5.1
       - Sleep 0.7uA
       - 2/4/2
-      - QFN48/QFN28
+      - QFN48
     * - :ref:`esp32c3`
       - 407 :ref:`CoreMark`
       - 512KB/384KB
@@ -150,34 +151,34 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`wch`
       - Core
       - Performance
       - SRAM/ROM
       - wireless
-      - USB/ETH
-      - Package
+      - USB/UART/ETH
+      - Sleep
     * - :ref:`ch573`
       - :ref:`wch_riscv3a`
       - 20MHz
       - 18KB/512KB
       - BLE4.2
-      - 1/X
-      - QFN48/QFN28
+      - OTG/4/X
+      - 0.3-6.0uA
     * - :ref:`ch583`
       - :ref:`wch_riscv4a`
       - 20MHz
       - 18KB/512KB
       - BLE5.1
-      - 2/X
-      - QFN48/QFN28
+      - 2xOTG/4/X
+      - 0.7-2.8uA
     * - :ref:`ch579`
       - :ref:`cortex_m0`
       - 40MHz
       - 32KB/250KB
       - BLE4.2
-      - 1/10Mbps
-      - QFN48/QFN28
+      - OTG/4/10Mbps
+      - 0.3-3.0uA
 
 
 
