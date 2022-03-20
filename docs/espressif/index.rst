@@ -72,7 +72,7 @@ Espressif
       - HT40 / X
       - OTG / X
       - 2/4/2
-      - 
+      -
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6
@@ -80,7 +80,7 @@ Espressif
       - HT40 / 5.0
       - OTG / √
       - 3/4/2
-      - 
+      -
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.2
@@ -88,7 +88,7 @@ Espressif
       - HT40 / 5.0
       - X / √
       - 2/3/1
-      - 
+      -
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
       -
@@ -155,8 +155,8 @@ Espressif
 
 .. _esp_core:
 
-内核架构
-~~~~~~~~~~~~
+Architecture
+~~~~~~~~~~~~~~~
 
 
 .. contents::
@@ -273,7 +273,7 @@ Matter 成立于 2019 年，由连接标准联盟（Connectivity Standards Allia
 
 .. _esp_package:
 
-封装规格
+Package
 ~~~~~~~~~~~~
 
 .. contents::

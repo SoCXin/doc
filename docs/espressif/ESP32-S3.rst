@@ -32,22 +32,14 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 ^^^^^^^^^^^
 
 * 发布时间：2020年12月31日
-* 发布价格：
+* 参考价格：
 * 制程工艺：40 nm
 * 供货周期：至2033年
 * 处理性能：613.8 :ref:`CoreMark`, 1181.6 :ref:`CoreMark` (Dual)
+* 封装规格：QFN56
+* 运行环境：-40°C to 105°C
 * RAM容量：512 KB (TCM，16 KB RTC SRAM)
 * Flash容量：384 KB
-
-
-
-限定参数
-^^^^^^^^^^^
-
-* 电压范围：2.3 to 3.6 V
-* 功耗范围：
-* 温度范围：-40°C to 105°C
-* 封装规格：:ref:`esp_qfn56`
 
 
 
@@ -58,7 +50,7 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * 240 MHz :ref:`esp_lx7` Dual Core
 * 低功耗协处理器 :ref:`esp_ulp` （FSM/RISC-V二选一）
 * :ref:`esp32s3_wifi` + :ref:`esp32s3_ble`
-* :ref:`esp_usb`
+* :ref:`esp32s3_usb`
 * :ref:`esp_can`
 * 1 × 16bit DVP, 1 × 16bit LCD
 * 2 × SDIO 主机
@@ -69,12 +61,25 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 .. note::
     ESP32-S3增加了用于加速神经网络计算和信号处理等工作的向量指令 (vector instructions)
 
+芯片架构
+~~~~~~~~~~~
+
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：2.3 to 3.6 V
+* 功耗范围：
+
+.. image:: ./images/ESP32S3sleep.png
+    :target: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_cn.pdf
+
 计算能力
 ~~~~~~~~~~~~~~
 
 .. _esp_pie:
 
-指令拓展PIE
+加速指令PIE
 ^^^^^^^^^^^^^^^
 
 为了提高特定 AI 和 DSP (Digital Signal Processing) 算法的运算效率，ESP32-S3 中新增了一组扩展指令。处理器指令拓展 (PIE) 支持以下特性：
@@ -106,7 +111,17 @@ WiFi
 BLE
 ^^^^^^^^^^^^^^^
 
+``BLE 5.0`` ``-94dBm`` ``20dBm``
+
 * 高功率模式（20 dBm，与 Wi-Fi 共用 PA）
+
+.. _esp32s3_usb:
+
+USB OTG
+^^^^^^^^^^^^^^^
+
+
+
 
 安全特性
 ~~~~~~~~~~~~~~
@@ -147,7 +162,6 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
-
 .. list-table::
     :header-rows:  1
 
@@ -158,13 +172,13 @@ Xin选择
       - UART/SPI/SDIO
       - Package
     * - :ref:`esp32s3`
-      - 1181.6 
+      - 1181.6
       - 512KB/384KB
       - USB1.1 OTG
       - 3/2/1
       - :ref:`esp_qfn56`
     * - :ref:`w801`
-      - 
+      -
       - 288KB/2MB
       - 16-bit ADC
       - 6/2/1
@@ -182,45 +196,45 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`espressif`
-      - Architecture
+      - :ref:`esp_core`
       - :ref:`CoreMark`
       - SRAM/ROM
-      - WiFi
-      - BLE
+      - Wireless
+      - Ethernet
       - USB
-      - Package
+      - :ref:`esp_package`
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 994.26
       - 520KB/448KB
-      - b/g/n
-      - BLE v4.2
+      - WiFi&BLE
+      - 100Mbps
       - X
-      - QFN48
+      - :ref:`esp_qfn48`
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
       - 320KB/128KB
-      - b/g/n
-      - BLE v5.0
-      - USB1.1 OTG
-      - QFN56
+      - WiFi
+      - X
+      - 1.1 OTG
+      - :ref:`esp_qfn56`
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6
       - 512KB/384KB
-      - b/g/n
-      - BLE v5.0
-      - USB1.1 OTG
-      - QFN56
+      - WiFi&BLE
+      - X
+      - 1.1 OTG
+      - :ref:`esp_qfn56`
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
       - 400KB/384KB
-      - √
-      - v5.0
+      - WiFi&BLE
       - X
-      - QFN32/QFN28
+      - X
+      - :ref:`esp_qfn32`
 
 `芯片系列对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
 
@@ -239,8 +253,8 @@ Xin应用
 .. contents::
     :local:
 
-硬件平台
-~~~~~~~~~
+开发板
+~~~~~~~~~~~~~~~
 
 ESP-S3-EYE
 ^^^^^^^^^^^^^^^^
@@ -269,9 +283,12 @@ ESP32-S3-BOX
 开发框架
 ~~~~~~~~~
 
+ ``ESP-IDF`` ``ESP-ADF`` ``ESP-MDF``
+
+关于 `ESP-IDF <https://docs.os-q.com/espidf.html>`_
+
 ESP-WHO
 ^^^^^^^^^^^
-
 
 .. _esp_skainet:
 
@@ -285,7 +302,7 @@ ESP-Skainet
 它不依赖云连接，可以完全实现离线运行，在本地乐鑫 SoC 上即可进行唤醒词检测和语音命令词（短语）识别。
 
 
-交互应用
+外设应用
 ~~~~~~~~~~~
 
 .. _esp_touch:
@@ -294,16 +311,15 @@ Touch
 ^^^^^^^^^^^
 
 
-数字外设
-~~~~~~~~~~~
-
 
 IO MUX
 ^^^^^^^^^^^
 
+相对于传统的MCU，基于IO矩阵，可以将数字外设任意分配管脚，灵活性相当高。
+
 支持快速信号如 SPI、JTAG、UART 等可以旁路 GPIO 交换矩阵以实现更好的高频数字特性。所以高速信号会直接通过 IO MUX 输入和输出。
 
-基于RTC控制IO MUX
+基于RTC控制的IO MUX具有以下特性：
 
 * 控制 22 个 RTC GPIO 管脚的低功耗特性；
 * 控制 22 个 RTC GPIO 管脚的模拟功能；
@@ -325,5 +341,9 @@ Xin总结
 问题整理
 ~~~~~~~~~~~~~
 
+
+
 应用总结
 ~~~~~~~~~~~~~
+
+就芯片配置而言，相对ESP32的升级力度不大，用以太网换了USB-OTG，更多是一种发展方向的探索，围绕软件生态构建应用场景。
