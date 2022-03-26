@@ -4,15 +4,14 @@
 CH32V307
 ============
 
-* 关键词：``RISC-V`` ``144MHz`` ``USB`` ``10M-ETH-PHY`` ``CAN`` ``AES128``
-* 资源库：`GitHub <https://github.com/SoCXin/CH32V307>`_
+* 关键词：``RISC-V`` ``144MHz`` ``USB HS 480Mbps`` ``1000Mbps-ETH-MAC`` ``10MMbps-ETH-PHY`` ``CAN``
+* 资源库：`GitHub <https://github.com/SoCXin/CH32V307>`_ , `官方资源 <http://www.wch.cn/products/CH32V307.html>`_
 
 .. contents::
     :local:
 
 Xin简介
 -----------
-
 
 .. image:: ./images/CH32V307.png
     :target: http://www.wch.cn/products/CH32V307.html
@@ -26,38 +25,73 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
 ^^^^^^^^^^^
 
 * 发布时间：
-* 发布价格：
-* 工作温度：-40°C to +85°C
+* 参考价格：
+* 制程工艺：
+* 供货周期：
 * 处理性能：
+* 封装规格：LQFP64M/LQFP100
+* 运行环境：-40°C to 85°C
 * RAM容量：64 KB
 * Flash容量：256 KB
-* 封装规格：LQFP64M/LQFP100
 
 
 特征参数
 ^^^^^^^^^^^
 
-* 144MHz :ref:`wch_riscv4a`
-* USB2.0全速OTG接口
-* USB2.0高速主机/设备接口（480Mbps 内置PHY）
+* 最高144MHz系统主频 :ref:`wch_riscv4f` (青稞)
+* :ref:`ch32v307_usb` 全速OTG接口，高速主机/设备接口（480Mbps 内置PHY）
 * 3x USART + 5x UART
 * 2个CAN接口（2.0B主动）
-* 千兆以太网控制器ETH（内置10M PHY）
+* 千兆以太网控制器 :ref:`ch32v307_eth`（内置10M PHY）
+* 2组18路通用DMA
+* 4组运放比较器
+* 2组12位DAC转换
+* 2单元16通道12位ADC转换，16路触摸按键TouchKey
+* 10组定时器
+* SDIO接口、FSMC接口、DVP数字图像接口
+* 2组IIC接口、3组SPI接口、2组IIS接口
+
 
 .. hint::
     最大特色千兆以太网控制器MAC和10M PHY，高速USB设备，非常强大的有线连接能力
-
-电源参数
-^^^^^^^^^^^
-
-* 供电电压：2.5V/3.3V
 
 
 芯片架构
 ~~~~~~~~~~~
 
 
+.. image:: ./images/CH32V307P.png
+    :target: http://www.wch.cn/products/CH32V307.html
 
+
+功耗参数
+^^^^^^^^^^^
+
+* 供电电压：2.5/3.3V，GPIO单元独立供电
+* 多种低功耗模式：睡眠、停止、待机
+
+.. image:: ./images/CH32V307pwr.png
+    :target: http://www.wch.cn/products/CH32V307.html
+
+
+连接能力
+~~~~~~~~~~~
+
+``USB2.0 HS`` ``USB OTG`` ``CAN`` ``Ethernet``
+
+.. _ch32v307_usb:
+
+USB
+^^^^^^^^^^^
+
+``480Mbps内置PHY``
+
+.. _ch32v307_eth:
+
+Ethernet
+^^^^^^^^^^^
+
+``1000Mbps-ETH-MAC`` ``10MMbps-ETH-PHY``
 
 Xin选择
 -----------
@@ -74,26 +108,23 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - DMIPS
+    * - :ref:`wch`
+      - Performance
       - SRAM/ROM
-      - Package
       - UART
       - CAN
       - USB
       - Ethernet
-    * - :ref:`ch32f103`
-      - 175
-      - 32
-      - 64/128/256
-      - 2/3/5
-      - 2.0B
-      - USB OTG
-      - NO
+    * - :ref:`ch32v307`
+      -
+      - 64/256
+      - 8
+      - 2 x 2.0B
+      - USB2.0
+      - 10M/1000M
     * - :ref:`ch32f208`
-      - 150
+      -
       - 8/16
-      - 16/32/64
       - 2
       - NO
       - NO
@@ -101,27 +132,18 @@ Xin选择
     * - :ref:`ch32v103`
       - 250
       - 16/32/64
-      - 64/128/256
       - 2/3/5
       - 2 x 2.0B
       - USB2.0
       - NO
     * - :ref:`ch32v208`
-      - 300
+      -
       - 224
-      - 256/512/1024
       - 7/8
       - 2 x 2.0B
       - USB2.0
       - PHY-10Mbps
-    * - :ref:`ch32v307`
-      - 300
-      - 64KB/256KB
-      - LQFP64M/LQFP100
-      - 8
-      - 2 x 2.0B
-      - USB2.0
-      - PHY10M/MAC1000M
+
 
 
 版本对比
@@ -145,28 +167,4 @@ CH32V307VCT6核心板
 
 .. image:: ./images/B_CH32V307.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.48.39021289jMGykq&id=659315400556&ns=1&abbucket=3#detail
-
-
-数据网关
-~~~~~~~~~~~
-
-
-
-Xin总结
---------------
-
-.. contents::
-    :local:
-
-
-能力构建
-~~~~~~~~~~~~~
-
-要点提示
-~~~~~~~~~~~~~
-
-
-问题整理
-~~~~~~~~~~~~~
-
 
