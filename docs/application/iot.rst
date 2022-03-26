@@ -52,10 +52,50 @@ IoT
       -
 
 
+.. toctree::
+    :caption: 芯片厂商
+    :maxdepth: 1
+
+    Nordic <../nordic/index>
+    TI <../TI/index>
+
+
+.. list-table::
+    :header-rows: 1
+
+    * - 品牌
+      - :ref:`ethernet`
+      - :ref:`plc`
+      - :ref:`802_15_4`
+      - :ref:`ble`
+      - :ref:`wifi`
+      - :ref:`lora`
+      - :ref:`nbiot`
+      - :ref:`cat1`
+      - :ref:`cat4`
+    * - :ref:`ti`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`nordic`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+
 .. contents::
     :local:
-
-
 
 .. _ethernet:
 
@@ -204,6 +244,8 @@ BLE
 
 在蓝牙应用领域，大致可以分为两大类，一类是以蓝牙音频为主，走高性能路线，一种以物联网低功耗场景为主，特点是性价比和低功耗
 
+
+
 .. list-table::
     :header-rows:  1
 
@@ -235,7 +277,6 @@ BLE
 
 .. note::
     由于技术演进和技术门槛降低，传统的MCU厂商在其产品上添加蓝牙系列，WiFi芯片厂商也同步支持蓝牙功能，导致单纯的蓝牙芯片越来越没有优势。
-
 
 
 .. _wifi:

@@ -68,7 +68,7 @@
 Lua
 ^^^^^^^^^^^^
 
-`Lua语言 <https://docs.os-q.com/lua>`_ 嵌入式运行平台包括 :ref:`air101` 
+`Lua语言 <https://docs.os-q.com/lua>`_ 嵌入式运行平台包括 :ref:`air101`
 
 .. toctree::
     :maxdepth: 1
@@ -94,37 +94,37 @@ mPy
     :header-rows:  1
 
     * - :ref:`list`
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
+      -
+      -
+      -
+      -
+      -
+      -
+      -
     * - :ref:`esp32`
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
+      -
+      -
+      -
+      -
+      -
+      -
+      -
     * - :ref:`rp2040`
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
+      -
+      -
+      -
+      -
+      -
+      -
+      -
     * - :ref:`stm32f405`
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
+      -
+      -
+      -
+      -
+      -
+      -
+      -
 
 .. _xgo:
 
@@ -211,6 +211,7 @@ CMSIS
 
 Arduino
 ~~~~~~~~~~~~~
+
 .. toctree::
     :maxdepth: 1
 

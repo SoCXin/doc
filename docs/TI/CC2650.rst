@@ -1,11 +1,11 @@
 
-.. _usi8910:
+.. _cc2650:
 
-USI8910DM
-=============
+CC2650
+============
 
-* 关键词：``Cortex-R5`` ``800MHz`` ``64M DDR2`` ``0.2TOPS`` ``QFN88``
-* 资源库：`GitHub <https://github.com/SoCXin/USI8910DM>`_
+* 关键词：``BLE``
+* 资源库：`GitHub <https://github.com/SoCXin/CC2650>`_
 
 .. contents::
     :local:
@@ -24,7 +24,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：QFN88
+* 封装规格：
 * 运行环境：
 * RAM容量：
 * Flash容量：
@@ -32,5 +32,3 @@ Xin简介
 
 特征参数
 ^^^^^^^^^^^
-
-
