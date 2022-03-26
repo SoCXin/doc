@@ -241,7 +241,7 @@ SoC·Xin
       -
       - :ref:`esp32h2`
       - :ref:`mt7621`
-      - :ref:`at32f437`
+      - :ref:`at32f425`
       - :ref:`D1`
     * - 经典
       - :ref:`ch579`
@@ -265,6 +265,6 @@ SoC·Xin
       -
       - :ref:`esp32s3`
       -
-      -
+      - :ref:`at32f437`
       - :ref:`v831`
 

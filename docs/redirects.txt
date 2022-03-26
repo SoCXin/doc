@@ -34,8 +34,10 @@
 /CH579.html -> WCH/CH579.html
 /CH573.html -> WCH/CH573.html
 /CH569.html -> WCH/CH569.html
+/CH565.html -> WCH/CH569.html
 /CH568.html -> WCH/CH568.html
 /CH549.html -> WCH/CH549.html
+/CH563.html -> WCH/CH563.html
 /CH545.html -> WCH/CH545.html
 /CH557.html -> WCH/CH557.html
 /CH554.html -> WCH/CH554.html

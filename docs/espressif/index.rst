@@ -3,7 +3,7 @@
 Espressif
 ==============
 
-``Xtensa-LX7`` ``Xtensa-LX6`` ``RISC-V`` ``Audio`` ``Wi-Fi`` ``BT/BLE``  ``ESP32-S3`` ``ESP32-C3`` ``ESP32`` ``ESP8266`` ``Arduino``
+``Xtensa-LX7`` ``Xtensa-LX6`` ``RISC-V`` ``Matter`` ``Audio`` ``Wi-Fi`` ``BT/BLE``  ``ESP32-S3`` ``ESP32-C3`` ``ESP32`` ``ESP8266`` ``Arduino``
 
 公司简介
 -----------
