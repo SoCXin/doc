@@ -102,3 +102,11 @@ RISC-V4F
       -
       -
 
+
+
+青稞 V4 系列微处理器是基于标准 RISC-V 指令集架构，自研的 32 位通用 MCU 微处理器。根据不同的运用场景和指令集组合，该系列包括 V4A，V4B，V4C，V4F。V4 系列均支持 RV32IMAC 指令集扩展，其中 V4F 支持单精度硬件浮点，即支持 RV32IMACF 扩展。同时 V4B、V4C、V4F 还支持自定义扩展 XW。除此之外，还支持硬件压栈（HPE）、免表中断（VTF）、精简的两线调试接口、支持“WFE”指令、物理内存保护（PMP）等特色功能。
+
+
+
+.. image:: ./images/wch_riscv4.png
+    :target: http://www.wch.cn/downloads/QingKeV4_Processor_Manual_PDF.html

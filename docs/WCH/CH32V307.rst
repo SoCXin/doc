@@ -42,7 +42,7 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
 * :ref:`ch32v307_usb` 全速OTG接口，高速主机/设备接口（480Mbps 内置PHY）
 * 3x USART + 5x UART
 * 2个CAN接口（2.0B主动）
-* 千兆以太网控制器 :ref:`ch32v307_eth`（内置10M PHY）
+* 千兆以太网控制器 :ref:`ch32v307_eth` （内置10M PHY）
 * 2组18路通用DMA
 * 4组运放比较器
 * 2组12位DAC转换
