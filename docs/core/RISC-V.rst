@@ -6,6 +6,9 @@ RISC-V
 
 ``BSD``
 
+`GitHub <https://github.com/SoCXin/RISC>`_
+
+
 .. contents::
     :local:
 
@@ -62,3 +65,9 @@ C906
 
 XT804
 ~~~~~~~~~~~~~~
+
+
+Vendor
+--------------
+
+:ref:`wch_riscv`
