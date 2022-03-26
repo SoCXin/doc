@@ -5,7 +5,7 @@ CH563
 ==========
 
 * 关键词：``ARMv5TE`` ``130MHz`` ``USB-HS-PHY`` ``ETH-PHY-100M``
-* 资源库：`GitHub <https://github.com/SoCXin/CH563>`_
+* 资源库：`GitHub <https://github.com/SoCXin/CH563>`_ , `官方链接 <http://www.wch.cn/products/CH563.html>`_
 
 .. contents::
     :local:
@@ -19,19 +19,18 @@ Xin简介
 规格参数
 ~~~~~~~~~~~
 
-
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
-* 发布价格：
-* 供电电压：3.0 to 3.6 V
-* 工作温度：-40°C to 85°C
-
-* 处理性能：300 :ref:`DMIPS`
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 封装规格：LQFP64/LQFP128
+* 运行环境：-40°C to 85°C
 * RAM容量：64 KB
 * Flash容量：224 KB
-* 封装规格：LQFP64/LQFP128
 
 
 特征参数
@@ -52,3 +51,35 @@ Xin简介
 
 .. image:: ./images/CH563s.png
     :target: http://www.wch.cn/products/CH563.html
+
+
+连接能力
+~~~~~~~~~~~
+
+.. _ch563_eth:
+
+Ethernet
+^^^^^^^^^^^
+
+``10/100Mbps`` ``100Mbps PHY``
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+系列对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+.. _ch561:
+
+CH561
+^^^^^^^^^^^

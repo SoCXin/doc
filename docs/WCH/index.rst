@@ -4,7 +4,7 @@
 WCH
 ============
 
-``RISC-V`` ``8051`` ``USB`` ``Ethernet`` ``BLE``
+``RISC-V`` ``8051`` ``USB`` ``USB-PD`` ``Ethernet`` ``BLE`` ``SD`` ``PCIe``
 
 
 公司简介
@@ -15,57 +15,53 @@ WCH
 该厂商的转换芯片如CH340普及率非常高，凭借在有线连接上的积累，推出的可编程器件都具备非常丰富的连接资源如USB/UART/Ethernet，产品品类非常丰富，同时也具备很高的性价比。
 
 
-市场分析
+市场定位
 ~~~~~~~~~~~~~
 
+专注于连接市场，开始向无线通信和自研核心发展，产品线非常丰富，在物联网市场有明显的识别度，弱势在于应用开发，厂商没有给出足够的引导案例和软件框架
 
 
-产品简介
+
+转换类产品
 -------------
 
 .. contents::
     :local:
 
-转换类
-~~~~~~~~~~~~~
-
 .. image:: ./images/wch.png
     :target: http://special.wch.cn/zh_cn/interface_conversion_expert/
 
-.. contents::
-    :local:
 
 
 USB/UART
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 .. image:: ./images/wchusb.png
     :target: http://special.wch.cn/zh_cn/USBChips/#/
 
 PCI/PCIE
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 .. image:: ./images/pci.png
     :target: http://www.wch.cn/products/category/2.html#data
 
 Ethernet
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 .. image:: ./images/eth.png
     :target: http://www.wch.cn/products/category/4.html#data
 
 
-编程类
-~~~~~~~~~~~~~~~~
+编程类产品
+-------------
 
-包括多个系列的 :ref:`mcs51` 内核单片机， :ref:`wch_riscv3a` / :ref:`cortex_m0` 内核的无线SoC
 
-.. warning::
-    :ref:`wch` 硬件非常有性价比，基本标配USB外设，集成度比较高，但其软件生态策略保守，关键的代码资源都是通过lib方式提供，不开放源码，代码集成十分难用。
 
+.. contents::
+    :local:
 
 ETH ++
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -114,7 +110,7 @@ ETH ++
     CH563 <CH563>
 
 USB ++
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -150,9 +146,12 @@ USB ++
     CH545 <CH545>
     CH557 <CH557>
 
+.. hint::
+    :ref:`wch` 基本标配USB FS外设，而且在对标同类产品时，往往配置更多数量的USB，或者集成USB PHY器件
+
 
 BLE ++
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 .. image:: ./images/BLE.png
     :target: http://special.wch.cn/zh_cn/mcu/
@@ -201,14 +200,15 @@ BLE ++
     CH583 <CH583>
 
 
-技术简介
+特色简介
 -------------
-.. contents::
-    :local:
+
 
 内核简介
 ~~~~~~~~~~~~
 
+.. contents::
+    :local:
 
 MCS51
 ^^^^^^^^^^^^
@@ -323,21 +323,65 @@ RISC-V
     CH568 <CH568>
     CH569 <CH569>
 
+电源管理
+~~~~~~~~~~~~
+
+``USB-PD``
+
+.. image:: ./images/wch_asm.png
+    :target: http://www.wch.cn/search?q=USB+PD&t=all
+
 
 封装规格
 ~~~~~~~~~~~~
+
+.. contents::
+    :local:
+
+.. _wch_qfn68:
+
+QFN68
+^^^^^^^^^^^
+
+``CH569W`` ``CH565`` ``CH32V307WC`` ``CH32F208W``
+
+* 封装尺寸：8 x 8 mm, 0.4mm pitch
+
 
 .. _wch_qfn48:
 
 QFN48
 ^^^^^^^^^^^
 
+``CH578M`` ``CH583M`` ``CH32V103C``
+
 * 封装尺寸：5 x 5 mm, 0.35mm pitch
 
-.. image:: ./images/CH579p48.png
-    :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
+.. _wch_qfn40:
+
+QFN40
+^^^^^^^^^^^
+
+``CH565M``
+
+* 封装尺寸：5 x 5 mm, 0.4mm pitch
+
 
 .. _wch_qfn28:
 
 QFN28
 ^^^^^^^^^^^
+
+``CH581F`` ``CH573F``
+
+* 封装尺寸：4 x 4 mm, 0.35mm pitch
+
+
+.. _wch_qfn20:
+
+QFN20
+^^^^^^^^^^^
+
+``CH581F`` ``CH573F``
+
+* 封装尺寸：4 x 4 mm, 0.4mm pitch

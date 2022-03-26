@@ -4,8 +4,8 @@
 CH569
 ===========
 
-* 关键词：``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``Ethernet`` ``EMMC``
-* 资源库：`GitHub <https://github.com/SoCXin/CH569>`_
+* 关键词：``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``1000Mbps MAC`` ``Ethernet`` ``EMMC`` ``DVP``
+* 资源库：`GitHub <https://github.com/SoCXin/CH569>`_ , `官方链接 <http://www.wch.cn/products/CH569.html>`_
 
 .. contents::
     :local:
@@ -48,23 +48,14 @@ Xin简介
 * 120 MHz :ref:`wch_riscv3a`
 * USB3.0控制及收发器（内置PHY），支持主机Host/设备Device模式、OTG功能，支持USB3.0 HUB
 * USB2.0控制及收发器（内置PHY），支持主机Host/设备Device模式，支持控制/批量/中断/同步传输
-* 千兆以太网控制器（Ethernet），提供RGMII和RMII PHY接口，支持10/100/1000Mbps速率
-* :ref:`wch_hspi`，可配置8/16/32位数据宽度，内置FIFO，支持DMA，最快传输速度约为3.8Gbps
-* :ref:`wch_serdes` 可直接驱动光纤，支持网线（仅使用1组差分线）传输90米，支持1.25Gbps高速差分信号通讯
+* 千兆以太网控制器 :ref:`ch569_eth` ，提供RGMII和RMII PHY接口，支持10/100/1000Mbps速率
+* :ref:`ch569_hspi`，可配置8/16/32位数据宽度，内置FIFO，支持DMA，最快传输速度约为3.8Gbps
+* :ref:`ch569_serdes` 可直接驱动光纤，支持网线（仅使用1组差分线）传输90米，支持1.25Gbps高速差分信号通讯
 * 内置EMMC控制器，支持单线、4线、8线数据通讯模式，符合EMMC卡4.4和4.5.1规范，兼容5.0规范
+
 
 .. hint::
     :ref:`ch569` 强悍的高速外设配置十分有冲击力，但是受限于内核性能无法进行数据处理，更多是作为桥接芯片
-
-
-电源参数
-^^^^^^^^^^^
-
-* 供电电压：2.1 to 3.6 V
-
-.. image:: ./images/CH569pwr.png
-    :target: http://www.wch.cn/products/CH569.html
-
 
 芯片架构
 ~~~~~~~~~~~
@@ -72,7 +63,37 @@ Xin简介
 .. image:: ./images/CH569s.png
     :target: http://www.wch.cn/products/CH569.html
 
-.. _wch_serdes:
+* 供电电压：2.1 to 3.6 V
+
+功耗参数
+^^^^^^^^^^^
+
+.. image:: ./images/CH569pwr.png
+    :target: http://www.wch.cn/products/CH569.html
+
+封装规格
+^^^^^^^^^^^
+
+:ref:`ch569` 目前仅有一个 :ref:`wch_qfn68` 封装，而 :ref:`ch565` 具有QFN68/QFN40
+
+
+* 封装尺寸 8x8mm ，pitch 0.4mm
+
+.. image:: ./images/CH569p68.png
+
+
+连接能力
+~~~~~~~~~~~
+
+.. _ch569_eth:
+
+Ethernet
+^^^^^^^^^^^
+
+``10/100/1000Mbps``
+
+
+.. _ch569_serdes:
 
 SerDes
 ^^^^^^^^^^^
@@ -92,7 +113,7 @@ SerDes有四种架构：1）并行时钟SerDes；2）嵌入式时钟SerDes；3�
 `基础知识 <https://www.cnblogs.com/rouwawa/p/13524703.html>`_
 
 
-.. _wch_hspi:
+.. _ch569_hspi:
 
 HSPI
 ^^^^^^^^^^^
@@ -100,19 +121,6 @@ HSPI
 HSPI接口通讯可比拟FPGA功能，最典型的应用场景是获取高速ADC器件数据 :ref:`adc`
 
 
-封装规格
-~~~~~~~~~~~
-
-:ref:`ch569` 目前仅有一个封装规格，而 :ref:`ch565` 具有QFN68/QFN40
-
-.. _wch_qfn68:
-
-QFN68
-^^^^^^^^^^^
-
-* 封装尺寸 8x8mm ，pitch 0.4mm
-
-.. image:: ./images/CH569p68.png
 
 
 
@@ -142,7 +150,7 @@ Xin选择
 CH565
 ^^^^^^^^^^^
 
- :ref:`ch565` 相较于 :ref:`ch569` 多了DVP接口，去掉了 :ref:`wch_hspi` ，甚至在更小QFN40上去掉了以太网和调试端口。
+ :ref:`ch565` 相较于 :ref:`ch569` 多了DVP接口，去掉了 :ref:`ch569_hspi` ，甚至在更小QFN40上去掉了以太网和调试端口。
 
 .. image:: ./images/CH569p40.png
 

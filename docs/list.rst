@@ -29,7 +29,7 @@
     * - :ref:`NO_008` (32KB SRAM/QFN28)
       - 集成以太网MAC和PHY，支持BLE4.2和USB FS OTG
     * - :ref:`NO_009` (QFN68)
-      - 支持USB SS和USB HS, :ref:`wch_serdes` 控制器及PHY, :ref:`wch_hspi`
+      - 支持USB SS和USB HS, :ref:`ch569_serdes` 控制器及PHY, :ref:`ch569_hspi`
     * - :ref:`NO_010`
       - 低成本高性价比入门级STM32新品
     * - :ref:`NO_011`
