@@ -4,7 +4,7 @@
 CH32V307
 ============
 
-* 关键词：``RISC-V`` ``144MHz`` ``USB HS 480Mbps`` ``1000Mbps-ETH-MAC`` ``10MMbps-ETH-PHY`` ``CAN``
+* 关键词：``RISC-V`` ``USB HS 480Mbps`` ``1000Mbps-ETH-MAC`` ``10MMbps-ETH-PHY`` ``CAN``
 * 资源库：`GitHub <https://github.com/SoCXin/CH32V307>`_ , `官方资源 <http://www.wch.cn/products/CH32V307.html>`_
 
 .. contents::
@@ -38,7 +38,7 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
 特征参数
 ^^^^^^^^^^^
 
-* 最高144MHz系统主频 :ref:`wch_riscv4f` (青稞)
+* 最高144MHz :ref:`wch_riscv4f` (青稞)
 * :ref:`ch32v307_usb` 全速OTG接口，高速主机/设备接口（480Mbps 内置PHY）
 * 3x USART + 5x UART
 * 2个CAN接口（2.0B主动）
@@ -91,7 +91,7 @@ USB
 Ethernet
 ^^^^^^^^^^^
 
-``1000Mbps-ETH-MAC`` ``10MMbps-ETH-PHY``
+``1000Mbps-ETH-MAC`` ``10Mbps-ETH-PHY``
 
 Xin选择
 -----------
@@ -111,39 +111,43 @@ Xin选择
     * - :ref:`wch`
       - Performance
       - SRAM/ROM
-      - UART
-      - CAN
+      - wireless
+      - UART/CAN
       - USB
       - Ethernet
+      - More
     * - :ref:`ch32v307`
       -
       - 64/256
-      - 8
-      - 2 x 2.0B
-      - USB2.0
-      - 10M/1000M
-    * - :ref:`ch32f208`
       -
-      - 8/16
-      - 2
-      - NO
-      - NO
-      - NO
-    * - :ref:`ch32v103`
-      - 250
-      - 16/32/64
-      - 2/3/5
-      - 2 x 2.0B
-      - USB2.0
-      - NO
+      - 8/2
+      - USB HS
+      - 10M+1000M
+      -
     * - :ref:`ch32v208`
       -
-      - 224
-      - 7/8
-      - 2 x 2.0B
-      - USB2.0
-      - PHY-10Mbps
-
+      - 64/256
+      - BLE5.3
+      - 4/2
+      - 2x USB
+      - 10M(PHY)
+      -
+    * - :ref:`ch32f208`
+      -
+      - 64/256
+      - BLE5.3
+      - 4/2
+      - 2x USB
+      - 10M(PHY)
+      -
+    * - :ref:`ch32f207`
+      -
+      - 64/256
+      -
+      - 8/2
+      - USB HS
+      - 10M+1000M
+      -
 
 
 版本对比
@@ -162,8 +166,8 @@ Xin应用
 开发板
 ~~~~~~~~~~
 
-CH32V307VCT6核心板
-^^^^^^^^^^^^^^^^^^^
+核心板
+^^^^^^^^^^
 
 .. image:: ./images/B_CH32V307.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.48.39021289jMGykq&id=659315400556&ns=1&abbucket=3#detail

@@ -4,8 +4,8 @@
 CH32F208
 ============
 
-* 关键词：``USB`` ``10M-ETH-PHY`` ``BLE5.1`` ``CAN`` ``AES128``
-* 资源库：`GitHub <https://github.com/SoCXin/CH32F208>`_
+* 关键词：``144MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE5.3`` ``CAN`` ``AES128``
+* 资源库：`GitHub <https://github.com/SoCXin/CH32F208>`_ , `官方资源 <http://www.wch.cn/products/CH32F208.html>`_
 
 .. contents::
     :local:
@@ -18,14 +18,37 @@ Xin简介
 .. image:: ./images/CH32F208.png
     :target: http://www.wch.cn/products/CH32F208.html
 
-关键特性
-~~~~~~~~~~~~
+规格参数
+~~~~~~~~~~~
 
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 封装规格：LQFP64M/QFN68
+* 运行环境：-40°C to 85°C
+* RAM容量：64 KB
+* Flash容量：128 KB
+
+特征参数
+^^^^^^^^^^^
+
+* 144MHz :ref:`cortex_m3`
+* 低功耗蓝牙5.3
 * 10M以太网控制器（MAC+PHY）
+* 2组运放比较器
+* 16通道12位ADC转换，16路触摸按键TouchKey
+* 5组定时器
+* USB2.0全速主机/设备+设备接口
 * 4个USART接口
-* USB2.0全速主机/设备
-* 低功耗蓝牙5.1
 * 1个CAN接口（2.0B主动）
+* 2组IIC接口、2组SPI接口
+
 
 芯片架构
 ~~~~~~~~~~~
@@ -34,40 +57,52 @@ Xin简介
     :target: http://www.wch.cn/products/CH32F208.html
 
 
+功耗参数
+^^^^^^^^^^^
+
+.. image:: ./images/CH32F208pwr.png
+    :target: http://www.wch.cn/products/CH32F208.html
+
+
+连接能力
+~~~~~~~~~~~
+
+``USB2.0 HS`` ``USB OTG`` ``CAN`` ``Ethernet``
+
+.. _ch32f208_usb:
+
+USB
+^^^^^^^^^^^
+
+``480Mbps内置PHY``
+
+.. _ch32f208_eth:
+
+Ethernet
+^^^^^^^^^^^
+
+``10Mbps-ETH-MAC`` ``10Mbps-ETH-PHY``
+
 
 Xin选择
 -----------
 
 .. contents::
     :local:
+
+品牌对比
+~~~~~~~~~~
+
+型号对比
+~~~~~~~~~~
+
 .. image:: ./images/CH32F20.png
     :target: http://www.wch.cn/products/CH32F208.html
 
 
+版本对比
+~~~~~~~~~~
 
-Xin应用
------------
-
-.. contents::
-    :local:
-
-
-执行器
-~~~~~~~~~~~
-
-
-
-Xin总结
---------------
-
-.. contents::
-    :local:
-
-要点提示
-~~~~~~~~~~~~~
-
-
-
-问题整理
-~~~~~~~~~~~~~
+.. image:: ./images/CH32F208ver.png
+    :target: http://www.wch.cn/products/CH32F208.html
 

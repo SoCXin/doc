@@ -96,26 +96,3 @@ Xin选择
     :target: http://www.wch.cn/products/CH32V103.html
 
 
-Xin应用
------------
-
-.. contents::
-    :local:
-
-
-
-
-Xin总结
---------------
-
-.. contents::
-    :local:
-
-要点提示
-~~~~~~~~~~~~~
-
-
-
-问题整理
-~~~~~~~~~~~~~
-

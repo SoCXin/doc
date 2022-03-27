@@ -35,8 +35,8 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = u"SoC文档"
-copyright = u" www.soc.xin"
+project = u"SoC"
+copyright = u" www.SoC.Xin"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
