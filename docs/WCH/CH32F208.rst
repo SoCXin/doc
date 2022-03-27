@@ -4,7 +4,7 @@
 CH32F208
 ============
 
-* 关键词：``Cortex-M3`` ``144MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE5.3`` ``CAN`` ``AES128``
+* 关键词：``Cortex-M3`` ``144MHz`` ``USB`` ``10Mbps-PHY`` ``BLE5.3`` ``CAN`` ``AES128``
 * 资源库：`GitHub <https://github.com/SoCXin/CH32F208>`_ , `官方资源 <http://www.wch.cn/products/CH32F208.html>`_
 
 .. contents::
@@ -39,8 +39,8 @@ Xin简介
 ^^^^^^^^^^^
 
 * 144MHz :ref:`cortex_m3`
-* 低功耗蓝牙5.3
-* 10M以太网控制器（MAC+PHY）
+* :ref:`ch32f208_ble` 5.3
+* :ref:`ch32f208_eth` 10Mbps（MAC+PHY）
 * 2组运放比较器
 * 16通道12位ADC转换，16路触摸按键TouchKey
 * 5组定时器
@@ -67,7 +67,12 @@ Xin简介
 连接能力
 ~~~~~~~~~~~
 
-``USB2.0 HS`` ``USB OTG`` ``CAN`` ``Ethernet``
+``USB HS`` ``USB OTG`` ``CAN`` ``Ethernet``
+
+.. _ch32f208_ble:
+
+BLE
+^^^^^^^^^^^
 
 .. _ch32f208_usb:
 
@@ -81,7 +86,7 @@ USB
 Ethernet
 ^^^^^^^^^^^
 
-``10Mbps(MAC)`` ``10Mbps(PHY)``
+``10Mbps(PHY)``
 
 
 Xin选择

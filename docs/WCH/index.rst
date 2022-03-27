@@ -4,7 +4,7 @@
 WCH
 ============
 
-``RISC-V`` ``8051`` ``USB`` ``USB-PD`` ``Ethernet`` ``BLE`` ``SD`` ``PCIe``
+``RISC-V`` ``8051`` ``USB HS`` ``USB-PD`` ``Ethernet`` ``BLE`` ``SD`` ``PCIe``
 
 
 公司简介
@@ -18,8 +18,9 @@ WCH
 市场定位
 ~~~~~~~~~~~~~
 
-专注于连接市场，开始向无线通信和自研核心发展，产品线非常丰富，在物联网市场有明显的识别度，弱势在于应用开发，厂商没有给出足够的引导案例和软件框架
+专注于连接市场，开始向无线通信和自研核心发展，产品线非常丰富，在物联网市场有明显的识别度，弱势在于应用开发，厂商没有给出足够的引导案例和软件框架。
 
+`WCH应用方案 <http://www.wch.cn/application.html>`_
 
 
 转换芯片
@@ -35,11 +36,15 @@ WCH
 USB/UART
 ~~~~~~~~~~~
 
+`USB/UART方案 <http://www.wch.cn/products/categories/22.html?pid=1#data>`_
+
 .. image:: ./images/wchusb.png
     :target: http://special.wch.cn/zh_cn/USBChips/#/
 
 PCI/PCIE
 ~~~~~~~~~~~
+
+`PCI/PCIE方案 <http://www.wch.cn/products/categories/49.html?pid=2>`_ 主要包括转串口/打印口/并口等
 
 .. image:: ./images/pci.png
     :target: http://www.wch.cn/products/category/2.html#data
@@ -47,11 +52,13 @@ PCI/PCIE
 Ethernet
 ~~~~~~~~~~~
 
+`Ethernet方案 <http://www.wch.cn/products/categories/47.html?pid=4>`_ 主要包括转并口/SPI/串口等
+
 .. image:: ./images/eth.png
     :target: http://www.wch.cn/products/category/4.html#data
 
 
-主控芯片
+功能分类
 -------------
 
 .. contents::
@@ -198,7 +205,7 @@ BLE ++
 
 
 
-内核简介
+内核分类
 ------------
 
 .. contents::
@@ -272,8 +279,6 @@ Cortex
 .. image:: ./images/CH32F.png
     :target: http://special.wch.cn/zh_cn/mcu/
 
-.. note::
-    2012年起陆续引入Cortex-M内核，我们加入了网络、USB2.0等高速接口，并设计了高速DMA仲裁机制，推出CH32F103等通用MCU芯片，适用于软件兼容、硬件引脚兼容、接口更专业的成熟生态应用。
 
 .. toctree::
     :maxdepth: 1
@@ -282,22 +287,24 @@ Cortex
     CH32F207 <CH32F207>
     CH32F208 <CH32F208>
 
+.. note::
+    2012年起陆续引入Cortex-M内核，我们加入了网络、USB2.0等高速接口，并设计了高速DMA仲裁机制，推出CH32F103等通用MCU芯片，适用于软件兼容、硬件引脚兼容、接口更专业的成熟生态应用。
 
 
 RISC-V
 ~~~~~~~~~~~~
 
+.. toctree::
+    :maxdepth: 1
 
-青稞V4微处理器是基于标准RISC-V指令集架构，自研的32位通用MCU微处理器。支持RV32IMACF指令集和自扩展字节和半字 操作压缩指令，支持中断嵌套、硬件压栈（HPE）、免表中断（VTF），支持多种低功耗模式，增强的两线调试接口，支持标准RISC-V调试，具有物理 内存保护（PMP）等功能。
+    RISC-V内核版本  <riscv>
+
+青稞V4微处理器是基于标准RISC-V指令集架构，自研的32位通用MCU微处理器。支持RV32IMACF指令集和自扩展字节和半字操作压缩指令，支持中断嵌套、硬件压栈（HPE）、免表中断（VTF），支持多种低功耗模式，增强的两线调试接口，支持标准RISC-V调试，具有物理 内存保护（PMP）等功能。
 
 * 2017年开始关注并研究RISC-V开源指令集的32位MCU架构，针对快速中断响应、高带宽数据DMA进行优化
 * 2019年推出基于RISC-V3A处理器的CH32V103单片机，内嵌BLE低功耗蓝牙的CH57X系列
 * 2020年初推出128位数据宽度和双层DMA架构的高吞吐量的CH56X系列，现已扩展出浮点型V4F，精简型V2A，增强型V3A/V4A/V4B/V4C等内核产品
 
-.. toctree::
-    :maxdepth: 1
-
-    内核版本  <riscv>
 
 
 .. image:: ./images/CH32V.png
@@ -335,15 +342,19 @@ USB-PD
 ``USB-PD``
 
 .. image:: ./images/wch_asm.png
-    :target: http://www.wch.cn/search?q=USB+PD&t=all
+    :target: http://www.wch.cn/products/categories/33.html?pid=5
 
 接口扩展
 ~~~~~~~~~~~~
+
+`单片机外围 <http://www.wch.cn/products/categories/40.html?pid=3#data>`_
 
 .. _wch_kvm:
 
 KVM
 ^^^^^^^^^^^
+
+
 
 封装规格
 ~~~~~~~~~~~~

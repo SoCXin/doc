@@ -29,7 +29,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：LQFP64M/QFN68
+* 封装规格：LQFP64M/QFN68/QFN48/QFN28
 * 运行环境：-40°C to 85°C
 * RAM容量：64 KB
 * Flash容量：128 KB
@@ -37,12 +37,13 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`wch_riscv4c` 144 MHz
-* BLE 5.1
+* 144 MHz :ref:`wch_riscv4c`
+* :ref:`ch32v208_ble` 5.3
 * 10M以太网控制器（MAC+PHY）
 * 2组运放比较器
 * USB2.0全速主机/设备+设备接口
 * 1个CAN接口（2.0B主动）
+* 2组IIC接口、2组SPI接口
 
 
 芯片架构
@@ -56,6 +57,31 @@ Timer
 
 .. image:: ./images/CH32V208t.png
     :target: http://www.wch.cn/products/CH32V208.html
+
+
+连接能力
+~~~~~~~~~~~
+
+``BLE5.3`` ``USB FS OTG`` ``CAN`` ``Ethernet``
+
+.. _ch32v208_ble:
+
+BLE
+^^^^^^^^^^^
+
+.. _ch32v208_usb:
+
+USB
+^^^^^^^^^^^
+
+
+.. _ch32v208_eth:
+
+Ethernet
+^^^^^^^^^^^
+
+``10Mbps-PHY``
+
 
 Xin选择
 -----------

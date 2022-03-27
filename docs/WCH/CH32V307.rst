@@ -4,7 +4,7 @@
 CH32V307
 ============
 
-* 关键词：``RISC-V`` ``USB HS 480Mbps`` ``1000Mbps-ETH-MAC`` ``10MMbps-ETH-PHY`` ``CAN``
+* 关键词：``RISC-V`` ``USB HS 480Mbps`` ``1Gbps-MAC`` ``10Mbps-PHY`` ``CAN``
 * 资源库：`GitHub <https://github.com/SoCXin/CH32V307>`_ , `官方资源 <http://www.wch.cn/products/CH32V307.html>`_
 
 .. contents::
@@ -38,8 +38,8 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
 特征参数
 ^^^^^^^^^^^
 
-* 最高144MHz :ref:`wch_riscv4f` (青稞)
-* :ref:`ch32v307_usb` 全速OTG接口，高速主机/设备接口（480Mbps 内置PHY）
+* 144MHz :ref:`wch_riscv4f` (青稞)
+* :ref:`ch32v307_usb` FS OTG，高速主机/设备接口（480Mbps PHY）
 * 3x USART + 5x UART
 * 2个CAN接口（2.0B主动）
 * 千兆以太网控制器 :ref:`ch32v307_eth` （内置10M PHY）
@@ -74,24 +74,35 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
     :target: http://www.wch.cn/products/CH32V307.html
 
 
+模拟性能
+^^^^^^^^^^^
+
+``TouchKey`` ``ADC`` ``DAC``
+
+* 4x OPA
+* 2x 12bit DAC
+* 2x 12bit ADC (16ch)
+* 16x TouchKey
+
+
 连接能力
 ~~~~~~~~~~~
 
-``USB2.0 HS`` ``USB OTG`` ``CAN`` ``Ethernet``
+``USB HS`` ``USB FS OTG`` ``CAN`` ``Ethernet``
 
 .. _ch32v307_usb:
 
 USB
 ^^^^^^^^^^^
 
-``480Mbps内置PHY``
+``480Mbps`` ``PHY``
 
 .. _ch32v307_eth:
 
 Ethernet
 ^^^^^^^^^^^
 
-``1000Mbps-ETH-MAC`` ``10Mbps-ETH-PHY``
+``1000Mbps-MAC`` ``10Mbps-PHY``
 
 Xin选择
 -----------
@@ -111,41 +122,41 @@ Xin选择
     * - :ref:`wch`
       - Core
       - SRAM/ROM
-      - wireless
+      - More
       - UART/CAN
       - USB
       - Ethernet
-      - More
+      - Package
     * - :ref:`ch32v307`
       -
-      - 64/256
-      -
+      - 64K/256K
+      - DVP/OPA
       - 8/2
-      - USB HS
+      - USB HS(PHY)
       - 10M(PHY)/1G(MAC)
       -
     * - :ref:`ch32f207`
       -
-      - 64/256
-      -
+      - 64K/256K
+      - DVP/OPA
       - 8/2
-      - USB HS
+      - USB HS(PHY)
       - 10M(PHY)/1G(MAC)
       -
     * - :ref:`ch32v208`
       -
-      - 64/256
+      - 64K/128K
       - BLE5.3
-      - 4/2
-      - 2x USB
+      - 4/1
+      - USB OTG
       - 10M(PHY)
       -
     * - :ref:`ch32f208`
       -
-      - 64/256
+      - 64K/128K
       - BLE5.3
-      - 4/2
-      - 2x USB
+      - 4/1
+      - USB OTG
       - 10M(PHY)
       -
 
@@ -155,6 +166,17 @@ Xin选择
 
 .. image:: ./images/CH32V2.png
     :target: http://www.wch.cn/products/CH32V307.html
+
+.. _ch32v305:
+
+CH32V305
+^^^^^^^^^^^
+
+.. _ch32v303:
+
+CH32V303
+^^^^^^^^^^^
+
 
 
 Xin应用
