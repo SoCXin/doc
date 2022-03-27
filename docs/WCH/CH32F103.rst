@@ -5,7 +5,7 @@ CH32F103
 ============
 
 * 关键词：``Cortex-M3`` ``72MHz`` ``USB H/D`` ``CAN2.0B`` ``DAC`` ``RTC``
-* 资源库：`GitHub <https://github.com/SoCXin/CH32F103>`_
+* 资源库：`GitHub <https://github.com/SoCXin/CH32F103>`_ , `官方链接 <http://www.wch.cn/products/CH32F103.html>`_
 
 .. contents::
     :local:
@@ -25,9 +25,13 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：2.7V ~ 5.5V
-* 工作温度：-40°C to +85°C
-* 处理性能：90 :ref:`DMIPS`
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 封装规格：LQFP64M/LQFP48/QFN48
+* 运行环境：-40°C to 85°C
 * RAM容量：20 KB
 * Flash容量：128 KB
 
@@ -35,8 +39,8 @@ Xin简介
 ^^^^^^^^^^^
 
 * 72 MHz :ref:`cortex_m3`
-* USB 2.0 x 2
-* CAN 2.0B
+* 2x :ref:`ch32f103_usb` 2.0
+* :ref:`ch32f103_can` 2.0B
 * SPI(M/S) x 2 + UART x 3 + IIC x 2
 * 12bit ADC + 12bit DAC
 
@@ -47,7 +51,42 @@ Xin简介
 .. image:: ./images/CH32F103s.png
     :target: http://www.wch.cn/products/CH32F103.html
 
+功耗参数
+^^^^^^^^^^^
 
+* 供电电压：2.7V ~ 5.5V
+
+
+连接能力
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wch`
+      - UART
+      - SPI
+      - I2C
+      - :ref:`ch32f103_usb`
+      - :ref:`ch32f103_can`
+    * - :ref:`ch32f103`
+      - 3
+      - 2
+      - 1
+      - 2
+      - 1
+
+
+.. _ch32f103_usb:
+
+USB
+^^^^^^^^^^^
+
+
+.. _ch32f103_can:
+
+CAN
+^^^^^^^^^^^
 
 Xin选择
 -----------
@@ -128,17 +167,11 @@ Xin选择
       - 9
 
 
-USB差异
-^^^^^^^^^^
-
 CH32F103的USBD接口功能兼容了STM32F103的USB接口，而且额外还提供了一个USBHD接口。
 
 :ref:`stm32f103` 需要增加1.5K上拉电阻（UD+），推荐电路传输线路上串接22Ω电阻； :ref:`ch32f103` 内部接口做了阻抗匹配，外部无需任何电阻，芯片引脚直接连接通讯端子或信号线；
 
- :ref:`ch32f103` USBD端口设计兼容 STM32F103 的USB，代码完全兼容，USBHD端口提供寄存器和函数库方式，相比代码结构简单，代码量小。
-
-其他差异
-^^^^^^^^^^
+:ref:`ch32f103` USBD端口设计兼容 STM32F103 的USB，代码完全兼容，USBHD端口提供寄存器和函数库方式，相比代码结构简单，代码量小。
 
 CH32F103芯片基本使用上和STM32F103的一样，兼容性也比较好，但在flash算法上兼容性不一致，不能使用ST的下载软件。
 
@@ -180,35 +213,10 @@ GD32、APM32可以通过此软件下载，其它几种不可以，说明GD32和A
       - 0
       - 80MHz
 
-型号对比
+版本对比
 ~~~~~~~~~~
 
 .. image:: ./images/CH32F103l.png
     :target: http://www.wch.cn/products/CH32F103.html
 
-
-
-Xin应用
------------
-
-.. contents::
-    :local:
-
-
-
-
-Xin总结
---------------
-
-.. contents::
-    :local:
-
-能力构建
-~~~~~~~~~~~~~
-
-要点提示
-~~~~~~~~~~~~~
-
-问题整理
-~~~~~~~~~~~~~
 
