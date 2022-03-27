@@ -4,7 +4,7 @@
 CC2650
 ============
 
-* 关键词：``Cortex-M3`` ``SimpleLink`` ``BLE5.1`` `ZigBee`` `6LoWPAN``
+* 关键词：``Cortex-M3`` ``SimpleLink`` ``BLE`` ``ZigBee`` ``6LoWPAN``
 * 资源库：`GitHub <https://github.com/SoCXin/CC2650>`_ , `官方链接 <https://www.ti.com.cn/product/cn/CC2650>`_
 
 .. contents::
@@ -29,14 +29,15 @@ Xin简介
 * 处理性能： 142 EEMBC CoreMark
 * 封装规格：VQFN32/VQFN48
 * 运行环境：
-* RAM容量：20KB
-* Flash容量：128KB
+* RAM容量：20 KB
+* Flash容量：128 KB
 
 
 特征参数
 ^^^^^^^^^^^
 
 * 64 MHz :ref:`cortex_m3`
+* :ref:`cortex_m0`
 
 芯片架构
 ~~~~~~~~~~~~
@@ -46,7 +47,7 @@ Xin简介
 ^^^^^^^^^^^
 
 * 工作电压：1.8V ~ 3.8V
-* 外部稳压器模式：1.7V 至 1.95V
+* 稳压器模式：1.7V ~ 1.95V
 * 有源模式 RX：5.9mA
 * 有源模式 TX (0dBm)：6.1mA
 * 有源模式 TX (+5dBm)：9.1mA
@@ -59,7 +60,7 @@ Xin简介
 连接能力
 ~~~~~~~~~~~
 
-``BLE 4.1`` ``–97dBm`` ``+5dBm`` `ZigBee`` `6LoWPAN``
+``BLE`` ``–97dBm`` ``+5dBm`` ``ZigBee`` ``6LoWPAN``
 
 
 Xin选择
