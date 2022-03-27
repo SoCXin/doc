@@ -4,7 +4,7 @@
 CH32V307
 ============
 
-* 关键词：``RISC-V`` ``USB HS 480Mbps`` ``1Gbps-MAC`` ``10Mbps-PHY`` ``CAN``
+* 关键词：``RISC-V`` ``USB HS`` ``1Gbps-MAC`` ``10Mbps-PHY`` ``CAN`` ``OPA``
 * 资源库：`GitHub <https://github.com/SoCXin/CH32V307>`_ , `官方资源 <http://www.wch.cn/products/CH32V307.html>`_
 
 .. contents::
@@ -39,21 +39,22 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
 ^^^^^^^^^^^
 
 * 144MHz :ref:`wch_riscv4f` (青稞)
-* :ref:`ch32v307_usb` FS OTG，高速主机/设备接口（480Mbps PHY）
+* :ref:`ch32v307_usb` FS OTG
+* :ref:`ch32v307_usb` HS H/D(480Mbps PHY)
 * 3x USART + 5x UART
-* 2个CAN接口（2.0B主动）
-* 千兆以太网控制器 :ref:`ch32v307_eth` （内置10M PHY）
+* 2x :ref:`ch32v307_can` 2.0B主动
+* 千兆以太网控制器 :ref:`ch32v307_eth` (10Mbps PHY)
 * 2组18路通用DMA
 * 4组运放比较器
 * 2组12位DAC转换
 * 2单元16通道12位ADC转换，16路触摸按键TouchKey
 * 10组定时器
 * SDIO接口、FSMC接口、DVP数字图像接口
-* 2组IIC接口、3组SPI接口、2组IIS接口
+* 2x IIC接口、3x SPI接口、2x IIS接口
 
 
 .. hint::
-    最大特色千兆以太网控制器MAC和10M PHY，高速USB设备，非常强大的有线连接能力
+    千兆以太网控制器1Gbps MAC和10Mbps PHY，USB HS设备，非常强大的有线连接能力
 
 
 芯片架构
@@ -77,7 +78,7 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
 模拟性能
 ^^^^^^^^^^^
 
-``TouchKey`` ``ADC`` ``DAC``
+``TouchKey`` ``ADC`` ``DAC`` ``OPA``
 
 * 4x OPA
 * 2x 12bit DAC
@@ -88,14 +89,27 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
 连接能力
 ~~~~~~~~~~~
 
-``USB HS`` ``USB FS OTG`` ``CAN`` ``Ethernet``
+``USB HS H/D`` ``USB FS OTG`` ``CAN`` ``Ethernet``
 
 .. _ch32v307_usb:
 
 USB
 ^^^^^^^^^^^
 
-``480Mbps`` ``PHY``
+``OTG`` ``480Mbps`` ``PHY``
+
+* USB FS OTG
+* USB HS H/D(480Mbps PHY)
+
+.. hint::
+    支持和集成USB 480Mbps PHY的MCU较少，而且性价比低，例如STM32F7系列
+
+.. _ch32v307_can:
+
+CAN
+^^^^^^^^^^^
+
+``CAN 2.0B``
 
 .. _ch32v307_eth:
 
@@ -103,6 +117,9 @@ Ethernet
 ^^^^^^^^^^^
 
 ``1000Mbps-MAC`` ``10Mbps-PHY``
+
+* 1Gbps MAC
+* 10Mbps PHY
 
 Xin选择
 -----------
@@ -120,45 +137,40 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`wch`
-      - Core
       - SRAM/ROM
       - More
-      - UART/CAN
+      - UART/SDIO
       - USB
       - Ethernet
       - Package
     * - :ref:`ch32v307`
-      -
       - 64K/256K
       - DVP/OPA
-      - 8/2
-      - USB HS(PHY)
+      - 8/1
+      - FS(OTG)+HS(PHY)
       - 10M(PHY)/1G(MAC)
-      -
+      - 100/68/64
     * - :ref:`ch32f207`
-      -
       - 64K/256K
       - DVP/OPA
-      - 8/2
-      - USB HS(PHY)
+      - 8/1
+      - FS(OTG)+HS(PHY)
       - 10M(PHY)/1G(MAC)
-      -
+      - 100/68/64
     * - :ref:`ch32v208`
-      -
       - 64K/128K
       - BLE5.3
-      - 4/1
-      - USB OTG
+      - 4/0
+      - 2xUSB FS OTG
       - 10M(PHY)
-      -
+      - 28/48/64/68
     * - :ref:`ch32f208`
-      -
       - 64K/128K
       - BLE5.3
-      - 4/1
-      - USB OTG
+      - 4/0
+      - 2xUSB FS OTG
       - 10M(PHY)
-      -
+      - 100/64
 
 
 版本对比
@@ -194,3 +206,11 @@ Xin应用
 .. image:: ./images/B_CH32V307.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.48.39021289jMGykq&id=659315400556&ns=1&abbucket=3#detail
 
+V3-Tool
+~~~~~~~~~~
+
+`V3-Tool方案 <https://github.com/stops-top/V3-Tool>`_ 用于实现强大的嵌入式工具
+
+* 桌面USB高速连接
+* 嵌入式调试工具，调试串口HUB
+* 以太网连接

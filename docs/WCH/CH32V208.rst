@@ -96,55 +96,41 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Mark
-      - RAM
-      - ROM
-      - UART
-      - CAN
+    * - :ref:`wch`
+      - SRAM/ROM
+      - More
+      - UART/SDIO
       - USB
       - Ethernet
-    * - :ref:`ch32f103`
-      - 175 DMIPS
-      - 32
-      - 64/128/256
-      - 2/3/5
-      - 2.0B
-      - USB OTG
-      - NO
-    * - :ref:`ch32f208`
-      - 150 DMIPS
-      - 8/16
-      - 16/32/64
-      - 2
-      - NO
-      - NO
-      - NO
-    * - :ref:`ch32v103`
-      - 250 DMIPS
-      - 16/32/64
-      - 64/128/256
-      - 2/3/5
-      - 2 x 2.0B
-      - USB2.0
-      - NO
+      - Package
     * - :ref:`ch32v208`
-      - 300 DMIPS
-      - 224
-      - 256/512/1024
-      - 7/8
-      - 2 x 2.0B
-      - USB2.0
+      - 64K/128K
+      - BLE5.3
+      - 4/0
+      - 2xUSB FS OTG
       - 10M(PHY)
+      - 28/48/64/68
+    * - :ref:`ch32f208`
+      - 64K/128K
+      - BLE5.3
+      - 4/0
+      - 2xUSB FS OTG
+      - 10M(PHY)
+      - 100/64
     * - :ref:`ch32v307`
-      - 300 DMIPS
-      - 224
-      - 256/512/1024
-      - 8
-      - 2 x 2.0B
-      - USB2.0
-      - 10(PHY)/1000M(MAC)
-
+      - 64K/256K
+      - DVP/OPA
+      - 8/1
+      - FS(OTG)+HS(PHY)
+      - 10M(PHY)/1G(MAC)
+      - 100/68/64
+    * - :ref:`ch32f207`
+      - 64K/256K
+      - DVP/OPA
+      - 8/1
+      - FS(OTG)+HS(PHY)
+      - 10M(PHY)/1G(MAC)
+      - 100/68/64
 
 Xin应用
 -----------
