@@ -5,7 +5,7 @@ CH568
 ==========
 
 * 关键词：``RISC-V3A`` ``USB HS`` ``SM4/AES`` ``SATA`` ``120MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/CH568>`_
+* 资源库：`GitHub <https://github.com/SoCXin/CH568>`_ , `官方资源 <http://www.wch.cn/products/CH568.html>`_
 
 .. contents::
     :local:
@@ -24,10 +24,13 @@ CH568是一款高性能32位精简指令集微控制器，系统主频可达120M
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：1.71 to 3.6 V
-* 工作温度：-40°C to 85°C
-* 封装规格：LQFP48 (7x7mm)
-* 处理性能：600 :ref:`DMIPS`
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 封装规格：LQFP48
+* 运行环境：-40°C to 85°C
 * RAM容量：32 KB
 * Flash容量：192 KB
 
@@ -35,7 +38,87 @@ CH568是一款高性能32位精简指令集微控制器，系统主频可达120M
 ^^^^^^^^^^^
 
 * 120 MHz :ref:`wch_riscv3a`
-* SATA主机/设备控制器
-* USB2.0 高速主/从接口（内置PHY），支持DMA
-* 4组SDIO接口
+* 32KB DATA Flash
+* :ref:`ch568_usb` 主机/设备控制器
+* :ref:`ch568_sata` 2.0 高速主/从接口（内置PHY），支持DMA
+* 4x :ref:`ch568_sdio`
 * 支持SM4/AES加密算法，8种加密模式
+* 4组串口、2组SPI
+* 7路PWM、3组26位定时器
+
+
+芯片架构
+~~~~~~~~~~~
+
+功耗参数
+^^^^^^^^^^^
+
+* 支持低功耗睡眠模式，部分GPIO、USB或者SATA信号可唤醒
+
+连接能力
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wch`
+      - UART
+      - :ref:`ch568_sdio`
+      - SPI
+      - :ref:`ch568_usb`
+      - :ref:`ch568_sata`
+    * - :ref:`ch568`
+      - 4
+      - 1
+      - 2
+      - HS H/D
+      - 1
+
+
+.. _ch568_usb:
+
+USB
+^^^^^^^^^^^
+
+``PHY`` ``USB HS H/D``
+
+.. _ch568_sdio:
+
+SDIO
+^^^^^^^^^^^
+
+.. _ch568_sata:
+
+SATA
+^^^^^^^^^^^
+
+``SATA2.0`` ``PHY``
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~
+
+系列对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
+
+.. _ch567:
+
+CH567
+^^^^^^^^^^^
+
+.. image:: ./images/CH567.png
+    :target: http://www.wch.cn/products/CH567.html
+
+* 双USB2.0 高速主/从接口（内置PHY），支持DMA
+* 4组独立SDIO接口，支持单线、4线、8线通讯模式
+* 支持SM4/AES加密算法，8种加密模式
+* 4组串口、2组SPI
