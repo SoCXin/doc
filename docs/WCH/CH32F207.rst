@@ -4,7 +4,7 @@
 CH32F207
 ============
 
-* 关键词：``USB-HS-PHY`` ``10M-ETH-PHY`` ``1G-ETH-MAC`` ``CAN`` ``FSMC`` ``DVP`` ``SDIO``
+* 关键词：``Cortex-M3`` ``USB-HS-PHY`` ``10M-ETH-PHY`` ``1G-ETH-MAC`` ``CAN`` ``FSMC`` ``DVP`` ``SDIO``
 * 资源库：`GitHub <https://github.com/SoCXin/CH32F207>`_ , `官方资源 <http://www.wch.cn/products/CH32F207.html>`_
 
 .. contents::
@@ -83,50 +83,10 @@ USB2.0 HS（480Mbps内置PHY）和千兆以太网控制器ETH（内置10M PHY）
 .. image:: ./images/CH32F207ver.png
     :target: http://www.wch.cn/products/CH32F207.html
 
-关键参数
-^^^^^^^^^^
+.. _ch32f205:
 
-.. list-table::
-    :header-rows:  1
+CH32F205
+^^^^^^^^^^^
 
-    * - :ref:`list`
-      - Mark
-      - RAM
-      - ROM
-      - UART
-      - CAN
-      - USB
-      - Ethernet
-    * - :ref:`ch32f207`
-      - 175 DMIPS
-      - 32
-      - 64/128/256
-      - 2/3/5
-      - 2.0B
-      - USB OTG
-      - NO
-    * - :ref:`ch32f208`
-      - 150 DMIPS
-      - 8/16
-      - 16/32/64
-      - 2
-      - NO
-      - NO
-      - NO
-    * - :ref:`ch32v208`
-      - 300 DMIPS
-      - 224
-      - 256/512/1024
-      - 7/8
-      - 2 x 2.0B
-      - USB2.0
-      - 10M(PHY)
-    * - :ref:`ch32v307`
-      - 300 DMIPS
-      - 224
-      - 256/512/1024
-      - 8
-      - 2 x 2.0B
-      - USB2.0
-      - 10(PHY)/1000M(MAC)
-
+.. image:: ./images/CH32F2.png
+    :target: http://special.wch.cn/zh_cn/mcu/

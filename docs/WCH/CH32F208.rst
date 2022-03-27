@@ -4,7 +4,7 @@
 CH32F208
 ============
 
-* 关键词：``144MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE5.3`` ``CAN`` ``AES128``
+* 关键词：``Cortex-M3`` ``144MHz`` ``USB`` ``10M-ETH-PHY`` ``BLE5.3`` ``CAN`` ``AES128``
 * 资源库：`GitHub <https://github.com/SoCXin/CH32F208>`_ , `官方资源 <http://www.wch.cn/products/CH32F208.html>`_
 
 .. contents::
@@ -74,14 +74,14 @@ Xin简介
 USB
 ^^^^^^^^^^^
 
-``480Mbps内置PHY``
+``480Mbps(PHY)``
 
 .. _ch32f208_eth:
 
 Ethernet
 ^^^^^^^^^^^
 
-``10Mbps-ETH-MAC`` ``10Mbps-ETH-PHY``
+``10Mbps(MAC)`` ``10Mbps(PHY)``
 
 
 Xin选择
@@ -98,6 +98,8 @@ Xin选择
 
 .. image:: ./images/CH32F20.png
     :target: http://www.wch.cn/products/CH32F208.html
+.. image:: ./images/CH32F2.png
+    :target: http://special.wch.cn/zh_cn/mcu/
 
 
 版本对比

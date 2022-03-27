@@ -109,7 +109,7 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`wch`
-      - Performance
+      - Core
       - SRAM/ROM
       - wireless
       - UART/CAN
@@ -122,7 +122,15 @@ Xin选择
       -
       - 8/2
       - USB HS
-      - 10M+1000M
+      - 10M(PHY)/1G(MAC)
+      -
+    * - :ref:`ch32f207`
+      -
+      - 64/256
+      -
+      - 8/2
+      - USB HS
+      - 10M(PHY)/1G(MAC)
       -
     * - :ref:`ch32v208`
       -
@@ -139,14 +147,6 @@ Xin选择
       - 4/2
       - 2x USB
       - 10M(PHY)
-      -
-    * - :ref:`ch32f207`
-      -
-      - 64/256
-      -
-      - 8/2
-      - USB HS
-      - 10M+1000M
       -
 
 
