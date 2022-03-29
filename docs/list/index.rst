@@ -1,7 +1,7 @@
 .. _magazine:
 
 
-芯芸年刊
+芯芸期刊
 -------------
 
 2022年度组合
@@ -35,8 +35,8 @@
 .. |消费电子| image:: images/esp32.png
 .. _消费电子: ../M/RP2040.html
 
-.. |应用领域| image:: images/esp32.png
-.. _应用领域: ../M/RP2040.html
+.. |超长待机| image:: images/esp32.png
+.. _超长待机: ../M/RP2040.html
 
 .. |计量仪表| image:: images/esp32.png
 .. _计量仪表: ../M/RP2040.html
