@@ -17,7 +17,7 @@ SoC·Xin
     :maxdepth: 1
 
     推荐清单 <list/list>
-    芯芸期刊 <list/index>
+    芯芸期刊 <list/journal>
 
 
 芯芸期刊将通过实体发行的方式提供可探索硬件实体，具备实用性的同时，还具有收藏价值，为数字时代留下痕迹。
