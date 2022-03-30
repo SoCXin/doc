@@ -4,7 +4,7 @@
 CH32F208
 ============
 
-* 关键词：``Cortex-M3`` ``144MHz`` ``USB`` ``10Mbps-PHY`` ``BLE5.3`` ``CAN`` ``AES128``
+* 关键词：``Cortex-M3`` ``144MHz`` ``USB`` ``10Mbps(PHY)`` ``BLE5.3`` ``CAN`` ``AES128``
 * 资源库：`GitHub <https://github.com/SoCXin/CH32F208>`_ , `官方资源 <http://www.wch.cn/products/CH32F208.html>`_
 
 .. contents::
@@ -30,7 +30,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：LQFP64M/QFN68
+* 封装规格：LQFP64M/QFN68/QFN48/QFN28
 * 运行环境：-40°C to 85°C
 * RAM容量：64 KB
 * Flash容量：128 KB
@@ -67,7 +67,7 @@ Xin简介
 连接能力
 ~~~~~~~~~~~
 
-``USB HS`` ``USB OTG`` ``CAN`` ``Ethernet``
+``USB OTG`` ``CAN`` ``Ethernet``
 
 .. _ch32f208_ble:
 
@@ -79,7 +79,7 @@ BLE
 USB
 ^^^^^^^^^^^
 
-``480Mbps(PHY)``
+
 
 .. _ch32f208_eth:
 
@@ -100,6 +100,46 @@ Xin选择
 
 型号对比
 ~~~~~~~~~~
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wch`
+      - SRAM/ROM
+      - More
+      - UART/SDIO
+      - USB
+      - Ethernet
+      - Package
+    * - :ref:`ch32v208`
+      - 64K/128K
+      - BLE5.3
+      - 4/0
+      - 2xUSB FS OTG
+      - 10M(PHY)
+      - 28/48/64/68
+    * - :ref:`ch32f208`
+      - 64K/128K
+      - BLE5.3
+      - 4/0
+      - 2xUSB FS OTG
+      - 10M(PHY)
+      - 100/64
+    * - :ref:`ch32v307`
+      - 64K/256K
+      - DVP/OPA
+      - 8/1
+      - FS(OTG)+HS(PHY)
+      - 10M(PHY)/1G(MAC)
+      - 100/68/64
+    * - :ref:`ch32f207`
+      - 64K/256K
+      - DVP/OPA
+      - 8/1
+      - FS(OTG)+HS(PHY)
+      - 10M(PHY)/1G(MAC)
+      - 100/68/64
 
 .. image:: ./images/CH32F20.png
     :target: http://www.wch.cn/products/CH32F208.html

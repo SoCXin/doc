@@ -27,13 +27,14 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
-* 发布价格：
+* 参考价格：
 * 制程工艺：
 * 供货周期：
 * 处理性能：
+* 封装规格：:ref:`wch_qfn28` (4x4mm) / :ref:`wch_qfn48`
+* 运行环境：-40°C to 85°C
 * RAM容量：18 KB
 * Flash容量：512 KB
-* 封装规格：:ref:`wch_qfn28` (4x4mm) / :ref:`wch_qfn48`
 
 
 特征参数
@@ -41,8 +42,8 @@ Xin简介
 
 * :ref:`wch_riscv3a` 20 MHz，支持RV32 IMAC指令集，支持单周期乘法和硬件除法
 * SPI x 2 + UART x 4 (16C550/6Mbps)
-* BLE4.2 (RX-96dBm，TX+5dBm)
-* 内置USB控制器和USB收发器，支持USB2.0全速和低速主机或设备
+* :ref:`ch573_ble` 4.2 (RX-96dBm，TX+5dBm)
+* :ref:`ch573_usb` ，支持USB2.0全速和低速主机或设备
 * 多种低功耗模式：Idle，Halt, Sleep, Shutdown, 内置电池电压低压监控，最低睡眠电流0.3uA
 * 2 组端口PA和PB，22 x GPIO
 * 内置温度传感器
@@ -77,11 +78,33 @@ Xin简介
 连接能力
 ~~~~~~~~~~~
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wch`
+      - UART
+      - SPI
+      - :ref:`ch573_ble`
+      - :ref:`ch573_usb`
+      -
+    * - :ref:`ch573`
+      - 4
+      - 2
+      - 4.2
+      - FS
+      -
+
+.. _ch573_ble:
+
 BLE
 ^^^^^^^^^^^^
 
+``-96dBm`` ``+5dBm``
+
 * Bluetooth Low Energy 4.2
 * 接收灵敏度-96dBm，可编程+5dBm 发送功率
+
+.. _ch573_usb:
 
 USB
 ^^^^^^^^^^^^

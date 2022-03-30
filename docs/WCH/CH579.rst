@@ -28,7 +28,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：:ref:`wch_qfn28` / :ref:`wch_qfn48`
+* 封装规格：:ref:`wch_qfn28` /:ref:`wch_qfn48`
 * 运行环境：-40°C to 85°C
 * RAM容量：32 KB
 * Flash容量：250 KB
@@ -114,7 +114,7 @@ USB
 Ethernet
 ^^^^^^^^^^^
 
-``10Mbps-MAC`` ``10Mbps-PHY``
+``10Mbps(PHY)``
 
 * 10Mbps MAC
 * 10Mbps PHY
@@ -141,35 +141,35 @@ Xin选择
     * - :ref:`list`
       - Core
       - Freq
-      - SRAM
-      - Flash
-      - :ref:`ble`
-      - :ref:`eth_phy`
-      - :ref:`eth_mac`
+      - SRAM/ROM
+      -
+      - Wireless
+      - Ethernet
+      - Package
     * - :ref:`ch579`
       - :ref:`cortex_m0`
       - 40 MHz
-      - 32 KB
-      - 250 KB
-      - 4.2
-      - 10M
-      - 10M
+      - 32KB/250KB
+      -
+      - BLE4.2
+      - 10M(PHY)
+      - QFN48/QFN28
     * - :ref:`W7500P`
       - :ref:`cortex_m0`
       - 48 MHz
-      - 16+32 KB
-      - 128 KB
+      - 32KB/128KB
+      -
       - X
-      - 10M
-      - 10M
+      - 10M(PHY)
+      - LQFP48
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
-      - 160 MHz
-      - 520 KB
-      - 480 KB
-      - 4.2
-      - X
-      - 100M
+      - 240 MHz
+      - 520KB/480KB
+      -
+      - WiFi+BLE
+      - 100M(MAC)
+      - QFN32
 
 .. _W7500P:
 
@@ -192,6 +192,39 @@ W7500P
 
 系列对比
 ~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wch`
+      - Core
+      - SRAM/ROM
+      - BLE
+      - ADC/OPA
+      - USB
+      - Ethernet
+    * - :ref:`ch32v208`
+      - 144MHz
+      - 64KB/128KB
+      - 5.3(96dBm)
+      - 16/2
+      - H/D + D
+      - 10M(PHY)
+    * - :ref:`ch32f208`
+      - 144MHz
+      - 64KB/128KB
+      - 5.3(96dBm)
+      - 16/2
+      - H/D + D
+      - 10M(PHY)
+    * - :ref:`ch579`
+      - 40MHz
+      - 32KB/250KB
+      - 4.2(96dBm)
+      - 14/0
+      - H/D
+      - 10M(PHY)
+
 
 .. list-table::
     :header-rows:  1
