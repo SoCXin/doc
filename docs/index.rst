@@ -66,44 +66,41 @@ SoC·Xin
     :caption: 应用速览
     :maxdepth: 1
 
-    显示交互   <application/hmi>
+    人机交互   <application/hmi>
     通信连接   <application/iot>
-    计算平台   <application/edge>
-    电源设计   <application/pwr>
-    数模转换   <application/adc>
-    驱动控制   <application/foc>
+    边缘计算   <application/edge>
+    超低功耗   <application/pwr>
+    模拟转换   <application/adc>
+    控制驱动   <application/foc>
 
-.. list-table::
-    :header-rows:  1
+==================  ==================  ==================
+|人机交互|_          |通信连接|_         |边缘计算|_
+------------------  ------------------  ------------------
+`人机交互`_          `通信连接`_         `边缘计算`_
+------------------  ------------------  ------------------
+|超低功耗|_          |模拟转换|_         |控制驱动|_
+------------------  ------------------  ------------------
+`超低功耗`_          `模拟转换`_         `控制驱动`_
+==================  ==================  ==================
 
-    * - Rank
-      - :ref:`foc`
-      - :ref:`hmi`
-      - :ref:`iot`
-      - :ref:`edge`
-      - :ref:`ulp`
-      - :ref:`adc`
-    * - No.1
-      - :ref:`hc32m120`
-      - :ref:`stm32f429`
-      - :ref:`esp32`
-      - :ref:`bcm2711`
-      - :ref:`stm32l011`
-      - :ref:`stm32g474`
-    * - No.2
-      - :ref:`swm181`
-      - :ref:`gw1nsr`
-      - :ref:`esp32c3`
-      - :ref:`k210`
-      - :ref:`stm32l412`
-      - :ref:`stm32g431`
-    * - No.3
-      - :ref:`mm32spin`
-      - :ref:`tkm32f499`
-      - :ref:`nrf52832`
-      - :ref:`v831`
-      - :ref:`stm32h7b0`
-      - :ref:`stm32h730`
+.. |人机交互| image:: list/images/esp32.png
+.. _人机交互: application/hmi.html
+
+.. |通信连接| image:: list/images/esp32.png
+.. _通信连接: application/iot.html
+
+.. |边缘计算| image:: list/images/esp32.png
+.. _边缘计算: application/edge.html
+
+.. |超低功耗| image:: list/images/esp32.png
+.. _超低功耗: application/pwr.html
+
+.. |模拟转换| image:: list/images/esp32.png
+.. _模拟转换: application/adc.html
+
+.. |控制驱动| image:: list/images/esp32.png
+.. _控制驱动: application/foc.html
+
 
 
 .. toctree::
@@ -219,7 +216,6 @@ SoC·Xin
     * - Vendor
       - :ref:`wch`
       - :ref:`asr`
-      - :ref:`rda`
       - :ref:`espressif`
       - :ref:`mediatek`
       - :ref:`arterytek`
@@ -227,7 +223,6 @@ SoC·Xin
     * - 新作
       - :ref:`ch32v307`
       - :ref:`asr6601`
-      -
       - :ref:`esp32h2`
       - :ref:`mt7621`
       - :ref:`at32f425`
@@ -235,7 +230,6 @@ SoC·Xin
     * - 经典
       - :ref:`ch579`
       - :ref:`asr6501`
-      - :ref:`usi8910`
       - :ref:`esp32`
       - :ref:`mt7688`
       - :ref:`at32f421`
@@ -243,7 +237,6 @@ SoC·Xin
     * - 畅销
       - :ref:`ch549`
       - :ref:`asr1802`
-      -
       - :ref:`esp32c3`
       - :ref:`mt2625`
       - :ref:`at32f403`
@@ -251,7 +244,6 @@ SoC·Xin
     * - 大成
       - :ref:`ch569`
       - :ref:`asr1601`
-      -
       - :ref:`esp32s3`
       -
       - :ref:`at32f437`

@@ -4,7 +4,7 @@
 ESP32S3
 ================
 
-`标签 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html>`_ ``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``PIE`` ``TWAI`` ``Touch`` ``QFN56``
+`标签 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html>`_ : ``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``AI`` ``CAN`` ``Touch`` ``QFN56``
 
 .. contents::
     :local:
@@ -159,6 +159,8 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
+:ref:`espressif` 在WiFi MCU领域市场占有率第一，在中低端或高性价比定位的产品里鲜有对手，而且不断完善的生态主要的护城河，所有应用领域都有较高的开发起点。
+
 .. list-table::
     :header-rows:  1
 
@@ -181,10 +183,15 @@ Xin选择
       - 6/2/1
       - QFN56
 
-对比W801
+功能对比
 ^^^^^^^^^^^
 
-两者的封装规格相同，主频配置基本相同，差异主要在： :ref:`esp32s3` 是双核带有USB，  :ref:`w801` 拥有更多外设数量
+:ref:`w801` 和 :ref:`esp32s3` 两者的封装规格相同，主频配置相同，差异主要在： :ref:`esp32s3` 是双核且带有USB， :ref:`w801` 拥有更多外设
+
+性能对比
+^^^^^^^^^^^
+
+:ref:`esp32s3` 双核 1181.6 :ref:`CoreMark` 略高于 STM32F7系列(1082CoreMark/462DMIPS)，对性能要求较高的场景非常适用，不足在于非嵌入式存储器，IO的效率较低
 
 型号对比
 ~~~~~~~~~
@@ -240,6 +247,8 @@ Xin选择
 版本对比
 ~~~~~~~~~
 
+主要对比集成的资源大小，便于硬件设计，对软件开发影响不大。
+
 .. image:: ./images/ESP32S3ser.png
     :target: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_cn.pdf
 
@@ -256,13 +265,7 @@ Xin应用
 ESP-S3-EYE
 ^^^^^^^^^^^^^^^^
 
-`ESP-S3-EYE <https://github.com/espressif/esp-who/blob/master/docs/en/get-started/ESP32-S3-EYE_Getting_Started_Guide.md>`_
-
-ESP-S3-USB-OTG
-^^^^^^^^^^^^^^^^
-
-`ESP-S3-USB-OTG <https://docs.espressif.com/projects/espressif-esp-dev-kits/zh_CN/latest/esp32s3/esp32-s3-usb-otg/user_guide.html>`_
-
+`ESP32-S3-EYE <https://github.com/espressif/esp-who/blob/master/docs/en/get-started/ESP32-S3-EYE_Getting_Started_Guide.md>`_
 
 
 ESP32-S3-BOX
@@ -276,11 +279,17 @@ ESP32-S3-BOX
 除了智能语音助手以外，还集触摸屏控制、传感器、红外控制器和智能网关等多功能于一体，拥有完善的 SDK 和丰富的例程。
 
 
+ESP32-S3-USB-OTG
+^^^^^^^^^^^^^^^^
+
+`ESP32-S3-USB-OTG <https://docs.espressif.com/projects/espressif-esp-dev-kits/zh_CN/latest/esp32s3/esp32-s3-usb-otg/user_guide.html>`_
+
+
 
 开发框架
 ~~~~~~~~~
 
- ``ESP-IDF`` ``ESP-ADF`` ``ESP-MDF``
+``ESP-IDF`` ``ESP-ADF`` ``ESP-MDF``
 
 关于 `ESP-IDF <https://docs.os-q.com/espidf.html>`_
 
@@ -304,12 +313,12 @@ ESP-Skainet
 
 .. _esp_touch:
 
-Touch
+TOUCH
 ^^^^^^^^^^^
 
 
 
-IO MUX
+IOMUX
 ^^^^^^^^^^^
 
 相对于传统的MCU，基于IO矩阵，可以将数字外设任意分配管脚，灵活性相当高。
@@ -331,14 +340,17 @@ Xin总结
 能力构建
 ~~~~~~~~~~~~~
 
-.. note::
-    相对传统的MCU使用的强大IDE环境，最大的槽点就是缺乏高度集成的工具环境，ESP-IDF的编译效率较低，文件修改后编译非常耗时
+如果要掌握ESP32的开发，需要对Linux有一定的了解，包括编码风格和开发环境。
+
 
 
 问题整理
 ~~~~~~~~~~~~~
 
+相对传统的MCU使用的强大IDE环境，最大的槽点就是缺乏高度集成的工具环境，ESP-IDF的编译效率较低，文件修改后编译非常耗时
 
+.. note::
+    由于ESP-IDF的多版本、开源(链接集成)和快速迭代特性，导致获取完整资源慢且不稳定，GitHub无法访问≈放弃
 
 应用总结
 ~~~~~~~~~~~~~
