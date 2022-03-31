@@ -40,10 +40,10 @@ Xin简介
 ^^^^^^^^^^^
 
 * 144MHz :ref:`cortex_m3`
-* 千兆以太网控制器 :ref:`ch32f207_eth`（10Mbps PHY）
+* 千兆以太网控制器 :ref:`ch32f207_eth` （10Mbps PHY）
 * SDIO接口、FSMC接口、DVP数字图像接口
-* 2x :ref:`ch32f207_usb`（480Mbps PHY）
-* 2x :ref:`ch32f207_can`（2.0B主动）
+* 2x :ref:`ch32f207_usb` （480Mbps PHY）
+* 2x :ref:`ch32f207_can` （2.0B主动）
 * 3x USART + 5x UART
 
 芯片架构
