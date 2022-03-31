@@ -190,7 +190,7 @@ W7500P
 * 6KB用于Boot的ROM
 * TQFP64 , 53 I/Os (16 IO x 3ea, 5 IO x 1ea)
 
-`GitHub/W7500P<https://github.com/SoCXin/W7500P>`_
+`W7500P GitHub <https://github.com/SoCXin/W7500P>`_
 
 .. warning::
     W7500是工业级的，W7500P是商用级的，后者片上集成10M以太网PHY
