@@ -157,7 +157,7 @@ Xin选择
       - SRAM/ROM
       - wireless
       - USB/UART/ETH
-      - Sleep Mode
+      - Sleep
     * - :ref:`ch583`
       - :ref:`wch_riscv4a`
       - 20MHz

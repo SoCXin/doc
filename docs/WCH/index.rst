@@ -4,8 +4,7 @@
 WCH
 ============
 
-``RISC-V`` ``8051`` ``USB HS`` ``USB-PD`` ``Ethernet`` ``BLE`` ``SD`` ``PCIe``
-
+``RISC-V`` ``8051`` ``USB HS`` ``USB SS`` ``USB-PD`` ``Ethernet`` ``PHY`` ``BLE`` ``SD`` ``PCIe``
 
 公司简介
 -----------
@@ -64,6 +63,8 @@ Ethernet
 .. contents::
     :local:
 
+.. _wch_eth:
+
 ETH ++
 ~~~~~~~~~~~
 
@@ -106,14 +107,6 @@ ETH ++
       - 10M PHY
       -
 
-
-.. toctree::
-    :maxdepth: 1
-
-    CH579 <CH579>
-    CH563 <CH563>
-
-
 LAN8720
 ^^^^^^^^^^^
 
@@ -143,6 +136,8 @@ USB-HS
 ``USB HS(PHY)`` ``480Mbps``
 
 芯片集成USB2.0 HS PHY器件实现高速通信(480Mbps)，在该细分领域上 :ref:`st` 的STM32F7系列部分型号有USB2.0 PHY集成的方案。
+
+建议45MB/s以内的应用
 
 .. list-table::
     :header-rows:  1
@@ -182,10 +177,12 @@ USB-SS
 ^^^^^^^^^^^
 ``USB SS(PHY)`` ``5Gbps``
 
+建议384MB/s以内的应用
+
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`wch`
       - Core
       - USB Num
       - USB Type
@@ -205,6 +202,7 @@ USB-SS
 USB-FS
 ^^^^^^^^^^^
 
+建议800KB/s以内的应用
 
 .. list-table::
     :header-rows:  1
@@ -234,15 +232,13 @@ USB-FS
       -
       -
 
-.. toctree::
-    :maxdepth: 1
 
-    CH545 <CH545>
-    CH557 <CH557>
 
 .. hint::
     :ref:`wch` 基本标配USB FS外设，而且在对标同类产品时，往往配置更多数量的USB，或者集成USB PHY器件
 
+
+.. _wch_ble:
 
 BLE ++
 ~~~~~~~~~~~
@@ -287,11 +283,7 @@ BLE ++
       - X
 
 
-.. toctree::
-    :maxdepth: 1
 
-    CH573 <CH573>
-    CH583 <CH583>
 
 
 
@@ -353,10 +345,11 @@ MCS51
       -
       -
 
-
 .. toctree::
     :maxdepth: 1
 
+    CH545 <CH545>
+    CH557 <CH557>
     CH552 <CH552>
     CH554 <CH554>
     CH549 <CH549>
@@ -365,10 +358,8 @@ MCS51
 Cortex
 ~~~~~~~~~~~~
 
-
 .. image:: ./images/CH32F.png
     :target: http://special.wch.cn/zh_cn/mcu/
-
 
 .. toctree::
     :maxdepth: 1
@@ -380,6 +371,12 @@ Cortex
 .. note::
     2012年起陆续引入Cortex-M内核，我们加入了网络、USB2.0等高速接口，并设计了高速DMA仲裁机制，推出CH32F103等通用MCU芯片，适用于软件兼容、硬件引脚兼容、接口更专业的成熟生态应用。
 
+.. toctree::
+    :maxdepth: 1
+
+    CH579 <CH579>
+    CH563 <CH563>
+
 
 RISC-V
 ~~~~~~~~~~~~
@@ -387,7 +384,7 @@ RISC-V
 .. toctree::
     :maxdepth: 1
 
-    RISC-V内核版本  <riscv>
+    内核版本  <riscv>
 
 青稞V4微处理器是基于标准RISC-V指令集架构，自研的32位通用MCU微处理器。支持RV32IMACF指令集和自扩展字节和半字操作压缩指令，支持中断嵌套、硬件压栈（HPE）、免表中断（VTF），支持多种低功耗模式，增强的两线调试接口，支持标准RISC-V调试，具有物理 内存保护（PMP）等功能。
 
@@ -416,13 +413,25 @@ RISC-V
 
     CH568 <CH568>
     CH569 <CH569>
+    CH573 <CH573>
+    CH583 <CH583>
+
 
 
 技术简介
 ------------
 
+纵览 :ref:`wch` 当下所有产品，其核心技术在于自主开发的 :ref:`wch_riscv` 内核，在USB领域的多年积累，特别是USB HS集成PHY的差异化定位，相对竞品方案的集成度和成本更低，还有在以太网领域的产品迭代，同样的市场优势建立于高速和集成PHY
+
+但是，就单片机而言，BLE无线通信领域的优势还没有完全建立，但是丰富的产品线具有协同效应，针对高速有线通信（USB SS和1Gbps以太网）配置低主频核心，实用场景有限，和其他高性能产品比较而言并不具有优势
+
+.. contents::
+    :local:
+
 电源管理
 ~~~~~~~~~~~~
+
+主要是建立在USB-PD的电源应用，在一定程度上是USB技术的分支，特别是CH236等独立器件建立了一定市场认可后，集成到MCU中为该领域提供多想象力。
 
 .. _wch_pd:
 
@@ -437,6 +446,8 @@ USB-PD
 接口扩展
 ~~~~~~~~~~~~
 
+``USB HUB`` ``PCI``  ``PCIe``
+
 `单片机外围 <http://www.wch.cn/products/categories/40.html?pid=3#data>`_
 
 .. _wch_kvm:
@@ -446,7 +457,7 @@ KVM
 
 
 
-封装规格
+封装形态
 ~~~~~~~~~~~~
 
 .. contents::

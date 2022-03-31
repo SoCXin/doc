@@ -140,7 +140,7 @@ BLE对比
       - Core
       - Freq
       - SRAM/ROM
-      - BLE
+      - :ref:`wch_ble`
       - USB/CAN
       - SPI/I2C
       - ADC/OPA
@@ -182,7 +182,7 @@ ETH对比
       - More
       - UART/SDIO
       - USB
-      - Ethernet
+      - :ref:`wch_eth`
       - Package
     * - :ref:`ch32f208`
       - 64K/128K
@@ -213,7 +213,8 @@ ETH对比
       - 10M(PHY)+1G(MAC)
       - 100/68/64
 
-上表对比的几款产品，是刀法非常精准的同源产品，属于厂商技术优势在不同定位下的展示，主要的差异在内核、USB HS、以太网等方面。
+
+上表对比的几款产品刀法非常精准，属于厂商将技术单元裁剪打包，主要的差异在内核、USB HS、以太网外设等
 
 .. image:: ./images/CH32F20.png
     :target: http://www.wch.cn/products/CH32F208.html

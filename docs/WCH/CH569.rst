@@ -4,8 +4,7 @@
 CH569
 ===========
 
-* 关键词：``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``1000Mbps MAC`` ``Ethernet`` ``EMMC`` ``DVP``
-* 资源库：`GitHub <https://github.com/SoCXin/CH569>`_ , `官方链接 <http://www.wch.cn/products/CH569.html>`_
+`标签 <http://www.wch.cn/products/CH569.html>`_ : ``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``1000Mbps MAC`` ``Ethernet`` ``EMMC`` ``DVP``
 
 .. contents::
     :local:
@@ -16,10 +15,12 @@ Xin简介
 .. image:: ./images/CH569.png
     :target: http://www.wch.cn/products/CH569.html
 
+`GitHub <https://github.com/SoCXin/CH569>`_
+
 .. contents::
     :local:
 
-规格配置
+规格参数
 ~~~~~~~~~~~
 
 片上采取 128 位数据宽度的 DMA 以支持多个高速外设的高带宽需求，实现大数据量的高速传输。外设包括 USB3.0 超速、USB2.0高速主机和设备控制器及收发器 PHY、千兆以太网控制器、专用高速 SerDes 控制器及收发器 PHY、SD/EMMC接口控制器、加解密模块、高速并行接口、数字视频接口 DVP 等，可广泛应用于流媒体、即时存储、超高速 FIFO、通讯延长、安防监控等应用场景。
@@ -87,6 +88,14 @@ Xin简介
 
 连接能力
 ~~~~~~~~~~~
+
+.. _ch569_usb:
+
+USB
+^^^^^^^^^^^
+
+建议384MB/s以内的应用
+
 
 .. _ch569_eth:
 
