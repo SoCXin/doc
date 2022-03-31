@@ -585,12 +585,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .nav .nav-soc-r {
-  background-color: hsl(345, 44%, 46%);
+  background-color: #fe4365;
   font-weight: bold;
 }
 
 .nav .nav-soc-r:hover {
-  background-color: #fe4365;
+  background-color: hsl(345, 44%, 46%);
   font-weight: bold;
 }
 

@@ -20,8 +20,6 @@ SoC·Xin
     芯芸期刊 <list/journal>
 
 
-芯芸期刊将通过实体发行的方式提供可探索硬件实体，具备实用性的同时，还具有收藏价值，为数字时代留下痕迹。
-
 .. toctree::
     :caption: 新品速览
     :maxdepth: 1
@@ -48,11 +46,11 @@ SoC·Xin
       - :ref:`stm32h730`
       - :ref:`stc8`
       - :ref:`gd32f130`
-      - :ref:`NO_008`
+      - :ref:`NO_017`
     * - Top.2
       - :ref:`rp2040`
       - :ref:`esp32`
-      - :ref:`stm32mp15`
+      - :ref:`esp32s3`
       - :ref:`ch552`
       - :ref:`gd32e230`
       - :ref:`NO_013`

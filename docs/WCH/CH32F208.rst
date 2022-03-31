@@ -1,12 +1,10 @@
-
+.. _NO_017:
 .. _ch32f208:
 
 CH32F208
 ============
 
-`官方资源 <http://www.wch.cn/products/CH32F208.html>`_ ``Cortex-M3`` ``144MHz`` ``USB`` ``10Mbps(PHY)`` ``BLE5.3`` ``CAN`` ``AES128``
-
-`GitHub <https://github.com/SoCXin/CH32F208>`_
+`标签<http://www.wch.cn/products/CH32F208.html>`_ ``Cortex-M3`` ``144MHz`` ``USB`` ``10Mbps(PHY)`` ``BLE5.3`` ``CAN`` ``AES128``
 
 .. contents::
     :local:
@@ -18,6 +16,7 @@ CH32F208基于 :ref:`cortex_m3` 内核的无线型微控制器，主频高达144
 
 .. image:: ./images/CH32F208.png
     :target: http://www.wch.cn/products/CH32F208.html
+`GitHub <https://github.com/SoCXin/CH32F208>`_
 
 规格参数
 ~~~~~~~~~~~
@@ -51,25 +50,8 @@ CH32F208基于 :ref:`cortex_m3` 内核的无线型微控制器，主频高达144
 * 5组定时器
 
 
-
 芯片架构
 ~~~~~~~~~~~
-
-.. image:: ./images/CH32F20X.png
-    :target: http://www.wch.cn/products/CH32F208.html
-
-
-功耗参数
-^^^^^^^^^^^
-
-.. image:: ./images/CH32F208pwr.png
-    :target: http://www.wch.cn/products/CH32F208.html
-
-
-连接能力
-~~~~~~~~~~~
-
-``USB OTG`` ``CAN 2.0B`` ``Ethernet``
 
 .. list-table::
     :header-rows:  1
@@ -90,6 +72,23 @@ CH32F208基于 :ref:`cortex_m3` 内核的无线型微控制器，主频高达144
       - 2(H/D+D)
       - 1(2.0B)
       - 10Mbps
+
+
+.. image:: ./images/CH32F20X.png
+    :target: http://www.wch.cn/products/CH32F208.html
+
+
+功耗参数
+^^^^^^^^^^^
+
+.. image:: ./images/CH32F208pwr.png
+    :target: http://www.wch.cn/products/CH32F208.html
+
+
+连接能力
+~~~~~~~~~~~
+
+``USB OTG`` ``CAN 2.0B`` ``Ethernet``
 
 
 
@@ -125,12 +124,7 @@ Xin选择
 品牌对比
 ~~~~~~~~~~
 
-BLE对比
-^^^^^^^^^^^
-
-ETH对比
-^^^^^^^^^^^
-
+就产品形态而言，:ref:`ch32f208` 具备一定的辨识能力，特别是在 :ref:`ch579` 积累的差异定位优势，在同质化严重的MCU领域提供眼前一亮的选择。
 
 型号对比
 ~~~~~~~~~~

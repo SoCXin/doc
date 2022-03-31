@@ -4,9 +4,7 @@
 CH579
 ========
 
-`官方链接 <http://www.wch.cn/products/CH579.html>`_ ``Cortex-M0`` ``40MHz`` ``BLE 4.2`` ``USB`` ``Ethernet`` ``10Mbps(PHY)`` ``RTC`` ``AES128`` ``QFN48`` ``QFN28``
-
-`GitHub <https://github.com/SoCXin/CH579>`_
+`标签<http://www.wch.cn/products/CH579.html>`_ : ``Cortex-M0`` ``40MHz`` ``BLE4.2`` ``USB OTG`` ``Ethernet`` ``10Mbps(PHY)`` ``RTC`` ``AES128`` ``QFN48/QFN28`` ``0.2uA``
 
 .. contents::
     :local:
@@ -17,6 +15,8 @@ Xin简介
 .. image:: ./images/CH579.png
     :target: http://www.wch.cn/products/CH579.html
 
+`GitHub <https://github.com/SoCXin/CH579>`_
+
 规格参数
 ~~~~~~~~~~~
 
@@ -25,11 +25,11 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
-* 参考价格：
+* 参考价格：￥5.5
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：:ref:`wch_qfn28` /:ref:`wch_qfn48`
+* 封装规格：:ref:`wch_qfn28`/:ref:`wch_qfn48`
 * 运行环境：-40°C to 85°C
 * RAM容量：32 KB
 * Flash容量：250 KB
@@ -42,16 +42,33 @@ Xin简介
 * 以太网 :ref:`ch579_eth`
 * :ref:`ch579_ble` 4.2，Zigbee兼容IEEE 802.15.4规范
 * SPI x 2 + UART x 4 (16C550/5Mbps)
-* 内置电池电压低压监控，最低电流0.2uA
-* 内置AES-128加解密单元，芯片唯一ID
-
-.. note::
-    网络库是以库文件提供的，MRU只有500多字节。
+* 电池电压低压监控，最低电流0.2uA
+* AES-128加解密单元，芯片唯一ID
 
 
 
 芯片架构
 ~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wch`
+      - DMA
+      - UART
+      - SPI
+      - ADC
+      - :ref:`ch579_ble`
+      - :ref:`ch579_usb`
+      - :ref:`ch579_eth`
+    * - :ref:`ch579`
+      -
+      - 4 (5Mbps)
+      - 2
+      - 14ch
+      - 4.2
+      - FS H/D
+      - 10Mbps(PHY)
 
 .. image:: ./images/CH579s.png
     :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
@@ -60,7 +77,7 @@ Xin简介
 功耗参数
 ^^^^^^^^^^^
 
-* 供电电压: 2.5 to 3.6 V (内置DC/DC)
+* 供电电压: 2.5 to 3.6 V
 * 运行功耗: 100μA/MHz
 
 .. image:: ./images/CH579pwr1.png
@@ -68,28 +85,15 @@ Xin简介
 
 电源结构
 ^^^^^^^^^^^
+
+``内置DC/DC``
+
 .. image:: ./images/CH579pwr.png
     :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
 
 
 连接能力
 ~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`wch`
-      - UART
-      - SPI
-      - :ref:`ch579_ble`
-      - :ref:`ch579_usb`
-      - :ref:`ch579_eth`
-    * - :ref:`ch579`
-      - 4
-      - 2
-      - 4.2
-      - FS
-      - 10Mbps
 
 
 .. _ch579_ble:
@@ -117,7 +121,8 @@ Ethernet
 * 10Mbps MAC
 * 10Mbps PHY
 
-支持帧过滤，支持 DMA ，内置50Ω匹配电阻
+.. note::
+    支持帧过滤，支持DMA，内置50Ω匹配电阻，网络库是以lib库文件提供的不支持修改，MRU只有500多字节。
 
 
 Xin选择
@@ -173,9 +178,10 @@ Xin选择
 
 W7500P
 ^^^^^^^^^^^
-``WIZnet`` ``Cortex-M0`` ``IOP`` ``全硬件TCP/IP协议栈``
 
-`W7500P仓库 <https://github.com/SoCXin/W7500P>`_ , `W7500P官网 <https://www.iwiznet.cn/products/mcu/w7500p/>`_
+`W7500P标签<https://www.iwiznet.cn/products/mcu/w7500p>`_ : ``WIZnet`` ``Cortex-M0`` ``IOP`` ``全硬件TCP/IP协议栈``
+
+
 
 * 48 MHz :ref:`cortex_m0`
 * 全硬件TCP/IP核，8个socket，每个socket拥有最大32KB SRAM
@@ -184,8 +190,10 @@ W7500P
 * 6KB用于Boot的ROM
 * TQFP64 , 53 I/Os (16 IO x 3ea, 5 IO x 1ea)
 
+`GitHub/W7500P<https://github.com/SoCXin/W7500P>`_
+
 .. warning::
-    W7500是工业级的，W7500P是商用级的，后者片上集成10MHz以太网PHY
+    W7500是工业级的，W7500P是商用级的，后者片上集成10M以太网PHY
 
 系列对比
 ~~~~~~~~~
