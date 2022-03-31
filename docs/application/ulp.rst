@@ -7,8 +7,6 @@
 .. contents::
     :local:
 
-.. contents::
-    :local:
 
 .. list-table::
     :header-rows:  1

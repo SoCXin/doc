@@ -4,20 +4,17 @@ SoC·Xin
 
 **新产品用心，芯产品用新**
 
-`SoC·Xin <https://www.SoC.Xin>`_ 作为资源容器，期望求解如下问题：
+`SoC·Xin <https://www.SoC.Xin>`_ 作为资源容器求解如下问题：
 
 * 有新需求，缺乏技术积累，求解区间；
 * 有芯需求，已知应用场景，求最新解；
 * 有芯需求，限定规格成本，求最优解；
 * 有薪需求，寻求技能升级，求边界值；
 
-推荐清单将动态给出最值得研究的SoC芯产品，能够通过典型产品获得技术发展脉络，找到想要的答案。
-
 .. toctree::
     :maxdepth: 1
 
-    推荐清单 <list/list>
-    芯芸期刊 <list/journal>
+    芯期刊 <list/index>
 
 
 .. toctree::
@@ -29,9 +26,10 @@ SoC·Xin
     旗舰小贵干啥都行 <news/top>
     难以拒绝低价好货 <news/low>
     定位中庸供应稳定 <news/stable>
+    差异定位推荐试用 <list/list>
 
 .. list-table::
-    :header-rows:  1
+    :header-rows: 1
 
     * - Rank
       - :ref:`hot`
@@ -63,13 +61,13 @@ SoC·Xin
       - :ref:`NO_010`
 
 .. toctree::
-    :caption: 应用速览
+    :caption: 应用领域
     :maxdepth: 1
 
     人机交互   <application/hmi>
     通信连接   <application/iot>
     边缘计算   <application/edge>
-    超低功耗   <application/pwr>
+    超低功耗   <application/ulp>
     模拟转换   <application/adc>
     控制驱动   <application/foc>
 
@@ -93,7 +91,7 @@ SoC·Xin
 .. _边缘计算: application/edge.html
 
 .. |超低功耗| image:: list/images/esp32.png
-.. _超低功耗: application/pwr.html
+.. _超低功耗: application/ulp.html
 
 .. |模拟转换| image:: list/images/esp32.png
 .. _模拟转换: application/adc.html
