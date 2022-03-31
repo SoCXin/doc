@@ -91,11 +91,16 @@ USB
 
 ``480Mbps`` ``PHY``
 
+.. _ch32f207_can:
+
+CAN
+^^^^^^^^^^^
+``CAN 2.0B``
+
 .. _ch32f207_eth:
 
 ETH
 ^^^^^^^^^^^
-
 ``1000Mbps-MAC`` ``10Mbps-PHY``
 
 

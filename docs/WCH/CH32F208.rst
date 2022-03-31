@@ -111,7 +111,7 @@ CAN
 
 .. _ch32f208_eth:
 
-Ethernet
+ETH
 ^^^^^^^^^^^
 ``10Mbps(PHY)``
 
