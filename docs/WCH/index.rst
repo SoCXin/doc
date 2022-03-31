@@ -113,8 +113,98 @@ ETH ++
     CH579 <CH579>
     CH563 <CH563>
 
+
+LAN8720
+^^^^^^^^^^^
+
+LAN8742与LAN8720比较看，两者管脚兼容，LAN8742是LAN8720 的升级版，多了一个MCO管脚，其他的芯片特性一样，寄存器配置完全一样。
+
+LAN8742和LAN8720的默认地址却是0x00
+
+DP83848
+^^^^^^^^^^^
+
+DP83848芯片，支持MII模式和RMII模式；而LAN8742，和LAN8720，只支持RMII模式；另外，三者之间的，寄存器是一样的。
+
+DP83848的默认地址，是0x01
+
+
+
+
+
 USB ++
 ~~~~~~~~~~~
+
+
+.. _usb_hs_phy:
+
+USB-HS
+^^^^^^^^^^^
+``USB HS(PHY)`` ``480Mbps``
+
+芯片集成USB2.0 HS PHY器件实现高速通信(480Mbps)，在该细分领域上 :ref:`st` 的STM32F7系列部分型号有USB2.0 PHY集成的方案。
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Core
+      - RAM
+      - Flash
+      - :ref:`usb_hs_phy`
+      - PHY
+      - MAC
+    * - :ref:`ch563`
+      - :ref:`arm7`
+      - 64 KB
+      - 224 KB
+      - 480M
+      - 100M
+      - 1000M
+    * - :ref:`ch32f207`
+      - :ref:`cortex_m3`
+      - 64 KB
+      - 256 KB
+      - 480M
+      - 100M
+      - 1000M
+    * - :ref:`ch32v307`
+      - :ref:`wch_riscv4a`
+      - 64 KB
+      - 256 KB
+      - 480M
+      - 100M
+      - 1000M
+
+.. _usb_ss_phy:
+
+USB-SS
+^^^^^^^^^^^
+``USB SS(PHY)`` ``5Gbps``
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`list`
+      - Core
+      - USB Num
+      - USB Type
+      - :ref:`usb_hs_phy`
+      - :ref:`usb_ss_phy`
+      - USB Hub
+    * - :ref:`ch569`
+      - :ref:`wch_riscv3a`
+      - 1
+      - OTG
+      - √
+      - √
+      - √
+
+.. _usb_fs:
+
+USB-FS
+^^^^^^^^^^^
+
 
 .. list-table::
     :header-rows:  1

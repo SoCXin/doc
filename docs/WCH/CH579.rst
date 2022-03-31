@@ -4,8 +4,9 @@
 CH579
 ========
 
-``Cortex-M0`` ``40MHz`` ``BLE 4.2`` ``USB`` ``Ethernet`` ``10Mbps(PHY)`` ``RTC`` ``AES128`` ``QFN48`` ``QFN28``
-`GitHub <https://github.com/SoCXin/CH579>`_ , `官方链接 <http://www.wch.cn/products/CH579.html>`_
+`官方链接 <http://www.wch.cn/products/CH579.html>`_ ``Cortex-M0`` ``40MHz`` ``BLE 4.2`` ``USB`` ``Ethernet`` ``10Mbps(PHY)`` ``RTC`` ``AES128`` ``QFN48`` ``QFN28``
+
+`GitHub <https://github.com/SoCXin/CH579>`_
 
 .. contents::
     :local:
@@ -37,7 +38,7 @@ Xin简介
 ^^^^^^^^^^^
 
 * 40 MHz :ref:`cortex_m0`
-* 1x :ref:`ch579_usb` FS H/D
+* :ref:`ch579_usb` FS H/D
 * 以太网 :ref:`ch579_eth`
 * :ref:`ch579_ble` 4.2，Zigbee兼容IEEE 802.15.4规范
 * SPI x 2 + UART x 4 (16C550/5Mbps)
@@ -92,34 +93,28 @@ Xin简介
 
 
 .. _ch579_ble:
-
 BLE
 ^^^^^^^^^^^
-
 ``BLE 4.2`` ``-93dBm`` ``+3dBm``
 
 
 .. _ch579_usb:
-
 USB
 ^^^^^^^^^^^
-
 ``FS`` ``OTG``
 
 * 集成 USB 2.0 FS PHY
 * 支持 USB type-C 主从/电流检测
 
 .. _ch579_eth:
-
 Ethernet
 ^^^^^^^^^^^
-
 ``10Mbps(PHY)``
 
 * 10Mbps MAC
 * 10Mbps PHY
 
-支持帧过滤，支持 DMA ，内置50Ω匹配电阻 :ref:`eth_phy_tiny`
+支持帧过滤，支持 DMA ，内置50Ω匹配电阻
 
 
 Xin选择
@@ -133,12 +128,12 @@ Xin选择
 
 :ref:`ch579` 的定位非常细分小众，相比传统的BLE SoC的主要竞争优势在于以太网高度集成后带来的高性价比，特别是能够对WiFi+BLE的架构形成一种替代，特别适合在一些物联网网关类产品中。
 
-:ref:`sip`， 就功能而言，需要网络连接和局域低功耗无线连接的设计还有WiFi+BLE架构的无线类芯片，这就是 :ref:`espressif` 的看家本领了。
+就功能而言，需要网络连接和局域低功耗无线连接的设计还有WiFi+BLE架构的无线类芯片，这就是 :ref:`espressif` 的看家本领了。
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`wch`
       - Core
       - Freq
       - SRAM/ROM
@@ -278,7 +273,7 @@ W7500P
 版本对比
 ~~~~~~~~~
 
-.. image:: ./images/CH579l.png
+.. image:: images/CH579l.png
     :target: http://www.wch.cn/products/CH579.html
 
 .. _ch578:
@@ -309,6 +304,7 @@ Xin应用
 ~~~~~~~~~~
 
 .. image:: images/B_CH579.jpg
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.18.a51ac05bwhVsnp&id=608342676773&ns=1&abbucket=19#detail
 
 
 CH579Update

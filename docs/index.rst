@@ -23,14 +23,13 @@ SoC·Xin
 芯芸期刊将通过实体发行的方式提供可探索硬件实体，具备实用性的同时，还具有收藏价值，为数字时代留下痕迹。
 
 .. toctree::
-    :caption: 排序速览
+    :caption: 新品速览
     :maxdepth: 1
 
     极客最爱开源超多 <news/hot>
     著名项目适配支持 <news/pop>
     旗舰小贵干啥都行 <news/top>
     难以拒绝低价好货 <news/low>
-    封装紧凑功能强大 <news/sip>
     定位中庸供应稳定 <news/stable>
 
 .. list-table::
@@ -41,7 +40,6 @@ SoC·Xin
       - :ref:`pop`
       - :ref:`top`
       - :ref:`low`
-      - :ref:`sip`
       - :ref:`stable`
       - :ref:`list`
     * - Top.1
@@ -49,7 +47,6 @@ SoC·Xin
       - :ref:`stm32f103`
       - :ref:`stm32h730`
       - :ref:`stc8`
-      - :ref:`ch579`
       - :ref:`gd32f130`
       - :ref:`NO_008`
     * - Top.2
@@ -57,7 +54,6 @@ SoC·Xin
       - :ref:`esp32`
       - :ref:`stm32mp15`
       - :ref:`ch552`
-      - :ref:`zml165`
       - :ref:`gd32e230`
       - :ref:`NO_013`
     * - Top.3
@@ -65,7 +61,6 @@ SoC·Xin
       - :ref:`nrf52832`
       - :ref:`rt1060`
       - :ref:`ch573`
-      - :ref:`ch32v307`
       - :ref:`mm32f031`
       - :ref:`NO_010`
 

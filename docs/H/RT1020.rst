@@ -60,7 +60,7 @@ Xin选择
 * :ref:`rt1020` USB HS 带有 PHY
 * :ref:`rt1020` 成本更低，RAM更少，封装规格只有两种
 
-如果只是为了USB HS PHY集成和以太网功能，可以考虑下 :ref:`usb_phy` 和 :ref:`eth_phy` 的方案
+如果只是为了USB HS PHY集成和以太网功能，可以考虑下 :ref:`wch` 的方案
 
 
 系列对比
