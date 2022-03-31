@@ -1,11 +1,11 @@
-
+.. _NO_018:
 .. _ch32f207:
 
 CH32F207
 ============
 
-* 关键词：``Cortex-M3`` ``USB-HS-PHY`` ``USB-FS-OTG`` ``10M-ETH-PHY`` ``1G-ETH-MAC`` ``CAN`` ``FSMC`` ``DVP`` ``SDIO``
-* 资源库：`GitHub <https://github.com/SoCXin/CH32F207>`_ , `官方资源 <http://www.wch.cn/products/CH32F207.html>`_
+`标签<http://www.wch.cn/products/CH32F207.html>`_ ``Cortex-M3`` ``USB-HS-OTG(480Mbps)`` ``USB-FS-OTG`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``CAN2.0B`` ``FSMC`` ``DVP`` ``SDIO``
+
 
 .. contents::
     :local:
@@ -15,6 +15,8 @@ Xin简介
 
 .. image:: ./images/CH32F207.png
     :target: http://www.wch.cn/products/CH32F207.html
+
+`GitHub <https://github.com/SoCXin/CH32F207>`_
 
 规格参数
 ~~~~~~~~~~~
@@ -38,14 +40,38 @@ Xin简介
 ^^^^^^^^^^^
 
 * 144MHz :ref:`cortex_m3`
-* 千兆以太网控制器ETH（10Mbps PHY）
+* 千兆以太网控制器 :ref:`ch32f207_eth`（10Mbps PHY）
 * SDIO接口、FSMC接口、DVP数字图像接口
-* USB2.0高速主机/设备接口（480Mbps PHY）
-* 3个USART接口和5个UART接口
-* 2个CAN接口（2.0B主动）
+* 2x :ref:`ch32f207_usb`（480Mbps PHY）
+* 2x :ref:`ch32f207_can`（2.0B主动）
+* 3x USART + 5x UART
 
 芯片架构
 ~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wch`
+      - UART
+      - SPI
+      - I2C
+      - ADC
+      - DAC
+      - SDIO
+      - :ref:`ch32f207_usb`
+      - :ref:`ch32f207_can`
+      - :ref:`ch32f207_eth`
+    * - :ref:`ch32f207`
+      - 8
+      - 3
+      - 2
+      - 2(16ch)
+      - 2
+      - 1
+      - HS+FS
+      - 2(2.0B)
+      - 10M+1G
 
 .. image:: ./images/CH32F20X.png
     :target: http://www.wch.cn/products/CH32F207.html
@@ -67,7 +93,7 @@ USB
 
 .. _ch32f207_eth:
 
-Ethernet
+ETH
 ^^^^^^^^^^^
 
 ``1000Mbps-MAC`` ``10Mbps-PHY``
@@ -102,8 +128,9 @@ USB2.0 HS（480Mbps内置PHY）和千兆以太网控制器ETH（内置10M PHY）
 
 CH32F205
 ^^^^^^^^^^^
+``USB HS 480Mbps(PHY)`` ``SDIO``
 
 * 参考价格：
-* 封装规格：LQFP64M/QFN68
+* 封装规格：LQFP64M
 * RAM容量：32 KB
 * Flash容量：256 KB

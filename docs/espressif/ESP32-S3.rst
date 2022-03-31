@@ -4,8 +4,7 @@
 ESP32S3
 ================
 
-* 关键词：``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``TWAI`` ``Touch`` ``QFN56``
-* 代码库：`GitHub <https://github.com/SoCXin/ESP32S3>`_ , `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html>`_
+`标签<https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html>`_ ``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``PIE`` ``TWAI`` ``Touch`` ``QFN56``
 
 .. contents::
     :local:
@@ -16,6 +15,8 @@ Xin简介
 .. image:: ./images/ESP32S3.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32-S3
 
+`GitHub <https://github.com/SoCXin/ESP32S3>`_
+
 .. contents::
     :local:
 
@@ -25,8 +26,6 @@ Xin简介
 ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基于wireless连接能力实现对传统MCU的降维打击。
 
 * 芯片大小 (die size)：:ref:`esp32c3` < :ref:`esp32s2` < :ref:`esp32s3` < :ref:`esp32`
-
-
 
 基本参数
 ^^^^^^^^^^^
@@ -40,8 +39,6 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * 运行环境：-40°C to 105°C
 * RAM容量：512 KB (TCM，16 KB RTC SRAM)
 * Flash容量：384 KB
-
-
 
 
 特征参数
@@ -74,21 +71,6 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 .. image:: ./images/ESP32S3sleep.png
     :target: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_cn.pdf
 
-计算能力
-~~~~~~~~~~~~~~
-
-.. _esp_pie:
-
-加速指令PIE
-^^^^^^^^^^^^^^^
-
-为了提高特定 AI 和 DSP (Digital Signal Processing) 算法的运算效率，ESP32-S3 中新增了一组扩展指令。处理器指令拓展 (PIE) 支持以下特性：
-
-* 新增 128-bit 位宽通用寄存器
-* 128-bit 位宽的向量数据操作，包括：乘法、加法、减法、累加、移位、比较等
-* 合并数据处理指令与加载/存储运算指令
-* 非对齐 128-bit 带宽的向量数据
-* 取饱和操作
 
 
 
@@ -110,7 +92,6 @@ WiFi
 
 BLE
 ^^^^^^^^^^^^^^^
-
 ``BLE 5.0`` ``-94dBm`` ``20dBm``
 
 * 高功率模式（20 dBm，与 Wi-Fi 共用 PA）
@@ -119,7 +100,23 @@ BLE
 
 USB OTG
 ^^^^^^^^^^^^^^^
+``USB 1.1`` ``12Mbps``
 
+计算能力
+~~~~~~~~~~~~~~
+
+.. _esp_pie:
+
+加速指令
+^^^^^^^^^^^^^^^
+
+为了提高特定 AI 和 DSP (Digital Signal Processing) 算法的运算效率，ESP32-S3 中新增了一组扩展指令。处理器指令拓展 (PIE) 支持以下特性：
+
+* 新增 128-bit 位宽通用寄存器
+* 128-bit 位宽的向量数据操作，包括：乘法、加法、减法、累加、移位、比较等
+* 合并数据处理指令与加载/存储运算指令
+* 非对齐 128-bit 带宽的向量数据
+* 取饱和操作
 
 
 
@@ -202,7 +199,7 @@ Xin选择
       - Wireless
       - Ethernet
       - USB
-      - :ref:`esp_package`
+      - Package
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 994.26

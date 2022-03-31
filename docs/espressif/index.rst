@@ -44,13 +44,11 @@ Espressif
 产品简介
 -----------
 
-
-
 .. list-table::
     :header-rows:  1
 
     * - :ref:`espressif`
-      - Architecture
+      - :ref:`esp_core`
       - :ref:`CoreMark`
       - SRAM/ROM
       - WiFi / BLE
@@ -256,7 +254,7 @@ ESP-NOW
 
 由乐鑫定义的 Wi-Fi 通信协议，采用 CCMP 方法保护供应商特定动作帧的安全，ESP-NOW 广泛应用于智能照明、远程控制、传感器等领域。
 
-标准相关
+协议标准
 ~~~~~~~~~~~~
 
 .. _esp_matter:
@@ -269,11 +267,9 @@ Matter 成立于 2019 年，由连接标准联盟（Connectivity Standards Allia
 是一个统一的智能家居互联标准，能够为家庭自动化项目提供安全可靠的无线连接。
 
 
-
-
 .. _esp_package:
 
-Package
+封装规格
 ~~~~~~~~~~~~
 
 .. contents::

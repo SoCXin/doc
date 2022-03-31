@@ -4,9 +4,7 @@
 CH32V208
 ============
 
-`官方资源 <http://www.wch.cn/products/CH32V208.html>`_ ``RISC-V4C`` ``144MHz`` ``USB`` ``10Mbps(PHY)`` ``BLE5.3`` ``QFN28``
-
-`GitHub <https://github.com/SoCXin/CH32F208>`_
+`标签<http://www.wch.cn/products/CH32V208.html>`_ ``RISC-V4C`` ``144MHz`` ``USB`` ``10Mbps(PHY)`` ``BLE5.3`` ``QFN28``
 
 .. contents::
     :local:
@@ -18,6 +16,8 @@ Xin简介
 
 .. image:: ./images/CH32V208.png
     :target: http://www.wch.cn/products/CH32V208.html
+
+`GitHub<https://github.com/SoCXin/CH32F208>`_
 
 规格参数
 ~~~~~~~~~~~

@@ -16,6 +16,7 @@ CH32F208基于 :ref:`cortex_m3` 内核的无线型微控制器，主频高达144
 
 .. image:: ./images/CH32F208.png
     :target: http://www.wch.cn/products/CH32F208.html
+
 `GitHub <https://github.com/SoCXin/CH32F208>`_
 
 规格参数
@@ -168,6 +169,7 @@ BLE对比
       - 2/0
       - 14/0
 
+:ref:`ch32f208` 相较于 :ref:`ch579` 实用性差异并不明显，如果加上性价比因素和开发资源，后者具有先发优势，但是考虑到不同系列兼容性和协同性，特别是与 :ref:`ch32f207` 的差异化搭配。
 
 ETH对比
 ^^^^^^^^^^^
@@ -198,19 +200,20 @@ ETH对比
       - 28/48/64/68
     * - :ref:`ch32v307`
       - 64K/256K
-      - DVP/OPA
+      - DVP/FSMC
       - 8/1
       - FS(OTG)+HS(PHY)
-      - 10M(PHY)/1G(MAC)
+      - 10M(PHY)+1G(MAC)
       - 100/68/64
     * - :ref:`ch32f207`
       - 64K/256K
-      - DVP/OPA
+      - DVP/FSMC
       - 8/1
       - FS(OTG)+HS(PHY)
-      - 10M(PHY)/1G(MAC)
+      - 10M(PHY)+1G(MAC)
       - 100/68/64
 
+上表对比的几款产品，是刀法非常精准的同源产品，属于厂商技术优势在不同定位下的展示，主要的差异在内核、USB HS、以太网等方面。
 
 .. image:: ./images/CH32F20.png
     :target: http://www.wch.cn/products/CH32F208.html
