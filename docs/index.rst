@@ -71,7 +71,6 @@ SoC·Xin
     计算平台   <application/edge>
     电源设计   <application/pwr>
     数模转换   <application/adc>
-    模数转换   <application/dac>
     驱动控制   <application/foc>
 
 .. list-table::
@@ -84,14 +83,12 @@ SoC·Xin
       - :ref:`edge`
       - :ref:`ulp`
       - :ref:`adc`
-      - :ref:`dac`
     * - No.1
       - :ref:`hc32m120`
       - :ref:`stm32f429`
       - :ref:`esp32`
       - :ref:`bcm2711`
       - :ref:`stm32l011`
-      - :ref:`stm32g474`
       - :ref:`stm32g474`
     * - No.2
       - :ref:`swm181`
@@ -100,7 +97,6 @@ SoC·Xin
       - :ref:`k210`
       - :ref:`stm32l412`
       - :ref:`stm32g431`
-      -
     * - No.3
       - :ref:`mm32spin`
       - :ref:`tkm32f499`
@@ -108,7 +104,6 @@ SoC·Xin
       - :ref:`v831`
       - :ref:`stm32h7b0`
       - :ref:`stm32h730`
-      -
 
 
 .. toctree::
