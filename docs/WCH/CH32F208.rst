@@ -4,7 +4,7 @@
 CH32F208
 ============
 
-`标签<http://www.wch.cn/products/CH32F208.html>`_ ``Cortex-M3`` ``144MHz`` ``USB`` ``10Mbps(PHY)`` ``BLE5.3`` ``CAN`` ``AES128``
+`标签 <http://www.wch.cn/products/CH32F208.html>`_ ``Cortex-M3`` ``144MHz`` ``USB`` ``10Mbps(PHY)`` ``BLE5.3`` ``CAN`` ``AES128``
 
 .. contents::
     :local:

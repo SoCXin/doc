@@ -4,7 +4,7 @@
 CH579
 ========
 
-`标签<http://www.wch.cn/products/CH579.html>`_ : ``Cortex-M0`` ``40MHz`` ``BLE4.2`` ``USB OTG`` ``Ethernet`` ``10Mbps(PHY)`` ``RTC`` ``AES128`` ``QFN48/QFN28`` ``0.2uA``
+`标签 <http://www.wch.cn/products/CH579.html>`_ : ``Cortex-M0`` ``40MHz`` ``BLE4.2`` ``USB OTG`` ``Ethernet`` ``10Mbps(PHY)`` ``RTC`` ``AES128`` ``QFN48/QFN28`` ``0.2uA``
 
 .. contents::
     :local:
@@ -179,7 +179,7 @@ Xin选择
 W7500P
 ^^^^^^^^^^^
 
-`W7500P标签<https://www.iwiznet.cn/products/mcu/w7500p>`_ : ``WIZnet`` ``Cortex-M0`` ``IOP`` ``全硬件TCP/IP协议栈``
+`W7500P标签 <https://www.iwiznet.cn/products/mcu/w7500p>`_ : ``WIZnet`` ``Cortex-M0`` ``IOP`` ``全硬件TCP/IP协议栈``
 
 
 

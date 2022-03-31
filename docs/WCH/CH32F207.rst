@@ -4,7 +4,7 @@
 CH32F207
 ============
 
-`标签<http://www.wch.cn/products/CH32F207.html>`_ ``Cortex-M3`` ``USB-HS-OTG(480Mbps)`` ``USB-FS-OTG`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``CAN2.0B`` ``FSMC`` ``DVP`` ``SDIO``
+`标签 <http://www.wch.cn/products/CH32F207.html>`_ ``Cortex-M3`` ``USB-HS-OTG(480Mbps)`` ``USB-FS-OTG`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``CAN2.0B`` ``FSMC`` ``DVP`` ``SDIO``
 
 
 .. contents::

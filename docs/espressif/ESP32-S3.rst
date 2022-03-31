@@ -4,7 +4,7 @@
 ESP32S3
 ================
 
-`标签<https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html>`_ ``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``PIE`` ``TWAI`` ``Touch`` ``QFN56``
+`标签 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html>`_ ``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``PIE`` ``TWAI`` ``Touch`` ``QFN56``
 
 .. contents::
     :local:
