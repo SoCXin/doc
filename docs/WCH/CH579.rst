@@ -93,12 +93,14 @@ Xin简介
 
 
 .. _ch579_ble:
+
 BLE
 ^^^^^^^^^^^
 ``BLE 4.2`` ``-93dBm`` ``+3dBm``
 
 
 .. _ch579_usb:
+
 USB
 ^^^^^^^^^^^
 ``FS`` ``OTG``
@@ -107,6 +109,7 @@ USB
 * 支持 USB type-C 主从/电流检测
 
 .. _ch579_eth:
+
 Ethernet
 ^^^^^^^^^^^
 ``10Mbps(PHY)``
