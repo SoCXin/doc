@@ -58,7 +58,7 @@ ETH ++
 
     * - :ref:`wch`
       - Core
-      - Performance
+      - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics
       - Ethernet

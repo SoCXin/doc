@@ -106,7 +106,7 @@ Xin选择
 品牌对比
 ~~~~~~~~~~~
 
-在WiFi MCU领域，ESP的主要对比品牌有 :ref:`realtek` 和 :ref:`mediatek`
+在WiFi MCU领域，ESP的主要对比品牌有Realtek 和 :ref:`mediatek`
 
 .. list-table::
     :header-rows:  1

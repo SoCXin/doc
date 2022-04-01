@@ -6,7 +6,7 @@ Product
 
 .. _embed_tool:
 
-集成调试工具
+STOPs调试工具
 ---------------
 ``STOPs``
 
@@ -28,16 +28,16 @@ Product
       - 10M(PHY)/1G(MAC)
       - QFN68
     * - :ref:`s3_tool`
+      - 512KB/384KB
       - 240MHz
-      -
       -
       - FS(OTG)
       -
       - QFN56
     * - :ref:`h3_tool`
+      - 564KB/128KB
       - 550MHz
       -
-      -
-      - HS
+      - HS(MAC)
       - 100M(MAC)
-      - 100
+      - TFBGA100

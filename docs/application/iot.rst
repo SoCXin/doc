@@ -94,6 +94,8 @@ IoT
       -
       -
 
+
+
 .. contents::
     :local:
 
@@ -105,50 +107,50 @@ Ethernet
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Performance
+    * - :ref:`ethernet`
+      - :ref:`CoreMark`
       - SRAM/ROM
       - UART/SPI
       - USB/CAN
       - ETH-MAC
       - ETH-PHY
     * - :ref:`stm32f207`
-      - 150DMIPS
+      -
       - 128KB/512KB
       - 6/3
       - HSOTG/2.0B
       - 100Mbps
       - NO
     * - :ref:`stm32f407`
-      - 210DMIPS
+      -
       - 192KB/1MB
       - 6/3
       - HSOTG/2.0B
       - 100Mbps
       - NO
     * - :ref:`at32f407`
-      - 360DMIPS
+      -
       - 192KB/1MB
       - 8/3
       - OTG/2.0B
       - 100Mbps
       - NO
     * - :ref:`esp32`
-      - 600DMIPS
+      -
       - 520KB/4MB
       - 2/2
       -
       - 100Mbps
       - NO
     * - :ref:`ch579`
-      - 36DMIPS
+      -
       - 32KB/256KB
       - 4/2
       - OTG
       - 10Mbps
       - 10Mbps
     * - :ref:`ch32v307`
-      - 240DMIPS
+      -
       - 64KB/256KB
       - 8/3
       - HS-OTG/2.0B
@@ -170,10 +172,10 @@ PLC
 .. list-table::
     :header-rows:  1
 
-    * - #define
+    * - :ref:`plc`
       - Core
-      - RAM
-      - Flash
+      - SRAM/ROM
+      -
       - WiFi
       - Rate
       - More
@@ -219,10 +221,10 @@ IEEE 802.15.4是一种技术标准，它定义了低速率无线个域网 （LR-
 .. list-table::
     :header-rows:  1
 
-    * - Rank
+    * - :ref:`802_15_4`
       - Core
-      - RAM
-      - Flash
+      - SRAM/ROM
+      -
       - WiFi
       - Rate
       - More
@@ -249,10 +251,10 @@ BLE
 .. list-table::
     :header-rows:  1
 
-    * - Rank
+    * - :ref:`ble`
       - Core
-      - RAM
-      - Flash
+      - SRAM/ROM
+      -
       - WiFi
       - Rate
       - More
@@ -281,22 +283,22 @@ BLE
 
 .. _wifi:
 
-WiFi
+Wi-Fi
 -----------
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
-      - Performance
+    * - :ref:`wifi`
+      - :ref:`architecture`
+      - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
       - Package
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
-      - 407 :ref:`CoreMark`
+      - 407.22
       - 512KB/384KB
       - 1T1R/v5.0
       - 2/3/No
@@ -305,18 +307,9 @@ WiFi
       - :ref:`riscv`
       -
       - 352KB/288KB
-      - 72Mbps@HT20
+      - 72Mbps(HT20)
       - 3/2/1
       - QFN32
-    * - :ref:`air101`
-      - :ref:`riscv`
-      -
-      - 288KB/1MB
-      -
-      - 5/2/1
-      - QFN32
-
-
 
 .. toctree::
     :maxdepth: 1
@@ -325,10 +318,6 @@ WiFi
     Hi3861 <../M/Hi3861>
 
 
-.. _realtek:
-
-Realtek
-^^^^^^^^^^^^^^^
 
 
 .. note::
@@ -346,10 +335,10 @@ LoRa
 .. list-table::
     :header-rows:  1
 
-    * - Rank
-      - Core
-      - RAM
-      - Flash
+    * - :ref:`lora`
+      - :ref:`architecture`
+      - SRAM/ROM
+      -
       - LoRa
       - Rate
       - More
@@ -382,10 +371,10 @@ NB-IoT
 .. list-table::
     :header-rows:  1
 
-    * - #define
+    * - :ref:`nbiot`
       - Core
-      - RAM
-      - Flash
+      - SRAM/ROM
+      -
       - LoRa
       - Rate
       - More
@@ -425,10 +414,10 @@ Cat.1
 .. list-table::
     :header-rows:  1
 
-    * - #define
+    * - :ref:`cat1`
       - Core
-      - RAM
-      - Flash
+      - SRAM/ROM
+      -
       - LoRa
       - Rate
       - More

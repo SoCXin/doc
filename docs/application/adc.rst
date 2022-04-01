@@ -389,6 +389,14 @@ LTC2508-32 同时提供两个输出代码：(1) 一个 32 位数字滤波高精�
       - :ref:`sigma_delta`
       - 24bit
       - QFN20
+    * - :ref:`zml166`
+      - 48 MHz
+      - 4KB/64KB
+      -
+      -
+      - :ref:`sigma_delta`
+      - 24bit
+      - QFN32
     * - :ref:`cs32a039`
       - 48 MHz
       - 4KB/64KB

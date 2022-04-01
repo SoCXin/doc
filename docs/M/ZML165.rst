@@ -4,8 +4,8 @@
 ZML165
 ===============
 
-* 关键词：``Cortex-M0`` ``QFN20`` ``48MHz`` ``24bit ADC`` ``￥15``
-* 资源库：`GitHub <https://github.com/SoCXin/ZML165>`_
+`标签 <https://github.com/SoCXin/ZML165>`_ : ``Cortex-M0`` ``48MHz`` ``24bit ADC`` ``QFN20``
+
 
 .. contents::
     :local:
@@ -17,9 +17,6 @@ Xin简介
     :target: https://www.zlgmcu.com/zlgiotmcu/zlgiotmcu/product/id/27.html
 
 
-.. contents::
-    :local:
-
 规格参数
 ~~~~~~~~~~~
 
@@ -28,12 +25,17 @@ ZML165 包括1个16位通用定时器、1个32 位通用定时器、1个高级PW
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：3.0 to 5.5 V
-* 工作温度：-40°C to +85°C
+* 发布时间：
+* 参考价格：￥15
+* 制程工艺：
+* 供货周期：
+* 处理性能：
 * 封装规格：QFN20 (4x4mm)
-* 处理性能：40 :ref:`DMIPS`
+* 运行环境：-40°C to 85°C
 * RAM容量：4KB
 * Flash容量：32KB
+
+
 
 特征参数
 ^^^^^^^^^^^
@@ -47,8 +49,17 @@ ZML165 包括1个16位通用定时器、1个32 位通用定时器、1个高级PW
 .. image:: ./images/ZML165l.png
     :target: https://www.zlgmcu.com/zlgiotmcu/zlgiotmcu/product/id/27.html
 
-.. _qfn20:
+* 供电电压：3.0 to 5.5 V
 
-QFN20
+.. _zml166:
+
+ZML166
 ^^^^^^^^^^^
+`GitHub <https://github.com/SoCXin/ZML166>`_ ``USB-FS Device`` ``PGA`` ``QFN32``
 
+1个高级PWM 定时器、2个UART 接口、1个I2C接口、1个SPI接口和1个USB接口。除此之外，内部还有一个24 位Σ -Δ型模数转换器，拥有5个模拟输入通道，可两两任意配置成差分输入通道，模拟输入通道信号增益可软件配置，支持宽动态范围信号输入，采用QFN32体积封装。
+
+* 2ch 24bit Σ-∆ ADC
+* USB-FS Device
+* QFN32(5x5x0.75mm)
+* PGA:1/2/4/8/16/32/64/128
