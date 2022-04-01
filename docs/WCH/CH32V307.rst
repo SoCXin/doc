@@ -4,8 +4,7 @@
 CH32V307
 ============
 
-* 关键词：``RISC-V`` ``USB HS`` ``1Gbps-MAC`` ``10Mbps-PHY`` ``CAN`` ``FSMC`` ``OPA``
-* 资源库：`GitHub <https://github.com/SoCXin/CH32V307>`_ , `官方资源 <http://www.wch.cn/products/CH32V307.html>`_
+`标签 <http://www.wch.cn/products/CH32V307.html>`_ : ``RISC-V`` ``USB-HS-OTG(480Mbps)`` ``Ethernet`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``CAN`` ``FSMC`` ``OPA``
 
 .. contents::
     :local:
@@ -15,6 +14,8 @@ Xin简介
 
 .. image:: ./images/CH32V307.png
     :target: http://www.wch.cn/products/CH32V307.html
+
+`GitHub <https://github.com/SoCXin/CH32V307>`_
 
 规格参数
 ~~~~~~~~~~~

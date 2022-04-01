@@ -4,14 +4,9 @@
 热度Xin
 ==============
 
-.. note::
-    收录当下被各个芯片厂商力推或被广泛使用的产品，这些产品往往具有很大的潜力或为现象级产品。
 
 .. contents::
     :local:
-
-软件生态
--------------
 
 不同的厂商市场策略不同，其中包括凭借开源社区崛起，拥抱和践行开源策略的芯片制造商，这些产品被Geek广泛尝试，拥有很多开源的软硬件方案，十分利于敏捷开发和原型搭建。
 
@@ -21,11 +16,9 @@
     RP2040 <../M/RP2040>
     GD32V103 <../M/GD32V103>
 
-.. contents::
-    :local:
 
 编程语言
-~~~~~~~~~~~~~
+-------------
 
 .. list-table::
     :header-rows:  1
@@ -66,7 +59,7 @@
 .. _lua:
 
 Lua
-^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 `Lua语言 <https://docs.os-q.com/lua>`_ 嵌入式运行平台包括 :ref:`air101`
 
@@ -78,7 +71,7 @@ Lua
 .. _rust:
 
 Rust
-^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 `Rust语音 <https://docs.os-q.com/rust>`_ 嵌入式运行平台包括 :ref:`esp32` 、:ref:`rp2040` 和 :ref:`stm32f103`
 
@@ -86,7 +79,7 @@ Rust
 .. _mpy:
 
 mPy
-^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 `MicroPython <https://docs.os-q.com/mpy>`_ 嵌入式运行平台包括 :ref:`esp32` 、:ref:`rp2040` 和 :ref:`stm32f405`
 
@@ -129,20 +122,21 @@ mPy
 .. _xgo:
 
 xGo
-^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 
 .. _arduino:
 
 Arduino
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 `Arduino语言 <https://docs.os-q.com/arduino>`_
 
 
 
-框架支持
-~~~~~~~~~~~~~
+开发框架
+-------------
+
 
 .. list-table::
     :header-rows:  1
@@ -185,22 +179,31 @@ Arduino
 .. _pio:
 
 PlatformIO
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 .. _qio:
 
 QIO
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 .. _mbed:
 
 mbed
-^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 .. _cmsis:
 
 CMSIS
-^^^^^^^^^^^^
+~~~~~~~~~~~~~
+
+.. _libopencm3:
+
+libopencm3
+~~~~~~~~~~~~~
+
+The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
+
+`libopencm3开源地址 <https://github.com/libopencm3/libopencm3>`_
 
 
 硬件生态

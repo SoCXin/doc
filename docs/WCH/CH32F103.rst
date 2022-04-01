@@ -4,8 +4,7 @@
 CH32F103
 ============
 
-* 关键词：``Cortex-M3`` ``72MHz`` ``USB H/D`` ``CAN2.0B`` ``DAC`` ``RTC``
-* 资源库：`GitHub <https://github.com/SoCXin/CH32F103>`_ , `官方链接 <http://www.wch.cn/products/CH32F103.html>`_
+`标签 <http://www.wch.cn/products/CH32F103.html>`_ : ``Cortex-M3`` ``72MHz`` ``USB H/D`` ``CAN2.0B`` ``DAC`` ``RTC``
 
 .. contents::
     :local:
@@ -16,8 +15,8 @@ Xin简介
 .. image:: ./images/CH32F103.png
     :target: http://www.wch.cn/products/CH32F103.html
 
-.. contents::
-    :local:
+`GitHub <https://github.com/SoCXin/CH32F103>`_
+
 
 规格参数
 ~~~~~~~~~~~

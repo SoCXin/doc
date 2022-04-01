@@ -228,3 +228,23 @@ ETH对比
 .. image:: ./images/CH32F208ver.png
     :target: http://www.wch.cn/products/CH32F208.html
 
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~~
+
+核心板
+^^^^^^^^^^^
+
+
+开发框架
+~~~~~~~~~~~
+
+libopencm3
+^^^^^^^^^^^
+
+:ref:`libopencm3` 待适配

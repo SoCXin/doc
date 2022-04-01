@@ -21,7 +21,7 @@ SoC·Xin
     :caption: 新品速览
     :maxdepth: 1
 
-    极客最爱开源超多 <news/hot>
+    极客聚集开源生态 <news/hot>
     著名项目适配支持 <news/pop>
     旗舰小贵干啥都行 <news/top>
     难以拒绝低价好货 <news/low>
@@ -107,83 +107,6 @@ SoC·Xin
 
     架构分类     <architecture/index>
     性能分级     <architecture/level>
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`CoreMark`
-      - L1(≤40)
-      - L2(≤100)
-      - L3(≤240)
-      - L4(≤700)
-      - L5(≤1500)
-      - L6(≤3600)
-    * - :ref:`mcs51`
-      - :ref:`stc8`
-      - :ref:`ch549`
-      - X
-      - X
-      - X
-      - X
-    * - :ref:`cortex_m0`
-      - :ref:`stm32l011`
-      - :ref:`stm32g031`
-      - :ref:`rp2040`
-      - X
-      - X
-      - X
-    * - :ref:`cortex_m3`
-      - √
-      - :ref:`gd32f130`
-      - :ref:`stm32f207`
-      - √
-      -
-      -
-    * - :ref:`cortex_m4`
-      -
-      - :ref:`nrf52832`
-      - :ref:`at32f421`
-      - :ref:`at32f437`
-      -
-      -
-    * - :ref:`cortex_m7`
-      -
-      -
-      -
-      - √
-      - :ref:`stm32h7b0`
-      - :ref:`rt1060`
-    * - :ref:`cortex_r`
-      -
-      -
-      -
-      -
-      -
-      -
-    * - :ref:`cortex_a`
-      -
-      -
-      -
-      -
-      -
-      -
-    * - :ref:`riscv`
-      - :ref:`ch583`
-      - :ref:`ch32v103`
-      - :ref:`esp32c3`
-      - √
-      - :ref:`k210`
-      - :ref:`D1`
-    * - :ref:`mips`
-      - X
-      - √
-      - √
-      - :ref:`esp32s3`
-      - :ref:`mt7688`
-      - :ref:`mt7621`
-
-.. note::
-    在L6分级之上，还有L7-L9用于划分高性能CPU
 
 
 
