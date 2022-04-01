@@ -51,58 +51,51 @@ Espressif
       - :ref:`esp_core`
       - :ref:`CoreMark`
       - SRAM/ROM
-      - WiFi / BLE
-      - :ref:`esp_usb`/ :ref:`esp_can`
+      - Wireless
+      - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
       - UART/SPI/I2C
-      - More
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 994.2
       - 520KB/448KB
-      - HT40 / 4.2
-      - X / √
+      - WiFi&BLE4.2
+      - √ / X / √
       - 3/4/2
-      - :ref:`ethernet`
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
       - 320KB/128KB
-      - HT40 / X
-      - OTG / X
+      - WiFi
+      - X / FS / √
       - 2/4/2
-      -
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6
       - 512KB/384KB
-      - HT40 / 5.0
-      - OTG / √
+      - WiFi&BLE5.0
+      - X / FS / √
       - 3/4/2
-      -
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.2
       - 400KB/384KB
-      - HT40 / 5.0
-      - X / √
+      - WiFi&BLE5.0
+      - X / X / √
       - 2/3/1
-      -
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
       -
       - 272KB/576KB
-      - √ / 5.0
-      - X / X
+      - WiFi&BLE5.0
+      - X / X / √
       - 2/3/1
-      -
     * - :ref:`esp32h2`
       - :ref:`esp_rv32`
       -
       - 400KB/384KB
-      - X / 5.0
-      - X / X
+      - Zigbee&BLE5.0
+      - X / X / √
       - 3/4/2
-      - Matter
 
 .. note::
     在中国的MCU芯片市场，目前有两家具有对比性的厂商： :ref:`espressif` 和 :ref:`wch` ，在产品附加值上就是前者更注重软件生态反哺，后者注重硬件差异覆盖协同。
@@ -167,7 +160,7 @@ Tensilica 公司的 Xtensa 处理器是一个可以自由装组、可以弹性�
 .. _xtensa_lx6:
 
 Xtensa LX6
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 ``MIPS`` ``Xtensa LX6``
 
@@ -177,7 +170,7 @@ Xtensa LX6
 .. _xtensa_lx7:
 
 Xtensa LX7
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 ``MIPS`` ``Xtensa LX7``
 

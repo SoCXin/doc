@@ -40,8 +40,8 @@ Xin简介
 * 低功耗协处理器 :ref:`esp_ulp`
 * 1T1R 802.11 b/g/n :ref:`esp32_wifi`
 * :ref:`esp32_ble` v4.2
-* :ref:`esp_can`
-* IEEE 1588 MAC,100 Mbps
+* :ref:`esp32_can`
+* :ref:`esp32_eth` IEEE 1588 MAC,100 Mbps
 * Host SD/eMMC/SDIO、Slave SDIO/SPI
 * 硬件加密单元AES/RSA/ECC
 * 内置霍尔效应传感器
@@ -66,7 +66,6 @@ Xin简介
 
 Wi-Fi
 ^^^^^^^^^^^^^^^
-
 ``802.11b/g/n``
 
 芯片支持 TCP/IP 协议，完全遵循 802.11 b/g/n Wi-Fi MAC 协议栈，支持分布式控制功能 (DCF) 下的基本服务集 (BSS) STA 和 SoftAP 操作。
@@ -82,7 +81,7 @@ Wi-Fi
 
 .. _esp32_ble:
 
-蓝牙
+BLE4.2
 ^^^^^^^^^^^^^^^
 
 ``v4.2``
@@ -95,6 +94,17 @@ Wi-Fi
 * 提供 SDIO/SPI HCI 接口
 * 提供 PCM/I2S 音频接口
 
+.. _esp32_can:
+
+CAN
+^^^^^^^^^^^^^^^
+
+
+.. _esp32_eth:
+
+ETH
+^^^^^^^^^^^^^^^
+``MAC`` ``100Mbps``
 
 Xin选择
 -----------
