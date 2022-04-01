@@ -81,7 +81,7 @@ Xin选择
       - 6/2/1
       - QFN56
     * - :ref:`esp32`
-      - :ref:`esp_lx6`
+      - :ref:`xtensa_lx6`
       -
       - 520KB/4 MB
       -

@@ -156,28 +156,32 @@ Espressif
 Architecture
 ~~~~~~~~~~~~~~~
 
-
 .. contents::
     :local:
 
-.. _esp_lx6:
+Tensilica 公司的 Xtensa 处理器是一个可以自由装组、可以弹性扩张，并可以自动合成的处理器核心。Xtensa 是第一个专为嵌入式单芯片系统而设计的微处理器。为了让系统设计工程师能够弹性规划、 执行单芯片系统 的各种应用功能，Xtensa 在研发初期就已锁定成一个可以自由装组的架构。
+
+.. note::
+    Tensilica公司于2013年3月被Cadence公司以3.8亿的价格收购
+
+.. _xtensa_lx6:
 
 Xtensa LX6
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 ``MIPS`` ``Xtensa LX6``
 
-基于 :ref:`xtensa_lx6` MIPS内核
+7 级流水线架构
 
 
-.. _esp_lx7:
+.. _xtensa_lx7:
 
 Xtensa LX7
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 ``MIPS`` ``Xtensa LX7``
 
-基于 :ref:`xtensa_lx7` MIPS内核，五级流水线架构，支持高达 240 MHz 的时钟频率
+五级流水线架构，支持高达 240 MHz 的时钟频率
 
 * 16 位/24 位指令集提供高代码密度
 * 32 位定制化指令集及 128 位宽数据总线，提供高运算性能
@@ -188,6 +192,11 @@ Xtensa LX7
 * 支持 windowed ABI，64 个物理通用寄存器
 * 支持带 TRAX 压缩模块的 trace 功能，最大 16 KB 的记录存储器 (trace memory)
 * 用于调试的 JTAG 接口
+
+关于 `Xtensa LX <https://www.cadence.com/zh_CN/home/tools/ip/tensilica-ip/tensilica-xtensa-controllers-and-extensible-processors/xtensa-lx-processor-platform.html>`_
+
+.. image:: images/XtensaLX7.png
+    :target: https://www.pianshen.com/article/64631295742/
 
 
 .. _esp_rv32:

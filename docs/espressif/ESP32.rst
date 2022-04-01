@@ -40,7 +40,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 240 MHz :ref:`esp_lx6` Dual Core
+* 240 MHz :ref:`xtensa_lx6` Dual Core
 * 低功耗协处理器 :ref:`esp_ulp`
 * 1T1R 802.11 b/g/n :ref:`esp32_wifi`
 * :ref:`esp32_ble` v4.2

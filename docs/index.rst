@@ -102,14 +102,12 @@ SoC·Xin
 
 
 .. toctree::
-    :caption: 内核速览
+    :caption: 内核架构
     :maxdepth: 1
 
-    ARM     <core/arm>
-    ASIC    <ASIC/index>
-    MIPS    <core/MIPS>
-    RISC-V  <core/RISC-V>
-    MCS51   <core/MCS51>
+    架构分类     <architecture/index>
+
+
 
 内核架构和性能分级定义 ``X·IN``
 
