@@ -222,7 +222,7 @@ SoC·Xin
       - :ref:`ch32v307`
       - :ref:`asr6601`
       - :ref:`esp32h2`
-      - :ref:`mt7621`
+      - :ref:`mt2625`
       - :ref:`at32f425`
       - :ref:`D1`
     * - 经典
@@ -236,14 +236,14 @@ SoC·Xin
       - :ref:`ch549`
       - :ref:`asr1802`
       - :ref:`esp32c3`
-      - :ref:`mt2625`
+      - :ref:`mt2503`
       - :ref:`at32f403`
       - :ref:`R329`
     * - 大成
       - :ref:`ch569`
       - :ref:`asr1601`
       - :ref:`esp32s3`
-      -
+      - :ref:`mt7621`
       - :ref:`at32f437`
       - :ref:`v831`
 

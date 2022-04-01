@@ -192,7 +192,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ("index", "SoC.tex", u"探索芯世界", u"SoC", "manual"),
+    ("index", "SoC.tex", u"Look for differences", u"SoC", "manual"),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -220,7 +220,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [("index", "qitas", u"探索芯世界", [u"SoC"], 1)]
+man_pages = [("index", "qitas", u"Look for differences", [u"SoC"], 1)]
 
 # If true, show URL addresses after external links.
 # man_show_urls = False
@@ -235,7 +235,7 @@ texinfo_documents = [
     (
         "index",
         "SoC",
-        u"探索芯世界",
+        u"Look for differences",
         u"SoC",
         "SoC",
         "One line description of project.",
