@@ -136,25 +136,15 @@ SoC·Xin
 
 
 .. toctree::
-    :caption: 品牌速览
+    :caption: 厂商速览
     :maxdepth: 1
 
-    微控制器芯片领域的王者 @ST <ST/index>
-    基于LoRa/Cat1长距网络 @ASR <ASR/index>
-    移动通信和物联网新领袖 @RDA <RDA/index>
-    专注设备连接和接口扩展 @WCH <WCH/index>
-    Wi-Fi AIoT无线解决方案 @Espressif <espressif/index>
-    高性能基带网关路由SoC @MediaTek  <MediaTek/index>
-    高性能多媒体应用处理器 @Allwinner  <allwinner/index>
-    专注Cortex-M4核高性价 @ArteryTek <arterytek/index>
-
-收录汇整具有代表性厂商，对用户开放程度高，覆盖的解决方案比较全，通过汇总提供更精炼方案。
-
+    典型厂商 <vendor>
 
 .. list-table::
     :header-rows:  1
 
-    * - Vendor
+    * - :ref:`vendor`
       - :ref:`wch`
       - :ref:`asr`
       - :ref:`espressif`
