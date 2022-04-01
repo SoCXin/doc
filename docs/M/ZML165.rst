@@ -4,7 +4,7 @@
 ZML165
 ===============
 
-`标签 <https://github.com/SoCXin/ZML165>`_ : ``Cortex-M0`` ``48MHz`` ``24bit ADC`` ``QFN20``
+`标签 <https://github.com/SoCXin/ZML165>`_ : ``Cortex-M0`` ``48MHz`` ``24bit Σ-∆ ADC`` ``QFN20``
 
 
 .. contents::
@@ -72,6 +72,7 @@ ZML166
 
 1个高级PWM 定时器、2个UART 接口、1个I2C接口、1个SPI接口和1个USB接口。除此之外，内部还有一个24 位Σ -Δ型模数转换器，拥有5个模拟输入通道，可两两任意配置成差分输入通道，模拟输入通道信号增益可软件配置，支持宽动态范围信号输入，采用QFN32体积封装。
 
+* 参考价格：$2
 * 5ch 24bit Σ-∆ ADC
 * USB-FS Device
 * QFN32(5x5x0.75mm)

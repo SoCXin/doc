@@ -97,7 +97,7 @@ BLE
 
 .. _esp32s3_usb:
 
-USB OTG
+USB
 ^^^^^^^^^^^^^^^
 ``USB 1.1`` ``12Mbps``
 
@@ -163,7 +163,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`wifi`
       - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics
@@ -261,7 +261,7 @@ Xin应用
 开发板
 ~~~~~~~~~~~~~~~
 
-ESP-S3-EYE
+ESP32-S3-EYE
 ^^^^^^^^^^^^^^^^
 
 `ESP32-S3-EYE <https://github.com/espressif/esp-who/blob/master/docs/en/get-started/ESP32-S3-EYE_Getting_Started_Guide.md>`_
@@ -312,7 +312,7 @@ ESP-Skainet
 
 .. _esp_touch:
 
-TOUCH
+Touch
 ^^^^^^^^^^^
 
 
@@ -330,14 +330,16 @@ IOMUX
 * 控制 22 个 RTC GPIO 管脚的模拟功能；
 * 将 22 个 RTC 输入输出信号引入 RTC 系统。
 
+产品案例
+~~~~~~~~~~~
 
 .. _s3_tool:
 
 S3-Tool
-~~~~~~~~~~
-``server`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG``
+^^^^^^^^^^^
+``Server`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``QFN56``
 
-`STOPs方案:S3-Tool <https://github.com/stops-top/S3-Tool>`_ 用于实现 :ref:`embed_tool`
+`S3-Tool <https://github.com/stops-top/S3-Tool>`_ 用于实现 :ref:`embed_tool`
 
 * 线缆接入
 * 联网管理

@@ -293,23 +293,68 @@ Wi-Fi
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
-      - Characteristics
+      - Wireless
       - UART/SPI/SDIO
+      - Characteristics
       - Package
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
-      - 512KB/384KB
-      - 1T1R/v5.0
-      - 2/3/No
+      - 400KB/384KB
+      - WiFi&BLE
+      - 2/3/0
+      -
       - :ref:`esp_qfn32`
     * - :ref:`hi3861`
       - :ref:`riscv`
       -
       - 352KB/288KB
-      - 72Mbps(HT20)
+      - WiFi
       - 3/2/1
+      -
       - QFN32
+    * - :ref:`esp32`
+      - :ref:`xtensa_lx6`
+      - 994.26
+      - 520KB/448KB
+      - WiFi&BLE
+      -
+      -
+      - :ref:`esp_qfn48`
+    * - :ref:`esp32s2`
+      - :ref:`xtensa_lx7`
+      - 613.8
+      - 320KB/128KB
+      - WiFi
+      -
+      -
+      - :ref:`esp_qfn56`
+    * - :ref:`esp32s3`
+      - :ref:`xtensa_lx7`
+      - 1181.6
+      - 512KB/384KB
+      - WiFi&BLE
+      -
+      -
+      - :ref:`esp_qfn56`
+    * - :ref:`w800`
+      - :ref:`xt804`
+      -
+      - 288KB/2 MB
+      - WiFi&BLE
+      - 6/2/1
+      -
+      - QFN32
+    * - :ref:`w801`
+      - :ref:`xt804`
+      -
+      - 288KB/2 MB
+      - WiFi&BLE
+      - 6/2/1
+      -
+      - QFN56
+
+
 
 .. toctree::
     :maxdepth: 1

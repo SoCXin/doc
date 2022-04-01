@@ -4,7 +4,7 @@
 W801
 ===============
 
-`标签 <https://github.com/SoCXin/W801>`_ : ``XT804`` ``240MHz`` ``UART`` ``Tee`` ``BLE4.2`` ``WiFi`` ``QFN56``
+`标签 <https://github.com/SoCXin/W801>`_ : ``XT804`` ``240MHz`` ``UART`` ``Tee`` ``BLE4.2`` ``Wi-Fi`` ``QFN56``
 
 .. contents::
     :local:
@@ -25,23 +25,14 @@ IoT MCU芯片，支持平头哥CDK开发环境
 ^^^^^^^^^^^
 
 * 发布时间：
-* 发布价格：
+* 参考价格：
 * 制程工艺：
 * 供货周期：
 * 处理性能：
+* 运行环境：-40°C to 125°C
 * 封装规格：QFN56 (6x6mm)
-* SRAM容量：288 KB (PSRAM-64MB)
+* SRAM容量：288 KB (PSRAM 64MB)
 * Flash容量：2 MB
-
-
-限定参数
-^^^^^^^^^^^
-
-* 电压范围：3.0 to 3.6 V
-* 功耗范围：
-* 温度范围：-40°C to 125°C
-
-
 
 特征参数
 ^^^^^^^^^^^
@@ -52,6 +43,19 @@ IoT MCU芯片，支持平头哥CDK开发环境
 * 6x UART
 * 4x 16 bit :ref:`sigma_delta` ADC(1KSPS)
 * 15x Touch Sensor
+
+
+芯片架构
+~~~~~~~~~~~
+
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：3.0 to 3.6 V
+* 功耗范围：
+
+
 
 Xin选择
 -----------
@@ -66,27 +70,32 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
-      - Performance
+    * - :ref:`wifi`
+      - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
       - Package
     * - :ref:`w801`
-      - :ref:`xt804`
       -
-      - 288KB/2 MB
-      -
+      - 288KB/2MB
+      - 16-bit ADC
       - 6/2/1
       - QFN56
+    * - :ref:`esp32s3`
+      - 1181.6
+      - 512KB/4 MB
+      - USB1.1
+      - 3/2/1
+      - :ref:`esp_qfn56`
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
+      - 994.26
+      - 520KB/4MB
       -
-      - 520KB/4 MB
       -
-      -
-      - QFN48
+      - :ref:`esp_qfn48`
+
 
 
 
@@ -96,9 +105,9 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`wifi`
       - Core
-      - Performance
+      - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
