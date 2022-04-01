@@ -33,10 +33,6 @@ Xin简介
 * RAM容量：520 KB (8 MB SPI)
 * Flash容量：448 KB (16MB PSRAM)
 
-
-
-
-
 特征参数
 ^^^^^^^^^^^
 
@@ -48,7 +44,7 @@ Xin简介
 * IEEE 1588 MAC,100 Mbps
 * Host SD/eMMC/SDIO、Slave SDIO/SPI
 * 硬件加密单元AES/RSA/ECC
-* 霍尔传感器
+* 内置霍尔效应传感器
 * 12-bit SAR ADC 18ch
 * 2 x 8-bit DAC
 
@@ -61,14 +57,14 @@ Xin简介
 * 电压范围：2.3 to 3.6 V
 * 功耗范围：
 
-
+每个GPIO的绝对最大电流为40mA
 
 连接能力
 ~~~~~~~~~~~~~~
 
 .. _esp32_wifi:
 
-WiFi
+Wi-Fi
 ^^^^^^^^^^^^^^^
 
 ``802.11b/g/n``

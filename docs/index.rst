@@ -64,12 +64,7 @@ SoC·Xin
     :caption: 应用领域
     :maxdepth: 1
 
-    人机交互   <application/hmi>
-    通信连接   <application/iot>
-    边缘计算   <application/edge>
-    超低功耗   <application/ulp>
-    模拟转换   <application/adc>
-    控制驱动   <application/foc>
+    应用分类   <application/index>
 
 ==================  ==================  ==================
 |人机交互|_          |通信连接|_         |边缘计算|_
@@ -107,6 +102,35 @@ SoC·Xin
 
     架构分类     <architecture/index>
     性能分级     <architecture/level>
+
+==================  ==================  ==================
+|X86|_              |ARM|_              |MIPS|_
+------------------  ------------------  ------------------
+`X86`_              `ARM`_              `MIPS`_
+------------------  ------------------  ------------------
+|ASIC|_             |RISC-V|_           |MCS51|_
+------------------  ------------------  ------------------
+`ASIC`_             `RISC-V`_           `MCS51`_
+==================  ==================  ==================
+
+.. |X86| image:: list/images/esp32.png
+.. _X86: architecture/x86.html
+
+.. |ARM| image:: list/images/esp32.png
+.. _ARM: architecture/arm.html
+
+.. |MIPS| image:: list/images/esp32.png
+.. _MIPS: architecture/MIPS.html
+
+.. |ASIC| image:: list/images/esp32.png
+.. _ASIC: ASIC/index.html
+
+.. |RISC-V| image:: list/images/esp32.png
+.. _RISC-V: architecture/RISC-V.html
+
+.. |MCS51| image:: list/images/esp32.png
+.. _MCS51: architecture/MCS51.html
+
 
 
 
