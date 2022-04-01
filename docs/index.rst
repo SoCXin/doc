@@ -102,14 +102,11 @@ SoC·Xin
 
 
 .. toctree::
-    :caption: 内核架构
+    :caption: 内核速览
     :maxdepth: 1
 
     架构分类     <architecture/index>
-
-
-
-内核架构和性能分级定义 ``X·IN``
+    性能分级     <architecture/level>
 
 .. list-table::
     :header-rows:  1
