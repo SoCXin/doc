@@ -1,7 +1,7 @@
 
 .. _adc:
 
-A/D转换
+ADC
 ============
 
 .. contents::
@@ -373,8 +373,8 @@ LTC2508-32 同时提供两个输出代码：(1) 一个 32 位数字滤波高精�
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Frequency
+    * - :ref:`adc`
+      - Freq
       - SRAM/ROM
       - SNR
       - INL

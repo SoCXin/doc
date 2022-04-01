@@ -4,8 +4,7 @@
 TKM32F499
 ===============
 
-* 关键词：``Cortex-M4`` ``240MHz`` ``Tiky`` ``LTDC`` ``TK80`` ``RGB888`` ``1024x600``
-* 资源库：`GitHub <https://github.com/SoCXin/TKM32F499>`_
+`标签 <https://github.com/SoCXin/TKM32F499>`_ : ``Cortex-M4`` ``240MHz`` ``Tiky`` ``LTDC`` ``TK80`` ``RGB888`` ``1024x600``
 
 .. contents::
     :local:
@@ -16,8 +15,6 @@ Xin简介
 .. note::
     :ref:`tkm32f499` 极有可能是 :ref:`stm32f429` 的核心设计，阉割内置的Flash和SRAM，外挂8M的32bit sdram，程序存在外置spi flash上(启动时拷贝到sdram执行,不再支持从QSPI XIP启动)，所以启动流程跟ARM9和CortexA系列比较相似。
 
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -29,9 +26,10 @@ Xin简介
 * 供电电压：2.0 to 3.6 V
 * 工作温度：-40°C to +85°C/125°C
 * 处理性能：300 :ref:`DMIPS`
+* 封装规格：LQFP128(0.4mm pitch)
 * RAM容量：8MB
 * Flash容量：8MB QSPI FLASH
-* 封装规格：LQFP128(0.4mm pitch)
+
 
 .. note::
     :ref:`tkm32f499` 是0.4 pitch的LQFP128，体积跟0.5 pitch的LQFP100一样。

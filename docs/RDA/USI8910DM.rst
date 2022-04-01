@@ -4,8 +4,7 @@
 USI8910DM
 =============
 
-* 关键词：``Cortex-R5`` ``800MHz`` ``64M DDR2`` ``0.2TOPS`` ``QFN88``
-* 资源库：`GitHub <https://github.com/SoCXin/USI8910DM>`_
+`标签 <https://github.com/SoCXin/USI8910DM>`_ : ``Cortex-R5`` ``800MHz`` ``64M DDR2`` ``0.2TOPS`` ``QFN88``
 
 .. contents::
     :local:

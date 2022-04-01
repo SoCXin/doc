@@ -4,8 +4,7 @@
 MT7621
 ================
 
-* 关键词：``MIPS`` ``1004KEc`` ``880MHz`` ``Gigabit``
-* 资源库：`GitHub <https://github.com/SoCXin/MT7621>`_
+`标签 <https://github.com/SoCXin/MT7621>`_ : ``MIPS`` ``1004KEc`` ``880MHz`` ``Gigabit``
 
 .. contents::
     :local:

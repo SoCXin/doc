@@ -4,8 +4,7 @@
 Hi3861
 ===============
 
-* 关键词：``RISC-V`` ``160MHz`` ``BLE`` ``WiFi`` ``QFN32``
-* 资源库：`GitHub <https://github.com/SoCXin/Hi3861>`_
+`标签 <https://github.com/SoCXin/Hi3861>`_ : ``RISC-V`` ``160MHz`` ``BLE`` ``WiFi`` ``QFN32``
 
 .. contents::
     :local:
@@ -16,8 +15,6 @@ Xin简介
 .. image:: ./images/Hi3861.png
     :target: https://www.hisilicon.com/cn/products/smart-iot/ShortRangeWirelessIOT/Hi3861LV100
 
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~

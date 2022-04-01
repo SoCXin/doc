@@ -4,8 +4,7 @@
 MT2503
 ================
 
-* 关键词：``ARM7EJ`` ``260MHz`` ``MT2503`` ``MT6261`` ``GSM``
-* 资源库：`GitHub <https://github.com/SoCXin/MT2503>`_
+`标签 <https://github.com/SoCXin/MT2503>`_ : ``ARM7EJ`` ``260MHz`` ``MT2503`` ``MT6261`` ``GSM``
 
 .. contents::
     :local:

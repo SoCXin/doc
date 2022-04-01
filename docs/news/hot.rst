@@ -23,7 +23,7 @@
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`hot`
       - C++
       - :ref:`arduino`
       - :ref:`lua`
@@ -141,7 +141,7 @@ Arduino
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`hot`
       - :ref:`pio`
       - freeRTOS
       - Zephyr

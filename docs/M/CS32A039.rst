@@ -4,8 +4,7 @@
 CS32A039
 ===============
 
-* 关键词：``Cortex-M0`` ``48MHz`` ``24bit ΣΔADC`` ``信号链``
-* 资源库：`GitHub <https://github.com/SoCXin/CS32A039>`_
+`标签 <https://github.com/SoCXin/CS32A039>`_ : ``Cortex-M0`` ``48MHz`` ``24bit ΣΔ ADC`` ``信号链``
 
 .. contents::
     :local:
@@ -17,9 +16,6 @@ Xin简介
 
 .. image:: ./images/CS32A039.png
     :target: http://www.chipsea.com/32weimcu/CS32A039R8T6.html
-
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~

@@ -4,8 +4,7 @@
 MT2625
 ================
 
-* 关键词：``Cortex-M4`` ``125MHz`` ``NB-IoT``
-* 资源库：`GitHub <https://github.com/SoCXin/MT2625>`_
+`标签 <https://github.com/SoCXin/MT2625>`_ : ``Cortex-M4`` ``125MHz`` ``NB-IoT``
 
 .. contents::
     :local:

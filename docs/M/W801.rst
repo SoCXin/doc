@@ -4,8 +4,7 @@
 W801
 ===============
 
-* 关键词：``XT804`` ``240MHz`` ``UART`` ``Tee`` ``BLE4.2`` ``WiFi`` ``QFN56``
-* 资源库：`GitHub <https://github.com/SoCXin/W801>`_
+`标签 <https://github.com/SoCXin/W801>`_ : ``XT804`` ``240MHz`` ``UART`` ``Tee`` ``BLE4.2`` ``WiFi`` ``QFN56``
 
 .. contents::
     :local:
@@ -13,7 +12,7 @@ W801
 Xin简介
 -----------
 
-安全IoT MCU芯片，支持平头哥CDK开发环境
+IoT MCU芯片，支持平头哥CDK开发环境
 
 .. image:: ./images/W801.png
     :target: http://r0.hlktech.com/download/HLK-W801/1/W801%E8%8A%AF%E7%89%87%E8%A7%84%E6%A0%BC%E4%B9%A6V1.0.pdf
@@ -30,6 +29,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
+* 封装规格：QFN56 (6x6mm)
 * SRAM容量：288 KB (PSRAM-64MB)
 * Flash容量：2 MB
 
@@ -40,7 +40,7 @@ Xin简介
 * 电压范围：3.0 to 3.6 V
 * 功耗范围：
 * 温度范围：-40°C to 125°C
-* 封装规格：QFN56 (6x6mm)
+
 
 
 特征参数

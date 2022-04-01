@@ -4,8 +4,7 @@
 CS32G020
 ===============
 
-* 关键词：``Cortex-M0`` ``48MHz`` ``PD3.0`` ``FRS`` ``QC4.0+``
-* 资源库：`GitHub <https://github.com/SoCXin/CS32G020>`_
+`标签 <https://github.com/SoCXin/CS32G020>`_ : ``Cortex-M0`` ``48MHz`` ``PD3.0`` ``FRS`` ``QC4.0+``
 
 .. contents::
     :local:

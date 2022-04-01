@@ -10,7 +10,7 @@
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`low`
       - Frequency
       - SRAM
       - Flash

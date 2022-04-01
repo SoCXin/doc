@@ -4,8 +4,7 @@
 MT7688
 ================
 
-* 关键词：``MIPS`` ``800MHz`` ``WiFi``
-* 资源库：`GitHub <https://github.com/SoCXin/MT7688>`_
+`标签 <https://github.com/SoCXin/MT7688>`_ : ``MIPS`` ``800MHz`` ``WiFi``
 
 .. contents::
     :local:

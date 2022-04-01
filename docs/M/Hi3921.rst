@@ -4,8 +4,7 @@
 Hi3921
 ===============
 
-* 关键词：``Cortex-M3`` ``200MHz`` ``PLC``
-* 资源库：`GitHub <https://github.com/SoCXin/Hi3921>`_
+`标签 <https://github.com/SoCXin/Hi3921>`_ : ``Cortex-M3`` ``200MHz`` ``PLC``
 
 .. contents::
     :local:

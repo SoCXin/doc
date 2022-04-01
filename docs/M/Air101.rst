@@ -4,8 +4,7 @@
 Air101
 ===============
 
-* 关键词：``OpenLuat`` ``240MHz`` ``UART``
-* 资源库：`GitHub <https://github.com/SoCXin/Air101>`_
+`标签 <https://github.com/SoCXin/Air101>`_ : ``OpenLuat`` ``240MHz`` ``UART``
 
 .. contents::
     :local:
@@ -13,7 +12,7 @@ Air101
 Xin简介
 -----------
 
-规格配置
+规格参数
 ~~~~~~~~~~~
 
 

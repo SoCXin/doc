@@ -4,8 +4,7 @@
 CR600
 ===============
 
-* 关键词：``Cortex-M0`` ``125MHz`` ``UART`` ``PLC``
-* 资源库：`GitHub <https://github.com/SoCXin/CR600>`_
+`标签 <https://github.com/SoCXin/CR600>`_ : ``Cortex-M0`` ``125MHz`` ``UART`` ``PLC``
 
 .. contents::
     :local:
@@ -13,9 +12,8 @@ CR600
 Xin简介
 -----------
 
-规格配置
+规格参数
 ~~~~~~~~~~~
-
 
 基本参数
 ^^^^^^^^^^^

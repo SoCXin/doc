@@ -4,8 +4,7 @@
 RP2040
 ===============
 
-* 关键词：``Raspberry Pi`` ``Cortex-M0`` ``MicroPython`` ``Dual Core`` ``133MHz`` ``USB OTG`` ``QFN56`` ``$0.7``
-* 资源库：`GitHub <https://github.com/SoCXin/RP2040>`_
+`标签 <https://github.com/SoCXin/RP2040>`_ : ``Raspberry Pi`` ``Cortex-M0`` ``MicroPython`` ``Dual Core`` ``133MHz`` ``USB OTG`` ``QFN56`` ``$0.7``
 
 .. contents::
     :local:

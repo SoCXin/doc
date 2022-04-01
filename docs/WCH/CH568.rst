@@ -4,8 +4,7 @@
 CH568
 ==========
 
-* 关键词：``RISC-V3A`` ``USB HS`` ``SM4/AES`` ``SATA`` ``120MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/CH568>`_ , `官方资源 <http://www.wch.cn/products/CH568.html>`_
+`标签 <https://github.com/SoCXin/CH568>`_ : ``RISC-V3A`` ``USB HS`` ``SM4/AES`` ``SATA`` ``120MHz``
 
 .. contents::
     :local:

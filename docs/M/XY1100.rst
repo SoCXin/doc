@@ -4,8 +4,7 @@
 XY1100
 ===============
 
-* 关键词：``Cortex-M3`` ``240MHz`` ``UART`` ``CMOS PA``
-* 资源库：`GitHub <https://github.com/SoCXin/XY1100>`_
+`标签 <https://github.com/SoCXin/XY1100>`_ : ``Cortex-M3`` ``240MHz`` ``UART`` ``CMOS PA``
 
 .. contents::
     :local:
@@ -13,7 +12,7 @@ XY1100
 Xin简介
 -----------
 
-规格配置
+规格参数
 ~~~~~~~~~~~
 
 

@@ -4,8 +4,7 @@
 GD32V103
 ===============
 
-* 关键词：``RISC-V`` ``Bumblebee`` ``108MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/GD32V103>`_
+`标签 <https://github.com/SoCXin/GD32V103>`_ : ``RISC-V`` ``Bumblebee`` ``108MHz``
 
 .. contents::
     :local:
@@ -13,10 +12,7 @@ GD32V103
 Xin简介
 -----------
 
-.. contents::
-    :local:
-
-规格配置
+规格参数
 ~~~~~~~~~~~
 
 基本参数
