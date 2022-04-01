@@ -1,16 +1,15 @@
 .. _cortex_a7:
 
 Cortex-A7
-====================
+=============
 
 .. contents::
     :local:
 
-
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`cortex_a7`
       - DMIPS
       - RAM
       - Cache

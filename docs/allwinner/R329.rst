@@ -4,8 +4,7 @@
 R329
 =============
 
-* 关键词：``Allwinner`` ``Cortex-A53`` ``1.5GHz`` ``Dual-core`` ``Tina``
-* 资源库：`GitHub <https://github.com/SoCXin/R329>`_
+`标签 <https://www.allwinnertech.com/index.php?c=product&a=index&id=91>`_ : ``Allwinner`` ``Cortex-A53`` ``1.5GHz`` ``Dual-core`` ``Tina``
 
 .. contents::
     :local:
@@ -15,6 +14,11 @@ Xin简介
 
 .. image:: ./images/R329.jpg
     :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=91
+
+`GitHub <https://github.com/SoCXin/R329>`_
+
+.. contents::
+    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -72,6 +76,11 @@ Xin选择
 系列对比
 ~~~~~~~~~~
 
+.. _R328:
+
+R328
+^^^^^^^^^^^
+
 .. image:: ./images/R328.jpg
     :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=85
 
@@ -88,8 +97,9 @@ Xin应用
 开发板
 ~~~~~~~~~~
 
-Sipeed MAIX-II-A
-^^^^^^^^^^^^^^^^^^^
+MAIX-II-A
+^^^^^^^^^^^
+``Sipeed``
 
 .. image:: images/B_R329.png
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.18.162553f8dQc68Z&id=653462798753&ns=1&abbucket=12#detail

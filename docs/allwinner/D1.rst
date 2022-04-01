@@ -1,11 +1,10 @@
 
 .. _D1:
 
-D1
+D1-H
 =============
 
-* 关键词：``Allwinner`` ``RISC-V`` ``C906`` ``1.1GHz`` ``WAFT``
-* 资源库：`GitHub <https://github.com/SoCXin/D1>`_
+`标签 <https://www.allwinnertech.com/index.php?c=product&a=index&id=97>`_ : ``Allwinner`` ``RISC-V`` ``C906`` ``1.1GHz`` ``WAFT`` ``Tina``
 
 .. contents::
     :local:
@@ -16,6 +15,10 @@ Xin简介
 .. image:: ./images/D1.png
     :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=97
 
+`GitHub <https://github.com/SoCXin/D1>`_
+
+.. contents::
+    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -25,12 +28,14 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2021年4月15日
+* 参考价格：
 * 制程工艺：22nm
-* 发布价格：
-* 工作温度：
+* 供货周期：
 * 处理性能：
 * 封装规格：LFBGA337 (13*13*0.65mm)
-
+* 运行环境：-40°C to 85°C
+* RAM容量：1GB/2GB (DDR3)
+* Flash容量：
 
 特征参数
 ^^^^^^^^^^^
@@ -39,17 +44,38 @@ Xin简介
 * HiFi4 DSP
 * 32 KB L1 I-cache and 32 KB L1 D-cache
 
+
+芯片架构
+~~~~~~~~~~~
+
 电源参数
 ^^^^^^^^^^^
 
 * 供电电压：
 
-芯片架构
-~~~~~~~~~~~
-
 
 计算性能
 ~~~~~~~~~~~
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~~~
+
+
+系列对比
+~~~~~~~~~~~
+
+
+型号对比
+~~~~~~~~~~~
+
+
 
 Xin应用
 -----------
@@ -58,12 +84,18 @@ Xin应用
     :local:
 
 开发板
-~~~~~~~~~~
+~~~~~~~~~~~
 
-Sipeed Lichee RV
-^^^^^^^^^^^^^^^^^^^
+Lichee RV
+^^^^^^^^^^^
+``Sipeed``
 
 .. image:: images/B_D1_RV.png
     :target: https://item.taobao.com/item.htm?spm=a1z0d.6639537.1997196601.227.1a477484PGp2WO&id=660478137105
 
 
+哪吒
+^^^^^^^^^^^
+
+.. image:: images/哪吒.png
+    :target: https://d1.docs.aw-ol.com/d1_dev/

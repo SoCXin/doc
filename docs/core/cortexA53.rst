@@ -10,7 +10,7 @@ Cortex-A53
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`cortex_a53`
       - DMIPS
       - RAM
       - Cache
