@@ -17,9 +17,6 @@ Xin简介
 
 `GitHub <https://github.com/SoCXin/V831>`_
 
-.. contents::
-    :local:
-
 
 规格参数
 ~~~~~~~~~~~
@@ -66,7 +63,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`allwinner`
+    * -
       - Core
       - Freq
       - SRAM/ROM
@@ -74,15 +71,22 @@ Xin选择
       - SPI/I2C
       -
     * - :ref:`v831`
-      -
+      - :ref:`cortex_a7`
       - 800MHz
       -
       -
       -
       -
     * - :ref:`k210`
-      -
+      - :ref:`rv64`
       - 400MHz
+      -
+      -
+      -
+      -
+    * - :ref:`k510`
+      - :ref:`rv64`
+      - 800MHz
       -
       -
       -

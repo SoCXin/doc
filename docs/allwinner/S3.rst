@@ -4,8 +4,7 @@
 S3
 =============
 
-* 关键词：``Cortex-A7`` ``1.2GHz``
-* 资源库：`GitHub <https://github.com/SoCXin/S3>`_
+`标签 <https://www.allwinnertech.com/index.php?c=product&a=index&id=78>`_ : ``Allwinner`` ``Cortex-A7`` ``1.2GHz`` ``ISP``
 
 .. contents::
     :local:
@@ -13,12 +12,10 @@ S3
 Xin简介
 -----------
 
-.. image:: ./images/V831.png
-    :target: https://linux-sunxi.org/images/b/b9/V833%EF%BC%8FV831_Datasheet_V1.0.pdf
+.. image:: ./images/S3.png
+    :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=78
 
-.. contents::
-    :local:
-
+`GitHub <https://github.com/SoCXin/S3>`_
 
 规格参数
 ~~~~~~~~~~~
@@ -27,11 +24,13 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
-* 发布价格：
-* 工作温度：-40°C to +85°C
-* 封装规格：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
 * 处理性能：
-* RAM容量：64MB DDR2
+* 封装规格：FBGA234 (11*11*0.65mm)
+* 运行环境：-40°C to 85°C
+* RAM容量：64 MB (16bit DDR3)
 * Flash容量：
 
 
@@ -39,15 +38,19 @@ Xin简介
 ^^^^^^^^^^^
 
 * 1.2GHz :ref:`cortex_a7`
+* Integrated ISP up to 8M pixels
+* Integrated 92dB audio codec
+* Supports two ADC channels and two DAC channels
+* Supports 3 MIC-in, a stereo Line-in, a headphone output and a stereo line-out output
+
+芯片架构
+~~~~~~~~~~~
 
 电源参数
 ^^^^^^^^^^^
 
 * 供电电压：2.0 to 3.6 V
 
-
-芯片架构
-~~~~~~~~~~~
 
 Xin选择
 -----------
