@@ -125,39 +125,41 @@ USB-HS
 
 芯片集成USB2.0 HS PHY器件实现高速通信(480Mbps)，在该细分领域上 :ref:`st` 的STM32F7系列部分型号有USB2.0 PHY集成的方案。
 
-建议45MB/s以内的应用
+.. hint::
+    建议45MB/s以内的应用场景
+
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`wch`
       - Core
-      - RAM
-      - Flash
+      - SRAM/ROM
+      - USB
       - :ref:`wch_usb_hs`
       - PHY
       - MAC
     * - :ref:`ch563`
       - :ref:`arm7`
-      - 64 KB
-      - 224 KB
-      - 480M
-      - 100M
-      - 1000M
+      - 64KB/224KB
+      - 1
+      - 480Mbps
+      - 100Mbps
+      - 100Mbps
     * - :ref:`ch32f207`
       - :ref:`cortex_m3`
-      - 64 KB
-      - 256 KB
-      - 480M
-      - 100M
-      - 1000M
+      - 64KB/256KB
+      - 2
+      - 480Mbps
+      - 10Mbps
+      - 1Gbps
     * - :ref:`ch32v307`
       - :ref:`wch_riscv4a`
-      - 64 KB
-      - 256 KB
-      - 480M
-      - 100M
-      - 1000M
+      - 64KB/256KB
+      - 2
+      - 480Mbps
+      - 10Mbps
+      - 1Gbps
 
 .. _wch_usb_ss:
 
@@ -165,14 +167,15 @@ USB-SS
 ^^^^^^^^^^^
 ``USB-SS(PHY)`` ``5Gbps`` ``384MB/s``
 
-建议384MB/s以内的应用
+.. hint::
+    建议384MB/s以内的应用场景
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`wch`
       - Core
-      - USB Num
+      - USB
       - USB Type
       - :ref:`wch_usb_hs`
       - :ref:`wch_usb_ss`
@@ -191,7 +194,10 @@ USB-FS
 ^^^^^^^^^^^
 ``800KB/s``
 
-建议800KB/s以内的应用
+.. hint::
+    建议800KB/s以内的应用场景
+
+
 
 .. list-table::
     :header-rows:  1

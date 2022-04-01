@@ -129,7 +129,8 @@ USB
 ^^^^^^^^^^^
 ``USB-HS-OTG(480Mbps)`` ``USB-SS-OTG(5Gbps)`` ``384MB/s``
 
-建议384MB/s以内的应用
+.. hint::
+    建议384MB/s以内的应用场景
 
 
 
@@ -161,7 +162,7 @@ Xin选择
 CH565
 ^^^^^^^^^^^
 
- :ref:`ch565` 相较于 :ref:`ch569` 多了DVP接口，去掉了 :ref:`ch569_hspi` ，甚至在更小QFN40上去掉了以太网和调试端口。
+:ref:`ch565` 相较于 :ref:`ch569` 多了DVP接口，去掉了 :ref:`ch569_hspi` ，甚至在更小QFN40上去掉了以太网和调试端口。
 
 .. image:: ./images/CH569p40.png
 

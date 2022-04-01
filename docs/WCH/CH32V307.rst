@@ -235,10 +235,12 @@ Xin应用
 
 V3-Tool
 ~~~~~~~~~~
-``server`` ``USB-HS`` ``1Gbps(MAC)`` ``10Mbps(PHY)``
+``Server`` ``USB-HS`` ``1Gbps(MAC)`` ``10Mbps(PHY)``
 
-`STOPs方案:V3-Tool <https://github.com/stops-top/V3-Tool>`_ 用于实现嵌入式边缘网络服务器
+`STOPs方案:V3-Tool <https://github.com/stops-top/V3-Tool>`_ 用于实现 :ref:`embed_tool`
 
 
 * 以太网连接
 * USB连接
+
+

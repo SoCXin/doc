@@ -257,9 +257,9 @@ H3-Tool
 ~~~~~~~~~~
 ``5MSPS-12bit-DAC`` ``3.6MSPS-16bit-ADC`` ``USB-HS-OTG``
 
-`STOPs方案:H3-Tool <https://github.com/stops-top/H3-Tool>`_ 用于实现嵌入式边缘网络服务器
+`STOPs方案:H3-Tool <https://github.com/stops-top/H3-Tool>`_ 用于实现 :ref:`embed_tool`
 
-
+单芯片集成方案，实现信号采集和有线高速通信
 
 Xin总结
 --------------

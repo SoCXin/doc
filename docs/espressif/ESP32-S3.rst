@@ -337,7 +337,7 @@ S3-Tool
 ~~~~~~~~~~
 ``server`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG``
 
-`STOPs方案:S3-Tool <https://github.com/stops-top/S3-Tool>`_ 用于实现嵌入式边缘网络服务器
+`STOPs方案:S3-Tool <https://github.com/stops-top/S3-Tool>`_ 用于实现 :ref:`embed_tool`
 
 * 线缆接入
 * 联网管理
