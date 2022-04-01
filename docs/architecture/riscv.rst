@@ -13,9 +13,6 @@ RISC-V
     :local:
 
 
-架构简介
---------------
-
 .. image:: ./images/RISC-V.png
     :target: https://riscv.org/
 
@@ -63,8 +60,10 @@ C906
 XT804
 ~~~~~~~~~~~~~~
 
+.. _qingke:
 
 Qingke
 --------------
+``WCH``
 
-WCH :ref:`wch_riscv`
+:ref:`wch_riscv`

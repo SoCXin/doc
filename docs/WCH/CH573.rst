@@ -4,8 +4,7 @@
 CH573
 ===========
 
-* 关键词：``RISC-V3A`` ``USB`` ``BLE4.2`` ``AES128`` ``UART`` ``TouchKey`` ``QFN28``
-* 资源库：`GitHub <https://github.com/SoCXin/CH573>`_ , `官方资源 <http://www.wch.cn/products/CH573.html>`_
+`标签 <https://github.com/SoCXin/CH573>`_ : ``RISC-V3A`` ``USB`` ``BLE4.2`` ``AES128`` ``UART`` ``TouchKey`` ``QFN28``
 
 .. contents::
     :local:
@@ -19,6 +18,7 @@ Xin简介
 .. image:: ./images/CH573.png
     :target: http://www.wch.cn/products/CH573.html
 
+`GitHub <https://github.com/SoCXin/CH573>`_
 
 规格参数
 ~~~~~~~~~~~

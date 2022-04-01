@@ -4,7 +4,7 @@
 CH569
 ===========
 
-`标签 <http://www.wch.cn/products/CH569.html>`_ : ``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``1000Mbps MAC`` ``Ethernet`` ``EMMC`` ``DVP``
+`标签 <http://www.wch.cn/products/CH569.html>`_ : ``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``Ethernet`` ``EMMC`` ``DVP``
 
 .. contents::
     :local:
@@ -17,8 +17,6 @@ Xin简介
 
 `GitHub <https://github.com/SoCXin/CH569>`_
 
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -89,13 +87,6 @@ Xin简介
 连接能力
 ~~~~~~~~~~~
 
-.. _ch569_usb:
-
-USB
-^^^^^^^^^^^
-
-建议384MB/s以内的应用
-
 
 .. _ch569_eth:
 
@@ -131,6 +122,14 @@ HSPI
 ^^^^^^^^^^^
 
 HSPI接口通讯可比拟FPGA功能，最典型的应用场景是获取高速ADC器件数据 :ref:`adc`
+
+.. _ch569_usb:
+
+USB
+^^^^^^^^^^^
+``USB-HS-OTG(480Mbps)`` ``USB-SS-OTG(5Gbps)`` ``384MB/s``
+
+建议384MB/s以内的应用
 
 
 
