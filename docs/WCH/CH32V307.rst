@@ -90,7 +90,7 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
 连接能力
 ~~~~~~~~~~~
 
-``USB HS H/D`` ``USB FS OTG`` ``CAN`` ``Ethernet``
+``USB-HS-OTG(480Mbps)`` ``USB-FS-OTG`` ``CAN2.0B`` ``Ethernet``
 
 .. list-table::
     :header-rows:  1
@@ -140,7 +140,7 @@ CAN
 Ethernet
 ^^^^^^^^^^^
 
-``1000Mbps-MAC`` ``10Mbps-PHY``
+``1Gbps(MAC)`` ``10Mbps(PHY)``
 
 * 1Gbps MAC
 * 10Mbps PHY
@@ -230,11 +230,15 @@ Xin应用
 .. image:: ./images/B_CH32V307.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.48.39021289jMGykq&id=659315400556&ns=1&abbucket=3#detail
 
+
+.. _v3_tool:
+
 V3-Tool
 ~~~~~~~~~~
+``server`` ``USB-HS`` ``1Gbps(MAC)`` ``10Mbps(PHY)``
 
-`V3-Tool方案 <https://github.com/stops-top/V3-Tool>`_ 用于实现强大的嵌入式工具
+`STOPs方案:V3-Tool <https://github.com/stops-top/V3-Tool>`_ 用于实现嵌入式边缘网络服务器
 
-* 桌面USB高速连接
-* 嵌入式调试工具，调试串口HUB
+
 * 以太网连接
+* USB连接

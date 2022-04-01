@@ -330,6 +330,20 @@ IOMUX
 * 控制 22 个 RTC GPIO 管脚的模拟功能；
 * 将 22 个 RTC 输入输出信号引入 RTC 系统。
 
+
+.. _s3_tool:
+
+S3-Tool
+~~~~~~~~~~
+``server`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG``
+
+`STOPs方案:S3-Tool <https://github.com/stops-top/S3-Tool>`_ 用于实现嵌入式边缘网络服务器
+
+* 线缆接入
+* 联网管理
+* 串联调试
+
+
 Xin总结
 --------------
 
