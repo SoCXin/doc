@@ -61,7 +61,7 @@ Espressif
       - 994.2
       - 520KB/448KB
       - WiFi&BLE4.2
-      - 100Mbps/ X / √
+      - 100M/ X / √
       - 3/4/2
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
