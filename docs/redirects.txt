@@ -1,4 +1,5 @@
-/RISC-V.html -> architecture/RISC-V.html
+/RISC-V.html -> architecture/riscv.html
+/risc-v.html -> architecture/riscv.html
 /STM32F030.html -> ST/L/STM32F030.html
 /STM32G030.html -> ST/L/STM32G030.html
 /STM32G031.html -> ST/L/STM32G031.html

@@ -64,7 +64,8 @@ SoC·Xin
     :caption: 应用领域
     :maxdepth: 1
 
-    应用分类   <application/index>
+    功能分类   <application/index>
+    产品形态   <application/product>
 
 ==================  ==================  ==================
 |人机交互|_          |通信连接|_         |边缘计算|_
@@ -126,7 +127,7 @@ SoC·Xin
 .. _ASIC: ASIC/index.html
 
 .. |RISC-V| image:: list/images/esp32.png
-.. _RISC-V: architecture/RISC-V.html
+.. _RISC-V: architecture/riscv.html
 
 .. |MCS51| image:: list/images/esp32.png
 .. _MCS51: architecture/MCS51.html

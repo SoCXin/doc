@@ -11,6 +11,6 @@ Architecture
     ARM     <arm>
     ASIC    <../ASIC/index>
     MIPS    <MIPS>
-    RISC-V  <RISC-V>
+    RISC-V  <riscv>
     MCS51   <MCS51>
 

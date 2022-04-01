@@ -31,7 +31,7 @@ WCH
 .. note::
     厂商例程代码还是有点“乱”，和大多数国产MCU厂商一样，软资源不够全面也不够规范，可能在这上面的资源投入很有限
 
-转换芯片
+通信产品
 -------------
 
 .. contents::
@@ -41,36 +41,12 @@ WCH
     :target: http://special.wch.cn/zh_cn/interface_conversion_expert/
 
 
-USB/UART
-~~~~~~~~~~~
-
-`USB/UART方案 <http://www.wch.cn/products/categories/22.html?pid=1#data>`_
-
-.. image:: ./images/wchusb.png
-    :target: http://special.wch.cn/zh_cn/USBChips/#/
-
-PCI/PCIE
-~~~~~~~~~~~
-
-`PCI/PCIE方案 <http://www.wch.cn/products/categories/49.html?pid=2>`_ 主要包括转串口/打印口/并口等
-
-.. image:: ./images/pci.png
-    :target: http://www.wch.cn/products/category/2.html#data
-
-Ethernet
-~~~~~~~~~~~
-
-`Ethernet方案 <http://www.wch.cn/products/categories/47.html?pid=4>`_ 主要包括转并口/SPI/串口等
-
-.. image:: ./images/eth.png
-    :target: http://www.wch.cn/products/category/4.html#data
 
 
-核心能力
--------------
 
-.. contents::
-    :local:
+
+
+
 
 .. _wch_eth:
 
@@ -131,7 +107,10 @@ DP83848芯片，支持MII模式和RMII模式；而LAN8742，和LAN8720，只支�
 DP83848的默认地址，是0x01
 
 
+`独立以太网方案 <http://www.wch.cn/products/categories/47.html?pid=4>`_ 主要包括转并口/SPI/串口等
 
+.. image:: ./images/eth.png
+    :target: http://www.wch.cn/products/category/4.html#data
 
 
 USB ++
@@ -243,8 +222,14 @@ USB-FS
 
 
 
+`独立USB方案 <http://www.wch.cn/products/categories/22.html?pid=1#data>`_
+
+.. image:: ./images/wchusb.png
+    :target: http://special.wch.cn/zh_cn/USBChips/#/
+
+
 .. hint::
-    :ref:`wch` 基本标配USB FS外设，而且在对标同类产品时，往往配置更多数量的USB，或者集成USB PHY器件
+    :ref:`wch` 的MCU基本标配USB FS外设，而且在对标同类产品时，往往配置更多数量的USB，或者集成USB PHY器件
 
 
 .. _wch_ble:
@@ -291,10 +276,7 @@ BLE ++
       - 2 x USB
       - X
 
-
-
-
-内核简介
+内核产品
 ------------
 
 .. contents::
@@ -424,34 +406,63 @@ RISC-V
     CH583 <CH583>
 
 
-
-厂商总结
+产品相关
 ------------
 
 纵览 :ref:`wch` 当下所有产品，其核心技术在于自主开发的 :ref:`wch_riscv` 内核，在USB领域的多年积累，特别是USB HS集成PHY的差异化定位，相对竞品方案的集成度和成本更低，还有在以太网领域的产品迭代，同样的市场优势建立于高速和集成PHY
 
 但是，就单片机而言，BLE无线通信领域的优势还没有完全建立，但是丰富的产品线具有协同效应，针对高速有线通信（USB SS和1Gbps以太网）配置低主频核心，实用场景有限，和其他高性能产品比较而言并不具有优势
 
-.. contents::
-    :local:
-
-电源管理
-~~~~~~~~~~~~
-
-主要是建立在USB-PD的电源应用，在一定程度上是USB技术的分支，特别是CH236等独立器件建立了一定市场认可后，集成到MCU中为该领域提供多想象力。
 
 .. _usb_pd:
 
 USB-PD
-^^^^^^^^^^^
+~~~~~~~~~~~~
 
 ``USB-PD``
 
 .. image:: ./images/wch_asm.png
     :target: http://www.wch.cn/products/categories/33.html?pid=5
 
-`USB PD <https://github.com/Qful/PD>`_ (USB Power Delivery)功率传输协议，是目前主流的快充协议之一，USB功率2013年的新标准名为USBPD，USB PD 协议基于USB3.1，是USB3.1 中即type-c端口后提出的功率传输概念。USBPD透过USB电缆和连接器增加电力输送，扩展USB应用中的电缆总线供电能力。该规范可实现更高的电压和电流，输送的功率最高可达100瓦，并可以自由的改变电力的输送方向。
+`USB-PD <https://github.com/stops-top/USB-PD>`_ (USB Power Delivery)功率传输协议，是目前主流的快充协议之一，USB功率2013年的新标准名为USBPD，USB PD 协议基于USB3.1，是USB3.1 中即type-c端口后提出的功率传输概念。USBPD透过USB电缆和连接器增加电力输送，扩展USB应用中的电缆总线供电能力。该规范可实现更高的电压和电流，输送的功率最高可达100瓦，并可以自由的改变电力的输送方向。
 
+
+独立器件
+^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wch`
+      - Core
+      - RAM
+      - Flash
+      - UART
+      - GPIO
+      - Package
+    * - CH236
+      -
+      - 1K
+      - 8K
+      - 2
+      - 18
+      -
+
+
+编程器件
+^^^^^^^^^^^
+
+USB PD的通信是将协议层的消息调制成24MHZ的FSK信号并耦合到VBUS上或者从VBUS上获得FSK信号来实现手机和充电器通信的过程。
+
+将24MHz的FSK通过cAC-Coupling耦合电容耦合到VBUS上的直流电平上的，而为了使24MHz的FSK不对PowerSupply或者USBHost的VBUS直流电压产生影响，在回路中同时添加了zIsolation电感组成的低通滤波器过滤掉FSK信号。
+
+
+* 1）USB OTG的PHY监控VBUS电压，如果有VBUS的5V电压存在并且检测到OTGID脚是1K下拉电阻（不是OTGHost模式，OTGHost模式的ID电阻是小于1K的），就说明该电缆是支持USBPD的；
+* 2）USB OTG做正常BCSV1.2规范的充电器探测并且启动USBPD设备策略管理器，策略管理器监控VBUS的直流电平上是否耦合了FSK信号，并且解码消息得出是CapabilitiesSource消息，就根据USBPD规范解析该消息得出USBPD充电器所支持的所有电压和电流列表对；
+* 3）手机根据用户的配置从CapabilitiesSource消息中选择一个电压和电流对，并将电压和电流对加在Request消息的payload上，然后策略管理器将FSK信号耦合到VBUS直流电平上；
+* 4）充电器解码FSK信号并发出Accept消息给手机，同时调整PowerSupply的直流电压和电流输出；
+* 5）手机收到Accept消息，调整ChargerIC的充电电压和电流；
+* 6）手机在充电过程中可以动态发送Request消息来请求充电器改变输出电压和电流，从而实现快速充电的过程。
 
 .. list-table::
     :header-rows:  1
@@ -478,19 +489,6 @@ USB-PD
       - 18
       -
 
-USB PD的通信是将协议层的消息调制成24MHZ的FSK信号并耦合到VBUS上或者从VBUS上获得FSK信号来实现手机和充电器通信的过程。
-
-将24MHz的FSK通过cAC-Coupling耦合电容耦合到VBUS上的直流电平上的，而为了使24MHz的FSK不对PowerSupply或者USBHost的VBUS直流电压产生影响，在回路中同时添加了zIsolation电感组成的低通滤波器过滤掉FSK信号。
-
-
-* 1）USB OTG的PHY监控VBUS电压，如果有VBUS的5V电压存在并且检测到OTGID脚是1K下拉电阻（不是OTGHost模式，OTGHost模式的ID电阻是小于1K的），就说明该电缆是支持USBPD的；
-* 2）USB OTG做正常BCSV1.2规范的充电器探测并且启动USBPD设备策略管理器，策略管理器监控VBUS的直流电平上是否耦合了FSK信号，并且解码消息得出是CapabilitiesSource消息，就根据USBPD规范解析该消息得出USBPD充电器所支持的所有电压和电流列表对；
-* 3）手机根据用户的配置从CapabilitiesSource消息中选择一个电压和电流对，并将电压和电流对加在Request消息的payload上，然后策略管理器将FSK信号耦合到VBUS直流电平上；
-* 4）充电器解码FSK信号并发出Accept消息给手机，同时调整PowerSupply的直流电压和电流输出；
-* 5）手机收到Accept消息，调整ChargerIC的充电电压和电流；
-* 6）手机在充电过程中可以动态发送Request消息来请求充电器改变输出电压和电流，从而实现快速充电的过程。
-
-
 .. toctree::
     :maxdepth: 1
 
@@ -498,21 +496,22 @@ USB PD的通信是将协议层的消息调制成24MHZ的FSK信号并耦合到VBU
     RK837 <../M/RK837>
 
 
-接口扩展
+接口转换
 ~~~~~~~~~~~~
-
 ``USB HUB`` ``PCI``  ``PCIe``
 
 在一些比较小众的连接领域有布局，例如通信延长芯片，通信转换芯片等
 
 `单片机外围 <http://www.wch.cn/products/categories/40.html?pid=3#data>`_
 
-.. _wch_kvm:
-
-KVM
-^^^^^^^^^^^
 
 在硬件生态上十分丰富，但是没有挖掘出市场潜力，没有足够持续的软生态投入，厂商无法提供足够高的起点，技术优势积累在开发商手里，新受众和创客群体有限。
+
+`独立PCI/PCIE方案 <http://www.wch.cn/products/categories/49.html?pid=2>`_ 主要包括转串口/打印口/并口等
+
+.. image:: ./images/pci.png
+    :target: http://www.wch.cn/products/category/2.html#data
+
 
 封装形态
 ~~~~~~~~~~~~
