@@ -41,7 +41,9 @@ Espressif
 
 随着更多厂商拥抱开源，且更有市场针对性的产品设计（乐鑫产品设计策略和应用开发策略偏向于大一统），将分流走很多客户和开发者。
 
-产品简介
+
+
+产品分类
 -----------
 
 .. list-table::
@@ -59,25 +61,25 @@ Espressif
       - 994.2
       - 520KB/448KB
       - WiFi&BLE4.2
-      - √ / X / √
+      - 100Mbps/ X / √
       - 3/4/2
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
       - 320KB/128KB
       - WiFi
-      - X / FS / √
+      - X /1.1 OTG/ √
       - 2/4/2
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6
       - 512KB/384KB
       - WiFi&BLE5.0
-      - X / FS / √
+      - X /1.1 OTG/ √
       - 3/4/2
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
-      - 407.2
+      - 407.22
       - 400KB/384KB
       - WiFi&BLE5.0
       - X / X / √
@@ -138,7 +140,7 @@ Espressif
 
 
 
-技术简介
+技术总结
 -----------
 
 .. contents::

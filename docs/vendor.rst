@@ -5,9 +5,10 @@ Vendor
 ===============
 
 .. toctree::
+    :caption: 国内厂商
     :maxdepth: 1
 
-    微控制器芯片领域 @ST <ST/index>
+
     LoRa/Cat1长距无线 @ASR <ASR/index>
     蜂窝网络和物联网 @RDA <RDA/index>
     有线连接和接口扩展 @WCH <WCH/index>
@@ -18,12 +19,12 @@ Vendor
 
 
 .. toctree::
-    :caption: 无线通信
+    :caption: 国际厂商
     :maxdepth: 1
 
-    Nordic <nordic/index>
-    TI <TI/index>
-
+    微控制器芯片领域 ST <ST/index>
+    先进模拟和低功耗 TI <TI/index>
+    低功耗蓝牙物联网 Nordic <nordic/index>
 
 .. list-table::
     :header-rows: 1
@@ -38,6 +39,16 @@ Vendor
       - :ref:`nbiot`
       - :ref:`cat1`
       - :ref:`cat4`
+    * - :ref:`st`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
     * - :ref:`ti`
       -
       -
