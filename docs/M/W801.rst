@@ -84,19 +84,16 @@ Xin选择
       - QFN56
     * - :ref:`esp32s3`
       - 1181.6
-      - 512KB/4 MB
+      - 512KB/4MB
       - USB1.1
       - 3/2/1
       - :ref:`esp_qfn56`
     * - :ref:`esp32`
-      - :ref:`xtensa_lx6`
       - 994.26
       - 520KB/4MB
-      -
-      -
+      - ETH-MAC
+      - 3/2/1
       - :ref:`esp_qfn48`
-
-
 
 
 型号对比
@@ -109,21 +106,21 @@ Xin选择
       - Core
       - :ref:`CoreMark`
       - SRAM/ROM
-      - Characteristics
+      - Wireless
       - UART/SPI/SDIO
       - Package
     * - :ref:`w800`
       - :ref:`xt804`
       -
       - 288KB/2 MB
-      -
+      - WiFi&BLE
       - 6/2/1
       - QFN32
     * - :ref:`w801`
       - :ref:`xt804`
       -
       - 288KB/2 MB
-      -
+      - WiFi&BLE
       - 6/2/1
       - QFN56
     * - :ref:`w806`
