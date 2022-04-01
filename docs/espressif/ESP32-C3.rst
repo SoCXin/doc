@@ -4,8 +4,7 @@
 ESP32C3
 ================
 
-* 关键词：``RISC-V`` ``160MHz`` ``BLE5.0`` ``WiFi`` ``QFN32``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32C3>`_ ,  `开发指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_
+`标签 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_ : ``RISC-V`` ``160MHz`` ``BLE5.0`` ``Wi-Fi`` ``QFN32``
 
 .. contents::
     :local:
@@ -15,6 +14,8 @@ Xin简介
 
 .. image:: ./images/ESP32C3.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32-C3
+
+`GitHub <https://github.com/SoCXin/ESP32C3>`_
 
 规格参数
 ~~~~~~~~~~~
@@ -29,24 +30,24 @@ Xin简介
 * 处理性能：407.22 :ref:`CoreMark` , 2.55 CoreMark/MHz
 * 运行环境：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn32` (5x5mm)
-* SRAM容量：400 KB (16K cache)
+* RAM容量：400 KB (16K cache)
 * Flash容量：384 KB
 
-.. note::
-    相较之前的产品，耐高温由125°降到105°
 
 
 特征参数
 ^^^^^^^^^^^
 
 * 160 MHz :ref:`esp_rv32`
-*  :ref:`esp32c3_wifi`
-*  :ref:`esp32c3_ble`
+* :ref:`esp32c3_wifi`
+* :ref:`esp32c3_ble`
 * :ref:`esp32c3_twai` 控制器
 * 22  x GPIO
 
-.. hint::
-    支持蓝牙5.0、支持蓝牙与WiFi共存机制，软件支持TCP/IP、MQTT、HTTP、COAP等常见协议，支持AT指令，支持OTA升级，支持WiFi+BLE MESH组网
+
+.. note::
+    :ref:`esp32c3` 发布于2020年12月1日，是乐鑫基于RISC-V内核设计的MCU产品，相较之前的产品，耐高温由125°降到105°
+
 
 芯片架构
 ~~~~~~~~~~~
@@ -83,6 +84,8 @@ TWAI
 
 ``ISO11898-1``
 
+.. hint::
+    支持蓝牙5.0、支持蓝牙与WiFi共存机制，软件支持TCP/IP、MQTT、HTTP、COAP等常见协议，支持AT指令，支持OTA升级，支持WiFi+BLE MESH组网
 
 计算性能
 ~~~~~~~~~~~~~~
@@ -103,20 +106,20 @@ TWAI
 
 
 RSA 模块
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^
 
 基于 RSA-3072 的标准身份验证方案，确保在设备上运行受信任的应用程序。该功能可阻止设备运行烧录在 flash 中的恶意程序。
 安全启动需要快速高效地进行，以满足即时启动设备（如球泡灯）的需求，ESP32-C3 的安全启动方案仅在设备启动过程中增加了不到 100 ms 的时间开销。
 
 AES 模块
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^
 
 基于 AES-128-XTS 算法的 flash 加密方案，确保应用程序与配置数据在 flash 中保持加密状态。
 flash 控制器支持执行加密的应用程序固件，这不仅为存储在 flash 中的敏感数据提供了必要保护，还防止了运行时由于固件更改造成的 TOCTTOU (time-of-check-to-time-of-use) 攻击。
 
 
 数字签名
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^
 
 ESP32-C3 的数字签名外设，可以通过固件不可访问的私钥生成数字签名。同样地，其 HMAC 外设也可以生成固件不可访问的加密摘要。
 目前，大多数物联网云服务使用基于 X.509 证书的身份验证，数字签名外设保护了定义设备身份的私钥。这样一来，即使出现软件漏洞，它也能为设备身份提供强大的保护
@@ -125,12 +128,9 @@ ESP32-C3 的数字签名外设，可以通过固件不可访问的私钥生成�
 Xin选择
 -----------
 
-
 .. contents::
     :local:
 
-.. hint::
-    :ref:`esp32c3` 发布于2020年12月1日，是乐鑫基于RISC-V内核设计的MCU产品
 
 品牌对比
 ~~~~~~~~~
@@ -139,7 +139,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * -
       - Core
       - :ref:`CoreMark`
       - SRAM/ROM
@@ -148,16 +148,16 @@ Xin选择
       - Package
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
-      - 407 :ref:`CoreMark`
+      - 407.22
       - 512KB/384KB
       - 1T1R/v5.0
-      - 2/3/No
+      - 2/3/0
       - :ref:`esp_qfn32`
     * - :ref:`hi3861`
       - :ref:`riscv`
       -
       - 352KB/288KB
-      - 72Mbps@HT20
+      - 72Mbps(HT20)
       - 3/2/1
       - QFN32
     * - :ref:`w800`
@@ -169,28 +169,17 @@ Xin选择
       - QFN32
 
 
-对比Hi3861
-^^^^^^^^^^^^
+:ref:`hi3861` 和 :ref:`esp32c3` 封装规格相同QFN32但不兼容，在该领域  :ref:`esp32c3` 凭借开源生态优势和IDF框架，和海思生态及HarmonyOS各有千秋。
 
-封装规格相同QFN32但不兼容，在该领域  :ref:`esp32c3` 凭借开源生态优势和IDF框架，和海思生态及HarmonyOS各有千秋。
+在一定程度上W806对标对手应该是ESP32-S系列，产品定位差异交叠处较多。ESP32-C3 和 W806 相比封装更小，扩展能力和计算能力规格更低，支持BLE 5.0, 更偏向无线数据节点，后者配置更多的IO，更多的UART,以及16bit SD ADC和SDIO接口，更偏向有针对性的，更复杂的终端网关设备
 
-
-对比W806
-^^^^^^^^^^^^
-
-在一定程度上W806对标对手应该是ESP32-S系列，产品定位差异交叠处较多。
-
-
-.. note::
-    ESP32-C3 和 W806 相比封装更小，扩展能力和计算能力规格更低，支持BLE 5.0, 更偏向无线数据节点，后者配置更多的IO，更多的UART,以及16bit SD ADC和SDIO接口，更偏向有针对性的，更复杂的终端网关设备
-
-对比BLE
+BLE对比
 ^^^^^^^^^^^^
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`espressif`
       - BLE
       - :ref:`CoreMark`
       - SRAM/ROM
@@ -241,7 +230,7 @@ Xin选择
       - √
       - v5.0
       - X
-      - QFN32/QFN28
+      - QFN32
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 994.26
@@ -256,7 +245,7 @@ Xin选择
       - 512KB/384KB
       - b/g/n
       - BLE v5.0
-      - USB1.1 OTG
+      - USB1.1
       - QFN56
 
 

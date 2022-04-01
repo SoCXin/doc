@@ -3,8 +3,7 @@
 ESP32
 ===============
 
-* 关键词：``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``
-* 资源库：`GitHub <https://github.com/SoCXin/ESP32>`_ , `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-reference/index.html>`_
+`标签 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-reference/index.html>`_ : ``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``
 
 .. contents::
     :local:
@@ -15,6 +14,8 @@ Xin简介
 .. image:: ./images/ESP32.png
     :target: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf
 
+`GitHub <https://github.com/SoCXin/ESP32>`_
+
 规格参数
 ~~~~~~~~~~~
 
@@ -23,21 +24,17 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2016年9月
-* 发布价格：
+* 参考价格：
 * 制程工艺：40 nm (TSMC)
 * 供货周期：至2028年
 * 处理性能：504.85 :ref:`CoreMark`, 994.26 :ref:`CoreMark` (Dual Core)
+* 运行环境：-40°C to 105°C
+* 封装规格：:ref:`esp_qfn48` (6x6mm)
 * RAM容量：520 KB (8 MB SPI)
 * Flash容量：448 KB (16MB PSRAM)
 
 
-限定参数
-^^^^^^^^^^^
 
-* 电压范围：2.3 to 3.6 V
-* 功耗范围：
-* 温度范围：-40°C to 105°C
-* 封装规格：:ref:`esp_qfn48`
 
 
 特征参数
@@ -54,6 +51,17 @@ Xin简介
 * 霍尔传感器
 * 12-bit SAR ADC 18ch
 * 2 x 8-bit DAC
+
+芯片架构
+~~~~~~~~~~~
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：2.3 to 3.6 V
+* 功耗范围：
+
+
 
 连接能力
 ~~~~~~~~~~~~~~
