@@ -7,8 +7,8 @@
 .. list-table::
     :header-rows: 1
 
-    * -
-      - :ref:`usb`
+    * - :ref:`iot`
+      - :ref:`can`
       - :ref:`ethernet`
       - :ref:`plc`
       - :ref:`802_15_4`
@@ -86,7 +86,7 @@
       -
 
 .. toctree::
-    :caption: 国际厂商
+    :caption: 国外厂商
     :maxdepth: 1
 
     微控制器芯片领域 ST <stm/index>

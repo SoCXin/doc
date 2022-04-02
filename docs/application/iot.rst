@@ -52,18 +52,17 @@ IoT
       -
 
 
-
-
-
 .. contents::
     :local:
 
+.. _can:
 
-.. _usb:
+CAN
+~~~~~~~~~~~
+``串行通信``
 
-USB
-----------
 
+CAN总线，也叫做控制器局域网总线（Controller Area Network），是一种用于实时应用的串行通讯协议总线，它可以使用双绞线来传输信号，是世界上应用最广泛的现场总线之一。
 
 .. _ethernet:
 
@@ -181,14 +180,16 @@ PLC
 
 802.15.4
 ----------
+``2.4GHz/868MHz/915MHz`` ``LR-WPAN`` ``DSSS`` ``GTS``
 
-IEEE 802.15.4是一种技术标准，它定义了低速率无线个域网 （LR-WPAN）的协议。 它规定了LR-WPAN的物理层和媒体访问控制 ，并由IEEE 802.15工作组维护，该工作组在2003年定义了该标准。它是Zigbee的基础，诸如 ISA100.11a ， WirelessHART ， MiWi ， 6LoWPAN ， 线程和SNAP规范，每个规范通过开发IEEE 802.15.4中未定义的上层进一步扩展了标准。
+`IEEE 802.15.4 <https://baike.baidu.com/item/IEEE%20802.15.4/6657379?fromtitle=802.15.4&fromid=1115952&fr=aladdin>`_ 是一种技术标准，它定义了低速率无线个域网（LR-WPAN）的协议。 它规定了LR-WPAN的物理层和媒体访问控制 ，并由IEEE 802.15工作组维护，该工作组在2003年定义了该标准。它是Zigbee的基础，诸如 ISA100.11a ， WirelessHART ， MiWi ， 6LoWPAN ， 线程和SNAP规范，每个规范通过开发IEEE 802.15.4中未定义的上层进一步扩展了标准。
+
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`802_15_4`
-      - Core
+      - :ref:`architecture`
       - SRAM/ROM
       -
       - WiFi
@@ -209,6 +210,7 @@ IEEE 802.15.4是一种技术标准，它定义了低速率无线个域网 （LR-
 
 BLE
 ----------
+``802.15.1``
 
 在蓝牙应用领域，大致可以分为两大类，一类是以蓝牙音频为主，走高性能路线，一种以物联网低功耗场景为主，特点是性价比和低功耗
 
@@ -218,7 +220,7 @@ BLE
     :header-rows:  1
 
     * - :ref:`ble`
-      - Core
+      - :ref:`architecture`
       - SRAM/ROM
       -
       - WiFi
@@ -251,6 +253,7 @@ BLE
 
 Wi-Fi
 -----------
+``802.11``
 
 .. list-table::
     :header-rows:  1
