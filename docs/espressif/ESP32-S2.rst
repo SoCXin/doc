@@ -12,7 +12,6 @@ ESP32S2
 Xin简介
 -----------
 
-
 .. image:: ./images/ESP32S2.png
     :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s2/get-started/index.html
 
@@ -142,45 +141,45 @@ Xin选择
       - :ref:`esp_core`
       - :ref:`CoreMark`
       - SRAM/ROM
-      - WiFi
-      - BLE
-      - USB
+      - Wireless
+      - ADC/DAC
+      - USB/CAN
       - Package
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 994.26
-      - 520KB/448KB
-      - b/g/n
-      - BLE v4.2
-      - X
+      - 520K/448K
+      - WiFi&BLE4.2
+      - 2(12bit)/2(8bit)
+      - TWAI
       - QFN48
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
-      - 320KB/128KB
-      - b/g/n
-      - BLE v5.0
+      - 320K/128K
+      - WiFi
+      - 2(12bit)/2(8bit)
       - 1.1 OTG
       - QFN56
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6
-      - 512KB/384KB
-      - b/g/n
-      - BLE v5.0
+      - 512K/384K
+      - WiFi&BLE5.0
+      - 2(12bit)/X
       - 1.1 OTG
       - QFN56
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
-      - 400KB/384KB
-      - √
-      - v5.0
-      - X
-      - QFN32/QFN28
+      - 400K/384K
+      - WiFi&BLE5.0
+      - 2(12bit)/X
+      - TWAI
+      - QFN32
 
 .. hint::
-    :ref:`esp32s2` 发布于2019年，在 :ref:`esp32` 基础上移除了蓝牙，增加了USB OTG，升级为 :ref:`xtensa_lx7` 单核
+    :ref:`esp32s2` 发布于2019年，在 :ref:`esp32` 基础上移除了蓝牙，增加了USB OTG，升级为 :ref:`xtensa_lx7` 单核，相较于 :ref:`esp32s3` 具有DAC优势
 
 
 `芯片系列对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
