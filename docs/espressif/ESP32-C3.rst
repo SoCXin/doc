@@ -137,8 +137,8 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * -
-      - Core
+    * - :ref:`vendor`
+      - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics

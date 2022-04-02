@@ -92,8 +92,8 @@ SoC平台
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
+    * - :ref:`vendor`
+      - :ref:`architecture`
       - Freq
       - RAM
       - Flash
@@ -159,8 +159,8 @@ ARM平台
     :header-rows:  1
 
     * - #define
-      - Core
-      - Performance
+      - :ref:`architecture`
+      - :ref:`CoreMark`
       - High
       - WiFi
       - Rate
@@ -196,8 +196,8 @@ MCU平台
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
+    * - :ref:`vendor`
+      - :ref:`architecture`
       - Freq
       - RAM
       - Flash

@@ -64,7 +64,7 @@ ST
     :header-rows:  1
 
     * - Rank
-      - Core
+      - :ref:`architecture`
       - DMIPS
       - RAM
       - Flash
@@ -153,7 +153,7 @@ ST
     :header-rows:  1
 
     * - Rank
-      - Core
+      - :ref:`architecture`
       - RAM
       - Flash
       - UART

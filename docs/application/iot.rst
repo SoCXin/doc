@@ -4,13 +4,12 @@
 IoT
 ============
 
-主要收录典型的连接类SoC，覆盖典型的IoT场景中，本业列举都是作者推荐的产品
-
 
 .. list-table::
     :header-rows:  1
 
-    * - 项目
+    * - :ref:`iot`
+      - :ref:`can`
       - :ref:`ethernet`
       - :ref:`plc`
       - :ref:`802_15_4`
@@ -30,7 +29,9 @@ IoT
       -
       -
       -
+      -
     * - 易用性
+      -
       -
       -
       -
@@ -50,15 +51,14 @@ IoT
       -
       -
       -
+      -
 
 
-.. contents::
-    :local:
 
 .. _can:
 
 CAN
-~~~~~~~~~~~
+-----------
 ``串行通信``
 
 
@@ -138,7 +138,7 @@ PLC
     :header-rows:  1
 
     * - :ref:`plc`
-      - Core
+      - :ref:`architecture`
       - SRAM/ROM
       -
       - WiFi
@@ -386,7 +386,7 @@ NB-IoT
     :header-rows:  1
 
     * - :ref:`nbiot`
-      - Core
+      - :ref:`architecture`
       - SRAM/ROM
       -
       - LoRa
@@ -429,7 +429,7 @@ Cat.1
     :header-rows:  1
 
     * - :ref:`cat1`
-      - Core
+      - :ref:`architecture`
       - SRAM/ROM
       -
       - LoRa

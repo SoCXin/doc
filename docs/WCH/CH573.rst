@@ -128,8 +128,8 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
+    * - :ref:`vendor`
+      - :ref:`architecture`
       - SRAM/ROM
       - Characteristics
       - USB/CAN
@@ -184,7 +184,7 @@ AB32VG1
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`vendor`
       - Mark
       - RAM
       - Flash

@@ -141,7 +141,7 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`wch`
-      - Core
+      - :ref:`architecture`
       - Freq
       - SRAM/ROM
       -
@@ -205,7 +205,7 @@ W7500P
     :header-rows:  1
 
     * - :ref:`wch`
-      - Core
+      - :ref:`architecture`
       - SRAM/ROM
       - BLE
       - ADC/OPA
@@ -248,7 +248,7 @@ W7500P
     :header-rows:  1
 
     * - :ref:`wch`
-      - Core
+      - :ref:`architecture`
       - SRAM/ROM
       - Sleep
       - UART

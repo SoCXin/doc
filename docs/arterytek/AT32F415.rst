@@ -60,7 +60,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`vendor`
       - Mark
       - RAM
       - ROM

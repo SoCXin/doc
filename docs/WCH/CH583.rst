@@ -122,8 +122,8 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Performance
+    * - :ref:`vendor`
+      - :ref:`CoreMark`
       - SRAM/ROM
       - wireless
       - Characteristics
@@ -152,8 +152,8 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`wch`
-      - Core
-      - Performance
+      - :ref:`architecture`
+      - :ref:`CoreMark`
       - SRAM/ROM
       - wireless
       - USB/UART/ETH

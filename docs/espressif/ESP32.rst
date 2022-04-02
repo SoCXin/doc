@@ -121,8 +121,8 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Performance
+    * - :ref:`vendor`
+      - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO

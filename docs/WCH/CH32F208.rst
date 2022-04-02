@@ -137,7 +137,7 @@ BLE对比
     :header-rows:  1
 
     * - :ref:`wch`
-      - Core
+      - :ref:`architecture`
       - Freq
       - SRAM/ROM
       - :ref:`wch_ble`

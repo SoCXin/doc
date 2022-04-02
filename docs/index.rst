@@ -37,7 +37,7 @@ SoC·Xin
       - :ref:`top`
       - :ref:`low`
       - :ref:`stable`
-      - :ref:`list`
+      - :ref:`vendor`
     * - Top.1
       - :ref:`esp32`
       - :ref:`stm32f103`

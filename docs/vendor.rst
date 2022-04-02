@@ -1,7 +1,7 @@
 
 .. _vendor:
 
-芯片设计
+Vendor
 ===============
 
 .. list-table::

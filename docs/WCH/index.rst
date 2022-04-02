@@ -57,7 +57,7 @@ ETH ++
     :header-rows:  1
 
     * - :ref:`wch`
-      - Core
+      - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics
@@ -133,7 +133,7 @@ USB-HS
     :header-rows:  1
 
     * - :ref:`wch`
-      - Core
+      - :ref:`architecture`
       - SRAM/ROM
       - USB
       - :ref:`wch_usb_hs`
@@ -174,7 +174,7 @@ USB-SS
     :header-rows:  1
 
     * - :ref:`wch`
-      - Core
+      - :ref:`architecture`
       - USB
       - USB Type
       - :ref:`wch_usb_hs`
@@ -303,7 +303,7 @@ MCS51
     :header-rows:  1
 
     * - :ref:`wch`
-      - Core
+      - :ref:`architecture`
       - SRAM
       - Flash
       - UART/SPI
@@ -442,7 +442,7 @@ USB-PD
     :header-rows:  1
 
     * - :ref:`wch`
-      - Core
+      - :ref:`architecture`
       - RAM
       - Flash
       - UART
@@ -476,7 +476,7 @@ USB PD的通信是将协议层的消息调制成24MHZ的FSK信号并耦合到VBU
     :header-rows:  1
 
     * - :ref:`wch`
-      - Core
+      - :ref:`architecture`
       - RAM
       - Flash
       - UART

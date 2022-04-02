@@ -64,7 +64,7 @@ Xin选择
     :header-rows:  1
 
     * -
-      - Core
+      - :ref:`architecture`
       - Freq
       - SRAM/ROM
       - USB/CAN

@@ -11,8 +11,8 @@
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
+    * - :ref:`vendor`
+      - :ref:`architecture`
       - RAM
       - Flash
       - PWR

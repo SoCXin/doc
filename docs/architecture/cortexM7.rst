@@ -20,7 +20,7 @@ Cortex-M7
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`vendor`
       - DMIPS
       - RAM
       - Cache

@@ -86,7 +86,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`vendor`
       - DMIPS
       - RAM
       - ROM
@@ -142,7 +142,7 @@ GD32F207
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`vendor`
       - DMIPS
       - RAM
       - ROM
@@ -191,7 +191,7 @@ STM32F107
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`vendor`
       - DMIPS
       - RAM
       - ROM

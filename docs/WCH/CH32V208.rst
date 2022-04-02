@@ -113,7 +113,7 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`wch`
-      - Core
+      - :ref:`architecture`
       - SRAM/ROM
       - BLE
       - ADC/OPA

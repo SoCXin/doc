@@ -103,7 +103,7 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`wifi`
-      - Core
+      - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
       - Wireless

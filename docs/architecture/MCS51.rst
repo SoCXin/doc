@@ -26,8 +26,8 @@ It is an example of a complex instruction set computer, and has separate memory 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Performance
+    * - :ref:`vendor`
+      - :ref:`CoreMark`
       - RAM
       - Cache
       - GPU

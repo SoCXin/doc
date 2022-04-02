@@ -83,8 +83,8 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
+    * - :ref:`vendor`
+      - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics
@@ -131,16 +131,16 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
-      - Performance
+    * - :ref:`vendor`
+      - :ref:`architecture`
+      - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
       - Package
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
-      - 300 :ref:`CoreMark`
+      -
       - 272KB/576KB
       -
       -
@@ -161,7 +161,7 @@ Xin选择
       - QFN28
     * - :ref:`ch573`
       - :ref:`riscv`
-      - 300 :ref:`CoreMark`
+      -
       - 18KB/512KB
       -
       -
@@ -177,16 +177,16 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
-      - Performance
+    * - :ref:`vendor`
+      - :ref:`architecture`
+      - :ref:`CoreMark`
       - SRAM/ROM
       - WiFi
       - BLE
       - UART/SPI/IO
       - Package
     * - :ref:`esp32c2`
-      - 120MHz
+      -
       -
       - 272KB/576KB
       - 1024-QAM
@@ -194,7 +194,7 @@ Xin选择
       - 1/2/14
       - QFN40
     * - :ref:`esp32c3`
-      - 160MHz
+      -
       -
       - 400KB/384KB
       - 256-QAM

@@ -13,7 +13,7 @@
     :header-rows: 1
 
     * - :ref:`top`
-      - Core
+      - :ref:`architecture`
       - RAM
       - Flash
       - DMIPS

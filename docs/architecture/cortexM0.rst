@@ -19,7 +19,7 @@ Cortex-M0
 .. list-table::
     :header-rows:  1
 
-    * - Core
+    * - :ref:`architecture`
       - DMIPS/MHz
       - CoreMark/MHz
       - Flash

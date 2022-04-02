@@ -109,7 +109,7 @@ STM32G474在STM32G4系列中定位高分辨率，独有复杂波形生成器和�
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`vendor`
       - Mark
       - RAM
       - Flash

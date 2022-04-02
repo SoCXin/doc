@@ -23,8 +23,8 @@ Marlin
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
+    * - :ref:`vendor`
+      - :ref:`architecture`
       - RAM
       - Flash
       - UART
@@ -66,8 +66,8 @@ grblHAL
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
+    * - :ref:`vendor`
+      - :ref:`architecture`
       - RAM
       - Flash
       - UART
@@ -97,8 +97,8 @@ ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含�
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
+    * - :ref:`vendor`
+      - :ref:`architecture`
       - RAM
       - Flash
       - UART

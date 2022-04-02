@@ -86,7 +86,7 @@ mPy
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`vendor`
       -
       -
       -
@@ -250,8 +250,8 @@ STM32F030范式
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
+    * - :ref:`vendor`
+      - :ref:`architecture`
       - Frequency
       - RAM+ROM
       - Price
@@ -338,8 +338,8 @@ STM32F103范式
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
+    * - :ref:`vendor`
+      - :ref:`architecture`
       - RAM
       - Flash
       - UART
@@ -379,8 +379,8 @@ STM32F407范式
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
-      - Core
+    * - :ref:`vendor`
+      - :ref:`architecture`
       - RAM
       - Flash
       - DAC

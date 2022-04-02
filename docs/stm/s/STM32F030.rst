@@ -94,7 +94,7 @@ PIN2PIN
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`list`
+    * - :ref:`vendor`
       - Frequency
       - RAM+ROM
       - Series
