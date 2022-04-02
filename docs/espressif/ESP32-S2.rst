@@ -4,7 +4,7 @@
 ESP32S2
 ================
 
-`标签 <https://github.com/SoCXin/ESP32-S2>`_ : ``Xtensa LX7`` ``240MHz`` ``DVP`` ``Wi-Fi`` ``USB1.1 OTG`` ``ULP`` ``DAC`` ``QFN56``
+`标签 <https://github.com/SoCXin/ESP32-S2>`_ : ``Xtensa LX7`` ``240MHz`` ``Wi-Fi`` ``USB1.1 OTG`` ``ULP`` ``DVP`` ``DAC`` ``QFN56``
 
 .. contents::
     :local:
@@ -21,8 +21,8 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 发布时间：
-* 参考价格：
+* 发布时间：2019年7月22日
+* 参考价格：$1.32
 * 制程工艺：40 nm
 * 供货周期：至2032年
 * 处理性能：613.8 :ref:`CoreMark`
@@ -38,7 +38,7 @@ Xin简介
 * :ref:`esp_ulp`
 * :ref:`esp32s2_wifi`
 * :ref:`esp_usb`
-* :ref:`esp_can`
+* :ref:`esp32_can`
 * 4 Kbit eFuse
 * 1× 16bit DVP, 1× 8bit LCD
 * 2x 13bit SAR ADC
@@ -49,10 +49,33 @@ Xin简介
 
 
 .. warning::
-    ESP32-S2为单核WiFi SoC，并不支持蓝牙，支持TOF，并且配置有8bit DAC，软件增加RainMaker支持
+    ESP32-S2为单核WiFi SoC，并不支持蓝牙，支持TOF，并且配置有8bit DAC，软件开始增加RainMaker支持
 
 芯片架构
 ~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`espressif`
+      - GPIO
+      - UART
+      - SPI
+      - I2C
+      - I2S
+      - PWM
+      - :ref:`esp_usb`
+      - :ref:`esp32s2_wifi`
+    * - :ref:`esp32s2`
+      - 43
+      - 2
+      - 4
+      - 2
+      - 1
+      - 8
+      - 1.1 OTG
+      - b/g/n
+
 
 
 功耗参数
@@ -66,7 +89,7 @@ Xin简介
 
 .. _esp32s2_wifi:
 
-Wi-Fi
+WiFi
 ^^^^^^^^^^^^^^^
 
 在 2.4 GHz 频带支持 20 MHz 和 40 MHz 频宽，支持 1T1R 模式，数据速率高达 150 Mbps
@@ -80,10 +103,6 @@ Wi-Fi
 USB
 ^^^^^^^^^^^^^^
 
-.. _esp_can:
-
-CAN
-^^^^^^^^^^^^^^
 
 
 安全特性
@@ -127,7 +146,6 @@ Xin选择
 .. contents::
     :local:
 
-
 品牌对比
 ~~~~~~~~~
 
@@ -152,7 +170,7 @@ Xin选择
       - WiFi&BLE4.2
       - 2(12bit)/2(8bit)
       - TWAI
-      - QFN48
+      - :ref:`esp_qfn48`
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
@@ -160,7 +178,7 @@ Xin选择
       - WiFi
       - 2(12bit)/2(8bit)
       - 1.1 OTG
-      - QFN56
+      - :ref:`esp_qfn56`
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6
@@ -168,7 +186,7 @@ Xin选择
       - WiFi&BLE5.0
       - 2(12bit)/X
       - 1.1 OTG
-      - QFN56
+      - :ref:`esp_qfn56`
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
@@ -176,13 +194,13 @@ Xin选择
       - WiFi&BLE5.0
       - 2(12bit)/X
       - TWAI
-      - QFN32
-
-.. hint::
-    :ref:`esp32s2` 发布于2019年，在 :ref:`esp32` 基础上移除了蓝牙，增加了USB OTG，升级为 :ref:`xtensa_lx7` 单核，相较于 :ref:`esp32s3` 具有DAC优势
-
+      - :ref:`esp_qfn32`
 
 `芯片系列对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
+
+
+.. hint::
+    :ref:`esp32s2` 在 :ref:`esp32` 基础上移除了蓝牙增加了USB OTG， :ref:`xtensa_lx7` 单核相较 :ref:`esp32s3` 有保留DAC
 
 版本对比
 ~~~~~~~~~
@@ -191,21 +209,23 @@ Xin选择
     :target: https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_cn.pdf
 
 
-.. warning::
-    由于ESP32-S2产品定位问题，在产品系列中没有足够突出点
-
 
 Xin应用
---------------
+-----------
 
 .. contents::
     :local:
+
+开发板
+~~~~~~~~~~~~~~~
+
 .. image:: ./images/B_ESP32S2.jpg
     :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
 
 tinyUSB
 ~~~~~~~~~~
 
+`tinyusb <https://github.com/hathach/tinyusb>`_ 被整合在 :ref:`esp_idf` 组件中
 
 .. code-block:: bash
 
@@ -217,12 +237,6 @@ tinyUSB
 
 
 
-
-开源方案
-~~~~~~~~~
-
-* `ESP-IDF <https://github.com/espressif/esp-idf>`_
-* `arduino-esp32 <https://github.com/espressif/arduino-esp32/>`_
 
 Xin总结
 --------------

@@ -45,7 +45,7 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * 低功耗协处理器 :ref:`esp_ulp` （FSM/RISC-V二选一）
 * :ref:`esp32s3_wifi` + :ref:`esp32s3_ble`
 * :ref:`esp32s3_usb`
-* :ref:`esp_can`
+* :ref:`esp32_can`
 * 1 × 16bit DVP, 1 × 16bit LCD
 * 2 × SDIO 主机
 * 44 x GPIO，JTAG 接口
@@ -98,6 +98,9 @@ BLE
 USB
 ^^^^^^^^^^^^^^^
 ``USB 1.1`` ``12Mbps``
+
+
+
 
 计算能力
 ~~~~~~~~~~~~~~
