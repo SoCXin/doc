@@ -26,16 +26,16 @@ Xin简介
 * 制程工艺：40 nm
 * 供货周期：至2032年
 * 处理性能：613.8 :ref:`CoreMark`
-* 运行环境：-40°C to 125°C
+* 运行环境：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn56` (7x7mm)
 * RAM容量：320 KB
-* Flash容量：128 KB
+* ROM容量：128 KB
+* Flash容量：4 MB (1GB)
 
 特征参数
 ^^^^^^^^^^^
 
-* 240 MHz :ref:`xtensa_lx7`
-* :ref:`esp_ulp`
+* 240 MHz :ref:`xtensa_lx7` + :ref:`esp_ulp`
 * :ref:`esp32s2_wifi`
 * :ref:`esp_usb`
 * :ref:`esp32_can`
@@ -43,9 +43,8 @@ Xin简介
 * 1× 16bit DVP, 1× 8bit LCD
 * 2x 13bit SAR ADC
 * 2x 8bit DAC
-* 1 GB external flash
-* 2 × UART
-* 43 × GPIO
+* 2× UART
+* 43× GPIO
 
 
 .. warning::
@@ -64,6 +63,7 @@ Xin简介
       - I2C
       - I2S
       - PWM
+      - RMT
       - :ref:`esp_usb`
       - :ref:`esp32s2_wifi`
     * - :ref:`esp32s2`
@@ -73,16 +73,16 @@ Xin简介
       - 2
       - 1
       - 8
+      - 4
       - 1.1 OTG
       - b/g/n
 
-
-
-功耗参数
+电源参数
 ^^^^^^^^^^^
 
 * 电压范围：2.3 to 3.6 V
 * 功耗范围：
+
 
 连接能力
 ~~~~~~~~~~~~~~
@@ -148,6 +148,8 @@ Xin选择
 
 品牌对比
 ~~~~~~~~~
+
+就计算性能而言 :ref:`esp32s2` 的 613.8 :ref:`CoreMark` 略高于 :ref:`stm32f429` 的 608 :ref:`CoreMark`
 
 型号对比
 ~~~~~~~~~
@@ -217,7 +219,7 @@ Xin应用
     :local:
 
 开发板
-~~~~~~~~~~~~~~~
+~~~~~~~~~~
 
 .. image:: ./images/B_ESP32S2.jpg
     :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
@@ -234,12 +236,19 @@ tinyUSB
 
     }
 
+.. _esp_usb_pd:
 
+USB PD
+~~~~~~~~~~
 
+:ref:`usb_pd` 提供高效的能源传输方式
 
+内置12位ADC可以监控USB TYEP-C接口的CC线，精确测量CC线上的压差，实现USB连接、拔除、传输方向的检测判断。
+
+DAC可输出控制
 
 Xin总结
---------------
+-------------
 
 .. contents::
     :local:
@@ -253,4 +262,4 @@ Xin总结
 应用总结
 ~~~~~~~~~~~~~
 
-ESP32-S2的市场定位及市场竞争力存在短板，就配置而言作为 :ref:`esp8266` 的继任者性价比不够，而作为高性能产品又显得配置过低，与 :ref:`esp32` 、:ref:`esp32s3` 相比没有足够的吸引力，只能作为一个短暂的过渡产品。
+:ref:`esp32s2` 的市场定位及市场竞争力存在一定的短板，就配置而言作为 :ref:`esp8266` 的继任者性价比不够，而作为高性能产品又显得配置过低，与 :ref:`esp32` 、:ref:`esp32s3` 相比没有足够的吸引力，只能作为一个短暂的过渡产品。

@@ -428,10 +428,10 @@ USB-PD
 ~~~~~~~~~~~~
 ``USB-PD`` ``PD3.0/2.0`` ``BC1.2``
 
-.. image:: ./images/wch_asm.png
-    :target: http://www.wch.cn/products/categories/33.html?pid=5
-
 `USB-PD <https://github.com/stops-top/USB-PD>`_ (USB Power Delivery)功率传输协议，是目前主流的快充协议之一，USB功率2013年的新标准名为USBPD，USB PD 协议基于USB3.1，是USB3.1 中即type-c端口后提出的功率传输概念。USBPD透过USB电缆和连接器增加电力输送，扩展USB应用中的电缆总线供电能力。该规范可实现更高的电压和电流，输送的功率最高可达100瓦，并可以自由的改变电力的输送方向。
+
+.. image:: ./images/USBC.jpg
+    :target: https://blog.csdn.net/xp562870732/article/details/108501283
 
 
 独立器件
@@ -460,6 +460,10 @@ USB-PD
 
 编程器件
 ^^^^^^^^^^^
+
+.. image:: ./images/wch_asm.png
+    :target: http://www.wch.cn/products/categories/33.html?pid=5
+
 
 USB PD的通信是将协议层的消息调制成24MHZ的FSK信号并耦合到VBUS上或者从VBUS上获得FSK信号来实现手机和充电器通信的过程。
 
