@@ -52,8 +52,8 @@ ST
 .. toctree::
     :maxdepth: 1
 
-    低阶产品  <L/index>
-    主流产品  <M/index>
+    低阶产品  <s/index>
+    主流产品  <m/index>
 
 
 
@@ -105,33 +105,33 @@ ST
       -
 
 
-.. image:: ./H/images/STM32H7.jpg
+.. image:: ./t/images/STM32H7.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
 
 .. toctree::
     :maxdepth: 1
 
-    超值低功耗 STM32H7B0 <H/STM32H7B0>
-    超值大内存 STM32H750 <H/STM32H750>
-    高频低功耗 STM32H730 <H/STM32H730>
-    双核MCU: STM32H745 <H/STM32H745>
-    异构MPU: STM32MP15 <H/STM32MP15>
+    超值低功耗 STM32H7B0 <t/STM32H7B0>
+    超值大内存 STM32H750 <t/STM32H750>
+    高频低功耗 STM32H730 <t/STM32H730>
+    双核MCU: STM32H745 <t/STM32H745>
+    异构MPU: STM32MP15 <t/STM32MP15>
 
 
 
 无线通信
 ~~~~~~~~~~~
 
-.. image:: ./M/images/stm32wb_series.jpg
+.. image:: ./m/images/stm32wb_series.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32wb-series.html
-.. image:: ./M/images/STM32WL_series.jpg
+.. image:: ./m/images/STM32WL_series.jpg
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-wireless-mcus/stm32wl-series.html
 
 .. toctree::
     :maxdepth: 1
 
-    BLE: STM32WB55 <M/STM32WB55>
-    LoRa: STM32WLE5 <M/STM32WLE5>
+    BLE: STM32WB55 <m/STM32WB55>
+    LoRa: STM32WLE5 <m/STM32WLE5>
 
 
 .. _stm32ulp:
@@ -139,15 +139,15 @@ ST
 超低功耗
 ~~~~~~~~~~~
 
-.. image:: M/images/stm32ulp.jpg
+.. image:: m/images/stm32ulp.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32-ultra-low-power-mcus.html
 
 .. toctree::
     :maxdepth: 1
 
-    STM32L011 <L/STM32L011>
-    STM32L412 <M/STM32L412>
-    STM32U575 <M/STM32U575>
+    STM32L011 <s/STM32L011>
+    STM32L412 <m/STM32L412>
+    STM32U575 <m/STM32U575>
 
 .. list-table::
     :header-rows:  1
@@ -249,6 +249,6 @@ HDMI CEC
 
 CEC协议是一个单总线，低速协议传输速度只有0.3Kbps。它使用HDMI线缆的第13号引脚。
 
-.. image:: H/images/cec.jpg
+.. image:: t/images/cec.jpg
 
 CEC使用类似DS18B20的单总线协议，分为数据位和起始位，每个数据位有严格的时序定义，其中数据位时长为2.4ms，起始位时长为4.7ms。由于CEC总线传输速率很低，总线协议又不是很复杂，非常适合MCU来处理。一个完整的CEC数据帧

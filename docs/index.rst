@@ -139,7 +139,8 @@ SoC·Xin
     :caption: 厂商速览
     :maxdepth: 1
 
-    芯片设计厂商 <vendor>
+    芯片设计 <vendor>
+    芯片制造 <fab>
 
 .. list-table::
     :header-rows:  1

@@ -231,7 +231,7 @@ MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
     * - :ref:`stm32h750`
       - 480MHz
       - 1027 :ref:`DMIPS`
-      - 1 M/128K
+      - 1MB/128KB
       - X
       - 3x3.6MSPS
       - 2/2

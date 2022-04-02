@@ -40,7 +40,7 @@ Xin简介
 * 72 MHz :ref:`cortex_m3`
 * 2x :ref:`ch32f103_usb` 2.0
 * :ref:`ch32f103_can` 2.0B
-* SPI(M/S) x 2 + UART x 3 + IIC x 2
+* SPI(m/S) x 2 + UART x 3 + IIC x 2
 * 12bit ADC + 12bit DAC
 
 
