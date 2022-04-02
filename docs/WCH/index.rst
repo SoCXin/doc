@@ -426,7 +426,7 @@ RISC-V
 
 USB-PD
 ~~~~~~~~~~~~
-``USB-PD``
+``USB-PD`` ``PD3.0/2.0`` ``BC1.2``
 
 .. image:: ./images/wch_asm.png
     :target: http://www.wch.cn/products/categories/33.html?pid=5
@@ -436,7 +436,7 @@ USB-PD
 
 独立器件
 ^^^^^^^^^^^
-`CH236 <http://www.wch.cn/products/CH236.html>`_ | `CH234 <http://www.wch.cn/products/CH234.html>`_
+
 .. list-table::
     :header-rows:  1
 
@@ -445,11 +445,12 @@ USB-PD
       - TYPE
       - POWER
       - Package
-    * - CH236
+    * - `CH236 <http://www.wch.cn/products/CH236.html>`_
       - 5-20V
       - PD3.0/BC1.2
+      - 100W
       - QFN20/QFN16
-    * - CH234
+    * - `CH234 <http://www.wch.cn/products/CH234.html>`_
       - 5-12V
       - PD3.0/BC1.2
       - 27W
