@@ -24,7 +24,6 @@
     :header-rows:  1
 
     * - :ref:`hot`
-      - C++
       - :ref:`arduino`
       - :ref:`lua`
       - :ref:`mpy`
@@ -36,11 +35,9 @@
       - √
       - √
       - √
-      - √
       - X
       - √
     * - :ref:`rp2040`
-      - √
       - √
       - X
       - √
@@ -48,7 +45,6 @@
       - X
       - X
     * - :ref:`stm32f103`
-      - √
       - √
       - √
       - √
@@ -93,9 +89,7 @@ mPy
       -
       -
       -
-      -
     * - :ref:`esp32`
-      -
       -
       -
       -
@@ -109,9 +103,7 @@ mPy
       -
       -
       -
-      -
     * - :ref:`stm32f405`
-      -
       -
       -
       -
@@ -129,16 +121,20 @@ xGo
 
 Arduino
 ~~~~~~~~~~~~~
+``C++``
 
-`Arduino语言 <https://docs.os-q.com/arduino>`_
+
+`Arduino简介 <https://docs.os-q.com/arduino>`_
 
 编译体系
 -------------
 
 .. _pio:
 
-PlatformIO
+PIO
 ~~~~~~~~~~~~~
+``PlatformIO``
+
 
 .. _qio:
 
@@ -212,7 +208,7 @@ libopencm3
 
 The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
 
-`libopencm3开源地址 <https://github.com/libopencm3/libopencm3>`_
+`libopencm3开源库 <https://github.com/libopencm3/libopencm3>`_
 
 
 硬件生态
@@ -231,7 +227,7 @@ Arduino
 
 
 
-STM32范式
+STM32
 ~~~~~~~~~~~~~
 
 .. note::
