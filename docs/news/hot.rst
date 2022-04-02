@@ -57,7 +57,26 @@
 Lua
 ~~~~~~~~~~~~~
 
-`Lua语言 <https://docs.os-q.com/lua>`_ 嵌入式运行平台包括 :ref:`air101`
+`Lua编程语言 <https://docs.os-q.com/lua>`_ 嵌入式运行平台包括 :ref:`air101`
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`lua`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`air101`
+      -
+      -
+      -
+      -
+      -
+      -
+
 
 .. toctree::
     :maxdepth: 1
@@ -68,28 +87,41 @@ Lua
 
 Rust
 ~~~~~~~~~~~~~
+``rust``
 
-`Rust语音 <https://docs.os-q.com/rust>`_ 嵌入式运行平台包括 :ref:`esp32` 、:ref:`rp2040` 和 :ref:`stm32f103`
+`Rust编程语言 <https://docs.os-q.com/rust>`_ 适配的嵌入式平台包括 :ref:`esp32` 、:ref:`rp2040` 和 :ref:`stm32f103`
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`rust`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`stm32f103`
+      -
+      -
+      -
+      -
+      -
+      -
 
 
 .. _mpy:
 
 mPy
 ~~~~~~~~~~~~~
+``Python``
 
 `MicroPython <https://docs.os-q.com/mpy>`_ 嵌入式运行平台包括 :ref:`esp32` 、:ref:`rp2040` 和 :ref:`stm32f405`
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
-      -
-      -
-      -
-      -
-      -
-      -
-    * - :ref:`esp32`
+    * - :ref:`mpy`
       -
       -
       -
@@ -110,12 +142,19 @@ mPy
       -
       -
       -
+    * - :ref:`esp32`
+      -
+      -
+      -
+      -
+      -
+      -
 
 .. _xgo:
 
 xGo
 ~~~~~~~~~~~~~
-
+``Go``
 
 .. _arduino:
 
@@ -155,29 +194,13 @@ GCC
     :header-rows:  1
 
     * - :ref:`hot`
-      - :ref:`pio`
+      - :ref:`libopencm3`
       - freeRTOS
       - Zephyr
       - RT-Thread
       - :ref:`arduino`
       - :ref:`cmsis`
       - :ref:`mbed`
-    * - :ref:`esp32`
-      - √
-      - √
-      - √
-      - √
-      - √
-      - X
-      - X
-    * - :ref:`rp2040`
-      - √
-      - √
-      - √
-      - √
-      - √
-      - √
-      - X
     * - :ref:`stm32f103`
       - √
       - √
@@ -186,6 +209,23 @@ GCC
       - √
       - √
       - √
+    * - :ref:`esp32`
+      - X
+      - √
+      - √
+      - √
+      - √
+      - X
+      - X
+    * - :ref:`rp2040`
+      - X
+      - √
+      - √
+      - √
+      - √
+      - √
+      - X
+
 
 
 
@@ -238,8 +278,9 @@ STM32
 
 .. _ref030:
 
-STM32F030范式
+F030范式
 ^^^^^^^^^^^^^^^^
+``Cortex-M0``
 
 该型范式定位入门级32位MCU，高性价比用于替换8/16位单片机，市场需求量大，开发需要更高效释放资源，选择和升级空间广泛
 
@@ -328,8 +369,9 @@ STM32F030范式
 
 .. _ref103:
 
-STM32F103范式
+F103范式
 ^^^^^^^^^^^^^^^^
+``Cortex-M3``
 
 .. list-table::
     :header-rows:  1
@@ -369,8 +411,9 @@ STM32F103范式
 
 .. _ref407:
 
-STM32F407范式
+F407范式
 ^^^^^^^^^^^^^^^^
+``Cortex-M4``
 
 .. list-table::
     :header-rows:  1
