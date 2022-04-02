@@ -426,7 +426,6 @@ RISC-V
 
 USB-PD
 ~~~~~~~~~~~~
-
 ``USB-PD``
 
 .. image:: ./images/wch_asm.png
@@ -441,20 +440,21 @@ USB-PD
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`wch`
-      - :ref:`architecture`
-      - RAM
-      - Flash
-      - UART
-      - GPIO
+    * - :ref:`usb_pd`
+      - INPUT
+      - TYPE
+      - POWER
       - Package
-    * - CH236
-      -
-      - 1K
-      - 8K
-      - 2
-      - 18
-      -
+    * - `CH236 <http://www.wch.cn/products/CH236.html>`_
+      - 5-20V
+      - PD3.0/BC1.2
+      - QFN20/QFN16
+    * - `CH234 <http://www.wch.cn/products/CH234.html>`_
+      - 5-12V
+      - PD3.0/BC1.2
+      - 27W
+      - ESSOP10
+
 
 
 编程器件

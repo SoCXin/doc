@@ -4,9 +4,9 @@
 Product
 ===============
 
-.. _embed_tool:
+.. _stops_tool:
 
-STOPs调试工具
+STOPs Tool
 ---------------
 ``STOPs``
 

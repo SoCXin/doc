@@ -259,11 +259,11 @@ Xin应用
 
 .. _v3_tool:
 
-V3-Tool
+V3-TOOL
 ~~~~~~~~~~
 ``Server`` ``USB-HS`` ``1Gbps(MAC)`` ``10Mbps(PHY)``
 
-`STOPs方案:V3-Tool <https://github.com/stops-top/V3-Tool>`_ 用于实现 :ref:`embed_tool`
+`V3-TOOL <https://github.com/stops-top/V3-Tool>`_ 用于实现 :ref:`stops_tool`
 
 
 * 以太网连接
