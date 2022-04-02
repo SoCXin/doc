@@ -238,8 +238,21 @@ PlatformIO
 
 :ref:`pio` 提供便捷的开发环境
 
-tinyUSB
+应用方案
 ~~~~~~~~~~
+
+
+
+.. _esp_usb_pd:
+
+USB PD
+^^^^^^^^^^^^
+
+:ref:`usb_pd` 提供高效的能源传输方式
+
+内置12位ADC可以监控USB TYEP-C接口的CC线，精确测量CC线上的压差，实现USB连接、拔除、传输方向的检测判断。
+
+DAC可输出控制
 
 `tinyusb <https://github.com/hathach/tinyusb>`_ 被整合在 :ref:`esp_idf` 组件中
 
@@ -250,16 +263,7 @@ tinyUSB
 
     }
 
-.. _esp_usb_pd:
 
-USB PD
-~~~~~~~~~~
-
-:ref:`usb_pd` 提供高效的能源传输方式
-
-内置12位ADC可以监控USB TYEP-C接口的CC线，精确测量CC线上的压差，实现USB连接、拔除、传输方向的检测判断。
-
-DAC可输出控制
 
 Xin总结
 -------------
