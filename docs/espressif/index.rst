@@ -3,20 +3,17 @@
 Espressif
 ==============
 
-``Xtensa-LX7`` ``Xtensa-LX6`` ``RISC-V`` ``Matter`` ``Audio`` ``Wi-Fi`` ``BT/BLE``  ``ESP32-S3`` ``ESP32-C3`` ``ESP32`` ``ESP8266`` ``Arduino``
+``Xtensa-LX7`` ``Xtensa-LX6`` ``RISC-V`` ``Matter`` ``Audio`` ``ULP`` ``Wi-Fi`` ``BT/BLE``  ``ESP32-S3`` ``ESP32-C3`` ``ESP32`` ``ESP8266`` ``Arduino``
 
 公司简介
 -----------
 
-`乐鑫科技 <http://www.espressif.com>`_ (股票代码：688018)是一家全球化的无晶圆厂半导体公司，成立于2008年，总部中国上海张江，主营 Wi-Fi&BLE SoC及相关解决方案，核心竞争力：低成本、开源、Wi-Fi、Audio。
+`乐鑫科技 <http://www.espressif.com>`_ (股票代码：688018)是一家全球化的无晶圆厂半导体公司，成立于2008年，总部中国上海张江，主营 Wi-Fi&BLE SoC及相关解决方案，核心竞争力： `开源 <https://github.com/SoCXin/ESP32S3>`_、Wi-Fi、Audio。
 
 
 .. note::
     乐鑫伴随物联网崛起，就早期狭义的技术实现而言物联网≈ESP32/ESP8266，入门经典莫过于：:ref:`stm32f103` & :ref:`esp8266`
 
-
-.. contents::
-    :local:
 
 核心优势
 ~~~~~~~~~~~~
@@ -151,13 +148,16 @@ Espressif
 Arduino
 ^^^^^^^^^^^^^^
 
+`Arduino Core <https://github.com/espressif/arduino-esp32>`_
+
 
 .. _esp_idf:
 
 ESP-IDF
 ^^^^^^^^^^^^^^
 
-ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 ESP32-C 系列 SoC。它基于 C/C++ 语言提供了一个自给自足的 SDK。
+
+`ESP-IDF开源矿建 <https://github.com/espressif/esp-idf>`_ 是乐鑫官方的底层开发框架，适用于 ESP32、ESP32-S 和 ESP32-C 系列 SoC。它基于 C/C++ 语言提供了一个自给自足的 SDK。
 
 .. image:: ./images/idf.png
     :target: https://docs.os-q.com/espidf.html

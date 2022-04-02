@@ -11,7 +11,7 @@
     :header-rows:  1
 
     * - :ref:`low`
-      - Frequency
+      - Freq
       - SRAM
       - Flash
       - UART/SPI/I2C

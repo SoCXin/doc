@@ -1,10 +1,10 @@
 
-SoC·Xin
+SoC·X
 =====================
 
 **新产品用心，芯产品用新**
 
-`SoC·Xin <https://www.SoC.Xin>`_ 作为资源容器求解如下问题：
+`SoC·X·IN <https://www.SoC.Xin>`_ 作为芯资源管理容器求解如下问题：
 
 * 有新需求，缺乏技术积累，求解区间；
 * 有芯需求，已知应用场景，求最新解；
@@ -26,34 +26,30 @@ SoC·Xin
     旗舰小贵干啥都行 <news/top>
     难以拒绝低价好货 <news/low>
     定位中庸供应稳定 <news/stable>
-    差异定位推荐试用 <list/list>
+    特点鲜明推荐清单 <list/list>
 
 .. list-table::
     :header-rows: 1
 
-    * - Rank
-      - :ref:`hot`
+     * - :ref:`hot`
       - :ref:`pop`
       - :ref:`top`
       - :ref:`low`
       - :ref:`stable`
       - :ref:`list`
-    * - Top.1
-      - :ref:`esp32`
+     * - :ref:`esp32`
       - :ref:`stm32f103`
       - :ref:`stm32h730`
       - :ref:`stc8`
       - :ref:`gd32f130`
       - :ref:`NO_017`
-    * - Top.2
-      - :ref:`rp2040`
+    * - :ref:`rp2040`
       - :ref:`esp32`
       - :ref:`esp32s3`
       - :ref:`ch552`
       - :ref:`gd32e230`
       - :ref:`NO_013`
-    * - Top.3
-      - :ref:`stm32f401`
+    * - :ref:`gd32v103`
       - :ref:`nrf52832`
       - :ref:`rt1060`
       - :ref:`ch573`
@@ -145,36 +141,31 @@ SoC·Xin
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
-      - :ref:`wch`
+    * - :ref:`wch`
       - :ref:`asr`
       - :ref:`espressif`
       - :ref:`mediatek`
       - :ref:`arterytek`
       - :ref:`allwinner`
-    * - 新作
-      - :ref:`ch32v307`
+    * - :ref:`ch32v307`
       - :ref:`asr6601`
       - :ref:`esp32h2`
       - :ref:`mt2625`
       - :ref:`at32f425`
       - :ref:`D1`
-    * - 经典
-      - :ref:`ch579`
+    * - :ref:`ch579`
       - :ref:`asr6501`
       - :ref:`esp32`
       - :ref:`mt7688`
       - :ref:`at32f421`
       - :ref:`S3`
-    * - 畅销
-      - :ref:`ch549`
+    * - :ref:`ch549`
       - :ref:`asr1802`
       - :ref:`esp32c3`
       - :ref:`mt2503`
       - :ref:`at32f403`
       - :ref:`R329`
-    * - 大成
-      - :ref:`ch569`
+    * - :ref:`ch569`
       - :ref:`asr1601`
       - :ref:`esp32s3`
       - :ref:`mt7621`

@@ -252,7 +252,7 @@ STM32F030范式
 
     * - :ref:`vendor`
       - :ref:`architecture`
-      - Frequency
+      - Freq
       - RAM+ROM
       - Price
       - UART/SPI/I2C

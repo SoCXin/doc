@@ -95,7 +95,7 @@ PIN2PIN
     :header-rows:  1
 
     * - :ref:`vendor`
-      - Frequency
+      - Freq
       - RAM+ROM
       - Series
       - UART/SPI/I2C
