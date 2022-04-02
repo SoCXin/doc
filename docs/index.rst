@@ -31,13 +31,13 @@ SoC·X
 .. list-table::
     :header-rows: 1
 
-     * - :ref:`hot`
+    * - :ref:`hot`
       - :ref:`pop`
       - :ref:`top`
       - :ref:`low`
       - :ref:`stable`
       - :ref:`list`
-     * - :ref:`esp32`
+    * - :ref:`esp32`
       - :ref:`stm32f103`
       - :ref:`stm32h730`
       - :ref:`stc8`

@@ -225,6 +225,19 @@ Xin应用
 .. image:: ./images/B_ESP32S2.jpg
     :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
 
+开发框架
+~~~~~~~~~~
+
+Arduino
+^^^^^^^^^^^^
+
+:ref:`esp_arduino` 提供低门槛开发环境
+
+PlatformIO
+^^^^^^^^^^^^
+
+:ref:`pio` 提供便捷的开发环境
+
 tinyUSB
 ~~~~~~~~~~
 
