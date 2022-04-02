@@ -1,24 +1,23 @@
 
 .. _ulp:
 
-超低功耗
+低功耗
 ============
-
-.. contents::
-    :local:
 
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ulp`
       - :ref:`architecture`
-      - RAM
+      - Freq
+      - SRAM/ROM
       - Flash
       - PWR
       - Standby
       - Stop
     * - :ref:`stm32l011`
+      -
       - 32MHz
       - 20 KB
       - 192 KB
@@ -26,6 +25,7 @@
       - 230 nA
       - 340 nA
     * - :ref:`stm32l412`
+      -
       - 80MHz
       - 40 KB
       - 128 KB
@@ -33,6 +33,7 @@
       - 195 nA
       - 340 nA
     * - :ref:`stm32h7b0`
+      -
       - 280 MHz
       - 1.4 MB
       - 128 KB
