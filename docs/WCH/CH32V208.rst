@@ -4,7 +4,7 @@
 CH32V208
 ============
 
-`标签 <http://www.wch.cn/products/CH32V208.html>`_ : ``RISC-V4C`` ``144MHz`` ``USB`` ``Ethernet`` ``10Mbps(PHY)`` ``BLE5.3`` ``QFN28``
+`标签 <https://github.com/SoCXin/CH32F208>`_ : ``RISC-V4C`` ``144MHz`` ``USB`` ``Ethernet`` ``10Mbps(PHY)`` ``BLE5.3`` ``QFN28``
 
 .. contents::
     :local:
@@ -17,7 +17,6 @@ Xin简介
 .. image:: ./images/CH32V208.png
     :target: http://www.wch.cn/products/CH32V208.html
 
-`GitHub <https://github.com/SoCXin/CH32F208>`_
 
 规格参数
 ~~~~~~~~~~~
@@ -40,10 +39,10 @@ Xin简介
 
 * 144 MHz :ref:`wch_riscv4c`
 * :ref:`ch32v208_ble` 5.3
-* 10M以太网控制器（MAC+PHY）
+* :ref:`ch32v208_eth` 10Mbps（MAC+PHY）
+* :ref:`ch32v208_usb` 2.0全速主机/设备+设备接口
+* :ref:`ch32v208_can` 2.0B主动
 * 2组运放比较器
-* USB2.0全速主机/设备+设备接口
-* :ref:`ch32v208_can` （2.0B主动）
 * 2组IIC接口、2组SPI接口
 
 .. hint::
@@ -56,7 +55,13 @@ Xin简介
 .. image:: ./images/CH32V208s.png
     :target: http://www.wch.cn/products/CH32V208.html
 
-Timer
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：2.5/3.3V，GPIO单元独立供电
+* 多种低功耗模式：睡眠、停止、待机
+
+时钟体系
 ^^^^^^^^^^^
 
 .. image:: ./images/CH32V208t.png
@@ -65,22 +70,26 @@ Timer
 
 连接能力
 ~~~~~~~~~~~
-
-``BLE5.3`` ``USB FS OTG`` ``CAN`` ``Ethernet``
+``BLE5.3`` ``USB FS OTG`` ``CAN2.0`` ``Ethernet``
 
 .. _ch32v208_ble:
 
 BLE
 ^^^^^^^^^^^
-
 ``-98dBm``
 
 .. _ch32v208_usb:
 
 USB
 ^^^^^^^^^^^
+``USB FS OTG``
 
-``USB FS``
+.. _ch32v208_eth:
+
+ETH
+^^^^^^^^^^^
+``10Mbps(PHY)``
+
 
 .. _ch32v208_can:
 
@@ -89,12 +98,6 @@ CAN
 
 ``CAN 2.0B``
 
-.. _ch32v208_eth:
-
-Ethernet
-^^^^^^^^^^^
-
-``10Mbps(PHY)``
 
 
 Xin选择
@@ -109,17 +112,22 @@ Xin选择
 型号对比
 ~~~~~~~~~~
 
+功能对比
+^^^^^^^^^^^
+
 .. list-table::
     :header-rows:  1
 
     * - :ref:`wch`
       - :ref:`architecture`
+      - Freq
       - SRAM/ROM
       - BLE
       - ADC/OPA
       - USB
       - Ethernet
     * - :ref:`ch32v208`
+      - :ref:`wch_riscv4c`
       - 144MHz
       - 64KB/128KB
       - 5.3(96dBm)
@@ -127,6 +135,7 @@ Xin选择
       - H/D + D
       - 10M(PHY)
     * - :ref:`ch32f208`
+      - :ref:`cortex_m3`
       - 144MHz
       - 64KB/128KB
       - 5.3(96dBm)
@@ -134,14 +143,24 @@ Xin选择
       - H/D + D
       - 10M(PHY)
     * - :ref:`ch579`
-      - 40MHz
+      - :ref:`cortex_m0`
+      - 40 MHz
       - 32KB/250KB
       - 4.2(96dBm)
       - 14/0
       - H/D
       - 10M(PHY)
+    * - :ref:`ch578`
+      - :ref:`cortex_m0`
+      - 40 MHz
+      - 32KB/160KB
+      - 4.2(96dBm)
+      - 14/0
+      - H/D
+      - 10M(PHY)
 
-
+兼容系列
+^^^^^^^^^^^
 
 .. list-table::
     :header-rows:  1
@@ -184,3 +203,8 @@ Xin选择
 
 版本对比
 ~~~~~~~~~~
+
+.. image:: ./images/CH32V208.jpeg
+    :target: http://www.wch.cn/products/CH32V208.html
+
+QFN28封装相对QFN48减少了USART，保留了以太网功能
