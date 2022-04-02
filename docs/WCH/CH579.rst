@@ -74,22 +74,20 @@ Xin简介
     :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
 
 
-功耗参数
-^^^^^^^^^^^
-
-* 供电电压: 2.5 to 3.6 V
-* 运行功耗: 100μA/MHz
-
-.. image:: ./images/CH579pwr1.png
-    :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
-
-电源结构
+电源参数
 ^^^^^^^^^^^
 
 ``内置DC/DC``
 
+* 供电电压: 2.5 to 3.6 V
+* 运行功耗: 100μA/MHz
+
 .. image:: ./images/CH579pwr.png
     :target: http://www.wch.cn/downloads/CH579DS1_PDF.html
+
+
+
+
 
 
 连接能力
@@ -98,10 +96,11 @@ Xin简介
 
 .. _ch579_ble:
 
-BLE
+BLE4.2
 ^^^^^^^^^^^
-``BLE 4.2`` ``-93dBm`` ``+3dBm``
+``-93dBm`` ``+3dBm``
 
+:ref:`ble`
 
 .. _ch579_usb:
 

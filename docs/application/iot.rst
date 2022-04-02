@@ -58,9 +58,16 @@ IoT
 .. contents::
     :local:
 
+
+.. _usb:
+
+USB
+----------
+
+
 .. _ethernet:
 
-Ethernet
+ETH
 -----------
 
 .. list-table::

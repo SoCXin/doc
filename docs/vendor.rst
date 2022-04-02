@@ -4,19 +4,11 @@
 芯片设计
 ===============
 
-
-.. toctree::
-    :caption: 国际厂商
-    :maxdepth: 1
-
-    微控制器芯片领域 ST <stm/index>
-    先进模拟和低功耗 TI <TI/index>
-    低功耗蓝牙物联网 Nordic <nordic/index>
-
 .. list-table::
     :header-rows: 1
 
     * -
+      - :ref:`usb`
       - :ref:`ethernet`
       - :ref:`plc`
       - :ref:`802_15_4`
@@ -27,35 +19,79 @@
       - :ref:`cat1`
       - :ref:`cat4`
     * - :ref:`st`
+      - √
+      - √
       -
       -
+      - √
       -
-      -
-      -
-      -
+      - √
       -
       -
       -
     * - :ref:`ti`
+      - √
+      - √
       -
-      -
-      -
-      -
-      -
+      - √
+      - √
+      - √
       -
       -
       -
       -
     * - :ref:`nordic`
+      - √
+      -
+      -
+      - √
+      - √
+      -
+      -
+      - √
+      -
+      -
+    * - :ref:`mediatek`
+      - √
+      - √
+      -
+      -
+      -
+      - √
+      -
+      - √
+      - √
+      - √
+    * - :ref:`wch`
+      - √
+      - √
+      -
+      - √
+      - √
       -
       -
       -
       -
       -
+    * - :ref:`espressif`
+      - √
+      - √
+      -
+      - √
+      - √
+      - √
       -
       -
       -
       -
+
+.. toctree::
+    :caption: 国际厂商
+    :maxdepth: 1
+
+    微控制器芯片领域 ST <stm/index>
+    先进模拟和低功耗 TI <TI/index>
+    低功耗蓝牙物联网 Nordic <nordic/index>
 
 
 .. toctree::
