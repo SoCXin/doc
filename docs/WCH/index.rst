@@ -436,7 +436,7 @@ USB-PD
 
 独立器件
 ^^^^^^^^^^^
-
+`CH236 <http://www.wch.cn/products/CH236.html>`_ | `CH234 <http://www.wch.cn/products/CH234.html>`_
 .. list-table::
     :header-rows:  1
 
@@ -445,11 +445,11 @@ USB-PD
       - TYPE
       - POWER
       - Package
-    * - `CH236 <http://www.wch.cn/products/CH236.html>`_
+    * - CH236
       - 5-20V
       - PD3.0/BC1.2
       - QFN20/QFN16
-    * - `CH234 <http://www.wch.cn/products/CH234.html>`_
+    * - CH234
       - 5-12V
       - PD3.0/BC1.2
       - 27W
