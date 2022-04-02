@@ -4,7 +4,7 @@
 ESP32S3
 ================
 
-`标签 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html>`_ : ``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``AI`` ``CAN`` ``Touch`` ``QFN56``
+`标签 <https://github.com/SoCXin/ESP32S3>`_ : ``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``AI`` ``CAN`` ``Touch`` ``QFN56``
 
 .. contents::
     :local:
@@ -13,9 +13,7 @@ Xin简介
 -----------
 
 .. image:: ./images/ESP32S3.png
-    :target: https://www.espressif.com/zh-hans/products/socs/ESP32-S3
-
-`GitHub <https://github.com/SoCXin/ESP32S3>`_
+    :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html
 
 .. contents::
     :local:

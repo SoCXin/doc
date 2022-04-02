@@ -132,6 +132,23 @@ Arduino
 
 `Arduino语言 <https://docs.os-q.com/arduino>`_
 
+编译体系
+-------------
+
+.. _pio:
+
+PlatformIO
+~~~~~~~~~~~~~
+
+.. _qio:
+
+QIO
+~~~~~~~~~~~~~
+
+.. _gcc:
+
+GCC
+~~~~~~~~~~~~~
 
 
 开发框架
@@ -176,15 +193,7 @@ Arduino
 
 
 
-.. _pio:
 
-PlatformIO
-~~~~~~~~~~~~~
-
-.. _qio:
-
-QIO
-~~~~~~~~~~~~~
 
 .. _mbed:
 

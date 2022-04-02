@@ -4,8 +4,7 @@
 ESP32S2
 ================
 
-* 关键词：``Xtensa LX7`` ``240MHz`` ``QFN56`` ``Wi-Fi`` ``USB OTG`` ``ULP`` ``DAC``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32-S2>`_ , `IDF指南 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s2/get-started/index.html>`_
+`标签 <https://github.com/SoCXin/ESP32-S2>`_ : ``Xtensa LX7`` ``240MHz`` ``DVP`` ``Wi-Fi`` ``USB1.1 OTG`` ``ULP`` ``DAC`` ``QFN56``
 
 .. contents::
     :local:
@@ -15,10 +14,7 @@ Xin简介
 
 
 .. image:: ./images/ESP32S2.png
-    :target: https://www.espressif.com/zh-hans/products/socs/ESP32-S2
-
-.. contents::
-    :local:
+    :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s2/get-started/index.html
 
 规格参数
 ~~~~~~~~~~~
@@ -27,22 +23,14 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
-* 发布价格：
+* 参考价格：
 * 制程工艺：40 nm
 * 供货周期：至2032年
 * 处理性能：613.8 :ref:`CoreMark`
+* 运行环境：-40°C to 125°C
+* 封装规格：:ref:`esp_qfn56` (7x7mm)
 * RAM容量：320 KB
 * Flash容量：128 KB
-
-
-限定参数
-^^^^^^^^^^^
-
-* 电压范围：2.3 to 3.6 V
-* 功耗范围：
-* 温度范围：-40°C to 105°C
-* 封装规格：:ref:`esp_qfn56` (7x7mm)
-
 
 特征参数
 ^^^^^^^^^^^
@@ -64,12 +52,22 @@ Xin简介
 .. warning::
     ESP32-S2为单核WiFi SoC，并不支持蓝牙，支持TOF，并且配置有8bit DAC，软件增加RainMaker支持
 
+芯片架构
+~~~~~~~~~~~
+
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：2.3 to 3.6 V
+* 功耗范围：
+
 连接能力
 ~~~~~~~~~~~~~~
 
 .. _esp32s2_wifi:
 
-WiFi
+Wi-Fi
 ^^^^^^^^^^^^^^^
 
 在 2.4 GHz 频带支持 20 MHz 和 40 MHz 频宽，支持 1T1R 模式，数据速率高达 150 Mbps
@@ -78,6 +76,15 @@ WiFi
 * 802.11 mc FTM
 * 支持外部功率放大器
 
+.. _esp_usb:
+
+USB
+^^^^^^^^^^^^^^
+
+.. _esp_can:
+
+CAN
+^^^^^^^^^^^^^^
 
 
 安全特性
@@ -114,19 +121,6 @@ TEE 模块
 目前，大多数物联网云服务使用基于 X.509 证书的身份验证，数字签名外设保护了定义设备身份的私钥。这样一来，即使出现软件漏洞，它也能为设备身份提供强大的保护
 
 
-外设资源
-~~~~~~~~~~~~~~
-
-.. _esp_usb:
-
-USB
-^^^^^^^^^^^^^^
-
-.. _esp_can:
-
-CAN
-^^^^^^^^^^^^^^
-
 
 Xin选择
 -----------
@@ -145,7 +139,7 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`espressif`
-      - Architecture
+      - :ref:`esp_core`
       - :ref:`CoreMark`
       - SRAM/ROM
       - WiFi
@@ -166,7 +160,7 @@ Xin选择
       - 320KB/128KB
       - b/g/n
       - BLE v5.0
-      - USB1.1 OTG
+      - 1.1 OTG
       - QFN56
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
@@ -174,7 +168,7 @@ Xin选择
       - 512KB/384KB
       - b/g/n
       - BLE v5.0
-      - USB1.1 OTG
+      - 1.1 OTG
       - QFN56
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
@@ -184,9 +178,9 @@ Xin选择
       - v5.0
       - X
       - QFN32/QFN28
-      
+
 .. hint::
-    :ref:`esp32s2` 发布于2019年，在:ref:`esp32` 基础上移除了蓝牙，增加了USB OTG，Xtensa LX7单核
+    :ref:`esp32s2` 发布于2019年，在 :ref:`esp32` 基础上移除了蓝牙，增加了USB OTG，升级为 :ref:`xtensa_lx7` 单核
 
 
 `芯片系列对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_

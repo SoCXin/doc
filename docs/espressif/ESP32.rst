@@ -148,7 +148,7 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`espressif`
-      - Architecture
+      - :ref:`esp_core`
       - :ref:`CoreMark`
       - SRAM/ROM
       - WiFi
@@ -169,7 +169,7 @@ Xin选择
       - 320KB/128KB
       - b/g/n
       - BLE v5.0
-      - USB1.1 OTG
+      - 1.1 OTG
       - QFN56
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
@@ -177,7 +177,7 @@ Xin选择
       - 512KB/384KB
       - b/g/n
       - BLE v5.0
-      - USB1.1 OTG
+      - 1.1 OTG
       - QFN56
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`

@@ -219,7 +219,7 @@ Cortex-M
 .. list-table::
     :header-rows:  1
 
-    * - Architecture
+    * - :ref:`cortex_m`
       - Pipeline
       - ISA
       - Version

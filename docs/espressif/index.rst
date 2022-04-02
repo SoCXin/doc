@@ -43,7 +43,7 @@ Espressif
 
 
 
-产品分类
+芯片产品
 -----------
 
 .. list-table::
@@ -103,7 +103,7 @@ Espressif
     在中国的MCU芯片市场，目前有两家具有对比性的厂商： :ref:`espressif` 和 :ref:`wch` ，在产品附加值上就是前者更注重软件生态反哺，后者注重硬件差异覆盖协同。
 
 
-高性能路线
+高性能产品
 ~~~~~~~~~~~~
 
 这一分类下，主要是多核产品，更多围绕AIoT战略，凭借丰富的软件生态资源实现向上突破。
@@ -137,6 +137,54 @@ Espressif
     ESP32S2(USB-OTG) <ESP32-S2>
     ESP32H2 (802.15.4) <ESP32-H2>
 
+解决方案
+-----------
+
+开发框架
+~~~~~~~~~~~~
+
+.. contents::
+    :local:
+
+.. _esp_arduino:
+
+Arduino
+^^^^^^^^^^^^^^
+
+
+.. _esp_idf:
+
+ESP-IDF
+^^^^^^^^^^^^^^
+
+ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 ESP32-C 系列 SoC。它基于 C/C++ 语言提供了一个自给自足的 SDK。
+
+.. image:: ./images/idf.png
+    :target: https://docs.os-q.com/espidf.html
+
+.. image:: ./images/idf-v.png
+    :target: https://github.com/espressif/esp-idf
+
+
+.. _esp_adf:
+
+ESP-ADF
+^^^^^^^^^^^^^^
+
+`ESP-ADF <https://github.com/espressif/esp-adf>`_  用于开发各类音频应用，还提供多种语音平台的连接服务，方便用户直连云平台开发语音产品。
+
+
+技术组件
+~~~~~~~~~~~~
+
+.. _esp_now:
+
+ESP-NOW
+^^^^^^^^^^^^^^
+
+`ESP-NOW简介 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/network/esp_now.html>`_
+
+由乐鑫定义的 Wi-Fi 通信协议，采用 CCMP 方法保护供应商特定动作帧的安全，ESP-NOW 广泛应用于智能照明、远程控制、传感器等领域。
 
 
 
@@ -214,51 +262,7 @@ ULP
 * ULP-FSM 协处理器
 
 
-
-开发框架
-~~~~~~~~~~~~
-
-.. contents::
-    :local:
-
-.. _esp_arduino:
-
-Arduino
-^^^^^^^^^^^^^^
-
-
-.. _esp_idf:
-
-ESP-IDF
-^^^^^^^^^^^^^^
-
-ESP-IDF 是乐鑫官方的物联网开发框架，适用于 ESP32、ESP32-S 和 ESP32-C 系列 SoC。它基于 C/C++ 语言提供了一个自给自足的 SDK。
-
-.. image:: ./images/idf.png
-    :target: https://docs.os-q.com/espidf.html
-
-.. image:: ./images/idf-v.png
-    :target: https://github.com/espressif/esp-idf
-
-
-.. _esp_adf:
-
-ESP-ADF
-^^^^^^^^^^^^^^
-
-`ESP-ADF <https://github.com/espressif/esp-adf>`_  用于开发各类音频应用，还提供多种语音平台的连接服务，方便用户直连云平台开发语音产品。
-
-
-.. _esp_now:
-
-ESP-NOW
-^^^^^^^^^^^^^^
-
-`ESP-NOW简介 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/network/esp_now.html>`_
-
-由乐鑫定义的 Wi-Fi 通信协议，采用 CCMP 方法保护供应商特定动作帧的安全，ESP-NOW 广泛应用于智能照明、远程控制、传感器等领域。
-
-协议标准
+协议支持
 ~~~~~~~~~~~~
 
 .. _esp_matter:

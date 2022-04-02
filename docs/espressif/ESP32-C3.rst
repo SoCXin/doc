@@ -4,7 +4,7 @@
 ESP32C3
 ================
 
-`标签 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html>`_ : ``RISC-V`` ``160MHz`` ``BLE5.0`` ``Wi-Fi`` ``QFN32``
+`标签 <https://github.com/SoCXin/ESP32C3>`_ : ``RISC-V`` ``160MHz`` ``BLE5.0`` ``Wi-Fi`` ``QFN32``
 
 .. contents::
     :local:
@@ -13,9 +13,7 @@ Xin简介
 -----------
 
 .. image:: ./images/ESP32C3.png
-    :target: https://www.espressif.com/zh-hans/products/socs/ESP32-C3
-
-`GitHub <https://github.com/SoCXin/ESP32C3>`_
+    :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html
 
 规格参数
 ~~~~~~~~~~~
@@ -216,7 +214,7 @@ BLE对比
     :header-rows:  1
 
     * - :ref:`espressif`
-      - Architecture
+      - :ref:`esp_core`
       - :ref:`CoreMark`
       - SRAM/ROM
       - WiFi
