@@ -4,15 +4,12 @@ Xin
 
 **新产品用心，芯产品用新**
 
-`SoC·Xin <https://www.SoC.Xin>`_ 作为芯资源管理容器求解如下问题：
+`SoC·Xin <https://www.SoC.Xin>`_ 作为芯管理容器求解如下问题：
 
 * ``有新需求，缺乏技术积累，求解区间；``
 * ``有芯需求，已知应用场景，求最新解；``
 * ``有芯需求，限定规格成本，求最优解；``
 * ``有薪需求，寻求技能升级，求边界值；``
-
-.. image:: https://github.com/SoCXin/docs/workflows/Docs/badge.svg
-    :target: https://github.com/SoCXin/docs/actions/workflows/docs.yml
 
 .. toctree::
     :maxdepth: 1

@@ -26,10 +26,12 @@
 /ESP32-S2.html -> espressif/ESP32-S2.html
 /ESP32S2.html -> espressif/ESP32-S2.html
 /ESP32-S3.html -> espressif/ESP32-S3.html
+/esp32-s3.html -> espressif/ESP32-S3.html
 /ESP32S3.html -> espressif/ESP32-S3.html
 /ESP32-C2.html -> espressif/ESP32-C2.html
 /ESP32C2.html -> espressif/ESP32-C2.html
 /ESP32-C3.html -> espressif/ESP32-C3.html
+/esp32-c3.html -> espressif/ESP32-C3.html
 /ESP32C3.html -> espressif/ESP32-C3.html
 /ESP32-H2.html -> espressif/ESP32-H2.html
 /ESP32H2.html -> espressif/ESP32-H2.html

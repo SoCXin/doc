@@ -8,7 +8,7 @@ Espressif
 公司简介
 -----------
 
-`乐鑫科技 <http://www.espressif.com>`_ (股票代码：688018)是一家全球化的无晶圆厂半导体公司，成立于2008年，总部中国上海张江，主营 Wi-Fi&BLE SoC及相关解决方案，核心竞争力： `开源 <https://github.com/SoCXin/ESP32S3>`_、Wi-Fi、Audio。
+`乐鑫科技 <http://www.espressif.com>`_ (股票代码：688018)是一家全球化的无晶圆厂半导体公司，成立于2008年，总部中国上海张江，主营 Wi-Fi&BLE SoC及相关解决方案，核心竞争力： `开源 <https://github.com/SoCXin/ESP32S3>`_、:ref:`wifi`、Audio。
 
 
 .. note::
@@ -148,16 +148,14 @@ Espressif
 Arduino
 ^^^^^^^^^^^^^^
 
-`Arduino Core <https://github.com/espressif/arduino-esp32>`_
-
+`Arduino Core ESP32 <https://github.com/espressif/arduino-esp32>`_ 已支持ESP32、ESP32-S、ESP32-C等系列SoC。
 
 .. _esp_idf:
 
 ESP-IDF
 ^^^^^^^^^^^^^^
 
-
-`ESP-IDF开源矿建 <https://github.com/espressif/esp-idf>`_ 是乐鑫官方的底层开发框架，适用于 ESP32、ESP32-S 和 ESP32-C 系列 SoC。它基于 C/C++ 语言提供了一个自给自足的 SDK。
+`ESP-IDF工程 <https://github.com/espressif/esp-idf>`_ 是乐鑫官方的底层开发框架，基于 C/C++ 语言，可以等效理解：乐鑫为旗下所有芯片提供的统一SDK开发包；适用于ESP32、ESP32-S、ESP32-C和ESP32-H系列SoC。
 
 .. image:: ./images/idf.png
     :target: https://docs.os-q.com/espidf.html
@@ -266,6 +264,11 @@ ULP
 
 * ULP-RISC-V 协处理器
 * ULP-FSM 协处理器
+
+Audio
+~~~~~~~~~~~~
+
+就产品定位和市场接受度而言，ESP32天然带有Audio音频应用属性
 
 
 协议支持
