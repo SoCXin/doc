@@ -194,42 +194,42 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`wifi`
+    * - :ref:`espressif`
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
       - USB
-      - UART/SPI/SDIO
+      - DAC
+      - SDIO
       - Package
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
       - 320K/128K
       - FS
-      - 2/4/0
+      - 8bit
+      - 0
       - :ref:`esp_qfn56`
     * - :ref:`stm32f407`
       - :ref:`cortex_m4`
       - 566
       - 192K/512K
       - HS+FS
-      -
-      -
+      - 12bit
+      - 1
+      - LQFP100
     * - :ref:`at32f403`
       - :ref:`cortex_m4`
       -
-      -
-      -
-      -
-      -
-    * - :ref:`at32f413`
-      - :ref:`cortex_m4`
-      -
-      -
-      -
-      -
-      -
+      - 224K/512K
+      - FS
+      - 12bit
+      - 2
+      - 48/64/100
 
+
+.. note::
+    :ref:`esp32s2` 定位MCU，就功能配置而言，完全可用于替换通用MCU
 
 型号对比
 ~~~~~~~~~~~~
@@ -243,7 +243,7 @@ Xin选择
       - :ref:`CoreMark`
       - SRAM/ROM
       - Wireless
-      - ADC/DAC/PWM
+      - DAC/PWM
       - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
       - Package
     * - :ref:`esp32s2`
@@ -251,7 +251,7 @@ Xin选择
       - 613.8
       - 320K/128K
       - WiFi
-      - 2(12bit)/2(8bit)/8
+      - 2(8bit)/8
       - 1.1OTG+CAN
       - :ref:`esp_qfn56`
     * - :ref:`esp32`
@@ -259,8 +259,8 @@ Xin选择
       - 994.26
       - 520K/448K
       - WiFi+BLE
-      - 2(12bit)/2(8bit)/18
-      - ETH+CAN
+      - 2(8bit)/18
+      - ETH(mac)+CAN
       - :ref:`esp_qfn48`
 
     * - :ref:`esp32s3`
@@ -268,7 +268,7 @@ Xin选择
       - 1181.6
       - 512K/384K
       - WiFi+BLE
-      - 2(12bit)/X/10
+      - 0/10
       - 1.1OTG+CAN
       - :ref:`esp_qfn56`
     * - :ref:`esp32c3`
@@ -276,7 +276,7 @@ Xin选择
       - 407.22
       - 400K/384K
       - WiFi+BLE
-      - 2(12bit)/X/6
+      - 0/6
       - CAN
       - :ref:`esp_qfn32`
 

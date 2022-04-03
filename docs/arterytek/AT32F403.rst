@@ -18,6 +18,9 @@ Xin简介
 规格参数
 ~~~~~~~~~~~
 
+`AT32F403A <https://www.arterytek.com/cn/product/AT32F403A.jsp#Feature>`_
+
+
 基本参数
 ^^^^^^^^^^^
 

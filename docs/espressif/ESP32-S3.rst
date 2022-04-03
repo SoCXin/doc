@@ -194,6 +194,35 @@ Xin选择
 
 :ref:`esp32s3` 双核 1181.6 :ref:`CoreMark` 略高于 STM32F7系列(1082CoreMark/462DMIPS)，对性能要求较高的场景非常适用，不足在于非嵌入式存储器，IO的效率较低
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wifi`
+      - :ref:`architecture`
+      - :ref:`CoreMark`
+      - SRAM/ROM
+      - USB
+      - AI
+      - Sleep
+      - Package
+    * - :ref:`esp32s3`
+      - :ref:`xtensa_lx7`
+      - 1181.6
+      - 512K/384K
+      - FS OTG
+      - DSP
+      - 8µA
+      - :ref:`esp_qfn56`
+    * - :ref:`stm32h7b0`
+      - :ref:`cortex_m7`
+      - 1414
+      - 1.4M/128K
+      - FS OTG
+      - ART
+      - 2.2µA
+      - LQFP64
+
+
 型号对比
 ~~~~~~~~~~~~
 
@@ -208,6 +237,14 @@ Xin选择
       - ADC/DAC/PWM
       - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
       - Package
+    * - :ref:`esp32s3`
+      - :ref:`xtensa_lx7`
+      - 1181.6
+      - 512K/384K
+      - WiFi+BLE
+      - 2(12bit)/X/10
+      - 1.1OTG+CAN
+      - :ref:`esp_qfn56`
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
@@ -224,15 +261,6 @@ Xin选择
       - 2(12bit)/2(8bit)/18
       - ETH+CAN
       - :ref:`esp_qfn48`
-
-    * - :ref:`esp32s3`
-      - :ref:`xtensa_lx7`
-      - 1181.6
-      - 512K/384K
-      - WiFi+BLE
-      - 2(12bit)/X/10
-      - 1.1OTG+CAN
-      - :ref:`esp_qfn56`
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
