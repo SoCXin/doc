@@ -241,6 +241,8 @@ Xin选择
       - 2(12bit)/X/6
       - CAN
       - :ref:`esp_qfn32`
+
+
 `芯片系列对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
 
 
