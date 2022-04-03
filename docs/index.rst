@@ -1,5 +1,5 @@
 
-Xin
+XiN
 =====================
 
 **新产品用心，芯产品用新**
@@ -21,12 +21,12 @@ Xin
     :caption: 新品速览
     :maxdepth: 1
 
-    特点鲜明推荐清单 <list/list>
+    当下设计推荐清单 <list/list>
     极客聚集开源生态 <news/hot>
     著名项目适配支持 <news/pop>
     旗舰小贵干啥都行 <news/top>
     难以拒绝低价好货 <news/low>
-    定位中庸供应稳定 <news/stable>
+    表现中庸货源稳定 <news/stable>
 
 .. list-table::
     :header-rows: 1
@@ -136,7 +136,7 @@ Xin
     :maxdepth: 1
 
     芯片设计 <vendor>
-    芯片制造 <fab>
+    芯片制程 <fab>
 
 .. list-table::
     :header-rows:  1
@@ -149,7 +149,7 @@ Xin
       - :ref:`allwinner`
     * - :ref:`ch32v307`
       - :ref:`asr6601`
-      - :ref:`esp32h2`
+      - :ref:`esp32s2`
       - :ref:`mt2625`
       - :ref:`at32f425`
       - :ref:`D1`

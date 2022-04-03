@@ -4,7 +4,7 @@
 ESP32S3
 ================
 
-`标签 <https://github.com/SoCXin/ESP32S3>`_ : ``Xtensa LX7`` ``Dual Core`` ``240MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``AI`` ``CAN`` ``Touch`` ``QFN56``
+`标签 <https://github.com/SoCXin/ESP32S3>`_ : ``Xtensa LX7`` ``Dual Core`` ``240 MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB1.1 OTG`` ``AI`` ``CAN`` ``Touch`` ``QFN56``
 
 .. contents::
     :local:
@@ -36,7 +36,8 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * 封装规格：QFN56
 * 运行环境：-40°C to 105°C
 * RAM容量：512 KB (TCM，16 KB RTC SRAM)
-* Flash容量：384 KB
+* ROM容量：384 KB
+* Flash容量：4 MB (1GB)
 
 特征参数
 ^^^^^^^^^^^
@@ -157,7 +158,7 @@ Xin选择
     :local:
 
 品牌对比
-~~~~~~~~~
+~~~~~~~~~~~~
 
 :ref:`espressif` 在WiFi MCU领域市场占有率第一，在中低端或高性价比定位的产品里鲜有对手，而且不断完善的生态主要的护城河，所有应用领域都有较高的开发起点。
 
@@ -194,7 +195,7 @@ Xin选择
 :ref:`esp32s3` 双核 1181.6 :ref:`CoreMark` 略高于 STM32F7系列(1082CoreMark/462DMIPS)，对性能要求较高的场景非常适用，不足在于非嵌入式存储器，IO的效率较低
 
 型号对比
-~~~~~~~~~
+~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -204,42 +205,42 @@ Xin选择
       - :ref:`CoreMark`
       - SRAM/ROM
       - Wireless
-      - Ethernet
-      - USB
+      - ADC/DAC/PWM
+      - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
       - Package
-    * - :ref:`esp32`
-      - :ref:`xtensa_lx6`
-      - 994.26
-      - 520KB/448KB
-      - WiFi&BLE
-      - 100Mbps
-      - X
-      - :ref:`esp_qfn48`
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
-      - 320KB/128KB
+      - 320K/128K
       - WiFi
-      - X
-      - 1.1 OTG
+      - 2(12bit)/2(8bit)/8
+      - 1.1OTG+CAN
       - :ref:`esp_qfn56`
+    * - :ref:`esp32`
+      - :ref:`xtensa_lx6`
+      - 994.26
+      - 520K/448K
+      - WiFi+BLE
+      - 2(12bit)/2(8bit)/18
+      - ETH+CAN
+      - :ref:`esp_qfn48`
+
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6
-      - 512KB/384KB
-      - WiFi&BLE
-      - X
-      - 1.1 OTG
+      - 512K/384K
+      - WiFi+BLE
+      - 2(12bit)/X/10
+      - 1.1OTG+CAN
       - :ref:`esp_qfn56`
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
-      - 400KB/384KB
-      - WiFi&BLE
-      - X
-      - X
+      - 400K/384K
+      - WiFi+BLE
+      - 2(12bit)/X/6
+      - CAN
       - :ref:`esp_qfn32`
-
 `芯片系列对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
 
 

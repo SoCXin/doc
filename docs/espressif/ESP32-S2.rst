@@ -4,7 +4,7 @@
 ESP32S2
 ================
 
-`标签 <https://github.com/SoCXin/ESP32-S2>`_ : ``Xtensa LX7`` ``240MHz`` ``Wi-Fi`` ``USB1.1 OTG`` ``ULP`` ``Touch`` ``DVP`` ``DAC`` ``QFN56``
+`标签 <https://github.com/SoCXin/ESP32-S2>`_ : ``Xtensa LX7`` ``240 MHz`` ``Wi-Fi`` ``USB1.1 OTG`` ``ULP`` ``Touch`` ``DVP`` ``DAC`` ``QFN56``
 
 .. contents::
     :local:
@@ -148,12 +148,92 @@ Xin选择
     :local:
 
 品牌对比
-~~~~~~~~~
+~~~~~~~~~~~~
+
+无线通信
+^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wifi`
+      - :ref:`architecture`
+      - :ref:`CoreMark`
+      - SRAM/ROM
+      - Wireless
+      - UART/SPI/SDIO
+      - Package
+    * - :ref:`esp32s2`
+      - :ref:`xtensa_lx7`
+      - 613.8
+      - 320K/128K
+      - WiFi(150Mbps)
+      - 2/4/0
+      - :ref:`esp_qfn56`
+    * - :ref:`hi3861`
+      - :ref:`riscv`
+      -
+      - 352KB/288KB
+      - WiFi(72Mbps)
+      - 3/2/1
+      - QFN32
+    * - :ref:`w800`
+      - :ref:`xt804`
+      -
+      - 288KB/2MB
+      -
+      - 6/2/1
+      - QFN32
+
+通用控制
+^^^^^^^^^^^^
+``USB`` ``CAN`` ``GPIO 43``
 
 就计算性能而言 :ref:`esp32s2` 的 613.8 :ref:`CoreMark` 略高于 :ref:`stm32f429` 的 608 :ref:`CoreMark`
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wifi`
+      - :ref:`architecture`
+      - :ref:`CoreMark`
+      - SRAM/ROM
+      - USB
+      - UART/SPI/SDIO
+      - Package
+    * - :ref:`esp32s2`
+      - :ref:`xtensa_lx7`
+      - 613.8
+      - 320K/128K
+      - FS
+      - 2/4/0
+      - :ref:`esp_qfn56`
+    * - :ref:`stm32f407`
+      - :ref:`cortex_m4`
+      - 566
+      - 192K/512K
+      - HS+FS
+      -
+      -
+    * - :ref:`at32f403`
+      - :ref:`cortex_m4`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`at32f413`
+      - :ref:`cortex_m4`
+      -
+      -
+      -
+      -
+      -
+
+
 型号对比
-~~~~~~~~~
+~~~~~~~~~~~~
+
 
 .. list-table::
     :header-rows:  1
@@ -163,41 +243,43 @@ Xin选择
       - :ref:`CoreMark`
       - SRAM/ROM
       - Wireless
-      - ADC/DAC
-      - USB/CAN
+      - ADC/DAC/PWM
+      - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
       - Package
-    * - :ref:`esp32`
-      - :ref:`xtensa_lx6`
-      - 994.26
-      - 520K/448K
-      - WiFi&BLE4.2
-      - 2(12bit)/2(8bit)
-      - TWAI
-      - :ref:`esp_qfn48`
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
       - 320K/128K
       - WiFi
-      - 2(12bit)/2(8bit)
-      - 1.1 OTG
+      - 2(12bit)/2(8bit)/8
+      - 1.1OTG+CAN
       - :ref:`esp_qfn56`
+    * - :ref:`esp32`
+      - :ref:`xtensa_lx6`
+      - 994.26
+      - 520K/448K
+      - WiFi+BLE
+      - 2(12bit)/2(8bit)/18
+      - ETH+CAN
+      - :ref:`esp_qfn48`
+
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6
       - 512K/384K
-      - WiFi&BLE5.0
-      - 2(12bit)/X
-      - 1.1 OTG
+      - WiFi+BLE
+      - 2(12bit)/X/10
+      - 1.1OTG+CAN
       - :ref:`esp_qfn56`
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
       - 400K/384K
-      - WiFi&BLE5.0
-      - 2(12bit)/X
-      - TWAI
+      - WiFi+BLE
+      - 2(12bit)/X/6
+      - CAN
       - :ref:`esp_qfn32`
+
 
 `芯片系列对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
 
@@ -228,6 +310,15 @@ Xin应用
 开发框架
 ~~~~~~~~~~
 
+ESP-IDF
+^^^^^^^^^^^^
+``v4.2``
+
+`esp-idf <https://github.com/espressif/esp-idf/tree/release/v4.4>`_ 是官方提供并维护的统一开发框架，集成众多功能组件，由官方提供支持保证，是商业化应用开发最好选择。
+
+.. hint::
+    :ref:`esp_idf` 从v4.2版本后开始支持 :ref:`esp32s2` ，使用时优选仓库 release/v4.4 分支
+
 Arduino
 ^^^^^^^^^^^^
 
@@ -241,6 +332,10 @@ PlatformIO
 应用方案
 ~~~~~~~~~~
 
+.. _esp_usb_cam:
+
+USB Camera
+^^^^^^^^^^^^
 
 
 .. _esp_usb_pd:
@@ -248,7 +343,7 @@ PlatformIO
 USB PD
 ^^^^^^^^^^^^
 
-:ref:`usb_pd` 提供高效的能源传输方式
+:ref:`usb_pd` (USB Power Delivery)功率传输协议，通过USB线缆提供高效的能源传输方式，是当下USB应用非常值得探索的实践。
 
 内置12位ADC可以监控USB TYEP-C接口的CC线，精确测量CC线上的压差，实现USB连接、拔除、传输方向的检测判断。
 

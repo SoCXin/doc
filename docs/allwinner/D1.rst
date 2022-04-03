@@ -1,10 +1,10 @@
 
 .. _D1:
 
-D1-H
+D1
 =============
 
-`标签 <https://www.allwinnertech.com/index.php?c=product&a=index&id=97>`_ : ``Allwinner`` ``RISC-V`` ``C906`` ``1.1GHz`` ``WAFT`` ``Tina``
+`标签 <https://github.com/SoCXin/D1>`_ : ``Allwinner`` ``RISC-V`` ``C906`` ``1.1GHz`` ``WAFT`` ``Tina``
 
 .. contents::
     :local:
@@ -14,11 +14,6 @@ Xin简介
 
 .. image:: ./images/D1.png
     :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=97
-
-`GitHub <https://github.com/SoCXin/D1>`_
-
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~

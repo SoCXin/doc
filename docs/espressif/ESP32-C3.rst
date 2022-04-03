@@ -137,7 +137,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`wifi`
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM

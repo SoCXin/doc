@@ -4,8 +4,8 @@
 AT32F403
 ===============
 
-* 关键词：``240MHz`` ``Cortex-M4`` ``-40~105°C``
-* 资源库：`GitHub <https://github.com/SoCXin/AT32F403>`_
+`标签 <https://github.com/SoCXin/AT32F403>`_ : ``Cortex-M4`` ``240MHz`` ``-40~105°C``
+
 
 .. contents::
     :local:
@@ -14,9 +14,6 @@ Xin简介
 -----------
 
 :ref:`arterytek` :ref:`cortex_m4` 单核 MCU
-
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -65,22 +62,5 @@ Xin选择
 
 版本对比
 ~~~~~~~~~
-
-
-Xin总结
---------------
-
-.. contents::
-    :local:
-
-
-能力构建
-~~~~~~~~~~~~~
-
-要点提示
-~~~~~~~~~~~~~
-
-问题整理
-~~~~~~~~~~~~~
 
 
