@@ -2,9 +2,10 @@
 
 import os
 import sys
-
+import datetime
 import sphinx_rtd_theme
 
+current_year = datetime.datetime.now().year
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -35,9 +36,8 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = u"SoC"
-copyright = u" www.SoC.Xin"
-
+project = u"Xin"
+copyright = u'2019 - {} www.SoC.Xin'.format(current_year)
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
@@ -175,7 +175,7 @@ html_show_sphinx = False
 html_baseurl = "https://docs.soc.xin"
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "socxin"
+htmlhelp_basename = "Xin"
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -192,7 +192,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ("index", "SoC.tex", u"Look for differences", u"SoC", "manual"),
+    ("index", "SoC.tex", u"Look for differences", u"Xin", "manual"),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -236,7 +236,7 @@ texinfo_documents = [
         "index",
         "SoC",
         u"Look for differences",
-        u"SoC",
+        u"Xin",
         "SoC",
         "One line description of project.",
         "Miscellaneous",

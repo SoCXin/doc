@@ -3,7 +3,7 @@
 Espressif
 ==============
 
-``Xtensa-LX7`` ``Xtensa-LX6`` ``RISC-V`` ``Matter`` ``Audio`` ``ULP`` ``Wi-Fi`` ``BT/BLE``  ``ESP32-S3`` ``ESP32-C3`` ``ESP32`` ``ESP8266`` ``Arduino``
+``Xtensa-LX7`` ``Xtensa-LX6`` ``RISC-V`` ``Matter`` ``Audio`` ``ULP`` ``Touch`` ``Wi-Fi`` ``BT/BLE``  ``ESP32-S3`` ``ESP32-C3`` ``ESP32`` ``ESP8266`` ``Arduino``
 
 公司简介
 -----------
@@ -173,6 +173,12 @@ ESP-ADF
 
 `ESP-ADF <https://github.com/espressif/esp-adf>`_  用于开发各类音频应用，还提供多种语音平台的连接服务，方便用户直连云平台开发语音产品。
 
+.. _esp_mdf:
+
+ESP-MDF
+^^^^^^^^^^^^^^
+
+`ESP-MDF <https://github.com/espressif/esp-mdf>`_ 适用于无线mesh类基础框架
 
 技术组件
 ~~~~~~~~~~~~

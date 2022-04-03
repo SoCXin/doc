@@ -4,7 +4,7 @@
 ESP32S2
 ================
 
-`标签 <https://github.com/SoCXin/ESP32-S2>`_ : ``Xtensa LX7`` ``240MHz`` ``Wi-Fi`` ``USB1.1 OTG`` ``ULP`` ``DVP`` ``DAC`` ``QFN56``
+`标签 <https://github.com/SoCXin/ESP32-S2>`_ : ``Xtensa LX7`` ``240MHz`` ``Wi-Fi`` ``USB1.1 OTG`` ``ULP`` ``Touch`` ``DVP`` ``DAC`` ``QFN56``
 
 .. contents::
     :local:
@@ -236,7 +236,7 @@ Arduino
 PlatformIO
 ^^^^^^^^^^^^
 
-:ref:`pio` 提供便捷的开发环境
+:ref:`pio` 提供便捷的开发环境，在此基础上升级的 :ref:`qio` 针对该平台单独优化，提供更全面的资源整合框架 `P512 <https://docs.os-q.com/P512>`_
 
 应用方案
 ~~~~~~~~~~

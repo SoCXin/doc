@@ -1,5 +1,5 @@
 
-X·IN
+Xin
 =====================
 
 **新产品用心，芯产品用新**
@@ -11,6 +11,9 @@ X·IN
 * ``有芯需求，限定规格成本，求最优解；``
 * ``有薪需求，寻求技能升级，求边界值；``
 
+.. image:: https://github.com/SoCXin/docs/workflows/Docs/badge.svg
+    :target: https://github.com/SoCXin/docs/actions/workflows/docs.yml
+
 .. toctree::
     :maxdepth: 1
 
@@ -21,12 +24,12 @@ X·IN
     :caption: 新品速览
     :maxdepth: 1
 
+    特点鲜明推荐清单 <list/list>
     极客聚集开源生态 <news/hot>
     著名项目适配支持 <news/pop>
     旗舰小贵干啥都行 <news/top>
     难以拒绝低价好货 <news/low>
     定位中庸供应稳定 <news/stable>
-    特点鲜明推荐清单 <list/list>
 
 .. list-table::
     :header-rows: 1
@@ -171,4 +174,5 @@ X·IN
       - :ref:`mt7621`
       - :ref:`at32f437`
       - :ref:`v831`
+
 
