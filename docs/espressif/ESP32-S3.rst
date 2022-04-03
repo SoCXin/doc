@@ -162,6 +162,11 @@ Xin选择
 
 :ref:`espressif` 在WiFi MCU领域市场占有率第一，在中低端或高性价比定位的产品里鲜有对手，而且不断完善的生态主要的护城河，所有应用领域都有较高的开发起点。
 
+
+
+功能对比
+^^^^^^^^^^^
+
 .. list-table::
     :header-rows:  1
 
@@ -184,20 +189,17 @@ Xin选择
       - 6/2/1
       - QFN56
 
-功能对比
-^^^^^^^^^^^
 
 :ref:`w801` 和 :ref:`esp32s3` 两者的封装规格相同，主频配置相同，差异主要在： :ref:`esp32s3` 是双核且带有USB， :ref:`w801` 拥有更多外设
 
 性能对比
 ^^^^^^^^^^^
 
-:ref:`esp32s3` 双核 1181.6 :ref:`CoreMark` 略高于 STM32F7系列(1082CoreMark/462DMIPS)，对性能要求较高的场景非常适用，不足在于非嵌入式存储器，IO的效率较低
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`wifi`
+    * - :ref:`espressif`
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
@@ -220,8 +222,9 @@ Xin选择
       - FS OTG
       - ART
       - 2.2µA
-      - LQFP64
+      - 64/100/176
 
+:ref:`esp32s3` 双核 1181.6 :ref:`CoreMark` 略高于 STM32F7系列(1082CoreMark/462DMIPS)，对性能要求较高的场景非常适用，不足在于非嵌入式存储器，IO的效率较低
 
 型号对比
 ~~~~~~~~~~~~

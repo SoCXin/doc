@@ -210,6 +210,22 @@ Xin选择
       - 8bit
       - 0
       - :ref:`esp_qfn56`
+    * - :ref:`w806`
+      - :ref:`xt804`
+      -
+      - 288K/20K
+      - 0
+      -
+      - 1
+      - QFN56
+    * - :ref:`air103`
+      -
+      -
+      - 288K/20K
+      - 0
+      -
+      - 1
+      - QFN56
     * - :ref:`stm32f407`
       - :ref:`cortex_m4`
       - 566
