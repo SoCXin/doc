@@ -88,7 +88,6 @@
 /MM32SPIN05.html -> m/MM32SPIN.html
 /TKM32F499.html -> m/TKM32F499.html
 /HC32M120.html -> m/HC32M120.html
-/GD32V103.html -> m/GD32V103.html
 /CS32A039.html -> m/CS32A039.html
 /CS32G020.html -> m/CS32G020.html
 /EAI80.html -> t/EAI80.html

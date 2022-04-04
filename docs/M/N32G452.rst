@@ -4,8 +4,8 @@
 N32G452
 ===============
 
-* 关键词：``Cortex-M4`` ``144MHz`` ``MD5`` ``SM1/SM3/SM4/SM7``
-* 资源库：`GitHub <https://github.com/SoCXin/N32G452>`_
+`标签 <https://github.com/SoCXin/N32G452>`_ : ``Cortex-M4`` ``144MHz`` ``MD5`` ``SM1/SM3/SM4/SM7``
+
 
 .. contents::
     :local:
@@ -13,13 +13,8 @@ N32G452
 Xin简介
 -----------
 
- :ref:`cortex_m4` 单核 MCU
-
 .. image:: ./images/N32G452.png
     :target: https://www.nationstech.com/N32G452/
-
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -34,7 +29,8 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 10余种密码算法硬件：MD5/SM1/SM3/SM4/SM7
+* 144 MHz :ref:`cortex_m4`
+* MD5/SM1/SM3/SM4/SM7
 
 
 芯片架构
