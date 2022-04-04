@@ -4,8 +4,8 @@
 GD32E230
 ============
 
-* 关键词：``Cortex-M23`` ``48MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/GD32E230>`_
+`标签 <https://github.com/SoCXin/GD32E230>`_ : ``Cortex-M23`` ``48MHz``
+
 
 .. contents::
     :local:
@@ -22,13 +22,14 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2018年11月1日
+* 参考价格：
 * 制程工艺：55nm
-* 发布价格：
-* 工作温度：-40°C to 85°C
-* 处理性能：60 :ref:`DMIPS`, 140 :ref:`CoreMark`
+* 供货周期：
+* 处理性能：
+* 封装规格：LQFP64/LQFP48/LQFP32/QFN32
+* 运行环境：-40°C to 85°C
 * RAM容量：4/8 KB
 * Flash容量：16/32/64 KB
-* 封装规格：LQFP64/LQFP48/LQFP32/QFN32
 
 
 特征参数

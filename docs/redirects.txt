@@ -65,12 +65,15 @@
 /AT32F403.html -> arterytek/AT32F403.html
 /AT32F407.html -> arterytek/AT32F407.html
 /AT32F437.html -> arterytek/AT32F437.html
+/GD32E230.html -> gigadevice/GD32E230.html
+/GD32F130.html -> gigadevice/GD32F130.html
+/GD32F303.html -> gigadevice/GD32F303.html
+/GD32V103.html -> gigadevice/GD32V103.html
 /MT2503.html -> MediaTek/MT2503.html
 /MT2625.html -> MediaTek/MT2625.html
 /MT7621.html -> MediaTek/MT7621.html
 /MT7688.html -> MediaTek/MT7688.html
 /STC8.html -> s/STC8.html
-/GD32F130.html -> s/GD32F130.html
 /MM32F031.html -> s/MM32F031.html
 /ZML165.html -> m/ZML165.html
 /RP2040.html -> m/RP2040.html

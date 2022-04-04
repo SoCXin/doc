@@ -106,6 +106,6 @@ Vendor
     高性能基带及网关  @MediaTek  <MediaTek/index>
     高性能多媒体应用 @Allwinner  <allwinner/index>
     Cortex-M4高性价 @ArteryTek <arterytek/index>
-
+    国产MCU产品丰富 @GigaDevice <gigadevice/index>
 
 

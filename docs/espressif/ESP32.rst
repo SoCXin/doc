@@ -3,7 +3,7 @@
 ESP32
 ===============
 
-`标签 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-reference/index.html>`_ : ``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``
+`标签 <https://github.com/SoCXin/ESP32>`_ : ``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``
 
 .. contents::
     :local:
@@ -12,9 +12,10 @@ Xin简介
 -----------
 
 .. image:: ./images/ESP32.png
-    :target: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf
+    :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-reference/index.html
 
-`GitHub <https://github.com/SoCXin/ESP32>`_
+`芯片手册 <https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf>`_
+
 
 规格参数
 ~~~~~~~~~~~

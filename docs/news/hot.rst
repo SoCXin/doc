@@ -358,8 +358,7 @@ F030范式
 .. toctree::
     :maxdepth: 1
 
-    GD32F130 <../L/GD32F130>
-    GD32E230 <../L/GD32E230>
+
     MM32F031 <../L/MM32F031>
 
 .. _ref103:

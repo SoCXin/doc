@@ -4,8 +4,8 @@
 GD32F130
 ============
 
-* 关键词：``Cortex-M3`` ``48MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/GD32F130>`_
+`标签 <https://github.com/SoCXin/GD32F130>`_ : ``Cortex-M3`` ``48MHz``
+
 
 .. contents::
     :local:
@@ -13,8 +13,7 @@ GD32F130
 Xin简介
 -----------
 
- :ref:`low` , :ref:`ref030`
-
+:ref:`ref030`
 
 规格参数
 ~~~~~~~~~~~

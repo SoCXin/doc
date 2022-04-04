@@ -4,8 +4,8 @@
 STM32F103
 ===============
 
-* 关键词：``Cortex-M3`` ``72MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32F103>`_
+`标签 <https://github.com/SoCXin/STM32F103>`_ : ``Cortex-M3`` ``72MHz``
+
 
 .. contents::
     :local:
@@ -16,36 +16,31 @@ Xin简介
 .. image:: ./images/STM32F103.jpg
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f1-series/stm32f103.html
 
-.. contents::
-    :local:
 
 
-规格配置
+规格参数
 ~~~~~~~~~~~
 
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：2007年6月
-* 制程工艺：
 * 参考价格：
+* 制程工艺：
 * 供货周期：
-* 处理性能：61 :ref:`DMIPS`
+* 处理性能：
+* 封装规格：LQFP64/LQFP48/LQFP32
+* 运行环境：-40°C to 85°C
 * RAM容量：20 KB
 * Flash容量：128 KB
 
-限定参数
-^^^^^^^^^^^
 
-* 供电电压：2.0 to 3.6 V
-* 工作温度：-40 °C to 85 °C
-* 封装规格：LQFP48
 
 
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`cortex_m3` 72 MHz
+* 72 MHz :ref:`cortex_m3`
 * 2xI2C,3xUSART,2xSPI,CAN2.0B,USB2.0
 
 
@@ -54,6 +49,11 @@ Xin简介
 
 .. image:: ./images/STM32F103s.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f1-series/stm32f103.html
+
+功耗参数
+^^^^^^^^^^^
+
+* 供电电压：2.0 to 3.6 V
 
 
 

@@ -4,8 +4,7 @@
 ESP32C2
 ================
 
-* 关键词：``RISC-V`` ``120MHz`` ``WiFi`` ``BLE5.0`` ``QFN40``
-* 资源池：`GitHub <https://github.com/SoCXin/ESP32C2>`_
+`标签 <https://github.com/SoCXin/ESP32C2>`_ : ``RISC-V`` ``120MHz`` ``WiFi`` ``BLE5.0`` ``QFN40``
 
 .. contents::
     :local:
