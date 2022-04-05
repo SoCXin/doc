@@ -73,22 +73,22 @@ XiN
 `超低功耗`_          `模拟转换`_         `控制驱动`_
 ==================  ==================  ==================
 
-.. |人机交互| image:: list/images/esp32.png
+.. |人机交互| image:: espressif/images/espressif.png
 .. _人机交互: application/hmi.html
 
 .. |通信连接| image:: application/images/matter.png
 .. _通信连接: application/iot.html
 
-.. |边缘计算| image:: list/images/esp32.png
+.. |边缘计算| image:: espressif/images/espressif.png
 .. _边缘计算: application/edge.html
 
-.. |超低功耗| image:: list/images/esp32.png
+.. |超低功耗| image:: espressif/images/espressif.png
 .. _超低功耗: application/ulp.html
 
-.. |模拟转换| image:: list/images/esp32.png
+.. |模拟转换| image:: espressif/images/espressif.png
 .. _模拟转换: application/adc.html
 
-.. |控制驱动| image:: list/images/esp32.png
+.. |控制驱动| image:: espressif/images/espressif.png
 .. _控制驱动: application/foc.html
 
 
@@ -110,22 +110,22 @@ XiN
 `ASIC`_             `RISC-V`_           `MCS51`_
 ==================  ==================  ==================
 
-.. |X86| image:: list/images/esp32.png
+.. |X86| image:: espressif/images/espressif.png
 .. _X86: architecture/x86.html
 
-.. |ARM| image:: list/images/esp32.png
+.. |ARM| image:: espressif/images/espressif.png
 .. _ARM: architecture/arm.html
 
-.. |MIPS| image:: list/images/esp32.png
+.. |MIPS| image:: espressif/images/espressif.png
 .. _MIPS: architecture/MIPS.html
 
-.. |ASIC| image:: list/images/esp32.png
+.. |ASIC| image:: espressif/images/espressif.png
 .. _ASIC: ASIC/index.html
 
-.. |RISC-V| image:: list/images/esp32.png
+.. |RISC-V| image:: espressif/images/espressif.png
 .. _RISC-V: architecture/riscv.html
 
-.. |MCS51| image:: list/images/esp32.png
+.. |MCS51| image:: espressif/images/espressif.png
 .. _MCS51: architecture/MCS51.html
 
 
@@ -136,7 +136,7 @@ XiN
     :maxdepth: 1
 
     芯片设计 <vendor>
-    芯片制程 <fab>
+    晶片制程 <fab>
 
 .. list-table::
     :header-rows:  1
