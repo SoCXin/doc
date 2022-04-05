@@ -4,8 +4,7 @@
 RT1010
 =============
 
-* 关键词：``Cortex-M7`` ``500MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/RT1010>`_
+`标签 <https://github.com/SoCXin/RT1010>`_ : ``Cortex-M7`` ``500MHz``
 
 .. contents::
     :local:
@@ -16,8 +15,8 @@ Xin简介
 .. image:: ./images/RT1010.png
     :target: https://www.nxp.com.cn/docs/en/data-sheet/IMXRT1010IEC.pdf
 
-.. contents::
-    :local:
+`datasheet <https://www.nxp.com.cn/docs/en/data-sheet/IMXRT1010IEC.pdf>`_
+
 
 规格参数
 ~~~~~~~~~~~

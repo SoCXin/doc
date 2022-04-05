@@ -255,6 +255,10 @@ The libopencm3 project aims to create an open-source firmware library for variou
 Arduino
 ~~~~~~~~~~~~~
 
+* `Arduino_Core_ESP32 <https://github.com/lOS-Q/Arduino_Core_ESP32>`_
+
+
+
 .. toctree::
     :maxdepth: 1
 
@@ -264,9 +268,6 @@ Arduino
 
 STM32
 ~~~~~~~~~~~~~
-
-.. note::
-    :ref:`st` 其经典产品一直是被模仿的对象。
 
 .. contents::
     :local:

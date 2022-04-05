@@ -40,4 +40,4 @@ Xin简介
 
 * 1 GHz :ref:`cortex_m7`
 * 400 MHz :ref:`cortex_m4`
-
+* 2x Gb ENET，带AVB和TSN

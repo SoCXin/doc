@@ -19,16 +19,16 @@ Wharton.[1][2] Intel's original versions were popular in the 1980s and early 199
 It is an example of a complex instruction set computer, and has separate memory spaces for program instructions and data.
 
 
-推荐方案
+芯片产品
 --------------
 
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`mcs51`
       - :ref:`CoreMark`
-      - RAM
+      - Freq
       - Cache
       - GPU
       - SPI

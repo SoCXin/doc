@@ -8,8 +8,7 @@ Level
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`CoreMark`
-      - :ref:`level1`
+    * - :ref:`level1`
       - :ref:`level2`
       - :ref:`level3`
       - :ref:`level4`
@@ -18,7 +17,7 @@ Level
       - L7
       - L8
       - L9
-    * - :ref:`mcs51`
+    * - √
       - √
       - √
       - X
@@ -27,9 +26,7 @@ Level
       - X
       - X
       - X
-      - X
-    * - :ref:`cortex_m`
-      - √
+    * - √
       - √
       - √
       - √
@@ -38,18 +35,16 @@ Level
       - X
       - X
       - X
-    * - :ref:`cortex_r`
+    * - X
       -
       -
       -
       -
       -
-      -
       - X
       - X
       - X
-    * - :ref:`cortex_a`
-      -
+    * - X
       -
       -
       -
@@ -58,7 +53,7 @@ Level
       - √
       - √
       - √
-    * - :ref:`riscv`
+    * - √
       - √
       - √
       - √
@@ -67,10 +62,8 @@ Level
       - √
       - √
       - √
-      - √
-    * - :ref:`mips`
+    * - X
       - X
-      - √
       - √
       - √
       - √
@@ -94,20 +87,35 @@ L2(100)
 
 .. _level3:
 
-L3(300)
+L3(400)
 --------------
 
 .. _level4:
 
-L4(800)
+L4(1k)
 --------------
 
 .. _level5:
 
-L5(1800)
+L5(2k)
 --------------
 
 .. _level6:
 
-L6(3600)
+L6(4k)
+--------------
+
+.. _level7:
+
+L7(1w)
+--------------
+
+.. _level8:
+
+L8(4w)
+--------------
+
+.. _level9:
+
+L9
 --------------

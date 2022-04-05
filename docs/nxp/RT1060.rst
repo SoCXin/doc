@@ -15,6 +15,7 @@ Xin简介
 .. image:: ./images/RT1060.png
     :target: https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1060-crossover-mcu-with-arm-cortex-m7-core:i.MX-RT1060
 
+`datasheet <https://www.nxp.com.cn/docs/en/data-sheet/IMXRT1010IEC.pdf>`_
 
 规格参数
 ~~~~~~~~~~~

@@ -275,13 +275,11 @@ Cortex-M
 Cortex-R
 ~~~~~~~~~~~
 
+.. toctree::
+    :maxdepth: 1
 
-.. _cortex_r5:
+    cortexR5
 
-Cortex-R5
-^^^^^^^^^^^^^
-
-`官方介绍 <https://developer.arm.com/ip-products/processors/cortex-r/cortex-r5>`_
 
 
 .. _cortex_a:
