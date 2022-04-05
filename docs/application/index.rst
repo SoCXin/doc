@@ -14,7 +14,7 @@ Application
     模拟转换   <adc>
     控制驱动   <foc>
 
-智能家居
+通信协议
 -----------
 
 .. _matter:
@@ -22,8 +22,6 @@ Application
 Matter
 ~~~~~~~~~~~
 ``CSA`` ``简单性、互操作性、可靠性和安全性``
-
-.. image:: ./images/matter.png
 
 由 CSA 连接标准联盟 (Connectivity Standards Alliance) 发起，多家行业领先公司联合推出的智能家居互联协议。(Zigbee联盟改名CSA联盟)
 

@@ -279,7 +279,7 @@ ULP
 Matter
 ^^^^^^^^^^^^^^
 
-Matter 成立于 2019 年，由连接标准联盟（Connectivity Standards Alliance，前称 Zigbee Alliance）发起并领导，旨在提高不同厂商智能家居产品间的兼容性和互操作性。
+:ref:`matter` 成立于 2019 年，由连接标准联盟（Connectivity Standards Alliance，前称 Zigbee Alliance）发起并领导，旨在提高不同厂商智能家居产品间的兼容性和互操作性。
 
 是一个统一的智能家居互联标准，能够为家庭自动化项目提供安全可靠的无线连接。
 
