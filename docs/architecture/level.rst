@@ -4,7 +4,12 @@
 Level
 ===============
 
-`Level Mark <https://github.com/SoCXin/Level>`_ base on :ref:`CoreMark`
+.. toctree::
+    :maxdepth: 1
+
+    性能测试     <performance>
+
+`Level Mark <https://github.com/SoCXin/Level>`_ base on :ref:`CoreMark`/:ref:`Geekbench`
 
 .. list-table::
     :header-rows:  1
@@ -62,21 +67,28 @@ L5(<5k)
 
 .. _level6:
 
-L6(<1w)
+L6(<8k)
 --------------
-``CoreMark < 10000``
+``CoreMark < 8000``
 
 .. _level7:
 
-L7(<2w)
+L7(>1k)
 --------------
+``Geekbench > 1000``
 
 .. _level8:
 
-L8(<5w)
+L8(>2k)
 --------------
+``Geekbench > 2000``
 
 .. _level9:
 
-L9
+L9(>4k)
 --------------
+``Geekbench > 4000``
+
+* A15:1724/4320
+* 9000:1248/4181
+* 8Gen1:1235/3831
