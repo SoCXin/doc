@@ -34,6 +34,9 @@ Xin简介
 * RAM容量：520 KB (8 MB SPI)
 * Flash容量：448 KB (16MB PSRAM)
 
+
+`EEMBC CoreMark:4.07 CoreMark/MHz <https://www.eembc.org/viewer/?benchmark_seq=13244>`_
+
 特征参数
 ^^^^^^^^^^^
 

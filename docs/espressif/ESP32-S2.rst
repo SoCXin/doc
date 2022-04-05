@@ -32,6 +32,10 @@ Xin简介
 * ROM容量：128 KB
 * Flash容量：4 MB (1GB)
 
+
+`EEMBC CoreMark 472.81 - 1.97CoreMark/MHz <https://www.eembc.org/viewer/?benchmark_seq=13418>`_
+
+
 特征参数
 ^^^^^^^^^^^
 

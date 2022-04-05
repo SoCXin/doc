@@ -81,6 +81,7 @@ CoreMark
 --------------
 
 
+
 CoreMark是由嵌入式微处理器基准评测协会EEMBC的Shay Gla-On于2009年提出的一项基准测试程序，其主要目标是测试处理器核心性能，这个标准被认为比陈旧的Dhrystone标准更有实际价值。
 
 CoreMark能分析并为处理器管线架构和效率评分，通过执行三个主要任务来测试常用运算的执行。重要的是，CoreMark测试的设计方式，能让处理器不受内存的影响。所以目前CoreMark已迅速成为量测与比较处理器性能的业界标准基准测试。
@@ -90,6 +91,9 @@ CoreMark程序使用C语言写成，包含如下的运算法则：列举（寻�
 CoreMark标准的测试方法也很简单，就是在某配置参数组合下单位时间内跑了多少次CoreMark程序，其指标单位为CoreMark/MHz。CoreMark数字越高，意味着性能更高。
 
 跑分对编译器的优化等级 -O 参数有严重倚赖
+
+
+`EEMBC CoreMark <https://www.eembc.org/coremark/scores.php>`_
 
 
 .. _ULPMark:

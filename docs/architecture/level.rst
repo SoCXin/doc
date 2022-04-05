@@ -7,7 +7,7 @@ Level
 .. toctree::
     :maxdepth: 1
 
-    性能测试     <performance>
+    性能评测     <performance>
 
 `Level Mark <https://github.com/SoCXin/Level>`_ base on Frequency/:ref:`CoreMark`/:ref:`Geekbench`
 
@@ -23,15 +23,15 @@ Level
       - :ref:`level7`
       - :ref:`level8`
       - :ref:`level9`
-    * - √
-      - √
-      - √
+    * -
+      -
+      -
       - :ref:`stm32h7b0`
-      - :ref:`rt1060`
+      - :ref:`stm32h745`
       - :ref:`rt1170`
-      - X
-      - X
-      - X
+      -
+      -
+      -
 
 
 
@@ -89,6 +89,10 @@ L9(>4k)
 --------------
 ``Geekbench > 4000``
 
-* A15:1724/4320
+* M1:9.78 CoreMark/MHz
+* A15:1724/4320 | 9.36 CoreMark/MHz
 * 9000:1248/4181
 * 8Gen1:1235/3831
+
+
+

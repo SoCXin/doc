@@ -29,8 +29,8 @@ Xin简介
 * 运行环境：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn32` (5x5mm)
 * RAM容量：400 KB (16K cache)
-* Flash容量：384 KB
-
+* ROM容量：384 KB
+* Flash容量：2 MB
 
 
 特征参数
