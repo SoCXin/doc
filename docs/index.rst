@@ -25,36 +25,36 @@ XiN
     极客聚集开源生态 <news/hot>
     著名项目适配支持 <news/pop>
     旗舰小贵干啥都行 <news/top>
-    难以拒绝低价好货 <news/low>
     表现中庸货源稳定 <news/stable>
+    探索极致低价好货 <low/index>
 
 .. list-table::
     :header-rows: 1
 
     * - :ref:`hot`
       - :ref:`pop`
-      - :ref:`top`
+      - :ref:`list`
       - :ref:`low`
       - :ref:`stable`
-      - :ref:`list`
+      - :ref:`top`
     * - :ref:`esp32`
       - :ref:`stm32f103`
-      - :ref:`stm32h730`
+      - :ref:`NO_017`
       - :ref:`stc8`
       - :ref:`gd32f130`
-      - :ref:`NO_017`
+      - :ref:`stm32h730`
     * - :ref:`rp2040`
       - :ref:`esp32`
-      - :ref:`esp32s3`
+      - :ref:`NO_013`
       - :ref:`ch552`
       - :ref:`gd32e230`
-      - :ref:`NO_013`
+      - :ref:`esp32s3`
     * - :ref:`gd32v103`
       - :ref:`nrf52832`
-      - :ref:`rt1060`
+      - :ref:`NO_010`
       - :ref:`ch573`
       - :ref:`mm32f031`
-      - :ref:`NO_010`
+      - :ref:`rt1060`
 
 .. toctree::
     :caption: 应用领域
@@ -147,29 +147,33 @@ XiN
       - :ref:`mediatek`
       - :ref:`arterytek`
       - :ref:`allwinner`
+      - :ref:`gigadevice`
     * - :ref:`ch32v307`
       - :ref:`asr6601`
       - :ref:`esp32s2`
       - :ref:`mt2625`
       - :ref:`at32f425`
       - :ref:`D1`
+      - :ref:`gd32e230`
     * - :ref:`ch579`
       - :ref:`asr6501`
       - :ref:`esp32`
       - :ref:`mt7688`
       - :ref:`at32f421`
       - :ref:`S3`
+      - :ref:`gd32v103`
     * - :ref:`ch549`
       - :ref:`asr1802`
       - :ref:`esp32c3`
       - :ref:`mt2503`
       - :ref:`at32f403`
       - :ref:`R329`
+      - :ref:`gd32f130`
     * - :ref:`ch569`
       - :ref:`asr1601`
       - :ref:`esp32s3`
       - :ref:`mt7621`
       - :ref:`at32f437`
       - :ref:`v831`
-
+      - :ref:`gd32f303`
 

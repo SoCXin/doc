@@ -4,8 +4,8 @@
 STC8H
 ======
 
-* 关键词：``STC`` ``8051`` ``24MHz`` ``EEPROM`` ``cheap``
-* 资源库：`GitHub <https://github.com/SoCXin/STC8>`_
+`标签 <https://github.com/SoCXin/STC8>`_ : ``STC`` ``8051`` ``24MHz`` ``EEPROM`` ``cheap``
+
 
 .. contents::
     :local:
@@ -14,9 +14,6 @@ STC8H
 -----------
 
 STC的最大特点价格低，然后是够用和使用广泛，不需要烧录器。
-
-.. image:: ./images/STC8.png
-    :target: https://www.stcmcudata.com/
 
 * F：基础款。普通8051有的，它性能更强大、数量更多。8051没有的SPI、IIC、比较器，它也有。封装多，可以说是从普通8051过渡过来的最佳选择。
 * A：旗舰款。不仅拥有最大8K的RAM空间，在F的基础增加了模拟外设ADC、PWM，独立的Vref脚还能提供ADC更自由的发挥攻坚。可以说是面面俱到的旗舰。
@@ -27,7 +24,7 @@ STC的最大特点价格低，然后是够用和使用广泛，不需要烧录�
 .. _stc8y6:
 
 指令集
----------------
+-----------
 
 .. image:: ./images/STC.png
     :target: https://www.stcmcudata.com/
