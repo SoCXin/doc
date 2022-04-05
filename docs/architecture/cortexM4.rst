@@ -4,6 +4,8 @@
 Cortex-M4
 ====================
 
+:ref:`performance` : ``2.19 CoreMark/MHz`` ``1.25 DMIPS/MHz``
+
 .. contents::
     :local:
 

@@ -1,7 +1,7 @@
 
 .. _st_main:
 
-主流产品
+mainstream
 ================
 
 .. image:: images/main.png

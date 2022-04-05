@@ -157,8 +157,7 @@ Arduino
 ~~~~~~~~~~~~~
 ``C++``
 
-
-`Arduino简介 <https://docs.os-q.com/arduino>`_
+`OS-Q:Arduino <https://docs.os-q.com/arduino>`_
 
 编译体系
 -------------

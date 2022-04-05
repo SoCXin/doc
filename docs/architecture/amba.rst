@@ -33,8 +33,8 @@ Performance
     :header-rows:  1
 
     * - :ref:`performance`
-      - DMIPS/MHz
-      - CoreMark/MHz
+      - :ref:`DMIPS`/MHz
+      - :ref:`CoreMark`/MHz
     * - :ref:`cortex_m0`
       - 0.95
       - 1.62

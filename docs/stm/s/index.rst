@@ -1,7 +1,7 @@
 
-.. _st_lowend:
+.. _st_lowcost:
 
-低阶产品
+lowcost
 ===============
 
 .. contents::

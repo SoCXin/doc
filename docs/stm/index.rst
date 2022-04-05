@@ -9,11 +9,10 @@ ST
 公司简介
 -----------
 
-.. note::
-    意法半导体是全球最大的半导体公司之一，MCU领域的王者，其产品拥有庞大的工程师群众基础和开发资源。
+意法半导体是全球最大的半导体公司之一，MCU领域的王者，其产品拥有庞大的工程师群众基础和开发资源。
 
 
-产品简介
+产品分类
 -----------
 
 .. list-table::
@@ -63,13 +62,13 @@ ST
 .. list-table::
     :header-rows:  1
 
-    * - Rank
+    * - :ref:`top`
       - :ref:`architecture`
-      - DMIPS
-      - RAM
+      - :ref:`CoreMark`
+      - SRAM
       - Flash
-      - BLE
-      - USB
+      - Interface
+      - Price
       - Package
     * - :ref:`stm32h730`
       -
@@ -152,7 +151,7 @@ ST
 .. list-table::
     :header-rows:  1
 
-    * - Rank
+    * - :ref:`ulp`
       - :ref:`architecture`
       - RAM
       - Flash
@@ -186,7 +185,7 @@ ST
       -
 
 
-技术简介
+核心技术
 -----------
 
 .. _stm32_adc:

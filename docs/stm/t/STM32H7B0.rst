@@ -27,7 +27,7 @@ Xin简介
 
 * 发布时间：2019年5月
 * 工作温度：-40°C to +85°C/125°C
-* 处理性能：599 :ref:`DMIPS`, 1414 :ref:`CoreMark`
+* 处理性能：599 :ref:`DMIPS`, 1414 :ref:`CoreMark` , :ref:`level5`
 * RAM容量：1.4 MB
 * Flash容量：128 KB (由多个8 KB扇区组成)
 * 封装规格：64 to 176 Pin

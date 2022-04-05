@@ -41,3 +41,22 @@ Xin简介
 * 1 GHz :ref:`cortex_m7`
 * 400 MHz :ref:`cortex_m4`
 * 2x Gb ENET，带AVB和TSN
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~~
+
+系列对比
+~~~~~~~~~~
+
+型号对比
+~~~~~~~~~~
+
+.. image:: ./images/RT1170list.png
+    :target: https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus:IMX-RT-SERIES

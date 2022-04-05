@@ -4,8 +4,7 @@
 STM32MP15
 =====================
 
-* 关键词：``Cortex-A7`` ``Cortex-M4`` ``32KB L1`` ``256KB L2``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32MP15>`_
+`标签 <https://github.com/SoCXin/STM32MP15>`_ : ``Cortex-A7`` ``Cortex-M4`` ``32KB L1`` ``256KB L2``
 
 .. contents::
     :local:
@@ -15,9 +14,6 @@ Xin简介
 
 .. image:: ./images/stm32mp157.jpg
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-arm-cortex-mpus/stm32mp1-series/stm32mp157/stm32mp157c.html
-
-.. contents::
-    :local:
 
 
 规格参数

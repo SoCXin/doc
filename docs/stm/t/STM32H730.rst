@@ -4,7 +4,7 @@
 STM32H730
 ================
 
-`标签 <https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html>`_ : ``Cortex-M7`` ``550MHz`` ``5MSPS-12bit-DAC`` ``3.6MSPS-16bit-ADC`` ``USB-HS-OTG`` ``ULPI`` ``OctoSPI``  ``Ethernet``
+`标签 <https://github.com/SoCXin/STM32H730>`_ : ``Cortex-M7`` ``550MHz`` ``5MSPS-12bit-DAC`` ``3.6MSPS-16bit-ADC`` ``USB-HS-OTG`` ``ULPI`` ``OctoSPI``  ``Ethernet``
 
 .. contents::
     :local:
@@ -15,7 +15,6 @@ Xin简介
 .. image:: ./images/STM32H730.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html
 
-`GitHub <https://github.com/SoCXin/STM32H730>`_ | `Gitee <https://gitee.com/socxin/STM32H730>`_
 
 规格参数
 ~~~~~~~~~~~
@@ -27,7 +26,7 @@ Xin简介
 * 参考价格：
 * 制程工艺：
 * 供货周期：
-* 处理性能：1177 :ref:`DMIPS`, 2778 :ref:`CoreMark`
+* 处理性能：1177 :ref:`DMIPS`, 2778 :ref:`CoreMark`, :ref:`level5`
 * 封装规格：LQFP144/LQFP176/UFBGA176/UFBGA169/UFBGA144/TFBGA100/LQFP100(14×14mm)
 * 运行环境：-40°C to 85°C
 * RAM容量：564 KB

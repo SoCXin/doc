@@ -13,8 +13,6 @@ AT32F437
 Xin简介
 -----------
 
-:ref:`arterytek` :ref:`cortex_m4` 单核 MCU
-
 规格参数
 ~~~~~~~~~~~
 
@@ -26,18 +24,18 @@ Xin简介
 * 参考价格：
 * 制程工艺：
 * 供货周期：
-* 处理性能：6468 :ref:`CoreMark`
+* 处理性能：630 :ref:`CoreMark`
 * 封装规格：LQFP64/LQFP100/LQFP144
 * 运行环境：-40~105°C
 * RAM容量：128~512 KB
-* Flash容量：256/1024/4032KB
+* Flash容量：256/1024/4032 KB
 
 
 特征参数
 ^^^^^^^^^^^
 
 * 288 MHz :ref:`cortex_m4`
-* 3x5.33Msps ADC
+* 3x 5.33 Msps ADC
 * sLib执行代码安全库区
 * 16MB SPI Flash memory 扩展
 * 4 x USART + 4 x UART
@@ -74,8 +72,8 @@ Xin选择
 
     * - :ref:`arterytek`
       - :ref:`CoreMark`
-      - RAM
-      - FLASH
+      - SRAM
+      - Flash
       - UART
       - CAN2.0B
       - USB
@@ -113,7 +111,7 @@ Xin选择
       - USB2.0
       - 10/100M
     * - AT32F435
-      - 360 (288MHz)
+      -
       - 512
       - 4032
       - 4
