@@ -21,12 +21,12 @@ XiN
     :caption: 新品速览
     :maxdepth: 1
 
-    当下设计推荐清单 <list/list>
     极客聚集开源生态 <news/hot>
     著名项目适配支持 <news/pop>
-    旗舰小贵干啥都行 <news/top>
-    表现中庸货源稳定 <news/stable>
+    当下设计推荐清单 <list/list>
     探索极致低价好货 <low/index>
+    表现中庸货源稳定 <news/stable>
+    旗舰小贵干啥都行 <news/top>
 
 .. list-table::
     :header-rows: 1
@@ -61,7 +61,7 @@ XiN
     :maxdepth: 1
 
     功能分类   <application/index>
-    产品形态   <application/product>
+    产品方案   <application/product>
 
 ==================  ==================  ==================
 |人机交互|_          |通信连接|_         |边缘计算|_
