@@ -1,11 +1,10 @@
 
 .. _rt1060:
 
-RT1064
+RT1060
 =============
 
-* 关键词：``Cortex-M7`` ``600MHz`` ``USB-HS-PHY`` ``ETH-MAC-100``
-* 资源库：`GitHub <https://github.com/SoCXin/RT1060>`_
+`标签 <https://github.com/SoCXin/RT1060>`_ : ``Cortex-M7`` ``600MHz`` ``USB-HS-PHY`` ``ETH-MAC-100``
 
 .. contents::
     :local:
@@ -16,8 +15,6 @@ Xin简介
 .. image:: ./images/RT1060.png
     :target: https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1060-crossover-mcu-with-arm-cortex-m7-core:i.MX-RT1060
 
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -56,7 +53,7 @@ Xin选择
 
 * :ref:`stm32h730` 支持32位SDRAM，:ref:`rt1060` 仅支持16位SDRAM
 * :ref:`stm32h730` 有JPEG硬解，分辨率1024*768，:ref:`rt1060` 支持的分辨率是1368*768
-* :ref:`rt1060` 两个USB带``高速PHY``
+* :ref:`rt1060` USB-HS (PHY)
 * :ref:`rt1060` 带 ``双网口`` 可以作为网关中继， :ref:`stm32h750` 系列仅一个，都不带PHY
 
 
@@ -81,3 +78,9 @@ RT1060系列包括RT1062、RT1064等常用型号
 
 .. note::
     RT1062在开源领域的参与度还是蛮高的。
+
+
+.. _rt1064:
+
+RT1064
+^^^^^^^^^^^

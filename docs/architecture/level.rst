@@ -9,14 +9,14 @@ Level
     :header-rows:  1
 
     * - :ref:`CoreMark`
-      - L1(≤40)
-      - L2(≤100)
-      - L3(≤240)
-      - L4(≤700)
-      - L5(≤1500)
-      - L6(≤3600)
-      - L7(≤5000)
-      - L8(≤7500)
+      - :ref:`level1`
+      - :ref:`level2`
+      - :ref:`level3`
+      - :ref:`level4`
+      - :ref:`level5`
+      - :ref:`level6`
+      - L7
+      - L8
       - L9
     * - :ref:`mcs51`
       - √
@@ -28,40 +28,10 @@ Level
       - X
       - X
       - X
-    * - :ref:`cortex_m0`
+    * - :ref:`cortex_m`
       - √
       - √
       - √
-      - X
-      - X
-      - X
-      - X
-      - X
-      - X
-    * - :ref:`cortex_m3`
-      - √
-      - √
-      - √
-      - √
-      -
-      -
-      - X
-      - X
-      - X
-    * - :ref:`cortex_m4`
-      -
-      - √
-      - √
-      - √
-      -
-      -
-      - X
-      - X
-      - X
-    * - :ref:`cortex_m7`
-      -
-      -
-      -
       - √
       - √
       - √
@@ -114,14 +84,14 @@ Level
 .. list-table::
     :header-rows:  1
 
-    * - L1(≤40)
-      - L2(≤100)
-      - L3(≤240)
-      - L4(≤700)
-      - L5(≤1500)
-      - L6(≤3600)
-      - L7(≤5000)
-      - L8(≤7500)
+    * - :ref:`level1`
+      - :ref:`level2`
+      - :ref:`level3`
+      - :ref:`level4`
+      - :ref:`level5`
+      - :ref:`level6`
+      - L7
+      - L8
       - L9
     * - :ref:`stc8`
       -
@@ -163,11 +133,12 @@ Level
       -
       -
       -
-      - √
-      -
       -
       - :ref:`stm32h7b0`
       - :ref:`rt1060`
+      -
+      -
+      -
     * - :ref:`cortex_r`
       -
       -
@@ -206,3 +177,32 @@ Level
       -
 
 
+.. _level1:
+
+L1(40)
+--------------
+
+.. _level2:
+
+L2(100)
+--------------
+
+.. _level3:
+
+L3(300)
+--------------
+
+.. _level4:
+
+L4(800)
+--------------
+
+.. _level5:
+
+L5(1800)
+--------------
+
+.. _level6:
+
+L6(3600)
+--------------

@@ -1,0 +1,43 @@
+
+.. _rt1170:
+
+RT1170
+=============
+
+`标签 <https://github.com/SoCXin/RT1170>`_ : ``Cortex-M7`` ``Cortex-M4`` ``Dual Core`` ``1 GHz``
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. image:: ./images/RT1170.png
+    :target: https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1170-crossover-mcu-family-first-ghz-mcu-with-arm-cortex-m7-and-cortex-m4-cores:i.MX-RT1170
+
+`datasheet <https://www.nxp.com.cn/docs/en/data-sheet/IMXRT1170CEC.pdf>`_
+
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：6468 :ref:`CoreMark`
+* 封装规格：MAPBGA289 (14x14x0.8 mm)
+* 运行环境：-40°C to 85°C
+* RAM容量：2 MB
+* Flash容量：
+
+特征参数
+^^^^^^^^^^^
+
+* 1 GHz :ref:`cortex_m7`
+* 400 MHz :ref:`cortex_m4`
+

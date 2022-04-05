@@ -56,16 +56,3 @@
       - :ref:`esp_qfn56`
 
 
-.. _imx_rt:
-
-NXP i.MX RT
---------------
-
-.. toctree::
-    :maxdepth: 1
-
-    RT1010 <../H/RT1010>
-    RT1020 <../H/RT1020>
-    RT1060 <../H/RT1060>
-
-

@@ -91,6 +91,7 @@ Vendor
 
     微控制器芯片领域 ST <stm/index>
     先进模拟和低功耗 TI <TI/index>
+    高性能多领域产品 NXP <nxp/index>
     低功耗蓝牙物联网 Nordic <nordic/index>
 
 
