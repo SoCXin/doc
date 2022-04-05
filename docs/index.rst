@@ -76,7 +76,7 @@ XiN
 .. |人机交互| image:: list/images/esp32.png
 .. _人机交互: application/hmi.html
 
-.. |通信连接| image:: list/images/esp32.png
+.. |通信连接| image:: application/images/matter.png
 .. _通信连接: application/iot.html
 
 .. |边缘计算| image:: list/images/esp32.png
