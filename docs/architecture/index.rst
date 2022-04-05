@@ -28,8 +28,8 @@ Architecture
       - :ref:`level8`
       - :ref:`level9`
     * - :ref:`mcs51`
-      - √
-      - √
+      - :ref:`ch549`
+      - X
       - X
       - X
       - X

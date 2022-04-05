@@ -26,7 +26,7 @@ Level
     * - √
       - √
       - √
-      - X
+      - :ref:`stm32h7b0`
       - :ref:`rt1060`
       - :ref:`rt1170`
       - X
@@ -49,9 +49,9 @@ L2(120)
 
 .. _level3:
 
-L3(200)
+L3(240)
 --------------
-``Frequency < 200MHz``
+``Frequency < 240MHz``
 
 .. _level4:
 

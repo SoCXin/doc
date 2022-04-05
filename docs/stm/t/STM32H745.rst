@@ -3,8 +3,7 @@
 STM32H745
 ================
 
-* 关键词：``Cortex-M7`` ``480MHz`` ``Dual Core`` ``USB-HS-OTG`` ``ULPI`` ``Ethernet`` ``DFSDM``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32H745>`_
+`标签 <https://github.com/SoCXin/STM32H745>`_ : ``Cortex-M7`` ``480MHz`` ``Dual Core`` ``USB-HS-OTG`` ``ULPI`` ``Ethernet`` ``DFSDM``
 
 .. contents::
     :local:
@@ -15,8 +14,6 @@ Xin简介
 .. image:: ./images/stm32h745.jpg
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32h7-series/stm32h745-755/stm32h745zi.html
 
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -26,7 +23,7 @@ Xin简介
 
 * 发布时间：
 * 工作温度：-40°C to +125°C
-* 处理性能：1027+300 :ref:`DMIPS`, 3224 :ref:`CoreMark`
+* 处理性能：1027+300 :ref:`DMIPS`, 3224 :ref:`CoreMark` | :ref:`level5`
 * RAM容量：1 MB (STM32H755: 2 MB)
 * Flash容量：1 MB
 * 封装规格：LQFP144/LQFP176/UFBGA176/UFBGA169

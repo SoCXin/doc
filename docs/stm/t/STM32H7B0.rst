@@ -4,8 +4,7 @@
 STM32H7B0
 ================
 
-* 关键词：``Cortex-M7`` ``280MHz`` ``SMPS`` ``Chrom-ART`` ``STemWin`` ``JPEC`` ``HDMI-CEC``
-* 代码库：`GitHub <https://github.com/SoCXin/STM32H7B0>`_ , `Gitee <https://gitee.com/socxin/STM32H7B0>`_
+`标签 <https://github.com/SoCXin/STM32H7B0>`_ : ``Cortex-M7`` ``280MHz`` ``SMPS`` ``Chrom-ART`` ``STemWin`` ``JPEC`` ``HDMI-CEC``
 
 .. contents::
     :local:
@@ -16,8 +15,6 @@ Xin简介
 .. image:: ./images/stm32h7b0.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html
 
-.. contents::
-    :local:
 
 规格配置
 ~~~~~~~~~~~
@@ -27,7 +24,7 @@ Xin简介
 
 * 发布时间：2019年5月
 * 工作温度：-40°C to +85°C/125°C
-* 处理性能：599 :ref:`DMIPS`, 1414 :ref:`CoreMark` , :ref:`level5`
+* 处理性能：599 :ref:`DMIPS`, 1414 :ref:`CoreMark` | :ref:`level4`
 * RAM容量：1.4 MB
 * Flash容量：128 KB (由多个8 KB扇区组成)
 * 封装规格：64 to 176 Pin

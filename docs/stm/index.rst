@@ -65,44 +65,43 @@ ST
     * - :ref:`top`
       - :ref:`architecture`
       - :ref:`CoreMark`
+      - :ref:`level`
       - SRAM
-      - Flash
       - Interface
       - Price
       - Package
+    * - :ref:`stm32h745`
+      - :ref:`cortex_m7`
+      - 3224
+      - :ref:`level5`
+      -
+      -
+      -
+      -
     * - :ref:`stm32h730`
-      -
-      -
-      -
+      - :ref:`cortex_m7`
+      - 2778
+      - :ref:`level5`
       -
       -
       -
       -
     * - :ref:`stm32h750`
-      -
-      -
-      -
+      - :ref:`cortex_m7`
+      - 2424
+      - :ref:`level5`
       -
       -
       -
       -
     * - :ref:`stm32h7b0`
+      - :ref:`cortex_m7`
+      - 1414
+      - :ref:`level4`
       -
       -
       -
       -
-      -
-      -
-      -
-    * - :ref:`stm32h745`
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-
 
 .. image:: ./t/images/STM32H7.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html

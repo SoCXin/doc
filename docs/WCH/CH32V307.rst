@@ -4,7 +4,7 @@
 CH32V307
 ============
 
-`标签 <http://www.wch.cn/products/CH32V307.html>`_ : ``RISC-V`` ``RISC-V4F`` ``USB-HS-OTG(480Mbps)`` ``Ethernet`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``CAN`` ``FSMC`` ``OPA`` ``DVP``
+`标签 <https://github.com/SoCXin/CH32V307>`_ : ``RISC-V`` ``RISC-V4F`` ``USB-HS-OTG(480Mbps)`` ``Ethernet`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``CAN`` ``FSMC`` ``OPA`` ``DVP``
 
 .. contents::
     :local:
@@ -29,7 +29,7 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
 * 参考价格：
 * 制程工艺：
 * 供货周期：
-* 处理性能：
+* 处理性能：:ref:`level3`
 * 封装规格：LQFP64M/LQFP100/QFN68
 * 运行环境：-40°C to 85°C
 * RAM容量：64 KB

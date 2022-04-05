@@ -18,8 +18,6 @@ Xin简介
 .. image:: ./images/CH573.png
     :target: http://www.wch.cn/products/CH573.html
 
-`GitHub <https://github.com/SoCXin/CH573>`_
-
 规格参数
 ~~~~~~~~~~~
 
@@ -31,7 +29,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：:ref:`wch_qfn28` (4x4mm) / :ref:`wch_qfn48`
+* 封装规格：:ref:`wch_qfn28` (4x4mm) / :ref:`wch_qfn48` | :ref:`level1`
 * 运行环境：-40°C to 85°C
 * RAM容量：18 KB
 * Flash容量：512 KB

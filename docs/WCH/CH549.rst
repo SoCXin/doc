@@ -4,8 +4,7 @@
 CH549
 =========
 
-* 关键词：``8051`` ``WCH`` ``48MHz`` ``USB FS`` ``4 UART`` ``LDO`` ``USB-PD``
-* 资源库：`GitHub <https://github.com/SoCXin/CH549>`_
+`标签 <https://github.com/SoCXin/CH549>`_ : ``8051`` ``WCH`` ``48MHz`` ``USB FS`` ``4 UART`` ``LDO`` ``USB-PD``
 
 .. contents::
     :local:
@@ -36,7 +35,7 @@ Xin简介
 * 制程工艺：
 * 参考价格：
 * 供货周期：
-* 处理性能：30 :ref:`CoreMark`
+* 处理性能：:ref:`level1`
 * RAM容量：2 KB
 * Flash容量：63 KB
 

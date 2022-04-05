@@ -26,7 +26,7 @@ Xin简介
 * 参考价格：$3.5
 * 制程工艺：40nm
 * 供货周期：
-* 处理性能：1177 :ref:`DMIPS`, 2778 :ref:`CoreMark` , :ref:`level5`
+* 处理性能：1027 :ref:`DMIPS`, 2424 :ref:`CoreMark` | :ref:`level5`
 * 封装规格：LQFP144/LQFP176/UFBGA176/UFBGA169/UFBGA144/TFBGA100/LQFP100(14×14mm)
 * 运行环境：-40°C to 85°C
 * RAM容量：1 MB
