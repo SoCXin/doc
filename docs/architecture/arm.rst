@@ -17,6 +17,8 @@ ARM
 
     AMBA <amba>
 
+.. _neumann:
+
 Von Neumann
 ~~~~~~~~~~~~~~
 
@@ -24,6 +26,8 @@ Von Neumann
 
 .. image:: ./images/Neumann.png
     :target: https://blog.csdn.net/u014470361/article/details/79774331
+
+.. _harvard:
 
 Harvard
 ~~~~~~~~~~~~~~

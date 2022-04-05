@@ -24,9 +24,9 @@ Architecture
       - :ref:`level4`
       - :ref:`level5`
       - :ref:`level6`
-      - L7
-      - L8
-      - L9
+      - :ref:`level7`
+      - :ref:`level8`
+      - :ref:`level9`
     * - :ref:`mcs51`
       - √
       - √

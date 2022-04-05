@@ -4,8 +4,8 @@
 AT32F437
 ===============
 
-* 关键词：``Cortex-M4`` ``300DMIPS`` ``240MHz`` ``8 UART`` ``2 CAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
-* 资源库：`GitHub <https://github.com/SoCXin/AT32F437>`_
+`标签 <https://github.com/SoCXin/AT32F437>`_ : ``Cortex-M4`` ``288 MHz`` ``ADC`` ``8 UART`` ``2 CAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
+
 
 .. contents::
     :local:
@@ -15,17 +15,38 @@ Xin简介
 
 :ref:`arterytek` :ref:`cortex_m4` 单核 MCU
 
-关键特性
-~~~~~~~~~
+规格参数
+~~~~~~~~~~~
 
-* 工业级温度范围-40~105°C
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：6468 :ref:`CoreMark`
+* 封装规格：LQFP64/LQFP100/LQFP144
+* 运行环境：-40~105°C
+* RAM容量：128~512 KB
+* Flash容量：256/1024/4032KB
+
+
+特征参数
+^^^^^^^^^^^
+
+* 288 MHz :ref:`cortex_m4`
+* 3x5.33Msps ADC
 * sLib执行代码安全库区
-* Cortex®-M4主频最高 240 MHz
 * 16MB SPI Flash memory 扩展
 * 4 x USART + 4 x UART
 * 2 x CAN 2.0B
 * Crystal-less USB2.0
 * IEEE 1588 10/100M以太网MAC，专用DMA和4K SRAM，MII/RMII接口
+
+.. hint::
+    :ref:`at32f407` 基于 :ref:`cortex_m4` 的高性能产品，拥有丰富的通信外设资源，包括8个串口和以太网MAC，十分适用于网关类产品
 
 
 芯片架构
@@ -37,8 +58,6 @@ Xin简介
 Xin选择
 -----------
 
-.. hint::
-    :ref:`at32f407` 基于 :ref:`cortex_m4` 的高性能产品，拥有丰富的通信外设资源，包括8个串口和以太网MAC，十分适用于网关类产品
 
 .. contents::
     :local:
@@ -53,8 +72,8 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
-      - DMIPS
+    * - :ref:`arterytek`
+      - :ref:`CoreMark`
       - RAM
       - FLASH
       - UART
@@ -62,7 +81,7 @@ Xin选择
       - USB
       - Ethernet
     * - :ref:`at32f415`
-      - 175 DMIPS
+      -
       - 32
       - 64/128/256
       - 2/3/5
@@ -70,7 +89,7 @@ Xin选择
       - USB OTG
       - NO
     * - :ref:`at32f413`
-      - 250 DMIPS
+      -
       - 16/32/64
       - 64/128/256
       - 2/3/5
@@ -78,7 +97,7 @@ Xin选择
       - USB2.0
       - NO
     * - :ref:`at32f403`
-      - 300 DMIPS
+      -
       - 224
       - 256/512/1024
       - 7/8
@@ -86,7 +105,7 @@ Xin选择
       - USB2.0
       - NO
     * - :ref:`at32f407`
-      - 300 DMIPS
+      -
       - 224
       - 256/512/1024
       - 8
@@ -101,8 +120,8 @@ Xin选择
       - 1
       - 2 x OTG
       - NO
-    * - AT32F437
-      - 360 (288MHz)
+    * - :ref:`at32f437`
+      -
       - 512
       - 4032
       - 4

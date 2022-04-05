@@ -4,6 +4,88 @@
 IoT
 ============
 
+.. list-table::
+    :header-rows: 1
+
+    * - :ref:`iot`
+      - :ref:`can`
+      - :ref:`ethernet`
+      - :ref:`plc`
+      - :ref:`802_15_4`
+      - :ref:`ble`
+      - :ref:`wifi`
+      - :ref:`lora`
+      - :ref:`nbiot`
+      - :ref:`cat1`
+      - :ref:`cat4`
+    * - :ref:`st`
+      - √
+      - √
+      -
+      -
+      - √
+      -
+      - √
+      -
+      -
+      -
+    * - :ref:`ti`
+      - √
+      - √
+      -
+      - √
+      - √
+      - √
+      -
+      -
+      -
+      -
+    * - :ref:`nordic`
+      - √
+      -
+      -
+      - √
+      - √
+      -
+      -
+      - √
+      -
+      -
+    * - :ref:`mediatek`
+      - √
+      - √
+      -
+      -
+      -
+      - √
+      -
+      - √
+      - √
+      - √
+    * - :ref:`wch`
+      - √
+      - √
+      -
+      - √
+      - √
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`espressif`
+      - √
+      - √
+      -
+      - √
+      - √
+      - √
+      -
+      -
+      -
+      -
+
+
 
 .. list-table::
     :header-rows:  1

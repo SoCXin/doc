@@ -14,32 +14,39 @@
 
     * - :ref:`top`
       - :ref:`architecture`
-      - RAM
-      - Flash
+      - :ref:`CoreMark`
+      - SRAM
       - DMIPS
       - Interface
       - Package
     * - :ref:`stm32h730`
       - :ref:`cortex_m7`
+      - 2778
       - 1 MB
-      - 128 KB
-      - 1177
+      -
       - 35
-      - 100-176
+      - 100/144/176
     * - :ref:`stm32h745`
       - :ref:`cortex_m7`
+      - 3224
       - 1 MB
-      - 128 KB
-      - 1327
+      -
       -
       - 100/144/176
     * - :ref:`rt1060`
       - :ref:`cortex_m7`
+      -
       - 1 MB
-      - 512 KB
       - 1284
       -
       - BGA196
+    * - :ref:`rt1170`
+      - :ref:`cortex_m7`
+      - 6468
+      -
+      -
+      -
+      -
     * - :ref:`at32f437`
       - :ref:`cortex_m4`
       -
@@ -49,8 +56,8 @@
       - 64/100/144
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
-      -
-      -
+      - 1181.6
+      - 512KB
       -
       -
       - :ref:`esp_qfn56`

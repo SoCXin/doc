@@ -24,14 +24,15 @@ Advanced High performance Bus,主要用于高性能模块(如CPU、DMA和DSP等)
 
 AHB主要是针对高效率、高频宽及快速系统模块所设计的总线，它可以连接如微处理器、芯片上或芯片外的内存模块和DMA等高效率模块。
 
+.. _performance:
 
-性能测试
-----------
+Performance
+--------------
 
 .. list-table::
     :header-rows:  1
 
-    * - 内核
+    * - :ref:`performance`
       - DMIPS/MHz
       - CoreMark/MHz
     * - :ref:`cortex_m0`
@@ -45,7 +46,7 @@ AHB主要是针对高效率、高频宽及快速系统模块所设计的总线�
       - 2.19
     * - :ref:`cortex_m7`
       - 2.14
-      -
+      - 5.0
     * - :ref:`cortex_m23`
       -
       -

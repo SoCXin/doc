@@ -4,21 +4,17 @@
 Cortex-M0
 ====================
 
-.. contents::
-    :local:
+:ref:`performance` : ``1.62 CoreMark/MHz`` ``0.95 DMIPS/MHz``
+
+3级流水线 :ref:`neumann` ，能耗最低的最小ARM处理器，Cortex-M0 的代码密度和能效优势意味着它是各种应用中 8/16 位设备的自然高性价比换代产品，同时保留与功能丰富的 Cortex-M3 处理器的工具和二进制向上兼容性。
 
 .. note::
     2009年发布，是一款具有开创性的产品，第一个将32位处理器在同8位和16位处理器差不多大小的硅片实现的，在保持可用性的同时还具有极佳的能耗效率，最低配只有12000个逻辑门。
 
-作为能耗最低的最小ARM处理器，Cortex-M0 的代码密度和能效优势意味着它是各种应用中 8/16 位设备的自然高性价比换代产品，同时保留与功能丰富的 Cortex-M3 处理器的工具和二进制向上兼容性。
+.. contents::
+    :local:
 
-代表产品
----------------
 
-.. toctree::
-    :maxdepth: 1
-
-    RP2040 <../M/RP2040>
 
 
 内核对比
@@ -54,6 +50,15 @@ Cortex-M0和Cortex-M3都使用的是3级流水线结构，Cortex-M0+使用的是
 
 .. image:: ./images/m0vsarm7.png
     :target: https://blog.csdn.net/u012874587/article/details/78803044
+
+
+典型产品
+---------------
+
+.. toctree::
+    :maxdepth: 1
+
+    RP2040 <../M/RP2040>
 
 
 中断管理
