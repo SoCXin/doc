@@ -135,12 +135,7 @@ SoC平台
       -
       - LFBGA231
 
-.. toctree::
-    :maxdepth: 1
 
-    K210 <../H/K210>
-    K510 <../H/K510>
-    SSD201 <../H/SSD201>
 
 
 NPU平台
@@ -184,11 +179,6 @@ ARM平台
       -
 
 
-.. toctree::
-    :maxdepth: 1
-
-    BCM2711 <../H/BCM2711>
-    A311D <../H/A311D>
 
 MCU平台
 ~~~~~~~~~~~
@@ -211,9 +201,3 @@ MCU平台
       - :ref:`eai80_npu`
       - LQFP100
 
-
-.. toctree::
-    :maxdepth: 1
-
-    EAI80 <../H/EAI80>
-    SP7021 <../H/SP7021>

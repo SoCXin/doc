@@ -26,7 +26,7 @@ XiN
     当下设计推荐清单 <list/list>
     探索极致低价好货 <low/index>
     表现中庸货源稳定 <news/stable>
-    旗舰小贵干啥都行 <news/top>
+    旗舰小贵干啥都行 <high/index>
 
 .. list-table::
     :header-rows: 1
@@ -136,7 +136,7 @@ XiN
     :maxdepth: 1
 
     芯片设计 <vendor>
-    晶片制程 <fab>
+    晶片代工 <fab>
 
 .. list-table::
     :header-rows:  1
@@ -155,14 +155,14 @@ XiN
       - :ref:`at32f425`
       - :ref:`D1`
       - :ref:`gd32e230`
-    * - :ref:`ch579`
+    * - :ref:`ch32v208`
       - :ref:`asr6501`
       - :ref:`esp32`
       - :ref:`mt7688`
       - :ref:`at32f421`
       - :ref:`S3`
       - :ref:`gd32v103`
-    * - :ref:`ch549`
+    * - :ref:`ch579`
       - :ref:`asr1802`
       - :ref:`esp32c3`
       - :ref:`mt2503`
