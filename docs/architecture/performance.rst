@@ -11,7 +11,7 @@ Performance
     * - :ref:`performance`
       - :ref:`DMIPS`/MHz
       - :ref:`CoreMark`/MHz
-      -
+      - :ref:`Geekbench`/Core
     * - :ref:`cortex_m0`
       - 0.95
       - 1.62

@@ -9,7 +9,7 @@ Level
 
     性能测试     <performance>
 
-`Level Mark <https://github.com/SoCXin/Level>`_ base on :ref:`CoreMark`/:ref:`Geekbench`
+`Level Mark <https://github.com/SoCXin/Level>`_ base on Frequency/:ref:`CoreMark`/:ref:`Geekbench`
 
 .. list-table::
     :header-rows:  1
@@ -37,21 +37,21 @@ Level
 
 .. _level1:
 
-L1(150)
+L1(60)
 --------------
-``CoreMark < 150``
+``Frequency < 60MHz``
 
 .. _level2:
 
-L2(400)
+L2(120)
 --------------
-``CoreMark < 400``
+``Frequency < 120MHz``
 
 .. _level3:
 
-L3(800)
+L3(200)
 --------------
-``CoreMark < 800``
+``Frequency < 200MHz``
 
 .. _level4:
 
@@ -61,9 +61,9 @@ L4(<2k)
 
 .. _level5:
 
-L5(<5k)
+L5(<4k)
 --------------
-``CoreMark < 5000``
+``CoreMark < 4000``
 
 .. _level6:
 

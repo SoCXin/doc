@@ -28,7 +28,7 @@ Xin简介
 * 参考价格：
 * 制程工艺：40 nm (TSMC)
 * 供货周期：至2028年
-* 处理性能：504.85 :ref:`CoreMark`, 994.26 :ref:`CoreMark` (Dual Core)
+* 处理性能：504.85 :ref:`CoreMark`, 994.26 :ref:`CoreMark` (Dual Core) | :ref:`level4`
 * 运行环境：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn48` (6x6mm)
 * RAM容量：520 KB (8 MB SPI)

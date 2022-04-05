@@ -30,19 +30,20 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2020年10月
-* 发布价格：$0.195
+* 参考价格：$0.195
 * 制程工艺：55 nm
 * 供货周期：
-* 处理性能：262.8 :ref:`CoreMark`
+* 处理性能：262.8 :ref:`CoreMark` | :ref:`level3`
+* 封装规格：TSSOP20/QFN28/QFN32/LQFP32/LQFP48
+* 运行环境：-40~105°C
 * RAM容量：16 KB
 * Flash容量：64 KB
-* 封装规格：TSSOP20/QFN28/QFN32/LQFP32/LQFP48
 
 
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`cortex_m4` 120 MHz
+* 120 MHz :ref:`cortex_m4`
 * 15ch ADC (12bit 2MSPS)
 * 2 x USART
 * 2 x I2C + 2 x SPI/I2S

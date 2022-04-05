@@ -253,7 +253,7 @@ Xtensa LX7
 
 RISC-V
 ^^^^^^^^^^^^^^
-``RISC-V`` ``32-Bit``
+``32-Bit RISC-V`` :ref:`performance` : ``2.55 CoreMark/MHz`` > :ref:`cortex_m4`
 
 乐鑫自研 :ref:`riscv` 内核
 

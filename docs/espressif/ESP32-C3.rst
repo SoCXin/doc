@@ -25,7 +25,7 @@ Xin简介
 * 参考价格：
 * 制程工艺：40 nm
 * 供货周期：至2033年
-* 处理性能：407.22 :ref:`CoreMark` , 2.55 CoreMark/MHz
+* 处理性能：407.22 :ref:`CoreMark` | :ref:`level3`
 * 运行环境：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn32` (5x5mm)
 * RAM容量：400 KB (16K cache)

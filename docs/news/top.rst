@@ -15,49 +15,49 @@
     * - :ref:`top`
       - :ref:`architecture`
       - :ref:`CoreMark`
+      - :ref:`level`
       - SRAM
-      - DMIPS
       - Interface
       - Package
     * - :ref:`stm32h730`
       - :ref:`cortex_m7`
       - 2778
+      - :ref:`level5`
       - 1 MB
-      -
       - 35
       - 100/144/176
     * - :ref:`stm32h745`
       - :ref:`cortex_m7`
       - 3224
+      - :ref:`level5`
       - 1 MB
-      -
       -
       - 100/144/176
     * - :ref:`rt1060`
       - :ref:`cortex_m7`
-      -
+      - 3020
+      - :ref:`level5`
       - 1 MB
-      - 1284
       -
       - BGA196
     * - :ref:`rt1170`
       - :ref:`cortex_m7`
       - 6468
-      -
+      - :ref:`level6`
       -
       -
       -
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
-      - 1181.6
+      - 1182
+      - :ref:`level4`
       - 512KB
-      -
       -
       - :ref:`esp_qfn56`
     * - :ref:`at32f437`
       - :ref:`cortex_m4`
       -
-      -
+      - :ref:`level4`
       -
       -
       - 64/100/144

@@ -26,7 +26,7 @@ Xin简介
 * 发布时间：
 * 供电电压：
 * 工作温度：-40°C to +105°C
-* 处理性能：1284 :ref:`DMIPS`, 3020 :ref:`CoreMark`
+* 处理性能：1284 :ref:`DMIPS`, 3020 :ref:`CoreMark` | :ref:`level5`
 * RAM容量：1 MB
 * Flash容量：
 * 封装规格：BGA196

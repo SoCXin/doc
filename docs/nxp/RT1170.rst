@@ -29,7 +29,7 @@ Xin简介
 * 参考价格：
 * 制程工艺：
 * 供货周期：
-* 处理性能：6468 :ref:`CoreMark`
+* 处理性能：6468 :ref:`CoreMark` | :ref:`level6`
 * 封装规格：MAPBGA289 (14x14x0.8 mm)
 * 运行环境：-40°C to 85°C
 * RAM容量：2 MB
