@@ -20,40 +20,40 @@
 `September`_        `October`_          `November`_         `December`_
 ==================  ==================  ==================  ==================
 
-.. |January| image:: images/esp32.png
+.. |January| image:: ../application/images/matter.png
 .. _January: ../M/RP2040.html
 
-.. |February| image:: images/esp32.png
+.. |February| image:: ../espressif/images/espressif.png
 .. _February: ../M/RP2040.html
 
-.. |March| image:: images/esp32.png
+.. |March| image:: ../espressif/images/espressif.png
 .. _March: ../M/RP2040.html
 
-.. |April| image:: images/esp32.png
+.. |April| image:: ../espressif/images/espressif.png
 .. _April: ../M/RP2040.html
 
-.. |May| image:: images/esp32.png
+.. |May| image:: ../espressif/images/espressif.png
 .. _May: ../M/RP2040.html
 
-.. |June| image:: images/esp32.png
+.. |June| image:: ../espressif/images/espressif.png
 .. _June: ../M/RP2040.html
 
-.. |July| image:: images/esp32.png
+.. |July| image:: ../espressif/images/espressif.png
 .. _July: ../M/RP2040.html
 
-.. |August| image:: images/esp32.png
+.. |August| image:: ../espressif/images/espressif.png
 .. _August: ../M/RP2040.html
 
-.. |September| image:: images/esp32.png
+.. |September| image:: ../espressif/images/espressif.png
 .. _September: ../M/RP2040.html
 
-.. |October| image:: images/esp32.png
+.. |October| image:: ../espressif/images/espressif.png
 .. _October: ../M/RP2040.html
 
-.. |November| image:: images/esp32.png
+.. |November| image:: ../espressif/images/espressif.png
 .. _November: ../M/RP2040.html
 
-.. |December| image:: images/esp32.png
+.. |December| image:: ../espressif/images/espressif.png
 .. _December: ../M/RP2040.html
 
 

@@ -14,28 +14,28 @@
 `工业控制`_          `消费电子`_         `超长待机`_          `计量仪表`_
 ==================  ==================  ==================  ==================
 
-.. |感知驱动| image:: images/esp32.png
+.. |感知驱动| image:: ../espressif/images/espressif.png
 .. _感知驱动: ../M/RP2040.html
 
-.. |无线通信| image:: images/esp32.png
+.. |无线通信| image:: ../application/images/matter.png
 .. _无线通信: ../M/RP2040.html
 
-.. |网络连接| image:: images/esp32.png
+.. |网络连接| image:: ../espressif/images/espressif.png
 .. _网络连接: ../M/RP2040.html
 
-.. |边缘计算| image:: images/esp32.png
+.. |边缘计算| image:: ../espressif/images/espressif.png
 .. _边缘计算: ../M/RP2040.html
 
-.. |工业控制| image:: images/esp32.png
+.. |工业控制| image:: ../espressif/images/espressif.png
 .. _工业控制: ../M/RP2040.html
 
-.. |消费电子| image:: images/esp32.png
+.. |消费电子| image:: ../espressif/images/espressif.png
 .. _消费电子: ../M/RP2040.html
 
-.. |超长待机| image:: images/esp32.png
+.. |超长待机| image:: ../espressif/images/espressif.png
 .. _超长待机: ../M/RP2040.html
 
-.. |计量仪表| image:: images/esp32.png
+.. |计量仪表| image:: ../espressif/images/espressif.png
 .. _计量仪表: ../M/RP2040.html
 
 
