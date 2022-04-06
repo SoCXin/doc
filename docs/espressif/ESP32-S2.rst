@@ -4,7 +4,7 @@
 ESP32S2
 ================
 
-`标签 <https://github.com/SoCXin/ESP32-S2>`_ : ``Xtensa LX7`` ``240 MHz`` ``Wi-Fi`` ``USB1.1 OTG`` ``ULP`` ``Touch`` ``DVP`` ``DAC`` ``QFN56``
+`GitHub <https://github.com/SoCXin/ESP32-S2>`_ : ``Xtensa LX7`` ``240 MHz`` ``Wi-Fi`` ``USB1.1 OTG`` ``ULP`` ``Touch`` ``DVP`` ``DAC`` ``QFN56``
 
 .. contents::
     :local:
@@ -29,7 +29,6 @@ Xin简介
       - SPI
       - I2C
       - I2S
-      - DVP
       - PWM
       - ADC
       - DAC
@@ -42,11 +41,10 @@ Xin简介
       - 4
       - 2
       - 1
-      - 1
       - 8
       - 20ch(12b)
       - 2ch(8b)
-      - 14
+      - 14ch
       - 1.1(OTG)
       - 150Mbps
 
@@ -83,7 +81,7 @@ Xin简介
 
 
 .. warning::
-    ESP32-S2为单核WiFi SoC，并不支持蓝牙，支持TOF，并且配置有8bit DAC，软件开始增加RainMaker支持
+    ESP32-S2为单核WiFi SoC， ``不支持蓝牙``，支持TOF，并且配置有8bit DAC，软件开始增加RainMaker支持
 
 芯片架构
 ~~~~~~~~~~~
