@@ -3,7 +3,7 @@
 ESP32
 ===============
 
-`标签 <https://github.com/SoCXin/ESP32>`_ : ``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``
+`GitHub <https://github.com/SoCXin/ESP32>`_ : ``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``
 
 .. contents::
     :local:
@@ -16,7 +16,7 @@ Xin简介
 .. image:: ./images/ESP32.png
     :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-reference/index.html
 
-`芯片手册 <https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf>`_
+`datasheet <https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf>`_
 
 
 规格参数
@@ -71,7 +71,7 @@ Xin简介
 
 Wi-Fi
 ^^^^^^^^^^^^^^^
-``802.11b/g/n``
+``802.11b/g/n``  ``22dBm`` ``150Mbps`` ``HT40``
 
 芯片支持 TCP/IP 协议，完全遵循 802.11 b/g/n Wi-Fi MAC 协议栈，支持分布式控制功能 (DCF) 下的基本服务集 (BSS) STA 和 SoftAP 操作。
 

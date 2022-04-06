@@ -4,7 +4,7 @@
 ESP32C3
 ================
 
-`标签 <https://github.com/SoCXin/ESP32C3>`_ : ``RISC-V`` ``160MHz`` ``BLE5.0`` ``Wi-Fi`` ``QFN32``
+`GitHub <https://github.com/SoCXin/ESP32C3>`_ : ``RISC-V`` ``160MHz`` ``BLE5.0`` ``Wi-Fi`` ``QFN32``
 
 .. contents::
     :local:
@@ -15,6 +15,8 @@ Xin简介
 .. image:: ./images/ESP32C3.png
     :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32c3/get-started/index.html
 
+`datasheet <https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_cn.pdf>`_
+
 规格参数
 ~~~~~~~~~~~
 
@@ -23,12 +25,12 @@ Xin简介
 
 * 发布时间：2020年12月1日
 * 参考价格：
-* 制程工艺：40 nm
+* 制程工艺：:ref:`tsmc` 40 nm
 * 供货周期：至2033年
-* 处理性能：407.22 :ref:`CoreMark` | :ref:`level3`
+* 处理性能：407.22 :ref:`CoreMark` , :ref:`level3`
 * 运行环境：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn32` (5x5mm)
-* RAM容量：400 KB (16K cache)
+* RAM容量：400 KB
 * ROM容量：384 KB
 * Flash容量：2 MB
 
@@ -64,23 +66,22 @@ Xin简介
 
 Wi-Fi
 ^^^^^^^^^^^
-
-``802.11b/g/n`` ``21dBm``
+``802.11b/g/n`` ``21dBm``  ``150Mbps`` ``HT40``
 
 
 .. _esp32c3_ble:
 
 BLE
 ^^^^^^^^^^^
-
 ``BLE 5.0`` ``-94dBm`` ``Mesh``
+
 
 .. _esp32c3_twai:
 
 TWAI
 ^^^^^^^^^^^
-
 ``ISO11898-1``
+
 
 .. hint::
     支持蓝牙5.0、支持蓝牙与WiFi共存机制，软件支持TCP/IP、MQTT、HTTP、COAP等常见协议，支持AT指令，支持OTA升级，支持WiFi+BLE MESH组网
@@ -171,8 +172,9 @@ Xin选择
 
 在一定程度上W806对标对手应该是ESP32-S系列，产品定位差异交叠处较多。ESP32-C3 和 W806 相比封装更小，扩展能力和计算能力规格更低，支持BLE 5.0, 更偏向无线数据节点，后者配置更多的IO，更多的UART,以及16bit SD ADC和SDIO接口，更偏向有针对性的，更复杂的终端网关设备
 
-BLE对比
+功能对比
 ^^^^^^^^^^^^
+``BLE``
 
 .. list-table::
     :header-rows:  1
@@ -206,6 +208,12 @@ BLE对比
       -
       - QFN28
 
+性能对比
+^^^^^^^^^^^^
+
+:ref:`esp32c3` 的官方性能 407.22 :ref:`CoreMark` @160MHz，略高于120 MHz :ref:`cortex_m3` 的STM32F2系列(398 CoreMark)如 :ref:`stm32f207`，略低于 120 MHz :ref:`cortex_m4` 的STM32L4+系列(409 CoreMark)
+
+同频性能比较和单位能耗比实际弱于 :ref:`cortex_m3` ，:ref:`cortex_m4`
 
 型号对比
 ~~~~~~~~~

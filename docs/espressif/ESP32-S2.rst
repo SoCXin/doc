@@ -17,6 +17,8 @@ Xin简介
 .. image:: ./images/ESP32S2.png
     :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s2/get-started/index.html
 
+`datasheet <https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_cn.pdf>`_
+
 规格参数
 ~~~~~~~~~~~
 
@@ -32,7 +34,6 @@ Xin简介
       - PWM
       - ADC
       - DAC
-      - Touch
       - :ref:`esp_usb`
       - :ref:`esp32s2_wifi`
     * - :ref:`esp_qfn56`
@@ -44,7 +45,6 @@ Xin简介
       - 8
       - 20ch(12b)
       - 2ch(8b)
-      - 14ch
       - 1.1(OTG)
       - 150Mbps
 
@@ -54,21 +54,21 @@ Xin简介
 
 * 发布时间：2019年7月22日
 * 参考价格：$1.32
-* 制程工艺：40 nm
+* 制程工艺：:ref:`tsmc` 40 nm
 * 供货周期：至2032年
 * 处理性能：613.8 :ref:`CoreMark` , :ref:`level4`
 * 运行环境：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn56` (7x7mm)
-* RAM容量：320 KB (PSRAM ≤1GB)
+* RAM容量：320 KB (PSRAM 2 MB)
 * ROM容量：128 KB
-* Flash容量：2/4 MB (≤1GB)
+* Flash容量：0/2/4 MB (≤1GB)
 
 
 特征参数
 ^^^^^^^^^^^
 
 * 240 MHz :ref:`xtensa_lx7`
-* :ref:`esp_ulp` PicoRV32内核，8 KB SRAM
+* PicoRV32 :ref:`esp_ulp` 8 KB SRAM
 * :ref:`esp32s2_wifi`
 * :ref:`esp_usb`
 * :ref:`esp32_can`
@@ -81,7 +81,7 @@ Xin简介
 
 
 .. warning::
-    ESP32-S2为单核WiFi SoC， ``不支持蓝牙``，支持TOF，并且配置有8bit DAC，软件开始增加RainMaker支持
+    ESP32-S2 为单核WiFi MCU， ``不支持蓝牙``，支持TOF，并且配置有8bit DAC，软件开始增加RainMaker支持
 
 芯片架构
 ~~~~~~~~~~~

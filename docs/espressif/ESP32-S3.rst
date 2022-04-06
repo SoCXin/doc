@@ -4,7 +4,7 @@
 ESP32S3
 ================
 
-`标签 <https://github.com/SoCXin/ESP32S3>`_ : ``Xtensa LX7`` ``Dual Core`` ``240 MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB1.1 OTG`` ``AI`` ``CAN`` ``Touch`` ``QFN56``
+`GitHub <https://github.com/SoCXin/ESP32S3>`_ : ``Xtensa LX7`` ``Dual Core`` ``240 MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB1.1 OTG`` ``AI`` ``CAN`` ``Touch`` ``QFN56``
 
 .. contents::
     :local:
@@ -15,8 +15,7 @@ Xin简介
 .. image:: ./images/ESP32S3.png
     :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html
 
-.. contents::
-    :local:
+`datasheet <https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_cn.pdf>`_
 
 规格参数
 ~~~~~~~~~~~
@@ -30,10 +29,10 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 
 * 发布时间：2020年12月31日
 * 参考价格：
-* 制程工艺：40 nm
+* 制程工艺：:ref:`tsmc` 40 nm
 * 供货周期：至2033年
 * 处理性能：613.8 :ref:`CoreMark`, 1181.6 :ref:`CoreMark` (Dual) , :ref:`level4`
-* 封装规格：QFN56
+* 封装规格：:ref:`esp_qfn56` (7x7mm)
 * 运行环境：-40°C to 105°C
 * RAM容量：512 KB (TCM，16 KB RTC SRAM)
 * ROM容量：384 KB
@@ -132,12 +131,11 @@ USB
 
 RSA 模块
 ^^^^^^^^^^^^^^^
-
-基于 RSA-3072 的标准身份验证方案，确保在设备上运行受信任的应用程序。该功能可阻止设备运行烧录在 flash 中的恶意程序。
-安全启动需要快速高效地进行，以满足即时启动设备（如球泡灯）的需求，ESP32-C3 的安全启动方案仅在设备启动过程中增加了不到 100 ms 的时间开销。
+``RSA-4096``
 
 AES 模块
 ^^^^^^^^^^^^^^^
+``XTS-AES-128`` ``XTS-AES-256``
 
 基于 AES-128-XTS 算法的 flash 加密方案，确保应用程序与配置数据在 flash 中保持加密状态。
 flash 控制器支持执行加密的应用程序固件，这不仅为存储在 flash 中的敏感数据提供了必要保护，还防止了运行时由于固件更改造成的 TOCTTOU (time-of-check-to-time-of-use) 攻击。
@@ -224,7 +222,7 @@ Xin选择
       - 2.2µA
       - 64/100/176
 
-:ref:`esp32s3` 双核 1181.6 :ref:`CoreMark` 略高于 STM32F7系列(1082CoreMark/462DMIPS)，对性能要求较高的场景非常适用，不足在于非嵌入式存储器，IO的效率较低
+:ref:`esp32s3` 双核 1181.6 :ref:`CoreMark` 略高于 STM32F7系列(1082CoreMark)，对性能要求较高的场景非常适用，不足在于非嵌入式存储器，IO的效率较低
 
 型号对比
 ~~~~~~~~~~~~
