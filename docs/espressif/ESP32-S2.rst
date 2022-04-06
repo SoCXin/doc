@@ -12,34 +12,65 @@ ESP32S2
 Xin简介
 -----------
 
+`EEMBC CoreMark 472.81 (240 x 1.97CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=13418>`_
+
 .. image:: ./images/ESP32S2.png
     :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s2/get-started/index.html
 
 规格参数
 ~~~~~~~~~~~
 
-基本参数
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`esp32s2`
+      - GPIO
+      - UART
+      - SPI
+      - I2C
+      - I2S
+      - DVP
+      - PWM
+      - ADC
+      - DAC
+      - Touch
+      - :ref:`esp_usb`
+      - :ref:`esp32s2_wifi`
+    * - :ref:`esp_qfn56`
+      - 43
+      - 2
+      - 4
+      - 2
+      - 1
+      - 1
+      - 8
+      - 20ch(12b)
+      - 2ch(8b)
+      - 14
+      - 1.1(OTG)
+      - 150Mbps
+
+
+基本信息
 ^^^^^^^^^^^
 
 * 发布时间：2019年7月22日
 * 参考价格：$1.32
 * 制程工艺：40 nm
 * 供货周期：至2032年
-* 处理性能：613.8 :ref:`CoreMark` | :ref:`level4`
+* 处理性能：613.8 :ref:`CoreMark` , :ref:`level4`
 * 运行环境：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn56` (7x7mm)
-* RAM容量：320 KB
+* RAM容量：320 KB (PSRAM ≤1GB)
 * ROM容量：128 KB
-* Flash容量：4 MB (1GB)
-
-
-`EEMBC CoreMark 472.81 - 1.97CoreMark/MHz <https://www.eembc.org/viewer/?benchmark_seq=13418>`_
+* Flash容量：2/4 MB (≤1GB)
 
 
 特征参数
 ^^^^^^^^^^^
 
-* 240 MHz :ref:`xtensa_lx7` + :ref:`esp_ulp`
+* 240 MHz :ref:`xtensa_lx7`
+* :ref:`esp_ulp` PicoRV32内核，8 KB SRAM
 * :ref:`esp32s2_wifi`
 * :ref:`esp_usb`
 * :ref:`esp32_can`
@@ -57,29 +88,6 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~
 
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`espressif`
-      - GPIO
-      - UART
-      - SPI
-      - I2C
-      - I2S
-      - PWM
-      - RMT
-      - :ref:`esp_usb`
-      - :ref:`esp32s2_wifi`
-    * - :ref:`esp32s2`
-      - 43
-      - 2
-      - 4
-      - 2
-      - 1
-      - 8
-      - 4
-      - 1.1 OTG
-      - b/g/n
 
 电源参数
 ^^^^^^^^^^^
@@ -121,21 +129,16 @@ USB
 
 RSA 模块
 ^^^^^^^^^^^^^^^
+``RSA-4096``
 
-基于 RSA-3072 的标准身份验证方案，确保在设备上运行受信任的应用程序。该功能可阻止设备运行烧录在 flash 中的恶意程序。
-安全启动需要快速高效地进行，以满足即时启动设备（如球泡灯）的需求，ESP32-C3 的安全启动方案仅在设备启动过程中增加了不到 100 ms 的时间开销。
 
 AES 模块
 ^^^^^^^^^^^^^^^
+``XTS-AES-128`` ``XTS-AES-256``
 
 基于 AES-128-XTS 算法的 flash 加密方案，确保应用程序与配置数据在 flash 中保持加密状态。
 flash 控制器支持执行加密的应用程序固件，这不仅为存储在 flash 中的敏感数据提供了必要保护，还防止了运行时由于固件更改造成的 TOCTTOU (time-of-check-to-time-of-use) 攻击。
 
-TEE 模块
-^^^^^^^^^^^^^^^
-
-世界控制器模块提供了两个互不干扰的执行环境。根据配置，世界控制器使用可信执行环境 (TEE) 或权限分离机制。
-如果应用程序固件需要处理敏感的安全数据（如 DRM 服务），则可以利用世界控制器模块，在安全区域处理数据。
 
 数字签名
 ^^^^^^^^^^^^^^^
@@ -191,9 +194,8 @@ Xin选择
 
 通用控制
 ^^^^^^^^^^^^
-``USB`` ``CAN`` ``GPIO 43``
+``MCU`` ``USB`` ``CAN`` ``DAC`` ``GPIO=43``
 
-就计算性能而言 :ref:`esp32s2` 的 613.8 :ref:`CoreMark` 略高于 :ref:`stm32f429` 的 608 :ref:`CoreMark`
 
 .. list-table::
     :header-rows:  1
@@ -222,14 +224,6 @@ Xin选择
       -
       - 1
       - QFN56
-    * - :ref:`air103`
-      -
-      -
-      - 288K/20K
-      - 0
-      -
-      - 1
-      - QFN56
     * - :ref:`stm32f407`
       - :ref:`cortex_m4`
       - 566
@@ -249,7 +243,7 @@ Xin选择
 
 
 .. note::
-    :ref:`esp32s2` 定位MCU，就功能配置而言，完全可用于替换通用MCU
+    :ref:`esp32s2` 定位MCU，就计算性能而言 :ref:`esp32s2` 的 613.8 :ref:`CoreMark` 略高于 :ref:`stm32f429` 的 608 :ref:`CoreMark`
 
 型号对比
 ~~~~~~~~~~~~
@@ -332,17 +326,16 @@ Xin应用
 
 ESP-IDF
 ^^^^^^^^^^^^
-``v4.2``
+``IDF ≥ v4.2``
 
-`esp-idf <https://github.com/espressif/esp-idf/tree/release/v4.4>`_ 是官方提供并维护的统一开发框架，集成众多功能组件，由官方提供支持保证，是商业化应用开发最好选择。
+:ref:`esp_idf` 从v4.2版本后开始支持 :ref:`esp32s2` ，使用时优选仓库 `esp-idf(v4.4) <https://github.com/espressif/esp-idf/tree/release/v4.4>`_ ，集成众多功能组件，由官方提供支持保证，是商业化应用开发最好选择。
 
-.. hint::
-    :ref:`esp_idf` 从v4.2版本后开始支持 :ref:`esp32s2` ，使用时优选仓库 release/v4.4 分支
+
 
 Arduino
 ^^^^^^^^^^^^
 
-:ref:`esp_arduino` 提供低门槛开发环境
+:ref:`esp_arduino` 提供低门槛开发环境，现已支持Arduino IDE2.0
 
 PlatformIO
 ^^^^^^^^^^^^
@@ -357,6 +350,13 @@ PlatformIO
 USB Camera
 ^^^^^^^^^^^^
 
+在乐鑫开源的 `esp-iot-solution <https://github.com/espressif/esp-iot-solution/tree/usb/add_usb_solutions/examples/usb/host>`_ 有提供相应的USB应用方案，其中的USB Host方案包括：
+
+* usb_camera_lcd_display
+* usb_camera_sd_card
+* usb_camera_wifi_transfer
+* usb_cdc_4g_module
+
 
 .. _esp_usb_pd:
 
@@ -369,7 +369,7 @@ USB PD
 
 DAC可输出控制
 
-`tinyusb <https://github.com/hathach/tinyusb>`_ 被整合在 :ref:`esp_idf` 组件中
+`tinyusb <https://github.com/hathach/tinyusb>`_ 被整合在 :ref:`esp_idf` 项目组件中
 
 .. code-block:: bash
 
@@ -395,4 +395,6 @@ Xin总结
 应用总结
 ~~~~~~~~~~~~~
 
-:ref:`esp32s2` 的市场定位及市场竞争力存在一定的短板，就配置而言作为 :ref:`esp8266` 的继任者性价比不够，而作为高性能产品又显得配置过低，与 :ref:`esp32` 、:ref:`esp32s3` 相比没有足够的吸引力，只能作为一个短暂的过渡产品。
+:ref:`esp32s2` 的市场定位为MCU，在当下的市场竞争中存在一定的短板，就低端应用的性价比而言，资源和接受度不及 :ref:`esp8266`
+
+与 :ref:`esp32`、:ref:`esp32s3` 相比配置没有太多亮点，但因为和这两者生态兼容，可以作为这两者的一种补充型号。

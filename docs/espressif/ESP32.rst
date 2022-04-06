@@ -11,6 +11,8 @@ ESP32
 Xin简介
 -----------
 
+`EEMBC CoreMark 660.7 (160 x 4.13CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=13244>`_
+
 .. image:: ./images/ESP32.png
     :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-reference/index.html
 
@@ -26,16 +28,15 @@ Xin简介
 
 * 发布时间：2016年9月
 * 参考价格：
-* 制程工艺：40 nm (TSMC)
+* 制程工艺：:ref:`tsmc` 40 nm
 * 供货周期：至2028年
-* 处理性能：504.85 :ref:`CoreMark`, 994.26 :ref:`CoreMark` (Dual Core) | :ref:`level4`
+* 处理性能：504.85 :ref:`CoreMark`, 994.26 :ref:`CoreMark` (Dual Core) , :ref:`level4`
 * 运行环境：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn48` (6x6mm)
 * RAM容量：520 KB (8 MB SPI)
 * Flash容量：448 KB (16MB PSRAM)
 
 
-`EEMBC CoreMark:4.07 CoreMark/MHz <https://www.eembc.org/viewer/?benchmark_seq=13244>`_
 
 特征参数
 ^^^^^^^^^^^

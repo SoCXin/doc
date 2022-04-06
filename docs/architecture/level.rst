@@ -59,6 +59,42 @@ L4(<2k)
 --------------
 ``CoreMark < 2000``
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`level4`
+      - :ref:`architecture`
+      - :ref:`CoreMark`
+      - Freq(MHz)
+      -
+      -
+    * - :ref:`stm32h7b0`
+      - :ref:`cortex_m7`
+      - 1414
+      - 280
+      -
+      -
+    * - :ref:`esp32s3`
+      - :ref:`xtensa_lx7`
+      - 1182
+      - 240
+      -
+      -
+    * - :ref:`esp32`
+      - :ref:`xtensa_lx6`
+      - 994
+      - 240
+      -
+      -
+    * - :ref:`esp32s2`
+      - :ref:`xtensa_lx7`
+      - 614
+      - 240
+      -
+      -
+
+
+
 .. _level5:
 
 L5(<4k)
