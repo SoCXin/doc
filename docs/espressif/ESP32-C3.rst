@@ -112,6 +112,7 @@ RSA 模块
 
 AES 模块
 ^^^^^^^^^^^
+``XTS-AES-128``
 
 基于 AES-128-XTS 算法的 flash 加密方案，确保应用程序与配置数据在 flash 中保持加密状态。
 flash 控制器支持执行加密的应用程序固件，这不仅为存储在 flash 中的敏感数据提供了必要保护，还防止了运行时由于固件更改造成的 TOCTTOU (time-of-check-to-time-of-use) 攻击。
@@ -304,6 +305,8 @@ ESP8625
 
 相对ESP32-C3FH4版本，主要差异在于封装更小QFN28(4*4)，但是没有BT SIG认证，集成的Flash只有2M
 
+
+
 Xin应用
 -----------
 
@@ -315,6 +318,18 @@ Xin应用
 
 .. image:: ./images/B_ESP32C3.jpg
     :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4cb32e8dCPqAi3&id=641754177657&_u=vgas3eue654
+
+核心板
+~~~~~~~~~~
+
+ESP32-C3-MINI-1
+^^^^^^^^^^^^^^^^^
+
+.. image:: ./images/ESP32-C3-MINI-1.png
+    :target: https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-22443450244.15.25c65a108ivvvK&id=638190134369
+.. image:: ./images/ESP32-C3-MINI-1_L.png
+    :target: https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_cn.pdf
+
 
 
 

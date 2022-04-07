@@ -23,8 +23,8 @@ Level
       - :ref:`level7`
       - :ref:`level8`
       - :ref:`level9`
-    * -
-      -
+    * - :ref:`level1_cnt`
+      - :ref:`level2_cnt`
       - :ref:`level3_cnt`
       - :ref:`level4_cnt`
       - :ref:`level5_cnt`
@@ -40,11 +40,57 @@ L1(<60)
 --------------
 ``Frequency < 60MHz``
 
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`xin`
+      - :ref:`architecture`
+      - SRAM
+      - Freq(MHz)
+      -
+      - Rank :ref:`level1`
+    * - :ref:`ch549`
+      - :ref:`mcs51`
+      -
+      - 48
+      -
+      - 1
+
+
+.. _level1_cnt:
+
+num:1
+~~~~~~~~~
+
 .. _level2:
 
 L2(<120)
 --------------
 ``Frequency < 120MHz``
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`xin`
+      - :ref:`architecture`
+      - SRAM
+      - Freq(MHz)
+      - Core(num)
+      - Rank :ref:`level2`
+    * - :ref:`gd32v103`
+      - :ref:`riscv`
+      -
+      - 108
+      -
+      - 1
+
+
+.. _level2_cnt:
+
+num:1
+~~~~~~~~~
 
 .. _level3:
 
@@ -61,7 +107,7 @@ L3(<240)
       - :ref:`CoreMark`
       - Freq(MHz)
       - Core(num)
-      - :ref:`level3`
+      - Rank :ref:`level3`
     * - :ref:`stm32u575`
       - :ref:`cortex_m33`
       - 651
@@ -89,7 +135,7 @@ L3(<240)
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407
-      - 240
+      - 160
       - 1
       - 5
     * - :ref:`rp2040`
@@ -102,7 +148,7 @@ L3(<240)
 
 .. _level3_cnt:
 
-6
+num:6
 ~~~~~~~~~
 
 .. _level4:
@@ -119,7 +165,7 @@ L4(<2k)
       - :ref:`CoreMark`
       - Freq(MHz)
       - Core(num)
-      - :ref:`level4`
+      - Rank :ref:`level4`
     * - :ref:`stm32h7b0`
       - :ref:`cortex_m7`
       - 1414
@@ -147,7 +193,7 @@ L4(<2k)
 
 .. _level4_cnt:
 
-4
+num:4
 ~~~~~~~~~
 
 
@@ -165,7 +211,7 @@ L5(<4k)
       - :ref:`CoreMark`
       - Freq(MHz)
       - Core(num)
-      - :ref:`level5`
+      - Rank :ref:`level5`
     * - :ref:`stm32h745`
       - :ref:`cortex_m7`
       - 3224
@@ -194,7 +240,7 @@ L5(<4k)
 
 .. _level5_cnt:
 
-4
+num:4
 ~~~~~~~~~
 
 .. _level6:
