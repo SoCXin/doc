@@ -4,7 +4,7 @@
 CH32F103
 ============
 
-`标签 <http://www.wch.cn/products/CH32F103.html>`_ : ``Cortex-M3`` ``72MHz`` ``USB H/D`` ``CAN2.0B`` ``DAC`` ``RTC``
+`GitHub <https://github.com/SoCXin/CH32F103>`_ : ``Cortex-M3`` ``72MHz`` ``USB H/D`` ``CAN2.0B`` ``DAC`` ``RTC``
 
 .. contents::
     :local:
@@ -14,8 +14,6 @@ Xin简介
 
 .. image:: ./images/CH32F103.png
     :target: http://www.wch.cn/products/CH32F103.html
-
-`GitHub <https://github.com/SoCXin/CH32F103>`_
 
 
 规格参数
@@ -28,7 +26,7 @@ Xin简介
 * 参考价格：
 * 制程工艺：
 * 供货周期：
-* 处理性能：
+* 处理性能：:ref:`level2`
 * 封装规格：LQFP64M/LQFP48/QFN48
 * 运行环境：-40°C to 85°C
 * RAM容量：20 KB
@@ -192,7 +190,7 @@ GD32、APM32可以通过此软件下载，其它几种不可以，说明GD32和A
       - DAC
       - USB
       - CAN
-      - Freq
+      - :ref:`frequency`
     * - :ref:`ch32f103`
       - :ref:`cortex_m3`
       - 20/10KB

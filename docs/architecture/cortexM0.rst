@@ -25,20 +25,12 @@ Cortex-M0
 
     * - :ref:`architecture`
       - DMIPS/MHz
-      - CoreMark/MHz
-      - Flash
-      - UART/SPI
-      - BLE
-      - USB
-      - Ethernet
+      - :ref:`CoreMark`/MHz
+      - :ref:`consumption`
     * - :ref:`cortex_m0`
       - 0.95
       - 1.62
-      - 250K
-      - 4/2
-      - 4.2
-      - USB
-      - 10M
+      -
 
 Cortex-M处理器支持的指令集名为Thumb，而M0和M0+处理器则只支持其中的一个子集(56条指令)，这些指令多数为16位宽，只有6个指令是32位的。
 

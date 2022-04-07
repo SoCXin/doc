@@ -41,3 +41,16 @@
       - 2.2 µA
       - 32 µA
 
+
+.. _consumption:
+
+Consumption
+---------------
+
+
+.. _sleep:
+
+Sleep
+-----------
+
+睡眠模式

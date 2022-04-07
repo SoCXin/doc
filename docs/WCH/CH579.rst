@@ -142,7 +142,7 @@ Xin选择
 
     * - :ref:`wch`
       - :ref:`architecture`
-      - Freq
+      - :ref:`frequency`
       - SRAM/ROM
       -
       - Wireless

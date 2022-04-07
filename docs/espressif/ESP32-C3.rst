@@ -325,10 +325,10 @@ Xin应用
 ESP32-C3-MINI-1
 ^^^^^^^^^^^^^^^^^
 
-.. image:: ./images/ESP32-C3-MINI-1.png
-    :target: https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-22443450244.15.25c65a108ivvvK&id=638190134369
 .. image:: ./images/ESP32-C3-MINI-1_L.png
     :target: https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_cn.pdf
+.. image:: ./images/ESP32-C3-MINI-1.png
+    :target: https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-22443450244.15.25c65a108ivvvK&id=638190134369
 
 
 

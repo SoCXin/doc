@@ -4,8 +4,7 @@
 STM32F030
 ===============
 
-* 关键词：``Cortex-M0`` ``48MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32F030>`_
+`GitHub <https://github.com/SoCXin/STM32F030>`_ : ``Cortex-M0`` ``48MHz``
 
 .. contents::
     :local:
@@ -13,27 +12,27 @@ STM32F030
 Xin简介
 -----------
 
- :ref:`low` , :ref:`ref030` 经典范式产品
+:ref:`low` , :ref:`ref030` 经典范式产品
 
 .. image:: ./images/STM32F030.jpg
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f0-series/stm32f0x0-value-line.html
 
-.. contents::
-    :local:
-
 规格参数
 ~~~~~~~~~~~
 
-基本参数
+基本信息
 ^^^^^^^^^^^
 
 * 发布时间：
+* 参考价格：
 * 制程工艺：180 nm
-* 工作温度：-40°C to +85°C
-* 处理性能：38 :ref:`DMIPS`, 106 :ref:`CoreMark`
+* 供货周期：
+* 处理性能：106 :ref:`CoreMark` , :ref:`level1`
+* 封装规格：LQFP64/LQFP48/LQFP32/ :ref:`stm32_tssop20`
+* 运行环境：-40°C to 85°C
 * RAM容量：4/8 KB
 * Flash容量：16/32/64 KB
-* 封装规格：LQFP64/LQFP48/LQFP32/ :ref:`stm32_tssop20`
+
 
 .. image:: ./images/STM32F030p.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f0-series/stm32f0x0-value-line.html
@@ -46,6 +45,13 @@ Xin简介
 * 12-bit ADC (1.0 MSps)
 
 
+
+芯片架构
+~~~~~~~~~~~
+
+.. image:: ./images/STM32F030s.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f0-series/stm32f0x0-value-line.html
+
 电源参数
 ^^^^^^^^^^^
 
@@ -55,12 +61,6 @@ Xin简介
 .. note::
     由于 :ref:`stm32f030` 的定位，对比的对象是8/16位MCU，重点列出相关差异
 
-
-芯片架构
-~~~~~~~~~~~
-
-.. image:: ./images/STM32F030s.png
-    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f0-series/stm32f0x0-value-line.html
 
 .. _stm32_tssop20:
 
@@ -84,7 +84,7 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
- :ref:`at32f421`
+:ref:`at32f421`
 
 .. _stm32f030_pin2pin:
 
@@ -95,7 +95,7 @@ PIN2PIN
     :header-rows:  1
 
     * - :ref:`vendor`
-      - Freq
+      - :ref:`frequency`
       - RAM+ROM
       - Series
       - UART/SPI/I2C

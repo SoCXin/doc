@@ -28,7 +28,7 @@ It is an example of a complex instruction set computer, and has separate memory 
 
     * - :ref:`mcs51`
       - :ref:`CoreMark`
-      - Freq
+      - :ref:`frequency`
       - Cache
       - GPU
       - SPI

@@ -65,7 +65,7 @@ Xin选择
 
     * -
       - :ref:`architecture`
-      - Freq
+      - :ref:`frequency`
       - SRAM/ROM
       - USB/CAN
       - SPI/I2C

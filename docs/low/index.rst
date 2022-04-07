@@ -10,8 +10,8 @@
     :header-rows:  1
 
     * - :ref:`low`
-      - Freq
-      - SRAM
+      - :ref:`frequency`
+      - SRAM/ROM
       - Flash
       - UART/SPI/I2C
       - GPIO

@@ -4,7 +4,7 @@
 CH32F208
 ============
 
-`标签 <http://www.wch.cn/products/CH32F208.html>`_ : ``Cortex-M3`` ``144MHz`` ``USB`` ``10Mbps(PHY)`` ``BLE5.3`` ``CAN`` ``AES128``
+`GitHub <https://github.com/SoCXin/CH32F208>`_ : ``Cortex-M3`` ``144MHz`` ``USB`` ``10Mbps(PHY)`` ``BLE5.3`` ``CAN`` ``AES128``
 
 .. contents::
     :local:
@@ -17,7 +17,6 @@ CH32F208基于 :ref:`cortex_m3` 内核的无线型微控制器，主频高达144
 .. image:: ./images/CH32F208.png
     :target: http://www.wch.cn/products/CH32F208.html
 
-`GitHub <https://github.com/SoCXin/CH32F208>`_
 
 规格参数
 ~~~~~~~~~~~
@@ -30,7 +29,7 @@ CH32F208基于 :ref:`cortex_m3` 内核的无线型微控制器，主频高达144
 * 参考价格：
 * 制程工艺：
 * 供货周期：
-* 处理性能：
+* 处理性能：:ref:`level3`
 * 封装规格：LQFP64M/QFN68/QFN48/QFN28
 * 运行环境：-40°C to 85°C
 * RAM容量：64 KB
@@ -138,7 +137,7 @@ BLE对比
 
     * - :ref:`wch`
       - :ref:`architecture`
-      - Freq
+      - :ref:`frequency`
       - SRAM/ROM
       - :ref:`wch_ble`
       - USB/CAN

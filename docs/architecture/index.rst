@@ -88,3 +88,7 @@ Architecture
       - √
       - X
 
+.. _frequency:
+
+Frequency
+---------------

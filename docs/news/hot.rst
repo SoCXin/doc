@@ -284,7 +284,7 @@ F030范式
 
     * - :ref:`vendor`
       - :ref:`architecture`
-      - Freq
+      - :ref:`frequency`
       - RAM+ROM
       - Price
       - UART/SPI/I2C
