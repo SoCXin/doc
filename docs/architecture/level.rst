@@ -28,7 +28,7 @@ Level
       - :ref:`level3_cnt`
       - :ref:`level4_cnt`
       - :ref:`level5_cnt`
-      -
+      - :ref:`level6_cnt`
       -
       -
       -
@@ -107,7 +107,7 @@ L3(<240)
       - :ref:`CoreMark`
       - :ref:`frequency`
       - :ref:`consumption`
-      - Rank :ref:`level3`
+      - :ref:`level3`
     * - :ref:`stm32u575`
       - :ref:`cortex_m33`
       - 651
@@ -124,7 +124,7 @@ L3(<240)
       - :ref:`cortex_m4`
       - 566
       - 168(MHz)
-      - 1
+      -
       - 3
     * - :ref:`stm32g474`
       - :ref:`cortex_m4`
@@ -140,7 +140,7 @@ L3(<240)
       - 5
     * - :ref:`rp2040`
       - :ref:`cortex_m0`
-      -
+      - (2)
       - 125(MHz)
       -
       - 6
@@ -169,26 +169,26 @@ L4(<2k)
     * - :ref:`stm32h7b0`
       - :ref:`cortex_m7`
       - 1414
-      - 280
+      - 280(MHz)
       -
       - 1
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
-      - 1182 /2
-      - 240
+      - 1182 (2)
+      - 240(MHz)
       -
       - 2
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
-      - 994 /2
-      - 240
+      - 994 (2)
+      - 240(MHz)
       -
       - 3
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 614
-      - 240
-      - 1
+      - 240(MHz)
+      -
       - 4
 
 .. _level4_cnt:
@@ -214,26 +214,26 @@ L5(<4k)
       - :ref:`level5`
     * - :ref:`stm32h745`
       - :ref:`cortex_m7`
-      - 3224 /2
-      - 480
+      - 3224 (2)
+      - 480(MHz)
       -
       - 1
     * - :ref:`rt1060`
       - :ref:`cortex_m7`
       - 3020
-      - 600
+      - 600(MHz)
       -
       - 2
     * - :ref:`stm32h730`
       - :ref:`cortex_m7`
       - 2778
-      - 550
+      - 550(MHz)
       -
       - 3
     * - :ref:`stm32h750`
       - :ref:`cortex_m7`
       - 2424
-      - 480
+      - 480(MHz)
       -
       - 4
 
@@ -248,6 +248,30 @@ num:4
 L6(<8k)
 --------------
 ``CoreMark < 8000``
+
+    * - :ref:`xin`
+      - :ref:`architecture`
+      - :ref:`CoreMark`
+      - :ref:`frequency`
+      - :ref:`consumption`
+      - :ref:`level5`
+    * - :ref:`rt1170`
+      - :ref:`cortex_m7`
+      - 6468 (2)
+      - 1.0(GHz)
+      -
+      - 1
+    * - :ref:`v831`
+      - :ref:`cortex_a7`
+      - ? (2)
+      - 800(MHz)
+      -
+      - 2
+
+.. _level6_cnt:
+
+num:2
+~~~~~~~~~
 
 .. _level7:
 

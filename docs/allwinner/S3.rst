@@ -4,7 +4,7 @@
 S3
 =============
 
-`标签 <https://www.allwinnertech.com/index.php?c=product&a=index&id=78>`_ : ``Allwinner`` ``Cortex-A7`` ``1.2GHz`` ``ISP``
+`GitHub <https://github.com/SoCXin/S3>`_ : ``Allwinner`` ``Cortex-A7`` ``1.2GHz`` ``ISP``
 
 .. contents::
     :local:
@@ -15,7 +15,7 @@ Xin简介
 .. image:: ./images/S3.png
     :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=78
 
-`GitHub <https://github.com/SoCXin/S3>`_
+
 
 规格参数
 ~~~~~~~~~~~
@@ -27,7 +27,7 @@ Xin简介
 * 参考价格：
 * 制程工艺：
 * 供货周期：
-* 处理性能：
+* 处理性能：:ref:`level7`
 * 封装规格：FBGA234 (11*11*0.65mm)
 * 运行环境：-40°C to 85°C
 * RAM容量：64 MB (16bit DDR3)

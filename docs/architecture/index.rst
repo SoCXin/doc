@@ -14,6 +14,11 @@ Architecture
     RISC-V  <riscv>
     MCS51   <MCS51>
 
+
+
+Compare
+---------------
+
 .. list-table::
     :header-rows:  1
 
@@ -88,7 +93,8 @@ Architecture
       - √
       - X
 
+
 .. _frequency:
 
 Frequency
----------------
+~~~~~~~~~~~~~
