@@ -1,0 +1,42 @@
+
+.. _gd32f207:
+
+GD32F207
+===============
+
+`GitHub <https://github.com/SoCXin/GD32F207>`_ : ``Cortex-M4`` ``120MHz``
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 封装规格：QFN36/LQFP48/LQFP64/LQFP100
+* 运行环境：-40°C to +105°C
+* RAM容量：32 KB
+* Flash容量：128 KB
+
+特征参数
+^^^^^^^^^^^
+
+* 120 MHz :ref:`cortex_m4`
+
+
+芯片架构
+~~~~~~~~~~~
+
+.. image:: ./images/GD32F207s.png
+    :target: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m3/performance-line/gd32f207-series/

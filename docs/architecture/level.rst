@@ -25,7 +25,7 @@ Level
       - :ref:`level9`
     * -
       -
-      -
+      - :ref:`level3_cnt`
       - :ref:`level4_cnt`
       - :ref:`level5_cnt`
       -
@@ -51,6 +51,59 @@ L2(120)
 L3(240)
 --------------
 ``Frequency < 240MHz``
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`xin`
+      - :ref:`architecture`
+      - :ref:`CoreMark`
+      - Freq(MHz)
+      - Core(num)
+      - :ref:`level3`
+    * - :ref:`stm32u575`
+      - :ref:`cortex_m33`
+      - 651
+      - 160
+      - 1
+      - 1
+    * - :ref:`stm32f429`
+      - :ref:`cortex_m4`
+      - 608
+      - 180
+      - 1
+      - 2
+    * - :ref:`stm32f407`
+      - :ref:`cortex_m4`
+      - 566
+      - 168
+      - 1
+      - 3
+    * - :ref:`stm32g474`
+      - :ref:`cortex_m4`
+      - 550
+      - 170
+      - 1
+      - 4
+    * - :ref:`esp32c3`
+      - :ref:`esp_rv32`
+      - 614
+      - 240
+      - 1
+      - 5
+    * - :ref:`rp2040`
+      - :ref:`cortex_m0`
+      -
+      - 125
+      - 2
+      - 6
+
+
+.. _level3_cnt:
+
+6
+~~~~~~~~~
 
 .. _level4:
 

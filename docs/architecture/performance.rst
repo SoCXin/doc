@@ -93,7 +93,7 @@ CoreMark标准的测试方法也很简单，就是在某配置参数组合下单
 跑分对编译器的优化等级 -O 参数有严重倚赖
 
 
-`EEMBC CoreMark <https://www.eembc.org/coremark/scores.php>`_
+`EEMBC CoreMark <https://www.eembc.org/coremark/scores.php>`_ 计算所有的核心跑分，按主频MHz计算平均(核越多数值越大)。
 
 
 .. _ULPMark:

@@ -4,8 +4,7 @@
 STM32F429
 ===============
 
-* 关键词：``Cortex-M4`` ``180MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``Ethernet`` ``FMC`` ``ART``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32F429>`_ , `Gitee <https://gitee.com/socxin/STM32F429>`_
+`GitHub <https://github.com/SoCXin/STM32F429>`_ : ``Cortex-M4`` ``180MHz`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``Ethernet`` ``FMC`` ``ART``
 
 .. contents::
     :local:
@@ -25,7 +24,7 @@ Xin简介
 * 发布时间：
 * 供电电压：1.71 to 3.6 V
 * 工作温度：-40°C to +85°C
-* 处理性能：225 :ref:`DMIPS`
+* 处理性能：225 :ref:`DMIPS` , 608 :ref:`CoreMark` , :ref:`level3`
 * RAM容量：256 KB
 * Flash容量：2 MB
 * 封装规格：LQFP100/LQFP144/LQFP176/LQFP208/UFBGA176/UFBGA169/TFBGA216

@@ -33,7 +33,7 @@ Xin简介
 * 参考价格：$0.195
 * 制程工艺：55 nm
 * 供货周期：
-* 处理性能：262.8 :ref:`CoreMark` | :ref:`level3`
+* 处理性能：262.8 :ref:`CoreMark` , :ref:`level2`
 * 封装规格：TSSOP20/QFN28/QFN32/LQFP32/LQFP48
 * 运行环境：-40~105°C
 * RAM容量：16 KB

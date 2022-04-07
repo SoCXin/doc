@@ -4,8 +4,7 @@
 AT32F415
 ===============
 
-* 关键词：``Cortex-M4`` ``150MHz`` ``USB OTG``
-* 资源库：`GitHub <https://github.com/SoCXin/AT32F415>`_
+`GitHub <https://github.com/SoCXin/AT32F415>`_ : ``Cortex-M4`` ``150MHz`` ``USB OTG``
 
 .. contents::
     :local:
@@ -15,8 +14,6 @@ Xin简介
 
 :ref:`arterytek` :ref:`cortex_m4` 单核 MCU
 
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -24,26 +21,31 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：2.4V - 3.6V
-* 工作温度：-40°C - 105°C
-* 内核频率：150 MHz
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：? :ref:`CoreMark` , :ref:`level3`
+* 封装规格：
+* 运行环境：-40~105°C
+* RAM容量：16 KB
+* Flash容量：64 KB
+
+
 
 特征参数
 ^^^^^^^^^^^
 
-* 15ch ADC（12bit 2MSPS）
-* 3 x USART + 2 x UART
-* SDIO
-* CAN 2.0B
-* USB 2.0 OTG，内置1280 Byte专用SRAM
-* 2 x I2C + 2 x SPI
-* ERTC (1ppm的分辨率)
-* 2 x COMP (轨到轨比较器)
-* sLib安全库 (Security Library)
+* 150 MHz :ref:`cortex_m4`
+
 
 .. note::
     :ref:`arterytek` 自行开发的 :ref:`arterytek_slib` 可支持密码保护指定范围程序区，方案商烧录核心算法到此区域，提供给下游客户做二次开发，强化了产品本身的安全性、可靠性和二次开发的使用便利度。
 
+芯片架构
+~~~~~~~~~~~
+
+* 供电电压：2.4V - 3.6V
 
 Xin选择
 -----------

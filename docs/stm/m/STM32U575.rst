@@ -13,6 +13,8 @@ STM32U575
 Xin简介
 -----------
 
+`EEMBC CoreMark:4.07 CoreMark/MHz <https://www.eembc.org/viewer/?benchmark_seq=13317>`_
+
 .. image:: ./images/STM32U575.jpg
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32u5-series/stm32u575-585/stm32u575cg.html
 
@@ -34,13 +36,12 @@ STM32U5 的定义是一个低功耗旗舰级产品线，最大的3个特点：
 * 参考价格：
 * 制程工艺：40 nm
 * 供货周期：
-* 处理性能：240 :ref:`DMIPS`, 651 :ref:`CoreMark` | :ref:`level3`
+* 处理性能：240 :ref:`DMIPS`, 651 :ref:`CoreMark` , :ref:`level3`
 * 封装规格：LQFP48/QFN48/LQFP64/WLCSP90/LQFP100/UFBGA132/LQFP144/UFBGA169
 * 运行环境：-40°C to 85/125°C
 * RAM容量：786 KB
 * Flash容量：1/2 MB
 
-`EEMBC CoreMark:4.07 CoreMark/MHz <https://www.eembc.org/viewer/?benchmark_seq=13317>`_
 
 
 特征参数

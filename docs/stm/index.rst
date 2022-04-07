@@ -12,35 +12,40 @@ ST
 意法半导体是全球最大的半导体公司之一，MCU领域的王者，其产品拥有庞大的工程师群众基础和开发资源。
 
 
-产品分类
------------
-
 .. list-table::
     :header-rows:  1
 
     * - 分类
       - 性能范围
-      - 内存范围
-      - 封装范围
-      - 性能范围
+      - 内存配置
+      - 封装规格
       - 定价范围
       - 核心特点
-    * - 低阶产品
+    * - :ref:`st_lowcost`
       -
       -
       -
       -
       -
-      -
-    * - 主流产品
-      -
+    * - :ref:`st_main`
       -
       -
       -
       -
       -
-    * - 高阶产品
+    * - :ref:`st_high`
       -
+      -
+      -
+      -
+      -
+    * - :ref:`st_iot`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`st_ulp`
       -
       -
       -
@@ -55,14 +60,15 @@ ST
     主流产品  <m/index>
 
 
+.. _st_high:
 
 性能担当
-~~~~~~~~~~~
+-----------
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`top`
+    * - :ref:`st_high`
       - :ref:`architecture`
       - :ref:`CoreMark`
       - :ref:`level`
@@ -115,10 +121,10 @@ ST
     双核MCU: STM32H745 <t/STM32H745>
     异构MPU: STM32MP15 <t/STM32MP15>
 
-
+.. _st_iot:
 
 无线通信
-~~~~~~~~~~~
+-----------
 
 .. image:: ./m/images/stm32wb_series.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32wb-series.html
@@ -132,10 +138,10 @@ ST
     LoRa: STM32WLE5 <m/STM32WLE5>
 
 
-.. _stm32ulp:
+.. _st_ulp:
 
 超低功耗
-~~~~~~~~~~~
+-----------
 
 .. image:: m/images/stm32ulp.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32-ultra-low-power-mcus.html
@@ -184,7 +190,7 @@ ST
       -
 
 
-核心技术
+技术特点
 -----------
 
 .. _stm32_adc:

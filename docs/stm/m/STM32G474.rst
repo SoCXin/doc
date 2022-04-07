@@ -4,8 +4,7 @@
 STM32G474
 ===============
 
-* 关键词：``Cortex-M4`` ``170MHz`` ``FSMC`` ``CAN-FD`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
-* 工程库：`GitHub <https://github.com/SoCXin/STM32G474>`_ , `Gitee <https://gitee.com/socxin/STM32G474>`_
+`GitHub <https://github.com/SoCXin/STM32G474>`_ : ``Cortex-M4`` ``170MHz`` ``FSMC`` ``CAN-FD`` ``15MSPS-DAC`` ``4MSPS-ADC`` ``UCPD`` ``HRTIM`` ``AES256``
 
 .. contents::
     :local:
@@ -16,10 +15,8 @@ Xin简介
 .. image:: ./images/STM32G474.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x4.html
 
-.. contents::
-    :local:
 
-规格配置
+规格参数
 ~~~~~~~~~~~
 
 内嵌数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，带有双安全存储区域，ART加速提高Flash读取运行速度。支持FPU和DSP指令，以及3种不同的硬件加速器： :ref:`stm32_art` Accelerator™、CCM-SRAM程序执行加速器、以及数学运算加速器。
@@ -29,12 +26,15 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2019年5月
-* 供电电压：1.71 to 3.6 V
-* 工作温度：-40°C to +85°C/125°C
-* 处理性能：212 :ref:`DMIPS`, 550 :ref:`CoreMark`
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：212 :ref:`DMIPS`, 550 :ref:`CoreMark` , :ref:`level3`
+* 封装规格：LQFP48/LQFP64/LQFP100/LQFP128
+* 运行环境：-40°C to +85°C/125°C
 * RAM容量：128 KB
 * Flash容量：128/256/512 KB
-* 封装规格：48 to 128 Pin
+
 
 .. image:: ./images/STM32G474p.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x1/stm32g431kb.html
@@ -58,6 +58,11 @@ Xin简介
 
 .. image:: ./images/STM32G474s.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x4.html
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：1.71 to 3.6 V
 
 
 .. _stm32_hrtim:

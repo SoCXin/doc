@@ -4,8 +4,7 @@
 AT32F413
 ===============
 
-* 关键词：``Cortex-M4`` ``200MHz``  ``-40~105°C`` ``USB2.0``
-* 资源库：`GitHub <https://github.com/SoCXin/AT32F413>`_
+`GitHub <https://github.com/SoCXin/AT32F413>`_ : ``Cortex-M4`` ``200MHz``  ``-40~105°C`` ``USB2.0``
 
 .. contents::
     :local:
@@ -19,7 +18,7 @@ Xin简介
 关键特性
 ~~~~~~~~~
 
-* Cortex®-M4主频最高 240 MHz
+* 240 MHz :ref:`cortex_m4`
 * 高达 16MB 外部 SPI Flash memory 扩展
 * 4 x USART + 4 x UART
 * 2 x CAN 2.0B

@@ -4,9 +4,7 @@
 AT32F425
 ===============
 
-* 关键词：``Cortex-M4`` ``96MHz`` ``USB OTG``
-* 资源库：`GitHub <https://github.com/SoCXin/AT32F425>`_
-
+`GitHub <https://github.com/SoCXin/AT32F425>`_ : ``Cortex-M4`` ``96MHz`` ``USB OTG``
 
 .. contents::
     :local:
@@ -14,8 +12,6 @@ AT32F425
 Xin简介
 -----------
 
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -37,7 +33,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`cortex_m4` 96 MHz
+* 96 MHz :ref:`cortex_m4`
 
 
 芯片架构

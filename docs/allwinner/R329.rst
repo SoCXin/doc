@@ -4,7 +4,7 @@
 R329
 =============
 
-`标签 <https://www.allwinnertech.com/index.php?c=product&a=index&id=91>`_ : ``Allwinner`` ``Cortex-A53`` ``1.5GHz`` ``Dual-core`` ``Tina``
+`GitHub <https://github.com/SoCXin/R329>`_ : ``Allwinner`` ``Cortex-A53`` ``1.5GHz`` ``Dual-core`` ``Tina``
 
 .. contents::
     :local:
@@ -15,7 +15,7 @@ Xin简介
 .. image:: ./images/R329.jpg
     :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=91
 
-`GitHub <https://github.com/SoCXin/R329>`_
+
 
 规格参数
 ~~~~~~~~~~~
@@ -27,7 +27,7 @@ R329定位是AI语音专用芯片，性能特点是Cortex-A53双核，HiFi4 DSP�
 
 * 发布时间：2021年4月15日
 * 参考价格：
-* 制程工艺：28nm HPC+
+* 制程工艺：:ref:`tsmc_hpc`
 * 供货周期：
 * 处理性能：
 * 封装规格：BGA231 (12mmx12mm)
@@ -42,7 +42,7 @@ R329定位是AI语音专用芯片，性能特点是Cortex-A53双核，HiFi4 DSP�
 * 1.5 GHz :ref:`cortex_a53` Dual-core
 * 32 KB L1 I-cache and 32 KB L1 D-cache
 * HiFi4 DSP Dual-core
-* TZ1 AIPU 0.25TOPS @800MHz
+* `TZ1 AIPU 0.25TOPS @800MHz <https://www.armchina.com/mountain?infoId=161&name=%E5%91%A8%E6%98%93NPU%3FdataId%3D21&istitle=%E5%91%A8%E6%98%93>`_
 
 
 芯片架构
@@ -86,6 +86,8 @@ R328
 
 Xin应用
 -----------
+
+`linux-sunxi <https://linux-sunxi.org/R329>`_
 
 .. contents::
     :local:

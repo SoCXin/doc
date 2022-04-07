@@ -4,8 +4,7 @@
 AT32F407
 ===============
 
-* 关键词：``Cortex-M4`` ``300DMIPS`` ``240MHz`` ``8 UART`` ``2 CAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
-* 资源库：`GitHub <https://github.com/SoCXin/AT32F407>`_
+`GitHub <https://github.com/SoCXin/AT32F407>`_ : ``Cortex-M4`` ``300DMIPS`` ``240MHz`` ``8 UART`` ``2 CAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
 
 .. contents::
     :local:
@@ -18,6 +17,7 @@ Xin简介
 关键特性
 ~~~~~~~~~
 
+* 240 MHz :ref:`cortex_m4`
 * 工业级温度范围-40~105°C
 * sLib执行代码安全库区
 * Cortex®-M4主频最高 240 MHz

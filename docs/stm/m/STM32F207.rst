@@ -4,8 +4,7 @@
 STM32F207
 ==================
 
-* 关键词：``Cortex-M3`` ``120MHz`` ``USB-OTG-HS`` ``Ethernet`` ``ETH-MAC100``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32F207>`_ , `Gitee <https://gitee.com/socxin/STM32F207>`_
+`GitHub <https://github.com/SoCXin/STM32F207>`_ : ``Cortex-M3`` ``120MHz`` ``USB-OTG-HS`` ``Ethernet`` ``ETH-MAC100``
 
 .. contents::
     :local:
@@ -19,15 +18,18 @@ Xin简介
 规格参数
 ~~~~~~~~~~~
 
-基本参数
+基本信息
 ^^^^^^^^^^^
 
-* 工作温度：-40°C to +85°C
+* 发布时间：
+* 参考价格：
 * 制程工艺：90 nm
-* 处理性能：150 :ref:`DMIPS` , 398 :ref:`CoreMark`
+* 供货周期：
+* 处理性能：150 :ref:`DMIPS` , 398 :ref:`CoreMark` , :ref:`level3`
+* 封装规格：LQFP100/LQFP144/LQFP176/BGA176
+* 运行环境：-40°C to +85°C
 * RAM容量：128 KB
 * Flash容量：128/256/512 KB
-* 封装规格：LQFP100/LQFP144/LQFP176/BGA176
 
 特征参数
 ^^^^^^^^^^^
@@ -40,13 +42,6 @@ Xin简介
 * 通信接口多达15个（包括6个速度高达7.5 Mb/s的USART、3个速度高达30 Mb/s的SPI、3个I²C、2个CAN、SDIO）
 * 定时器多达17个：16和32位定时器
 
-电源参数
-^^^^^^^^^^^
-
-* 供电电压：1.62 to 3.6 V
-* Standby: 2.95 μA (Backup SRAM OFF, RTC/LSE ON)
-* 175 µA/MHz
-
 
 芯片架构
 ~~~~~~~~~~~
@@ -54,6 +49,13 @@ Xin简介
 .. image:: ./images/STM32F207s.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32f2x7.html
 
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：1.62 to 3.6 V
+* Standby: 2.95 μA (Backup SRAM OFF, RTC/LSE ON)
+* 175 µA/MHz
 
 .. _stm32_otg_hs:
 
@@ -102,14 +104,7 @@ Xin选择
       -
       - OTG-HS
       - MAC100
-    * - :ref:`at32f407`
-      - 210
-      -
-      -
-      -
-      -
-      -
-      -
+
     * - :ref:`ch32f207`
       - 180
       -
@@ -126,14 +121,15 @@ Xin选择
       -
       - OTG
       - MAC100
+    * - :ref:`at32f407`
+      - 210
+      -
+      -
+      -
+      -
+      -
+      -
 
-.. _gd32f207:
-
-GD32F207
-^^^^^^^^^^^
-
-.. image:: ./images/GD32F207.png
-    :target: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m3/performance-line/gd32f207-series/
 
 
 系列对比
