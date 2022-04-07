@@ -4,7 +4,7 @@
 R329
 =============
 
-`GitHub <https://github.com/SoCXin/R329>`_ : ``Allwinner`` ``Cortex-A53`` ``1.5GHz`` ``Dual-core`` ``Tina``
+`GitHub <https://github.com/SoCXin/R329>`_ : ``Allwinner`` ``Cortex-A53`` ``1.5GHz`` ``Dual-core`` ``AI`` ``HiFi4`` ``Tina`` ``sunxi``
 
 .. contents::
     :local:
@@ -19,8 +19,6 @@ Xin简介
 
 规格参数
 ~~~~~~~~~~~
-
-R329定位是AI语音专用芯片，性能特点是Cortex-A53双核，HiFi4 DSP双核
 
 基本参数
 ^^^^^^^^^^^

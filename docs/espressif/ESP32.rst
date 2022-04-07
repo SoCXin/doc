@@ -200,22 +200,22 @@ Xin选择
 
 ESP8266
 ^^^^^^^^^^^^
+`EEMBC CoreMark:191 (80 x 2.38 CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=13243>`_
 
-ESP32相对较早的产品ESP8266，具有更强的性能，同时集成蓝牙功能。
 
-`ESP8266芯片 <https://www.espressif.com/zh-hans/products/socs/esp8266>`_
+`ESP8266芯片简介 <https://www.espressif.com/zh-hans/products/socs/esp8266>`_
 
 * 支持2.4GHz HT20、带宽75Mbps
 * 主频160MHz、160KB SRAM、QFN32(5*5)
 * 软件支持TCP/IP、MQTT、HTTP、COAP等常见协议，支持AT指令，支持OTA升级
 
-就发布时间而言，ESP32是ESP8266继任者，增加了CPU核数量，更快的Wi-Fi，更多的GPIO，并支持蓝牙4.2和蓝牙低功耗。
+就发布时间而言，ESP32是ESP8266继任者，增加了CPU核数量，更快的Wi-Fi，更多的GPIO，并支持蓝牙4.2和蓝牙低功耗。ESP32相较ESP8266还多了蓝牙功能。
 
 此外，ESP32配有触摸感应针脚，可用于唤醒ESP32深度睡眠，内置霍尔效应传感器和内置温度传感器。
 
 ESP8266发布较早拥有更多生态资源，同时开发灵活度更高，开发者接受度很高，同时由于定价更低，在没有足够替换动力下，很多项目继续使用该芯片。
 
- `wireless-esp8266-dap <https://github.com/windowsair/wireless-esp8266-dap>`_
+`wireless-esp8266-dap <https://github.com/windowsair/wireless-esp8266-dap>`_
 
 ESP8266方案缺陷：
 

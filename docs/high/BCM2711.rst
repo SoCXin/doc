@@ -4,14 +4,15 @@
 BCM2711
 =============
 
-* 关键词：``Broadcom`` ``Cortex-A72`` ``Quad-Core`` ``1.8GHz``
-* 资源库：`GitHub <https://github.com/SoCXin/BCM2711>`_
+`GitHub <https://github.com/SoCXin/BCM2711>`_ : ``Broadcom`` ``Cortex-A72`` ``Quad-Core`` ``1.8GHz``
 
 .. contents::
     :local:
 
 Xin简介
 -----------
+
+`EEMBC CoreMark:33073 (1500 x 22.049 CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=13192>`_
 
 规格参数
 ~~~~~~~~~~~
@@ -26,6 +27,7 @@ Xin简介
 * 工作温度：
 * 处理性能：
 * 封装规格：
+
 
 
 特征参数

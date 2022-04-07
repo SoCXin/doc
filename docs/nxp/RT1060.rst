@@ -12,6 +12,8 @@ RT1060
 Xin简介
 -----------
 
+`EEMBC CoreMark:3036.5 (600 x 5.06 CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=2699>`_
+
 .. image:: ./images/RT1060.png
     :target: https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1060-crossover-mcu-with-arm-cortex-m7-core:i.MX-RT1060
 
@@ -26,7 +28,7 @@ Xin简介
 * 发布时间：
 * 供电电压：
 * 工作温度：-40°C to +105°C
-* 处理性能：1284 :ref:`DMIPS`, 3020 :ref:`CoreMark` | :ref:`level5`
+* 处理性能：1284 :ref:`DMIPS`, 3020 :ref:`CoreMark` , :ref:`level5`
 * RAM容量：1 MB
 * Flash容量：
 * 封装规格：BGA196
@@ -66,6 +68,7 @@ RT1060系列相对RT1050系列主要差异在于RAM资源和以太网数量，�
 .. image:: ./images/NXPRT.png
     :target: https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus:IMX-RT-SERIES
 
+
 型号对比
 ~~~~~~~~~
 
@@ -85,3 +88,5 @@ RT1060系列包括RT1062、RT1064等常用型号
 
 RT1064
 ^^^^^^^^^^^
+
+

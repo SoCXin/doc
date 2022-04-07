@@ -4,7 +4,7 @@
 RT1170
 =============
 
-`标签 <https://github.com/SoCXin/RT1170>`_ : ``Cortex-M7`` ``Cortex-M4`` ``Dual Core`` ``1 GHz``
+`GitHub <https://github.com/SoCXin/RT1170>`_ : ``Cortex-M7`` ``Cortex-M4`` ``Dual Core`` ``1 GHz``
 
 .. contents::
     :local:

@@ -4,8 +4,7 @@
 nRF52840
 ============
 
-* 关键词：``BLE`` ``NFC``
-* 资源库：`GitHub <https://github.com/SoCXin/nRF52840>`_ , `官方资源 <https://www.nordicsemi.com/Products/nRF52840>`_
+`GitHub <https://github.com/SoCXin/nRF52840>`_ : ``BLE`` ``NFC``
 
 .. contents::
     :local:
@@ -22,6 +21,7 @@ nRF52840基于带有浮点单元的32位ARM® Cortex™-M4 CPU，主频为64 MHz
 
 通过精密的片上自适应电源管理系统，实现了极低的功耗。
 
+`官方资源 <https://www.nordicsemi.com/Products/nRF52840>`_
 
 
 规格参数

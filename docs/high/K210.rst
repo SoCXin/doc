@@ -4,8 +4,7 @@
 K210
 =============
 
-* 关键词：``kendryte`` ``RISC-V`` ``400MHz`` ``0.2TOPS``  ``Dual Core`` ``KPU`` ``$3`` ``0.3W``
-* 资源库：`GitHub <https://github.com/SoCXin/K210>`_
+`GitHub <https://github.com/SoCXin/K210>`_ : ``kendryte`` ``RISC-V`` ``400MHz`` ``0.2TOPS``  ``Dual Core`` ``KPU`` ``$3`` ``0.3W``
 
 .. contents::
     :local:
@@ -23,11 +22,11 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 发布时间：2021-07-08
+* 发布时间：2021年7月8日
 * 发布价格：
 * 制程工艺：28 nm
 * 供货周期：
-* 处理性能：? :ref:`CoreMark`, ? :ref:`CoreMark` (Dual)
+* 处理性能： ? :ref:`CoreMark` (Dual)
 * SRAM容量：8 MB
 * Flash容量：
 
