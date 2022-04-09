@@ -4,7 +4,7 @@
 RP2040
 ===============
 
-`标签 <https://github.com/SoCXin/RP2040>`_ : ``Raspberry Pi`` ``Cortex-M0`` ``MicroPython`` ``Dual Core`` ``133MHz`` ``USB OTG`` ``QFN56`` ``$0.7``
+`GitHub <https://github.com/SoCXin/RP2040>`_ : ``Raspberry Pi`` ``Cortex-M0`` ``Dual Core`` ``133MHz`` ``USB OTG`` ``QFN56`` ``$0.7`` ``MicroPython``
 
 .. contents::
     :local:
@@ -15,6 +15,7 @@ Xin简介
 .. image:: ./images/RP2040.png
     :target: https://www.raspberrypi.org/documentation/microcontrollers/rp2040.html
 
+`datasheet <https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf>`_
 
 规格参数
 ~~~~~~~~~~~
@@ -25,14 +26,13 @@ Xin简介
 
 * 发布时间：2021年1月
 * 参考价格：$0.7 ($2380/3400)
-* 制程工艺：TSMC 40LP (2.1K/300mm²)
+* 制程工艺：:ref:`tsmc_40lp` (2mm²)
 * 供货周期：
-* 处理性能：157 :ref:`CoreMark` (125MHz)
+* 处理性能：157 :ref:`CoreMark` (125MHz) , :ref:`level3`
 * 封装规格：QFN56 (7×7mm)
 * 运行环境：-40°C to 85°C/125°C
 * RAM容量：264 KB
 * Flash容量：128/256 KB (16MB QSPI)
-
 
 特征参数
 ^^^^^^^^^^^
@@ -55,7 +55,7 @@ Xin简介
 * 功耗范围：
 
 .. image:: ./images/RP2040qfn.png
-    :target: https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf
+    :target: https://www.raspberrypi.com/products/rp2040/
 
 
 时钟架构
@@ -143,9 +143,18 @@ Arduino
 MicroPython
 ^^^^^^^^^^^^^
 
- `Editor <https://github.com/robert-hh/Micropython-Editor>`_
+`Editor <https://github.com/robert-hh/Micropython-Editor>`_
 
+应用方案
+~~~~~~~~~~~
 
+.. _rp2040_tflite:
+
+TensorFlow Lite Micro
+^^^^^^^^^^^^^^^^^^^^^^^^
+``TensorFlow``
+
+`pico-tflmicro <https://github.com/raspberrypi/pico-tflmicro>`_
 
 项目案例
 ~~~~~~~~~~~
@@ -153,12 +162,12 @@ MicroPython
 logic-analyzer
 ^^^^^^^^^^^^^^^^^^
 
- `logic-analyzer <https://github.com/gamblor21/rp2040-logic-analyzer>`_
+`logic-analyzer <https://github.com/gamblor21/rp2040-logic-analyzer>`_
 
 grblHAL
 ^^^^^^^^^^^^^^^^^^
 
- `grblHAL RP2040 <https://github.com/grblHAL/RP2040>`_
+`grblHAL RP2040 <https://github.com/grblHAL/RP2040>`_
 
 
 .. _rp2040_vga:

@@ -132,19 +132,18 @@ L3(<240)
       - 170(MHz)
       -
       - 4
+    * - :ref:`rp2040`
+      - :ref:`cortex_m0`
+      - 425(2)
+      - 133(MHz)
+      -
+      - 5
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407
       - 160(MHz)
       -
-      - 5
-    * - :ref:`rp2040`
-      - :ref:`cortex_m0`
-      - (2)
-      - 125(MHz)
-      -
       - 6
-
 
 .. _level3_cnt:
 

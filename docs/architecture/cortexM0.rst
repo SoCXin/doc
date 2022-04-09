@@ -6,31 +6,30 @@ Cortex-M0
 
 :ref:`performance` : ``1.62 CoreMark/MHz`` ``0.95 DMIPS/MHz``
 
-3级流水线 :ref:`neumann` ，能耗最低的最小ARM处理器，Cortex-M0 的代码密度和能效优势意味着它是各种应用中 8/16 位设备的自然高性价比换代产品，同时保留与功能丰富的 Cortex-M3 处理器的工具和二进制向上兼容性。
+3级流水线 :ref:`neumann` ，能耗最低的最小ARM处理器，:ref:`cortex_m0` 的代码密度和能效优势意味着它是各种应用中 8/16 位设备的自然高性价比换代产品，同时保留与功能丰富的 :ref:`cortex_m3` 处理器的工具和二进制向上兼容性。
 
-.. note::
-    2009年发布，是一款具有开创性的产品，第一个将32位处理器在同8位和16位处理器差不多大小的硅片实现的，在保持可用性的同时还具有极佳的能耗效率，最低配只有12000个逻辑门。
+2009年发布，是一款具有开创性的产品，第一个将32位处理器在同8位和16位处理器差不多大小的硅片实现的，在保持可用性的同时还具有极佳的能耗效率，最低配只有12000个逻辑门。
 
-.. contents::
-    :local:
-
+.. image:: ./images/Cortex-M0plus.png
+    :target: https://developer.arm.com/Processors/Cortex-M0-Plus
 
 
 
-内核对比
----------------
+
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`architecture`
-      - DMIPS/MHz
+      - :ref:`DMIPS`/MHz
       - :ref:`CoreMark`/MHz
-      - :ref:`consumption`
-    * - :ref:`cortex_m0`
+      - :ref:`consumption`/MHz
+      - FloorPlan Area
+    * - :ref:`tsmc_40lp`
       - 0.95
       - 1.62
-      -
+      - 3.8µW
+      - 0.0066mm2
 
 Cortex-M处理器支持的指令集名为Thumb，而M0和M0+处理器则只支持其中的一个子集(56条指令)，这些指令多数为16位宽，只有6个指令是32位的。
 
@@ -44,13 +43,6 @@ Cortex-M0和Cortex-M3都使用的是3级流水线结构，Cortex-M0+使用的是
     :target: https://blog.csdn.net/u012874587/article/details/78803044
 
 
-典型产品
----------------
-
-.. toctree::
-    :maxdepth: 1
-
-    RP2040 <../M/RP2040>
 
 
 中断管理
@@ -78,3 +70,10 @@ VTOR
 
 中断向量表偏移地址寄存器。中断向量表是128个word对齐的，也就是说它的低9位都是0。 对该寄存器的设置将修改中断向量表的起始地址。 而该寄存器的第29位标志了中断向量表是在SRAM中还是代码段中，有时也称该位为TBLBASE位。
 
+代表产品
+---------------
+
+.. toctree::
+    :maxdepth: 1
+
+    RP2040 <../M/RP2040>
