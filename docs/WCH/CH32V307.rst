@@ -256,17 +256,3 @@ Xin应用
 .. image:: ./images/B_CH32V307.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.48.39021289jMGykq&id=659315400556&ns=1&abbucket=3#detail
 
-
-.. _v3_tool:
-
-V3-TOOL
-~~~~~~~~~~
-``Server`` ``USB-HS`` ``1Gbps(MAC)`` ``10Mbps(PHY)``
-
-`V3-TOOL <https://github.com/stops-top/V3-Tool>`_ 用于实现 :ref:`stops_tool`
-
-
-* 以太网连接
-* USB连接
-
-

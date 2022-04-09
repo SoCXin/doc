@@ -7,21 +7,21 @@ Application
 .. toctree::
     :maxdepth: 1
 
-    人机交互   <hmi>
-    通信连接   <iot>
+    人机交互 HMI  <hmi>
+    通信连接 IoT  <iot>
+    超低功耗 ULP  <ulp>
+    信号转换   <adc>
+    驱动控制   <foc>
     边缘计算   <edge>
-    超低功耗   <ulp>
-    模拟转换   <adc>
-    控制驱动   <foc>
 
-通信协议
+行业协议
 -----------
 
 .. _matter:
 
 Matter
 ~~~~~~~~~~~
-``CSA`` ``简单性、互操作性、可靠性和安全性``
+``CSA`` ``智能家居`` ``简单性、互操作性、可靠性和安全性``
 
 由 CSA 连接标准联盟 (Connectivity Standards Alliance) 发起，多家行业领先公司联合推出的智能家居互联协议。(Zigbee联盟改名CSA联盟)
 

@@ -252,15 +252,6 @@ Xin应用
 开发板
 ~~~~~~~~~~
 
-.. _h3_tool:
-
-H3-TOOL
-~~~~~~~~~~
-``5MSPS-12bit-DAC`` ``3.6MSPS-16bit-ADC`` ``USB-HS-OTG``
-
-`H3-TOOL <https://github.com/stops-top/H3-Tool>`_ 用于实现 :ref:`stops_tool`
-
-单芯片集成方案，实现信号采集和有线高速通信
 
 Xin总结
 --------------

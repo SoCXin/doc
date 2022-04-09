@@ -366,17 +366,6 @@ IOMUX
 产品案例
 ~~~~~~~~~~~
 
-.. _s3_tool:
-
-S3-TOOL
-^^^^^^^^^^^
-``Server`` ``Wi-Fi`` ``BLE5.0`` ``USB OTG`` ``QFN56``
-
-`S3-TOOL <https://github.com/stops-top/S3-Tool>`_ 用于实现 :ref:`stops_tool`
-
-* 线缆接入
-* 联网管理
-* 串联调试
 
 
 Xin总结
