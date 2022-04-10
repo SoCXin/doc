@@ -6,30 +6,27 @@ Cortex-M0
 
 :ref:`performance` : ``1.62 CoreMark/MHz`` ``0.95 DMIPS/MHz``
 
-3级流水线 :ref:`neumann` ，能耗最低的最小ARM处理器，:ref:`cortex_m0` 的代码密度和能效优势意味着它是各种应用中 8/16 位设备的自然高性价比换代产品，同时保留与功能丰富的 :ref:`cortex_m3` 处理器的工具和二进制向上兼容性。
-
 2009年发布，是一款具有开创性的产品，第一个将32位处理器在同8位和16位处理器差不多大小的硅片实现的，在保持可用性的同时还具有极佳的能耗效率，最低配只有12000个逻辑门。
 
-.. image:: ./images/Cortex-M0plus.png
-    :target: https://developer.arm.com/Processors/Cortex-M0-Plus
-
-
-
-
+3级流水线 :ref:`neumann` ，能耗最低的最小ARM处理器，:ref:`cortex_m0` 的代码密度和能效优势意味着它是各种应用中 8/16 位设备的自然高性价比换代产品，同时保留与功能丰富的 :ref:`cortex_m3` 处理器的工具和二进制向上兼容性。
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`architecture`
+    * - :ref:`foundry`
       - :ref:`DMIPS`/MHz
       - :ref:`CoreMark`/MHz
       - :ref:`consumption`/MHz
-      - FloorPlan Area
+      - Die Size
     * - :ref:`tsmc_40lp`
       - 0.95
       - 1.62
       - 3.8µW
-      - 0.0066mm2
+      - 0.0066(mm2)
+
+.. image:: ./images/Cortex-M0plus.png
+    :target: https://developer.arm.com/Processors/Cortex-M0-Plus
+
 
 Cortex-M处理器支持的指令集名为Thumb，而M0和M0+处理器则只支持其中的一个子集(56条指令)，这些指令多数为16位宽，只有6个指令是32位的。
 

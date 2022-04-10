@@ -6,6 +6,11 @@ AMBA
 
 **AMBA (Advanced Microcontroller Bus Architecture) 高级处理器总线架构**
 
+* ASB (Advanced System Bus) 高级系统总线
+* APB (Advanced Peripheral Bus) 高级外围总线
+* AHB (Advanced High-performance Bus) 高级高性能总线
+* AXI (Advanced eXtensible Interface) 高级可拓展接口
+
 .. contents::
     :local:
 
