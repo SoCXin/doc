@@ -16,8 +16,7 @@ Architecture
 
 
 
-Compare
----------------
+
 
 .. list-table::
     :header-rows:  1
@@ -93,6 +92,9 @@ Compare
       - √
       - X
 
+
+架构体系
+---------------
 
 .. _neumann:
 

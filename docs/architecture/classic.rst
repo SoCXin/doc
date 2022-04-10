@@ -26,6 +26,12 @@ ARMv6(ARM11系列)：
 * ARM1176JZ(F)-S基于ARMv6KZ 在 ARM1136EJ(F)-S 基础上增加MMU、TrustZone
 * ARM11 MPCore基于ARMv6K 在ARM1136EJ(F)-S基础上可以包括1-4 核SMP、MMU
 
+.. image:: ./images/classic.png
+    :target: https://www.xyhtml5.com/16603.html
+
+.. contents::
+    :local:
+
 .. _arm7:
 
 ARM7
@@ -44,6 +50,7 @@ ARM7TDMI微处理器4种类型：ARM7TDMI、ARM7TDMI-S、ARM720T、ARM7EJ。
 
 .. note::
     ARM7TMDI是使用很广泛的32位嵌入式RISC处理器，属低端ARM处理器核。
+
 
 
 .. _arm9:
