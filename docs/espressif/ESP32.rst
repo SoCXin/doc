@@ -28,7 +28,7 @@ Xin简介
 
 * 发布时间：2016年9月
 * 参考价格：
-* 制程工艺：:ref:`tsmc` 40 nm
+* 制程工艺：:ref:`tsmc_40lp`
 * 供货周期：至2028年
 * 处理性能：504.85 :ref:`CoreMark`, 994.26 :ref:`CoreMark` (Dual Core) , :ref:`level4`
 * 运行环境：-40°C to 105°C

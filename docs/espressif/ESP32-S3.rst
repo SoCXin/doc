@@ -29,7 +29,7 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 
 * 发布时间：2020年12月31日
 * 参考价格：
-* 制程工艺：:ref:`tsmc` 40 nm
+* 制程工艺：:ref:`tsmc_40lp`
 * 供货周期：至2033年
 * 处理性能：613.8 :ref:`CoreMark`, 1181.6 :ref:`CoreMark` (Dual) , :ref:`level4`
 * 封装规格：:ref:`esp_qfn56` (7x7mm)
@@ -42,7 +42,7 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 ^^^^^^^^^^^
 
 * 240 MHz :ref:`xtensa_lx7` Dual Core
-* 低功耗协处理器 :ref:`esp_ulp` （FSM/RISC-V二选一）
+* 低功耗协处理器 :ref:`esp_ulp` (FSM/RISC-V)
 * :ref:`esp32s3_wifi` + :ref:`esp32s3_ble`
 * :ref:`esp32s3_usb`
 * :ref:`esp32_can`

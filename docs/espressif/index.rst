@@ -5,6 +5,9 @@ Espressif
 
 ``Xtensa-LX7`` ``Xtensa-LX6`` ``RISC-V`` ``Matter`` ``Audio`` ``ULP`` ``Touch`` ``Wi-Fi`` ``BT/BLE`` ``ESP32`` ``ESP8266`` ``Arduino``
 
+.. contents::
+    :local:
+
 公司简介
 -----------
 
@@ -23,49 +26,49 @@ Espressif
       - SRAM/ROM
       - Wireless
       - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
-      - UART/SPI/I2C
+      - :ref:`esp_audio`
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
-      - 994.2
+      - 994.2(2)
       - 520KB/448KB
       - WiFi&BLE4.2
       - 100Mbps/X/√
-      - 3/4/2
+      - 2x I2S
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
       - 320KB/128KB
       - WiFi
-      - X/1.1 OTG/√
-      - 2/4/2
+      - X/1.1 OTG/ √
+      - I2S/DAC
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
-      - 1181.6
+      - 1181.6(2)
       - 512KB/384KB
       - WiFi&BLE5.0
       - X /1.1 OTG/ √
-      - 3/4/2
+      - 2x I2S
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
       - 400KB/384KB
       - WiFi&BLE5.0
       - X / X / √
-      - 2/3/1
+      - I2S
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
       -
       - 272KB/576KB
       - WiFi&BLE5.0
       - X / X / √
-      - 2/3/1
+      - I2S
     * - :ref:`esp32h2`
       - :ref:`esp_rv32`
       -
       - 400KB/384KB
       - Matter&BLE5.2
       - X / X / √
-      - 3/4/2
+      - I2S
 
 核心优势
 ~~~~~~~~~~~~
@@ -169,7 +172,9 @@ ESP-IDF的版本比较多，各种更新比较频繁，导致需要明确的版�
 ESP-ADF
 ^^^^^^^^^^^^^^
 
-`ESP-ADF <https://github.com/espressif/esp-adf>`_  用于开发各类音频应用，还提供多种语音平台的连接服务，方便用户直连云平台开发语音产品。
+`ESP-ADF <https://github.com/espressif/esp-adf>`_ 用于开发各类音频应用，还提供多种语音平台的连接服务，方便用户直连云平台开发语音产品。
+
+
 
 .. _esp_mdf:
 
@@ -193,9 +198,11 @@ ESP-NOW
 
 Audio
 ^^^^^^^^^^^^^^
+``AAC`` ``MP3``
 
 就产品定位和市场接受度而言，ESP32天然带有Audio音频应用属性
 
+`ESP-ADF开发文档 <https://docs.espressif.com/projects/esp-adf>`_
 
 技术总结
 -----------
