@@ -167,6 +167,8 @@ ESP-IDF
 
 ESP-IDF的版本比较多，各种更新比较频繁，导致需要明确的版本号来对应，当前最新版本为5.0，之前的所有版本均支持ESP32但针对不同平台需要重新配置并编译。
 
+更多关于请阅读 `ESP-IDF <https://docs.os-q.com/espidf.html>`_
+
 .. _esp_adf:
 
 ESP-ADF
@@ -183,6 +185,7 @@ ESP-MDF
 
 `ESP-MDF <https://github.com/espressif/esp-mdf>`_ 适用于无线组网类基础框架
 
+
 技术组件
 ~~~~~~~~~~~~
 
@@ -192,6 +195,11 @@ ESP-NOW
 ^^^^^^^^^^^^^^
 
 `ESP-NOW协议 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/network/esp_now.html>`_ 是由乐鑫定义的 Wi-Fi 通信协议，采用 CCMP 方法保护供应商特定动作帧的安全，ESP-NOW 广泛应用于智能照明、远程控制、传感器等领域。
+
+.. _esp_csi:
+
+ESP-CSI
+^^^^^^^^^^^^^^
 
 
 .. _esp_audio:

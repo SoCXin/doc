@@ -320,13 +320,24 @@ ESP32-S3-USB-OTG
 
 开发框架
 ~~~~~~~~~
+``ESP-IDF`` ``ESP-ADF`` ``ESP-MDF`` ``ESP-DL`` ``ESP-WHO`` ``ESP-Skainet``
 
-``ESP-IDF`` ``ESP-ADF`` ``ESP-MDF``
 
-关于 `ESP-IDF <https://docs.os-q.com/espidf.html>`_
+
+.. _esp_dl:
+
+ESP-DL
+^^^^^^^^^^^
+
+`ESP-DL <https://github.com/espressif/esp-dl>`_
+
+.. _esp_who:
 
 ESP-WHO
 ^^^^^^^^^^^
+
+`esp-who <https://github.com/espressif/esp-who>`_
+
 
 .. _esp_skainet:
 
