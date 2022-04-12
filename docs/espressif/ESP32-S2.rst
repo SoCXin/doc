@@ -110,6 +110,12 @@ ULP
 连接能力
 ~~~~~~~~~~~~~~
 
+.. _esp32s2_throughput:
+
+Throughput
+^^^^^^^^^^^^^^^
+
+
 .. _esp32s2_wifi:
 
 WiFi

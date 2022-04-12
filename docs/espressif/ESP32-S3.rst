@@ -22,10 +22,7 @@ Xin简介
 
 ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基于wireless连接能力实现对传统MCU的降维打击。
 
-* `晶元面积 (die size) <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
-: :ref:`esp32c3` < :ref:`esp32s2` < :ref:`esp32s3` < :ref:`esp32`
-
-
+* `晶元面积 (die size) <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_ : :ref:`esp32c3` < :ref:`esp32s2` < :ref:`esp32s3` < :ref:`esp32`
 
 基本参数
 ^^^^^^^^^^^
@@ -87,6 +84,83 @@ ULP
 
 连接能力
 ~~~~~~~~~~~~~~
+
+.. _esp32s3_throughput:
+
+Throughput
+^^^^^^^^^^^^^^^
+
+.. hint::
+    所有AP均配置加密，数据单位 Mbps
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - AP Model
+      - Channel
+      - Bandwidth
+      - TCP RX
+      - TCP TX
+      - UDP RX
+      - UDP TX
+    * - R6850
+      - 10
+      - HT20
+      - 72.92
+      - 76.40
+      - 86.01
+      - 76.70
+    * - WDR8690
+      - 10
+      - HT20/40
+      - 48.81
+      - 51.90
+      - 57.89
+      - 60.20
+    * - AC23
+      - 11
+      - HT40
+      - 60.86
+      - 76.50
+      - 85.59
+      - 69.30
+    * - R300
+      - 13
+      - HT20
+      - 43.58
+      - 49.40
+      - 60.03
+      - 57.50
+    * - AX3
+      - 1
+      - HT20
+      - 46.25
+      - 44.50
+      - 58.69
+      - 57.30
+    * - D268G
+      - 1
+      - HT20/40
+      - 70.77
+      - 79.30
+      - 87.66
+      - 93.70
+    * - ACRH17
+      - 1
+      - HT20/40
+      - 74.76
+      - 76.50
+      - 87.71
+      - 86.40
+    * - AX3000
+      - 8
+      - HT20/40
+      - 46.43
+      - 46.70
+      - 61.01
+      - 59.30
+
 
 .. _esp32s3_wifi:
 
