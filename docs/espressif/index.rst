@@ -70,6 +70,8 @@ Espressif
       - X / X / √
       - I2S
 
+`官方提供各芯片对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
+
 核心优势
 ~~~~~~~~~~~~
 
@@ -138,6 +140,9 @@ Espressif
 
     ESP32S2(USB-OTG) <ESP32-S2>
     ESP32H2 (802.15.4) <ESP32-H2>
+
+`各芯片资源对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
+
 
 解决方案
 -----------
@@ -238,7 +243,7 @@ Xtensa LX6
 
 ``MIPS`` ``Xtensa LX6``
 
-7 级流水线架构
+7级流水线架构，支持240 MHz的时钟频率，应用产品为 :ref:`esp32`
 
 
 .. _xtensa_lx7:
@@ -248,7 +253,7 @@ Xtensa LX7
 
 ``MIPS`` ``Xtensa LX7``
 
-五级流水线架构，支持高达 240 MHz 的时钟频率
+5级流水线架构，支持240 MHz的时钟频率，应用产品为 :ref:`esp32s2`, :ref:`esp32s3`
 
 * 16 位/24 位指令集提供高代码密度
 * 32 位定制化指令集及 128 位宽数据总线，提供高运算性能
@@ -266,11 +271,11 @@ Xtensa LX7
 
 .. _esp_rv32:
 
-RISC-V(32bit)
+RISC-V
 ^^^^^^^^^^^^^^
 :ref:`performance` : ``32-bit RISC-V 2.55 CoreMark/MHz`` > :ref:`cortex_m4`
 
-乐鑫自研 :ref:`riscv` 内核
+自研 :ref:`riscv` 内核，应用产品为 :ref:`esp32c3`
 
 
 
