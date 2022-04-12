@@ -10,47 +10,43 @@
 
     * - :ref:`ulp`
       - :ref:`architecture`
-      - Freq
+      - :ref:`frequency`
       - SRAM/ROM
-      - Flash
-      - PWR
-      - Standby
-      - Stop
+      - Voltage
+      - :ref:`consumption`
+      - :ref:`le`
     * - :ref:`stm32l011`
+      - :ref:`cortex_m0`
+      - 32(MHz)
+      - 20KB/192KB
       -
-      - 32MHz
-      - 20 KB
-      - 192 KB
       - 49 µA/MHz
       - 230 nA
-      - 340 nA
     * - :ref:`stm32l412`
+      - :ref:`cortex_m4`
+      - 80(MHz)
+      - 40KB/128KB
       -
-      - 80MHz
-      - 40 KB
-      - 128 KB
       - 28 μA/MHz
       - 195 nA
-      - 340 nA
     * - :ref:`stm32h7b0`
-      -
-      - 280 MHz
-      - 1.4 MB
-      - 128 KB
+      - :ref:`cortex_m7`
+      - 280(MHz)
+      - 1.4MB/128KB
+      - 1.71-3.6
       - 120 µA/MHz
       - 2.2 µA
-      - 32 µA
 
 
 .. _consumption:
 
 Consumption
 ---------------
+``运行功耗``
 
+.. _le:
 
-.. _sleep:
-
-Sleep
+LE
 -----------
+``低功耗模式``
 
-睡眠模式

@@ -312,7 +312,8 @@ Xin选择
       - 2.2µA
       - 64/100/176
 
-:ref:`esp32s3` 双核 1181.6 :ref:`CoreMark` 略高于 STM32F7系列(1082CoreMark)，对性能要求较高的场景非常适用，不足在于非嵌入式存储器，IO的效率较低
+.. note::
+    :ref:`esp32s3` 双核 1181.6 :ref:`CoreMark` 略高于 STM32F7系列(1082CoreMark)，对性能要求较高的场景非常适用，不足在于非嵌入式存储器，IO的效率较低
 
 型号对比
 ~~~~~~~~~~~~
@@ -412,7 +413,9 @@ ESP32-S3-USB-OTG
 ~~~~~~~~~
 ``ESP-IDF`` ``ESP-ADF`` ``ESP-MDF`` ``ESP-DL`` ``ESP-WHO`` ``ESP-Skainet``
 
+:ref:`esp32s3` 支持乐鑫所有开发框架：:ref:`esp_arduino` , :ref:`esp_idf` , :ref:`esp_adf` , :ref:`esp_mdf`
 
+此外，凭借其AI加速指令优化，运行如下开发框架有良好的表现
 
 .. _esp_dl:
 

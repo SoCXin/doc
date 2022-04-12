@@ -248,6 +248,9 @@ L6(<8k)
 --------------
 ``CoreMark < 8000``
 
+.. list-table::
+    :header-rows:  1
+
     * - :ref:`xin`
       - :ref:`architecture`
       - :ref:`CoreMark`
@@ -256,13 +259,13 @@ L6(<8k)
       - :ref:`level5`
     * - :ref:`rt1170`
       - :ref:`cortex_m7`
-      - 6468 (2)
+      - 6468(2)
       - 1.0(GHz)
       -
       - 1
     * - :ref:`v831`
       - :ref:`cortex_a7`
-      - ? (2)
+      - 5000+(2)
       - 800(MHz)
       -
       - 2
