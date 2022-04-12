@@ -31,15 +31,15 @@ Espressif
       - :ref:`xtensa_lx6`
       - 994.2(2)
       - 520KB/448KB
-      - WiFi&BLE4.2
+      - WiFi&BT4.2
       - 100Mbps/X/√
-      - 2x I2S
+      - I2S(2)/DAC
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
       - 320KB/128KB
       - WiFi
-      - X/1.1 OTG/ √
+      - X /1.1 OTG/ √
       - I2S/DAC
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
@@ -47,7 +47,7 @@ Espressif
       - 512KB/384KB
       - WiFi&BLE5.0
       - X /1.1 OTG/ √
-      - 2x I2S
+      - I2S(2)
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
@@ -266,23 +266,11 @@ Xtensa LX7
 
 .. _esp_rv32:
 
-RISC-V
+RISC-V(32bit)
 ^^^^^^^^^^^^^^
 :ref:`performance` : ``32-bit RISC-V 2.55 CoreMark/MHz`` > :ref:`cortex_m4`
 
 乐鑫自研 :ref:`riscv` 内核
-
-.. _esp_ulp:
-
-ULP
-^^^^^^^^^^^^^^
-``RISC-V`` ``PicoRV32`` ``FSM`` ``8KB SRAM`` ``17.5MHz``
-
-
-电源管理单元，五种功耗模式，超低功耗协处理器 (ULP)：
-
-* ULP-RISC-V 协处理器
-* ULP-FSM 协处理器
 
 
 

@@ -68,7 +68,7 @@ Xin简介
 ^^^^^^^^^^^
 
 * 240 MHz :ref:`xtensa_lx7`
-* PicoRV32 :ref:`esp_ulp` 8 KB SRAM
+* PicoRV32 :ref:`esp32s2_ulp` 8 KB SRAM
 * :ref:`esp32s2_wifi`
 * :ref:`esp_usb`
 * :ref:`esp32_can`
@@ -92,6 +92,19 @@ Xin简介
 
 * 电压范围：2.3 to 3.6 V
 * 功耗范围：
+
+.. _esp32s2_ulp:
+
+ULP
+^^^^^^^^^^^^^^
+``RISC-V`` ``PicoRV32`` ``FSM`` ``8KB SRAM`` ``17.5MHz``
+
+
+电源管理单元，五种功耗模式，超低功耗协处理器 (ULP)：
+
+* ULP-RISC-V 协处理器
+* ULP-FSM 协处理器
+
 
 
 连接能力

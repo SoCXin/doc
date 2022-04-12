@@ -22,7 +22,10 @@ Xin简介
 
 ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基于wireless连接能力实现对传统MCU的降维打击。
 
-* 芯片大小 (die size)：:ref:`esp32c3` < :ref:`esp32s2` < :ref:`esp32s3` < :ref:`esp32`
+* `晶元面积 (die size) <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
+: :ref:`esp32c3` < :ref:`esp32s2` < :ref:`esp32s3` < :ref:`esp32`
+
+
 
 基本参数
 ^^^^^^^^^^^
@@ -42,7 +45,7 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 ^^^^^^^^^^^
 
 * 240 MHz :ref:`xtensa_lx7` Dual Core
-* 低功耗协处理器 :ref:`esp_ulp` (FSM/RISC-V)
+* 低功耗协处理器 :ref:`esp32s3_ulp` (FSM/RISC-V)
 * :ref:`esp32s3_wifi` + :ref:`esp32s3_ble`
 * :ref:`esp32s3_usb`
 * :ref:`esp32_can`
@@ -68,6 +71,17 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 .. image:: ./images/ESP32S3sleep.png
     :target: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_cn.pdf
 
+.. _esp32s3_ulp:
+
+ULP
+^^^^^^^^^^^^^^
+``RISC-V`` ``PicoRV32`` ``FSM`` ``8KB SRAM``
+
+
+电源管理单元，五种功耗模式，超低功耗协处理器 (ULP)：
+
+* ULP-RISC-V 协处理器
+* ULP-FSM 协处理器
 
 
 
@@ -92,6 +106,8 @@ BLE
 ``BLE 5.0`` ``-94dBm`` ``20dBm``
 
 * 高功率模式（20 dBm，与 Wi-Fi 共用 PA）
+
+对比 :ref:`esp32` 的 :ref:`esp32_bluetooth` , :ref:`esp32s3` 只支持LE模式
 
 .. _esp32s3_usb:
 

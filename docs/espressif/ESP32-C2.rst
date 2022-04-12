@@ -121,7 +121,7 @@ Xin选择
       - QFN32
     * - :ref:`w801`
       - :ref:`xt804`
-      - 300 :ref:`DMIPS`
+      -
       - 288KB/1MB
       - 1T1R
       - 6/2/1
