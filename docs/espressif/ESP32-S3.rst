@@ -164,7 +164,7 @@ Throughput
 
 .. _esp32s3_wifi:
 
-WiFi
+Wi-Fi
 ^^^^^^^^^^^^^^^
 
 在 2.4 GHz 频带支持 20 MHz 和 40 MHz 频宽，支持 1T1R 模式，数据速率高达 150 Mbps
@@ -175,11 +175,11 @@ WiFi
 
 .. _esp32s3_ble:
 
-BLE 5.0
+BLE5.0
 ^^^^^^^^^^^^^^^
 ``BLE`` ``-94dBm`` ``20dBm``
 
-* 高功率模式（20 dBm，与 Wi-Fi 共用 PA）
+* 高功率模式(20 dBm，与 Wi-Fi 共用 PA)
 
 对比 :ref:`esp32` 的 :ref:`esp32_bluetooth` , :ref:`esp32s3` 只支持LE模式
 
@@ -325,7 +325,7 @@ Xin选择
       - :ref:`esp_core`
       - :ref:`CoreMark`
       - SRAM/ROM
-      - Wireless
+      - :ref:`wireless`
       - ADC/DAC/PWM
       - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
       - Package
@@ -415,19 +415,31 @@ ESP32-S3-USB-OTG
 
 :ref:`esp32s3` 支持乐鑫所有开发框架：:ref:`esp_arduino` , :ref:`esp_idf` , :ref:`esp_adf` , :ref:`esp_mdf`
 
-此外，凭借其AI加速指令优化，运行如下开发框架有良好的表现
+此外，凭借其 :ref:`esp_pie` 特性，在如下开发框架有良好的表现
+
 
 .. _esp_dl:
 
 ESP-DL
 ^^^^^^^^^^^
+``Deep Learning``
 
 `ESP-DL <https://github.com/espressif/esp-dl>`_
+
+.. _esp_sr:
+
+ESP-SR
+^^^^^^^^^^^
+``Speech Recognition``
+
+`ESP-SR <https://github.com/espressif/esp-sr>`_
+
 
 .. _esp_who:
 
 ESP-WHO
 ^^^^^^^^^^^
+``人脸识别`` ``人脸探测`` ``运动探测``
 
 `esp-who <https://github.com/espressif/esp-who>`_
 
@@ -436,8 +448,7 @@ ESP-WHO
 
 ESP-Skainet
 ^^^^^^^^^^^^^^
-
-``WakeNet``
+``WakeNet`` ``MultiNet`` ``语言唤醒``
 
 `ESP-Skainet <https://github.com/espressif/esp-skainet>`_ 是乐鑫针对语音控制设备推出的智能语音助手。集成多种声学算法，如语音活动检测、声学回声消除、降噪和波束成形等，提供了增强的声学性能。
 

@@ -25,7 +25,7 @@ Xin简介
 
 * 发布时间：2020年12月1日
 * 参考价格：
-* 制程工艺：:ref:`tsmc` 40 nm
+* 制程工艺：:ref:`tsmc_40lp`
 * 供货周期：至2033年
 * 处理性能：407.22 :ref:`CoreMark` , :ref:`level3`
 * 运行环境：-40°C to 105°C
@@ -71,7 +71,7 @@ Wi-Fi
 
 .. _esp32c3_ble:
 
-BLE
+BLE5.0
 ^^^^^^^^^^^
 ``BLE 5.0`` ``-94dBm`` ``Mesh``
 
@@ -143,28 +143,28 @@ Xin选择
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
-      - Characteristics
+      - :ref:`wireless`
       - UART/SPI/SDIO
       - Package
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
-      - 512KB/384KB
-      - 1T1R/v5.0
+      - 400K/384K
+      - WiFi+BLE
       - 2/3/0
       - :ref:`esp_qfn32`
     * - :ref:`hi3861`
       - :ref:`riscv`
       -
-      - 352KB/288KB
-      - 72Mbps(HT20)
+      - 352K/288K
+      - WiFi
       - 3/2/1
       - QFN32
     * - :ref:`w800`
       - :ref:`xt804`
       -
-      - 288KB/2MB
-      -
+      - 288K/2M
+      - WiFi+BLE
       - 6/2/1
       - QFN32
 
