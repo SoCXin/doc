@@ -9,11 +9,3 @@ Products
 Gateway
 ---------------
 
-
-
-.. _stopi:
-
-STOPi
----------------
-``STOPs`` ``STOPi`` ``QHUB``
-

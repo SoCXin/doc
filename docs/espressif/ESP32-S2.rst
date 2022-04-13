@@ -59,7 +59,7 @@ Xin简介
 * 处理性能：613.8 :ref:`CoreMark` , :ref:`level4`
 * 运行环境：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn56` (7x7mm)
-* RAM容量：320 KB (PSRAM 2 MB)
+* RAM容量：320 KB (PSRAM ≤ 2MB)
 * ROM容量：128 KB
 * Flash容量：0/2/4 MB (≤1GB)
 

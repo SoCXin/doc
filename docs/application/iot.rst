@@ -458,11 +458,18 @@ Wi-Fi
 .. note::
     大部分WiFi通信芯片不仅具备WiFi接入能力，同时具备BLE连接能力，而且不断有新的厂商进入这一领域，用户的选择范围非常广。
 
+.. _lpwan:
+
+LPWAN
+----------
+``LPWAN`` ``LPWA`` ``LPN``
 
 .. _lora:
 
 LoRa
-----------
+~~~~~~~~~~~
+``Long Range Radio``
+
 
 .. toctree::
     :maxdepth: 1
@@ -494,6 +501,13 @@ LoRa
       -
       -
       - QFN48
+
+
+
+.. _wwan:
+
+WWAN
+-----------
 
 
 .. _nbiot:

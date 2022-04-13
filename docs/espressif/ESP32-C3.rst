@@ -32,8 +32,7 @@ Xin简介
 * 封装规格：:ref:`esp_qfn32` (5x5mm)
 * RAM容量：400 KB
 * ROM容量：384 KB
-* Flash容量：2 MB
-
+* Flash容量：0/2/4 MB (≤16 MB)
 
 特征参数
 ^^^^^^^^^^^

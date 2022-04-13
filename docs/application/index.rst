@@ -7,8 +7,8 @@ Application
 .. toctree::
     :maxdepth: 1
 
-    人机交互 HMI  <hmi>
     通信连接 IoT  <iot>
+    人机交互 HMI  <hmi>
     超低功耗 ULP  <ulp>
     信号转换   <adc>
     驱动控制   <foc>
