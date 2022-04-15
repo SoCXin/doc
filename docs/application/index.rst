@@ -8,11 +8,11 @@ Application
     :maxdepth: 1
 
     通信连接 IoT  <iot>
-    人机交互 HMI  <hmi>
     超低功耗 ULP  <ulp>
-    信号转换   <adc>
-    驱动控制   <foc>
-    边缘计算   <edge>
+    人机交互 HMI  <hmi>
+    信号转换 ADC  <adc>
+    驱动控制 FoC  <foc>
+    边缘计算 AIn  <edge>
 
 行业协议
 -----------

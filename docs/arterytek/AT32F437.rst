@@ -114,17 +114,21 @@ Xin选择
 .. note::
     :ref:`arterytek` 高性能系列标配 :ref:`arterytek_spim` 和 :ref:`arterytek_slib` 功能
 
-.. image:: images/AT32F437.png
-    :target: https://www.arterytek.com/download/DS/DS_AT32F435_437_V2.01_CH.pdf
 
 .. _at32f435:
 
 AT32F435
 ^^^^^^^^^^^
 
+.. image:: images/AT32F435l.png
+    :target: https://www.arterytek.com/download/DS/DS_AT32F435_437_V2.01_CH.pdf
+
 
 版本对比
 ~~~~~~~~~~~
+
+.. image:: images/AT32F437l.png
+    :target: https://www.arterytek.com/download/DS/DS_AT32F435_437_V2.01_CH.pdf
 
 
 * LQFP64 10 x 10 mm

@@ -9,10 +9,15 @@
 
 旗舰正义，通过最高水平产品的对比，发现不同厂商的实力及市场决策。
 
+.. _mcu:
+
+MCU
+-----------
+
 .. list-table::
     :header-rows: 1
 
-    * - :ref:`top`
+    * - :ref:`mcu`
       - :ref:`architecture`
       - :ref:`CoreMark`
       - :ref:`level`
@@ -62,16 +67,22 @@
       -
       - 64/100/144
 
-
 .. toctree::
     :maxdepth: 1
-
 
     APT32F706 <APT32F706>
     EAI80 <EAI80>
     SP7021 <SP7021>
+
+
+APU
+-----------
+
+.. toctree::
+    :maxdepth: 1
+
+    BCM2711 <BCM2711>
+    SSD201 <SSD201>
+    A311D <A311D>
     K210 <K210>
     K510 <K510>
-    SSD201 <SSD201>
-    BCM2711 <BCM2711>
-    A311D <A311D>
