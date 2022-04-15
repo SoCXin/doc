@@ -244,6 +244,17 @@ MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
       - 2x3.6MSPS
       - 2/2
       - LQFP64
+    * - :ref:`at32f437`
+      - 288MHz
+      -
+      - 512K/4M
+      - 3x5.33MSPS
+      - X
+      -
+      - LQFP64
+
+
+
 
 .. note::
     2x16bit+1x12bit数据带宽3.6M x 2 x 16 + 5M x 1 x 12 = 175.2Mbps，3x16bit 数据带宽3.6M x 3 x 16 = 172.8Mbps

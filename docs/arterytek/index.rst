@@ -48,6 +48,7 @@ Arterytek
 
 性能产品
 ~~~~~~~~~~~
+
 .. toctree::
     :maxdepth: 1
 
@@ -55,9 +56,6 @@ Arterytek
     240MHz: AT32F403 <AT32F403>
     240MHz: AT32F407 <AT32F407>
     288MHz: AT32F437 <AT32F437>
-
-.. warning::
-    AT32F437/AT32F435目前仍是PPT产品
 
 
 技术简介
