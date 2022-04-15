@@ -4,8 +4,8 @@
 AT32F437
 ===============
 
-`标签 <https://github.com/SoCXin/AT32F437>`_ : ``Cortex-M4`` ``288 MHz`` ``ADC`` ``8 UART`` ``2 CAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
-
+* `Arterytek <https://www.arterytek.com/cn/product/AT32F437.jsp>`_ : :ref:`sar_adc`  :ref:`ethernet`
+* `GitHub <https://github.com/SoCXin/AT32F437>`_ : ``Cortex-M4`` ``288 MHz`` ``3x5.33Msps ADC`` ``8 UART`` ``2 CAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
 
 .. contents::
     :local:
@@ -22,13 +22,14 @@ Xin简介
 
 * 发布时间：
 * 参考价格：
-* 制程工艺：
+* 制程工艺：55nm
 * 供货周期：
-* 处理性能：630 :ref:`CoreMark`
+* 处理性能：630 :ref:`CoreMark` , :ref:`level4`
 * 封装规格：LQFP64/LQFP100/LQFP144
 * 运行环境：-40~105°C
 * RAM容量：128~512 KB
 * Flash容量：256/1024/4032 KB
+
 
 
 特征参数
@@ -49,6 +50,21 @@ Xin简介
 
 芯片架构
 ~~~~~~~~~~~
+
+.. image:: images/AT32F437s.png
+    :target: https://www.arterytek.com/download/RM_AT32F435_437_CH_V2.01.pdf
+
+
+多达116个I/O端口, 所有I/O口可映像到16个外部中断； 几乎所有I/O口可容忍5V输入信号
+
+所有I/O口均为快速I/O, 寄存器访问速度最高fᴀʜʙ
+
+电源参数
+^^^^^^^^^^^
+
+* 电压范围：2.6V ~ 3.6V
+* 功耗范围：
+
 
 时钟体系
 ^^^^^^^^^^^
@@ -78,46 +94,6 @@ Xin选择
       - CAN2.0B
       - USB
       - Ethernet
-    * - :ref:`at32f415`
-      -
-      - 32
-      - 64/128/256
-      - 2/3/5
-      - 2.0B
-      - USB OTG
-      - NO
-    * - :ref:`at32f413`
-      -
-      - 16/32/64
-      - 64/128/256
-      - 2/3/5
-      - 2 x 2.0B
-      - USB2.0
-      - NO
-    * - :ref:`at32f403`
-      -
-      - 224
-      - 256/512/1024
-      - 7/8
-      - 2 x 2.0B
-      - USB2.0
-      - NO
-    * - :ref:`at32f407`
-      -
-      - 224
-      - 256/512/1024
-      - 8
-      - 2 x 2.0B
-      - USB2.0
-      - 10/100M
-    * - AT32F435
-      -
-      - 512
-      - 4032
-      - 4
-      - 1
-      - 2 x OTG
-      - NO
     * - :ref:`at32f437`
       -
       - 512
@@ -130,8 +106,23 @@ Xin选择
 .. note::
     :ref:`arterytek` 高性能系列标配 :ref:`arterytek_spim` 和 :ref:`arterytek_slib` 功能
 
+.. image:: images/AT32F437.png
+    :target: https://www.arterytek.com/download/DS/DS_AT32F435_437_V2.01_CH.pdf
+
+.. _at32f435:
+
+AT32F435
+^^^^^^^^^^^
+
+
 版本对比
-~~~~~~~~~
+~~~~~~~~~~~
+
+
+* LQFP64 10 x 10 mm
+* LQFP100 14 x 14 mm
+* LQFP144 20 x 20 mm
+
 
 Xin应用
 -----------

@@ -25,7 +25,7 @@ Arterytek
 产品简介
 -----------
 
-.. image:: images/arterytek.jpg
+.. image:: images/AT32MCU_220309_ch.png
     :target: https://www.arterytek.com/cn/index.jsp
 
 .. hint::

@@ -15,7 +15,7 @@ ADC
     :local:
 
 
-.. _sar:
+.. _sar_adc:
 
 SAR
 ~~~~~~~~~~~~~~
@@ -31,9 +31,9 @@ Pipeline
 
 pipeline 更适合高速中等精度的，如 100M 14bit 以上的应用。
 
-100MHz Conversion Rate 12-bit , :ref:`sar` 就要1.4GHz的Clock，而 Pipelined ADC 只需100MHz的 Clock
+100MHz Conversion Rate 12-bit , :ref:`sar_adc` 就要1.4GHz的Clock，而 Pipelined ADC 只需100MHz的 Clock
 
-随着工艺的进步，:ref:`sar` 和 :ref:`sigma_delta` 的速度也上来 ，Pipeline 正在全面被SAR取代，除了12bit以上且大于200MSPS
+随着工艺的进步，:ref:`sar_adc` 和 :ref:`sigma_delta` 的速度也上来 ，Pipeline 正在全面被SAR取代，除了12bit以上且大于200MSPS
 
 
 .. _sigma_delta:
@@ -288,7 +288,7 @@ ADCNN
       - Package
       - Price
     * - :ref:`LTC2508`
-      - :ref:`sar`
+      - :ref:`sar_adc`
       - 32bit 1MSPS
       - 24mW x1
       - ±0.5ppm
@@ -296,7 +296,7 @@ ADCNN
       - DFN24
       - $12.02
     * - :ref:`AD4630`
-      - :ref:`sar`
+      - :ref:`sar_adc`
       - 24bit 2MSPS
       - 15mW x2
       - ±0.9ppm
