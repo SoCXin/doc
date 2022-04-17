@@ -15,9 +15,8 @@ Xin简介
 .. image:: ./images/K210.jpg
     :target: https://canaan.io/product/kendryteai
 
-规格配置
+规格参数
 ~~~~~~~~~~~
-
 
 基本参数
 ^^^^^^^^^^^
@@ -38,17 +37,12 @@ Xin简介
 * 温度范围：-40°C to +85°C
 * 封装规格：BGA144 (8x8x0.953mm)
 
-.. _rv64:
-
-RV64
---------------
-
 
 
 特征参数
 ^^^^^^^^^^^
 
-* 400 MHz :ref:`rv64` Dual Core
+* 400 MHz RISC-V 64-bit Dual Core
 * 0.23TOPS
 * Image Recognition ：QVGA@60fps/VGA@30fps
 * Operating system: FreeRTOS
@@ -57,24 +51,6 @@ RV64
 
 
 
-.. list-table::
-    :header-rows:  1
+芯片架构
+~~~~~~~~~~~~
 
-    * - :ref:`vendor`
-      - :ref:`CoreMark`
-      - SRAM/ROM
-      - Characteristics
-      - UART/SPI/SDIO
-      - Package
-    * - :ref:`k510`
-      -
-      -
-      -
-      -
-      -
-    * - :ref:`k210`
-      -
-      -
-      -
-      -
-      -
