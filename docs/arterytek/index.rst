@@ -29,7 +29,7 @@ Arterytek
     :target: https://www.arterytek.com/cn/index.jsp
 
 .. hint::
-    2016年成立，2018年正式对外销售芯片，AT32系列MCU采用55nm制程工艺，全系列搭载 :ref:`cortex_m4` 内核，系列较少定位清晰。
+    2016年成立，2018年正式对外销售芯片，AT32系列高效能MCU，采用55nm制程先进工艺，全系列搭载 :ref:`cortex_m4` 内核，产品系列较少定位清晰。
 
 .. contents::
     :local:
@@ -43,8 +43,16 @@ Arterytek
     150MHz: AT32F415 <AT32F415>
     USBOTG: AT32F425 <AT32F425>
 
-.. hint::
-    2016年成立，2018年正式对外销售芯片，AT32系列高效能MCU，采用55nm制程先进工艺，全系列搭载 :ref:`cortex_m4` 内核，产品系列较少定位清晰。
+
+主流产品
+~~~~~~~~~~~
+.. toctree::
+    :maxdepth: 1
+
+    200MHz: AT32F413 <AT32F413>
+    240MHz: AT32F403 <AT32F403>
+    240MHz: AT32F407 <AT32F407>
+
 
 性能产品
 ~~~~~~~~~~~
@@ -52,9 +60,6 @@ Arterytek
 .. toctree::
     :maxdepth: 1
 
-    200MHz: AT32F413 <AT32F413>
-    240MHz: AT32F403 <AT32F403>
-    240MHz: AT32F407 <AT32F407>
     288MHz: AT32F437 <AT32F437>
 
 

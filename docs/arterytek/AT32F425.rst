@@ -12,6 +12,10 @@ AT32F425
 Xin简介
 -----------
 
+.. image:: ./images/AT32F425_banner.jpg
+    :target: https://www.arterytek.com/cn/product/AT32F425.jsp
+
+`datasheet <https://www.arterytek.com/download/DS/DS_AT32F425_V2.00_CH.pdf>`_
 
 规格参数
 ~~~~~~~~~~~
@@ -38,3 +42,6 @@ Xin简介
 
 芯片架构
 ~~~~~~~~~~~
+
+.. image:: images/AT32F425s.png
+    :target: https://www.arterytek.com/download/RM/RM_AT32F425_CH_V2.01.pdf

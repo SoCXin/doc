@@ -206,6 +206,8 @@ ESP-NOW
 ESP-CSI
 ^^^^^^^^^^^^^^
 
+`ESP-CSI <https://github.com/espressif/esp-csi>`_ based on Wi-Fi CSI (Channel state information), such as indoor positioning, human detection
+
 
 .. _esp_audio:
 
