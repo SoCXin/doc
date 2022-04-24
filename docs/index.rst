@@ -166,7 +166,7 @@ XiN
     * - :ref:`ch579`
       - :ref:`asr1802`
       - :ref:`esp32c3`
-      - :ref:`mt2503`
+      - :ref:`mt7622`
       - :ref:`at32f403`
       - :ref:`R329`
       - :ref:`gd32f130`

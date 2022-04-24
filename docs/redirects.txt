@@ -72,6 +72,8 @@
 /MT2503.html -> MediaTek/MT2503.html
 /MT2625.html -> MediaTek/MT2625.html
 /MT7621.html -> MediaTek/MT7621.html
+/MT7622.html -> MediaTek/MT7622.html
+/MT7623.html -> MediaTek/MT7622.html
 /MT7688.html -> MediaTek/MT7688.html
 /RT1010.html -> nxp/RT1010.html
 /RT1020.html -> nxp/RT1020.html

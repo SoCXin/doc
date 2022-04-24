@@ -4,7 +4,7 @@
 CH32V307
 ============
 
-`标签 <https://github.com/SoCXin/CH32V307>`_ : ``RISC-V`` ``RISC-V4F`` ``USB-HS-OTG(480Mbps)`` ``Ethernet`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``CAN`` ``FSMC`` ``OPA`` ``DVP``
+`GitHub <https://github.com/SoCXin/CH32V307>`_ : ``RISC-V`` ``RISC-V4F`` ``USB-HS-OTG(480Mbps)`` ``Ethernet`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``CAN`` ``FSMC`` ``OPA`` ``DVP``
 
 .. contents::
     :local:

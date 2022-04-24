@@ -4,7 +4,7 @@
 MT7688
 ================
 
-`标签 <https://github.com/SoCXin/MT7688>`_ : ``MIPS`` ``800MHz`` ``WiFi``
+`GitHub <https://github.com/SoCXin/MT7688>`_ : ``MIPS`` ``800MHz`` ``WiFi``
 
 .. contents::
     :local:
