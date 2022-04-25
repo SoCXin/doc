@@ -33,7 +33,7 @@ Espressif
       - 520KB/448KB
       - WiFi&BT4.2
       - 100Mbps/X/√
-      - I2S(2)/DAC
+      - I2S(2)/DAC/BT
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
@@ -213,11 +213,11 @@ ESP-CSI
 
 Audio
 ^^^^^^^^^^^^^^
-``AAC`` ``MP3``
+``AAC`` ``MP3`` ``BT``
 
 就产品定位和市场接受度而言，ESP32天然带有Audio音频应用属性
 
-`ESP-ADF开发文档 <https://docs.espressif.com/projects/esp-adf>`_
+`ESP-ADF文档 <https://docs.espressif.com/projects/esp-adf>`_
 
 技术总结
 -----------

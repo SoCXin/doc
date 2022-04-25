@@ -212,6 +212,35 @@ ETH
 
 `延伸阅读 <https://docs.qitas.cn/interface/bus.html#id5>`_
 
+.. _router:
+
+Router
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`router`
+      - :ref:`architecture`
+      - :ref:`CoreMark`
+      -
+      - Switch
+      - ETH-MAC
+      - :ref:`wireless`
+    * - :ref:`mt7622`
+      - :ref:`cortex_a53`
+      -
+      -
+      - 5p GbE
+      - SGMII/RGMII
+      - :ref:`wifi` + :ref:`ble`
+    * - :ref:`mt7623`
+      - :ref:`cortex_a7`
+      -
+      -
+      - 5p GbE
+      - SGMII/RGMII
+      - :ref:`wifi`
 
 .. _plc:
 
