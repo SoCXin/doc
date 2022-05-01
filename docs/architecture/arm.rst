@@ -120,8 +120,9 @@ Cortex-M
     cortexM3
     cortexM4
     cortexM33
+    cortexM55
     cortexM7
-
+    cortexM85
 
 .. list-table::
     :header-rows:  1

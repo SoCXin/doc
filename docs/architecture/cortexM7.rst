@@ -2,7 +2,7 @@
 
 Cortex-M7
 ====================
-:ref:`performance` : ``5 CoreMark/MHz`` ``0.95 DMIPS/MHz``
+:ref:`performance` : ``5 CoreMark/MHz``
 
 
 M7具备六级、顺序、双发射超标量流水线  :ref:`harvard` ，拥有单精度、双精度浮点单元、指令和数据缓存、分支预测、SIMD支持、紧耦合内存(TCM)。
