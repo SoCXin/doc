@@ -115,7 +115,7 @@ NXP i.MX 8
 独立芯片方案
 ^^^^^^^^^^^^^^^
 
-性能接近的应用处理器可采用 :ref:`allwinner` :ref:`v831`, :ref:`R329`，控制器MCU可选方案较多包括 :ref:`ref407` ， :ref:`arterytek` :ref:`at32f413`
+性能接近的应用处理器可采用 :ref:`allwinner` :ref:`v831`, :ref:`r329`，控制器MCU可选方案较多包括 :ref:`ref407` ， :ref:`arterytek` :ref:`at32f413`
 
 
 系列对比

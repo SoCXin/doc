@@ -6,12 +6,6 @@ MCS51
 
 ``BSD``
 
-.. contents::
-    :local:
-
-架构简介
---------------
-
 `MCS-51 <https://en.wikipedia.org/wiki/8051>`_ is a single chip microcontroller (MCU) series developed by Intel in 1980 for use in embedded systems.
 The architect of the instruction set of the Intel MCS-51 was John H.
 
@@ -19,8 +13,6 @@ Wharton.[1][2] Intel's original versions were popular in the 1980s and early 199
 It is an example of a complex instruction set computer, and has separate memory spaces for program instructions and data.
 
 
-芯片产品
---------------
 
 
 .. list-table::
@@ -53,3 +45,21 @@ It is an example of a complex instruction set computer, and has separate memory 
       -
       -
       -
+
+.. note::
+    基于 :ref:`mcs51` 低端MCU的固件开发，推荐开发工具 `PlatformIO <https://docs.os-q.com/pio>`_
+
+`PlatformIO MCS-51 <https://https://github.com/platformio/platform-intel_mcs51>`_ 支持8051内核单片机包括：
+
+* AT89xx
+* STC15x
+* STC12x
+* STC8xx
+* MS51xx
+* ML51xx
+* ML54xx
+* ML56xx
+* N79Exx
+* N78Exx
+* N76Exx
+* W79Exx

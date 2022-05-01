@@ -120,7 +120,7 @@ SoC平台
       -
       -
       - QFN88
-    * - :ref:`R329`
+    * - :ref:`r329`
       - :ref:`cortex_a53`
       - 1.50 GHz
       - 64MB DDR2

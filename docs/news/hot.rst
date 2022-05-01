@@ -52,7 +52,7 @@
 Lua
 ~~~~~~~~~~~~~
 
-`Lua编程语言 <https://docs.os-q.com/lua>`_ 嵌入式运行平台包括 :ref:`air101`
+`lua语言 <https://docs.os-q.com/lua>`_ 嵌入式运行平台包括 :ref:`air101`
 
 .. list-table::
     :header-rows:  1

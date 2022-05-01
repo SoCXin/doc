@@ -19,7 +19,7 @@ Cortex-A53
       - USB
       - Ethernet
       - Interface
-    * - :ref:`R329`
+    * - :ref:`r329`
       -
       -
       -
