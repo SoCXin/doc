@@ -208,3 +208,11 @@ Xin选择
     :target: http://www.wch.cn/products/CH32V208.html
 
 QFN28封装相对QFN48减少了USART，保留了以太网功能
+
+.. _ch32v203:
+
+CH32V203
+^^^^^^^^^^^
+
+.. image:: ./images/CH32V203l.png
+    :target: http://www.wch.cn/products/CH32V203.html
