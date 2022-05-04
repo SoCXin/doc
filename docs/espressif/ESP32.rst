@@ -144,7 +144,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ic`
       - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics

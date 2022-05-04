@@ -92,7 +92,7 @@ SoC平台
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ic`
       - :ref:`architecture`
       - Freq
       - RAM
@@ -186,7 +186,7 @@ MCU平台
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ic`
       - :ref:`architecture`
       - Freq
       - RAM

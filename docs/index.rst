@@ -136,8 +136,8 @@ XiN
     :caption: 厂商速览
     :maxdepth: 1
 
-    芯片设计 <vendor>
-    晶片代工 <fab>
+    芯片厂商 <ic>
+    代工厂商 <fab>
 
 .. list-table::
     :header-rows:  1

@@ -282,7 +282,7 @@ F030范式
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ic`
       - :ref:`architecture`
       - :ref:`frequency`
       - RAM+ROM
@@ -370,7 +370,7 @@ F103范式
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ic`
       - :ref:`architecture`
       - RAM
       - Flash
@@ -412,7 +412,7 @@ F407范式
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ic`
       - :ref:`architecture`
       - RAM
       - Flash

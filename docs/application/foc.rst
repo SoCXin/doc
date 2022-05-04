@@ -142,7 +142,7 @@ ODrive
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ic`
       - :ref:`architecture`
       - RAM
       - Flash

@@ -188,7 +188,7 @@ MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ic`
       - Freq
       - :ref:`CoreMark`
       - SRAM/ROM

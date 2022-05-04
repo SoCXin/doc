@@ -126,7 +126,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ic`
       - :ref:`architecture`
       - SRAM/ROM
       - Characteristics
@@ -182,7 +182,7 @@ AB32VG1
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ic`
       - Mark
       - RAM
       - Flash

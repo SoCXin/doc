@@ -16,3 +16,12 @@ Sipeed
 * 基于 :ref:`v831` 的 `MAIX-II <https://wiki.sipeed.com/hardware/zh/maixII/index.html>`_
 * 基于 :ref:`v833` 的 `MAIX-II-S <https://wiki.sipeed.com/hardware/zh/maixII/M2S/V833.html>`_
 * 基于 :ref:`r329` 的 `MAIX-II-A <https://wiki.sipeed.com/hardware/zh/maixII/M2A/maixsense.html>`_
+
+.. _m5stack:
+
+M5stack
+---------------
+``ESP32`` ``Arduino`` ``IoT``
+
+`M5Stack开发板 <https://m5stack.com/zh-cn/>`_
+

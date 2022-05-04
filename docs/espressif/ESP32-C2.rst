@@ -84,7 +84,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ic`
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
@@ -132,7 +132,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ic`
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
@@ -178,7 +178,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ic`
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
@@ -221,22 +221,12 @@ Xin应用
 开发板
 ~~~~~~~~~~
 
-
-编译工具
-~~~~~~~~~
-
 开发框架
 ~~~~~~~~~
-
 
 ESP-IDF
 ^^^^^^^^^^^
 
-
-Arduino
-^^^^^^^^^^^^
-
-`Arduino <https://docs.os-q.com/arduino>`_
 
 应用笔记
 ~~~~~~~~~
