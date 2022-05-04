@@ -56,6 +56,8 @@
 .. |December| image:: ../espressif/images/espressif.png
 .. _December: ../M/RP2040.html
 
+.. contents::
+    :local:
 
 2022-01期
 ~~~~~~~~~~~~
@@ -77,3 +79,9 @@
 ``RISC-V4C`` ``144MHz`` ``USB`` ``Ethernet`` ``10Mbps(PHY)`` ``BLE5.3`` ``QFN28``
 
 :ref:`ch32f208` 非常强大的通信配置
+
+2022-05期
+~~~~~~~~~~~~
+``RISC-V`` ``120MHz`` ``WiFi`` ``BLE5.0`` ``QFN40``
+
+:ref:`esp32c2` 不断探索性价比极限

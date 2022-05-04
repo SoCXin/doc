@@ -5,12 +5,15 @@ XiN
 
 **新产品用心，芯产品用新**
 
-`SoC·Xin <https://www.SoC.Xin>`_ 作为芯管理容器求解如下问题：
+`SoC·Xin <https://www.SoC.Xin>`_ 作为SoC芯容器求解如下问题：
 
 * ``有新需求，缺乏技术积累，求解区间；``
 * ``有芯需求，已知应用场景，求最新解；``
 * ``有芯需求，限定规格成本，求最优解；``
 * ``有薪需求，寻求技能升级，求边界值；``
+
+.. image:: https://github.com/SoCXin/docs/workflows/docs/badge.svg
+    :target: https://github.com/SoCXin/docs/actions
 
 .. toctree::
     :maxdepth: 1
@@ -19,15 +22,15 @@ XiN
 
 
 .. toctree::
-    :caption: 新品速览
+    :caption: 芯品新闻
     :maxdepth: 1
 
-    极客聚集开源生态 <news/hot>
-    著名项目适配支持 <news/pop>
-    当下设计推荐清单 <list/list>
-    探索极致低价好货 <low/index>
-    表现中庸货源稳定 <news/stable>
-    旗舰小贵干啥都行 <high/index>
+    极客聚集开源高地 <news/hot>
+    大型项目适配支持 <news/pop>
+    选在当下设计推荐 <list/news>
+    突破极限低价好货 <low/index>
+    产品中庸存量巨大 <news/mean>
+    旗舰定位干啥都行 <high/index>
 
 .. list-table::
     :header-rows: 1
@@ -36,7 +39,7 @@ XiN
       - :ref:`pop`
       - :ref:`list`
       - :ref:`low`
-      - :ref:`stable`
+      - :ref:`mean`
       - :ref:`top`
     * - :ref:`esp32`
       - :ref:`stm32f103`
@@ -101,80 +104,10 @@ XiN
     架构分类     <architecture/index>
     性能分级     <architecture/level>
 
-==================  ==================  ==================
-|X86|_              |ARM|_              |MIPS|_
-------------------  ------------------  ------------------
-`X86`_              `ARM`_              `MIPS`_
-------------------  ------------------  ------------------
-|ASIC|_             |RISC-V|_           |MCS51|_
-------------------  ------------------  ------------------
-`ASIC`_             `RISC-V`_           `MCS51`_
-==================  ==================  ==================
-
-.. |X86| image:: espressif/images/espressif.png
-.. _X86: architecture/x86.html
-
-.. |ARM| image:: espressif/images/espressif.png
-.. _ARM: architecture/arm.html
-
-.. |MIPS| image:: espressif/images/espressif.png
-.. _MIPS: architecture/MIPS.html
-
-.. |ASIC| image:: espressif/images/espressif.png
-.. _ASIC: ASIC/index.html
-
-.. |RISC-V| image:: espressif/images/espressif.png
-.. _RISC-V: architecture/riscv.html
-
-.. |MCS51| image:: espressif/images/espressif.png
-.. _MCS51: architecture/MCS51.html
-
-
-
 
 .. toctree::
     :caption: 厂商速览
     :maxdepth: 1
 
-    芯片厂商 <ic>
-    代工厂商 <fab>
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`wch`
-      - :ref:`asr`
-      - :ref:`espressif`
-      - :ref:`mediatek`
-      - :ref:`arterytek`
-      - :ref:`allwinner`
-      - :ref:`gigadevice`
-    * - :ref:`ch32v307`
-      - :ref:`asr6601`
-      - :ref:`esp32s2`
-      - :ref:`mt2625`
-      - :ref:`at32f425`
-      - :ref:`D1`
-      - :ref:`gd32e230`
-    * - :ref:`ch32v208`
-      - :ref:`asr6501`
-      - :ref:`esp32`
-      - :ref:`mt7688`
-      - :ref:`at32f421`
-      - :ref:`S3`
-      - :ref:`gd32v103`
-    * - :ref:`ch579`
-      - :ref:`asr1802`
-      - :ref:`esp32c3`
-      - :ref:`mt7622`
-      - :ref:`at32f403`
-      - :ref:`r329`
-      - :ref:`gd32f130`
-    * - :ref:`ch569`
-      - :ref:`asr1601`
-      - :ref:`esp32s3`
-      - :ref:`mt7621`
-      - :ref:`at32f437`
-      - :ref:`v831`
-      - :ref:`gd32f303`
-
+    设计领域 <ic>
+    代工领域 <fab>
