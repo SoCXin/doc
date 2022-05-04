@@ -505,8 +505,8 @@ USB PD的通信是将协议层的消息调制成24MHZ的FSK信号并耦合到VBU
 .. toctree::
     :maxdepth: 1
 
-    CS32G020 <../M/CS32G020>
-    RK837 <../M/RK837>
+    CS32G020 <../miscellaneous/CS32G020>
+    RK837 <../miscellaneous/RK837>
 
 
 接口转换

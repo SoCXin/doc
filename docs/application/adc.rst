@@ -424,8 +424,8 @@ LTC2508-32 同时提供两个输出代码：(1) 一个 32 位数字滤波高精�
 .. toctree::
     :maxdepth: 1
 
-    ZML165 <../M/ZML165>
-    CS32A039 <../M/CS32A039>
+    ZML165 <../miscellaneous/ZML165>
+    CS32A039 <../miscellaneous/CS32A039>
 
 
 

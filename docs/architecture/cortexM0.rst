@@ -73,4 +73,4 @@ VTOR
 .. toctree::
     :maxdepth: 1
 
-    RP2040 <../M/RP2040>
+    RP2040 <../miscellaneous/RP2040>

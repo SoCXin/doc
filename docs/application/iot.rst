@@ -282,9 +282,9 @@ PLC
 .. toctree::
     :maxdepth: 1
 
-    CR600 <../M/CR600>
-    CR710 <../M/CR710>
-    Hi3921 <../M/Hi3921>
+    CR600 <../miscellaneous/CR600>
+    CR710 <../miscellaneous/CR710>
+    Hi3921 <../miscellaneous/Hi3921>
 
 .. note::
     电力线载波通信（power line carrier communication）以输电线路为载波信号的传输媒介的电力系统通信。
@@ -478,8 +478,8 @@ Wi-Fi
 .. toctree::
     :maxdepth: 1
 
-    W801 <../M/W801>
-    Hi3861 <../M/Hi3861>
+    W801 <../miscellaneous/W801>
+    Hi3861 <../miscellaneous/Hi3861>
 
 
 
@@ -577,7 +577,7 @@ NB-IoT
 .. toctree::
     :maxdepth: 1
 
-    XY1100 <../M/XY1100>
+    XY1100 <../miscellaneous/XY1100>
 
 
 .. _cat1:

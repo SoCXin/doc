@@ -15,28 +15,28 @@
 ==================  ==================  ==================  ==================
 
 .. |感知驱动| image:: ../espressif/images/espressif.png
-.. _感知驱动: ../M/RP2040.html
+.. _感知驱动: ../miscellaneous/RP2040.html
 
 .. |无线通信| image:: ../application/images/matter.png
-.. _无线通信: ../M/RP2040.html
+.. _无线通信: ../miscellaneous/RP2040.html
 
 .. |网络连接| image:: ../espressif/images/espressif.png
-.. _网络连接: ../M/RP2040.html
+.. _网络连接: ../miscellaneous/RP2040.html
 
 .. |边缘计算| image:: ../espressif/images/espressif.png
-.. _边缘计算: ../M/RP2040.html
+.. _边缘计算: ../miscellaneous/RP2040.html
 
 .. |工业控制| image:: ../espressif/images/espressif.png
-.. _工业控制: ../M/RP2040.html
+.. _工业控制: ../miscellaneous/RP2040.html
 
 .. |消费电子| image:: ../espressif/images/espressif.png
-.. _消费电子: ../M/RP2040.html
+.. _消费电子: ../miscellaneous/RP2040.html
 
 .. |超长待机| image:: ../espressif/images/espressif.png
-.. _超长待机: ../M/RP2040.html
+.. _超长待机: ../miscellaneous/RP2040.html
 
 .. |计量仪表| image:: ../espressif/images/espressif.png
-.. _计量仪表: ../M/RP2040.html
+.. _计量仪表: ../miscellaneous/RP2040.html
 
 
 

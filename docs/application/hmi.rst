@@ -155,9 +155,9 @@ HDMI
 .. toctree::
     :maxdepth: 1
 
-    SWM32S <../M/SWM32S>
-    SWM341 <../M/SWM341>
-    TKM32F499 <../M/TKM32F499>
+    SWM32S <../miscellaneous/SWM32S>
+    SWM341 <../miscellaneous/SWM341>
+    TKM32F499 <../miscellaneous/TKM32F499>
 
 .. list-table::
     :header-rows:  1

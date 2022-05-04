@@ -76,7 +76,7 @@ Lua
 .. toctree::
     :maxdepth: 1
 
-    Air101 <../M/Air101>
+    Air101 <../miscellaneous/Air101>
 
 .. _rust:
 
