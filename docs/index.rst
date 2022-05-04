@@ -1,24 +1,24 @@
 .. _xin:
 
-XiN
+Xin
 =====================
 
 **新产品用心，芯产品用新**
 
-`SoC·Xin <https://www.SoC.Xin>`_ 作为SoC芯容器求解如下问题：
+`SoC·芯 <https://www.SoC.Xin>`_ 求解如下问题：
 
 * ``有新需求，缺乏技术积累，求解区间；``
 * ``有芯需求，已知应用场景，求最新解；``
 * ``有芯需求，限定规格成本，求最优解；``
 * ``有薪需求，寻求技能升级，求边界值；``
 
-.. image:: https://github.com/SoCXin/docs/workflows/docs/badge.svg
+.. image:: https://github.com/SoCXin/docs/workflows/Docs/badge.svg
     :target: https://github.com/SoCXin/docs/actions
 
 .. toctree::
     :maxdepth: 1
 
-    芯期刊 <list/index>
+    SoC芯刊 <list/index>
 
 
 .. toctree::
