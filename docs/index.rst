@@ -8,9 +8,9 @@ Xin
 `SoC·芯 <https://www.SoC.Xin>`_ 通过关联整理，多维度对比，求解如下问题：
 
 * ``有新需求，评估实现途径，求参考值；``
-* ``有信需求，限定应用场景，归纳证明；``
-* ``有芯需求，需要技术选型，求最优解；``
+* ``有芯需求，技术选型对比，求最优解；``
 * ``有薪需求，知识领域更新，求解区间；``
+* ``有信需求，限定应用场景，归纳证明；``
 
 .. image:: https://github.com/SoCXin/docs/workflows/Docs/badge.svg
     :target: https://github.com/SoCXin/docs/actions
@@ -18,8 +18,8 @@ Xin
 .. toctree::
     :maxdepth: 1
 
-    SoC芯期刊 <list/index>
-    SoC板期刊 <list/boards>
+    芯期刊 <list/index>
+    板期刊 <list/boards>
 
 .. toctree::
     :caption: 芯品新闻
@@ -96,13 +96,12 @@ Xin
 .. _控制驱动: application/foc.html
 
 
-
 .. toctree::
     :caption: 内核速览
     :maxdepth: 1
 
-    架构分类     <architecture/index>
-    性能分级     <architecture/level>
+    内核架构  <architecture/index>
+    性能分级  <architecture/level>
 
 
 .. toctree::

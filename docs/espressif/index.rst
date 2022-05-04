@@ -11,7 +11,7 @@ Espressif
 公司简介
 -----------
 
-`乐鑫科技 <http://www.espressif.com>`_ (股票代码：688018)是一家全球化的无晶圆厂半导体公司，成立于2008年，总部上海张江，主营 Wi-Fi SoC，核心竞争力： `开源 <https://github.com/SoCXin/ESP32S3>`_、:ref:`wifi`、:ref:`esp_audio`
+`乐鑫科技 <http://www.espressif.com>`_ (股票代码：688018)是一家全球化半导体设计公司，成立于2008年，总部上海张江，主营Wi-Fi SoC，擅长： `开源 <https://github.com/SoCXin/ESP32S3>`_、:ref:`wifi`、:ref:`esp_audio`
 
 
 .. note::
@@ -119,7 +119,7 @@ Espressif
     就目前已有的软硬件生态资源而言，:ref:`esp32` 依然占据较大的优势，主要在于ESP32-S3任然是以降本为核心，芯片的性能相对提升了了，而升级力度不够导致庞大的开源生态没有足够动力去做适配，离开丰富的开源生态导致开发成本提高。
 
 
-性价比路线
+低成本系列
 ~~~~~~~~~~~~
 
 .. toctree::
@@ -216,8 +216,13 @@ Audio
 
 `ESP-ADF文档 <https://docs.espressif.com/projects/esp-adf>`_
 
-技术总结
+.. hint::
+    就近期的产品配置和迭代计划，:ref:`espressif` 在蓝牙音频领域处于停滞状态，而该领域芯片方案众多且更新迭代迅速
+
+相关总结
 -----------
+
+在此主要归纳总结 :ref:`espressif` 现阶段及未来一段时间的技术延续性和兼容性
 
 .. contents::
     :local:
@@ -227,13 +232,10 @@ Audio
 Architecture
 ~~~~~~~~~~~~~~~
 
+:ref:`espressif` 将逐步切换到 :ref:`riscv` ，进一步降低授权成本和设计灵活性。
+
 .. contents::
     :local:
-
-Tensilica 公司的 Xtensa 处理器是一个可以自由装组、可以弹性扩张，并可以自动合成的处理器核心。Xtensa 是第一个专为嵌入式单芯片系统而设计的微处理器。为了让系统设计工程师能够弹性规划、 执行单芯片系统 的各种应用功能，Xtensa 在研发初期就已锁定成一个可以自由装组的架构。
-
-.. note::
-    Tensilica公司于2013年3月被Cadence公司以3.8亿的价格收购
 
 .. _xtensa_lx6:
 
@@ -244,6 +246,10 @@ Xtensa LX6
 
 7级流水线架构，支持240 MHz的时钟频率，应用产品为 :ref:`esp32`
 
+Tensilica 公司的 Xtensa 处理器是一个可以自由装组、可以弹性扩张，并可以自动合成的处理器核心。Xtensa 是第一个专为嵌入式单芯片系统而设计的微处理器。为了让系统设计工程师能够弹性规划、 执行单芯片系统 的各种应用功能，Xtensa 在研发初期就已锁定成一个可以自由装组的架构。
+
+.. note::
+    Tensilica公司于2013年3月被Cadence公司以3.8亿的价格收购
 
 .. _xtensa_lx7:
 
@@ -278,23 +284,12 @@ RISC-V
 
 
 
-协议支持
-~~~~~~~~~~~~
-
-.. _esp_matter:
-
-Matter
-^^^^^^^^^^^^^^
-
-:ref:`matter` 成立于 2019 年，由连接标准联盟（Connectivity Standards Alliance，前称 Zigbee Alliance）发起并领导，旨在提高不同厂商智能家居产品间的兼容性和互操作性。
-
-是一个统一的智能家居互联标准，能够为家庭自动化项目提供安全可靠的无线连接。
-
-
 .. _esp_package:
 
 封装规格
 ~~~~~~~~~~~~
+
+:ref:`espressif` 的芯片目前主要是小封装，官方通过提供丰富的模组降低下游设计加工难度，单芯片可以实现高集成度，适用场景更丰富。
 
 .. contents::
     :local:
