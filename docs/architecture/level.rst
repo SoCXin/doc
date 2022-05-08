@@ -7,8 +7,6 @@ Level
 .. toctree::
     :maxdepth: 1
 
-    性能评测     <performance>
-
 `Level Mark <https://github.com/SoCXin/Level>`_ base on :ref:`frequency`/:ref:`CoreMark`/:ref:`Geekbench`
 
 .. list-table::

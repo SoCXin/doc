@@ -105,7 +105,7 @@
 /SP7021.html -> high/SP7021.html
 /SSD201.html -> high/SSD201.html
 /BCM2711.html -> high/BCM2711.html
-/GW1NSR.html -> ASIC/GW1NSR.html
+/GW1NSR.html -> fpga/GW1NSR.html
 /ASR1601.html -> ASR/ASR1601.html
 /ASR6501.html -> ASR/ASR6501.html
 /ASR1802.html -> ASR/ASR1802.html
