@@ -4,8 +4,7 @@
 CH583
 ============
 
-* 关键词：``WCH`` ``RISC-V4A`` ``20MHz`` ``USB`` ``AES128`` ``BLE5.1`` ``1.7V`` ``QFN48`` ``QFN28``
-* 资源库：`GitHub <https://github.com/SoCXin/CH583>`_ , `官方链接 <http://www.wch.cn/products/CH583.html>`_
+`GitHub <https://github.com/SoCXin/CH583>`_ : ``WCH`` ``RISC-V4A`` ``20MHz`` ``USB`` ``AES128`` ``BLE5.1`` ``1.7V`` ``QFN48`` ``QFN28``
 
 .. contents::
     :local:
@@ -14,7 +13,9 @@ Xin简介
 -----------
 
 .. image:: ./images/CH583.png
-    :target: http://www.wch.cn/downloads/CH583DS1_PDF.html
+    :target: http://www.wch.cn/products/CH583.html
+
+`芯片手册 <http://www.wch.cn/downloads/CH583DS1_PDF.html>`_
 
 .. contents::
     :local:
@@ -41,7 +42,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 20 MHz :ref:`wch_riscv4a` (青稞 V4 系列)
+* 80 MHz :ref:`wch_riscv4a` (青稞 V4 系列)
 * 32KB SRAM，1MB Flash，支持ICP、ISP和IAP，支持OTA无线升级
 * 2.4GHz RF收发器和基带及链路控制，支持BLE5.1
 * 支持2Mbps、1Mbps、500Kbps、125Kbps，接收灵敏度-98dBm，可编程+7dBm发送功率

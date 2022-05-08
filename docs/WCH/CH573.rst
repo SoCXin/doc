@@ -4,7 +4,7 @@
 CH573
 ===========
 
-`标签 <https://github.com/SoCXin/CH573>`_ : ``RISC-V3A`` ``USB`` ``BLE4.2`` ``AES128`` ``UART`` ``TouchKey`` ``QFN28``
+`GitHub <https://github.com/SoCXin/CH573>`_ : ``RISC-V3A`` ``USB`` ``BLE4.2`` ``AES128`` ``UART`` ``TouchKey`` ``QFN28``
 
 .. contents::
     :local:

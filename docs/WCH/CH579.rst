@@ -4,7 +4,7 @@
 CH579
 ========
 
-`标签 <http://www.wch.cn/products/CH579.html>`_ : ``Cortex-M0`` ``40MHz`` ``BLE4.2`` ``USB OTG`` ``Ethernet`` ``10Mbps(PHY)`` ``RTC`` ``AES128`` ``QFN48/QFN28`` ``0.2uA``
+`GitHub <https://github.com/SoCXin/CH579>`_ : ``Cortex-M0`` ``40MHz`` ``BLE4.2`` ``USB OTG`` ``Ethernet`` ``10Mbps(PHY)`` ``RTC`` ``AES128`` ``QFN48/QFN28`` ``0.2uA``
 
 .. contents::
     :local:
@@ -15,7 +15,7 @@ Xin简介
 .. image:: ./images/CH579.png
     :target: http://www.wch.cn/products/CH579.html
 
-`GitHub <https://github.com/SoCXin/CH579>`_
+`芯片手册 <http://www.wch.cn/products/CH579.html>`_
 
 规格参数
 ~~~~~~~~~~~
