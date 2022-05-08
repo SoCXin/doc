@@ -38,7 +38,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`wch_riscv3a` 20 MHz，支持RV32 IMAC指令集，支持单周期乘法和硬件除法
+* :ref:`wch_riscv3a` 60 MHz，支持RV32 IMAC指令集，支持单周期乘法和硬件除法
 * SPI x 2 + UART x 4 (16C550/6Mbps)
 * :ref:`ch573_ble` 4.2 (RX-96dBm，TX+5dBm)
 * :ref:`ch573_usb` ，支持USB2.0全速和低速主机或设备

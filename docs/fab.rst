@@ -4,6 +4,21 @@
 Foundry
 ===============
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`foundry`
+      - :ref:`tsmc`
+      - :ref:`gf`
+      - :ref:`umc`
+      - :ref:`smic`
+    * -
+      - :ref:`tsmc_n4p`
+      -
+      -
+      -
+
+
 .. contents::
     :local:
 
@@ -32,17 +47,24 @@ N4P
 
 .. _tsmc_hpc:
 
-HPC+(28nm)
+28HPC
 ^^^^^^^^^^^
-``28nm``
+``28nm`` ``HPC+``
+
+台积电（TSMC）28HPC/HPC+工艺相对于28LP/HP/HPL/HPM，能更好的控制全局慢速和全局快速（SSG，FFG）工艺角，因此可以提高系统级芯片（SoC）性能。
 
 台积电28nm先后衍生出了LP、HPM、HPC、HPC+四种版本
 
 .. _tsmc_40lp:
 
-40LP(40nm)
+40LP
 ^^^^^^^^^^^
 ``40nm``
+
+.. _tsmc_location:
+
+Location
+~~~~~~~~~~~
 
 .. _gf:
 
@@ -58,6 +80,11 @@ Process
 ~~~~~~~~~~~
 ``12nm`` ``28nm`` ``40nm``
 
+.. _gf_location:
+
+Location
+~~~~~~~~~~~
+
 .. _umc:
 
 UMC
@@ -71,6 +98,11 @@ UMC
 Process
 ~~~~~~~~~~~
 ``28nm`` ``40nm``
+
+.. _umc_location:
+
+Location
+~~~~~~~~~~~
 
 .. _smic:
 

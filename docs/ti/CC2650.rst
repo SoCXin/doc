@@ -4,8 +4,7 @@
 CC2650
 ============
 
-* 关键词：``Cortex-M3`` ``SimpleLink`` ``BLE`` ``ZigBee`` ``6LoWPAN``
-* 资源库：`GitHub <https://github.com/SoCXin/CC2650>`_ , `官方链接 <https://www.ti.com.cn/product/cn/CC2650>`_
+`GitHub <https://github.com/SoCXin/CC2650>`_ : ``Cortex-M3`` ``SimpleLink`` ``BLE`` ``ZigBee`` ``6LoWPAN``
 
 .. contents::
     :local:
@@ -15,6 +14,8 @@ Xin简介
 
 .. image:: ./images/CC2650.png
     :target: https://www.ti.com.cn/product/cn/CC2650
+
+`官方链接 <https://www.ti.com.cn/product/cn/CC2650>`_
 
 规格参数
 ~~~~~~~~~~~
