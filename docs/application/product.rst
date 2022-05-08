@@ -1,7 +1,7 @@
 
 .. _product:
 
-Products
+产品方案
 ===============
 
 .. _sipeed:
@@ -12,14 +12,14 @@ Sipeed
 
 `矽速科技 Sipeed <https://www.sipeed.com/>`_ 专注于人工智能边缘计算软硬件解决方案,提供高性能、低成本、低功耗、易使用的硬件选型方案
 
-* 基于 :ref:`k210` 的 `MAIX-I <https://wiki.sipeed.com/hardware/zh/maix/index.html>`_
-* 基于 :ref:`v831` 的 `MAIX-II <https://wiki.sipeed.com/hardware/zh/maixII/index.html>`_
-* 基于 :ref:`v833` 的 `MAIX-II-S <https://wiki.sipeed.com/hardware/zh/maixII/M2S/V833.html>`_
-* 基于 :ref:`r329` 的 `MAIX-II-A <https://wiki.sipeed.com/hardware/zh/maixII/M2A/maixsense.html>`_
+* 基于 :ref:`k210` `MAIX-I <https://wiki.sipeed.com/hardware/zh/maix/index.html>`_
+* 基于 :ref:`v831` `MAIX-II <https://wiki.sipeed.com/hardware/zh/maixII/index.html>`_
+* 基于 :ref:`v833` `MAIX-II-S <https://wiki.sipeed.com/hardware/zh/maixII/M2S/V833.html>`_
+* 基于 :ref:`r329` `MAIX-II-A <https://wiki.sipeed.com/hardware/zh/maixII/M2A/maixsense.html>`_
 
 .. _m5stack:
 
-M5stack
+M5Stack
 ---------------
 ``ESP32`` ``Arduino`` ``IoT``
 

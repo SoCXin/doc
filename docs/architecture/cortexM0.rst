@@ -18,7 +18,7 @@ Cortex-M0
       - :ref:`CoreMark`/MHz
       - :ref:`consumption`/MHz
       - Die Size
-    * - :ref:`tsmc_40lp`
+    * - :ref:`tsmc_40nm`
       - 0.95
       - 1.62
       - 3.8µW
