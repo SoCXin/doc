@@ -54,7 +54,7 @@ Chips
     :caption: outside
     :maxdepth: 1
 
-    电源模拟和物联网 TI <ti/index>
+    电源模拟和物联网 TI <tt/index>
     微控制器领域王者 ST <st/index>
     高性能多领域跨界 NXP <nxp/index>
     低功耗蓝牙控制器 Nordic <nordic/index>
