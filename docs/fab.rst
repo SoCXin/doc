@@ -36,7 +36,7 @@ TSMC
 
 Process
 ~~~~~~~~~~~
-``4nm``
+``4nm`` ``28nm`` ``40nm``
 
 .. _tsmc_n4p:
 
@@ -45,9 +45,9 @@ N4P
 
 2021年10月26日，台积电宣布推出N4P 制程工艺
 
-.. _tsmc_hpc:
+.. _tsmc_28nm:
 
-28HPC
+N28
 ^^^^^^^^^^^
 ``28nm`` ``HPC+``
 
@@ -59,9 +59,9 @@ N4P
     :target: https://blog.csdn.net/weibo1230123/article/details/83420674
 
 
-.. _tsmc_40lp:
+.. _tsmc_40nm:
 
-40LP
+N40
 ^^^^^^^^^^^
 ``40nm``
 

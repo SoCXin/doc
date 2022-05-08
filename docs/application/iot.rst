@@ -11,14 +11,14 @@ IoT
       - :ref:`can`
       - :ref:`ethernet`
       - :ref:`plc`
-      - :ref:`802_15_4`
-      - :ref:`bt`
+      - :ref:`wpan`
       - :ref:`wifi`
       - :ref:`lora`
       - :ref:`nbiot`
+      - :ref:`gprs`
       - :ref:`cat1`
       - :ref:`cat4`
-    * - :ref:`st`
+    * -
       - √
       - √
       -
@@ -29,62 +29,6 @@ IoT
       -
       -
       -
-    * - :ref:`ti`
-      - √
-      - √
-      -
-      - √
-      - √
-      - √
-      -
-      -
-      -
-      -
-    * - :ref:`nordic`
-      - √
-      -
-      -
-      - √
-      - √
-      -
-      -
-      - √
-      -
-      -
-    * - :ref:`mediatek`
-      - √
-      - √
-      -
-      -
-      -
-      - √
-      -
-      - √
-      - √
-      - √
-    * - :ref:`wch`
-      - √
-      - √
-      -
-      - √
-      - √
-      -
-      -
-      -
-      -
-      -
-    * - :ref:`espressif`
-      - √
-      - √
-      -
-      - √
-      - √
-      - √
-      -
-      -
-      -
-      -
-
 
 
 .. contents::
@@ -244,8 +188,9 @@ CAN总线，也叫做控制器局域网总线（Controller Area Network），是
 
 WPAN
 ----------
-``Bluetooth`` ``Zigbee`` ``RFID`` ``UWB`` ``NFC``
+``Bluetooth`` ``Zigbee`` ``RFID`` ``UWB`` ``NFC`` ``54Mbit/s`` ``802.11``
 
+无线个域网就是在个人周围空间形成的无线网络，现通常指覆盖范围在10m半径以内的短距离无线网络，尤其是指能在便携式消费者电器和通信设备之间进行短距离特别连接的自组织网。WPAN被定位于短距离无线通信技术，但根据不同的应用场合又分为高速WPAN（HR－WPAN）和低速WPAN（LR－WPAN）两种。
 
 .. list-table::
     :header-rows:  1
@@ -253,8 +198,8 @@ WPAN
     * - :ref:`wpan`
       - :ref:`802_15_4`
       - :ref:`bt`
-      - :ref:`wifi`
-      - :ref:`lora`
+      - :ref:`zigbee`
+      - :ref:`rfid`
     * - 距离
       -
       -
@@ -270,6 +215,12 @@ WPAN
       -
       -
       -
+
+.. _rfid:
+
+RFID
+~~~~~~~~~~~
+``RFID`` ``NFC``
 
 .. _802_15_4:
 
@@ -299,6 +250,12 @@ WPAN
       -
       -
       -
+
+.. _zigbee:
+
+ZigBee
+~~~~~~~~~~~
+``802.15.4``
 
 
 .. _bt:
@@ -343,16 +300,11 @@ Bluetooth
 .. note::
     由于技术演进和技术门槛降低，传统的MCU厂商在其产品上添加蓝牙系列，WiFi芯片厂商也同步支持蓝牙功能，导致单纯的蓝牙芯片越来越没有优势。
 
-.. _wlan:
-
-WLAN
------------
-``Wireless Local Area Network``
 
 .. _wifi:
 
 Wi-Fi
-~~~~~~~~~~~
+-----------
 ``802.11``
 
 .. list-table::
@@ -432,8 +384,6 @@ Wi-Fi
     Hi3861 <../miscellaneous/Hi3861>
 
 
-
-
 .. note::
     大部分WiFi通信芯片不仅具备WiFi接入能力，同时具备BLE连接能力，而且不断有新的厂商进入这一领域，用户的选择范围非常广。
 
@@ -442,6 +392,8 @@ Wi-Fi
 LPWAN
 ----------
 ``LPWAN`` ``LPWA`` ``LPN``
+
+LPWAN(低功耗广域网)，也称为LPWA)或LPN，是一种用于物联网(例如，以电池为电源的传感器)的类型，这是一种能够以低比特率进行远距离通信的无线网络。LPWAN可以同时满足覆盖和续航的要求。以最小的功耗提供最长的距离覆盖是LPWAN最大的技术优势。
 
 .. _lora:
 
@@ -483,10 +435,11 @@ LoRa
 
 
 
+
 .. _nbiot:
 
 NB-IoT
------------
+~~~~~~~~~~~
 
 
 
@@ -523,6 +476,16 @@ NB-IoT
 
     XY1100 <../miscellaneous/XY1100>
 
+.. _emtc:
+
+eMTC
+~~~~~~~~~~~
+
+
+.. _gprs:
+
+GPRS
+-----------
 
 .. _cat1:
 

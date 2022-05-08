@@ -58,7 +58,7 @@ Chips
     微控制器领域王者 ST <st/index>
     高性能多领域跨界 NXP <nxp/index>
     低功耗蓝牙控制器 Nordic <nordic/index>
-
+    多媒体语音控制器 Nuvoton  <nuvoton/index>
 
 .. toctree::
     :caption: 新势力
@@ -72,5 +72,6 @@ Chips
     高性能通信全品类 MediaTek  <MediaTek/index>
     多媒体应用处理器 Allwinner  <allwinner/index>
     国产芯片龙头企业 GigaDevice <gigadevice/index>
+
 
 

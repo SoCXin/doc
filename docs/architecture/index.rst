@@ -85,7 +85,7 @@
     MIPS    <MIPS>
     FPGA    <../fpga/index>
     RISC-V  <riscv>
-    MCS51   <MCS51>
+    MCS-51  <MCS51>
 
 
 
