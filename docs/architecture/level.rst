@@ -1,13 +1,10 @@
 
 .. _level:
 
-Level
+性能分级
 ===============
 
-.. toctree::
-    :maxdepth: 1
-
-`Level Mark <https://github.com/SoCXin/Level>`_ base on :ref:`frequency`/:ref:`CoreMark`/:ref:`Geekbench`
+`Level Mark <https://github.com/SoCXin/Level>`_ : :ref:`frequency`/:ref:`CoreMark`/:ref:`Geekbench`
 
 .. list-table::
     :header-rows:  1
@@ -30,6 +27,9 @@ Level
       -
       -
       -
+
+.. contents::
+    :local:
 
 
 .. _level1:

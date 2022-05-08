@@ -7,13 +7,11 @@ Foundry
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`foundry`
-      - :ref:`tsmc`
+    * - :ref:`tsmc`
       - :ref:`gf`
       - :ref:`umc`
       - :ref:`smic`
-    * -
-      - :ref:`tsmc_n4p`
+    * - :ref:`tsmc_n4p`
       -
       -
       -
@@ -42,14 +40,15 @@ Process
 
 N4P
 ^^^^^^^^^^^
+``4nm``
 
-2021年10月26日，台积电宣布推出N4P 制程工艺
+2021年10月26日，台积电宣布推出N4P制程工艺
 
 .. _tsmc_28nm:
 
-N28
+N28(28nm)
 ^^^^^^^^^^^
-``28nm`` ``HPC+``
+``28nm`` ``28HPC`` ``HPC+``
 
 台积电（TSMC）28HPC/HPC+工艺相对于28LP/HP/HPL/HPM，能更好的控制全局慢速和全局快速（SSG，FFG）工艺角，因此可以提高系统级芯片（SoC）性能。
 
@@ -61,7 +60,7 @@ N28
 
 .. _tsmc_40nm:
 
-N40
+N40(40nm)
 ^^^^^^^^^^^
 ``40nm``
 
@@ -93,7 +92,6 @@ Location
 
 UMC
 -----------
-
 
 `联华电子 <https://www.umc.com/zh-CN/Home/Index>`_ 成立于1980年，总部台湾新竹
 
