@@ -19,31 +19,31 @@ Chips
     * - :ref:`ch32v307`
       - :ref:`asr6601`
       - :ref:`usi8910`
-      - :ref:`esp32s2`
+      - :ref:`esp32s3`
       - :ref:`mt2625`
       - :ref:`at32f425`
       - :ref:`D1`
       - :ref:`gd32e230`
     * - :ref:`ch32v208`
       - :ref:`asr6501`
-      - :ref:`usi8910`
-      - :ref:`esp32`
+      -
+      - :ref:`esp32s2`
       - :ref:`mt7688`
       - :ref:`at32f421`
       - :ref:`S3`
       - :ref:`gd32v103`
     * - :ref:`ch579`
       - :ref:`asr1802`
-      - :ref:`usi8910`
-      - :ref:`esp32c3`
+      -
+      - :ref:`esp32`
       - :ref:`mt7622`
       - :ref:`at32f403`
       - :ref:`r329`
       - :ref:`gd32f130`
     * - :ref:`ch569`
       - :ref:`asr1601`
-      - :ref:`usi8910`
-      - :ref:`esp32s3`
+      -
+      - :ref:`esp32c3`
       - :ref:`mt7621`
       - :ref:`at32f437`
       - :ref:`v831`

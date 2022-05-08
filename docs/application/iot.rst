@@ -12,7 +12,7 @@ IoT
       - :ref:`ethernet`
       - :ref:`plc`
       - :ref:`802_15_4`
-      - :ref:`ble`
+      - :ref:`bt`
       - :ref:`wifi`
       - :ref:`lora`
       - :ref:`nbiot`
@@ -87,69 +87,10 @@ IoT
 
 
 
-
-.. _wireless:
-
-Wireless
------------
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`iot`
-      - :ref:`can`
-      - :ref:`ethernet`
-      - :ref:`plc`
-      - :ref:`802_15_4`
-      - :ref:`ble`
-      - :ref:`wifi`
-      - :ref:`lora`
-      - :ref:`nbiot`
-      - :ref:`cat1`
-      - :ref:`cat4`
-    * - 距离
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-    * - 易用性
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-    * - 扩展性
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-      -
+.. contents::
+    :local:
 
 
-.. _can:
-
-CAN
------------
-``串行通信``
-
-
-CAN总线，也叫做控制器局域网总线（Controller Area Network），是一种用于实时应用的串行通讯协议总线，它可以使用双绞线来传输信号，是世界上应用最广泛的现场总线之一。
 
 .. _ethernet:
 
@@ -233,7 +174,7 @@ Router
       -
       - 5p GbE
       - SGMII/RGMII
-      - :ref:`wifi` + :ref:`ble`
+      - :ref:`wifi` + :ref:`bt`
     * - :ref:`mt7623`
       - :ref:`cortex_a7`
       -
@@ -289,6 +230,15 @@ PLC
 .. note::
     电力线载波通信（power line carrier communication）以输电线路为载波信号的传输媒介的电力系统通信。
 
+.. _can:
+
+CAN
+-----------
+``串行通信``
+
+
+CAN总线，也叫做控制器局域网总线（Controller Area Network），是一种用于实时应用的串行通讯协议总线，它可以使用双绞线来传输信号，是世界上应用最广泛的现场总线之一。
+
 
 .. _wpan:
 
@@ -302,7 +252,7 @@ WPAN
 
     * - :ref:`wpan`
       - :ref:`802_15_4`
-      - :ref:`ble`
+      - :ref:`bt`
       - :ref:`wifi`
       - :ref:`lora`
     * - 距离
@@ -351,9 +301,9 @@ WPAN
       -
 
 
-.. _ble:
+.. _bt:
 
-BLE
+Bluetooth
 ~~~~~~~~~~~
 ``802.15.1``
 
@@ -364,7 +314,7 @@ BLE
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ble`
+    * - :ref:`bt`
       - :ref:`architecture`
       - SRAM/ROM
       -
@@ -533,12 +483,6 @@ LoRa
 
 
 
-.. _wwan:
-
-WWAN
------------
-
-
 .. _nbiot:
 
 NB-IoT
@@ -626,3 +570,47 @@ Cat.4
 -----------
 
 .. image:: ./images/VS.jpg
+
+
+
+.. _wireless:
+
+Wireless
+-----------
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`iot`
+      - :ref:`can`
+      - :ref:`ethernet`
+      - :ref:`plc`
+      - :ref:`802_15_4`
+      - :ref:`bt`
+      - :ref:`wifi`
+      - :ref:`lora`
+      - :ref:`nbiot`
+      - :ref:`cat1`
+      - :ref:`cat4`
+    * - 易用性
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - 扩展性
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -

@@ -55,6 +55,10 @@ N4P
 
 台积电28nm先后衍生出了LP、HPM、HPC、HPC+四种版本
 
+.. image:: _static/images/tmsc28.jpeg
+    :target: https://blog.csdn.net/weibo1230123/article/details/83420674
+
+
 .. _tsmc_40lp:
 
 40LP

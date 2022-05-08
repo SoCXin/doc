@@ -34,7 +34,7 @@ Matter 基于IP协议（例如Wi-Fi、以太网和Thread）而构建，提供了
 .. image:: ./images/chip.png
 
 * Matter 离不开基于IP 的网络协议，而Zigbee 有自己的网络协议
-* Matter 还通过 :ref:`ble` 和 :ref:`wifi` 二维码定义了最适合预期用户设置场景的预配方案，而Zigbee的标准调试流程使用其原生的 :ref:`802_15_4` 无线技术。
+* Matter 还通过 :ref:`bt` 和 :ref:`wifi` 二维码定义了最适合预期用户设置场景的预配方案，而Zigbee的标准调试流程使用其原生的 :ref:`802_15_4` 无线技术。
 
 .. note::
     根据ABI research的最新预测，在2022年到2030年这个区间内，Matter设备的出货量将达到550亿。
