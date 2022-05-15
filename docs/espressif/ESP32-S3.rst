@@ -6,6 +6,8 @@ ESP32S3
 
 `GitHub <https://github.com/SoCXin/ESP32S3>`_ : ``Xtensa LX7`` ``Dual Core`` ``240 MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB1.1 OTG`` ``AI`` ``CAN`` ``Touch`` ``QFN56``
 
+传承关系 : :ref:`esp32` < ESP32-S3
+
 .. contents::
     :local:
 

@@ -5,6 +5,8 @@ ESP32
 
 `GitHub <https://github.com/SoCXin/ESP32>`_ : ``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``
 
+传承关系 : ESP32 < :ref:`esp32s3`
+
 .. contents::
     :local:
 

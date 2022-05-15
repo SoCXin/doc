@@ -11,7 +11,7 @@ Espressif
 公司简介
 -----------
 
-`乐鑫科技 <http://www.espressif.com>`_ 是一家全球化半导体设计公司，成立于2008年(股票代码688018)，总部上海张江， `开源 <https://github.com/SoCXin/ESP32S3>`_、:ref:`wifi`、:ref:`esp_audio`
+`乐鑫科技 <http://www.espressif.com>`_ 是一家全球化半导体设计公司，成立于2008年(股票代码688018)，总部上海张江: `开源 <https://github.com/SoCXin/ESP32S3>`_、:ref:`wifi`、:ref:`esp_audio`
 
 
 .. note::
