@@ -283,6 +283,26 @@ RISC-V
 自研 :ref:`riscv` 内核，应用产品为 :ref:`esp32c3`
 
 
+.. _esp_tools:
+
+辅助工具
+~~~~~~~~~~~~
+
+.. _esp_downloader:
+
+Flash下载工具
+^^^^^^^^^^^^^^
+
+https://espressif.com/zh-hans/support/download/other-tools
+
+.. _esp_bridge:
+
+USB-Bridge
+^^^^^^^^^^^^^^
+
+.. image:: images/esp-usb-bridge.png
+    :target: https://github.com/espressif/esp-usb-bridge
+
 
 .. _esp_package:
 
