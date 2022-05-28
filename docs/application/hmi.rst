@@ -6,6 +6,7 @@ HMI
 
 .. contents::
     :local:
+    :depth: 1
 
 
 图形框架

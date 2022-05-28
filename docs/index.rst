@@ -5,7 +5,6 @@ Xin
 
 **新产品用心，芯产品用新**
 
-`SoC·芯 <https://www.SoC.Xin>`_ 做聪明的选择，屯有用的货
 
 * ``有新需求，评估实现途径，求参考值``
 * ``有芯需求，技术选型对比，求最优解``
@@ -14,6 +13,8 @@ Xin
 
 .. image:: https://github.com/SoCXin/docs/workflows/Docs/badge.svg
     :target: https://github.com/SoCXin/docs/actions
+
+`SoC·芯 <https://www.SoC.Xin>`_ 做聪明的选择，屯有用的货
 
 .. toctree::
     :maxdepth: 1
@@ -30,7 +31,7 @@ Xin
     选在当下设计未来 <list/news>
     突破常规低价好货 <low/index>
     定位中庸存量巨大 <news/mean>
-    自家旗舰干啥都行 <high/index>
+    各家旗舰干啥都行 <high/index>
 
 .. list-table::
     :header-rows: 1
@@ -67,35 +68,6 @@ Xin
     功能分类  <application/index>
     硬件产品  <application/products>
     应用协议  <application/protocols>
-
-
-==================  ==================  ==================
-|人机交互|_          |通信连接|_         |边缘计算|_
-------------------  ------------------  ------------------
-`人机交互`_          `通信连接`_         `边缘计算`_
-------------------  ------------------  ------------------
-|超低功耗|_          |模拟转换|_         |控制驱动|_
-------------------  ------------------  ------------------
-`超低功耗`_          `模拟转换`_         `控制驱动`_
-==================  ==================  ==================
-
-.. |人机交互| image:: espressif/images/espressif.png
-.. _人机交互: application/hmi.html
-
-.. |通信连接| image:: application/images/matter.png
-.. _通信连接: application/iot.html
-
-.. |边缘计算| image:: espressif/images/espressif.png
-.. _边缘计算: application/edge.html
-
-.. |超低功耗| image:: espressif/images/espressif.png
-.. _超低功耗: application/ulp.html
-
-.. |模拟转换| image:: espressif/images/espressif.png
-.. _模拟转换: application/adc.html
-
-.. |控制驱动| image:: espressif/images/espressif.png
-.. _控制驱动: application/foc.html
 
 
 .. toctree::

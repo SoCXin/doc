@@ -14,10 +14,10 @@ Application
       - :ref:`foc`
       - :ref:`hmi`
       - :ref:`adc`
-    * -
-      - :ref:`v831`
-      - :ref:`esp32c3`
-      -
+    * - 关键参数
+      - :ref:`CoreMark`
+      - :ref:`wireless`
+      - :ref:`le`
       -
       -
       -
@@ -33,3 +33,46 @@ Application
     人机交互 HMI  <hmi>
     信号转换 ADC  <adc>
 
+大部分情况下，对应产品的应用场景都是十分明确的，典型场景包括：
+
+.. _wireless:
+
+Wireless
+-----------
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`iot`
+      - :ref:`can`
+      - :ref:`ethernet`
+      - :ref:`plc`
+      - :ref:`802_15_4`
+      - :ref:`bt`
+      - :ref:`wifi`
+      - :ref:`lora`
+      - :ref:`nbiot`
+      - :ref:`cat1`
+      - :ref:`cat4`
+    * - 易用性
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - 扩展性
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -

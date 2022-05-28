@@ -5,6 +5,8 @@ FOC
 
 .. contents::
     :local:
+    :depth: 1
+
 
 技术简介
 -----------
@@ -128,8 +130,8 @@ ODrive
 * 链接：`ODrive Home <https://odriverobotics.com/>`_ , `ODrive GitHub <https://github.com/odriverobotics/ODrive>`_
 
 
-主控方案
------------
+相关主控
+~~~~~~~~~~~
 
 .. toctree::
     :maxdepth: 1
