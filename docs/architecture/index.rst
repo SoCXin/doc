@@ -3,6 +3,15 @@
 内核架构
 ===============
 
+.. contents::
+    :local:
+    :depth: 1
+
+.. _classification:
+
+Classification
+---------------
+
 .. list-table::
     :header-rows:  1
 

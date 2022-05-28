@@ -30,6 +30,7 @@
 
 .. contents::
     :local:
+    :depth: 1
 
 
 .. _level1:

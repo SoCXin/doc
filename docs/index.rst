@@ -5,7 +5,7 @@ Xin
 
 **新产品用心，芯产品用新**
 
-`SoC·芯 <https://www.SoC.Xin>`_ 通过关联整理，多维度对比，求解如下问题：
+`SoC·芯 <https://www.SoC.Xin>`_ 做聪明的选择，屯有用的货
 
 * ``有新需求，评估实现途径，求参考值``
 * ``有芯需求，技术选型对比，求最优解``
@@ -102,9 +102,9 @@ Xin
     :caption: 内核速览
     :maxdepth: 1
 
-    内核架构  <architecture/index>
-    性能分级  <architecture/level>
-
+    架构分类  <architecture/index>
+    性能量化  <architecture/level>
+    核心技术  <architecture/core>
 
 .. toctree::
     :caption: 厂商速览
