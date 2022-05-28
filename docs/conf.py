@@ -37,7 +37,7 @@ master_doc = "index"
 
 # General information about the project.
 project = u"Xin"
-copyright = u'{} 年轮在骨,厚积于芯'.format(current_year)
+copyright = u'2020 - {} www.soc.xin'.format(current_year)
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.

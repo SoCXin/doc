@@ -44,9 +44,6 @@ Wireless
     :header-rows:  1
 
     * - :ref:`iot`
-      - :ref:`can`
-      - :ref:`ethernet`
-      - :ref:`plc`
       - :ref:`802_15_4`
       - :ref:`bt`
       - :ref:`wifi`
@@ -62,13 +59,7 @@ Wireless
       -
       -
       -
-      -
-      -
-      -
     * - 扩展性
-      -
-      -
-      -
       -
       -
       -
