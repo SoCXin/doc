@@ -26,11 +26,11 @@ Xin
     :maxdepth: 1
 
     极客聚集开源高地 <news/hot>
-    大型项目适配支持 <news/pop>
-    选在当下设计推荐 <list/news>
-    突破极限低价好货 <low/index>
-    产品中庸存量巨大 <news/mean>
-    旗舰定位干啥都行 <high/index>
+    明星项目御用平台 <news/pop>
+    选在当下设计未来 <list/news>
+    突破常规低价好货 <low/index>
+    定位中庸存量巨大 <news/mean>
+    自家旗舰干啥都行 <high/index>
 
 .. list-table::
     :header-rows: 1

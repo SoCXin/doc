@@ -1,14 +1,19 @@
 
-.. _edge:
+.. _ai:
 
-边缘计算
+AI
 ============
 
 .. contents::
     :local:
+    :depth: 1
 
 算法框架
 -----------
+
+.. contents::
+    :local:
+    :depth: 1
 
 .. _tflite:
 
@@ -54,9 +59,6 @@ Cube-AI
 边缘平台
 -----------
 
-.. contents::
-    :local:
-
 
 .. list-table::
     :header-rows:  1
@@ -84,6 +86,10 @@ Cube-AI
       -
 
 可以在端侧部署算法的嵌入式平台，相对传统的计算分离体系，拥有更高的集成度和灵活度
+
+.. contents::
+    :local:
+    :depth: 1
 
 
 SoC平台

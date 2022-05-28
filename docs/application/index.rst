@@ -7,18 +7,16 @@ Application
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ulp`
-      - :ref:`architecture`
-      - RAM
-      - Flash
-      - UART
-      - BLE
-      - USB
-      - DMIPS
-    * - :ref:`stm32l011`
-      -
-      -
-      -
+    * -
+      - :ref:`ai`
+      - :ref:`iot`
+      - :ref:`ulp`
+      - :ref:`foc`
+      - :ref:`hmi`
+      - :ref:`adc`
+    * -
+      - :ref:`v831`
+      - :ref:`esp32c3`
       -
       -
       -
@@ -28,10 +26,10 @@ Application
 .. toctree::
     :maxdepth: 1
 
-    边缘计算 AI  <edge>
+    边缘计算 AI  <ai>
     通信连接 IoT  <iot>
     超低功耗 ULP  <ulp>
-    驱动控制 FoC  <foc>
+    实时驱动 FoC  <foc>
     人机交互 HMI  <hmi>
     信号转换 ADC  <adc>
 

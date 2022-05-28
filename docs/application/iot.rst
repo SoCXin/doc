@@ -33,7 +33,7 @@ IoT
 
 .. contents::
     :local:
-
+    :depth: 1
 
 
 .. _ethernet:
