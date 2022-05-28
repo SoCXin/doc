@@ -7,6 +7,8 @@ Espressif
 
 .. contents::
     :local:
+    :depth: 1
+
 
 公司简介
 -----------
