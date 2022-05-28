@@ -22,8 +22,12 @@ Xin
     芯期刊 <list/index>
     板期刊 <list/boards>
 
+.. image:: _static/images/all.png
+    :target: https://www.soc.xin
+
+
 .. toctree::
-    :caption: 芯品新闻
+    :caption: 产品分类
     :maxdepth: 1
 
     极客聚集开源高地 <news/hot>
@@ -62,7 +66,7 @@ Xin
       - :ref:`rt1060`
 
 .. toctree::
-    :caption: 应用领域
+    :caption: 应用分类
     :maxdepth: 1
 
     功能分类  <application/index>
@@ -71,7 +75,7 @@ Xin
 
 
 .. toctree::
-    :caption: 内核速览
+    :caption: 内核相关
     :maxdepth: 1
 
     架构分类  <architecture/index>
@@ -79,7 +83,7 @@ Xin
     核心技术  <architecture/core>
 
 .. toctree::
-    :caption: 厂商速览
+    :caption: 厂商相关
     :maxdepth: 1
 
     芯片设计 <ic>
