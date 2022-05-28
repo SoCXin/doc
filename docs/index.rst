@@ -65,7 +65,7 @@ Xin
     :maxdepth: 1
 
     功能分类  <application/index>
-    产品方案  <application/products>
+    硬件产品  <application/products>
     应用协议  <application/protocols>
 
 
@@ -112,4 +112,4 @@ Xin
 
     芯片设计 <ic>
     芯片代工 <fab>
-    芯片销售 <fab>
+    芯片销售 <sales>
