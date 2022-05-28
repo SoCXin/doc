@@ -64,8 +64,10 @@ Xin
     :caption: 应用领域
     :maxdepth: 1
 
-    功能分类   <application/index>
-    产品方案   <application/product>
+    功能分类  <application/index>
+    产品方案  <application/products>
+    应用协议  <application/protocols>
+
 
 ==================  ==================  ==================
 |人机交互|_          |通信连接|_         |边缘计算|_
@@ -108,5 +110,6 @@ Xin
     :caption: 厂商速览
     :maxdepth: 1
 
-    设计领域 <ic>
-    代工领域 <fab>
+    芯片设计 <ic>
+    芯片代工 <fab>
+    芯片销售 <fab>

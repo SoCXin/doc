@@ -1,8 +1,12 @@
 
-.. _product:
+.. _products:
 
 产品方案
 ===============
+
+.. contents::
+    :local:
+    :depth: 1
 
 .. _sipeed:
 

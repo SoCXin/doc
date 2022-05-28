@@ -19,6 +19,7 @@ Foundry
 
 .. contents::
     :local:
+    :depth: 1
 
 
 .. _tsmc:
@@ -35,6 +36,11 @@ TSMC
 Process
 ~~~~~~~~~~~
 ``4nm`` ``28nm`` ``40nm``
+
+.. contents::
+    :local:
+    :depth: 1
+
 
 .. _tsmc_n4p:
 

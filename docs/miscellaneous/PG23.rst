@@ -4,7 +4,7 @@
 PG23
 ===============
 
-`标签 <https://github.com/SoCXin/PG23>`_ : ``Cortex-M33`` ``240MHz`` ``UART`` ``CMOS PA``
+`标签 <https://github.com/SoCXin/PG23>`_ : ``Cortex-M33`` ``80MHz`` ``20 bit ADC``
 
 .. contents::
     :local:
