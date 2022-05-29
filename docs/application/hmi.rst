@@ -125,13 +125,6 @@ QT专门为 ARM Cortex-M 单片机开发的，目前用在 ARM Cortex M7 的微�
     :local:
 
 
-.. _usb:
-
-USB
-~~~~~~~~~~~
-
-:ref:`usb_pd` 可用于供能
-
 
 .. _vga:
 
