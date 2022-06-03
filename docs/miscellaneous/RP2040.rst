@@ -8,6 +8,7 @@ RP2040
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
@@ -156,8 +157,21 @@ TensorFlow Lite Micro
 
 `pico-tflmicro <https://github.com/raspberrypi/pico-tflmicro>`_
 
+pico-debug
+^^^^^^^^^^^^^^^^^^
+``CMSIS-DAP``
+
+pico-debug runs on one core in a RP2040 and provides a USB CMSIS-DAP interface to debug the other core
+
+`pico-debug repo <https://github.com/majbthrd/pico-debug>`_
+
+
 项目案例
 ~~~~~~~~~~~
+
+.. contents::
+    :local:
+    :depth: 1
 
 logic-analyzer
 ^^^^^^^^^^^^^^^^^^
@@ -180,13 +194,12 @@ VGA
 
 
 
-
-
 Xin总结
 --------------
 
 .. contents::
     :local:
+    :depth: 1
 
 能力构建
 ~~~~~~~~~~~~~

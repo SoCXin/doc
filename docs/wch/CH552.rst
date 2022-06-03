@@ -4,11 +4,17 @@
 CH552
 ========
 
-`GitHub <https://github.com/SoCXin/CH552>`_ : ``USB`` ``8051`` ``24MHz`` ``LDO`` ``Type-C``
+.. image:: https://github.com/SoCXin/CH552/workflows/project/badge.svg
+    :target: https://github.com/SoCXin/CH552/actions
 
+`datasheet <http://www.wch.cn/products/CH552.html>`_ : ``USB`` ``8051`` ``24MHz`` ``LDO`` ``Type-C``
+
+传承 : CH552 < :ref:`ch549`
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
@@ -60,17 +66,3 @@ CMSIS-DAP
 :ref:`cmsis_dap`
 
 
-Xin总结
---------------
-
-.. contents::
-    :local:
-
-能力构建
-~~~~~~~~~~~~~
-
-要点提示
-~~~~~~~~~~~~~
-
-问题整理
-~~~~~~~~~~~~~

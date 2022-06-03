@@ -7,17 +7,34 @@ Foundry
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`tsmc`
+    * - Process
+      - :ref:`tsmc`
       - :ref:`samsung`
       - :ref:`gf`
       - :ref:`umc`
       - :ref:`smic`
-    * - :ref:`tsmc_n4p`
+      - :ref:`skywater`
+    * - 5nm
+      - 2021
       -
       -
       -
       -
-
+      -
+    * - 7nm
+      -
+      -
+      -
+      -
+      -
+      -
+    * - 12nm
+      -
+      -
+      -
+      -
+      -
+      -
 
 .. contents::
     :local:
@@ -81,6 +98,7 @@ Location
 
 SAMSUNG
 -----------------
+``3D FinFET``
 
 
 .. _gf:

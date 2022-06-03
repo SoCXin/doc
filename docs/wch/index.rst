@@ -407,13 +407,16 @@ RISC-V
     CH573 <CH573>
 
 
-其他产品
+外设芯片
 ------------
 
 纵览 :ref:`wch` 当下所有产品，其核心技术在于自主开发的 :ref:`wch_riscv` 内核，在USB领域的多年积累，特别是USB HS集成PHY的差异化定位，相对竞品方案的集成度和成本更低，还有在以太网领域的产品迭代，同样的市场优势建立于高速和集成PHY
 
 但是，就单片机而言，BLE无线通信领域的优势还没有完全建立，但是丰富的产品线具有协同效应，针对高速有线通信（USB SS和1Gbps以太网）配置低主频核心，实用场景有限，和其他高性能产品比较而言并不具有优势
 
+.. contents::
+    :local:
+    :depth: 1
 
 .. _usb_pd:
 
@@ -515,6 +518,19 @@ USB PD的通信是将协议层的消息调制成24MHZ的FSK信号并耦合到VBU
 
 .. image:: ./images/pci.png
     :target: http://www.wch.cn/products/category/2.html#data
+
+
+方案总结
+------------
+
+.. contents::
+    :local:
+    :depth: 1
+
+开发生态
+~~~~~~~~~~~~
+
+`WCHISPTool下载工具 <http://www.wch.cn/downloads/WCHISPTool_Setup_exe.html>`_
 
 
 封装形态
