@@ -3,16 +3,10 @@
 Xin
 =====================
 
-**新产品用心，芯产品用新**
-
-
-* ``有新需求，评估实现途径，求参考值``
-* ``有芯需求，技术选型对比，求最优解``
-* ``有薪需求，知识领域更新，求解区间``
-* ``有信需求，限定应用场景，归纳证明``
-
 .. image:: https://github.com/SoCXin/docs/workflows/Docs/badge.svg
     :target: https://github.com/SoCXin/docs/actions
+
+**新产品用心，芯产品用新**
 
 `SoC·芯 <https://www.SoC.Xin>`_ 做聪明的选择，屯有用的货
 
