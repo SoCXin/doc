@@ -36,96 +36,11 @@ IoT
     :depth: 1
 
 
-.. _ethernet:
+.. toctree::
+    :maxdepth: 1
 
-ETH
------------
+    ethernet <ethernet>
 
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`ethernet`
-      - :ref:`CoreMark`
-      - SRAM/ROM
-      - UART/SPI
-      - USB/CAN
-      - ETH-MAC
-      - ETH-PHY
-    * - :ref:`stm32f207`
-      -
-      - 128KB/512KB
-      - 6/3
-      - HSOTG/2.0B
-      - 100Mbps
-      - NO
-    * - :ref:`stm32f407`
-      -
-      - 192KB/1MB
-      - 6/3
-      - HSOTG/2.0B
-      - 100Mbps
-      - NO
-    * - :ref:`at32f407`
-      -
-      - 192KB/1MB
-      - 8/3
-      - OTG/2.0B
-      - 100Mbps
-      - NO
-    * - :ref:`esp32`
-      -
-      - 520KB/4MB
-      - 2/2
-      -
-      - 100Mbps
-      - NO
-    * - :ref:`ch579`
-      -
-      - 32KB/256KB
-      - 4/2
-      - OTG
-      - 10Mbps
-      - 10Mbps
-    * - :ref:`ch32v307`
-      -
-      - 64KB/256KB
-      - 8/3
-      - HS-OTG/2.0B
-      - 1000Mbps
-      - 10Mbps
-
-
-`延伸阅读 <https://docs.qitas.cn/interface/bus.html#id5>`_
-
-.. _router:
-
-Router
-~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`router`
-      - :ref:`architecture`
-      - :ref:`CoreMark`
-      -
-      - Switch
-      - ETH-MAC
-      - :ref:`wireless`
-    * - :ref:`mt7622`
-      - :ref:`cortex_a53`
-      -
-      -
-      - 5p GbE
-      - SGMII/RGMII
-      - :ref:`wifi` + :ref:`bt`
-    * - :ref:`mt7623`
-      - :ref:`cortex_a7`
-      -
-      -
-      - 5p GbE
-      - SGMII/RGMII
-      - :ref:`wifi`
 
 .. _plc:
 

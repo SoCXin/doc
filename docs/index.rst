@@ -10,15 +10,15 @@ Xin
 
 `SoC·芯 <https://www.SoC.Xin>`_ 做聪明的选择，屯有用的货
 
+
+.. image:: _static/images/all.png
+    :target: https://www.soc.xin
+
 .. toctree::
     :maxdepth: 1
 
     芯期刊 <list/index>
     板期刊 <list/boards>
-
-.. image:: _static/images/all.png
-    :target: https://www.soc.xin
-
 
 .. toctree::
     :caption: 产品分类
