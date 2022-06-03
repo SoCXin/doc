@@ -4,7 +4,7 @@
 CH552
 ========
 
-`标签 <https://github.com/SoCXin/CH552>`_ : ``USB`` ``8051`` ``24MHz`` ``LDO`` ``Type-C``
+`GitHub <https://github.com/SoCXin/CH552>`_ : ``USB`` ``8051`` ``24MHz`` ``LDO`` ``Type-C``
 
 
 .. contents::

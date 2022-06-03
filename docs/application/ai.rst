@@ -3,6 +3,7 @@
 
 AI
 ============
+``TensorFlow``
 
 .. contents::
     :local:
@@ -19,6 +20,8 @@ AI
 
 TF Lite
 ~~~~~~~~~~~
+
+`TFmin <https://github.com/tfmin>`_ 嵌入算法平台
 
 
 .. _tinyml:

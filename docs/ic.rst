@@ -66,7 +66,7 @@ Chips
 
     新锐无线长距通信 ASR <ASR/index>
     蜂窝网络和处理器 RDA <RDA/index>
-    物联网通信控制器 WCH <wcn/index>
+    物联网通信控制器 WCH <wch/index>
     低成本无线物联网 Espressif <espressif/index>
     Cortex-M4控制器 ArteryTek <arterytek/index>
     高性能通信全品类 MediaTek  <MediaTek/index>

@@ -292,10 +292,11 @@ RISC-V
 
 .. _esp_downloader:
 
-Flash下载工具
+下载工具
 ^^^^^^^^^^^^^^
 
-https://espressif.com/zh-hans/support/download/other-tools
+`window flash downloader <https://espressif.com/zh-hans/support/download/other-tools>`_
+
 
 .. _esp_bridge:
 

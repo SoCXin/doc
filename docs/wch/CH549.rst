@@ -4,7 +4,7 @@
 CH549
 =========
 
-`标签 <https://github.com/SoCXin/CH549>`_ : ``8051`` ``WCH`` ``48MHz`` ``USB FS`` ``4 UART`` ``LDO`` ``USB-PD``
+`GitHub <https://github.com/SoCXin/CH549>`_ : ``8051`` ``WCH`` ``48MHz`` ``USB FS`` ``4 UART`` ``LDO`` ``USB-PD``
 
 .. contents::
     :local:
