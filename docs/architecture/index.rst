@@ -12,79 +12,6 @@
 Classification
 ---------------
 
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`CoreMark`
-      - :ref:`level1`
-      - :ref:`level2`
-      - :ref:`level3`
-      - :ref:`level4`
-      - :ref:`level5`
-      - :ref:`level6`
-      - :ref:`level7`
-      - :ref:`level8`
-      - :ref:`level9`
-    * - :ref:`mcs51`
-      - :ref:`ch549`
-      - X
-      - X
-      - X
-      - X
-      - X
-      - X
-      - X
-      - X
-    * - :ref:`cortex_m`
-      - √
-      - √
-      - √
-      - √
-      - √
-      - √
-      - X
-      - X
-      - X
-    * - :ref:`cortex_r`
-      -
-      -
-      -
-      -
-      -
-      -
-      - X
-      - X
-      - X
-    * - :ref:`cortex_a`
-      -
-      -
-      -
-      -
-      - √
-      - √
-      - √
-      - √
-      - √
-    * - :ref:`riscv`
-      - √
-      - √
-      - √
-      - √
-      - √
-      - √
-      - √
-      - √
-      - √
-    * - :ref:`mips`
-      - X
-      - √
-      - √
-      - √
-      - √
-      - √
-      - √
-      - √
-      - X
 
 .. toctree::
     :maxdepth: 1
@@ -135,11 +62,23 @@ Performance
       - 1.5
       -
       -
+    * - :ref:`cortex_m55`
+      -
+      -
+      -
+    * - :ref:`cortex_m85`
+      - 3.13
+      - 6.28
+      -
     * - :ref:`24KEc`
       - 1.55
       - 3.05
       -
     * - :ref:`1004KEc`
+      -
+      -
+      -
+    * - :ref:`xtensa_lx7`
       -
       -
       -

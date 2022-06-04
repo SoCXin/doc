@@ -74,7 +74,7 @@ Xin
 
     架构分类  <architecture/index>
     性能量化  <architecture/level>
-    核心技术  <architecture/core>
+    技术知识  <architecture/core>
 
 .. toctree::
     :caption: 厂商相关

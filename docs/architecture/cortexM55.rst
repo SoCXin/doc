@@ -2,8 +2,8 @@
 
 Cortex-M55
 ====================
+``Arm Helium``
 
-:ref:`performance` : ``6.28 CoreMark/MHz``
 
 
 https://www.arm.com/products/silicon-ip-cpu/cortex-m/cortex-m55

@@ -4,6 +4,82 @@
 性能分级
 ===============
 
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`CoreMark`
+      - :ref:`level1`
+      - :ref:`level2`
+      - :ref:`level3`
+      - :ref:`level4`
+      - :ref:`level5`
+      - :ref:`level6`
+      - :ref:`level7`
+      - :ref:`level8`
+      - :ref:`level9`
+    * - :ref:`mcs51`
+      - :ref:`ch549`
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+      - X
+    * - :ref:`cortex_m`
+      - √
+      - √
+      - √
+      - √
+      - √
+      - √
+      - X
+      - X
+      - X
+    * - :ref:`cortex_r`
+      -
+      -
+      -
+      -
+      -
+      -
+      - X
+      - X
+      - X
+    * - :ref:`cortex_a`
+      -
+      -
+      -
+      -
+      - √
+      - √
+      - √
+      - √
+      - √
+    * - :ref:`riscv`
+      - √
+      - √
+      - √
+      - √
+      - √
+      - √
+      - √
+      - √
+      - √
+    * - :ref:`mips`
+      - X
+      - √
+      - √
+      - √
+      - √
+      - √
+      - √
+      - √
+      - X
+
+
 `Level Mark <https://github.com/SoCXin/Level>`_ : :ref:`frequency`/:ref:`CoreMark`/:ref:`Geekbench`
 
 .. list-table::
