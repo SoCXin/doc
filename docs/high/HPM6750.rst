@@ -7,9 +7,9 @@ HPM6750
 .. image:: https://github.com/SoCXin/HPM6750/workflows/demo/badge.svg
     :target: https://github.com/SoCXin/HPM6750
 
-`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``816MHz`` ``Dual Core`` ``16bit ADC @2Msps`` ``12bit ADC @5Msps``
+`HPMicro <https://www.hpmicro.com>`_ : ``32-bit RISC-V`` ``816MHz`` ``Dual Core`` ``16bit ADC @2Msps`` ``12bit ADC @5Msps``
 
-:ref:`performance` : :ref:`cortex_m85` > ``32-bit RISC-V 5.65 Coremark/MHz`` > :ref:`cortex_m7`
+:ref:`performance` : :ref:`cortex_m85` > ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
 
 .. contents::
     :local:
@@ -101,15 +101,22 @@ Xin选择
       - 6468(2)
       - 2 MB
       - 2xHS/2xGb
-      - $10.38
+      - ￥54.36
       -
       - BGA289
+
+.. _rt1176:
+
+RT1176
+^^^^^^^^^^^
+``Cortex-M4 + Cortex-M7`` ``MIMXRT1176CVM8A`` ``￥54.36``
+
 
 型号对比
 ~~~~~~~~~
 
-* HPM6x50系列相比同级的HPM6x30系列差异在CAN FD和CAN
-* HPM67xx系列相比HPM64xx系列为核心数量差异
+* HPM6x6x/HPM6x5x/HPM6x3x系列间差异在 CAN FD
+* HPM67xx系列相比HPM64xx系列差异为核心数量
 
 .. _hpm6350:
 
@@ -138,3 +145,34 @@ HPM6350
 HPM6450
 ^^^^^^^^^^^
 ``RISC-V`` ``￥45``
+
+Xin应用
+--------------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~~~~~~
+
+HPM6750EVK
+^^^^^^^^^^^^^^^^
+``￥568``
+
+.. image:: ./images/HPM6750EVK.png
+    :target: https://www.hpmicro.com/resources/detail2.html?id=00efa6e5-a94d-4f24-be51-0ae773c6bb7b
+
+HPM6750EVKmini
+^^^^^^^^^^^^^^^^
+``￥298``
+
+.. image:: ./images/HPM6750EVKMINI.jpg
+    :target: https://www.hpmicro.com/resources/detail2.html?id=a7e6bbbf-5442-4947-8a3b-2d60e10159fb
+
+SDK
+~~~~~~~~~~~~
+``0.11.0``
+
+`HPM SDK <https://github.com/hpmicro/hpm_sdk>`_ 是HPM推出的一个完全开源，基于BSD 3-Clause许可证的综合性软件支持包，适用于先楫半导体的所有微控制器产品。
+
+此套件中包含先楫半导体微控制器上外设的底层驱动代码，集成了丰富的组件如RTOS、网络协议栈、USB栈、文件系统等，以及相应的示例程序和文档。它提供的丰富构建块，使得用户可以更专注于业务逻辑本身。
