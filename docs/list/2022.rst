@@ -33,3 +33,10 @@
 ``RISC-V`` ``120MHz`` ``WiFi`` ``BLE5.0`` ``QFN40``
 
 :ref:`esp32c2` 不断探索性价比极限
+
+
+06-HPM6750
+~~~~~~~~~~~~
+``RISC-V`` ``816MHz`` ``Dual Core`` ``16bit ADC @2Msps``
+
+:ref:`hpm6750` 在MCU领域的性能足以封神

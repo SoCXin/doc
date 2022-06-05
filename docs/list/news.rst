@@ -77,3 +77,8 @@
       - 高性能双核WiFi/BLE5.0 SoC，带USB OTG
 
 
+.. toctree::
+
+    :maxdepth: 1
+
+    历史余温  <history>
