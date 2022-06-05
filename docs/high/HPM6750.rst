@@ -13,8 +13,10 @@ HPM6750
 Xin简介
 -----------
 
+.. image:: ./images/HPM6750s.png
+    :target: https://www.hpmicro.com/product/summary.html?id=d7fdb78f-1fa5-43be-be08-b97b405b65f0
 
-https://www.hpmicro.com/index.html
+
 
 .. contents::
     :local:
@@ -58,3 +60,22 @@ https://www.hpmicro.com/index.html
 
 * 电压范围：1.71 to 3.6 V
 * 功耗范围：
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
+
+.. image:: ./images/HPM6750l.png
+    :target: https://www.hpmicro.com/index.html
+
