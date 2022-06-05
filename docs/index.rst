@@ -51,7 +51,7 @@ Xin
       - :ref:`NO_013`
       - :ref:`ch552`
       - :ref:`gd32e230`
-      - :ref:`esp32s3`
+      - :ref:`hpm6750`
     * - :ref:`gd32v103`
       - :ref:`nrf52832`
       - :ref:`NO_010`
@@ -72,9 +72,9 @@ Xin
     :caption: 内核相关
     :maxdepth: 1
 
-    架构分类  <architecture/index>
-    性能量化  <architecture/level>
-    技术知识  <architecture/core>
+    内核架构  <architecture/index>
+    运算性能  <architecture/level>
+    片上资源  <architecture/core>
 
 .. toctree::
     :caption: 厂商相关

@@ -16,7 +16,7 @@ Classification
     :header-rows:  1
 
     * - :ref:`architecture`
-      - Series
+      - Typical Series
       - :ref:`CoreMark`
       - :ref:`consumption`
     * - :ref:`cortex_m`

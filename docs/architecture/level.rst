@@ -1,14 +1,14 @@
 
 .. _level:
 
-性能分级
+运算性能
 ===============
 
 
 .. list-table::
     :header-rows:  1
 
-    * -
+    * - :ref:`classification`
       - :ref:`level1`
       - :ref:`level2`
       - :ref:`level3`
@@ -81,27 +81,6 @@
 
 `Level Mark <https://github.com/SoCXin/Level>`_ : :ref:`frequency`/:ref:`CoreMark`/:ref:`Geekbench`
 
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`level1`
-      - :ref:`level2`
-      - :ref:`level3`
-      - :ref:`level4`
-      - :ref:`level5`
-      - :ref:`level6`
-      - :ref:`level7`
-      - :ref:`level8`
-      - :ref:`level9`
-    * - :ref:`level1_cnt`
-      - :ref:`level2_cnt`
-      - :ref:`level3_cnt`
-      - :ref:`level4_cnt`
-      - :ref:`level5_cnt`
-      - :ref:`level6_cnt`
-      -
-      -
-      -
 
 .. contents::
     :local:
