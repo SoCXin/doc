@@ -82,9 +82,6 @@
 `Level Mark <https://github.com/SoCXin/Level>`_ : :ref:`frequency`/:ref:`CoreMark`/:ref:`Geekbench`
 
 
-.. contents::
-    :local:
-    :depth: 1
 
 
 .. _level1:
@@ -357,5 +354,33 @@ L9
 * 9000:1248/4181
 * 8Gen1:1235/3831
 
+.. _level_ai:
+
+AI加速
+--------------
 
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`ai`
+      - L1(≤200GOPS)
+      - L2(≤400GOPS)
+      - L3(≤1 TOPS)
+      - L4(≤4 TOPS)
+      - L5(≤9 TOPS)
+      - L6(Above)
+    * - :ref:`v831`
+      - 200G
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`eai80`
+      -
+      - 300G
+      -
+      -
+      -
+      -

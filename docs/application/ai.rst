@@ -63,30 +63,6 @@ Cube-AI
 -----------
 
 
-.. list-table::
-    :header-rows:  1
-
-    * - 性能分级
-      - L4(≤400DMIPS)
-      - L5(≤800DMIPS)
-      - L6(≤1600DMIPS)
-      - L7(≤4 TOPS)
-      - L8(≤20TOPS)
-      - L9 (Above)
-    * - :ref:`esp32s3`
-      - √
-      -
-      -
-      -
-      -
-      -
-    * - :ref:`eai80`
-      - √
-      - 500 DMIPS
-      -
-      -
-      -
-      -
 
 可以在端侧部署算法的嵌入式平台，相对传统的计算分离体系，拥有更高的集成度和灵活度
 
@@ -95,7 +71,7 @@ Cube-AI
     :depth: 1
 
 
-SoC平台
+MCU平台
 ~~~~~~~~~~~
 
 .. list-table::
@@ -106,21 +82,21 @@ SoC平台
       - Freq
       - RAM
       - Flash
-      - NPU
+      - ML(INT8)
       - Package
     * - :ref:`k210`
       - :ref:`riscv`
       - 400 MHz
       - 8 MB
       -
-      - 0.23TOPS INT8
+      - 0.23TOPS
       - BGA144
     * - :ref:`k510`
       - :ref:`riscv`
       - 800 MHz
       -
       -
-      - 2.5TOPS INT8
+      - 2.5TOPS
       - BGA144
     * - :ref:`v831`
       - :ref:`cortex_a7`
@@ -143,20 +119,19 @@ SoC平台
       -
       -
       - LFBGA231
+    * - :ref:`eai80`
+      - :ref:`cortex_m4`
+      - 200 MHz
+      - 8 MB
+      - 8 MB
+      - :ref:`eai80_npu`
+      - LQFP100
 
 
 
 
-NPU平台
-~~~~~~~~~~~
 
-.. toctree::
-    :maxdepth: 1
-
-    Coral TPU <coral>
-
-
-ARM平台
+APU平台
 ~~~~~~~~~~~
 
 .. list-table::
@@ -188,25 +163,11 @@ ARM平台
       -
 
 
-
-MCU平台
+NPU平台
 ~~~~~~~~~~~
 
-.. list-table::
-    :header-rows:  1
+.. toctree::
+    :maxdepth: 1
 
-    * - :ref:`ic`
-      - :ref:`architecture`
-      - Freq
-      - RAM
-      - Flash
-      - NPU
-      - Package
-    * - :ref:`eai80`
-      - :ref:`cortex_m4`
-      - 200 MHz
-      - 8 MB
-      - 8 MB
-      - :ref:`eai80_npu`
-      - LQFP100
+    Coral TPU <coral>
 

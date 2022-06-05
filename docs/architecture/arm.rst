@@ -169,6 +169,13 @@ Cortex-M
       - 80
       - 1.25
       - 3.32
+    * - :ref:`cortex_m55`
+      -
+      - Thumb-2
+      - :ref:`armv8`
+      -
+      -
+      -
     * - :ref:`cortex_m7`
       - 3
       - Thumb-2
@@ -176,5 +183,14 @@ Cortex-M
       - 80
       - 2.14
       - 5.04
+    * - :ref:`cortex_m85`
+      -
+      - Thumb-2
+      - :ref:`armv8`
+      -
+      - 3.13
+      - 6.28
+
+
 
 

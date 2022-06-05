@@ -10,9 +10,9 @@ Cortex-M85
 
 相比 :ref:`cortex_m55` 性能提高了85%，与前性能冠军 :ref:`cortex_m7` 相比，标量性能提高了30%。
 
-Cortex-M85还增加了Arm Helium技术，支持诸如高保真音频处理等苛刻的机器学习用例，无需增加DSP，成为可用于传统和机器学习工作负载的最快的M系列CPU。
+Cortex-M85还增加了Arm :ref:`helium` 技术，支持诸如高保真音频处理等苛刻的机器学习用例，无需增加DSP，成为可用于传统和机器学习工作负载的最快的M系列CPU。
 
-Arm Helium技术是Arm Cortex-M处理器系列的M型矢量扩展（M-Profile Vector Extension MVE），可为机器学习和数字信号处理应用程序带来显著的性能提升。
+Arm :ref:`helium` 技术是Arm Cortex-M处理器系列的M型矢量扩展（M-Profile Vector Extension MVE），可为机器学习和数字信号处理应用程序带来显著的性能提升。
 
 Cortex-M85是第一款提供超过 6 CoreMarks/MHz 和超过 3 DMIPS/MHz 的 Cortex-M，Cortex-M85的出现，让Cortex-M 拥有了接近Cortex-A的性能，而又保持了Cortex-M微控制器的传统优点，如确定性、低中断延迟和先进的低功耗管理模式等。
 
@@ -29,4 +29,10 @@ Cortex-M85的特点包括：
 .. note::
     预计在2022年内会有基于Cortex-M85的MCU发布，在工具方面也更新到了 Keil MDK v5.37 版本，编译器也来到了Arm Compiler 6.18版本。
 
+.. _helium:
+
+Helium
+--------------
+
+`Arm Helium <https://www.arm.com/technologies/helium>`_
 
