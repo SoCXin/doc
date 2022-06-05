@@ -9,7 +9,7 @@ CH552
 
 `datasheet <http://www.wch.cn/products/CH552.html>`_ : ``USB`` ``8051`` ``24MHz`` ``LDO`` ``Type-C``
 
-传承 : CH552 < :ref:`ch549`
+升级迭代 : CH552 -> :ref:`ch549`
 
 .. contents::
     :local:

@@ -4,11 +4,13 @@
 CH554
 ========
 
-* 关键词：``USB`` ``E8051`` ``24MHz`` ``LDO`` ``Type-C``
-* 资源库：`GitHub <https://github.com/SoCXin/CH554>`_
+`GitHub <https://github.com/SoCXin/CH554>`_ : ``USB`` ``E8051`` ``24MHz`` ``LDO`` ``Type-C``
+
+升级迭代 : CH554 -> :ref:`ch549`
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------

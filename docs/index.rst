@@ -42,7 +42,7 @@ Xin
       - :ref:`top`
     * - :ref:`esp32`
       - :ref:`stm32f103`
-      - :ref:`NO_017`
+      - :ref:`ch32f208`
       - :ref:`stc8`
       - :ref:`gd32f130`
       - :ref:`stm32h730`

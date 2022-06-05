@@ -51,10 +51,8 @@
       - 推荐理由
     * - :ref:`NO_001` (264KB SRAM/QFN56)
       - $0.70==Dual Cortex-M0，Arduino/MicroPython/USB-OTG
-    * - :ref:`NO_002` (18KB SRAM/QFN28)
-      - 超高性价比￥2.0 BLE MCU，USB-OTG及多串口、8 TouchKey
-    * - :ref:`NO_003` (288KB SRAM/QFN56)
-      - 6x UART，WiFi+BT，4x16 bit :ref:`sigma_delta` ADC(1KSPS)
+    * - :ref:`NO_002`
+      - 高性能MCU产品，划时代革新
     * - :ref:`NO_004`
       - 拥有5个独立12bit ADC，拥有 :ref:`stm32_hrtim`
     * - :ref:`NO_005`
@@ -63,8 +61,6 @@
       - WiFi/BLE :ref:`riscv` MCU
     * - :ref:`NO_007`
       - 战略级MCU，STM32全家桶外设主频都顶配
-    * - :ref:`NO_008` (32KB SRAM/QFN28)
-      - 集成以太网MAC和PHY，支持BLE4.2和USB FS OTG
     * - :ref:`NO_009` (QFN68)
       - 支持USB SS和USB HS, :ref:`ch569_serdes` 控制器及PHY, :ref:`ch569_hspi`
     * - :ref:`NO_010`
