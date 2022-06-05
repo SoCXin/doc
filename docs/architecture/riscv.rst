@@ -4,18 +4,29 @@
 RISC-V
 ==================
 
-``BSD``
+该架构基于 `BSD <https://docs.os-q.com/license.html>`_ 协议开源
 
 `GitHub <https://github.com/SoCXin/RISC-V>`_
-
-
-.. contents::
-    :local:
 
 
 .. image:: ./images/RISC-V.png
     :target: https://riscv.org/
 
+.. contents::
+    :local:
+    :depth: 1
+
+产品简介
+--------------
+
+.. toctree::
+    :maxdepth: 1
+
+    HPM6750 <../high/HPM6750>
+
+
+架构简介
+--------------
 
 CPU主要有两大指令集：
 
@@ -33,27 +44,29 @@ CPU主要有两大指令集：
 
 
 
-
 .. _xt:
 
 XuanTie
---------------
+~~~~~~~~~~~~~~
 
+.. contents::
+    :local:
+    :depth: 1
 
 .. _c906:
 
 C906
-~~~~~~~~~~~~~~
+^^^^^^^^^^^
 
 .. _xt804:
 
 XT804
-~~~~~~~~~~~~~~
+^^^^^^^^^^^
 
 .. _qingke:
 
 Qingke
---------------
+~~~~~~~~~~~~~~
 ``WCH``
 
 :ref:`wch_riscv`

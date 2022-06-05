@@ -102,6 +102,7 @@
 /EAI80.html -> high/EAI80.html
 /K210.html -> high/K210.html
 /K510.html -> high/K510.html
+/HPM6750.html -> high/HPM6750.html
 /D1.html -> allwinner/D1.html
 /SP7021.html -> high/SP7021.html
 /SSD201.html -> high/SSD201.html

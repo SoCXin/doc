@@ -4,8 +4,8 @@
 APT32F706
 =============
 
-* 关键词：``C906`` ``600MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/APT32F706>`_
+`GitHub <https://github.com/SoCXin/APT32F706>`_ : ``C906`` ``600MHz``
+
 
 .. contents::
     :local:
