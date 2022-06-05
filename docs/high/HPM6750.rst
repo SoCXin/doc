@@ -77,7 +77,9 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
-:ref:`hpm6750` 系列主要对标 :ref:`imx_rt` 系列
+.. image:: ./images/HPM6750c.png
+
+就性能表现和定位而言，:ref:`hpm6750` 系列主要对标NXP :ref:`imx_rt` 系列
 
 .. list-table::
     :header-rows:  1
@@ -96,7 +98,7 @@ Xin选择
       - 2 MB
       - 2xHS/2xGb
       - ￥55
-      -
+      - ?
       - BGA289/BGA196
     * - :ref:`rt1176`
       - :ref:`cortex_m7`
@@ -104,7 +106,7 @@ Xin选择
       - 2 MB
       - 2xHS/2xGb
       - ￥54.36
-      -
+      - 150µA/MHz
       - BGA289
 
 .. _rt1176:
