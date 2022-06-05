@@ -45,7 +45,7 @@ Xin
       - :ref:`ch32f208`
       - :ref:`stc8`
       - :ref:`gd32f130`
-      - :ref:`stm32h730`
+      - :ref:`rt1170`
     * - :ref:`rp2040`
       - :ref:`esp32`
       - :ref:`NO_013`
@@ -57,7 +57,7 @@ Xin
       - :ref:`NO_010`
       - :ref:`ch573`
       - :ref:`mm32f031`
-      - :ref:`rt1060`
+      - :ref:`stm32h730`
 
 .. toctree::
     :caption: 应用分类

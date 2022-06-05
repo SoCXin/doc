@@ -4,7 +4,10 @@
 HPM6750
 ===============
 
-`GitHub <https://github.com/SoCXin/HPM6750>`_ : ``RISC-V`` ``816MHz`` ``16 bit ADC``
+.. image:: https://github.com/SoCXin/HPM6750/workflows/demo/badge.svg
+    :target: https://github.com/SoCXin/HPM6750
+
+`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``816MHz`` ``Dual Core`` ``16bit ADC @2Msps`` ``12bit ADC @5Msps``
 
 .. contents::
     :local:
@@ -30,11 +33,11 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2022年4月
-* 参考价格：￥40
+* 参考价格：￥55
 * 制程工艺：
 * 供货周期：
 * 处理性能：9220 :ref:`CoreMark`, 4651 :ref:`DMIPS`
-* 封装规格：289BGA(14×14 0.8P)/196BGA(10×10 0.65P)
+* 封装规格：289BGA (14×14P0.8) / 196BGA (10×10P0.65)
 * 运行环境：-40°C to 105/125°C
 * RAM容量： 2088 KB
 * ROM容量：
@@ -45,12 +48,16 @@ Xin简介
 ^^^^^^^^^^^
 
 * 816 MHz :ref:`riscv` Dual Core
-* 支持多种外部存储器：QSPI/OSPI NOR Flash, PSRAM, HyperRAM/HyperFlash, 16b/32b SDRAM 166 MHz, SD卡和eMMC
-* 显示设备：24位RGB LCD控制器，1366 x 768，60fps，双目摄像头，2D图形加速和JPEG编解码
-* 通讯接口：2个高速USB OTG，集成PHY，2个千兆网口，4个CAN FD，17个UART，4个SPI，4个I2C
-* 电机系统：4组共32路PWM输出，精度达2.5ns，4个正交编码器接口和4个霍尔传感器接口
-* 模拟外设：3 个 12 位高速 ADC 5MSPS，1 个 16 位高精度 ADC2MSPS，4 个模拟比较器，多达 28 个模拟输入通道
-* 安全：集成 AES-128/256, SHA-1/256 加速引擎，支持固件软件签名认证、加密启动和加密执行
+* 2x USB HS OTG (集成PHY)
+* 2x 千兆网口
+* 4个CAN FD，17个UART，4个SPI，4个I2C
+* 16bit ADC @2Msps
+* 3x 12bit ADC @5Msps
+* 4 个模拟比较器，多达 28 个模拟输入通道
+* QSPI/OSPI NOR Flash, PSRAM, HyperRAM/HyperFlash, 16b/32b SDRAM 166 MHz, SD卡和eMMC
+* 24位RGB LCD控制器，1366 x 768，60fps，双目摄像头，2D图形加速和JPEG编解码
+* 4组共32路PWM输出，精度达2.5ns，4个正交编码器接口和4个霍尔传感器接口
+* 集成 AES-128/256, SHA-1/256 加速引擎
 
 芯片架构
 ~~~~~~~~~~~
@@ -102,6 +109,25 @@ Xin选择
 
 型号对比
 ~~~~~~~~~
+
+* HPM6x50系列相比同级的HPM6x30系列差异在CAN FD和CAN
+* HPM67xx系列相比HPM64xx系列为核心数量差异
+
+.. _hpm6350:
+
+HPM6350
+^^^^^^^^^^^
+``RISC-V`` ``3390CoreMark@648MHz`` ``￥28``
+
+.. image:: ./images/HPM6350l.png
+    :target: https://www.hpmicro.com/index.html
+
+.. _hpm6450:
+
+HPM6450
+^^^^^^^^^^^
+``RISC-V`` ``3390CoreMark@648MHz`` ``￥45``
+
 
 版本对比
 ~~~~~~~~~
