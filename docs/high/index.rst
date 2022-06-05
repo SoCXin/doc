@@ -25,29 +25,22 @@ MCU定位
       - :ref:`CoreMark`
       - :ref:`level`
       - SRAM
-      - Interface
+      - :ref:`consumption`
       - Package
     * - :ref:`hpm6750`
       - :ref:`riscv`
       - 9220
       - :ref:`level6`
+      - 2 MB
       -
-      -
-      -
-    * - :ref:`stm32h730`
+      - BGA289
+    * - :ref:`rt1170`
       - :ref:`cortex_m7`
-      - 2778
-      - :ref:`level5`
-      - 1 MB
-      - 35
-      - 100/144/176
-    * - :ref:`stm32h745`
-      - :ref:`cortex_m7`
-      - 3224
-      - :ref:`level5`
-      - 1 MB
+      - 6468
+      - :ref:`level6`
+      - 2 MB
       -
-      - 100/144/176
+      - BGA289
     * - :ref:`rt1060`
       - :ref:`cortex_m7`
       - 3020
@@ -55,13 +48,20 @@ MCU定位
       - 1 MB
       -
       - BGA196
-    * - :ref:`rt1170`
+    * - :ref:`stm32h745`
       - :ref:`cortex_m7`
-      - 6468
-      - :ref:`level6`
+      - 3224
+      - :ref:`level5`
+      - 1 MB
       -
-      -
-      -
+      - 100/144/176
+    * - :ref:`stm32h730`
+      - :ref:`cortex_m7`
+      - 2778
+      - :ref:`level5`
+      - 1 MB
+      - 147µ/MHz
+      - 100/144/176
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1182

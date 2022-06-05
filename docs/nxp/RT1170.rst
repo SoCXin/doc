@@ -8,6 +8,7 @@ RT1170
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
@@ -48,6 +49,8 @@ Xin选择
 
 .. contents::
     :local:
+    :depth: 1
+
 
 品牌对比
 ~~~~~~~~~~
@@ -82,6 +85,23 @@ Xin选择
 
 系列对比
 ~~~~~~~~~~
+
+.. _rt1180:
+
+RT1180
+^^^^^^^^^^^
+
+.. image:: ./images/i.MX-RT1180-Block-Diagram.svg
+    :target: https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1180-dual-core-crossover-mcu-with-time-sensitive-networking-switch-and-integrated-edgelock-secure-enclave:i.MX-RT1180
+
+跨界MCU系列包括千兆时间敏感网络（TSN）交换机，支持实时丰富的网络集成，可处理时间敏感和工业实时通信。i.MX RT1180支持多种协议，桥接实时以太网和Industry 4.0系统之间的通信。
+
+该系列集成先进的EdgeLock安全区域，基于800 MHz Cortex-M7和240 MHz Cortex-M33双核架构，可实现设计灵活性。
+
+* 800 MHz :ref:`cortex_m7`
+* 240 MHz :ref:`cortex_m33` (可选)
+* 1.5 MB SRAM
+* 289MAPBGA/144MAPBGA
 
 型号对比
 ~~~~~~~~~~
