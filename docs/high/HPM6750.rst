@@ -4,6 +4,8 @@
 HPM6750
 ===============
 
+.. image:: https://github.com/SoCXin/HPM6750/workflows/sdk/badge.svg
+    :target: https://github.com/SoCXin/hpm_sdk
 .. image:: https://github.com/SoCXin/HPM6750/workflows/demo/badge.svg
     :target: https://github.com/SoCXin/HPM6750
 
@@ -75,7 +77,7 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
-该产品形态的现有市场的主要对比品牌 :ref:`nxp` ，对标产品为 :ref:`imx_rt`
+:ref:`hpm6750` 系列主要对标 :ref:`imx_rt` 系列
 
 .. list-table::
     :header-rows:  1
@@ -96,7 +98,7 @@ Xin选择
       - ￥55
       -
       - BGA289/BGA196
-    * - :ref:`rt1170`
+    * - :ref:`rt1176`
       - :ref:`cortex_m7`
       - 6468(2)
       - 2 MB
@@ -107,16 +109,20 @@ Xin选择
 
 .. _rt1176:
 
-RT1176
+RT1176C
 ^^^^^^^^^^^
 ``Cortex-M4 + Cortex-M7`` ``MIMXRT1176CVM8A`` ``￥54.36``
+
+:ref:`rt1176` 作为 :ref:`rt1170` 系列中的一款型号，相对 :ref:`hpm6750` 的参数和定价都非常接近
+
+RT1176C的大核 :ref:`cortex_m7` 最高 800MHz, 小核 :ref:`cortex_m4` 最高 400MHz, LFBGA289封装0.8P，工作温度范围：-40 to 105 ，官方定价 10K @ CNY54.36
 
 
 型号对比
 ~~~~~~~~~
 
-* HPM6x6x/HPM6x5x/HPM6x3x系列间差异在 CAN FD
-* HPM67xx系列相比HPM64xx系列差异为核心数量
+.. note::
+    HPM6x6x/HPM6x5x/HPM6x3x系列间差异在 CAN FD，HPM67xx系列相比HPM64xx系列差异为核心数量
 
 .. _hpm6350:
 
