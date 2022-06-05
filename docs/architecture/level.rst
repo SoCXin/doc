@@ -354,18 +354,18 @@ L9
 * 9000:1248/4181
 * 8Gen1:1235/3831
 
-.. _level_ai:
+.. _level_npu:
 
-AI加速
+NPU
 --------------
 
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ai`
+    * - :ref:`level_npu`
       - L1(≤200GOPS)
-      - L2(≤400GOPS)
+      - L2(≤500GOPS)
       - L3(≤1 TOPS)
       - L4(≤4 TOPS)
       - L5(≤9 TOPS)
