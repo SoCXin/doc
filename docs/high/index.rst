@@ -9,9 +9,12 @@
 
 旗舰正义，通过最高水平产品的对比，发现不同厂商的实力及市场决策。
 
-.. _mcu:
 
-MCU
+.. contents::
+    :local:
+    :depth: 1
+
+MCU定位
 -----------
 
 .. list-table::
@@ -24,6 +27,13 @@ MCU
       - SRAM
       - Interface
       - Package
+    * - :ref:`hpm6750`
+      - :ref:`riscv`
+      - 9220
+      - :ref:`level6`
+      -
+      -
+      -
     * - :ref:`stm32h730`
       - :ref:`cortex_m7`
       - 2778
@@ -70,12 +80,11 @@ MCU
 .. toctree::
     :maxdepth: 1
 
-    APT32F706 <APT32F706>
     EAI80 <EAI80>
     SP7021 <SP7021>
 
 
-APU
+APU定位
 -----------
 
 .. toctree::
@@ -84,5 +93,4 @@ APU
     BCM2711 <BCM2711>
     SSD201 <SSD201>
     A311D <A311D>
-    K210 <K210>
-    K510 <K510>
+

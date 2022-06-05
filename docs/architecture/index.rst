@@ -12,6 +12,56 @@
 Classification
 ---------------
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`architecture`
+      - Series
+      - :ref:`CoreMark`
+      - :ref:`consumption`
+    * - :ref:`cortex_m`
+      - :ref:`cortex_m0`
+      - 1.62/MHz
+      -
+    * -
+      - :ref:`cortex_m3`
+      - 2.19/MHz
+      -
+    * -
+      - :ref:`cortex_m4`
+      - 2.19/MHz
+      -
+    * -
+      - :ref:`cortex_m7`
+      - 5.0/MHz
+      -
+    * -
+      - :ref:`cortex_m85`
+      - 6.28/MHz
+      -
+    * - :ref:`mips`
+      - :ref:`24KEc`
+      -
+      -
+    * -
+      - :ref:`1004KEc`
+      -
+      -
+    * -
+      - :ref:`xtensa_lx7`
+      -
+      -
+    * - :ref:`riscv`
+      - :ref:`xt`
+      -
+      -
+    * -
+      - :ref:`qingke`
+      -
+      -
+
+
+
 
 .. toctree::
     :maxdepth: 1
@@ -22,7 +72,6 @@ Classification
     FPGA    <../fpga/index>
     RISC-V  <riscv>
     MCS-51  <MCS51>
-
 
 
 
@@ -172,8 +221,16 @@ ULPMark-CoreMark 活跃功耗，使用 CoreMark 作为工作负载
 Architecture
 ---------------
 
+CPU主要有两大指令集架构：
+
+* 复杂指令集CISC（Complex Intruction Set Computer，CISC）架构(x86)
+* 精简指令集RISC（Reduced Intruction Set Computer，RISC）架构(ARM、MIPS和RISC-V等)
+
+
 .. contents::
     :local:
+    :depth: 1
+
 
 .. _neumann:
 
