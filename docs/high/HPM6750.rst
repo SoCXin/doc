@@ -9,9 +9,10 @@ HPM6750
 
 `HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``816MHz`` ``Dual Core`` ``16bit ADC @2Msps`` ``12bit ADC @5Msps``
 
+:ref:`performance` : :ref:`cortex_m85` > ``32-bit RISC-V 5.65 Coremark/MHz`` > :ref:`cortex_m7`
+
 .. contents::
     :local:
-    :depth: 1
 
 Xin简介
 -----------
@@ -19,11 +20,8 @@ Xin简介
 .. image:: ./images/HPM6750s.png
     :target: https://www.hpmicro.com/product/summary.html?id=d7fdb78f-1fa5-43be-be08-b97b405b65f0
 
-
-
 .. contents::
     :local:
-    :depth: 1
 
 规格参数
 ~~~~~~~~~~~
@@ -65,7 +63,7 @@ Xin简介
 功耗参数
 ^^^^^^^^^^^
 
-* 电压范围：1.71 to 3.6 V
+* 电压范围：3.0 to 3.6 V
 * 功耗范围：
 
 Xin选择
@@ -87,23 +85,23 @@ Xin选择
       - :ref:`CoreMark`
       - SRAM
       - USB/NET
-      - :ref:`level_npu`
+      - Cost
       - :ref:`consumption`
       - Package
     * - :ref:`hpm6750`
       - :ref:`riscv`
-      - 9220
+      - 9220(2)
       - 2 MB
       - 2xHS/2xGb
+      - ￥55
       -
-      -
-      - BGA289
+      - BGA289/BGA196
     * - :ref:`rt1170`
       - :ref:`cortex_m7`
-      - 6468
+      - 6468(2)
       - 2 MB
       - 2xHS/2xGb
-      -
+      - $10.38
       -
       - BGA289
 
@@ -122,12 +120,12 @@ HPM6350
 .. image:: ./images/HPM6350l.png
     :target: https://www.hpmicro.com/index.html
 
-.. _hpm6450:
+* 12bit DAC
+* 10/100 Mbps 网口
+* eLQFP144/BGA116
 
-HPM6450
-^^^^^^^^^^^
-``RISC-V`` ``3390CoreMark@648MHz`` ``￥45``
-
+.. image:: ./images/HPM6350d.png
+    :target: http://www.hpmicro.com/resources/resources.html#row5
 
 版本对比
 ~~~~~~~~~
@@ -135,3 +133,8 @@ HPM6450
 .. image:: ./images/HPM6750l.png
     :target: https://www.hpmicro.com/index.html
 
+.. _hpm6450:
+
+HPM6450
+^^^^^^^^^^^
+``RISC-V`` ``￥45``

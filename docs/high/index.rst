@@ -29,14 +29,14 @@ MCU定位
       - Package
     * - :ref:`hpm6750`
       - :ref:`riscv`
-      - 9220
+      - 9220(2)
       - :ref:`level6`
       - 2 MB
       -
       - BGA289
     * - :ref:`rt1170`
       - :ref:`cortex_m7`
-      - 6468
+      - 6468(2)
       - :ref:`level6`
       - 2 MB
       -
@@ -60,7 +60,7 @@ MCU定位
       - 2778
       - :ref:`level5`
       - 1 MB
-      - 147µ/MHz
+      - 147µA/MHz
       - 100/144/176
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
