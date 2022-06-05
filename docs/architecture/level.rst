@@ -8,7 +8,7 @@
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`CoreMark`
+    * -
       - :ref:`level1`
       - :ref:`level2`
       - :ref:`level3`
@@ -60,11 +60,11 @@
       - √
     * - :ref:`riscv`
       - √
+      - :ref:`gd32v103`
+      - :ref:`esp32c3`
       - √
-      - √
-      - √
-      - √
-      - √
+      - :ref:`k210`
+      - :ref:`hpm6750`
       - √
       - √
       - √
@@ -78,7 +78,6 @@
       - √
       - √
       - X
-
 
 `Level Mark <https://github.com/SoCXin/Level>`_ : :ref:`frequency`/:ref:`CoreMark`/:ref:`Geekbench`
 
@@ -111,7 +110,7 @@
 
 .. _level1:
 
-L1(<60)
+L1
 --------------
 ``Frequency < 60MHz``
 
@@ -140,7 +139,7 @@ num:1
 
 .. _level2:
 
-L2(<120)
+L2
 --------------
 ``Frequency < 120MHz``
 
@@ -169,7 +168,7 @@ num:1
 
 .. _level3:
 
-L3(<240)
+L3
 --------------
 ``Frequency < 240MHz``
 
@@ -227,7 +226,7 @@ num:6
 
 .. _level4:
 
-L4(<2k)
+L4
 --------------
 ``CoreMark < 2000``
 
@@ -273,9 +272,9 @@ num:4
 
 .. _level5:
 
-L5(<4k)
+L5
 --------------
-``CoreMark < 4000``
+``CoreMark < 5000``
 
 .. list-table::
     :header-rows:  1
@@ -319,9 +318,9 @@ num:4
 
 .. _level6:
 
-L6(<8k)
+L6
 --------------
-``CoreMark < 8000``
+``CoreMark > 5000``
 
 .. list-table::
     :header-rows:  1
@@ -331,40 +330,46 @@ L6(<8k)
       - :ref:`CoreMark`
       - :ref:`frequency`
       - :ref:`consumption`
-      - :ref:`level5`
+      -
+    * - :ref:`hpm6750`
+      - :ref:`riscv`
+      - 9220(2)
+      - 816(MHz)
+      -
+      -
     * - :ref:`rt1170`
       - :ref:`cortex_m7`
       - 6468(2)
       - 1.0(GHz)
       -
-      - 1
+      -
     * - :ref:`v831`
       - :ref:`cortex_a7`
       - 5000+(2)
       - 800(MHz)
       -
-      - 2
+      -
 
 .. _level6_cnt:
 
-num:2
+num:3
 ~~~~~~~~~
 
 .. _level7:
 
-L7(>1K)
+L7
 --------------
 ``Geekbench > 1000``
 
 .. _level8:
 
-L8(>2K)
+L8
 --------------
 ``Geekbench > 2000``
 
 .. _level9:
 
-L9(>4K)
+L9
 --------------
 ``Geekbench > 4000``
 

@@ -4,7 +4,7 @@
 HPM6750
 ===============
 
-`标签 <https://github.com/SoCXin/HPM6750>`_ : ``RISC-V`` ``800MHz`` ``16 bit ADC``
+`GitHub <https://github.com/SoCXin/HPM6750>`_ : ``RISC-V`` ``816MHz`` ``16 bit ADC``
 
 .. contents::
     :local:

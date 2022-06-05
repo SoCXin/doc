@@ -20,7 +20,7 @@ MCU定位
 .. list-table::
     :header-rows: 1
 
-    * - :ref:`mcu`
+    * -
       - :ref:`architecture`
       - :ref:`CoreMark`
       - :ref:`level`
