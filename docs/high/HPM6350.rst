@@ -1,0 +1,86 @@
+
+.. _hpm6350:
+
+HPM6350
+===============
+
+.. image:: https://github.com/SoCXin/HPM6750/workflows/sdk/badge.svg
+    :target: https://github.com/SoCXin/hpm_sdk
+.. image:: https://github.com/SoCXin/HPM6750/workflows/demo/badge.svg
+    :target: https://github.com/SoCXin/HPM6750
+
+`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``3390CoreMark@648MHz`` ``￥28``
+
+:ref:`performance` : :ref:`cortex_m85` > ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+
+
+.. contents::
+    :local:
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2022年4月
+* 参考价格：￥28
+* 制程工艺：
+* 供货周期：
+* 处理性能：3390 :ref:`CoreMark`
+* 封装规格：eLQFP144/BGA116
+* 运行环境：-40°C to 105/125°C
+* RAM容量：800KB
+* ROM容量：
+* Flash容量：
+
+
+特征参数
+^^^^^^^^^^^
+
+* 648 MHz :ref:`riscv` Dual Core
+* 2x USB HS OTG (集成PHY)
+* 10/100 Mbps 网口
+* 3x 16bit ADC @2Msps
+* 12bit DAC
+
+芯片架构
+~~~~~~~~~~~
+
+采用晶心 Andes D45 :ref:`riscv` 核心
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：3.0 to 3.6 V
+* 功耗范围：
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~
+
+
+型号对比
+~~~~~~~~~
+
+.. image:: ./images/HPM6350l.png
+    :target: https://www.hpmicro.com/index.html
+
+版本对比
+~~~~~~~~~
+
+.. image:: ./images/HPM6350d.png
+    :target: http://www.hpmicro.com/resources/resources.html#row5

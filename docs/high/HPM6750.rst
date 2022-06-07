@@ -62,6 +62,8 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~
 
+采用晶心 Andes D45 :ref:`riscv` 核心
+
 功耗参数
 ^^^^^^^^^^^
 
@@ -126,21 +128,8 @@ RT1176C的大核 :ref:`cortex_m7` 最高 800MHz, 小核 :ref:`cortex_m4` 最高 
 .. note::
     HPM6x6x/HPM6x5x/HPM6x3x系列间差异在 CAN FD，HPM67xx系列相比HPM64xx系列差异为核心数量
 
-.. _hpm6350:
+:ref:`hpm6750` 的低配版本包括 :ref:`hpm6450` 和 :ref:`hpm6350`
 
-HPM6350
-^^^^^^^^^^^
-``RISC-V`` ``3390CoreMark@648MHz`` ``￥28``
-
-.. image:: ./images/HPM6350l.png
-    :target: https://www.hpmicro.com/index.html
-
-* 12bit DAC
-* 10/100 Mbps 网口
-* eLQFP144/BGA116
-
-.. image:: ./images/HPM6350d.png
-    :target: http://www.hpmicro.com/resources/resources.html#row5
 
 版本对比
 ~~~~~~~~~

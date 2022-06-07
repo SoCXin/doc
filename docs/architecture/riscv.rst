@@ -18,6 +18,7 @@ RISC-V
     :maxdepth: 1
 
     HPM6750 <../high/HPM6750>
+    HPM6350 <../high/HPM6350>
     K210 <../high/K210>
     K510 <../high/K510>
 
