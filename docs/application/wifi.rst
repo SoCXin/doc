@@ -80,6 +80,7 @@ Wi-Fi
 
     W801 <../miscellaneous/W801>
     Hi3861 <../miscellaneous/Hi3861>
+    AIC8800M <../miscellaneous/AIC8800M>
 
 
 .. note::

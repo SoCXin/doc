@@ -99,6 +99,7 @@
 /HC32M120.html -> miscellaneous/HC32M120.html
 /CS32A039.html -> miscellaneous/CS32A039.html
 /CS32G020.html -> miscellaneous/CS32G020.html
+/AIC8800M.html -> miscellaneous/AIC8800M.html
 /EAI80.html -> high/EAI80.html
 /K210.html -> high/K210.html
 /K510.html -> high/K510.html

@@ -1,0 +1,46 @@
+
+.. _aic8800:
+
+AIC8800M
+===============
+
+`标签 <https://github.com/SoCXin/AIC8800M>`_ : ``WiFi`` ``BT5.0`` ``USB 2.0``
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. contents::
+    :local:
+    :depth: 1
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 封装规格：
+* 运行环境：
+* RAM容量：992 KB
+* Flash容量：2 MB
+
+特征参数
+^^^^^^^^^^^
+
+* 992 KB RAM + 2 MB Flash
+* 双频 WiFi 2.4G/5G
+* BT5.0 EDR/BLE双模
+* USB 2.0 OTG PHY
+* QFN48 5x5mm
+* PMU 5V供电
+
+`SDK <https://github.com/vsfteam/AIC8800M_SDK_vsf>`_
