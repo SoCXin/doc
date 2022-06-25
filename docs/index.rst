@@ -71,7 +71,7 @@ Xin
 
     内核架构  <architecture/index>
     运算性能  <architecture/level>
-    片上资源  <architecture/core>
+    片上资源  <architecture/ip>
 
 .. toctree::
     :caption: 厂商相关

@@ -5,12 +5,20 @@
 ============
 
 
-主要收录配置全面比较能打的，集一个厂商所有技术优势的代表作，特別是哪些在不考虑价格和市场因素下，几乎满足所有应用场景和领域的芯品，也可以说是旗舰芯品。
-
-
 .. contents::
     :local:
     :depth: 1
+
+APU
+-----------
+
+.. toctree::
+    :maxdepth: 1
+
+    BCM2711 <BCM2711>
+    SSD201 <SSD201>
+    A311D <A311D>
+
 
 MCU
 -----------
@@ -63,9 +71,9 @@ MCU
     * - :ref:`stm32h730`
       - :ref:`cortex_m7`
       - 2778 :ref:`level5`
-      -
-      - 1 MB
       - 147µA/MHz
+      - 1 MB
+      -
       - 100/144/176
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
@@ -74,13 +82,7 @@ MCU
       - 512KB
       -
       - :ref:`esp_qfn56`
-    * - :ref:`at32f437`
-      - :ref:`cortex_m4`
-      - :ref:`level4`
-      -
-      -
-      -
-      - 64/100/144
+
 
 .. toctree::
     :maxdepth: 1
@@ -88,14 +90,4 @@ MCU
     EAI80 <EAI80>
     SP7021 <SP7021>
 
-
-APU定位
------------
-
-.. toctree::
-    :maxdepth: 1
-
-    BCM2711 <BCM2711>
-    SSD201 <SSD201>
-    A311D <A311D>
 

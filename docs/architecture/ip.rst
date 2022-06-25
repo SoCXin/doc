@@ -1,5 +1,5 @@
 
-.. _core:
+.. _ip:
 
 片上资源
 ===============
@@ -7,6 +7,12 @@
 .. contents::
     :local:
     :depth: 1
+
+IP设计
+-----------
+
+`锐成芯微 <https://www.analogcircuit.cn/>`_
+
 
 
 中断机制
