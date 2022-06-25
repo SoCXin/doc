@@ -8,11 +8,7 @@ Xin
 
 **新产品用心，芯产品用新**
 
-`SoC·芯 <https://www.SoC.Xin>`_ 做聪明的选择，屯有用的货
 
-
-.. image:: _static/images/all.png
-    :target: https://www.soc.xin
 
 .. toctree::
     :maxdepth: 1

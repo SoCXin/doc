@@ -4,7 +4,7 @@
 AIC8800M
 ===============
 
-`标签 <https://github.com/SoCXin/AIC8800M>`_ : ``WiFi`` ``BT5.0`` ``USB 2.0``
+`GitHub <https://github.com/SoCXin/AIC8800M>`_ :  :ref:`wifi` :ref:`bt` ``USB 2.0``
 
 .. contents::
     :local:

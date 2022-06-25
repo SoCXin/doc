@@ -3,7 +3,7 @@
 ESP32
 ===============
 
-`GitHub <https://github.com/SoCXin/ESP32>`_ : ``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``WiFi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``
+`GitHub <https://github.com/SoCXin/ESP32>`_ : :ref:`wifi` :ref:`bt` ``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``
 
 升级迭代 : :ref:`esp32` -> :ref:`esp32s3`
 

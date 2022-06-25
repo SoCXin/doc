@@ -40,7 +40,7 @@ ULP
 
 .. _consumption:
 
-Consumption
+能效
 ---------------
 ``运行功耗``
 

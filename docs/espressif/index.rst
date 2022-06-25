@@ -4,7 +4,7 @@ Espressif
 ==============
 ``Xtensa-LX7`` ``Xtensa-LX6`` ``RISC-V`` ``Matter`` ``Audio`` ``ULP`` ``Touch`` ``Wi-Fi`` ``BT/BLE`` ``ESP32`` ``ESP8266`` ``Arduino``
 
-`OS-Q认证:100 <http://www.OS-Q.com>`_
+`OS-Q认证 <http://www.OS-Q.com>`_
 
 .. contents::
     :local:

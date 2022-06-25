@@ -4,9 +4,11 @@
 ESP32S3
 ================
 
-`GitHub <https://github.com/SoCXin/ESP32S3>`_ : ``Xtensa LX7`` ``Dual Core`` ``240 MHz`` ``Wi-Fi`` ``BLE5.0`` ``USB1.1 OTG`` ``AI`` ``CAN`` ``Touch`` ``QFN56``
+`GitHub <https://github.com/SoCXin/ESP32S3>`_ : :ref:`wifi` :ref:`bt` ``Xtensa LX7`` ``Dual Core`` ``240 MHz`` ``BLE5.0`` ``USB1.1 OTG`` ``AI`` ``CAN`` ``Touch`` ``QFN56``
 
-传承关系 : :ref:`esp32` < ESP32-S3
+:ref:`esp32` --> ESP32-S3
+
+性能 : ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
 
 .. contents::
     :local:
@@ -38,7 +40,7 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * 运行环境：-40°C to 105°C
 * RAM容量：512 KB (PSRAM ≤ 1GB)
 * ROM容量：384 KB
-* Flash容量：0/4/8 MB (≤1GB)
+* Flash容量：0/4/8/16/32 MB (≤1GB)
 
 特征参数
 ^^^^^^^^^^^
