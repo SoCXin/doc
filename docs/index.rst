@@ -47,13 +47,13 @@ Xin
       - :ref:`esp32`
       - :ref:`NO_013`
       - :ref:`ch552`
-      - :ref:`gd32e230`
+      - :ref:`stm32l412`
       - :ref:`hpm6750`
     * - :ref:`gd32v103`
       - :ref:`nrf52832`
       - :ref:`NO_010`
       - :ref:`ch573`
-      - :ref:`mm32f031`
+      - :ref:`cc1350`
       - :ref:`stm32h730`
 
 .. toctree::

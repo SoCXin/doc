@@ -27,7 +27,7 @@ Xin简介
 * 参考价格：
 * 制程工艺：
 * 供货周期：
-* 处理性能： 142 EEMBC CoreMark
+* 处理性能： 142 :ref:`CoreMark`
 * 封装规格：VQFN32/VQFN48
 * 运行环境：
 * RAM容量：20 KB

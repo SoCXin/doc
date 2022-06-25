@@ -6,10 +6,6 @@ ESP32S3
 
 `GitHub <https://github.com/SoCXin/ESP32S3>`_ : :ref:`wifi` :ref:`bt` ``Xtensa LX7`` ``Dual Core`` ``240 MHz`` ``BLE5.0`` ``USB1.1 OTG`` ``AI`` ``CAN`` ``Touch`` ``QFN56``
 
-:ref:`esp32` --> ESP32-S3
-
-性能 : ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
-
 .. contents::
     :local:
 

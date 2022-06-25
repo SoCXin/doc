@@ -19,4 +19,6 @@ TI
     :maxdepth: 1
 
     CC2650 <CC2650>
+    CC1350 <CC1350>
+
 

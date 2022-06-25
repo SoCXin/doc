@@ -4,7 +4,7 @@
 STM32L412
 ===============
 
-* 关键词：``Cortex-M4`` ``80MHz`` ``12bit 5MSPS-ADC`` ``PGA``
+* 关键词：``Cortex-M4`` ``80MHz`` ``12bit 5MSPS-ADC`` ``PGA`` ``28 μA/MHz``
 * 资源库：`GitHub <https://github.com/SoCXin/STM32L412>`_
 
 .. contents::
