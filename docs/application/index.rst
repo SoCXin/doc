@@ -10,7 +10,6 @@ Application
     * -
       - :ref:`ai`
       - :ref:`iot`
-      - :ref:`ulp`
       - :ref:`foc`
       - :ref:`hmi`
       - :ref:`adc`
@@ -20,7 +19,6 @@ Application
       - :ref:`le`
       -
       -
-      -
 
 
 .. toctree::
@@ -28,7 +26,6 @@ Application
 
     边缘计算 AI  <ai>
     通信连接 IoT  <iot>
-    超低功耗 ULP  <ulp>
     实时驱动 FoC  <foc>
     人机交互 HMI  <hmi>
     信号转换 ADC  <adc>

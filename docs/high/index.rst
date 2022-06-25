@@ -12,7 +12,7 @@
     :local:
     :depth: 1
 
-MCU定位
+MCU
 -----------
 
 .. list-table::
@@ -41,7 +41,7 @@ MCU定位
       - BGA289
     * - :ref:`hpm6350`
       - :ref:`riscv`
-      - 3390 :ref:`level6`
+      - 3390 :ref:`level5`
       -
       - 800KB
       -
