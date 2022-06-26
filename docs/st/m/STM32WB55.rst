@@ -4,14 +4,16 @@
 STM32WB55
 ===============
 
-* 关键词：``Cortex-M4`` ``Dual Core`` ``UFQFPN48`` ``BLE`` ``Zigbee`` ``Thread``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32WLE5>`_
+`ST <https://www.st.com/zh/microcontrollers-microprocessors/stm32wb-series.html>`_ : ``Cortex-M4`` ``Dual Core`` ``UFQFPN48`` ``BLE`` ``Zigbee`` ``Thread``
+
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
+
 .. contents::
     :local:
 
@@ -42,6 +44,13 @@ Xin选择
 
 型号对比
 ~~~~~~~~~
+
+STM32WBx0
+^^^^^^^^^^^
+``Value Line`` ``BLE5.2``
+
+* 处理性能：219.48 :ref:`CoreMark`, 303 :ref:`ulp_cp`
+
 
 版本对比
 ~~~~~~~~~

@@ -8,6 +8,7 @@ ESP32S3
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------

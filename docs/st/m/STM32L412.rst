@@ -4,14 +4,16 @@
 STM32L412
 ===============
 
-* 关键词：``Cortex-M4`` ``80MHz`` ``12bit 5MSPS-ADC`` ``PGA`` ``28 μA/MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32L412>`_
+`GitHub <https://github.com/SoCXin/STM32L412>`_ : ``Cortex-M4`` ``80MHz`` ``12bit 5MSPS-ADC`` ``PGA`` ``28 μA/MHz``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
+
+:ref:`ulp`
 
 .. image:: ./images/stm32l412.jpg
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32l4-series/stm32l4x2/stm32l412kb.html
@@ -26,26 +28,21 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
-* 制程工艺：
 * 参考价格：
+* 制程工艺：
 * 供货周期：
-* 处理性能：100 :ref:`DMIPS` , 273.55 :ref:`CoreMark`
+* 处理性能：273.55 :ref:`CoreMark` ，442 :ref:`ulp_cp` ，165 :ref:`ulp_pp`
+* 封装规格：VLQFP32/48/64
+* 运行环境：-40°C to 125 °C
 * RAM容量：40 KB
 * Flash容量：128 KB
 
-限定参数
-^^^^^^^^^^^
 
-* 供电电压：1.71 to 3.6 V
-* 工作温度：-40°C to 85/125 °C
-* 封装规格：LQFP32/48/64
 
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`cortex_m4` 80 MHz
-* 442 :ref:`ulp_cp`
-* 165 :ref:`ulp_pp`
+* 80 MHz :ref:`cortex_m4`
 * 2 x 12-bit ADC 5 Msps, 200 µA/Msps
 * PGA
 
@@ -55,6 +52,13 @@ Xin简介
 
 .. image:: ./images/STM32L412s.png
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32l4-series/stm32l4x2/stm32l412kb.html
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：1.71 to 3.6 V
+
+
 
 Timer
 ^^^^^^^^^^^

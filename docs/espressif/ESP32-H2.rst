@@ -8,6 +8,7 @@ ESP32H2
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
