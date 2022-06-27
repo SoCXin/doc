@@ -33,6 +33,7 @@ Arterytek
 
 .. contents::
     :local:
+    :depth: 1
 
 超值产品
 ~~~~~~~~~~~
@@ -61,6 +62,14 @@ Arterytek
     :maxdepth: 1
 
     288MHz: AT32F437 <AT32F437>
+
+无线产品
+~~~~~~~~~~~
+
+.. toctree::
+    :maxdepth: 1
+
+    AT32WB415 <AT32WB415>
 
 
 技术简介

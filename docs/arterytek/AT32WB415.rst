@@ -1,0 +1,55 @@
+
+.. _at32wb415:
+
+AT32WB415
+===============
+
+`GitHub <https://github.com/SoCXin/AT32WB415>`_ : ``Cortex-M4`` ``150MHz`` ``BLE5.0``
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+
+`datasheet <https://www.arterytek.com/download/DS/DS_AT32WB415_V2.00_CH.pdf>`_
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 发布价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 运行环境：-40°C to 105°C
+* 封装规格：QFN48
+* RAM容量：32KB
+* Flash容量：256KB
+
+
+特征参数
+^^^^^^^^^^^
+
+* 150 MHz :ref:`cortex_m4`
+
+
+芯片架构
+~~~~~~~~~~~
+
+.. image:: images/AT32WB415s.png
+    :target: https://www.arterytek.com/download/DS/DS_AT32WB415_V2.00_CH.pdf
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：2.6 to 3.6 V
+* 功耗范围：
+
+.. image:: images/AT32WB415pwr.png
+    :target: https://www.arterytek.com/download/DS/DS_AT32WB415_V2.00_CH.pdf

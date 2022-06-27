@@ -6,7 +6,7 @@ CH573
 
 `GitHub <https://github.com/SoCXin/CH573>`_ : ``RISC-V3A`` ``USB`` ``BLE4.2`` ``AES128`` ``UART`` ``TouchKey`` ``QFN28``
 
-升级迭代 : CH573 -> :ref:`ch583`
+:ref:`ch573` -> :ref:`ch583`
 
 .. contents::
     :local:

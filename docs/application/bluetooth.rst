@@ -8,17 +8,25 @@ Bluetooth
 
 以制定蓝牙规范，以推动蓝牙技术为宗旨的跨国组织。它拥有蓝牙的商标，负责认证制造厂商，授权他们使用蓝牙技术与蓝牙标志，但是它本身不负责蓝牙装置的设计、生产及贩售。
 
+
+
+
+
+
 .. contents::
     :local:
     :depth: 1
 
-蓝牙芯片
+.. _ble:
+
+低功耗LE
 ----------
+``BLE``
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`bt`
+    * - :ref:`ble`
       - :ref:`architecture`
       - SRAM/ROM
       -
@@ -42,13 +50,19 @@ Bluetooth
       -
       -
       - QFN28
+    * - :ref:`at32wb415`
+      - :ref:`cortex_m4`
+      -
+      -
+      -
+      -
+      -
+      - QFN48
+
 
 
 .. note::
     由于技术演进和技术门槛降低，传统的MCU厂商在其产品上添加蓝牙系列，WiFi芯片厂商也同步支持蓝牙功能，导致单纯的蓝牙芯片越来越没有优势。
-
-
-
 
 
 蓝牙版本
