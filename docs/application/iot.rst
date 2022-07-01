@@ -320,6 +320,11 @@ Cat.1
       -
 
 
+.. toctree::
+    :maxdepth: 1
+
+    USI8910DM <../miscellaneous/USI8910DM>
+
 
 
 .. _cat4:

@@ -20,7 +20,7 @@ Chips
     :maxdepth: 1
 
     新锐无线长距通信 ASR <ASR/index>
-    蜂窝网络和处理器 RDA <RDA/index>
+    蓝牙音频无线终端 JieLi <jieli/index>
     物联网通信控制器 WCH <wch/index>
     低成本无线物联网 Espressif <espressif/index>
     Cortex-M4控制器 ArteryTek <arterytek/index>
@@ -35,7 +35,7 @@ Chips
 
     * - :ref:`wch`
       - :ref:`asr`
-      - :ref:`rda`
+      - :ref:`jieli`
       - :ref:`espressif`
       - :ref:`mediatek`
       - :ref:`arterytek`
@@ -43,7 +43,7 @@ Chips
       - :ref:`gigadevice`
     * - :ref:`ch32v307`
       - :ref:`asr6601`
-      - :ref:`usi8910`
+      - :ref:`ac7916`
       - :ref:`esp32s3`
       - :ref:`mt2625`
       - :ref:`at32f425`
@@ -51,7 +51,7 @@ Chips
       - :ref:`gd32e230`
     * - :ref:`ch32v208`
       - :ref:`asr6501`
-      -
+      - :ref:`ac5713`
       - :ref:`esp32s2`
       - :ref:`mt7688`
       - :ref:`at32f421`
