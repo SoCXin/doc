@@ -20,14 +20,15 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 发布时间：
-* 发布价格：
-* 供电电压：1.71 to 3.6 V
-* 工作温度：-40°C to +85°C
-* 处理性能：212 :ref:`DMIPS`
+* 发布时间：2016年3月
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：212 :ref:`CoreMark`
+* 封装规格：QFN48
+* 运行环境：-40°C to 85°C
 * RAM容量：264 KB
 * Flash容量：128/256 KB
-* 封装规格：
 
 
 特征参数
@@ -35,3 +36,36 @@ Xin简介
 
 * 64 MHz :ref:`cortex_m4`
 
+模拟性能
+^^^^^^^^^^^
+
+* 8ch 12-bit ADC, 200 ksps
+
+芯片架构
+~~~~~~~~~~~
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：1.7V – 3.6V
+* 功耗范围：
+
+* 0.3 μA at 3 V in System OFF mode
+* 0.7 μA at 3 V in System OFF mode with full 64 kB RAM retention
+* 1.9 μA at 3 V in System ON mode, no RAM retention, wake on RTC
+
+
+通信能力
+~~~~~~~~~~~~~~
+
+BLE
+^^^^^^^^^^^^^^
+
+:ref:`ble` 4.2
+
+* -96 dBm sensitivity in Bluetooth® low energy mode
+* -20 to +4 dBm TX power, configurable in 4 dB steps
+* On-chip balun (single-ended RF)
+* 5.3 mA peak current in TX (0 dBm)
+* 5.4 mA peak current in RX
+* RSSI (1 dB resolution)

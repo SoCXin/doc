@@ -1,0 +1,61 @@
+
+.. _bl602:
+
+BL602
+===============
+
+`bouffalolab <https://www.bouffalolab.com/>`_ : ``Wi-Fi`` ``BLE5``
+
+.. contents::
+    :local:
+    :depth: 1
+
+
+Xin简介
+-----------
+
+.. image:: ./images/BL602s.png
+    :target: https://www.bouffalolab.com/bl602
+
+.. contents::
+    :local:
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 封装规格：QFN32 (16 GPIO)
+* 运行环境：-40°C to 85°C
+* RAM容量：276KB
+* ROM容量：128KB
+* Flash容量：
+
+特征参数
+^^^^^^^^^^^
+
+* 1Kb eFuse
+
+模拟性能
+^^^^^^^^^^^
+
+* 10-bit DAC
+* 12-bit ADC
+
+芯片架构
+~~~~~~~~~~~
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：1.71 to 3.6 V
+* 功耗范围：
+* 工作电流仅为21µA / MHz
+* 休眠模式下，PG23的电流可低至1.03 µA

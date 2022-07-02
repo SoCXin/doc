@@ -60,6 +60,11 @@ Bluetooth
       - QFN48
 
 
+.. toctree::
+    :maxdepth: 1
+
+    BL702 <../miscellaneous/BL702>
+    BL602 <../miscellaneous/BL602>
 
 .. note::
     由于技术演进和技术门槛降低，传统的MCU厂商在其产品上添加蓝牙系列，WiFi芯片厂商也同步支持蓝牙功能，导致单纯的蓝牙芯片越来越没有优势。

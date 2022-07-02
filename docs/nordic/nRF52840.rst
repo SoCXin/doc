@@ -4,24 +4,21 @@
 nRF52840
 ============
 
-`GitHub <https://github.com/SoCXin/nRF52840>`_ : ``BLE`` ``NFC``
+`Nordic <https://www.nordicsemi.com/Products/nRF52840>`_ : ``BLE`` ``NFC Tag`` ``52 µA/MHz``
 
 .. contents::
     :local:
+    :depth: 1
 
 
 Xin简介
 -----------
 
-nRF52840 SoC是nRF52系列中最先进的一员。它可以满足需要协议并发性、丰富外围设备和复杂应用所面临的挑战。它为闪存和RAM提供了充足的内存，而这些正是高要求应用的必备条件。
-
 nRF52840是具有完全协议并发能力的多协议SoC。它支持低功耗蓝牙、蓝牙Mesh、Thread、Zigbee、802.15.4、ANT和2.4 GHz专有协议栈。
 
-nRF52840基于带有浮点单元的32位ARM® Cortex™-M4 CPU，主频为64 MHz。内置NFC-A标签用于简化的配对和支付解决方案。本芯片内置ARM TrustZone® CryptoCell密码算法单元，可独立于CPU高效执行密码算法任务。它有许多数字外设和接口，如高速SPI和QSPI接口，用于连接到外部闪存和显示器，PDM和I2S连接数字麦克风和音频；还有一个全速USB设备，用于数据传输和作为电源为电池充电。
+内置NFC-A标签用于简化的配对和支付解决方案。本芯片内置ARM TrustZone® CryptoCell密码算法单元，可独立于CPU高效执行密码算法任务。
 
-通过精密的片上自适应电源管理系统，实现了极低的功耗。
-
-`官方资源 <https://www.nordicsemi.com/Products/nRF52840>`_
+它有许多数字外设和接口，如高速SPI和QSPI接口，用于连接到外部闪存和显示器，PDM和I2S连接数字麦克风和音频；还有一个全速USB设备，用于数据传输和作为电源为电池充电。
 
 
 规格参数
@@ -30,26 +27,32 @@ nRF52840基于带有浮点单元的32位ARM® Cortex™-M4 CPU，主频为64 MHz
 基本参数
 ^^^^^^^^^^^
 
-* 发布时间：
-* 发布价格：
+* 发布时间：2018年3月28日
+* 参考价格：
 * 制程工艺：
 * 供货周期：
-* 处理性能：
+* 处理性能：212 :ref:`CoreMark`
+* 封装规格：AQFN73、WLCSP93
+* 运行环境：-40°C to 85°C/125°C
 * RAM容量：256 KB
 * Flash容量：1 MB
-* 封装规格：
-
 
 特征参数
 ^^^^^^^^^^^
 
-* 64 MHz :ref:`cortex_m4` with FPU
+* 64 MHz :ref:`cortex_m4` (52 µA/MHz)
 * 2.4 GHz Transceiver，2 Mbps, 1 Mbps, Long Range，+8 dBm TX Power
 * Bluetooth Low Energy, Bluetooth mesh
 * ANT, 802.15.4, Thread, Zigbee
 * 128-bit AES CCM, ARM CryptoCell
 * NFC-A
-* USB 2.0
+* USB FS OTG
+
+模拟性能
+^^^^^^^^^^^
+
+* 8ch 12-bit ADC, 200 ksps
+* 64 level comparator
 
 芯片架构
 ~~~~~~~~~~~
@@ -57,16 +60,28 @@ nRF52840基于带有浮点单元的32位ARM® Cortex™-M4 CPU，主频为64 MHz
 功耗参数
 ^^^^^^^^^^^
 
+* 电压范围：1.7 V to 5.5 V
+* 功耗范围：
+
 .. image:: ./images/nRF52840Pwr.png
     :target: https://www.nordicsemi.com/Products/nRF52840
 
 
-
-连接能力
+通信能力
 ~~~~~~~~~~~~~~
+
+* 128-bit AES/ECB/CCM/AAR co-processor (on-the-fly packet encryption)
 
 BLE
 ^^^^^^^^^^^^^^^
+
+:ref:`ble` 5.0，2 Mbps, 1 Mbps, 500 kbps, 125 kbps
+
+* Single-ended antenna output (on-chip balun)
+
+* 4.8 mA peak current in TX (0 dBm)
+* 4.6 mA peak current in RX
+* RSSI (1 dB resolution)
 
 .. image:: ./images/nRF52840BLE.png
     :target: https://www.nordicsemi.com/Products/nRF52840

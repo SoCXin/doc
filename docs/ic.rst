@@ -20,7 +20,7 @@ Chips
     :maxdepth: 1
 
     新锐无线长距通信 ASR <ASR/index>
-    蓝牙音频无线终端 JieLi <jieli/index>
+    蓝牙音频智能终端 JieLi <jieli/index>
     物联网通信控制器 WCH <wch/index>
     低成本无线物联网 Espressif <espressif/index>
     Cortex-M4控制器 ArteryTek <arterytek/index>
