@@ -31,22 +31,28 @@ Xin简介
 * 处理性能：407.22 :ref:`CoreMark` , :ref:`level3`
 * 运行环境：-40°C to 105°C
 * 封装规格：:ref:`esp_qfn32` (5x5mm)
-* RAM容量：400 KB
+* RAM容量：400 KB (8 KB RTC SRAM)
 * ROM容量：384 KB
-* Flash容量：0/2/4 MB (≤16 MB)
+* Flash容量：0/4 MB (≤16 MB)
+
+`产品选型 <https://products.espressif.com/#/product-selector>`_
 
 特征参数
 ^^^^^^^^^^^
 
-* 160 MHz :ref:`esp_rv32`
+* 160 MHz :ref:`esp_rv32` (2.55 CoreMark/MHz)
 * :ref:`esp32c3_wifi`
 * :ref:`esp32c3_ble`
 * :ref:`esp32c3_twai` 控制器
-* 22  x GPIO
+* 22/16 GPIO
+* 全速 USB 串口/JTAG 控制器
+* 4 Kbit eFuse，用户可用 1792bit
 
+模拟性能
+^^^^^^^^^^^
 
-.. note::
-    :ref:`esp32c3` 发布于2020年12月1日，是乐鑫基于RISC-V内核设计的MCU产品，相较之前的产品，耐高温由125°降到105°
+* 5ch 12-bit ADC1, 100 ksps
+* 1ch 12-bit ADC2
 
 
 芯片架构
@@ -66,14 +72,14 @@ Xin简介
 
 Wi-Fi
 ^^^^^^^^^^^
-``802.11b/g/n`` ``21dBm``  ``150Mbps`` ``HT40``
+``802.11b/g/n`` ``21dBm`` ``150Mbps`` ``HT40``
 
 
 .. _esp32c3_ble:
 
 BLE5.0
 ^^^^^^^^^^^
-``BLE 5.0`` ``-94dBm`` ``Mesh``
+``BLE 5.0`` ``-94dBm`` ``Mesh``  ``18dBm``
 
 
 .. _esp32c3_twai:

@@ -13,7 +13,7 @@ ESP32S2
 Xin简介
 -----------
 
-`EEMBC CoreMark 472.81 (240 x 1.97CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=13418>`_
+`EEMBC : 472.81 CoreMark (240 x 1.97CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=13418>`_
 
 .. image:: ./images/ESP32S2.png
     :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s2/get-started/index.html

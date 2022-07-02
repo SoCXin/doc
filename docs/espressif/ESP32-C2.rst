@@ -4,7 +4,7 @@
 ESP32C2
 ================
 
-`标签 <https://github.com/SoCXin/ESP32C2>`_ : ``RISC-V`` ``120MHz`` ``WiFi`` ``BLE5.0`` ``QFN40``
+`espressif <https://www.espressif.com.cn/zh-hans/products/socs/esp32-c2>`_ : ``ESP8684`` ``RISC-V`` ``120MHz`` ``Wi-Fi`` ``1024-QAM`` ``BLE5.0`` ``QFN40``
 
 .. contents::
     :local:
@@ -17,38 +17,55 @@ Xin简介
     :target: https://www.espressif.com/zh-hans/news/ESP32-C2
 
 
-
 规格参数
 ~~~~~~~~~~~
 
-ESP32-C2 芯片比 ESP8266 面积更小、性能更强。ESP32-C2 在满足简单物联网应用需求的基础上，进一步优化成本，能够为用户提供一个极具性价比的开发平台。值得一提的是，乐鑫的射频技术实现重要突破，可达到 1024-QAM 技术指标，未来将为客户提供更多高性能的产品选择。
+ESP32-C2 芯片比 ESP8266 面积更小、性能更强。
+
+它搭载 RISC-V 32 位单核处理器，内置 272 KB SRAM (16 KB 专用于 cache) 和 576 KB ROM，支持 2.4 GHz Wi-Fi 和 Bluetooth 5 (LE)。
+
+ESP32-C2 针对高容量、低数据速率的简单物联网应用设计，能够为插座、照明、传感器和简单的家电设备添加稳定的无线连接功能，为用户提供极具性价比的开发平台。
 
 
 基本参数
 ^^^^^^^^^^^
 
-* 发布时间：2021-12-23
+* 发布时间：2022年12月
+* 参考价格：
 * 制程工艺：
-* 发布价格：
-* 工作温度：-40°C to +105°C
-* 处理性能：
-* RAM容量：272 KB
-* Flash容量：576 KB
+* 供货周期：
+* 处理性能：305.42 :ref:`CoreMark`
 * 封装规格：QFN40 (5x5mm)
+* 运行环境：-40°C to 105°C
+* RAM容量：272 KB
+* ROM容量：576 KB
+* Flash容量：1/2/4 MB
 
 特征参数
 ^^^^^^^^^^^
 
-* 120 MHz :ref:`riscv`
+* 120 MHz :ref:`riscv` (2.55 CoreMark/MHz)
 * Wi-Fi IEEE 802.11b/g/n
 * BLE 5.0
 * 14 x GPIO
+* 1024 位 OTP，可用的为 256 位
+
+模拟性能
+^^^^^^^^^^^
+
+* 5ch 12-bit ADC1, 100 ksps
+* 1ch 12-bit ADC2
+
+
+芯片架构
+~~~~~~~~~~~
 
 
 电源参数
 ^^^^^^^^^^^
 
 * 供电电压：2.3 to 3.6 V
+* 功耗范围：
 
 安全特性
 ~~~~~~~~~~~~~~

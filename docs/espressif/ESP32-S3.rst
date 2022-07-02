@@ -39,10 +39,11 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * ROM容量：384 KB
 * Flash容量：0/4/8/16/32 MB (≤1GB)
 
+
 特征参数
 ^^^^^^^^^^^
 
-* 240 MHz :ref:`xtensa_lx7` Dual Core
+* 240 MHz :ref:`xtensa_lx7` (2.56 CoreMark/MHz) Dual Core (4.92 CoreMark/MHz)
 * 低功耗协处理器 :ref:`esp32s3_ulp` (FSM/RISC-V)
 * :ref:`esp32s3_wifi` + :ref:`esp32s3_ble`
 * :ref:`esp32s3_usb`
@@ -52,9 +53,17 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * 44 x GPIO，JTAG 接口
 * 2x 12bit 100KSPS ADC (20ch)
 * 14 × 电容式传感 GPIO
+* 4 Kbit eFuse，用户可用 1792bit
 
 .. note::
     ESP32-S3增加了用于加速神经网络计算和信号处理等工作的向量指令 (vector instructions)
+
+模拟性能
+^^^^^^^^^^^
+
+* 10ch 12-bit SAR ADC1, 100 ksps
+* 10ch 12-bit SAR ADC2, 100 ksps
+
 
 芯片架构
 ~~~~~~~~~~~
@@ -167,6 +176,7 @@ Throughput
 
 Wi-Fi
 ^^^^^^^^^^^^^^^
+``20dBm``
 
 在 2.4 GHz 频带支持 20 MHz 和 40 MHz 频宽，支持 1T1R 模式，数据速率高达 150 Mbps
 
