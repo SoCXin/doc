@@ -8,6 +8,7 @@ CC2650
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
@@ -62,6 +63,7 @@ Xin简介
 
 ``BLE`` ``–97dBm`` ``+5dBm`` ``ZigBee`` ``6LoWPAN``
 
+:ref:`ble` 5.0
 
 Xin选择
 -----------

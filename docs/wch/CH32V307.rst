@@ -8,8 +8,10 @@ CH32V307
 
 `样品链接 <https://item.taobao.com/item.htm?spm=a230r.1.14.13.392c1289XH7hHX&id=669871604231&ns=1&abbucket=18#detail>`_
 
+
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------

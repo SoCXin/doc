@@ -9,11 +9,12 @@ STM32U575
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
 
-`EEMBC CoreMark:4.07 CoreMark/MHz <https://www.eembc.org/viewer/?benchmark_seq=13317>`_
+`EEMBC:4.07 CoreMark/MHz <https://www.eembc.org/viewer/?benchmark_seq=13317>`_
 
 .. image:: ./images/STM32U575.jpg
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32u5-series/stm32u575-585/stm32u575cg.html
@@ -61,13 +62,16 @@ STM32U5 的定义是一个低功耗旗舰级产品线，最大的3个特点：
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32u5-series/stm32u575-585/stm32u575cg.html
 
 
-电源参数
+功耗参数
 ^^^^^^^^^^^
 
 * 电压范围：1.71 to 3.6 V
 * 功耗范围：
 * 运行功耗: 19 µA/MHz
-* 温度范围：-40°C to 105°C
+* 关断模式下110 nA
+* 待机模式300 nA
+* 停机模式3下为1.7 µA,，具有16 KbB的SRAM可访问
+* 停机模式2下为6.6 µA，全部具有786 KBb的SRAM可访问
 
 
 .. image:: ./images/STM32U575Pwr.png
