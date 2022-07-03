@@ -66,7 +66,34 @@ Xin简介
 * 电压范围：2.3 to 3.6 V
 * 功耗范围：
 
-每个GPIO的绝对最大电流为40mA
+
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - 核数
+      - 160MHz(none)
+      - 160MHz(full)
+      - 240MHz(none)
+      - 240MHz(full)
+      - uA/MHz
+    * - 单核
+      - 25.3mA
+      - 38.5mA
+      - 33.8mA
+      - 57.4mA
+      -
+    * - 双核
+      - 27.8mA
+      - 54.8mA
+      - 38.5mA
+      - 85.3mA
+      -
+
+
+
+
 
 
 .. _esp32_ulp:
@@ -76,6 +103,8 @@ ULP
 ``FSM``
 
 
+.. note::
+    每个GPIO的绝对最大电流为40mA
 
 连接能力
 ~~~~~~~~~~~~~~
