@@ -16,7 +16,7 @@ Application
     * - 关键参数
       - :ref:`CoreMark`
       - :ref:`wireless`
-      - :ref:`le`
+      - :ref:`sleep`
       -
       -
 

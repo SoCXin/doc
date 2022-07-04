@@ -8,9 +8,8 @@ Bluetooth
 
 以制定蓝牙规范，以推动蓝牙技术为宗旨的跨国组织。它拥有蓝牙的商标，负责认证制造厂商，授权他们使用蓝牙技术与蓝牙标志，但是它本身不负责蓝牙装置的设计、生产及贩售。
 
-2022年，全行业的 Bluetooth设备出货量预计将达到 50 亿。
-
-
+.. note::
+    2022年，全行业的 Bluetooth设备出货量预计将达到 50 亿。
 
 
 .. contents::
@@ -19,9 +18,9 @@ Bluetooth
 
 .. _ble:
 
-低功耗LE
+BLE
 ----------
-``BLE``
+``低功耗``
 
 .. list-table::
     :header-rows:  1
@@ -42,14 +41,14 @@ Bluetooth
       -
       -
       - QFN28
-    * - :ref:`ch573`
-      - :ref:`wch_riscv3a`
+    * - :ref:`BL702`
+      - 
       -
       -
       -
       -
       -
-      - QFN28
+      - QFN32
     * - :ref:`at32wb415`
       - :ref:`cortex_m4`
       -

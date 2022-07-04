@@ -16,13 +16,13 @@ Classification
     :header-rows:  1
 
     * - :ref:`architecture`
-      - Typical Series
-      - :ref:`CoreMark`
-      - :ref:`consumption`
+      - Series
+      - Size(mm²)
+      - Gate Count
     * - :ref:`cortex_m`
       - :ref:`cortex_m0`
-      - 1.62/MHz
-      -
+      - 0.0066
+      - 12K
     * -
       - :ref:`cortex_m3`
       - 2.19/MHz
@@ -86,11 +86,11 @@ Performance
     * - :ref:`performance`
       - :ref:`DMIPS`/MHz
       - :ref:`CoreMark`/MHz
-      - :ref:`Geekbench`/Core
+      - :ref:`consumption`/MHz
     * - :ref:`cortex_m0`
       - 0.95
       - 1.62
-      -
+      - 3.8µW(40LP)
     * - :ref:`cortex_m3`
       - 1.25
       - 2.19
