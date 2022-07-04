@@ -7,7 +7,7 @@ IoT
 .. list-table::
     :header-rows: 1
 
-    * - :ref:`iot`
+    * - :ref:`ic`
       - :ref:`can`
       - :ref:`ethernet`
       - :ref:`plc`
@@ -15,18 +15,16 @@ IoT
       - :ref:`wifi`
       - :ref:`lora`
       - :ref:`nbiot`
-      - :ref:`gprs`
       - :ref:`cat1`
       - :ref:`cat4`
     * -
-      - √
-      - √
+      - 
+      - 
       -
       -
-      - √
+      - 
       -
-      - √
-      -
+      - 
       -
       -
 
@@ -36,10 +34,6 @@ IoT
     :depth: 1
 
 
-.. toctree::
-    :maxdepth: 1
-
-    ethernet <ethernet>
 
 
 .. _plc:
@@ -115,7 +109,9 @@ WPAN
       - :ref:`bt`
       - :ref:`zigbee`
       - :ref:`rfid`
+      - :ref:`uwb`
     * - 距离
+      -
       -
       -
       -
@@ -125,7 +121,9 @@ WPAN
       -
       -
       -
+      -
     * - 扩展性
+      -
       -
       -
       -
@@ -143,14 +141,25 @@ WPAN
 
 RFID
 ~~~~~~~~~~~
-``RFID`` ``NFC``
+``Radio Frequency IDentification`` 
 
+RFID有低频（mm的传输距离）、高频（13.56Mhz）、超高频、微波频段等，频段不同，功率不同，传输的距离不同。
 
 .. toctree::
     :maxdepth: 1
 
     BF5885 <../miscellaneous/BF5885>
 
+
+.. _nfc:
+
+NFC
+^^^^^^^^^^^
+``Near Field Communication`` ``13.56MHz``
+
+NFC从本质上来说是一种RFID的演进技术，NFC只是限于13.56MHz的频段。而RFID的频段有低频（125KHz到135KHz），高频（13.56MHz）和超高频（860MHz到960MHz）。
+
+NFC工作有效距离约10cm，所以具有很高的安全性。
 
 
 .. _802_15_4:
@@ -189,6 +198,19 @@ ZigBee
 ``802.15.4``
 
 
+.. _uwb:
+
+UWB
+~~~~~~~~~~~
+``Ultra Wide Band``
+
+UWB是无载波通信技术，利用纳秒（ns）至皮秒（ps）级的非正弦波窄脉冲传输数据，而时间调变技术令其传送速度可以大大提高，而且耗电量相对地低，并有较精确的定位能力。
+
+这些脉冲所占用的带宽甚至达到几GHz，因此最大数据传输速率可以达到几百Mbps。
+
+因为使用的是极短脉冲，在高速通信的同时，UWB设备的发射功率却很小，仅仅只有目前的连续载波系统的几百分之一。
+
+超宽带的传输距离都是在十公尺之内，它的传输速率高达480Mbps，是蓝牙的159倍，是Wi-Fi标准的18.5倍，非常适合多媒体信息的大量传输。
 
 .. _lpwan:
 

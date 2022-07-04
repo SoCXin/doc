@@ -1,7 +1,7 @@
 
 .. _ethernet:
 
-ethernet
+Ethernet
 ============
 
 .. list-table::

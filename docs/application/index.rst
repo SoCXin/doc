@@ -4,23 +4,6 @@
 Application
 ===============
 
-.. list-table::
-    :header-rows:  1
-
-    * -
-      - :ref:`ai`
-      - :ref:`iot`
-      - :ref:`foc`
-      - :ref:`hmi`
-      - :ref:`adc`
-    * - 关键参数
-      - :ref:`CoreMark`
-      - :ref:`wireless`
-      - :ref:`sleep`
-      -
-      -
-
-
 .. toctree::
     :maxdepth: 1
 
@@ -30,16 +13,45 @@ Application
     人机交互 HMI  <hmi>
     信号转换 ADC  <adc>
 
-大部分情况下，对应产品的应用场景都是十分明确的，典型场景包括：
-
 
 通信连接
 -----------
 
 .. contents::
     :local:
-    :depth: 1
 
+.. _wireless:
+
+Wireless
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`iot`
+      - :ref:`802_15_4`
+      - :ref:`bt`
+      - :ref:`wifi`
+      - :ref:`lora`
+      - :ref:`nbiot`
+      - :ref:`cat1`
+      - :ref:`cat4`
+    * - 易用性
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - 扩展性
+      -
+      -
+      -
+      -
+      -
+      -
+      -
 
 .. _wired:
 
@@ -64,10 +76,14 @@ Wired
       -
       -
 
+.. toctree::
+    :maxdepth: 1
+
+    ethernet <ethernet>
+
 
 .. contents::
     :local:
-    :depth: 1
 
 .. _uart:
 
@@ -177,35 +193,3 @@ USB设备有两种供电方式
 
 
 
-.. _wireless:
-
-Wireless
-~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`iot`
-      - :ref:`802_15_4`
-      - :ref:`bt`
-      - :ref:`wifi`
-      - :ref:`lora`
-      - :ref:`nbiot`
-      - :ref:`cat1`
-      - :ref:`cat4`
-    * - 易用性
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-    * - 扩展性
-      -
-      -
-      -
-      -
-      -
-      -
-      -

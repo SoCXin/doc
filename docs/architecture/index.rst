@@ -21,23 +21,23 @@ Classification
       - Gate Count
     * - :ref:`cortex_m`
       - :ref:`cortex_m0`
-      - 0.0066
+      - 0.0066(:ref:`tsmc_40lp`)
       - 12K
     * -
       - :ref:`cortex_m3`
-      - 2.19/MHz
+      - 
       -
     * -
       - :ref:`cortex_m4`
-      - 2.19/MHz
+      - 
       -
     * -
       - :ref:`cortex_m7`
-      - 5.0/MHz
+      - 
       -
     * -
       - :ref:`cortex_m85`
-      - 6.28/MHz
+      - 
       -
     * - :ref:`mips`
       - :ref:`24KEc`
@@ -74,7 +74,6 @@ Classification
     MCS-51  <MCS51>
 
 
-
 .. _performance:
 
 Performance
@@ -90,7 +89,7 @@ Performance
     * - :ref:`cortex_m0`
       - 0.95
       - 1.62
-      - 3.8µW(40LP)
+      - 3.8µW(:ref:`tsmc_40lp`)
     * - :ref:`cortex_m3`
       - 1.25
       - 2.19
