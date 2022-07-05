@@ -9,12 +9,13 @@ HPM6750
 .. image:: https://github.com/SoCXin/HPM6750/workflows/demo/badge.svg
     :target: https://github.com/SoCXin/HPM6750
 
-`HPMicro <https://www.hpmicro.com>`_ : ``32-bit RISC-V`` ``816MHz`` ``Dual Core`` ``16bit ADC @2Msps`` ``12bit ADC @5Msps``
+`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``816MHz`` ``Dual Core`` ``16bit ADC @2Msps`` ``12bit ADC @5Msps``
 
 :ref:`performance` : :ref:`cortex_m85` > ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
@@ -47,7 +48,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 816 MHz :ref:`riscv` Dual Core
+* 32-bit 816 MHz :ref:`riscv` Dual Core (32K ICACHE + 32K DCACHE)
 * 2x USB HS OTG (集成PHY)
 * 2x 千兆网口
 * 4个CAN FD，17个UART，4个SPI，4个I2C

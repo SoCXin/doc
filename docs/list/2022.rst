@@ -38,6 +38,6 @@
 
 06-AIC8800
 ~~~~~~~~~~~~
-``RISC-V`` ``120MHz`` ``WiFi`` ``BLE5.0`` ``QFN40``
+``RISC-V`` ``Wi-Fi6`` ``BT5.0`` ``USB HS``
 
 :ref:`aic8800`

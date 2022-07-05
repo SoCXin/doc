@@ -132,6 +132,16 @@ Xin应用
 .. contents::
     :local:
 
+开发板
+~~~~~~~~~~~
+
+Pico W
+^^^^^^^^^^^^
+``CYW43439`` ``$6``
+
+`pico-w-datasheet <https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf>`_
+
+
 开发框架
 ~~~~~~~~~~~
 
