@@ -15,7 +15,7 @@
       - :ref:`ulpbench`
       - :ref:`wireless`
       - :ref:`vcc`
-      - :ref:`consumption`/MHz
+      - :ref:`consumption`
       - :ref:`halt`
       - :ref:`sleep`
     * - :ref:`stm32u575`
@@ -89,7 +89,7 @@
 
 效能
 -----------
-``运行功耗``
+``运行功耗`` ``uA/MHz``
 
 .. _halt:
 

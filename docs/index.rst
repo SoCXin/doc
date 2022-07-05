@@ -39,21 +39,21 @@ Xin
       - :ref:`top`
     * - :ref:`esp32`
       - :ref:`stm32f103`
-      - :ref:`ch32f208`
+      - :ref:`ch32v307`
       - :ref:`stc8`
       - :ref:`stm32u575`
       - :ref:`rt1170`
     * - :ref:`rp2040`
       - :ref:`esp32`
-      - :ref:`NO_013`
+      - :ref:`aic8800`
       - :ref:`ch552`
       - :ref:`stm32l412`
       - :ref:`hpm6750`
     * - :ref:`gd32v103`
       - :ref:`nrf52832`
-      - :ref:`NO_010`
+      - :ref:`NO_013`
       - :ref:`ch573`
-      - :ref:`cc1350`
+      - :ref:`cc2340`
       - :ref:`stm32h730`
 
 .. toctree::

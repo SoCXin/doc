@@ -118,7 +118,20 @@ ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含�
       - 2
       - 18
       - QFN16/TSSOP20
-
+    * - :ref:`esp8266`
+      -
+      -
+      -
+      -
+      -
+      - QFN32
+    * - :ref:`ch32v307`
+      -
+      -
+      -
+      -
+      -
+      -
 
 .. hint::
     基于 :ref:`ch552` 芯片应该是当下成本最低的 :ref:`ch552_dap` 实现方案，并且通过小封装可以获得更小的体积

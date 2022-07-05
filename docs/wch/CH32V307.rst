@@ -263,3 +263,12 @@ Xin应用
 .. image:: ./images/B_CH32V307.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.48.39021289jMGykq&id=659315400556&ns=1&abbucket=3#detail
 
+
+应用方案
+~~~~~~~~~~
+
+DAP HS
+^^^^^^^^^^
+``CMSIS-DAP v2``
+
+:ref:`cmsis_dap`
