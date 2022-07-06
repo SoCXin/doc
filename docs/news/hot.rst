@@ -187,10 +187,10 @@ GCC
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`hot`
+    * - 
       - :ref:`libopencm3`
       - freeRTOS
-      - Zephyr
+      - :ref:`zephyr`
       - RT-Thread
       - :ref:`arduino`
       - :ref:`cmsis`
@@ -234,6 +234,15 @@ mbed
 
 CMSIS
 ~~~~~~~~~~~~~
+
+.. _zephyr:
+
+Zephyr
+~~~~~~~~~~~~~
+
+非对称多处理 (Asymmetric Multiprocessing, AMP) 
+
+Zephyr 正在从 Pin Mux 向 Pin Control 转变。Pin Control 是一种新的机制，它为配置 IO 引脚的输入输出方向和启用上拉/下拉，提供了一种更好的方式。更重要的是，它支持将引脚分配给一个特定的外设
 
 .. _libopencm3:
 

@@ -3,7 +3,7 @@
 ESP32
 ===============
 
-`GitHub <https://github.com/SoCXin/ESP32>`_ : :ref:`wifi` :ref:`bt` ``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``
+`GitHub <https://github.com/SoCXin/ESP32>`_ : ``Xtensa LX6`` ``Dual Core`` ``240MHz`` ``Wi-Fi`` ``BLE4.2`` ``TWAI`` ``Ethernet`` ``MAC100`` ``QFN48``
 
 :ref:`esp32` --> :ref:`esp32s3`
 
@@ -14,7 +14,7 @@ ESP32
 Xin简介
 -----------
 
-`EEMBC CoreMark 660.7 (160 x 4.13CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=13244>`_
+`EEMBC: 660.7 CoreMark (160 x 4.13CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=13244>`_
 
 .. image:: ./images/ESP32.png
     :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-reference/index.html
@@ -54,8 +54,14 @@ Xin简介
 * Host SD/eMMC/SDIO、Slave SDIO/SPI
 * 硬件加密单元AES/RSA/ECC
 * 内置霍尔效应传感器
+
+
+模拟性能
+^^^^^^^^^^^
+
 * 12-bit SAR ADC 18ch
 * 2 x 8-bit DAC
+
 
 芯片架构
 ~~~~~~~~~~~
@@ -72,23 +78,29 @@ Xin简介
 .. list-table::
     :header-rows:  1
 
-    * - 核数
-      - 160MHz(none)
-      - 160MHz(full)
-      - 240MHz(none)
-      - 240MHz(full)
+    * - v4.0.1
+      - 单核
+      - 双核
+      - 单核(none)
+      - 双核(none)
       - uA/MHz
-    * - 单核
-      - 25.3mA
-      - 38.5mA
-      - 33.8mA
-      - 57.4mA
-      -
-    * - 双核
-      - 27.8mA
+    * - 160MHz
+      - 38.5mA 
       - 54.8mA
-      - 38.5mA
+      - 25.3mA 
+      - 27.8mA
+      -
+    * - 240MHz
+      - 57.4mA
       - 85.3mA
+      - 33.8mA
+      - 38.5mA
+      -
+    * - uA/MHz
+      - 240
+      - 350
+      - 148
+      - 165
       -
 
 
