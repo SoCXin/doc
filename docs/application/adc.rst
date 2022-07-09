@@ -367,7 +367,6 @@ SoC
 
     PG23 <../miscellaneous/PG23>
     ZML165 <../miscellaneous/ZML165>
-    CS32A039 <../miscellaneous/CS32A039>
 
 
 

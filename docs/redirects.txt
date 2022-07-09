@@ -94,12 +94,14 @@
 /Hi3861.html -> miscellaneous/Hi3861.html
 /Hi3921.html -> miscellaneous/Hi3921.html
 /XY1100.html -> miscellaneous/XY1100.html
+/RDA8910.html -> miscellaneous/USI8910DM.html
 /MM32SPIN05.html -> miscellaneous/MM32SPIN.html
 /TKM32F499.html -> miscellaneous/TKM32F499.html
 /HC32M120.html -> miscellaneous/HC32M120.html
-/CS32A039.html -> miscellaneous/CS32A039.html
-/CS32G020.html -> miscellaneous/CS32G020.html
 /AIC8800M.html -> miscellaneous/AIC8800M.html
+/CS32A039.html -> chipsea/CS32A039.html
+/CS32G020.html -> chipsea/CS32G020.html
+/CST92F25.html -> chipsea/CST92F25.html
 /EAI80.html -> high/EAI80.html
 /K210.html -> high/K210.html
 /K510.html -> high/K510.html
@@ -112,6 +114,6 @@
 /ASR1601.html -> ASR/ASR1601.html
 /ASR6501.html -> ASR/ASR6501.html
 /ASR1802.html -> ASR/ASR1802.html
-/RDA8910.html -> t/USI8910DM.html
+
 /V831.html -> allwinner/V831.html
 /R329.html -> allwinner/R329.html

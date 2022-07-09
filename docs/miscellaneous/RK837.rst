@@ -4,11 +4,11 @@
 RK837
 ===============
 
-* 关键词：``Cortex-M0`` ``240MHz`` ``USB PD 3.0`` ``QC4+``
-* 资源库：`GitHub <https://github.com/SoCXin/RK837>`_
+`GitHub <https://github.com/SoCXin/RK837>`_ : ``Cortex-M0`` ``240MHz`` ``USB PD 3.0`` ``QC4+``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------

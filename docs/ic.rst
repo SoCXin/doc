@@ -23,6 +23,7 @@ Chips
     新锐无线长距通信 ASR <ASR/index>
     蓝牙音频智能终端 JieLi <jieli/index>
     物联网通信控制器 WCH <wch/index>
+    信号链整合控制器 Chipsea <chipsea/index>
     低成本无线物联网 Espressif <espressif/index>
     Cortex-M4控制器 ArteryTek <arterytek/index>
     高性能通信全品类 MediaTek  <MediaTek/index>
@@ -82,4 +83,7 @@ Chips
 * 应用案例丰富程度，实用性和完整度
 * 开源社区的活跃程度和相关的开源项目数量及质量
 * 创新性和突破性
+
+.. note::
+    合适的芯多了选择就复杂，管理者会选便宜的，开发者会选熟悉的，而消费者想用可靠的
 
