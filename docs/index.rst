@@ -180,13 +180,15 @@ Xin
       - 经典作品
       - 最新产品
       - 看家本领
+      - 市场定位
       - 制程工艺
       - 销售渠道
     * - :ref:`wch`
-      -
+      - 24
       - :ref:`ch579`
       - :ref:`ch32v307`
       - :ref:`usb`
+      - 连接
       -
       - :ref:`mouser`
     * - :ref:`espressif`
@@ -194,5 +196,6 @@ Xin
       - :ref:`esp32`
       - :ref:`esp32c2`
       - :ref:`wifi`
+      - 通信
       - :ref:`tsmc_40nm`
       - :ref:`mouser`
