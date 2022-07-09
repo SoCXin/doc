@@ -37,33 +37,60 @@ Xin
       - :ref:`low`
       - :ref:`ulp`
       - :ref:`top`
+      - :ref:`roast`
     * - :ref:`esp32`
       - :ref:`stm32f103`
       - :ref:`ch32v307`
       - :ref:`stc8`
       - :ref:`stm32u575`
       - :ref:`rt1170`
+      - :ref:`eai80`
     * - :ref:`rp2040`
-      - :ref:`esp32`
+      - :ref:`mega328p`
       - :ref:`aic8800`
       - :ref:`ch552`
       - :ref:`stm32l412`
       - :ref:`hpm6750`
+      -
     * - :ref:`gd32v103`
       - :ref:`nrf52832`
       - :ref:`NO_013`
       - :ref:`ch573`
       - :ref:`cc2340`
       - :ref:`stm32h730`
+      -
 
 .. toctree::
     :caption: 应用分类
     :maxdepth: 1
 
-    功能分类  <application/index>
+    功能领域  <application/index>
+    数据协议  <application/protocols>
     硬件产品  <application/products>
-    应用协议  <application/protocols>
 
+.. list-table::
+    :header-rows: 1
+
+    * -
+      - :ref:`wpan`
+      - :ref:`bt`
+      - :ref:`wifi`
+      - :ref:`lora`
+      - :ref:`nbiot`
+      - :ref:`cat1`
+      - :ref:`usb`
+      - :ref:`ethernet`
+      - :ref:`plc`
+    * - :ref:`matter`
+      - :ref:`esp32h2`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
 
 .. toctree::
     :caption: 内核相关
@@ -72,6 +99,71 @@ Xin
     内核架构  <architecture/index>
     运算性能  <architecture/level>
     片上资源  <architecture/ip>
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`classification`
+      - :ref:`level1`
+      - :ref:`level2`
+      - :ref:`level3`
+      - :ref:`level4`
+      - :ref:`level5`
+      - :ref:`level6`
+      - :ref:`level7`
+      - :ref:`level8`
+      - :ref:`level9`
+    * - :ref:`cortex_m`
+      - √
+      - √
+      - √
+      - √
+      - √
+      - √
+      - X
+      - X
+      - X
+    * - :ref:`cortex_r`
+      -
+      -
+      -
+      -
+      -
+      -
+      - X
+      - X
+      - X
+    * - :ref:`cortex_a`
+      -
+      -
+      -
+      -
+      - √
+      - √
+      - √
+      - √
+      - √
+    * - :ref:`riscv`
+      - √
+      - :ref:`gd32v103`
+      - :ref:`esp32c3`
+      - :ref:`w801`
+      - :ref:`hpm6350`
+      - :ref:`hpm6750`
+      - :ref:`D1`
+      -
+      -
+    * - :ref:`mips`
+      - X
+      - √
+      - √
+      - √
+      - √
+      - √
+      - √
+      - √
+      - X
+
 
 .. toctree::
     :caption: 厂商相关

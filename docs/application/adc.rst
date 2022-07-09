@@ -25,7 +25,7 @@ High-Speed
     :header-rows:  1
 
     * - Name
-      - MSaps
+      - MSPS
       - Resolution
       - Channel
       - Interface
@@ -88,9 +88,10 @@ AD9248
 ``14bit`` ``65MSPS`` ``Dual-Channel`` ``SNR71.6dBc`` ``800mW`` ``LQFP48`` ``$21.70``
 
 `AD9248芯片 <https://www.analog.com/cn/products/ad9248.html>`_
-`FEP-DAQ9248 <https://www.uisrc.com/portal.php?mod=view&aid=331>`_
 
 AD9248是一款双核、3 V、14位、20/40/65 MSPS模数转换器（ADC），集成了两个高性能采样保持放大器和一个基准电压源。它采用多级差分流水线架构，内置输出纠错逻辑，在最高65 MSPS数据速率时可提供14位精度，并保证在整个工作温度范围内无失码。
+
+`FEP-DAQ9248 采集模块 <https://www.uisrc.com/portal.php?mod=view&aid=331>`_
 
 .. _AD9767:
 
@@ -258,7 +259,7 @@ SoC
       - Package
     * - :ref:`stm32l412`
       - 80 MHz
-      - 100 :ref:`DMIPS`
+      -
       - 40K/128K
       - 2x5MSPS
       - X
@@ -266,7 +267,7 @@ SoC
       - LQFP32
     * - :ref:`stm32g431`
       - 170MHz
-      - 212 :ref:`DMIPS`
+      -
       - 128K/512K
       - 2x4MSPS
       - X
@@ -274,7 +275,7 @@ SoC
       - LQFP48
     * - :ref:`stm32g474`
       - 170MHz
-      - 212 :ref:`DMIPS`
+      -
       - 128K/512K
       - 5x4MSPS
       - X
@@ -282,7 +283,7 @@ SoC
       - LQFP100
     * - :ref:`stm32h730`
       - 550MHz
-      - 1177 :ref:`DMIPS`
+      -
       - 564K/128K
       - 1x5MSPS
       - 2x3.6MSPS
@@ -290,7 +291,7 @@ SoC
       - LQFP100
     * - :ref:`stm32h750`
       - 480MHz
-      - 1027 :ref:`DMIPS`
+      -
       - 1MB/128KB
       - X
       - 3x3.6MSPS
@@ -298,7 +299,7 @@ SoC
       - LQFP100
     * - :ref:`stm32h7b0`
       - 280MHz
-      - 599 :ref:`DMIPS`
+      -
       - 1.4M/128K
       - X
       - 2x3.6MSPS
@@ -450,6 +451,10 @@ LVDS
 典型案例
 ~~~~~~~~~~~~
 
+.. contents::
+    :local:
+    :depth: 1
+
 .. _ADCNN:
 
 ADCNN
@@ -457,7 +462,7 @@ ADCNN
 
 ``ADC`` ``CNN`` ``MCU``
 
-`ADCNN GitHub <https://github.com/tfmcu/ADCNN>`_
+`ADCNN资源仓库 <https://github.com/tfmcu/ADCNN>`_
 
-通过深度学习算法模型方式，直接处理ADC原始数据，实现事件判定和响应。
+通过深度学习算法模型方式，直接处理ADC原始数据，实现电信号事件响应。
 

@@ -52,13 +52,13 @@
     * - :ref:`NO_001` (264KB SRAM/QFN56)
       - $0.70==Dual Cortex-M0，Arduino/MicroPython/USB-OTG
     * - :ref:`NO_002`
-      - 高性能MCU产品，划时代革新
+      - 国产高性能MCU产品，划时代性能升级
+    * - :ref:`NO_003`
+      - WiFi6双频 + BT/BLE双模 + USB HS(PHY)
     * - :ref:`NO_004`
       - 拥有5个独立12bit ADC，拥有 :ref:`stm32_hrtim`
     * - :ref:`NO_005`
       - 靠Cortex-M4性能针对 :ref:`stm32f030`,sLib安全库
-    * - :ref:`NO_006` (272KB SRAM/QFN40)
-      - WiFi/BLE :ref:`riscv` MCU
     * - :ref:`NO_007`
       - 战略级MCU，STM32全家桶外设主频都顶配
     * - :ref:`NO_009` (QFN68)
@@ -80,4 +80,5 @@
 .. toctree::
     :maxdepth: 1
 
+    时代槽点  <roast>
     历史余温  <history>

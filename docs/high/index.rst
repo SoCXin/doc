@@ -75,13 +75,6 @@ MCU
       - 1 MB
       -
       - 100/144/176
-    * - :ref:`esp32s3`
-      - :ref:`xtensa_lx7`
-      - 1182 :ref:`level4`
-      -
-      - 512KB
-      -
-      - :ref:`esp_qfn56`
 
 
 .. toctree::

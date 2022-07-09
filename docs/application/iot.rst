@@ -18,199 +18,28 @@ IoT
       - :ref:`cat1`
       - :ref:`cat4`
     * -
-      - 
-      - 
       -
       -
-      - 
-      -
-      - 
       -
       -
+      -
+      -
+      -
+      -
+      -
+
+.. toctree::
+    :maxdepth: 1
+
+    WPAN <wpan>
+    Wi-Fi <wifi>
+    Bluetooth <bluetooth>
 
 
 .. contents::
     :local:
     :depth: 1
 
-
-
-
-.. _plc:
-
-PLC
-----------
-
-电力线载波通信(PLC,即Power Line Communication)是电力系统特有的通信方式，这是一种利用现有交流或直流电力线，通过载波方式将模拟或数字信号进行高速传输的技术。其最大的特点是不需要重新架设网络，只要有电线，就能进行数据传输。该技术是通过调制把原有信号变成高频信号加载到电力线进行传输，在接收端通过滤波器将调制信号取出解调，得到原有信号，实现信息传递。
-
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`plc`
-      - :ref:`architecture`
-      - SRAM/ROM
-      -
-      - WiFi
-      - Rate
-      - More
-      - Package
-    * - :ref:`cr600`
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-    * - :ref:`hi3921`
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-
-
-.. toctree::
-    :maxdepth: 1
-
-    CR600 <../miscellaneous/CR600>
-    CR710 <../miscellaneous/CR710>
-    Hi3921 <../miscellaneous/Hi3921>
-
-.. note::
-    电力线载波通信（power line carrier communication）以输电线路为载波信号的传输媒介的电力系统通信。
-
-.. _can:
-
-CAN
------------
-``串行通信``
-
-
-CAN总线，也叫做控制器局域网总线（Controller Area Network），是一种用于实时应用的串行通讯协议总线，它可以使用双绞线来传输信号，是世界上应用最广泛的现场总线之一。
-
-
-.. _wpan:
-
-WPAN
-----------
-``Bluetooth`` ``Zigbee`` ``RFID`` ``UWB`` ``NFC`` ``54Mbit/s`` ``802.11``
-
-无线个域网就是在个人周围空间形成的无线网络，现通常指覆盖范围在10m半径以内的短距离无线网络，尤其是指能在便携式消费者电器和通信设备之间进行短距离特别连接的自组织网。WPAN被定位于短距离无线通信技术，但根据不同的应用场合又分为高速WPAN（HR－WPAN）和低速WPAN（LR－WPAN）两种。
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`wpan`
-      - :ref:`802_15_4`
-      - :ref:`bt`
-      - :ref:`zigbee`
-      - :ref:`rfid`
-      - :ref:`uwb`
-    * - 距离
-      -
-      -
-      -
-      -
-      -
-    * - 易用性
-      -
-      -
-      -
-      -
-      -
-    * - 扩展性
-      -
-      -
-      -
-      -
-      -
-
-
-.. toctree::
-    :maxdepth: 1
-
-    Wi-Fi <wifi>
-    Bluetooth <bluetooth>
-
-
-.. _rfid:
-
-RFID
-~~~~~~~~~~~
-``Radio Frequency IDentification`` 
-
-RFID有低频（mm的传输距离）、高频（13.56Mhz）、超高频、微波频段等，频段不同，功率不同，传输的距离不同。
-
-.. toctree::
-    :maxdepth: 1
-
-    BF5885 <../miscellaneous/BF5885>
-
-
-.. _nfc:
-
-NFC
-^^^^^^^^^^^
-``Near Field Communication`` ``13.56MHz``
-
-NFC从本质上来说是一种RFID的演进技术，NFC只是限于13.56MHz的频段。而RFID的频段有低频（125KHz到135KHz），高频（13.56MHz）和超高频（860MHz到960MHz）。
-
-NFC工作有效距离约10cm，所以具有很高的安全性。
-
-
-.. _802_15_4:
-
-802.15.4
-~~~~~~~~~~~
-``2.4GHz/868MHz/915MHz`` ``LR-WPAN`` ``DSSS`` ``GTS``
-
-`IEEE 802.15.4 <https://baike.baidu.com/item/IEEE%20802.15.4/6657379?fromtitle=802.15.4&fromid=1115952&fr=aladdin>`_ 是一种技术标准，它定义了低速率无线个域网（LR-WPAN）的协议。 它规定了LR-WPAN的物理层和媒体访问控制 ，并由IEEE 802.15工作组维护，该工作组在2003年定义了该标准。它是Zigbee的基础，诸如 ISA100.11a ， WirelessHART ， MiWi ， 6LoWPAN ， 线程和SNAP规范，每个规范通过开发IEEE 802.15.4中未定义的上层进一步扩展了标准。
-
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`802_15_4`
-      - :ref:`architecture`
-      - SRAM/ROM
-      -
-      - WiFi
-      - Rate
-      - More
-      - Package
-    * - :ref:`esp32h2`
-      - :ref:`esp_rv32`
-      -
-      -
-      -
-      -
-      -
-      -
-
-.. _zigbee:
-
-ZigBee
-~~~~~~~~~~~
-``802.15.4``
-
-
-.. _uwb:
-
-UWB
-~~~~~~~~~~~
-``Ultra Wide Band``
-
-UWB是无载波通信技术，利用纳秒（ns）至皮秒（ps）级的非正弦波窄脉冲传输数据，而时间调变技术令其传送速度可以大大提高，而且耗电量相对地低，并有较精确的定位能力。
-
-这些脉冲所占用的带宽甚至达到几GHz，因此最大数据传输速率可以达到几百Mbps。
-
-因为使用的是极短脉冲，在高速通信的同时，UWB设备的发射功率却很小，仅仅只有目前的连续载波系统的几百分之一。
-
-超宽带的传输距离都是在十公尺之内，它的传输速率高达480Mbps，是蓝牙的159倍，是Wi-Fi标准的18.5倍，非常适合多媒体信息的大量传输。
 
 .. _lpwan:
 

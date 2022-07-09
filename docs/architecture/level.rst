@@ -4,84 +4,12 @@
 性能
 ===============
 
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`classification`
-      - :ref:`level1`
-      - :ref:`level2`
-      - :ref:`level3`
-      - :ref:`level4`
-      - :ref:`level5`
-      - :ref:`level6`
-      - :ref:`level7`
-      - :ref:`level8`
-      - :ref:`level9`
-    * - :ref:`mcs51`
-      - :ref:`ch549`
-      - X
-      - X
-      - X
-      - X
-      - X
-      - X
-      - X
-      - X
-    * - :ref:`cortex_m`
-      - √
-      - √
-      - √
-      - √
-      - √
-      - √
-      - X
-      - X
-      - X
-    * - :ref:`cortex_r`
-      -
-      -
-      -
-      -
-      -
-      -
-      - X
-      - X
-      - X
-    * - :ref:`cortex_a`
-      -
-      -
-      -
-      -
-      - √
-      - √
-      - √
-      - √
-      - √
-    * - :ref:`riscv`
-      - √
-      - :ref:`gd32v103`
-      - :ref:`esp32c3`
-      - √
-      - :ref:`k210`
-      - :ref:`hpm6750`
-      - √
-      - √
-      - √
-    * - :ref:`mips`
-      - X
-      - √
-      - √
-      - √
-      - √
-      - √
-      - √
-      - √
-      - X
-
 `Level Mark <https://github.com/SoCXin/Level>`_ : :ref:`frequency`/:ref:`CoreMark`/:ref:`Geekbench`
 
 
+.. contents::
+    :local:
+    :depth: 1
 
 
 .. _level1:
@@ -188,16 +116,22 @@ L3
       - 133(MHz)
       -
       - 5
+    * - :ref:`w801`
+      - :ref:`xt804`
+      -
+      - 240(MHz)
+      -
+      -
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407
       - 160(MHz)
       -
-      - 6
+      -
 
 .. _level3_cnt:
 
-num:6
+num:7
 ~~~~~~~~~
 
 .. _level4:
@@ -261,35 +195,42 @@ L5
       - :ref:`frequency`
       - :ref:`consumption`
       - :ref:`level5`
+    * - :ref:`hpm6350`
+      - :ref:`riscv`
+      - 3390
+      - 648(MHz)
+      -
+      -
     * - :ref:`stm32h745`
       - :ref:`cortex_m7`
       - 3224 (2)
       - 480(MHz)
       -
-      - 1
+      -
     * - :ref:`rt1060`
       - :ref:`cortex_m7`
       - 3020
       - 600(MHz)
       -
-      - 2
+      -
     * - :ref:`stm32h730`
       - :ref:`cortex_m7`
       - 2778
       - 550(MHz)
       -
-      - 3
+      -
     * - :ref:`stm32h750`
       - :ref:`cortex_m7`
       - 2424
       - 480(MHz)
       -
-      - 4
+      -
+
 
 
 .. _level5_cnt:
 
-num:4
+num:5
 ~~~~~~~~~
 
 .. _level6:

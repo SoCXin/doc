@@ -1,14 +1,15 @@
 
 .. _mega328p:
 
-ATMEGA328P
+MEGA328P
 ============
 
-* 关键词：``ATMEL`` ``AVR`` ``20MHz`` ``8bit`` ``Arduino Uno``
-* 资源库：`GitHub <https://github.com/SoCXin/MEGA328P>`_
+`GitHub <https://github.com/SoCXin/MEGA328P>`_ : ``ATMEL`` ``AVR`` ``20MHz`` ``8bit`` ``Arduino``
+
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
@@ -23,13 +24,14 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
+* 参考价格：
 * 制程工艺：
-* 工作温度：-40°C to +85°C
-* 处理性能：20 MIPS
+* 供货周期：
+* 处理性能：
+* 封装规格：TQFP32/QFN32/DIP28
+* 运行环境：-40°C to 85°C
 * RAM容量：2 KB
 * Flash容量：32 KB
-* 封装规格：TQFP32/QFN32/DIP28
-
 
 特征参数
 ^^^^^^^^^^^
@@ -38,18 +40,18 @@ Xin简介
 * 1KB EEPROM
 
 
-电源参数
-^^^^^^^^^^^
-
-* 供电电压: 1.8 to 5.5 V
-* 运行功耗: 1.8v x 0.2mA (@1MHz)
-
 芯片架构
 ~~~~~~~~~~~
 
 .. image:: ./images/ATMEGA328Ps.png
     :target: https://www.microchip.com/en-us/product/ATMEGA328P#document-table
 
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压: 1.8 to 5.5 V
+* 运行功耗: 1.8v x 0.2mA (@1MHz)
 
 
 Xin选择
@@ -70,4 +72,4 @@ LGT328P
 
 * 封装规格：QFP48/QFP32/SSOP20
 
-`LGT328P GitHub Repo <https://github.com/SoCXin/LGT8F328P>`_
+`LGT328P GitHub <https://github.com/SoCXin/LGT8F328P>`_
