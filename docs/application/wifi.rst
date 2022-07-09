@@ -72,6 +72,14 @@ Wi-Fi
       - 6/2/1
       -
       - QFN56
+    * - :ref:`cc3200`
+      - :ref:`cortex_m4`
+      -
+      - 256KB/2 MB
+      - WiFi&BLE
+      - 6/2/1
+      -
+      - QFN56
 
 
 

@@ -11,6 +11,10 @@
 开发板
 ----------
 
+.. contents::
+    :local:
+    :depth: 1
+
 .. _sipeed:
 
 Sipeed
@@ -31,4 +35,7 @@ M5Stack
 ``ESP32`` ``Arduino`` ``IoT``
 
 `M5Stack开发板 <https://m5stack.com/zh-cn/>`_
+
+核心板
+----------
 

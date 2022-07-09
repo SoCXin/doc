@@ -4,11 +4,12 @@
 GW1NSR
 ===============
 
-* 关键词：``Gowin`` ``LittleBee`` ``FPGA`` ``4608LUT4`` ``SIP`` ``Cortex-M3`` ``USB2.0PHY``
-* 资源库：`GitHub <https://github.com/SoCXin/GW1NSR>`_
+`GitHub <https://github.com/SoCXin/GW1NSR>`_ : ``Gowin`` ``LittleBee`` ``FPGA`` ``4608LUT4`` ``SIP`` ``Cortex-M3`` ``USB2.0PHY``
+
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------

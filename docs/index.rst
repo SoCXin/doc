@@ -60,6 +60,10 @@ Xin
       - :ref:`stm32h730`
       -
 
+.. hint::
+    贫乏的年代追求全能，丰富的时代追求极致
+
+
 .. toctree::
     :caption: 应用分类
     :maxdepth: 1

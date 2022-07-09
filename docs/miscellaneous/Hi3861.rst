@@ -4,10 +4,11 @@
 Hi3861
 ===============
 
-`标签 <https://github.com/SoCXin/Hi3861>`_ : ``RISC-V`` ``160MHz`` ``BLE`` ``WiFi`` ``QFN32``
+`GitHub <https://github.com/SoCXin/Hi3861>`_ : ``RISC-V`` ``160MHz`` ``BLE`` ``WiFi`` ``QFN32`` ``HarmonyOS`` ``Hi3861V100``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
@@ -19,23 +20,22 @@ Xin简介
 规格参数
 ~~~~~~~~~~~
 
-Hi3861V100是一款高度集成的2.4GHz SoC WiFi芯片，集成IEEE 802.11b/g/n基带和RF电路，RF电路包括功率放大器PA、低 噪声放大器LNA、RF balun、天线开关以及电源管理等模块；
-支持20MHz标准带宽和5MHz/10MHz窄带宽，提供最大72.2Mbit/s 物理层速率。
-Hi3861V100 WiFi基带支持正交频分复用（OFDM）技术，并向下兼容直接序列扩频（DSSS）和补码键控（CCK）技术，支 持IEEE 802.11 b/g/n协议的各种数据速率。
-Hi3861V100芯片集成高性能32bit微处理器、硬件安全引擎以及丰富的外设接口，外设接口包括SPI、UART、I2C、PWM、 GPIO和多路ADC，同时支持高速SDIO2.0 Slave接口，最高时钟可达50MHz；芯片内置SRAM和Flash，可独立运行，并支持 在Flash上运行程序。
-Hi3861V100支持HUAWEI LiteOS和第三方组件，并配套提供开放、易用的开发和调试运行环境。
-Hi3861V100芯片适应于智能家电等物联网智能终端领域。
+Hi3861V100芯片集成高性能32bit微处理器、硬件安全引擎以及丰富的外设接口，外设接口包括SPI、UART、I2C、PWM、 GPIO和多路ADC，同时支持高速SDIO2.0 Slave接口，最高时钟可达50MHz；
+
 
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
+* 参考价格：
 * 制程工艺：
-* 工作温度：-40°C to +85°C
+* 供货周期：
 * 处理性能：
-* RAM容量：352 KB
-* ROM容量：288KB (2 MB)
+* 运行环境：-40°C to 85°C
 * 封装规格：QFN32
+* RAM容量：352 KB
+* ROM容量：288KB KB
+* Flash容量：2 MB
 
 特征参数
 ^^^^^^^^^^^
@@ -47,10 +47,25 @@ Hi3861V100芯片适应于智能家电等物联网智能终端领域。
 * 支持 STBC
 * 支持 Short-GI
 
+芯片架构
+~~~~~~~~~~~
+
 电源参数
 ^^^^^^^^^^^
 
 * 供电电压：2.0 to 3.6 V
+
+连接能力
+~~~~~~~~~~~
+
+Wi-Fi
+^^^^^^^^^^^
+
+Hi3861V100是一款高度集成的2.4GHz SoC WiFi芯片，集成IEEE 802.11b/g/n基带和RF电路，RF电路包括功率放大器PA、低 噪声放大器LNA、RF balun、天线开关以及电源管理等模块；
+
+Hi3861V100 WiFi基带支持正交频分复用（OFDM）技术，并向下兼容直接序列扩频（DSSS）和补码键控（CCK）技术，支 持IEEE 802.11 b/g/n协议的各种数据速率。
+
+支持20MHz标准带宽和5MHz/10MHz窄带宽，提供最大72.2Mbit/s 物理层速率。
 
 Xin选择
 -----------
@@ -82,9 +97,12 @@ Xin应用
 开发板
 ~~~~~~~~~~
 
+BearPi-HM_Nano
+^^^^^^^^^^^^^^^^^
+
 .. image:: ./images/B_Hi3861.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.4.65352042pbNUuk&id=633296694816&ns=1&abbucket=7#detail
 
+`hm_nano gitee <https://gitee.com/bearpi/bearpi-hm_nano.git>`_
 
 
-https://gitee.com/bearpi/bearpi-hm_nano.git
