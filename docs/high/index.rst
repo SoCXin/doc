@@ -71,7 +71,7 @@ MCU
     * - :ref:`stm32h730`
       - :ref:`cortex_m7`
       - 2778 :ref:`level5`
-      - 147µA/MHz
+      - 147µA
       - 1 MB
       -
       - 100/144/176

@@ -114,6 +114,6 @@
 /ASR1601.html -> ASR/ASR1601.html
 /ASR6501.html -> ASR/ASR6501.html
 /ASR1802.html -> ASR/ASR1802.html
-
+/V853.html -> allwinner/V853.html
 /V831.html -> allwinner/V831.html
 /R329.html -> allwinner/R329.html

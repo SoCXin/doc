@@ -36,9 +36,8 @@ AC781x系列是基于ARM® Cortex-M3内核的车规级MCU，主要应用于汽�
 * 处理性能：
 * 封装规格：LQFP80/LQFP64
 * 运行环境：-40°C to 125°C
-* RAM容量：276KB
-* ROM容量：128KB
-* Flash容量：
+* RAM容量：64 KB
+* Flash容量：256 KB
 
 特征参数
 ^^^^^^^^^^^

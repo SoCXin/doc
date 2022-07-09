@@ -65,8 +65,8 @@ Xin
     :maxdepth: 1
 
     功能领域  <application/index>
-    行业标准  <application/industry>
-    硬件产品  <application/products>
+    行业应用  <application/industry>
+    产品案例  <application/products>
 
 .. list-table::
     :header-rows: 1
@@ -109,8 +109,6 @@ Xin
       - :ref:`level5`
       - :ref:`level6`
       - :ref:`level7`
-      - :ref:`level8`
-      - :ref:`level9`
     * - :ref:`cortex_m`
       - √
       - √
@@ -118,8 +116,6 @@ Xin
       - √
       - √
       - √
-      - X
-      - X
       - X
     * - :ref:`cortex_r`
       -
@@ -129,15 +125,11 @@ Xin
       -
       -
       - X
-      - X
-      - X
     * - :ref:`cortex_a`
       -
       -
       -
       -
-      - √
-      - √
       - √
       - √
       - √
@@ -149,8 +141,6 @@ Xin
       - :ref:`hpm6350`
       - :ref:`hpm6750`
       - :ref:`D1`
-      -
-      -
     * - :ref:`mips`
       - X
       - √
@@ -159,8 +149,6 @@ Xin
       - √
       - √
       - √
-      - √
-      - X
 
 
 .. toctree::

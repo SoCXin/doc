@@ -1,7 +1,7 @@
 
 .. _products:
 
-产品方案
+产品案例
 ===============
 
 .. contents::
@@ -32,14 +32,3 @@ M5Stack
 
 `M5Stack开发板 <https://m5stack.com/zh-cn/>`_
 
-
-产品方案
-------------
-
-.. contents::
-    :local:
-    :depth: 1
-
-电子智能锁
-~~~~~~~~~~~~
-``门禁管理`` 

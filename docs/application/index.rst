@@ -8,8 +8,8 @@ Application
     :maxdepth: 1
 
     边缘计算 AI  <ai>
-    通信连接 IoT  <iot>
-    实时驱动 FoC  <foc>
+    无线通信 IoT  <iot>
+    实时控制 FoC  <foc>
     人机交互 HMI  <hmi>
     信号转换 ADC  <adc>
 
@@ -65,10 +65,12 @@ Wired
       - :ref:`uart`
       - :ref:`i2c`
       - :ref:`spi`
-      - :ref:`usb`
       - :ref:`can`
+      - :ref:`sdio`
+      - :ref:`usb`
       - :ref:`ethernet`
     * - 速率
+      -
       -
       -
       -
@@ -84,8 +86,7 @@ Wired
     PLC <plc>
 
 
-.. contents::
-    :local:
+
 
 .. _uart:
 
@@ -113,6 +114,10 @@ RS232的缺点很明显，接口的信号电平值较高易损坏接口电路的
 
 RS-485采用差分信号正逻辑，+2—+6 V表示逻辑1，-2—-6 V表示逻辑0，信号电平较低，可直接和TTL电平兼容，同样的通信速率可达10Mb/s，采用平衡驱动器和差分接收器的组合，抗共模干能力增强，通信距离实际可达3000米，支持32个节点，使用特制芯片最多支持400个节点。
 
+.. _sdio:
+
+SDIO
+^^^^^^^^^^^^
 
 .. _can:
 

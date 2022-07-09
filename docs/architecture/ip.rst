@@ -18,12 +18,16 @@
 
 射频IP
 -----------
-``Wi-Fi`` ``BLE`` 
+``Wi-Fi`` ``BLE``
 
 通信IP
 -----------
-``USB`` ``MIPI`` ``SerDes`` ``PCIe`` 
+``USB`` ``MIPI`` ``SerDes`` ``PCIe``
 
 存储IP
 -----------
-``eNVM`` ``EEPROM`` 
+``eNVM`` ``EEPROM``
+
+SIP封装
+-----------
+``SIP``

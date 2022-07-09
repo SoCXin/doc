@@ -14,7 +14,7 @@
 
 .. _level1:
 
-L1
+Level1
 --------------
 ``Frequency < 60MHz``
 
@@ -36,14 +36,10 @@ L1
       - 1
 
 
-.. _level1_cnt:
-
-num:1
-~~~~~~~~~
 
 .. _level2:
 
-L2
+Level2
 --------------
 ``Frequency < 120MHz``
 
@@ -65,14 +61,10 @@ L2
       - 1
 
 
-.. _level2_cnt:
-
-num:1
-~~~~~~~~~
 
 .. _level3:
 
-L3
+Level3
 --------------
 ``Frequency < 240MHz``
 
@@ -116,12 +108,6 @@ L3
       - 133(MHz)
       -
       - 5
-    * - :ref:`w801`
-      - :ref:`xt804`
-      -
-      - 240(MHz)
-      -
-      -
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407
@@ -129,14 +115,9 @@ L3
       -
       -
 
-.. _level3_cnt:
-
-num:7
-~~~~~~~~~
-
 .. _level4:
 
-L4
+Level4
 --------------
 ``CoreMark < 2000``
 
@@ -173,16 +154,17 @@ L4
       - 240(MHz)
       -
       - 4
-
-.. _level4_cnt:
-
-num:4
-~~~~~~~~~
+    * - :ref:`w801`
+      - :ref:`xt804`
+      -
+      - 240(MHz)
+      -
+      -
 
 
 .. _level5:
 
-L5
+Level5
 --------------
 ``CoreMark < 5000``
 
@@ -228,14 +210,9 @@ L5
 
 
 
-.. _level5_cnt:
-
-num:5
-~~~~~~~~~
-
 .. _level6:
 
-L6
+Level6
 --------------
 ``CoreMark > 5000``
 
@@ -267,33 +244,54 @@ L6
       -
       -
 
-.. _level6_cnt:
-
-num:3
-~~~~~~~~~
 
 .. _level7:
 
-L7
+Level7
 --------------
 ``Geekbench > 1000``
 
 .. _level8:
 
-L8
+Level8
 --------------
 ``Geekbench > 2000``
 
 .. _level9:
 
-L9
+Level9
 --------------
 ``Geekbench > 4000``
 
-* M1:9.78 CoreMark/MHz
-* A15:1724/4320 | 9.36 CoreMark/MHz
-* 9000:1248/4181
-* 8Gen1:1235/3831
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`level9`
+      - :ref:`architecture`
+      - :ref:`frequency`
+      - :ref:`Geekbench`
+      - :ref:`consumption`
+      - :ref:`foundry`
+    * - M1
+      -
+      -
+      -
+      -
+      -
+    * - A15
+      -
+      -
+      -
+      -
+      -
+    * - 8Gen1
+      -
+      -
+      -
+      -
+      -
+
 
 .. _level_npu:
 
