@@ -80,10 +80,8 @@ Xin
       - :ref:`cat1`
       - :ref:`usb`
       - :ref:`ethernet`
-      - :ref:`plc`
     * - :ref:`matter`
       - :ref:`esp32h2`
-      -
       -
       -
       -
@@ -103,7 +101,7 @@ Xin
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`classification`
+    * -
       - :ref:`level1`
       - :ref:`level2`
       - :ref:`level3`
@@ -172,3 +170,29 @@ Xin
     芯片设计 <ic>
     芯片代工 <fab>
     芯片销售 <sales>
+
+
+.. list-table::
+    :header-rows: 1
+
+    * -
+      - 产品数量
+      - 经典作品
+      - 最新产品
+      - 看家本领
+      - 制程工艺
+      - 销售渠道
+    * - :ref:`wch`
+      -
+      - :ref:`ch579`
+      - :ref:`ch32v307`
+      - :ref:`usb`
+      -
+      - :ref:`mouser`
+    * - :ref:`espressif`
+      - 6
+      - :ref:`esp32`
+      - :ref:`esp32c2`
+      - :ref:`wifi`
+      - :ref:`tsmc_40nm`
+      - :ref:`mouser`

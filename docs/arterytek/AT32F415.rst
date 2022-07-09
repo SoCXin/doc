@@ -8,6 +8,7 @@ AT32F415
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------

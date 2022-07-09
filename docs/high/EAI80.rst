@@ -4,17 +4,19 @@
 EAI80
 =============
 
-* 关键词：``Cortex-M4`` ``Dual Core`` ``200MHz`` ``0.3TOPS`` ``CNN-NPU``
-* 资源库：`GitHub <https://github.com/SoCXin/EAI80>`_
+`GitHub <https://github.com/SoCXin/EAI80>`_ : ``Cortex-M4`` ``Dual Core`` ``200MHz`` ``0.3TOPS`` ``CNN-NPU``
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
 
 是一款新的边缘计算体系MCU，集成NPU，可应用于语音控制，计算机视觉-物体和生物(脸，身体，姿势)的检测和识别，vSLAM，边缘计算等。
 
+是一款值得被吐槽的MCU :ref:`roast`
 
 规格参数
 ~~~~~~~~~~~

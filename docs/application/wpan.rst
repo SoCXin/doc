@@ -47,10 +47,6 @@ RFID
 
 RFID有低频（mm的传输距离）、高频（13.56Mhz）、超高频、微波频段等，频段不同，功率不同，传输的距离不同。
 
-.. toctree::
-    :maxdepth: 1
-
-    BF5885 <../miscellaneous/BF5885>
 
 
 .. _nfc:

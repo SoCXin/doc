@@ -7,9 +7,10 @@ AT32F421
 `标签 <https://github.com/SoCXin/AT32F421>`_ : ``Cortex-M4`` ``120MHz`` ``COMP`` ``sLib`` ``ERTC`` ``TSSOP20``
 
 
-
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
