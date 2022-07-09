@@ -42,7 +42,7 @@ BLE
       -
       - QFN28
     * - :ref:`BL702`
-      - 
+      -
       -
       -
       -
@@ -65,6 +65,14 @@ BLE
       -
       -
       - QFN32
+    * - :ref:`cst92f25`
+      - :ref:`cortex_m0`
+      -
+      -
+      -
+      -
+      -
+      -
 
 
 .. toctree::

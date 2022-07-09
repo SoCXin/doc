@@ -1,12 +1,23 @@
 
-.. _protocols:
+.. _industry:
 
-应用协议
+行业标准
 ===============
 
 .. contents::
     :local:
     :depth: 1
+
+
+车规控制
+-----------
+
+``AEC-Q100 Grade 1``
+
+.. toctree::
+    :maxdepth: 1
+
+    AC7815 <../miscellaneous/AC7815>
 
 智能家居
 -----------
@@ -36,6 +47,10 @@ Matter 基于IP协议（例如Wi-Fi、以太网和Thread）而构建，提供了
 
 工控现场
 -----------
+
+.. contents::
+    :local:
+    :depth: 1
 
 .. _modbus:
 

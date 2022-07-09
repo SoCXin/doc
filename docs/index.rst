@@ -65,7 +65,7 @@ Xin
     :maxdepth: 1
 
     功能领域  <application/index>
-    数据协议  <application/protocols>
+    行业标准  <application/industry>
     硬件产品  <application/products>
 
 .. list-table::

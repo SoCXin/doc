@@ -1,0 +1,65 @@
+
+.. _ac7815:
+
+AC7815
+===============
+
+`autochips <https://www.autochips.com/>`_ : ``AEC-Q100 Grade 1``
+
+.. contents::
+    :local:
+    :depth: 1
+
+
+Xin简介
+-----------
+
+AC781x系列是基于ARM® Cortex-M3内核的车规级MCU，主要应用于汽车电子和高可靠性工业领域。AC781x符合AEC-Q100规范，是国内首颗32bit车规MCU，具备出色的EMC/ESD能力。
+
+.. image:: ./images/AC7815.png
+    :target: https://github.com/SoCXin/AC7815
+
+.. contents::
+    :local:
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 封装规格：LQFP80/LQFP64
+* 运行环境：-40°C to 125°C
+* RAM容量：276KB
+* ROM容量：128KB
+* Flash容量：
+
+特征参数
+^^^^^^^^^^^
+
+* 100 MHz :ref:`cortex_m4`
+* 兼容CAN2.0B x2, HW LIN x1, UART LIN x1
+* 增强型闪存加速引擎
+
+
+模拟性能
+^^^^^^^^^^^
+
+
+
+芯片架构
+~~~~~~~~~~~
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：2.7V - 5.5V
+* 功耗范围：
+
+ESD：HBM 8KV,CDM 750V
