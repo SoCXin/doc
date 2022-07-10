@@ -7,18 +7,16 @@ Application
 .. toctree::
     :maxdepth: 1
 
-    边缘计算 AI  <ai>
-    无线通信 IoT  <iot>
-    实时控制 FoC  <foc>
-    人机交互 HMI  <hmi>
-    信号转换 ADC  <adc>
+    边缘计算   <ai>
+    实时控制   <foc>
+    人机交互   <hmi>
+    信号处理   <adc>
+    音频处理   <audio>
 
 
 通信连接
 -----------
 
-.. contents::
-    :local:
 
 .. _wireless:
 
@@ -28,15 +26,16 @@ Wireless
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`iot`
+    * -
       - :ref:`802_15_4`
+      - :ref:`zigbee`
       - :ref:`bt`
       - :ref:`wifi`
       - :ref:`lora`
       - :ref:`nbiot`
       - :ref:`cat1`
       - :ref:`cat4`
-    * - 易用性
+    * - 频段
       -
       -
       -
@@ -44,7 +43,8 @@ Wireless
       -
       -
       -
-    * - 扩展性
+      -
+    * - 带宽
       -
       -
       -
@@ -52,6 +52,35 @@ Wireless
       -
       -
       -
+      -
+    * - 距离
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - 功耗
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+
+.. toctree::
+    :maxdepth: 1
+
+    LTE <lte>
+    LPWA <lpwa>
+    Wi-Fi <wifi>
+    WPAN <wpan>
+    Bluetooth <bluetooth>
+
 
 .. _wired:
 
