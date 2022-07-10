@@ -30,7 +30,6 @@ Marlin
       - UART
       - GPIO
       - Special
-      - Package
     * - :ref:`esp32`
       - 240MHz
       - 512K
@@ -38,7 +37,6 @@ Marlin
       - 2
       - 18
       - WIFI
-      - QFN48
     * - :ref:`stm32f103`
       - 72MHz
       - 20KB
@@ -46,7 +44,6 @@ Marlin
       - 2
       - 40
       -
-      - LQFP48
     * - :ref:`stm32f401`
       - 100MHz
       -
@@ -54,7 +51,6 @@ Marlin
       - 2
       -
       -
-      - QFN48
 
 .. _grblhal:
 

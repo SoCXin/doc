@@ -36,8 +36,6 @@ SIP封装
     :local:
     :depth: 1
 
-Flash
-~~~~~~~~~~~
 
 PSRAM
 ~~~~~~~~~~~

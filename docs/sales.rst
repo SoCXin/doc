@@ -4,6 +4,38 @@
 Sales
 ===============
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`sales`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`digikey`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`mouser`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`element14`
+      -
+      -
+      -
+      -
+      -
+      -
+
 .. contents::
     :local:
     :depth: 1

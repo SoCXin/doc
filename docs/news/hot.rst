@@ -12,32 +12,31 @@
     :local:
     :depth: 1
 
+.. _lan:
+
 编程语言
 -------------
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`hot`
+    * - :ref:`lan`
       - :ref:`arduino`
       - :ref:`lua`
       - :ref:`mpy`
       - :ref:`rust`
       - :ref:`xgo`
-      - Assembly
     * - :ref:`esp32`
       - √
       - √
       - √
       - √
       - X
-      - √
     * - :ref:`rp2040`
       - √
       - X
       - √
       - √
-      - X
       - X
     * - :ref:`stm32f103`
       - √
@@ -45,8 +44,15 @@
       - √
       - √
       - √
-      - √
 
+
+.. _arduino:
+
+Arduino
+~~~~~~~~~~~~~
+
+
+``C++``
 .. _lua:
 
 Lua
@@ -123,6 +129,13 @@ mPy
       -
       -
       -
+    * - :ref:`esp32`
+      -
+      -
+      -
+      -
+      -
+      -
     * - :ref:`rp2040`
       -
       -
@@ -137,13 +150,7 @@ mPy
       -
       -
       -
-    * - :ref:`esp32`
-      -
-      -
-      -
-      -
-      -
-      -
+
 
 .. _xgo:
 
@@ -151,16 +158,45 @@ xGo
 ~~~~~~~~~~~~~
 ``Go``
 
-.. _arduino:
 
-Arduino
-~~~~~~~~~~~~~
-``C++``
 
 `OS-Q:Arduino <https://docs.os-q.com/arduino>`_
 
+
 编译体系
 -------------
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`mpy`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`esp32`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`rp2040`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`stm32f405`
+      -
+      -
+      -
+      -
+      -
+      -
 
 .. _pio:
 
@@ -179,6 +215,11 @@ QIO
 GCC
 ~~~~~~~~~~~~~
 
+.. _ninja:
+
+Ninja
+~~~~~~~~~~~~~
+
 
 开发框架
 -------------
@@ -187,7 +228,7 @@ GCC
 .. list-table::
     :header-rows:  1
 
-    * - 
+    * -
       - :ref:`libopencm3`
       - freeRTOS
       - :ref:`zephyr`
@@ -240,7 +281,7 @@ CMSIS
 Zephyr
 ~~~~~~~~~~~~~
 
-非对称多处理 (Asymmetric Multiprocessing, AMP) 
+非对称多处理 (Asymmetric Multiprocessing, AMP)
 
 Zephyr 正在从 Pin Mux 向 Pin Control 转变。Pin Control 是一种新的机制，它为配置 IO 引脚的输入输出方向和启用上拉/下拉，提供了一种更好的方式。更重要的是，它支持将引脚分配给一个特定的外设
 
@@ -262,9 +303,6 @@ The libopencm3 project aims to create an open-source firmware library for variou
 
 Arduino
 ~~~~~~~~~~~~~
-
-* `Arduino_Core_ESP32 <https://github.com/lOS-Q/Arduino_Core_ESP32>`_
-
 
 
 .. toctree::

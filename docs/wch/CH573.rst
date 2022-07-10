@@ -138,7 +138,7 @@ Xin选择
       - UART/SPI
       - Package
     * - :ref:`ch573`
-      - :ref:`riscv`
+      - :ref:`wch_riscv3a`
       - 18KB/512KB
       -
       - USB
@@ -153,30 +153,6 @@ Xin选择
       -
       -
       -
-    * - :ref:`ab32vg1`
-      -
-      -
-      -
-      -
-      -
-      -
-      - LQFP48
-
-
-.. _ab32vg1:
-
-AB32VG1
-^^^^^^^^^^^^^^^
-
-蓝讯骄龙 AB32VG1 是中科蓝讯在 2020 RT-Thread 开发者大会上首度面向通用市场发布的其自主 RISC-V 内核 32 位 MCU 芯片，AB32VG1 主频 120M ，片上集成 RAM 192K, Flash 4Mbit，ADC，PWM，USB，UART，IIC 等资源。
-
-* 符合蓝牙 5.0 和 BLE 规范
-* TX 输出功率 +2dBm（典型值）；RX 灵敏度 -90.5dBm @Basic Rate
-* 带 16 位立体声 DAC 和两通道 16 位 ADC；支持灵活的音频EQ调节；支持采样率 8、11.025、12、16、22.05、32、44.1 和 48KHz；
-* 4 通道立体声模拟 MUX；两路MIC功放输入；
-* 具有 90dB SNR 的高性能立体声音频 ADC；具有 95dB SNR 的高性能立体声音频 DAC，带耳机放大器输出；
-
-主要针对音频应用场景，零售价格在￥5
 
 系列对比
 ~~~~~~~~~

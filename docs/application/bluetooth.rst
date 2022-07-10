@@ -12,6 +12,14 @@ Bluetooth
     2022年，全行业的 Bluetooth设备出货量预计将达到 50 亿。
 
 
+.. toctree::
+    :maxdepth: 1
+
+    BL702 <../miscellaneous/BL702>
+    BL602 <../miscellaneous/BL602>
+    DA14580 <../miscellaneous/DA14580>
+    AB32VG1 <../miscellaneous/AB32VG1>
+
 .. contents::
     :local:
     :depth: 1
@@ -41,6 +49,14 @@ BLE
       -
       -
       - QFN28
+    * - :ref:`ch573`
+      - :ref:`wch_riscv3a`
+      -
+      -
+      -
+      -
+      -
+      -
     * - :ref:`BL702`
       -
       -
@@ -75,12 +91,6 @@ BLE
       -
 
 
-.. toctree::
-    :maxdepth: 1
-
-    BL702 <../miscellaneous/BL702>
-    BL602 <../miscellaneous/BL602>
-    DA14580 <../miscellaneous/DA14580>
 
 
 版本迭代
