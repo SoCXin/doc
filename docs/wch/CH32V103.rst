@@ -117,3 +117,15 @@ Xin选择
 .. image:: ./images/CH32V103l.png
     :target: http://www.wch.cn/products/CH32V103.html
 
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+
+.. image:: ./images/CH32V103b.png
+    :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.33842e8dEzEnEd&id=639074445446&_u=agas3eu83d6
