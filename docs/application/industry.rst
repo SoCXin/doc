@@ -19,6 +19,25 @@
 
     AC7815 <../miscellaneous/AC7815>
 
+
+.. _autosar:
+
+AUTOSAR
+~~~~~~~~~~~
+``汽车开放系统架构`` ``ECU``
+
+AUTOSAR (Automotive Open System Architecture) 成立于2003年，致力于制定汽车电子软件标准的联盟（参与者有全球各家汽车制造商、零部件供应商以及各种研究、服务机构）。
+
+目前汽车中的软件代码量早已超过了1千万行，ECU的数量也超过了1百个。
+
+一套专门针对汽车ECU的软件开发架构，用于汽车开放性的框架和行业标准，它将用作管理将来的应用程序和标准软件模块中功能的基本基础结构。
+
+
+
+三个文档组：Classic Platform(CP)、Adaptive Platform(AP)、Foundation(FO)
+
+
+
 智能家居
 -----------
 

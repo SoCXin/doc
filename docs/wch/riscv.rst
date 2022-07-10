@@ -10,25 +10,16 @@ RISC-V
 青稞V4微处理器是基于标准RISC-V指令集架构，自研的32位通用MCU微处理器。支持RV32IMACF指令集和自扩展字节和半字操作压缩指令，支持中断嵌套、硬件压栈（HPE）、免表中断（VTF），支持多种低功耗模式，增强的两线调试接口，支持标准RISC-V调试，具有物理 内存保护（PMP）等功能。
 
 
-.. contents::
-    :local:
-
 
 .. list-table::
     :header-rows:  1
 
-    * - Version
-      - DMIPS
-      - RAM
-      - Flash
-      - DMIPS
-      - BLE
-      - USB
-      - Ethernet
+    * - :ref:`riscv`
+      - :ref:`frequency`
+      - :ref:`CoreMark`
+      - :ref:`consumption`
+      - RAM/Flash
     * - :ref:`wch_riscv3a`
-      -
-      -
-      -
       -
       -
       -
@@ -38,13 +29,7 @@ RISC-V
       -
       -
       -
-      -
-      -
-      -
     * - :ref:`wch_riscv4b`
-      -
-      -
-      -
       -
       -
       -
@@ -54,19 +39,11 @@ RISC-V
       -
       -
       -
-      -
-      -
-      -
     * - :ref:`wch_riscv4f`
       -
       -
       -
       -
-      -
-      -
-      -
-
-
 
 
 

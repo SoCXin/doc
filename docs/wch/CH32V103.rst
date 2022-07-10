@@ -4,10 +4,11 @@
 CH32V103
 ============
 
-`标签 <http://www.wch.cn/products/CH32V103.html>`_ : ``RISC-V3A`` ``80MHz`` ``USB``
+`WCH <http://www.wch.cn/products/CH32V103.html>`_ : ``RISC-V3A`` ``80MHz`` ``USB``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
@@ -36,7 +37,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`wch_riscv3a` 青稞V3A处理器，最高80MHz系统主频；
+* 80 MHz :ref:`wch_riscv3a`
 * 7通道DMA控制器；
 * 16路TouchKey通道监测；
 * 16路12位ADC转换通道；
