@@ -6,7 +6,6 @@ CH32V307
 
 `GitHub <https://github.com/SoCXin/CH32V307>`_ : ``RISC-V`` ``RISC-V4F`` ``USB-HS-OTG(480Mbps)`` ``Ethernet`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``CAN`` ``FSMC`` ``OPA`` ``DVP``
 
-`样品链接 <https://item.taobao.com/item.htm?spm=a230r.1.14.13.392c1289XH7hHX&id=669871604231&ns=1&abbucket=18#detail>`_
 
 
 .. contents::
@@ -263,6 +262,7 @@ Xin应用
 .. image:: ./images/B_CH32V307.jpg
     :target: https://item.taobao.com/item.htm?spm=a230r.1.14.48.39021289jMGykq&id=659315400556&ns=1&abbucket=3#detail
 
+`样品链接 <https://item.taobao.com/item.htm?spm=a230r.1.14.13.392c1289XH7hHX&id=669871604231&ns=1&abbucket=18#detail>`_
 
 应用方案
 ~~~~~~~~~~

@@ -35,7 +35,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 1.1 GHz XuanTie :ref:`c906`
+* 1.1 GHz XuanTie :ref:`xt_c906`
 * HiFi4 DSP
 * 32 KB L1 I-cache and 32 KB L1 D-cache
 

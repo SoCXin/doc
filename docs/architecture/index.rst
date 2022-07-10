@@ -3,6 +3,9 @@
 内核架构
 ===============
 
+.. note::
+    PPA是芯片开发者们背负的终极KPI,也就是Performance(性能)、Power(功耗)、Area(尺寸)三者的缩写。任何芯片设计的目标都是希望得到更高的性能,更低的功耗,更小的面积。
+
 .. contents::
     :local:
     :depth: 1
@@ -25,19 +28,19 @@ Classification
       - 12K
     * -
       - :ref:`cortex_m3`
-      - 
+      -
       -
     * -
       - :ref:`cortex_m4`
-      - 
+      -
       -
     * -
       - :ref:`cortex_m7`
-      - 
+      -
       -
     * -
       - :ref:`cortex_m85`
-      - 
+      -
       -
     * - :ref:`mips`
       - :ref:`24KEc`
@@ -52,13 +55,24 @@ Classification
       -
       -
     * - :ref:`riscv`
-      - :ref:`xt`
+      - :ref:`andes_d45`
+      -
+      -
+    * -
+      - :ref:`xt_c906`
+      -
+      -
+    * -
+      - :ref:`xt804`
       -
       -
     * -
       - :ref:`qingke`
       -
       -
+
+
+
 
 
 
