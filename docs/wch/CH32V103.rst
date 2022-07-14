@@ -4,7 +4,7 @@
 CH32V103
 ============
 
-`WCH <http://www.wch.cn/products/CH32V103.html>`_ : ``RISC-V3A`` ``80MHz`` ``USB``
+`WCH <http://www.wch.cn/products/CH32V103.html>`_ : ``RISC-V3A`` ``80MHz`` ``USB`` ``HarmonyOS``
 
 .. contents::
     :local:

@@ -21,6 +21,37 @@ WCH
     :local:
     :depth: 1
 
+优势确认
+~~~~~~~~~~~~~
+``产品线丰富`` ``低成本`` ``连接``
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wch`
+      - :ref:`wch_eth`
+      - :ref:`wch_usb`
+      - :ref:`wch_ble`
+      - :ref:`wch_8051`
+      - :ref:`wch_arm`
+      - :ref:`wch_rv`
+    * - :ref:`low`
+      - :ref:`ch579`
+      - :ref:`ch552`
+      - :ref:`ch573`
+      - :ref:`ch549`
+      - :ref:`ch32f103`
+      - :ref:`ch32v103`
+    * - :ref:`ulp`
+      -
+      - :ref:`ch569`
+      - :ref:`ch583`
+      -
+      - :ref:`ch32f208`
+      - :ref:`ch32v307`
+
+
+
 产品定位
 ~~~~~~~~~~~~~
 
@@ -39,8 +70,6 @@ WCH
     厂商例程代码还是有点“乱”，和大多数国产MCU厂商一样，软资源不够全面也不够规范，可能在这上面的资源投入很有限
 
 
-对比优势
-~~~~~~~~~~~~~
 
 
 通信领域
@@ -56,7 +85,7 @@ WCH
 
 .. _wch_eth:
 
-ETH ++
+ETH++
 ~~~~~~~~~~~
 
 .. list-table::
@@ -105,8 +134,9 @@ ETH ++
 .. image:: ./images/eth.png
     :target: http://www.wch.cn/products/category/4.html#data
 
+.. _wch_usb:
 
-USB ++
+USB++
 ~~~~~~~~~~~
 
 
@@ -234,7 +264,7 @@ USB-FS
 
 .. _wch_ble:
 
-BLE ++
+BLE++
 ~~~~~~~~~~~
 
 .. image:: ./images/BLE.png
@@ -283,6 +313,9 @@ BLE ++
 
 .. contents::
     :local:
+    :depth: 1
+
+.. _wch_8051:
 
 MCS51
 ~~~~~~~~~~~~
@@ -346,6 +379,8 @@ MCS51
     CH549 <CH549>
     CH543 <CH543>
 
+.. _wch_arm:
+
 Cortex
 ~~~~~~~~~~~~
 
@@ -368,6 +403,7 @@ Cortex
     CH579 <CH579>
     CH563 <CH563>
 
+.. _wch_rv:
 
 RISC-V
 ~~~~~~~~~~~~
@@ -521,6 +557,7 @@ USB PD的通信是将协议层的消息调制成24MHZ的FSK信号并耦合到VBU
 
 方案总结
 ------------
+``HarmonyOS``
 
 .. contents::
     :local:
