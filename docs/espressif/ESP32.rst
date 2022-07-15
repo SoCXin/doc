@@ -85,9 +85,9 @@ Xin简介
       - 双核(none)
       - uA/MHz
     * - 160MHz
-      - 38.5mA 
+      - 38.5mA
       - 54.8mA
-      - 25.3mA 
+      - 25.3mA
       - 27.8mA
       -
     * - 240MHz
@@ -183,19 +183,19 @@ Xin选择
 品牌对比
 ~~~~~~~~~~~
 
-在WiFi MCU领域，ESP的主要对比品牌有Realtek 和 :ref:`mediatek`
+在WiFi MCU领域，ESP的主要对比品牌有 :ref:`realtek` 和 :ref:`mediatek`
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ic`
+    * - :ref:`wifi`
       - :ref:`CoreMark`
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
       - Package
     * - :ref:`esp32`
-      - 994.26 :ref:`CoreMark`
+      - 994.26
       - 512KB/384KB
       -
       - 3/2/1

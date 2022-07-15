@@ -13,6 +13,7 @@ Chips
     微控制器领域王者 ST <st/index>
     高性能多领域跨界 NXP <nxp/index>
     低功耗蓝牙控制器 Nordic <nordic/index>
+    多媒体及网络通信 Realtek <realtek/index>
     多媒体语音控制器 Nuvoton  <nuvoton/index>
 
 .. toctree::
