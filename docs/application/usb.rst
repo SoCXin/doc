@@ -100,11 +100,8 @@ USB PD
       - ESSOP10
 
 
-SoC
+SoC芯片
 ~~~~~~~~~~~~
-
-.. image:: ./images/wch_asm.png
-    :target: http://www.wch.cn/products/categories/33.html?pid=5
 
 
 USB PD的通信是将协议层的消息调制成24MHZ的FSK信号并耦合到VBUS上或者从VBUS上获得FSK信号来实现手机和充电器通信的过程。
