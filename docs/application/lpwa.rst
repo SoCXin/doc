@@ -60,7 +60,7 @@ LoRa
 .. list-table::
     :header-rows: 1
 
-    * - :ref:`ic`
+    * - :ref:`vendor`
       - :ref:`can`
       - :ref:`ethernet`
       - :ref:`plc`

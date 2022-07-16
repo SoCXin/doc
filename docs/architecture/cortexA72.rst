@@ -10,7 +10,7 @@ Cortex-A72
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ic`
+    * - :ref:`vendor`
       - DMIPS
       - RAM
       - Cache

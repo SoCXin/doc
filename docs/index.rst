@@ -169,19 +169,19 @@ Xindex
     :caption: 厂商相关
     :maxdepth: 1
 
-    芯片设计 <ic>
-    芯片代工 <fab>
-    芯片销售 <sales>
+    晶元代工 <foundry>
+    芯片设计 <vendor>
+    销售推广 <sales>
 
 
 .. list-table::
     :header-rows: 1
 
-    * -
-      - 产品数量
-      - 经典作品
+    * - 芯片厂商
+      - 产品系列
+      - 代表作品
       - 最新产品
-      - 看家本领
+      - 核心技术
       - 主要制程
       - 销售渠道
     * - :ref:`wch`

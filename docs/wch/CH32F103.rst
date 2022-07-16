@@ -99,7 +99,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ic`
+    * - :ref:`vendor`
       - DMIPS
       - RAM
       - Flash
@@ -182,7 +182,7 @@ GD32、APM32可以通过此软件下载，其它几种不可以，说明GD32和A
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ic`
+    * - :ref:`vendor`
       - :ref:`architecture`
       - RAM
       - Flash

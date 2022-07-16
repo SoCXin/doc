@@ -99,7 +99,7 @@ H7系列关键参数对比
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ic`
+    * - :ref:`vendor`
       - :ref:`stm32h730`
       - :ref:`stm32h750`
       - :ref:`stm32h7b0`
@@ -122,7 +122,7 @@ H7系列关键参数对比
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ic`
+    * - :ref:`vendor`
       - :ref:`DMIPS`
       - RAM
       - Cache

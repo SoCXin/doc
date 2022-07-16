@@ -123,7 +123,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ic`
+    * - :ref:`vendor`
       - :ref:`CoreMark`
       - SRAM/ROM
       - wireless

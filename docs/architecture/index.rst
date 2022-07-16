@@ -141,7 +141,7 @@ Performance
       - :ref:`DMIPS`
       - :ref:`CoreMark`
       - :ref:`consumption`
-      - :ref:`ic`
+      - :ref:`vendor`
     * - :ref:`cortex_m0`
       - 0.95/MHz
       - 2.39/MHz

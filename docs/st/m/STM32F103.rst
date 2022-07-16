@@ -76,7 +76,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ic`
+    * - :ref:`vendor`
       - DMIPS
       - RAM
       - Flash

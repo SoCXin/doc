@@ -102,7 +102,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ic`
+    * - :ref:`vendor`
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
@@ -150,7 +150,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ic`
+    * - :ref:`vendor`
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
@@ -196,7 +196,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ic`
+    * - :ref:`vendor`
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM

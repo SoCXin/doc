@@ -77,7 +77,7 @@ MCU平台
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`ic`
+    * - :ref:`vendor`
       - :ref:`architecture`
       - Freq
       - RAM
