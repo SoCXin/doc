@@ -129,31 +129,37 @@ Level4
       - :ref:`CoreMark`
       - :ref:`frequency`
       - :ref:`consumption`
-      - :ref:`level4`
+      - :ref:`foundry`
     * - :ref:`stm32h7b0`
       - :ref:`cortex_m7`
       - 1414
       - 280(MHz)
       -
-      - 1
+      -
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1182 (2)
       - 240(MHz)
       -
-      - 2
+      -
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 994 (2)
       - 240(MHz)
       -
-      - 3
+      -
+    * - :ref:`at32f437`
+      - :ref:`cortex_m4`
+      - 630
+      - 288(MHz)
+      -
+      - 55nm
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 614
       - 240(MHz)
       -
-      - 4
+      -
     * - :ref:`w801`
       - :ref:`xt804`
       -

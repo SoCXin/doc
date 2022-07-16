@@ -31,23 +31,23 @@ ADC-MCU
       - SRAM/flash
       - 12-bit
       - 16-bit
-      -
+      - SampleRate
       - Package
     * - :ref:`at32f437`
       - 288 MHz
       - 630
       - 512K/4M
-      - 3x5.33 MSPS
+      - 3x16ch
       - X
-      -
+      - 5.33MSPS
       - LQFP64
     * - :ref:`stm32l412`
       - 80 MHz
       -
       - 40K/128K
-      - 2x5MSPS
+      - 2x
       - X
-      - 1/1
+      - 5MSPS
       - LQFP32
     * - :ref:`stm32g431`
       - 170MHz

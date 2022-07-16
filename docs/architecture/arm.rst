@@ -112,18 +112,6 @@ Cortex-R
 Cortex-M
 ~~~~~~~~~~~
 
-.. toctree::
-    :maxdepth: 1
-
-    cortexM0
-    cortexM23
-    cortexM3
-    cortexM4
-    cortexM33
-    cortexM55
-    cortexM7
-    cortexM85
-
 .. list-table::
     :header-rows:  1
 
@@ -192,5 +180,18 @@ Cortex-M
       - 6.28
 
 
+.. image:: ./images/cm-instruction.png
 
+
+.. toctree::
+    :maxdepth: 1
+
+    cortexM0
+    cortexM23
+    cortexM3
+    cortexM4
+    cortexM33
+    cortexM55
+    cortexM7
+    cortexM85
 

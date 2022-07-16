@@ -4,14 +4,12 @@
 Cortex-M4
 ====================
 
-:ref:`performance` : ``2.19 CoreMark/MHz`` ``1.25 DMIPS/MHz``
+``Armv7E-M``
+
 
 .. contents::
     :local:
     :depth: 1
-
-.. note::
-    由ARM专门开发的最新嵌入式处理器，在M3的基础上强化了运算能力，新加了浮点、DSP、并行计算等，用以满足需要有效且易于使用的控制和信号处理功能混合的数字信号控制市场。
 
 
 简介
@@ -21,8 +19,13 @@ ARMCortex™-M4处理器内核是在Cortex-M3内核基础上发展起来的，�
 Cortex-M4提供了无可比拟的功能，将32位控制与领先的数字信号处理技术集成来满足需要很高能效级别的市场。
 Cortex-M4处理器采用一个扩展的单时钟周期乘法累加（MAC）单元、优化的单指令多数据（SIMD）指令、饱和运算指令和一个可选的单精度浮点单元（FPU)。
 
+.. note::
+    由ARM专门开发的最新嵌入式处理器，在M3的基础上强化了运算能力，新加了浮点、DSP、并行计算等，用以满足需要有效且易于使用的控制和信号处理功能混合的数字信号控制市场。
+
 优势
 ~~~~~~~~~
+
+:ref:`performance` : ``2.19 CoreMark/MHz`` ``1.25 DMIPS/MHz``
 
 * 低功耗：都低于200uA/MHz。
 * 高性能：3 CoreMark/MHz
@@ -36,6 +39,8 @@ Cortex-M4处理器采用一个扩展的单时钟周期乘法累加（MAC）单�
 * 多种系统特性，例如：可位寻址存储器区域（位段特性）和MPU（存储器保护单元）。
 * 软件可移植性、可重用性：C友好架构，CMSIS。
 
+.. image:: ./images/Cortex-M4.png
+    :target: https://www.arm.com/products/silicon-ip-cpu/cortex-m/cortex-m4
 
 对比
 ---------

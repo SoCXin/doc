@@ -12,7 +12,7 @@
 车规产品
 -----------
 
-``AEC-Q100 Grade 1``
+``AEC-Q100``
 
 .. toctree::
     :maxdepth: 1

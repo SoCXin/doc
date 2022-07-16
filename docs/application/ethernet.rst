@@ -91,19 +91,19 @@ Router
       -
       - Switch
       - ETH-MAC
-      - :ref:`wireless`
+      -
     * - :ref:`mt7622`
       - :ref:`cortex_a53`
       -
       -
       - 5p GbE
       - SGMII/RGMII
-      - :ref:`wifi` + :ref:`bt`
+      -
     * - :ref:`mt7623`
       - :ref:`cortex_a7`
       -
       -
       - 5p GbE
       - SGMII/RGMII
-      - :ref:`wifi`
+      -
 

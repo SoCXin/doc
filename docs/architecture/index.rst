@@ -32,7 +32,7 @@ Classification
       -
     * -
       - :ref:`cortex_m4`
-      -
+      - 0.028(:ref:`tsmc_40lp`)
       -
     * -
       - :ref:`cortex_m7`
@@ -110,8 +110,8 @@ Performance
       -
     * - :ref:`cortex_m4`
       - 1.25
-      - 2.19
-      -
+      - 3.42
+      - 12.26µW(:ref:`tsmc_40lp`)
     * - :ref:`cortex_m7`
       - 2.14
       - 5.0

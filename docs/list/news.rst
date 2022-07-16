@@ -52,7 +52,7 @@
     * - :ref:`NO_001` (264KB SRAM/QFN56)
       - $0.70==Dual Cortex-M0，Arduino/MicroPython/USB-OTG
     * - :ref:`NO_002`
-      - 国产高性能MCU产品，划时代性能升级
+      - 国产高性能双核MCU产品，划时代性能9220 CoreMark
     * - :ref:`NO_003`
       - WiFi6双频 + BT/BLE双模 + USB HS(PHY)
     * - :ref:`NO_004`
@@ -80,5 +80,6 @@
 .. toctree::
     :maxdepth: 1
 
-    时代槽点  <roast>
-    历史余温  <history>
+    时代的槽点  <roast>
+    历史的余温  <history>
+    期待的未来  <future>
