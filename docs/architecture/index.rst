@@ -21,53 +21,66 @@ Classification
     * - :ref:`architecture`
       - Series
       - Size(mm²)
-      - Gate Count
+      - Power
+      - :ref:`frequency`
     * - :ref:`cortex_m`
       - :ref:`cortex_m0`
-      - 0.0066(:ref:`tsmc_40lp`)
-      - 12K
+      - >0.0066(:ref:`tsmc_40lp`)
+      - >3.8µW(:ref:`tsmc_40lp`)
+      - <297MHz(:ref:`tsmc_40lp`)
     * -
       - :ref:`cortex_m3`
-      -
-      -
+      - 0.024(:ref:`tsmc_40lp`)
+      - >11.39µW(:ref:`tsmc_40lp`)
+      - <248MHz(:ref:`tsmc_40lp`)
     * -
       - :ref:`cortex_m4`
-      - 0.028(:ref:`tsmc_40lp`)
-      -
+      - >0.02(:ref:`tsmc_28lp`)
+      - >8.47µW(:ref:`tsmc_28lp`)
+      - <822MHz(:ref:`tsmc_28lp`)
     * -
       - :ref:`cortex_m7`
-      -
-      -
+      - >0.052(:ref:`tsmc_28lp`)
+      - >31.8µW(:ref:`tsmc_28lp`)
+      - <1.1GHz(:ref:`tsmc_28lp`)
     * -
       - :ref:`cortex_m85`
+      -
       -
       -
     * - :ref:`mips`
       - :ref:`24KEc`
       -
       -
+      -
     * -
       - :ref:`1004KEc`
+      -
       -
       -
     * -
       - :ref:`xtensa_lx7`
       -
       -
+      -
     * - :ref:`riscv`
       - :ref:`andes_d45`
+      -
       -
       -
     * -
       - :ref:`xt_c906`
       -
       -
+      -
     * -
       - :ref:`xt804`
       -
       -
+      -
     * -
       - :ref:`qingke`
+      -
       -
       -
 
@@ -102,31 +115,31 @@ Performance
       - :ref:`consumption`/MHz
     * - :ref:`cortex_m0`
       - 0.95
-      - 1.62
-      - 3.8µW(:ref:`tsmc_40lp`)
+      - 2.39
+      -
     * - :ref:`cortex_m3`
-      - 1.25
-      - 2.19
+      - 1.24
+      - 3.45
       -
     * - :ref:`cortex_m4`
-      - 1.25
-      - 3.42
-      - 12.26µW(:ref:`tsmc_40lp`)
+      - 1.26
+      - 3.54
+      -
     * - :ref:`cortex_m7`
-      - 2.14
-      - 5.0
+      - 2.31
+      - 5.29
       -
     * - :ref:`cortex_m23`
-      -
-      -
+      - 1.03
+      - 2.64
       -
     * - :ref:`cortex_m33`
-      - 1.5
-      -
+      - 1.54
+      - 4.10
       -
     * - :ref:`cortex_m55`
-      -
-      -
+      - 1.69
+      - 4.40
       -
     * - :ref:`cortex_m85`
       - 3.13
@@ -140,9 +153,13 @@ Performance
       -
       -
       -
+    * - :ref:`xtensa_lx6`
+      -
+      - 2.07
+      -
     * - :ref:`xtensa_lx7`
       -
-      -
+      - 2.56
       -
 
 

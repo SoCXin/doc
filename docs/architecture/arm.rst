@@ -6,6 +6,7 @@ ARM
 
 .. contents::
     :local:
+    :depth: 1
 
 .. _cortex_spec:
 
@@ -17,6 +18,11 @@ ARM
 
     高级处理器总线架构AMBA <amba>
 
+
+协同设计
+~~~~~~~~~~~
+
+https://avh.arm.com/
 
 
 版本简介
@@ -112,6 +118,8 @@ Cortex-R
 Cortex-M
 ~~~~~~~~~~~
 
+.. image:: ./images/cm.png
+
 .. list-table::
     :header-rows:  1
 
@@ -119,63 +127,63 @@ Cortex-M
       - Pipeline
       - ISA
       - Version
-      - Instruction
+      - Interrupts
       - DMIPS/MHz
       - CoreMark/MHz
     * - :ref:`cortex_m0`
-      - 2
-      - Thumb
+      -
+      -
       - ARMv6-M
-      - 56
-      - 0.94
-      - 2.42
+      - 32
+      - 0.99
+      - 2.46
     * - :ref:`cortex_m23`
-      - 2
-      - Thumb-2
+      -
+      -
       - :ref:`armv8`
-      - 80
-      - 0.94
-      - 2.42
+      - 240
+      - 1.03
+      - 2.64
     * - :ref:`cortex_m3`
-      - 3
-      - Thumb-2
+      -
+      -
       - :ref:`armv7`
-      - 80
-      - 1.25
-      - 3.32
+      - 240
+      - 1.24
+      - 3.45
     * - :ref:`cortex_m4`
-      - 3
-      - Thumb-2
+      -
+      -
       - :ref:`armv7`
-      - 80
-      - 1.25
-      - 3.32
+      - 240
+      - 1.26
+      - 3.54
     * - :ref:`cortex_m33`
-      - 3
-      - Thumb-2
+      -
+      -
       - :ref:`armv8`
-      - 80
-      - 1.25
-      - 3.32
+      - 480
+      - 1.54
+      - 4.10
     * - :ref:`cortex_m55`
       -
-      - Thumb-2
+      -
       - :ref:`armv8`
-      -
-      -
-      -
+      - 480
+      - 1.69
+      - 4.40
     * - :ref:`cortex_m7`
       - 3
-      - Thumb-2
+      -
       - :ref:`armv7`
-      - 80
-      - 2.14
-      - 5.04
+      - 240
+      - 2.31
+      - 5.29
     * - :ref:`cortex_m85`
       -
-      - Thumb-2
-      - :ref:`armv8`
       -
+      - :ref:`armv8`
+      - 480
       - 3.13
       - 6.28
 

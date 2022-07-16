@@ -235,8 +235,6 @@ Audio
 Architecture
 ~~~~~~~~~~~~~~~
 
-:ref:`espressif` 将逐步切换到 :ref:`riscv` ，进一步降低授权成本和设计灵活性。
-
 .. contents::
     :local:
 
@@ -244,8 +242,8 @@ Architecture
 
 Xtensa LX6
 ^^^^^^^^^^^^^^
+:ref:`performance` : ``MIPS 2.07 CoreMark/MHz`` ( :ref:`cortex_m0` 2.39 CoreMark/MHz)
 
-``MIPS`` ``Xtensa LX6``
 
 7级流水线架构，支持240 MHz的时钟频率，应用产品为 :ref:`esp32`
 
@@ -261,8 +259,8 @@ Xtensa LX6
 
 Xtensa LX7
 ^^^^^^^^^^^^^^
+:ref:`performance` : ``MIPS 2.56 CoreMark/MHz`` ( :ref:`cortex_m0` 2.39 CoreMark/MHz)
 
-``MIPS`` ``Xtensa LX7``
 
 5级流水线架构，支持240 MHz的时钟频率，应用产品为 :ref:`esp32s2`, :ref:`esp32s3`
 
@@ -277,17 +275,47 @@ Xtensa LX7
 * 用于调试的 JTAG 接口
 
 .. image:: images/XtensaLX7.png
-    :target: https://www.cadence.com/zh_CN/home/tools/ip/tensilica-ip/tensilica-xtensa-controllers-and-extensible-processors/xtensa-lx-processor-platform.html
+    :target: https://www.cadence.com/content/dam/cadence-www/global/en_US/documents/tools/ip/tensilica-ip/tip-xtensa-lx-pb.pdf
+
 
 
 .. _esp_rv32:
 
 RISC-V
 ^^^^^^^^^^^^^^
-:ref:`performance` : ``32-bit RISC-V 2.55 CoreMark/MHz`` > :ref:`cortex_m4`
+:ref:`performance` : ``32-bit RISC-V 2.55 CoreMark/MHz`` ( :ref:`cortex_m0` 2.39 CoreMark/MHz)
 
-自研 :ref:`riscv` 内核，应用产品为 :ref:`esp32c3`
+.. list-table::
+    :header-rows:  1
 
+    * - :ref:`esp_rv32`
+      - :ref:`frequency`
+      - :ref:`CoreMark`
+      - SRAM/ROM
+      - :ref:`wireless`
+      -
+      - :ref:`esp_audio`
+    * - :ref:`esp32c3`
+      - 160MHz
+      - 407.22
+      - 400KB/384KB
+      - WiFi&BLE5.0
+      -
+      -
+    * - :ref:`esp32c2`
+      - 120MHz
+      -
+      - 272KB/576KB
+      - WiFi&BLE5.0
+      -
+      -
+    * - :ref:`esp32h2`
+      - 96MHz
+      -
+      - 400KB/384KB
+      - Matter&BLE5.2
+      -
+      -
 
 .. _esp_tools:
 
