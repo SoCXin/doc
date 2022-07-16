@@ -7,6 +7,10 @@
 `Level Mark <https://github.com/SoCXin/Level>`_ : :ref:`frequency`/:ref:`CoreMark`/:ref:`Geekbench`
 
 
+.. image:: ./images/npu.jpg
+
+Level1-3主要用于控制，Level4-6可以部署算法，Level7-9为高性能计算
+
 .. contents::
     :local:
     :depth: 1

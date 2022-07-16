@@ -23,14 +23,14 @@ Classification
       - :ref:`performance`
       - :ref:`frequency`
       - :ref:`foundry`
-    * - :ref:`armv7`
+    * -
       - :ref:`cortex_m0`
       - >0.0066
       - >3.8µW
       - 2.39/MHz
       - <297MHz
       - :ref:`tsmc_40lp`
-    * -
+    * - :ref:`armv7`
       - :ref:`cortex_m3`
       - >0.024
       - >11.39µW
@@ -128,18 +128,6 @@ Classification
     RISC-V  <riscv>
     MCS-51  <MCS51>
 
-.. _ppa:
-
-PPA
-~~~~~~~~~~~~~
-
-PPA是芯片开发者们背负的终极KPI,也就是Performance(性能)、Power(功耗)、Area(尺寸)三者的缩写。任何芯片设计的目标都是希望得到更高的性能,更低的功耗,更小的面积。
-
-.. _frequency:
-
-Frequency
-~~~~~~~~~~~~~
-``MHz``
 
 .. _performance:
 
@@ -150,60 +138,74 @@ Performance
     :header-rows:  1
 
     * - :ref:`performance`
-      - :ref:`DMIPS`/MHz
-      - :ref:`CoreMark`/MHz
-      - :ref:`consumption`/MHz
+      - :ref:`DMIPS`
+      - :ref:`CoreMark`
+      - :ref:`consumption`
+      - :ref:`ic`
     * - :ref:`cortex_m0`
-      - 0.95
-      - 2.39
+      - 0.95/MHz
+      - 2.39/MHz
       -
+      - :ref:`rp2040`
     * - :ref:`cortex_m3`
-      - 1.24
-      - 3.45
+      - 1.24/MHz
+      - 3.45/MHz
+      -
       -
     * - :ref:`cortex_m4`
-      - 1.26
-      - 3.54
+      - 1.26/MHz
+      - 3.54/MHz
+      -
       -
     * - :ref:`cortex_m7`
-      - 2.31
-      - 5.29
+      - 2.31/MHz
+      - 5.29/MHz
+      -
       -
     * - :ref:`cortex_m23`
-      - 1.03
-      - 2.64
+      - 1.03/MHz
+      - 2.64/MHz
+      -
       -
     * - :ref:`cortex_m33`
-      - 1.54
-      - 4.10
+      - 1.54/MHz
+      - 4.10/MHz
+      -
       -
     * - :ref:`cortex_m55`
-      - 1.69
-      - 4.40
+      - 1.69/MHz
+      - 4.40/MHz
+      -
       -
     * - :ref:`cortex_m85`
-      - 3.13
-      - 6.28
+      - 3.13/MHz
+      - 6.28/MHz
+      -
       -
     * - :ref:`24KEc`
-      - 1.55
-      - 3.05
+      - 1.55/MHz
+      - 3.05/MHz
+      -
       -
     * - :ref:`1004KEc`
       -
       -
       -
+      -
     * - :ref:`xtensa_lx6`
       -
-      - 2.07
+      - 2.07/MHz
+      -
       -
     * - :ref:`xtensa_lx7`
       -
-      - 2.56
+      - 2.56/MHz
+      -
       -
     * - :ref:`andes_d45`
       -
-      - 5.65
+      - 5.65/MHz
+      -
       -
 
 
