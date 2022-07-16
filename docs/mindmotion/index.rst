@@ -1,7 +1,7 @@
 
 .. _mindmotion:
 
-mindmotion
+Mindmotion
 =================
 ``通用普惠`` ``电机控制``
 

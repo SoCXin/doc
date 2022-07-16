@@ -4,7 +4,7 @@
 STM32U575
 ===============
 
-`标签 <https://github.com/SoCXin/STM32U575>`_ : ``Cortex-M33`` ``160MHz`` ``2.5MSPS-14bit-ADC`` ``USB FS OTG`` ``USB PD`` ``512B OTP``
+`标签 <https://github.com/SoCXin/STM32U575>`_ : ``Cortex-M33`` ``160MHz`` ``2.5MSPS-14bit-ADC`` ``USB FS OTG`` ``USB PD`` ``512B OTP`` ``40nm``
 
 
 .. contents::

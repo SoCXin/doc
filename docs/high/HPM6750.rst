@@ -4,14 +4,12 @@
 HPM6750
 ===============
 
+`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``816MHz`` ``Dual Core`` ``16bit ADC @2Msps`` ``12bit ADC @5Msps``
+
 .. image:: https://github.com/SoCXin/HPM6750/workflows/sdk/badge.svg
     :target: https://github.com/SoCXin/hpm_sdk
 .. image:: https://github.com/SoCXin/HPM6750/workflows/demo/badge.svg
     :target: https://github.com/SoCXin/HPM6750
-
-`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``816MHz`` ``Dual Core`` ``16bit ADC @2Msps`` ``12bit ADC @5Msps``
-
-:ref:`performance` : :ref:`cortex_m85` > ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
 
 .. contents::
     :local:
@@ -19,6 +17,8 @@ HPM6750
 
 Xin简介
 -----------
+``新一代信息采集处理器``
+
 
 .. image:: ./images/HPM6750s.png
     :target: https://www.hpmicro.com/product/summary.html?id=d7fdb78f-1fa5-43be-be08-b97b405b65f0
@@ -28,6 +28,8 @@ Xin简介
 
 规格参数
 ~~~~~~~~~~~
+
+:ref:`performance` : :ref:`cortex_m85` > ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
 
 
 基本参数
@@ -48,7 +50,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 32-bit 816 MHz :ref:`riscv` Dual Core (32K ICACHE + 32K DCACHE)
+* 32-bit 816 MHz :ref:`andes_d45` Dual Core (32K ICACHE + 32K DCACHE)
 * 2x USB HS OTG (集成PHY)
 * 2x 千兆网口
 * 4个CAN FD，17个UART，4个SPI，4个I2C
@@ -63,7 +65,6 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~
 
-采用晶心 :ref:`andes_d45`
 
 功耗参数
 ^^^^^^^^^^^

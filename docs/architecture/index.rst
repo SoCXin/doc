@@ -222,15 +222,6 @@ Performance
     :depth: 1
 
 
-.. _Geekbench:
-
-Geekbench
-~~~~~~~~~~~~~
-``Geekbench5``
-
-是一款多平台的性能测试工具。与同类软件不同的是，它几乎可以运行在所有的已知PC架构系统上，包括了Windows、Mac OSX、以及各种Linux发行版。Geekbench的测试项目重点考察CPU和内存系统的运算能力，在测试完成后会给出具体得分供用户参考比对。
-
-`Geekbench5 Search <https://browser.geekbench.com/v5/cpu/search>`_
 
 .. _DMIPS:
 
@@ -271,6 +262,46 @@ CoreMark标准的测试方法也很简单，就是在某配置参数组合下单
 
 `EEMBC CoreMark <https://www.eembc.org/coremark/scores.php>`_ 计算所有的核心跑分，按主频MHz计算平均(核越多数值越大)。
 
+
+
+
+.. _ULPMark:
+
+ULPMark
+~~~~~~~~~~~~~~
+``EEMBC`` ``2014年3月``
+
+ULPMark提供了一个标准化的测试基准，让大家能够对微处理器的不同工作模式进行综合评估，并且把测试结果数值化，具有直观的可比性。
+
+该测试基准得到微控制厂商的广泛认可，国际各大MCU厂商均是其会员，采用ULPMark标准进行产品的功耗评测，将相应的跑分上传EEMBC的ULPMark跑分榜单。该榜单对外公开，可直接登录网站查阅。
+
+该标准支持两个版本：:ref:`ulp_cp` 和 :ref:`ulp_pp`
+
+.. _ulp_cp:
+
+ULPMark-CP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``ULPMark-CoreProfile``
+
+侧重于MCU的内核测试。这个测试基准规定了10个1秒钟的处理周期，每个处理周期MCU需要完成指定的通用运算任务，然后可进入睡眠状态。
+
+最终以10个周期的平均能量消耗，作为评估芯片功耗水平的依据，从而给出ULPMark-CP的分数。
+
+ULPMark-CP分数充分反映了芯片的运行功耗、睡眠功耗以及模式切换过程的功耗，从而能够全面准确地评价芯片的功耗指标。
+
+.. _ulp_pp:
+
+ULPMark-PP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``ULPMark-PeripheralProfile``
+
+侧重于MCU的常用外设测试，包括脉宽调制（PWM）、模数转换（ADC）、串行外设接口（SPI）以及实时时钟（RTC）。
+
+该测试基准规定了10个1秒钟的处理周期，每个处理周期内会按照要求使用ADC、SPI、PWM、RTC等外设，任务完成后内核和外设就可以进入睡眠状态。
+
+最终以10个周期内的平均能量消耗，作为评估芯片功耗水平的依据，从而给出ULPMark-PP的分数。
+
+
 .. _ulpbench:
 
 ULPBench
@@ -279,32 +310,15 @@ ULPBench
 ULPBench 是由嵌入式微处理器基准联盟 （EEMBC） 开发的标准化基准，用于测量超低功耗 （ULP） 嵌入式微控制器 （MCU） 的能效。基准测试将一组标准化的 MCU 工作负载移植到目标，例如内存和数学运算、排序和 GPIO 交互。这些工作负载构成了分析 8 位、16 位或 32 位 MCU 的活动和低功耗条件的基础，包括活动电流、睡眠电流、内核效率、缓存效率和唤醒时间。然后使用倒数公式计算结果（1000/10 个 ULPBench 周期每秒平均能量 5 倍的中位数），根据工作负载运行期间消耗的能量量得出分数 - ULPBench。
 
 
-.. _ULPMark:
+.. _Geekbench:
 
-ULPMark
-~~~~~~~~~~~~~~
+Geekbench
+~~~~~~~~~~~~~
+``Geekbench5``
 
-ULPMark 测试目前有三个部分，分别是 :ref:`ulp_cp` 、 :ref:`ulp_pp` 和 ULPMark-CoreMark。
+是一款多平台的性能测试工具。与同类软件不同的是，它几乎可以运行在所有的已知PC架构系统上，包括了Windows、Mac OSX、以及各种Linux发行版。Geekbench的测试项目重点考察CPU和内存系统的运算能力，在测试完成后会给出具体得分供用户参考比对。
 
-.. _ulp_cp:
-
-ULPMark-CP
-^^^^^^^^^^^^^^
-
-ULPMark-CoreProfile 在深度睡眠下整个芯片的能量消耗；因为在低功耗的应用场景下，该芯片设备可能是单电池供电，需要运行长达 10 年的时间，所以芯片设备绝大部分时间应该都是处在深度睡眠的模式，偶尔唤醒处理部分任务。
-
-.. _ulp_pp:
-
-ULPMark-PP
-^^^^^^^^^^^^^^
-
-ULPMark-PeripheralProfile 普通外围设备的能量对深度睡眠的影响
-
-
-ULPMark-CoreMark
-^^^^^^^^^^^^^^^^^^^^
-
-ULPMark-CoreMark 活跃功耗，使用 CoreMark 作为工作负载
+`Geekbench5 Search <https://browser.geekbench.com/v5/cpu/search>`_
 
 
 .. _architecture:
