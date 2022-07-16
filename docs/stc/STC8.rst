@@ -4,10 +4,11 @@
 STC8H
 ============
 
-`标签 <https://github.com/SoCXin/STC8>`_ : ``STC`` ``8051`` ``24MHz`` ``EEPROM`` ``cheap``
+`STC <https://www.stcmcudata.com/>`_ : ``STC`` ``8051`` ``24MHz`` ``EEPROM`` ``cheap``
 
 .. contents::
     :local:
+    :depth: 1
 
 
 Xin简介

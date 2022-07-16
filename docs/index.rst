@@ -20,10 +20,10 @@ Xindex
     :caption: 产品分类
     :maxdepth: 1
 
-    极客聚集开源高地 <news/hot>
-    明星项目御用平台 <news/pop>
+    极客聚集开源高地 <list/hot>
+    明星项目御用平台 <list/pop>
     选在当下设计未来 <list/news>
-    突破常规低价好货 <low/index>
+    突破常规低价好货 <list/low>
     超低功耗效能王者 <list/ulp>
     各家旗舰干啥都行 <high/index>
 

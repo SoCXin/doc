@@ -79,9 +79,9 @@
 /RT1020.html -> nxp/RT1020.html
 /RT1060.html -> nxp/RT1060.html
 /RT1170.html -> nxp/RT1170.html
-/STC8.html -> low/STC8.html
-/STC32.html -> low/STC32.html
-/MM32F031.html -> low/MM32F031.html
+/STC8.html -> stc/STC8.html
+/STC32.html -> stc/STC32.html
+/MM32F031.html -> miscellaneous/MM32F031.html
 /PG23.html -> miscellaneous/PG23.html
 /ZML165.html -> miscellaneous/ZML165.html
 /ZML166.html -> miscellaneous/ZML165.html

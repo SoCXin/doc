@@ -76,6 +76,8 @@ DP83848芯片，支持MII模式和RMII模式；而LAN8742，和LAN8720，只支�
 
 DP83848的默认地址，是0x01
 
+.. image:: images/RMII.png
+
 
 .. _router:
 

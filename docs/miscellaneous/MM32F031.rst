@@ -4,16 +4,17 @@
 MM32F031
 ============
 
-* 关键词：``Cortex-M0`` ``72MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/MM32F031>`_
+`mindmotion <https://www.mindmotion.com.cn/>`_ : ``Cortex-M0`` ``72MHz``
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
 
- :ref:`low` , :ref:`ref030`
+:ref:`low` , :ref:`ref030`
 
 
 规格参数
@@ -26,7 +27,7 @@ Xin简介
 * 发布时间：
 * 制程工艺：
 * 工作温度：-40°C to +85°C
-* 处理性能：60 :ref:`DMIPS`, 140 :ref:`CoreMark`
+* 处理性能：140 :ref:`CoreMark`
 * RAM容量：4 KB
 * Flash容量：16/32 KB
 * 封装规格：LQFP48/LQFP32/QFN32/QFN20
@@ -67,3 +68,4 @@ Xin选择
 型号对比
 ~~~~~~~~~
 
+`GitHub <https://github.com/SoCXin/MM32F031>`_

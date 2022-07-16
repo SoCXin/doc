@@ -324,7 +324,7 @@ Arduino
 .. toctree::
     :maxdepth: 1
 
-    ATMEGA328P <../low/ATMEGA328P>
+    ATMEGA328P <../miscellaneous/ATMEGA328P>
 
 
 
@@ -422,7 +422,7 @@ F030范式
     :maxdepth: 1
 
 
-    MM32F031 <../low/MM32F031>
+    MM32F031 <../miscellaneous/MM32F031>
 
 .. _ref103:
 

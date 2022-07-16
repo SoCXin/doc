@@ -32,6 +32,8 @@ SIP封装
 -----------
 ``SIP``
 
+.. image:: images/sip.jpg
+
 .. contents::
     :local:
     :depth: 1

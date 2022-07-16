@@ -8,6 +8,7 @@ K210
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------

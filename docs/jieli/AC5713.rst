@@ -12,6 +12,8 @@ AC5713
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
