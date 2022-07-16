@@ -18,6 +18,140 @@ ADC
     :depth: 1
 
 
+ADC-MCU
+~~~~~~~~~~~~
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`adc_hs`
+      - :ref:`frequency`
+      - :ref:`CoreMark`
+      - SRAM/flash
+      - 12-bit
+      - 16-bit
+      -
+      - Package
+    * - :ref:`at32f437`
+      - 288 MHz
+      - 630
+      - 512K/4M
+      - 3x5.33 MSPS
+      - X
+      -
+      - LQFP64
+    * - :ref:`stm32l412`
+      - 80 MHz
+      -
+      - 40K/128K
+      - 2x5MSPS
+      - X
+      - 1/1
+      - LQFP32
+    * - :ref:`stm32g431`
+      - 170MHz
+      -
+      - 128K/512K
+      - 2x4MSPS
+      - X
+      - 4/3
+      - LQFP48
+    * - :ref:`stm32g474`
+      - 170MHz
+      -
+      - 128K/512K
+      - 5x4MSPS
+      - X
+      - 7/6
+      - LQFP100
+    * - :ref:`stm32h730`
+      - 550MHz
+      -
+      - 564K/128K
+      - 1x5MSPS
+      - 2x3.6MSPS
+      - 2/2
+      - LQFP100
+    * - :ref:`stm32h750`
+      - 480MHz
+      -
+      - 1MB/128KB
+      - X
+      - 3x3.6MSPS
+      - 2/2
+      - LQFP100
+    * - :ref:`stm32h7b0`
+      - 280MHz
+      -
+      - 1.4M/128K
+      - X
+      - 2x3.6MSPS
+      - 2/2
+      - LQFP64
+
+
+.. note::
+    目前MCU集成的高速ADC性能，精度可到16bit(普遍12bit)，速率可达5MSPS(普遍2MSPS)，独立器件数量可达5个(普遍2个)；2x16bit+1x12bit数据带宽3.6M x 2 x 16 + 5M x 1 x 12 = 175.2Mbps，3x16bit 数据带宽3.6M x 3 x 16 = 172.8Mbps
+
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`adc_hp`
+      - Freq
+      - SRAM/ROM
+      - SNR
+      - INL
+      - Type
+      - Spec
+      - Package
+    * - :ref:`zml165`
+      - 48 MHz
+      - 4KB/64KB
+      -
+      -
+      - :ref:`sigma_delta`
+      - 24bit
+      - QFN20
+    * - :ref:`zml166`
+      - 48 MHz
+      - 4KB/64KB
+      -
+      -
+      - :ref:`sigma_delta`
+      - 24bit
+      - QFN32
+    * - :ref:`cs32a039`
+      - 48 MHz
+      - 4KB/64KB
+      -
+      -
+      - :ref:`sigma_delta`
+      - 24bit
+      - LQFP64
+
+.. note::
+    目前MCU集成高精度ADC，主流以24-Bit为主，多以SiP封装 :ref:`sigma_delta` 为主。
+
+
+.. toctree::
+    :maxdepth: 1
+
+    PG23 <../miscellaneous/PG23>
+    ZML165 <../miscellaneous/ZML165>
+
+转换速率(Conversion Rate)是指完成一次从模拟转换到数字的AD转换所需的时间的倒数。积分型AD的转换时间是毫秒级属低速AD，逐次比较型AD是微秒级属中速AD，全并行/串并行型AD可达到纳秒级。
+
+采样时间是指两次转换的间隔。为了保证转换的正确完成，采样速率(Sample Rate)必须小于或等于转换速率。
+
+因此有人习惯上将转换速率在数值上等同于采样速率也是可以接受的。常用单位是ksps和Msps，表示每秒采样千/百万次（kilo / Million Samples per Second）。
+
+量化误差(Quantizing Error) 由于AD的有限分辩率而引起的误差，即有限分辩率AD的阶梯状转移特性曲线与无限分辩率AD（理想AD）的转移特性曲线（直线）之间的最大偏差。通常是1 个或半个最小数字量的模拟变化量，表示为1LSB、1/2LSB。
+
+.. _adc_hs:
+
 High-Speed
 ~~~~~~~~~~~~
 
@@ -137,6 +271,7 @@ MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
 `MXT2088芯片 <http://www.mxtronics.com/n107/n124/n181/n184/c692/content.html>`_
 
 
+.. _adc_hp:
 
 High-Precision
 ~~~~~~~~~~~~~~~~~~
@@ -218,7 +353,6 @@ AD7768-1是一款低功率、高性能 Σ-Δ 模数转换器 (ADC) ，其具有�
 
 LTC2508
 ^^^^^^^^^^^^
-
 ``32-bit @1MSPS`` ``24mW`` ``SAR ADC`` ``Dual Channel`` ``DFN24`` ``$12.02``
 
 * ±0.5ppm INL (典型值)
@@ -239,134 +373,6 @@ LTC2508-32 同时提供两个输出代码：(1) 一个 32 位数字滤波高精�
 
 `LTC2508资料 <https://www.analog.com/cn/products/ltc2508-32.html>`_
 
-
-SoC
-~~~~~~~~~~~~
-
-
-目前MCU集成的高速ADC性能，精度可到16bit(普遍12bit)，速率可达5MSPS(普遍2MSPS)，独立器件数量可达5个(普遍2个)
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`ic`
-      - Freq
-      - :ref:`CoreMark`
-      - SRAM/ROM
-      - 12Bit
-      - 16Bit
-      - :ref:`stm32_fcmp`/ :ref:`stm32_opamp`
-      - Package
-    * - :ref:`stm32l412`
-      - 80 MHz
-      -
-      - 40K/128K
-      - 2x5MSPS
-      - X
-      - 1/1
-      - LQFP32
-    * - :ref:`stm32g431`
-      - 170MHz
-      -
-      - 128K/512K
-      - 2x4MSPS
-      - X
-      - 4/3
-      - LQFP48
-    * - :ref:`stm32g474`
-      - 170MHz
-      -
-      - 128K/512K
-      - 5x4MSPS
-      - X
-      - 7/6
-      - LQFP100
-    * - :ref:`stm32h730`
-      - 550MHz
-      -
-      - 564K/128K
-      - 1x5MSPS
-      - 2x3.6MSPS
-      - 2/2
-      - LQFP100
-    * - :ref:`stm32h750`
-      - 480MHz
-      -
-      - 1MB/128KB
-      - X
-      - 3x3.6MSPS
-      - 2/2
-      - LQFP100
-    * - :ref:`stm32h7b0`
-      - 280MHz
-      -
-      - 1.4M/128K
-      - X
-      - 2x3.6MSPS
-      - 2/2
-      - LQFP64
-    * - :ref:`at32f437`
-      - 288MHz
-      -
-      - 512K/4M
-      - 3x5.33MSPS
-      - X
-      -
-      - LQFP64
-
-
-
-
-.. note::
-    2x16bit+1x12bit数据带宽3.6M x 2 x 16 + 5M x 1 x 12 = 175.2Mbps，3x16bit 数据带宽3.6M x 3 x 16 = 172.8Mbps
-
-
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`adc`
-      - Freq
-      - SRAM/ROM
-      - SNR
-      - INL
-      - Type
-      - Spec
-      - Package
-    * - :ref:`zml165`
-      - 48 MHz
-      - 4KB/64KB
-      -
-      -
-      - :ref:`sigma_delta`
-      - 24bit
-      - QFN20
-    * - :ref:`zml166`
-      - 48 MHz
-      - 4KB/64KB
-      -
-      -
-      - :ref:`sigma_delta`
-      - 24bit
-      - QFN32
-    * - :ref:`cs32a039`
-      - 48 MHz
-      - 4KB/64KB
-      -
-      -
-      - :ref:`sigma_delta`
-      - 24bit
-      - LQFP64
-
-.. note::
-    目前MCU集成高精度ADC，主流技术以24-Bit为主，多以SiP封装为主。
-
-
-.. toctree::
-    :maxdepth: 1
-
-    PG23 <../miscellaneous/PG23>
-    ZML165 <../miscellaneous/ZML165>
 
 
 

@@ -1,6 +1,6 @@
 .. _xin:
 
-Xin
+Xindex
 =====================
 
 .. image:: https://github.com/SoCXin/docs/workflows/Docs/badge.svg

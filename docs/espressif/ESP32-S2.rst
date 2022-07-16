@@ -185,7 +185,7 @@ Xin选择
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
-      - Wireless
+      - :ref:`wireless`
       - UART/SPI/SDIO
       - Package
     * - :ref:`esp32s2`
@@ -274,7 +274,7 @@ Xin选择
       - :ref:`esp_core`
       - :ref:`CoreMark`
       - SRAM/ROM
-      - Wireless
+      - :ref:`wireless`
       - DAC/PWM
       - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
       - Package

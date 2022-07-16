@@ -147,7 +147,7 @@ Xin选择
       - :ref:`frequency`
       - SRAM/ROM
       -
-      - Wireless
+      - :ref:`wireless`
       - Ethernet
       - Package
     * - :ref:`ch579`

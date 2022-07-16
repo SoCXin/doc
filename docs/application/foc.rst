@@ -90,13 +90,23 @@ PPM/PDM
       - 960W
       - ¥300
 
+.. _vesc:
+
+VESC
+~~~~~~~~~~~
+
+* `VESC Home <https://vesc-project.com/>`_ , `VESC GitHub <https://github.com/vedderb/bldc>`_
+
+An open source motor controller firmware, the source code for the VESC DC/BLDC/FOC controller.
+
+
 
 .. _simplefoc:
 
 SimpleFOC
 ~~~~~~~~~~~
 
-* 链接：`SimpleFOC Home <https://www.simplefoc.com>`_ , `SimpleFOC Docs <https://docs.simplefoc.com>`_ , `SimpleFOC GitHub <https://GitHub.com/simplefoc>`_
+* `SimpleFOC Home <https://www.simplefoc.com>`_ , `SimpleFOC Docs <https://docs.simplefoc.com>`_ , `SimpleFOC GitHub <https://GitHub.com/simplefoc>`_
 
 .. list-table::
     :header-rows:  1

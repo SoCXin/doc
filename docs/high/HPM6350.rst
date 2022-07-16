@@ -4,17 +4,19 @@
 HPM6350
 ===============
 
+
+`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``FFA`` ``3390 CoreMark @648MHz`` ``￥28``
+
 .. image:: https://github.com/SoCXin/HPM6750/workflows/sdk/badge.svg
     :target: https://github.com/SoCXin/hpm_sdk
 .. image:: https://github.com/SoCXin/HPM6750/workflows/demo/badge.svg
     :target: https://github.com/SoCXin/HPM6750
 
-`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``3390CoreMark@648MHz`` ``￥28``
 
-:ref:`performance` : :ref:`cortex_m85` > ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
@@ -55,7 +57,7 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~
 
-采用晶心 Andes D45 :ref:`riscv` 核心
+:ref:`riscv` 核心 :ref:`andes` :ref:`andes_d45` :ref:`performance` : :ref:`cortex_m85` > ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
 
 功耗参数
 ^^^^^^^^^^^

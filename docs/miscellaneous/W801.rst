@@ -105,7 +105,7 @@ Xin选择
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
-      - Wireless
+      - :ref:`wireless`
       - UART/SPI/SDIO
       - Package
     * - :ref:`w800`

@@ -4,15 +4,15 @@
 AT32F437
 ===============
 
-* `GitHub <https://github.com/SoCXin/AT32F437>`_ : ``Cortex-M4`` ``288 MHz`` ``3x5.33Msps ADC`` ``8 UART`` ``2 CAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
+* `Arterytek <https://www.arterytek.com/cn/product/AT32F437.jsp>`_ : ``Cortex-M4`` ``288 MHz`` ``3x5.33Msps ADC`` ``8 UART`` ``2 CAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
 
-* `Arterytek <https://www.arterytek.com/cn/product/AT32F437.jsp>`_ 旗舰产品
 
 规格参数
 ~~~~~~~~~~~
@@ -22,7 +22,7 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
-* 参考价格：
+* 参考价格：￥30
 * 制程工艺：55nm
 * 供货周期：
 * 处理性能：630 :ref:`CoreMark` , :ref:`level4`
@@ -41,7 +41,7 @@ Xin简介
 * 3 x 5.33MSPS ADC (12bit x 16ch)
 * 2 x 12bit DAC
 * 3 x I²C (支持SMBus/PMBus)
-* 4 x SPI / I²S (SPI可达36MHz)(其中I²S2/I²S3支持全双工)
+* 4 x SPI / I²S (SPI可达36MHz,其中I²S2/I²S3支持全双工)
 * 4 x USART + 4 x UART (支持ISO7816，LIN，IrDA接口和调制解调控制)
 * 2 x SDIO
 * 2 x QSPI
@@ -143,7 +143,7 @@ LQFP100封装XMC透过外加锁存器件可连接非复用信号的PSRAM和SRAM
 Xin应用
 -----------
 
-
+`GitHub <https://github.com/SoCXin/AT32F437>`_
 
 以太网
 ~~~~~~~~~~~

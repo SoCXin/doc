@@ -27,7 +27,7 @@ Espressif
       - :ref:`esp_core`
       - :ref:`CoreMark`
       - SRAM/ROM
-      - Wireless
+      - :ref:`wireless`
       - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
       - :ref:`esp_audio`
     * - :ref:`esp32`
