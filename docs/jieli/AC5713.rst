@@ -36,7 +36,6 @@ Xin简介
 * 处理性能：
 * 封装规格：QFN88
 * 运行环境：
-* RAM容量：800KB
 * ROM容量：
 * RAM容量：16/32×16Mbit/DDR1(@400MHz)
 * Flash容量：

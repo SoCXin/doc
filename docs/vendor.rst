@@ -52,6 +52,7 @@ Vendor
     低成本无线物联网 Espressif <espressif/index>
     Cortex-M4控制器 ArteryTek <arterytek/index>
     多媒体应用处理器 Allwinner  <allwinner/index>
+    驱动控制普惠芯片 Mindmotion  <mindmotion/index>
     物联网通信及计算 Bouffalolab  <bouffalolab/index>
 
 

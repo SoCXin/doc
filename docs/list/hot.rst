@@ -418,12 +418,6 @@ F030范式
 
 
 
-.. toctree::
-    :maxdepth: 1
-
-
-    MM32F031 <../miscellaneous/MM32F031>
-
 .. _ref103:
 
 F103范式

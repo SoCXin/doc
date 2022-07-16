@@ -81,7 +81,8 @@
 /RT1170.html -> nxp/RT1170.html
 /STC8.html -> stc/STC8.html
 /STC32.html -> stc/STC32.html
-/MM32F031.html -> miscellaneous/MM32F031.html
+/MM32F031.html -> mindmotion/MM32F031.html
+/MM32SPIN360C.html -> mindmotion/MM32SPIN.html
 /PG23.html -> miscellaneous/PG23.html
 /ZML165.html -> miscellaneous/ZML165.html
 /ZML166.html -> miscellaneous/ZML165.html
@@ -95,7 +96,6 @@
 /Hi3921.html -> miscellaneous/Hi3921.html
 /XY1100.html -> miscellaneous/XY1100.html
 /RDA8910.html -> miscellaneous/USI8910DM.html
-/MM32SPIN05.html -> miscellaneous/MM32SPIN.html
 /TKM32F499.html -> miscellaneous/TKM32F499.html
 /HC32M120.html -> miscellaneous/HC32M120.html
 /AIC8800M.html -> miscellaneous/AIC8800M.html
