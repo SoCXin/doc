@@ -57,7 +57,7 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~
 
-:ref:`riscv` 核心 :ref:`andes` :ref:`andes_d45` :ref:`performance` : :ref:`cortex_m85` > ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
+:ref:`riscv` 核心 :ref:`andes_d45` :ref:`performance` : :ref:`cortex_m85` > ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
 
 功耗参数
 ^^^^^^^^^^^

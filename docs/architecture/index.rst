@@ -3,8 +3,6 @@
 内核架构
 ===============
 
-.. note::
-    PPA是芯片开发者们背负的终极KPI,也就是Performance(性能)、Power(功耗)、Area(尺寸)三者的缩写。任何芯片设计的目标都是希望得到更高的性能,更低的功耗,更小的面积。
 
 .. contents::
     :local:
@@ -20,72 +18,102 @@ Classification
 
     * - :ref:`architecture`
       - Series
-      - Size(mm²)
-      - Power
+      - Area(mm²)
+      - :ref:`power`
+      - :ref:`performance`
       - :ref:`frequency`
-    * - :ref:`cortex_m`
+      - :ref:`foundry`
+    * - :ref:`armv7`
       - :ref:`cortex_m0`
-      - >0.0066(:ref:`tsmc_40lp`)
-      - >3.8µW(:ref:`tsmc_40lp`)
-      - <297MHz(:ref:`tsmc_40lp`)
+      - >0.0066
+      - >3.8µW
+      - 2.39/MHz
+      - <297MHz
+      - :ref:`tsmc_40lp`
     * -
       - :ref:`cortex_m3`
-      - 0.024(:ref:`tsmc_40lp`)
-      - >11.39µW(:ref:`tsmc_40lp`)
-      - <248MHz(:ref:`tsmc_40lp`)
+      - >0.024
+      - >11.39µW
+      - 3.45/MHz
+      - <248MHz
+      - :ref:`tsmc_40lp`
     * -
       - :ref:`cortex_m4`
-      - >0.02(:ref:`tsmc_28lp`)
-      - >8.47µW(:ref:`tsmc_28lp`)
-      - <822MHz(:ref:`tsmc_28lp`)
+      - >0.028
+      - >12.26µW
+      - 3.54/MHz
+      - <223MHz
+      - :ref:`tsmc_40lp`
     * -
       - :ref:`cortex_m7`
-      - >0.052(:ref:`tsmc_28lp`)
-      - >31.8µW(:ref:`tsmc_28lp`)
-      - <1.1GHz(:ref:`tsmc_28lp`)
-    * -
+      - >0.052
+      - >31.8µW
+      - 5.29/MHz
+      - <1.1GHz
+      - :ref:`tsmc_28lp`
+    * - :ref:`armv8`
       - :ref:`cortex_m85`
       -
       -
       -
+      -
+      - :ref:`tsmc_28lp`
     * - :ref:`mips`
       - :ref:`24KEc`
       -
       -
       -
+      -
+      - :ref:`tsmc_40lp`
     * -
       - :ref:`1004KEc`
       -
       -
       -
+      -
+      - :ref:`tsmc_40lp`
     * -
       - :ref:`xtensa_lx7`
       -
       -
       -
+      -
+      - :ref:`tsmc_40lp`
     * - :ref:`riscv`
       - :ref:`andes_d45`
       -
       -
       -
+      -
+      - :ref:`tsmc_28lp`
     * -
       - :ref:`xt_c906`
       -
       -
       -
+      -
+      - :ref:`tsmc_28lp`
+    * -
+      - :ref:`andes_d45`
+      -
+      -
+      -
+      -
+      - :ref:`tsmc_28lp`
     * -
       - :ref:`xt804`
       -
       -
       -
+      -
+      - :ref:`tsmc_40lp`
     * -
       - :ref:`qingke`
       -
       -
       -
-
-
-
+      -
+      - :ref:`tsmc_40lp`
 
 
 
@@ -100,6 +128,18 @@ Classification
     RISC-V  <riscv>
     MCS-51  <MCS51>
 
+.. _ppa:
+
+PPA
+~~~~~~~~~~~~~
+
+PPA是芯片开发者们背负的终极KPI,也就是Performance(性能)、Power(功耗)、Area(尺寸)三者的缩写。任何芯片设计的目标都是希望得到更高的性能,更低的功耗,更小的面积。
+
+.. _frequency:
+
+Frequency
+~~~~~~~~~~~~~
+``MHz``
 
 .. _performance:
 
@@ -161,17 +201,17 @@ Performance
       -
       - 2.56
       -
+    * - :ref:`andes_d45`
+      -
+      - 5.65
+      -
+
+
 
 
 .. contents::
     :local:
     :depth: 1
-
-.. _frequency:
-
-Frequency
-~~~~~~~~~~~~~
-``MHz``
 
 
 .. _Geekbench:

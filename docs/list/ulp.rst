@@ -89,6 +89,12 @@
     :depth: 1
 
 
+.. _power:
+
+Power
+-----------
+``uW/MHz``
+
 .. _consumption:
 
 效能
