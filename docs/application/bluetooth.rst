@@ -15,8 +15,6 @@ Bluetooth
 .. toctree::
     :maxdepth: 1
 
-    BL702 <../miscellaneous/BL702>
-    BL602 <../miscellaneous/BL602>
     DA14580 <../miscellaneous/DA14580>
     AB32VG1 <../miscellaneous/AB32VG1>
 

@@ -15,6 +15,10 @@ Chips
     低功耗蓝牙控制器 Nordic <nordic/index>
     多媒体及网络通信 Realtek <realtek/index>
     多媒体语音控制器 Nuvoton  <nuvoton/index>
+    高性能通信全品类 MediaTek  <MediaTek/index>
+    多媒体应用处理器 Allwinner  <allwinner/index>
+    国产芯片龙头企业 GigaDevice <gigadevice/index>
+
 
 .. toctree::
     :caption: 新势力
@@ -27,10 +31,7 @@ Chips
     信号链整合控制器 Chipsea <chipsea/index>
     低成本无线物联网 Espressif <espressif/index>
     Cortex-M4控制器 ArteryTek <arterytek/index>
-    高性能通信全品类 MediaTek  <MediaTek/index>
-    多媒体应用处理器 Allwinner  <allwinner/index>
-    国产芯片龙头企业 GigaDevice <gigadevice/index>
-
+    物联网通信及计算 Bouffalolab  <bouffalolab/index>
 
 
 .. list-table::

@@ -94,10 +94,10 @@ Classification
       -
       - :ref:`tsmc_28lp`
     * -
-      - :ref:`andes_d45`
+      - :ref:`xt_e907`
       -
       -
-      -
+      - 3.8/MHz
       -
       - :ref:`tsmc_28lp`
     * -
@@ -196,17 +196,23 @@ Performance
       -
       - 2.07/MHz
       -
-      -
+      - :ref:`esp32`
     * - :ref:`xtensa_lx7`
       -
       - 2.56/MHz
       -
-      -
+      - :ref:`esp32s3`
     * - :ref:`andes_d45`
       -
       - 5.65/MHz
       -
+      - :ref:`hpm6750`
+    * - :ref:`xt_e907`
       -
+      - 3.8/MHz
+      -
+      -
+
 
 
 
