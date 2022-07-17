@@ -4,7 +4,7 @@
 HPM6750
 ===============
 
-`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``816MHz`` ``Dual Core`` ``16bit ADC @2Msps`` ``12bit ADC @5Msps``
+`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``816MHz`` ``Dual Core`` ``USB HS OTG`` ``16bit ADC @2Msps`` ``12bit ADC @5Msps``
 
 .. image:: https://github.com/SoCXin/HPM6750/workflows/sdk/badge.svg
     :target: https://github.com/SoCXin/hpm_sdk
@@ -17,7 +17,7 @@ HPM6750
 
 Xin简介
 -----------
-``新一代信息采集处理器``
+``新一代信息采集处理器`` ``边缘计算平台``
 
 
 .. image:: ./images/HPM6750s.png
@@ -40,10 +40,9 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：9220 :ref:`CoreMark`, 4651 :ref:`DMIPS`
-* 封装规格：289BGA (14×14P0.8) / 196BGA (10×10P0.65)
+* 封装规格：BGA289(14×14 P0.8) / BGA196(10×10 P0.65)
 * 运行环境：-40°C to 105/125°C
 * RAM容量： 2088 KB
-* ROM容量：
 * Flash容量：
 
 
@@ -51,7 +50,7 @@ Xin简介
 ^^^^^^^^^^^
 
 * 32-bit 816 MHz :ref:`andes_d45` Dual Core (32K ICACHE + 32K DCACHE)
-* 2x USB HS OTG (集成PHY)
+* 2x USB HS OTG (with PHY)
 * 2x 千兆网口
 * 4个CAN FD，17个UART，4个SPI，4个I2C
 * 16bit ADC @2Msps
@@ -109,7 +108,7 @@ Xin选择
       - 6468(2)
       - 2 MB
       - 2xHS/2xGb
-      - ￥54.36
+      - ￥54
       - 150µA/MHz
       - BGA289
 

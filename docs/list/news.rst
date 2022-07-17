@@ -14,7 +14,7 @@
 `工业控制`_          `消费电子`_         `超长待机`_          `计量仪表`_
 ==================  ==================  ==================  ==================
 
-.. |感知驱动| image:: ../espressif/images/espressif.png
+.. |感知驱动| image:: images/rp2040.jpg
 .. _感知驱动: ../miscellaneous/RP2040.html
 
 .. |无线通信| image:: ../application/images/matter.png

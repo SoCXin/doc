@@ -15,17 +15,11 @@ RISC-V
     :depth: 1
 
 
-架构简介
---------------
-
-.. contents::
-    :local:
-    :depth: 1
 
 .. _andes:
 
 Andes
-~~~~~~~~~~~~~~
+--------------
 
 `晶心科技 Andes Technology <https://www.andestech.com/>`_
 
@@ -36,63 +30,16 @@ Andes
 .. _andes_d45:
 
 Andes D45
-^^^^^^^^^^^
-
-
-.. _xt:
-
-XuanTie
 ~~~~~~~~~~~~~~
 
-.. contents::
-    :local:
-    :depth: 1
 
-.. _xt_c906:
 
-C906
-^^^^^^^^^^^
-
-.. _xt_e907:
-
-E907
-^^^^^^^^^^^
-``32 bit``
-
-* 支持 RISC-V RV32IMA[F][D]C[P] 指令集；
-* 支持 RISC-V 32/16 位混编指令集；
-* 支持 RISC-V 机器模式和用户模式；
-* 32 个 32 位整型通用寄存器，32 个 32 位/64 位浮点通用寄存器；
-* 整型 5 级/浮点 7 级，单发射，顺序执行流水线；
-* 支持 AXI4.0 主设备接口以及 AHB5.0 外设接口；
-* 指令 cache，两路组相连结构，2KB-32KB 可配置；
-* 数据 cache，两路组相连结构，2KB-32KB 可配置；
-* 支持非对齐内存访问；
-* 双周期硬件乘法器，基4硬件除法器；
-* 可选配 BHT 和 BTB；
-* 支持平头哥扩展增强指令集；
-* 支持平头哥 MCU 特性扩展技术，包括中断处理加速技术、MCU 扩展特性；
-* 兼容 RISC-V CLIC 中断标准，支持中断嵌套，外部中断源数量最高可配置 240 个；
-* 兼容 RISC-V PMP 内存保护标准，0/4/8/12/16 区域可配置；
-* 支持可配的性能监测单元；
-* 支持 RISC-V Debug 协议标准；
-* 频率 >1.0GHz@T28 HPCPlus, 9T SVT(worst case), Coremark > 3.8 coremark/MHz, Dhrystone >2.0DMIPS/MHz。
-
-.. _xt804:
-
-XT804
-^^^^^^^^^^^
-
-.. toctree::
-    :maxdepth: 1
-
-    APT32F706 <../high/APT32F706>
 
 
 .. _qingke:
 
 Qingke
-~~~~~~~~~~~~~~
+--------------
 ``WCH`` ``青稞``
 
 .. list-table::
@@ -147,14 +94,50 @@ Qingke
       -
       -
 
+.. _xt:
 
-产品简介
+XuanTie
 --------------
 
-.. toctree::
-    :maxdepth: 1
+.. contents::
+    :local:
+    :depth: 1
 
-    HPM6750 <../high/HPM6750>
-    HPM6350 <../high/HPM6350>
-    K210 <../high/K210>
-    K510 <../high/K510>
+.. _xt_c906:
+
+C906
+~~~~~~~~~~~~~~
+
+.. _xt_e907:
+
+E907
+~~~~~~~~~~~~~~
+``32 bit``
+
+* 支持 RISC-V RV32IMA[F][D]C[P] 指令集；
+* 支持 RISC-V 32/16 位混编指令集；
+* 支持 RISC-V 机器模式和用户模式；
+* 32 个 32 位整型通用寄存器，32 个 32 位/64 位浮点通用寄存器；
+* 整型 5 级/浮点 7 级，单发射，顺序执行流水线；
+* 支持 AXI4.0 主设备接口以及 AHB5.0 外设接口；
+* 指令 cache，两路组相连结构，2KB-32KB 可配置；
+* 数据 cache，两路组相连结构，2KB-32KB 可配置；
+* 支持非对齐内存访问；
+* 双周期硬件乘法器，基4硬件除法器；
+* 可选配 BHT 和 BTB；
+* 支持平头哥扩展增强指令集；
+* 支持平头哥 MCU 特性扩展技术，包括中断处理加速技术、MCU 扩展特性；
+* 兼容 RISC-V CLIC 中断标准，支持中断嵌套，外部中断源数量最高可配置 240 个；
+* 兼容 RISC-V PMP 内存保护标准，0/4/8/12/16 区域可配置；
+* 支持可配的性能监测单元；
+* 支持 RISC-V Debug 协议标准；
+* 频率 >1.0GHz@T28 HPCPlus, 9T SVT(worst case), Coremark > 3.8 coremark/MHz, Dhrystone >2.0DMIPS/MHz。
+
+.. _xt804:
+
+XT804
+~~~~~~~~~~~~~~
+
+
+
+
