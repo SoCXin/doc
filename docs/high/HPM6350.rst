@@ -21,8 +21,6 @@ HPM6350
 Xin简介
 -----------
 
-
-
 .. contents::
     :local:
 
@@ -37,27 +35,34 @@ Xin简介
 * 参考价格：￥28
 * 制程工艺：
 * 供货周期：
-* 处理性能：3390 :ref:`CoreMark`
-* 封装规格：eLQFP144/BGA116
+* 处理性能：3390 :ref:`CoreMark` , :ref:`level5`
+* 封装规格：eLQFP144/BGA116 (7x7mm P0.5)
 * 运行环境：-40°C to 105/125°C
 * RAM容量：800KB
-* ROM容量：
 * Flash容量：
 
 
 特征参数
 ^^^^^^^^^^^
 
-* 648 MHz :ref:`riscv` Dual Core
-* 2x USB HS OTG (集成PHY)
-* 10/100 Mbps 网口
-* 3x 16bit ADC @2Msps
-* 12bit DAC
+* 648 MHz :ref:`andes_d45`
+* 2x USB HS OTG (w/PHY)
+* 10/100 Mbps :ref:`ethernet`
+* 3x 16-bit ADC @2Msps
+* 12-bit DAC
+
+模拟性能
+^^^^^^^^^^^
+
+.. image:: ./images/HPM6350adc.png
 
 芯片架构
 ~~~~~~~~~~~
 
-:ref:`riscv` 核心 :ref:`andes_d45` :ref:`performance` : :ref:`cortex_m85` > ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
+:ref:`andes_d45` :ref:`performance` : :ref:`cortex_m85` > ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
+
+.. image:: ./images/HPM6350s.png
+    :target: http://www.hpmicro.com/product/summary.html?id=79841baf-170a-4870-8571-cdc299987bf6
 
 功耗参数
 ^^^^^^^^^^^
@@ -78,11 +83,18 @@ Xin选择
 型号对比
 ~~~~~~~~~
 
-.. image:: ./images/HPM6350l.png
-    :target: https://www.hpmicro.com/index.html
+.. image:: ./images/HPM6350d.png
+    :target: http://www.hpmicro.com/resources/resources.html#row5
+
 
 版本对比
 ~~~~~~~~~
 
-.. image:: ./images/HPM6350d.png
-    :target: http://www.hpmicro.com/resources/resources.html#row5
+.. image:: ./images/HPM6350l.png
+    :target: https://www.hpmicro.com/index.html
+
+.. _hpm6340:
+
+HPM6340
+^^^^^^^^^^^
+``LQFP144`` ``1.5 uA`` ``90uA/MHz``

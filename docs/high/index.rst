@@ -5,10 +5,6 @@
 ============
 
 
-.. contents::
-    :local:
-    :depth: 1
-
 
 .. list-table::
     :header-rows: 1
@@ -28,7 +24,7 @@
       -
       - 2 MB
       - ￥55
-      - >BGA196
+      - ≥BGA196
     * - :ref:`rt1170`
       - :ref:`cortex_m7`
       - 1 GHz
@@ -38,13 +34,13 @@
       -
       - >BGA289
     * - :ref:`hpm6350`
-      - :ref:`riscv`
+      - :ref:`andes_d45`
       - 648MHz
       - 3390
-      -
+      - 90uA/MHz
       - 800KB
-      -
-      - >BGA116
+      - ￥28
+      - ≥7x7mm
     * - :ref:`rt1060`
       - :ref:`cortex_m7`
       - 600MHz
@@ -52,7 +48,7 @@
       -
       - 1 MB
       -
-      - >BGA196
+      - ≥BGA196
     * - :ref:`stm32h745`
       - :ref:`cortex_m7`
       - 480MHz
@@ -60,7 +56,7 @@
       -
       - 1 MB
       -
-      - >LQFP144
+      - ≥LQFP144
     * - :ref:`stm32h730`
       - :ref:`cortex_m7`
       - <550MHz
@@ -68,7 +64,7 @@
       - 147/MHz
       - 1 MB
       -
-      - >BGA100
+      - ≥BGA100
 
 
 
