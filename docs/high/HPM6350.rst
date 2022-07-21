@@ -34,7 +34,7 @@ Xin简介
 * 参考价格：￥28
 * 制程工艺：
 * 供货周期：
-* 处理性能：3390 :ref:`CoreMark`(1710 :ref:`DMIPS`) , :ref:`level5`
+* 处理性能：3390 :ref:`CoreMark` (1710 :ref:`DMIPS` ) , :ref:`level5`
 * 封装规格：LQFP144 / BGA116(7x7mmP0.5)
 * 运行环境：-40°C to 105/125°C
 * RAM容量：800KB

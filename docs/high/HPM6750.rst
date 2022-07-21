@@ -38,7 +38,7 @@ Xin简介
 * 参考价格：￥55
 * 制程工艺：
 * 供货周期：
-* 处理性能：9220 :ref:`CoreMark`(4651 :ref:`DMIPS`) , :ref:`level6`
+* 处理性能：9220 :ref:`CoreMark` (4651 :ref:`DMIPS` ) , :ref:`level6`
 * 封装规格：BGA289(14×14 P0.8) / BGA196(10×10 P0.65)
 * 运行环境：-40°C to 105/125°C
 * RAM容量： 2088 KB
