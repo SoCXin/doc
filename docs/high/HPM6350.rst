@@ -58,7 +58,7 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~
 
-:ref:`performance` : :ref:`cortex_m85`(6.28 Coremark/MHz) > :ref:`andes_d45` (5.65 Coremark/MHz) > :ref:`cortex_m7`(5.29 Coremark/MHz)
+:ref:`performance` : :ref:`cortex_m85` (6.28 Coremark/MHz) > :ref:`andes_d45` (5.65 Coremark/MHz) > :ref:`cortex_m7` (5.29 Coremark/MHz)
 
 .. image:: ./images/HPM6350s.png
     :target: http://www.hpmicro.com/product/summary.html?id=79841baf-170a-4870-8571-cdc299987bf6
