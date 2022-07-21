@@ -4,8 +4,7 @@
 HPM6350
 ===============
 
-
-`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``FFA`` ``3390 CoreMark @648MHz`` ``￥28``
+`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``DSP`` ``FFA`` ``3390 CoreMark @648MHz`` ``￥28``
 
 .. image:: https://github.com/SoCXin/HPM6750/workflows/sdk/badge.svg
     :target: https://github.com/SoCXin/hpm_sdk
@@ -35,8 +34,8 @@ Xin简介
 * 参考价格：￥28
 * 制程工艺：
 * 供货周期：
-* 处理性能：3390 :ref:`CoreMark` , :ref:`level5`
-* 封装规格：eLQFP144/BGA116 (7x7mm P0.5)
+* 处理性能：3390 :ref:`CoreMark`(1710 :ref:`DMIPS`) , :ref:`level5`
+* 封装规格：LQFP144 / BGA116(7x7mmP0.5)
 * 运行环境：-40°C to 105/125°C
 * RAM容量：800KB
 * Flash容量：
@@ -59,7 +58,7 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~
 
-:ref:`andes_d45` :ref:`performance` : :ref:`cortex_m85` > ``5.65 Coremark/MHz`` > :ref:`cortex_m7`
+:ref:`performance` : :ref:`cortex_m85`(6.28 Coremark/MHz) > :ref:`andes_d45` (5.65 Coremark/MHz) > :ref:`cortex_m7`(5.29 Coremark/MHz)
 
 .. image:: ./images/HPM6350s.png
     :target: http://www.hpmicro.com/product/summary.html?id=79841baf-170a-4870-8571-cdc299987bf6
@@ -90,6 +89,7 @@ Xin选择
 版本对比
 ~~~~~~~~~
 
+
 .. image:: ./images/HPM6350l.png
     :target: https://www.hpmicro.com/index.html
 
@@ -97,4 +97,4 @@ Xin选择
 
 HPM6340
 ^^^^^^^^^^^
-``LQFP144`` ``1.5 uA`` ``90uA/MHz``
+``LQFP144`` ``1.5 uA`` ``90uA/MHz`` ``202207量产``
