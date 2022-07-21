@@ -4,18 +4,21 @@
 STM32G031
 ===============
 
-* 关键词：``Cortex-M0`` ``64MHz`` ``LPUART`` ``LPTIM``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32G031>`_ , `Gitee <https://gitee.com/socxin/STM32G031>`_
+`ST <https://www.st.com>`_ : ``Cortex-M0`` ``64MHz`` ``LPUART`` ``LPTIM``
+
 
 .. contents::
     :local:
-
+    :depth: 1
 
 Xin简介
 -----------
 
 .. image:: ./images/STM32G031.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
+
+.. contents::
+    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -27,11 +30,13 @@ Xin简介
 * 发布时间：
 * 官方价格：$0.8
 * 制程工艺：90 nm
-* 工作温度：-40°C to 85°C/105°C/125°C
-* 处理性能：59 :ref:`DMIPS`, 142 :ref:`CoreMark`
+* 供货周期：
+* 处理性能：142 :ref:`CoreMark` (59 :ref:`DMIPS` ) , :ref:`level1`
+* 封装规格：QFN48/QFN32/QFN28/TSSOP20/SON8
+* 运行环境：-40°C to 105/125°C
 * RAM容量：8 KB
 * Flash容量：32/64 KB
-* 封装规格：LQFP48/LQFP32/TSSOP20/ :ref:`stm32_so8`
+
 
 .. image:: ./images/STM32G031p.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
@@ -176,48 +181,6 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
     }
 
 
-2. 基于STM32CubeMX生成LL库工程
-
-.. code-block:: bash
-
-    int main(void)
-    {
-        LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
-        LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
-        LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
-        LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
-        LL_GPIO_ResetOutputPin(LED_GPIO_Port, LED_Pin);
-        GPIO_InitStruct.Pin = LED_Pin;
-        GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-        GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-        GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-        GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-        LL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
-        while (1)
-        {
-            LL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-            LL_mDelay(400);
-        }
-    }
-
-
-3. 基于ARM CMSIS库
-
-.. code-block:: bash
-
-    int main(void)
-    {
-        ENABLE_GPIO_CLOCK;              // enable the clock to GPIO
-        LEDPORT->_MODER |= GPIOMODER;   // set pins to be general purpose output
-        for (;;) {
-        ms_delay(500);
-        LEDPORT->ODR ^= (1<<LED1);      // toggle diodes
-        }
-        return 0;
-    }
-
-
-
 开源项目
 ~~~~~~~~~
 
@@ -228,29 +191,5 @@ STM32G031系列拥有非常丰富的产品规格，目前公开售卖的开发�
 * `Arduino_Core_STM32 <https://github.com/stm32duino/Arduino_Core_STM32>`_
 * `STM32CubeG0 <https://github.com/STMicroelectronics/STM32CubeG0>`_
 * `stm32-rs <https://github.com/stm32-rs/stm32g0xx-hal>`_
-
-
-Xin总结
---------------
-
-.. contents::
-    :local:
-
-能力构建
-~~~~~~~~~~~~~
-
-要点提示
-~~~~~~~~~~~~~
-
-STM32G0系列属于较新的产品，也重点优化了ADC的性能，相较于使用最广泛的STM32F1系列，在ADC初始化阶段需要更长的时间，所以在采样的时候需要过滤开始阶段无效的数据。
-
-问题整理
-~~~~~~~~~~~~~
-
-相较以往STM32的boot模式，新的G0系列芯片出厂默认从system flash启动，boot0管脚无论拉高或拉低都不能从系统存储区（system flash）启动（进入bootloader状态），也就是说如果烧录的程序没有配置SYS调试端口，将无法通过传统的boot0拉高来连接烧录器。
-
-如果要使能boot 0的功能，需要修改option bytes，将nboot_sel后面的勾选去掉，断电复位，此时芯片的启动方式就由boot0引脚决定了，上拉boot0进bootloader模式。
-
-一不小心就把芯片锁死弄成砖了，可以将PA0（NRST）接地，然后在连接STM32CubeProgrammer前断开接地，这是MCU可以被识别到，然后进行擦除或修改option bytes
 
 
