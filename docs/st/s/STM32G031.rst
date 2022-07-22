@@ -1,10 +1,10 @@
-
+.. _NO_010:
 .. _stm32g031:
 
 STM32G031
 ===============
 
-`ST <https://www.st.com>`_ : ``Cortex-M0`` ``64MHz`` ``LPUART`` ``LPTIM``
+`ST <https://www.st.com/en/microcontrollers-microprocessors.html>`_ : ``Cortex-M0`` ``64MHz`` ``LPUART`` ``LPTIM`` ``RTC`` ``12-bit ADC 2.5Msps``
 
 
 .. contents::
@@ -31,7 +31,7 @@ Xin简介
 * 官方价格：$0.8
 * 制程工艺：90 nm
 * 供货周期：
-* 处理性能：142 :ref:`CoreMark` (59 :ref:`DMIPS` ) , :ref:`level1`
+* 处理性能：142 :ref:`CoreMark` (59 :ref:`DMIPS` ) , :ref:`level2`
 * 封装规格：QFN48/QFN32/QFN28/TSSOP20/SON8
 * 运行环境：-40°C to 105/125°C
 * RAM容量：8 KB

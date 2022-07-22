@@ -56,7 +56,7 @@ ST
 .. toctree::
     :maxdepth: 1
 
-    低阶产品  <s/index>
+    普惠产品  <s/index>
     主流产品  <m/index>
 
 
@@ -158,12 +158,12 @@ ST
 
     * - :ref:`ulp`
       - :ref:`architecture`
-      - RAM
-      - Flash
-      - UART
-      - BLE
-      - USB
-      - DMIPS
+      - 
+      - SRAM
+      - 
+      - 
+      - 
+      - 
     * - :ref:`stm32l011`
       -
       -

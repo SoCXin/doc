@@ -1,16 +1,14 @@
-.. _NO_010:
 .. _stm32g030:
 
 STM32G030
 ===============
 
-* 关键词：``Cortex-M0`` ``64MHz`` ``I2S`` ``RTC`` ``BaseLine``
-* 资源库：`GitHub <https://github.com/SoCXin/STM32G030>`_ , `Gitee <https://gitee.com/socxin/STM32G030>`_
+`ST <https://www.st.com/en/microcontrollers-microprocessors.html>`_ : ``Cortex-M0`` ``64MHz`` ``I2S`` ``BaseLine`` ``RTC`` ``12-bit ADC 2.5Msps``
 
- :ref:`ref030` 作为ST新一代入门级32位MCU, 将继续作为标尺衡量同期竞品 :ref:`low`
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
@@ -23,12 +21,14 @@ Xin简介
 ~~~~~~~~~~~
 
 * 发布时间：
+* 官方价格：$0.8
 * 制程工艺：90 nm
-* 工作温度：-40°C to +85°C
-* 处理性能：59 :ref:`DMIPS`, 142 :ref:`CoreMark`
+* 供货周期：
+* 处理性能：142 :ref:`CoreMark` (59 :ref:`DMIPS` ) , :ref:`level2`
+* 封装规格：LQFP48/LQFP32/TSSOP20/SON8
+* 运行环境：-40°C to +85°C
 * RAM容量：8 KB
 * Flash容量：32/64 KB
-* 封装规格：LQFP48/LQFP32/ :ref:`stm32g030_tssop20` / :ref:`stm32_so8`
 
 .. image:: ./images/STM32G030p.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html
@@ -90,11 +90,6 @@ SON8
 
 .. image:: ./images/STM32G030p8.png
 
-
-.. _stm32g030_tssop20:
-
-TSSOP20
-^^^^^^^^^^^
 
 
 Xin选择
