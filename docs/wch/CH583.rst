@@ -8,6 +8,7 @@ CH583
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
@@ -131,14 +132,14 @@ Xin选择
       - USB/UART/SPI
       - Package
     * - :ref:`ch583`
-      - 31 DMIPS
+      -
       - 32KB/1 MB
       - BLE5.1
       - Sleep 0.7uA
       - 2/4/2
       - QFN48
     * - :ref:`esp32c3`
-      - 407 :ref:`CoreMark`
+      - 407
       - 512KB/384KB
       - WiFi+BLE5.0
       - Sleep 5uA

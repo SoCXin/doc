@@ -19,7 +19,7 @@
       - Special
       - Price
     * - :ref:`ch573`
-      - < 60 MHz
+      - ≤ 60 MHz
       - 18 KB
       - 512 KB
       - 4
@@ -27,7 +27,7 @@
       - USB H/D
       -
     * - :ref:`stc8`
-      - < 24 MHz
+      - ≤ 24 MHz
       - 1 KB
       - 8 KB
       - 2
@@ -35,14 +35,21 @@
       -
       -
     * - :ref:`ch552`
-      - < 24 MHz
+      - ≤ 24 MHz
       - 1 KB
       - 16 KB
       - 2
       - 16
       - USB
       -
-
+    * - :ref:`at32f421`
+      - ≤ 120 MHz
+      - 1 KB
+      - 16 KB
+      - 2
+      - 16
+      - USB
+      -
 
 对于定位低阶的产品，往往定位出货规模较大成本敏感的领域，对技术指标的衡量往往没有市场和商务因数重要，对于开发者而言，最期待和功能一样简单的开发环境及工具。
 
@@ -69,3 +76,26 @@ Costdown
 
 
 
+小封装
+----------
+``≤5x5mm``
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`low`
+      - :ref:`frequency`
+      - SRAM
+      - Flash
+      - Package
+      - Size
+      - Special
+      - Price
+    * - :ref:`ch573`
+      - ≤ 60 MHz
+      - 18 KB
+      - 512 KB
+      - QFN28
+      - 4x4
+      -
+      -

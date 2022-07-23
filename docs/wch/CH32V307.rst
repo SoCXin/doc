@@ -27,7 +27,7 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
 ^^^^^^^^^^^
 
 * 发布时间：
-* 参考价格：
+* 参考价格：￥13
 * 制程工艺：
 * 供货周期：
 * 处理性能：:ref:`level3`
@@ -45,11 +45,9 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
 * :ref:`ch32v307_usb` HS H/D(480Mbps PHY)
 * 3x USART + 5x UART
 * 2x :ref:`ch32v307_can` 2.0B主动
-* 千兆以太网控制器 :ref:`ch32v307_eth` (10Mbps PHY)
+* 千兆以太网控制器 :ref:`ch32v307_eth` (10Mbps w/PHY)
 * 2组18路通用DMA
 * 4组运放比较器
-* 2组12位DAC转换
-* 2单元16通道12位ADC转换，16路触摸按键TouchKey
 * 10组定时器
 * SDIO接口、FSMC接口、DVP数字图像接口
 * 2x IIC接口、3x SPI接口、2x IIS接口
@@ -58,6 +56,14 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
 .. hint::
     千兆以太网控制器1Gbps MAC和10Mbps PHY，USB HS设备，非常强大的有线连接能力
 
+模拟性能
+^^^^^^^^^^^
+``TouchKey`` ``ADC`` ``DAC`` ``OPA``
+
+* 4x OPA
+* 2x 12bit DAC
+* 2x 12bit ADC (16ch)
+* 16x TouchKey
 
 芯片架构
 ~~~~~~~~~~~
@@ -77,15 +83,7 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
     :target: http://www.wch.cn/products/CH32V307.html
 
 
-模拟性能
-^^^^^^^^^^^
 
-``TouchKey`` ``ADC`` ``DAC`` ``OPA``
-
-* 4x OPA
-* 2x 12bit DAC
-* 2x 12bit ADC (16ch)
-* 16x TouchKey
 
 
 连接能力
@@ -152,6 +150,7 @@ Xin选择
 
 .. contents::
     :local:
+    :depth: 1
 
 品牌对比
 ~~~~~~~~~~
@@ -240,6 +239,8 @@ Xin选择
 CH32V305
 ^^^^^^^^^^^
 ``TSSOP20``
+
+拥有小封装和高速USB
 
 .. image:: ./images/CH32V307list.png
     :target: http://www.wch.cn/products/CH32V307.html
