@@ -47,7 +47,6 @@
 /CH563.html -> wch/CH563.html
 /CH561.html -> wch/CH563.html
 /CH557.html -> wch/CH557.html
-/CH554.html -> wch/CH554.html
 /CH552.html -> wch/CH552.html
 /CH549.html -> wch/CH549.html
 /CH545.html -> wch/CH545.html

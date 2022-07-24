@@ -4,7 +4,10 @@
 CH583
 ============
 
-`GitHub <https://github.com/SoCXin/CH583>`_ : ``WCH`` ``RISC-V4A`` ``20MHz`` ``USB`` ``AES128`` ``BLE5.1`` ``1.7V`` ``QFN48`` ``QFN28``
+* `WCH <http://www.wch.cn/products/CH583>`_ : ``WCH`` ``RISC-V4A`` ``20MHz`` ``USB`` ``AES128`` ``BLE5.1`` ``1.7V`` ``QFN48`` ``QFN28``
+* `GitHub <https://github.com/SoCXin/CH583>`_ : :ref:`pop` / :ref:`low` / :ref:`ble` / :ref:`usb`  / :ref:`ulp`
+
+:ref:`ch573` --> :ref:`ch583`
 
 .. contents::
     :local:
@@ -16,7 +19,6 @@ Xin简介
 .. image:: ./images/CH583.png
     :target: http://www.wch.cn/products/CH583.html
 
-`芯片手册 <http://www.wch.cn/downloads/CH583DS1_PDF.html>`_
 
 .. contents::
     :local:
@@ -62,15 +64,15 @@ Xin简介
 
 ``1.56 DMIPS``
 
+低功耗两级流水线
+
 .. image:: ./images/CH583Core.png
     :target: http://www.wch.cn/products/CH583.html
 
-低功耗两级流水线
 
 功耗参数
 ^^^^^^^^^^^
-
-CH583定位低功耗产品
+``低功耗产品``
 
 * 支持 3.3V 和 2.5V 电源，CH583M 支持 1.8V
 * 内置 DC-DC 转换，可降低功耗
@@ -79,6 +81,7 @@ CH583定位低功耗产品
 * 睡眠模式 Sleep：0.7uA～2.8uA 多档
 * 下电模式 Shutdown：0.2uA～2.3uA 多档
 
+`芯片手册 <http://www.wch.cn/downloads/CH583DS1_PDF.html>`_
 
 连接能力
 ~~~~~~~~~~~
@@ -114,6 +117,7 @@ Xin选择
 
 .. contents::
     :local:
+    :depth: 1
 
 品牌对比
 ~~~~~~~~~
@@ -195,9 +199,9 @@ Xin选择
 
 CH582
 ^^^^^^^^^^^
+``CH582M`` ``CH582F`` ``￥3.68``
 
-
-CH582 相比 CH583 少了 ``SPI1`` 主机和 512KB 闪存用于存储数据或备份代码，不支持最低 ``1.7V`` 电源电压供电。
+`CH582 <https://item.szlcsc.com/3226374.html>`_ 相比 CH583 少了 ``SPI1`` 主机和 512KB 闪存用于存储数据或备份代码，不支持最低 ``1.7V`` 电源电压供电。
 
 .. hint::
     最有特色的一点是QFN28封装也包括有两个USB OTG外设（ADC缩水）。
@@ -216,6 +220,7 @@ Xin应用
 
 .. contents::
     :local:
+    :depth: 1
 
 开发板
 ~~~~~~~~~~

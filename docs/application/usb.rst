@@ -132,7 +132,7 @@ USB PD的通信是将协议层的消息调制成24MHZ的FSK信号并耦合到VBU
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`wch`
+    * - :ref:`usb_pd`
       - :ref:`architecture`
       - RAM
       - Flash

@@ -4,7 +4,7 @@
 WCH
 ============
 
-``RISC-V`` ``Qingke`` ``8051`` ``USB-HS(PHY)`` ``USB-SS(PHY)`` ``USB-PD`` ``Ethernet`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``HSPI`` ``SerDes`` ``UART`` ``BLE`` ``PCI/PCIe``
+``RISC-V`` ``Qingke`` ``8051`` ``USB-HS(PHY)`` ``USB-SS(PHY)`` ``USB-PD`` ``Ethernet`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``HSPI`` ``SerDes`` ``UART`` ``BLE``
 
 .. contents::
     :local:
@@ -319,10 +319,8 @@ BLE++
 
 MCS51
 ~~~~~~~~~~~~
-
-
-.. image:: ./images/8051.png
-    :target: http://special.wch.cn/zh_cn/mcu/
+``8051`` ``MCU``
+ 
 
 
 .. list-table::
@@ -337,14 +335,6 @@ MCS51
       - USB
       - Ethernet
     * - :ref:`ch552`
-      - 24MHz
-      - 2KB
-      - 16KB
-      -
-      -
-      -
-      -
-    * - :ref:`ch554`
       - 24MHz
       - 2KB
       - 16KB
@@ -369,13 +359,16 @@ MCS51
       -
       -
 
+.. image:: ./images/8051.png
+    :target: http://special.wch.cn/zh_cn/mcu/
+
+
 .. toctree::
     :maxdepth: 1
 
     CH545 <CH545>
     CH557 <CH557>
     CH552 <CH552>
-    CH554 <CH554>
     CH549 <CH549>
     CH543 <CH543>
 

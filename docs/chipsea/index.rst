@@ -1,7 +1,7 @@
 
 .. _chipsea:
 
-chipsea
+Chipsea
 =================
 ``ADC`` ``HarmonyOS`` ``科创板``
 

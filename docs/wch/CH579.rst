@@ -6,10 +6,12 @@ CH579
 
 `GitHub <https://github.com/SoCXin/CH579>`_ : ``Cortex-M0`` ``40MHz`` ``BLE4.2`` ``USB OTG`` ``Ethernet`` ``10Mbps(PHY)`` ``RTC`` ``AES128`` ``QFN48/QFN28`` ``0.2uA``
 
-升级迭代 : :ref:`ch579` -> :ref:`ch32f208`
+:ref:`ch579` --> :ref:`ch32f208`
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
