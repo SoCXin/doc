@@ -12,44 +12,39 @@
 
     * - :ref:`low`
       - :ref:`frequency`
-      - SRAM
-      - Flash
+      - :ref:`sram`
+      - :ref:`flash`
       - :ref:`peripherals`
-      - GPIO
-      - Special
+      - :ref:`package`
       - Price
     * - :ref:`ch573`
       - ≤ 60 MHz
       - 18 KB
       - 512 KB
-      - 4
+      - 
       -
-      - USB H/D
-      -
+      - ￥2.3
     * - :ref:`stc8`
       - ≤ 24 MHz
       - 1 KB
       - 8 KB
-      - 2
+      - 
       -
-      -
-      -
+      - ￥1.3
     * - :ref:`ch552`
       - ≤ 24 MHz
       - 1 KB
       - 16 KB
-      - 2
-      - 16
-      - USB
-      -
+      - 
+      - 
+      - ￥2.1
     * - :ref:`at32f421`
       - ≤ 120 MHz
       - 16 KB
       - 64 KB
       - 
       - 
-      - 
-      -
+      - ￥2.8
 
 对于定位低阶的产品，往往定位出货规模较大成本敏感的领域，对技术指标的衡量往往没有市场和商务因数重要，对于开发者而言，最期待和功能一样简单的开发环境及工具。
 
@@ -57,27 +52,43 @@
 
 典型的应用场景为，简单的设备控制，所需执行行为简单，程序开发简单，为实现开发便捷，需要有足够多的成熟方案和足够高效的开发方式，能够释放出产品的潜力，特别是新平台的性能过剩，再用于实现过去的传统功能，几乎都能构成降维打击能力。
 
+影响同系列的芯片价格主要包括如下因素：
 
 .. contents::
     :local:
     :depth: 1
 
+.. _sram:
+
+SRAM
+-----------
+``Static Random Access Memory``
+
+PSRAM就是伪SRAM，内部的内存颗粒跟SDRAM的颗粒相似，但外部的接口跟SRAM相似，不需要SDRAM那样复杂的控制器和刷新机制，PSRAM的接口跟SRAM的接口是一样的。
+
+.. _flash:
+
+Flash
+-----------
+
+FLASH存储器又称闪存，它结合了ROM和RAM的长处，不仅具备电子可擦除可编程（EEPROM）的性能，还不会断电丢失数据，同时可以快速读取数据（NVRAM的优势）
+
 .. _package:
 
 Package
 -----------
+``LQFP`` ``QFN`` ``CSP``
 
 .. list-table::
     :header-rows:  1
 
-    * - SON8
-      - TSSOP20 
-      - QFN28 
-      - QFN32 
-      - LQFP48
-      - LQFP64
-      - LQFP100
-      - LQFP144
+    * - QFN
+      - LQFP 
+      - BGA 
+      - CSP 
+      - SOP
+      - DIP
+      - SOIC
     * - 
       - 
       - 
@@ -85,7 +96,6 @@ Package
       - 
       -
       - 
-      -
 
 兼容好
 ~~~~~~~~~~~
@@ -109,10 +119,10 @@ Package
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`low`
+    * - 
       - :ref:`frequency`
-      - SRAM
-      - Flash
+      - :ref:`sram`
+      - :ref:`flash`
       - :ref:`package`
       - Size
       - Special
@@ -122,7 +132,7 @@ Package
       - 18 KB
       - 512 KB
       - QFN28
-      - 4x4
+      - 4x4mm
       -
       -
 
