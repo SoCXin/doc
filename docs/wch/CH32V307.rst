@@ -4,7 +4,8 @@
 CH32V307
 ============
 
-`GitHub <https://github.com/SoCXin/CH32V307>`_ : ``RISC-V`` ``RISC-V4F`` ``USB-HS-OTG(480Mbps)`` ``Ethernet`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``CAN`` ``FSMC`` ``OPA`` ``DVP``
+* `WCH <http://www.wch.cn/products/CH32V307>`_ : ``RISC-V`` ``RISC-V4F`` ``USB-HS-OTG(480Mbps)`` ``Ethernet`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``CAN`` ``FSMC`` ``OPA`` ``DVP``
+* `GitHub <https://github.com/SoCXin/CH32V307>`_ : :ref:`pop` :ref:`ethernet` :ref:`usb_hs`
 
 .. contents::
     :local:
@@ -16,18 +17,21 @@ Xin简介
 .. image:: ./images/CH32V307.png
     :target: http://www.wch.cn/products/CH32V307.html
 
+CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈区、快速中断入口，在标准RISC-V基础上大大提高了中断响应速度。加入单精度浮点指令集，扩充堆栈区，具有更高的运算性能。扩展串口U(S)ART数量到8组，电机定时器到4组。提供USB2.0高速接口（480Mbps）并内置了PHY收发器，以太网MAC升级到千兆并集成了10M-PHY模块。
 
+.. contents::
+    :local:
+    :depth: 1
 
 规格参数
 ~~~~~~~~~~~
 
-CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈区、快速中断入口，在标准RISC-V基础上大大提高了中断响应速度。加入单精度浮点指令集，扩充堆栈区，具有更高的运算性能。扩展串口U(S)ART数量到8组，电机定时器到4组。提供USB2.0高速接口（480Mbps）并内置了PHY收发器，以太网MAC升级到千兆并集成了10M-PHY模块。
 
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
-* 参考价格：￥13
+* 参考价格： `￥12.79 <https://item.szlcsc.com/3443981.html>`_ 
 * 制程工艺：
 * 供货周期：
 * 处理性能：:ref:`level3`

@@ -25,7 +25,7 @@ Marlin
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`pop`
       - :ref:`architecture`
       - RAM
       - Flash
@@ -95,7 +95,7 @@ ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含�
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`pop`
       - :ref:`architecture`
       - RAM
       - Flash

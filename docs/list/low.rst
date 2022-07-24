@@ -14,7 +14,7 @@
       - :ref:`frequency`
       - SRAM
       - Flash
-      - UART/SPI/I2C
+      - :ref:`peripherals`
       - GPIO
       - Special
       - Price
@@ -44,11 +44,11 @@
       -
     * - :ref:`at32f421`
       - ≤ 120 MHz
-      - 1 KB
       - 16 KB
-      - 2
-      - 16
-      - USB
+      - 64 KB
+      - 
+      - 
+      - 
       -
 
 对于定位低阶的产品，往往定位出货规模较大成本敏感的领域，对技术指标的衡量往往没有市场和商务因数重要，对于开发者而言，最期待和功能一样简单的开发环境及工具。
@@ -62,8 +62,9 @@
     :local:
     :depth: 1
 
-Costdown
+兼容好
 ----------
+``LQFP48`` ``LQFP64`` ``STM32``
 
 软硬件兼容产品方案，通用替换，提高产品供应链稳定
 
@@ -76,9 +77,9 @@ Costdown
 
 
 
-小封装
+封装小
 ----------
-``≤5x5mm``
+``≤5x5mm`` ``QFN28`` ``QFN32``
 
 .. list-table::
     :header-rows:  1
@@ -99,3 +100,8 @@ Costdown
       - 4x4
       -
       -
+
+
+管脚多
+----------
+``LQFP144`` ``LQFP100``

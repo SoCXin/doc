@@ -6,10 +6,8 @@
 
 `Level Mark <https://github.com/SoCXin/Level>`_ : :ref:`frequency`/:ref:`CoreMark`/:ref:`Geekbench`
 
-
-.. image:: ./images/npu.jpg
-
-Level1-3主要用于控制，Level4-6可以部署算法，Level7-9为高性能计算
+.. hint::
+    Level1-3主要用于控制，Level4-6可以部署算法，Level7-9为高性能计算
 
 .. contents::
     :local:
@@ -20,7 +18,7 @@ Level1-3主要用于控制，Level4-6可以部署算法，Level7-9为高性能�
 
 Level1
 --------------
-``Frequency < 60MHz``
+``Frequency ≤ 60MHz``
 
 
 .. list-table::
@@ -30,7 +28,7 @@ Level1
       - :ref:`architecture`
       - SRAM
       - :ref:`frequency`
-      - :ref:`consumption`
+      - :ref:`power`
       - :ref:`level1`
     * - :ref:`ch549`
       - :ref:`mcs51`
@@ -45,7 +43,7 @@ Level1
 
 Level2
 --------------
-``Frequency < 120MHz``
+``Frequency ≤ 120MHz``
 
 
 .. list-table::
@@ -55,7 +53,7 @@ Level2
       - :ref:`architecture`
       - SRAM
       - :ref:`frequency`
-      - :ref:`consumption`
+      - :ref:`power`
       - :ref:`level2`
     * - :ref:`gd32v103`
       - :ref:`riscv`
@@ -70,7 +68,7 @@ Level2
 
 Level3
 --------------
-``Frequency < 240MHz``
+``Frequency ≤ 240MHz``
 
 
 .. list-table::
@@ -80,7 +78,7 @@ Level3
       - :ref:`architecture`
       - :ref:`CoreMark`
       - :ref:`frequency`
-      - :ref:`consumption`
+      - :ref:`power`
       - :ref:`level3`
     * - :ref:`stm32u575`
       - :ref:`cortex_m33`
@@ -123,7 +121,7 @@ Level3
 
 Level4
 --------------
-``CoreMark < 2000``
+``CoreMark ≤ 2000``
 
 .. list-table::
     :header-rows:  1
@@ -132,7 +130,7 @@ Level4
       - :ref:`architecture`
       - :ref:`CoreMark`
       - :ref:`frequency`
-      - :ref:`consumption`
+      - :ref:`power`
       - :ref:`foundry`
     * - :ref:`stm32h7b0`
       - :ref:`cortex_m7`
@@ -176,7 +174,7 @@ Level4
 
 Level5
 --------------
-``CoreMark < 5000``
+``CoreMark ≤ 5000``
 
 .. list-table::
     :header-rows:  1
@@ -185,7 +183,7 @@ Level5
       - :ref:`architecture`
       - :ref:`CoreMark`
       - :ref:`frequency`
-      - :ref:`consumption`
+      - :ref:`power`
       - :ref:`level5`
     * - :ref:`hpm6350`
       - :ref:`riscv`
@@ -233,7 +231,7 @@ Level6
       - :ref:`architecture`
       - :ref:`CoreMark`
       - :ref:`frequency`
-      - :ref:`consumption`
+      - :ref:`power`
       -
     * - :ref:`hpm6750`
       - :ref:`riscv`
@@ -281,7 +279,7 @@ Level9
       - :ref:`architecture`
       - :ref:`frequency`
       - :ref:`Geekbench`
-      - :ref:`consumption`
+      - :ref:`power`
       - :ref:`foundry`
     * - M1
       -
@@ -333,3 +331,5 @@ NPU
       -
       -
       -
+
+.. image:: ./images/npu.jpg
