@@ -1,0 +1,28 @@
+
+.. _hc32f460:
+
+HC32F460
+===============
+
+* 关键词：``Cortex-M4`` ``PGA`` ``200MHz`` ``2.5MSPS ADC``
+* 资源库：`GitHub <https://github.com/SoCXin/HC32F460>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+:ref:`cortex_m4` MCU
+
+
+
+关键特性
+~~~~~~~~~~~~~~
+
+* 4 x USART
+* 2 x 12bit 2.5MSPS ADC
+* 3 x CMP
+* 可编程增益放大器PGA
+* 片上温度传感器(OTS)
+

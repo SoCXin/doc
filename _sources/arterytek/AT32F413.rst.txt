@@ -1,0 +1,29 @@
+
+.. _at32f413:
+
+AT32F413
+===============
+
+`GitHub <https://github.com/SoCXin/AT32F413>`_ : ``Cortex-M4`` ``200MHz``  ``-40~105°C`` ``USB2.0``
+
+.. contents::
+    :local:
+    :depth: 1
+
+
+Xin简介
+-----------
+
+:ref:`arterytek` :ref:`cortex_m4` 单核 MCU
+
+
+关键特性
+~~~~~~~~~
+
+* 240 MHz :ref:`cortex_m4`
+* 高达 16MB 外部 SPI Flash memory 扩展
+* 4 x USART + 4 x UART
+* 2 x CAN 2.0B
+* 2 x SDIO
+* Crystal-less USB2.0全速接口
+

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/architecture/classic.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Cortex-A7" href="cortexA7.html" />
+    <link rel="prev" title="AMBA" href="amba.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../application/index.html">功能领域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">内核架构</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#classification">Classification</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="x86.html">X86</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="arm.html">ARM</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="arm.html#cortex-spec">架构简介</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="arm.html#id4">版本简介</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arm.html#id10">系列简介</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="MIPS.html">MIPS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fpga/index.html">FPGA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="riscv.html">RISC-V</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MCS51.html">MCS-51</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#performance">Performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#architecture">Architecture</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor.html">芯片设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">内核架构</a> &raquo;</li>
+          <li><a href="arm.html">ARM</a> &raquo;</li>
+      <li>Classic</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/architecture/classic.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="classic">
+<span id="arm-classic"></span><h1>Classic<a class="headerlink" href="#classic" title="Permalink to this heading">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">ARMv6</span></code> <code class="docutils literal notranslate"><span class="pre">ARMv5</span></code> <code class="docutils literal notranslate"><span class="pre">ARM7</span></code> <code class="docutils literal notranslate"><span class="pre">ARM9</span></code> <code class="docutils literal notranslate"><span class="pre">ARM11</span></code></p>
+<a class="reference external image-reference" href="https://developer.arm.com/ip-products/processors"><img alt="../_images/arm.png" src="../_images/arm.png" /></a>
+<ul class="simple">
+<li><p>ARMv4：ARM7TDMI、ARM720T、ARM9TDMI、ARM940T、ARM920T、Intel的StrongARM等。</p></li>
+<li><p>ARMv5TE：ARM9E-S、ARM966E-S、ARM1020E、ARM1022E 以及XScale</p></li>
+<li><p>ARMv5EJ：ARM9EJ-S、ARM926EJ-S、ARM7EJ-S、ARM1026EJ-S</p></li>
+</ul>
+<p>其中后缀意义如下：</p>
+<ul class="simple">
+<li><p>E：增强型DSP指令集。包括全部算法和16位乘法操作。</p></li>
+<li><p>J：支持新的Java。</p></li>
+</ul>
+<p>ARMv6(ARM11系列)：</p>
+<ul class="simple">
+<li><p>ARM1136J(F)-S基于ARMv6主要特性有SIMD、Thumb、Jazelle、DBX、(VFP)、MMU</p></li>
+<li><p>ARM1156T2(F)-S基于ARMv6T2 主要特性有SIMD、Thumb-2、(VFP)、MPU</p></li>
+<li><p>ARM1176JZ(F)-S基于ARMv6KZ 在 ARM1136EJ(F)-S 基础上增加MMU、TrustZone</p></li>
+<li><p>ARM11 MPCore基于ARMv6K 在ARM1136EJ(F)-S基础上可以包括1-4 核SMP、MMU</p></li>
+</ul>
+<a class="reference external image-reference" href="https://www.xyhtml5.com/16603.html"><img alt="../_images/classic.png" src="../_images/classic.png" /></a>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#arm7" id="id5">ARM7</a></p></li>
+<li><p><a class="reference internal" href="#arm9" id="id6">ARM9</a></p>
+<ul>
+<li><p><a class="reference internal" href="#arm926ej-s" id="id7">ARM926EJ-S</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#arm11" id="id8">ARM11</a></p>
+<ul>
+<li><p><a class="reference internal" href="#arm1176jz" id="id9">ARM1176JZ</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="arm7">
+<span id="id1"></span><h2><a class="toc-backref" href="#id5">ARM7</a><a class="headerlink" href="#arm7" title="Permalink to this heading">¶</a></h2>
+<p>低功耗的32位RISC处理器，冯·诺依曼结构。
+具有嵌入式ICE－RT逻辑，调试开发方便。
+3级流水线结构。能够提供0.9MIPS的三级流水线结构
+代码密度高，兼容16位的Thumb指令集。
+对操作系统的支持广泛，包括Windows CE、Linux、Palm OS等。
+指令系统与ARM9系列、ARM9E系列和ARM10E系列兼容，便于用户的产品升级换代。
+主频最高可达130MIPS。</p>
+<p>ARM7TDMI微处理器4种类型：ARM7TDMI、ARM7TDMI-S、ARM720T、ARM7EJ。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ARM7TMDI是使用很广泛的32位嵌入式RISC处理器，属低端ARM处理器核。</p>
+</div>
+</section>
+<section id="arm9">
+<span id="id2"></span><h2><a class="toc-backref" href="#id6">ARM9</a><a class="headerlink" href="#arm9" title="Permalink to this heading">¶</a></h2>
+<p>5级整数流水线，哈佛体系结构。支持32位ARM指令集和16位Thumb指令集。全性能的MMU，支持Windows CE、Linux、Palm OS等多种主流嵌入式操作系统。支持数据Cache和指令Cache，具有更高的指令和数据处理能力。</p>
+<ul class="simple">
+<li><p>ARM9类型：ARM920T、ARM922T和ARM940T</p></li>
+<li><p>ARM9E类型：ARM926EJ-S、ARM946E-S和ARM966E-S</p></li>
+</ul>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>ARM9E支持DSP指令集，支持VFP9浮点处理协处理器，主频最高可达300MIPS。</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p>Freq</p></th>
+<th class="head"><p>RAM</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>Process</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/SP7021.html#sp7021"><span class="std std-ref">SP7021</span></a></p></td>
+<td><p><a class="reference internal" href="#arm926ejs"><span class="std std-ref">ARM926EJ-S</span></a></p></td>
+<td><p>1.0 GHz</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<section id="arm926ej-s">
+<span id="arm926ejs"></span><h3><a class="toc-backref" href="#id7">ARM926EJ-S</a><a class="headerlink" href="#arm926ej-s" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+<section id="arm11">
+<span id="id3"></span><h2><a class="toc-backref" href="#id8">ARM11</a><a class="headerlink" href="#arm11" title="Permalink to this heading">¶</a></h2>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>指令集ARMv6，8级流水线，1.25DMIPS/MHz</p>
+</div>
+<section id="arm1176jz">
+<span id="id4"></span><h3><a class="toc-backref" href="#id9">ARM1176JZ</a><a class="headerlink" href="#arm1176jz" title="Permalink to this heading">¶</a></h3>
+<p>共有40个32位寄存器，其中有33个通用寄存器，7个状态寄存器，其中R0-R12用于作为通用寄存器使用，用于存储数据或者数据的地址。R13,R14,R15有特殊用途</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="amba.html" class="btn btn-neutral float-left" title="AMBA" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="cortexA7.html" class="btn btn-neutral float-right" title="Cortex-A7" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/architecture/classic.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/architecture/classic.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

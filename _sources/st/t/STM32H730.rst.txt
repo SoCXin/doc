@@ -1,0 +1,270 @@
+.. _NO_007:
+.. _stm32h730:
+
+STM32H730
+================
+
+`标签 <https://github.com/SoCXin/STM32H730>`_ : ``Cortex-M7`` ``550MHz`` ``5MSPS-12bit-DAC`` ``3.6MSPS-16bit-ADC`` ``USB-HS-OTG`` ``ULPI`` ``OctoSPI``  ``Ethernet``
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+`EEMBC CoreMark:2778 (550 x 5.05 CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=13276>`_
+
+.. image:: ./images/STM32H730.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：1177 :ref:`DMIPS`, 2778 :ref:`CoreMark` , :ref:`level5`
+* 封装规格：LQFP144/LQFP176/UFBGA176/UFBGA169/UFBGA144/TFBGA100/LQFP100(14×14mm)
+* 运行环境：-40°C to 85°C
+* RAM容量：564 KB
+* Flash容量：128 KB
+
+.. image:: ./images/STM32H730p.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html
+
+特征参数
+^^^^^^^^^^^
+
+* 550 MHz :ref:`cortex_m7`
+* 2x :ref:`stm32_ospi`
+* :ref:`stm32_eth_mac`
+* :ref:`stm32_otg_hs`
+* 安全启动和安全固件升级 :ref:`stm32_sbsfu`
+
+
+.. note::
+    :ref:`stm32h730` 所有MCU应该具备的属性都拥有且顶级，同时具有高性能和低价优势，是一颗无法忽略的战略级MCU
+
+芯片架构
+~~~~~~~~~~~
+
+.. image:: ./images/STM32H730s.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html
+
+* 供电电压：1.71 to 3.6 V
+
+.. _stm32_cache:
+
+Cache
+^^^^^^^^^^^
+
+32-Kbyte data cache and 32-Kbyte instruction cache allowing 0-wait state
+
+.. _stm32_sbsfu:
+
+SBSFU
+^^^^^^^^^^^
+
+.. _stm32_ospi:
+
+OctoSPI
+^^^^^^^^^^^
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
+
+.. image:: ./images/STM32H73.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
+
+超值系列对比
+^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`vendor`
+      - DMIPS
+      - RAM
+      - Cache
+      - GPU
+      - SPI
+      - USB
+      - Ethernet
+      - Interface
+    * - :ref:`stm32h730`
+      - 1177
+      - 564KB
+      - 32+32
+      - ART
+      - 2 Octo
+      - :ref:`stm32_otg_hs`
+      - 100M
+      - 35
+    * - :ref:`stm32h750`
+      - 1027
+      - 1 MB
+      - 16+16
+      - ART
+      - 2 Quad
+      - :ref:`stm32_otg_hs`
+      - 100M
+      - 35
+    * - :ref:`stm32h7b0`
+      - 599
+      - 1.4 MB
+      - 16+16
+      - ART/JPEG
+      - 2 Octo
+      - :ref:`stm32_otg_hs`
+      - No
+      - 35
+
+相似系列对比
+^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`vendor`
+      - DMIPS
+      - RAM
+      - Cache
+      - GPU
+      - SPI
+      - USB
+      - Ethernet
+      - Interface
+    * - :ref:`stm32h730`
+      - 1177
+      - 564KB
+      - 32+32
+      - ART
+      - 2 Octo
+      - :ref:`stm32_otg_hs`
+      - 100M
+      - 35
+    * - STM32H725
+      - 1027
+      - 1 MB
+      - 16+16
+      - ART
+      - 2 Quad
+      - :ref:`stm32_otg_hs`
+      - 100M
+      - 35
+    * - STM32H723
+      - 1027
+      - 1 MB
+      - 16+16
+      - ART
+      - 2 Quad
+      - :ref:`stm32_otg_hs`
+      - 100M
+      - 35
+
+
+型号对比
+~~~~~~~~~
+
+.. image:: ./images/STM32H730diff.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html
+
+
+
+封装规格对比
+^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`vendor`
+      - Price
+      - Package
+      - Size
+      - Interface
+    * - STM32H730IBH
+      - $3.67
+      - UFBGA176
+      - 10×10mm
+      - 35
+    * - STM32H730ABH
+      - $3.37
+      - UFBGA169
+      - 7x7mm
+      - 35
+    * - STM32H730ZBH
+      - $3.24
+      - UFBGA144
+      - 7x7mm
+      - 35
+    * - STM32H730VBH
+      - $2.83
+      - TFBGA100
+      - 8x8mm
+      - 35
+    * - STM32H730IBT
+      - $3.67
+      - LQFP176
+      - 24×24mm
+      - 35
+    * - STM32H730ZBT
+      - $3.24
+      - LQFP144
+      - 20×20mm
+      - 35
+    * - STM32H730VBT
+      - $2.83
+      - LQFP100
+      - 14×14mm
+      - 35
+
+.. note::
+    :ref:`stm32h730` 系列 STM32H730IBK拥有STM32系列中数量最多的16bit ADC = 36通道
+
+必选理由
+~~~~~~~~~~
+
+:ref:`stm32h730` 系列是STM32H7系列中性价比非常高的，各种外设规格顶配，计算性能强劲，在高性能MCU领域应该是无敌手状态
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+
+
+Xin总结
+--------------
+
+.. contents::
+    :local:
+
+能力构建
+~~~~~~~~~~~~~
+
+要点提示
+~~~~~~~~~~~~~
+
+问题整理
+~~~~~~~~~~~~~
+

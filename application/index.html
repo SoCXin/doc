@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/application/index.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="AI" href="ai.html" />
+    <link rel="prev" title="K510" href="../high/K510.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">功能领域</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ai.html">边缘计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foc.html">实时控制</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hmi.html">人机交互</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adc.html">信号处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="audio.html">音频处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">通信连接</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#wireless">Wireless</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lte.html">LTE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lpwa.html">LPWA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wifi.html">Wi-Fi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wpan.html">WPAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bluetooth.html">Bluetooth</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#wired">Wired</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ethernet.html">ethernet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usb.html">USB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plc.html">PLC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uart">UART</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdio">SDIO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can">CAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#i2c">I2C</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spi">SPI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor.html">芯片设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Application</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/application/index.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="application">
+<span id="id1"></span><h1>Application<a class="headerlink" href="#application" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ai.html">边缘计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="foc.html">实时控制</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hmi.html">人机交互</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adc.html">信号处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audio.html">音频处理</a></li>
+</ul>
+</div>
+<section id="id2">
+<h2>通信连接<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<section id="wireless">
+<span id="id3"></span><h3>Wireless<a class="headerlink" href="#wireless" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p><a class="reference internal" href="wpan.html#id4"><span class="std std-ref">802.15.4</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="wpan.html#zigbee"><span class="std std-ref">ZigBee</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="bluetooth.html#bt"><span class="std std-ref">Bluetooth</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="wifi.html#wifi"><span class="std std-ref">Wi-Fi</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="lpwa.html#lora"><span class="std std-ref">LoRa</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="lte.html#nbiot"><span class="std std-ref">NB-IoT</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="lte.html#cat1"><span class="std std-ref">Cat.1</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="lte.html#cat4"><span class="std std-ref">Cat.4</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>频段</p></td>
+<td><p>868/915/2450</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>带宽</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>距离</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>功耗</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lte.html">LTE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lpwa.html">LPWA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wifi.html">Wi-Fi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wpan.html">WPAN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth</a></li>
+</ul>
+</div>
+</section>
+<section id="wired">
+<span id="id4"></span><h3>Wired<a class="headerlink" href="#wired" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#wired"><span class="std std-ref">Wired</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#uart"><span class="std std-ref">UART</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#i2c"><span class="std std-ref">I2C</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#spi"><span class="std std-ref">SPI</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#can"><span class="std std-ref">CAN</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#sdio"><span class="std std-ref">SDIO</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="usb.html#usb"><span class="std std-ref">USB</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="ethernet.html#ethernet"><span class="std std-ref">Ethernet</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>速率</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ethernet.html">ethernet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usb.html">USB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plc.html">PLC</a></li>
+</ul>
+</div>
+<section id="uart">
+<span id="id5"></span><h4>UART<a class="headerlink" href="#uart" title="Permalink to this heading">¶</a></h4>
+<p>UART(Universal Asynchronous Receiver/Transmitter)通用异步收发传输器，是一种异步收发传输器，在UART通讯协议中信号线上的状态位高电平代表’1’低电平代表’0’。</p>
+<ul class="simple">
+<li><p>空闲位：当总线处于空闲状态时信号线的状态为‘1’即高电平</p></li>
+<li><p>起始位：开始进行数据传输时发送方要先发出一个低电平’0’来表示传输字符的开始。</p></li>
+<li><p>数据位：数据可以是5，6，7，8，9位，构成一个字符，一般都是8位。先发送最低位最后发送最高位。</p></li>
+<li><p>校验位：数据位加上这一位后，使得“1”的位数为偶数（偶校验）或奇数（奇校验）以此来校验数据传送的正确性</p></li>
+<li><p>停止位：数据结束标志，可以是1位，1.5位，2位的高电平。</p></li>
+</ul>
+<p>UART CTS(Clear To Send)/RTS(Request To Send)用于硬流控，协调双方收发，保证数据不丢失。</p>
+<p>TTL、RS232和RS485指的是电平逻辑标准；UART口、COM口指的是物理接口形式；RS232电平即负逻辑电平，定义+5V~+12V为逻辑0，-5V~-12V为逻辑1。</p>
+<p>RS232的缺点很明显，接口的信号电平值较高易损坏接口电路的芯片，需要另外的芯片与TTL转换兼容，传输速率低，三线形成共地传输，容易产生共模干扰，抗干扰性能弱，也导致传输距离有限（50米左右）。</p>
+<p>针对RS232的不足，RS422采用5线（包括信号地线），拥有高输入阻抗和发送驱动能力，可实现一对多通信，通信距离可达1200米，通信速率可达10Mb/s，需要一电阻进行阻抗匹配。</p>
+<p>为扩展应用范围，EIA又于1983年在RS-422基础上制定了RS-485标准，增加了多点、双向通信能力，即允许多个发送器连接到同一条总线上，同时增加了发送器的驱动能力和冲突保护特性，扩展了总线共模范围，后命名为TIA/EIA-485-A标准。</p>
+<p>RS-485采用差分信号正逻辑，+2—+6 V表示逻辑1，-2—-6 V表示逻辑0，信号电平较低，可直接和TTL电平兼容，同样的通信速率可达10Mb/s，采用平衡驱动器和差分接收器的组合，抗共模干能力增强，通信距离实际可达3000米，支持32个节点，使用特制芯片最多支持400个节点。</p>
+</section>
+<section id="sdio">
+<span id="id6"></span><h4>SDIO<a class="headerlink" href="#sdio" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="can">
+<span id="id7"></span><h4>CAN<a class="headerlink" href="#can" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">串行通信</span></code></p>
+<p>CAN总线，也叫做控制器局域网总线（Controller Area Network），是一种用于实时应用的串行通讯协议总线，它可以使用双绞线来传输信号，是世界上应用最广泛的现场总线之一。</p>
+</section>
+<section id="i2c">
+<span id="id8"></span><h4>I2C<a class="headerlink" href="#i2c" title="Permalink to this heading">¶</a></h4>
+<p>I2C(Inter-Integrated Circuit BUS) 集成电路总线，多用于主控制器和从器件间的主从通信，在小数据量场合使用，传输距离短，任意时刻只能有一个主机等特性。IIC是真正的多主机总线，（对比SPI在每次通信前都需要把主机定死，而IIC可以在通讯过程中，改变主机），如果两个或更多的主机同时请求总线，可以通过冲突检测和仲裁防止总线数据被破坏</p>
+<ul class="simple">
+<li><p>起始：时钟线SCL为高时，数据线SDA由高到低</p></li>
+<li><p>停止：时钟线SCL为高时，数据线SDA由低到高</p></li>
+<li><p>SDA和SCL同时为高时，为IIC总线的空闲状态</p></li>
+<li><p>所有的SDA 信号变化都要在SCL 时钟为低电平时进行，除了开始和结束标志</p></li>
+<li><p>从机在第9个时钟信号进行拉低回应，表示收到了主机发来的数据，拉高则表示不应答</p></li>
+<li><p>写寄存器时，主设备除了发出开始标志和地址位，还要加一个R/W 位，0为写，1为读</p></li>
+</ul>
+<p>IIC总线上可以挂很多设备：多个主设备，多个从设备（外围设备）。当多个主机同时想占用总线时，企图启动总线传输数据，就叫做总线竞争。I2C通过总线仲裁，以决定哪台主机控制总线。</p>
+<p>上拉电阻一般在4.7k~10k之间，每个接到I2C总线上的器件都有唯一的地址。</p>
+<p>主机与其它器件间的数据传输可以是由主机发送数据到其它器件，这时主机即为发送器，总线上收数据的器件则为接收器。</p>
+<ul class="simple">
+<li><p>传输速率在标准模式下可以达到100kb/s,快速模式下可以达到400kb/s</p></li>
+<li><p>连接到总线的IC数量只是受到总线的最大负载电容400pf限制</p></li>
+</ul>
+<p>I3C吸纳了I2C和SPI的关键特性，并将其统一起来，同时在I2C的基础上，保留了2线的串行接口结构</p>
+<ul class="simple">
+<li><p>I3C总线可以支持multi-master即多主设备</p></li>
+<li><p>I3C总线与传统的I2C设备仍然兼容</p></li>
+<li><p>可以支持软中断</p></li>
+<li><p>相比较于I2C总线的功耗更低</p></li>
+<li><p>速度更快，可以支持到12.5MHZ</p></li>
+</ul>
+<p>I3C允许从设备启动带内中断，这对于I2C和SPI设备来说都需要一根额外的信号线才能实现。当总线处于空闲状态时，从设备可以通过中断机制发送一个”START”信号，然后主设备会为从设备提供一个时钟信号，从设备可以通过主设备提供的分配地址将设备驱动到总线上来启动中断。</p>
+</section>
+<section id="spi">
+<span id="id9"></span><h4>SPI<a class="headerlink" href="#spi" title="Permalink to this heading">¶</a></h4>
+<p>SPI(Serial Peripheral Interface) 串行外设接口，是一种高速的，全双工，同步的通信总线，并且在芯片的管脚上只占用四根线，两个SPI设备之间通信必须由主设备 (Master) 来控制次设备 (Slave)</p>
+<ul class="simple">
+<li><p>MISO– Master Input Slave Output,主设备数据输入，从设备数据输出；</p></li>
+<li><p>MOSI– Master Output Slave Input，主设备数据输出，从设备数据输入；</p></li>
+<li><p>SCLK – Serial Clock，时钟信号，由主设备产生；</p></li>
+<li><p>CS – Chip Select，从设备使能信号，由主设备控制。</p></li>
+</ul>
+<p>SPI接口的一个缺点：没有指定的流控制，没有应答机制确认是否接收到数据。</p>
+<p>SPI模块为了和外设进行数据交换，根据外设工作要求，其输出串行同步时钟极性和相位可以进行配置，时钟极性（CPOL）对传输协议没有重大的影响。如果CPOL=0，串行同步时钟的空闲状态为低电平；SPI主模块和与之通信的外设时钟相位和极性应该一致。</p>
+<p>SPI有四种传输模式：上升沿、下降沿、前沿、后沿触发。当然也有MSB和LSB传输方式</p>
+<p>经常I2C，SPI接口被认为指定是一种硬件设备，但其实这样的说法是不尽准确的，严格的说他们都是人们所定义的软硬结合体，分为物理层（四线结构）和协议层（主机，从机，时钟极性，时钟相位）。</p>
+<p>I2C，SPI的区别不仅在与物理层，I2C比SPI有着一套更为复杂的协议层定义。IIC是半双工，而不是全双工，只要求两条总线线路。</p>
+<p>IIC是真正的多主机总线（而这个SPI在每次通信前都需要把主机定死，而IIC可以在通讯过程中，改变主机），如果两个或更多的主机同时请求总线，可以通过冲突检测和仲裁防止总线数据被破坏。</p>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../high/K510.html" class="btn btn-neutral float-left" title="K510" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ai.html" class="btn btn-neutral float-right" title="AI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/application/index.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/application/index.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

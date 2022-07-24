@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>热度Xin &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/list/hot.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Air101" href="../miscellaneous/Air101.html" />
+    <link rel="prev" title="板刊" href="boards.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">极客聚集开源高地</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lan">编程语言</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#arduino">Arduino</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lua">Lua</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../miscellaneous/Air101.html">Air101</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#rust">Rust</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mpy">mPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xgo">xGo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">编译体系</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pio">PIO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#qio">QIO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gcc">GCC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ninja">Ninja</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">开发框架</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mbed">mbed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cmsis">CMSIS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zephyr">Zephyr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#freertos">FreeRTOS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#harmonyos">HarmonyOS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rt-thread">RT-Thread</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libopencm3">libopencm3</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id22">硬件生态</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id24">Arduino</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../miscellaneous/ATMEGA328P.html">ATMEGA328P</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#stm32">STM32</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#f030">F030范式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#f103">F103范式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#f407">F407范式</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../application/index.html">功能领域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor.html">芯片设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>热度Xin</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/list/hot.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="xin">
+<span id="hot"></span><h1>热度Xin<a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">RP2040</span></code> <code class="docutils literal notranslate"><span class="pre">ESP32</span></code></p>
+<p>不同的厂商市场策略不同，其中包括凭借开源社区崛起，拥抱和践行开源策略的芯片制造商，这些产品被Geek广泛尝试，拥有很多开源的软硬件方案，十分利于敏捷开发和原型搭建。</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#lan" id="id26">编程语言</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id27">编译体系</a></p></li>
+<li><p><a class="reference internal" href="#id14" id="id28">开发框架</a></p></li>
+<li><p><a class="reference internal" href="#id22" id="id29">硬件生态</a></p></li>
+</ul>
+</div>
+<section id="lan">
+<span id="id1"></span><h2><a class="toc-backref" href="#id26">编程语言</a><a class="headerlink" href="#lan" title="Permalink to this heading">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#lan"><span class="std std-ref">编程语言</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#arduino"><span class="std std-ref">Arduino</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#lua"><span class="std std-ref">Lua</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#mpy"><span class="std std-ref">mPy</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#rust"><span class="std std-ref">Rust</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#xgo"><span class="std std-ref">xGo</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../espressif/ESP32.html#esp32"><span class="std std-ref">ESP32</span></a></p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/RP2040.html#rp2040"><span class="std std-ref">RP2040</span></a></p></td>
+<td><p>√</p></td>
+<td><p>X</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32F103.html#stm32f103"><span class="std std-ref">STM32F103</span></a></p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+</tr>
+</tbody>
+</table>
+<section id="arduino">
+<span id="id2"></span><h3>Arduino<a class="headerlink" href="#arduino" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">C++</span></code></p>
+</section>
+<section id="lua">
+<span id="id3"></span><h3>Lua<a class="headerlink" href="#lua" title="Permalink to this heading">¶</a></h3>
+<p><a class="reference external" href="https://docs.os-q.com/lua">lua语言</a></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#lua"><span class="std std-ref">Lua</span></a></p></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../miscellaneous/Air101.html#air101"><span class="std std-ref">Air101</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/Air101.html">Air101</a></li>
+</ul>
+</div>
+</section>
+<section id="rust">
+<span id="id5"></span><h3>Rust<a class="headerlink" href="#rust" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">rust</span></code></p>
+<p><a class="reference external" href="https://docs.os-q.com/rust">Rust编程语言</a> 适配的嵌入式平台包括 <a class="reference internal" href="../espressif/ESP32.html#esp32"><span class="std std-ref">ESP32</span></a> 、<a class="reference internal" href="../miscellaneous/RP2040.html#rp2040"><span class="std std-ref">RP2040</span></a> 和 <a class="reference internal" href="../st/m/STM32F103.html#stm32f103"><span class="std std-ref">STM32F103</span></a></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#rust"><span class="std std-ref">Rust</span></a></p></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32F103.html#stm32f103"><span class="std std-ref">STM32F103</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="mpy">
+<span id="id7"></span><h3>mPy<a class="headerlink" href="#mpy" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">Python</span></code></p>
+<p><a class="reference external" href="https://docs.os-q.com/mpy">MicroPython</a> 嵌入式运行平台包括 <a class="reference internal" href="../espressif/ESP32.html#esp32"><span class="std std-ref">ESP32</span></a> 、<a class="reference internal" href="../miscellaneous/RP2040.html#rp2040"><span class="std std-ref">RP2040</span></a> 和 <a class="reference internal" href="../st/m/STM32F407.html#stm32f405"><span class="std std-ref">STM32F405</span></a></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#mpy"><span class="std std-ref">mPy</span></a></p></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../espressif/ESP32.html#esp32"><span class="std std-ref">ESP32</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/RP2040.html#rp2040"><span class="std std-ref">RP2040</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32F407.html#stm32f405"><span class="std std-ref">STM32F405</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="xgo">
+<span id="id8"></span><h3>xGo<a class="headerlink" href="#xgo" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">Go</span></code></p>
+<p><a class="reference external" href="https://docs.os-q.com/arduino">OS-Q:Arduino</a></p>
+</section>
+</section>
+<section id="id9">
+<h2><a class="toc-backref" href="#id27">编译体系</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#mpy"><span class="std std-ref">mPy</span></a></p></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../espressif/ESP32.html#esp32"><span class="std std-ref">ESP32</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/RP2040.html#rp2040"><span class="std std-ref">RP2040</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32F407.html#stm32f405"><span class="std std-ref">STM32F405</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<section id="pio">
+<span id="id10"></span><h3>PIO<a class="headerlink" href="#pio" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">PlatformIO</span></code></p>
+</section>
+<section id="qio">
+<span id="id11"></span><h3>QIO<a class="headerlink" href="#qio" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="gcc">
+<span id="id12"></span><h3>GCC<a class="headerlink" href="#gcc" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="ninja">
+<span id="id13"></span><h3>Ninja<a class="headerlink" href="#ninja" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+<section id="id14">
+<h2><a class="toc-backref" href="#id28">开发框架</a><a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">RTOS</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p><a class="reference internal" href="#libopencm3"><span class="std std-ref">libopencm3</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#zephyr"><span class="std std-ref">Zephyr</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#freertos"><span class="std std-ref">FreeRTOS</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#rtt"><span class="std std-ref">RT-Thread</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#harmonyos"><span class="std std-ref">HarmonyOS</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#cmsis"><span class="std std-ref">CMSIS</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#mbed"><span class="std std-ref">mbed</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32F103.html#stm32f103"><span class="std std-ref">STM32F103</span></a></p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../espressif/ESP32.html#esp32"><span class="std std-ref">ESP32</span></a></p></td>
+<td><p>X</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../miscellaneous/RP2040.html#rp2040"><span class="std std-ref">RP2040</span></a></p></td>
+<td><p>X</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>X</p></td>
+</tr>
+</tbody>
+</table>
+<section id="mbed">
+<span id="id15"></span><h3>mbed<a class="headerlink" href="#mbed" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="cmsis">
+<span id="id16"></span><h3>CMSIS<a class="headerlink" href="#cmsis" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="zephyr">
+<span id="id17"></span><h3>Zephyr<a class="headerlink" href="#zephyr" title="Permalink to this heading">¶</a></h3>
+<p>非对称多处理 (Asymmetric Multiprocessing, AMP)</p>
+<p>Zephyr 正在从 Pin Mux 向 Pin Control 转变。Pin Control 是一种新的机制，它为配置 IO 引脚的输入输出方向和启用上拉/下拉，提供了一种更好的方式。更重要的是，它支持将引脚分配给一个特定的外设</p>
+</section>
+<section id="freertos">
+<span id="id18"></span><h3>FreeRTOS<a class="headerlink" href="#freertos" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="harmonyos">
+<span id="id19"></span><h3>HarmonyOS<a class="headerlink" href="#harmonyos" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="rt-thread">
+<span id="rtt"></span><h3>RT-Thread<a class="headerlink" href="#rt-thread" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="libopencm3">
+<span id="id20"></span><h3>libopencm3<a class="headerlink" href="#libopencm3" title="Permalink to this heading">¶</a></h3>
+<p>The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.</p>
+<p><a class="reference external" href="https://github.com/libopencm3/libopencm3">libopencm3开源库</a></p>
+</section>
+</section>
+<section id="id22">
+<h2><a class="toc-backref" href="#id29">硬件生态</a><a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id23">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id24" id="id30">Arduino</a></p></li>
+<li><p><a class="reference internal" href="#stm32" id="id31">STM32</a></p>
+<ul>
+<li><p><a class="reference internal" href="#f030" id="id32">F030范式</a></p></li>
+<li><p><a class="reference internal" href="#f103" id="id33">F103范式</a></p></li>
+<li><p><a class="reference internal" href="#f407" id="id34">F407范式</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id24">
+<h3><a class="toc-backref" href="#id30">Arduino</a><a class="headerlink" href="#id24" title="Permalink to this heading">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/ATMEGA328P.html">ATMEGA328P</a></li>
+</ul>
+</div>
+</section>
+<section id="stm32">
+<h3><a class="toc-backref" href="#id31">STM32</a><a class="headerlink" href="#stm32" title="Permalink to this heading">¶</a></h3>
+<div class="contents local topic" id="id25">
+<ul class="simple">
+<li><p><a class="reference internal" href="#f030" id="id35">F030范式</a></p></li>
+<li><p><a class="reference internal" href="#f103" id="id36">F103范式</a></p></li>
+<li><p><a class="reference internal" href="#f407" id="id37">F407范式</a></p></li>
+</ul>
+</div>
+<section id="f030">
+<span id="ref030"></span><h4><a class="toc-backref" href="#id35">F030范式</a><a class="headerlink" href="#f030" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Cortex-M0</span></code></p>
+<p>该型范式定位入门级32位MCU，高性价比用于替换8/16位单片机，市场需求量大，开发需要更高效释放资源，选择和升级空间广泛</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p>RAM+ROM</p></th>
+<th class="head"><p>Price</p></th>
+<th class="head"><p>UART/SPI/I2C</p></th>
+<th class="head"><p>GPIO</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/s/STM32F030.html#stm32f030"><span class="std std-ref">STM32F030</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></td>
+<td><p>48 MHz</p></td>
+<td><p>4/8+16/32/64</p></td>
+<td></td>
+<td><p>1/1/1</p></td>
+<td><p>20/32/48/64</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../st/s/STM32G030.html#stm32g030"><span class="std std-ref">STM32G030</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></td>
+<td><p>64 MHz</p></td>
+<td><p>8+32/64</p></td>
+<td></td>
+<td><p>2/2/2</p></td>
+<td><p>8/20/32/48</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../arterytek/AT32F421.html#at32f421"><span class="std std-ref">AT32F421</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
+<td><p>120 MHz</p></td>
+<td><p>8/16+16/32/64</p></td>
+<td><p>￥6</p></td>
+<td><p>2/2/2</p></td>
+<td><p>20/28/32/48</p></td>
+</tr>
+<tr class="row-odd"><td><p>CKS32F030</p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></td>
+<td><p>48 MHz</p></td>
+<td><p>4/8+16/32/64</p></td>
+<td></td>
+<td><p>1/1/1</p></td>
+<td><p>20/32/48/64</p></td>
+</tr>
+<tr class="row-even"><td><p>HK32F030</p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></td>
+<td><p>72 MHz</p></td>
+<td><p>4/8+16/32/64</p></td>
+<td></td>
+<td><p>1/1/1</p></td>
+<td><p>20/32/48/64</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../mindmotion/MM32F031.html#mm32f031"><span class="std std-ref">MM32F031</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></td>
+<td><p>72 MHz</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../gigadevice/GD32F130.html#gd32f130"><span class="std std-ref">GD32F130</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM3.html#cortex-m3"><span class="std std-ref">Cortex-M3</span></a></p></td>
+<td><p>48 MHz</p></td>
+<td><p>4/8+16/32/64</p></td>
+<td></td>
+<td><p>1/1/1</p></td>
+<td><p>20/32/48/64</p></td>
+</tr>
+<tr class="row-odd"><td><p>GD32F330</p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM3.html#cortex-m3"><span class="std std-ref">Cortex-M3</span></a></p></td>
+<td><p>84 MHz</p></td>
+<td><p>4/8+16/32/64</p></td>
+<td></td>
+<td><p>1/1/1</p></td>
+<td><p>20/32/48/64</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../gigadevice/GD32E230.html#gd32e230"><span class="std std-ref">GD32E230</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM23.html#cortex-m23"><span class="std std-ref">Cortex-M23</span></a></p></td>
+<td><p>64 MHz</p></td>
+<td><p>4/8+16/32/64</p></td>
+<td></td>
+<td><p>1/1/1</p></td>
+<td><p>20/32/48/64</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="f103">
+<span id="ref103"></span><h4><a class="toc-backref" href="#id36">F103范式</a><a class="headerlink" href="#f103" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Cortex-M3</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p>RAM</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>UART</p></th>
+<th class="head"><p>GPIO</p></th>
+<th class="head"><p>SPEC</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32F103.html#stm32f103"><span class="std std-ref">STM32F103</span></a></p></td>
+<td><p>72 MHz</p></td>
+<td><p>20 KB</p></td>
+<td><p>64 KB</p></td>
+<td><p>2</p></td>
+<td><p>40</p></td>
+<td><p>USB</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../wch/CH32F103.html#ch32f103"><span class="std std-ref">CH32F103</span></a></p></td>
+<td><p>72 MHz</p></td>
+<td><p>16 KB</p></td>
+<td><p>64 KB</p></td>
+<td><p>2</p></td>
+<td><p>40</p></td>
+<td><p>USB</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../gigadevice/GD32V103.html#gd32v103"><span class="std std-ref">GD32V103</span></a></p></td>
+<td><p>108 MHz</p></td>
+<td><p>16 KB</p></td>
+<td><p>64 KB</p></td>
+<td><p>2</p></td>
+<td><p>40</p></td>
+<td><p>USB</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="f407">
+<span id="ref407"></span><h4><a class="toc-backref" href="#id37">F407范式</a><a class="headerlink" href="#f407" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Cortex-M4</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p>RAM</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>DAC</p></th>
+<th class="head"><p>CON</p></th>
+<th class="head"><p>SPEC</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32F407.html#stm32f407"><span class="std std-ref">STM32F407</span></a></p></td>
+<td><p>168 MHz</p></td>
+<td><p>64 KB</p></td>
+<td><p>256 KB</p></td>
+<td><p>2</p></td>
+<td><p>15</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../st/m/STM32F207.html#stm32f207"><span class="std std-ref">STM32F207</span></a></p></td>
+<td><p>120 MHz</p></td>
+<td><p>64 KB</p></td>
+<td><p>256 KB</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../arterytek/AT32F407.html#at32f407"><span class="std std-ref">AT32F407</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/HC32F460.html#hc32f460"><span class="std std-ref">HC32F460</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="boards.html" class="btn btn-neutral float-left" title="板刊" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../miscellaneous/Air101.html" class="btn btn-neutral float-right" title="Air101" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/list/hot.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/list/hot.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

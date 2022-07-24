@@ -1,0 +1,95 @@
+
+.. _stm32l011:
+
+STM32L011
+===============
+
+* 关键词：``Cortex-M0``
+* 资源库：`GitHub <https://github.com/SoCXin/STM32L011>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. image:: ./images/stm32l011.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32l0x1.html
+
+.. contents::
+    :local:
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：1.65 to 3.6 V
+* 工作温度：-40°C to +85°C
+* 处理性能：244 ULPBench
+* RAM容量：20 KB
+* Flash容量：192 KB
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`cortex_m0` 32 MHz
+* EEPROM 512B
+* 动态运行模式：低至49 µA/MHz(DC/DC)
+* 超低功耗模式 + RAM + 低功耗定时器：340 nA(16根唤醒线)
+* 超低功耗模式 + 备份寄存器：230 nA(2个唤醒引脚)
+* 12-bit ADC with 48 µA budget consumption at 100 Ksps
+
+芯片架构
+~~~~~~~~~~~~
+
+.. image:: ./images/STM32L011s.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32l0x1.html
+
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+.. image:: ./images/STM32L011list.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32l0x1.html
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+
+
+
+Xin总结
+--------------
+
+.. contents::
+    :local:
+
+能力构建
+~~~~~~~~~~~~~
+
+要点提示
+~~~~~~~~~~~~~
+
+问题整理
+~~~~~~~~~~~~~
+

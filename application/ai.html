@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/application/ai.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Coral TPU" href="coral.html" />
+    <link rel="prev" title="Application" href="index.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">功能领域</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">边缘计算</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">算法框架</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tf-lite">TF Lite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tinyml">TinyML</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cube-ai">Cube-AI</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">边缘平台</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mcu">MCU平台</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#apu">APU平台</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#npu">NPU平台</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="foc.html">实时控制</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hmi.html">人机交互</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adc.html">信号处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="audio.html">音频处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#id2">通信连接</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor.html">芯片设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Application</a> &raquo;</li>
+      <li>AI</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/application/ai.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ai">
+<span id="id1"></span><h1>AI<a class="headerlink" href="#ai" title="Permalink to this heading">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">TensorFlow</span></code></p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id2" id="id8">算法框架</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id9">边缘平台</a></p></li>
+</ul>
+</div>
+<section id="id2">
+<h2><a class="toc-backref" href="#id8">算法框架</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id3">
+<ul class="simple">
+<li><p><a class="reference internal" href="#tf-lite" id="id10">TF Lite</a></p></li>
+<li><p><a class="reference internal" href="#tinyml" id="id11">TinyML</a></p></li>
+<li><p><a class="reference internal" href="#cube-ai" id="id12">Cube-AI</a></p></li>
+</ul>
+</div>
+<section id="tf-lite">
+<span id="tflite"></span><h3><a class="toc-backref" href="#id10">TF Lite</a><a class="headerlink" href="#tf-lite" title="Permalink to this heading">¶</a></h3>
+<p><a class="reference external" href="https://github.com/tfmin">TFmin</a> 嵌入算法平台</p>
+</section>
+<section id="tinyml">
+<span id="id4"></span><h3><a class="toc-backref" href="#id11">TinyML</a><a class="headerlink" href="#tinyml" title="Permalink to this heading">¶</a></h3>
+<p>分布最广的物联网设备往往体积很小、电量有限。它们被作为终端硬件，通过嵌入式传感器采集各种数据；计算能力有限，对功耗极为敏感。这类设备也能实现机器学习吗？一个趋势是，人工智能AI正在加快速度从“云端”走向“边缘”，进入到越来越小的物联网设备中。在终端和边缘侧的微处理器上，实现的机器学习过程，被称为微型机器学习，即TinyML。</p>
+<p>在终端和边缘侧的微处理器上，实现的机器学习过程，被称为微型机器学习，即TinyML。更准确的说，TinyML是指工程师们在mW功率范围以下的设备上，实现机器学习的方法、工具和技术。</p>
+</section>
+<section id="cube-ai">
+<span id="id5"></span><h3><a class="toc-backref" href="#id12">Cube-AI</a><a class="headerlink" href="#cube-ai" title="Permalink to this heading">¶</a></h3>
+<p>使用基于STM32 MCU的嵌入式系统的开发人员可能不熟悉神经网络。同样，从事机器学习的数据科学家更习惯基于云的海量计算资源，并且对嵌入式开发的内存和计算约束不太满意。STM32Cube.AI揭开了AI和嵌入式系统的神秘面纱，能够充分利用更多的开发人员的专业知识，从而将神经网络带入嵌入式边缘开发领域，进一步拓展了物联网应用。</p>
+<ul class="simple">
+<li><p>从预先训练的神经网络模型生成STM32优化的库。</p></li>
+<li><p>支持各种深度学习框架，如Keras，Caffe，ConvnetJS和Lasagne.</p></li>
+<li><p>通过STM32Cube™集成，可轻松实现不同STM32微控制器系列的便携性。</p></li>
+<li><p>免费，用户友好的许可条款。</p></li>
+</ul>
+<a class="reference external image-reference" href="https://www.st.com/en/embedded-software/x-cube-ai.html#get-software"><img alt="../_images/CUBE-AI.png" src="../_images/CUBE-AI.png" /></a>
+<p>使用神经网络的5个步骤</p>
+<ul class="simple">
+<li><p>1.捕获数据</p></li>
+<li><p>2.清理，标记数据和构建ANN（人工神经网络）拓扑</p></li>
+<li><p>3.训练ANN模型</p></li>
+<li><p>4.将ANN转换为STM32 MCU的优化代码</p></li>
+<li><p>5.使用经过培训的ANN处理和分析新数据</p></li>
+</ul>
+</section>
+</section>
+<section id="id6">
+<h2><a class="toc-backref" href="#id9">边缘平台</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<p>可以在端侧部署算法的嵌入式平台，相对传统的计算分离体系，拥有更高的集成度和灵活度</p>
+<div class="contents local topic" id="id7">
+<ul class="simple">
+<li><p><a class="reference internal" href="#mcu" id="id13">MCU平台</a></p></li>
+<li><p><a class="reference internal" href="#apu" id="id14">APU平台</a></p></li>
+<li><p><a class="reference internal" href="#npu" id="id15">NPU平台</a></p></li>
+</ul>
+</div>
+<section id="mcu">
+<h3><a class="toc-backref" href="#id13">MCU平台</a><a class="headerlink" href="#mcu" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p>Freq</p></th>
+<th class="head"><p>RAM</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>ML(INT8)</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/K210.html#k210"><span class="std std-ref">K210</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
+<td><p>400 MHz</p></td>
+<td><p>8 MB</p></td>
+<td></td>
+<td><p>0.23TOPS</p></td>
+<td><p>BGA144</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../high/K510.html#k510"><span class="std std-ref">K510</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
+<td><p>800 MHz</p></td>
+<td></td>
+<td></td>
+<td><p>2.5TOPS</p></td>
+<td><p>BGA144</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../allwinner/V831.html#v831"><span class="std std-ref">V831</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexA7.html#cortex-a7"><span class="std std-ref">Cortex-A7</span></a></p></td>
+<td><p>800 MHz</p></td>
+<td><p>64MB DDR2</p></td>
+<td></td>
+<td></td>
+<td><p>QFN88</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../allwinner/R329.html#r329"><span class="std std-ref">R329</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexA53.html#cortex-a53"><span class="std std-ref">Cortex-A53</span></a></p></td>
+<td><p>1.50 GHz</p></td>
+<td><p>64MB DDR2</p></td>
+<td></td>
+<td></td>
+<td><p>BGA231</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/SSD201.html#ssd201"><span class="std std-ref">SSD201</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexA7.html#cortex-a7"><span class="std std-ref">Cortex-A7</span></a></p></td>
+<td><p>1.20 GHz</p></td>
+<td><p>64MB DDR3</p></td>
+<td></td>
+<td></td>
+<td><p>LFBGA231</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../high/EAI80.html#eai80"><span class="std std-ref">EAI80</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
+<td><p>200 MHz</p></td>
+<td><p>8 MB</p></td>
+<td><p>8 MB</p></td>
+<td><p><a class="reference internal" href="../high/EAI80.html#eai80-npu"><span class="std std-ref">CNN-NPU</span></a></p></td>
+<td><p>LQFP100</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="apu">
+<h3><a class="toc-backref" href="#id14">APU平台</a><a class="headerlink" href="#apu" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>#define</p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p>High</p></th>
+<th class="head"><p>WiFi</p></th>
+<th class="head"><p>Rate</p></th>
+<th class="head"><p>More</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/BCM2711.html#bcm2711"><span class="std std-ref">BCM2711</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../high/A311D.html#a311d"><span class="std std-ref">A311D</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="npu">
+<h3><a class="toc-backref" href="#id15">NPU平台</a><a class="headerlink" href="#npu" title="Permalink to this heading">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="coral.html">Coral TPU</a></li>
+</ul>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Application" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="coral.html" class="btn btn-neutral float-right" title="Coral TPU" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/application/ai.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/application/ai.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+.. _cc2650:
+
+CC2650
+============
+
+`ti <https://www.ti.com.cn/product/cn/CC2650>`_ : ``Cortex-M3`` ``SimpleLink`` ``BLE`` ``ZigBee`` ``6LoWPAN``
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+
+.. image:: ./images/CC2650.png
+    :target: https://www.ti.com.cn/product/cn/CC2650
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能： 142 :ref:`CoreMark`
+* 封装规格：VQFN32/VQFN48
+* 运行环境：
+* RAM容量：20 KB
+* Flash容量：128 KB
+
+
+特征参数
+^^^^^^^^^^^
+
+* 64 MHz :ref:`cortex_m3`
+* :ref:`cortex_m0`
+
+芯片架构
+~~~~~~~~~~~~
+
+
+功耗参数
+^^^^^^^^^^^
+
+* 工作电压：1.8V ~ 3.8V
+* 稳压器模式：1.7V ~ 1.95V
+* 有源模式 RX：5.9mA
+* 有源模式 TX (0dBm)：6.1mA
+* 有源模式 TX (+5dBm)：9.1mA
+* 有源模式 MCU：61µA/MHz
+* 有源模式 MCU：48.5 CoreMark/mA
+* 有源模式传感器控制器：8.2μA/MHz
+* 待机电流：1μA（RTC 运行，RAM/CPU 保持）
+* 关断电流：100nA（发生外部事件时唤醒）
+
+连接能力
+~~~~~~~~~~~
+
+``BLE`` ``–97dBm`` ``+5dBm`` ``ZigBee`` ``6LoWPAN``
+
+:ref:`ble` 5.0
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~~
+
+系列对比
+~~~~~~~~~~
+
+.. _cc1310:
+
+CC1310
+^^^^^^^^^^^
+
+
+版本对比
+~~~~~~~~~~
+
+.. _cc2640:
+
+CC2640
+^^^^^^^^^^^

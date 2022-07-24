@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HPM6750 &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/high/HPM6750.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="HPM6350" href="HPM6350.html" />
+    <link rel="prev" title="APT32F706" href="APT32F706.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">各家旗舰干啥都行</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#id1">相关产品</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="EAI80.html">EAI80</a></li>
+<li class="toctree-l3"><a class="reference internal" href="A311D.html">A311D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SSD201.html">SSD201</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SP7021.html">SP7021</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BCM2711.html">BCM2711</a></li>
+<li class="toctree-l3"><a class="reference internal" href="APT32F706.html">APT32F706</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">HPM6750</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#xin">Xin简介</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Xin选择</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id14">Xin应用</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="HPM6350.html">HPM6350</a></li>
+<li class="toctree-l3"><a class="reference internal" href="K210.html">K210</a></li>
+<li class="toctree-l3"><a class="reference internal" href="K510.html">K510</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../application/index.html">功能领域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor.html">芯片设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">性能Xin</a> &raquo;</li>
+      <li>HPM6750</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/high/HPM6750.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="hpm6750">
+<span id="no-002"></span><span id="id1"></span><h1>HPM6750<a class="headerlink" href="#hpm6750" title="Permalink to this heading">¶</a></h1>
+<p><a class="reference external" href="https://www.hpmicro.com">HPMicro</a> : <code class="docutils literal notranslate"><span class="pre">RISC-V</span></code> <code class="docutils literal notranslate"><span class="pre">816MHz</span></code> <code class="docutils literal notranslate"><span class="pre">Dual</span> <span class="pre">Core</span></code> <code class="docutils literal notranslate"><span class="pre">USB</span> <span class="pre">HS</span> <span class="pre">OTG</span></code> <code class="docutils literal notranslate"><span class="pre">16bit</span> <span class="pre">ADC</span> <span class="pre">&#64;2Msps</span></code> <code class="docutils literal notranslate"><span class="pre">12bit</span> <span class="pre">ADC</span> <span class="pre">&#64;5Msps</span></code></p>
+<a class="reference external image-reference" href="https://github.com/SoCXin/hpm_sdk"><img alt="https://github.com/SoCXin/HPM6750/workflows/sdk/badge.svg" src="https://github.com/SoCXin/HPM6750/workflows/sdk/badge.svg" /></a>
+<a class="reference external image-reference" href="https://github.com/SoCXin/HPM6750"><img alt="https://github.com/SoCXin/HPM6750/workflows/demo/badge.svg" src="https://github.com/SoCXin/HPM6750/workflows/demo/badge.svg" /></a>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#xin" id="id17">Xin简介</a></p></li>
+<li><p><a class="reference internal" href="#id8" id="id18">Xin选择</a></p></li>
+<li><p><a class="reference internal" href="#id14" id="id19">Xin应用</a></p></li>
+</ul>
+</div>
+<section id="xin">
+<h2><a class="toc-backref" href="#id17">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">新一代信息采集处理器</span></code> <code class="docutils literal notranslate"><span class="pre">边缘计算平台</span></code></p>
+<a class="reference external image-reference" href="https://www.hpmicro.com/product/summary.html?id=d7fdb78f-1fa5-43be-be08-b97b405b65f0"><img alt="../_images/HPM6750s.png" src="../_images/HPM6750s.png" /></a>
+<div class="contents local topic" id="id2">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id3" id="id20">规格参数</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id4" id="id21">基本参数</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id22">特征参数</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id6" id="id23">芯片架构</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id7" id="id24">功耗参数</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id3">
+<h3><a class="toc-backref" href="#id20">规格参数</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<section id="id4">
+<h4><a class="toc-backref" href="#id21">基本参数</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>发布时间：2022年4月</p></li>
+<li><p>参考价格：￥55</p></li>
+<li><p>制程工艺：</p></li>
+<li><p>供货周期：</p></li>
+<li><p>处理性能：9220 <a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a> (4651 <a class="reference internal" href="../architecture/index.html#dmips"><span class="std std-ref">DMIPS</span></a> ) , <a class="reference internal" href="../architecture/level.html#level6"><span class="std std-ref">Level6</span></a></p></li>
+<li><p>封装规格：BGA289(14×14 P0.8) / BGA196(10×10 P0.65)</p></li>
+<li><p>运行环境：-40°C to 105/125°C</p></li>
+<li><p>RAM容量： 2088 KB</p></li>
+<li><p>Flash容量：</p></li>
+</ul>
+</section>
+<section id="id5">
+<h4><a class="toc-backref" href="#id22">特征参数</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>32-bit 816 MHz <a class="reference internal" href="../architecture/riscv.html#andes-d45"><span class="std std-ref">Andes D45</span></a> Dual Core (32K ICACHE + 32K DCACHE)</p></li>
+<li><p>2x USB HS OTG (with PHY)</p></li>
+<li><p>2x 千兆网口</p></li>
+<li><p>4个CAN FD，17个UART，4个SPI，4个I2C</p></li>
+<li><p>16bit ADC &#64;2Msps</p></li>
+<li><p>3x 12bit ADC &#64;5Msps</p></li>
+<li><p>4 个模拟比较器，多达 28 个模拟输入通道</p></li>
+<li><p>QSPI/OSPI NOR Flash, PSRAM, HyperRAM/HyperFlash, 16b/32b SDRAM 166 MHz, SD卡和eMMC</p></li>
+<li><p>24位RGB LCD控制器，1366 x 768，60fps，双目摄像头，2D图形加速和JPEG编解码</p></li>
+<li><p>4组共32路PWM输出，精度达2.5ns，4个正交编码器接口和4个霍尔传感器接口</p></li>
+<li><p>集成 AES-128/256, SHA-1/256 加速引擎</p></li>
+</ul>
+</section>
+</section>
+<section id="id6">
+<h3><a class="toc-backref" href="#id23">芯片架构</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p><a class="reference internal" href="../architecture/index.html#performance"><span class="std std-ref">Performance</span></a> : <a class="reference internal" href="../architecture/cortexM85.html#cortex-m85"><span class="std std-ref">Cortex-M85</span></a> (6.28 Coremark/MHz) &gt; <a class="reference internal" href="../architecture/riscv.html#andes-d45"><span class="std std-ref">Andes D45</span></a> (5.65 Coremark/MHz) &gt; <a class="reference internal" href="../architecture/cortexM7.html#cortex-m7"><span class="std std-ref">Cortex-M7</span></a> (5.29 Coremark/MHz)</p>
+<section id="id7">
+<h4><a class="toc-backref" href="#id24">功耗参数</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>电压范围：3.0 to 3.6 V</p></li>
+<li><p>功耗范围：</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="id8">
+<h2><a class="toc-backref" href="#id18">Xin选择</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id9">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id10" id="id25">品牌对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#rt1176c" id="id26">RT1176C</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id11" id="id27">型号对比</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id28">版本对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#hpm6450" id="id29">HPM6450</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id10">
+<h3><a class="toc-backref" href="#id25">品牌对比</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+<img alt="../_images/HPM6750c.png" src="../_images/HPM6750c.png" />
+<p>就性能表现和定位而言，<a class="reference internal" href="#hpm6750"><span class="std std-ref">HPM6750</span></a> 系列主要对标NXP <a class="reference internal" href="../nxp/index.html#imx-rt"><span class="std std-ref">i.MX RT</span></a> 系列</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p>SRAM</p></th>
+<th class="head"><p>USB/NET</p></th>
+<th class="head"><p>Cost</p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#consumption"><span class="std std-ref">功耗</span></a></p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#hpm6750"><span class="std std-ref">HPM6750</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
+<td><p>9220(2)</p></td>
+<td><p>2 MB</p></td>
+<td><p>2xHS/2xGb</p></td>
+<td><p>￥55</p></td>
+<td><p>?</p></td>
+<td><p>BGA289/BGA196</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#rt1176"><span class="std std-ref">RT1176C</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM7.html#cortex-m7"><span class="std std-ref">Cortex-M7</span></a></p></td>
+<td><p>6468(2)</p></td>
+<td><p>2 MB</p></td>
+<td><p>2xHS/2xGb</p></td>
+<td><p>￥54</p></td>
+<td><p>150µA/MHz</p></td>
+<td><p>BGA289</p></td>
+</tr>
+</tbody>
+</table>
+<section id="rt1176c">
+<span id="rt1176"></span><h4><a class="toc-backref" href="#id26">RT1176C</a><a class="headerlink" href="#rt1176c" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Cortex-M4</span> <span class="pre">+</span> <span class="pre">Cortex-M7</span></code> <code class="docutils literal notranslate"><span class="pre">MIMXRT1176CVM8A</span></code> <code class="docutils literal notranslate"><span class="pre">￥54.36</span></code></p>
+<p><a class="reference internal" href="#rt1176"><span class="std std-ref">RT1176C</span></a> 作为 <a class="reference internal" href="../nxp/RT1170.html#rt1170"><span class="std std-ref">RT1170</span></a> 系列中的一款型号，相对 <a class="reference internal" href="#hpm6750"><span class="std std-ref">HPM6750</span></a> 的参数和定价都非常接近</p>
+<p>RT1176C的大核 <a class="reference internal" href="../architecture/cortexM7.html#cortex-m7"><span class="std std-ref">Cortex-M7</span></a> 最高 800MHz, 小核 <a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a> 最高 400MHz, LFBGA289封装0.8P，工作温度范围：-40 to 105 ，官方定价 10K &#64; CNY54.36</p>
+</section>
+</section>
+<section id="id11">
+<h3><a class="toc-backref" href="#id27">型号对比</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>HPM6x6x/HPM6x5x/HPM6x3x系列间差异在 CAN FD，HPM67xx系列相比HPM64xx系列差异为核心数量</p>
+</div>
+<p><a class="reference internal" href="#hpm6750"><span class="std std-ref">HPM6750</span></a> 的低配版本包括 <a class="reference internal" href="#hpm6450"><span class="std std-ref">HPM6450</span></a> 和 <a class="reference internal" href="HPM6350.html#hpm6350"><span class="std std-ref">HPM6350</span></a></p>
+<a class="reference external image-reference" href="http://www.hpmicro.com/resources/resources.html#row5"><img alt="../_images/HPM6350d.png" src="../_images/HPM6350d.png" /></a>
+</section>
+<section id="id12">
+<h3><a class="toc-backref" href="#id28">版本对比</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="https://www.hpmicro.com/index.html"><img alt="../_images/HPM6750l.png" src="../_images/HPM6750l.png" /></a>
+<section id="hpm6450">
+<span id="id13"></span><h4><a class="toc-backref" href="#id29">HPM6450</a><a class="headerlink" href="#hpm6450" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">RISC-V</span></code> <code class="docutils literal notranslate"><span class="pre">￥45</span></code></p>
+</section>
+</section>
+</section>
+<section id="id14">
+<h2><a class="toc-backref" href="#id19">Xin应用</a><a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id15">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id16" id="id30">开发板</a></p>
+<ul>
+<li><p><a class="reference internal" href="#hpm6750evk" id="id31">HPM6750EVK</a></p></li>
+<li><p><a class="reference internal" href="#hpm6750evkmini" id="id32">HPM6750EVKmini</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#sdk" id="id33">SDK</a></p></li>
+</ul>
+</div>
+<section id="id16">
+<h3><a class="toc-backref" href="#id30">开发板</a><a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<section id="hpm6750evk">
+<h4><a class="toc-backref" href="#id31">HPM6750EVK</a><a class="headerlink" href="#hpm6750evk" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">￥568</span></code></p>
+<a class="reference external image-reference" href="https://www.hpmicro.com/resources/detail2.html?id=00efa6e5-a94d-4f24-be51-0ae773c6bb7b"><img alt="../_images/HPM6750EVK.png" src="../_images/HPM6750EVK.png" /></a>
+</section>
+<section id="hpm6750evkmini">
+<h4><a class="toc-backref" href="#id32">HPM6750EVKmini</a><a class="headerlink" href="#hpm6750evkmini" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">￥298</span></code></p>
+<a class="reference external image-reference" href="https://www.hpmicro.com/resources/detail2.html?id=a7e6bbbf-5442-4947-8a3b-2d60e10159fb"><img alt="../_images/HPM6750EVKMINI.jpg" src="../_images/HPM6750EVKMINI.jpg" /></a>
+</section>
+</section>
+<section id="sdk">
+<h3><a class="toc-backref" href="#id33">SDK</a><a class="headerlink" href="#sdk" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">0.11.0</span></code></p>
+<p><a class="reference external" href="https://github.com/hpmicro/hpm_sdk">HPM SDK</a> 是HPM推出的一个完全开源，基于BSD 3-Clause许可证的综合性软件支持包，适用于先楫半导体的所有微控制器产品。</p>
+<p>此套件中包含先楫半导体微控制器上外设的底层驱动代码，集成了丰富的组件如RTOS、网络协议栈、USB栈、文件系统等，以及相应的示例程序和文档。它提供的丰富构建块，使得用户可以更专注于业务逻辑本身。</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="APT32F706.html" class="btn btn-neutral float-left" title="APT32F706" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="HPM6350.html" class="btn btn-neutral float-right" title="HPM6350" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/high/HPM6750.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/high/HPM6750.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

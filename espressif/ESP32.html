@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESP32 &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/espressif/ESP32.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ESP32S3" href="ESP32-S3.html" />
+    <link rel="prev" title="Espressif" href="index.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../application/index.html">功能领域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../vendor.html">芯片设计</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ti/index.html">电源模拟和物联网 TI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../st/index.html">微控制器领域王者 ST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nxp/index.html">高性能多领域跨界 NXP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nordic/index.html">低功耗蓝牙控制器 Nordic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../realtek/index.html">多媒体及网络通信 Realtek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nuvoton/index.html">多媒体语音控制器 Nuvoton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MediaTek/index.html">高性能通信全品类 MediaTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gigadevice/index.html">国产芯片龙头企业 GigaDevice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../stc/index.html">超低成本微控制器 STC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ASR/index.html">新锐无线长距通信 ASR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../byd/index.html">跨界造芯垂直整合 BYD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jieli/index.html">蓝牙音频智能终端 JieLi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wch/index.html">物联网通信控制器 WCH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chipsea/index.html">信号链整合控制器 Chipsea</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">低成本无线物联网 Espressif</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">公司简介</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id8">芯片产品</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="index.html#id9">高性能产品</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id10">低成本系列</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id11">新领域探索</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id13">解决方案</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id29">相关总结</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../arterytek/index.html">Cortex-M4控制器 ArteryTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../allwinner/index.html">多媒体应用处理器 Allwinner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bouffalolab/index.html">物联网通信及计算 Bouffalolab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mindmotion/index.html">驱动控制国产普惠 Mindmotion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../vendor.html">Vendor</a> &raquo;</li>
+          <li><a href="index.html">Espressif</a> &raquo;</li>
+      <li>ESP32</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/espressif/ESP32.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="esp32">
+<span id="id1"></span><h1>ESP32<a class="headerlink" href="#esp32" title="Permalink to this heading">¶</a></h1>
+<p><a class="reference external" href="https://github.com/SoCXin/ESP32">GitHub</a> : <code class="docutils literal notranslate"><span class="pre">Xtensa</span> <span class="pre">LX6</span></code> <code class="docutils literal notranslate"><span class="pre">Dual</span> <span class="pre">Core</span></code> <code class="docutils literal notranslate"><span class="pre">240MHz</span></code> <code class="docutils literal notranslate"><span class="pre">Wi-Fi</span></code> <code class="docutils literal notranslate"><span class="pre">BLE4.2</span></code> <code class="docutils literal notranslate"><span class="pre">TWAI</span></code> <code class="docutils literal notranslate"><span class="pre">Ethernet</span></code> <code class="docutils literal notranslate"><span class="pre">MAC100</span></code> <code class="docutils literal notranslate"><span class="pre">QFN48</span></code></p>
+<p><a class="reference internal" href="#esp32"><span class="std std-ref">ESP32</span></a> –&gt; <a class="reference internal" href="ESP32-S3.html#esp32s3"><span class="std std-ref">ESP32S3</span></a></p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#xin" id="id28">Xin简介</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id29">Xin选择</a></p></li>
+<li><p><a class="reference internal" href="#id17" id="id30">Xin应用</a></p></li>
+<li><p><a class="reference internal" href="#id21" id="id31">Xin总结</a></p></li>
+</ul>
+</div>
+<section id="xin">
+<h2><a class="toc-backref" href="#id28">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<p><a class="reference external" href="https://www.eembc.org/viewer/?benchmark_seq=13244">EEMBC: 660.7 CoreMark (160 x 4.13CoreMark/MHz)</a></p>
+<a class="reference external image-reference" href="https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-reference/index.html"><img alt="../_images/ESP32.png" src="../_images/ESP32.png" /></a>
+<p><a class="reference external" href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf">datasheet</a></p>
+<section id="id2">
+<h3>规格参数<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<section id="id3">
+<h4>基本参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>发布时间：2016年9月</p></li>
+<li><p>参考价格：</p></li>
+<li><p>制程工艺：<a class="reference internal" href="../foundry.html#tsmc-40nm"><span class="std std-ref">N40(40nm)</span></a></p></li>
+<li><p>供货周期：至2028年</p></li>
+<li><p>处理性能：504.85 <a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a>, 994.26 <a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a> (Dual Core) , <a class="reference internal" href="../architecture/level.html#level4"><span class="std std-ref">Level4</span></a></p></li>
+<li><p>运行环境：-40°C to 105°C</p></li>
+<li><p>封装规格：<a class="reference internal" href="index.html#esp-qfn48"><span class="std std-ref">QFN48</span></a> (6x6mm)</p></li>
+<li><p>RAM容量：520 KB (PSRAM ≤ 8 MB)</p></li>
+<li><p>ROM容量：448 KB</p></li>
+<li><p>Flash容量：4 MB (≤16MB)</p></li>
+</ul>
+</section>
+<section id="id4">
+<h4>特征参数<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>240 MHz <a class="reference internal" href="index.html#xtensa-lx6"><span class="std std-ref">Xtensa LX6</span></a> Dual Core</p></li>
+<li><p>低功耗协处理器 <a class="reference internal" href="#esp32-ulp"><span class="std std-ref">ULP</span></a></p></li>
+<li><p>1T1R 802.11 b/g/n <a class="reference internal" href="#esp32-wifi"><span class="std std-ref">Wi-Fi</span></a></p></li>
+<li><p><a class="reference internal" href="#esp32-bluetooth"><span class="std std-ref">Bluetooth</span></a> v4.2</p></li>
+<li><p><a class="reference internal" href="#esp32-can"><span class="std std-ref">CAN</span></a></p></li>
+<li><p><a class="reference internal" href="#esp32-eth"><span class="std std-ref">ETH</span></a> IEEE 1588 MAC,100 Mbps</p></li>
+<li><p>Host SD/eMMC/SDIO、Slave SDIO/SPI</p></li>
+<li><p>硬件加密单元AES/RSA/ECC</p></li>
+<li><p>内置霍尔效应传感器</p></li>
+</ul>
+</section>
+<section id="id5">
+<h4>模拟性能<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>12-bit SAR ADC 18ch</p></li>
+<li><p>2 x 8-bit DAC</p></li>
+</ul>
+</section>
+</section>
+<section id="id6">
+<h3>芯片架构<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<section id="id7">
+<h4>功耗参数<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>电压范围：2.3 to 3.6 V</p></li>
+<li><p>功耗范围：</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>v4.0.1</p></th>
+<th class="head"><p>单核</p></th>
+<th class="head"><p>双核</p></th>
+<th class="head"><p>单核(none)</p></th>
+<th class="head"><p>双核(none)</p></th>
+<th class="head"><p>uA/MHz</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>160MHz</p></td>
+<td><p>38.5mA</p></td>
+<td><p>54.8mA</p></td>
+<td><p>25.3mA</p></td>
+<td><p>27.8mA</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>240MHz</p></td>
+<td><p>57.4mA</p></td>
+<td><p>85.3mA</p></td>
+<td><p>33.8mA</p></td>
+<td><p>38.5mA</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>uA/MHz</p></td>
+<td><p>240</p></td>
+<td><p>350</p></td>
+<td><p>148</p></td>
+<td><p>165</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ulp">
+<span id="esp32-ulp"></span><h4>ULP<a class="headerlink" href="#ulp" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FSM</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>每个GPIO的绝对最大电流为40mA</p>
+</div>
+</section>
+</section>
+<section id="id8">
+<h3>连接能力<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<section id="wi-fi">
+<span id="esp32-wifi"></span><h4>Wi-Fi<a class="headerlink" href="#wi-fi" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">802.11b/g/n</span></code>  <code class="docutils literal notranslate"><span class="pre">22dBm</span></code> <code class="docutils literal notranslate"><span class="pre">150Mbps</span></code> <code class="docutils literal notranslate"><span class="pre">HT40</span></code></p>
+<p>芯片支持 TCP/IP 协议，完全遵循 802.11 b/g/n Wi-Fi MAC 协议栈，支持分布式控制功能 (DCF) 下的基本服务集 (BSS) STA 和 SoftAP 操作。</p>
+<ul class="simple">
+<li><p>1T1R 数据率高达 150 Mbps</p></li>
+<li><p>802.11b 无线传输功率可达 +20.5 dBm</p></li>
+<li><p>802.11n 无线传输功率可达 +18 dBm</p></li>
+<li><p>802.11 n MCS0-7 支持 20 MHz 和 40 MHz 带宽</p></li>
+<li><p>802.11 n MCS32 (RX)</p></li>
+<li><p>802.11 n 0.4 µs 保护间隔</p></li>
+<li><p>接收 STBC 2×1</p></li>
+</ul>
+</section>
+<section id="bluetooth">
+<span id="esp32-bluetooth"></span><h4>Bluetooth<a class="headerlink" href="#bluetooth" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">v4.2</span></code> <code class="docutils literal notranslate"><span class="pre">BR/EDR</span></code></p>
+<p>芯片集成了蓝牙链路控制器和蓝牙基带，支持基带协议和其他底层链路协议，例如调制/解调、包处理、比特流处理和跳频等。芯片的蓝牙协议栈支持蓝牙 v4.2 BR/EDR 和 Bluetooth LE 标准。</p>
+<ul class="simple">
+<li><p>Class-1、Class-2 和 Class-3 发射输出功率，动态控制范围高达 21 dB</p></li>
+<li><p>NZIF 接收器灵敏度高，最小灵敏度达 -94 dBm</p></li>
+<li><p>提供 UART HCI 接口，速度高达 4 Mbps</p></li>
+<li><p>提供 SDIO/SPI HCI 接口</p></li>
+<li><p>提供 PCM/I2S 音频接口</p></li>
+</ul>
+<p>传统蓝牙和低功耗蓝牙的差异：</p>
+<ul class="simple">
+<li><p>1、低功耗蓝牙的发送和接受任务会以最快的速度完成，完成之后蓝牙Bluetooth LE会暂停发射无线（但是还是会接受），等待下一次连接再激活；传统蓝牙是持续保持连接。</p></li>
+<li><p>2、低功耗蓝牙的广播信道（为保证网络不互相干扰而划分）仅有3个；传统蓝牙是32个。</p></li>
+<li><p>3、低功耗蓝牙“完成”一次连接(即扫描其它设备、建立链路、发送数据、认证和适当地结束)只需3ms；传统蓝牙完成相同的连接周期需要数百毫秒。</p></li>
+<li><p>4、低功耗蓝牙使用非常短的数据包，多应用于实时性要求比较高，但是数据速率比较低的产品，遥控类的如键盘，遥控鼠标，传感设备的数据发送，如心跳带，血压计，温度传感器等；传统蓝牙使用的数据包长度较长，可用于数据量比较大的传输，如语音，音乐，较高数据量传输等。</p></li>
+<li><p>5、低功耗蓝牙无功率级别，一般发送功率在+4dBm，一般在空旷距离，达到70m的传输距离；传统蓝牙有3个功率级别，Class1，Class2，Class3，分别支持100m，10m，1m的传输距离。</p></li>
+</ul>
+</section>
+<section id="can">
+<span id="esp32-can"></span><h4>CAN<a class="headerlink" href="#can" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">11898-1</span></code> <code class="docutils literal notranslate"><span class="pre">1Mbit/s</span></code></p>
+</section>
+<section id="eth">
+<span id="esp32-eth"></span><h4>ETH<a class="headerlink" href="#eth" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">MAC</span></code> <code class="docutils literal notranslate"><span class="pre">100Mbps</span></code></p>
+</section>
+</section>
+</section>
+<section id="id9">
+<h2><a class="toc-backref" href="#id29">Xin选择</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id10">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id11" id="id32">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id33">型号对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#esp8266" id="id34">ESP8266</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id16" id="id35">版本对比</a></p></li>
+</ul>
+</div>
+<section id="id11">
+<h3><a class="toc-backref" href="#id32">品牌对比</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<p>在WiFi MCU领域，ESP的主要对比品牌有 <a class="reference internal" href="../realtek/index.html#realtek"><span class="std std-ref">Realtek</span></a> 和 <a class="reference internal" href="../MediaTek/index.html#mediatek"><span class="std std-ref">MediaTek</span></a></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../application/wifi.html#wifi"><span class="std std-ref">Wi-Fi</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p>SRAM/ROM</p></th>
+<th class="head"><p>Characteristics</p></th>
+<th class="head"><p>UART/SPI/SDIO</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#esp32"><span class="std std-ref">ESP32</span></a></p></td>
+<td><p>994.26</p></td>
+<td><p>512KB/384KB</p></td>
+<td></td>
+<td><p>3/2/1</p></td>
+<td><p><a class="reference internal" href="index.html#esp-qfn48"><span class="std std-ref">QFN48</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/W801.html#w801"><span class="std std-ref">W801</span></a></p></td>
+<td></td>
+<td><p>288KB/2MB</p></td>
+<td><p>16-bit ADC</p></td>
+<td><p>6/2/1</p></td>
+<td><p>QFN56</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id12">
+<h3><a class="toc-backref" href="#id33">型号对比</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="index.html#espressif"><span class="std std-ref">Espressif</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#esp-core"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p>SRAM/ROM</p></th>
+<th class="head"><p>WiFi</p></th>
+<th class="head"><p>BLE</p></th>
+<th class="head"><p>USB</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#esp32"><span class="std std-ref">ESP32</span></a></p></td>
+<td><p><a class="reference internal" href="index.html#xtensa-lx6"><span class="std std-ref">Xtensa LX6</span></a></p></td>
+<td><p>994.26</p></td>
+<td><p>520KB/448KB</p></td>
+<td><p>b/g/n</p></td>
+<td><p>BLE v4.2</p></td>
+<td><p>X</p></td>
+<td><p>QFN48</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ESP32-S2.html#esp32s2"><span class="std std-ref">ESP32S2</span></a></p></td>
+<td><p><a class="reference internal" href="index.html#xtensa-lx7"><span class="std std-ref">Xtensa LX7</span></a></p></td>
+<td><p>613.8</p></td>
+<td><p>320KB/128KB</p></td>
+<td><p>b/g/n</p></td>
+<td><p>BLE v5.0</p></td>
+<td><p>1.1 OTG</p></td>
+<td><p>QFN56</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ESP32-S3.html#esp32s3"><span class="std std-ref">ESP32S3</span></a></p></td>
+<td><p><a class="reference internal" href="index.html#xtensa-lx7"><span class="std std-ref">Xtensa LX7</span></a></p></td>
+<td><p>1181.6</p></td>
+<td><p>512KB/384KB</p></td>
+<td><p>b/g/n</p></td>
+<td><p>BLE v5.0</p></td>
+<td><p>1.1 OTG</p></td>
+<td><p>QFN56</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ESP32-C3.html#esp32c3"><span class="std std-ref">ESP32C3</span></a></p></td>
+<td><p><a class="reference internal" href="index.html#esp-rv32"><span class="std std-ref">RISC-V</span></a></p></td>
+<td><p>407.22</p></td>
+<td><p>400KB/384KB</p></td>
+<td><p>√</p></td>
+<td><p>v5.0</p></td>
+<td><p>X</p></td>
+<td><p>QFN32/QFN28</p></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html">官方提供的芯片系列对比</a></p>
+<ul class="simple">
+<li><p>芯片晶圆面积比较 (40nm)：<a class="reference internal" href="ESP32-C3.html#esp32c3"><span class="std std-ref">ESP32C3</span></a> &lt; <a class="reference internal" href="ESP32-S2.html#esp32s2"><span class="std std-ref">ESP32S2</span></a> &lt; <a class="reference internal" href="ESP32-S3.html#esp32s3"><span class="std std-ref">ESP32S3</span></a> &lt; <a class="reference internal" href="#esp32"><span class="std std-ref">ESP32</span></a></p></li>
+</ul>
+<section id="esp8266">
+<span id="id14"></span><h4><a class="toc-backref" href="#id34">ESP8266</a><a class="headerlink" href="#esp8266" title="Permalink to this heading">¶</a></h4>
+<p><a class="reference external" href="https://www.eembc.org/viewer/?benchmark_seq=13243">EEMBC CoreMark:191 (80 x 2.38 CoreMark/MHz)</a></p>
+<p><a class="reference external" href="https://www.espressif.com/zh-hans/products/socs/esp8266">ESP8266芯片简介</a></p>
+<ul class="simple">
+<li><p>支持2.4GHz HT20、带宽75Mbps</p></li>
+<li><p>主频160MHz、160KB SRAM、QFN32(5*5)</p></li>
+<li><p>软件支持TCP/IP、MQTT、HTTP、COAP等常见协议，支持AT指令，支持OTA升级</p></li>
+</ul>
+<p>就发布时间而言，ESP32是ESP8266继任者，增加了CPU核数量，更快的Wi-Fi，更多的GPIO，并支持蓝牙4.2和蓝牙低功耗。ESP32相较ESP8266还多了蓝牙功能。</p>
+<p>此外，ESP32配有触摸感应针脚，可用于唤醒ESP32深度睡眠，内置霍尔效应传感器和内置温度传感器。</p>
+<p>ESP8266发布较早拥有更多生态资源，同时开发灵活度更高，开发者接受度很高，同时由于定价更低，在没有足够替换动力下，很多项目继续使用该芯片。</p>
+<p><a class="reference external" href="https://github.com/windowsair/wireless-esp8266-dap">wireless-esp8266-dap</a></p>
+<p>ESP8266方案缺陷：</p>
+<ul class="simple">
+<li><p>eFUSE不开放</p></li>
+<li><p>RF信号质量不够高</p></li>
+<li><p>DTIM保活功耗较高</p></li>
+<li><p>内存较小，无法支撑复杂的应用场合</p></li>
+<li><p>缺少硬件加密、没有安全启动和Flash加密，RSA耗时较长，TLS握手需要3-4秒</p></li>
+</ul>
+</section>
+</section>
+<section id="id16">
+<h3><a class="toc-backref" href="#id35">版本对比</a><a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_cn.pdf"><img alt="../_images/ESP32ser.png" src="../_images/ESP32ser.png" /></a>
+<ul class="simple">
+<li><p>双核、高主频240MHz、内存容量达520 KB SRAM、eFUSE可用、支持外接PSRAM、QFN48(5*5)</p></li>
+<li><p>支持2.4GHz HT20/40、带宽150Mbps</p></li>
+<li><p>支持蓝牙双模、支持蓝牙与WiFi共存机制</p></li>
+<li><p>支持硬件加密，包括安全启动和Flash加密</p></li>
+<li><p>外设硬件支持，包括硬件PWM、红外、以太网口、显示屏、音频采集/播放、视频采集/传输、支持更多的低功耗模式</p></li>
+<li><p>软件支持TCP/IP、MQTT、HTTP、COAP等常见协议，支持AT指令，支持OTA升级，支持语音识别、人脸识别，支持WiFi+BLE MESH组网</p></li>
+</ul>
+<p>双核产品在性能上同比单核SL没有较为明显的提高（一些芯片厂商也专门对乐鑫的双核方案进行过评估，但最终仍选用单核方案）</p>
+</section>
+</section>
+<section id="id17">
+<h2><a class="toc-backref" href="#id30">Xin应用</a><a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id18">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id19" id="id36">硬件平台</a></p></li>
+<li><p><a class="reference internal" href="#id20" id="id37">开发工具</a></p></li>
+</ul>
+</div>
+<section id="id19">
+<h3><a class="toc-backref" href="#id36">硬件平台</a><a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="https://detail.tmall.com/item.htm?spm=a230r.1.14.28.50e564d3axhB7j&amp;id=624276301887&amp;ns=1&amp;abbucket=19"><img alt="../_images/B_ESP32.jpg" src="../_images/B_ESP32.jpg" /></a>
+</section>
+<section id="id20">
+<h3><a class="toc-backref" href="#id37">开发工具</a><a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
+<p>源圈OS-Q通过先验证的方式，集成了更多可信赖资源 <a class="reference external" href="https://github.com/OS-Q/P511">PlatformIO ESP32</a> 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。</p>
+<p>协处理的开发，使用汇编语言，需要单独的工具链，通过官方提供提供的IDF工具实现。</p>
+</section>
+</section>
+<section id="id21">
+<h2><a class="toc-backref" href="#id31">Xin总结</a><a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id22">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id23" id="id38">能力构建</a></p></li>
+<li><p><a class="reference internal" href="#id24" id="id39">要点提示</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id25" id="id40">烧录模式</a></p></li>
+<li><p><a class="reference internal" href="#id26" id="id41">串口权限</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id27" id="id42">问题整理</a></p></li>
+</ul>
+</div>
+<section id="id23">
+<h3><a class="toc-backref" href="#id38">能力构建</a><a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id24">
+<h3><a class="toc-backref" href="#id39">要点提示</a><a class="headerlink" href="#id24" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>ESP32的Touch功能灵敏度不够</p></li>
+</ul>
+<section id="id25">
+<h4><a class="toc-backref" href="#id40">烧录模式</a><a class="headerlink" href="#id25" title="Permalink to this heading">¶</a></h4>
+<p>因为esp32芯片进入烧写模式的条件是启动时检测boot引脚，因此需要摁着boot键才能下载程序。出现这种情况一般是启动配置的strapping引脚采样电平不符合启动模式，需要调整硬件电路。</p>
+</section>
+<section id="id26">
+<h4><a class="toc-backref" href="#id41">串口权限</a><a class="headerlink" href="#id26" title="Permalink to this heading">¶</a></h4>
+<p>linux下面串口设备的一般是root权限，因此使用串口需要取得root权限或者修改dev目录下串口的权限。想串口支持当前用户，需要把当前用户添加到Group</p>
+<p>” sudo usermode -a -G dialout $USER “</p>
+</section>
+</section>
+<section id="id27">
+<h3><a class="toc-backref" href="#id42">问题整理</a><a class="headerlink" href="#id27" title="Permalink to this heading">¶</a></h3>
+<p><a class="reference external" href="https://docs.espressif.com/_/downloads/espressif-esp-faq/zh_CN/latest/pdf/">FQA</a>  | <a class="reference external" href="https://www.espressif.com/sites/default/files/documentation/eco_and_workarounds_for_bugs_in_esp32_cn.pdf">bugs</a></p>
+<p>Brownout detector was triggered 已触发断电探测器</p>
+<p>原因在于: ESP32的电平低于某个值（这个值是可以设定的），然后触发了断电探测器，断电探测器会使得ESP32重新启动。</p>
+<p>解决：换个电源，要不就是ESP32板子设计本身有问题，最终的大招，禁用断电探测器</p>
+<p>make menuconfig-&gt;component config-&gt;ESP32-specific-&gt;Hardware brownout detect &amp;reset禁用掉这个选项，将不再检测电平。或者也可在再这个选项的下面选择一个更合适的保护电平。</p>
+<p>这个问题描述的是：ESP32的电平低于某个值（这个值是可以设定的，后文会有介绍），然后触发了断电探测器，断电探测器会使得ESP32重新启动。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>ESP32最大的槽点就是编译效率，因为组件特别多，每次编译都非常耗时间</p>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Espressif" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ESP32-S3.html" class="btn btn-neutral float-right" title="ESP32S3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/espressif/ESP32.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/espressif/ESP32.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

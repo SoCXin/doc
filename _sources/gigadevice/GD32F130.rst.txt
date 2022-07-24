@@ -1,0 +1,76 @@
+
+.. _gd32f130:
+
+GD32F130
+============
+
+`标签 <https://github.com/SoCXin/GD32F130>`_ : ``Cortex-M3`` ``48MHz``
+
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+:ref:`ref030`
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：￥4.6
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 封装规格：LQFP64/LQFP48/LQFP32/QFN32/QFN28/TSSOP20
+* 运行环境：-40°C to 85°C
+* RAM容量：4/8 KB
+* Flash容量：16/32/64 KB
+
+
+特征参数
+^^^^^^^^^^^
+
+* 48 MHz :ref:`cortex_m3`
+* 16ch 1x12bit ADC (1.0 MSps)
+* 6x timer
+
+
+
+芯片架构
+~~~~~~~~~~~
+
+.. image:: ./images/GD32F130s.png
+    :target: http://www.gd32mcu.com/data/documents/shujushouce/GD32F130xx_Datasheet_Rev3.1.pdf
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压: 2.6 to 3.6 V
+* 运行功耗: 100μA/MHz
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+.. image:: ./images/GD32F130l.png
+    :target: https://www.gigadevice.com/wp-content/uploads/2021/04/2021-GigaDevice-Selection-Guide_21.04.21.pdf
+

@@ -1,0 +1,116 @@
+.. _NO_003:
+.. _aic8800:
+
+AIC8800M
+===============
+
+`GitHub <https://github.com/SoCXin/AIC8800M>`_ : ``WiFi6`` ``BT5.0`` ``USB HS OTG`` ``DSP``
+
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+
+`VSF <https://github.com/vsfteam/vsf>`_
+
+
+.. contents::
+    :local:
+
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 封装规格：QFN48 (5x5mm)
+* 运行环境：
+* RAM容量：992 KB (4M PSRAM)
+* Flash容量：2 MB
+
+特征参数
+^^^^^^^^^^^
+
+* 480MHz DSP
+* 992 KB RAM + 2 MB Flash
+* 2.4G/5G WiFi双频
+* BT5.0 EDR/BLE 蓝牙双模
+* USB 2.0 OTG PHY
+* 1x 60MHz SPI，1x I2C，3x UART，SDIO，I2S
+
+模拟性能
+^^^^^^^^^^^
+
+芯片架构
+~~~~~~~~~~~
+
+功耗参数
+^^^^^^^^^^^
+``PMU``
+
+集成 PMU 5V供电
+
+* 电压范围：
+* 功耗范围：
+
+
+连接能力
+~~~~~~~~~~~
+
+
+
+.. _aic8800_wifi:
+
+Wi-Fi
+^^^^^^^^^^^
+``2.4G/5G``
+
+:ref:`wifi`
+
+.. _aic8800_bt:
+
+BT5.0
+^^^^^^^^^^^
+``BLE 5.0``
+
+:ref:`bt`
+
+.. _aic8800_usb:
+
+USB2.0
+^^^^^^^^^^^
+``HS OTG``
+
+:ref:`usb`
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~~~
+
+MT7921AUN
+^^^^^^^^^^^
+
+RTL8852AU-CG
+^^^^^^^^^^^^^^^^
+
+型号对比
+~~~~~~~~~~~
+
+`SDK <https://github.com/vsfteam/AIC8800M_SDK_vsf>`_

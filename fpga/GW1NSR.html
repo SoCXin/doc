@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GW1NSR &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/fpga/GW1NSR.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="AG1280" href="AG1280.html" />
+    <link rel="prev" title="FPGA" href="index.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../application/index.html">功能领域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../architecture/index.html">内核架构</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../architecture/index.html#classification">Classification</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../architecture/x86.html">X86</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../architecture/arm.html">ARM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../architecture/MIPS.html">MIPS</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">FPGA</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">GW1NSR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AG1280.html">AG1280</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../architecture/riscv.html">RISC-V</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../architecture/MCS51.html">MCS-51</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#performance">Performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#architecture">Architecture</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor.html">芯片设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../architecture/index.html">内核架构</a> &raquo;</li>
+          <li><a href="index.html">FPGA</a> &raquo;</li>
+      <li>GW1NSR</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/fpga/GW1NSR.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="gw1nsr">
+<span id="id1"></span><h1>GW1NSR<a class="headerlink" href="#gw1nsr" title="Permalink to this heading">¶</a></h1>
+<p><a class="reference external" href="https://github.com/SoCXin/GW1NSR">GitHub</a> : <code class="docutils literal notranslate"><span class="pre">Gowin</span></code> <code class="docutils literal notranslate"><span class="pre">LittleBee</span></code> <code class="docutils literal notranslate"><span class="pre">FPGA</span></code> <code class="docutils literal notranslate"><span class="pre">4608LUT4</span></code> <code class="docutils literal notranslate"><span class="pre">SIP</span></code> <code class="docutils literal notranslate"><span class="pre">Cortex-M3</span></code> <code class="docutils literal notranslate"><span class="pre">USB2.0PHY</span></code></p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#xin" id="id27">Xin简介</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id28">Xin选择</a></p></li>
+<li><p><a class="reference internal" href="#id17" id="id29">Xin应用</a></p></li>
+<li><p><a class="reference internal" href="#id22" id="id30">Xin总结</a></p></li>
+</ul>
+</div>
+<section id="xin">
+<h2><a class="toc-backref" href="#id27">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<p>高云半导体 GW1NSR 系列 FPGA 产品是高云半导体小蜜蜂(LittleBee)家族第一代 FPGA 产品，是一款SIP芯片(55nm)，片上集成GW1NS系列FPGA和PSRAM存储芯片。</p>
+<div class="contents local topic" id="id2">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id3" id="id31">规格参数</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id4" id="id32">基本参数</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id33">特征参数</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id6" id="id34">芯片架构</a></p>
+<ul>
+<li><p><a class="reference internal" href="#gw1nsr-2c" id="id35">GW1NSR-2C</a></p></li>
+<li><p><a class="reference internal" href="#gw1nsr-4c" id="id36">GW1NSR-4C</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id3">
+<h3><a class="toc-backref" href="#id31">规格参数</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<section id="id4">
+<h4><a class="toc-backref" href="#id32">基本参数</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>发布时间：</p></li>
+<li><p>发布价格：</p></li>
+<li><p>制程工艺：55 nm</p></li>
+<li><p>供货周期：</p></li>
+<li><p>处理性能：? <a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></li>
+<li><p>RAM容量：180Kbit</p></li>
+<li><p>Flash容量：256Kbit</p></li>
+</ul>
+</section>
+<section id="id5">
+<h4><a class="toc-backref" href="#id33">特征参数</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>4608 LUT4、3456 FF</p></li>
+<li><p>Cortex-M3 硬核处理器</p></li>
+<li><p>8ch 12bit SAR ADC (1MSPS)</p></li>
+<li><p>USB2.0 PHY（480Mbps）</p></li>
+<li><p>支持 I3C/MIPI 接口</p></li>
+<li><p>供电电压：1.2V(LV)、2.5V/3.3V(UV)</p></li>
+<li><p>时钟精度：片内晶振±5%</p></li>
+</ul>
+</section>
+</section>
+<section id="id6">
+<h3><a class="toc-backref" href="#id34">芯片架构</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>GW1NSR-2C 和 GW1NSR-4C是SoC芯片，以ARM Cortex-M3 硬核处理器为核心，具备了实现系统功能所需要的最小内存。</p>
+<p>GW1NSR-2C最高支持 30MHz 的工作频率，GW1NSR-4C 最高支持 80MHz 的工作频率。</p>
+<p>GW1NSR-2C器件的 NVIC 提供了两个外部用户中断，GW1NSR-4C器件支持六个外部用户中断。每个中断支持 8 种可编程的优先级（0~7），7 表示最低级的优先级，0 表示最高级的优先级</p>
+<section id="gw1nsr-2c">
+<span id="id7"></span><h4><a class="toc-backref" href="#id35">GW1NSR-2C</a><a class="headerlink" href="#gw1nsr-2c" title="Permalink to this heading">¶</a></h4>
+<p>GW1NSR-2C 内嵌 USB2.0 PHY 和 ADC</p>
+<a class="reference external image-reference" href="http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&amp;FId=t3:10:3&amp;Id=168"><img alt="../_images/GW1NSR-2C.png" src="../_images/GW1NSR-2C.png" /></a>
+</section>
+<section id="gw1nsr-4c">
+<span id="id8"></span><h4><a class="toc-backref" href="#id36">GW1NSR-4C</a><a class="headerlink" href="#gw1nsr-4c" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&amp;FId=t3:10:3&amp;Id=168"><img alt="../_images/GW1NSR-2C.png" src="../_images/GW1NSR-2C.png" /></a>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>UART0和UART1通过APB1总线进行控制和访问，最大波特率921.6Kbits/s，支持8位数据位和1位停止位，不支持校验位。</p>
+</div>
+</section>
+</section>
+</section>
+<section id="id9">
+<h2><a class="toc-backref" href="#id28">Xin选择</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
+<p>相比 MCU，FPGA 在可编程性、IO 配置灵活性、实时处理能力等方面都有无可比拟的优势，MCU能做的事情FPGA基本上都做到，FPGA还能做许多MCU做不到的事情。随着芯片规模越来越大，成本逐渐降低，低端FPGA已逐步取代了传统的数字元件。</p>
+<div class="contents local topic" id="id10">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id11" id="id37">品牌对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#lattice-ice40" id="id38">Lattice iCE40</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id12" id="id39">型号对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#gw2a" id="id40">GW2A系列(晨熙)</a></p></li>
+<li><p><a class="reference internal" href="#gw1nrf" id="id41">GW1NRF</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id14" id="id42">版本对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id15" id="id43">配置参数</a></p></li>
+<li><p><a class="reference internal" href="#id16" id="id44">封装参数</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id11">
+<h3><a class="toc-backref" href="#id37">品牌对比</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<p><a class="reference external" href="http://www.gowinsemi.com.cn/">Gowin</a> 是全球增长最快的可编程逻辑公司，作为中国的FPGA厂商，相对传统的国际巨头，在低阶产品上具有很高的性价比。</p>
+<section id="lattice-ice40">
+<span id="ice40"></span><h4><a class="toc-backref" href="#id38">Lattice iCE40</a><a class="headerlink" href="#lattice-ice40" title="Permalink to this heading">¶</a></h4>
+<p>使用开源工具链fpga-toolchain，可以基于 <a class="reference external" href="https://platformio.org/platforms/lattice_ice40">PlatformIO</a> 开发，开源工具链有以下几个优点：</p>
+<ul class="simple">
+<li><p>开源工具链的中所有组件均有源代码提供，可以自行编译或者使用已经构建好的二进制文件，不需要厂商许可证。</p></li>
+<li><p>体积小，包含了 Lattice iCE40 系列、ECP5 系列 FPGA 支持的工具链压缩包大小在 100 MB 左右。</p></li>
+<li><p>速度快，节省上板调试时间，以几个小工程为例完成代码综合、布局布线并下载到 FPGA 中仅需几秒钟的时间。</p></li>
+<li><p>跨平台支持，开源工具链不仅支持 Windows，Linux 和 Mac OS 等操作系统，而且支持 x86 之外的处理器平台。</p></li>
+</ul>
+</section>
+</section>
+<section id="id12">
+<h3><a class="toc-backref" href="#id39">型号对比</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&amp;FId=t3:10:3&amp;Id=168"><img alt="../_images/GW1N.png" src="../_images/GW1N.png" /></a>
+<section id="gw2a">
+<h4><a class="toc-backref" href="#id40">GW2A系列(晨熙)</a><a class="headerlink" href="#gw2a" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="http://cdn.gowinsemi.com.cn/DS102-2.3_GW2A%E7%B3%BB%E5%88%97FPGA%E4%BA%A7%E5%93%81%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C.pdf"><img alt="../_images/GW2A-L.png" src="../_images/GW2A-L.png" /></a>
+<p>高云可提供基于GW2A系列FPGA的RISC-V软核IP，包含一个32-bit的RISC-V微处理器和系统外设</p>
+<a class="reference external image-reference" href="http://www.gowinsemi.com.cn/prodshow_view.aspx?TypeId=70&amp;Id=172&amp;FId=t31:70:31"><img alt="../_images/gw2a-core.jpg" src="../_images/gw2a-core.jpg" /></a>
+</section>
+<section id="gw1nrf">
+<span id="id13"></span><h4><a class="toc-backref" href="#id41">GW1NRF</a><a class="headerlink" href="#gw1nrf" title="Permalink to this heading">¶</a></h4>
+<p>GW1NRF系列蓝牙FPGA产品是一款系统级封装芯片，以 32位硬核微处理器为核心，支持蓝牙5.0低功耗射频功能，具有丰富的逻辑单元、内嵌B-SRAM 和 DSP 资源，IO 资源丰富，系统内部有电源管理模块和安全加密模块。</p>
+<ul class="simple">
+<li><p>内嵌32bits低功耗ARC EM4处理器 (QFN48)</p></li>
+<li><p>BLE 5.0</p></li>
+<li><p>136kB ROM</p></li>
+<li><p>128kB OTP for power efficiency ：128KB OTP</p></li>
+<li><p>48kB IRAM and 28kB DRAM</p></li>
+<li><p>AES-128硬核加密、ECC-P256密钥生成器</p></li>
+</ul>
+<a class="reference external image-reference" href="http://cdn.gowinsemi.com.cn/DS891-1.01-GW1NRF%E7%B3%BB%E5%88%97%E8%93%9D%E7%89%99FPGA%E4%BA%A7%E5%93%81%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C.pdf"><img alt="../_images/GW1NRF-B.png" src="../_images/GW1NRF-B.png" /></a>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>GW1NRF系列同 <a class="reference internal" href="#gw1nsr"><span class="std std-ref">GW1NSR</span></a> 在FPGA性能上规格相同，主要差异在SIP封装的硬核资源。</p>
+</div>
+</section>
+</section>
+<section id="id14">
+<h3><a class="toc-backref" href="#id42">版本对比</a><a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&amp;FId=t3:10:3&amp;Id=168"><img alt="../_images/GW1NSR.png" src="../_images/GW1NSR.png" /></a>
+<section id="id15">
+<h4><a class="toc-backref" href="#id43">配置参数</a><a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="http://cdn.gowinsemi.com.cn/DS861-1.4.4_GW1NSR%E7%B3%BB%E5%88%97FPGA%E4%BA%A7%E5%93%81%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C.pdf"><img alt="../_images/GW1NSR-R.png" src="../_images/GW1NSR-R.png" /></a>
+</section>
+<section id="id16">
+<h4><a class="toc-backref" href="#id44">封装参数</a><a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="http://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&amp;FId=t3:10:3&amp;Id=168"><img alt="../_images/GW1NSR-P.png" src="../_images/GW1NSR-P.png" /></a>
+</section>
+</section>
+</section>
+<section id="id17">
+<h2><a class="toc-backref" href="#id29">Xin应用</a><a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id18">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id19" id="id45">硬件资源</a></p>
+<ul>
+<li><p><a class="reference internal" href="#tang-nano-4k" id="id46">Tang Nano 4K</a></p></li>
+<li><p><a class="reference internal" href="#tang-nano" id="id47">Tang Nano对比</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id20" id="id48">工具资源</a></p>
+<ul>
+<li><p><a class="reference internal" href="#gowin-ide" id="id49">Gowin IDE</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id21" id="id50">框架资源</a></p>
+<ul>
+<li><p><a class="reference internal" href="#goai" id="id51">GoAI开发套件</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id19">
+<h3><a class="toc-backref" href="#id45">硬件资源</a><a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h3>
+<section id="tang-nano-4k">
+<h4><a class="toc-backref" href="#id46">Tang Nano 4K</a><a class="headerlink" href="#tang-nano-4k" title="Permalink to this heading">¶</a></h4>
+<p>Tang Nano 4K FPGA 板是Tang Nano FPGA板的一个升级，采用了更强大的 GOWIN GW1NSR-LV4C FPGA，它配备的是 4608 LUT（不再是之前的1152）和嵌入到芯片中的 Cortex-M3 微控制器。</p>
+<a class="reference external image-reference" href="https://item.taobao.com/item.htm?spm=a230r.1.14.13.7c7b6cffifPv3h&amp;id=653059006630&amp;ns=1&amp;abbucket=0#detail"><img alt="../_images/TangNano4K.png" src="../_images/TangNano4K.png" /></a>
+</section>
+<section id="tang-nano">
+<h4><a class="toc-backref" href="#id47">Tang Nano对比</a><a class="headerlink" href="#tang-nano" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="http://tangnano.sipeed.com/zh/"><img alt="../_images/TangNano.png" src="../_images/TangNano.png" /></a>
+</section>
+</section>
+<section id="id20">
+<h3><a class="toc-backref" href="#id48">工具资源</a><a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
+<section id="gowin-ide">
+<h4><a class="toc-backref" href="#id49">Gowin IDE</a><a class="headerlink" href="#gowin-ide" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="http://dl.sipeed.com/shareURL/TANG/Nano%204K/IDE"><img alt="../_images/GowinIDE.png" src="../_images/GowinIDE.png" /></a>
+<p>Gowin IDE的License目前是免费向客户提供的，使用期限为自取得代码之日起一年，过期失效后可以再次申请License分配是和本机Mac地址挂钩的，一套软件只能在一台电脑上运行。如需多台电脑运行，可申请多个License。</p>
+</section>
+</section>
+<section id="id21">
+<h3><a class="toc-backref" href="#id50">框架资源</a><a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+<section id="goai">
+<h4><a class="toc-backref" href="#id51">GoAI开发套件</a><a class="headerlink" href="#goai" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://github.com/gowinsemi/GoAI"><img alt="../_images/GoAI.png" src="../_images/GoAI.png" /></a>
+<p>GoAI 2.0是一个通过在高云FPGA器件上部署卷积神经网络(CNNs)的机器学习开发平台。它包含用于转换TensorFlow文件和加速器FPGA IP的软件脚本，以运行训练好的机器学习模型以及教程和示例。</p>
+<p>GoAI 2.0集成到TensorFlow和TensorFlow Lite框架中，比起遗留平台及其他可替代平台更加方便使用。</p>
+<p>基于TensorFlow的广泛软件开发环境，GoAI 2.0通过生成所需的所有固件，将机器学习模型直接部署到高云FPGA中，不需编写任何额外的RTL或C代码。完全支持Windows和Linux系统，包括Ubuntu。</p>
+<p>依赖的开发资源：</p>
+<ul class="simple">
+<li><p>ARM Keil v5</p></li>
+<li><p>Gowin IDE or Gowin Programmer</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="id22">
+<h2><a class="toc-backref" href="#id30">Xin总结</a><a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id23">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id24" id="id52">能力构建</a></p></li>
+<li><p><a class="reference internal" href="#id25" id="id53">要点提示</a></p></li>
+<li><p><a class="reference internal" href="#id26" id="id54">问题整理</a></p></li>
+</ul>
+</div>
+<section id="id24">
+<h3><a class="toc-backref" href="#id52">能力构建</a><a class="headerlink" href="#id24" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id25">
+<h3><a class="toc-backref" href="#id53">要点提示</a><a class="headerlink" href="#id25" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id26">
+<h3><a class="toc-backref" href="#id54">问题整理</a><a class="headerlink" href="#id26" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="FPGA" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="AG1280.html" class="btn btn-neutral float-right" title="AG1280" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/fpga/GW1NSR.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/fpga/GW1NSR.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

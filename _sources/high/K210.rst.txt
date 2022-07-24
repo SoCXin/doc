@@ -1,0 +1,57 @@
+
+.. _k210:
+
+K210
+=============
+
+`GitHub <https://github.com/SoCXin/K210>`_ : ``kendryte`` ``RISC-V`` ``400MHz`` ``0.2TOPS``  ``Dual Core`` ``KPU`` ``$3`` ``0.3W``
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+
+.. image:: ./images/K210.jpg
+    :target: https://canaan.io/product/kendryteai
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2018年
+* 发布价格：
+* 制程工艺：28 nm
+* 供货周期：
+* 处理性能： ? :ref:`CoreMark` (Dual)
+* SRAM容量：8 MB
+* Flash容量：
+
+限定参数
+^^^^^^^^^^^
+
+* 电压范围：1.8 to 3.6 V
+* 功耗范围：典型 < 1W, 芯片< 0.3W
+* 温度范围：-40°C to +85°C
+* 封装规格：BGA144 (8x8x0.953mm)
+
+
+
+特征参数
+^^^^^^^^^^^
+
+* 400 MHz RISC-V 64-bit Dual Core
+* 0.23TOPS
+* Image Recognition ：QVGA@60fps/VGA@30fps
+* Operating system: FreeRTOS
+* Network model: TinyYOLOv2(after pruned)
+* Deep learning framework: TensorFlow/Keras/Darknet
+
+
+
+芯片架构
+~~~~~~~~~~~~
+

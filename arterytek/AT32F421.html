@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AT32F421 &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/arterytek/AT32F421.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="AT32F415" href="AT32F415.html" />
+    <link rel="prev" title="Arterytek" href="index.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../application/index.html">功能领域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../vendor.html">芯片设计</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ti/index.html">电源模拟和物联网 TI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../st/index.html">微控制器领域王者 ST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nxp/index.html">高性能多领域跨界 NXP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nordic/index.html">低功耗蓝牙控制器 Nordic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../realtek/index.html">多媒体及网络通信 Realtek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nuvoton/index.html">多媒体语音控制器 Nuvoton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MediaTek/index.html">高性能通信全品类 MediaTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gigadevice/index.html">国产芯片龙头企业 GigaDevice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../stc/index.html">超低成本微控制器 STC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ASR/index.html">新锐无线长距通信 ASR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../byd/index.html">跨界造芯垂直整合 BYD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jieli/index.html">蓝牙音频智能终端 JieLi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wch/index.html">物联网通信控制器 WCH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chipsea/index.html">信号链整合控制器 Chipsea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../espressif/index.html">低成本无线物联网 Espressif</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Cortex-M4控制器 ArteryTek</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">公司简介</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id5">产品简介</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="index.html#id6">超值产品</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id7">主流产品</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id8">性能产品</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id9">无线产品</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id10">技术简介</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../allwinner/index.html">多媒体应用处理器 Allwinner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bouffalolab/index.html">物联网通信及计算 Bouffalolab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mindmotion/index.html">驱动控制国产普惠 Mindmotion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../vendor.html">Vendor</a> &raquo;</li>
+          <li><a href="index.html">Arterytek</a> &raquo;</li>
+      <li>AT32F421</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/arterytek/AT32F421.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="at32f421">
+<span id="no-005"></span><span id="id1"></span><h1>AT32F421<a class="headerlink" href="#at32f421" title="Permalink to this heading">¶</a></h1>
+<p><a class="reference external" href="https://github.com/SoCXin/AT32F421">标签</a> : <code class="docutils literal notranslate"><span class="pre">Cortex-M4</span></code> <code class="docutils literal notranslate"><span class="pre">120MHz</span></code> <code class="docutils literal notranslate"><span class="pre">COMP</span></code> <code class="docutils literal notranslate"><span class="pre">sLib</span></code> <code class="docutils literal notranslate"><span class="pre">ERTC</span></code> <code class="docutils literal notranslate"><span class="pre">TSSOP20</span></code></p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#xin" id="id28">Xin简介</a></p></li>
+<li><p><a class="reference internal" href="#id10" id="id29">Xin选择</a></p></li>
+<li><p><a class="reference internal" href="#id16" id="id30">Xin应用</a></p></li>
+<li><p><a class="reference internal" href="#id23" id="id31">Xin总结</a></p></li>
+</ul>
+</div>
+<section id="xin">
+<h2><a class="toc-backref" href="#id28">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<p><a class="reference external" href="https://www.arterytek.com/cn/product/AT32F421.jsp">官方资源</a></p>
+<section id="id4">
+<h3>规格参数<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p><a class="reference internal" href="index.html#arterytek"><span class="std std-ref">Arterytek</span></a> <a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a> 单核 MCU，高达120MHz的CPU运算速度与内建数字信号处理器(DSP)，最高可支持64KB闪存存储器(Flash)及16KB随机存取存储器(SRAM)</p>
+<p>片上集成了多达2个USART、2个SPI(可复用I²S)、2个I²C、1个16位高级定时器、5个16位通用定时器，和5通道DMA控制器。 同时还扩展了1个高速轨到轨输入/输出模拟电压比较器，1个采样率高达2M SPS的12位15通道高速ADC。</p>
+<p>几乎所有I/O口可容忍5V输入信号，且所有I/O口均为快速I/O，具有多种可选功能还支持端口重映射，极佳的灵活性和易用性满足多种应用需求。</p>
+<section id="id5">
+<h4>基本参数<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>发布时间：2020年10月</p></li>
+<li><p>参考价格：$0.195</p></li>
+<li><p>制程工艺：55 nm</p></li>
+<li><p>供货周期：</p></li>
+<li><p>处理性能：262.8 <a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a> , <a class="reference internal" href="../architecture/level.html#level2"><span class="std std-ref">Level2</span></a></p></li>
+<li><p>封装规格：TSSOP20/QFN28/QFN32/LQFP32/LQFP48</p></li>
+<li><p>运行环境：-40~105°C</p></li>
+<li><p>RAM容量：16 KB</p></li>
+<li><p>Flash容量：64 KB</p></li>
+</ul>
+</section>
+<section id="id6">
+<h4>特征参数<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>120 MHz <a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></li>
+<li><p>15ch ADC (12bit 2MSPS)</p></li>
+<li><p>2 x USART</p></li>
+<li><p>2 x I2C + 2 x SPI/I2S</p></li>
+<li><p>ERTC (1ppm的分辨率)</p></li>
+<li><p>COMP (轨到轨比较器1/4、1/2、3/4Vref)</p></li>
+<li><p>sLib安全库 (Security Library)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference internal" href="index.html#arterytek"><span class="std std-ref">Arterytek</span></a> 自行开发的 <a class="reference internal" href="index.html#arterytek-slib"><span class="std std-ref">sLib安全库区</span></a> 可支持密码保护指定范围程序区，方案商烧录核心算法到此区域，提供给下游客户做二次开发，强化了产品本身的安全性、可靠性和二次开发的使用便利度。</p>
+</div>
+</section>
+</section>
+<section id="id7">
+<h3>芯片架构<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="https://www.arterytek.com/cn/product/AT32F421.jsp#Resource"><img alt="../_images/AT32F421S.png" src="../_images/AT32F421S.png" /></a>
+<section id="id8">
+<h4>功耗参数<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>电压范围：2.3 to 3.6 V</p></li>
+<li><p>功耗范围：</p></li>
+<li><p>温度范围：-40°C to 105°C</p></li>
+<li><p>ESD HBM: 6 KV</p></li>
+<li><p>ESD CDM: 1000 V</p></li>
+</ul>
+</section>
+<section id="id9">
+<h4>时钟体系<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://www.arterytek.com/cn/product/AT32F421.jsp#Resource"><img alt="../_images/AT32F421C.png" src="../_images/AT32F421C.png" /></a>
+<p><a class="reference internal" href="#at32f421"><span class="std std-ref">AT32F421</span></a> 系列产品包含最多1个高级定时器(16bit)、5个普通定时器(16bit)、1个基本定时器(16bit)、以及2个看门狗定时器、和1个系统滴答定时器。</p>
+</section>
+<section id="timer">
+<h4>Timer<a class="headerlink" href="#timer" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://www.arterytek.com/cn/product/AT32F421.jsp#Resource"><img alt="../_images/AT32F421t.png" src="../_images/AT32F421t.png" /></a>
+</section>
+<section id="tssop20">
+<span id="at32f421-tssop20"></span><h4>TSSOP20<a class="headerlink" href="#tssop20" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://www.arterytek.com/cn/product/AT32F421.jsp#Resource"><img alt="../_images/AT32F421p.png" src="../_images/AT32F421p.png" /></a>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><a class="reference internal" href="#at32f421"><span class="std std-ref">AT32F421</span></a> 封装兼容 <a class="reference internal" href="../st/s/STM32F030.html#stm32f030"><span class="std std-ref">STM32F030</span></a> <a class="reference internal" href="../st/s/STM32F030.html#stm32-tssop20"><span class="std std-ref">TSSOP20</span></a></p>
+</div>
+</section>
+</section>
+</section>
+<section id="id10">
+<h2><a class="toc-backref" href="#id29">Xin选择</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id11">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id12" id="id32">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id33">系列对比</a></p></li>
+<li><p><a class="reference internal" href="#id14" id="id34">型号对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id15" id="id35">封装对比</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><a class="reference internal" href="#at32f421"><span class="std std-ref">AT32F421</span></a> 定位超值产品，主要替代F030、F103、E230、F330等型号，相对对标产品而言拥有更高的制程工艺和性能。</p>
+</div>
+<section id="id12">
+<h3><a class="toc-backref" href="#id32">品牌对比</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Xin</p></th>
+<th class="head"><p>DMIPS</p></th>
+<th class="head"><p>RAM</p></th>
+<th class="head"><p>FLASH</p></th>
+<th class="head"><p>UART</p></th>
+<th class="head"><p>ADC</p></th>
+<th class="head"><p>TIM</p></th>
+<th class="head"><p>COMP</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#at32f421"><span class="std std-ref">AT32F421</span></a></p></td>
+<td><p>150</p></td>
+<td><p>8/16</p></td>
+<td><p>16/32/64</p></td>
+<td><p>2</p></td>
+<td><p>2MSPS</p></td>
+<td><p>5+1+1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../st/s/STM32F030.html#stm32f030"><span class="std std-ref">STM32F030</span></a></p></td>
+<td><p>44</p></td>
+<td><p>4</p></td>
+<td><p>32/64/128</p></td>
+<td><p>2</p></td>
+<td><p>1.0MSPS</p></td>
+<td><p>5+1</p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32F103.html#stm32f103"><span class="std std-ref">STM32F103</span></a></p></td>
+<td><p>90</p></td>
+<td><p>20</p></td>
+<td><p>32/64/128</p></td>
+<td><p>2/4</p></td>
+<td><p>1.0MSPS</p></td>
+<td><p>5+1</p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-odd"><td><p>GD32F330</p></td>
+<td><p>135</p></td>
+<td><p>4/8/16</p></td>
+<td><p>16/32/64/128</p></td>
+<td><p>2</p></td>
+<td><p>2.6MSPS</p></td>
+<td><p>5+1+1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>GD32E230</p></td>
+<td><p>90</p></td>
+<td><p>4/8</p></td>
+<td><p>16/32/64</p></td>
+<td><p>2</p></td>
+<td><p>2.6MSPS</p></td>
+<td><p>5+1+1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="#at32f421"><span class="std std-ref">AT32F421</span></a> 系列与 <a class="reference internal" href="../st/s/STM32F030.html#stm32f030"><span class="std std-ref">STM32F030</span></a> 系列管脚兼容</p>
+</section>
+<section id="id13">
+<h3><a class="toc-backref" href="#id33">系列对比</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
+<th class="head"><p>DMIPS</p></th>
+<th class="head"><p>RAM</p></th>
+<th class="head"><p>FLASH</p></th>
+<th class="head"><p>UART</p></th>
+<th class="head"><p>CAN2.0B</p></th>
+<th class="head"><p>USB</p></th>
+<th class="head"><p>SPIM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#at32f421"><span class="std std-ref">AT32F421</span></a></p></td>
+<td><p>150 (120MHz)</p></td>
+<td><p>8/16</p></td>
+<td><p>16/32/64</p></td>
+<td><p>2</p></td>
+<td><p>NO</p></td>
+<td><p>NO</p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-odd"><td><p>AT32F425</p></td>
+<td><p>120 (96MHz)</p></td>
+<td><p>20</p></td>
+<td><p>32/64</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+<td><p>OTG</p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="AT32F415.html#at32f415"><span class="std std-ref">AT32F415</span></a></p></td>
+<td><p>175 (150MHz)</p></td>
+<td><p>32</p></td>
+<td><p>64/128/256</p></td>
+<td><p>2/3/5</p></td>
+<td><p>1</p></td>
+<td><p>OTG</p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="AT32F413.html#at32f413"><span class="std std-ref">AT32F413</span></a></p></td>
+<td><p>250 (200MHz)</p></td>
+<td><p>16/32/64</p></td>
+<td><p>64/128/256</p></td>
+<td><p>2/3/5</p></td>
+<td><p>2</p></td>
+<td><p>D/H</p></td>
+<td><p>16M</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="AT32F403.html#at32f403"><span class="std std-ref">AT32F403</span></a></p></td>
+<td><p>300 (240MHz)</p></td>
+<td><p>16/32/64</p></td>
+<td><p>64/128/256</p></td>
+<td><p>2/3/5</p></td>
+<td><p>2</p></td>
+<td><p>D/H</p></td>
+<td><p>16M</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference internal" href="index.html#arterytek"><span class="std std-ref">Arterytek</span></a> 目前只有 <a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a> 单核的 MCU产品，均具备 <a class="reference internal" href="index.html#arterytek-slib"><span class="std std-ref">sLib安全库区</span></a> 功能，高性能系列才具备 <a class="reference internal" href="index.html#arterytek-spim"><span class="std std-ref">SPIM存储扩展</span></a> 功能</p>
+</div>
+</section>
+<section id="id14">
+<h3><a class="toc-backref" href="#id34">型号对比</a><a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="https://www.arterytek.com/cn/product/AT32F421.jsp#Resource"><img alt="../_images/AT32F421.png" src="../_images/AT32F421.png" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>TSSOP20封装 <a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a> 120MHz主频的MCU规格实属少见。<a class="reference internal" href="#at32f421"><span class="std std-ref">AT32F421</span></a> TSSOP20封装上仅支持SPI1，USART1仅有TX和RX脚，因此只能作UART用。</p>
+</div>
+<section id="id15">
+<h4><a class="toc-backref" href="#id35">封装对比</a><a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
+<th class="head"><p>Price</p></th>
+<th class="head"><p>Package</p></th>
+<th class="head"><p>Size</p></th>
+<th class="head"><p>Interface</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>AT32F421C</p></td>
+<td><p>￥3.67</p></td>
+<td><p>LQFP48</p></td>
+<td><p>7×7mm</p></td>
+<td><p>35</p></td>
+</tr>
+<tr class="row-odd"><td><p>AT32F421K</p></td>
+<td><p>￥3.67</p></td>
+<td><p>LQFP32/QFN32</p></td>
+<td><p>7x7mm/4x4mm</p></td>
+<td><p>35</p></td>
+</tr>
+<tr class="row-even"><td><p>AT32F421G</p></td>
+<td><p>￥3.67</p></td>
+<td><p>QFN28</p></td>
+<td><p>4x4mm</p></td>
+<td><p>35</p></td>
+</tr>
+<tr class="row-odd"><td><p>AT32F421F</p></td>
+<td><p>$0.195</p></td>
+<td><p>TSSOP20</p></td>
+<td><p>6.5x4.4mm</p></td>
+<td><p>16</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="id16">
+<h2><a class="toc-backref" href="#id30">Xin应用</a><a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><a class="reference internal" href="#at32f421"><span class="std std-ref">AT32F421</span></a> 除了高主频并没有配置太多外设，存储资源少，只用于控制通信器件实现数据转发较合适</p>
+</div>
+<div class="contents local topic" id="id17">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id18" id="id36">开发板</a></p></li>
+<li><p><a class="reference internal" href="#id19" id="id37">示例代码</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id20" id="id38">中断接收</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#tim" id="id39">TIM应用</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id21" id="id40">输入捕获</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#adc" id="id41">ADC应用</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id22" id="id42">温度转换</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#rtc" id="id43">RTC应用</a></p>
+<ul>
+<li><p><a class="reference internal" href="#tamper" id="id44">Tamper</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id18">
+<h3><a class="toc-backref" href="#id36">开发板</a><a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="https://item.taobao.com/item.htm?_u=ogas3eu93a4&amp;id=632845784689"><img alt="../_images/B_AT32F421.jpg" src="../_images/B_AT32F421.jpg" /></a>
+</section>
+<section id="id19">
+<h3><a class="toc-backref" href="#id37">示例代码</a><a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h3>
+<section id="id20">
+<h4><a class="toc-backref" href="#id38">中断接收</a><a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>void UART_Print_Init<span class="o">(</span>uint32_t bound<span class="o">)</span>
+<span class="o">{</span>
+    /* ----------------- USART1 and USART2 configuration -------------------- */
+    USART_StructInit<span class="o">(</span><span class="p">&amp;</span>USART_InitStructure<span class="o">)</span><span class="p">;</span>
+    USART_InitStructure.USART_BaudRate <span class="o">=</span> <span class="m">9600</span><span class="p">;</span>
+    USART_InitStructure.USART_WordLength <span class="o">=</span> USART_WordLength_8b<span class="p">;</span>
+    USART_InitStructure.USART_StopBits <span class="o">=</span> USART_StopBits_1<span class="p">;</span>
+    USART_InitStructure.USART_Parity <span class="o">=</span> USART_Parity_No<span class="p">;</span>
+    USART_InitStructure.USART_HardwareFlowControl <span class="o">=</span> USART_HardwareFlowControl_None<span class="p">;</span>
+    USART_InitStructure.USART_Mode <span class="o">=</span> USART_Mode_Rx <span class="p">|</span> USART_Mode_Tx<span class="p">;</span>
+
+    USART_Init<span class="o">(</span>USART1, <span class="p">&amp;</span>USART_InitStructure<span class="o">)</span><span class="p">;</span>
+    USART_Init<span class="o">(</span>USART2, <span class="p">&amp;</span>USART_InitStructure<span class="o">)</span><span class="p">;</span>
+
+    /* Enable Receive and Transmit interrupts */
+    USART_INTConfig<span class="o">(</span>USART1, USART_INT_RDNE, ENABLE<span class="o">)</span><span class="p">;</span>
+    USART_INTConfig<span class="o">(</span>USART1, USART_INT_TDE, ENABLE<span class="o">)</span><span class="p">;</span>
+    USART_INTConfig<span class="o">(</span>USART2, USART_INT_RDNE, ENABLE<span class="o">)</span><span class="p">;</span>
+    USART_INTConfig<span class="o">(</span>USART2, USART_INT_TDE, ENABLE<span class="o">)</span><span class="p">;</span>
+
+    USART_Cmd<span class="o">(</span>USART1, ENABLE<span class="o">)</span><span class="p">;</span>
+    USART_Cmd<span class="o">(</span>USART2, ENABLE<span class="o">)</span><span class="p">;</span>
+<span class="o">}</span>
+
+void USART1_NVIC_Config<span class="o">(</span>void<span class="o">)</span>
+<span class="o">{</span>
+    NVIC_InitStructure.NVIC_IRQChannel <span class="o">=</span> USART1_IRQn<span class="p">;</span>
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority<span class="o">=</span><span class="m">0</span> <span class="p">;</span>
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority <span class="o">=</span> <span class="m">0</span><span class="p">;</span>
+    NVIC_InitStructure.NVIC_IRQChannelCmd <span class="o">=</span> ENABLE<span class="p">;</span>
+    NVIC_Init<span class="o">(</span><span class="p">&amp;</span>NVIC_InitStructure<span class="o">)</span><span class="p">;</span>
+<span class="o">}</span>
+
+...
+
+
+/* ---- Request to enter STOP mode with regulator <span class="k">in</span> low power mode ----- */
+PWR_EnterSleepMode<span class="o">(</span>PWR_SLEEPEntry_WFI<span class="o">)</span><span class="p">;</span>
+/* ---- Configures system clock after wake-up from STOP ----- */
+SysTick-&gt;CTRL <span class="p">|</span><span class="o">=</span> 0x1<span class="p">;</span>
+
+...
+
+void USART1_IRQHandler<span class="o">(</span>void<span class="o">)</span>
+<span class="o">{</span>
+    <span class="k">if</span><span class="o">(</span>USART_GetITStatus<span class="o">(</span>USART1, USART_INT_RDNE<span class="o">)</span> !<span class="o">=</span> RESET<span class="o">)</span>
+    <span class="o">{</span>
+    <span class="o">}</span>
+    <span class="k">if</span><span class="o">(</span>USART_GetITStatus<span class="o">(</span>USART1, USART_INT_TDE<span class="o">)</span> !<span class="o">=</span> RESET<span class="o">)</span>
+    <span class="o">{</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="tim">
+<h3><a class="toc-backref" href="#id39">TIM应用</a><a class="headerlink" href="#tim" title="Permalink to this heading">¶</a></h3>
+<section id="id21">
+<h4><a class="toc-backref" href="#id40">输入捕获</a><a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>int main<span class="o">(</span>void<span class="o">)</span>
+<span class="o">{</span>
+    /* TMR3 configuration: Input Capture mode ---------------------
+        The external signal is connected to TMR3 CH2 pin <span class="o">(</span>PA.07<span class="o">)</span>
+        The Rising edge is used as active edge,
+        The TMR3 CCR2 is used to compute the frequency value
+    ------------------------------------------------------------ */
+
+    /* DMA1 Channel4 Config */
+    DMA_Reset<span class="o">(</span>DMA1_Channel4<span class="o">)</span><span class="p">;</span>
+    DMA_DefaultInitParaConfig<span class="o">(</span><span class="p">&amp;</span>DMA_InitStructure<span class="o">)</span><span class="p">;</span>
+
+    DMA_InitStructure.DMA_PeripheralBaseAddr <span class="o">=</span> <span class="o">(</span>uint32_t<span class="o">)</span>TIM3_CCR1_Address<span class="p">;</span>
+    DMA_InitStructure.DMA_MemoryBaseAddr <span class="o">=</span> <span class="o">(</span>uint32_t<span class="o">)</span>SRC_Buffer<span class="p">;</span>
+    DMA_InitStructure.DMA_Direction <span class="o">=</span> DMA_DIR_PERIPHERALSRC<span class="p">;</span>
+    DMA_InitStructure.DMA_BufferSize <span class="o">=</span> <span class="m">1000</span><span class="p">;</span>
+    DMA_InitStructure.DMA_PeripheralInc <span class="o">=</span> DMA_PERIPHERALINC_DISABLE<span class="p">;</span>
+    DMA_InitStructure.DMA_MemoryInc <span class="o">=</span> DMA_MEMORYINC_ENABLE<span class="p">;</span>
+    DMA_InitStructure.DMA_PeripheralDataWidth <span class="o">=</span> DMA_PERIPHERALDATAWIDTH_HALFWORD<span class="p">;</span>
+    DMA_InitStructure.DMA_MemoryDataWidth <span class="o">=</span> DMA_MEMORYDATAWIDTH_HALFWORD<span class="p">;</span>
+    DMA_InitStructure.DMA_Mode <span class="o">=</span> DMA_MODE_CIRCULAR<span class="p">;</span>
+    DMA_InitStructure.DMA_Priority <span class="o">=</span> DMA_PRIORITY_HIGH<span class="p">;</span>
+    DMA_InitStructure.DMA_MTOM <span class="o">=</span> DMA_MEMTOMEM_DISABLE<span class="p">;</span>
+
+    DMA_Init<span class="o">(</span>DMA1_Channel4, <span class="p">&amp;</span>DMA_InitStructure<span class="o">)</span><span class="p">;</span>
+    DMA_INTConfig<span class="o">(</span>DMA1_Channel4,DMA_INT_TC,ENABLE<span class="o">)</span><span class="p">;</span>
+    /* DMA1 Channel4 <span class="nb">enable</span> */
+    DMA_ChannelEnable<span class="o">(</span>DMA1_Channel4, ENABLE<span class="o">)</span><span class="p">;</span>
+
+    /* TMRe base configuration */
+    TMR_TimeBaseStructInit<span class="o">(</span><span class="p">&amp;</span>TMR_TMReBaseStructure<span class="o">)</span><span class="p">;</span>
+    TMR_TMReBaseStructure.TMR_Period <span class="o">=</span> SystemCoreClock/1000000/4-1<span class="p">;</span>
+    TMR_TMReBaseStructure.TMR_DIV <span class="o">=</span> <span class="m">0</span><span class="p">;</span>
+    TMR_TMReBaseStructure.TMR_ClockDivision <span class="o">=</span> <span class="m">0</span><span class="p">;</span>
+    TMR_TMReBaseStructure.TMR_CounterMode <span class="o">=</span> TMR_CounterDIR_Up<span class="p">;</span>
+
+    TMR_TimeBaseInit<span class="o">(</span>TMR1, <span class="p">&amp;</span>TMR_TMReBaseStructure<span class="o">)</span><span class="p">;</span>
+
+    /* Output Compare TMRing Mode configuration: Channel1 */
+    TMR_OCStructInit<span class="o">(</span><span class="p">&amp;</span>TMR_OCInitStructure<span class="o">)</span><span class="p">;</span>
+    TMR_OCInitStructure.TMR_OCMode <span class="o">=</span> TMR_OCMode_PWM1<span class="p">;</span>
+    TMR_OCInitStructure.TMR_OutputState <span class="o">=</span> TMR_OutputState_Enable<span class="p">;</span>
+    TMR_OCInitStructure.TMR_Pulse <span class="o">=</span> <span class="o">(</span>SystemCoreClock/1000000<span class="o">)</span>/2/4-1<span class="p">;</span>
+    TMR_OCInitStructure.TMR_OCPolarity <span class="o">=</span> TMR_OCPolarity_High<span class="p">;</span>
+
+    TMR_OC1Init<span class="o">(</span>TMR1, <span class="p">&amp;</span>TMR_OCInitStructure<span class="o">)</span><span class="p">;</span>
+
+    TMR_OC1PreloadConfig<span class="o">(</span>TMR1, TMR_OCPreload_Disable<span class="o">)</span><span class="p">;</span>
+    TMR_CtrlPWMOutputs<span class="o">(</span>TMR1,ENABLE<span class="o">)</span><span class="p">;</span>
+    /* TMR1 <span class="nb">enable</span> counter */
+    TMR_Cmd<span class="o">(</span>TMR1, ENABLE<span class="o">)</span><span class="p">;</span>
+
+
+    TMR_ICStructInit<span class="o">(</span><span class="p">&amp;</span>TMR_ICInitStructure<span class="o">)</span><span class="p">;</span>
+    TMR_ICInitStructure.TMR_Channel <span class="o">=</span> TMR_Channel_1<span class="p">;</span>
+    TMR_ICInitStructure.TMR_ICPolarity <span class="o">=</span> TMR_ICPolarity_Rising<span class="p">;</span>
+    TMR_ICInitStructure.TMR_ICSelection <span class="o">=</span> TMR_ICSelection_DirectTI<span class="p">;</span>
+    TMR_ICInitStructure.TMR_ICDIV <span class="o">=</span> TMR_ICDIV_DIV1<span class="p">;</span>
+    TMR_ICInitStructure.TMR_ICFilter <span class="o">=</span> 0x0<span class="p">;</span>
+
+    TMR_ICInit<span class="o">(</span>TMR3, <span class="p">&amp;</span>TMR_ICInitStructure<span class="o">)</span><span class="p">;</span>
+
+    /* Enable the CC1 Interrupt Request */
+    TMR_INTConfig<span class="o">(</span>TMR3, TMR_INT_CC1, ENABLE<span class="o">)</span><span class="p">;</span>
+    /* Enable the CC1 DMA Request */
+    TMR_DMACmd<span class="o">(</span>TMR3,TMR_DMA_CC1,ENABLE<span class="o">)</span><span class="p">;</span>
+    TMR_Cmd<span class="o">(</span>TMR3, ENABLE<span class="o">)</span><span class="p">;</span>
+    <span class="k">while</span> <span class="o">(</span><span class="m">1</span><span class="o">)</span>
+    <span class="o">{</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+void DMA1_Channel7_4_IRQHandler<span class="o">(</span>void<span class="o">)</span>
+<span class="o">{</span>
+    <span class="k">if</span><span class="o">(</span>DMA_GetFlagStatus<span class="o">(</span>DMA1_FLAG_TC4<span class="o">)</span> <span class="o">==</span> SET<span class="o">)</span>
+    <span class="o">{</span>
+        <span class="nv">TMR3Freq</span> <span class="o">=</span> SystemCoreClock/<span class="o">(</span>SRC_Buffer<span class="o">[</span><span class="m">500</span><span class="o">]</span> - SRC_Buffer<span class="o">[</span><span class="m">499</span><span class="o">])</span><span class="p">;</span>
+        printf<span class="o">(</span><span class="s2">&quot;The external signal frequece is : %d\r\n&quot;</span>,TMR3Freq<span class="o">)</span><span class="p">;</span>
+        DMA_ClearITPendingBit<span class="o">(</span>DMA1_FLAG_TC4<span class="o">)</span><span class="p">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="adc">
+<h3><a class="toc-backref" href="#id41">ADC应用</a><a class="headerlink" href="#adc" title="Permalink to this heading">¶</a></h3>
+<section id="id22">
+<h4><a class="toc-backref" href="#id42">温度转换</a><a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>int main<span class="o">(</span>void<span class="o">)</span>
+<span class="o">{</span>
+    /* System clocks configuration */
+    RCC_Configuration<span class="o">()</span><span class="p">;</span>
+    /*initialize Delay Function*/
+    Delay_init<span class="o">()</span><span class="p">;</span>
+    /* USART configuration */
+    UART_Print_Init<span class="o">(</span><span class="m">115200</span><span class="o">)</span><span class="p">;</span>
+    /* DMA1 channel1 configuration ----------------------------------------------*/
+    DMA_Reset<span class="o">(</span>DMA1_Channel1<span class="o">)</span><span class="p">;</span>
+    DMA_DefaultInitParaConfig<span class="o">(</span><span class="p">&amp;</span>DMA_InitStructure<span class="o">)</span><span class="p">;</span>
+    DMA_InitStructure.DMA_PeripheralBaseAddr    <span class="o">=</span> ADC1_DR_Address<span class="p">;</span>
+    DMA_InitStructure.DMA_MemoryBaseAddr        <span class="o">=</span> <span class="o">(</span>uint32_t<span class="o">)</span><span class="p">&amp;</span>ADCConvertedValue<span class="p">;</span>
+    DMA_InitStructure.DMA_Direction             <span class="o">=</span> DMA_DIR_PERIPHERALSRC<span class="p">;</span>
+    DMA_InitStructure.DMA_BufferSize            <span class="o">=</span> <span class="m">1</span><span class="p">;</span>
+    DMA_InitStructure.DMA_PeripheralInc         <span class="o">=</span> DMA_PERIPHERALINC_DISABLE<span class="p">;</span>
+    DMA_InitStructure.DMA_MemoryInc             <span class="o">=</span> DMA_MEMORYINC_DISABLE<span class="p">;</span>
+    DMA_InitStructure.DMA_PeripheralDataWidth   <span class="o">=</span> DMA_PERIPHERALDATAWIDTH_HALFWORD<span class="p">;</span>
+    DMA_InitStructure.DMA_MemoryDataWidth       <span class="o">=</span> DMA_MEMORYDATAWIDTH_HALFWORD<span class="p">;</span>
+    DMA_InitStructure.DMA_Mode                  <span class="o">=</span> DMA_MODE_CIRCULAR<span class="p">;</span>
+    DMA_InitStructure.DMA_Priority              <span class="o">=</span> DMA_PRIORITY_HIGH<span class="p">;</span>
+    DMA_InitStructure.DMA_MTOM                  <span class="o">=</span> DMA_MEMTOMEM_DISABLE<span class="p">;</span>
+    DMA_Init<span class="o">(</span>DMA1_Channel1, <span class="p">&amp;</span>DMA_InitStructure<span class="o">)</span><span class="p">;</span>
+    /* Enable DMA1 channel1 */
+    DMA_ChannelEnable<span class="o">(</span>DMA1_Channel1, ENABLE<span class="o">)</span><span class="p">;</span>
+
+    /* ADC1 configuration ------------------------------------------------------*/
+    ADC_StructInit<span class="o">(</span><span class="p">&amp;</span>ADC_InitStructure<span class="o">)</span><span class="p">;</span>
+    ADC_InitStructure.ADC_Mode              <span class="o">=</span> ADC_Mode_Independent<span class="p">;</span>
+    ADC_InitStructure.ADC_ScanMode          <span class="o">=</span> DISABLE<span class="p">;</span>
+    ADC_InitStructure.ADC_ContinuousMode    <span class="o">=</span> ENABLE<span class="p">;</span>
+    ADC_InitStructure.ADC_ExternalTrig      <span class="o">=</span> ADC_ExternalTrig_None<span class="p">;</span>
+    ADC_InitStructure.ADC_DataAlign         <span class="o">=</span> ADC_DataAlign_Right<span class="p">;</span>
+    ADC_InitStructure.ADC_NumOfChannel      <span class="o">=</span> <span class="m">1</span><span class="p">;</span>
+    ADC_Init<span class="o">(</span>ADC1, <span class="p">&amp;</span>ADC_InitStructure<span class="o">)</span><span class="p">;</span>
+    /* ADC1 regular channels configuration */
+    ADC_RegularChannelConfig<span class="o">(</span>ADC1, ADC_Channel_TempSensor, <span class="m">1</span>, ADC_SampleTime_239_5<span class="o">)</span><span class="p">;</span>
+    /* Enable ADC1 DMA */
+    ADC_DMACtrl<span class="o">(</span>ADC1, ENABLE<span class="o">)</span><span class="p">;</span>
+
+    /* Enables Temperature Sensor and Vrefint Channel */
+    ADC_TempSensorVrefintCtrl<span class="o">(</span>ENABLE<span class="o">)</span><span class="p">;</span>
+
+    /* Enable ADC1 */
+    ADC_Ctrl<span class="o">(</span>ADC1, ENABLE<span class="o">)</span><span class="p">;</span>
+
+    /* Enable ADC1 reset calibration register */
+    ADC_RstCalibration<span class="o">(</span>ADC1<span class="o">)</span><span class="p">;</span>
+    /* Check the end of ADC1 reset calibration register */
+    <span class="k">while</span><span class="o">(</span>ADC_GetResetCalibrationStatus<span class="o">(</span>ADC1<span class="o">))</span><span class="p">;</span>
+
+    /* Start ADC1 calibration */
+    ADC_StartCalibration<span class="o">(</span>ADC1<span class="o">)</span><span class="p">;</span>
+    /* Check the end of ADC1 calibration */
+    <span class="k">while</span><span class="o">(</span>ADC_GetCalibrationStatus<span class="o">(</span>ADC1<span class="o">))</span><span class="p">;</span>
+
+    /* Start ADC1 Software Conversion */
+    ADC_SoftwareStartConvCtrl<span class="o">(</span>ADC1, ENABLE<span class="o">)</span><span class="p">;</span>
+
+    <span class="k">while</span> <span class="o">(</span><span class="m">1</span><span class="o">)</span>
+    <span class="o">{</span>
+        Delay_sec<span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="p">;</span>
+        printf<span class="o">(</span><span class="s2">&quot;Temperature: %f deg C\r\n&quot;</span>,<span class="o">(</span>ADC_TEMP_BASE-<span class="o">(</span>double<span class="o">)</span>ADCConvertedValue*ADC_VREF/4096<span class="o">)</span>/ADC_TEMP_SLOPE+25<span class="o">)</span><span class="p">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="rtc">
+<h3><a class="toc-backref" href="#id43">RTC应用</a><a class="headerlink" href="#rtc" title="Permalink to this heading">¶</a></h3>
+<section id="tamper">
+<h4><a class="toc-backref" href="#id44">Tamper</a><a class="headerlink" href="#tamper" title="Permalink to this heading">¶</a></h4>
+<p>改变 PC13 上的电平，当检测到下降沿时，将触发入侵检测；当发生入侵事件时通过串口打印</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>void ERTC_Config<span class="o">(</span>void<span class="o">)</span>
+<span class="o">{</span>
+    NVIC_InitType NVIC_InitStructure<span class="p">;</span>
+    EXTI_InitType  EXTI_InitStructure<span class="p">;</span>
+
+    /* Enable the PWR clock */
+    RCC_APB1PeriphClockCmd<span class="o">(</span>RCC_APB1PERIPH_PWR, ENABLE<span class="o">)</span><span class="p">;</span>
+
+    /* Allow access to ERTC */
+    PWR_BackupAccessCtrl<span class="o">(</span>ENABLE<span class="o">)</span><span class="p">;</span>
+
+    /* Reset BKP Domain */
+    RCC_BackupResetCmd<span class="o">(</span>ENABLE<span class="o">)</span><span class="p">;</span>
+    RCC_BackupResetCmd<span class="o">(</span>DISABLE<span class="o">)</span><span class="p">;</span>
+
+    /* Enable the LSI OSC */
+    RCC_LSICmd<span class="o">(</span>ENABLE<span class="o">)</span><span class="p">;</span>
+
+    /* Wait till LSI is ready */
+    <span class="k">while</span><span class="o">(</span>RCC_GetFlagStatus<span class="o">(</span>RCC_FLAG_LSISTBL<span class="o">)</span> <span class="o">==</span> RESET<span class="o">)</span>
+    <span class="o">{</span>
+    <span class="o">}</span>
+    /* Select the ERTC Clock Source */
+    RCC_ERTCCLKConfig<span class="o">(</span>RCC_ERTCCLKSelection_LSI<span class="o">)</span><span class="p">;</span>
+
+    /* Enable the ERTC Clock */
+    RCC_ERTCCLKCmd<span class="o">(</span>ENABLE<span class="o">)</span><span class="p">;</span>
+
+    /* Deinitializes the ERTC registers */
+    ERTC_Reset<span class="o">()</span><span class="p">;</span>
+
+    /* Wait <span class="k">for</span> ERTC APB registers synchronisation */
+    ERTC_WaitForSynchro<span class="o">()</span><span class="p">;</span>
+
+    /* Enable The external line21 interrupt */
+    EXTI_ClearIntPendingBit<span class="o">(</span>EXTI_Line19<span class="o">)</span><span class="p">;</span>
+    EXTI_InitStructure.EXTI_Line <span class="o">=</span> EXTI_Line19<span class="p">;</span>
+    EXTI_InitStructure.EXTI_Mode <span class="o">=</span> EXTI_Mode_Interrupt<span class="p">;</span>
+    EXTI_InitStructure.EXTI_Trigger <span class="o">=</span> EXTI_Trigger_Rising<span class="p">;</span>
+    EXTI_InitStructure.EXTI_LineEnable <span class="o">=</span> ENABLE<span class="p">;</span>
+    EXTI_Init<span class="o">(</span><span class="p">&amp;</span>EXTI_InitStructure<span class="o">)</span><span class="p">;</span>
+
+    /* Enable TAMPER IRQChannel */
+    NVIC_InitStructure.NVIC_IRQChannel <span class="o">=</span>  ERTC_IRQn<span class="p">;</span>
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority <span class="o">=</span> <span class="m">0</span><span class="p">;</span>
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority <span class="o">=</span> <span class="m">0</span><span class="p">;</span>
+    NVIC_InitStructure.NVIC_IRQChannelCmd <span class="o">=</span> ENABLE<span class="p">;</span>
+    NVIC_Init<span class="o">(</span><span class="p">&amp;</span>NVIC_InitStructure<span class="o">)</span><span class="p">;</span>
+
+    /* Disable the Tamper <span class="m">1</span> detection */
+    ERTC_TamperCmd<span class="o">(</span>ERTC_TAMP_1, DISABLE<span class="o">)</span><span class="p">;</span>
+
+    /* Clear Tamper <span class="m">1</span> pin Event<span class="o">(</span>TAMP1F<span class="o">)</span> pending flag */
+    ERTC_ClearFlag<span class="o">(</span>ERTC_FLAG_TP1F<span class="o">)</span><span class="p">;</span>
+
+    /* Configure the Tamper <span class="m">1</span> Trigger */
+    ERTC_TamperTriggerConfig<span class="o">(</span>ERTC_TAMP_1, ERTC_TamperTrig_FallingEdge<span class="o">)</span><span class="p">;</span>
+
+    /* Enable the Tamper interrupt */
+    ERTC_INTConfig<span class="o">(</span>ERTC_INT_TAMP, ENABLE<span class="o">)</span><span class="p">;</span>
+
+    /* Clear Tamper <span class="m">1</span> pin interrupt pending bit */
+    ERTC_ClearINTPendingBINT<span class="o">(</span>ERTC_INT_TAMP1<span class="o">)</span><span class="p">;</span>
+
+    /* Enable the Tamper <span class="m">1</span> detection */
+    ERTC_TamperCmd<span class="o">(</span>ERTC_TAMP_1, ENABLE<span class="o">)</span><span class="p">;</span>
+<span class="o">}</span>
+
+int main<span class="o">(</span>void<span class="o">)</span>
+<span class="o">{</span>
+    /* ERTC configuration */
+    ERTC_Config<span class="o">()</span><span class="p">;</span>
+    /* Write To ERTC Backup Data registers */
+    WriteToERTC_BKP_DT<span class="o">(</span>0xA53C<span class="o">)</span><span class="p">;</span>
+    /* Check <span class="k">if</span> the written data are correct */
+    <span class="k">if</span><span class="o">(</span>CheckERTC_BKP_DT<span class="o">(</span>0xA53C<span class="o">)</span> <span class="o">==</span> <span class="m">0</span><span class="o">)</span>
+    <span class="o">{</span>
+        /* Turn on LED2 */
+    <span class="o">}</span>
+    <span class="k">while</span> <span class="o">(</span><span class="m">1</span><span class="o">)</span>
+    <span class="o">{</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+void ERTC_IRQHandler<span class="o">(</span>void<span class="o">)</span>
+<span class="o">{</span>
+    <span class="k">if</span><span class="o">(</span>ERTC_GetFlagStatus<span class="o">(</span>ERTC_FLAG_TP1F<span class="o">)</span> !<span class="o">=</span> RESET<span class="o">)</span>
+    <span class="o">{</span>
+        /* Tamper <span class="m">1</span> detection event occurred */
+        /* Check <span class="k">if</span> ERTC Backup Data registers are cleared */
+        <span class="k">if</span><span class="o">(</span>IsBackupRegReset<span class="o">()</span> <span class="o">==</span> <span class="m">0</span><span class="o">)</span>
+        <span class="o">{</span>
+            /* OK, ERTC Backup Data registers are reset as expected */
+        <span class="o">}</span>
+        /* Clear Tamper <span class="m">1</span> pin Event pending flag */
+        ERTC_ClearFlag<span class="o">(</span>ERTC_FLAG_TP1F<span class="o">)</span><span class="p">;</span>
+
+        /* Disable Tamper pin <span class="m">1</span> */
+        ERTC_TamperCmd<span class="o">(</span>ERTC_TAMP_1, DISABLE<span class="o">)</span><span class="p">;</span>
+
+        /* Enable Tamper pin */
+        ERTC_TamperCmd<span class="o">(</span>ERTC_TAMP_1, ENABLE<span class="o">)</span><span class="p">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="id23">
+<h2><a class="toc-backref" href="#id31">Xin总结</a><a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id24">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id25" id="id45">能力构建</a></p></li>
+<li><p><a class="reference internal" href="#id26" id="id46">要点提示</a></p></li>
+<li><p><a class="reference internal" href="#id27" id="id47">问题整理</a></p></li>
+</ul>
+</div>
+<section id="id25">
+<h3><a class="toc-backref" href="#id45">能力构建</a><a class="headerlink" href="#id25" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id26">
+<h3><a class="toc-backref" href="#id46">要点提示</a><a class="headerlink" href="#id26" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>ADC使用APB时钟,只能通过软件实现过采样</p></li>
+<li><p>ERTC只支持入侵检测0（tamper0），不支持入侵检测1（tamper1）</p></li>
+</ul>
+</section>
+<section id="id27">
+<h3><a class="toc-backref" href="#id47">问题整理</a><a class="headerlink" href="#id27" title="Permalink to this heading">¶</a></h3>
+<p>待整理。。。</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Arterytek" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="AT32F415.html" class="btn btn-neutral float-right" title="AT32F415" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/arterytek/AT32F421.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/arterytek/AT32F421.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

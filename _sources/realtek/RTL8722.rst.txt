@@ -1,0 +1,58 @@
+
+.. _rtl8722:
+
+RTL8722
+===============
+
+`Realtek <https://www.realtek.com/zh/>`_ : ``Wi-Fi6`` ``Ameba``
+
+.. contents::
+    :local:
+    :depth: 1
+
+
+Xin简介
+-----------
+
+`Realtek Ameba RTL8722DM <https://www.realtek.com/zh/products/product-hits/item/rtl8710c-rtl8720c-rtl8722d-rtl8715a>`_ 结合了arm®的新架构Armv8M KM4 MCU，Wi-Fi，蓝牙，并提供了一组可配置的GPIO，这些GPIO被配置为数字外设，应用于不同的应用程序和控制使用。
+
+
+
+.. contents::
+    :local:
+
+规格参数
+~~~~~~~~~~~
+
+`GitHub <https://github.com/SoCXin/RTL8722DM>`_
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 封装规格：QFN48/QFN68/QFN88
+* 运行环境：
+* RAM容量：
+* Flash容量：
+
+特征参数
+^^^^^^^^^^^
+
+* 200 MHz :ref:`cortex_m4`
+* 2.4G + 5.8G
+
+
+芯片架构
+~~~~~~~~~~~
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：
+* 功耗范围：
+

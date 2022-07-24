@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWM32S &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/miscellaneous/SWM32S.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SWM341" href="SWM341.html" />
+    <link rel="prev" title="HMI" href="../application/hmi.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../application/index.html">功能领域</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../application/ai.html">边缘计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../application/foc.html">实时控制</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../application/hmi.html">人机交互</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../application/hmi.html#id2">图形框架</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../application/hmi.html#id11">接口驱动</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../application/hmi.html#id15">嵌入平台</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">SWM32S</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SWM341.html">SWM341</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TKM32F499.html">TKM32F499</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../application/adc.html">信号处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../application/audio.html">音频处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../application/index.html#id2">通信连接</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor.html">芯片设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../application/index.html">Application</a> &raquo;</li>
+          <li><a href="../application/hmi.html">HMI</a> &raquo;</li>
+      <li>SWM32S</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/miscellaneous/SWM32S.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="swm32s">
+<span id="id1"></span><h1>SWM32S<a class="headerlink" href="#swm32s" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>关键词：<code class="docutils literal notranslate"><span class="pre">Cortex-M4</span></code> <code class="docutils literal notranslate"><span class="pre">Synwit</span></code> <code class="docutils literal notranslate"><span class="pre">120MHz</span></code> <code class="docutils literal notranslate"><span class="pre">800×480</span></code></p></li>
+<li><p>资源库：<a class="reference external" href="https://github.com/SoCXin/SWM320">GitHub</a></p></li>
+</ul>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#xin" id="id17">Xin简介</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id3" id="id18">规格参数</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id4" id="id19">基本参数</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id20">特征参数</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id6" id="id21">芯片架构</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id7" id="id22">时钟体系</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id8" id="id23">Xin选择</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id10" id="id24">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id25">型号对比</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id26">版本对比</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id13" id="id27">Xin总结</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id15" id="id28">要点提示</a></p></li>
+<li><p><a class="reference internal" href="#id16" id="id29">问题整理</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="xin">
+<h2><a class="toc-backref" href="#id17">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id2">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id3" id="id30">规格参数</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id4" id="id31">基本参数</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id32">特征参数</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id6" id="id33">芯片架构</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id7" id="id34">时钟体系</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id3">
+<h3><a class="toc-backref" href="#id30">规格参数</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<section id="id4">
+<h4><a class="toc-backref" href="#id31">基本参数</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>供电电压：1.8V - 3.6V</p></li>
+<li><p>工作温度：-40°C - 105°C</p></li>
+</ul>
+</section>
+<section id="id5">
+<h4><a class="toc-backref" href="#id32">特征参数</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>内建大容量 SDRAM</p></li>
+<li><p>免费使用 LittlevGL 软件库</p></li>
+<li><p>轻松创建图形软件（SUD）</p></li>
+<li><p>支持各式液晶显示模块（LCM）</p></li>
+</ul>
+</section>
+</section>
+<section id="id6">
+<h3><a class="toc-backref" href="#id33">芯片架构</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<section id="id7">
+<h4><a class="toc-backref" href="#id34">时钟体系</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+</section>
+</section>
+</section>
+<section id="id8">
+<h2><a class="toc-backref" href="#id23">Xin选择</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id9">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id10" id="id35">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id36">型号对比</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id37">版本对比</a></p></li>
+</ul>
+</div>
+<section id="id10">
+<h3><a class="toc-backref" href="#id35">品牌对比</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id11">
+<h3><a class="toc-backref" href="#id36">型号对比</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id12">
+<h3><a class="toc-backref" href="#id37">版本对比</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+<section id="id13">
+<h2><a class="toc-backref" href="#id27">Xin总结</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id14">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id15" id="id38">要点提示</a></p></li>
+<li><p><a class="reference internal" href="#id16" id="id39">问题整理</a></p></li>
+</ul>
+</div>
+<section id="id15">
+<h3><a class="toc-backref" href="#id38">要点提示</a><a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id16">
+<h3><a class="toc-backref" href="#id39">问题整理</a><a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../application/hmi.html" class="btn btn-neutral float-left" title="HMI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SWM341.html" class="btn btn-neutral float-right" title="SWM341" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/miscellaneous/SWM32S.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/miscellaneous/SWM32S.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

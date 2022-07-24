@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STM32G474 &mdash; SoC</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/st/m/STM32G474.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="STM32H7B0" href="../t/STM32H7B0.html" />
+    <link rel="prev" title="STM32G431" href="STM32G431.html" />
+ 
+<link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
+<script src="../../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../application/index.html">功能领域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../foundry.html">晶元代工</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../vendor.html">芯片设计</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../ti/index.html">电源模拟和物联网 TI</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">微控制器领域王者 ST</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#id2">公司简介</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../s/index.html">普惠产品</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">主流产品</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#st-high">性能产品</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#st-iot">无线通信</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#st-ulp">超低功耗</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#id6">技术特点</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../nxp/index.html">高性能多领域跨界 NXP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../nordic/index.html">低功耗蓝牙控制器 Nordic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../realtek/index.html">多媒体及网络通信 Realtek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../nuvoton/index.html">多媒体语音控制器 Nuvoton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MediaTek/index.html">高性能通信全品类 MediaTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gigadevice/index.html">国产芯片龙头企业 GigaDevice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../stc/index.html">超低成本微控制器 STC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ASR/index.html">新锐无线长距通信 ASR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../byd/index.html">跨界造芯垂直整合 BYD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../jieli/index.html">蓝牙音频智能终端 JieLi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../wch/index.html">物联网通信控制器 WCH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chipsea/index.html">信号链整合控制器 Chipsea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../espressif/index.html">低成本无线物联网 Espressif</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../arterytek/index.html">Cortex-M4控制器 ArteryTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../allwinner/index.html">多媒体应用处理器 Allwinner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../bouffalolab/index.html">物联网通信及计算 Bouffalolab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mindmotion/index.html">驱动控制国产普惠 Mindmotion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../vendor.html">Vendor</a> &raquo;</li>
+          <li><a href="../index.html">ST</a> &raquo;</li>
+          <li><a href="index.html">主流产品</a> &raquo;</li>
+      <li>STM32G474</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/st/m/STM32G474.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="stm32g474">
+<span id="no-004"></span><span id="id1"></span><h1>STM32G474<a class="headerlink" href="#stm32g474" title="Permalink to this heading">¶</a></h1>
+<p><a class="reference external" href="https://github.com/SoCXin/STM32G474">GitHub</a> : <code class="docutils literal notranslate"><span class="pre">Cortex-M4</span></code> <code class="docutils literal notranslate"><span class="pre">170MHz</span></code> <code class="docutils literal notranslate"><span class="pre">FSMC</span></code> <code class="docutils literal notranslate"><span class="pre">CAN-FD</span></code> <code class="docutils literal notranslate"><span class="pre">15MSPS-DAC</span></code> <code class="docutils literal notranslate"><span class="pre">4MSPS-ADC</span></code> <code class="docutils literal notranslate"><span class="pre">UCPD</span></code> <code class="docutils literal notranslate"><span class="pre">HRTIM</span></code> <code class="docutils literal notranslate"><span class="pre">AES256</span></code></p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#xin" id="id27">Xin简介</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id2" id="id28">规格参数</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id3" id="id29">基本参数</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id30">特征参数</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id5" id="id31">芯片架构</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id6" id="id32">电源参数</a></p></li>
+<li><p><a class="reference internal" href="#hrtim" id="id33">HRTIM</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id7" id="id34">性能分析</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id8" id="id35">Xin选择</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id10" id="id36">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id37">系列对比</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id38">型号对比</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id39">必选理由</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id14" id="id40">Xin应用</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id16" id="id41">开发工具</a></p></li>
+<li><p><a class="reference internal" href="#id17" id="id42">硬件平台</a></p>
+<ul>
+<li><p><a class="reference internal" href="#nucleo-stm32g474re" id="id43">NUCLEO-STM32G474RE</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id18" id="id44">外设使用</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id20" id="id45">HRTIM</a></p></li>
+<li><p><a class="reference internal" href="#pga" id="id46">PGA</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id21" id="id47">参考方案</a></p>
+<ul>
+<li><p><a class="reference internal" href="#kw" id="id48">15KW三相双向充电桩</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id22" id="id49">Xin总结</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id24" id="id50">能力构建</a></p></li>
+<li><p><a class="reference internal" href="#id25" id="id51">要点提示</a></p></li>
+<li><p><a class="reference internal" href="#id26" id="id52">问题整理</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="xin">
+<h2><a class="toc-backref" href="#id27">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<a class="reference external image-reference" href="https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x4.html"><img alt="../../_images/STM32G474.png" src="../../_images/STM32G474.png" /></a>
+<section id="id2">
+<h3><a class="toc-backref" href="#id28">规格参数</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<p>内嵌数学运算加速器，丰富的数模外设，运放、比较器、DA、AD等，带有双安全存储区域，ART加速提高Flash读取运行速度。支持FPU和DSP指令，以及3种不同的硬件加速器： <a class="reference internal" href="../index.html#stm32-art"><span class="std std-ref">ART</span></a> Accelerator™、CCM-SRAM程序执行加速器、以及数学运算加速器。</p>
+<section id="id3">
+<h4><a class="toc-backref" href="#id29">基本参数</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>发布时间：2019年5月</p></li>
+<li><p>参考价格：</p></li>
+<li><p>制程工艺：</p></li>
+<li><p>供货周期：</p></li>
+<li><p>处理性能：212 <a class="reference internal" href="../../architecture/index.html#dmips"><span class="std std-ref">DMIPS</span></a>, 550 <a class="reference internal" href="../../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a> , <a class="reference internal" href="../../architecture/level.html#level3"><span class="std std-ref">Level3</span></a></p></li>
+<li><p>封装规格：LQFP48/LQFP64/LQFP100/LQFP128</p></li>
+<li><p>运行环境：-40°C to +85°C/125°C</p></li>
+<li><p>RAM容量：128 KB</p></li>
+<li><p>Flash容量：128/256/512 KB</p></li>
+</ul>
+<a class="reference external image-reference" href="https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x1/stm32g431kb.html"><img alt="../../_images/STM32G474p.png" src="../../_images/STM32G474p.png" /></a>
+</section>
+<section id="id4">
+<h4><a class="toc-backref" href="#id30">特征参数</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>170 MHz <a class="reference internal" href="../../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></li>
+<li><p><a class="reference internal" href="STM32F407.html#stm32-fsmc"><span class="std std-ref">FSMC</span></a></p></li>
+<li><p>高分辨率定时器 <a class="reference internal" href="#stm32-hrtim"><span class="std std-ref">HRTIM</span></a> (184ps)</p></li>
+<li><p>5x 12bit ADC (4 MSPS)</p></li>
+<li><p>7x 12bit DAC (15 MSPS)</p></li>
+<li><p>7x <a class="reference internal" href="STM32G431.html#stm32-fcmp"><span class="std std-ref">CMP</span></a> (17ns)</p></li>
+<li><p>6x <a class="reference internal" href="#stm32-opamp"><span class="std std-ref">PGA</span></a></p></li>
+<li><p>USB Type-C™和电力传输控制器 <a class="reference internal" href="STM32G431.html#stm32-ucpd"><span class="std std-ref">UCPD</span></a></p></li>
+<li><p>3x <a class="reference internal" href="STM32G431.html#stm32-canfd"><span class="std std-ref">CAN-FD</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="id5">
+<h3><a class="toc-backref" href="#id31">芯片架构</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32g4-series/stm32g4x4.html"><img alt="../../_images/STM32G474s.png" src="../../_images/STM32G474s.png" /></a>
+<section id="id6">
+<h4><a class="toc-backref" href="#id32">电源参数</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>供电电压：1.71 to 3.6 V</p></li>
+</ul>
+</section>
+<section id="hrtim">
+<span id="stm32-hrtim"></span><h4><a class="toc-backref" href="#id33">HRTIM</a><a class="headerlink" href="#hrtim" title="Permalink to this heading">¶</a></h4>
+<p>继承自STM32F334xx系列的高分辨率定时器HRTIM外设，在G4系列更高的主频下可以到达 <code class="docutils literal notranslate"><span class="pre">184ps</span></code> 分辨率,易于编程实现的简单高分辨率执行流程（等同于4.6 GHz的定时器）</p>
+<a class="reference external image-reference" href="https://st-onlinetraining.s3.amazonaws.com/STM32G4-WDG_TIMERS-High_Resolution_Timer_%28HRTIM%29/index.html"><img alt="../../_images/STM32HRTIM.png" src="../../_images/STM32HRTIM.png" /></a>
+</section>
+</section>
+<section id="id7">
+<h3><a class="toc-backref" href="#id34">性能分析</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<p>内核相关性能同 <a class="reference internal" href="STM32G431.html#stm32g431"><span class="std std-ref">STM32G431</span></a> <a class="reference internal" href="STM32G431.html#stm32g431-calculate"><span class="std std-ref">性能测试</span></a></p>
+</section>
+</section>
+<section id="id8">
+<h2><a class="toc-backref" href="#id35">Xin选择</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id9">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id10" id="id53">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id54">系列对比</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id55">型号对比</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id56">必选理由</a></p></li>
+</ul>
+</div>
+<p>该系列是2012年推出的STM32F3系列的延续，它继承了很多STM32F3的理念和基因，带来更强劲的性能和数模效果。</p>
+<p>STM32G4系列最高工作温度可达到125°C，具有更强的抗电气干扰能力，可耐受4kV以上的瞬变电压，增强的可靠性也进一步扩展了其应用范围，特别是一些工业领域。</p>
+<p>STM32G4x4系列具有高分辨率定时器和复杂波形生成器，以及事件处理器，这使其特别适合于数字电源应用，如数字开关电源、照明、焊接、太阳能和无线充电等。</p>
+<section id="id10">
+<h3><a class="toc-backref" href="#id53">品牌对比</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+<p>在模拟外设集成度和技术指标上，国内尚没有可以媲美的产品。</p>
+</section>
+<section id="id11">
+<h3><a class="toc-backref" href="#id54">系列对比</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<p>STM32G4与STM32F3系列高度兼容，作为后者的升级选项，确保在设计不同性能等级的衍生应用时提供卓越的效率。</p>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html"><img alt="../../_images/stm32g4_series.jpg" src="../../_images/stm32g4_series.jpg" /></a>
+<p>STM32G474在STM32G4系列中定位高分辨率，独有复杂波形生成器和事件处理器HRTIM，该功能继承自STM32F334，除该功能外，在G4系列中可选STM32G473系列，如果没有FSMC需求且对模拟外设数量要求不多，可选更高性价比的 <a class="reference internal" href="STM32G431.html#stm32g431"><span class="std std-ref">STM32G431</span></a></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
+<th class="head"><p>Mark</p></th>
+<th class="head"><p>RAM</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>UART</p></th>
+<th class="head"><p>BLE</p></th>
+<th class="head"><p>USB</p></th>
+<th class="head"><p>Ethernet</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#stm32g474"><span class="std std-ref">STM32G474</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="STM32G431.html#stm32g431"><span class="std std-ref">STM32G431</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../t/STM32H730.html#stm32h730"><span class="std std-ref">STM32H730</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>STM32G474系列配备的 <a class="reference internal" href="#stm32-hrtim"><span class="std std-ref">HRTIM</span></a> 竞争者还包括前代 STM32F334 和高性能 <a class="reference internal" href="../t/STM32H730.html#stm32h730"><span class="std std-ref">STM32H730</span></a> 系列，也就从成本和性能两端限制了该系列的扩展。</p>
+</div>
+</section>
+<section id="id12">
+<h3><a class="toc-backref" href="#id55">型号对比</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32g4-series.html"><img alt="../../_images/STM32G474l.png" src="../../_images/STM32G474l.png" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>STM32G474、STM32G484型号共有24种封装规格，全系标配128KB RAM，存储器范围为128KB到512 KB，封装为48到128引脚。该系列拥有STM32系列中数量最多的12bit ADC= 42通道</p>
+</div>
+</section>
+<section id="id13">
+<h3><a class="toc-backref" href="#id56">必选理由</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<p>相对 <a class="reference internal" href="../t/STM32H730.html#stm32h730"><span class="std std-ref">STM32H730</span></a> 等高性能产品，最多集成有5个独立高性能ADC，适合用于数据采样场景，但是芯片本身的性能不是特别够，所以在需要4个独立ADC高性能MCU的场景，不如使用STM32H7系列产品。</p>
+<p>就规格配置而言，<a class="reference internal" href="#stm32g474"><span class="std std-ref">STM32G474</span></a> 降配方案为 <a class="reference internal" href="STM32G431.html#stm32g431"><span class="std std-ref">STM32G431</span></a> , 后者的相应资源数量更少，封装和存储规格也更小，特别是LQFP32的封装是其独有的。</p>
+</section>
+</section>
+<section id="id14">
+<h2><a class="toc-backref" href="#id40">Xin应用</a><a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id15">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id16" id="id57">开发工具</a></p></li>
+<li><p><a class="reference internal" href="#id17" id="id58">硬件平台</a></p>
+<ul>
+<li><p><a class="reference internal" href="#nucleo-stm32g474re" id="id59">NUCLEO-STM32G474RE</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id18" id="id60">外设使用</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id20" id="id61">HRTIM</a></p></li>
+<li><p><a class="reference internal" href="#pga" id="id62">PGA</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id21" id="id63">参考方案</a></p>
+<ul>
+<li><p><a class="reference internal" href="#kw" id="id64">15KW三相双向充电桩</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id16">
+<h3><a class="toc-backref" href="#id57">开发工具</a><a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<p>使用STM32芯片最直接方式是通过 <a class="reference external" href="https://www.st.com/zh/ecosystems/stm32cube.html">stm32cube</a> 工具构建基本运行体，不用开发者自己去研究寄存器初始化相应外设（但请注意使能）。</p>
+<p>使用ARM在线平台 <a class="reference external" href="https://os.mbed.com/platforms/ST-Nucleo-G474RE/">MBED</a> 支持NUCLEO-G474RE开发板的构建开发。</p>
+<p>源圈OS-Q通过先验证的方式，集成了更多可信赖资源 <a class="reference external" href="https://github.com/OS-Q/P216">PlatformIO STM32G4</a> 可以作为一个启动模板，作为一个开源编译体系便于多系统下开发。</p>
+</section>
+<section id="id17">
+<h3><a class="toc-backref" href="#id58">硬件平台</a><a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+<section id="nucleo-stm32g474re">
+<span id="nucleo-stm32g474"></span><h4><a class="toc-backref" href="#id59">NUCLEO-STM32G474RE</a><a class="headerlink" href="#nucleo-stm32g474re" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://detail.tmall.com/item.htm?spm=a230r.1.14.3.22c4235cqh3nCy&amp;id=610087556700&amp;ns=1&amp;abbucket=7"><img alt="../../_images/B_STM32G474.jpg" src="../../_images/B_STM32G474.jpg" /></a>
+</section>
+</section>
+<section id="id18">
+<h3><a class="toc-backref" href="#id60">外设使用</a><a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h3>
+<div class="contents local topic" id="id19">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id20" id="id65">HRTIM</a></p></li>
+<li><p><a class="reference internal" href="#pga" id="id66">PGA</a></p></li>
+</ul>
+</div>
+<section id="id20">
+<h4><a class="toc-backref" href="#id65">HRTIM</a><a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://www.st.com/content/ccc/resource/technical/document/application_note/13/d6/48/9d/11/11/4c/08/DM00121475.pdf/files/DM00121475.pdf/jcr:content/translations/zh.DM00121475.pdf"><img alt="../../_images/STM32G4HRTIM.png" src="../../_images/STM32G4HRTIM.png" /></a>
+<ol class="arabic simple">
+<li><p>HRTIM控制PWM输出</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/* --------------------- 定时器 D 初始化 ------------------------ */
+/* TIMD 计数器工作于连续模式，发生 REP 事件时使能预加载 */
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_D<span class="o">]</span>.TIMxCR <span class="o">=</span>
+HRTIM_TIMCR_CONT + HRTIM_TIMCR_PREEN + HRTIM_TIMCR_TREPU<span class="p">;</span>
+
+/* 周期设置为 100kHz， CMP1 设置为周期的 <span class="m">25</span>%， CMP2 设置为周期的 <span class="m">75</span>% */
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_D<span class="o">]</span>.PERxR <span class="o">=</span> _100KHz_PERIOD<span class="p">;</span>
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_D<span class="o">]</span>.CMP1xR <span class="o">=</span> _100KHz_PERIOD/4<span class="p">;</span>
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_D<span class="o">]</span>.CMP2xR <span class="o">=</span> <span class="o">(</span><span class="m">3</span>*_100KHz_PERIOD<span class="o">)</span>/4<span class="p">;</span>
+
+/* TD1 输出，在 TIMD 周期下置位，在 TIMD CMP1 事件下复位 */
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_D<span class="o">]</span>.SETx1R <span class="o">=</span> HRTIM_SET1R_PER<span class="p">;</span>
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_D<span class="o">]</span>.RSTx1R <span class="o">=</span> HRTIM_RST1R_CMP1<span class="p">;</span>
+
+/* TD2 输出，在 TIMD CMP2 下置位，在 TIMD 周期事件下复位 */
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_D<span class="o">]</span>.SETx2R <span class="o">=</span> HRTIM_SET2R_CMP2<span class="p">;</span>
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_D<span class="o">]</span>.RSTx2R <span class="o">=</span> HRTIM_RST2R_PER<span class="p">;</span>
+
+/* --------------------- 定时器 A 初始化 ------------------------ */
+/* TIMA 计数器工作于连续模式，预分频器 <span class="o">=</span> 010b <span class="o">(</span> 除 以 <span class="m">4</span><span class="o">)</span> */
+/* 在 REP 事件下使能预加载 */
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_A<span class="o">]</span>.TIMxCR <span class="o">=</span> HRTIM_TIMCR_CONT
++ HRTIM_TIMCR_PREEN + HRTIM_TIMCR_TREPU + HRTIM_TIMCR_CK_PSC_1<span class="p">;</span>
+
+/* 设置周期为 33kHz，且占空比为 <span class="m">25</span>% */
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_A<span class="o">]</span>.PERxR <span class="o">=</span> _33KHz_PERIOD<span class="p">;</span>
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_A<span class="o">]</span>.CMP1xR <span class="o">=</span> _33KHz_PERIOD/4<span class="p">;</span>
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_A<span class="o">]</span>.CMP2xR <span class="o">=</span> _33KHz_PERIOD/2<span class="p">;</span>
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_A<span class="o">]</span>.CMP3xR <span class="o">=</span> <span class="o">(</span><span class="m">3</span>*_33KHz_PERIOD<span class="o">)</span>/4<span class="p">;</span>
+
+/* TA1 输出，在 TIMA 周期下置位，在 TIMA CMP1 事件下复位 */
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_A<span class="o">]</span>.SETx1R <span class="o">=</span> HRTIM_SET1R_PER<span class="p">;</span>
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_A<span class="o">]</span>.RSTx1R <span class="o">=</span> HRTIM_RST1R_CMP1<span class="p">;</span>
+
+/* TA2 输出，在 TIMA CMP2 下置位，在 TIMA 周期事件下复位 */
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_A<span class="o">]</span>.SETx2R <span class="o">=</span> HRTIM_SET2R_CMP2<span class="p">;</span>
+HRTIM1-&gt;sTimerxRegs<span class="o">[</span>HRTIM_TIMERINDEX_TIMER_A<span class="o">]</span>.RSTx2R <span class="o">=</span> HRTIM_RST2R_CMP3<span class="p">;</span>
+
+/* 使能 TA1, TA2, TD1 和 TD2 输出 */
+HRTIM1-&gt;sCommonRegs.OENR <span class="o">=</span> HRTIM_OENR_TA1OEN + HRTIM_OENR_TA2OEN +
+HRTIM_OENR_TD1OEN + HRTIM_OENR_TD2OEN<span class="p">;</span>
+
+/* 初始化 HRTIM GPIO 输出 */
+GPIO_HRTIM_outputs_Config<span class="o">()</span><span class="p">;</span>
+/* 启动定时器 A 和定时器 D */
+HRTIM1-&gt;sMasterRegs.MCR <span class="o">=</span> HRTIM_MCR_TACEN + HRTIM_MCR_TDCEN<span class="p">;</span>
+</pre></div>
+</div>
+</section>
+<section id="pga">
+<span id="stm32-opamp"></span><h4><a class="toc-backref" href="#id66">PGA</a><a class="headerlink" href="#pga" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>Input voltage offset: approx. +/- 3 mV (after built-in calibration of offset)</p></li>
+<li><p>Bandwidth: approx. 13 MHz</p></li>
+<li><p>Slew rate:Normal mode: approx. 6.5 V/µs; High speed mode: approx. 45 V/µs.</p></li>
+<li><p>Output saturated voltage: less than 100 mV (rai-to-rail)</p></li>
+<li><p>Gains: Positive +1, +2, +4, +8, +16, +32, +64; Negative -1, -3, -7, -15, -31, -63</p></li>
+<li><p>Typical gain error: 2%.</p></li>
+<li><p>Open loop gain: ~ 95 dB</p></li>
+<li><p>Wakeup time: 3 µs.</p></li>
+</ul>
+<a class="reference external image-reference" href="https://www.st.com/content/ccc/resource/technical/document/application_note/group1/71/84/78/aa/6c/d5/4f/16/DM00605707/files/DM00605707.pdf/jcr:content/translations/en.DM00605707.pdf"><img alt="../../_images/STM32G4OPAMP.png" src="../../_images/STM32G4OPAMP.png" /></a>
+</section>
+</section>
+<section id="id21">
+<h3><a class="toc-backref" href="#id63">参考方案</a><a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+<section id="kw">
+<h4><a class="toc-backref" href="#id64">15KW三相双向充电桩</a><a class="headerlink" href="#kw" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://baijiahao.baidu.com/s?id=1699331101062214851&amp;wfr=spider&amp;for=pc"><img alt="../../_images/STM32G474_S1.png" src="../../_images/STM32G474_S1.png" /></a>
+<p>核心技术优势</p>
+<ul class="simple">
+<li><p>三相维也纳，可以实现AC/DC DC/AC双相逆变，主要用于大功率充电桩等前级应用。</p></li>
+<li><p>ST新一代数字电源控制芯片STM32G474，实现纯数字控制，灵活配置。</p></li>
+<li><p>方案尺寸小，频率高达100KHz。</p></li>
+<li><p>控制芯片可以输出12路高精度PWM，频率可以配置2-3级拓扑。</p></li>
+</ul>
+<p>方案规格</p>
+<ul class="simple">
+<li><p>三相三电平双向AC/DC转换。</p></li>
+<li><p>AC交流电压：380±10%Vac，DC直流电压：800Vdc。</p></li>
+<li><p>AC to DC模式：PF&gt; 0.99，支持软启动，抑制浪涌电流。</p></li>
+<li><p>整机效率高达99%。</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="id22">
+<h2><a class="toc-backref" href="#id49">Xin总结</a><a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id23">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id24" id="id67">能力构建</a></p></li>
+<li><p><a class="reference internal" href="#id25" id="id68">要点提示</a></p></li>
+<li><p><a class="reference internal" href="#id26" id="id69">问题整理</a></p></li>
+</ul>
+</div>
+<section id="id24">
+<h3><a class="toc-backref" href="#id67">能力构建</a><a class="headerlink" href="#id24" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id25">
+<h3><a class="toc-backref" href="#id68">要点提示</a><a class="headerlink" href="#id25" title="Permalink to this heading">¶</a></h3>
+<p>浮点运算一般需要在运算结果前写上（float）或者标注f，否则一律会被认为双精度，将会大大增加运算时间。</p>
+<p>除法和开方的运算周期过长，如无必要，尽量不要用，尽量将其转化为运算周期较少的加减乘运算</p>
+</section>
+<section id="id26">
+<h3><a class="toc-backref" href="#id69">问题整理</a><a class="headerlink" href="#id26" title="Permalink to this heading">¶</a></h3>
+<p>不管选用内部时钟源还是外部晶振，只要配置成170MHz,芯片肯定会复位。经过反复测试验证，发现设置PLL所产生的时钟只有在不高于80MHz时，芯片才能正常运行。</p>
+<p>主频的提高往往意味着功耗的增大或噪声及干扰方面可能加剧。于是试图从系统供电能力、电源稳定度、时钟稳定性方面查找原因，发现芯片的VDDA脚虚焊了，重新处理后芯片于170MHz运行稳健。</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="STM32G431.html" class="btn btn-neutral float-left" title="STM32G431" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../t/STM32H7B0.html" class="btn btn-neutral float-right" title="STM32H7B0" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/st/m/STM32G474.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/st/m/STM32G474.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

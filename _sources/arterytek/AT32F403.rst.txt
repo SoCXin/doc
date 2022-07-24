@@ -1,0 +1,70 @@
+
+.. _at32f403:
+
+AT32F403
+===============
+
+`标签 <https://github.com/SoCXin/AT32F403>`_ : ``Cortex-M4`` ``240MHz`` ``-40~105°C``
+
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+
+:ref:`arterytek` :ref:`cortex_m4` 单核 MCU
+
+规格参数
+~~~~~~~~~~~
+
+`AT32F403A <https://www.arterytek.com/cn/product/AT32F403A.jsp#Feature>`_
+
+
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：2.4V - 3.6V
+* 工作温度：-40°C - 105°C
+
+特征参数
+^^^^^^^^^^^
+
+* 240 MHz :ref:`cortex_m4`
+* 16MB SPI Flash 扩展
+* 4 x USART + 4 x UART
+* 2 x SDIO
+* 2 x CAN 2.0B
+* USB 2.0 FS
+* 2 x I2C + 2 x SPI
+* 15ch ADC（12bit 2MSPS）
+* ERTC (1ppm的分辨率)
+* 2 x COMP (轨到轨比较器)
+* sLib安全库 (Security Library)
+
+
+
+芯片架构
+~~~~~~~~~~~
+
+
+时钟体系
+^^^^^^^^^^^
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
+
+

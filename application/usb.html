@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>USB &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/application/usb.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="RK837" href="../miscellaneous/RK837.html" />
+    <link rel="prev" title="Ethernet" href="ethernet.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">功能领域</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ai.html">边缘计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foc.html">实时控制</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hmi.html">人机交互</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adc.html">信号处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="audio.html">音频处理</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#id2">通信连接</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#wireless">Wireless</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#wired">Wired</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="ethernet.html">ethernet</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">USB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plc.html">PLC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#uart">UART</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#sdio">SDIO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#can">CAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#i2c">I2C</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#spi">SPI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor.html">芯片设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Application</a> &raquo;</li>
+      <li>USB</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/application/usb.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="usb">
+<span id="id1"></span><h1>USB<a class="headerlink" href="#usb" title="Permalink to this heading">¶</a></h1>
+<p>USB使用一根屏蔽的4线电缆与网络上的设备进行互联。数据传输通过一个差分双绞线进行，这两根线分别标为D+和D-，另外两根线是Vcc和Ground，其中Vcc向USB设备供电。</p>
+<ul class="simple">
+<li><p>全速模式是在D+线上上拉1.5K的电阻。</p></li>
+<li><p>低速模式是在D-线上上拉1.5K的电阻。</p></li>
+</ul>
+<p>使用USB电源的设备称为总线供电设备，而使用自己外部电源的设备叫做自供电设备。</p>
+<p>USB设备有两种供电方式</p>
+<ul class="simple">
+<li><p>自供电设备：设备从外部电源获取工作电压</p></li>
+<li><p>总线供电设备：设备从VBUS(5v) 取电对总线供电设备，区分低功耗和高功耗USB设备 低功耗总线供电设备：最大功耗不超过100mA 高功耗总线供电设备： 枚举时最大功耗不超过100mA，枚举完成配置结束后功耗不超过500mA 设备在枚举过程中，通过设备的配置描述符向主机报告它的供电配置（自供电/总线供电）以及它的功耗要求</p></li>
+</ul>
+<p>由于USB是主从模式的结构，设备与设备之间、主机与主机之间不能互连，为解决这个问题，扩大USB的应用范围，出现了USB OTG。</p>
+<section id="usb-hs">
+<span id="id2"></span><h2>USB HS<a class="headerlink" href="#usb-hs" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">480</span> <span class="pre">Mbps</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#usb-hs"><span class="std std-ref">USB HS</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p>SRAM/ROM</p></th>
+<th class="head"><p>USB</p></th>
+<th class="head"><p><a class="reference internal" href="../wch/index.html#wch-usb-hs"><span class="std std-ref">USB-HS</span></a></p></th>
+<th class="head"><p>PHY</p></th>
+<th class="head"><p>MAC</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../wch/CH563.html#ch563"><span class="std std-ref">CH563</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/classic.html#arm7"><span class="std std-ref">ARM7</span></a></p></td>
+<td><p>64KB/224KB</p></td>
+<td><p>1</p></td>
+<td><p>480Mbps</p></td>
+<td><p>100Mbps</p></td>
+<td><p>100Mbps</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../wch/CH32F207.html#ch32f207"><span class="std std-ref">CH32F207</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM3.html#cortex-m3"><span class="std std-ref">Cortex-M3</span></a></p></td>
+<td><p>64KB/256KB</p></td>
+<td><p>2</p></td>
+<td><p>480Mbps</p></td>
+<td><p>10Mbps</p></td>
+<td><p>1Gbps</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../wch/CH32V307.html#ch32v307"><span class="std std-ref">CH32V307</span></a></p></td>
+<td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv4a"><span class="std std-ref">RISC-V4A</span></a></p></td>
+<td><p>64KB/256KB</p></td>
+<td><p>2</p></td>
+<td><p>480Mbps</p></td>
+<td><p>10Mbps</p></td>
+<td><p>1Gbps</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/AIC8800M.html#aic8800"><span class="std std-ref">AIC8800M</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/HPM6750.html#hpm6750"><span class="std std-ref">HPM6750</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../high/HPM6350.html#hpm6350"><span class="std std-ref">HPM6350</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="usb-pd">
+<span id="id3"></span><h2>USB PD<a class="headerlink" href="#usb-pd" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">USB-PD</span></code> <code class="docutils literal notranslate"><span class="pre">PD3.0/2.0</span></code> <code class="docutils literal notranslate"><span class="pre">BC1.2</span></code></p>
+<p><a class="reference external" href="https://github.com/stops-top/USB-PD">USB-PD</a> (USB Power Delivery)功率传输协议，是目前主流的快充协议之一，USB功率2013年的新标准名为USBPD，USB PD 协议基于USB3.1，是USB3.1 中即type-c端口后提出的功率传输概念。USBPD透过USB电缆和连接器增加电力输送，扩展USB应用中的电缆总线供电能力。该规范可实现更高的电压和电流，输送的功率最高可达100瓦，并可以自由的改变电力的输送方向。</p>
+<section id="id5">
+<h3>独立器件<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#usb-pd"><span class="std std-ref">USB PD</span></a></p></th>
+<th class="head"><p>INPUT</p></th>
+<th class="head"><p>TYPE</p></th>
+<th class="head"><p>POWER</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="http://www.wch.cn/products/CH236.html">CH236</a></p></td>
+<td><p>5-20V</p></td>
+<td><p>PD3.0/BC1.2</p></td>
+<td><p>100W</p></td>
+<td><p>QFN20/QFN16</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="http://www.wch.cn/products/CH234.html">CH234</a></p></td>
+<td><p>5-12V</p></td>
+<td><p>PD3.0/BC1.2</p></td>
+<td><p>27W</p></td>
+<td><p>ESSOP10</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="soc">
+<h3>SoC芯片<a class="headerlink" href="#soc" title="Permalink to this heading">¶</a></h3>
+<p>USB PD的通信是将协议层的消息调制成24MHZ的FSK信号并耦合到VBUS上或者从VBUS上获得FSK信号来实现手机和充电器通信的过程。</p>
+<p>将24MHz的FSK通过cAC-Coupling耦合电容耦合到VBUS上的直流电平上的，而为了使24MHz的FSK不对PowerSupply或者USBHost的VBUS直流电压产生影响，在回路中同时添加了zIsolation电感组成的低通滤波器过滤掉FSK信号。</p>
+<ul class="simple">
+<li><p>1）USB OTG的PHY监控VBUS电压，如果有VBUS的5V电压存在并且检测到OTGID脚是1K下拉电阻（不是OTGHost模式，OTGHost模式的ID电阻是小于1K的），就说明该电缆是支持USBPD的；</p></li>
+<li><p>2）USB OTG做正常BCSV1.2规范的充电器探测并且启动USBPD设备策略管理器，策略管理器监控VBUS的直流电平上是否耦合了FSK信号，并且解码消息得出是CapabilitiesSource消息，就根据USBPD规范解析该消息得出USBPD充电器所支持的所有电压和电流列表对；</p></li>
+<li><p>3）手机根据用户的配置从CapabilitiesSource消息中选择一个电压和电流对，并将电压和电流对加在Request消息的payload上，然后策略管理器将FSK信号耦合到VBUS直流电平上；</p></li>
+<li><p>4）充电器解码FSK信号并发出Accept消息给手机，同时调整PowerSupply的直流电压和电流输出；</p></li>
+<li><p>5）手机收到Accept消息，调整ChargerIC的充电电压和电流；</p></li>
+<li><p>6）手机在充电过程中可以动态发送Request消息来请求充电器改变输出电压和电流，从而实现快速充电的过程。</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#usb-pd"><span class="std std-ref">USB PD</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p>RAM</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>UART</p></th>
+<th class="head"><p>GPIO</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../wch/CH549.html#ch549"><span class="std std-ref">CH549</span></a></p></td>
+<td></td>
+<td><p>1K</p></td>
+<td><p>8K</p></td>
+<td><p>2</p></td>
+<td><p>18</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../wch/CH552.html#ch552"><span class="std std-ref">CH552</span></a></p></td>
+<td></td>
+<td><p>1K</p></td>
+<td><p>8K</p></td>
+<td><p>2</p></td>
+<td><p>18</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/RK837.html">RK837</a></li>
+</ul>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ethernet.html" class="btn btn-neutral float-left" title="Ethernet" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../miscellaneous/RK837.html" class="btn btn-neutral float-right" title="RK837" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/application/usb.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/application/usb.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

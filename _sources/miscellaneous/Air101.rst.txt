@@ -1,0 +1,88 @@
+
+.. _air101:
+
+Air101
+===============
+
+`标签 <https://github.com/SoCXin/Air101>`_ : ``OpenLuat`` ``240MHz`` ``UART``
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 发布价格：￥6.66
+* 工作温度：-40°C to +125°C
+* 处理性能：
+* RAM容量：288KB
+* Flash容量：1MB/2MB
+* 封装规格：QFN32 (4X4mm)
+
+
+特征参数
+^^^^^^^^^^^
+
+* 240MHz
+* 基于Lua 5.3.6提供95%的原生库支持；
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：3.0 to 3.6 V
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~
+
+
+型号对比
+~~~~~~~~~
+
+.. _air103:
+
+Air103
+^^^^^^^^^^^^
+
+
+* RAM容量：288KB
+* Flash容量：2MB
+* 封装规格：QFN56 (6X6mm)
+
+.. image:: ./images/B_Air103.png
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.19.6fa22e49dS8gPj&id=661796285257&ns=1&abbucket=13#detail
+
+.. _air105:
+
+Air105
+^^^^^^^^^^^^
+
+* RAM容量：288KB
+* Flash容量：2MB
+* 封装规格：QFN88
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+
+.. image:: ./images/B_Air101.png
+    :target: https://doc.openluat.com/article/3508

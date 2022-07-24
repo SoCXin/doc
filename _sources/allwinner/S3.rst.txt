@@ -1,0 +1,79 @@
+
+.. _S3:
+
+S3
+=============
+
+`GitHub <https://github.com/SoCXin/S3>`_ : ``Allwinner`` ``Cortex-A7`` ``1.2GHz`` ``ISP``
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. image:: ./images/S3.png
+    :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=78
+
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：:ref:`level7`
+* 封装规格：FBGA234 (11*11*0.65mm)
+* 运行环境：-40°C to 85°C
+* RAM容量：64 MB (16bit DDR3)
+* Flash容量：
+
+
+特征参数
+^^^^^^^^^^^
+
+* 1.2GHz :ref:`cortex_a7`
+* Integrated ISP up to 8M pixels
+* Integrated 92dB audio codec
+* Supports two ADC channels and two DAC channels
+* Supports 3 MIC-in, a stereo Line-in, a headphone output and a stereo line-out output
+
+芯片架构
+~~~~~~~~~~~
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：2.0 to 3.6 V
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+系列对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+

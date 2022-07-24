@@ -1,0 +1,149 @@
+
+.. _stm32f030:
+
+STM32F030
+===============
+
+`GitHub <https://github.com/SoCXin/STM32F030>`_ : ``Cortex-M0`` ``48MHz``
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+:ref:`low` , :ref:`ref030` 经典范式产品
+
+.. image:: ./images/STM32F030.jpg
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f0-series/stm32f0x0-value-line.html
+
+规格参数
+~~~~~~~~~~~
+
+基本信息
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：180 nm
+* 供货周期：
+* 处理性能：106 :ref:`CoreMark` , :ref:`level1`
+* 封装规格：LQFP64/LQFP48/LQFP32/ :ref:`stm32_tssop20`
+* 运行环境：-40°C to 85°C
+* RAM容量：4/8 KB
+* Flash容量：16/32/64 KB
+
+
+.. image:: ./images/STM32F030p.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f0-series/stm32f0x0-value-line.html
+
+
+特征参数
+^^^^^^^^^^^
+
+* 48 MHz :ref:`cortex_m0`
+* 12-bit ADC (1.0 MSps)
+
+
+
+芯片架构
+~~~~~~~~~~~
+
+.. image:: ./images/STM32F030s.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f0-series/stm32f0x0-value-line.html
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压: 2.4 to 3.6 V
+* 运行功耗: 100μA/MHz
+
+.. note::
+    由于 :ref:`stm32f030` 的定位，对比的对象是8/16位MCU，重点列出相关差异
+
+
+.. _stm32_tssop20:
+
+TSSOP20
+^^^^^^^^^^^
+
+* 封装尺寸(STM32F030F4)：6.5 x 4.4 mm, 0.65mm pitch
+
+.. image:: ./images/STM32F030p20.png
+
+.. hint::
+    TSSOP20封装兼容产品较多，例如 :ref:`at32f421` :ref:`at32f421_tssop20` 还有众多软硬件兼容款 :ref:`stm32f030_pin2pin`
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~
+
+:ref:`at32f421`
+
+.. _stm32f030_pin2pin:
+
+PIN2PIN
+^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`vendor`
+      - :ref:`frequency`
+      - RAM+ROM
+      - Series
+      - UART/SPI/I2C
+      - GPIO
+    * - :ref:`stm32f030`
+      - 48 MHz
+      - 4/8+16/32/64
+      - 7
+      - 1/1/1
+      - 20/32/48/64
+    * - :ref:`at32f421`
+      - 120 MHz
+      - 8/16+16/32/64
+      - 6
+      - 2/2/2
+      - 20/28/32/48
+    * - CKS32F030
+      - 48 MHz
+      - 4/8+16/32/64
+      - 7
+      - 1/1/1
+      - 20/32/48/64
+    * - HK32F030
+      - 72 MHz
+      - 4/8+16/32/64
+      - 7
+      - 1/1/1
+      - 20/32/48/64
+    * - :ref:`mm32f031`
+      - 72 MHz
+      -
+      -
+      -
+      -
+
+.. note::
+    PIN to PIN 软硬件兼容，主要指封装对应的管脚定义和相关的外设寄存器地址兼容，更多对比 :ref:`ref030`
+
+系列对比
+~~~~~~~~~
+
+相对升级版 :ref:`stm32g030` 在性能、外设、价格全面落后。
+
+
+型号对比
+~~~~~~~~~
+
+.. image:: ./images/STM32F030l.png
+
+.. warning::
+    作为简单应用的 :ref:`stm32_tssop20` 只有一个型号STM32F030F4，只有一个串口是非常大的限制

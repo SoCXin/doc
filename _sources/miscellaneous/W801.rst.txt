@@ -1,0 +1,181 @@
+.. _w801:
+
+W801
+===============
+
+`标签 <https://github.com/SoCXin/W801>`_ : ``XT804`` ``240MHz`` ``UART`` ``Tee`` ``BLE4.2`` ``Wi-Fi`` ``QFN56``
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+IoT MCU芯片，支持平头哥CDK开发环境
+
+.. image:: ./images/W801.png
+    :target: http://r0.hlktech.com/download/HLK-W801/1/W801%E8%8A%AF%E7%89%87%E8%A7%84%E6%A0%BC%E4%B9%A6V1.0.pdf
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 运行环境：-40°C to 125°C
+* 封装规格：QFN56 (6x6mm)
+* SRAM容量：288 KB (PSRAM 64MB)
+* Flash容量：2 MB
+
+特征参数
+^^^^^^^^^^^
+
+* 240MHz :ref:`xt804` 内置 DSP、浮点运算单元与安全引擎
+* WiFi 2.4GHz
+* BT/BLE v4.2
+* 6x UART
+* 4x 16 bit :ref:`sigma_delta` ADC(1KSPS)
+* 15x Touch Sensor
+
+
+芯片架构
+~~~~~~~~~~~
+
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：3.0 to 3.6 V
+* 功耗范围：
+
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wifi`
+      - :ref:`CoreMark`
+      - SRAM/ROM
+      - Characteristics
+      - UART/SPI/SDIO
+      - Package
+    * - :ref:`w801`
+      -
+      - 288KB/2MB
+      - 16-bit ADC
+      - 6/2/1
+      - QFN56
+    * - :ref:`esp32s3`
+      - 1181.6
+      - 512KB/4MB
+      - USB1.1
+      - 3/2/1
+      - :ref:`esp_qfn56`
+    * - :ref:`esp32`
+      - 994.26
+      - 520KB/4MB
+      - ETH-MAC
+      - 3/2/1
+      - :ref:`esp_qfn48`
+
+
+型号对比
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`wifi`
+      - :ref:`architecture`
+      - :ref:`CoreMark`
+      - SRAM/ROM
+      - :ref:`wireless`
+      - UART/SPI/SDIO
+      - Package
+    * - :ref:`w800`
+      - :ref:`xt804`
+      -
+      - 288KB/2 MB
+      - WiFi&BLE
+      - 6/2/1
+      - QFN32
+    * - :ref:`w801`
+      - :ref:`xt804`
+      -
+      - 288KB/2 MB
+      - WiFi&BLE
+      - 6/2/1
+      - QFN56
+    * - :ref:`w806`
+      - :ref:`xt804`
+      -
+      - 288KB/1 MB
+      -
+      - 6/2/1
+      - QFN56
+
+.. note::
+    W801是联盛德在 W806 和 W800 基础上的一次技术升级
+
+
+.. _w800:
+
+W800
+^^^^^^^^^^^
+
+从功能上来看，W801与W800的主要区别在于，W801的接口和管脚更加丰富。
+
+W801不仅将W800原有的UART、Touch Sensor、ADC等接口的数量增加，而且新增了主/从SPI接口、PSRAM扩展接口、LCD控制器接口和7816接口。
+
+
+.. _w806:
+
+W806
+^^^^^^^^^^^
+
+联盛德W801与W806在功能上的主要区别是，W801在W806的基础上新增了WiFi+蓝牙功能。智能化时代大背景下，WIFI模块成为了很多智能化终端产品的标配。
+
+而兼具了蓝牙传输功能的WIFI+蓝牙二合一模块芯片，使得产品开发可以拥有更多方向和更多功能，如让智能家居兼具APP和语音双控制等等，从而让产品自身更具有市场竞争力。
+
+支持WIFI低功耗节能模式，功耗低，待机低于10uA。
+
+* 240MHz :ref:`xt804` 内置 DSP、浮点运算单元与安全引擎
+* 6x UART
+* 4ch 16-bit :ref:`sigma_delta` ADC(1KSPS)
+* 内置 Tee 安全引擎
+* 15x Touch Sensor
+* 集成 SASC/TIPC，内存及内部模块/接口可配置安全属性，防止非安全代码访问
+
+
+
+`SDK <https://github.com/IOsetting/wm-sdk-w806/>`_
+
+芯片相关资料下载链接：https://h.hlktech.com/Mobile/download/fdetail/143.html
+
+
+.. note::
+    W806作为单纯的MCU，主要对比品牌为传统MCU厂商
+
+.. image:: ./images/W806.png
+    :target: https://h.hlktech.com/Mobile/download/fdetail/143.html
+
+
+版本对比
+~~~~~~~~~
+

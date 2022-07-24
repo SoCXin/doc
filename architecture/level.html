@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>性能 &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/architecture/level.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="片上资源" href="ip.html" />
+    <link rel="prev" title="MCS-51" href="MCS51.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../application/index.html">功能领域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">内核架构</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">运算性能</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#level1">Level1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#level2">Level2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#level3">Level3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#level4">Level4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#level5">Level5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#level6">Level6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#level7">Level7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#level8">Level8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#level9">Level9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#npu">NPU</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor.html">芯片设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>性能</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/architecture/level.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="level">
+<span id="id1"></span><h1>性能<a class="headerlink" href="#level" title="Permalink to this heading">¶</a></h1>
+<p><a class="reference external" href="https://github.com/SoCXin/Level">Level Mark</a> : <a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a>/<a class="reference internal" href="index.html#coremark"><span class="std std-ref">CoreMark</span></a>/<a class="reference internal" href="index.html#geekbench"><span class="std std-ref">Geekbench</span></a></p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Level1-3主要用于控制，Level4-6可以部署算法，Level7-9为高性能计算</p>
+</div>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#level1" id="id11">Level1</a></p></li>
+<li><p><a class="reference internal" href="#level2" id="id12">Level2</a></p></li>
+<li><p><a class="reference internal" href="#level3" id="id13">Level3</a></p></li>
+<li><p><a class="reference internal" href="#level4" id="id14">Level4</a></p></li>
+<li><p><a class="reference internal" href="#level5" id="id15">Level5</a></p></li>
+<li><p><a class="reference internal" href="#level6" id="id16">Level6</a></p></li>
+<li><p><a class="reference internal" href="#level7" id="id17">Level7</a></p></li>
+<li><p><a class="reference internal" href="#level8" id="id18">Level8</a></p></li>
+<li><p><a class="reference internal" href="#level9" id="id19">Level9</a></p></li>
+<li><p><a class="reference internal" href="#npu" id="id20">NPU</a></p></li>
+</ul>
+</div>
+<section id="level1">
+<span id="id2"></span><h2><a class="toc-backref" href="#id11">Level1</a><a class="headerlink" href="#level1" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Frequency</span> <span class="pre">≤</span> <span class="pre">60MHz</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../index.html#xin"><span class="std std-ref">Xindex</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p>SRAM</p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#power"><span class="std std-ref">Power</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#level1"><span class="std std-ref">Level1</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../wch/CH549.html#ch549"><span class="std std-ref">CH549</span></a></p></td>
+<td><p><a class="reference internal" href="MCS51.html#mcs51"><span class="std std-ref">MCS-51</span></a></p></td>
+<td></td>
+<td><p>48(MHz)</p></td>
+<td></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="level2">
+<span id="id3"></span><h2><a class="toc-backref" href="#id12">Level2</a><a class="headerlink" href="#level2" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Frequency</span> <span class="pre">≤</span> <span class="pre">120MHz</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../index.html#xin"><span class="std std-ref">Xindex</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p>SRAM</p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#power"><span class="std std-ref">Power</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#level2"><span class="std std-ref">Level2</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../gigadevice/GD32V103.html#gd32v103"><span class="std std-ref">GD32V103</span></a></p></td>
+<td><p><a class="reference internal" href="riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
+<td></td>
+<td><p>108(MHz)</p></td>
+<td></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="level3">
+<span id="id4"></span><h2><a class="toc-backref" href="#id13">Level3</a><a class="headerlink" href="#level3" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Frequency</span> <span class="pre">≤</span> <span class="pre">240MHz</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../index.html#xin"><span class="std std-ref">Xindex</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#power"><span class="std std-ref">Power</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#level3"><span class="std std-ref">Level3</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32U575.html#stm32u575"><span class="std std-ref">STM32U575</span></a></p></td>
+<td><p><a class="reference internal" href="cortexM33.html#cortex-m33"><span class="std std-ref">Cortex-M33</span></a></p></td>
+<td><p>651</p></td>
+<td><p>160(MHz)</p></td>
+<td></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../st/m/STM32F429.html#stm32f429"><span class="std std-ref">STM32F429</span></a></p></td>
+<td><p><a class="reference internal" href="cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
+<td><p>608</p></td>
+<td><p>180(MHz)</p></td>
+<td></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32F407.html#stm32f407"><span class="std std-ref">STM32F407</span></a></p></td>
+<td><p><a class="reference internal" href="cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
+<td><p>566</p></td>
+<td><p>168(MHz)</p></td>
+<td></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../st/m/STM32G474.html#stm32g474"><span class="std std-ref">STM32G474</span></a></p></td>
+<td><p><a class="reference internal" href="cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
+<td><p>550</p></td>
+<td><p>170(MHz)</p></td>
+<td></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../miscellaneous/RP2040.html#rp2040"><span class="std std-ref">RP2040</span></a></p></td>
+<td><p><a class="reference internal" href="cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></td>
+<td><p>425(2)</p></td>
+<td><p>133(MHz)</p></td>
+<td></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../espressif/ESP32-C3.html#esp32c3"><span class="std std-ref">ESP32C3</span></a></p></td>
+<td><p><a class="reference internal" href="../espressif/index.html#esp-rv32"><span class="std std-ref">RISC-V</span></a></p></td>
+<td><p>407</p></td>
+<td><p>160(MHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="level4">
+<span id="id5"></span><h2><a class="toc-backref" href="#id14">Level4</a><a class="headerlink" href="#level4" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">CoreMark</span> <span class="pre">≤</span> <span class="pre">2000</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../index.html#xin"><span class="std std-ref">Xindex</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#power"><span class="std std-ref">Power</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../foundry.html#foundry"><span class="std std-ref">Foundry</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/t/STM32H7B0.html#stm32h7b0"><span class="std std-ref">STM32H7B0</span></a></p></td>
+<td><p><a class="reference internal" href="cortexM7.html#cortex-m7"><span class="std std-ref">Cortex-M7</span></a></p></td>
+<td><p>1414</p></td>
+<td><p>280(MHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../espressif/ESP32-S3.html#esp32s3"><span class="std std-ref">ESP32S3</span></a></p></td>
+<td><p><a class="reference internal" href="../espressif/index.html#xtensa-lx7"><span class="std std-ref">Xtensa LX7</span></a></p></td>
+<td><p>1182 (2)</p></td>
+<td><p>240(MHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../espressif/ESP32.html#esp32"><span class="std std-ref">ESP32</span></a></p></td>
+<td><p><a class="reference internal" href="../espressif/index.html#xtensa-lx6"><span class="std std-ref">Xtensa LX6</span></a></p></td>
+<td><p>994 (2)</p></td>
+<td><p>240(MHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../arterytek/AT32F437.html#at32f437"><span class="std std-ref">AT32F437</span></a></p></td>
+<td><p><a class="reference internal" href="cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
+<td><p>630</p></td>
+<td><p>288(MHz)</p></td>
+<td></td>
+<td><p>55nm</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../espressif/ESP32-S2.html#esp32s2"><span class="std std-ref">ESP32S2</span></a></p></td>
+<td><p><a class="reference internal" href="../espressif/index.html#xtensa-lx7"><span class="std std-ref">Xtensa LX7</span></a></p></td>
+<td><p>614</p></td>
+<td><p>240(MHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/W801.html#w801"><span class="std std-ref">W801</span></a></p></td>
+<td><p><a class="reference internal" href="riscv.html#xt804"><span class="std std-ref">XT804</span></a></p></td>
+<td></td>
+<td><p>240(MHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="level5">
+<span id="id6"></span><h2><a class="toc-backref" href="#id15">Level5</a><a class="headerlink" href="#level5" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">CoreMark</span> <span class="pre">≤</span> <span class="pre">5000</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../index.html#xin"><span class="std std-ref">Xindex</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#power"><span class="std std-ref">Power</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#level5"><span class="std std-ref">Level5</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/HPM6350.html#hpm6350"><span class="std std-ref">HPM6350</span></a></p></td>
+<td><p><a class="reference internal" href="riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
+<td><p>3390</p></td>
+<td><p>648(MHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../st/t/STM32H745.html#stm32h745"><span class="std std-ref">STM32H745</span></a></p></td>
+<td><p><a class="reference internal" href="cortexM7.html#cortex-m7"><span class="std std-ref">Cortex-M7</span></a></p></td>
+<td><p>3224 (2)</p></td>
+<td><p>480(MHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../nxp/RT1060.html#rt1060"><span class="std std-ref">RT1060</span></a></p></td>
+<td><p><a class="reference internal" href="cortexM7.html#cortex-m7"><span class="std std-ref">Cortex-M7</span></a></p></td>
+<td><p>3020</p></td>
+<td><p>600(MHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../st/t/STM32H730.html#stm32h730"><span class="std std-ref">STM32H730</span></a></p></td>
+<td><p><a class="reference internal" href="cortexM7.html#cortex-m7"><span class="std std-ref">Cortex-M7</span></a></p></td>
+<td><p>2778</p></td>
+<td><p>550(MHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/t/STM32H750.html#stm32h750"><span class="std std-ref">STM32H750</span></a></p></td>
+<td><p><a class="reference internal" href="cortexM7.html#cortex-m7"><span class="std std-ref">Cortex-M7</span></a></p></td>
+<td><p>2424</p></td>
+<td><p>480(MHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="level6">
+<span id="id7"></span><h2><a class="toc-backref" href="#id16">Level6</a><a class="headerlink" href="#level6" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">CoreMark</span> <span class="pre">&gt;</span> <span class="pre">5000</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../index.html#xin"><span class="std std-ref">Xindex</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#power"><span class="std std-ref">Power</span></a></p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/HPM6750.html#hpm6750"><span class="std std-ref">HPM6750</span></a></p></td>
+<td><p><a class="reference internal" href="riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
+<td><p>9220(2)</p></td>
+<td><p>816(MHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../nxp/RT1170.html#rt1170"><span class="std std-ref">RT1170</span></a></p></td>
+<td><p><a class="reference internal" href="cortexM7.html#cortex-m7"><span class="std std-ref">Cortex-M7</span></a></p></td>
+<td><p>6468(2)</p></td>
+<td><p>1.0(GHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../allwinner/V831.html#v831"><span class="std std-ref">V831</span></a></p></td>
+<td><p><a class="reference internal" href="cortexA7.html#cortex-a7"><span class="std std-ref">Cortex-A7</span></a></p></td>
+<td><p>5000+(2)</p></td>
+<td><p>800(MHz)</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="level7">
+<span id="id8"></span><h2><a class="toc-backref" href="#id17">Level7</a><a class="headerlink" href="#level7" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Geekbench</span> <span class="pre">&gt;</span> <span class="pre">1000</span></code></p>
+</section>
+<section id="level8">
+<span id="id9"></span><h2><a class="toc-backref" href="#id18">Level8</a><a class="headerlink" href="#level8" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Geekbench</span> <span class="pre">&gt;</span> <span class="pre">2000</span></code></p>
+</section>
+<section id="level9">
+<span id="id10"></span><h2><a class="toc-backref" href="#id19">Level9</a><a class="headerlink" href="#level9" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Geekbench</span> <span class="pre">&gt;</span> <span class="pre">4000</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#level9"><span class="std std-ref">Level9</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#geekbench"><span class="std std-ref">Geekbench</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#power"><span class="std std-ref">Power</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../foundry.html#foundry"><span class="std std-ref">Foundry</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>M1</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>A15</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>8Gen1</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="npu">
+<span id="level-npu"></span><h2><a class="toc-backref" href="#id20">NPU</a><a class="headerlink" href="#npu" title="Permalink to this heading">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#level-npu"><span class="std std-ref">NPU</span></a></p></th>
+<th class="head"><p>L1(≤200GOPS)</p></th>
+<th class="head"><p>L2(≤500GOPS)</p></th>
+<th class="head"><p>L3(≤1 TOPS)</p></th>
+<th class="head"><p>L4(≤4 TOPS)</p></th>
+<th class="head"><p>L5(≤9 TOPS)</p></th>
+<th class="head"><p>L6(Above)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../allwinner/V831.html#v831"><span class="std std-ref">V831</span></a></p></td>
+<td><p>200G</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../high/EAI80.html#eai80"><span class="std std-ref">EAI80</span></a></p></td>
+<td></td>
+<td><p>300G</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<img alt="../_images/npu.jpg" src="../_images/npu.jpg" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="MCS51.html" class="btn btn-neutral float-left" title="MCS-51" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ip.html" class="btn btn-neutral float-right" title="片上资源" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/architecture/level.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/architecture/level.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

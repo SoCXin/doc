@@ -1,0 +1,108 @@
+
+.. _hi3861:
+
+Hi3861
+===============
+
+`GitHub <https://github.com/SoCXin/Hi3861>`_ : ``RISC-V`` ``160MHz`` ``BLE`` ``WiFi`` ``QFN32`` ``HarmonyOS`` ``Hi3861V100``
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+
+.. image:: ./images/Hi3861.png
+    :target: https://www.hisilicon.com/cn/products/smart-iot/ShortRangeWirelessIOT/Hi3861LV100
+
+
+规格参数
+~~~~~~~~~~~
+
+Hi3861V100芯片集成高性能32bit微处理器、硬件安全引擎以及丰富的外设接口，外设接口包括SPI、UART、I2C、PWM、 GPIO和多路ADC，同时支持高速SDIO2.0 Slave接口，最高时钟可达50MHz；
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 运行环境：-40°C to 85°C
+* 封装规格：QFN32
+* RAM容量：352 KB
+* ROM容量：288KB KB
+* Flash容量：2 MB
+
+特征参数
+^^^^^^^^^^^
+
+* 160 MHz :ref:`riscv`
+* 支持 IEEE802.11b/g/n 单天线所有的数据速率
+* 支持最大速率：72.2Mbps@HT20 MCS7
+* 支持标准 20MHz 带宽和 5M/10M 窄带宽
+* 支持 STBC
+* 支持 Short-GI
+
+芯片架构
+~~~~~~~~~~~
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：2.0 to 3.6 V
+
+连接能力
+~~~~~~~~~~~
+
+Wi-Fi
+^^^^^^^^^^^
+
+Hi3861V100是一款高度集成的2.4GHz SoC WiFi芯片，集成IEEE 802.11b/g/n基带和RF电路，RF电路包括功率放大器PA、低 噪声放大器LNA、RF balun、天线开关以及电源管理等模块；
+
+Hi3861V100 WiFi基带支持正交频分复用（OFDM）技术，并向下兼容直接序列扩频（DSSS）和补码键控（CCK）技术，支 持IEEE 802.11 b/g/n协议的各种数据速率。
+
+支持20MHz标准带宽和5MHz/10MHz窄带宽，提供最大72.2Mbit/s 物理层速率。
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
+
+* Hi3881  机顶盒
+* Hi3861  智能家居场景，白色家电，小家电等
+* Hi3861L 低功耗智能家居
+
+型号对比
+~~~~~~~~~
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+
+BearPi-HM_Nano
+^^^^^^^^^^^^^^^^^
+
+.. image:: ./images/B_Hi3861.jpg
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.4.65352042pbNUuk&id=633296694816&ns=1&abbucket=7#detail
+
+`hm_nano gitee <https://gitee.com/bearpi/bearpi-hm_nano.git>`_
+
+

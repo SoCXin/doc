@@ -1,0 +1,118 @@
+
+.. _stm32l412:
+
+STM32L412
+===============
+
+`GitHub <https://github.com/SoCXin/STM32L412>`_ : ``Cortex-M4`` ``80MHz`` ``12bit 5MSPS-ADC`` ``PGA`` ``28 μA/MHz``
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+
+:ref:`ulp`
+
+.. image:: ./images/stm32l412.jpg
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32l4-series/stm32l4x2/stm32l412kb.html
+
+.. contents::
+    :local:
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：273.55 :ref:`CoreMark` ，442 :ref:`ulp_cp` ，165 :ref:`ulp_pp`
+* 封装规格：VLQFP32/48/64
+* 运行环境：-40°C to 125 °C
+* RAM容量：40 KB
+* Flash容量：128 KB
+
+
+
+特征参数
+^^^^^^^^^^^
+
+* 80 MHz :ref:`cortex_m4`
+* 2 x 12-bit ADC 5 Msps, 200 µA/Msps
+* PGA
+
+
+芯片架构
+~~~~~~~~~~~~
+
+.. image:: ./images/STM32L412s.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32l4-series/stm32l4x2/stm32l412kb.html
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：1.71 to 3.6 V
+
+
+
+Timer
+^^^^^^^^^^^
+
+.. image:: ./images/STM32L412t.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32l4-series/stm32l4x2/stm32l412kb.html
+
+模式功耗
+^^^^^^^^^^^
+
+.. image:: ./images/STM32L412p.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32l4-series/stm32l4x2/stm32l412kb.html
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+.. image:: ./images/STM32L412l.png
+    :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32l4-series/stm32l4x2/stm32l412kb.html
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+
+
+
+Xin总结
+--------------
+
+.. contents::
+    :local:
+
+能力构建
+~~~~~~~~~~~~~
+
+要点提示
+~~~~~~~~~~~~~
+
+问题整理
+~~~~~~~~~~~~~
+

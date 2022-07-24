@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WCH &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/wch/index.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CH545" href="CH545.html" />
+    <link rel="prev" title="AC7916" href="../jieli/AC7916.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../application/index.html">功能领域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../vendor.html">芯片设计</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ti/index.html">电源模拟和物联网 TI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../st/index.html">微控制器领域王者 ST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nxp/index.html">高性能多领域跨界 NXP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nordic/index.html">低功耗蓝牙控制器 Nordic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../realtek/index.html">多媒体及网络通信 Realtek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nuvoton/index.html">多媒体语音控制器 Nuvoton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MediaTek/index.html">高性能通信全品类 MediaTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gigadevice/index.html">国产芯片龙头企业 GigaDevice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../stc/index.html">超低成本微控制器 STC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ASR/index.html">新锐无线长距通信 ASR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../byd/index.html">跨界造芯垂直整合 BYD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jieli/index.html">蓝牙音频智能终端 JieLi</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">物联网通信控制器 WCH</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">公司简介</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">优势确认</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">产品定位</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">技术积累</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">通信领域</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#eth">ETH++</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb">USB++</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ble">BLE++</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">内核分类</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mcs51">MCS51</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cortex">Cortex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#risc-v">RISC-V</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">外设芯片</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id17">接口转换</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">方案总结</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id21">开发生态</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id22">封装形态</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../chipsea/index.html">信号链整合控制器 Chipsea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../espressif/index.html">低成本无线物联网 Espressif</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../arterytek/index.html">Cortex-M4控制器 ArteryTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../allwinner/index.html">多媒体应用处理器 Allwinner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bouffalolab/index.html">物联网通信及计算 Bouffalolab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mindmotion/index.html">驱动控制国产普惠 Mindmotion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../vendor.html">Vendor</a> &raquo;</li>
+      <li>WCH</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/wch/index.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="wch">
+<span id="id1"></span><h1>WCH<a class="headerlink" href="#wch" title="Permalink to this heading">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">RISC-V</span></code> <code class="docutils literal notranslate"><span class="pre">Qingke</span></code> <code class="docutils literal notranslate"><span class="pre">8051</span></code> <code class="docutils literal notranslate"><span class="pre">USB-HS(PHY)</span></code> <code class="docutils literal notranslate"><span class="pre">USB-SS(PHY)</span></code> <code class="docutils literal notranslate"><span class="pre">USB-PD</span></code> <code class="docutils literal notranslate"><span class="pre">Ethernet</span></code> <code class="docutils literal notranslate"><span class="pre">10Mbps(PHY)</span></code> <code class="docutils literal notranslate"><span class="pre">1Gbps(MAC)</span></code> <code class="docutils literal notranslate"><span class="pre">HSPI</span></code> <code class="docutils literal notranslate"><span class="pre">SerDes</span></code> <code class="docutils literal notranslate"><span class="pre">UART</span></code> <code class="docutils literal notranslate"><span class="pre">BLE</span></code></p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id2" id="id24">公司简介</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id25">通信领域</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id26">内核分类</a></p></li>
+<li><p><a class="reference internal" href="#id15" id="id27">外设芯片</a></p></li>
+<li><p><a class="reference internal" href="#id19" id="id28">方案总结</a></p></li>
+</ul>
+</div>
+<section id="id2">
+<h2><a class="toc-backref" href="#id24">公司简介</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p><a class="reference external" href="http://www.wch.cn/">南京沁恒微电子</a> 成立于2004年，是一家专注于连接技术和MCU内核研究的射频与高速数模混合集成电路设计公司，提供以太网、蓝牙无线网络、USB和PCI类等接口芯片及集成上述接口的MCU+单片机。</p>
+<p>该厂商的转换芯片如CH340普及率非常高，凭借在有线连接上的积累，推出的可编程器件都具备非常丰富的连接资源如USB/UART/Ethernet，产品品类非常丰富，同时也具备很高的性价比。</p>
+<div class="contents local topic" id="id4">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id5" id="id29">优势确认</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id30">产品定位</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id31">技术积累</a></p></li>
+</ul>
+</div>
+<section id="id5">
+<h3><a class="toc-backref" href="#id29">优势确认</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">产品线丰富</span></code> <code class="docutils literal notranslate"><span class="pre">低成本</span></code> <code class="docutils literal notranslate"><span class="pre">连接</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#wch"><span class="std std-ref">WCH</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#wch-eth"><span class="std std-ref">ETH++</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#wch-usb"><span class="std std-ref">USB++</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#wch-ble"><span class="std std-ref">BLE++</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#wch-8051"><span class="std std-ref">MCS51</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#wch-arm"><span class="std std-ref">Cortex</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#wch-rv"><span class="std std-ref">RISC-V</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../list/low.html#low"><span class="std std-ref">白菜Xin</span></a></p></td>
+<td><p><a class="reference internal" href="CH579.html#ch579"><span class="std std-ref">CH579</span></a></p></td>
+<td><p><a class="reference internal" href="CH552.html#ch552"><span class="std std-ref">CH552</span></a></p></td>
+<td><p><a class="reference internal" href="CH573.html#ch573"><span class="std std-ref">CH573</span></a></p></td>
+<td><p><a class="reference internal" href="CH549.html#ch549"><span class="std std-ref">CH549</span></a></p></td>
+<td><p><a class="reference internal" href="CH32F103.html#ch32f103"><span class="std std-ref">CH32F103</span></a></p></td>
+<td><p><a class="reference internal" href="CH32V103.html#ch32v103"><span class="std std-ref">CH32V103</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../list/ulp.html#ulp"><span class="std std-ref">效能Xin</span></a></p></td>
+<td></td>
+<td><p><a class="reference internal" href="CH569.html#ch569"><span class="std std-ref">CH569</span></a></p></td>
+<td><p><a class="reference internal" href="CH583.html#ch583"><span class="std std-ref">CH583</span></a></p></td>
+<td></td>
+<td><p><a class="reference internal" href="CH32F208.html#ch32f208"><span class="std std-ref">CH32F208</span></a></p></td>
+<td><p><a class="reference internal" href="CH32V307.html#ch32v307"><span class="std std-ref">CH32V307</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id6">
+<h3><a class="toc-backref" href="#id30">产品定位</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>专注于连接市场，开始向无线通信和自研核心发展，产品线非常丰富，在物联网市场有明显的识别度，弱势在于应用开发，厂商没有给出足够的引导案例和软件框架。</p>
+<p>在有线连接领域，工程师接受度比较高，但是在大的项目中，还是不太愿意考虑</p>
+</section>
+<section id="id7">
+<h3><a class="toc-backref" href="#id31">技术积累</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<p>主要的方案在USB领域，然后以太网连接领域，受限于开发资源，需要编程的器件在生态上并没有太大优势</p>
+<p><a class="reference external" href="http://www.wch.cn/application.html">WCH应用方案</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>厂商例程代码还是有点“乱”，和大多数国产MCU厂商一样，软资源不够全面也不够规范，可能在这上面的资源投入很有限</p>
+</div>
+</section>
+</section>
+<section id="id9">
+<h2><a class="toc-backref" href="#id25">通信领域</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
+<a class="reference external image-reference" href="http://special.wch.cn/zh_cn/interface_conversion_expert/"><img alt="../_images/wch.png" src="../_images/wch.png" /></a>
+<div class="contents local topic" id="id10">
+<ul class="simple">
+<li><p><a class="reference internal" href="#eth" id="id32">ETH++</a></p></li>
+<li><p><a class="reference internal" href="#usb" id="id33">USB++</a></p></li>
+<li><p><a class="reference internal" href="#ble" id="id34">BLE++</a></p></li>
+</ul>
+</div>
+<section id="eth">
+<span id="wch-eth"></span><h3><a class="toc-backref" href="#id32">ETH++</a><a class="headerlink" href="#eth" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#wch"><span class="std std-ref">WCH</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p>SRAM/ROM</p></th>
+<th class="head"><p>Characteristics</p></th>
+<th class="head"><p>Ethernet</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="CH563.html#ch563"><span class="std std-ref">CH563</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/classic.html#arm7"><span class="std std-ref">ARM7</span></a></p></td>
+<td></td>
+<td><p>64KB/224KB</p></td>
+<td><p>480M USB</p></td>
+<td><p>100M PHY</p></td>
+<td><p>LQFP64M</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="CH579.html#ch579"><span class="std std-ref">CH579</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></td>
+<td></td>
+<td><p>32KB/250KB</p></td>
+<td><p>BLE 4.2</p></td>
+<td><p>10M PHY</p></td>
+<td><p>QFN48/QFN28</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="CH32V208.html#ch32v208"><span class="std std-ref">CH32V208</span></a></p></td>
+<td><p><a class="reference internal" href="riscv.html#wch-riscv4c"><span class="std std-ref">RISC-V4C</span></a></p></td>
+<td></td>
+<td></td>
+<td><p>BLE 5.3</p></td>
+<td><p>10M PHY</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="CH32F208.html#ch32f208"><span class="std std-ref">CH32F208</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM3.html#cortex-m3"><span class="std std-ref">Cortex-M3</span></a></p></td>
+<td></td>
+<td></td>
+<td><p>BLE 5.3</p></td>
+<td><p>10M PHY</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="http://www.wch.cn/products/categories/47.html?pid=4">独立以太网方案</a> 主要包括转并口/SPI/串口等</p>
+<a class="reference external image-reference" href="http://www.wch.cn/products/category/4.html#data"><img alt="../_images/eth.png" src="../_images/eth.png" /></a>
+</section>
+<section id="usb">
+<span id="wch-usb"></span><h3><a class="toc-backref" href="#id33">USB++</a><a class="headerlink" href="#usb" title="Permalink to this heading">¶</a></h3>
+<section id="usb-hs">
+<span id="wch-usb-hs"></span><h4>USB-HS<a class="headerlink" href="#usb-hs" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">USB-HS(PHY)</span></code> <code class="docutils literal notranslate"><span class="pre">480Mbps</span></code></p>
+<p>芯片集成USB2.0 HS PHY器件实现高速通信(480Mbps)，在该细分领域上 <a class="reference internal" href="../st/index.html#st"><span class="std std-ref">ST</span></a> 的STM32F7系列部分型号有USB2.0 PHY集成的方案。</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>建议45MB/s以内的应用场景</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#wch"><span class="std std-ref">WCH</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p>SRAM/ROM</p></th>
+<th class="head"><p>USB</p></th>
+<th class="head"><p><a class="reference internal" href="#wch-usb-hs"><span class="std std-ref">USB-HS</span></a></p></th>
+<th class="head"><p>PHY</p></th>
+<th class="head"><p>MAC</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="CH563.html#ch563"><span class="std std-ref">CH563</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/classic.html#arm7"><span class="std std-ref">ARM7</span></a></p></td>
+<td><p>64KB/224KB</p></td>
+<td><p>1</p></td>
+<td><p>480Mbps</p></td>
+<td><p>100Mbps</p></td>
+<td><p>100Mbps</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="CH32F207.html#ch32f207"><span class="std std-ref">CH32F207</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM3.html#cortex-m3"><span class="std std-ref">Cortex-M3</span></a></p></td>
+<td><p>64KB/256KB</p></td>
+<td><p>2</p></td>
+<td><p>480Mbps</p></td>
+<td><p>10Mbps</p></td>
+<td><p>1Gbps</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="CH32V307.html#ch32v307"><span class="std std-ref">CH32V307</span></a></p></td>
+<td><p><a class="reference internal" href="riscv.html#wch-riscv4a"><span class="std std-ref">RISC-V4A</span></a></p></td>
+<td><p>64KB/256KB</p></td>
+<td><p>2</p></td>
+<td><p>480Mbps</p></td>
+<td><p>10Mbps</p></td>
+<td><p>1Gbps</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="usb-ss">
+<span id="wch-usb-ss"></span><h4>USB-SS<a class="headerlink" href="#usb-ss" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">USB-SS(PHY)</span></code> <code class="docutils literal notranslate"><span class="pre">5Gbps</span></code> <code class="docutils literal notranslate"><span class="pre">384MB/s</span></code></p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>建议384MB/s以内的应用场景</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#wch"><span class="std std-ref">WCH</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p>USB</p></th>
+<th class="head"><p>USB Type</p></th>
+<th class="head"><p><a class="reference internal" href="#wch-usb-hs"><span class="std std-ref">USB-HS</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#wch-usb-ss"><span class="std std-ref">USB-SS</span></a></p></th>
+<th class="head"><p>USB Hub</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="CH569.html#ch569"><span class="std std-ref">CH569</span></a></p></td>
+<td><p><a class="reference internal" href="riscv.html#wch-riscv3a"><span class="std std-ref">RISC-V3A</span></a></p></td>
+<td><p>1</p></td>
+<td><p>OTG</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="usb-fs">
+<span id="wch-usb-fs"></span><h4>USB-FS<a class="headerlink" href="#usb-fs" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">800KB/s</span></code></p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>建议800KB/s以内的应用场景</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#wch"><span class="std std-ref">WCH</span></a></p></th>
+<th class="head"><p>Mark</p></th>
+<th class="head"><p>RAM</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>UART/SPI</p></th>
+<th class="head"><p>BLE</p></th>
+<th class="head"><p>USB</p></th>
+<th class="head"><p>Ethernet</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="CH545.html#ch545"><span class="std std-ref">CH545</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/MCS51.html#mcs51"><span class="std std-ref">MCS-51</span></a></p></td>
+<td><p>32K</p></td>
+<td><p>250K</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="CH557.html#ch557"><span class="std std-ref">CH557</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/MCS51.html#mcs51"><span class="std std-ref">MCS-51</span></a></p></td>
+<td><p>32K</p></td>
+<td><p>250K</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="http://www.wch.cn/products/categories/22.html?pid=1#data">独立USB方案</a></p>
+<a class="reference external image-reference" href="http://special.wch.cn/zh_cn/USBChips/#/"><img alt="../_images/wchusb.png" src="../_images/wchusb.png" /></a>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><a class="reference internal" href="#wch"><span class="std std-ref">WCH</span></a> 的MCU基本标配USB FS外设，而且在对标同类产品时，往往配置更多数量的USB，或者集成USB PHY器件</p>
+</div>
+</section>
+</section>
+<section id="ble">
+<span id="wch-ble"></span><h3><a class="toc-backref" href="#id34">BLE++</a><a class="headerlink" href="#ble" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="http://special.wch.cn/zh_cn/mcu/"><img alt="../_images/BLE.png" src="../_images/BLE.png" /></a>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#wch"><span class="std std-ref">WCH</span></a></p></th>
+<th class="head"><p>Mark</p></th>
+<th class="head"><p>RAM</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>UART/SPI</p></th>
+<th class="head"><p>BLE</p></th>
+<th class="head"><p>USB</p></th>
+<th class="head"><p>Ethernet</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="CH579.html#ch579"><span class="std std-ref">CH579</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></td>
+<td><p>32K</p></td>
+<td><p>250K</p></td>
+<td><p>4/2</p></td>
+<td><p>4.2(+3dBm)</p></td>
+<td><p>USB H/D</p></td>
+<td><p>10M</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="CH573.html#ch573"><span class="std std-ref">CH573</span></a></p></td>
+<td><p><a class="reference internal" href="riscv.html#wch-riscv3a"><span class="std std-ref">RISC-V3A</span></a></p></td>
+<td><p>18K</p></td>
+<td><p>512K</p></td>
+<td><p>4/1</p></td>
+<td><p>4.2(+5dBm)</p></td>
+<td><p>USB H/D</p></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="CH583.html#ch583"><span class="std std-ref">CH583</span></a></p></td>
+<td><p><a class="reference internal" href="riscv.html#wch-riscv4a"><span class="std std-ref">RISC-V4A</span></a></p></td>
+<td><p>32K</p></td>
+<td><p>1024K</p></td>
+<td><p>4/1</p></td>
+<td><p>5.1(+6dBm)</p></td>
+<td><p>2 x USB</p></td>
+<td><p>X</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id13">
+<h2><a class="toc-backref" href="#id26">内核分类</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id14">
+<ul class="simple">
+<li><p><a class="reference internal" href="#mcs51" id="id35">MCS51</a></p></li>
+<li><p><a class="reference internal" href="#cortex" id="id36">Cortex</a></p></li>
+<li><p><a class="reference internal" href="#risc-v" id="id37">RISC-V</a></p></li>
+</ul>
+</div>
+<section id="mcs51">
+<span id="wch-8051"></span><h3><a class="toc-backref" href="#id35">MCS51</a><a class="headerlink" href="#mcs51" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">8051</span></code> <code class="docutils literal notranslate"><span class="pre">MCU</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#wch"><span class="std std-ref">WCH</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p>SRAM</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>UART/SPI</p></th>
+<th class="head"><p>BLE</p></th>
+<th class="head"><p>USB</p></th>
+<th class="head"><p>Ethernet</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="CH552.html#ch552"><span class="std std-ref">CH552</span></a></p></td>
+<td><p>24MHz</p></td>
+<td><p>2KB</p></td>
+<td><p>16KB</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="CH549.html#ch549"><span class="std std-ref">CH549</span></a></p></td>
+<td><p>48MHz</p></td>
+<td><p>2KB</p></td>
+<td><p>60KB</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="CH543.html#ch543"><span class="std std-ref">CH543</span></a></p></td>
+<td><p>48MHz</p></td>
+<td><p>512B</p></td>
+<td><p>16KB</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<a class="reference external image-reference" href="http://special.wch.cn/zh_cn/mcu/"><img alt="../_images/8051.png" src="../_images/8051.png" /></a>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="CH545.html">CH545</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH557.html">CH557</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH552.html">CH552</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH549.html">CH549</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH543.html">CH543</a></li>
+</ul>
+</div>
+</section>
+<section id="cortex">
+<span id="wch-arm"></span><h3><a class="toc-backref" href="#id36">Cortex</a><a class="headerlink" href="#cortex" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="http://special.wch.cn/zh_cn/mcu/"><img alt="../_images/CH32F.png" src="../_images/CH32F.png" /></a>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="CH32F103.html">CH32F103</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH32F207.html">CH32F207</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH32F208.html">CH32F208</a></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>2012年起陆续引入Cortex-M内核，我们加入了网络、USB2.0等高速接口，并设计了高速DMA仲裁机制，推出CH32F103等通用MCU芯片，适用于软件兼容、硬件引脚兼容、接口更专业的成熟生态应用。</p>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="CH579.html">CH579</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH563.html">CH563</a></li>
+</ul>
+</div>
+</section>
+<section id="risc-v">
+<span id="wch-rv"></span><h3><a class="toc-backref" href="#id37">RISC-V</a><a class="headerlink" href="#risc-v" title="Permalink to this heading">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="riscv.html">Qingke内核</a></li>
+</ul>
+</div>
+<ul class="simple">
+<li><p>2017年开始关注并研究RISC-V开源指令集的32位MCU架构，针对快速中断响应、高带宽数据DMA进行优化</p></li>
+<li><p>2019年推出基于RISC-V3A处理器的CH32V103单片机，内嵌BLE低功耗蓝牙的CH57X系列</p></li>
+<li><p>2020年初推出128位数据宽度和双层DMA架构的高吞吐量的CH56X系列，现已扩展出浮点型V4F，精简型V2A，增强型V3A/V4A/V4B/V4C等内核产品</p></li>
+</ul>
+<a class="reference external image-reference" href="http://special.wch.cn/zh_cn/mcu/"><img alt="../_images/CH32V.png" src="../_images/CH32V.png" /></a>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="CH32V103.html">CH32V103</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH32V307.html">CH32V307</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH32V208.html">CH32V208</a></li>
+</ul>
+</div>
+<a class="reference external image-reference" href="http://special.wch.cn/zh_cn/mcu/"><img alt="../_images/CH5V.png" src="../_images/CH5V.png" /></a>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="CH569.html">CH569</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH568.html">CH568</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH583.html">CH583</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CH573.html">CH573</a></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="id15">
+<h2><a class="toc-backref" href="#id27">外设芯片</a><a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h2>
+<p>纵览 <a class="reference internal" href="#wch"><span class="std std-ref">WCH</span></a> 当下所有产品，其核心技术在于自主开发的 <a class="reference internal" href="riscv.html#wch-riscv"><span class="std std-ref">RISC-V</span></a> 内核，在USB领域的多年积累，特别是USB HS集成PHY的差异化定位，相对竞品方案的集成度和成本更低，还有在以太网领域的产品迭代，同样的市场优势建立于高速和集成PHY</p>
+<p>但是，就单片机而言，BLE无线通信领域的优势还没有完全建立，但是丰富的产品线具有协同效应，针对高速有线通信（USB SS和1Gbps以太网）配置低主频核心，实用场景有限，和其他高性能产品比较而言并不具有优势</p>
+<div class="contents local topic" id="id16">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id17" id="id38">接口转换</a></p></li>
+</ul>
+</div>
+<section id="id17">
+<h3><a class="toc-backref" href="#id38">接口转换</a><a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">USB</span> <span class="pre">HUB</span></code> <code class="docutils literal notranslate"><span class="pre">PCI</span></code>  <code class="docutils literal notranslate"><span class="pre">PCIe</span></code></p>
+<p>在一些比较小众的连接领域有布局，例如通信延长芯片，通信转换芯片等</p>
+<p><a class="reference external" href="http://www.wch.cn/products/categories/40.html?pid=3#data">单片机外围</a></p>
+<p>在硬件生态上十分丰富，但是没有挖掘出市场潜力，没有足够持续的软生态投入，厂商无法提供足够高的起点，技术优势积累在开发商手里，新受众和创客群体有限。</p>
+<p><a class="reference external" href="http://www.wch.cn/products/categories/49.html?pid=2">独立PCI/PCIE方案</a> 主要包括转串口/打印口/并口等</p>
+<a class="reference external image-reference" href="http://www.wch.cn/products/category/2.html#data"><img alt="../_images/pci.png" src="../_images/pci.png" /></a>
+</section>
+</section>
+<section id="id19">
+<h2><a class="toc-backref" href="#id28">方案总结</a><a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">HarmonyOS</span></code></p>
+<div class="contents local topic" id="id20">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id21" id="id39">开发生态</a></p></li>
+<li><p><a class="reference internal" href="#id22" id="id40">封装形态</a></p></li>
+</ul>
+</div>
+<section id="id21">
+<h3><a class="toc-backref" href="#id39">开发生态</a><a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+<p><a class="reference external" href="http://www.wch.cn/downloads/WCHISPTool_Setup_exe.html">WCHISPTool下载工具</a></p>
+</section>
+<section id="id22">
+<h3><a class="toc-backref" href="#id40">封装形态</a><a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
+<div class="contents local topic" id="id23">
+<ul class="simple">
+<li><p><a class="reference internal" href="#qfn68" id="id41">QFN68</a></p></li>
+<li><p><a class="reference internal" href="#qfn48" id="id42">QFN48</a></p></li>
+<li><p><a class="reference internal" href="#qfn40" id="id43">QFN40</a></p></li>
+<li><p><a class="reference internal" href="#qfn28" id="id44">QFN28</a></p></li>
+<li><p><a class="reference internal" href="#qfn20" id="id45">QFN20</a></p></li>
+</ul>
+</div>
+<section id="qfn68">
+<span id="wch-qfn68"></span><h4><a class="toc-backref" href="#id41">QFN68</a><a class="headerlink" href="#qfn68" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">CH569W</span></code> <code class="docutils literal notranslate"><span class="pre">CH565</span></code> <code class="docutils literal notranslate"><span class="pre">CH32V307WC</span></code> <code class="docutils literal notranslate"><span class="pre">CH32F208W</span></code></p>
+<ul class="simple">
+<li><p>封装尺寸：8 x 8 mm, 0.4mm pitch</p></li>
+</ul>
+</section>
+<section id="qfn48">
+<span id="wch-qfn48"></span><h4><a class="toc-backref" href="#id42">QFN48</a><a class="headerlink" href="#qfn48" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">CH578M</span></code> <code class="docutils literal notranslate"><span class="pre">CH583M</span></code> <code class="docutils literal notranslate"><span class="pre">CH32V103C</span></code></p>
+<ul class="simple">
+<li><p>封装尺寸：5 x 5 mm, 0.35mm pitch</p></li>
+</ul>
+</section>
+<section id="qfn40">
+<span id="wch-qfn40"></span><h4><a class="toc-backref" href="#id43">QFN40</a><a class="headerlink" href="#qfn40" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">CH565M</span></code></p>
+<ul class="simple">
+<li><p>封装尺寸：5 x 5 mm, 0.4mm pitch</p></li>
+</ul>
+</section>
+<section id="qfn28">
+<span id="wch-qfn28"></span><h4><a class="toc-backref" href="#id44">QFN28</a><a class="headerlink" href="#qfn28" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">CH581F</span></code> <code class="docutils literal notranslate"><span class="pre">CH573F</span></code></p>
+<ul class="simple">
+<li><p>封装尺寸：4 x 4 mm, 0.35mm pitch</p></li>
+</ul>
+</section>
+<section id="qfn20">
+<span id="wch-qfn20"></span><h4><a class="toc-backref" href="#id45">QFN20</a><a class="headerlink" href="#qfn20" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">CH581F</span></code> <code class="docutils literal notranslate"><span class="pre">CH573F</span></code></p>
+<ul class="simple">
+<li><p>封装尺寸：4 x 4 mm, 0.4mm pitch</p></li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../jieli/AC7916.html" class="btn btn-neutral float-left" title="AC7916" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="CH545.html" class="btn btn-neutral float-right" title="CH545" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/wch/index.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/wch/index.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

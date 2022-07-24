@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STM32H7B0 &mdash; SoC</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/st/t/STM32H7B0.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="STM32H750" href="STM32H750.html" />
+    <link rel="prev" title="STM32G474" href="../m/STM32G474.html" />
+ 
+<link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
+<script src="../../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../application/index.html">功能领域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../foundry.html">晶元代工</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../vendor.html">芯片设计</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../ti/index.html">电源模拟和物联网 TI</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">微控制器领域王者 ST</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../index.html#id2">公司简介</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#st-high">性能产品</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">超值低功耗 STM32H7B0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="STM32H750.html">超值大内存 STM32H750</a></li>
+<li class="toctree-l4"><a class="reference internal" href="STM32H730.html">高频低功耗 STM32H730</a></li>
+<li class="toctree-l4"><a class="reference internal" href="STM32H745.html">双核MCU: STM32H745</a></li>
+<li class="toctree-l4"><a class="reference internal" href="STM32MP15.html">异构MPU: STM32MP15</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#st-iot">无线通信</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#st-ulp">超低功耗</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#id6">技术特点</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../nxp/index.html">高性能多领域跨界 NXP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../nordic/index.html">低功耗蓝牙控制器 Nordic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../realtek/index.html">多媒体及网络通信 Realtek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../nuvoton/index.html">多媒体语音控制器 Nuvoton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MediaTek/index.html">高性能通信全品类 MediaTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gigadevice/index.html">国产芯片龙头企业 GigaDevice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../stc/index.html">超低成本微控制器 STC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ASR/index.html">新锐无线长距通信 ASR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../byd/index.html">跨界造芯垂直整合 BYD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../jieli/index.html">蓝牙音频智能终端 JieLi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../wch/index.html">物联网通信控制器 WCH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chipsea/index.html">信号链整合控制器 Chipsea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../espressif/index.html">低成本无线物联网 Espressif</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../arterytek/index.html">Cortex-M4控制器 ArteryTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../allwinner/index.html">多媒体应用处理器 Allwinner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../bouffalolab/index.html">物联网通信及计算 Bouffalolab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mindmotion/index.html">驱动控制国产普惠 Mindmotion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../vendor.html">Vendor</a> &raquo;</li>
+          <li><a href="../index.html">ST</a> &raquo;</li>
+      <li>STM32H7B0</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/st/t/STM32H7B0.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="stm32h7b0">
+<span id="no-011"></span><span id="id1"></span><h1>STM32H7B0<a class="headerlink" href="#stm32h7b0" title="Permalink to this heading">¶</a></h1>
+<p><a class="reference external" href="https://github.com/SoCXin/STM32H7B0">标签</a> : <code class="docutils literal notranslate"><span class="pre">Cortex-M7</span></code> <code class="docutils literal notranslate"><span class="pre">280MHz</span></code> <code class="docutils literal notranslate"><span class="pre">SMPS</span></code> <code class="docutils literal notranslate"><span class="pre">Chrom-ART</span></code> <code class="docutils literal notranslate"><span class="pre">STemWin</span></code> <code class="docutils literal notranslate"><span class="pre">JPEC</span></code> <code class="docutils literal notranslate"><span class="pre">HDMI-CEC</span></code></p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#xin" id="id23">Xin简介</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id3" id="id24">规格配置</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id4" id="id25">基本参数</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id26">特征参数</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id27">电源参数</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id7" id="id28">芯片架构</a></p>
+<ul>
+<li><p><a class="reference internal" href="#smps" id="id29">SMPS</a></p></li>
+<li><p><a class="reference internal" href="#gfxmmu" id="id30">GFXMMU</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id8" id="id31">图形性能</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id9" id="id32">Xin选择</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id11" id="id33">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id34">系列对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id13" id="id35">超值系列对比</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id14" id="id36">版本对比</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id15" id="id37">Xin应用</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id17" id="id38">开发板</a></p>
+<ul>
+<li><p><a class="reference internal" href="#fk7b0m1-vbt6" id="id39">FK7B0M1-VBT6</a></p></li>
+<li><p><a class="reference internal" href="#stm32h7b3i-dk" id="id40">STM32H7B3I-DK</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#hmi" id="id41">低功耗HMI</a></p>
+<ul>
+<li><p><a class="reference internal" href="#touchgfx" id="id42">TouchGFX</a></p></li>
+<li><p><a class="reference internal" href="#littlevgl" id="id43">littleVGL</a></p></li>
+<li><p><a class="reference internal" href="#emwin" id="id44">emWin</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id18" id="id45">Xin总结</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id20" id="id46">能力构建</a></p></li>
+<li><p><a class="reference internal" href="#id21" id="id47">要点提示</a></p></li>
+<li><p><a class="reference internal" href="#id22" id="id48">问题整理</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="xin">
+<h2><a class="toc-backref" href="#id23">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html"><img alt="../../_images/stm32h7b0.jpg" src="../../_images/stm32h7b0.jpg" /></a>
+<section id="id3">
+<h3><a class="toc-backref" href="#id24">规格配置</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<section id="id4">
+<h4><a class="toc-backref" href="#id25">基本参数</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>发布时间：2019年5月</p></li>
+<li><p>工作温度：-40°C to +85°C/125°C</p></li>
+<li><p>处理性能：599 <a class="reference internal" href="../../architecture/index.html#dmips"><span class="std std-ref">DMIPS</span></a>, 1414 <a class="reference internal" href="../../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a> , <a class="reference internal" href="../../architecture/level.html#level4"><span class="std std-ref">Level4</span></a></p></li>
+<li><p>RAM容量：1.4 MB</p></li>
+<li><p>Flash容量：128 KB (由多个8 KB扇区组成)</p></li>
+<li><p>封装规格：64 to 176 Pin</p></li>
+</ul>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html"><img alt="../../_images/STM32H7B0p.png" src="../../_images/STM32H7B0p.png" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>分散的1.4 MB SRAM组成包括 192 KB TCM RAM（64 KB ITCM RAM和128 KB DTCM RAM），1.18 MB 用户SRAM，备份域4 KB SRAM</p>
+</div>
+</section>
+<section id="id5">
+<h4><a class="toc-backref" href="#id26">特征参数</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>280 MHz <a class="reference internal" href="../../architecture/cortexM7.html#cortex-m7"><span class="std std-ref">Cortex-M7</span></a></p></li>
+<li><p><a class="reference internal" href="#stm32-gfxmmu"><span class="std std-ref">GFXMMU</span></a></p></li>
+<li><p><a class="reference internal" href="#stm32-smps"><span class="std std-ref">SMPS</span></a>,可用于为外部电路供电，特定应用情况下结合LDO共同使用</p></li>
+<li><p>多达35个通信接口，包括FD-CAN、USB2.0高速/全速、照相机接口、并行同步数据输入/输出从接口（PSSI）</p></li>
+</ul>
+</section>
+<section id="id6">
+<h4><a class="toc-backref" href="#id27">电源参数</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>供电电压：1.71 to 3.6 V</p></li>
+<li><p>在内核运行模式（外设外设关）和SMPS情况下，典型功耗为120 µA/MHz</p></li>
+<li><p>低功耗停止模式下的典型功耗电流为32 µA</p></li>
+<li><p>低功耗待机模式下的典型功耗电流为2.2 µA</p></li>
+</ul>
+</section>
+</section>
+<section id="id7">
+<h3><a class="toc-backref" href="#id28">芯片架构</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html"><img alt="../../_images/STM32H7B0s.png" src="../../_images/STM32H7B0s.png" /></a>
+<section id="smps">
+<span id="stm32-smps"></span><h4><a class="toc-backref" href="#id29">SMPS</a><a class="headerlink" href="#smps" title="Permalink to this heading">¶</a></h4>
+<p>用于降低电源电压还可用于为外部电路供电，以及特定应用情况下结合LDO共同使用</p>
+</section>
+<section id="gfxmmu">
+<span id="stm32-gfxmmu"></span><h4><a class="toc-backref" href="#id30">GFXMMU</a><a class="headerlink" href="#gfxmmu" title="Permalink to this heading">¶</a></h4>
+</section>
+</section>
+<section id="id8">
+<h3><a class="toc-backref" href="#id31">图形性能</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<img alt="../../_images/DMA2D.jpg" src="../../_images/DMA2D.jpg" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>LCD-TFT控制器接口支持双层图形，JPEG硬件加速器，可进行快速JPEG编码和解码</p>
+</div>
+</section>
+</section>
+<section id="id9">
+<h2><a class="toc-backref" href="#id32">Xin选择</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id10">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id11" id="id49">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id50">系列对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id13" id="id51">超值系列对比</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id14" id="id52">版本对比</a></p></li>
+</ul>
+</div>
+<section id="id11">
+<h3><a class="toc-backref" href="#id49">品牌对比</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id12">
+<h3><a class="toc-backref" href="#id50">系列对比</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<p>STM32H7A3/7B3 MCU系列提供1到2 MB的Flash存储器，具有下列结构的1.4 MB SRAM：192 KB的TCM RAM（包括64 KB的ITCM RAM和128 KB的DTCM RAM，用于时间关键型程序或数据），1.18 MB的用户SRAM，以及用于在最低功耗模式下保存数据的备份域4 KB SRAM。另外，它提供64至225引脚的BGA和LQFP封装型号。</p>
+<section id="id13">
+<h4><a class="toc-backref" href="#id51">超值系列对比</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html"><img alt="../../_images/STM32H7x0.jpg" src="../../_images/STM32H7x0.jpg" /></a>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p><a class="reference internal" href="../../architecture/index.html#dmips"><span class="std std-ref">DMIPS</span></a></p></th>
+<th class="head"><p>RAM</p></th>
+<th class="head"><p>Cache</p></th>
+<th class="head"><p>GPU</p></th>
+<th class="head"><p>SPI</p></th>
+<th class="head"><p>USB</p></th>
+<th class="head"><p>Ethernet</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="STM32H730.html#stm32h730"><span class="std std-ref">STM32H730</span></a></p></td>
+<td><p>1177</p></td>
+<td><p>564KB</p></td>
+<td><p>32+32</p></td>
+<td><p>ART</p></td>
+<td><p>2 Octo</p></td>
+<td><p><a class="reference internal" href="../m/STM32F207.html#stm32-otg-hs"><span class="std std-ref">OTG HS</span></a></p></td>
+<td><p>100M</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="STM32H750.html#stm32h750"><span class="std std-ref">STM32H750</span></a></p></td>
+<td><p>1027</p></td>
+<td><p>1 MB</p></td>
+<td><p>16+16</p></td>
+<td><p>ART</p></td>
+<td><p>2 Quad</p></td>
+<td><p><a class="reference internal" href="../m/STM32F207.html#stm32-otg-hs"><span class="std std-ref">OTG HS</span></a></p></td>
+<td><p>100M</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#stm32h7b0"><span class="std std-ref">STM32H7B0</span></a></p></td>
+<td><p>599</p></td>
+<td><p>1.4 MB</p></td>
+<td><p>16+16</p></td>
+<td><p>ART/JPEG</p></td>
+<td><p>2 Octo</p></td>
+<td><p><a class="reference internal" href="../m/STM32F207.html#stm32-otg-hs"><span class="std std-ref">OTG HS</span></a></p></td>
+<td><p>No</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><a class="reference internal" href="#stm32h7b0"><span class="std std-ref">STM32H7B0</span></a> 不具备以太网通信能力，单纯就性能而言在H7系列中没有优势，其特性更适用于低功耗交互类设备</p>
+</div>
+</section>
+</section>
+<section id="id14">
+<h3><a class="toc-backref" href="#id52">版本对比</a><a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32h7b0-value-line.html"><img alt="../../_images/STM32H7B0l.png" src="../../_images/STM32H7B0l.png" /></a>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><a class="reference internal" href="#stm32h7b0"><span class="std std-ref">STM32H7B0</span></a> 的UFBGA封装型号STM32H7B0AB/STM32H7B0IB才集成 <a class="reference internal" href="#stm32-smps"><span class="std std-ref">SMPS</span></a></p>
+</div>
+</section>
+</section>
+<section id="id15">
+<h2><a class="toc-backref" href="#id37">Xin应用</a><a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h2>
+<p>作为STM32H系列中的低功耗产品，片上集成1.4M SRAM可以满足大多数项目的资源依赖，减少外扩SDRAM也可以降低功耗。就官方提供的资源和推荐应用场景而言，应该是偏向仪器仪表显示。</p>
+<div class="contents local topic" id="id16">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id17" id="id53">开发板</a></p>
+<ul>
+<li><p><a class="reference internal" href="#fk7b0m1-vbt6" id="id54">FK7B0M1-VBT6</a></p></li>
+<li><p><a class="reference internal" href="#stm32h7b3i-dk" id="id55">STM32H7B3I-DK</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#hmi" id="id56">低功耗HMI</a></p>
+<ul>
+<li><p><a class="reference internal" href="#touchgfx" id="id57">TouchGFX</a></p></li>
+<li><p><a class="reference internal" href="#littlevgl" id="id58">littleVGL</a></p></li>
+<li><p><a class="reference internal" href="#emwin" id="id59">emWin</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id17">
+<h3><a class="toc-backref" href="#id53">开发板</a><a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+<section id="fk7b0m1-vbt6">
+<h4><a class="toc-backref" href="#id54">FK7B0M1-VBT6</a><a class="headerlink" href="#fk7b0m1-vbt6" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.6e7a2e8d6nHM8d&amp;id=658976139303&amp;_u=dgas3eu21a0"><img alt="../../_images/STM32H7B0_dk.jpg" src="../../_images/STM32H7B0_dk.jpg" /></a>
+<p>电容触控屏排线接口(800x480/480x272)，用于实践交互控制，板上资源较少，通过IO扩展外设</p>
+<ul class="simple">
+<li><p>W25Q64(SPI)+W25Q64(OSPI)</p></li>
+<li><p>25MHz HSE + 32.768KHz RTC</p></li>
+<li><p>Type C USB</p></li>
+</ul>
+</section>
+<section id="stm32h7b3i-dk">
+<h4><a class="toc-backref" href="#id55">STM32H7B3I-DK</a><a class="headerlink" href="#stm32h7b3i-dk" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://detail.tmall.com/item.htm?spm=a230r.1.14.39.5bcd1376PALjIA&amp;id=635717279033&amp;ns=1&amp;abbucket=10"><img alt="../../_images/B_STM32H7B3.png" src="../../_images/B_STM32H7B3.png" /></a>
+<ul class="simple">
+<li><p>4.3” (480x272) TFT color LCD module including a capacitive touch panel with RGB interface</p></li>
+<li><p>Wi‑Fi® module compliant with 802.11 b/g/n</p></li>
+<li><p>USB <a class="reference internal" href="../m/STM32F207.html#stm32-otg-hs"><span class="std std-ref">OTG HS</span></a></p></li>
+<li><p>Audio codec</p></li>
+<li><p>512-Mbit Octo-SPI NOR Flash memory</p></li>
+<li><p>128-Mbit SDRAM</p></li>
+<li><p>2 user LEDs</p></li>
+<li><p>User and Reset push-buttons</p></li>
+<li><p>Fanout daughterboard</p></li>
+<li><p>1x FDCAN</p></li>
+<li><p>Camera (8 bit)</p></li>
+<li><p>USB with Micro-AB</p></li>
+<li><p>Stereo headset jack including analog microphone input</p></li>
+<li><p>Audio jack for external speakers</p></li>
+<li><p>microSD™ card</p></li>
+<li><p>TAG-Connect 10-pin footprint</p></li>
+<li><p>Arm® Cortex® 10-pin 1.27mm-pitch debug connector over STDC14 footprint</p></li>
+<li><p>ARDUINO® Uno V3 expansion connector</p></li>
+<li><p>STMod+ expansion connector</p></li>
+<li><p>Audio daughterboard expansion connector</p></li>
+<li><p>External I2C expansion connector</p></li>
+<li><p>Flexible power-supply options: ST-LINK USB VBUS, USB <a class="reference internal" href="../m/STM32F207.html#stm32-otg-hs"><span class="std std-ref">OTG HS</span></a> connector, or external sources</p></li>
+<li><p>On-board STLINK-V3E debugger/programmer</p></li>
+</ul>
+</section>
+</section>
+<section id="hmi">
+<h3><a class="toc-backref" href="#id56">低功耗HMI</a><a class="headerlink" href="#hmi" title="Permalink to this heading">¶</a></h3>
+<section id="touchgfx">
+<h4><a class="toc-backref" href="#id57">TouchGFX</a><a class="headerlink" href="#touchgfx" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="littlevgl">
+<h4><a class="toc-backref" href="#id58">littleVGL</a><a class="headerlink" href="#littlevgl" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="emwin">
+<h4><a class="toc-backref" href="#id59">emWin</a><a class="headerlink" href="#emwin" title="Permalink to this heading">¶</a></h4>
+</section>
+</section>
+</section>
+<section id="id18">
+<h2><a class="toc-backref" href="#id45">Xin总结</a><a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id19">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id20" id="id60">能力构建</a></p></li>
+<li><p><a class="reference internal" href="#id21" id="id61">要点提示</a></p></li>
+<li><p><a class="reference internal" href="#id22" id="id62">问题整理</a></p></li>
+</ul>
+</div>
+<section id="id20">
+<h3><a class="toc-backref" href="#id60">能力构建</a><a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id21">
+<h3><a class="toc-backref" href="#id61">要点提示</a><a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id22">
+<h3><a class="toc-backref" href="#id62">问题整理</a><a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../m/STM32G474.html" class="btn btn-neutral float-left" title="STM32G474" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="STM32H750.html" class="btn btn-neutral float-right" title="STM32H750" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/st/t/STM32H7B0.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/st/t/STM32H7B0.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

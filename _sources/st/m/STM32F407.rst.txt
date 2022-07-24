@@ -1,0 +1,107 @@
+
+.. _stm32f407:
+
+STM32F407
+===============
+
+`GitHub <https://github.com/SoCXin/STM32F407>`_ : ``Cortex-M4`` ``168MHz`` ``USB-HS`` ``SDIO`` ``FSMC`` ``Ethernet`` ``IEEE 1588 v2``
+
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. image:: ./images/STM32F407.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32f407-417.html
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：90 nm
+* 供货周期：
+* 处理性能：210 :ref:`DMIPS`, 566 :ref:`CoreMark` , :ref:`level3`
+* 运行环境：-40 °C to 85 °C
+* 封装规格：LQFP100/LQFP144/LQFP176/BGA176
+* RAM容量：192 KB
+* Flash容量：512/1024 KB
+
+特征参数
+^^^^^^^^^^^
+
+* 168 MHz :ref:`cortex_m4`
+* 2个USB OTG（其中一个支持HS）
+* 2个12位DAC、3个速度为2.4 MSPS或7.2 MSPS（交错模式）的12位ADC
+* 以太网MAC10/100
+* 8~14位并行照相机接口
+
+芯片架构
+~~~~~~~~~~~
+
+
+.. _stm32_fsmc:
+
+FSMC
+^^^^^^^^^^^
+
+STM32的FSMC真是一个万能的总线控制器,不仅可以控制SRAM,NOR FLASH,NAND FLASH,PC Card,还能控制LCD,TFT
+
+.. _stm32_cam:
+
+CAM
+^^^^^^^^^^^
+
+8~14 位并行照相机接口：速度高达 54MB/s
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~~
+
+系列对比
+~~~~~~~~~
+
+.. _stm32f405:
+
+STM32F405
+^^^^^^^^^^^
+
+型号对比
+~~~~~~~~~
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+硬件平台
+~~~~~~~~~~~
+
+
+开发板
+^^^^^^^^^^^
+
+.. image:: ./images/B_STM32F407.jpg
+    :target: https://detail.tmall.com/item.htm?spm=a230r.1.14.3.22c4235cqh3nCy&id=610087556700&ns=1&abbucket=7
+
+
+.. _trezor:
+
+Trezor Wallet
+~~~~~~~~~~~~~~
+
+`Trezor Wallet <https://wallet.trezor.io/#/>`_
+

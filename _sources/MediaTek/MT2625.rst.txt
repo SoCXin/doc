@@ -1,0 +1,31 @@
+
+.. _mt2625:
+
+MT2625
+================
+
+`标签 <https://github.com/SoCXin/MT2625>`_ : ``Cortex-M4`` ``125MHz`` ``NB-IoT``
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+:ref:`mediatek` :ref:`arm` NB-IoT SoC
+
+
+
+Xin选择
+-----------
+
+
+
+Xin实践
+-----------
+
+
+
+Xin总结
+-----------
+

@@ -1,0 +1,101 @@
+
+.. _r329:
+
+R329
+=============
+
+`GitHub <https://github.com/SoCXin/R329>`_ : ``Allwinner`` ``Cortex-A53`` ``1.5GHz`` ``Dual-core`` ``AI`` ``HiFi4`` ``Tina`` ``sunxi``
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. image:: ./images/R329.jpg
+    :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=91
+
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2021年4月15日
+* 参考价格：
+* 制程工艺：:ref:`tsmc_28nm`
+* 供货周期：
+* 处理性能：
+* 封装规格：BGA231 (12mmx12mm)
+* 运行环境：-40°C to 85°C
+* RAM容量：256 MB DDR3(SIP)
+* Flash容量：
+
+
+特征参数
+^^^^^^^^^^^
+
+* 1.5 GHz :ref:`cortex_a53` Dual-core
+* 32 KB L1 I-cache and 32 KB L1 D-cache
+* HiFi4 DSP Dual-core
+* `TZ1 AIPU 0.25TOPS @800MHz <https://www.armchina.com/mountain?infoId=161&name=%E5%91%A8%E6%98%93NPU%3FdataId%3D21&istitle=%E5%91%A8%E6%98%93>`_
+
+
+芯片架构
+~~~~~~~~~~~
+
+电源参数
+^^^^^^^^^^^
+
+* 电压范围：1.71 to 3.6 V
+* 功耗范围：
+
+计算性能
+~~~~~~~~~~~
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~~
+
+
+系列对比
+~~~~~~~~~~
+
+.. _R328:
+
+R328
+^^^^^^^^^^^
+
+.. image:: ./images/R328.jpg
+    :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=85
+
+型号对比
+~~~~~~~~~~
+
+
+Xin应用
+-----------
+
+`linux-sunxi <https://linux-sunxi.org/R329>`_
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+
+MAIX-II-A
+^^^^^^^^^^^
+``Sipeed``
+
+.. image:: images/B_R329.png
+    :target: https://item.taobao.com/item.htm?spm=a230r.1.14.18.162553f8dQc68Z&id=653462798753&ns=1&abbucket=12#detail

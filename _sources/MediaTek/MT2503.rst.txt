@@ -1,0 +1,24 @@
+
+.. _mt2503:
+
+MT2503
+================
+
+`标签 <https://github.com/SoCXin/MT2503>`_ : ``ARM7EJ`` ``260MHz`` ``MT2503`` ``MT6261`` ``GSM``
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+:ref:`mediatek` :ref:`arm` GSM SoC
+
+
+关键特性
+~~~~~~~~~
+
+
+* 2G modem
+* BeiDou, Galileo, GPS+GLONASS
+* BT 2.1+EDR,3.0

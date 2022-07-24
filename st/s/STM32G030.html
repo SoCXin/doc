@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STM32G030 &mdash; SoC</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/st/s/STM32G030.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="STM32G031" href="STM32G031.html" />
+    <link rel="prev" title="STM32F030" href="STM32F030.html" />
+ 
+<link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
+<script src="../../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../application/index.html">功能领域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../foundry.html">晶元代工</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../vendor.html">芯片设计</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../ti/index.html">电源模拟和物联网 TI</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">微控制器领域王者 ST</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#id2">公司简介</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">普惠产品</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../m/index.html">主流产品</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#st-high">性能产品</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#st-iot">无线通信</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#st-ulp">超低功耗</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#id6">技术特点</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../nxp/index.html">高性能多领域跨界 NXP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../nordic/index.html">低功耗蓝牙控制器 Nordic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../realtek/index.html">多媒体及网络通信 Realtek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../nuvoton/index.html">多媒体语音控制器 Nuvoton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MediaTek/index.html">高性能通信全品类 MediaTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gigadevice/index.html">国产芯片龙头企业 GigaDevice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../stc/index.html">超低成本微控制器 STC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ASR/index.html">新锐无线长距通信 ASR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../byd/index.html">跨界造芯垂直整合 BYD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../jieli/index.html">蓝牙音频智能终端 JieLi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../wch/index.html">物联网通信控制器 WCH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chipsea/index.html">信号链整合控制器 Chipsea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../espressif/index.html">低成本无线物联网 Espressif</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../arterytek/index.html">Cortex-M4控制器 ArteryTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../allwinner/index.html">多媒体应用处理器 Allwinner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../bouffalolab/index.html">物联网通信及计算 Bouffalolab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mindmotion/index.html">驱动控制国产普惠 Mindmotion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../vendor.html">Vendor</a> &raquo;</li>
+          <li><a href="../index.html">ST</a> &raquo;</li>
+          <li><a href="index.html">低阶产品</a> &raquo;</li>
+      <li>STM32G030</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/st/s/STM32G030.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="stm32g030">
+<span id="id1"></span><h1>STM32G030<a class="headerlink" href="#stm32g030" title="Permalink to this heading">¶</a></h1>
+<p><a class="reference external" href="https://www.st.com/en/microcontrollers-microprocessors.html">ST</a> : <code class="docutils literal notranslate"><span class="pre">Cortex-M0</span></code> <code class="docutils literal notranslate"><span class="pre">64MHz</span></code> <code class="docutils literal notranslate"><span class="pre">I2S</span></code> <code class="docutils literal notranslate"><span class="pre">BaseLine</span></code> <code class="docutils literal notranslate"><span class="pre">RTC</span></code> <code class="docutils literal notranslate"><span class="pre">12-bit</span> <span class="pre">ADC</span> <span class="pre">2.5Msps</span></code></p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#xin" id="id32">Xin简介</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id33">Xin选择</a></p></li>
+<li><p><a class="reference internal" href="#id19" id="id34">Xin应用</a></p></li>
+<li><p><a class="reference internal" href="#id27" id="id35">Xin总结</a></p></li>
+</ul>
+</div>
+<section id="xin">
+<h2><a class="toc-backref" href="#id32">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html"><img alt="../../_images/STM32G030.jpg" src="../../_images/STM32G030.jpg" /></a>
+<section id="id2">
+<h3>基本参数<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>发布时间：</p></li>
+<li><p>官方价格：$0.8</p></li>
+<li><p>制程工艺：90 nm</p></li>
+<li><p>供货周期：</p></li>
+<li><p>处理性能：142 <a class="reference internal" href="../../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a> (59 <a class="reference internal" href="../../architecture/index.html#dmips"><span class="std std-ref">DMIPS</span></a> ) , <a class="reference internal" href="../../architecture/level.html#level2"><span class="std std-ref">Level2</span></a></p></li>
+<li><p>封装规格：LQFP48/LQFP32/TSSOP20/SON8</p></li>
+<li><p>运行环境：-40°C to +85°C</p></li>
+<li><p>RAM容量：8 KB</p></li>
+<li><p>Flash容量：32/64 KB</p></li>
+</ul>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html"><img alt="../../_images/STM32G030p.png" src="../../_images/STM32G030p.png" /></a>
+</section>
+<section id="id3">
+<h3>特征参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>64 MHz <a class="reference internal" href="../../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></li>
+<li><p>1x 12bit 16ch <a class="reference internal" href="#stm32g030-adc"><span class="std std-ref">ADC</span></a> (2.5 MSPS)</p></li>
+<li><p><a class="reference internal" href="#stm32g030-rtc"><span class="std std-ref">RTC</span></a></p></li>
+<li><p>5ch x DMA</p></li>
+<li><p>1KB OTP</p></li>
+<li><p>I2S</p></li>
+</ul>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html"><img alt="../../_images/STM32G030s.png" src="../../_images/STM32G030s.png" /></a>
+<section id="rcc">
+<span id="stm32g030-rcc"></span><h4>RCC<a class="headerlink" href="#rcc" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>HSI 16 MHz</p></li>
+<li><p>LSI 32 kHz(±5 %)</p></li>
+</ul>
+<blockquote>
+<div><p><a class="reference internal" href="STM32G031.html#stm32g031"><span class="std std-ref">STM32G031</span></a> 系列的HSI精度有提升到±1%</p>
+</div></blockquote>
+</section>
+<section id="timer">
+<span id="stm32g030-timer"></span><h4>Timer<a class="headerlink" href="#timer" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html"><img alt="../../_images/STM32G030tim.png" src="../../_images/STM32G030tim.png" /></a>
+</section>
+</section>
+<section id="id4">
+<h3>电源体系<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>供电电压: 2.0 to 3.6 V</p></li>
+<li><p>运行功耗: 100μA/MHz</p></li>
+</ul>
+<section id="id5">
+<h4>低功耗模式<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+</section>
+</section>
+<section id="id6">
+<h3>封装尺寸<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<section id="son8">
+<span id="stm32-so8"></span><h4>SON8<a class="headerlink" href="#son8" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>封装尺寸(STM32G030J6)：4.9 x 6 mm</p></li>
+</ul>
+<p>作为新推出的小封装型号，配备非常丰富的资源非常有针对性，针对单位IO的性能在一段时期内不会落后</p>
+<img alt="../../_images/STM32G030p8.png" src="../../_images/STM32G030p8.png" />
+</section>
+</section>
+</section>
+<section id="id7">
+<h2><a class="toc-backref" href="#id33">Xin选择</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id8">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id9" id="id36">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id10" id="id37">系列对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id11" id="id38">核心更新</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id39">存储更新</a></p></li>
+<li><p><a class="reference internal" href="#adc" id="id40">ADC更新</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id13" id="id41">型号对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id14" id="id42">官方定价</a></p></li>
+<li><p><a class="reference internal" href="#id15" id="id43">外设资源</a></p></li>
+<li><p><a class="reference internal" href="#stm32g070" id="id44">STM32G070</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id16" id="id45">替换方案</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id17" id="id46">升级方案</a></p></li>
+<li><p><a class="reference internal" href="#id18" id="id47">降本方案</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id9">
+<h3><a class="toc-backref" href="#id36">品牌对比</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<p>这个规格范围的国产替换方案非常多，如果不是为了一些特殊的功能外设和参数，也不追求极致的价格优化，STM32G030系列是一个不错的选择，当然在实际选择时，还需要同步考虑市场供应因素。</p>
+</section>
+<section id="id10">
+<h3><a class="toc-backref" href="#id37">系列对比</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+<p>相对前代 <a class="reference internal" href="STM32F030.html#stm32f030"><span class="std std-ref">STM32F030</span></a> 系列进行了升级，拥有更好的模拟性能，主频更高同时如CRC等外设全系标配，相对市场同类产品，拥有自家完善的资源体系和可靠性，是新推出的 <code class="docutils literal notranslate"><span class="pre">高性价比</span></code> 的国际一线品牌MCU。</p>
+<section id="id11">
+<h4><a class="toc-backref" href="#id38">核心更新</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html"><img alt="../../_images/F0VSG0_Core.png" src="../../_images/F0VSG0_Core.png" /></a>
+</section>
+<section id="id12">
+<h4><a class="toc-backref" href="#id39">存储更新</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html"><img alt="../../_images/F0VSG0_FLASH.png" src="../../_images/F0VSG0_FLASH.png" /></a>
+</section>
+<section id="adc">
+<h4><a class="toc-backref" href="#id40">ADC更新</a><a class="headerlink" href="#adc" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html"><img alt="../../_images/F0VSG0_ADC.png" src="../../_images/F0VSG0_ADC.png" /></a>
+</section>
+</section>
+<section id="id13">
+<h3><a class="toc-backref" href="#id41">型号对比</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<p>作为入门级超值产品，STM32G030同族的还包括STM32G050、STM32G070和STM32G0B0，除了常规的SRAM和Flash差异，STM32G0B0支持 USB FS</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>就官方给出的定价而言，STM32G030差不多是STM32所有系列中最低的，是获得STM32生态便利的低成本首选。</p>
+</div>
+<section id="id14">
+<h4><a class="toc-backref" href="#id42">官方定价</a><a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html"><img alt="../../_images/STM32G030l.png" src="../../_images/STM32G030l.png" /></a>
+</section>
+<section id="id15">
+<h4><a class="toc-backref" href="#id43">外设资源</a><a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x0-value-line.html"><img alt="../../_images/STM32G030list.png" src="../../_images/STM32G030list.png" /></a>
+</section>
+<section id="stm32g070">
+<h4><a class="toc-backref" href="#id44">STM32G070</a><a class="headerlink" href="#stm32g070" title="Permalink to this heading">¶</a></h4>
+<p>相对STM32G030系列的8K SRAM提升到36K，更高规格配置144K SRAM的STM32G0B0</p>
+</section>
+</section>
+<section id="id16">
+<h3><a class="toc-backref" href="#id45">替换方案</a><a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<p>由于STM32G0系列是ST最近推出的产品，所有不会存在明显落后的情况，更多的替换需求来源功能/产品的衍生和市场因素</p>
+<section id="id17">
+<h4><a class="toc-backref" href="#id46">升级方案</a><a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h4>
+<blockquote>
+<div><p><a class="reference internal" href="#stm32g030"><span class="std std-ref">STM32G030</span></a> 并不支持USB PD功能，如果需要该功能的升级，可以选择参考方案 <a class="reference external" href="https://www.st.com/content/st_com/en/ecosystems/stm32-usb-c.html">USB Type-C™ and Power Delivery</a></p>
+</div></blockquote>
+</section>
+<section id="id18">
+<h4><a class="toc-backref" href="#id47">降本方案</a><a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h4>
+<blockquote>
+<div><p><a class="reference internal" href="#stm32g030"><span class="std std-ref">STM32G030</span></a> 由于已经是STM32系列中成本最低的系列之一了，更多可能的降本方案为市场供给导致，更多可以选择国产 <a class="reference internal" href="../../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a> 入门级产品，可参考 <a class="reference internal" href="../../list/hot.html#ref030"><span class="std std-ref">F030范式</span></a></p>
+</div></blockquote>
+</section>
+</section>
+</section>
+<section id="id19">
+<h2><a class="toc-backref" href="#id34">Xin应用</a><a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>STM32G030系列的FLASH和RAM资源都相对受限，虽然可以运行FreeRTOS（基于CMSISv1），但8K SRAM并不是RTOS理想载体。</p>
+</div>
+<div class="contents local topic" id="id20">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id21" id="id48">硬件资源</a></p>
+<ul>
+<li><p><a class="reference internal" href="#a" id="id49">开发板A</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id22" id="id50">工具资源</a></p>
+<ul>
+<li><p><a class="reference internal" href="#platformio" id="id51">PlatformIO</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id24" id="id52">功能使用</a></p>
+<ul>
+<li><p><a class="reference internal" href="#crc" id="id53">CRC</a></p></li>
+<li><p><a class="reference internal" href="#uart" id="id54">UART</a></p></li>
+<li><p><a class="reference internal" href="#rtc" id="id55">RTC</a></p></li>
+<li><p><a class="reference internal" href="#stm32g030-adc" id="id56">ADC</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id26" id="id57">开源应用</a></p>
+<ul>
+<li><p><a class="reference internal" href="#arduino" id="id58">Arduino</a></p></li>
+<li><p><a class="reference internal" href="#rust" id="id59">Rust</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id21">
+<h3><a class="toc-backref" href="#id48">硬件资源</a><a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+<section id="a">
+<h4><a class="toc-backref" href="#id49">开发板A</a><a class="headerlink" href="#a" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://item.taobao.com/item.htm?spm=a230r.1.14.13.4492136cOK1nOg&amp;id=615829096702&amp;ns=1&amp;abbucket=3#detail"><img alt="../../_images/B_STM32G030.jpg" src="../../_images/B_STM32G030.jpg" /></a>
+</section>
+</section>
+<section id="id22">
+<h3><a class="toc-backref" href="#id50">工具资源</a><a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
+<p>使用STM32芯片最直接方式是通过 <a class="reference external" href="https://www.st.com/zh/ecosystems/stm32cube.html">stm32cube</a> 工具构建基本运行体，不用开发者自己去研究寄存器初始化相应外设（但请注意使能）。</p>
+<section id="platformio">
+<h4><a class="toc-backref" href="#id51">PlatformIO</a><a class="headerlink" href="#platformio" title="Permalink to this heading">¶</a></h4>
+<p>如果你要探索一些开源项目，可基于 <a class="reference external" href="https://platformio.org/platforms/ststm32">PlatformIO</a> 构建的工程，通过跨平台编译，直接在编辑器中集成，可以云端部署，比常用的IDE拥有更多的灵活性。 <a class="reference external" href="https://www.os-q.com/">源圈OS-Q</a> 先验证 <a class="reference external" href="https://github.com/OS-Q/P215">PlatformIO STM32G0 Enhanced</a></p>
+</section>
+</section>
+<section id="id24">
+<h3><a class="toc-backref" href="#id52">功能使用</a><a class="headerlink" href="#id24" title="Permalink to this heading">¶</a></h3>
+<section id="crc">
+<span id="stm32g030-crc"></span><h4><a class="toc-backref" href="#id53">CRC</a><a class="headerlink" href="#crc" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">输入翻转</span></code> <code class="docutils literal notranslate"><span class="pre">输出翻转</span></code> <code class="docutils literal notranslate"><span class="pre">长度可调</span></code> <code class="docutils literal notranslate"><span class="pre">多项式可调</span></code></p>
+<p>循环冗余校验(CRC：Cyclic Redundancy Check)是一种错误检测算法，通常在通信协议中或存储设备中用于检测原始数据的意外变动。
+可以简单理解成对有用数据按照一定的算法进行计算后，提取出一个特征值，并附加在有用数据后。
+在应用中将有用数据按照特定的算法提取特征值与预先存储的特征值进行比对，如相等则校验通过，反之校验失败，从而识别出数据是否异常。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uint32_t HAL_CRC_Calculate<span class="o">(</span>CRC_HandleTypeDef *hcrc, uint32_t pBuffer<span class="o">[]</span>, uint32_t BufferLength<span class="o">)</span><span class="p">;</span>
+//累积CRC计算数值,不清空之前的计算数值
+uint32_t HAL_CRC_Accumulate<span class="o">(</span>CRC_HandleTypeDef *hcrc, uint32_t pBuffer<span class="o">[]</span>, uint32_t BufferLength<span class="o">)</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>内置一个CRC-32硬件计算单元，配置CRC-16/MODBUS：</p>
+<ul class="simple">
+<li><p>width=16 poly=0x8005 init=0xffff refin=true refout=true xorout=0x0000 check=0x4b37 residue=0x0000</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>static void MX_CRC_Init<span class="o">(</span>void<span class="o">)</span>
+<span class="o">{</span>
+
+    hcrc.Instance <span class="o">=</span> CRC<span class="p">;</span>
+    hcrc.Init.DefaultPolynomialUse <span class="o">=</span> DEFAULT_POLYNOMIAL_DISABLE<span class="p">;</span>
+    hcrc.Init.GeneratingPolynomial <span class="o">=</span> 0x8005<span class="p">;</span>
+    hcrc.Init.CRCLength <span class="o">=</span> CRC_POLYLENGTH_16B<span class="p">;</span>
+    hcrc.Init.InitValue <span class="o">=</span> 0xFFFF<span class="p">;</span>
+    hcrc.Init.DefaultInitValueUse <span class="o">=</span> DEFAULT_INIT_VALUE_DISABLE<span class="p">;</span>
+    hcrc.Init.InputDataInversionMode <span class="o">=</span> CRC_INPUTDATA_INVERSION_BYTE<span class="p">;</span>
+    hcrc.Init.OutputDataInversionMode <span class="o">=</span> CRC_OUTPUTDATA_INVERSION_ENABLE<span class="p">;</span>
+    hcrc.InputDataFormat <span class="o">=</span> CRC_INPUTDATA_FORMAT_BYTES<span class="p">;</span>
+    <span class="k">if</span> <span class="o">(</span>HAL_CRC_Init<span class="o">(</span><span class="p">&amp;</span>hcrc<span class="o">)</span> !<span class="o">=</span> HAL_OK<span class="o">)</span>
+    <span class="o">{</span>
+        Error_Handler<span class="o">()</span><span class="p">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+__IO uint16_t <span class="nv">uwCRCValue</span> <span class="o">=</span> <span class="m">0</span><span class="p">;</span>
+uint16_t <span class="nv">uwExpectedCRCValue</span> <span class="o">=</span> 0xCB91<span class="p">;</span> //高位在左低位在右，使用时请注意高低位顺序
+...
+static const uint8_t aDataBuffer<span class="o">[</span>BUFFER_SIZE<span class="o">]</span> <span class="o">=</span>
+<span class="o">{</span>
+    0x1, 0x2, 0x3, 0x4, 0x5, 0x6,0x7,0x8, 0x9, 0xa, 0xb, 0xc,0xd, 0xe,
+<span class="o">}</span><span class="p">;</span>
+
+<span class="nv">uwCRCValue</span> <span class="o">=</span> HAL_CRC_Calculate<span class="o">(</span><span class="p">&amp;</span>hcrc, <span class="o">(</span>uint32_t *<span class="o">)</span>aDataBuffer, <span class="m">14</span><span class="o">)</span><span class="p">;</span>
+<span class="k">if</span> <span class="o">(</span>uwCRCValue !<span class="o">=</span> uwExpectedCRCValue<span class="o">)</span>
+<span class="o">{</span>
+<span class="o">}</span>
+...
+</pre></div>
+</div>
+<p>生成多项式：当进行CRC检验时，发送方和接受方事先约定一个除数，即生成多项式G（x），常用的CRC码的生成多项式为：</p>
+<ul class="simple">
+<li><p>CRC8=X8+X5+X4+1</p></li>
+<li><p>CRC-CCITT=X16+X12+X5+1</p></li>
+<li><p>CRC16=X16+X15+X5+1</p></li>
+<li><p>CRC12=X12+X11+X3+X2+1</p></li>
+<li><p>CRC32=X32+X26+X23+X22+X16+X12+X11+X10+X8+X7+X5+X4+X2+X1+1</p></li>
+</ul>
+<p>每一个生成二项式与一个二进制序列对应，如CRC8对应的二进制序列为：100110001 (X8+X5+X4+1)</p>
+</section>
+<section id="uart">
+<span id="stm32g030-uart"></span><h4><a class="toc-backref" href="#id54">UART</a><a class="headerlink" href="#uart" title="Permalink to this heading">¶</a></h4>
+<p>基于STM32CubeMX生成HAL库工程</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uint8_t RxData<span class="p">;</span>     //中断接收串口1数据
+void HAL_UART_RxCpltCallback<span class="o">(</span>UART_HandleTypeDef *huart<span class="o">)</span>
+<span class="o">{</span>
+    <span class="k">if</span><span class="o">(</span><span class="p">&amp;</span><span class="nv">huart1</span> <span class="o">==</span> huart<span class="o">)</span> <span class="o">{</span>
+        HAL_UART_Receive_IT<span class="o">(</span>huart, <span class="p">&amp;</span>RxData, <span class="m">1</span><span class="o">)</span><span class="p">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+void HAL_TIM_PeriodElapsedCallback<span class="o">(</span>TIM_HandleTypeDef *htim<span class="o">)</span>
+<span class="o">{</span>
+    <span class="k">if</span><span class="o">(</span><span class="nv">htim</span><span class="o">==(</span><span class="p">&amp;</span>htim17<span class="o">))</span> //定时器中断函数
+    <span class="o">{</span>
+        g_run_tick++<span class="p">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+int main<span class="o">(</span>void<span class="o">)</span>
+<span class="o">{</span>
+    /* USER CODE BEGIN <span class="m">2</span> */
+    HAL_UART_Receive_IT<span class="o">(</span><span class="p">&amp;</span>huart1, <span class="p">&amp;</span>RxData, <span class="m">1</span><span class="o">)</span><span class="p">;</span>   //中断接收使能
+    HAL_TIM_PWM_Start<span class="o">(</span><span class="p">&amp;</span>htim16,TIM_CHANNEL_1<span class="o">)</span><span class="p">;</span>   //PWM输出使能
+    HAL_TIM_Base_Start_IT<span class="o">(</span><span class="p">&amp;</span>htim17<span class="o">)</span><span class="p">;</span>             //定时器使能
+    /* USER CODE END <span class="m">2</span> */
+    <span class="k">while</span> <span class="o">(</span><span class="m">1</span><span class="o">)</span>
+    <span class="o">{</span>
+        /* USER CODE BEGIN <span class="m">3</span> */
+        HAL_GPIO_TogglePin<span class="o">(</span>LED_GPIO_Port, LED_Pin<span class="o">)</span><span class="p">;</span>
+        HAL_Delay<span class="o">(</span><span class="m">500</span><span class="o">)</span><span class="p">;</span>
+    <span class="o">}</span>
+    /* USER CODE END <span class="m">3</span> */
+<span class="o">}</span>
+</pre></div>
+</div>
+</section>
+<section id="rtc">
+<span id="stm32g030-rtc"></span><h4><a class="toc-backref" href="#id55">RTC</a><a class="headerlink" href="#rtc" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">BKP</span></code> <code class="docutils literal notranslate"><span class="pre">RTC</span></code></p>
+<p>通常通过后备寄存器写入标记判断是否已经初始化RTC时钟，如果已经初始化了就不再重复初始化</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">(</span>HAL_RTC_Init<span class="o">(</span><span class="p">&amp;</span>hrtc<span class="o">)</span> !<span class="o">=</span> HAL_OK<span class="o">)</span>
+<span class="o">{</span>
+    Error_Handler<span class="o">()</span><span class="p">;</span>
+<span class="o">}</span>
+/* USER CODE BEGIN Check_RTC_BKUP */
+<span class="k">if</span><span class="o">(</span>HAL_RTCEx_BKUPRead<span class="o">(</span><span class="p">&amp;</span>hrtc, RTC_BKP_DR1<span class="o">)</span> <span class="o">==</span> 0x1234<span class="o">)</span> <span class="k">return</span><span class="p">;</span>    //如果已设定则不再初始化
+<span class="k">else</span> HAL_RTCEx_BKUPWrite<span class="o">(</span><span class="p">&amp;</span>hrtc,RTC_BKP_DR1,0x1234<span class="o">)</span><span class="p">;</span>         //如果未设定过RTC时间，则初始化
+/* USER CODE END Check_RTC_BKUP */
+</pre></div>
+</div>
+<p>在使用STM32CubeMX生成LL库文件时，屏蔽复位备份寄存器时钟域复位，维持备份寄存器正常</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>LL_PWR_EnableBkUpAccess<span class="o">()</span><span class="p">;</span>
+<span class="k">if</span><span class="o">(</span>LL_RCC_GetRTCClockSource<span class="o">()</span> !<span class="o">=</span> LL_RCC_RTC_CLKSOURCE_LSI<span class="o">)</span>
+<span class="o">{</span>
+    // LL_RCC_ForceBackupDomainReset<span class="o">()</span><span class="p">;</span>
+    // LL_RCC_ReleaseBackupDomainReset<span class="o">()</span><span class="p">;</span>
+    LL_RCC_SetRTCClockSource<span class="o">(</span>LL_RCC_RTC_CLKSOURCE_LSI<span class="o">)</span><span class="p">;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>备份寄存器共 20 bytes，实际读取 RTC_BKP_DR0 - RTC_BKP_DR4 这5个32bit寄存器</p>
+</div>
+</section>
+<section id="stm32g030-adc">
+<span id="id25"></span><h4><a class="toc-backref" href="#id56">ADC</a><a class="headerlink" href="#stm32g030-adc" title="Permalink to this heading">¶</a></h4>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>注意传入ADC通道的电压不超过参考电压，也不能超过 3.3V</p>
+</div>
+<p>ADC初始化后要进行校准，放在ADC初始化函数后面校准</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">(</span>HAL_ADCEx_Calibration_Start<span class="o">(</span><span class="p">&amp;</span>hadc1<span class="o">)</span> !<span class="o">=</span> HAL_OK<span class="o">)</span>
+<span class="o">{</span>
+    <span class="k">while</span><span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="p">;</span>        /* Calibration Error */
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>轮询方式读取ADC值    <code class="docutils literal notranslate"><span class="pre">轮询</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>HAL_ADC_Start<span class="o">(</span><span class="p">&amp;</span>hadc1<span class="o">)</span><span class="p">;</span>
+HAL_ADC_PollForConversion<span class="o">(</span><span class="p">&amp;</span>hadc1,0xffff<span class="o">)</span><span class="p">;</span>                       //等待ADC转换完成
+uint32_t <span class="nv">aADCxConvertedData</span> <span class="o">=</span> HAL_ADC_GetValue<span class="o">(</span><span class="p">&amp;</span>hadc1<span class="o">)</span><span class="p">;</span>         //轮询Vrefint通道
+<span class="nv">VrefData</span> <span class="o">=</span> __LL_ADC_CALC_VREFANALOG_VOLTAGE<span class="o">(</span>aADCxConvertedData,ADC_RESOLUTION_12B<span class="o">)</span><span class="p">;</span>  //转换为电压：单位mv
+</pre></div>
+</div>
+<p>同时开多个通道进行轮询，需要正确配置配置Rank的输入通道：扫描模式+单次转换+间断转换模式。 <code class="docutils literal notranslate"><span class="pre">多通道</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="o">(</span><span class="nv">i</span><span class="o">=</span><span class="m">0</span><span class="p">;</span>i&lt;<span class="m">2</span><span class="p">;</span>i++<span class="o">)</span>
+<span class="o">{</span>
+    HAL_ADC_Start<span class="o">(</span><span class="p">&amp;</span>hadc1<span class="o">)</span><span class="p">;</span>
+    HAL_ADC_PollForConversion<span class="o">(</span><span class="p">&amp;</span>hadc1,0xffff<span class="o">)</span><span class="p">;</span>//等待ADC转换完成
+    adcBuf<span class="o">[</span>i<span class="o">]=</span>HAL_ADC_GetValue<span class="o">(</span><span class="p">&amp;</span>hadc1<span class="o">)</span><span class="p">;</span>
+<span class="o">}</span>
+HAL_ADC_Stop<span class="o">(</span><span class="p">&amp;</span>hadc1<span class="o">)</span><span class="p">;</span>
+<span class="nv">VrefData</span> <span class="o">=</span> __LL_ADC_CALC_VREFANALOG_VOLTAGE<span class="o">(</span>aADCxConvertedData<span class="o">[</span><span class="m">0</span><span class="o">]</span>,ADC_RESOLUTION_12B<span class="o">)</span><span class="p">;</span>
+<span class="nv">Tempruate</span><span class="o">=</span>__HAL_ADC_CALC_TEMPERATURE<span class="o">(</span>VrefData,aADCxConvertedData<span class="o">[</span><span class="m">1</span><span class="o">]</span>,ADC_RESOLUTION_12B<span class="o">)</span><span class="p">;</span> //轮询内部温度通道
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>查询有可能会丢失数据，扫描模式是在配置为多个通道必须打开的！</p>
+</div>
+<p>单次模式和连续模式：单次模式下会把这四个通道采集一边就停止了，而连续模式就是这四个通道转换完以后再循环过来再从ch0开始。</p>
+<p>STM32大多数产品ADC属于SAR型（逐次逼近型），转换需要一定的时间，尤其是需要多个通道同时转换的场合，不同的程序设计方式对系统效率有着极大的影响，通过DMA方式可以提高转换率。</p>
+<p>假设每次adc采样需要1us，采样率8k，每次采样需要采4个通道，使用阻塞的方式进行AD转换，如果这4个通道共用一个ADC，那么AD转换将会占用系统约3%的资源，若这4个通道每个通道用一个ADC，那么4个通道的转换可以并行进行，系统资源占用降到了1%以下，如果4个通道采样使用DMA实现，系统资源占用可以忽略。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>HAL_ADC_Start_DMA<span class="o">(</span><span class="p">&amp;</span>hadc1, <span class="o">(</span>uint32_t*<span class="o">)</span><span class="p">&amp;</span>aADCxConvertedData, <span class="m">4</span><span class="o">)</span><span class="p">;</span> //启用DMA的ADC转换，其中数量4为通道数量
+</pre></div>
+</div>
+<p>如果配置的Rank在开启的通道中不连续，DMA无法将转换的数据传到对应的缓冲区，也就和无法读取到该通道的数据</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>ADC是12位的，只需要用Half Word就可以，但 HAL_ADC_Start_DMA(ADC_HandleTypeDef* hadc, uint32_t* pData, uint32_t Length) 函数中pData为32位的，DMA参数必须配置Word。</p>
+</div>
+</section>
+</section>
+<section id="id26">
+<h3><a class="toc-backref" href="#id57">开源应用</a><a class="headerlink" href="#id26" title="Permalink to this heading">¶</a></h3>
+<p>更多开源趋势可查看 <a class="reference internal" href="../../list/hot.html#hot"><span class="std std-ref">热度Xin</span></a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/STMicroelectronics/STM32CubeG0">STM32CubeG0</a></p></li>
+</ul>
+<section id="arduino">
+<span id="stm32g030-arduino"></span><h4><a class="toc-backref" href="#id58">Arduino</a><a class="headerlink" href="#arduino" title="Permalink to this heading">¶</a></h4>
+<p>关于 <a class="reference internal" href="../index.html#st"><span class="std std-ref">ST</span></a> MCU构建的 <a class="reference external" href="https://github.com/search?q=STM32G0">STM32G0开源资源</a> ，其中最主要的包括 <a class="reference internal" href="../../list/hot.html#arduino"><span class="std std-ref">Arduino</span></a> ，STM32也是Arduino的最佳运行平台之一。</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/stm32duino/Arduino_Core_STM32">Arduino_Core_STM32</a></p></li>
+</ul>
+</section>
+<section id="rust">
+<span id="stm32g030-rust"></span><h4><a class="toc-backref" href="#id59">Rust</a><a class="headerlink" href="#rust" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/stm32-rs/stm32g0xx-hal">rust API</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="id27">
+<h2><a class="toc-backref" href="#id35">Xin总结</a><a class="headerlink" href="#id27" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id28">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id29" id="id60">能力构建</a></p></li>
+<li><p><a class="reference internal" href="#id30" id="id61">要点提示</a></p></li>
+<li><p><a class="reference internal" href="#id31" id="id62">问题整理</a></p></li>
+</ul>
+</div>
+<section id="id29">
+<h3><a class="toc-backref" href="#id60">能力构建</a><a class="headerlink" href="#id29" title="Permalink to this heading">¶</a></h3>
+<p>STM32G0系列沿用成熟的STM32开源工具和资源，通过STM32CubeMX进行构建，全体系工具链可跨平台使用。</p>
+</section>
+<section id="id30">
+<h3><a class="toc-backref" href="#id61">要点提示</a><a class="headerlink" href="#id30" title="Permalink to this heading">¶</a></h3>
+<p>STM32G0系列属于较新的产品，也重点优化了ADC的性能，相较于使用最广泛的STM32F1系列，在ADC初始化阶段需要更长的时间，所以在采样的时候需要过滤开始阶段无效的数据。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>SON8封装由于管脚复用，注意烧录口使能，小心变砖</p>
+</div>
+</section>
+<section id="id31">
+<h3><a class="toc-backref" href="#id62">问题整理</a><a class="headerlink" href="#id31" title="Permalink to this heading">¶</a></h3>
+<p>相较以往STM32的boot模式，新的G0系列芯片出厂默认从system flash启动，boot0管脚无论拉高或拉低都不能从系统存储区（system flash）启动（进入bootloader状态），也就是说如果烧录的程序没有配置SYS调试端口，将无法通过传统的boot0拉高来连接烧录器。</p>
+<p>如果要使能boot 0的功能，需要修改option bytes，将nboot_sel后面的勾选去掉，断电复位，此时芯片的启动方式就由boot0引脚决定了，上拉boot0进bootloader模式。</p>
+<p>一不小心就把芯片锁死弄成砖了，可以将PA0（NRST）接地，然后在连接STM32CubeProgrammer前断开接地，这是MCU可以被识别到，然后进行擦除或修改option bytes</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="STM32F030.html" class="btn btn-neutral float-left" title="STM32F030" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="STM32G031.html" class="btn btn-neutral float-right" title="STM32G031" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/st/s/STM32G030.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/st/s/STM32G030.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

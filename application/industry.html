@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>行业应用 &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/application/industry.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="AC7815" href="../miscellaneous/AC7815.html" />
+    <link rel="prev" title="Hi3921" href="../miscellaneous/Hi3921.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">功能领域</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">行业应用</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">车规产品</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../miscellaneous/AC7815.html">AC7815</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#autosar">AUTOSAR</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">智能家居</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#matter">Matter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">工控现场</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modbus">Modbus</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#modbus-rtu">Modbus RTU</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modbus-tcp">Modbus TCP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">串行通信</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#xmodem">Xmodem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ymodem">Ymodem</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor.html">芯片设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>行业应用</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/application/industry.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="industry">
+<span id="id1"></span><h1>行业应用<a class="headerlink" href="#industry" title="Permalink to this heading">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id2" id="id10">车规产品</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id11">智能家居</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id12">工控现场</a></p></li>
+</ul>
+</div>
+<section id="id2">
+<h2><a class="toc-backref" href="#id10">车规产品</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">AEC-Q100</span></code></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/AC7815.html">AC7815</a></li>
+</ul>
+</div>
+<section id="autosar">
+<span id="id3"></span><h3>AUTOSAR<a class="headerlink" href="#autosar" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">汽车开放系统架构</span></code> <code class="docutils literal notranslate"><span class="pre">ECU</span></code></p>
+<p>AUTOSAR (Automotive Open System Architecture) 成立于2003年，致力于制定汽车电子软件标准的联盟（参与者有全球各家汽车制造商、零部件供应商以及各种研究、服务机构）。</p>
+<p>目前汽车中的软件代码量早已超过了1千万行，ECU的数量也超过了1百个。</p>
+<p>一套专门针对汽车ECU的软件开发架构，用于汽车开放性的框架和行业标准，它将用作管理将来的应用程序和标准软件模块中功能的基本基础结构。</p>
+<p>三个文档组：Classic Platform(CP)、Adaptive Platform(AP)、Foundation(FO)</p>
+</section>
+</section>
+<section id="id4">
+<h2><a class="toc-backref" href="#id11">智能家居</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<section id="matter">
+<span id="id5"></span><h3>Matter<a class="headerlink" href="#matter" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">CSA</span></code> <code class="docutils literal notranslate"><span class="pre">智能家居</span></code> <code class="docutils literal notranslate"><span class="pre">简单性、互操作性、可靠性和安全性</span></code></p>
+<p>由 CSA 连接标准联盟 (Connectivity Standards Alliance) 发起，多家行业领先公司联合推出的智能家居互联协议。(Zigbee联盟改名CSA联盟)</p>
+<p>Matter协议的前身CHIP（Connected Home Over IP），该CHIP早期是由谷歌，苹果，Zigbee联盟等牵头主导并开源的一个用于解决无线iot碎片化的协议，该协议在2021年5月份正式改名Matter</p>
+<p>Matter协议不是为了消灭现有各种不同的无线协议，而是来统一现有不同的无线协议，其并不是一种底层无线通信协议，更具体的更像是基于IP化的应用层协议。</p>
+<p>Matter 基于IP协议（例如Wi-Fi、以太网和Thread）而构建，提供了一个抽象的应用层，Matter协议支持多种通信方式如WiFi、蓝牙、Zigbee、Thread（802.15.4）等，后面Matter协议也会新增支持Zigbee以及ZWave协议</p>
+<img alt="../_images/chip.png" src="../_images/chip.png" />
+<ul class="simple">
+<li><p>Matter 离不开基于IP 的网络协议，而Zigbee 有自己的网络协议</p></li>
+<li><p>Matter 还通过 <a class="reference internal" href="bluetooth.html#bt"><span class="std std-ref">Bluetooth</span></a> 和 <a class="reference internal" href="wifi.html#wifi"><span class="std std-ref">Wi-Fi</span></a> 二维码定义了最适合预期用户设置场景的预配方案，而Zigbee的标准调试流程使用其原生的 <a class="reference internal" href="wpan.html#id4"><span class="std std-ref">802.15.4</span></a> 无线技术。</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>根据ABI research的最新预测，在2022年到2030年这个区间内，Matter设备的出货量将达到550亿。</p>
+</div>
+</section>
+</section>
+<section id="id6">
+<h2><a class="toc-backref" href="#id12">工控现场</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id7">
+<ul class="simple">
+<li><p><a class="reference internal" href="#modbus" id="id13">Modbus</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id14">串行通信</a></p></li>
+</ul>
+</div>
+<section id="modbus">
+<span id="id8"></span><h3><a class="toc-backref" href="#id13">Modbus</a><a class="headerlink" href="#modbus" title="Permalink to this heading">¶</a></h3>
+<p>Modbus协议是一项应用层报文传输协议，包括ASCII、RTU、TCP三种报文类型。</p>
+<p>标准的Modbus协议物理层接口有RS232、RS422、RS485和以太网接口，采用master/slave方式通信。</p>
+<section id="modbus-rtu">
+<h4>Modbus RTU<a class="headerlink" href="#modbus-rtu" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="modbus-tcp">
+<h4>Modbus TCP<a class="headerlink" href="#modbus-tcp" title="Permalink to this heading">¶</a></h4>
+<p>Modbus设备可分为主站(poll)和从站(slave)。主站只有一个，从站有多个，主站向各从站发送请求帧，从站给予响应。在使用TCP通信时，主站为client端，主动建立连接；从站为server端，等待连接。</p>
+<p>IANA（Internet Assigned Numbers Authority，互联网编号分配管理机构）给Modbus协议赋予TCP端口号为502，这是目前在仪表与自动化行业中唯一分配到的端口号。</p>
+<p>ModbusTCP的数据帧可分为两部分：MBAP+PDU。简单的理解，就是去掉了modbus协议本身的CRC校验，增加了MBAP报文头。</p>
+<p>MBAP为报文头，长度为7字节，组成如下：</p>
+<ul class="simple">
+<li><p>事务元标识符（2个字节）：用于事务处理配对。在响应中，MODBUS服务器复制请求的事务处理标识符。这里在以太网传输中存在一个问题，就是先发后至，我们可以利用这个事务处理标识符做一个TCP序列号，来防止这种情况所造成的数据收发错乱（这里我们先不讨论这种情况，这个事务处理标识符我们统一使用0x00，0x01）</p></li>
+<li><p>协议标识符（2个字节）：modbus协议标识符为0x00，0x00</p></li>
+<li><p>长度（2个字节）：长度域是下一个域的字节数，包括单元标识符和数据域。</p></li>
+<li><p>单元标识符（1个字节）：该设备的编号。（可以使用PLC的IP地址标识）。</p></li>
+</ul>
+<p>PDU由功能码+数据组成。功能码为1字节，数据长度不定，由具体功能决定。</p>
+<p>通信过程:</p>
+<ul class="simple">
+<li><p>connect 建立TCP连接</p></li>
+<li><p>准备Modbus报文</p></li>
+<li><p>使用send命令发送报文</p></li>
+<li><p>在同一连接下等待应答</p></li>
+<li><p>使用recv命令读取报文，完成一次数据交换</p></li>
+<li><p>通信任务结束时，关闭TCP连接</p></li>
+</ul>
+</section>
+</section>
+<section id="id9">
+<h3><a class="toc-backref" href="#id14">串行通信</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<section id="xmodem">
+<h4>Xmodem<a class="headerlink" href="#xmodem" title="Permalink to this heading">¶</a></h4>
+<p>Xmodem 是一种在串口通信中广泛使用的异步文件传输协议，由于使用了CRC错误侦测方法，传输的准确率可高达99.6%。分为XModem和1k-XModem协议两种，前者使用128字节的数据块，后者使用1024字节即1k字节的数据块。</p>
+<p>XModem工作时，先由收方发出NAK，然后等待发方的包开始SOH。收到SOH后，即 将整个包收完，检查是否有错。如出错，则向发方发出一个NAK，请求发方重发； 否则发出ACK,表示接收正确，请发下个包。XModem检查包编号和checksum来确定 该包是否传送有问题。编号是发方送得出包的顺序。当XModem发送完最后一个包 时，收方会收到文件结束符(EOT)，此时，收方会送出一个ACK通知发方传送结束。</p>
+</section>
+<section id="ymodem">
+<h4>Ymodem<a class="headerlink" href="#ymodem" title="Permalink to this heading">¶</a></h4>
+<p>YModem是XModem的升级版协议，两者最大的区别是YModem可以支持传输多个文件。</p>
+<p>Ymodem具有传输快速稳定的优点，平常所说的Ymodem协议是指的Ymodem-1K，它可以一次传输1024字节的信息块，除此还有Ymodem-g（没有CRC校验，不常用）。</p>
+<p>YModem-1K用1024字节信息块传输取代标准的128字节传输，数据的发送回使用CRC校验，保证数据传输的正确性。它每传输一个信息块数据时，就会等待接收端回应ACK信号，接收到回应后，才会继续传输下一个信息块，保证数据已经全部接收。</p>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../miscellaneous/Hi3921.html" class="btn btn-neutral float-left" title="Hi3921" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../miscellaneous/AC7815.html" class="btn btn-neutral float-right" title="AC7815" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/application/industry.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/application/industry.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

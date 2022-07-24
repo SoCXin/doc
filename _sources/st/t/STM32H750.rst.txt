@@ -1,0 +1,198 @@
+.. _stm32h750:
+
+STM32H750
+================
+
+`标签 <https://github.com/SoCXin/STM32H750>`_ : ``Cortex-M7`` ``480 MHz`` ``16bit-ADC`` ``USB-HS-OTG`` ``HDMI-CEC``  ``QSPI`` ``11 UART``
+
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. image:: ./images/stm32h750.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h750-value-line.html
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：$3.5
+* 制程工艺：40nm
+* 供货周期：
+* 处理性能：1027 :ref:`DMIPS`, 2424 :ref:`CoreMark` | :ref:`level5`
+* 封装规格：LQFP144/LQFP176/UFBGA176/UFBGA169/UFBGA144/TFBGA100/LQFP100(14×14mm)
+* 运行环境：-40°C to 85°C
+* RAM容量：1 MB
+* Flash容量：128 KB
+
+.. note::
+    :ref:`stm32h750` 作为超值系列降低了内部Flash配置，但并不是flashless芯片
+
+
+特征参数
+^^^^^^^^^^^
+
+* 480 MHz :ref:`cortex_m7`
+* 2x :ref:`stm32_ospi`
+* :ref:`stm32_eth_mac`
+* :ref:`stm32_otg_hs`
+* :ref:`hdmi_cec`
+* 安全启动和安全固件升级 :ref:`stm32_sbsfu`
+* 5 x UART + 5 x USART + LPUSART
+* 2×16-bit ADC 22ch, 3.6 MSPS in 16-bit, 7.2 MSPS in doubleinterleaved mode
+* 1 x 12-bit ADC 12ch, up to 5 MSPS in 12-bit
+* 2 x Quad-SPI interface with XiP
+* LCD-TFT controller supporting up to XGA resolution
+
+
+芯片架构
+~~~~~~~~~~~
+
+
+
+
+
+
+.. _stm32_dfsdm:
+
+DFSDM
+^^^^^^^^^^^
+
+内部集成DFSDM数字滤波模块，配合Σ-Δ器件的使用，可进行高精度、高速率的AD测量
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+STM32H7系列的主要竞争对手是NXP的i.MX RT系列 :ref:`rt1060`
+
+* STM32H7支持32位SDRAM，RT1050仅支持16位SDRAM
+* STM32H7有JPEG硬解，RT的分辨率是1368*768，STM32H7是1024*768
+* RT带的两个USB都带高速PHY
+* :ref:`rt1060` 带双网口，STM32H7系列仅一个
+
+
+型号对比
+~~~~~~~~~
+
+.. image:: ./images/STM32H7.jpg
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h7-series.html
+
+
+H7系列关键参数对比
+^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`vendor`
+      - :ref:`stm32h730`
+      - :ref:`stm32h750`
+      - :ref:`stm32h7b0`
+    * - :ref:`stm32h730`
+      -
+      - OctoSPI
+      - Ethernet
+    * - :ref:`stm32h750`
+      - 1 MB RAM
+      -
+      - 480MHz
+    * - :ref:`stm32h7b0`
+      - 1.4 MB RAM
+      - :ref:`stm32_smps`
+      -
+
+超值系列关键对比
+^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`vendor`
+      - :ref:`DMIPS`
+      - RAM
+      - Cache
+      - GPU
+      - SPI
+      - USB
+      - Ethernet
+      - Interface
+    * - :ref:`stm32h730`
+      - 1177
+      - 564KB
+      - 32+32
+      - ART
+      - 2 Octo
+      - :ref:`stm32_otg_hs`
+      - 100M
+      - 35
+    * - :ref:`stm32h750`
+      - 1027
+      - 1 MB
+      - 16+16
+      - ART
+      - 2 Quad
+      - :ref:`stm32_otg_hs`
+      - 100M
+      - 35
+    * - :ref:`stm32h7b0`
+      - 599
+      - 1.4 MB
+      - 16+16
+      - ART/JPEG
+      - 2 Quad
+      - :ref:`stm32_otg_hs`
+      - No
+      - 35
+
+
+
+版本对比
+~~~~~~~~~
+
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~
+
+
+H7-TOOL
+~~~~~~~~~~
+
+
+
+Xin总结
+--------------
+
+.. contents::
+    :local:
+
+能力构建
+~~~~~~~~~~~~~
+
+要点提示
+~~~~~~~~~~~~~
+
+问题整理
+~~~~~~~~~~~~~
+

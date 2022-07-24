@@ -1,0 +1,107 @@
+
+.. _ch552:
+
+CH552
+========
+
+.. image:: https://github.com/SoCXin/CH552/workflows/project/badge.svg
+    :target: https://github.com/SoCXin/CH552/actions
+
+* `WCH <http://www.wch.cn/products/CH552>`_ : ``USB`` ``8051`` ``24MHz`` ``LDO`` ``Type-C``
+* `GitHub <https://github.com/SoCXin/CH552>`_ : :ref:`pop` / :ref:`low` / :ref:`usb_pd`
+
+:ref:`ch552` --> :ref:`ch549`
+
+.. contents::
+    :local:
+    :depth: 1
+
+
+Xin简介
+-----------
+
+.. image:: ./images/CH552.png
+    :target: http://www.wch.cn/products/CH552.html
+
+规格配置
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格： `￥2.08 <https://item.szlcsc.com/112593.html>`_ 
+* 制程工艺：
+* 供货周期：
+* 处理性能：:ref:`level1`
+* 封装规格：TSSOP20/SOP16/QFN16/MSOP10
+* 运行环境：-40°C to 85°C
+* RAM容量：1 KB
+* Flash容量：16 KB
+
+
+特征参数
+^^^^^^^^^^^
+
+* 12/24 MHz :ref:`mcs51`
+* USB Device
+* UART x 2 + SPI
+
+.. warning::
+    其简配的CH551G已经停产，该型号也许性价比过高，不再是官方推荐
+
+芯片架构
+~~~~~~~~~~~
+
+
+功耗参数
+^^^^^^^^^^^
+
+* 供电电压：3.0 to 5.5 V
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+    :depth: 1
+
+品牌对比
+~~~~~~~~~~
+
+型号对比
+~~~~~~~~~~
+
+.. _ch554:
+
+CH554
+^^^^^^^^^^
+``USB`` ``E8051`` ``24MHz`` ``LDO`` ``Type-C``
+
+
+* 供电电压：3.0 to 5.5 V
+* 工作温度：-40 °C to 85 °C
+* 封装规格：TSSOP20/MSOP10/QFN16/SOP16
+* 处理性能：14 :ref:`DMIPS`
+* RAM容量：2 KB
+* Flash容量：16 KB
+* :ref:`mcs51` 24 MHz
+* SPI x 2 + UART x 2 (16C550/6Mbps)
+* USB H/D
+
+版本对比
+~~~~~~~~~~
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+.. _ch552_dap:
+
+CMSIS-DAP
+~~~~~~~~~~~~~
+
+:ref:`cmsis_dap`

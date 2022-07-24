@@ -1,0 +1,49 @@
+
+.. _at32f425:
+
+AT32F425
+===============
+
+`GitHub <https://github.com/SoCXin/AT32F425>`_ : ``Cortex-M4`` ``96MHz`` ``USB OTG``
+
+.. contents::
+    :local:
+    :depth: 1
+
+
+Xin简介
+-----------
+
+.. image:: ./images/AT32F425_banner.jpg
+    :target: https://www.arterytek.com/cn/product/AT32F425.jsp
+
+`datasheet <https://www.arterytek.com/download/DS/DS_AT32F425_V2.00_CH.pdf>`_
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2022年1月18日
+* 发布价格：
+* 制程工艺：55 nm
+* 供货周期：
+* 处理性能：? :ref:`CoreMark`
+* RAM容量：20 KB
+* Flash容量：64 KB
+* 封装规格：TSSOP20/QFN32/QFN48/LQFP32/LQFP48/LQFP64
+
+
+特征参数
+^^^^^^^^^^^
+
+* 96 MHz :ref:`cortex_m4`
+
+
+芯片架构
+~~~~~~~~~~~
+
+.. image:: images/AT32F425s.png
+    :target: https://www.arterytek.com/download/RM/RM_AT32F425_CH_V2.01.pdf

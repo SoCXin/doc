@@ -1,0 +1,46 @@
+
+.. _ch557:
+
+CH557
+==========
+
+* 关键词：``USB`` ``E8051`` ``24MHz`` ``LDO`` ``Type-C``
+* 资源库：`GitHub <https://github.com/SoCXin/CH557>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+
+.. image:: ./images/CH557.png
+    :target: http://www.wch.cn/products/CH557.html
+
+规格参数
+~~~~~~~~~~~
+
+兼容MCS51的增强型E8051内核，79%指令是单字节单周期指令，3KB BootLoader + 60KB CodeFlash，8K xRAM + 256B iRAM，1K DataFlash。
+
+内置了USB主机控制器和收发器，内置4端口USB root-hub根集线器，支持USB 2.0全速12Mbps或者低速1.5Mbps，支持USB Host主机模式和USB Device设备模式。支持最大64字节数据包，内置FIFO，支持DMA。
+
+CH557提供丰富的接口资源，包括2组异步串口、6路PWM、14通道电容触摸按键、128组RGB三色LED控制器，其他包括2路SPI、IIC主机和IIC从机、14路12位ADC，支持电压比较；内置3组定时器和2路信号捕捉；支持最多58个GPIO。
+
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：3.0 to 5.5 V
+* 工作温度：-40 °C to 85 °C
+* 封装规格：
+* 处理性能：34 :ref:`DMIPS`
+* RAM容量：4 KB
+* Flash容量：16 KB
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`mcs51` 24 MHz
+* SPI x 2 + UART x 2 (16C550/6Mbps)
+* USB H/D
+* 4端口USB root-hub集线器
+

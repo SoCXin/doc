@@ -1,0 +1,93 @@
+
+.. _cc1350:
+
+CC1350
+============
+
+`ti <https://www.ti.com.cn/product/cn/CC1350>`_ : ``Cortex-M3`` ``SimpleLink`` ``BLE`` ``ZigBee`` ``6LoWPAN``
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. image:: ./images/CC2650.png
+    :target: https://www.ti.com.cn/product/cn/CC2650
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：142 :ref:`CoreMark` ，158 :ref:`ulpbench`
+* 封装规格：VQFN32/VQFN48
+* 运行环境：
+* RAM容量：20 KB
+* Flash容量：128 KB
+
+
+特征参数
+^^^^^^^^^^^
+
+* 48 MHz :ref:`cortex_m3`
+* :ref:`cortex_m0`
+
+
+
+芯片架构
+~~~~~~~~~~~~
+
+
+功耗参数
+^^^^^^^^^^^
+
+* 宽电源电压范围：1.8 至 3.8V
+* RX：5.4mA（低于 1GHz），6.4mA（低功耗蓝牙，2.4GHz）
+* TX（+10dBm 时）：13.4mA（低于 1GHz）
+* TX（+9dBm 时）：22.3mA（低功耗蓝牙，2.4GHz）
+* TX（+0dBm 时）：10.5mA（低功耗蓝牙，2.4GHz）
+* Coremark 运行时的 48MHz 有源模式微控制器 (MCU)：2.5mA (51µA/MHz)
+* 有源模式 MCU：48.5 CoreMark/mA
+
+有源模式传感器控制器（24 MHz）：
+
+* 0.4mA + 8.2µA/MHz
+* 传感器控制器，每秒唤醒一次来执行一次 12 位 ADC 采样：0.95µA
+* 待机电流：0.7µA（实时时钟 (RTC) 运行，RAM 和 CPU 保持）
+* 关断电流：185nA（发生外部事件时唤醒）
+
+连接能力
+~~~~~~~~~~~
+
+``BLE`` ``Sub-1GHz``
+
+* 2.4GHz RF收发器，符合低功耗蓝牙 4.2 规范
+* 可编程输出功率：低于 1GHz 时最高可达 +15dBm；2.4GHz（低功耗蓝牙）时最高可达 +9dBm
+* 出色的接收器灵敏度：远距离模式下为 –124dBm；50kbps 时为 –110dBm（低于 1GHz），低功耗蓝牙模式下为 –87dBm
+* 出色的可选择性 (±100kHz)：56dB
+* 出色的阻断性能 (±10MHz)：90dB
+
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~~
+
+系列对比
+~~~~~~~~~~
+
+

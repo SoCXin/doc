@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADC &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/application/adc.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PG23" href="../miscellaneous/PG23.html" />
+    <link rel="prev" title="TKM32F499" href="../miscellaneous/TKM32F499.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">功能领域</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ai.html">边缘计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foc.html">实时控制</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hmi.html">人机交互</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">信号处理</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">产品分类</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#adc-mcu">ADC-MCU</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#high-speed">High-Speed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#high-precision">High-Precision</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">实现方式</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sar">SAR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pipeline">Pipeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sigma-delta">Sigma-Delta</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id23">应用方式</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id25">通信接口</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id26">典型案例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="audio.html">音频处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#id2">通信连接</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor.html">芯片设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Application</a> &raquo;</li>
+      <li>ADC</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/application/adc.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="adc">
+<span id="id1"></span><h1>ADC<a class="headerlink" href="#adc" title="Permalink to this heading">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id2" id="id30">产品分类</a></p></li>
+<li><p><a class="reference internal" href="#id19" id="id31">实现方式</a></p></li>
+<li><p><a class="reference internal" href="#id23" id="id32">应用方式</a></p></li>
+</ul>
+</div>
+<section id="id2">
+<h2><a class="toc-backref" href="#id30">产品分类</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id3">
+<ul class="simple">
+<li><p><a class="reference internal" href="#adc-mcu" id="id33">ADC-MCU</a></p></li>
+<li><p><a class="reference internal" href="#high-speed" id="id34">High-Speed</a></p></li>
+<li><p><a class="reference internal" href="#high-precision" id="id35">High-Precision</a></p></li>
+</ul>
+</div>
+<section id="adc-mcu">
+<h3><a class="toc-backref" href="#id33">ADC-MCU</a><a class="headerlink" href="#adc-mcu" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#adc-hs"><span class="std std-ref">High-Speed</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p>SRAM/flash</p></th>
+<th class="head"><p>12-bit</p></th>
+<th class="head"><p>16-bit</p></th>
+<th class="head"><p>SampleRate</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../arterytek/AT32F437.html#at32f437"><span class="std std-ref">AT32F437</span></a></p></td>
+<td><p>288 MHz</p></td>
+<td><p>630</p></td>
+<td><p>512K/4M</p></td>
+<td><p>3x16ch</p></td>
+<td><p>X</p></td>
+<td><p>5.33MSPS</p></td>
+<td><p>LQFP64</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../st/m/STM32L412.html#stm32l412"><span class="std std-ref">STM32L412</span></a></p></td>
+<td><p>80 MHz</p></td>
+<td></td>
+<td><p>40K/128K</p></td>
+<td><p>2x</p></td>
+<td><p>X</p></td>
+<td><p>5MSPS</p></td>
+<td><p>LQFP32</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32G431.html#stm32g431"><span class="std std-ref">STM32G431</span></a></p></td>
+<td><p>170MHz</p></td>
+<td></td>
+<td><p>128K/512K</p></td>
+<td><p>2x4MSPS</p></td>
+<td><p>X</p></td>
+<td><p>4/3</p></td>
+<td><p>LQFP48</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../st/m/STM32G474.html#stm32g474"><span class="std std-ref">STM32G474</span></a></p></td>
+<td><p>170MHz</p></td>
+<td></td>
+<td><p>128K/512K</p></td>
+<td><p>5x4MSPS</p></td>
+<td><p>X</p></td>
+<td><p>7/6</p></td>
+<td><p>LQFP100</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/t/STM32H730.html#stm32h730"><span class="std std-ref">STM32H730</span></a></p></td>
+<td><p>550MHz</p></td>
+<td></td>
+<td><p>564K/128K</p></td>
+<td><p>1x5MSPS</p></td>
+<td><p>2x3.6MSPS</p></td>
+<td><p>2/2</p></td>
+<td><p>LQFP100</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../st/t/STM32H750.html#stm32h750"><span class="std std-ref">STM32H750</span></a></p></td>
+<td><p>480MHz</p></td>
+<td></td>
+<td><p>1MB/128KB</p></td>
+<td><p>X</p></td>
+<td><p>3x3.6MSPS</p></td>
+<td><p>2/2</p></td>
+<td><p>LQFP100</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/t/STM32H7B0.html#stm32h7b0"><span class="std std-ref">STM32H7B0</span></a></p></td>
+<td><p>280MHz</p></td>
+<td></td>
+<td><p>1.4M/128K</p></td>
+<td><p>X</p></td>
+<td><p>2x3.6MSPS</p></td>
+<td><p>2/2</p></td>
+<td><p>LQFP64</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>目前MCU集成的高速ADC性能，精度可到16bit(普遍12bit)，速率可达5MSPS(普遍2MSPS)，独立器件数量可达5个(普遍2个)；2x16bit+1x12bit数据带宽3.6M x 2 x 16 + 5M x 1 x 12 = 175.2Mbps，3x16bit 数据带宽3.6M x 3 x 16 = 172.8Mbps</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#adc-hp"><span class="std std-ref">High-Precision</span></a></p></th>
+<th class="head"><p>Freq</p></th>
+<th class="head"><p>SRAM/ROM</p></th>
+<th class="head"><p>SNR</p></th>
+<th class="head"><p>INL</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Spec</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../miscellaneous/ZML165.html#zml165"><span class="std std-ref">ZML165</span></a></p></td>
+<td><p>48 MHz</p></td>
+<td><p>4KB/64KB</p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#sigma-delta"><span class="std std-ref">Sigma-Delta</span></a></p></td>
+<td><p>24bit</p></td>
+<td><p>QFN20</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/ZML165.html#zml166"><span class="std std-ref">ZML166</span></a></p></td>
+<td><p>48 MHz</p></td>
+<td><p>4KB/64KB</p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#sigma-delta"><span class="std std-ref">Sigma-Delta</span></a></p></td>
+<td><p>24bit</p></td>
+<td><p>QFN32</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../chipsea/CS32A039.html#cs32a039"><span class="std std-ref">CS32A039</span></a></p></td>
+<td><p>48 MHz</p></td>
+<td><p>4KB/64KB</p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference internal" href="#sigma-delta"><span class="std std-ref">Sigma-Delta</span></a></p></td>
+<td><p>24bit</p></td>
+<td><p>LQFP64</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>目前MCU集成高精度ADC，主流以24-Bit为主，多以SiP封装 <a class="reference internal" href="#sigma-delta"><span class="std std-ref">Sigma-Delta</span></a> 为主。</p>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/PG23.html">PG23</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/ZML165.html">ZML165</a></li>
+</ul>
+</div>
+<p>转换速率(Conversion Rate)是指完成一次从模拟转换到数字的AD转换所需的时间的倒数。积分型AD的转换时间是毫秒级属低速AD，逐次比较型AD是微秒级属中速AD，全并行/串并行型AD可达到纳秒级。</p>
+<p>采样时间是指两次转换的间隔。为了保证转换的正确完成，采样速率(Sample Rate)必须小于或等于转换速率。</p>
+<p>因此有人习惯上将转换速率在数值上等同于采样速率也是可以接受的。常用单位是ksps和Msps，表示每秒采样千/百万次（kilo / Million Samples per Second）。</p>
+<p>量化误差(Quantizing Error) 由于AD的有限分辩率而引起的误差，即有限分辩率AD的阶梯状转移特性曲线与无限分辩率AD（理想AD）的转移特性曲线（直线）之间的最大偏差。通常是1 个或半个最小数字量的模拟变化量，表示为1LSB、1/2LSB。</p>
+</section>
+<section id="high-speed">
+<span id="adc-hs"></span><h3><a class="toc-backref" href="#id34">High-Speed</a><a class="headerlink" href="#high-speed" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>MSPS</p></th>
+<th class="head"><p>Resolution</p></th>
+<th class="head"><p>Channel</p></th>
+<th class="head"><p>Interface</p></th>
+<th class="head"><p>Power</p></th>
+<th class="head"><p>Arch</p></th>
+<th class="head"><p>Package</p></th>
+<th class="head"><p>Price</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ADS4222</p></td>
+<td><p>65</p></td>
+<td><p>12-bit</p></td>
+<td><p>2</p></td>
+<td><p>LVDS</p></td>
+<td><p>183mW</p></td>
+<td><p>Pipeline</p></td>
+<td><p>VQFN64</p></td>
+<td><p>$36.30</p></td>
+</tr>
+<tr class="row-odd"><td><p>ADS4225</p></td>
+<td><p>125</p></td>
+<td><p>12-bit</p></td>
+<td><p>2</p></td>
+<td><p>LVDS</p></td>
+<td><p>183mW</p></td>
+<td><p>Pipeline</p></td>
+<td><p>VQFN64</p></td>
+<td><p>$36.30</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ads4229"><span class="std std-ref">ADS4229</span></a></p></td>
+<td><p>250</p></td>
+<td><p>12-bit</p></td>
+<td><p>2</p></td>
+<td><p>LVDS</p></td>
+<td><p>545mW</p></td>
+<td><p>Pipeline</p></td>
+<td><p>VQFN64</p></td>
+<td><p>$36.30</p></td>
+</tr>
+<tr class="row-odd"><td><p>ADS4249</p></td>
+<td><p>250</p></td>
+<td><p>14-bit</p></td>
+<td><p>2</p></td>
+<td><p>LVDS</p></td>
+<td><p>545mW</p></td>
+<td><p>Pipeline</p></td>
+<td><p>VQFN64</p></td>
+<td><p>$36.30</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ad9767"><span class="std std-ref">AD9767</span></a></p></td>
+<td><p>125</p></td>
+<td><p>14-bit</p></td>
+<td><p>2</p></td>
+<td><p>LVDS</p></td>
+<td><p>545mW</p></td>
+<td><p>Pipeline</p></td>
+<td><p>LQFP48</p></td>
+<td><p>$21.70</p></td>
+</tr>
+</tbody>
+</table>
+<section id="ad9248">
+<span id="id4"></span><h4>AD9248<a class="headerlink" href="#ad9248" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">14bit</span></code> <code class="docutils literal notranslate"><span class="pre">65MSPS</span></code> <code class="docutils literal notranslate"><span class="pre">Dual-Channel</span></code> <code class="docutils literal notranslate"><span class="pre">SNR71.6dBc</span></code> <code class="docutils literal notranslate"><span class="pre">800mW</span></code> <code class="docutils literal notranslate"><span class="pre">LQFP48</span></code> <code class="docutils literal notranslate"><span class="pre">$21.70</span></code></p>
+<p><a class="reference external" href="https://www.analog.com/cn/products/ad9248.html">AD9248芯片</a></p>
+<p>AD9248是一款双核、3 V、14位、20/40/65 MSPS模数转换器（ADC），集成了两个高性能采样保持放大器和一个基准电压源。它采用多级差分流水线架构，内置输出纠错逻辑，在最高65 MSPS数据速率时可提供14位精度，并保证在整个工作温度范围内无失码。</p>
+<p><a class="reference external" href="https://www.uisrc.com/portal.php?mod=view&amp;aid=331">FEP-DAQ9248 采集模块</a></p>
+</section>
+<section id="ad9767">
+<span id="id6"></span><h4>AD9767<a class="headerlink" href="#ad9767" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">14bit</span></code> <code class="docutils literal notranslate"><span class="pre">125MSPS</span></code> <code class="docutils literal notranslate"><span class="pre">Dual-Channel</span></code> <code class="docutils literal notranslate"><span class="pre">75dBc</span></code> <code class="docutils literal notranslate"><span class="pre">LQFP48</span></code> <code class="docutils literal notranslate"><span class="pre">$21.70</span></code></p>
+<p><a class="reference external" href="https://www.analog.com/cn/products/ad9767.html#product-overview">AD9767芯片</a>
+<a class="reference external" href="https://www.uisrc.com/portal.php?mod=view&amp;aid=330">FEP-DAQ9767</a></p>
+</section>
+<section id="ads4229">
+<span id="id8"></span><h4>ADS4229<a class="headerlink" href="#ads4229" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">12bit</span></code> <code class="docutils literal notranslate"><span class="pre">250MSPS</span></code> <code class="docutils literal notranslate"><span class="pre">Dual-Channel</span></code> <code class="docutils literal notranslate"><span class="pre">545mW</span></code> <code class="docutils literal notranslate"><span class="pre">VQFN64</span></code> <code class="docutils literal notranslate"><span class="pre">$36.30</span></code></p>
+<p><a class="reference external" href="https://www.ti.com.cn/product/cn/ADS4229#order-quality">ADS4229芯片</a></p>
+</section>
+<section id="mxt2088">
+<span id="id10"></span><h4>MXT2088<a class="headerlink" href="#mxt2088" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">8bit</span></code> <code class="docutils literal notranslate"><span class="pre">100MSPS</span></code></p>
+<ul class="simple">
+<li><p>双通道8bit，100MSPS ADC</p></li>
+<li><p>低功耗，在100MSPS下，单通道功耗为90mW</p></li>
+<li><p>片内的基准和采样保持电路</p></li>
+<li><p>每个通道有475MHz的模拟带宽</p></li>
+<li><p>47dB SNR &#64;41MHz</p></li>
+<li><p>每个通道有1Vp-p的模拟输入范围</p></li>
+<li><p>单电源电压，标准为3V，可以接受2.7V~3.6V</p></li>
+<li><p>每个通道可单独工作</p></li>
+<li><p>2的补码和偏移2进制输出</p></li>
+<li><p>输出数据对齐模式</p></li>
+</ul>
+<p>MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS</p>
+<p><a class="reference external" href="http://www.mxtronics.com/n107/n124/n181/n184/c692/content.html">MXT2088芯片</a></p>
+</section>
+</section>
+<section id="high-precision">
+<span id="adc-hp"></span><h3><a class="toc-backref" href="#id35">High-Precision</a><a class="headerlink" href="#high-precision" title="Permalink to this heading">¶</a></h3>
+<div class="contents local topic" id="id12">
+<ul class="simple">
+<li><p><a class="reference internal" href="#ad4630" id="id36">AD4630</a></p></li>
+<li><p><a class="reference internal" href="#ad7768" id="id37">AD7768</a></p></li>
+<li><p><a class="reference internal" href="#ltc2508" id="id38">LTC2508</a></p></li>
+</ul>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>A/D器件的位数越高，分辨率越高，量化误差越小，能达到的精度越高，一般把8位及以下的A/D转换器称为低分辨率ADC，9~12位称为中分辨率ADC，13位以上为高分辨率，此处所指的超高精度特指24bit及以上。</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Resolution</p></th>
+<th class="head"><p>Power &amp;Chan</p></th>
+<th class="head"><p>INL</p></th>
+<th class="head"><p>SNR</p></th>
+<th class="head"><p>Package</p></th>
+<th class="head"><p>Price</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#ltc2508"><span class="std std-ref">LTC2508</span></a></p></td>
+<td><p><a class="reference internal" href="#sar-adc"><span class="std std-ref">SAR</span></a></p></td>
+<td><p>32bit 1MSPS</p></td>
+<td><p>24mW x1</p></td>
+<td><p>±0.5ppm</p></td>
+<td><p>145dB</p></td>
+<td><p>DFN24</p></td>
+<td><p>$12.02</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ad4630"><span class="std std-ref">AD4630</span></a></p></td>
+<td><p><a class="reference internal" href="#sar-adc"><span class="std std-ref">SAR</span></a></p></td>
+<td><p>24bit 2MSPS</p></td>
+<td><p>15mW x2</p></td>
+<td><p>±0.9ppm</p></td>
+<td><p>105.7dB</p></td>
+<td><p>CSP-BGA64</p></td>
+<td><p>$37.14</p></td>
+</tr>
+</tbody>
+</table>
+<section id="ad4630">
+<span id="id13"></span><h4><a class="toc-backref" href="#id36">AD4630</a><a class="headerlink" href="#ad4630" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">24-bit</span> <span class="pre">&#64;2MSPS</span></code> <code class="docutils literal notranslate"><span class="pre">24mW</span></code> <code class="docutils literal notranslate"><span class="pre">SAR</span> <span class="pre">ADC</span></code> <code class="docutils literal notranslate"><span class="pre">Dual</span> <span class="pre">Channel</span></code> <code class="docutils literal notranslate"><span class="pre">CSP-BGA64</span></code> <code class="docutils literal notranslate"><span class="pre">$37.14</span></code></p>
+<ul class="simple">
+<li><p>积分非线性：从 −40°C to +125°C，最大值为 ±0.9 ppm</p></li>
+<li><p>SNR：105.7 dB（典型值）</p></li>
+<li><p>总谐波失真：−127 dB（典型值）</p></li>
+<li><p>NSD−166 dBFS/Hz （典型值）</p></li>
+<li><p>2 MSPS 时每通道 15 mW</p></li>
+<li><p>直流输入的极低 0.6 μA 输入电流</p></li>
+<li><p>宽输入共模电压范围：−(1/128) × VREF 至 +(129/128) × VREF</p></li>
+<li><p>灵活的外部基准电压源范围：4.096 V 至 5 V</p></li>
+</ul>
+<p><a class="reference external" href="https://www.analog.com/cn/products/ad4630-24.html#product-overview">AD4630芯片</a></p>
+</section>
+<section id="ad7768">
+<span id="id15"></span><h4><a class="toc-backref" href="#id37">AD7768</a><a class="headerlink" href="#ad7768" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">24-bit</span> <span class="pre">&#64;1MSPS</span></code> <code class="docutils literal notranslate"><span class="pre">24mW</span></code> <code class="docutils literal notranslate"><span class="pre">Sigma-Delta</span></code> <code class="docutils literal notranslate"><span class="pre">26.4mW</span></code> <code class="docutils literal notranslate"><span class="pre">LFCSP-28</span></code> <code class="docutils literal notranslate"><span class="pre">$7.5</span></code></p>
+<p>AD7768-1是一款低功率、高性能 Σ-Δ 模数转换器 (ADC) ，其具有一个 Σ-Δ 调制器和数字滤波器，可实现AC 和 DC 信号的精确转换。AD7768-1 是 AD7768 的单通道版本，后者是一款 8 通道同步采样 Σ-Δ ADC。</p>
+<ul class="simple">
+<li><p>温度范围：−40°C 至 +125°C</p></li>
+<li><p>108.5 dB 动态范围</p></li>
+<li><p>−120 dB THD</p></li>
+<li><p>NSD−166 dBFS/Hz （典型值）</p></li>
+<li><p>±1.1 ppm FSR INL，±30 µV 偏置误差，±30 ppm FSR 增益误差</p></li>
+</ul>
+<p><a class="reference external" href="https://www.analog.com/cn/products/ad7768-1.html#product-overview">AD7768芯片</a></p>
+</section>
+<section id="ltc2508">
+<span id="id17"></span><h4><a class="toc-backref" href="#id38">LTC2508</a><a class="headerlink" href="#ltc2508" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">32-bit</span> <span class="pre">&#64;1MSPS</span></code> <code class="docutils literal notranslate"><span class="pre">24mW</span></code> <code class="docutils literal notranslate"><span class="pre">SAR</span> <span class="pre">ADC</span></code> <code class="docutils literal notranslate"><span class="pre">Dual</span> <span class="pre">Channel</span></code> <code class="docutils literal notranslate"><span class="pre">DFN24</span></code> <code class="docutils literal notranslate"><span class="pre">$12.02</span></code></p>
+<ul class="simple">
+<li><p>±0.5ppm INL (典型值)</p></li>
+<li><p>61sps 时的 145dB 动态范围 (典型值)</p></li>
+<li><p>4ksps 时的 131dB 动态范围 (典型值)</p></li>
+<li><p>双输出 32 位 SAR ADC，32 位数字滤波低噪声输出，14 位差分 + 8 位共模 1Msps 无延迟输出</p></li>
+</ul>
+<p>LTC2508-32 是一款低噪声、低功率、高性能 32 位 ADC，其具有一个集成的可配置数字滤波器。
+LTC2508-32 采用单个 2.5V 工作电源，具有一个高达 ±VREF 的全差分输入范围，且 VREF 的范围从 2.5V 至 5.1V。
+LTC2508-32 支持 0V 至 VREF 的宽共模范围，从而简化了模拟信号调理要求。
+LTC2508-32 同时提供两个输出代码：(1) 一个 32 位数字滤波高精度低噪声代码；和 (2) 一个 22 位无延迟复合代码。
+可配置数字滤波器通过对来自 SAR ADC 内核的数据流实施低通滤波和降频采样以降低测量噪声，产生了 32 位滤波输出代码。
+22 位复合代码由一个代表差分电压的 14 位代码和一个代表共模电压的 8 位代码组成。
+22 位复合代码可在每个转换周期中提供，并没有延迟周期。
+可通过引脚搭接方便地针对 4 种不同的降频转换因子配置数字滤波器。
+这些配置提供一个 131dB (在 3.9ksps) 和 145dB (在 61sps) 的动态范围。数字低通滤波器放宽了对于模拟抗混迭的要求。
+采用 SYNC 引脚可以很容易地实现多个 LTC2508-32 器件的同步。</p>
+<p><a class="reference external" href="https://www.analog.com/cn/products/ltc2508-32.html">LTC2508资料</a></p>
+</section>
+</section>
+</section>
+<section id="id19">
+<h2><a class="toc-backref" href="#id31">实现方式</a><a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id20">
+<ul class="simple">
+<li><p><a class="reference internal" href="#sar" id="id39">SAR</a></p></li>
+<li><p><a class="reference internal" href="#pipeline" id="id40">Pipeline</a></p></li>
+<li><p><a class="reference internal" href="#sigma-delta" id="id41">Sigma-Delta</a></p></li>
+</ul>
+</div>
+<section id="sar">
+<span id="sar-adc"></span><h3><a class="toc-backref" href="#id39">SAR</a><a class="headerlink" href="#sar" title="Permalink to this heading">¶</a></h3>
+<p>逐次逼近式模拟数字转换器SAR(Successive Approximation Register)，在每一次转换过程中，通过遍历所有的量化值并将其转化为模拟值，将输入信号与其逐一比较，最终得到要输出的数字信号。</p>
+<p>逐次逼近模数转换器是采样速率低于5Msps的中高分辨率ADC应用的常见结构，SAR式ADC的分辨率一般为8-16位。具有低功耗，小尺寸等特点。</p>
+</section>
+<section id="pipeline">
+<span id="id21"></span><h3><a class="toc-backref" href="#id40">Pipeline</a><a class="headerlink" href="#pipeline" title="Permalink to this heading">¶</a></h3>
+<p>pipeline 更适合高速中等精度的，如 100M 14bit 以上的应用。</p>
+<p>100MHz Conversion Rate 12-bit , <a class="reference internal" href="#sar-adc"><span class="std std-ref">SAR</span></a> 就要1.4GHz的Clock，而 Pipelined ADC 只需100MHz的 Clock</p>
+<p>随着工艺的进步，<a class="reference internal" href="#sar-adc"><span class="std std-ref">SAR</span></a> 和 <a class="reference internal" href="#sigma-delta"><span class="std std-ref">Sigma-Delta</span></a> 的速度也上来 ，Pipeline 正在全面被SAR取代，除了12bit以上且大于200MSPS</p>
+</section>
+<section id="sigma-delta">
+<span id="id22"></span><h3><a class="toc-backref" href="#id41">Sigma-Delta</a><a class="headerlink" href="#sigma-delta" title="Permalink to this heading">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><a class="reference internal" href="#sigma-delta"><span class="std std-ref">Sigma-Delta</span></a> 以时间上换极高的精度的特性，采样率都很低，但在精度达到20位以上的场合，实现了其他类型的ADC无法达到的高精度和低功耗。</p>
+</div>
+</section>
+</section>
+<section id="id23">
+<h2><a class="toc-backref" href="#id32">应用方式</a><a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id24">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id25" id="id42">通信接口</a></p></li>
+<li><p><a class="reference internal" href="#id26" id="id43">典型案例</a></p></li>
+</ul>
+</div>
+<section id="id25">
+<h3><a class="toc-backref" href="#id42">通信接口</a><a class="headerlink" href="#id25" title="Permalink to this heading">¶</a></h3>
+<section id="lvds">
+<h4>LVDS<a class="headerlink" href="#lvds" title="Permalink to this heading">¶</a></h4>
+</section>
+</section>
+<section id="id26">
+<h3><a class="toc-backref" href="#id43">典型案例</a><a class="headerlink" href="#id26" title="Permalink to this heading">¶</a></h3>
+<div class="contents local topic" id="id27">
+<ul class="simple">
+<li><p><a class="reference internal" href="#adcnn" id="id44">ADCNN</a></p></li>
+</ul>
+</div>
+<section id="adcnn">
+<span id="id28"></span><h4><a class="toc-backref" href="#id44">ADCNN</a><a class="headerlink" href="#adcnn" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">ADC</span></code> <code class="docutils literal notranslate"><span class="pre">CNN</span></code> <code class="docutils literal notranslate"><span class="pre">MCU</span></code></p>
+<p><a class="reference external" href="https://github.com/tfmcu/ADCNN">ADCNN资源仓库</a></p>
+<p>通过深度学习算法模型方式，直接处理ADC原始数据，实现电信号事件响应。</p>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../miscellaneous/TKM32F499.html" class="btn btn-neutral float-left" title="TKM32F499" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../miscellaneous/PG23.html" class="btn btn-neutral float-right" title="PG23" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/application/adc.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/application/adc.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

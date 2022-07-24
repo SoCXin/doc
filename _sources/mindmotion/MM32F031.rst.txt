@@ -1,0 +1,71 @@
+
+.. _mm32f031:
+
+MM32F031
+============
+
+`mindmotion <https://www.mindmotion.com.cn/>`_ : ``Cortex-M0`` ``72MHz``
+
+.. contents::
+    :local:
+    :depth: 1
+
+
+Xin简介
+-----------
+
+:ref:`low` , :ref:`ref030`
+
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 制程工艺：
+* 工作温度：-40°C to +85°C
+* 处理性能：140 :ref:`CoreMark`
+* RAM容量：4 KB
+* Flash容量：16/32 KB
+* 封装规格：LQFP48/LQFP32/QFN32/QFN20
+
+
+特征参数
+^^^^^^^^^^^
+
+* 72 MHz :ref:`cortex_m0`
+* 16ch 1x12bit ADC (1.0 MSps)
+* 6x timer
+
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压: 2.0 to 5.5 V
+* 运行功耗:
+
+
+芯片架构
+~~~~~~~~~~~
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+`GitHub <https://github.com/SoCXin/MM32F031>`_

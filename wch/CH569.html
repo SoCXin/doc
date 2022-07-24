@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CH569 &mdash; SoC</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/wch/CH569.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CH568" href="CH568.html" />
+    <link rel="prev" title="CH32V208" href="CH32V208.html" />
+ 
+<link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+<script src="../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../application/index.html">功能领域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../foundry.html">晶元代工</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../vendor.html">芯片设计</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ti/index.html">电源模拟和物联网 TI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../st/index.html">微控制器领域王者 ST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nxp/index.html">高性能多领域跨界 NXP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nordic/index.html">低功耗蓝牙控制器 Nordic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../realtek/index.html">多媒体及网络通信 Realtek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nuvoton/index.html">多媒体语音控制器 Nuvoton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MediaTek/index.html">高性能通信全品类 MediaTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gigadevice/index.html">国产芯片龙头企业 GigaDevice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../stc/index.html">超低成本微控制器 STC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ASR/index.html">新锐无线长距通信 ASR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../byd/index.html">跨界造芯垂直整合 BYD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jieli/index.html">蓝牙音频智能终端 JieLi</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">物联网通信控制器 WCH</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">公司简介</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id9">通信领域</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">内核分类</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="index.html#mcs51">MCS51</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#cortex">Cortex</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html#risc-v">RISC-V</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">外设芯片</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id19">方案总结</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../chipsea/index.html">信号链整合控制器 Chipsea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../espressif/index.html">低成本无线物联网 Espressif</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../arterytek/index.html">Cortex-M4控制器 ArteryTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../allwinner/index.html">多媒体应用处理器 Allwinner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bouffalolab/index.html">物联网通信及计算 Bouffalolab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mindmotion/index.html">驱动控制国产普惠 Mindmotion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../vendor.html">Vendor</a> &raquo;</li>
+          <li><a href="index.html">WCH</a> &raquo;</li>
+      <li>CH569</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/wch/CH569.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ch569">
+<span id="no-009"></span><span id="id1"></span><h1>CH569<a class="headerlink" href="#ch569" title="Permalink to this heading">¶</a></h1>
+<p><a class="reference external" href="http://www.wch.cn/products/CH569.html">标签</a> : <code class="docutils literal notranslate"><span class="pre">RISC-V3A</span></code> <code class="docutils literal notranslate"><span class="pre">120MHz</span></code> <code class="docutils literal notranslate"><span class="pre">USB</span> <span class="pre">3.0</span></code> <code class="docutils literal notranslate"><span class="pre">HSPI</span></code> <code class="docutils literal notranslate"><span class="pre">SerDes</span></code> <code class="docutils literal notranslate"><span class="pre">10Mbps(PHY)</span></code> <code class="docutils literal notranslate"><span class="pre">1Gbps(MAC)</span></code> <code class="docutils literal notranslate"><span class="pre">Ethernet</span></code> <code class="docutils literal notranslate"><span class="pre">EMMC</span></code> <code class="docutils literal notranslate"><span class="pre">DVP</span></code></p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#xin" id="id25">Xin简介</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id3" id="id26">规格参数</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id4" id="id27">基本参数</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id28">特征参数</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id6" id="id29">芯片架构</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id7" id="id30">功耗参数</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id8" id="id31">连接能力</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ethernet" id="id32">Ethernet</a></p></li>
+<li><p><a class="reference internal" href="#serdes" id="id33">SerDes</a></p></li>
+<li><p><a class="reference internal" href="#hspi" id="id34">HSPI</a></p></li>
+<li><p><a class="reference internal" href="#usb" id="id35">USB</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id10" id="id36">Xin选择</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id12" id="id37">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id38">系列对比</a></p></li>
+<li><p><a class="reference internal" href="#id14" id="id39">型号对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ch565" id="id40">CH565</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id16" id="id41">Xin应用</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id18" id="id42">开发板</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ch569w-r0-1v0" id="id43">CH569W-R0-1V0</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id19" id="id44">官方示例</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id20" id="id45">Xin总结</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id22" id="id46">能力构建</a></p></li>
+<li><p><a class="reference internal" href="#id23" id="id47">要点提示</a></p></li>
+<li><p><a class="reference internal" href="#id24" id="id48">问题整理</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="xin">
+<h2><a class="toc-backref" href="#id25">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<a class="reference external image-reference" href="http://www.wch.cn/products/CH569.html"><img alt="../_images/CH569.png" src="../_images/CH569.png" /></a>
+<p><a class="reference external" href="https://github.com/SoCXin/CH569">GitHub</a></p>
+<section id="id3">
+<h3><a class="toc-backref" href="#id26">规格参数</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<p>片上采取 128 位数据宽度的 DMA 以支持多个高速外设的高带宽需求，实现大数据量的高速传输。外设包括 USB3.0 超速、USB2.0高速主机和设备控制器及收发器 PHY、千兆以太网控制器、专用高速 SerDes 控制器及收发器 PHY、SD/EMMC接口控制器、加解密模块、高速并行接口、数字视频接口 DVP 等，可广泛应用于流媒体、即时存储、超高速 FIFO、通讯延长、安防监控等应用场景。</p>
+<section id="id4">
+<h4><a class="toc-backref" href="#id27">基本参数</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>发布时间：</p></li>
+<li><p>参考价格：</p></li>
+<li><p>制程工艺：</p></li>
+<li><p>供货周期：</p></li>
+<li><p>处理性能：</p></li>
+<li><p>封装规格：<a class="reference internal" href="index.html#wch-qfn68"><span class="std std-ref">QFN68</span></a></p></li>
+<li><p>运行环境：-40°C to 85°C</p></li>
+<li><p>RAM容量：16 KB + 32/64/96 KB</p></li>
+<li><p>Flash容量：448 KB</p></li>
+</ul>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><a class="reference internal" href="#ch569"><span class="std std-ref">CH569</span></a> 目前仅有一个 <a class="reference internal" href="index.html#wch-qfn68"><span class="std std-ref">QFN68</span></a> 封装，而 <a class="reference internal" href="#ch565"><span class="std std-ref">CH565</span></a> 具有QFN68/QFN40</p>
+</div>
+</section>
+<section id="id5">
+<h4><a class="toc-backref" href="#id28">特征参数</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>120 MHz <a class="reference internal" href="riscv.html#wch-riscv3a"><span class="std std-ref">RISC-V3A</span></a> ，支持单周期乘法和硬件除法、可编程中断控制器、低功耗两级流水线</p></li>
+<li><p>USB3.0控制及收发器（内置PHY），支持主机Host/设备Device模式、OTG功能，支持USB3.0 HUB</p></li>
+<li><p>USB2.0控制及收发器（内置PHY），支持主机Host/设备Device模式，支持控制/批量/中断/同步传输</p></li>
+<li><p>千兆以太网控制器 <a class="reference internal" href="#ch569-eth"><span class="std std-ref">Ethernet</span></a> ，提供RGMII和RMII PHY接口，支持10/100/1000Mbps速率</p></li>
+<li><p><a class="reference internal" href="#ch569-hspi"><span class="std std-ref">HSPI</span></a>，可配置8/16/32位数据宽度，内置FIFO，支持DMA，最快传输速度约为3.8Gbps</p></li>
+<li><p><a class="reference internal" href="#ch569-serdes"><span class="std std-ref">SerDes</span></a> 可直接驱动光纤，支持网线（仅使用1组差分线）传输90米，支持1.25Gbps高速差分信号通讯</p></li>
+<li><p>内置EMMC控制器，支持单线、4线、8线数据通讯模式，符合EMMC卡4.4和4.5.1规范，兼容5.0规范</p></li>
+<li><p>内置数字视频接口DVP，可配置8/10/12位数据宽度，支持YUV、RGB、JPEG压缩数据</p></li>
+<li><p>448KB CodeFlash，32KB DataFlash，16KB的32位宽SRAM，32/64/96KB可配置的128位宽SRAM</p></li>
+<li><p>支持AES/SM4算法，8种组合加解密模式，支持SRAM/EMMC/HSPI外设接口数据加解密</p></li>
+<li><p>4组UART，最高波特率6Mbps，兼容16C550，内置FIFO，多个触发级</p></li>
+<li><p>2组SPI接口，支持主从(Master/Slave)模式，内置FIFO，支持DMA</p></li>
+<li><p>主动并口：8位数据，15位地址总线</p></li>
+<li><p>3组26位定时器，支持定时、计数、信号捕捉、PWM调制输出，4组扩展PWM输出，占空比可调</p></li>
+<li><p>49个通用IO，8个可设置电平/边沿中断，部分引脚具有复用及映射功能</p></li>
+<li><p>内置看门狗，集成2线调试接口，支持在线仿真</p></li>
+</ul>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><a class="reference internal" href="#ch569"><span class="std std-ref">CH569</span></a> 强悍的高速外设配置十分有冲击力，但是受限于内核性能无法进行数据处理，更多是作为桥接芯片</p>
+</div>
+</section>
+</section>
+<section id="id6">
+<h3><a class="toc-backref" href="#id29">芯片架构</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="http://www.wch.cn/products/CH569.html"><img alt="../_images/CH569s.png" src="../_images/CH569s.png" /></a>
+<ul class="simple">
+<li><p>供电电压：2.1 to 3.6 V</p></li>
+</ul>
+<section id="id7">
+<h4><a class="toc-backref" href="#id30">功耗参数</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>支持低功耗模式，支持部分GPIO、USB、以太网信号唤醒</p></li>
+</ul>
+<a class="reference external image-reference" href="http://www.wch.cn/products/CH569.html"><img alt="../_images/CH569pwr.png" src="../_images/CH569pwr.png" /></a>
+</section>
+</section>
+<section id="id8">
+<h3><a class="toc-backref" href="#id31">连接能力</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<section id="ethernet">
+<span id="ch569-eth"></span><h4><a class="toc-backref" href="#id32">Ethernet</a><a class="headerlink" href="#ethernet" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">10/100/1000Mbps</span></code></p>
+</section>
+<section id="serdes">
+<span id="ch569-serdes"></span><h4><a class="toc-backref" href="#id33">SerDes</a><a class="headerlink" href="#serdes" title="Permalink to this heading">¶</a></h4>
+<p>SerDes是Serializer/Deserializer的缩写，即串行器和解串器，顾名思义是一种将并行数据转换成串行数据发送，将接收的串行数据转换成并行数据的”器件“。</p>
+<p>SerDes主要具有以下优点：</p>
+<ul class="simple">
+<li><p>减少布线冲突（无单独的时钟线，时钟嵌入在数据流中，从而也解决了限制数据传输速率的信号时钟偏移问题）；</p></li>
+<li><p>抗噪声、抗干扰能力强（差分传输）；</p></li>
+<li><p>降低开关噪声；</p></li>
+<li><p>扩展能力强；</p></li>
+<li><p>更低的功耗和封装成本；</p></li>
+</ul>
+<p>SerDes有四种架构：1）并行时钟SerDes；2）嵌入式时钟SerDes；3）8b/10b编码SerDes；4）位交错SerDes。</p>
+<p><a class="reference external" href="https://www.cnblogs.com/rouwawa/p/13524703.html">基础知识</a></p>
+</section>
+<section id="hspi">
+<span id="ch569-hspi"></span><h4><a class="toc-backref" href="#id34">HSPI</a><a class="headerlink" href="#hspi" title="Permalink to this heading">¶</a></h4>
+<p>HSPI接口通讯可比拟FPGA功能，最典型的应用场景是获取高速ADC器件数据 <a class="reference internal" href="../application/adc.html#adc"><span class="std std-ref">ADC</span></a></p>
+</section>
+<section id="usb">
+<span id="ch569-usb"></span><h4><a class="toc-backref" href="#id35">USB</a><a class="headerlink" href="#usb" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">USB-HS-OTG(480Mbps)</span></code> <code class="docutils literal notranslate"><span class="pre">USB-SS-OTG(5Gbps)</span></code> <code class="docutils literal notranslate"><span class="pre">384MB/s</span></code></p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>建议384MB/s以内的应用场景</p>
+</div>
+</section>
+</section>
+</section>
+<section id="id10">
+<h2><a class="toc-backref" href="#id36">Xin选择</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id11">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id12" id="id49">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id50">系列对比</a></p></li>
+<li><p><a class="reference internal" href="#id14" id="id51">型号对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ch565" id="id52">CH565</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id12">
+<h3><a class="toc-backref" href="#id49">品牌对比</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id13">
+<h3><a class="toc-backref" href="#id50">系列对比</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id14">
+<h3><a class="toc-backref" href="#id51">型号对比</a><a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="http://www.wch.cn/products/CH569.html"><img alt="../_images/CH569l.png" src="../_images/CH569l.png" /></a>
+<section id="ch565">
+<span id="id15"></span><h4><a class="toc-backref" href="#id52">CH565</a><a class="headerlink" href="#ch565" title="Permalink to this heading">¶</a></h4>
+<p><a class="reference internal" href="#ch565"><span class="std std-ref">CH565</span></a> 相较于 <a class="reference internal" href="#ch569"><span class="std std-ref">CH569</span></a> 多了DVP接口，去掉了 <a class="reference internal" href="#ch569-hspi"><span class="std std-ref">HSPI</span></a> ，甚至在更小QFN40上去掉了以太网和调试端口。</p>
+<img alt="../_images/CH569p40.png" src="../_images/CH569p40.png" />
+</section>
+</section>
+</section>
+<section id="id16">
+<h2><a class="toc-backref" href="#id41">Xin应用</a><a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id17">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id18" id="id53">开发板</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ch569w-r0-1v0" id="id54">CH569W-R0-1V0</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id19" id="id55">官方示例</a></p></li>
+</ul>
+</div>
+<section id="id18">
+<h3><a class="toc-backref" href="#id53">开发板</a><a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h3>
+<section id="ch569w-r0-1v0">
+<h4><a class="toc-backref" href="#id54">CH569W-R0-1V0</a><a class="headerlink" href="#ch569w-r0-1v0" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5c262e8d9Mj4QY&amp;id=659151805793&amp;_u=kgas3eu034d"><img alt="../_images/B_CH569.jpg" src="../_images/B_CH569.jpg" /></a>
+</section>
+</section>
+<section id="id19">
+<h3><a class="toc-backref" href="#id55">官方示例</a><a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h3>
+<p><a class="reference external" href="http://www.wch.cn/application/532.html">USB3.0超高速U盘</a> ，CH569配有EMMC卡控制器和USB3.0 OTG控制器及收发器，通过EMMC接口挂载SD/TF/EMMC卡后即可具备U盘设计的基本物理资源。</p>
+<p>软件设计上，缓冲区资源共享，划分队列管理，USB3.0端数据和EMMC卡数据只进行DMA地址修改，不参与任何数据拷贝，减少MCU处理时间；添加了EMMC卡协议命令处理及USB3.0设备端命令响应过程。</p>
+<p>实测使用一款16G EMMC卡作为存储介质(工作在HS200模式下)，在Win10平台下进行大数据拷贝，读出速度不低于90MB/s，写入速度不低于40MB/s</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>这个方案测试速率连USB-HS的性能都远远没发挥出来！</p>
+</div>
+</section>
+</section>
+<section id="id20">
+<h2><a class="toc-backref" href="#id45">Xin总结</a><a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id21">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id22" id="id56">能力构建</a></p></li>
+<li><p><a class="reference internal" href="#id23" id="id57">要点提示</a></p></li>
+<li><p><a class="reference internal" href="#id24" id="id58">问题整理</a></p></li>
+</ul>
+</div>
+<section id="id22">
+<h3><a class="toc-backref" href="#id56">能力构建</a><a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id23">
+<h3><a class="toc-backref" href="#id57">要点提示</a><a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h3>
+<p>由于端口复用问题，所以烧录固件进入BOOT模式有点麻烦，特别是CH569W-R0-1V0并没有带有任何按键，在调试过程中需要自己附带更多的外部接线环境，没法开箱即用。</p>
+</section>
+<section id="id24">
+<h3><a class="toc-backref" href="#id58">问题整理</a><a class="headerlink" href="#id24" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="CH32V208.html" class="btn btn-neutral float-left" title="CH32V208" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="CH568.html" class="btn btn-neutral float-right" title="CH568" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/wch/CH569.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/wch/CH569.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

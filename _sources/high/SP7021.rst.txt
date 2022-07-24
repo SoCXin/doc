@@ -1,0 +1,77 @@
+
+.. _sp7021:
+
+SP7021
+=============
+
+* 关键词：``Cortex-A7`` ``Quad Core`` ``1GHz`` ``ARM926EJS`` ``8051``  ``SunPlus`` ``BPI-F2S``  ``LQFP176``
+* 资源库：`GitHub <https://github.com/SoCXin/SP7021>`_
+
+.. contents::
+    :local:
+
+Xin简介
+-----------
+
+.. image:: ./images/SP7021.png
+    :target: https://w3.sunplus.com/products/SP7021.asp
+
+
+.. contents::
+    :local:
+
+规格配置
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 供电电压：1.71 to 3.6 V
+* 工作温度：-40°C to +85°C
+* 处理性能：599 :ref:`DMIPS`, 1414 :ref:`CoreMark`
+* RAM容量：128/512 MB
+* 封装规格：LQFP176-EP(20mmX20mm)
+
+.. note::
+    Embedded 1066MHz DDR3 DRAM: 128MB(SP7021-IS)/ 512MB(SP7021-IF)
+
+
+特征参数
+^^^^^^^^^^^
+
+* 960 MHz Cortex-A7 Quad core
+* 202 MHz :ref:`arm926ejs`
+* 8051 Core Selectable 32KHz or 202MHz operating speed
+* Two IEEE 802.3 10/100M ports with RMII interface
+* HDMI TX 1.4, resolution up to 720P
+
+芯片架构
+~~~~~~~~~~~~
+
+.. image:: ./images/SP7021s.png
+    :target: https://w3.sunplus.com/products/SP7021.asp
+
+Xin选择
+-----------
+
+
+Xin应用
+-----------
+
+硬件平台
+~~~~~~~~~~~
+
+.. _BPI_F2S:
+
+BPI-F2S
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: ./images/BPI-F2S.png
+    :target: https://wiki.banana-pi.org/Banana_Pi_BPI-F2S
+
+
+
+Xin总结
+-----------
+
+

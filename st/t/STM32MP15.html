@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STM32MP15 &mdash; SoC</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.soc.xin/st/t/STM32MP15.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="STM32WB55" href="../m/STM32WB55.html" />
+    <link rel="prev" title="STM32H745" href="STM32H745.html" />
+ 
+<link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
+<script src="../../_static/js/bootstrap.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7398081349378542" crossorigin="anonymous"></script>
+<!-- <script src="http://dl.platformio.org/misc/abplus.js"></script> -->
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Xin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../list/index.html">芯期刊</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/boards.html">板期刊</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">产品分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../list/hot.html">极客聚集开源高地</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/pop.html">明星项目御用平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/news.html">选在当下设计未来</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/low.html">突破常规低价好货</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../list/ulp.html">超低功耗效能王者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../high/index.html">各家旗舰干啥都行</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">应用分类</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../application/index.html">功能领域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/industry.html">行业应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/products.html">产品案例</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">内核相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture/index.html">内核架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture/level.html">运算性能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture/ip.html">片上资源</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">厂商相关</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../foundry.html">晶元代工</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../vendor.html">芯片设计</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../ti/index.html">电源模拟和物联网 TI</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">微控制器领域王者 ST</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../index.html#id2">公司简介</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#st-high">性能产品</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="STM32H7B0.html">超值低功耗 STM32H7B0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="STM32H750.html">超值大内存 STM32H750</a></li>
+<li class="toctree-l4"><a class="reference internal" href="STM32H730.html">高频低功耗 STM32H730</a></li>
+<li class="toctree-l4"><a class="reference internal" href="STM32H745.html">双核MCU: STM32H745</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">异构MPU: STM32MP15</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#st-iot">无线通信</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#st-ulp">超低功耗</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#id6">技术特点</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../nxp/index.html">高性能多领域跨界 NXP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../nordic/index.html">低功耗蓝牙控制器 Nordic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../realtek/index.html">多媒体及网络通信 Realtek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../nuvoton/index.html">多媒体语音控制器 Nuvoton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MediaTek/index.html">高性能通信全品类 MediaTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gigadevice/index.html">国产芯片龙头企业 GigaDevice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../stc/index.html">超低成本微控制器 STC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ASR/index.html">新锐无线长距通信 ASR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../byd/index.html">跨界造芯垂直整合 BYD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../jieli/index.html">蓝牙音频智能终端 JieLi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../wch/index.html">物联网通信控制器 WCH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../chipsea/index.html">信号链整合控制器 Chipsea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../espressif/index.html">低成本无线物联网 Espressif</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../arterytek/index.html">Cortex-M4控制器 ArteryTek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../allwinner/index.html">多媒体应用处理器 Allwinner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../bouffalolab/index.html">物联网通信及计算 Bouffalolab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mindmotion/index.html">驱动控制国产普惠 Mindmotion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../sales.html">销售渠道</a></li>
+</ul>
+
+<p style="margin-top: 15px;">
+     <!-- Docs: Side Navigation -->
+     <ins class="adsbygoogle ads"
+          style="display:block;background-color: transparent;"
+          data-ad-client="ca-pub-7398081349378542"
+          data-ad-slot="2509136660"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</p>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Xin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../vendor.html">Vendor</a> &raquo;</li>
+          <li><a href="../index.html">ST</a> &raquo;</li>
+      <li>STM32MP15</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/SoCXin/docs/blob/master/docs/st/t/STM32MP15.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="stm32mp15">
+<span id="id1"></span><h1>STM32MP15<a class="headerlink" href="#stm32mp15" title="Permalink to this heading">¶</a></h1>
+<p><a class="reference external" href="https://github.com/SoCXin/STM32MP15">标签</a> : <code class="docutils literal notranslate"><span class="pre">Cortex-A7</span></code> <code class="docutils literal notranslate"><span class="pre">Cortex-M4</span></code> <code class="docutils literal notranslate"><span class="pre">32KB</span> <span class="pre">L1</span></code> <code class="docutils literal notranslate"><span class="pre">256KB</span> <span class="pre">L2</span></code></p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#xin" id="id23">Xin简介</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id3" id="id24">规格参数</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id4" id="id25">基本参数</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id26">限定参数</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id27">特征参数</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id7" id="id28">芯片架构</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id8" id="id29">Xin选择</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id10" id="id30">品牌对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#nxp-i-mx-7" id="id31">NXP i.MX 7</a></p></li>
+<li><p><a class="reference internal" href="#nxp-i-mx-8" id="id32">NXP i.MX 8</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id33">独立芯片方案</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id12" id="id34">系列对比</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id35">版本对比</a></p></li>
+<li><p><a class="reference internal" href="#id14" id="id36">必选理由</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id15" id="id37">Xin应用</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id17" id="id38">开发板</a></p>
+<ul>
+<li><p><a class="reference internal" href="#pangu" id="id39">PanGu湃兔核</a></p></li>
+<li><p><a class="reference internal" href="#bearpi-hm" id="id40">BearPi-HM</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id18" id="id41">Xin总结</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id20" id="id42">能力构建</a></p></li>
+<li><p><a class="reference internal" href="#id21" id="id43">要点提示</a></p></li>
+<li><p><a class="reference internal" href="#id22" id="id44">问题整理</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="xin">
+<h2><a class="toc-backref" href="#id23">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<a class="reference external image-reference" href="https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-arm-cortex-mpus/stm32mp1-series/stm32mp157/stm32mp157c.html"><img alt="../../_images/stm32mp157.jpg" src="../../_images/stm32mp157.jpg" /></a>
+<section id="id3">
+<h3><a class="toc-backref" href="#id24">规格参数</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<p>STM32MP1系列依托STM32成熟的生态系统，ST可为客户提供加快成功应用STM32MP1设计开发的工具。包括STM32的Cube，CubeMX，CubeProgrammer等软件工具，探索板和全功能评估板等硬件工具，以及为客户提供全方位的客户支持等。</p>
+<p>STM32系列主要用于解决客户对实时任务和功耗限制的重要要求，OpenSTLinux作为市场上主流的开源Linux发行版发布，将STM32系列从以实时任务和功耗限制为主的应用扩大到更广泛的市场。</p>
+<section id="id4">
+<h4><a class="toc-backref" href="#id25">基本参数</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>发布时间：</p></li>
+<li><p>制程工艺：</p></li>
+<li><p>参考价格：$6-$11</p></li>
+<li><p>供货周期：</p></li>
+<li><p>处理性能：? CoreMark (Cortex-A7)，703 CoreMark (Cortex-M4)</p></li>
+<li><p>RAM容量：708 KB</p></li>
+<li><p>Flash容量：</p></li>
+</ul>
+</section>
+<section id="id5">
+<h4><a class="toc-backref" href="#id26">限定参数</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>电压范围：1.71 to 3.6 V</p></li>
+<li><p>功耗范围：</p></li>
+<li><p>工作温度：-40°C to 105°C/125°C</p></li>
+<li><p>封装规格：LFBGA448/LFBGA354/TFBGA361/TFBGA257</p></li>
+</ul>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32mp1-series.html"><img alt="../../_images/STM32MP15p.png" src="../../_images/STM32MP15p.png" /></a>
+</section>
+<section id="id6">
+<h4><a class="toc-backref" href="#id27">特征参数</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>650MHz/800MHz <a class="reference internal" href="../../architecture/cortexA7.html#cortex-a7"><span class="std std-ref">Cortex-A7</span></a> Dual Core</p></li>
+<li><p>209 MHz <a class="reference internal" href="../../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></li>
+<li><p>DDR memory up to 1 Gbyte,  DDR3/DDR3L-1066 16/32-bit</p></li>
+<li><p>L1 32-Kbyte I / 32-Kbyte D , 256-Kbyte unified level 2 cache</p></li>
+<li><p>2 × ADCs with 16-bit max. resolution (12 bits up to 4.5 Msps, 14 bits up to 4 Msps, 16 bits up to 3.6 Msps)</p></li>
+<li><p>10/100M or Gigabit Ethernet GMAC, IEEE 1588v2 hardware, MII/RMII/GMII/RGMII</p></li>
+<li><p>3x USB2.0（包括2个高速）</p></li>
+<li><p>2x CAN-FD</p></li>
+<li><p>3× SDMMC up to 8-bit</p></li>
+<li><p>6× I2C FM+ (1 Mbit/s, SMBus/PMBus)</p></li>
+<li><p>4× UART + 4 × USART (12.5 Mbit/s)</p></li>
+<li><p>6× SPI (50 Mbit/s)</p></li>
+</ul>
+</section>
+</section>
+<section id="id7">
+<h3><a class="toc-backref" href="#id28">芯片架构</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32mp1-series.html"><img alt="../../_images/STM32MP15s.png" src="../../_images/STM32MP15s.png" /></a>
+</section>
+</section>
+<section id="id8">
+<h2><a class="toc-backref" href="#id29">Xin选择</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id9">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id10" id="id45">品牌对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#nxp-i-mx-7" id="id46">NXP i.MX 7</a></p></li>
+<li><p><a class="reference internal" href="#nxp-i-mx-8" id="id47">NXP i.MX 8</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id48">独立芯片方案</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id12" id="id49">系列对比</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id50">版本对比</a></p></li>
+<li><p><a class="reference internal" href="#id14" id="id51">必选理由</a></p></li>
+</ul>
+</div>
+<section id="id10">
+<h3><a class="toc-backref" href="#id45">品牌对比</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">NXP</span></code> <code class="docutils literal notranslate"><span class="pre">i.MX6</span></code> <code class="docutils literal notranslate"><span class="pre">i.MX7</span></code> <code class="docutils literal notranslate"><span class="pre">i.MX8</span></code></p>
+<p>应用类处理器异构控制器的方案厂商不少，ST可对标的主要对象为NXP，STM32MP15x系列重点对比i.MX系列</p>
+<section id="nxp-i-mx-7">
+<h4><a class="toc-backref" href="#id46">NXP i.MX 7</a><a class="headerlink" href="#nxp-i-mx-7" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-7-processors:IMX7-SERIES"><img alt="../../_images/imx7.png" src="../../_images/imx7.png" /></a>
+<p>其中基础版本配置规格相当，处理器 800MHz <a class="reference internal" href="../../architecture/cortexA7.html#cortex-a7"><span class="std std-ref">Cortex-A7</span></a> 内核, 控制器 200 MHz <a class="reference internal" href="../../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a> 内核，但是i.MX7具备千兆以太网等高速接口，同系列向上升级扩展非常容易。</p>
+<a class="reference external image-reference" href="https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-7-processors/i-mx-7ulp-family-ultra-low-power-with-graphics:i.MX7ULP"><img alt="../../_images/IMX7ULP-BD.webp" src="../../_images/IMX7ULP-BD.webp" /></a>
+<p>如果需要更强的性能进行升级，可以选择i.MX8系列产品，或者采用独立的应用处理器和控制器</p>
+</section>
+<section id="nxp-i-mx-8">
+<h4><a class="toc-backref" href="#id47">NXP i.MX 8</a><a class="headerlink" href="#nxp-i-mx-8" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors:IMX8-SERIES"><img alt="../../_images/imx8.png" src="../../_images/imx8.png" /></a>
+<a class="reference external image-reference" href="https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS"><img alt="../../_images/IMX8MPLUS-BD2.webp" src="../../_images/IMX8MPLUS-BD2.webp" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>就1.8 GHz Cortex-A53应用处理性能而言i.MX 8M Plus已经优于树莓派3B，800 MHz Cortex-M7、双千兆以太网、PCIe Gen3、2.3TOPS NPU都是硬货，所以基本面上不再和STM32MP15系列对比</p>
+</div>
+</section>
+<section id="id11">
+<h4><a class="toc-backref" href="#id48">独立芯片方案</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h4>
+<p>性能接近的应用处理器可采用 <a class="reference internal" href="../../allwinner/index.html#allwinner"><span class="std std-ref">Allwinner</span></a> <a class="reference internal" href="../../allwinner/V831.html#v831"><span class="std std-ref">V831</span></a>, <a class="reference internal" href="../../allwinner/R329.html#r329"><span class="std std-ref">R329</span></a>，控制器MCU可选方案较多包括 <a class="reference internal" href="../../list/hot.html#ref407"><span class="std std-ref">F407范式</span></a> ， <a class="reference internal" href="../../arterytek/index.html#arterytek"><span class="std std-ref">Arterytek</span></a> <a class="reference internal" href="../../arterytek/AT32F413.html#at32f413"><span class="std std-ref">AT32F413</span></a></p>
+</section>
+</section>
+<section id="id12">
+<h3><a class="toc-backref" href="#id49">系列对比</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="https://www.st.com/zh/microcontrollers-microprocessors/stm32mp1-series.html"><img alt="../../_images/STM32MP1_series.jpg" src="../../_images/STM32MP1_series.jpg" /></a>
+</section>
+<section id="id13">
+<h3><a class="toc-backref" href="#id50">版本对比</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id14">
+<h3><a class="toc-backref" href="#id51">必选理由</a><a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<p>STM32MP15x系列异构处理器，是ST向上突破的探索产物，凭借自身强大的外设配置和开发框架，十分适合用于实现复杂交互和通信的硬件终端。</p>
+<p>选择这款芯片的出发点包括在控制器MCU之外部署嵌入式Linux处理设备，通过集成的SoC方案实现空间和能耗上的优化，数据的处理效率和通信效率更高，同时实现了ST的品质和资源接入。</p>
+</section>
+</section>
+<section id="id15">
+<h2><a class="toc-backref" href="#id37">Xin应用</a><a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">OpenSTLinux</span></code></p>
+<div class="contents local topic" id="id16">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id17" id="id52">开发板</a></p>
+<ul>
+<li><p><a class="reference internal" href="#pangu" id="id53">PanGu湃兔核</a></p></li>
+<li><p><a class="reference internal" href="#bearpi-hm" id="id54">BearPi-HM</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="id17">
+<h3><a class="toc-backref" href="#id52">开发板</a><a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+<section id="pangu">
+<h4><a class="toc-backref" href="#id53">PanGu湃兔核</a><a class="headerlink" href="#pangu" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://item.taobao.com/item.htm?spm=a230r.1.14.24.71cc6da0Vr8eCp&amp;id=599303130310&amp;ns=1&amp;abbucket=12#detail"><img alt="../../_images/B_STM32MP157.png" src="../../_images/B_STM32MP157.png" /></a>
+</section>
+<section id="bearpi-hm">
+<h4><a class="toc-backref" href="#id54">BearPi-HM</a><a class="headerlink" href="#bearpi-hm" title="Permalink to this heading">¶</a></h4>
+<a class="reference external image-reference" href="https://item.taobao.com/item.htm?spm=a230r.1.14.18.71cc6da0Vr8eCp&amp;id=662078665554&amp;ns=1&amp;abbucket=12#detail"><img alt="../../_images/B_BearPi.png" src="../../_images/B_BearPi.png" /></a>
+</section>
+</section>
+</section>
+<section id="id18">
+<h2><a class="toc-backref" href="#id41">Xin总结</a><a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id19">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id20" id="id55">能力构建</a></p></li>
+<li><p><a class="reference internal" href="#id21" id="id56">要点提示</a></p></li>
+<li><p><a class="reference internal" href="#id22" id="id57">问题整理</a></p></li>
+</ul>
+</div>
+<section id="id20">
+<h3><a class="toc-backref" href="#id55">能力构建</a><a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id21">
+<h3><a class="toc-backref" href="#id56">要点提示</a><a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id22">
+<h3><a class="toc-backref" href="#id57">问题整理</a><a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="STM32H745.html" class="btn btn-neutral float-left" title="STM32H745" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../m/STM32WB55.html" class="btn btn-neutral float-right" title="STM32WB55" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2020 - 2022 www.soc.xin.</p>
+<p>
+  <!-- Docs: Page bottom -->
+  <ins class="adsbygoogle ads"
+      style="display:block;background-color: transparent;"
+      data-ad-client="ca-pub-7398081349378542"
+      data-ad-slot="1206527817"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</p>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://www.SoC.Xin" title="SoC"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.OS-Q.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code fa-lg"></i>OS-Q<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.OS-Q.com/"><i class="fa fa-code"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/OS-Q"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.OS-Q.com"><i class="fa fa-book"></i>开发文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://stops.top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs fa-lg"></i>STOPs<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://stops.top"><i class="fa fa-cogs"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/stops-top"><i class="fa fa-github"></i>开源社区</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.stops.top"><i class="fa fa-book"></i>产品文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.zeergen.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cube fa-lg"></i>zeerGen<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.zeergen.com"><i class="fa fa-home"></i>网站主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/zeergen"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://doc.zeergen.com"><i class="fa fa-book"></i>规划文档</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://www.qitas.cn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i>Qitas<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://www.qitas.cn"><i class="fa fa-mars"></i>个人主页</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://www.github.com/qitas"><i class="fa fa-github"></i>项目开源</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.qitas.cn"><i class="fa fa-edit"></i>知识积累</a></li>\
+            </ul>\
+          </li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.soc.xin"><i class="fa fa-book fa-lg"></i>文档</a></li>\
+          <li class="nav-soc-g"><a href="https://www.SoC.Xin"><i class="fa fa-microchip fa-lg"></i>官网</a></li>\
+          <li class="nav-soc-r"><a href="https://www.github.com/socxin"><i class="fa fa-github fa-lg"></i>开源</a></li>\
+          <li class="nav-soc-b"><a href="http://124.221.183.170:9090"><i class="fa fa-sign-in fa-lg"></i>登录</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book">年轮在骨,厚积于芯</span>
+    v0.9
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Created By Qtias</dt>
+      <img src="../_static/images/weixin.jpg">
+        <!-- <dd><a href="https://github.com/SoCXin/docs/blob/master/docs/st/t/STM32MP15.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/docs/edit/master/docs/st/t/STM32MP15.rst"> Edit</a></dd> -->
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>
