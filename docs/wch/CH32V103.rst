@@ -5,7 +5,7 @@ CH32V103
 ============
 
 * `WCH <http://www.wch.cn/products/CH32V103>`_ : ``RISC-V3A`` ``80MHz`` ``USB`` ``HarmonyOS``
-* `GitHub <https://github.com/SoCXin/CH32V103>`_ : :ref:`pop` / :ref:`ethernet` / :ref:`usb_hs`
+* `Tags <https://github.com/SoCXin/CH32V103>`_ : :ref:`pop` / :ref:`low`
 
 .. contents::
     :local:
@@ -114,9 +114,9 @@ Xin选择
 
 CH32V203
 ^^^^^^^^^^^
-``TSSOP20/QFN28/QFN48/LQFP32/LQFP48``
+``TSSOP20/QFN28/QFN48/LQFP32/LQFP48`` ``青稞V4B``
 
-CH32V203系列是基于32位RISC-V内核设计的工业级增强型低功耗通用微控制器，高性能，最高支持144MHz系统主频，低功耗，运行功耗低至45uA/MHz。
+CH32V203系列基于32位 :ref:`wch_riscv4b` 内核设计的工业级增强型低功耗通用微控制器，高性能，最高支持144MHz系统主频，低功耗，运行功耗低至45uA/MHz。
 
 CH32V203集成双路USB接口，支持USB Host主机及USB Device设备功能，具有1路CAN接口（2.0B主动）、双路OPA运放、4组UART、双路IIC，12位ADC，10路Touchkey等丰富外设资源，同时提供TSSOP20、QFN28、QFN48、LQFP32、LQFP48等多种封装供客户灵活选择。
 
