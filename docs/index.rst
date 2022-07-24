@@ -3,12 +3,10 @@
 Xindex
 =====================
 
-.. image:: https://github.com/SoCXin/docs/workflows/Docs/badge.svg
-    :target: https://github.com/SoCXin/docs/actions
+.. image:: https://github.com/SoCXin/doc/workflows/doc/badge.svg
+    :target: https://github.com/SoCXin/doc/actions
 
 **新产品用心，芯产品用新**
-
-
 
 .. toctree::
     :maxdepth: 1

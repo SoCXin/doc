@@ -355,7 +355,7 @@ QFN56
 ^^^^^^^^^^^^^^
 
 .. image:: ./images/ESP32S3P.png
-    :target: https://docs.soc.xin/espressif/ESP32-S3.html
+    :target: https://doc.soc.xin/espressif/ESP32-S3.html
 
 
 .. _esp_qfn48:
@@ -365,7 +365,7 @@ QFN48
 
 
 .. image:: ./images/ESP32p5.png
-    :target: https://docs.soc.xin/espressif/ESP32.html
+    :target: https://doc.soc.xin/espressif/ESP32.html
 .. image:: ./images/ESP32p6.png
     :target: https://www.espressif.com/zh-hans/products/socs/ESP32
 
@@ -376,5 +376,5 @@ QFN32
 ^^^^^^^^^^^^^^
 
 .. image:: ./images/ESP32C3P.png
-    :target: https://docs.soc.xin/espressif/ESP32-C3.html
+    :target: https://doc.soc.xin/espressif/ESP32-C3.html
 

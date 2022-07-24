@@ -172,7 +172,7 @@ html_show_sphinx = False
 # html_file_suffix = None
 
 # The base URL which points to the root of the HTML documentation
-html_baseurl = "https://docs.soc.xin"
+html_baseurl = "https://doc.soc.xin"
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = "Xin"
@@ -266,7 +266,7 @@ linkcheck_anchors = False
 html_context = {
     "display_github": True,
     "github_user": "SoCXin",
-    "github_repo": "docs",
+    "github_repo": "doc",
     "github_version": "master",
-    "conf_py_path": "/docs/",
+    "conf_py_path": "/doc/",
 }
