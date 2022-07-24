@@ -100,7 +100,7 @@ USB PD
       - INPUT
       - TYPE
       - POWER
-      - Package
+      - :ref:`package`
     * - `CH236 <http://www.wch.cn/products/CH236.html>`_
       - 5-20V
       - PD3.0/BC1.2
@@ -138,7 +138,7 @@ USB PD的通信是将协议层的消息调制成24MHZ的FSK信号并耦合到VBU
       - Flash
       - UART
       - GPIO
-      - Package
+      - :ref:`package`
     * - :ref:`ch549`
       -
       - 1K

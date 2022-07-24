@@ -32,7 +32,7 @@ ADC-MCU
       - 12-bit
       - 16-bit
       - SampleRate
-      - Package
+      - :ref:`package`
     * - :ref:`at32f437`
       - 288 MHz
       - 630
@@ -106,7 +106,7 @@ ADC-MCU
       - INL
       - Type
       - Spec
-      - Package
+      - :ref:`package`
     * - :ref:`zml165`
       - 48 MHz
       - 4KB/64KB
@@ -165,7 +165,7 @@ High-Speed
       - Interface
       - Power
       - Arch
-      - Package
+      - :ref:`package`
       - Price
     * - ADS4222
       - 65
@@ -293,7 +293,7 @@ High-Precision
       - Power &Chan
       - INL
       - SNR
-      - Package
+      - :ref:`package`
       - Price
     * - :ref:`LTC2508`
       - :ref:`sar_adc`

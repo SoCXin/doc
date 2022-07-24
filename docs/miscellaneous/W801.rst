@@ -74,7 +74,7 @@ Xin选择
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
-      - Package
+      - :ref:`package`
     * - :ref:`w801`
       -
       - 288KB/2MB
@@ -107,7 +107,7 @@ Xin选择
       - SRAM/ROM
       - :ref:`wireless`
       - UART/SPI/SDIO
-      - Package
+      - :ref:`package`
     * - :ref:`w800`
       - :ref:`xt804`
       -

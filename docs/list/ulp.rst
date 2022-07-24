@@ -177,9 +177,9 @@ VCC: Voltage To Current Converter(电路电压)或Voltage Collector Collector (�
       - :ref:`CoreMark`
       - :ref:`frequency`
       - :ref:`power`
-      - :ref:`dd` (min)
-      - :ref:`dd` (max)
-      - Package
+      - :ref:`vdd` (min)
+      - :ref:`vdd` (max)
+      - :ref:`package`
     * - :ref:`ch583`
       -
       - ≤ 80MHz

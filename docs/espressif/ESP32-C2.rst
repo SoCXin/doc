@@ -108,7 +108,7 @@ Xin选择
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
-      - Package
+      - :ref:`package`
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
       - 300 :ref:`CoreMark`
@@ -156,7 +156,7 @@ Xin选择
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
-      - Package
+      - :ref:`package`
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
       -
@@ -203,7 +203,7 @@ Xin选择
       - WiFi
       - BLE
       - UART/SPI/IO
-      - Package
+      - :ref:`package`
     * - :ref:`esp32c2`
       -
       -

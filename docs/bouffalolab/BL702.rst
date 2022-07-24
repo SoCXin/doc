@@ -50,7 +50,7 @@ Xin简介
 * 1Kb eFuse
 * USB2.0 FS device interface
 * IR remote control interface
-* Ethernet RMII interface
+* :ref:`ethernet` RMII interface
 
 模拟性能
 ^^^^^^^^^^^
@@ -88,4 +88,4 @@ BL706
 ^^^^^^^^^^^
 
 * Camera interface
-* Ethernet RMII interface
+* :ref:`ethernet` RMII interface

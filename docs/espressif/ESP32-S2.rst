@@ -187,7 +187,7 @@ Xin选择
       - SRAM/ROM
       - :ref:`wireless`
       - UART/SPI/SDIO
-      - Package
+      - :ref:`package`
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
@@ -225,7 +225,7 @@ Xin选择
       - USB
       - DAC
       - SDIO
-      - Package
+      - :ref:`package`
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
@@ -277,7 +277,7 @@ Xin选择
       - :ref:`wireless`
       - DAC/PWM
       - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
-      - Package
+      - :ref:`package`
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8

@@ -37,7 +37,7 @@ LoRa
       - LoRa
       - Rate
       - More
-      - Package
+      - :ref:`package`
     * - :ref:`asr6501`
       - :ref:`cortex_m0`
       -

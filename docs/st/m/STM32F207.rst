@@ -71,7 +71,7 @@ OTG HS
 Ethernet MAC
 ^^^^^^^^^^^^^^
 
-10/100 Ethernet MAC with dedicated DMA: supports IEEE 1588v2 hardware, MII/RMII
+10/100 :ref:`ethernet` MAC with dedicated DMA: supports IEEE 1588v2 hardware, MII/RMII
 
 符合IEEE 1588 v2标准要求
 

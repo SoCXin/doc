@@ -62,8 +62,14 @@
     :local:
     :depth: 1
 
+.. _package:
+
+:ref:`package`
+-----------
+
+
 兼容好
-----------
+~~~~~~~~~~~
 ``LQFP48`` ``LQFP64`` ``STM32``
 
 软硬件兼容产品方案，通用替换，提高产品供应链稳定
@@ -78,7 +84,7 @@
 
 
 封装小
-----------
+~~~~~~~~~~~
 ``≤5x5mm`` ``QFN28`` ``QFN32``
 
 .. list-table::
@@ -88,7 +94,7 @@
       - :ref:`frequency`
       - SRAM
       - Flash
-      - Package
+      - :ref:`package`
       - Size
       - Special
       - Price
@@ -103,5 +109,5 @@
 
 
 管脚多
-----------
+~~~~~~~~~~~
 ``LQFP144`` ``LQFP100``

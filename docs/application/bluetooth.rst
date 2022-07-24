@@ -38,7 +38,7 @@ BLE
       - WiFi
       - Rate
       - More
-      - Package
+      - :ref:`package`
     * - :ref:`ch583`
       - :ref:`wch_riscv4a`
       -

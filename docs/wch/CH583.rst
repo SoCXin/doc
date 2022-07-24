@@ -133,7 +133,7 @@ Xin选择
       - :ref:`ble`
       - :ref:`sleep`
       - :ref:`peripherals`
-      - Package
+      - :ref:`package`
     * - :ref:`ch583`
       -
       - 32KB/1 MB

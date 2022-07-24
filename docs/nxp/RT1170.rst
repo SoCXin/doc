@@ -65,7 +65,7 @@ Xin选择
       - USB/NET
       - :ref:`level_npu`
       - :ref:`power`
-      - Package
+      - :ref:`package`
     * - :ref:`rt1170`
       - :ref:`cortex_m7`
       - 6468(2)

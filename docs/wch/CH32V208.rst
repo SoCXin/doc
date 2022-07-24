@@ -188,7 +188,7 @@ Xin选择
       - UART/SDIO
       - USB
       - Ethernet
-      - Package
+      - :ref:`package`
     * - :ref:`ch32v208`
       - 64K/128K
       - BLE5.3

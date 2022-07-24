@@ -16,7 +16,7 @@
       - :ref:`power`
       - SRAM/ROM
       - Price
-      - Package
+      - :ref:`package`
     * - :ref:`hpm6750`
       - :ref:`riscv`
       - 816MHz

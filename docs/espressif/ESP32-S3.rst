@@ -274,7 +274,7 @@ Xin选择
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
-      - Package
+      - :ref:`package`
     * - :ref:`esp32s3`
       - 1181.6
       - 512KB/384KB
@@ -305,7 +305,7 @@ Xin选择
       - USB
       - AI
       - Sleep
-      - Package
+      - :ref:`package`
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6
@@ -339,7 +339,7 @@ Xin选择
       - :ref:`wireless`
       - ADC/DAC/PWM
       - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
-      - Package
+      - :ref:`package`
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6

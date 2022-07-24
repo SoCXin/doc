@@ -95,7 +95,7 @@ Xin选择
       - USB/NET
       - Cost
       - :ref:`power`
-      - Package
+      - :ref:`package`
     * - :ref:`hpm6750`
       - :ref:`riscv`
       - 9220(2)

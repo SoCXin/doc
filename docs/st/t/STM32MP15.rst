@@ -55,7 +55,7 @@ STM32系列主要用于解决客户对实时任务和功耗限制的重要要求
 * DDR memory up to 1 Gbyte,  DDR3/DDR3L-1066 16/32-bit
 * L1 32-Kbyte I / 32-Kbyte D , 256-Kbyte unified level 2 cache
 * 2 × ADCs with 16-bit max. resolution (12 bits up to 4.5 Msps, 14 bits up to 4 Msps, 16 bits up to 3.6 Msps)
-* 10/100M or Gigabit Ethernet GMAC, IEEE 1588v2 hardware, MII/RMII/GMII/RGMII
+* 10/100M or Gigabit :ref:`ethernet` GMAC, IEEE 1588v2 hardware, MII/RMII/GMII/RGMII
 * 3x USB2.0（包括2个高速）
 * 2x CAN-FD
 * 3× SDMMC up to 8-bit

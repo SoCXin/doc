@@ -183,7 +183,7 @@ ETH对比
       - UART/SDIO
       - USB
       - :ref:`wch_eth`
-      - Package
+      - :ref:`package`
     * - :ref:`ch32f208`
       - 64K/128K
       - BLE5.3

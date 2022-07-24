@@ -75,7 +75,7 @@ ST
       - SRAM
       - Interface
       - Price
-      - Package
+      - :ref:`package`
     * - :ref:`stm32h745`
       - :ref:`cortex_m7`
       - 3224

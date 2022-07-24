@@ -434,7 +434,7 @@ F103范式
       - UART
       - GPIO
       - SPEC
-      - Package
+      - :ref:`package`
     * - :ref:`stm32f103`
       - 72 MHz
       - 20 KB
@@ -476,7 +476,7 @@ F407范式
       - DAC
       - CON
       - SPEC
-      - Package
+      - :ref:`package`
     * - :ref:`stm32f407`
       - 168 MHz
       - 64 KB

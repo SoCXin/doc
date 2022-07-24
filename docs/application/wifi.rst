@@ -15,7 +15,7 @@ Wi-Fi
       - Wireless
       - UART/SPI/SDIO
       - Characteristics
-      - Package
+      - :ref:`package`
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22

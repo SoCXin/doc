@@ -83,7 +83,7 @@ MCU平台
       - RAM
       - Flash
       - ML(INT8)
-      - Package
+      - :ref:`package`
     * - :ref:`k210`
       - :ref:`riscv`
       - 400 MHz
@@ -144,7 +144,7 @@ APU平台
       - WiFi
       - Rate
       - More
-      - Package
+      - :ref:`package`
     * - :ref:`bcm2711`
       -
       -

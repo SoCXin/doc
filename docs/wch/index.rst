@@ -97,7 +97,7 @@ ETH++
       - SRAM/ROM
       - Characteristics
       - Ethernet
-      - Package
+      - :ref:`package`
     * - :ref:`ch563`
       - :ref:`arm7`
       -
