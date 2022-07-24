@@ -35,6 +35,15 @@
       - 28 μA
       -
       - 195 nA
+    * - :ref:`ch32v203`
+      - :ref:`wch_riscv4c`
+      - 144(MHz)
+      - 
+      - X
+      - 2.4-3.6
+      - 45 μA
+      -
+      - 500 nA
     * - :ref:`stm32l011`
       - :ref:`cortex_m0`
       - 32(MHz)

@@ -53,8 +53,10 @@
 /CH543.html -> wch/CH543.html
 /CH32F103.html -> wch/CH32F103.html
 /CH32V103.html -> wch/CH32V103.html
+/CH32V203.html -> wch/CH32V103.html
 /CH32F207.html -> wch/CH32F207.html
 /CH32F208.html -> wch/CH32F208.html
+/CH32V305.html -> wch/CH32V307.html
 /CH32V307.html -> wch/CH32V307.html
 /CH32V208.html -> wch/CH32V208.html
 /AT32F421.html -> arterytek/AT32F421.html

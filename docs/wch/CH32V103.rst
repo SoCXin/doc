@@ -4,7 +4,8 @@
 CH32V103
 ============
 
-`WCH <http://www.wch.cn/products/CH32V103.html>`_ : ``RISC-V3A`` ``80MHz`` ``USB`` ``HarmonyOS``
+* `WCH <http://www.wch.cn/products/CH32V103>`_ : ``RISC-V3A`` ``80MHz`` ``USB`` ``HarmonyOS``
+* `GitHub <https://github.com/SoCXin/CH32V103>`_ : :ref:`pop` / :ref:`ethernet` / :ref:`usb_hs`
 
 .. contents::
     :local:
@@ -16,7 +17,6 @@ Xin简介
 .. image:: ./images/CH32V103.png
     :target: http://www.wch.cn/products/CH32V103.html
 
-`GitHub <https://github.com/SoCXin/CH32V103>`_
 
 规格参数
 ~~~~~~~~~~~
@@ -109,6 +109,23 @@ Xin选择
 
 型号对比
 ~~~~~~~~~~
+
+.. _ch32v203:
+
+CH32V203
+^^^^^^^^^^^
+``TSSOP20/QFN28/QFN48/LQFP32/LQFP48``
+
+CH32V203系列是基于32位RISC-V内核设计的工业级增强型低功耗通用微控制器，高性能，最高支持144MHz系统主频，低功耗，运行功耗低至45uA/MHz。
+
+CH32V203集成双路USB接口，支持USB Host主机及USB Device设备功能，具有1路CAN接口（2.0B主动）、双路OPA运放、4组UART、双路IIC，12位ADC，10路Touchkey等丰富外设资源，同时提供TSSOP20、QFN28、QFN48、LQFP32、LQFP48等多种封装供客户灵活选择。
+
+* 供电电压：2.5/3.3V，GPIO单元独立供电,多种低功耗模式：睡眠、停止、待机
+* 运行模式低至 44.65uA/MHz
+* 睡眠模式低至 17.90uA/MHz
+
+.. image:: ./images/CH32V203l.png
+    :target: http://www.wch.cn/products/CH32V203.html
 
 
 版本对比

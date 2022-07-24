@@ -171,30 +171,30 @@ Xindex
 
     晶元代工 <foundry>
     芯片设计 <vendor>
-    销售推广 <sales>
+    销售渠道 <sales>
 
 
 .. list-table::
     :header-rows: 1
 
-    * - 芯片厂商
+    * - :ref:`vendor`
       - 产品系列
       - 代表作品
       - 最新产品
       - 核心技术
-      - 主要制程
-      - 销售渠道
+      - :ref:`foundry`
+      - :ref:`sales`
     * - :ref:`wch`
       - 24
       - :ref:`ch579`
       - :ref:`ch32v307`
       - :ref:`usb`
       -
-      - :ref:`mouser`
+      - :ref:`lcsc`
     * - :ref:`espressif`
       - 6
       - :ref:`esp32`
       - :ref:`esp32c2`
       - :ref:`wifi`
       - :ref:`tsmc_40nm`
-      - :ref:`mouser`
+      - 
