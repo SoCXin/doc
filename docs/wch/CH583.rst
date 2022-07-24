@@ -4,10 +4,8 @@
 CH583
 ============
 
-* `WCH <http://www.wch.cn/products/CH583>`_ : ``WCH`` ``RISC-V4A`` ``20MHz`` ``USB`` ``AES128`` ``BLE5.1`` ``1.7V`` ``QFN48`` ``QFN28``
-* `GitHub <https://github.com/SoCXin/CH583>`_ : :ref:`pop` / :ref:`low` / :ref:`ble` / :ref:`usb`  / :ref:`ulp`
-
-:ref:`ch573` --> :ref:`ch583`
+* `WCH <http://www.wch.cn/products/CH583>`_ : ``WCH`` ``RISC-V4A`` ``20MHz`` ``USB`` ``AES-128`` ``BLE5.3`` ``1.7V`` ``QFN48`` ``QFN28``
+* `Tags <https://github.com/SoCXin/CH583>`_ : :ref:`ulp` / :ref:`low` / :ref:`ble` / :ref:`usb`  
 
 .. contents::
     :local:
@@ -19,9 +17,6 @@ Xin简介
 .. image:: ./images/CH583.png
     :target: http://www.wch.cn/products/CH583.html
 
-
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~
@@ -45,18 +40,22 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 80 MHz :ref:`wch_riscv4a` (青稞 V4 系列)
+* 80 MHz :ref:`wch_riscv4a` (青稞V4)
+* 2x USB FS Host/Device
 * 32KB SRAM，1MB Flash，支持ICP、ISP和IAP，支持OTA无线升级
 * 2.4GHz RF收发器和基带及链路控制，支持BLE5.1
 * 支持2Mbps、1Mbps、500Kbps、125Kbps，接收灵敏度-98dBm，可编程+7dBm发送功率
-* 2组USB2.0 全速Host/Device
 * 4组UART，2组SPI，12路PWM，1路IIC
 * 内置温度传感器
 * 内置RTC，支持定时和触发两种模式
 * 40个GPIO，其中4个支持5V信号输入
 
-.. hint::
-    最有特色的一点是有两个USB OTG外设，配置的Flash容量也比较大，但目前只有QFN48。
+模拟性能
+^^^^^^^^^^^
+``TouchKey`` ``12-bit ADC`` 
+
+* 12-bit ADC (14ch)
+* 14x TouchKey
 
 
 芯片架构
@@ -90,11 +89,10 @@ Xin简介
 
 BLE
 ^^^^^^^^^^^
+``BLE 5.3`` ``-98dBm`` ``+7dBm``
 
-``BLE 5.0`` ``-98dBm``
-
-* 接收灵敏度-98dBm，可编程+6dBm 发送功率
-* BLE 符合 Bluetooth Low Energy 5.0 规范
+* 接收灵敏度-98dBm，可编程+7dBm发送功率
+* BLE 符合 Bluetooth Low Energy 5.0规范
 
 pathloss=40+25log(d)
 
@@ -106,6 +104,7 @@ pathloss=40+25log(d)
 
 USB
 ^^^^^^^^^^^
+``USB FS OTG``
 
 * 2 组独立的 USB 控制器和收发器
 * 15 个端点，支持 DMA，支持 64 字节数据包
@@ -131,22 +130,22 @@ Xin选择
     * - :ref:`vendor`
       - :ref:`CoreMark`
       - SRAM/ROM
-      - wireless
-      - Characteristics
-      - USB/UART/SPI
+      - :ref:`ble`
+      - :ref:`sleep`
+      - :ref:`peripherals`
       - Package
     * - :ref:`ch583`
       -
       - 32KB/1 MB
-      - BLE5.1
-      - Sleep 0.7uA
+      - BLE5.3
+      - 0.7uA
       - 2/4/2
       - QFN48
     * - :ref:`esp32c3`
       - 407
       - 512KB/384KB
-      - WiFi+BLE5.0
-      - Sleep 5uA
+      - BLE5.0
+      - 5uA
       - 0/2/3
       - QFN32/QFN28
 

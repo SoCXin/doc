@@ -26,7 +26,7 @@ Cortex-M0
     * - :ref:`foundry`
       - :ref:`DMIPS`/MHz
       - :ref:`CoreMark`/MHz
-      - :ref:`consumption`/MHz
+      - :ref:`power`/MHz
       - Die Size
     * - :ref:`tsmc_40nm`
       - 0.95

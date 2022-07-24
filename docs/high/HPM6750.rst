@@ -94,7 +94,7 @@ Xin选择
       - SRAM
       - USB/NET
       - Cost
-      - :ref:`consumption`
+      - :ref:`power`
       - Package
     * - :ref:`hpm6750`
       - :ref:`riscv`

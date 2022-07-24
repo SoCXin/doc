@@ -17,8 +17,8 @@ RISC-V
     * - :ref:`riscv`
       - :ref:`frequency`
       - :ref:`CoreMark`
-      - :ref:`consumption`
-      - RAM/Flash
+      - :ref:`power`
+      - Size(mm²)
     * - :ref:`wch_riscv3a`
       -
       -
