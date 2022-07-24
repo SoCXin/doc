@@ -64,15 +64,34 @@
 
 .. _package:
 
-:ref:`package`
+Package
 -----------
 
+.. list-table::
+    :header-rows:  1
+
+    * - SON8
+      - TSSOP20 
+      - QFN28 
+      - QFN32 
+      - LQFP48
+      - LQFP64
+      - LQFP100
+      - LQFP144
+    * - 
+      - 
+      - 
+      - 
+      - 
+      -
+      - 
+      -
 
 兼容好
 ~~~~~~~~~~~
-``LQFP48`` ``LQFP64`` ``STM32``
+``LQFP48`` ``LQFP64`` ``STM32F103``
 
-软硬件兼容产品方案，通用替换，提高产品供应链稳定
+参考范式 :ref:`ref030` , :ref:`ref103` , :ref:`ref407`  ，软硬件兼容产品方案，通用替换，提高产品供应链稳定
 
 
 
