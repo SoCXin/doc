@@ -60,12 +60,12 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">超低功耗效能王者</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#power">Power</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#frequency">Frequency</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#consumption">功耗</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#halt">待机</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sleep">睡眠</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#consumption">Consumption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#halt">Halt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sleep">Sleep</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#vcc">供电</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vdd">VDD</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id7">锂电池</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id8">超级电容</a></li>
 </ul>
@@ -150,10 +150,10 @@
 <th class="head"><p><a class="reference internal" href="#frequency"><span class="std std-ref">Frequency</span></a></p></th>
 <th class="head"><p><a class="reference internal" href="../architecture/index.html#ulpbench"><span class="std std-ref">ULPBench</span></a></p></th>
 <th class="head"><p><a class="reference internal" href="../application/index.html#wireless"><span class="std std-ref">Wireless</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="#vcc"><span class="std std-ref">供电</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="#consumption"><span class="std std-ref">功耗</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="#halt"><span class="std std-ref">待机</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="#sleep"><span class="std std-ref">睡眠</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#vdd"><span class="std std-ref">VDD</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#power"><span class="std std-ref">Power</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#halt"><span class="std std-ref">Halt</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#sleep"><span class="std std-ref">Sleep</span></a></p></th>
 </tr>
 </thead>
 <tbody>
@@ -272,26 +272,59 @@
 <p><code class="docutils literal notranslate"><span class="pre">MHz</span></code></p>
 </section>
 <section id="consumption">
-<span id="id3"></span><h3>功耗<a class="headerlink" href="#consumption" title="Permalink to this heading">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">运行功耗</span></code> <code class="docutils literal notranslate"><span class="pre">uA/MHz</span></code></p>
+<span id="id3"></span><h3>Consumption<a class="headerlink" href="#consumption" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">电流功耗</span></code> <code class="docutils literal notranslate"><span class="pre">uA/MHz</span></code></p>
 <p>Ambiq Micro是一家专注于超低功耗的MCU厂商，其Apollo系列引领了超低功耗MCU的新方向。Apollo系列采用亚阈值功率优化技术（SPOT）平台为基础，运行功耗可低至6uA/MHz，是全球同类产品中运行功耗最低的微控制器。</p>
 <p>亚阈值功率优化技术（SPOT）是当前实现超低功耗的最有效技术，让晶体管能够在远低于“标准”的电压水平下工作，从而实现芯片功耗的大幅度降低，因此其解决方案在功耗改善上实现跨越式的改善。</p>
-<p>兆易创新作为国产32位微控制器的领头羊，2021年10月份推出了其首款低功耗微控制器GD32L233系列。该芯片基于ARMCortex-M23内核，采用40nm超低功耗（ULP）工艺制程，采用多电压域的低功耗设计方法，并集成专门优化的低功耗模拟IP。据报道，该芯片的运行功耗最低66uA/MHz，深度睡眠模式最低2uA左右，适用于能效敏感型应用，如工业表计、小型消费电子设备、便携式个人健康监护设备及环境监测传感器等。</p>
 <p>华大半导体在低功耗32位微控制产品研发的布局较早，已相继推出HC32L110、HC32L130、HC32L136产品系列。该系列芯片基于Cortex-M0+内核，采用华虹宏力的110nm超低漏电（ULL）嵌入式闪存工艺，采用多电源域的低功耗设计方法。该芯片的运行功耗为130uA/MHz，深度睡眠模式最低为0.9uA，适用于传感器、火灾探头、智能门锁、无线烟感、智能表计、便携式医疗电子、数据采集和传输等应用领域。</p>
 <p>中科芯蕊是一家专注于低功耗MCU的国内厂商，于今年5月份推出了XRM32UL051系列。该芯片基于Cortex-M0+内核，超低漏电的先进工艺制程，采用其独有的亚阈值技术和异步电路技术，运行模式的功耗低至20uA/MHz，深度睡眠的功耗低至0.7uA。该功耗指标与国际厂商（意法、瑞萨）的最新产品指标接近，适用于智能门锁、智能表计、便携式医疗电子等传统低功耗应用领域，同时能够支持环境自采集类应用，实现设备长期续航。</p>
 </section>
 <section id="halt">
-<span id="id4"></span><h3>待机<a class="headerlink" href="#halt" title="Permalink to this heading">¶</a></h3>
+<span id="id4"></span><h3>Halt<a class="headerlink" href="#halt" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">低功耗待机状态</span></code> <code class="docutils literal notranslate"><span class="pre">停止模式</span></code></p>
 </section>
 <section id="sleep">
-<span id="id5"></span><h3>睡眠<a class="headerlink" href="#sleep" title="Permalink to this heading">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">低功耗睡眠模式</span></code> <code class="docutils literal notranslate"><span class="pre">可唤醒状态</span></code></p>
+<span id="id5"></span><h3>Sleep<a class="headerlink" href="#sleep" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">低功耗睡眠模式</span></code> <code class="docutils literal notranslate"><span class="pre">时钟关闭</span></code> <code class="docutils literal notranslate"><span class="pre">RAM断电</span></code> <code class="docutils literal notranslate"><span class="pre">可唤醒状态</span></code></p>
 </section>
 </section>
-<section id="vcc">
-<span id="id6"></span><h2>供电<a class="headerlink" href="#vcc" title="Permalink to this heading">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">供电电压</span></code></p>
+<section id="vdd">
+<span id="id6"></span><h2>VDD<a class="headerlink" href="#vdd" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">供电电压</span></code> <code class="docutils literal notranslate"><span class="pre">Virtual</span> <span class="pre">Device</span> <span class="pre">Driver</span></code> <code class="docutils literal notranslate"><span class="pre">Voltage</span> <span class="pre">Drain</span> <span class="pre">Drain</span></code></p>
+<p>VDD可以看作为某一芯片内部的工作电压;</p>
+<p>VCC: Voltage To Current Converter(电路电压)或Voltage Collector Collector (集电极电源电压)</p>
+<p>用作电路电压时,表示接入电路的电压;用作集电极电源电压,一般用于双极性晶体管,是晶体管的正电源;此外,vcc中的c还可以解读为circuit(电路),同样表示电路电压;</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#power"><span class="std std-ref">Power</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#vdd"><span class="std std-ref">VDD</span></a> (min)</p></th>
+<th class="head"><p><a class="reference internal" href="#vdd"><span class="std std-ref">VDD</span></a> (max)</p></th>
+<th class="head"><p><a class="reference internal" href="low.html#package"><span class="std std-ref">Package</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../wch/CH583.html#ch583"><span class="std std-ref">CH583</span></a></p></td>
+<td></td>
+<td><p>≤ 80MHz</p></td>
+<td></td>
+<td><p>1.7v</p></td>
+<td><p>3.6v</p></td>
+<td><p>QFN48</p></td>
+</tr>
+</tbody>
+</table>
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#id7" id="id9">锂电池</a></p></li>
@@ -300,9 +333,11 @@
 </div>
 <section id="id7">
 <h3><a class="toc-backref" href="#id9">锂电池</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">3.7v</span></code></p>
 </section>
 <section id="id8">
 <h3><a class="toc-backref" href="#id10">超级电容</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">4.2v</span></code></p>
 </section>
 </section>
 </section>

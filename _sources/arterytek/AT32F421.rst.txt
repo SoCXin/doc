@@ -239,7 +239,7 @@ Xin选择
 
     * - :ref:`vendor`
       - Price
-      - Package
+      - :ref:`package`
       - Size
       - Interface
     * - AT32F421C

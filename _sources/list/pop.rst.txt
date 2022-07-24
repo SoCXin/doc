@@ -70,7 +70,7 @@ grblHAL
       - Flash
       - UART
       - GPIO
-      - Package
+      - :ref:`package`
     * - :ref:`rp2040`
       -
       -
@@ -101,7 +101,7 @@ ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含�
       - Flash
       - UART
       - GPIO
-      - Package
+      - :ref:`package`
     * - :ref:`ch549`
       - :ref:`mcs51`
       - 1K

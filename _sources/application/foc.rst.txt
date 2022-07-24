@@ -117,7 +117,7 @@ SimpleFOC
       - 3 PWM
       - 6 PWM
       - PWM Freq
-      - Package
+      - :ref:`package`
     * - :ref:`esp32`
       - √
       - √
@@ -192,7 +192,7 @@ ODrive
       - mTIM
       - PWM
       - More
-      - Package
+      - :ref:`package`
     * - :ref:`stm32g474`
       - 170MHz
       - 128KB

@@ -76,7 +76,7 @@ ARM9
       - RAM
       - Flash
       - Process
-      - Package
+      - :ref:`package`
     * - :ref:`sp7021`
       - :ref:`arm926ejs`
       - 1.0 GHz

@@ -5,7 +5,7 @@ CH32V307
 ============
 
 * `WCH <http://www.wch.cn/products/CH32V307>`_ : ``RISC-V`` ``RISC-V4F`` ``USB-HS-OTG(480Mbps)`` ``Ethernet`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``CAN`` ``FSMC`` ``OPA`` ``DVP``
-* `GitHub <https://github.com/SoCXin/CH32V307>`_ : :ref:`pop` / :ref:`ethernet` / :ref:`usb_hs`
+* `Tags <https://github.com/SoCXin/CH32V307>`_ : :ref:`pop` / :ref:`ethernet` / :ref:`usb_hs`
 
 .. contents::
     :local:
@@ -171,7 +171,7 @@ Xin选择
       - Interface
       - USB
       - Ethernet
-      - Package
+      - :ref:`package`
     * - :ref:`ch32v307`
       - 64KB/256KB
       - DVP/FSMC
@@ -215,7 +215,7 @@ Xin选择
       - Interface
       - USB
       - Ethernet
-      - Package
+      - :ref:`package`
     * - :ref:`ch32v307`
       - 64KB/256KB
       - DVP/FSMC

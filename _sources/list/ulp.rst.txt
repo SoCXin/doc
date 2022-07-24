@@ -13,8 +13,8 @@
       - :ref:`frequency`
       - :ref:`ulpbench`
       - :ref:`wireless`
-      - :ref:`vcc`
-      - :ref:`consumption`
+      - :ref:`vdd`
+      - :ref:`power`
       - :ref:`halt`
       - :ref:`sleep`
     * - :ref:`stm32u575`
@@ -131,17 +131,15 @@ Frequency
 
 .. _consumption:
 
-功耗
+Consumption
 ~~~~~~~~~~~~~
-``运行功耗`` ``uA/MHz``
+``电流功耗`` ``uA/MHz``
 
 
 Ambiq Micro是一家专注于超低功耗的MCU厂商，其Apollo系列引领了超低功耗MCU的新方向。Apollo系列采用亚阈值功率优化技术（SPOT）平台为基础，运行功耗可低至6uA/MHz，是全球同类产品中运行功耗最低的微控制器。
 
 亚阈值功率优化技术（SPOT）是当前实现超低功耗的最有效技术，让晶体管能够在远低于“标准”的电压水平下工作，从而实现芯片功耗的大幅度降低，因此其解决方案在功耗改善上实现跨越式的改善。
 
-
-兆易创新作为国产32位微控制器的领头羊，2021年10月份推出了其首款低功耗微控制器GD32L233系列。该芯片基于ARMCortex-M23内核，采用40nm超低功耗（ULP）工艺制程，采用多电压域的低功耗设计方法，并集成专门优化的低功耗模拟IP。据报道，该芯片的运行功耗最低66uA/MHz，深度睡眠模式最低2uA左右，适用于能效敏感型应用，如工业表计、小型消费电子设备、便携式个人健康监护设备及环境监测传感器等。
 
 华大半导体在低功耗32位微控制产品研发的布局较早，已相继推出HC32L110、HC32L130、HC32L136产品系列。该系列芯片基于Cortex-M0+内核，采用华虹宏力的110nm超低漏电（ULL）嵌入式闪存工艺，采用多电源域的低功耗设计方法。该芯片的运行功耗为130uA/MHz，深度睡眠模式最低为0.9uA，适用于传感器、火灾探头、智能门锁、无线烟感、智能表计、便携式医疗电子、数据采集和传输等应用领域。
 
@@ -150,21 +148,46 @@ Ambiq Micro是一家专注于超低功耗的MCU厂商，其Apollo系列引领了
 
 .. _halt:
 
-待机
+Halt
 ~~~~~~~~~~~~~
 ``低功耗待机状态`` ``停止模式``
 
 .. _sleep:
 
-睡眠
+Sleep
 ~~~~~~~~~~~~~
-``低功耗睡眠模式`` ``可唤醒状态``
+``低功耗睡眠模式`` ``时钟关闭`` ``RAM断电`` ``可唤醒状态``
 
-.. _vcc:
+.. _vdd:
 
-供电
+VDD
 -----------
-``供电电压``
+``供电电压`` ``Virtual Device Driver`` ``Voltage Drain Drain``
+
+VDD可以看作为某一芯片内部的工作电压;
+
+VCC: Voltage To Current Converter(电路电压)或Voltage Collector Collector (集电极电源电压)
+
+用作电路电压时,表示接入电路的电压;用作集电极电源电压,一般用于双极性晶体管,是晶体管的正电源;此外,vcc中的c还可以解读为circuit(电路),同样表示电路电压;
+
+.. list-table::
+    :header-rows:  1
+
+    * -
+      - :ref:`CoreMark`
+      - :ref:`frequency`
+      - :ref:`power`
+      - :ref:`vdd` (min)
+      - :ref:`vdd` (max)
+      - :ref:`package`
+    * - :ref:`ch583`
+      -
+      - ≤ 80MHz
+      - 
+      - 1.7v
+      - 3.6v
+      - QFN48
+
 
 .. contents::
     :local:
@@ -173,6 +196,8 @@ Ambiq Micro是一家专注于超低功耗的MCU厂商，其Apollo系列引领了
 
 锂电池
 ~~~~~~~~~~~
+``3.7v``
 
 超级电容
 ~~~~~~~~~~~
+``4.2v``

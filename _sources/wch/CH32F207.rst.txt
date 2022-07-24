@@ -125,7 +125,7 @@ USB HS（480Mbps内置PHY）和千兆以太网控制器ETH（内置10M PHY）这
       - UART/SDIO
       - USB
       - :ref:`wch_eth`
-      - Package
+      - :ref:`package`
     * - :ref:`ch32f207`
       - 64K/256K
       - DVP/FSMC

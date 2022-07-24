@@ -78,7 +78,7 @@ MT7623
 * :ref:`cortex_a7` Quad-core
 * Mali 450 GPU
 * 2G DDR3 SDRAM
-* 5 port Gigabit Ethernet Switch + RGMII + TRGMII
+* 5 port Gigabit :ref:`ethernet` Switch + RGMII + TRGMII
 * 1T1R Wi-Fi 4 (n)
 
 

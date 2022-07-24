@@ -79,7 +79,7 @@ NFC工作有效距离约10cm，所以具有很高的安全性。
       - WiFi
       - Rate
       - More
-      - Package
+      - :ref:`package`
     * - :ref:`esp32h2`
       - :ref:`esp_rv32`
       -

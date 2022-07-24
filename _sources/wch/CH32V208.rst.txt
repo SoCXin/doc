@@ -4,18 +4,20 @@
 CH32V208
 ============
 
-`标签 <https://github.com/SoCXin/CH32F208>`_ : ``RISC-V4C`` ``144MHz`` ``USB`` ``Ethernet`` ``10Mbps(PHY)`` ``BLE5.3`` ``QFN28``
+* `WCH <http://www.wch.cn/products/CH32V208>`_ : ``RISC-V4C`` ``144MHz`` ``USB`` ``Ethernet`` ``10Mbps(w/PHY)`` ``BLE5.3`` ``QFN68/QFN28``
+* `Tags <https://github.com/SoCXin/CH32V208>`_ : :ref:`pop` / :ref:`ethernet` / :ref:`ble`
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
 
-:ref:`wch_riscv` CH32V208系列是基于32位RISC-V设计的无线型微控制器，配备了硬件堆栈区、快速中断入口，在标准RISC-V基础上大大提高了中断响应速度。搭载V4C内核，加入内存保护单元，同时降低硬件除法周期。片上集成2Mbps低功耗蓝牙BLE 通讯模块、10M以太网MAC+PHY模块、USB2.0全速设备+主机/设备接口、CAN控制器等。
-
 .. image:: ./images/CH32V208.png
     :target: http://www.wch.cn/products/CH32V208.html
+
+CH32V208系列是基于32位RISC-V设计的无线型微控制器，配备了硬件堆栈区、快速中断入口，在标准RISC-V基础上大大提高了中断响应速度。搭载V4C内核，加入内存保护单元，同时降低硬件除法周期。片上集成2Mbps低功耗蓝牙BLE 通讯模块、10M以太网MAC+PHY模块、USB2.0全速设备+主机/设备接口、CAN控制器等。
 
 
 规格参数
@@ -34,19 +36,28 @@ Xin简介
 * RAM容量：64 KB
 * Flash容量：128 KB
 
+.. hint::
+    用户选择字配置为（128K FLASH+64K SRAM）、（144KFLASH+48K SRAM）、（160K FLASH+32K SRAM）几种存储组合
+
 特征参数
 ^^^^^^^^^^^
 
-* 144 MHz :ref:`wch_riscv4c`
+* 144 MHz :ref:`wch_riscv4c` , 支持单周期乘法和硬件除法
 * :ref:`ch32v208_ble` 5.3
-* :ref:`ch32v208_eth` 10Mbps（MAC+PHY）
-* :ref:`ch32v208_usb` 2.0全速主机/设备+设备接口
-* :ref:`ch32v208_can` 2.0B主动
-* 2组运放比较器
-* 2组IIC接口、2组SPI接口
+* :ref:`ch32v208_eth` 10Mbps(w/PHY)
+* :ref:`ch32v208_usb` FS OTG+D 
+* :ref:`ch32v208_can` 2.0B
+* 2x IIC、2x SPI、4x USART
+* 53个I/O口，可以映射到16外部中断
 
-.. hint::
-    128K FLASH+64K SRAM 的 208 产品支持用户选择字配置为（128K FLASH+64K SRAM）、（144KFLASH+48K SRAM）、（160K FLASH+32K SRAM）几种组合中的一种。
+
+模拟性能
+^^^^^^^^^^^
+``TouchKey`` ``ADC`` ``DAC`` ``OPA``
+
+* 2x OPA
+* 12-bit ADC (16ch)
+* 16x TouchKey
 
 
 芯片架构
@@ -67,10 +78,15 @@ Xin简介
 .. image:: ./images/CH32V208t.png
     :target: http://www.wch.cn/products/CH32V208.html
 
+* 串行2线调试接口
 
 连接能力
 ~~~~~~~~~~~
 ``BLE5.3`` ``USB FS OTG`` ``CAN2.0`` ``Ethernet``
+
+.. contents::
+    :local:
+    :depth: 1
 
 .. _ch32v208_ble:
 
@@ -105,6 +121,7 @@ Xin选择
 
 .. contents::
     :local:
+    :depth: 1
 
 品牌对比
 ~~~~~~~~~~
@@ -171,7 +188,7 @@ Xin选择
       - UART/SDIO
       - USB
       - Ethernet
-      - Package
+      - :ref:`package`
     * - :ref:`ch32v208`
       - 64K/128K
       - BLE5.3
@@ -207,5 +224,16 @@ Xin选择
 .. image:: ./images/CH32V208.jpeg
     :target: http://www.wch.cn/products/CH32V208.html
 
-QFN28封装相对QFN48减少了USART，保留了以太网功能
+.. hint::
+    QFN28封装相对QFN48封装，减少了USART，但保留了以太网功能
 
+Xin应用
+-----------
+
+.. contents::
+    :local:
+    :depth: 1
+
+智能门锁
+~~~~~~~~~~
+``53GPIO`` ``BLE`` ``TOUCH`` ``CH32V208WB``

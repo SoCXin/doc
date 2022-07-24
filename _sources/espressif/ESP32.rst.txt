@@ -193,7 +193,7 @@ Xin选择
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
-      - Package
+      - :ref:`package`
     * - :ref:`esp32`
       - 994.26
       - 512KB/384KB
@@ -221,7 +221,7 @@ Xin选择
       - WiFi
       - BLE
       - USB
-      - Package
+      - :ref:`package`
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 994.26

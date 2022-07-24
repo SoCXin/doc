@@ -136,7 +136,7 @@ Xin选择
       - USB/CAN
       - wireless
       - UART/SPI
-      - Package
+      - :ref:`package`
     * - :ref:`ch573`
       - :ref:`wch_riscv3a`
       - 18KB/512KB

@@ -62,11 +62,36 @@
     :local:
     :depth: 1
 
-兼容好
-----------
-``LQFP48`` ``LQFP64`` ``STM32``
+.. _package:
 
-软硬件兼容产品方案，通用替换，提高产品供应链稳定
+Package
+-----------
+
+.. list-table::
+    :header-rows:  1
+
+    * - SON8
+      - TSSOP20 
+      - QFN28 
+      - QFN32 
+      - LQFP48
+      - LQFP64
+      - LQFP100
+      - LQFP144
+    * - 
+      - 
+      - 
+      - 
+      - 
+      -
+      - 
+      -
+
+兼容好
+~~~~~~~~~~~
+``LQFP48`` ``LQFP64`` ``STM32F103``
+
+参考范式 :ref:`ref030` , :ref:`ref103` , :ref:`ref407`  ，软硬件兼容产品方案，通用替换，提高产品供应链稳定
 
 
 
@@ -78,7 +103,7 @@
 
 
 封装小
-----------
+~~~~~~~~~~~
 ``≤5x5mm`` ``QFN28`` ``QFN32``
 
 .. list-table::
@@ -88,7 +113,7 @@
       - :ref:`frequency`
       - SRAM
       - Flash
-      - Package
+      - :ref:`package`
       - Size
       - Special
       - Price
@@ -103,5 +128,5 @@
 
 
 管脚多
-----------
+~~~~~~~~~~~
 ``LQFP144`` ``LQFP100``

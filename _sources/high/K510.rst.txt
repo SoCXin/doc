@@ -66,7 +66,7 @@ K510支持丰富的网络模型算子，包括常见的CNN、RNN和各类向量�
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
-      - Package
+      - :ref:`package`
     * - :ref:`k510`
       -
       -

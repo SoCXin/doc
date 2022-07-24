@@ -151,7 +151,7 @@ Xin选择
       -
       - :ref:`wireless`
       - Ethernet
-      - Package
+      - :ref:`package`
     * - :ref:`ch579`
       - :ref:`cortex_m0`
       - 40 MHz

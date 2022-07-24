@@ -76,7 +76,7 @@ Cat.1
       - LoRa
       - Rate
       - More
-      - Package
+      - :ref:`package`
     * - :ref:`asr1601`
       -
       -

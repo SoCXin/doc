@@ -151,7 +151,7 @@ Xin选择
       - SRAM/ROM
       - :ref:`wireless`
       - UART/SPI/SDIO
-      - Package
+      - :ref:`package`
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
@@ -192,7 +192,7 @@ Xin选择
       - SRAM/ROM
       - Characteristics
       - UART/SPI/SDIO
-      - Package
+      - :ref:`package`
     * - :ref:`esp32c3`
       - 5.0
       -
@@ -235,7 +235,7 @@ Xin选择
       - WiFi
       - BLE
       - USB
-      - Package
+      - :ref:`package`
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22

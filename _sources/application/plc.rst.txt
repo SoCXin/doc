@@ -16,7 +16,7 @@ PLC
       - WiFi
       - Rate
       - More
-      - Package
+      - :ref:`package`
     * - :ref:`cr600`
       -
       -
