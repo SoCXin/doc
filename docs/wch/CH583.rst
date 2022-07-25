@@ -160,7 +160,7 @@ Xin选择
     * - :ref:`wch`
       - :ref:`architecture`
       - :ref:`frequency`
-      - SRAM/ROM
+      - :ref:`sram` / :ref:`flash`
       - wireless
       - USB/UART/ETH
       - :ref:`sleep`

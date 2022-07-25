@@ -18,9 +18,6 @@ Bluetooth
     DA14580 <../miscellaneous/DA14580>
     AB32VG1 <../miscellaneous/AB32VG1>
 
-.. contents::
-    :local:
-    :depth: 1
 
 .. _ble:
 
@@ -33,8 +30,8 @@ BLE
 
     * - :ref:`ble`
       - :ref:`architecture`
-      - SRAM/ROM
-      -
+      - :ref:`frequency`
+      - :ref:`sram` / :ref:`flash`
       - WiFi
       - Rate
       - More
