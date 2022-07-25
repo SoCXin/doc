@@ -31,10 +31,10 @@ BLE
     * - :ref:`ble`
       - :ref:`architecture`
       - :ref:`frequency`
-      - :ref:`sram` / :ref:`flash`
-      - WiFi
-      - Rate
-      - More
+      - :ref:`sram` 
+      - :ref:`flash`
+      - TX
+      - RX
       - :ref:`package`
     * - :ref:`ch583`
       - :ref:`wch_riscv4a`

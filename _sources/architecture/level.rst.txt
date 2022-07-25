@@ -68,7 +68,7 @@ Level2
 
 Level3
 --------------
-``Frequency ≤ 240MHz``
+``Frequency ≤ 200MHz``
 
 
 .. list-table::

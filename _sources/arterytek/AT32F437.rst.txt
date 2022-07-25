@@ -5,6 +5,7 @@ AT32F437
 ===============
 
 * `Arterytek <https://www.arterytek.com/cn/product/AT32F437.jsp>`_ : ``Cortex-M4`` ``288 MHz`` ``3x5.33Msps ADC`` ``8 UART`` ``2 CAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
+* `Tags <https://github.com/SoCXin/AT32F437>`_ : :ref:`adc_mcu`
 
 .. contents::
     :local:
@@ -50,7 +51,15 @@ Xin简介
 * 10/100M以太网MAC，专用DMA和4K SRAM，MII/RMII接口
 
 .. hint::
-    :ref:`at32f437` 基于 :ref:`cortex_m4` 的高性能产品，包括8个串口和以太网MAC，尤其是配置3个独立的5.33MSPS ADC
+    :ref:`at32f437` 基于 :ref:`cortex_m4` 包括8个串口和以太网MAC，尤其是配置3个独立的5.33MSPS ADC
+
+
+模拟性能
+^^^^^^^^^^^
+``5.33MSPS`` ``3x ADC``
+
+* 3x 12-bit ADC  <  :ref:`stm32g474` 5x 12bit ADC
+* 5.33MSPS@12-bit  > :ref:`hpm6750` 5MSPS@12bit
 
 
 芯片架构
@@ -95,17 +104,17 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`arterytek`
+      - :ref:`frequency`
       - :ref:`CoreMark`
-      - SRAM
-      - Flash
+      - :ref:`sram` / :ref:`flash`
       - UART
       - CAN2.0B
-      - USB
-      - Ethernet
+      - :ref:`usb`
+      - :ref:`ethernet`
     * - :ref:`at32f437`
       -
-      - 512
-      - 4032
+      - 
+      - 512KB/4MB
       - 4
       - 1
       - 2 x OTG

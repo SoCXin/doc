@@ -193,6 +193,9 @@ VCC: Voltage To Current Converter(电路电压)或Voltage Collector Collector (�
     :local:
     :depth: 1
 
+AA电池
+~~~~~~~~~~~
+``1.5v``
 
 锂电池
 ~~~~~~~~~~~
