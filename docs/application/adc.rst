@@ -17,6 +17,7 @@ ADC
     :local:
     :depth: 1
 
+.. _adc_mcu:
 
 ADC-MCU
 ~~~~~~~~~~~~
@@ -25,7 +26,7 @@ ADC-MCU
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`adc_hs`
+    * - 
       - :ref:`frequency`
       - :ref:`CoreMark`
       - SRAM/flash
@@ -99,8 +100,8 @@ ADC-MCU
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`adc_hp`
-      - Freq
+    * - 
+      - :ref:`frequency`
       - SRAM/ROM
       - SNR
       - INL
