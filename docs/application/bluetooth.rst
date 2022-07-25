@@ -223,3 +223,14 @@ Bluetooth 4.2
 改善了数据传输速度和隐私保护程度。将发送数据包长度扩展，提升数据传输速度；新增LE安全配对，增加隐私保护程度
 
 蓝牙4.2最大通讯速度为1Mbps
+
+
+
+技术规格
+----------
+
+pathloss=40+25log(d)
+
+.. image:: ./images/路径损耗.jpg
+    :target: https://blog.csdn.net/qq_15391889/article/details/87937452
+
