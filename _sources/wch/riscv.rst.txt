@@ -59,6 +59,7 @@ RISC-V3A 是 32 位嵌入式处理器，内部模块化管理，支持 RISC-V �
 
 RISC-V4A
 --------------
+``1.56 DMIPS``
 
 .. _wch_riscv4b:
 

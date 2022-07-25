@@ -5,7 +5,7 @@ CH583
 ============
 
 * `WCH <http://www.wch.cn/products/CH583>`_ : ``WCH`` ``RISC-V4A`` ``20MHz`` ``USB`` ``AES-128`` ``BLE5.3`` ``1.7V`` ``QFN48`` ``QFN28``
-* `Tags <https://github.com/SoCXin/CH583>`_ : :ref:`ulp` / :ref:`low` / :ref:`ble` / :ref:`usb`  
+* `TAG <https://github.com/SoCXin/CH583>`_ : :ref:`ulp` / :ref:`low` / :ref:`ble` / :ref:`usb`  
 
 .. contents::
     :local:
@@ -80,10 +80,14 @@ Xin简介
 * 睡眠模式 Sleep：0.7uA～2.8uA 多档
 * 下电模式 Shutdown：0.2uA～2.3uA 多档
 
-`芯片手册 <http://www.wch.cn/downloads/CH583DS1_PDF.html>`_
+.. image:: ./images/CH583LE.png
+    :target: http://www.wch.cn/downloads/CH583DS1_PDF.html
+
 
 连接能力
 ~~~~~~~~~~~
+
+支持 :ref:`ble` 和 :ref:`usb` 连接
 
 .. _ch583_ble:
 
@@ -93,11 +97,6 @@ BLE
 
 * 接收灵敏度-98dBm，可编程+7dBm发送功率
 * BLE 符合 Bluetooth Low Energy 5.0规范
-
-pathloss=40+25log(d)
-
-.. image:: ./images/路径损耗.jpg
-    :target: https://blog.csdn.net/qq_15391889/article/details/87937452
 
 
 .. _ch583_usb:
@@ -110,6 +109,8 @@ USB
 * 15 个端点，支持 DMA，支持 64 字节数据包
 * 集成 USB 2.0 全速收发器 PHY，无需外围器件支持全/低速的 Host 主机和 Device 设备模式
 
+.. image:: ./images/CH583c.png
+    :target: http://www.wch.cn/downloads/CH583DS1_PDF.html
 
 Xin选择
 -----------
@@ -121,7 +122,7 @@ Xin选择
 品牌对比
 ~~~~~~~~~
 
-对比包括性能和性价比两个维度，基于 :ref:`bt` 对比的品牌较多，在此重点对比可替换方案和高性价比
+对比包括性能和性价比两个维度，基于 :ref:`ble` 对比的品牌较多，在此重点对比可替换方案和高性价比
 
 
 .. list-table::
@@ -129,7 +130,7 @@ Xin选择
 
     * - :ref:`vendor`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram` / :ref:`flash`
       - :ref:`ble`
       - :ref:`sleep`
       - :ref:`peripherals`
@@ -140,7 +141,7 @@ Xin选择
       - BLE5.3
       - 0.7uA
       - 2/4/2
-      - QFN48
+      - QFN48/QFN28
     * - :ref:`esp32c3`
       - 407
       - 512KB/384KB
@@ -158,14 +159,14 @@ Xin选择
 
     * - :ref:`wch`
       - :ref:`architecture`
-      - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`frequency`
+      - :ref:`sram` / :ref:`flash`
       - wireless
       - USB/UART/ETH
-      - Sleep
+      - :ref:`sleep`
     * - :ref:`ch583`
       - :ref:`wch_riscv4a`
-      - 20MHz
+      - ≤ 80MHz
       - 32KB/1 MB
       - BLE5.1(104dBm)
       - 2xOTG/4/X
@@ -225,3 +226,6 @@ Xin应用
     :target: https://item.taobao.com/item.htm?spm=a1z09.2.0.0.53f62e8dtXVPY8&id=658709610766&_u=pgas3eu0091
 
 
+智能门锁
+~~~~~~~~~~
+``53GPIO`` ``BLE`` ``14x Touch`` ``CH583M``
