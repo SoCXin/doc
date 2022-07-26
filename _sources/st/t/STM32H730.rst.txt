@@ -4,15 +4,17 @@
 STM32H730
 ================
 
-`标签 <https://github.com/SoCXin/STM32H730>`_ : ``Cortex-M7`` ``550MHz`` ``5MSPS-12bit-DAC`` ``3.6MSPS-16bit-ADC`` ``USB-HS-OTG`` ``ULPI`` ``OctoSPI``  ``Ethernet``
+* `ST <https://www.st.com/en/microcontrollers-microprocessors.html>`_ : ``Cortex-M7`` ``550MHz`` ``5MSPS-12bit-DAC`` ``3.6MSPS-16bit-ADC`` ``USB-HS-OTG`` ``ULPI`` ``OctoSPI``  ``Ethernet``
+* `Tags <https://github.com/SoCXin/STM32H730>`_ : :ref:`top`
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
 
-`EEMBC CoreMark:2778 (550 x 5.05 CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=13276>`_
+`EEMBC: 2778 CoreMark (550 x 5.05 CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=13276>`_
 
 .. image:: ./images/STM32H730.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html
@@ -28,8 +30,8 @@ Xin简介
 * 参考价格：
 * 制程工艺：
 * 供货周期：
-* 处理性能：1177 :ref:`DMIPS`, 2778 :ref:`CoreMark` , :ref:`level5`
-* 封装规格：LQFP144/LQFP176/UFBGA176/UFBGA169/UFBGA144/TFBGA100/LQFP100(14×14mm)
+* 处理性能：2778 :ref:`CoreMark` (1177 :ref:`DMIPS` ) , :ref:`level5`
+* 封装规格：:ref:`LQFP176` /UFBGA176/UFBGA169/UFBGA144/LQFP144/TFBGA100/ :ref:`LQFP100`
 * 运行环境：-40°C to 85°C
 * RAM容量：564 KB
 * Flash容量：128 KB
@@ -50,13 +52,30 @@ Xin简介
 .. note::
     :ref:`stm32h730` 所有MCU应该具备的属性都拥有且顶级，同时具有高性能和低价优势，是一颗无法忽略的战略级MCU
 
+模拟性能
+^^^^^^^^^^^
+``3.6MSPS`` ``16-bit ADC``
+
+* 2x 3.6MSPS :ref:`adc16b`  > :ref:`hpm6750` 2MSPS :ref:`adc16b`
+* 5.0MSPS :ref:`adc12b`  < :ref:`at32f437` 5.33MSPS :ref:`adc12b` 
+
+
 芯片架构
 ~~~~~~~~~~~
 
 .. image:: ./images/STM32H730s.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32h730-value-line.html
 
+:ref:`performance` : 5.05 Coremark/MHz
+
+功耗参数
+^^^^^^^^^^^
+
 * 供电电压：1.71 to 3.6 V
+* 功耗范围：
+* 运行功耗：147 µ/MHz @VDD = 3.3 V和25 °C
+* 低功耗待机模式下的典型功耗电流为3.5 µA
+* 在不带RTC、带4 KB备用的VBAT模式（低功耗模式）下，典型功耗为1.45 µA
 
 .. _stm32_cache:
 

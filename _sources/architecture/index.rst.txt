@@ -97,7 +97,7 @@ Classification
       - :ref:`xt_e907`
       -
       -
-      - 3.8/MHz
+      - 3.80/MHz
       -
       - :ref:`tsmc_28lp`
     * -
@@ -209,7 +209,7 @@ Performance
       - :ref:`hpm6750`
     * - :ref:`xt_e907`
       -
-      - 3.8/MHz
+      - 3.80/MHz
       -
       -
 

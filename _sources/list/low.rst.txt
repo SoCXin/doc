@@ -82,14 +82,35 @@ Package
 .. list-table::
     :header-rows:  1
 
+    * - Size
+      - ≤ 3x3mm  
+      - ≤ 5x5mm   
+      - ≤ 7x7mm
+      - 10x10mm
+      - 14x14mm
+      - 20x20mm
+    * - BGA
+      - 
+      - 
+      - 
+      - BGA196
+      - BGA289
+      - 
+    * - CSP
+      - 
+      - 
+      - 
+      - 
+      -
+      - 
     * - QFN
-      - LQFP 
-      - BGA 
-      - CSP 
-      - SOP
-      - DIP
-      - SOIC
-    * - 
+      - 
+      - 
+      - 
+      - 
+      -
+      - 
+    * - LQFP
       - 
       - 
       - 
@@ -97,18 +118,36 @@ Package
       -
       - 
 
+
 兼容好
 ~~~~~~~~~~~
-``LQFP48`` ``LQFP64`` ``STM32F103``
+ ``LQFP32`` ``LQFP48`` ``LQFP64``
 
 参考范式 :ref:`ref030` , :ref:`ref103` , :ref:`ref407`  ，软硬件兼容产品方案，通用替换，提高产品供应链稳定
-
 
 
 .. toctree::
     :maxdepth: 1
 
     MH32F103A <../miscellaneous/MH32F103A>
+
+.. _LQFP32:
+
+LQFP32
+^^^^^^^^^^^^^
+``5x5mm``
+
+.. _LQFP48:
+
+LQFP48
+^^^^^^^^^^^^^
+``7x7mm``
+
+.. _LQFP64:
+
+LQFP64
+^^^^^^^^^^^^^
+``10x10mm``
 
 
 
@@ -131,12 +170,55 @@ Package
       - ≤ 60 MHz
       - 18 KB
       - 512 KB
-      - QFN28
-      - 4x4mm
+      - :ref:`QFN28`
+      - 
       -
       -
+
+.. _QFN28:
+
+QFN28
+^^^^^^^^^^^^^
+``3x3mm``
+
+.. _QFN32:
+
+QFN32
+^^^^^^^^^^^^^
+``4x4mm``
+
+.. _QFN48:
+
+QFN48
+^^^^^^^^^^^^^
+``5x5mm``
+
+.. _QFN56:
+
+QFN56
+^^^^^^^^^^^^^
+``7x7mm``
+
 
 
 管脚多
 ~~~~~~~~~~~
 ``LQFP144`` ``LQFP100``
+
+.. _LQFP100:
+
+LQFP100
+^^^^^^^^^^^^^
+``14x14mm``
+
+.. _LQFP144:
+
+LQFP144
+^^^^^^^^^^^^^
+``20x20mm``
+
+.. _LQFP176:
+
+LQFP176
+^^^^^^^^^^^^^
+``24x24mm``

@@ -62,10 +62,24 @@
 <li class="toctree-l2"><a class="reference internal" href="#package">Package</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id4">兼容好</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../miscellaneous/MH32F103A.html">MH32F103A</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lqfp32">LQFP32</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lqfp48">LQFP48</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lqfp64">LQFP64</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">封装小</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">管脚多</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">封装小</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#qfn28">QFN28</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qfn32">QFN32</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qfn48">QFN48</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qfn56">QFN56</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">管脚多</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#lqfp100">LQFP100</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lqfp144">LQFP144</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lqfp176">LQFP176</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -194,22 +208,22 @@
 <p>影响同系列的芯片价格主要包括如下因素：</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#sram" id="id7">SRAM</a></p></li>
-<li><p><a class="reference internal" href="#flash" id="id8">Flash</a></p></li>
-<li><p><a class="reference internal" href="#package" id="id9">Package</a></p></li>
+<li><p><a class="reference internal" href="#sram" id="id17">SRAM</a></p></li>
+<li><p><a class="reference internal" href="#flash" id="id18">Flash</a></p></li>
+<li><p><a class="reference internal" href="#package" id="id19">Package</a></p></li>
 </ul>
 </div>
 <section id="sram">
-<span id="id1"></span><h2><a class="toc-backref" href="#id7">SRAM</a><a class="headerlink" href="#sram" title="Permalink to this heading">¶</a></h2>
+<span id="id1"></span><h2><a class="toc-backref" href="#id17">SRAM</a><a class="headerlink" href="#sram" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Static</span> <span class="pre">Random</span> <span class="pre">Access</span> <span class="pre">Memory</span></code></p>
 <p>PSRAM就是伪SRAM，内部的内存颗粒跟SDRAM的颗粒相似，但外部的接口跟SRAM相似，不需要SDRAM那样复杂的控制器和刷新机制，PSRAM的接口跟SRAM的接口是一样的。</p>
 </section>
 <section id="flash">
-<span id="id2"></span><h2><a class="toc-backref" href="#id8">Flash</a><a class="headerlink" href="#flash" title="Permalink to this heading">¶</a></h2>
+<span id="id2"></span><h2><a class="toc-backref" href="#id18">Flash</a><a class="headerlink" href="#flash" title="Permalink to this heading">¶</a></h2>
 <p>FLASH存储器又称闪存，它结合了ROM和RAM的长处，不仅具备电子可擦除可编程（EEPROM）的性能，还不会断电丢失数据，同时可以快速读取数据（NVRAM的优势）</p>
 </section>
 <section id="package">
-<span id="id3"></span><h2><a class="toc-backref" href="#id9">Package</a><a class="headerlink" href="#package" title="Permalink to this heading">¶</a></h2>
+<span id="id3"></span><h2><a class="toc-backref" href="#id19">Package</a><a class="headerlink" href="#package" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">LQFP</span></code> <code class="docutils literal notranslate"><span class="pre">QFN</span></code> <code class="docutils literal notranslate"><span class="pre">CSP</span></code></p>
 <table class="docutils align-default">
 <colgroup>
@@ -222,17 +236,41 @@
 <col style="width: 14%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>QFN</p></th>
-<th class="head"><p>LQFP</p></th>
-<th class="head"><p>BGA</p></th>
-<th class="head"><p>CSP</p></th>
-<th class="head"><p>SOP</p></th>
-<th class="head"><p>DIP</p></th>
-<th class="head"><p>SOIC</p></th>
+<tr class="row-odd"><th class="head"><p>Size</p></th>
+<th class="head"><p>≤ 3x3mm</p></th>
+<th class="head"><p>≤ 5x5mm</p></th>
+<th class="head"><p>≤ 7x7mm</p></th>
+<th class="head"><p>10x10mm</p></th>
+<th class="head"><p>14x14mm</p></th>
+<th class="head"><p>20x20mm</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td></td>
+<tr class="row-even"><td><p>BGA</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>BGA196</p></td>
+<td><p>BGA289</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>CSP</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>QFN</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>LQFP</p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -244,16 +282,30 @@
 </table>
 <section id="id4">
 <h3>兼容好<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">LQFP48</span></code> <code class="docutils literal notranslate"><span class="pre">LQFP64</span></code> <code class="docutils literal notranslate"><span class="pre">STM32F103</span></code></p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">LQFP32</span></code> <code class="docutils literal notranslate"><span class="pre">LQFP48</span></code> <code class="docutils literal notranslate"><span class="pre">LQFP64</span></code></p>
+</div></blockquote>
 <p>参考范式 <a class="reference internal" href="hot.html#ref030"><span class="std std-ref">F030范式</span></a> , <a class="reference internal" href="hot.html#ref103"><span class="std std-ref">F103范式</span></a> , <a class="reference internal" href="hot.html#ref407"><span class="std std-ref">F407范式</span></a>  ，软硬件兼容产品方案，通用替换，提高产品供应链稳定</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../miscellaneous/MH32F103A.html">MH32F103A</a></li>
 </ul>
 </div>
+<section id="lqfp32">
+<span id="id5"></span><h4>LQFP32<a class="headerlink" href="#lqfp32" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">5x5mm</span></code></p>
 </section>
-<section id="id5">
-<h3>封装小<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<section id="lqfp48">
+<span id="id6"></span><h4>LQFP48<a class="headerlink" href="#lqfp48" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">7x7mm</span></code></p>
+</section>
+<section id="lqfp64">
+<span id="id7"></span><h4>LQFP64<a class="headerlink" href="#lqfp64" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">10x10mm</span></code></p>
+</section>
+</section>
+<section id="id8">
+<h3>封装小<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">≤5x5mm</span></code> <code class="docutils literal notranslate"><span class="pre">QFN28</span></code> <code class="docutils literal notranslate"><span class="pre">QFN32</span></code></p>
 <table class="docutils align-default">
 <colgroup>
@@ -282,17 +334,45 @@
 <td><p>≤ 60 MHz</p></td>
 <td><p>18 KB</p></td>
 <td><p>512 KB</p></td>
-<td><p>QFN28</p></td>
-<td><p>4x4mm</p></td>
+<td><p><a class="reference internal" href="#qfn28"><span class="std std-ref">QFN28</span></a></p></td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
+<section id="qfn28">
+<span id="id9"></span><h4>QFN28<a class="headerlink" href="#qfn28" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">3x3mm</span></code></p>
 </section>
-<section id="id6">
-<h3>管脚多<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<section id="qfn32">
+<span id="id10"></span><h4>QFN32<a class="headerlink" href="#qfn32" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">4x4mm</span></code></p>
+</section>
+<section id="qfn48">
+<span id="id11"></span><h4>QFN48<a class="headerlink" href="#qfn48" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">5x5mm</span></code></p>
+</section>
+<section id="qfn56">
+<span id="id12"></span><h4>QFN56<a class="headerlink" href="#qfn56" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">7x7mm</span></code></p>
+</section>
+</section>
+<section id="id13">
+<h3>管脚多<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">LQFP144</span></code> <code class="docutils literal notranslate"><span class="pre">LQFP100</span></code></p>
+<section id="lqfp100">
+<span id="id14"></span><h4>LQFP100<a class="headerlink" href="#lqfp100" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">14x14mm</span></code></p>
+</section>
+<section id="lqfp144">
+<span id="id15"></span><h4>LQFP144<a class="headerlink" href="#lqfp144" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">20x20mm</span></code></p>
+</section>
+<section id="lqfp176">
+<span id="id16"></span><h4>LQFP176<a class="headerlink" href="#lqfp176" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">24x24mm</span></code></p>
+</section>
 </section>
 </section>
 </section>
