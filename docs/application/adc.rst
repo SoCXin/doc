@@ -22,17 +22,16 @@ ADC
 ADC-MCU
 ~~~~~~~~~~~~
 
-
 .. list-table::
     :header-rows:  1
 
     * - 
       - :ref:`frequency`
       - :ref:`CoreMark`
-      - SRAM/flash
-      - 12-bit
-      - 16-bit
-      - SampleRate
+      - :ref:`sram` / :ref:`flash`
+      - :ref:`adc12b`
+      - :ref:`adc16b`
+      - 
       - :ref:`package`
     * - :ref:`at32f437`
       - 288 MHz
@@ -40,7 +39,7 @@ ADC-MCU
       - 512K/4M
       - 3x16ch
       - X
-      - 5.33MSPS
+      - 
       - LQFP64
     * - :ref:`stm32l412`
       - 80 MHz
@@ -48,7 +47,7 @@ ADC-MCU
       - 40K/128K
       - 2x
       - X
-      - 5MSPS
+      - 
       - LQFP32
     * - :ref:`stm32g431`
       - 170MHz
@@ -77,7 +76,7 @@ ADC-MCU
     * - :ref:`stm32h750`
       - 480MHz
       -
-      - 1MB/128KB
+      - 1MB/128K
       - X
       - 3x3.6MSPS
       - 2/2
@@ -90,7 +89,22 @@ ADC-MCU
       - 2x3.6MSPS
       - 2/2
       - LQFP64
-
+    * - :ref:`hpm6750`
+      - 816MHz
+      - 9220(2)
+      - 2M/4M
+      - 3x5MSPS
+      - 1x2MSPS
+      - 2/4
+      - BGA196
+    * - :ref:`hpm6350`
+      - 648MHz
+      - 9220(2)
+      - 800K/4M
+      - 
+      - 3x2MSPS
+      - 2
+      - BGA116
 
 .. note::
     目前MCU集成的高速ADC性能，精度可到16bit(普遍12bit)，速率可达5MSPS(普遍2MSPS)，独立器件数量可达5个(普遍2个)；2x16bit+1x12bit数据带宽3.6M x 2 x 16 + 5M x 1 x 12 = 175.2Mbps，3x16bit 数据带宽3.6M x 3 x 16 = 172.8Mbps
@@ -150,6 +164,19 @@ ADC-MCU
 因此有人习惯上将转换速率在数值上等同于采样速率也是可以接受的。常用单位是ksps和Msps，表示每秒采样千/百万次（kilo / Million Samples per Second）。
 
 量化误差(Quantizing Error) 由于AD的有限分辩率而引起的误差，即有限分辩率AD的阶梯状转移特性曲线与无限分辩率AD（理想AD）的转移特性曲线（直线）之间的最大偏差。通常是1 个或半个最小数字量的模拟变化量，表示为1LSB、1/2LSB。
+
+
+.. _adc12b:
+
+12-bit ADC
+^^^^^^^^^^^^
+
+.. _adc16b:
+
+16-bit ADC
+^^^^^^^^^^^^
+
+
 
 .. _adc_hs:
 

@@ -180,11 +180,11 @@ Level5
     :header-rows:  1
 
     * - :ref:`xin`
-      - :ref:`architecture`
+      - :ref:`classification`
       - :ref:`CoreMark`
       - :ref:`frequency`
+      - :ref:`performance`
       - :ref:`power`
-      - :ref:`level5`
     * - :ref:`hpm6350`
       - :ref:`riscv`
       - 3390
@@ -207,7 +207,7 @@ Level5
       - :ref:`cortex_m7`
       - 2778
       - 550(MHz)
-      -
+      - 5.05/MHz
       -
     * - :ref:`stm32h750`
       - :ref:`cortex_m7`
