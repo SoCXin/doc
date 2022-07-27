@@ -1,0 +1,84 @@
+
+.. _swm341:
+
+SWM341
+===============
+
+* `Synwit <https://www.synwit.cn/>`_ : ``Cortex-M33`` ``150MHz`` 
+* `Tags <https://github.com/SoCXin/SWM341>`_ : :ref:`foc`
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+
+.. image:: ./images/SWM341.jpg
+    :target: https://www.synwit.cn/gaishu944/
+
+.. contents::
+    :local:
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：? :ref:`CoreMark` , :ref:`level2`
+* 封装规格：QFP48/QFP64/QFP100
+* 运行环境：-40°C to 105°C
+* RAM容量： 128KB 
+* Flash容量：512KB
+
+
+特征参数
+^^^^^^^^^^^
+
+* 150 MHz :ref:`cortex_m33`
+* 16个16位PWM
+* 12个24位基本定时器和5个32位高级定时器
+* USB OTG*1、I2C*2、SPI*2、 UART*4、I2S*2、CAN*2、SDIO*1
+* 6个32位高级定时器
+
+模拟性能
+^^^^^^^^^^^
+
+* 2x 12-bit SAR ADC (19ch)
+* 3个比较器，4个运放，1个DAC
+
+芯片架构
+~~~~~~~~~~~
+
+功耗参数
+^^^^^^^^^^^
+
+多种省电工作模式支持低功耗应用的需求
+
+* 电压范围：2.0 to 3.6 V
+* 功耗范围：
+
+
+
+时钟体系
+^^^^^^^^^^^
+
+Xin选择
+-----------
+.. contents::
+    :local:
+
+品牌对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
+

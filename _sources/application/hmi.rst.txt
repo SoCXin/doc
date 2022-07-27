@@ -69,8 +69,6 @@ HMI
 .. toctree::
     :maxdepth: 1
 
-    SWM32S <../miscellaneous/SWM32S>
-    SWM341 <../miscellaneous/SWM341>
     TKM32F499 <../miscellaneous/TKM32F499>
 
 图形框架
