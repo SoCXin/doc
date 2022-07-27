@@ -66,7 +66,13 @@
 <li class="toctree-l2"><a class="reference internal" href="ai.html">边缘计算</a></li>
 <li class="toctree-l2"><a class="reference internal" href="foc.html">实时控制</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">人机交互</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">图形框架</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">嵌入平台</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../miscellaneous/SWM32S.html">SWM32S</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscellaneous/SWM341.html">SWM341</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../miscellaneous/TKM32F499.html">TKM32F499</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">图形框架</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#touchgfx">TouchGFX</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#littlevgl">LittlevGL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#emwin">emWin</a></li>
@@ -76,15 +82,9 @@
 <li class="toctree-l4"><a class="reference internal" href="#qt">QT</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id11">接口驱动</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">接口驱动</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#vga">VGA</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hdmi">HDMI</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#id15">嵌入平台</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../miscellaneous/SWM32S.html">SWM32S</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../miscellaneous/SWM341.html">SWM341</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../miscellaneous/TKM32F499.html">TKM32F499</a></li>
 </ul>
 </li>
 </ul>
@@ -152,14 +152,95 @@
 <span id="id1"></span><h1>HMI<a class="headerlink" href="#hmi" title="Permalink to this heading">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#id2" id="id16">图形框架</a></p></li>
-<li><p><a class="reference internal" href="#id11" id="id17">接口驱动</a></p></li>
-<li><p><a class="reference internal" href="#id15" id="id18">嵌入平台</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id16">嵌入平台</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id17">图形框架</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id18">接口驱动</a></p></li>
 </ul>
 </div>
 <section id="id2">
-<h2><a class="toc-backref" href="#id16">图形框架</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
-<div class="contents local topic" id="id3">
+<h2><a class="toc-backref" href="#id16">嵌入平台</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a></p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>reslution</p></th>
+<th class="head"><p>interface</p></th>
+<th class="head"><p>accelerator</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/t/STM32H7B0.html#stm32h7b0"><span class="std std-ref">STM32H7B0</span></a></p></td>
+<td><p>599(280MHz)</p></td>
+<td><p>1.4 MB</p></td>
+<td><p>1/2 MB</p></td>
+<td><p>XGA(1024x768)</p></td>
+<td><p>RGB888</p></td>
+<td><p>DMA2D/JPEC</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../st/m/STM32F429.html#stm32f429"><span class="std std-ref">STM32F429</span></a></p></td>
+<td><p>225(180MHz)</p></td>
+<td><p>8 MB</p></td>
+<td><p>16 MB</p></td>
+<td><p>XGA(1024x768)</p></td>
+<td><p>RGB888</p></td>
+<td><p>DMA2D/JPEC</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../miscellaneous/TKM32F499.html#tkm32f499"><span class="std std-ref">TKM32F499</span></a></p></td>
+<td><p>300(240MHz)</p></td>
+<td><p>8MB</p></td>
+<td><p>8MB(QSPI)</p></td>
+<td><p>1024x600</p></td>
+<td><p>RGB888/TK80</p></td>
+<td><p><a class="reference internal" href="../miscellaneous/TKM32F499.html#tk-ltdc"><span class="std std-ref">LCD-TFT</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/SWM32S.html#swm32s"><span class="std std-ref">SWM32S</span></a></p></td>
+<td><p>150(120MHz)</p></td>
+<td><p>512 KB</p></td>
+<td><p>512 KB</p></td>
+<td><p>WVGA(800x480)</p></td>
+<td><p>RGB565</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../espressif/ESP32-S3.html#esp32s3"><span class="std std-ref">ESP32S3</span></a></p></td>
+<td><p>600(240MHz)</p></td>
+<td><p>8 MB</p></td>
+<td><p>4 MB</p></td>
+<td><p>WVGA(800x480)</p></td>
+<td><p>SPI</p></td>
+<td><p>No</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../fpga/GW1NSR.html#gw1nsr"><span class="std std-ref">GW1NSR</span></a></p></td>
+<td><p>75(60MHz)</p></td>
+<td><p>24 KB</p></td>
+<td><p>32 KB</p></td>
+<td><p>XGA(1024x768)</p></td>
+<td><p><a class="reference internal" href="#hdmi"><span class="std std-ref">HDMI</span></a></p></td>
+<td><p>No</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/SWM32S.html">SWM32S</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/SWM341.html">SWM341</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/TKM32F499.html">TKM32F499</a></li>
+</ul>
+</div>
+</section>
+<section id="id3">
+<h2><a class="toc-backref" href="#id17">图形框架</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id4">
 <ul class="simple">
 <li><p><a class="reference internal" href="#touchgfx" id="id19">TouchGFX</a></p></li>
 <li><p><a class="reference internal" href="#littlevgl" id="id20">LittlevGL</a></p></li>
@@ -223,15 +304,15 @@
 </tbody>
 </table>
 <section id="touchgfx">
-<span id="id4"></span><h3><a class="toc-backref" href="#id19">TouchGFX</a><a class="headerlink" href="#touchgfx" title="Permalink to this heading">¶</a></h3>
+<span id="id5"></span><h3><a class="toc-backref" href="#id19">TouchGFX</a><a class="headerlink" href="#touchgfx" title="Permalink to this heading">¶</a></h3>
 <p>Draupner Graphics公司的GUI产品，2018年7月被ST收购，在STM32上可以免费使用TouchGFX。</p>
 </section>
 <section id="littlevgl">
-<span id="id5"></span><h3><a class="toc-backref" href="#id20">LittlevGL</a><a class="headerlink" href="#littlevgl" title="Permalink to this heading">¶</a></h3>
+<span id="id6"></span><h3><a class="toc-backref" href="#id20">LittlevGL</a><a class="headerlink" href="#littlevgl" title="Permalink to this heading">¶</a></h3>
 <p>免费的开源图形库，具有易于使用的图形元素以及良好的视觉效果和内存占用低等特点，可构建嵌入式 GUI。LittlevGL 是一个完整的图形框架，开发者不需要考虑原始图形如何绘制，可以使用已有图形元素来构建自己的  GUI，例如按钮，图表，图像，列表，滑块，开关，键盘等。</p>
 </section>
 <section id="emwin">
-<span id="id6"></span><h3><a class="toc-backref" href="#id21">emWin</a><a class="headerlink" href="#emwin" title="Permalink to this heading">¶</a></h3>
+<span id="id7"></span><h3><a class="toc-backref" href="#id21">emWin</a><a class="headerlink" href="#emwin" title="Permalink to this heading">¶</a></h3>
 <p>属于SEGGER公司下面的一种GUI产品，一种嵌入式GUI解决方案。业界领先的嵌入式图形库，专业的嵌入式GUI。</p>
 <p>emWin支持在任何嵌入式系统上创建高效、高质量的图形用户界面，emWin支持资源受限的微控制器的系统，运行令人惊叹的交互界面。</p>
 <p>emWin与单任务和多任务环境兼容，可以使用专有的操作系统，也可以与任何商业RTOS兼容。它以C语言源代码提供，使其成为嵌入式市场的专业、通用GUI，可用于多种不同的场景。</p>
@@ -241,120 +322,39 @@
 </div>
 </section>
 <section id="minigui">
-<span id="id7"></span><h3><a class="toc-backref" href="#id22">MiniGUI</a><a class="headerlink" href="#minigui" title="Permalink to this heading">¶</a></h3>
+<span id="id8"></span><h3><a class="toc-backref" href="#id22">MiniGUI</a><a class="headerlink" href="#minigui" title="Permalink to this heading">¶</a></h3>
 <p>MiniGUI是一款国产GUI，一款面向嵌入式系统的高级窗口系统和图形用户界面（GUI）支持系统，由魏永明先生于1998年底开始开发。2002 年，魏永明先生创建北京飞漫软件技术有限公司，为MiniGUI 提供商业技术支持，同时也继续提供开源版本，飞漫软件是中国地区为开源社区贡献代码最多的软件企业。</p>
 <p>MiniGUI丰富的功能和可配置性使得它既适用于运行在30MHz CPU的低端设备，也适用于使用GPU的高端设备。为嵌入式和智能物联网设备提供一个成熟的、经过验证的跨平台GUI系统。</p>
 </section>
 <section id="gfx">
-<span id="id8"></span><h3><a class="toc-backref" href="#id23">μGFX</a><a class="headerlink" href="#gfx" title="Permalink to this heading">¶</a></h3>
+<span id="id9"></span><h3><a class="toc-backref" href="#id23">μGFX</a><a class="headerlink" href="#gfx" title="Permalink to this heading">¶</a></h3>
 <p>作为最小、最快和最先进的嵌入式 GUI 库，广泛用于各类显示屏和触摸屏，可构建全功能嵌入式 GUI。µGFX 禁用所有未使用功能且不会将它们关联到已完成的二进制文件中，因而轻量级为其显著特点。此外，µGFX 还具有模块化，小巧轻便特点，而且为所有用户提供完整源代码。</p>
 </section>
 <section id="awtk">
-<span id="id9"></span><h3><a class="toc-backref" href="#id24">AWTK</a><a class="headerlink" href="#awtk" title="Permalink to this heading">¶</a></h3>
+<span id="id10"></span><h3><a class="toc-backref" href="#id24">AWTK</a><a class="headerlink" href="#awtk" title="Permalink to this heading">¶</a></h3>
 <p>ZLG开发的的一套基于C语言开发的GUI框架。支持跨平台同步开发</p>
 </section>
 <section id="qt">
-<span id="id10"></span><h3><a class="toc-backref" href="#id25">QT</a><a class="headerlink" href="#qt" title="Permalink to this heading">¶</a></h3>
+<span id="id11"></span><h3><a class="toc-backref" href="#id25">QT</a><a class="headerlink" href="#qt" title="Permalink to this heading">¶</a></h3>
 <p>QT专门为 ARM Cortex-M 单片机开发的，目前用在 ARM Cortex M7 的微控制器上</p>
 </section>
 </section>
-<section id="id11">
-<h2><a class="toc-backref" href="#id17">接口驱动</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
-<div class="contents local topic" id="id12">
+<section id="id12">
+<h2><a class="toc-backref" href="#id18">接口驱动</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id13">
 <ul class="simple">
 <li><p><a class="reference internal" href="#vga" id="id26">VGA</a></p></li>
 <li><p><a class="reference internal" href="#hdmi" id="id27">HDMI</a></p></li>
 </ul>
 </div>
 <section id="vga">
-<span id="id13"></span><h3><a class="toc-backref" href="#id26">VGA</a><a class="headerlink" href="#vga" title="Permalink to this heading">¶</a></h3>
+<span id="id14"></span><h3><a class="toc-backref" href="#id26">VGA</a><a class="headerlink" href="#vga" title="Permalink to this heading">¶</a></h3>
 <p>参考方案 <a class="reference internal" href="../miscellaneous/RP2040.html#rp2040"><span class="std std-ref">RP2040</span></a></p>
 </section>
 <section id="hdmi">
-<span id="id14"></span><h3><a class="toc-backref" href="#id27">HDMI</a><a class="headerlink" href="#hdmi" title="Permalink to this heading">¶</a></h3>
+<span id="id15"></span><h3><a class="toc-backref" href="#id27">HDMI</a><a class="headerlink" href="#hdmi" title="Permalink to this heading">¶</a></h3>
 <a class="reference external image-reference" href="http://www.360doc.com/content/18/0130/07/34657313_726310561.shtml"><img alt="../_images/HDMI.png" src="../_images/HDMI.png" /></a>
 </section>
-</section>
-<section id="id15">
-<h2><a class="toc-backref" href="#id18">嵌入平台</a><a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/SWM32S.html">SWM32S</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/SWM341.html">SWM341</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/TKM32F499.html">TKM32F499</a></li>
-</ul>
-</div>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Xin</p></th>
-<th class="head"><p>DMIPS</p></th>
-<th class="head"><p>RAM</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>reslution</p></th>
-<th class="head"><p>interface</p></th>
-<th class="head"><p>accelerator</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../st/t/STM32H7B0.html#stm32h7b0"><span class="std std-ref">STM32H7B0</span></a></p></td>
-<td><p>599(280MHz)</p></td>
-<td><p>1.4 MB</p></td>
-<td><p>1/2 MB</p></td>
-<td><p>XGA(1024x768)</p></td>
-<td><p>RGB888</p></td>
-<td><p>DMA2D/JPEC</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../st/m/STM32F429.html#stm32f429"><span class="std std-ref">STM32F429</span></a></p></td>
-<td><p>225(180MHz)</p></td>
-<td><p>8 MB</p></td>
-<td><p>16 MB</p></td>
-<td><p>XGA(1024x768)</p></td>
-<td><p>RGB888</p></td>
-<td><p>DMA2D/JPEC</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../miscellaneous/TKM32F499.html#tkm32f499"><span class="std std-ref">TKM32F499</span></a></p></td>
-<td><p>300(240MHz)</p></td>
-<td><p>8MB</p></td>
-<td><p>8MB(QSPI)</p></td>
-<td><p>1024x600</p></td>
-<td><p>RGB888/TK80</p></td>
-<td><p><a class="reference internal" href="../miscellaneous/TKM32F499.html#tk-ltdc"><span class="std std-ref">LCD-TFT</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/SWM32S.html#swm32s"><span class="std std-ref">SWM32S</span></a></p></td>
-<td><p>150(120MHz)</p></td>
-<td><p>512 KB</p></td>
-<td><p>512 KB</p></td>
-<td><p>WVGA(800x480)</p></td>
-<td><p>RGB565</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../espressif/ESP32-S3.html#esp32s3"><span class="std std-ref">ESP32S3</span></a></p></td>
-<td><p>600(240MHz)</p></td>
-<td><p>8 MB</p></td>
-<td><p>4 MB</p></td>
-<td><p>WVGA(800x480)</p></td>
-<td><p>SPI</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../fpga/GW1NSR.html#gw1nsr"><span class="std std-ref">GW1NSR</span></a></p></td>
-<td><p>75(60MHz)</p></td>
-<td><p>24 KB</p></td>
-<td><p>32 KB</p></td>
-<td><p>XGA(1024x768)</p></td>
-<td><p><a class="reference internal" href="#hdmi"><span class="std std-ref">HDMI</span></a></p></td>
-<td><p>No</p></td>
-</tr>
-</tbody>
-</table>
 </section>
 </section>
 

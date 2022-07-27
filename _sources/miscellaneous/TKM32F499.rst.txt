@@ -4,10 +4,12 @@
 TKM32F499
 ===============
 
-`标签 <https://github.com/SoCXin/TKM32F499>`_ : ``Cortex-M4`` ``240MHz`` ``Tiky`` ``LTDC`` ``TK80`` ``RGB888`` ``1024x600``
+`hjrkj <http://hjrkj.com/product/13.html>`_ : ``Cortex-M4`` ``240MHz`` ``Tiky`` ``LTDC`` ``TK80`` ``RGB888`` ``1024x600``
+* `Tags <https://github.com/SoCXin/TKM32F499>`_ : :ref:`hmi`
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------

@@ -66,14 +66,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../application/ai.html">边缘计算</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../application/foc.html">实时控制</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../application/hmi.html">人机交互</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../application/hmi.html#id2">图形框架</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../application/hmi.html#id11">接口驱动</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../application/hmi.html#id15">嵌入平台</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../application/hmi.html#id2">嵌入平台</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">SWM32S</a></li>
 <li class="toctree-l4"><a class="reference internal" href="SWM341.html">SWM341</a></li>
 <li class="toctree-l4"><a class="reference internal" href="TKM32F499.html">TKM32F499</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../application/hmi.html#id3">图形框架</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../application/hmi.html#id12">接口驱动</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../application/adc.html">信号处理</a></li>
@@ -138,117 +138,118 @@
              
   <section id="swm32s">
 <span id="id1"></span><h1>SWM32S<a class="headerlink" href="#swm32s" title="Permalink to this heading">¶</a></h1>
-<ul class="simple">
-<li><p>关键词：<code class="docutils literal notranslate"><span class="pre">Cortex-M4</span></code> <code class="docutils literal notranslate"><span class="pre">Synwit</span></code> <code class="docutils literal notranslate"><span class="pre">120MHz</span></code> <code class="docutils literal notranslate"><span class="pre">800×480</span></code></p></li>
-<li><p>资源库：<a class="reference external" href="https://github.com/SoCXin/SWM320">GitHub</a></p></li>
-</ul>
+<p><a class="reference external" href="https://www.synwit.cn/">Synwit</a> : <code class="docutils literal notranslate"><span class="pre">Cortex-M4</span></code> <code class="docutils literal notranslate"><span class="pre">120MHz</span></code> <code class="docutils literal notranslate"><span class="pre">800×480</span></code> <code class="docutils literal notranslate"><span class="pre">QFP64</span></code>
+* <a class="reference external" href="https://github.com/SoCXin/SWM320">Tags</a> : <a class="reference internal" href="../application/hmi.html#hmi"><span class="std std-ref">HMI</span></a></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#xin" id="id17">Xin简介</a></p>
-<ul>
-<li><p><a class="reference internal" href="#id3" id="id18">规格参数</a></p>
-<ul>
-<li><p><a class="reference internal" href="#id4" id="id19">基本参数</a></p></li>
-<li><p><a class="reference internal" href="#id5" id="id20">特征参数</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#id6" id="id21">芯片架构</a></p>
-<ul>
-<li><p><a class="reference internal" href="#id7" id="id22">时钟体系</a></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#id8" id="id23">Xin选择</a></p>
-<ul>
-<li><p><a class="reference internal" href="#id10" id="id24">品牌对比</a></p></li>
-<li><p><a class="reference internal" href="#id11" id="id25">型号对比</a></p></li>
-<li><p><a class="reference internal" href="#id12" id="id26">版本对比</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#id13" id="id27">Xin总结</a></p>
-<ul>
-<li><p><a class="reference internal" href="#id15" id="id28">要点提示</a></p></li>
-<li><p><a class="reference internal" href="#id16" id="id29">问题整理</a></p></li>
-</ul>
-</li>
+<li><p><a class="reference internal" href="#xin" id="id18">Xin简介</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id19">Xin选择</a></p></li>
 </ul>
 </div>
 <section id="xin">
-<h2><a class="toc-backref" href="#id17">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
-<div class="contents local topic" id="id2">
-<ul class="simple">
-<li><p><a class="reference internal" href="#id3" id="id30">规格参数</a></p>
-<ul>
-<li><p><a class="reference internal" href="#id4" id="id31">基本参数</a></p></li>
-<li><p><a class="reference internal" href="#id5" id="id32">特征参数</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#id6" id="id33">芯片架构</a></p>
-<ul>
-<li><p><a class="reference internal" href="#id7" id="id34">时钟体系</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
-<section id="id3">
-<h3><a class="toc-backref" href="#id30">规格参数</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<h2><a class="toc-backref" href="#id18">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<a class="reference external image-reference" href="https://www.synwit.cn/gaishu189/"><img alt="../_images/SWM32S.jpg" src="../_images/SWM32S.jpg" /></a>
+<section id="id2">
+<h3>规格参数<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+</section>
 <section id="id4">
-<h4><a class="toc-backref" href="#id31">基本参数</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
-<ul class="simple">
-<li><p>供电电压：1.8V - 3.6V</p></li>
-<li><p>工作温度：-40°C - 105°C</p></li>
-</ul>
-</section>
+<h3>规格参数<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <section id="id5">
-<h4><a class="toc-backref" href="#id32">特征参数</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<h4>基本参数<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
 <ul class="simple">
-<li><p>内建大容量 SDRAM</p></li>
-<li><p>免费使用 LittlevGL 软件库</p></li>
-<li><p>轻松创建图形软件（SUD）</p></li>
-<li><p>支持各式液晶显示模块（LCM）</p></li>
+<li><p>发布时间：</p></li>
+<li><p>参考价格：</p></li>
+<li><p>制程工艺：</p></li>
+<li><p>供货周期：</p></li>
+<li><p>处理性能：? <a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a> , <a class="reference internal" href="../architecture/level.html#level2"><span class="std std-ref">Level2</span></a></p></li>
+<li><p>封装规格：QFP64</p></li>
+<li><p>运行环境：-40°C to 85°C</p></li>
+<li><p>RAM容量： 128KB + 8MB (SDRAM)</p></li>
+<li><p>Flash容量：512KB</p></li>
 </ul>
-</section>
 </section>
 <section id="id6">
-<h3><a class="toc-backref" href="#id33">芯片架构</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
-<section id="id7">
-<h4><a class="toc-backref" href="#id34">时钟体系</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<h4>特征参数<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">RGB565</span></code></p>
+<ul class="simple">
+<li><p>120 MHz <a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></li>
+<li><p>免费使用 LittlevGL 软件库, 轻松创建图形软件（SUD）,支持各式液晶显示模块（LCM）</p></li>
+<li><p>1个RGB565接口</p></li>
+<li><p>I2C*2、SPI*2、 UART*4、CAN*1、SDIO*1</p></li>
+<li><p>6个32位高级定时器</p></li>
+</ul>
 </section>
+<section id="id7">
+<h4>模拟性能<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>2x 12-bit SAR ADC (9ch)</p></li>
+</ul>
 </section>
 </section>
 <section id="id8">
-<h2><a class="toc-backref" href="#id23">Xin选择</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
-<div class="contents local topic" id="id9">
+<h3>芯片架构<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<section id="id9">
+<h4>功耗参数<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h4>
 <ul class="simple">
-<li><p><a class="reference internal" href="#id10" id="id35">品牌对比</a></p></li>
-<li><p><a class="reference internal" href="#id11" id="id36">型号对比</a></p></li>
-<li><p><a class="reference internal" href="#id12" id="id37">版本对比</a></p></li>
+<li><p>电压范围：2.0 to 3.6 V</p></li>
+<li><p>功耗范围：</p></li>
 </ul>
-</div>
+<p>多种省电工作模式支持低功耗应用的需求</p>
+</section>
 <section id="id10">
-<h3><a class="toc-backref" href="#id35">品牌对比</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+<h4>时钟体系<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h4>
+</section>
+</section>
 </section>
 <section id="id11">
-<h3><a class="toc-backref" href="#id36">型号对比</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
-</section>
-<section id="id12">
-<h3><a class="toc-backref" href="#id37">版本对比</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
-</section>
-</section>
-<section id="id13">
-<h2><a class="toc-backref" href="#id27">Xin总结</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h2>
-<div class="contents local topic" id="id14">
+<h2><a class="toc-backref" href="#id19">Xin选择</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id12">
 <ul class="simple">
-<li><p><a class="reference internal" href="#id15" id="id38">要点提示</a></p></li>
-<li><p><a class="reference internal" href="#id16" id="id39">问题整理</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id20">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id14" id="id21">型号对比</a></p>
+<ul>
+<li><p><a class="reference internal" href="#swm34s" id="id22">SWM34S</a></p></li>
+<li><p><a class="reference internal" href="#swm19s" id="id23">SWM19S</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id17" id="id24">版本对比</a></p></li>
 </ul>
 </div>
-<section id="id15">
-<h3><a class="toc-backref" href="#id38">要点提示</a><a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
+<section id="id13">
+<h3><a class="toc-backref" href="#id20">品牌对比</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
 </section>
-<section id="id16">
-<h3><a class="toc-backref" href="#id39">问题整理</a><a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<section id="id14">
+<h3><a class="toc-backref" href="#id21">型号对比</a><a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<section id="swm34s">
+<span id="id15"></span><h4><a class="toc-backref" href="#id22">SWM34S</a><a class="headerlink" href="#swm34s" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">QFP64/QFP100</span></code></p>
+<a class="reference external image-reference" href="https://www.synwit.cn/gaishu952/"><img alt="../_images/SWM34S.jpg" src="../_images/SWM34S.jpg" /></a>
+<ul class="simple">
+<li><p>150 MHz <a class="reference internal" href="../architecture/cortexM33.html#cortex-m33"><span class="std std-ref">Cortex-M33</span></a></p></li>
+<li><p>1个RGB565接口(64Pin)，1个RGB888接口(100Pin)</p></li>
+<li><p>JPEG硬件解码器，DMA2D</p></li>
+<li><p>USB OTG*1、I2C*2、SPI*2、 UART*4、I2S*2、CAN*2、SDIO*1</p></li>
+<li><p>5个32位高级定时器</p></li>
+<li><p>3个比较器，4个运放，1个DAC</p></li>
+</ul>
+</section>
+<section id="swm19s">
+<span id="id16"></span><h4><a class="toc-backref" href="#id23">SWM19S</a><a class="headerlink" href="#swm19s" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">QFP48</span></code></p>
+<a class="reference external image-reference" href="https://www.synwit.cn/gaishu/"><img alt="../_images/SWM19S.jpg" src="../_images/SWM19S.jpg" /></a>
+<ul class="simple">
+<li><p>60 MHz <a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></li>
+<li><p>Flash: 120KB, SRAM: 20KB</p></li>
+<li><p>1个QSPI, 4线SPI，可快速读外挂Flash数据，速度可达120Mb/S</p></li>
+<li><p>I2C*2、SPI*1、UART*4</p></li>
+<li><p>4 个 24位基本定时器和 4个 32 位高级定时器</p></li>
+<li><p>1 个 12 位8通道的SAR ADC</p></li>
+<li><p>3个比较器，4个运放</p></li>
+</ul>
+</section>
+</section>
+<section id="id17">
+<h3><a class="toc-backref" href="#id24">版本对比</a><a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
 </section>
 </section>
 </section>
