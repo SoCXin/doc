@@ -7,7 +7,7 @@ Synwit
 公司简介
 -----------
 
-`Synwit <https://www.synwit.cn/>`_
+`华芯微特 Synwit <https://www.synwit.cn/>`_
 
 产品简介
 -----------
