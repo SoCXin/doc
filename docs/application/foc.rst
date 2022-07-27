@@ -180,7 +180,6 @@ ODrive
 
     HC32M120 <../miscellaneous/HC32M120>
     N32G452 <../miscellaneous/N32G452>
-    SWM181 <../miscellaneous/SWM181>
 
 .. list-table::
     :header-rows:  1

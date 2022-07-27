@@ -48,6 +48,7 @@ Vendor
     跨界造芯垂直整合 BYD <byd/index>
     蓝牙音频智能终端 JieLi <jieli/index>
     物联网通信控制器 WCH <wch/index>
+    行业定制化控制器 Synwit <synwit/index>
     信号链整合控制器 Chipsea <chipsea/index>
     低成本无线物联网 Espressif <espressif/index>
     Cortex-M4控制器 ArteryTek <arterytek/index>

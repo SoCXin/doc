@@ -4,7 +4,7 @@
 SWM32S
 ===============
 
-`Synwit <https://www.synwit.cn/>`_ : ``Cortex-M4`` ``120MHz`` ``800×480`` ``QFP64``
+* `Synwit <https://www.synwit.cn/>`_ : ``Cortex-M4`` ``120MHz`` ``800×480`` ``QFP64``
 * `Tags <https://github.com/SoCXin/SWM320>`_ : :ref:`hmi`
 
 .. contents::
@@ -22,9 +22,6 @@ Xin简介
 
 .. contents::
     :local:
-
-规格参数
-~~~~~~~~~~~
 
 
 基本参数
@@ -55,7 +52,6 @@ Xin简介
 ^^^^^^^^^^^
 
 * 2x 12-bit SAR ADC (9ch)
-
 
 
 芯片架构
