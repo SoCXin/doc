@@ -4,10 +4,13 @@
 CH568
 ==========
 
-`标签 <https://github.com/SoCXin/CH568>`_ : ``RISC-V3A`` ``USB HS`` ``SM4/AES`` ``SATA`` ``120MHz``
+* `WCH <http://www.wch.cn/products/CH568>`_ : ``RISC-V3A`` ``120MHz`` ``USB HS`` ``SM4/AES`` ``SATA`` 
+* `Tags <https://github.com/SoCXin/CH568>`_ : :ref:`usb`  
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
@@ -24,7 +27,7 @@ CH568是一款高性能32位精简指令集微控制器，系统主频可达120M
 ^^^^^^^^^^^
 
 * 发布时间：
-* 参考价格：
+* 参考价格：￥23
 * 制程工艺：
 * 供货周期：
 * 处理性能：
@@ -106,13 +109,14 @@ Xin选择
 系列对比
 ~~~~~~~~~
 
-版本对比
-~~~~~~~~~
 
 .. _ch567:
 
 CH567
 ^^^^^^^^^^^
+``2x USB HS OTG`` ``w/PHY`` ``4x SDIO``
+
+* 参考价格：￥28
 
 .. image:: ./images/CH567.png
     :target: http://www.wch.cn/products/CH567.html
@@ -121,3 +125,6 @@ CH567
 * 4组独立SDIO接口，支持单线、4线、8线通讯模式
 * 支持SM4/AES加密算法，8种加密模式
 * 4组串口、2组SPI
+
+版本对比
+~~~~~~~~~
