@@ -211,6 +211,8 @@ LQFP100
 ^^^^^^^^^^^^^
 ``14x14mm``
 
+LQFP100(0.5mm pitch) = LQFP128(0.4mm pitch)
+
 .. _LQFP144:
 
 LQFP144

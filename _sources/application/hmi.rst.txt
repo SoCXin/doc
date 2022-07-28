@@ -31,8 +31,8 @@ HMI
       - DMA2D/JPEC
     * - :ref:`stm32f429`
       - 225(180MHz)
-      - 8 MB
-      - 16 MB
+      - 
+      - 
       - XGA(1024x768)
       - RGB888
       - DMA2D/JPEC

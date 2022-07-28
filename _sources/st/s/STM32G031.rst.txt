@@ -5,6 +5,7 @@ STM32G031
 ===============
 
 `ST <https://www.st.com/en/microcontrollers-microprocessors.html>`_ : ``Cortex-M0`` ``64MHz`` ``LPUART`` ``LPTIM`` ``RTC`` ``12-bit ADC 2.5Msps``
+* `Tags <https://github.com/SoCXin/TKM32F499>`_ : :ref:`low` / :ref:`ulp` / :ref:`adc`
 
 
 .. contents::
@@ -47,25 +48,29 @@ Xin简介
 * 64 MHz :ref:`cortex_m0`
 * :ref:`stm32_lpuart`
 * 2x :ref:`stm32_lptim`
-* MOTOR C timer
-* 12-bit SAR ADC (2.5 MSPS)
+* 16-bit MOTOR C timer(128MHz)
 * 5ch x DMA
 * 1KB OTP
 * I2S
 * RTC
 
-电源参数
+模拟性能
 ^^^^^^^^^^^
 
-* 供电电压: 1.7 to 3.6 V
-* 运行功耗: 100μA/MHz
-
+* 12-bit SAR ADC (16ch)
+* 2.5MSPS :ref:`adc12b`  > :ref:`stm32f429` 2.4MSPS :ref:`adc12b`
 
 芯片架构
 ~~~~~~~~~~~
 
 .. image:: ./images/STM32G031s.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
+
+功耗参数
+^^^^^^^^^^^
+
+* 供电电压: 1.7 to 3.6 V
+* 运行功耗: 100μA/MHz
 
 时钟相关
 ^^^^^^^^^^^
