@@ -12,11 +12,17 @@
     :local:
     :depth: 1
 
+开源项目
+-------------
+
+.. contents::
+    :local:
+    :depth: 1
 
 .. _marlin_3d:
 
 Marlin
--------------
+~~~~~~~~~~~
 
 `Marlin <https://github.com/MarlinFirmware/Marlin>`_ 是 RepRap 系列复制式快速原型机--俗称"3D 打印机 "的一个开源固件。它源于Sprinter和grbl，并于2011年8月12日在Github发布，成为一个独立的开源项目。Marlin是根据GPLv3许可的，对所有应用都是免费的。
 
@@ -54,17 +60,17 @@ Marlin
       -
       -
 
-.. _grblhal:
+.. _grbl_hal:
 
 grblHAL
--------------
+~~~~~~~~~~~
 
-`grblHAL (GitHub) <https://github.com/grblHAL>`_ is a rewrite of grbl 1.1 aimed at 32-bit processors.
+`grblHAL <https://github.com/grblHAL>`_ is a rewrite of grbl 1.1 aimed at 32-bit processors.
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - 
       - :ref:`architecture`
       - RAM
       - Flash
@@ -80,14 +86,14 @@ grblHAL
       - QFN56
 
 
+`RP2040 <https://github.com/grblHAL/RP2040>`_
+
 
 .. _cmsis_dap:
 
 CMSIS-DAP
--------------
+~~~~~~~~~~~
 
-* CMSIS(Cortex-M Software Interface Standard)是ARM Cortex-M MCU软件接口标准。
-* DAP(DebugAccess Port) 是调试访问口。
 
 `CMSIS-DAP <https://github.com/ARMmbed/DAPLink>`_ 是用于将调试端口连接到USB的调试单元的接口固件。在主机上执行的调试器通过USB连接到调试单元和运行应用程序软甲的设备。调试单元通过JTAG或SW连接到目标设备。
 ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含一个或多个Cortex处理器的目标设备。
@@ -134,3 +140,6 @@ ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含�
 .. hint::
     基于 :ref:`ch552` 芯片应该是当下成本最低的 :ref:`ch552_dap` 实现方案，并且通过小封装可以获得更小的体积
 
+
+* CMSIS(Cortex-M Software Interface Standard)是ARM Cortex-M MCU软件接口标准。
+* DAP(DebugAccess Port) 是调试访问口。

@@ -5,7 +5,7 @@ STM32H730
 ================
 
 * `ST <https://www.st.com/en/microcontrollers-microprocessors.html>`_ : ``Cortex-M7`` ``550MHz`` ``5MSPS-12bit-DAC`` ``3.6MSPS-16bit-ADC`` ``USB-HS-OTG`` ``ULPI`` ``OctoSPI``  ``Ethernet``
-* `Tags <https://github.com/SoCXin/STM32H730>`_ : :ref:`top`
+* `Tags <https://github.com/SoCXin/STM32H730>`_ : :ref:`top` / :ref:`adc`
 
 .. contents::
     :local:

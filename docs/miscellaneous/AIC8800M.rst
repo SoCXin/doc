@@ -30,7 +30,7 @@ Xin简介
 
 * 发布时间：
 * 参考价格：
-* 制程工艺：
+* 制程工艺：28 nm
 * 供货周期：
 * 处理性能：
 * 封装规格：QFN48 (5x5mm)
@@ -41,8 +41,8 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
+* 240MHz :ref:`cortex_m4` Dual Core
 * 480MHz DSP
-* 992 KB RAM + 2 MB Flash
 * 2.4G/5G WiFi双频
 * BT5.0 EDR/BLE 蓝牙双模
 * USB 2.0 OTG PHY

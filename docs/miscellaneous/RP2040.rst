@@ -191,8 +191,7 @@ logic-analyzer
 grblHAL
 ^^^^^^^^^^^^^^^^^^
 
-`grblHAL RP2040 <https://github.com/grblHAL/RP2040>`_
-
+:ref:`grbl_hal`
 
 .. _rp2040_vga:
 

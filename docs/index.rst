@@ -15,15 +15,15 @@ Xindex
     板期刊 <list/boards>
 
 .. toctree::
-    :caption: 产品分类
+    :caption: 芯品分类
     :maxdepth: 1
 
-    极客聚集开源高地 <list/hot>
-    明星项目御用平台 <list/pop>
-    选在当下设计未来 <list/news>
-    突破常规低价好货 <list/low>
-    超低功耗效能王者 <list/ulp>
-    各家旗舰干啥都行 <high/index>
+    极客聚集创意高地 <list/hot>
+    经典项目适配平台 <list/pop>
+    选在当下赢在未来 <list/news>
+    成本敏感低价好货 <list/low>
+    超低功耗能效王者 <list/ulp>
+    旗舰定位干啥都行 <high/index>
 
 
 .. list-table::
@@ -63,7 +63,7 @@ Xindex
 
 
 .. toctree::
-    :caption: 应用分类
+    :caption: 典型应用
     :maxdepth: 1
 
     功能领域  <application/index>
@@ -103,11 +103,11 @@ Xindex
 
 
 .. toctree::
-    :caption: 内核相关
+    :caption: 内核资源
     :maxdepth: 1
 
-    内核架构  <architecture/index>
-    运算性能  <architecture/level>
+    核心架构  <architecture/index>
+    计算性能  <architecture/level>
     片上资源  <architecture/ip>
 
 .. list-table::
@@ -164,12 +164,12 @@ Xindex
 
 
 .. toctree::
-    :caption: 厂商相关
+    :caption: 厂商品牌
     :maxdepth: 1
 
-    晶元代工 <foundry>
+    晶元制造 <foundry>
     芯片设计 <vendor>
-    销售渠道 <sales>
+    供应渠道 <sales>
 
 
 .. list-table::
