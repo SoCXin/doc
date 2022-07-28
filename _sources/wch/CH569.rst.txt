@@ -4,19 +4,18 @@
 CH569
 ===========
 
-`标签 <http://www.wch.cn/products/CH569.html>`_ : ``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``Ethernet`` ``EMMC`` ``DVP``
+* `WCH <http://www.wch.cn/products/CH569>`_ : ``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``Ethernet`` ``EMMC`` ``DVP``
+* `Tags <https://github.com/SoCXin/CH569>`_ : :ref:`usb`  
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
 
 .. image:: ./images/CH569.png
     :target: http://www.wch.cn/products/CH569.html
-
-`GitHub <https://github.com/SoCXin/CH569>`_
-
 
 规格参数
 ~~~~~~~~~~~
@@ -27,7 +26,7 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
-* 参考价格：
+* 参考价格： `￥31 <https://item.szlcsc.com/3057941.html>`_ 
 * 制程工艺：
 * 供货周期：
 * 处理性能：
@@ -35,6 +34,7 @@ Xin简介
 * 运行环境：-40°C to 85°C
 * RAM容量：16 KB + 32/64/96 KB
 * Flash容量：448 KB
+
 
 
 .. hint::

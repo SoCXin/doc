@@ -4,11 +4,12 @@
 CH563
 ==========
 
-* 关键词：``ARMv5TE`` ``130MHz`` ``USB-HS-PHY`` ``ETH-PHY-100M``
-* 资源库：`GitHub <https://github.com/SoCXin/CH563>`_ , `官方链接 <http://www.wch.cn/products/CH563.html>`_
+* `WCH <http://www.wch.cn/products/CH563>`_ : ``ARMv5TE`` ``130MHz`` ``USB-HS-PHY`` ``ETH-PHY-100M`` 
+* `Tags <https://github.com/SoCXin/CH563>`_ : :ref:`usb`  
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
@@ -23,7 +24,7 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
-* 参考价格：
+* 参考价格： `￥21 <https://item.szlcsc.com/88564.html>`_ 
 * 制程工艺：
 * 供货周期：
 * 处理性能：
