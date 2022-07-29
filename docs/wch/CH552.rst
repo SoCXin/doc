@@ -77,8 +77,6 @@ Xin选择
 
 CH554
 ^^^^^^^^^^
-* `WCH <http://www.wch.cn/products/CH554>`_ : ``8051`` ``24MHz`` ``LDO`` ``Type-C`` ``USB OTG``
-* `Tags <https://github.com/SoCXin/CH554>`_ : :ref:`pop` / :ref:`low` / :ref:`usb_pd`
 
 * RAM容量：2 KB
 * SPI x 2 + UART x 2 (16C550/6Mbps)
