@@ -48,8 +48,3 @@ PSRAM
 SDRAM
 ~~~~~~~~~~~
 
-.. _peripherals:
-
-Peripherals
----------------
-``UART`` ``SPI`` ``I2C`` ``I2S``
