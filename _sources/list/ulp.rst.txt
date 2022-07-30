@@ -3,6 +3,7 @@
 
 能效Xin
 ============
+``Ultra-Low-Power``
 
 
 .. list-table::
@@ -38,7 +39,7 @@
     * - :ref:`ch32v203`
       - :ref:`wch_riscv4c`
       - 144(MHz)
-      - 
+      -
       - X
       - 2.4-3.6
       - 45 μA
@@ -83,7 +84,7 @@
     * - :ref:`gd32l233`
       - :ref:`cortex_m23`
       - 64(MHz)
-      - 
+      -
       - X
       - 1.7-3.6
       - 66 µA
@@ -183,7 +184,7 @@ VCC: Voltage To Current Converter(电路电压)或Voltage Collector Collector (�
     * - :ref:`ch583`
       -
       - ≤ 80MHz
-      - 
+      -
       - 1.7v
       - 3.6v
       - QFN48

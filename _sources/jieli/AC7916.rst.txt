@@ -4,11 +4,6 @@
 AC7916
 ===============
 
-.. image:: https://github.com/SoCXin/HPM6750/workflows/sdk/badge.svg
-    :target: https://github.com/SoCXin/hpm_sdk
-.. image:: https://github.com/SoCXin/HPM6750/workflows/demo/badge.svg
-    :target: https://github.com/SoCXin/HPM6750
-
 `杰理 <http://www.zh-jieli.com/product/showproduct.php?id=72>`_ : ``RISC-V``
 
 

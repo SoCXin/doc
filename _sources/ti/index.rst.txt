@@ -1,10 +1,9 @@
 
 .. _ti:
 
-Ti
+TI
 =================
-
-``BLE`` ``TI`` ``IoT``
+``Texas Instruments`` ``IoT`` ``BLE``
 
 
 公司简介
