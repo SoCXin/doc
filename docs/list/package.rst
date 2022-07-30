@@ -7,14 +7,14 @@ Package
 .. list-table::
     :header-rows:  1
 
-    * - ≤ :ref:`3x3mm`
-      - ≤ :ref:`4x4mm`
-      - ≤ :ref:`5x5mm`
-      - ≤ :ref:`7x7mm`
-      - ≤ :ref:`10x10mm`
-      - ≤ :ref:`14x14mm`
-      - ≤ :ref:`20x20mm`
-      - ≤ :ref:`24x24mm`
+    * - :ref:`3x3mm`
+      - :ref:`4x4mm`
+      - :ref:`5x5mm`
+      - :ref:`7x7mm`
+      - :ref:`10x10mm`
+      - :ref:`14x14mm`
+      - :ref:`20x20mm`
+      - :ref:`24x24mm`
     * -
       -
       -
@@ -28,25 +28,25 @@ Package
       - :ref:`CSP156`
       -
       -
-      -
-      -
-      -
+      - X
+      - X
+      - X
     * - :ref:`QFN20`
       - :ref:`QFN28`
       - :ref:`QFN32`
       - :ref:`QFN56`
-      -
+      - :ref:`QFN88`
       -
       -
       -
     * - X
+      - X
       -
-      - :ref:`LQFP32`
       - :ref:`LQFP48`
       - :ref:`LQFP64`
-      -
-      -
-      -
+      - :ref:`LQFP100`
+      - :ref:`LQFP144`
+      - :ref:`LQFP176`
 
 
 .. contents::
@@ -67,6 +67,10 @@ Package
 ~~~~~~~~~~~
 ``QFN20``
 
+.. contents::
+    :local:
+    :depth: 1
+
 .. _CSP36:
 
 CSP36
@@ -86,6 +90,10 @@ QFN20
 4x4mm
 ~~~~~~~~~~~
 ``QFN28`` ``QFN32``
+
+.. contents::
+    :local:
+    :depth: 1
 
 .. _CSP64:
 
@@ -142,6 +150,10 @@ QFN28
 5x5mm
 ~~~~~~~~~~~
 ``QFN32``
+
+.. contents::
+    :local:
+    :depth: 1
 
 .. _CSP156:
 
@@ -242,7 +254,7 @@ QFN48
 
 7x7mm
 ~~~~~~~~~~~
-``LQFP32`` ``LQFP48`` ``LQFP64``
+``LQFP32`` ``LQFP48``
 
 .. _QFN56:
 
@@ -301,7 +313,7 @@ QFN56
 
 LQFP32
 ^^^^^^^^^^^^^
-``5x5mm``
+``7x7mm``
 
 
 .. _LQFP48:
