@@ -4,10 +4,14 @@
 CH549
 =========
 
-`GitHub <https://github.com/SoCXin/CH549>`_ : ``8051`` ``WCH`` ``48MHz`` ``USB FS`` ``4 UART`` ``LDO`` ``USB-PD``
+* `WCH <http://www.wch.cn/products/CH549>`_ : ``8051`` ``48MHz`` ``USB FS OTG`` ``4x UART`` ``LDO`` ``USB-PD``
+* `Tags <https://github.com/SoCXin/CH549>`_ : :ref:`low` / :ref:`usb_pd`
+
+:ref:`ch554` --> :ref:`ch549`
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
@@ -27,25 +31,18 @@ Xin简介
 通信接口包括4组异步串口、8路PWM和16通道电容触摸按键，其它包括1路主从SPI，16路12位ADC，支持电压比较；内置3组定时器和3路信号捕捉。
 
 
-
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
+* 参考价格： `￥5.86 <https://item.szlcsc.com/341226.html>`_
 * 制程工艺：
-* 参考价格：
 * 供货周期：
 * 处理性能：:ref:`level1`
+* 封装规格：SOP16/QFN28/LQFP48
+* 运行环境：-40°C to 85°C
 * RAM容量：2 KB
 * Flash容量：63 KB
-
-限定参数
-^^^^^^^^^^^
-
-* 电压范围：3.0 to 5.5 V
-* 功耗范围：
-* 工作温度：-40°C to 85°C
-* 封装规格：SOP16/QFN28/LQFP48
 
 特征参数
 ^^^^^^^^^^^
@@ -59,10 +56,15 @@ Xin简介
 .. hint::
     最有特色的一点是在QFN28封装内有两个USB OTG外设，配置的Flash容量也比较大。
 
-
-
 芯片架构
 ~~~~~~~~~~~
+
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：3.0 to 5.5 V
+* 功耗范围：
 
 
 

@@ -4,7 +4,8 @@
 STC8H
 ============
 
-`STC <https://www.stcmcudata.com/>`_ : ``STC`` ``8051`` ``24MHz`` ``EEPROM`` ``cheap``
+* `STC <https://www.stcmcudata.com/>`_ : ``8051`` ``24MHz`` ``EEPROM`` ``cheap``
+* `Tags <https://github.com/SoCXin/STC8H>`_ : :ref:`low`
 
 .. contents::
     :local:
