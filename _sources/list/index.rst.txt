@@ -3,12 +3,6 @@
 芯刊
 ==================
 
-.. toctree::
-    :maxdepth: 1
-
-    Package <package>
-
-
 
 .. contents::
     :local:
@@ -16,3 +10,7 @@
 
 .. include:: 2022.rst
 
+.. toctree::
+    :maxdepth: 1
+
+    封装尺寸 <package>
