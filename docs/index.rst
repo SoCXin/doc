@@ -77,15 +77,11 @@ Xindex
       - :ref:`wpan`
       - :ref:`bt`
       - :ref:`wifi`
-      - :ref:`lora`
-      - :ref:`nbiot`
-      - :ref:`cat1`
-      - :ref:`usb`
       - :ref:`ethernet`
+      - :ref:`usb`
+      - :ref:`uart`
     * - :ref:`matter`
       - :ref:`esp32h2`
-      -
-      -
       -
       -
       -
@@ -98,9 +94,6 @@ Xindex
       -
       -
       -
-      -
-      -
-
 
 .. toctree::
     :caption: 内核资源
@@ -195,4 +188,4 @@ Xindex
       - :ref:`esp32c2`
       - :ref:`wifi`
       - :ref:`tsmc_40nm`
-      - 
+      -
