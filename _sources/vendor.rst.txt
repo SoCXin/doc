@@ -17,7 +17,7 @@ Vendor
       - :ref:`application`
       - :ref:`industry`
       - :ref:`level`
-      - :ref:`list`
+      - :ref:`news`
       - :ref:`low`
       - :ref:`top`
       - :ref:`update`
@@ -104,7 +104,7 @@ Vendor
       - :ref:`history`
       - :ref:`hot`
       - :ref:`pop`
-      - :ref:`list`
+      - :ref:`news`
       - :ref:`low`
       - :ref:`top`
       - :ref:`update`

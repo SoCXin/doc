@@ -187,8 +187,8 @@ STM32F107
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
-      - DMIPS
+    * -
+      - :ref:`frequency`
       - RAM
       - ROM
       - UART
@@ -196,7 +196,7 @@ STM32F107
       - USB
       - Ethernet
     * - :ref:`stm32f207`
-      - 150
+      - 120
       -
       -
       -
@@ -204,7 +204,7 @@ STM32F107
       -
       -
     * - :ref:`stm32f205`
-      - 150
+      - 120
       -
       -
       -

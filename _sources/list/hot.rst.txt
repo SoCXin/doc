@@ -460,6 +460,11 @@ F103范式
       - USB
       -
 
+.. toctree::
+    :maxdepth: 1
+
+    MH32F103A <../miscellaneous/MH32F103A>
+
 .. _ref407:
 
 F407范式
