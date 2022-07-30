@@ -31,7 +31,7 @@ Xindex
 
     * - :ref:`hot`
       - :ref:`pop`
-      - :ref:`list`
+      - :ref:`news`
       - :ref:`low`
       - :ref:`ulp`
       - :ref:`top`
