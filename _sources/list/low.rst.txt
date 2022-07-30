@@ -21,29 +21,29 @@
       - ≤ 60 MHz
       - 18 KB
       - 512 KB
-      - 
+      -
       -
       - ￥2.3
     * - :ref:`stc8`
       - ≤ 24 MHz
       - 1 KB
       - 8 KB
-      - 
+      -
       -
       - ￥1.3
     * - :ref:`ch552`
       - ≤ 24 MHz
       - 1 KB
       - 16 KB
-      - 
-      - 
+      -
+      -
       - ￥2.1
     * - :ref:`at32f421`
       - ≤ 120 MHz
       - 16 KB
       - 64 KB
-      - 
-      - 
+      -
+      -
       - ￥2.8
 
 对于定位低阶的产品，往往定位出货规模较大成本敏感的领域，对技术指标的衡量往往没有市场和商务因数重要，对于开发者而言，最期待和功能一样简单的开发环境及工具。
@@ -77,88 +77,65 @@ FLASH存储器又称闪存，它结合了ROM和RAM的长处，不仅具备电子
 
 Package
 -----------
-``LQFP`` ``QFN`` ``CSP``
+``LQFP`` ``QFN`` ``CSP`` ``BGA``
 
 .. list-table::
     :header-rows:  1
 
-    * - Size
-      - ≤ 3x3mm  
-      - ≤ 5x5mm   
+    * - ≤ 3x3mm
+      - ≤ 4x4mm
+      - ≤ 5x5mm
       - ≤ 7x7mm
-      - 10x10mm
-      - 14x14mm
-      - 20x20mm
-    * - BGA
-      - 
-      - 
-      - 
+      - ≤10x10mm
+      - ≤14x14mm
+      - ≤20x20mm
+      - ≤24x24mm
+    * -
+      -
+      -
+      -
       - BGA196
       - BGA289
-      - 
+      -
+      -
     * - CSP
-      - 
-      - 
-      - 
-      - 
       -
-      - 
+      -
+      -
+      -
+      -
+      -
+      -
     * - QFN
-      - 
-      - 
-      - 
-      - 
       -
-      - 
+      -
+      -
+      -
+      -
+      -
+      -
     * - LQFP
-      - 
-      - 
-      - 
-      - 
       -
-      - 
+      - :ref:`LQFP32`
+      - :ref:`LQFP48`
+      -
+      -
+      -
+      -
 
 
-兼容好
+.. contents::
+    :local:
+    :depth: 1
+
+小封装
 ~~~~~~~~~~~
- ``LQFP32`` ``LQFP48`` ``LQFP64``
-
-参考范式 :ref:`ref030` , :ref:`ref103` , :ref:`ref407`  ，软硬件兼容产品方案，通用替换，提高产品供应链稳定
-
-
-.. toctree::
-    :maxdepth: 1
-
-    MH32F103A <../miscellaneous/MH32F103A>
-
-.. _LQFP32:
-
-LQFP32
-^^^^^^^^^^^^^
-``5x5mm``
-
-.. _LQFP48:
-
-LQFP48
-^^^^^^^^^^^^^
-``7x7mm``
-
-.. _LQFP64:
-
-LQFP64
-^^^^^^^^^^^^^
-``10x10mm``
-
-
-
-封装小
-~~~~~~~~~~~
-``≤5x5mm`` ``QFN28`` ``QFN32``
+``QFN20`` ``QFN28`` ``QFN32``
 
 .. list-table::
     :header-rows:  1
 
-    * - 
+    * -
       - :ref:`frequency`
       - :ref:`sram`
       - :ref:`flash`
@@ -171,7 +148,7 @@ LQFP64
       - 18 KB
       - 512 KB
       - :ref:`QFN28`
-      - 
+      -
       -
       -
 
@@ -200,8 +177,57 @@ QFN56
 ``7x7mm``
 
 
+通用型
+~~~~~~~~~~~
+``LQFP32`` ``LQFP48`` ``LQFP64``
 
-管脚多
+参考范式 :ref:`ref030` , :ref:`ref103` , :ref:`ref407`  ，软硬件兼容产品方案，通用替换，提高产品供应链稳定
+
+
+.. toctree::
+    :maxdepth: 1
+
+    MH32F103A <../miscellaneous/MH32F103A>
+
+.. _LQFP32:
+
+LQFP32
+^^^^^^^^^^^^^
+``5x5mm``
+
+.. _LQFP48:
+
+LQFP48
+^^^^^^^^^^^^^
+``7x7mm``
+
+.. _LQFP64:
+
+LQFP64
+^^^^^^^^^^^^^
+``10x10mm``
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`LQFP64`
+      - :ref:`frequency`
+      - :ref:`sram`
+      - :ref:`flash`
+      - :ref:`peripherals`
+      - GPIO
+    * -
+      -
+      -
+      -
+      -
+      -
+
+
+
+
+大封装
 ~~~~~~~~~~~
 ``LQFP144`` ``LQFP100``
 

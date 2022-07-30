@@ -5,7 +5,7 @@ CH583
 ============
 
 * `WCH <http://www.wch.cn/products/CH583>`_ : ``WCH`` ``RISC-V4A`` ``20MHz`` ``USB`` ``AES-128`` ``BLE5.3`` ``1.7V`` ``QFN48`` ``QFN28``
-* `Tags <https://github.com/SoCXin/CH583>`_ : :ref:`ulp` / :ref:`low` / :ref:`ble` / :ref:`usb`  
+* `Tags <https://github.com/SoCXin/CH583>`_ : :ref:`ulp` / :ref:`low` / :ref:`ble` / :ref:`usb`
 
 .. contents::
     :local:
@@ -52,7 +52,7 @@ Xin简介
 
 模拟性能
 ^^^^^^^^^^^
-``TouchKey`` ``12-bit ADC`` 
+``TouchKey`` ``12-bit ADC``
 
 * 12-bit ADC (14ch)
 * 14x TouchKey
@@ -128,26 +128,26 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
-      - :ref:`CoreMark`
+    * -
+      - :ref:`frequency`
       - :ref:`sram` / :ref:`flash`
       - :ref:`ble`
       - :ref:`sleep`
       - :ref:`peripherals`
       - :ref:`package`
     * - :ref:`ch583`
-      -
-      - 32KB/1 MB
+      - ≤ 80MHz
+      - 32KB/1MB
       - BLE5.3
       - 0.7uA
-      - 2/4/2
+      - 4U/2P/1C
       - QFN48/QFN28
     * - :ref:`esp32c3`
-      - 407
-      - 512KB/384KB
+      - ≤ 160MHz
+      - 512KB/4MB
       - BLE5.0
       - 5uA
-      - 0/2/3
+      - 2U/3P/1C/1S
       - QFN32/QFN28
 
 
@@ -162,7 +162,7 @@ Xin选择
       - :ref:`frequency`
       - :ref:`sram` / :ref:`flash`
       - wireless
-      - USB/UART/ETH
+      - :ref:`peripherals`
       - :ref:`sleep`
     * - :ref:`ch583`
       - :ref:`wch_riscv4a`
