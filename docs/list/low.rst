@@ -93,7 +93,7 @@ Package
     * -
       -
       -
-      -
+      - BGA169
       - BGA196
       - BGA289
       -
@@ -106,10 +106,10 @@ Package
       -
       -
       -
-    * - QFN
-      -
-      -
-      -
+    * - :ref:`QFN20`
+      - :ref:`QFN28`
+      - :ref:`QFN32`
+      - :ref:`QFN56`
       -
       -
       -
@@ -132,49 +132,179 @@ Package
 ~~~~~~~~~~~
 ``QFN20`` ``QFN28`` ``QFN32``
 
-.. list-table::
-    :header-rows:  1
+.. contents::
+    :local:
+    :depth: 1
 
-    * -
-      - :ref:`frequency`
-      - :ref:`sram`
-      - :ref:`flash`
-      - :ref:`package`
-      - Size
-      - Special
-      - Price
-    * - :ref:`ch573`
-      - ≤ 60 MHz
-      - 18 KB
-      - 512 KB
-      - :ref:`QFN28`
-      -
-      -
-      -
+.. _QFN20:
+
+QFN20
+^^^^^^^^^^^^^
+``3x3mm``
 
 .. _QFN28:
 
 QFN28
 ^^^^^^^^^^^^^
-``3x3mm``
+``4x4mm``
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`QFN28`
+      - :ref:`frequency`
+      - :ref:`sram`
+      - :ref:`flash`
+      - :ref:`peripherals`
+      - GPIO
+    * - :ref:`ch582`
+      - ≤ 80MHz
+      -
+      -
+      -
+      -
+    * - :ref:`ch573`
+      - ≤ 60MHz
+      - 18 KB
+      - 512 KB
+      -
+      -
+
 
 .. _QFN32:
 
 QFN32
 ^^^^^^^^^^^^^
-``4x4mm``
+``5x5mm``
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`QFN32`
+      - :ref:`frequency`
+      - :ref:`sram`
+      - :ref:`flash`
+      - :ref:`peripherals`
+      - GPIO
+    * - :ref:`esp32c3`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`air101`
+      -
+      -
+      -
+      -
+      -
+
 
 .. _QFN48:
 
 QFN48
 ^^^^^^^^^^^^^
-``5x5mm``
+``5x5mm`` ``6x6mm``
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`QFN48`
+      - :ref:`frequency`
+      - :ref:`sram`
+      - :ref:`flash`
+      - :ref:`peripherals`
+      - GPIO
+    * - :ref:`esp32`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`aic8800`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`ab32vg1`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`ac7916`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`ch583`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`ch579`
+      -
+      -
+      -
+      -
+      -
+
 
 .. _QFN56:
 
 QFN56
 ^^^^^^^^^^^^^
 ``7x7mm``
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`QFN56`
+      - :ref:`frequency`
+      - :ref:`sram`
+      - :ref:`flash`
+      - :ref:`peripherals`
+      - GPIO
+    * - :ref:`rp2040`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`esp32s2`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`esp32s3`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`w801`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`bl608`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`Air103`
+      -
+      -
+      -
+      -
+      -
+
 
 
 通用型

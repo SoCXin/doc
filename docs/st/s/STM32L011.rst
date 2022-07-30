@@ -18,30 +18,39 @@ Xin简介
 .. image:: ./images/stm32l011.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32l0x1.html
 
-.. contents::
-    :local:
-
 
 规格参数
 ~~~~~~~~~~~
 
+
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：1.65 to 3.6 V
-* 工作温度：-40°C to +85°C
-* 处理性能：244 ULPBench
+* 发布时间：
+* 官方价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：? :ref:`CoreMark` (244 ULPBench) , :ref:`level1`
+* 封装规格：LQFP32/QFN32/QFN28/QFN20/TSSOP20
+* 运行环境：-40°C to 85°C
 * RAM容量：20 KB
 * Flash容量：192 KB
+
+
+.. image:: ./images/STM32L011P.png
+    :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32l0x1.html
+
 
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`cortex_m0` 32 MHz
+* 32 MHz :ref:`cortex_m0`
 * EEPROM 512B
-* 动态运行模式：低至49 µA/MHz(DC/DC)
-* 超低功耗模式 + RAM + 低功耗定时器：340 nA(16根唤醒线)
-* 超低功耗模式 + 备份寄存器：230 nA(2个唤醒引脚)
+
+
+模拟性能
+^^^^^^^^^^^
+
 * 12-bit ADC with 48 µA budget consumption at 100 Ksps
 
 芯片架构
@@ -50,7 +59,13 @@ Xin简介
 .. image:: ./images/STM32L011s.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32l0x1.html
 
+功耗参数
+^^^^^^^^^^^
 
+* 供电电压: 1.7 to 3.6 V
+* 动态运行模式：低至49 µA/MHz(DC/DC)
+* 超低功耗模式 + RAM + 低功耗定时器：340 nA(16根唤醒线)
+* 超低功耗模式 + 备份寄存器：230 nA(2个唤醒引脚)
 
 Xin选择
 -----------
