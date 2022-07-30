@@ -8,18 +8,7 @@ Vendor
 
 芯实力
 -----------
-
-.. toctree::
-    :maxdepth: 1
-
-    电源模拟和物联网 TI <ti/index>
-    微控制器领域王者 ST <st/index>
-    高性能多领域跨界 NXP <nxp/index>
-    低功耗蓝牙控制器 Nordic <nordic/index>
-    多媒体及网络通信 Realtek <realtek/index>
-    多媒体语音控制器 Nuvoton  <nuvoton/index>
-    高性能通信全品类 MediaTek  <MediaTek/index>
-    国产芯片龙头企业 GigaDevice <gigadevice/index>
+``长期领先``
 
 .. list-table::
     :header-rows:  1
@@ -34,27 +23,37 @@ Vendor
       - :ref:`update`
     * - :ref:`st`
       - :ref:`adc`
-      - :ref:`ce`
+      - :ref:`elec`
       - :ref:`level3`
       - :ref:`stm32g031`
       - :ref:`stm8s003`
       - :ref:`stm32mp15`
       - :ref:`stm32u575`
-
-
-
-.. list-table::
-    :header-rows:  1
-
     * - :ref:`ti`
-      - :ref:`st`
-      - :ref:`nxp`
-      - :ref:`nordic`
-      - :ref:`mediatek`
-      - :ref:`realtek`
-      - :ref:`nuvoton`
-      - :ref:`gigadevice`
-    * -
+      - :ref:`wireless`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`mediatek`
+      - :ref:`ai`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`realtek`
+      - :ref:`wireless`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`nuvoton`
       -
       -
       -
@@ -62,12 +61,41 @@ Vendor
       -
       -
       -
+    * - :ref:`gigadevice`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`nxp`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+
+.. toctree::
+    :maxdepth: 1
+
+    电源模拟和物联网 TI <ti/index>
+    微控制器领域王者 ST <st/index>
+    高性能多领域跨界 NXP <nxp/index>
+    低功耗蓝牙控制器 Nordic <nordic/index>
+    多媒体及网络通信 Realtek <realtek/index>
+    多媒体语音控制器 Nuvoton  <nuvoton/index>
+    高性能通信全品类 MediaTek  <MediaTek/index>
+    国产芯片龙头企业 GigaDevice <gigadevice/index>
 
 
 .. _vendor_son:
 
 新势力
 -----------
+``后来居上``
 
 .. list-table::
     :header-rows:  1
@@ -123,7 +151,7 @@ Vendor
     物联网通信控制器 WCH <wch/index>
     行业定制化控制器 Synwit <synwit/index>
     信号链整合控制器 Chipsea <chipsea/index>
-    WiFi MCU 上海 Espressif <espressif/index>
+    Espressif WiFi MCU (上海) <espressif/index>
     Cortex-M4控制器 ArteryTek <arterytek/index>
     多媒体应用处理器 Allwinner  <allwinner/index>
     物联网通信及计算 Bouffalolab  <bouffalolab/index>

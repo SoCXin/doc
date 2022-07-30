@@ -1,7 +1,7 @@
 
 .. _application:
 
-Application
+Applications
 ===============
 
 .. toctree::
@@ -76,11 +76,10 @@ Wireless
     :maxdepth: 1
 
     LTE <lte>
-    LPWA <lpwa>
     Wi-Fi <wifi>
-    WPAN <wpan>
     Bluetooth <bluetooth>
-
+    LPWA(LoRa/NB-IoT) <lpwa>
+    WPAN(ZigBee/RFID) <wpan>
 
 .. _wired:
 

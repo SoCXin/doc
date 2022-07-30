@@ -21,8 +21,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Bluetooth" href="bluetooth.html" />
-    <link rel="prev" title="AIC8800M" href="../miscellaneous/AIC8800M.html" />
+    <link rel="next" title="Ethernet" href="ethernet.html" />
+    <link rel="prev" title="LPWA" href="lpwa.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -68,13 +68,13 @@
 <li class="toctree-l2"><a class="reference internal" href="hmi.html">人机交互</a></li>
 <li class="toctree-l2"><a class="reference internal" href="adc.html">信号处理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="audio.html">音频处理</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html#id2">通信连接</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#id1">通信连接</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html#wireless">Wireless</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="lte.html">LTE</a></li>
-<li class="toctree-l4"><a class="reference internal" href="lpwa.html">LPWA</a></li>
 <li class="toctree-l4"><a class="reference internal" href="wifi.html">Wi-Fi</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">WPAN</a></li>
 <li class="toctree-l4"><a class="reference internal" href="bluetooth.html">Bluetooth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lpwa.html">LPWA(LoRa/NB-IoT)</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">WPAN(ZigBee/RFID)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#wired">Wired</a></li>
@@ -125,7 +125,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Application</a> &raquo;</li>
+          <li><a href="index.html">Applications</a> &raquo;</li>
       <li>WPAN</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/SoCXin/doc/blob/master/doc/application/wpan.rst" class="fa fa-github"> Edit on GitHub</a>
@@ -151,7 +151,7 @@
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p><a class="reference internal" href="#wpan"><span class="std std-ref">WPAN</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="#id4"><span class="std std-ref">802.15.4</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#id2"><span class="std std-ref">802.15.4</span></a></p></th>
 <th class="head"><p><a class="reference internal" href="bluetooth.html#bt"><span class="std std-ref">Bluetooth</span></a></p></th>
 <th class="head"><p><a class="reference internal" href="#zigbee"><span class="std std-ref">ZigBee</span></a></p></th>
 <th class="head"><p><a class="reference internal" href="#rfid"><span class="std std-ref">RFID</span></a></p></th>
@@ -182,19 +182,8 @@
 </tr>
 </tbody>
 </table>
-<section id="rfid">
-<span id="id2"></span><h2>RFID<a class="headerlink" href="#rfid" title="Permalink to this heading">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">Radio</span> <span class="pre">Frequency</span> <span class="pre">IDentification</span></code></p>
-<p>RFID有低频（mm的传输距离）、高频（13.56Mhz）、超高频、微波频段等，频段不同，功率不同，传输的距离不同。</p>
-<section id="nfc">
-<span id="id3"></span><h3>NFC<a class="headerlink" href="#nfc" title="Permalink to this heading">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">Near</span> <span class="pre">Field</span> <span class="pre">Communication</span></code> <code class="docutils literal notranslate"><span class="pre">13.56MHz</span></code></p>
-<p>NFC从本质上来说是一种RFID的演进技术，NFC只是限于13.56MHz的频段。而RFID的频段有低频（125KHz到135KHz），高频（13.56MHz）和超高频（860MHz到960MHz）。</p>
-<p>NFC工作有效距离约10cm，所以具有很高的安全性。</p>
-</section>
-</section>
-<section id="id4">
-<span id="id5"></span><h2>802.15.4<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<section id="id2">
+<span id="id3"></span><h2>802.15.4<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">2.4GHz/868MHz/915MHz</span></code> <code class="docutils literal notranslate"><span class="pre">LR-WPAN</span></code> <code class="docutils literal notranslate"><span class="pre">DSSS</span></code> <code class="docutils literal notranslate"><span class="pre">GTS</span></code></p>
 <p><a class="reference external" href="https://baike.baidu.com/item/IEEE%20802.15.4/6657379?fromtitle=802.15.4&amp;fromid=1115952&amp;fr=aladdin">IEEE 802.15.4</a> 是一种技术标准，它定义了低速率无线个域网（LR-WPAN）的协议。 它规定了LR-WPAN的物理层和媒体访问控制 ，并由IEEE 802.15工作组维护，该工作组在2003年定义了该标准。它是Zigbee的基础，诸如 ISA100.11a ， WirelessHART ， MiWi ， 6LoWPAN ， 线程和SNAP规范，每个规范通过开发IEEE 802.15.4中未定义的上层进一步扩展了标准。</p>
 <table class="docutils align-default">
@@ -209,9 +198,9 @@
 <col style="width: 13%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#id4"><span class="std std-ref">802.15.4</span></a></p></th>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#id2"><span class="std std-ref">802.15.4</span></a></p></th>
 <th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
-<th class="head"><p>SRAM/ROM</p></th>
+<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a></p></th>
 <th class="head"></th>
 <th class="head"><p>WiFi</p></th>
 <th class="head"><p>Rate</p></th>
@@ -232,6 +221,17 @@
 </tbody>
 </table>
 </section>
+<section id="rfid">
+<span id="id4"></span><h2>RFID<a class="headerlink" href="#rfid" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Radio</span> <span class="pre">Frequency</span> <span class="pre">IDentification</span></code></p>
+<p>RFID有低频（mm的传输距离）、高频（13.56Mhz）、超高频、微波频段等，频段不同，功率不同，传输的距离不同。</p>
+<section id="nfc">
+<span id="id5"></span><h3>NFC<a class="headerlink" href="#nfc" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">Near</span> <span class="pre">Field</span> <span class="pre">Communication</span></code> <code class="docutils literal notranslate"><span class="pre">13.56MHz</span></code></p>
+<p>NFC从本质上来说是一种RFID的演进技术，NFC只是限于13.56MHz的频段。而RFID的频段有低频（125KHz到135KHz），高频（13.56MHz）和超高频（860MHz到960MHz）。</p>
+<p>NFC工作有效距离约10cm，所以具有很高的安全性。</p>
+</section>
+</section>
 <section id="zigbee">
 <span id="id6"></span><h2>ZigBee<a class="headerlink" href="#zigbee" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">802.15.4</span></code></p>
@@ -250,8 +250,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../miscellaneous/AIC8800M.html" class="btn btn-neutral float-left" title="AIC8800M" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="bluetooth.html" class="btn btn-neutral float-right" title="Bluetooth" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="lpwa.html" class="btn btn-neutral float-left" title="LPWA" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ethernet.html" class="btn btn-neutral float-right" title="Ethernet" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
