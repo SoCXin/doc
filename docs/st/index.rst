@@ -72,8 +72,8 @@ ST
       - :ref:`architecture`
       - :ref:`CoreMark`
       - :ref:`level`
-      - SRAM
-      - Interface
+      - :ref:`sram`
+      - :ref:`peripherals`
       - Price
       - :ref:`package`
     * - :ref:`stm32h745`
@@ -158,12 +158,12 @@ ST
 
     * - :ref:`ulp`
       - :ref:`architecture`
-      - 
-      - SRAM
-      - 
-      - 
-      - 
-      - 
+      -
+      - :ref:`sram`
+      -
+      -
+      -
+      -
     * - :ref:`stm32l011`
       -
       -

@@ -25,34 +25,34 @@ ADC-MCU
 .. list-table::
     :header-rows:  1
 
-    * - 
+    * -
       - :ref:`frequency`
       - :ref:`CoreMark`
-      - :ref:`sram` / :ref:`flash`
+      - :ref:`sram`
       - :ref:`adc12b`
       - :ref:`adc16b`
-      - 
+      - :ref:`peripherals`
       - :ref:`package`
     * - :ref:`at32f437`
       - 288 MHz
       - 630
-      - 512K/4M
+      - 512K
       - 3x16ch
       - X
-      - 
+      -
       - LQFP64
     * - :ref:`stm32l412`
       - 80 MHz
       -
-      - 40K/128K
+      - 40K
       - 2x
       - X
-      - 
+      -
       - LQFP32
     * - :ref:`stm32g431`
       - 170MHz
       -
-      - 128K/512K
+      - 128K
       - 2x4MSPS
       - X
       - 4/3
@@ -60,7 +60,7 @@ ADC-MCU
     * - :ref:`stm32g474`
       - 170MHz
       -
-      - 128K/512K
+      - 128K
       - 5x4MSPS
       - X
       - 7/6
@@ -68,7 +68,7 @@ ADC-MCU
     * - :ref:`stm32h730`
       - 550MHz
       -
-      - 564K/128K
+      - 564K
       - 1x5MSPS
       - 2x3.6MSPS
       - 2/2
@@ -76,7 +76,7 @@ ADC-MCU
     * - :ref:`stm32h750`
       - 480MHz
       -
-      - 1MB/128K
+      - 1MB
       - X
       - 3x3.6MSPS
       - 2/2
@@ -84,7 +84,7 @@ ADC-MCU
     * - :ref:`stm32h7b0`
       - 280MHz
       -
-      - 1.4M/128K
+      - 1.4M
       - X
       - 2x3.6MSPS
       - 2/2
@@ -92,7 +92,7 @@ ADC-MCU
     * - :ref:`hpm6750`
       - 816MHz
       - 9220(2)
-      - 2M/4M
+      - 2M
       - 3x5MSPS
       - 1x2MSPS
       - 2/4
@@ -100,8 +100,8 @@ ADC-MCU
     * - :ref:`hpm6350`
       - 648MHz
       - 9220(2)
-      - 800K/4M
-      - 
+      - 800K
+      -
       - 3x2MSPS
       - 2
       - BGA116
@@ -114,7 +114,7 @@ ADC-MCU
 .. list-table::
     :header-rows:  1
 
-    * - 
+    * -
       - :ref:`frequency`
       - SRAM/ROM
       - SNR

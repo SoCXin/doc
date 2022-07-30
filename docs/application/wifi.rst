@@ -12,8 +12,8 @@ Wi-Fi
       - :ref:`architecture`
       - :ref:`CoreMark`
       - SRAM/ROM
-      - Wireless
-      - UART/SPI/SDIO
+      - :ref:`wireless`
+      - :ref:`peripherals`
       - Characteristics
       - :ref:`package`
     * - :ref:`esp32c3`
