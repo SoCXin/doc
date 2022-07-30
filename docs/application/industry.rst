@@ -38,10 +38,12 @@ AUTOSAR (Automotive Open System Architecture) 成立于2003年，致力于制定
 三个文档组：Classic Platform(CP)、Adaptive Platform(AP)、Foundation(FO)
 
 
-.. _ce:
+.. _elec:
 
-Consumer Electronics
+Electronics
 ----------------------
+``Consumer Electronics``
+
 
 .. _home:
 

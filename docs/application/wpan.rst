@@ -37,6 +37,34 @@ WPAN
 
 
 
+.. _802_15_4:
+
+802.15.4
+----------
+``2.4GHz/868MHz/915MHz`` ``LR-WPAN`` ``DSSS`` ``GTS``
+
+`IEEE 802.15.4 <https://baike.baidu.com/item/IEEE%20802.15.4/6657379?fromtitle=802.15.4&fromid=1115952&fr=aladdin>`_ 是一种技术标准，它定义了低速率无线个域网（LR-WPAN）的协议。 它规定了LR-WPAN的物理层和媒体访问控制 ，并由IEEE 802.15工作组维护，该工作组在2003年定义了该标准。它是Zigbee的基础，诸如 ISA100.11a ， WirelessHART ， MiWi ， 6LoWPAN ， 线程和SNAP规范，每个规范通过开发IEEE 802.15.4中未定义的上层进一步扩展了标准。
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`802_15_4`
+      - :ref:`architecture`
+      - :ref:`sram`
+      -
+      - WiFi
+      - Rate
+      - More
+      - :ref:`package`
+    * - :ref:`esp32h2`
+      - :ref:`esp_rv32`
+      -
+      -
+      -
+      -
+      -
+      -
 
 
 .. _rfid:
@@ -60,34 +88,6 @@ NFC从本质上来说是一种RFID的演进技术，NFC只是限于13.56MHz的�
 NFC工作有效距离约10cm，所以具有很高的安全性。
 
 
-.. _802_15_4:
-
-802.15.4
-----------
-``2.4GHz/868MHz/915MHz`` ``LR-WPAN`` ``DSSS`` ``GTS``
-
-`IEEE 802.15.4 <https://baike.baidu.com/item/IEEE%20802.15.4/6657379?fromtitle=802.15.4&fromid=1115952&fr=aladdin>`_ 是一种技术标准，它定义了低速率无线个域网（LR-WPAN）的协议。 它规定了LR-WPAN的物理层和媒体访问控制 ，并由IEEE 802.15工作组维护，该工作组在2003年定义了该标准。它是Zigbee的基础，诸如 ISA100.11a ， WirelessHART ， MiWi ， 6LoWPAN ， 线程和SNAP规范，每个规范通过开发IEEE 802.15.4中未定义的上层进一步扩展了标准。
-
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`802_15_4`
-      - :ref:`architecture`
-      - SRAM/ROM
-      -
-      - WiFi
-      - Rate
-      - More
-      - :ref:`package`
-    * - :ref:`esp32h2`
-      - :ref:`esp_rv32`
-      -
-      -
-      -
-      -
-      -
-      -
 
 .. _zigbee:
 
