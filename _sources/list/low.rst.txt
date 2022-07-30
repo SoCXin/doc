@@ -114,11 +114,11 @@ Package
       -
       -
       -
-    * - LQFP
+    * - X
       -
       - :ref:`LQFP32`
       - :ref:`LQFP48`
-      -
+      - :ref:`LQFP64`
       -
       -
       -

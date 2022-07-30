@@ -1,15 +1,16 @@
 
 .. _industry:
 
-行业应用
+Industries
 ===============
 
 .. contents::
     :local:
     :depth: 1
 
+.. _auto:
 
-车规产品
+Auto
 -----------
 
 ``AEC-Q100``
@@ -37,8 +38,14 @@ AUTOSAR (Automotive Open System Architecture) 成立于2003年，致力于制定
 三个文档组：Classic Platform(CP)、Adaptive Platform(AP)、Foundation(FO)
 
 
+.. _ce:
 
-智能家居
+Consumer Electronics
+----------------------
+
+.. _home:
+
+Home
 -----------
 
 .. _matter:
@@ -64,7 +71,7 @@ Matter 基于IP协议（例如Wi-Fi、以太网和Thread）而构建，提供了
     根据ABI research的最新预测，在2022年到2030年这个区间内，Matter设备的出货量将达到550亿。
 
 
-工控现场
+PLC
 -----------
 
 .. contents::

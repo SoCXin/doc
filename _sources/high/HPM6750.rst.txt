@@ -91,7 +91,7 @@ Xin选择
     * -
       - :ref:`architecture`
       - :ref:`CoreMark`
-      - SRAM
+      - :ref:`sram`
       - USB/NET
       - Cost
       - :ref:`power`

@@ -1,13 +1,13 @@
 
 .. _level:
 
-性能
+Level
 ===============
 
-`Level Mark <https://github.com/SoCXin/Level>`_ : :ref:`frequency`/:ref:`CoreMark`/:ref:`Geekbench`
+`Level Marked <https://github.com/SoCXin/Level>`_ : :ref:`frequency`/:ref:`CoreMark`/:ref:`Geekbench`
 
 .. hint::
-    Level1-3主要用于控制，Level4-6可以部署算法，Level7-9为高性能计算
+    用于量化产品的性能指标，Level1-3主要用于控制，Level4-6可以部署算法，Level7-9为高性能计算
 
 .. contents::
     :local:
@@ -26,7 +26,7 @@ Level1
 
     * - :ref:`xin`
       - :ref:`architecture`
-      - SRAM
+      - :ref:`sram`
       - :ref:`frequency`
       - :ref:`power`
       - :ref:`level1`
@@ -51,7 +51,7 @@ Level2
 
     * - :ref:`xin`
       - :ref:`architecture`
-      - SRAM
+      - :ref:`sram`
       - :ref:`frequency`
       - :ref:`power`
       - :ref:`level2`

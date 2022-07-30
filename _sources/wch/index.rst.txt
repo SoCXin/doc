@@ -320,16 +320,16 @@ BLE++
 MCS51
 ~~~~~~~~~~~~
 ``8051`` ``MCU``
- 
 
+sram
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`wch`
       - :ref:`architecture`
-      - SRAM
-      - Flash
+      - :ref:`sram`
+      - :ref:`flash`
       - UART/SPI
       - BLE
       - USB
