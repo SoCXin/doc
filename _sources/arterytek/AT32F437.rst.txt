@@ -108,9 +108,9 @@ Xin选择
       - :ref:`CoreMark`
       - :ref:`sram`/:ref:`flash`
       - :ref:`peripherals`
-      - :ref:`adc`
-      - :ref:`usb` / :ref:`can`
-      - :ref:`ethernet`
+      - :ref:`adc12b`
+      - :ref:`usb`/:ref:`can`
+      - :ref:`eth_mac`
     * - :ref:`at32f437`
       - 288MHz
       -
@@ -118,8 +118,15 @@ Xin选择
       - 4
       - 3
       - 2/2
-      - 10/100M
-
+      - 100M
+    * - :ref:`at32f435`
+      - 288MHz
+      -
+      - 512KB/4MB
+      - 4
+      - 3
+      - 2/2
+      - 100M
 
 
 .. note::

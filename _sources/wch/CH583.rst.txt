@@ -130,7 +130,7 @@ Xin选择
 
     * -
       - :ref:`frequency`
-      - :ref:`sram` / :ref:`flash`
+      - :ref:`sram`/:ref:`flash`
       - :ref:`ble`
       - :ref:`sleep`
       - :ref:`peripherals`
@@ -160,8 +160,8 @@ Xin选择
     * - :ref:`wch`
       - :ref:`architecture`
       - :ref:`frequency`
-      - :ref:`sram` / :ref:`flash`
-      - wireless
+      - :ref:`sram`/:ref:`flash`
+      - :ref:`wireless`
       - :ref:`peripherals`
       - :ref:`sleep`
     * - :ref:`ch583`

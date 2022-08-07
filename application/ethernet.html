@@ -150,11 +150,11 @@
 <thead>
 <tr class="row-odd"><th class="head"><p><a class="reference internal" href="#ethernet"><span class="std std-ref">Ethernet</span></a></p></th>
 <th class="head"><p><a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
-<th class="head"><p>SRAM/ROM</p></th>
-<th class="head"><p>UART/SPI</p></th>
-<th class="head"><p>USB/CAN</p></th>
-<th class="head"><p>ETH-MAC</p></th>
-<th class="head"><p>ETH-PHY</p></th>
+<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a>/<a class="reference internal" href="../list/low.html#flash"><span class="std std-ref">Flash</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="peripherals.html#peripherals"><span class="std std-ref">Peripherals</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="usb.html#usb"><span class="std std-ref">USB</span></a>/<a class="reference internal" href="peripherals.html#can"><span class="std std-ref">CAN</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#eth-mac"><span class="std std-ref">ETH-MAC</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#eth-phy"><span class="std std-ref">ETH-PHY</span></a></p></th>
 </tr>
 </thead>
 <tbody>
@@ -208,8 +208,42 @@
 </tr>
 </tbody>
 </table>
+<section id="eth-mac">
+<span id="id2"></span><h2>ETH-MAC<a class="headerlink" href="#eth-mac" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#rmii" id="id7">RMII</a></p></li>
+<li><p><a class="reference internal" href="#gmii" id="id8">GMII</a></p></li>
+</ul>
+</div>
+<section id="rmii">
+<h3><a class="toc-backref" href="#id7">RMII</a><a class="headerlink" href="#rmii" title="Permalink to this heading">¶</a></h3>
+<p>RMII（Reduced Media Independent Interface） 独立于介质接口RMII接口比MII接口拥有更少的I/O传输。MII（18根线）拥有16根数据线2根控制线，而RMII（8根线）只有7个数据线 和1根控制线。传输速率和MII一样，支持10Mb/s和100Mb/s。不同的是RMII在10Mb/s和100Mb/s下CLK都为50MHz。即在相同速率下RMII比MII数据线少了一半，极大的减小了走线压力和端口压力。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>如果是需要自适应10/100M，TX_CLK是由PHY芯片发出。</p>
+</div>
+</section>
+<section id="gmii">
+<h3><a class="toc-backref" href="#id8">GMII</a><a class="headerlink" href="#gmii" title="Permalink to this heading">¶</a></h3>
+<p>GMII（Gigabit Medium Independent）千兆以太网，GMII采用8位接口数据，工作时钟125MHz，因此传输速率可达1000Mbps。同时向下兼容MII所规定的10/100 Mbps工作方式。要实现1000Mb/s、100Mb/S、10Mb/S自适应必须加上TX_CLK（PHY输出）。速率要达到1000Mb/s，GTX_CLK/RX_CLK时钟必须125MHz。</p>
+<p>RGMII（Reduced Gigabit Media Independent Interface）千兆以太网，采用RGMII（14根线）的目的是降低电路成本，使实现这种接口的器件的引脚数从GMII25个引脚减少到14个引脚。RGMII均采用4位数据接口，工作时钟125MHz，并且在上升沿和下降沿同时传输数据，因此传输速率可达1000Mbps。RGMII同时兼容MII所规定的10/100 Mbps工作方式，支持传输速率：10M/100M/1000Mb/s ，其对应clk 信号分别为2.5MHz/25MHz/125MHz。</p>
+</section>
+</section>
+<section id="eth-phy">
+<span id="id3"></span><h2>ETH-PHY<a class="headerlink" href="#eth-phy" title="Permalink to this heading">¶</a></h2>
+<p>PHY是物理接口收发器。其物理层定义了数据传送与接收所需要的光电信号、线路状态、时钟基准、数据编码等电路，并向数据链路层设备提供标准接口。一般PHY芯片为模数混合电路，负责接收光、电这类模拟信号，经过解调和A/D转换后通过MII，RMII，GMII，RGMII等介质接口将信号交给MAC芯片进行处理。一般MAC芯片为纯数字电路。</p>
+<p>PHY在发送数据时，收到MAC发过来的数据（对PHY来说没有帧的概念，发过来的都是数据），然后在把并行数据转化为串行数据，在按照物理层的编码规则吧数据进行编码，再经过D/A转化通过模拟信号传输出去。接收时流程相反。</p>
 <section id="phy">
-<h2>PHY<a class="headerlink" href="#phy" title="Permalink to this heading">¶</a></h2>
+<h3>电流型PHY<a class="headerlink" href="#phy" title="Permalink to this heading">¶</a></h3>
+<p>指PHY芯片把MAC给的数据进行串并转换，编码后经DAC输出，而DAC为电流型输入，即芯片为电流型PHY。电流型PHY工作原理：由于PHY芯片的DAC为电流型输入，即需在外部提供一个偏置电压，再由PHY芯片将编码后的数据以差分电流的形式输出，并在100Ω电阻上产生其对应的电压，最后在通过网变压器把信号传出（电流方向为红色箭头方向）。有的PHY芯片内部会集成差分电阻，具体以所用芯片手册为则。VDD的作用为为电路提供电流和为差分信号提供直流偏置。电阻需靠近PHY芯片放置。</p>
+<p>电流型PHY需要在网络变压器中间抽头提供一个VDD电压。</p>
+</section>
+<section id="id4">
+<h3>电压型PHY<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>指PHY芯片把MAC给的数据进行串并转换，编码后经DAC输出，而DAC为电压型输出，即芯片为电压型PHY。电压型PHY工作原理：直接由PHY芯片将编码后的数据以差分电压的方式输出，此时网络变压器中间抽头不需要提供偏置电压，所以网络变压器中间抽头一般接0.1uF的电容，为高频干扰提供一个低阻抗回路。</p>
+<p>电压型PHY在网络变压器中间抽头接0.1uF电容。</p>
+</section>
 <section id="lan8720">
 <h3>LAN8720<a class="headerlink" href="#lan8720" title="Permalink to this heading">¶</a></h3>
 <p>LAN8742与LAN8720比较看，两者管脚兼容，LAN8742是LAN8720 的升级版，多了一个MCO管脚，其他的芯片特性一样，寄存器配置完全一样。</p>
@@ -219,11 +253,10 @@
 <h3>DP83848<a class="headerlink" href="#dp83848" title="Permalink to this heading">¶</a></h3>
 <p>DP83848芯片，支持MII模式和RMII模式；而LAN8742，和LAN8720，只支持RMII模式；另外，三者之间的，寄存器是一样的。</p>
 <p>DP83848的默认地址，是0x01</p>
-<img alt="../_images/RMII.png" src="../_images/RMII.png" />
 </section>
 </section>
 <section id="router">
-<span id="id2"></span><h2>Router<a class="headerlink" href="#router" title="Permalink to this heading">¶</a></h2>
+<span id="id6"></span><h2>Router<a class="headerlink" href="#router" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 14%" />
@@ -240,7 +273,7 @@
 <th class="head"><p><a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
 <th class="head"></th>
 <th class="head"><p>Switch</p></th>
-<th class="head"><p>ETH-MAC</p></th>
+<th class="head"><p><a class="reference internal" href="#eth-mac"><span class="std std-ref">ETH-MAC</span></a></p></th>
 <th class="head"></th>
 </tr>
 </thead>
