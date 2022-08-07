@@ -8,6 +8,8 @@ V831
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
