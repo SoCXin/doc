@@ -6,6 +6,35 @@ V853
 
 `Allwinner <https://www.allwinnertech.com/index.php?c=news&a=index&id=344>`_ : ``Cortex-A7``
 
+.. contents::
+    :local:
+    :depth: 1
+
+
+Xin简介
+-----------
+
+.. image:: ./images/V853.png
+    :target: https://www.allwinnertech.com/
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：:ref:`level6`
+* 封装规格：
+* 运行环境：-40°C to 85°C
+* RAM容量：
+* Flash容量：
+
+
 采用高效能的三核异构设计，是由ARM Cortex™️-A7主核、RISC-V 协处理核与AI NPU结合的创新型架构。ARM Cortex™️- A7主核可适应于兼容各类应用开发调试，RISC-V 协处理核重点负责各类传感器场景，提高实时响应速度，AI NPU则专注解决复杂多变的视觉检测识别场景，其检测识别帧率相较于传统CPU方式可最少提升20倍以上。三者分工明确、相互协同，既有速度、更有品质，解决了传统单核面对复杂视觉场景体验不佳的痛点问题。
 
 

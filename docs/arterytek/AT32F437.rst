@@ -51,7 +51,7 @@ Xin简介
 * 10/100M以太网MAC，专用DMA和4K SRAM，MII/RMII接口
 
 .. hint::
-    :ref:`at32f437` 基于 :ref:`cortex_m4` 包括8个串口和以太网MAC，尤其是配置3个独立的5.33MSPS ADC
+    :ref:`at32f435` 相对于 :ref:`at32f437` 基于 :ref:`cortex_m4` 没有配置以太网MAC
 
 
 模拟性能
@@ -106,19 +106,21 @@ Xin选择
     * - :ref:`arterytek`
       - :ref:`frequency`
       - :ref:`CoreMark`
-      - :ref:`sram` / :ref:`flash`
-      - UART
-      - CAN2.0B
-      - :ref:`usb`
+      - :ref:`sram`/:ref:`flash`
+      - :ref:`peripherals`
+      - :ref:`adc`
+      - :ref:`usb` / :ref:`can`
       - :ref:`ethernet`
     * - :ref:`at32f437`
+      - 288MHz
       -
-      - 
       - 512KB/4MB
       - 4
-      - 1
-      - 2 x OTG
+      - 3
+      - 2/2
       - 10/100M
+
+
 
 .. note::
     :ref:`arterytek` 高性能系列标配 :ref:`arterytek_spim` 和 :ref:`arterytek_slib` 功能
