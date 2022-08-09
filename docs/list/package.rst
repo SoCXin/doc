@@ -19,8 +19,8 @@ Package
       -
       -
       - BGA169
-      - BGA196
-      - BGA289
+      - :ref:`BGA196`
+      - :ref:`BGA289`
       -
       -
     * - :ref:`CSP36`
@@ -49,9 +49,6 @@ Package
       - :ref:`LQFP176`
 
 
-.. contents::
-    :local:
-    :depth: 1
 
 小尺寸
 -----------
@@ -77,6 +74,22 @@ CSP36
 ^^^^^^^^^^^^^
 ``2.6x2.6mm`` ``P0.4mm``
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`CSP36`
+      - :ref:`frequency`
+      - :ref:`sram`
+      - :ref:`flash`
+      - :ref:`peripherals`
+      - GPIO
+    * - :ref:`stm32f205`
+      - ≤ 120MHz
+      -
+      -
+      -
+      -
+
 
 .. _QFN20:
 
@@ -84,6 +97,21 @@ QFN20
 ^^^^^^^^^^^
 ``3x3mm``
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`QFN20`
+      - :ref:`frequency`
+      - :ref:`sram`
+      - :ref:`flash`
+      - :ref:`peripherals`
+      - GPIO
+    * - :ref:`stm32f205`
+      - ≤ 120MHz
+      -
+      -
+      -
+      -
 
 .. _4x4mm:
 
@@ -149,7 +177,7 @@ QFN28
 
 5x5mm
 ~~~~~~~~~~~
-``QFN32``
+``CSP156`` ``QFN32`` ``QFN48``
 
 .. contents::
     :local:
@@ -160,35 +188,6 @@ QFN28
 CSP156
 ^^^^^^^^^^^^^
 ``5x4.7mm`` ``P0.35mm``
-
-
-.. _QFN32:
-
-QFN32
-^^^^^^^^^^^^^
-``5x5mm``
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`QFN32`
-      - :ref:`frequency`
-      - :ref:`sram`
-      - :ref:`flash`
-      - :ref:`peripherals`
-      - GPIO
-    * - :ref:`esp32c3`
-      -
-      -
-      -
-      -
-      -
-    * - :ref:`air101`
-      -
-      -
-      -
-      -
-      -
 
 
 .. _QFN48:
@@ -242,6 +241,37 @@ QFN48
       -
       -
       -
+
+
+.. _QFN32:
+
+QFN32
+^^^^^^^^^^^^^
+``5x5mm``
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`QFN32`
+      - :ref:`frequency`
+      - :ref:`sram`
+      - :ref:`flash`
+      - :ref:`peripherals`
+      - GPIO
+    * - :ref:`esp32c3`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`air101`
+      -
+      -
+      -
+      -
+      -
+
+
 
 中尺寸
 -----------
@@ -331,11 +361,29 @@ LQFP48
     :local:
     :depth: 1
 
-.. _LQFP64:
 
-LQFP64
+.. _BGA196:
+
+BGA196
 ^^^^^^^^^^^^^
-``10x10mm``
+``10x10mm P0.65``
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`BGA196`
+      - :ref:`frequency`
+      - :ref:`sram`
+      - :ref:`flash`
+      - :ref:`peripherals`
+      - GPIO
+    * - :ref:`hpm6750`
+      -
+      -
+      -
+      -
+      -
+
 
 .. _QFN88:
 
@@ -359,6 +407,13 @@ QFN88
       -
       -
 
+.. _LQFP64:
+
+LQFP64
+^^^^^^^^^^^^^
+``10x10mm ``
+
+
 
 大尺寸
 -----------
@@ -368,11 +423,19 @@ QFN88
     :local:
     :depth: 1
 
+
 .. _14x14mm:
 
 14x14mm
 ~~~~~~~~~~~
 ``LQFP100``
+
+.. _BGA289:
+
+BGA289
+~~~~~~~~~~~
+``14x14mm``
+
 
 .. _LQFP100:
 
