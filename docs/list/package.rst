@@ -434,8 +434,23 @@ QFN88
 
 LQFP64
 ^^^^^^^^^^^^^
-``10x10mm ``
 
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`LQFP64`
+      - :ref:`frequency`
+      - :ref:`sram`
+      - :ref:`flash`
+      - :ref:`peripherals`
+      - GPIO
+    * - :ref:`ac7815`
+      -
+      -
+      -
+      -
+      -
 
 
 大尺寸

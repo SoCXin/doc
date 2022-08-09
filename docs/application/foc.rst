@@ -199,5 +199,5 @@ ODrive
       - 3
       - 12
       - :ref:`stm32_hrtim`
-      - LQFP64
+      - :ref:`LQFP64`
 

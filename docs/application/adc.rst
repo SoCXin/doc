@@ -40,7 +40,7 @@ ADC-MCU
       - 3x16ch
       - X
       -
-      - LQFP64
+      - :ref:`LQFP64`
     * - :ref:`stm32l412`
       - 80 MHz
       -
@@ -88,7 +88,7 @@ ADC-MCU
       - X
       - 2x3.6MSPS
       - 2/2
-      - LQFP64
+      - :ref:`LQFP64`
     * - :ref:`hpm6750`
       - 816MHz
       - 9220(2)
@@ -145,7 +145,7 @@ ADC-MCU
       -
       - :ref:`sigma_delta`
       - 24bit
-      - LQFP64
+      - :ref:`LQFP64`
 
 .. note::
     目前MCU集成高精度ADC，主流以24-Bit为主，多以SiP封装 :ref:`sigma_delta` 为主。
