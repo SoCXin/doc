@@ -41,7 +41,7 @@ STM32U5 的定义是一个低功耗旗舰级产品线，最大的3个特点：
 * 制程工艺：40 nm
 * 供货周期：
 * 处理性能：651 :ref:`CoreMark` (240 :ref:`DMIPS` ) , :ref:`level3`
-* 封装规格：LQFP48/QFN48/LQFP64/WLCSP90/LQFP100/UFBGA132/LQFP144/UFBGA169
+* 封装规格：:ref:`LQFP48`/QFN48/LQFP64/WLCSP90/LQFP100/UFBGA132/:ref:`LQFP144`/UFBGA169
 * 运行环境：-40°C to 85/125°C
 * RAM容量：786 KB
 * Flash容量：1/2 MB

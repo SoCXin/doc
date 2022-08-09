@@ -25,7 +25,7 @@ Xin简介
 * 制程工艺：90 nm
 * 供货周期：
 * 处理性能：142 :ref:`CoreMark` (59 :ref:`DMIPS` ) , :ref:`level2`
-* 封装规格：LQFP48/LQFP32/TSSOP20/SON8
+* 封装规格：:ref:`LQFP48`/LQFP32/TSSOP20/SON8
 * 运行环境：-40°C to +85°C
 * RAM容量：8 KB
 * Flash容量：32/64 KB

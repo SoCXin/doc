@@ -26,7 +26,7 @@ Xin简介
 * 制程工艺：90 nm
 * 供货周期：
 * 处理性能：150 :ref:`DMIPS` , 398 :ref:`CoreMark` , :ref:`level3`
-* 封装规格：LQFP100/LQFP144/LQFP176/BGA176
+* 封装规格：LQFP100/:ref:`LQFP144`/LQFP176/BGA176
 * 运行环境：-40°C to +85°C
 * RAM容量：128 KB
 * Flash容量：128/256/512 KB

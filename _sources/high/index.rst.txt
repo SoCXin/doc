@@ -14,7 +14,7 @@
       - :ref:`frequency`
       - :ref:`CoreMark`
       - :ref:`power`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - Price
       - :ref:`package`
     * - :ref:`hpm6750`
@@ -32,7 +32,7 @@
       -
       - 2 MB
       -
-      - >BGA289
+      - > :ref:`14x14mm`
     * - :ref:`hpm6350`
       - :ref:`andes_d45`
       - 648MHz
@@ -56,7 +56,7 @@
       -
       - 1 MB
       -
-      - ≥LQFP144
+      - ≥ :ref:`14x14mm`
     * - :ref:`stm32h730`
       - :ref:`cortex_m7`
       - <550MHz
