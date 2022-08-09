@@ -56,7 +56,7 @@ ADC-MCU
       - 2x4MSPS
       - X
       - 4/3
-      - LQFP48
+      - :ref:`LQFP48`
     * - :ref:`stm32g474`
       - 170MHz
       -
@@ -238,7 +238,7 @@ High-Speed
       - LVDS
       - 545mW
       - Pipeline
-      - LQFP48
+      - :ref:`LQFP48`
       - $21.70
 
 

@@ -244,7 +244,7 @@ Xin选择
       - Interface
     * - AT32F421C
       - ￥3.67
-      - LQFP48
+      - :ref:`LQFP48`
       - 7×7mm
       - 35
     * - AT32F421K

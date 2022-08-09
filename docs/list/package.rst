@@ -352,6 +352,22 @@ LQFP48
 ^^^^^^^^^^^^^
 ``7x7mm``
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`LQFP48`
+      - :ref:`frequency`
+      - :ref:`sram`
+      - :ref:`flash`
+      - :ref:`peripherals`
+      - GPIO
+    * - :ref:`stm32u575`
+      -
+      -
+      -
+      -
+      -
+
 .. _10x10mm:
 
 10x10mm
@@ -394,18 +410,25 @@ QFN88
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`LQFP64`
+    * - :ref:`QFN88`
       - :ref:`frequency`
       - :ref:`sram`
       - :ref:`flash`
       - :ref:`peripherals`
       - GPIO
-    * -
+    * - :ref:`air105`
       -
       -
       -
       -
       -
+    * - :ref:`rtl8722`
+      -
+      -
+      -
+      -
+      -
+
 
 .. _LQFP64:
 
@@ -428,12 +451,12 @@ LQFP64
 
 14x14mm
 ~~~~~~~~~~~
-``LQFP100``
+``LQFP100`` ``BGA289``
 
 .. _BGA289:
 
 BGA289
-~~~~~~~~~~~
+^^^^^^^^^^^^^
 ``14x14mm``
 
 

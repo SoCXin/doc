@@ -104,7 +104,7 @@ MCU平台
       - 64MB DDR2
       -
       -
-      - QFN88
+      - :ref:`QFN88`
     * - :ref:`r329`
       - :ref:`cortex_a53`
       - 1.50 GHz
@@ -125,7 +125,7 @@ MCU平台
       - 8 MB
       - 8 MB
       - :ref:`eai80_npu`
-      - LQFP100
+      - :ref:`14x14mm`
 
 
 

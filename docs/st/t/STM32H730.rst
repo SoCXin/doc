@@ -31,7 +31,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：2778 :ref:`CoreMark` (1177 :ref:`DMIPS` ) , :ref:`level5`
-* 封装规格：:ref:`LQFP176` /UFBGA176/UFBGA169/UFBGA144/LQFP144/TFBGA100/ :ref:`LQFP100`
+* 封装规格：:ref:`LQFP176` /UFBGA176/UFBGA169/UFBGA144/:ref:`LQFP144`/TFBGA100/ :ref:`LQFP100`
 * 运行环境：-40°C to 85°C
 * RAM容量：564 KB
 * Flash容量：128 KB
@@ -57,7 +57,7 @@ Xin简介
 ``3.6MSPS`` ``16-bit ADC``
 
 * 2x 3.6MSPS :ref:`adc16b`  > :ref:`hpm6750` 2MSPS :ref:`adc16b`
-* 5.0MSPS :ref:`adc12b`  < :ref:`at32f437` 5.33MSPS :ref:`adc12b` 
+* 5.0MSPS :ref:`adc12b`  < :ref:`at32f437` 5.33MSPS :ref:`adc12b`
 
 
 芯片架构
@@ -244,7 +244,7 @@ Xin选择
       - 35
     * - STM32H730ZBT
       - $3.24
-      - LQFP144
+      - :ref:`LQFP144`
       - 20×20mm
       - 35
     * - STM32H730VBT

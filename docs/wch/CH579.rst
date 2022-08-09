@@ -167,7 +167,7 @@ Xin选择
       -
       - X
       - 10M(PHY)
-      - LQFP48
+      - :ref:`LQFP48`
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 240 MHz

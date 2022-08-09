@@ -21,7 +21,7 @@ Xin简介
 
 * 供电电压：2.0 to 3.6 V
 * 工作温度：-40°C to +85°C
-* 封装规格：QFN88
+* 封装规格：:ref:`QFN88`
 * 处理性能：3000 :ref:`DMIPS` + 0.2TOPS
 * RAM容量：64MB DDR2
 * Flash容量：

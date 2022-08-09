@@ -4,8 +4,8 @@
 CH568
 ==========
 
-* `WCH <http://www.wch.cn/products/CH568>`_ : ``RISC-V3A`` ``120MHz`` ``USB HS`` ``SM4/AES`` ``SATA`` 
-* `Tags <https://github.com/SoCXin/CH568>`_ : :ref:`usb`  
+* `WCH <http://www.wch.cn/products/CH568>`_ : ``RISC-V3A`` ``120MHz`` ``USB HS`` ``SM4/AES`` ``SATA``
+* `Tags <https://github.com/SoCXin/CH568>`_ : :ref:`usb`
 
 .. contents::
     :local:
@@ -31,7 +31,7 @@ CH568是一款高性能32位精简指令集微控制器，系统主频可达120M
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：LQFP48
+* 封装规格：:ref:`LQFP48`
 * 运行环境：-40°C to 85°C
 * RAM容量：32 KB
 * Flash容量：192 KB

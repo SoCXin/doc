@@ -28,7 +28,7 @@ Xin简介
 * 供货周期：
 * 处理性能：210 :ref:`DMIPS`, 566 :ref:`CoreMark` , :ref:`level3`
 * 运行环境：-40 °C to 85 °C
-* 封装规格：LQFP100/LQFP144/LQFP176/BGA176
+* 封装规格：LQFP100/:ref:`LQFP144`/LQFP176/BGA176
 * RAM容量：192 KB
 * Flash容量：512/1024 KB
 
