@@ -105,7 +105,7 @@ Xin选择
     * - :ref:`vendor`
       - :ref:`architecture`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - Characteristics
       - UART/SPI/SDIO
       - :ref:`package`
@@ -153,7 +153,7 @@ Xin选择
     * - :ref:`vendor`
       - :ref:`architecture`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - Characteristics
       - UART/SPI/SDIO
       - :ref:`package`
@@ -199,7 +199,7 @@ Xin选择
     * - :ref:`vendor`
       - :ref:`architecture`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - WiFi
       - BLE
       - UART/SPI/IO

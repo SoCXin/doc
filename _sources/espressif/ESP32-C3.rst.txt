@@ -148,7 +148,7 @@ Xin选择
     * - :ref:`wifi`
       - :ref:`architecture`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - :ref:`wireless`
       - UART/SPI/SDIO
       - :ref:`package`
@@ -189,7 +189,7 @@ Xin选择
     * - :ref:`espressif`
       - BLE
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - Characteristics
       - UART/SPI/SDIO
       - :ref:`package`
@@ -231,7 +231,7 @@ Xin选择
     * - :ref:`espressif`
       - :ref:`esp_core`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - WiFi
       - BLE
       - USB
@@ -251,7 +251,7 @@ Xin选择
       - b/g/n
       - BLE v4.2
       - X
-      - QFN48
+      - :ref:`QFN48`
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6

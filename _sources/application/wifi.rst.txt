@@ -11,7 +11,7 @@ Wi-Fi
     * - :ref:`wifi`
       - :ref:`architecture`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - :ref:`wireless`
       - :ref:`peripherals`
       - Characteristics

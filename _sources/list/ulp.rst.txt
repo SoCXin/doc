@@ -187,7 +187,7 @@ VCC: Voltage To Current Converter(电路电压)或Voltage Collector Collector (�
       -
       - 1.7v
       - 3.6v
-      - QFN48
+      - :ref:`QFN48`
 
 
 .. contents::

@@ -4,8 +4,9 @@
 AC7916
 ===============
 
-`杰理 <http://www.zh-jieli.com/product/showproduct.php?id=72>`_ : ``RISC-V``
 
+* `JieLi <http://www.zh-jieli.com/>`_ : ``RISC-V`` ``320MHz`` ``Bluetooth`` ``SDRAM`` ``QFN48``
+* `Tags <https://gitee.com/Jieli-Tech/fw-AC79_AIoT_SDK>`_ : :ref:`audio` / :ref:`bt` / :ref:`ble`
 
 .. contents::
     :local:
@@ -22,6 +23,7 @@ Xin简介
 ~~~~~~~~~~~
 
 
+
 基本参数
 ^^^^^^^^^^^
 
@@ -30,7 +32,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：QFN48
+* 封装规格：:ref:`QFN48`
 * 运行环境：
 * RAM容量：800KB
 * ROM容量：
@@ -40,10 +42,10 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 320 MHz :ref:`riscv` Dual Core
-* WiFi 802.11b/g/n
-* 蓝牙双模（支持蓝牙EDR、蓝牙BLE5.2）
-* 主频高达320MHz的双核浮点DSP处理器，片上集成了共578K字节SRAM，部分封装支持2/8M字节SDRABM
+* 320 MHz :ref:`riscv` Dual Core，浮点DSP处理器
+*  :ref:`wifi` 802.11b/g/n
+* :ref:`bt` 双模（支持蓝牙EDR、蓝牙BLE5.2）
+* 片上集成了共578K字节SRAM，部分封装支持2/8M字节SDRABM
 * 支持DVP/BT656图像传感器，最大支持720P分辨率
 * 支持ADC、DAC、LINEIN、IIS、PDM、SPDIF音频接口，多种音效处理，双麦克风打断唤醒
 * 支持RGB888(8bit)/RGB666(6bit)等多种推屏接口，可达320*240@30fps
@@ -59,11 +61,38 @@ Xin简介
 * 电压范围：3.0 to 3.6 V
 * 功耗范围：
 
+
+连接能力
+~~~~~~~~~~~
+
+Bluetooth
+^^^^^^^^^^^
+``Bluetooth V5.0+BR+EDR+BLE``
+
+
+* 支持蓝牙微微网和散射网
+* 满足class2和class3发射功率要求
+* 支持 GFSK 和 π/4 DQPSK 所有包类型
+* 提供+15dbm发射功率
+* 接收器灵敏度为 -93dBm
+
+WiFi
+^^^^^^^^^^^
+
+* 支持power save mode省电模式
+* 支持Open System、WEP、WPA-PSK/WPA2-PSK + TKIP/AES/CCMP加密方式
+* 支持脱离802.11协议，直接利用底层RF收发数据包
+* 支持连接CMW270等测试仪测试板子RF性能
+* 发射功率: DSSS 1M/S 17 dBm MCS0 16 dBm MCS7 12 dBm
+* 接收灵敏度: DSSS 1M/S -95 dBm MCS0 -91 dBm MCS7 -72 dBm
+
+
 Xin选择
 -----------
 
 .. contents::
     :local:
+    :depth: 1
 
 品牌对比
 ~~~~~~~~~

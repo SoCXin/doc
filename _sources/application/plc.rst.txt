@@ -11,7 +11,7 @@ PLC
 
     * - :ref:`plc`
       - :ref:`architecture`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       -
       - WiFi
       - Rate

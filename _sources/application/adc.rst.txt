@@ -116,7 +116,7 @@ ADC-MCU
 
     * -
       - :ref:`frequency`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - SNR
       - INL
       - Type

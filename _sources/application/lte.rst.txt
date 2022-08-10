@@ -71,7 +71,7 @@ Cat.1
 
     * - :ref:`cat1`
       - :ref:`architecture`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       -
       - LoRa
       - Rate

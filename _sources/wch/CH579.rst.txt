@@ -147,7 +147,7 @@ Xin选择
     * - :ref:`wch`
       - :ref:`architecture`
       - :ref:`frequency`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       -
       - :ref:`wireless`
       - Ethernet
@@ -159,7 +159,7 @@ Xin选择
       -
       - BLE4.2
       - 10M(PHY)
-      - QFN48/QFN28
+      - :ref:`QFN48`/QFN28
     * - :ref:`W7500P`
       - :ref:`cortex_m0`
       - 48 MHz
@@ -210,7 +210,7 @@ W7500P
 
     * - :ref:`wch`
       - :ref:`architecture`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - BLE
       - ADC/OPA
       - USB
@@ -253,7 +253,7 @@ W7500P
 
     * - :ref:`wch`
       - :ref:`architecture`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - Sleep
       - UART
       - BLE

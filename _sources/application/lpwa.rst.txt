@@ -32,7 +32,7 @@ LoRa
 
     * - :ref:`lora`
       - :ref:`architecture`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       -
       - LoRa
       - Rate
@@ -45,7 +45,7 @@ LoRa
       -
       -
       -
-      - QFN48
+      - :ref:`QFN48`
     * - :ref:`stm32wl5`
       - :ref:`cortex_m4`
       -
@@ -53,7 +53,7 @@ LoRa
       -
       -
       -
-      - QFN48
+      - :ref:`QFN48`
 
 
 

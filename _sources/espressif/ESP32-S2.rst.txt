@@ -184,7 +184,7 @@ Xin选择
     * - :ref:`wifi`
       - :ref:`architecture`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - :ref:`wireless`
       - UART/SPI/SDIO
       - :ref:`package`
@@ -221,7 +221,7 @@ Xin选择
     * - :ref:`espressif`
       - :ref:`architecture`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - USB
       - DAC
       - SDIO
@@ -273,7 +273,7 @@ Xin选择
     * - :ref:`espressif`
       - :ref:`esp_core`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - :ref:`wireless`
       - DAC/PWM
       - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`

@@ -33,7 +33,7 @@ Xin简介
 * 处理性能：? :ref:`CoreMark`
 * RAM容量：20 KB
 * Flash容量：64 KB
-* 封装规格：TSSOP20/QFN32/QFN48/LQFP32/LQFP48/:ref:`LQFP64`
+* 封装规格：TSSOP20/QFN32/:ref:`QFN48`/LQFP32/LQFP48/:ref:`LQFP64`
 
 
 特征参数

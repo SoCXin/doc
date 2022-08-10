@@ -271,7 +271,7 @@ Xin选择
 
     * - :ref:`wifi`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - Characteristics
       - UART/SPI/SDIO
       - :ref:`package`
@@ -301,7 +301,7 @@ Xin选择
     * - :ref:`espressif`
       - :ref:`architecture`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - USB
       - AI
       - Sleep
@@ -335,7 +335,7 @@ Xin选择
     * - :ref:`espressif`
       - :ref:`esp_core`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - :ref:`wireless`
       - ADC/DAC/PWM
       - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`

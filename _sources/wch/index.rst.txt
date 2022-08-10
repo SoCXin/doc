@@ -94,7 +94,7 @@ ETH++
     * - :ref:`wch`
       - :ref:`architecture`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - Characteristics
       - Ethernet
       - :ref:`package`
@@ -111,7 +111,7 @@ ETH++
       - 32KB/250KB
       - BLE 4.2
       - 10M PHY
-      - QFN48/QFN28
+      - :ref:`QFN48`/QFN28
     * - :ref:`ch32v208`
       - :ref:`wch_riscv4c`
       -
@@ -157,7 +157,7 @@ USB-HS
 
     * - :ref:`wch`
       - :ref:`architecture`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - USB
       - :ref:`wch_usb_hs`
       - PHY

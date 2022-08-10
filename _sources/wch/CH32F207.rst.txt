@@ -120,7 +120,7 @@ USB HS（480Mbps内置PHY）和千兆以太网控制器ETH（内置10M PHY）这
     :header-rows:  1
 
     * - :ref:`wch`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - More
       - UART/SDIO
       - USB
