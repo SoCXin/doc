@@ -139,9 +139,9 @@ BLE对比
     * - :ref:`wch`
       - :ref:`architecture`
       - :ref:`frequency`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - :ref:`wch_ble`
-      - USB/CAN
+      - :ref:`usb`/:ref:`can`
       - SPI/I2C
       - ADC/OPA
     * - :ref:`ch32f208`
@@ -178,7 +178,7 @@ ETH对比
     :header-rows:  1
 
     * - :ref:`wch`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - More
       - UART/SDIO
       - USB

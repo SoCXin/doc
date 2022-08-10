@@ -33,7 +33,7 @@ Xin简介
 * 制程工艺：28 nm
 * 供货周期：
 * 处理性能：
-* 封装规格：QFN48 (5x5mm)
+* 封装规格：:ref:`QFN48` (5x5mm)
 * 运行环境：
 * RAM容量：992 KB (4M PSRAM)
 * Flash容量：2 MB

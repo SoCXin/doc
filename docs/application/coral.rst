@@ -4,7 +4,7 @@
 Coral TPU
 ============
 
-* 关键词：``TensorFlow Lite`` ``8 TOPS`` ``M.2`` ``Dual Core``
+* 关键词： ``TensorFlow Lite`` ``8 TOPS`` ``M.2`` ``Dual Core``
 
 .. contents::
     :local:

@@ -68,8 +68,8 @@ Xin选择
     * -
       - :ref:`architecture`
       - :ref:`frequency`
-      - SRAM/ROM
-      - USB/CAN
+      - :ref:`sram`/:ref:`flash`
+      - :ref:`usb`/:ref:`can`
       - SPI/I2C
       -
     * - :ref:`v831`

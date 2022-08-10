@@ -4,10 +4,8 @@
 AC5713
 ===============
 
-.. image:: https://github.com/SoCXin/HPM6750/workflows/sdk/badge.svg
-    :target: https://github.com/SoCXin/hpm_sdk
-.. image:: https://github.com/SoCXin/HPM6750/workflows/demo/badge.svg
-    :target: https://github.com/SoCXin/HPM6750
+* `JieLi <http://www.zh-jieli.com/>`_ : ``RISC-V`` ``240MHz`` ``Dual Core`` ``Bluetooth``
+* `Tags <https://gitee.com/Jieli-Tech/fw-AC79_AIoT_SDK>`_ : :ref:`audio` / :ref:`bluetooth` / :ref:`ble`
 
 
 .. contents::

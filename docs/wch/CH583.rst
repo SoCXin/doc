@@ -31,7 +31,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：QFN48
+* 封装规格：:ref:`QFN48`
 * 运行环境：-40°C to 85°C
 * RAM容量：32 KB
 * Flash容量：1 MB
@@ -141,7 +141,7 @@ Xin选择
       - BLE5.3
       - 0.7uA
       - 4U/2P/1C
-      - QFN48/QFN28
+      - :ref:`QFN48`/QFN28
     * - :ref:`esp32c3`
       - ≤ 160MHz
       - 512KB/4MB

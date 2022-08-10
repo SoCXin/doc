@@ -31,7 +31,7 @@ BLE
     * - :ref:`ble`
       - :ref:`architecture`
       - :ref:`frequency`
-      - :ref:`sram` 
+      - :ref:`sram`
       - :ref:`flash`
       - TX
       - RX
@@ -67,7 +67,7 @@ BLE
       -
       -
       -
-      - QFN48
+      - :ref:`QFN48`
     * - :ref:`cc2340`
       - :ref:`cortex_m0`
       -

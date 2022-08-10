@@ -99,3 +99,9 @@
 ``Cortex-M4 @ 288 MHz`` ``3x5.33Msps ADC`` ``8 UART`` ``CAN`` ``USB2.0`` ``MII/RMII``
 
 :ref:`at32f437`
+
+08-AC7916
+~~~~~~~~~~~~~~
+``RISC-V`` ``320MHz`` ``Bluetooth`` ``SDRAM`` ``QFN48``
+
+:ref:`ac7916`

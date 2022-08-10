@@ -131,10 +131,10 @@ Xin选择
 
     * - :ref:`vendor`
       - :ref:`architecture`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - Characteristics
-      - USB/CAN
-      - wireless
+      - :ref:`usb`/:ref:`can`
+      - :ref:`wireless`
       - UART/SPI
       - :ref:`package`
     * - :ref:`ch573`

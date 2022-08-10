@@ -31,7 +31,7 @@ CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈�
 ^^^^^^^^^^^
 
 * 发布时间：
-* 参考价格： `￥12.79 <https://item.szlcsc.com/3443981.html>`_ 
+* 参考价格： `￥12.79 <https://item.szlcsc.com/3443981.html>`_
 * 制程工艺：
 * 供货周期：
 * 处理性能：:ref:`level3`
@@ -166,7 +166,7 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`wch`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - More
       - Interface
       - USB
@@ -210,7 +210,7 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`wch`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - More
       - Interface
       - USB

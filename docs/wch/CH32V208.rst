@@ -45,7 +45,7 @@ CH32V208系列是基于32位RISC-V设计的无线型微控制器，配备了硬�
 * 144 MHz :ref:`wch_riscv4c` , 支持单周期乘法和硬件除法
 * :ref:`ch32v208_ble` 5.3
 * :ref:`ch32v208_eth` 10Mbps(w/PHY)
-* :ref:`ch32v208_usb` FS OTG+D 
+* :ref:`ch32v208_usb` FS OTG+D
 * :ref:`ch32v208_can` 2.0B
 * 2x IIC、2x SPI、4x USART
 * 53个I/O口，可以映射到16外部中断
@@ -138,7 +138,7 @@ Xin选择
     * - :ref:`wch`
       - :ref:`architecture`
       - :ref:`frequency`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - BLE
       - ADC/OPA
       - USB
@@ -183,7 +183,7 @@ Xin选择
     :header-rows:  1
 
     * - :ref:`wch`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - More
       - UART/SDIO
       - USB

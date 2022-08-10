@@ -72,7 +72,7 @@ Update
       - 高性能低功耗旗舰，片上1.4M SRAM支持RGB565
     * - :ref:`NO_012`
       - 致敬 :ref:`stm32f429` ，集成 ``8MB SRAM``，LCD支持RGB888
-    * - :ref:`NO_013` (32KB SRAM/QFN48)
+    * - :ref:`NO_013` (32KB SRAM/:ref:`QFN48`)
       - 1MB Flash，2x USB OTG，4x Uart，BLE5.3
     * - :ref:`NO_014`
       - 集成USB HS和1G 以太网MAC，有线连接全家桶

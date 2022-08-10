@@ -26,7 +26,7 @@ Espressif
     * - :ref:`espressif`
       - :ref:`esp_core`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - :ref:`wireless`
       - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
       - :ref:`esp_audio`
@@ -291,7 +291,7 @@ RISC-V
     * - :ref:`esp_rv32`
       - :ref:`frequency`
       - :ref:`CoreMark`
-      - SRAM/ROM
+      - :ref:`sram`/:ref:`flash`
       - :ref:`wireless`
       -
       - :ref:`esp_audio`
