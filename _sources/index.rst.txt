@@ -145,7 +145,7 @@ Xindex
       - :ref:`w801`
       - :ref:`hpm6350`
       - :ref:`hpm6750`
-      - :ref:`D1`
+      - :ref:`f133`
     * - :ref:`mips`
       - X
       - √

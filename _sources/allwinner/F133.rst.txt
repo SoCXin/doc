@@ -1,0 +1,92 @@
+
+.. _f133:
+
+F133
+=============
+
+* `Allwinner <https://www.allwinnertech.com>`_ : ``RISC-V`` ``D1S`` ``C906`` ``1.1 GHz`` ``WAFT`` ``64MB DDR2`` ``Tina``
+* `Tags <https://github.com/SoCXin/F133>`_ : :ref:`top` / :ref:`riscv`
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+
+.. image:: ./images/F133.png
+    :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=97
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2021年4月15日
+* 参考价格：
+* 制程工艺：22nm
+* 供货周期：
+* 处理性能：
+* 封装规格：LFBGA337 (13*13*0.65mm)
+* 运行环境：-40°C to 85°C
+* RAM容量：64MB  (DDR2)
+* Flash容量：
+
+特征参数
+^^^^^^^^^^^
+
+* 1.1 GHz :ref:`xt_c906`
+* HiFi4 DSP
+* 32 KB L1 I-cache and 32 KB L1 D-cache
+
+
+芯片架构
+~~~~~~~~~~~
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：
+
+
+计算性能
+~~~~~~~~~~~
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~~~
+
+
+系列对比
+~~~~~~~~~~~
+
+
+型号对比
+~~~~~~~~~~~
+
+
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+
+开发板
+~~~~~~~~~~~
+
+Lichee RV
+^^^^^^^^^^^
+``Sipeed``
+
+.. image:: images/B_D1_RV.png
+    :target: https://item.taobao.com/item.htm?spm=a1z0d.6639537.1997196601.227.1a477484PGp2WO&id=660478137105
+
