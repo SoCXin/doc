@@ -90,9 +90,3 @@ Lichee RV
 .. image:: images/B_D1_RV.png
     :target: https://item.taobao.com/item.htm?spm=a1z0d.6639537.1997196601.227.1a477484PGp2WO&id=660478137105
 
-
-哪吒
-^^^^^^^^^^^
-
-.. image:: images/哪吒.png
-    :target: https://d1.docs.aw-ol.com/d1_dev/
