@@ -4,7 +4,8 @@
 AIC8800M
 ===============
 
-`GitHub <https://github.com/SoCXin/AIC8800M>`_ : ``WiFi6`` ``BT5.0`` ``USB HS OTG`` ``DSP``
+* `aicsemi <https://www.aicsemi.com/>`_ : ``WiFi6`` ``BT5.2`` ``USB HS OTG`` ``DSP``
+* `Tags <https://github.com/SoCXin/AIC8800M>`_ : :ref:`wifi` / :ref:`bt` / :ref:`usb_hs`
 
 
 .. contents::
@@ -14,15 +15,13 @@ AIC8800M
 Xin简介
 -----------
 
-`VSF <https://github.com/vsfteam/vsf>`_
-
-
 .. contents::
     :local:
-
+    :depth: 1
 
 规格参数
 ~~~~~~~~~~~
+
 
 
 基本参数
@@ -51,8 +50,20 @@ Xin简介
 模拟性能
 ^^^^^^^^^^^
 
+生态资源
+^^^^^^^^^^^
+
+支持 :ref:`vsf`
+
+`SDK <https://github.com/vsfteam/AIC8800M_SDK_vsf>`_
+
+
 芯片架构
 ~~~~~~~~~~~
+
+.. contents::
+    :local:
+    :depth: 1
 
 功耗参数
 ^^^^^^^^^^^
@@ -66,7 +77,6 @@ Xin简介
 
 连接能力
 ~~~~~~~~~~~
-
 
 
 .. _aic8800_wifi:
@@ -99,7 +109,7 @@ Xin选择
 
 .. contents::
     :local:
-
+    :depth: 1
 
 品牌对比
 ~~~~~~~~~~~
@@ -113,4 +123,3 @@ RTL8852AU-CG
 型号对比
 ~~~~~~~~~~~
 
-`SDK <https://github.com/vsfteam/AIC8800M_SDK_vsf>`_

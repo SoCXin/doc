@@ -263,7 +263,13 @@ Ninja
 
 
 
+.. _vsf:
 
+VSF
+~~~~~~~~~~~~~
+``Versaloon Software Framework`` ``Apache2``
+
+`VSF framework <https://github.com/vsfteam/vsf>`_
 
 
 .. _mbed:
