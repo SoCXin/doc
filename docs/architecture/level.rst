@@ -9,10 +9,6 @@ Level
 .. hint::
     用于量化产品的性能指标，Level1-3主要用于控制，Level4-6可以部署算法，Level7-9为高性能计算
 
-.. contents::
-    :local:
-    :depth: 1
-
 
 .. _level1:
 

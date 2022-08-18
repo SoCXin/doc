@@ -135,7 +135,7 @@ Vendor
     * - :ref:`allwinner`
       -
       - :ref:`r329`
-      - :ref:`D1`
+      - :ref:`f133`
       - :ref:`v831`
       -
       -

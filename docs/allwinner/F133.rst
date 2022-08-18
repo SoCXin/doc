@@ -1,18 +1,20 @@
 
-.. _D1:
+.. _f133:
 
-D1
+F133
 =============
 
-`标签 <https://github.com/SoCXin/D1>`_ : ``Allwinner`` ``RISC-V`` ``C906`` ``1.1GHz`` ``WAFT`` ``Tina``
+* `Allwinner <https://www.allwinnertech.com>`_ : ``RISC-V`` ``D1S`` ``C906`` ``1.1 GHz`` ``WAFT`` ``64MB DDR2`` ``Tina``
+* `Tags <https://github.com/SoCXin/F133>`_ : :ref:`top` / :ref:`riscv`
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
 
-.. image:: ./images/D1.png
+.. image:: ./images/F133.png
     :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=97
 
 规格参数
@@ -29,13 +31,13 @@ Xin简介
 * 处理性能：
 * 封装规格：LFBGA337 (13*13*0.65mm)
 * 运行环境：-40°C to 85°C
-* RAM容量：1GB/2GB (DDR3)
+* RAM容量：64MB  (DDR2)
 * Flash容量：
 
 特征参数
 ^^^^^^^^^^^
 
-* 1.1 GHz XuanTie :ref:`xt_c906`
+* 1.1 GHz :ref:`xt_c906`
 * HiFi4 DSP
 * 32 KB L1 I-cache and 32 KB L1 D-cache
 
