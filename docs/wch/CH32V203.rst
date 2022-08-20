@@ -4,8 +4,8 @@
 CH32V203
 ============
 
-* `WCH <http://www.wch.cn/products/CH32V203>`_ : ``RISC-V4B`` ``青稞`` ``144MHz`` ``2x USB`` ``2x OPA`` ``HarmonyOS`` ``45uA/MHz``
-* `Tags <https://github.com/SoCXin/CH32V203>`_ : :ref:`pop` / :ref:`low`
+* `WCH <http://www.wch.cn/>`_ : ``RISC-V4B`` ``青稞`` ``增强型低功耗`` ``144MHz`` ``2x USB`` ``2x OPA`` ``HarmonyOS`` ``45uA/MHz``
+* `Tags <https://github.com/SoCXin/CH32V203>`_ : :ref:`ulp` / :ref:`low`
 
 .. contents::
     :local:
@@ -31,13 +31,13 @@ Xin简介
 * 处理性能：
 * 封装规格：:ref:`LQFP64`/:ref:`LQFP48`/QFN48/LQFP32/QFN28/TSSOP20
 * 运行环境：-40°C to 85°C
-* RAM容量：20 KB
-* Flash容量：64 KB
+* RAM容量：10/20 KB
+* Flash容量：32/64 KB
 
 特征参数
 ^^^^^^^^^^^
 
-* 80 MHz :ref:`wch_riscv4b`
+* 144 MHz :ref:`wch_riscv4b`
 * 7通道DMA控制器；
 * 16路TouchKey通道监测；
 * 16路12位ADC转换通道；
@@ -94,15 +94,8 @@ Xin选择
       - 2/1
       - U4/P2/C2
       - :ref:`LQFP64`
-    * - :ref:`ch32v103`
-      - :ref:`wch_riscv3a`
-      - 80 MHz
-      - 20KB/128KB
-      - 2/1
-      - U4/P2/C2
-      - :ref:`LQFP64`
     * - :ref:`gd32v103`
-     - :ref:`riscv`
+      - :ref:`riscv`
       - 108 MHz
       - 20KB/64KB
       -
@@ -110,9 +103,63 @@ Xin选择
       -
 
 
-
 型号对比
 ~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`vendor`
+      - :ref:`architecture`
+      - :ref:`frequency`
+      - :ref:`sram`/:ref:`flash`
+      - :ref:`usb`/:ref:`can`
+      - :ref:`peripherals`
+      - :ref:`package`
+    * - :ref:`ch32v203`
+      - :ref:`wch_riscv4b`
+      - 144 MHz
+      - 20KB/64KB
+      - 2/1
+      - U4/P2/C2
+      - :ref:`LQFP64`
+    * - :ref:`ch32v303`
+      - :ref:`wch_riscv4f`
+      - 144 MHz
+      - 64KB/256KB
+      - 2/1
+      - U8/P3/C2/S2
+      - :ref:`LQFP100`
+    * - :ref:`ch32v103`
+      - :ref:`wch_riscv3a`
+      - 80 MHz
+      - 20KB/128KB
+      - 1/1
+      - U4/P2/C2
+      - :ref:`LQFP64`
+
+.. _ch32v303:
+
+CH32V303
+^^^^^^^^^^^
+``大容量通用型`` ``RISC-V4F`` ``144MHz`` ``USB`` ``HarmonyOS``
+
+.. image:: ./images/CH32V303.png
+    :target: http://www.wch.cn/products/CH32V303.html
+
+* 144 MHz :ref:`wch_riscv4f`
+* RAM容量：32/64 KB
+* Flash容量：128/256 KB
+* 2组18路通用DMA
+* 4组运放比较器
+* 2组12位DAC转换
+* 2单元16通道12位ADC转换，16路触摸按键TouchKey
+* 1个USB2.0 FS主机/设备接口
+* 3个USART接口和5个UART接口
+* 1个CAN接口（2.0B主动）
+* SDIO接口、FSMC接口
+* 2组IIC接口、3组SPI接口、2组IIS接口
+* 封装形式 LQFP48/LQFP64M/LQFP100
 
 .. _ch32v103:
 
@@ -145,14 +192,4 @@ CH32V103
 
 .. image:: ./images/CH32V203l.png
     :target: http://www.wch.cn/products/CH32V203.html
-
-
-Xin应用
------------
-
-.. contents::
-    :local:
-
-开发板
-~~~~~~~~~~
 

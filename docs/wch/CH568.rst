@@ -4,7 +4,7 @@
 CH568
 ==========
 
-* `WCH <http://www.wch.cn/products/CH568>`_ : ``RISC-V3A`` ``120MHz`` ``USB HS`` ``SM4/AES`` ``SATA``
+* `WCH <http://www.wch.cn/>`_ : ``RISC-V3A`` ``120MHz`` ``USB HS`` ``SM4/AES`` ``SATA``
 * `Tags <https://github.com/SoCXin/CH568>`_ : :ref:`usb`
 
 .. contents::
