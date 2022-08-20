@@ -53,12 +53,6 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~
 
-.. image:: ./images/CH32V103s.png
-    :target: http://www.wch.cn/products/CH32V203.html
-
-* 上电/断电复位（POR/PDR）；
-* 可编程电压监测器（PVD）；
-
 功耗参数
 ^^^^^^^^^^^
 ``45uA/MHz``
@@ -192,4 +186,15 @@ CH32V103
 
 .. image:: ./images/CH32V203l.png
     :target: http://www.wch.cn/products/CH32V203.html
+
+Xin应用
+-----------
+
+.. contents::
+    :local:
+    :depth: 1
+
+智能门锁
+~~~~~~~~~~
+``16x TOUCH`` ``CH32V203``
 
