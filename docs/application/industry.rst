@@ -91,7 +91,7 @@ DoorLock
       - :ref:`ch32v307`
       - :ref:`aic8800`
       - :ref:`usb_hs`
-      - :ref:`wifi6`+:ref:`bt`
+      - :ref:`wifi6`
       - 1.9uA
 
 

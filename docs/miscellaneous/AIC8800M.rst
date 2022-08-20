@@ -5,7 +5,7 @@ AIC8800M
 ===============
 
 * `aicsemi <https://www.aicsemi.com/>`_ : ``WiFi6`` ``BT5.2`` ``USB HS OTG`` ``DSP``
-* `Tags <https://github.com/SoCXin/AIC8800M>`_ : :ref:`wifi` / :ref:`bt` / :ref:`usb_hs`
+* `Tags <https://github.com/SoCXin/AIC8800M>`_ : :ref:`wifi6` / :ref:`bt` / :ref:`usb_hs`
 
 
 .. contents::
@@ -42,9 +42,9 @@ Xin简介
 
 * 240MHz :ref:`cortex_m4` Dual Core
 * 480MHz DSP
-* 2.4G/5G WiFi双频
-* BT5.0 EDR/BLE 蓝牙双模
-* USB 2.0 OTG PHY
+* 2.4G/5G :ref:`wifi6`
+* :ref:`bt` 5.0 EDR/BLE 蓝牙双模
+* :ref:`usb_hs` 2.0 OTG PHY
 * 1x 60MHz SPI，1x I2C，3x UART，SDIO，I2S
 
 模拟性能
@@ -122,6 +122,13 @@ RTL8852AU-CG
 
 型号对比
 ~~~~~~~~~~~
+
+.. _aic8800a:
+
+AIC8800A
+^^^^^^^^^^^
+``Codec``
+
 
 应用方案
 ~~~~~~~~~~
