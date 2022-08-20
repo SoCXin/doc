@@ -98,7 +98,7 @@ PIN2PIN
       - :ref:`frequency`
       - RAM+ROM
       - Series
-      - UART/SPI/I2C
+      - :ref:`peripherals`
       - GPIO
     * - :ref:`stm32f030`
       - 48 MHz
