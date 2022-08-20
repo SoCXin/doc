@@ -4,11 +4,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CH32V307 &mdash; SoC</title>
+  <title>CH32V203 &mdash; SoC</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="canonical" href="https://doc.soc.xin/wch/CH32V307.html" />
+    <link rel="canonical" href="https://doc.soc.xin/wch/CH32V203.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -21,8 +21,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="CH32V208" href="CH32V208.html" />
-    <link rel="prev" title="CH32V203" href="CH32V203.html" />
+    <link rel="next" title="CH32V307" href="CH32V307.html" />
+    <link rel="prev" title="RISC-V" href="riscv.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -133,9 +133,9 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../vendor.html">Vendor</a> &raquo;</li>
           <li><a href="index.html">WCH</a> &raquo;</li>
-      <li>CH32V307</li>
+      <li>CH32V203</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/SoCXin/doc/blob/master/doc/wch/CH32V307.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/SoCXin/doc/blob/master/doc/wch/CH32V203.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -143,305 +143,223 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ch32v307">
-<span id="no-014"></span><span id="id1"></span><h1>CH32V307<a class="headerlink" href="#ch32v307" title="Permalink to this heading">¶</a></h1>
+  <section id="ch32v203">
+<span id="id1"></span><h1>CH32V203<a class="headerlink" href="#ch32v203" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
-<li><p><a class="reference external" href="http://www.wch.cn/">WCH</a> : <code class="docutils literal notranslate"><span class="pre">RISC-V</span></code> <code class="docutils literal notranslate"><span class="pre">RISC-V4F</span></code> <code class="docutils literal notranslate"><span class="pre">USB-HS-OTG(480Mbps)</span></code> <code class="docutils literal notranslate"><span class="pre">Ethernet</span></code> <code class="docutils literal notranslate"><span class="pre">10Mbps(PHY)</span></code> <code class="docutils literal notranslate"><span class="pre">1Gbps(MAC)</span></code> <code class="docutils literal notranslate"><span class="pre">CAN</span></code> <code class="docutils literal notranslate"><span class="pre">FSMC</span></code> <code class="docutils literal notranslate"><span class="pre">OPA</span></code> <code class="docutils literal notranslate"><span class="pre">DVP</span></code></p></li>
-<li><p><a class="reference external" href="https://github.com/SoCXin/CH32V307">Tags</a> : <a class="reference internal" href="../list/pop.html#pop"><span class="std std-ref">方案Xin</span></a> / <a class="reference internal" href="../application/ethernet.html#ethernet"><span class="std std-ref">Ethernet</span></a> / <a class="reference internal" href="../application/usb.html#usb-hs"><span class="std std-ref">USB HS</span></a></p></li>
+<li><p><a class="reference external" href="http://www.wch.cn/">WCH</a> : <code class="docutils literal notranslate"><span class="pre">RISC-V4B</span></code> <code class="docutils literal notranslate"><span class="pre">青稞</span></code> <code class="docutils literal notranslate"><span class="pre">增强型低功耗</span></code> <code class="docutils literal notranslate"><span class="pre">144MHz</span></code> <code class="docutils literal notranslate"><span class="pre">2x</span> <span class="pre">USB</span></code> <code class="docutils literal notranslate"><span class="pre">2x</span> <span class="pre">OPA</span></code> <code class="docutils literal notranslate"><span class="pre">HarmonyOS</span></code> <code class="docutils literal notranslate"><span class="pre">45uA/MHz</span></code></p></li>
+<li><p><a class="reference external" href="https://github.com/SoCXin/CH32V203">Tags</a> : <a class="reference internal" href="../list/ulp.html#ulp"><span class="std std-ref">能效Xin</span></a> / <a class="reference internal" href="../list/low.html#low"><span class="std std-ref">白菜Xin</span></a></p></li>
 </ul>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#xin" id="id22">Xin简介</a></p></li>
-<li><p><a class="reference internal" href="#id11" id="id23">Xin选择</a></p></li>
-<li><p><a class="reference internal" href="#id18" id="id24">Xin应用</a></p></li>
+<li><p><a class="reference internal" href="#xin" id="id18">Xin简介</a></p></li>
+<li><p><a class="reference internal" href="#id8" id="id19">Xin选择</a></p></li>
+<li><p><a class="reference internal" href="#id15" id="id20">Xin应用</a></p></li>
 </ul>
 </div>
 <section id="xin">
-<h2><a class="toc-backref" href="#id22">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
-<a class="reference external image-reference" href="http://www.wch.cn/products/CH32V307.html"><img alt="../_images/CH32V307.png" src="../_images/CH32V307.png" /></a>
-<p>CH32V307基于32位RISC-V设计的互联型微控制器，配备了硬件堆栈区、快速中断入口，在标准RISC-V基础上大大提高了中断响应速度。加入单精度浮点指令集，扩充堆栈区，具有更高的运算性能。扩展串口U(S)ART数量到8组，电机定时器到4组。提供USB2.0高速接口（480Mbps）并内置了PHY收发器，以太网MAC升级到千兆并集成了10M-PHY模块。</p>
-<div class="contents local topic" id="id2">
-<ul class="simple">
-<li><p><a class="reference internal" href="#id3" id="id25">规格参数</a></p></li>
-<li><p><a class="reference internal" href="#id8" id="id26">芯片架构</a></p></li>
-<li><p><a class="reference internal" href="#id10" id="id27">连接能力</a></p></li>
-</ul>
-</div>
+<h2><a class="toc-backref" href="#id18">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<a class="reference external image-reference" href="http://www.wch.cn/products/CH32V203.html"><img alt="../_images/CH32V203.png" src="../_images/CH32V203.png" /></a>
+<section id="id2">
+<h3>规格参数<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
 <section id="id3">
-<h3><a class="toc-backref" href="#id25">规格参数</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
-<section id="id4">
-<h4>基本参数<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<h4>基本参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h4>
 <ul class="simple">
 <li><p>发布时间：</p></li>
-<li><p>参考价格： <a class="reference external" href="https://item.szlcsc.com/3443981.html">￥12.79</a></p></li>
+<li><p>参考价格： <a class="reference external" href="https://item.szlcsc.com/3483852.html">￥2.71</a></p></li>
 <li><p>制程工艺：</p></li>
 <li><p>供货周期：</p></li>
-<li><p>处理性能：<a class="reference internal" href="../architecture/level.html#level3"><span class="std std-ref">Level3</span></a></p></li>
-<li><p>封装规格：LQFP64M/LQFP100/QFN68</p></li>
+<li><p>处理性能：</p></li>
+<li><p>封装规格：<a class="reference internal" href="../list/package.html#lqfp64"><span class="std std-ref">LQFP64</span></a>/<a class="reference internal" href="../list/package.html#lqfp48"><span class="std std-ref">LQFP48</span></a>/QFN48/LQFP32/QFN28/TSSOP20</p></li>
 <li><p>运行环境：-40°C to 85°C</p></li>
-<li><p>RAM容量：64 KB</p></li>
-<li><p>Flash容量：256 KB</p></li>
+<li><p>RAM容量：10/20 KB</p></li>
+<li><p>Flash容量：32/64 KB</p></li>
 </ul>
+</section>
+<section id="id5">
+<h4>特征参数<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>144 MHz <a class="reference internal" href="riscv.html#wch-riscv4b"><span class="std std-ref">RISC-V4B</span></a></p></li>
+<li><p>7通道DMA控制器；</p></li>
+<li><p>16路TouchKey通道监测；</p></li>
+<li><p>16路12位ADC转换通道；</p></li>
+<li><p>7个定时器；</p></li>
+<li><p>1个USB2.0主机/设备接口（全速和低速）；</p></li>
+<li><p>2个IIC接口（支持SMBus/PMBus）；</p></li>
+<li><p>3个USART接口；</p></li>
+<li><p>2个SPI接口（支持Master和Slave模式）；</p></li>
+<li><p>51个I/O口，所有的I/O口都可以映射到16个外部中断；</p></li>
+<li><p>CRC计算单元，96位芯片唯一ID；</p></li>
+</ul>
+</section>
 </section>
 <section id="id6">
-<h4>特征参数<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
-<ul class="simple">
-<li><p>144MHz <a class="reference internal" href="riscv.html#wch-riscv4f"><span class="std std-ref">RISC-V4F</span></a> (青稞)</p></li>
-<li><p><a class="reference internal" href="#ch32v307-usb"><span class="std std-ref">USB</span></a> FS OTG</p></li>
-<li><p><a class="reference internal" href="#ch32v307-usb"><span class="std std-ref">USB</span></a> HS H/D(480Mbps PHY)</p></li>
-<li><p>3x USART + 5x UART</p></li>
-<li><p>2x <a class="reference internal" href="#ch32v307-can"><span class="std std-ref">CAN</span></a> 2.0B主动</p></li>
-<li><p>千兆以太网控制器 <a class="reference internal" href="#ch32v307-eth"><span class="std std-ref">ETH</span></a> (10Mbps w/PHY)</p></li>
-<li><p>2组18路通用DMA</p></li>
-<li><p>4组运放比较器</p></li>
-<li><p>10组定时器</p></li>
-<li><p>SDIO接口、FSMC接口、DVP数字图像接口</p></li>
-<li><p>2x IIC接口、3x SPI接口、2x IIS接口</p></li>
-</ul>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>千兆以太网控制器1Gbps MAC和10Mbps PHY，USB HS设备，非常强大的有线连接能力</p>
-</div>
-</section>
+<h3>芯片架构<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
 <section id="id7">
-<h4>模拟性能<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">TouchKey</span></code> <code class="docutils literal notranslate"><span class="pre">ADC</span></code> <code class="docutils literal notranslate"><span class="pre">DAC</span></code> <code class="docutils literal notranslate"><span class="pre">OPA</span></code></p>
+<h4>功耗参数<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">45uA/MHz</span></code></p>
 <ul class="simple">
-<li><p>4x OPA</p></li>
-<li><p>2x 12bit DAC</p></li>
-<li><p>2x 12bit ADC (16ch)</p></li>
-<li><p>16x TouchKey</p></li>
+<li><p>供电电压：2.5/3.3V，GPIO单元独立供电,多种低功耗模式：睡眠、停止、待机</p></li>
+<li><p>运行模式低至 44.65uA/MHz</p></li>
+<li><p>睡眠模式低至 17.90uA/MHz</p></li>
 </ul>
+</section>
 </section>
 </section>
 <section id="id8">
-<h3><a class="toc-backref" href="#id26">芯片架构</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
-<a class="reference external image-reference" href="http://www.wch.cn/products/CH32V307.html"><img alt="../_images/CH32V307P.png" src="../_images/CH32V307P.png" /></a>
-<section id="id9">
-<h4>功耗参数<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h4>
+<h2><a class="toc-backref" href="#id19">Xin选择</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id9">
 <ul class="simple">
-<li><p>供电电压：2.5/3.3V，GPIO单元独立供电</p></li>
-<li><p>多种低功耗模式：睡眠、停止、待机</p></li>
+<li><p><a class="reference internal" href="#id10" id="id21">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id22">型号对比</a></p></li>
+<li><p><a class="reference internal" href="#id14" id="id23">版本对比</a></p></li>
 </ul>
-<a class="reference external image-reference" href="http://www.wch.cn/products/CH32V307.html"><img alt="../_images/CH32V307pwr.png" src="../_images/CH32V307pwr.png" /></a>
-</section>
-</section>
+</div>
 <section id="id10">
-<h3><a class="toc-backref" href="#id27">连接能力</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">USB-HS-OTG(480Mbps)</span></code> <code class="docutils literal notranslate"><span class="pre">USB-FS-OTG</span></code> <code class="docutils literal notranslate"><span class="pre">CAN2.0B</span></code> <code class="docutils literal notranslate"><span class="pre">Ethernet</span></code></p>
+<h3><a class="toc-backref" href="#id21">品牌对比</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p><a class="reference internal" href="index.html#wch"><span class="std std-ref">WCH</span></a></p></th>
-<th class="head"><p>UART</p></th>
-<th class="head"><p>SDIO</p></th>
-<th class="head"><p>SPI</p></th>
-<th class="head"><p>FSMC</p></th>
-<th class="head"><p><a class="reference internal" href="#ch32v307-usb"><span class="std std-ref">USB</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="#ch32v307-can"><span class="std std-ref">CAN</span></a></p></th>
-<th class="head"><p>I2C</p></th>
-<th class="head"><p>I2S</p></th>
-<th class="head"><p><a class="reference internal" href="#ch32v307-eth"><span class="std std-ref">ETH</span></a></p></th>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a>/<a class="reference internal" href="../list/low.html#flash"><span class="std std-ref">Flash</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../application/usb.html#usb"><span class="std std-ref">USB</span></a>/<a class="reference internal" href="../application/peripherals.html#can"><span class="std std-ref">CAN</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../application/peripherals.html#peripherals"><span class="std std-ref">Peripherals</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/package.html#package"><span class="std std-ref">Package</span></a></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="#ch32v307"><span class="std std-ref">CH32V307</span></a></p></td>
-<td><p>5+3</p></td>
-<td><p>1</p></td>
-<td><p>3</p></td>
-<td><p>1</p></td>
-<td><p>HS+FS</p></td>
-<td><p>2</p></td>
-<td><p>2</p></td>
-<td><p>2</p></td>
-<td><p>1Gbps</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#ch32v203"><span class="std std-ref">CH32V203</span></a></p></td>
+<td><p><a class="reference internal" href="riscv.html#wch-riscv4b"><span class="std std-ref">RISC-V4B</span></a></p></td>
+<td><p>144 MHz</p></td>
+<td><p>20KB/64KB</p></td>
+<td><p>2/1</p></td>
+<td><p>U4/P2/C2</p></td>
+<td><p><a class="reference internal" href="../list/package.html#lqfp64"><span class="std std-ref">LQFP64</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../gigadevice/GD32V103.html#gd32v103"><span class="std std-ref">GD32V103</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
+<td><p>108 MHz</p></td>
+<td><p>20KB/64KB</p></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<section id="usb">
-<span id="ch32v307-usb"></span><h4>USB<a class="headerlink" href="#usb" title="Permalink to this heading">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">OTG</span></code> <code class="docutils literal notranslate"><span class="pre">480Mbps</span></code> <code class="docutils literal notranslate"><span class="pre">PHY</span></code></p>
-<ul class="simple">
-<li><p>USB FS OTG</p></li>
-<li><p>USB HS H/D(480Mbps PHY)</p></li>
-</ul>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>支持和集成USB 480Mbps PHY的MCU较少，而且性价比低，例如STM32F7系列</p>
-</div>
-</section>
-<section id="eth">
-<span id="ch32v307-eth"></span><h4>ETH<a class="headerlink" href="#eth" title="Permalink to this heading">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">1Gbps(MAC)</span></code> <code class="docutils literal notranslate"><span class="pre">10Mbps(PHY)</span></code></p>
-<ul class="simple">
-<li><p>1Gbps MAC</p></li>
-<li><p>10Mbps PHY</p></li>
-</ul>
-</section>
-<section id="can">
-<span id="ch32v307-can"></span><h4>CAN<a class="headerlink" href="#can" title="Permalink to this heading">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">CAN</span> <span class="pre">2.0B</span></code></p>
-</section>
-</section>
 </section>
 <section id="id11">
-<h2><a class="toc-backref" href="#id23">Xin选择</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
-<div class="contents local topic" id="id12">
+<h3><a class="toc-backref" href="#id22">型号对比</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a>/<a class="reference internal" href="../list/low.html#flash"><span class="std std-ref">Flash</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../application/usb.html#usb"><span class="std std-ref">USB</span></a>/<a class="reference internal" href="../application/peripherals.html#can"><span class="std std-ref">CAN</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../application/peripherals.html#peripherals"><span class="std std-ref">Peripherals</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/package.html#package"><span class="std std-ref">Package</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#ch32v203"><span class="std std-ref">CH32V203</span></a></p></td>
+<td><p><a class="reference internal" href="riscv.html#wch-riscv4b"><span class="std std-ref">RISC-V4B</span></a></p></td>
+<td><p>144 MHz</p></td>
+<td><p>20KB/64KB</p></td>
+<td><p>2/1</p></td>
+<td><p>U4/P2/C2</p></td>
+<td><p><a class="reference internal" href="../list/package.html#lqfp64"><span class="std std-ref">LQFP64</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ch32v303"><span class="std std-ref">CH32V303</span></a></p></td>
+<td><p><a class="reference internal" href="riscv.html#wch-riscv4f"><span class="std std-ref">RISC-V4F</span></a></p></td>
+<td><p>144 MHz</p></td>
+<td><p>64KB/256KB</p></td>
+<td><p>2/1</p></td>
+<td><p>U8/P3/C2/S2</p></td>
+<td><p><a class="reference internal" href="../list/package.html#lqfp100"><span class="std std-ref">LQFP100</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ch32v103"><span class="std std-ref">CH32V103</span></a></p></td>
+<td><p><a class="reference internal" href="riscv.html#wch-riscv3a"><span class="std std-ref">RISC-V3A</span></a></p></td>
+<td><p>80 MHz</p></td>
+<td><p>20KB/128KB</p></td>
+<td><p>1/1</p></td>
+<td><p>U4/P2/C2</p></td>
+<td><p><a class="reference internal" href="../list/package.html#lqfp64"><span class="std std-ref">LQFP64</span></a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="ch32v303">
+<span id="id12"></span><h4>CH32V303<a class="headerlink" href="#ch32v303" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">大容量通用型</span></code> <code class="docutils literal notranslate"><span class="pre">RISC-V4F</span></code> <code class="docutils literal notranslate"><span class="pre">144MHz</span></code> <code class="docutils literal notranslate"><span class="pre">USB</span></code> <code class="docutils literal notranslate"><span class="pre">HarmonyOS</span></code></p>
+<a class="reference external image-reference" href="http://www.wch.cn/products/CH32V303.html"><img alt="../_images/CH32V303.png" src="../_images/CH32V303.png" /></a>
 <ul class="simple">
-<li><p><a class="reference internal" href="#id13" id="id28">品牌对比</a></p></li>
-<li><p><a class="reference internal" href="#id14" id="id29">型号对比</a></p></li>
-<li><p><a class="reference internal" href="#id16" id="id30">版本对比</a></p></li>
+<li><p>144 MHz <a class="reference internal" href="riscv.html#wch-riscv4f"><span class="std std-ref">RISC-V4F</span></a></p></li>
+<li><p>RAM容量：32/64 KB</p></li>
+<li><p>Flash容量：128/256 KB</p></li>
+<li><p>2组18路通用DMA</p></li>
+<li><p>4组运放比较器</p></li>
+<li><p>2组12位DAC转换</p></li>
+<li><p>2单元16通道12位ADC转换，16路触摸按键TouchKey</p></li>
+<li><p>1个USB2.0 FS主机/设备接口</p></li>
+<li><p>3个USART接口和5个UART接口</p></li>
+<li><p>1个CAN接口（2.0B主动）</p></li>
+<li><p>SDIO接口、FSMC接口</p></li>
+<li><p>2组IIC接口、3组SPI接口、2组IIS接口</p></li>
+<li><p>封装形式 LQFP48/LQFP64M/LQFP100</p></li>
 </ul>
-</div>
-<section id="id13">
-<h3><a class="toc-backref" href="#id28">品牌对比</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="ch32v103">
+<span id="id13"></span><h4>CH32V103<a class="headerlink" href="#ch32v103" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">RISC-V3A</span></code> <code class="docutils literal notranslate"><span class="pre">80MHz</span></code> <code class="docutils literal notranslate"><span class="pre">USB</span></code> <code class="docutils literal notranslate"><span class="pre">HarmonyOS</span></code></p>
+<a class="reference external image-reference" href="http://www.wch.cn/products/CH32V103.html"><img alt="../_images/CH32V103.png" src="../_images/CH32V103.png" /></a>
+<ul class="simple">
+<li><p>80 MHz <a class="reference internal" href="riscv.html#wch-riscv3a"><span class="std std-ref">RISC-V3A</span></a></p></li>
+<li><p>7通道DMA控制器；</p></li>
+<li><p>16路TouchKey通道监测；</p></li>
+<li><p>16路12位ADC转换通道；</p></li>
+<li><p>7个定时器；</p></li>
+<li><p>1个USB2.0主机/设备接口（全速和低速）；</p></li>
+<li><p>2个IIC接口（支持SMBus/PMBus）；</p></li>
+<li><p>3个USART接口；</p></li>
+<li><p>2个SPI接口（支持Master和Slave模式）；</p></li>
+<li><p>51个I/O口，所有的I/O口都可以映射到16个外部中断；</p></li>
+<li><p>CRC计算单元，96位芯片唯一ID；</p></li>
+</ul>
+<a class="reference external image-reference" href="http://www.wch.cn/products/CH32V103.html"><img alt="../_images/CH32V103l.png" src="../_images/CH32V103l.png" /></a>
+</section>
 </section>
 <section id="id14">
-<h3><a class="toc-backref" href="#id29">型号对比</a><a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p><a class="reference internal" href="index.html#wch"><span class="std std-ref">WCH</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a>/<a class="reference internal" href="../list/low.html#flash"><span class="std std-ref">Flash</span></a></p></th>
-<th class="head"><p>More</p></th>
-<th class="head"><p>Interface</p></th>
-<th class="head"><p>USB</p></th>
-<th class="head"><p>Ethernet</p></th>
-<th class="head"><p><a class="reference internal" href="../list/package.html#package"><span class="std std-ref">Package</span></a></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="#ch32v307"><span class="std std-ref">CH32V307</span></a></p></td>
-<td><p>64KB/256KB</p></td>
-<td><p>DVP/FSMC</p></td>
-<td><p>8/1</p></td>
-<td><p>FS(OTG)+HS(PHY)</p></td>
-<td><p>10M(PHY)/1G(MAC)</p></td>
-<td><p>100/68/64</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="CH32F207.html#ch32f207"><span class="std std-ref">CH32F207</span></a></p></td>
-<td><p>64KB/256KB</p></td>
-<td><p>DVP/FSMC</p></td>
-<td><p>8/1</p></td>
-<td><p>FS(OTG)+HS(PHY)</p></td>
-<td><p>10M(PHY)/1G(MAC)</p></td>
-<td><p>100/68/64</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="CH32V208.html#ch32v208"><span class="std std-ref">CH32V208</span></a></p></td>
-<td><p>64KB/128KB</p></td>
-<td><p>BLE5.3</p></td>
-<td><p>4/0</p></td>
-<td><p>2xUSB FS OTG</p></td>
-<td><p>10M(PHY)</p></td>
-<td><p>28/48/64/68</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="CH32F208.html#ch32f208"><span class="std std-ref">CH32F208</span></a></p></td>
-<td><p>64KB/128KB</p></td>
-<td><p>BLE5.3</p></td>
-<td><p>4/0</p></td>
-<td><p>2xUSB FS OTG</p></td>
-<td><p>10M(PHY)</p></td>
-<td><p>100/64</p></td>
-</tr>
-</tbody>
-</table>
-<p>与 <a class="reference internal" href="#ch32v307"><span class="std std-ref">CH32V307</span></a> 规格完全相同，只是内核不同的替换方案为 <a class="reference internal" href="CH32F207.html#ch32f207"><span class="std std-ref">CH32F207</span></a></p>
+<h3><a class="toc-backref" href="#id23">版本对比</a><a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<a class="reference external image-reference" href="http://www.wch.cn/products/CH32V203.html"><img alt="../_images/CH32V203l.png" src="../_images/CH32V203l.png" /></a>
+</section>
+</section>
 <section id="id15">
-<h4>速度对比<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h4>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p><a class="reference internal" href="index.html#wch"><span class="std std-ref">WCH</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a>/<a class="reference internal" href="../list/low.html#flash"><span class="std std-ref">Flash</span></a></p></th>
-<th class="head"><p>More</p></th>
-<th class="head"><p>Interface</p></th>
-<th class="head"><p>USB</p></th>
-<th class="head"><p>Ethernet</p></th>
-<th class="head"><p><a class="reference internal" href="../list/package.html#package"><span class="std std-ref">Package</span></a></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="#ch32v307"><span class="std std-ref">CH32V307</span></a></p></td>
-<td><p>64KB/256KB</p></td>
-<td><p>DVP/FSMC</p></td>
-<td><p>8/1</p></td>
-<td><p>FS(OTG)+HS(PHY)</p></td>
-<td><p>10M(PHY)/1G(MAC)</p></td>
-<td><p>100/68/64</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="CH569.html#ch569"><span class="std std-ref">CH569</span></a></p></td>
-<td><p>112K/512K</p></td>
-<td><p>HSPI/SerDes</p></td>
-<td><p>4/0</p></td>
-<td><p>SS(PHY)</p></td>
-<td><p>1G(MAC)</p></td>
-<td><p>QFN68</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="id16">
-<h3><a class="toc-backref" href="#id30">版本对比</a><a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
-<a class="reference external image-reference" href="http://www.wch.cn/products/CH32V307.html"><img alt="../_images/CH32V2.png" src="../_images/CH32V2.png" /></a>
-<section id="ch32v305">
-<span id="id17"></span><h4>CH32V305<a class="headerlink" href="#ch32v305" title="Permalink to this heading">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">TSSOP20</span></code></p>
-<p>拥有小封装和高速USB</p>
-<a class="reference external image-reference" href="http://www.wch.cn/products/CH32V307.html"><img alt="../_images/CH32V307list.png" src="../_images/CH32V307list.png" /></a>
-</section>
-</section>
-</section>
-<section id="id18">
-<h2><a class="toc-backref" href="#id24">Xin应用</a><a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h2>
-<div class="contents local topic" id="id19">
+<h2><a class="toc-backref" href="#id20">Xin应用</a><a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id16">
 <ul class="simple">
-<li><p><a class="reference internal" href="#id20" id="id31">开发板</a></p></li>
-<li><p><a class="reference internal" href="#id21" id="id32">应用方案</a></p>
-<ul>
-<li><p><a class="reference internal" href="#dap-hs" id="id33">DAP HS</a></p></li>
-</ul>
-</li>
+<li><p><a class="reference internal" href="#id17" id="id24">智能门锁</a></p></li>
 </ul>
 </div>
-<section id="id20">
-<h3><a class="toc-backref" href="#id31">开发板</a><a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
-<a class="reference external image-reference" href="https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-6273769129.23.3ec643b3epEpoo&amp;id=669871604231"><img alt="../_images/YD-CH32V307VCT6.png" src="../_images/YD-CH32V307VCT6.png" /></a>
-</section>
-<section id="id21">
-<h3><a class="toc-backref" href="#id32">应用方案</a><a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
-<section id="dap-hs">
-<h4><a class="toc-backref" href="#id33">DAP HS</a><a class="headerlink" href="#dap-hs" title="Permalink to this heading">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">CMSIS-DAP</span> <span class="pre">v2</span></code></p>
-<p><a class="reference internal" href="../list/pop.html#cmsis-dap"><span class="std std-ref">CMSIS-DAP</span></a></p>
-</section>
+<section id="id17">
+<h3><a class="toc-backref" href="#id24">智能门锁</a><a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">16x</span> <span class="pre">TOUCH</span></code> <code class="docutils literal notranslate"><span class="pre">CH32V203</span></code></p>
 </section>
 </section>
 </section>
@@ -450,8 +368,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="CH32V203.html" class="btn btn-neutral float-left" title="CH32V203" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="CH32V208.html" class="btn btn-neutral float-right" title="CH32V208" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="riscv.html" class="btn btn-neutral float-left" title="RISC-V" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="CH32V307.html" class="btn btn-neutral float-right" title="CH32V307" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -596,8 +514,8 @@
     <dl>
       <dt>Created By Qtias</dt>
       <img src="../_static/images/weixin.jpg">
-        <!-- <dd><a href="https://github.com/SoCXin/doc/blob/master/doc/wch/CH32V307.rst"> View</a></dd>
-        <dd><a href="https://github.com/SoCXin/doc/edit/master/doc/wch/CH32V307.rst"> Edit</a></dd> -->
+        <!-- <dd><a href="https://github.com/SoCXin/doc/blob/master/doc/wch/CH32V203.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/doc/edit/master/doc/wch/CH32V203.rst"> Edit</a></dd> -->
     </dl>
   </div>
 </div><script>

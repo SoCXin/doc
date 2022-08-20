@@ -4,7 +4,7 @@
 CH583
 ============
 
-* `WCH <http://www.wch.cn/products/CH583>`_ : ``WCH`` ``RISC-V4A`` ``20MHz`` ``USB`` ``AES-128`` ``BLE5.3`` ``1.7V`` ``QFN48`` ``QFN28``
+* `WCH <http://www.wch.cn/>`_ : ``WCH`` ``RISC-V4A`` ``20MHz`` ``USB`` ``AES-128`` ``BLE5.3`` ``1.7V`` ``QFN48`` ``QFN28``
 * `Tags <https://github.com/SoCXin/CH583>`_ : :ref:`ulp` / :ref:`low` / :ref:`ble` / :ref:`usb`
 
 .. contents::
@@ -169,22 +169,21 @@ Xin选择
       - ≤ 80MHz
       - 32KB/1 MB
       - BLE5.1(104dBm)
-      - 2xOTG/4/X
+      - U4/P2/C1
       - 0.7-2.8uA
     * - :ref:`ch573`
       - :ref:`wch_riscv3a`
       - 20MHz
       - 18KB/512KB
       - BLE4.2(101dBm)
-      - OTG/4/X
+      - U4/P2
       - 0.3-6.0uA
-
     * - :ref:`ch579`
       - :ref:`cortex_m0`
       - 40MHz
       - 32KB/250KB
       - BLE4.2(96dBm)
-      - OTG/4/10Mbps
+      - U4/P2
       - 0.3-3.0uA
 
 
@@ -228,4 +227,10 @@ Xin应用
 
 智能门锁
 ~~~~~~~~~~
-``53GPIO`` ``BLE`` ``14x Touch`` ``CH583M``
+``20/40 GPIO`` ``BLE``  ``1.7V`` ``14x Touch`` ``CH583M``
+
+:ref:`ch582` + :ref:`esp32s2` 构成全功能智能门锁解决方案
+
+* 低功耗蓝牙连接开锁
+* WiFi连接和视频功能
+* 双触控交互和本地存储

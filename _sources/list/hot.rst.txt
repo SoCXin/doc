@@ -356,7 +356,7 @@ F030范式
       - :ref:`frequency`
       - RAM+ROM
       - Price
-      - UART/SPI/I2C
+      - :ref:`peripherals`
       - GPIO
     * - :ref:`stm32f030`
       - :ref:`cortex_m0`

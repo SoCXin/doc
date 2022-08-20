@@ -4,10 +4,13 @@
 CH32F103
 ============
 
-`GitHub <https://github.com/SoCXin/CH32F103>`_ : ``Cortex-M3`` ``72MHz`` ``USB H/D`` ``CAN2.0B`` ``DAC`` ``RTC``
+* `WCH <http://www.wch.cn>`_ : ``Cortex-M3`` ``72MHz`` ``USB H/D`` ``CAN2.0B`` ``DAC`` ``RTC``
+* `Tags <https://github.com/SoCXin/CH32F103>`_ :
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
@@ -200,7 +203,7 @@ GD32、APM32可以通过此软件下载，其它几种不可以，说明GD32和A
       - H/D+D
       - 2.0B
       - 72MHz
-    * - :ref:`ch32v103`
+    * - :ref:`ch32v203`
       - :ref:`wch_riscv3a`
       - 20/10KB
       - 64/32KB

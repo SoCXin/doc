@@ -41,7 +41,7 @@ WCH
       - :ref:`ch573`
       - :ref:`ch549`
       - :ref:`ch32f103`
-      - :ref:`ch32v103`
+      - :ref:`ch32v203`
     * - :ref:`ulp`
       -
       - :ref:`ch569`
@@ -420,7 +420,7 @@ RISC-V
 .. toctree::
     :maxdepth: 1
 
-    CH32V103 <CH32V103>
+    CH32V203 <CH32V203>
     CH32V307 <CH32V307>
     CH32V208 <CH32V208>
 

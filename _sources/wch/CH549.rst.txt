@@ -4,7 +4,7 @@
 CH549
 =========
 
-* `WCH <http://www.wch.cn/products/CH549>`_ : ``8051`` ``48MHz`` ``USB FS OTG`` ``4x UART`` ``LDO`` ``USB-PD``
+* `WCH <http://www.wch.cn/>`_ : ``8051`` ``48MHz`` ``USB FS OTG`` ``4x UART`` ``LDO`` ``USB-PD``
 * `Tags <https://github.com/SoCXin/CH549>`_ : :ref:`low` / :ref:`usb_pd`
 
 :ref:`ch554` --> :ref:`ch549`

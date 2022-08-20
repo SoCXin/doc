@@ -18,6 +18,9 @@ Xin简介
 规格参数
 ~~~~~~~~~~~
 
+.. contents::
+    :local:
+    :depth: 1
 
 基本参数
 ^^^^^^^^^^^
@@ -89,9 +92,9 @@ Xin简介
 Xin选择
 -----------
 
-
 .. contents::
     :local:
+    :depth: 1
 
 品牌对比
 ~~~~~~~~~
@@ -105,7 +108,6 @@ Xin选择
 
     * - :ref:`arterytek`
       - :ref:`frequency`
-      - :ref:`CoreMark`
       - :ref:`sram`/:ref:`flash`
       - :ref:`peripherals`
       - :ref:`adc12b`
@@ -113,7 +115,6 @@ Xin选择
       - :ref:`eth_mac`
     * - :ref:`at32f437`
       - 288MHz
-      -
       - 512KB/4MB
       - 4
       - 3
@@ -121,12 +122,11 @@ Xin选择
       - 100M
     * - :ref:`at32f435`
       - 288MHz
-      -
       - 512KB/4MB
       - 4
       - 3
       - 2/2
-      - 100M
+      -
 
 
 .. note::
@@ -161,29 +161,12 @@ LQFP100封装XMC透过外加锁存器件可连接非复用信号的PSRAM和SRAM
 Xin应用
 -----------
 
-`GitHub <https://github.com/SoCXin/AT32F437>`_
+.. contents::
+    :local:
+    :depth: 1
+
 
 以太网
 ~~~~~~~~~~~
 
-
-
-Xin总结
---------------
-
-.. contents::
-    :local:
-
-就 :ref:`at32f437` 资源配置和市场定位而言，是存在一定不合理，配置3个12bit 5.33MSPS ADC 是最大市场差异和产品亮点，但是并没有能够与之形成联动的通信外设，100Mbps可能是最接近也是最高速的对上通信端口，如果不能和上层设备互通，依赖本地的高速存储及计算能力，市场应用将很受限。
-
-
-
-能力构建
-~~~~~~~~~~~~~
-
-要点提示
-~~~~~~~~~~~~~
-
-问题整理
-~~~~~~~~~~~~~
 
