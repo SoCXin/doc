@@ -150,26 +150,27 @@ AIC8800A
     * - :ref:`doorlock`
       - 触控键盘
       - 外设连接
-      - 前后连接
+      - 前后通信
       - 网络连接
-      - 智能互联
-      - 音频接口
-      - 视频接口
+      - 家居互联
+      - 音视频
+      - 功耗
     * - :ref:`ch32v305`
-      - 16x Touch
-      - U5/P3/C2/S2
+      - 16Touch
+      - U5/P3/C2
       - :ref:`usb_hs`
       -
       -
-      - 2x I2S
-      - DVP
-    * - :ref:`aic8800`
+      - I2S+DVP
+      - 1.9uA
+    * - :ref:`aic8800a`
       -
       -
       - :ref:`usb_hs`
       - :ref:`wifi6`
       - :ref:`bt`
-      - I2S
-      -
+      - I2S+Codec
+      - ?
+
 
 

@@ -72,28 +72,6 @@ Matter 基于IP协议（例如Wi-Fi、以太网和Thread）而构建，提供了
 .. note::
     根据ABI research的最新预测，在2022年到2030年这个区间内，Matter设备的出货量将达到550亿。
 
-.. _doorlock:
-
-DoorLock
-~~~~~~~~~~~
-``低功耗`` ``交互`` ``安全性`` ``无线通信``
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`doorlock`
-      - 外置主控
-      - 内置主控
-      - 内外连接
-      - 无线通信
-      - 待机功耗
-    * - :ref:`doorlock_r1`
-      - :ref:`ch32v307`
-      - :ref:`aic8800`
-      - :ref:`usb_hs`
-      - :ref:`wifi6`
-      - 1.9uA
-
 
 
 PLC

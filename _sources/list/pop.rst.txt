@@ -70,7 +70,7 @@ grblHAL
 .. list-table::
     :header-rows:  1
 
-    * - 
+    * -
       - :ref:`architecture`
       - RAM
       - Flash
@@ -143,3 +143,34 @@ ARM Cortex处理器提供coresight调试和跟踪单元。CMSIS-DAP支持包含�
 
 * CMSIS(Cortex-M Software Interface Standard)是ARM Cortex-M MCU软件接口标准。
 * DAP(DebugAccess Port) 是调试访问口。
+
+
+智能家居
+-------------
+
+.. _doorlock:
+
+DoorLock
+~~~~~~~~~~~
+``低功耗`` ``交互`` ``安全性`` ``无线通信``
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`doorlock`
+      - 外置主控
+      - 内置主控
+      - 内外连接
+      - 网络连接
+      - 家居互联
+      - 待机功耗
+    * - :ref:`doorlock_r1`
+      - :ref:`ch32v307`
+      - :ref:`aic8800`
+      - :ref:`usb_hs`
+      - :ref:`wifi6`
+      - :ref:`bt`
+      - 1.9uA
+
+
+

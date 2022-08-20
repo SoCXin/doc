@@ -208,9 +208,6 @@ Xin选择
 
 与 :ref:`ch32v307` 规格完全相同，只是内核不同的替换方案为 :ref:`ch32f207`
 
-速度对比
-^^^^^^^^^^
-
 .. list-table::
     :header-rows:  1
 
@@ -218,8 +215,8 @@ Xin选择
       - :ref:`sram`/:ref:`flash`
       - More
       - Interface
-      - USB
-      - Ethernet
+      - :ref:`usb`
+      - :ref:`ethernet`
       - :ref:`package`
     * - :ref:`ch32v307`
       - 64KB/256KB
@@ -249,7 +246,7 @@ CH32V305
 ^^^^^^^^^^^
 ``TSSOP20``
 
-拥有小封装和高速USB
+拥有小封装和 :ref:`usb_hs`
 
 .. image:: ./images/CH32V307list.png
     :target: http://www.wch.cn/products/CH32V307.html
@@ -299,26 +296,26 @@ DAP HS
     * - :ref:`doorlock`
       - 触控键盘
       - 外设连接
-      - 前后连接
+      - 前后通信
       - 网络连接
-      - 智能互联
-      - 音频接口
-      - 视频接口
+      - 家居互联
+      - 音视频
+      - 功耗
     * - :ref:`ch32v305`
-      - 16x Touch
-      - U5/P3/C2/S2
+      - 16Touch
+      - U5/P3/C2
       - :ref:`usb_hs`
       -
       -
-      - 2x I2S
-      - DVP
-    * - :ref:`aic8800`
+      - I2S+DVP
+      - 1.9uA
+    * - :ref:`aic8800a`
       -
       -
       - :ref:`usb_hs`
       - :ref:`wifi6`
       - :ref:`bt`
-      -
-      -
+      - I2S+Codec
+      - ?
 
 

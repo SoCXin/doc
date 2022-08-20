@@ -37,7 +37,6 @@ Xin简介
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm8-8-bit-mcus/stm8s-series/stm8s-value-line.html
 
 
-.. _tssop20:
 
 TSSOP20
 ^^^^^^^^^^^
