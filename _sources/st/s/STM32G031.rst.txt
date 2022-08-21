@@ -4,8 +4,8 @@
 STM32G031
 ===============
 
-`ST <https://www.st.com/en/microcontrollers-microprocessors.html>`_ : ``Cortex-M0`` ``64MHz`` ``LPUART`` ``LPTIM`` ``RTC`` ``12-bit ADC 2.5Msps``
-* `Tags <https://github.com/SoCXin/TKM32F499>`_ : :ref:`low` / :ref:`ulp` / :ref:`adc`
+* `ST <https://www.st.com/en/microcontrollers-microprocessors.html>`_ : ``Cortex-M0`` ``64MHz`` ``LPUART`` ``LPTIM`` ``RTC`` ``12-bit ADC 2.5Msps``
+* `Tags <https://github.com/SoCXin/STM32G031>`_ : :ref:`low` / :ref:`ulp` / :ref:`adc`
 
 
 .. contents::
@@ -29,7 +29,7 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：
-* 官方价格：$0.8
+* 参考价格： `￥6.25 <https://item.szlcsc.com/428989.html>`_
 * 制程工艺：90 nm
 * 供货周期：
 * 处理性能：142 :ref:`CoreMark` (59 :ref:`DMIPS` ) , :ref:`level2`
@@ -66,17 +66,16 @@ Xin简介
 .. image:: ./images/STM32G031s.png
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
+* HSI RC 16 MHz(±1%)
+* LSI RC 32 kHz(±5%)
+
 功耗参数
 ^^^^^^^^^^^
 
 * 供电电压: 1.7 to 3.6 V
 * 运行功耗: 100μA/MHz
 
-时钟相关
-^^^^^^^^^^^
 
-* HSI RC 16 MHz(±1%)
-* LSI RC 32 kHz(±5%)
 
 .. _stm32_lpuart:
 
@@ -111,6 +110,13 @@ STM32G0系列产品，就性能和市场定位而言，十分精准，弥补了S
 
 .. warning::
     STM32G0X1系列对比 :ref:`stm32g030` 多了 :ref:`stm32_lpuart` 和  :ref:`stm32_lptim` ，内部高速时钟精度可达1%，同时拥有更多可选的型号
+
+.. _stm32g071:
+
+STM32G071
+^^^^^^^^^^^^
+
+* 参考价格： `￥8.1 <https://item.szlcsc.com/769464.html>`_
 
 .. _stm32g0c1:
 
