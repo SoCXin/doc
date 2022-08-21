@@ -4,11 +4,14 @@
 STM8S003
 ===============
 
-* 关键词：``STM8S``
-* 资源库：`GitHub <https://github.com/SoCXin/STM8S003>`_
+* `ST <https://www.st.com/en/microcontrollers-microprocessors.html>`_ : ``STM8S`` ``16MHz``
+* `Tags <https://github.com/SoCXin/STM8S003>`_ : :ref:`low`
+
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------

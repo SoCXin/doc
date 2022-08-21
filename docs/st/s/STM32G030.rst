@@ -162,13 +162,13 @@ STM32G070
 升级方案
 ^^^^^^^^^^
 
- :ref:`stm32g030` 并不支持USB PD功能，如果需要该功能的升级，可以选择参考方案 `USB Type-C™ and Power Delivery <https://www.st.com/content/st_com/en/ecosystems/stm32-usb-c.html>`_
+:ref:`stm32g030` 并不支持USB PD功能，如果需要该功能的升级，可以选择参考方案 `USB Type-C™ and Power Delivery <https://www.st.com/content/st_com/en/ecosystems/stm32-usb-c.html>`_
 
 
 降本方案
 ^^^^^^^^^^
 
- :ref:`stm32g030` 由于已经是STM32系列中成本最低的系列之一了，更多可能的降本方案为市场供给导致，更多可以选择国产 :ref:`cortex_m0` 入门级产品，可参考 :ref:`ref030`
+:ref:`stm32g030` 由于已经是STM32系列中成本最低的系列之一了，更多可能的降本方案为市场供给导致，更多可以选择国产 :ref:`cortex_m0` 入门级产品，可参考 :ref:`ref030`
 
 
 
