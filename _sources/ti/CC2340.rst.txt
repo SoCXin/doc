@@ -4,8 +4,7 @@
 CC2340
 ============
 
-`ti <https://www.ti.com.cn>`_ : ``Cortex-M0`` ``SimpleLink`` ``BLE`` ``ZigBee``
-
+`ti <https://www.ti.com.cn>`_ : ``Cortex-M0`` ``SimpleLink`` ``BLE`` ``ZigBee`` ``$0.79``
 
 .. contents::
     :local:
@@ -20,6 +19,8 @@ Xin简介
 
 规格参数
 ~~~~~~~~~~~
+
+凭借 <700nA 的待机电流可延长电池寿命，借助高达 512KB 的闪存可更大程度地提高设计灵活性，而且具有 +8dBm 的输出功率范围可扩展射频性能。 
 
 基本参数
 ^^^^^^^^^^^
@@ -51,8 +52,7 @@ Xin简介
 * 工作电压：1.71V ~ 3.8V
 * 待机电流 <830nA（RTC、RAM 保持）
 * 复位/关断电流 <150nA
-* 无线电 Rx、Tx 功率为 0dBm 时，电流 <5.3mA
-* 1s CONN 间隔：~6uA
+
 
 通信能力
 ~~~~~~~~~~~
@@ -65,19 +65,25 @@ BLE
 
 * TX -20dBm to +8dBm
 * RX -96Bm (1Mbps)
-
+* 无线电 Rx、Tx 功率为 0dBm 时，电流 <5.3mA
+* 1s CONN 间隔：~6uA
 
 Xin选择
 -----------
 
 .. contents::
     :local:
+    :depth: 1
+
 
 品牌对比
 ~~~~~~~~~~
 
 系列对比
 ~~~~~~~~~~
+
+.. image:: ./images/cc2340rx-price.png
+    :target: https://www.ti.com.cn/zh-cn/wireless-connectivity/bluetooth/cc2340.html?HQS=epd-null-null-con_loki_3q22_wireless-exah-pp-EEWORLD_0825-cn_awr&DCM=yes&dclid=COS9kOqE5vkCFQ0DXAodOUYKHg
 
 
 版本对比

@@ -35,28 +35,28 @@ Xindex
       - :ref:`low`
       - :ref:`ulp`
       - :ref:`top`
-      - :ref:`roast`
-    * - :ref:`esp32`
+      - :ref:`history`
+    * - :ref:`stm32g031`
       - :ref:`stm32f103`
       - :ref:`ch32v307`
       - :ref:`stc8`
       - :ref:`stm32u575`
       - :ref:`rt1170`
-      - :ref:`eai80`
+      - :ref:`esp32`
     * - :ref:`rp2040`
       - :ref:`mega328p`
       - :ref:`aic8800`
       - :ref:`ch552`
       - :ref:`stm32l412`
       - :ref:`hpm6750`
-      -
-    * - :ref:`gd32v103`
-      - :ref:`nrf52832`
+      - :ref:`gd32v103`
+    * - :ref:`aic8800`
+      - :ref:`rp2040`
       - :ref:`NO_013`
       - :ref:`ch573`
       - :ref:`cc2340`
       - :ref:`stm32h730`
-      -
+      - :ref:`nrf52832`
 
 .. hint::
     贫乏的过去追求全能，争鸣的当下追求差异，不远的未来追求极致
