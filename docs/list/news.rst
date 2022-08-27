@@ -39,7 +39,7 @@
 
 .. _update:
 
-Update
+新星Xin
 -------------
 ``2022``
 
@@ -85,4 +85,4 @@ Update
 
     时代的槽点  <roast>
     历史的余温  <history>
-    期待的未来  <future>
+    可期的未来  <future>

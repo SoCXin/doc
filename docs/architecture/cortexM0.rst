@@ -11,8 +11,8 @@ Cortex-M0
     :depth: 1
 
 
-简介
-----------
+架构简介
+---------------
 
 :ref:`performance` : ``1.62 CoreMark/MHz`` ``0.95 DMIPS/MHz``
 
