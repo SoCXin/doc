@@ -128,6 +128,8 @@ Espressif
 .. toctree::
     :maxdepth: 1
 
+    ESP32C5 <ESP32-C5>
+    ESP32C6 <ESP32-C6>
     ESP32C3 <ESP32-C3>
     ESP32C2 <ESP32-C2>
 

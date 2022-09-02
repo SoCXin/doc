@@ -4,7 +4,8 @@
 ESP32C2
 ================
 
-`espressif <https://www.espressif.com.cn/zh-hans/products/socs/esp32-c2>`_ : ``ESP8684`` ``RISC-V`` ``120MHz`` ``Wi-Fi`` ``1024-QAM`` ``BLE5.0`` ``QFN40``
+* `espressif <https://www.espressif.com/>`_ : ``ESP8684`` ``RISC-V`` ``120MHz`` ``Wi-Fi`` ``1024-QAM`` ``BLE5.0`` ``QFN40``
+* `Tags <https://github.com/SoCXin/ESP32C2>`_ : :ref:`wifi4` / :ref:`ble` / :ref:`riscv`
 
 .. contents::
     :local:
@@ -14,7 +15,7 @@ Xin简介
 -----------
 
 .. image:: ./images/ESP32C2.png
-    :target: https://www.espressif.com/zh-hans/news/ESP32-C2
+    :target: https://www.espressif.com/zh-hans/products/socs/esp32-c2
 
 
 规格参数
@@ -235,6 +236,7 @@ Xin应用
 
 .. contents::
     :local:
+    :depth: 1
 
 开发板
 ~~~~~~~~~~
@@ -246,27 +248,5 @@ ESP-IDF
 ^^^^^^^^^^^
 
 
-应用笔记
-~~~~~~~~~
 
-
-
-
-
-
-
-Xin总结
---------------
-
-.. contents::
-    :local:
-
-能力构建
-~~~~~~~~~~~~~
-
-要点提示
-~~~~~~~~~~~~~
-
-问题整理
-~~~~~~~~~~~~~
 
