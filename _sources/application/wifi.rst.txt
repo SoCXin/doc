@@ -71,7 +71,7 @@ Wi-Fi
       - WiFi&BLE
       - 6/2/1
       -
-      - QFN56
+      - :ref:`QFN56`
     * - :ref:`cc3200`
       - :ref:`cortex_m4`
       -
@@ -79,7 +79,15 @@ Wi-Fi
       - WiFi&BLE
       - 6/2/1
       -
-      - QFN56
+      - :ref:`QFN56`
+    * - :ref:`gd32w515`
+      - :ref:`cortex_m33`
+      -
+      - 448KB/2 MB
+      - :ref:`wifi4`
+      -
+      -
+      - :ref:`QFN56`
 
 
 
