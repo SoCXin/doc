@@ -70,6 +70,7 @@
 /GD32F130.html -> gigadevice/GD32F130.html
 /GD32F303.html -> gigadevice/GD32F303.html
 /GD32V103.html -> gigadevice/GD32V103.html
+/GD32W515.html -> gigadevice/GD32W515.html
 /MT2503.html -> MediaTek/MT2503.html
 /MT2625.html -> MediaTek/MT2625.html
 /MT7621.html -> MediaTek/MT7621.html
