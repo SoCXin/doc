@@ -4,7 +4,7 @@
 GD32F130
 ============
 
-`GigaDevice <https://www.gigadevice.com/zh-hans/>`_ : ``Cortex-M3`` ``48MHz``
+* `GigaDevice <https://www.gigadevice.com/zh-hans/>`_ : ``Cortex-M3`` ``48MHz``
 * `Tags <https://github.com/SoCXin/GD32F130>`_ : :ref:`ref030`
 
 .. contents::

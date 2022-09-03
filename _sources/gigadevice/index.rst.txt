@@ -10,7 +10,7 @@ GigaDevice
 .. image:: ./images/GigaDevice.png
     :target: https://www.gigadevice.com/zh-hans/
 
-产品简介
+MCU产品
 -----------
 
 

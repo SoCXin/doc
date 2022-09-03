@@ -4,10 +4,14 @@
 GD32V103
 ===============
 
-`标签 <https://github.com/SoCXin/GD32V103>`_ : ``RISC-V`` ``Bumblebee`` ``108MHz``
+* `GigaDevice <https://www.gigadevice.com/zh-hans/>`_ : ``RISC-V`` ``Bumblebee`` ``108MHz``
+* `Tags <https://github.com/SoCXin/GD32V103>`_ : :ref:`ulp`
+
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------

@@ -4,7 +4,7 @@
 GD32E230
 ============
 
-`GigaDevice <https://www.gigadevice.com/zh-hans/>`_ : ``Cortex-M23`` ``48MHz``
+* `GigaDevice <https://www.gigadevice.com/zh-hans/>`_ : ``Cortex-M23`` ``48MHz``
 * `Tags <https://github.com/SoCXin/GD32E230>`_ : :ref:`low`
 
 .. contents::
