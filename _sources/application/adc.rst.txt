@@ -401,7 +401,27 @@ LTC2508-32 同时提供两个输出代码：(1) 一个 32 位数字滤波高精�
 
 `LTC2508资料 <https://www.analog.com/cn/products/ltc2508-32.html>`_
 
+.. _LTC2201:
 
+LTC2201
+^^^^^^^^^^^^
+``16-bit 20MSPS`` ``SAR ADC`` ``211mW`` ``QFN48``
+
+* 81.6dB SNR and 100dB SFDRR (2.5V Range)
+
+
+`LTC2201 datasheet <https://www.analog.com/media/en/technical-documentation/data-sheets/2201f.pdf>`_
+
+.. _LTC2188:
+
+LTC2188
+^^^^^^^^^^^^
+``16-bit 20MSPS`` ``SAR ADC`` ``Dual Channel`` ``76mW`` ``QFN64``
+
+* 77dB SNR
+* 90dB SFDR
+
+`LTC2188 datasheet <https://www.analog.com/media/en/technical-documentation/data-sheets/2188f.pdf>`_
 
 
 实现方式
