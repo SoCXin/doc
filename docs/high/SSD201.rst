@@ -4,11 +4,13 @@
 SSD201
 =============
 
-* 关键词：``SigmaStar`` ``Cortex-A7`` ``1.2GHz``  ``Dual-core``
-* 资源库：`GitHub <https://github.com/SoCXin/SSD201>`_
+* `SigmaStar <http://www.sigmastarsemi.com/>`_ : ``Cortex-A7`` ``1.2GHz`` ``Dual-core`` ``$3``
+* `Tags <https://github.com/SoCXin/SSD201>`_ : :ref:`top`
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
