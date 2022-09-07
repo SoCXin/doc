@@ -4,10 +4,13 @@
 RT1020
 =============
 
-`GitHub <https://github.com/SoCXin/RT1020>`_ : ``Cortex-M7`` ``500MHz`` ``USB-HS-PHY`` ``ETH-MAC-100``
+* `NXP <https://www.nxp.com.cn>`_ : ``Cortex-M7`` ``500MHz`` ``USB-HS-PHY`` ``ETH-MAC-100``
+* `Tags <https://github.com/SoCXin/RT1020>`_ : :ref:`top` / :ref:`usb_hs`
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------

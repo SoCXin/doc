@@ -4,10 +4,13 @@
 RT1060
 =============
 
-`标签 <https://github.com/SoCXin/RT1060>`_ : ``Cortex-M7`` ``600MHz`` ``USB-HS-PHY`` ``ETH-MAC-100``
+* `NXP <https://www.nxp.com.cn>`_ : ``Cortex-M7`` ``600MHz`` ``USB-HS-PHY`` ``ETH-MAC-100``
+* `Tags <https://github.com/SoCXin/RT1060>`_ : :ref:`top` / :ref:`usb_hs`
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------

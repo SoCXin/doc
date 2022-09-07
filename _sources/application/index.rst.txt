@@ -36,7 +36,7 @@ Wireless
       - :ref:`cat1`
       - :ref:`cat4`
     * - 频段
-      - 868/915/2450
+      -
       -
       -
       -
@@ -75,11 +75,11 @@ Wireless
 .. toctree::
     :maxdepth: 1
 
-    LTE <lte>
-    Wi-Fi <wifi>
-    Bluetooth <bluetooth>
-    LPWA(LoRa/NB-IoT) <lpwa>
-    WPAN(ZigBee/RFID) <wpan>
+    Bluetooth(BLE) <bluetooth>
+    Wi-Fi(802.11) <wifi>
+    LTE(Cat.1) <lte>
+    LPWA(LoRa) <lpwa>
+    WPAN(ZigBee) <wpan>
 
 .. _wired:
 
@@ -109,9 +109,9 @@ Wired
 .. toctree::
     :maxdepth: 1
 
-    Ethernet <ethernet>
     USB <usb>
     PLC <plc>
+    Ethernet <ethernet>
     Others <peripherals>
 
 
