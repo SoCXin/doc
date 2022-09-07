@@ -37,7 +37,7 @@ ADC-MCU
       - 288 MHz
       - 630
       - 512K
-      - 3x16ch
+      - 3x5.33MSPS
       - X
       -
       - :ref:`LQFP64`
@@ -276,6 +276,15 @@ ADS4229
 
 `ADS4229芯片 <https://www.ti.com.cn/product/cn/ADS4229#order-quality>`_
 
+.. _MXT2162:
+
+MXT2162
+^^^^^^^^^^^^
+``12bit`` ``100MSPS`` ``TSSOP28``
+
+
+`MXT2162芯片手册 <http://www.mxtronics.com/n107/n124/n181/n184/c695/attr/2627.pdf>`_
+
 .. _MXT2088:
 
 MXT2088
@@ -296,7 +305,7 @@ MXT2088
 
 MXT2002是双8位500MSPS模数转换器，单通道采样率高达800MSPS
 
-`MXT2088芯片 <http://www.mxtronics.com/n107/n124/n181/n184/c692/content.html>`_
+`MXT2088芯片手册 <http://www.mxtronics.com/n107/n124/n181/n184/c692/content.html>`_
 
 
 .. _adc_hp:

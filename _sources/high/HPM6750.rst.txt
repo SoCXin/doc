@@ -52,8 +52,8 @@ Xin简介
 * 2x USB HS OTG (with PHY)
 * 2x 千兆网口
 * 4个CAN FD，17个UART，4个SPI，4个I2C
-* 16bit ADC @2Msps
-* 3x 12bit ADC @5Msps
+* :ref:`adc16b` 2Msps
+* 3x :ref:`adc12b` 5Msps
 * 4 个模拟比较器，多达 28 个模拟输入通道
 * QSPI/OSPI NOR Flash, PSRAM, HyperRAM/HyperFlash, 16b/32b SDRAM 166 MHz, SD卡和eMMC
 * 24位RGB LCD控制器，1366 x 768，60fps，双目摄像头，2D图形加速和JPEG编解码

@@ -35,7 +35,7 @@ ARM Cortex-M0+ 32bit MCU，48MHz，32KB Flash，4KB SRAM，DMA, 8 Timers，12bit
 * 48 MHz :ref:`cortex_m0`
 * 2x :ref:`hc32_opa`
 * 2x :ref:`hc32_cmp`
-* 12ch 12bit ADC (1.0 MSPS,内部基准电压1.575V)
+* 12ch :ref:`adc12b` (1.0 MSPS,内部基准电压1.575V)
 
 电源参数
 ^^^^^^^^^^^

@@ -51,7 +51,7 @@ ESP32-S3作为乐鑫现役旗舰产品，双核240MHz配置高于传统MCU，基
 * 1 × 16bit DVP, 1 × 16bit LCD
 * 2 × SDIO 主机
 * 44 x GPIO，JTAG 接口
-* 2x 12bit 100KSPS ADC (20ch)
+* 2x :ref:`adc12b` 100KSPS (20ch)
 * 14 × 电容式传感 GPIO
 * 4 Kbit eFuse，用户可用 1792bit
 
