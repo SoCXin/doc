@@ -4,11 +4,14 @@
 RT1170
 =============
 
-`GitHub <https://github.com/SoCXin/RT1170>`_ : ``Cortex-M7`` ``Cortex-M4`` ``Dual Core`` ``1 GHz``
+* `NXP <https://www.nxp.com.cn>`_ : ``Cortex-M7`` ``Cortex-M4`` ``Dual Core`` ``1 GHz``
+* `Tags <https://github.com/SoCXin/RT1170>`_ : :ref:`top` / :ref:`adc` / :ref:`usb_hs`
+
 
 .. contents::
     :local:
     :depth: 1
+
 
 Xin简介
 -----------
