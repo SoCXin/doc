@@ -59,7 +59,7 @@
     * - :ref:`NO_003`
       - WiFi6双频 + BT/BLE双模 + USB HS(PHY)
     * - :ref:`NO_004`
-      - 拥有5个独立12bit ADC，拥有 :ref:`stm32_hrtim`
+      - 拥有5个独立 :ref:`adc12b`，拥有 :ref:`stm32_hrtim`
     * - :ref:`NO_005`
       - 靠Cortex-M4性能针对 :ref:`stm32f030`,sLib安全库
     * - :ref:`NO_007`

@@ -51,7 +51,7 @@ Xin简介
 模拟性能
 ^^^^^^^^^^^
 
-* 6ch 12bit SAR ADC 1MSPS
+* 6ch :ref:`adc12b` SAR 1MSPS
 
 
 

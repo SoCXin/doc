@@ -42,8 +42,8 @@ Xin简介
 ^^^^^^^^^^^
 
 * 288 MHz :ref:`cortex_m4`
-* 3 x 5.33MSPS ADC (12bit x 16ch)
-* 2 x 12bit DAC
+* 3 x 5.33MSPS ADC (:ref:`adc12b` x 16ch)
+* 2 x 12-bit DAC
 * 3 x I²C (支持SMBus/PMBus)
 * 4 x SPI / I²S (SPI可达36MHz,其中I²S2/I²S3支持全双工)
 * 4 x USART + 4 x UART (支持ISO7816，LIN，IrDA接口和调制解调控制)
@@ -61,8 +61,8 @@ Xin简介
 ^^^^^^^^^^^
 ``5.33MSPS`` ``3x ADC``
 
-* 3x 12-bit ADC  <  :ref:`stm32g474` 5x 12bit ADC
-* 5.33MSPS@12-bit  > :ref:`hpm6750` 5MSPS@12bit
+* 3x:ref:`adc12b` < :ref:`stm32g474` 5x:ref:`adc12b`
+* 5.33MSPS (:ref:`adc12b`) > :ref:`hpm6750` 5MSPS (:ref:`adc12b`)
 
 
 芯片架构
@@ -114,14 +114,14 @@ Xin选择
       - :ref:`usb`/:ref:`can`
       - :ref:`eth_mac`
     * - :ref:`at32f437`
-      - 288MHz
+      - 288 MHz
       - 512KB/4MB
       - 4
       - 3
       - 2/2
       - 100M
     * - :ref:`at32f435`
-      - 288MHz
+      - 288 MHz
       - 512KB/4MB
       - 4
       - 3
