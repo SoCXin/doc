@@ -1,0 +1,46 @@
+
+.. _ax620a:
+
+AX620A
+=============
+
+* `GigaDevice <https://www.axera-tech.com/>`_ : ``Cortex-A7`` ``Quad Core`` ``NPU 3.6Tops int8``
+* `Tags <https://github.com/SoCXin/AX620A>`_ : :ref:`top`
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2021年
+* 发布价格：
+* 制程工艺：28 nm
+* 供货周期：
+* 处理性能： 
+
+
+
+特征参数
+^^^^^^^^^^^
+
+* :ref:`cortex_a7` Quad Core
+* 3.6Tops int8 NPU
+* ISP:4K@30fps
+* 视频编码:H.264, H.265 4K@30fps
+* 视频解码:1080p@60fps H.264 only
+* 支持1路RGMII/RMII接口模式的以太网
+* 支持双路4Lane MIPI DSI，最大支持单路4K@30fps
+
+
+芯片架构
+~~~~~~~~~~~~
+
