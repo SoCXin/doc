@@ -4,10 +4,13 @@
 AT32WB415
 ===============
 
-`GitHub <https://github.com/SoCXin/AT32WB415>`_ : ``Cortex-M4`` ``150MHz`` ``BLE5.0``
+* `Arterytek <https://www.arterytek.com/>`_ : ``Cortex-M4`` ``150MHz`` ``BLE5.0``
+* `Tags <https://github.com/SoCXin/AT32WB415>`_ : :ref:`ble`
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
