@@ -5,6 +5,7 @@ Wi-Fi
 ============
 ``802.11``
 
+.. image:: ./images/wifi.png
 
 
 

@@ -98,6 +98,7 @@
 /Hi3921.html -> miscellaneous/Hi3921.html
 /XY1100.html -> miscellaneous/XY1100.html
 /RDA8910.html -> miscellaneous/USI8910DM.html
+/USI8910.html -> miscellaneous/USI8910DM.html
 /TKM32F499.html -> miscellaneous/TKM32F499.html
 /HC32M120.html -> miscellaneous/HC32M120.html
 /AIC8800M.html -> miscellaneous/AIC8800M.html

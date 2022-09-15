@@ -4,10 +4,14 @@
 USI8910DM
 =============
 
-`标签 <https://github.com/SoCXin/USI8910DM>`_ : ``Cortex-R5`` ``800MHz`` ``64M DDR2`` ``0.2TOPS`` ``QFN88``
+* `RDA <https://www.unisoc.com/cn_zh/>`_ : ``Cortex-R5`` ``800MHz`` ``64M DDR2`` ``0.2TOPS`` ``QFN88``
+* `Tags <https://github.com/SoCXin/USI8910DM>`_ : :ref:`iot`
+
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
