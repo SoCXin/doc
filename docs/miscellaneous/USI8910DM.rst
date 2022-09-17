@@ -5,7 +5,7 @@ USI8910DM
 =============
 
 * `RDA <https://www.unisoc.com/cn_zh/>`_ : ``Cortex-R5`` ``800MHz`` ``64M DDR2`` ``0.2TOPS`` ``QFN88``
-* `Tags <https://github.com/SoCXin/USI8910DM>`_ : :ref:`iot`
+* `Tags <https://github.com/SoCXin/USI8910DM>`_ : :ref:`cat1`
 
 
 .. contents::

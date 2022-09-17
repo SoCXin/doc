@@ -29,7 +29,7 @@ IoT MCU芯片，支持平头哥CDK开发环境
 * 供货周期：
 * 处理性能：
 * 运行环境：-40°C to 125°C
-* 封装规格：QFN56 (6x6mm)
+* 封装规格：:ref:`QFN56`
 * SRAM容量：288 KB (PSRAM 64MB)
 * Flash容量：2 MB
 
@@ -80,7 +80,7 @@ Xin选择
       - 288KB/2MB
       - 16-bit ADC
       - 6/2/1
-      - QFN56
+      - :ref:`QFN56`
     * - :ref:`esp32s3`
       - 1181.6
       - 512KB/4MB
@@ -121,14 +121,14 @@ Xin选择
       - 288KB/2 MB
       - WiFi&BLE
       - 6/2/1
-      - QFN56
+      - :ref:`QFN56`
     * - :ref:`w806`
       - :ref:`xt804`
       -
       - 288KB/1 MB
       -
       - 6/2/1
-      - QFN56
+      - :ref:`QFN56`
 
 .. note::
     W801是联盛德在 W806 和 W800 基础上的一次技术升级

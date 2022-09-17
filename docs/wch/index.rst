@@ -456,13 +456,29 @@ RISC-V
 
 `单片机外围 <http://www.wch.cn/products/categories/40.html?pid=3#data>`_
 
-
 在硬件生态上十分丰富，但是没有挖掘出市场潜力，没有足够持续的软生态投入，厂商无法提供足够高的起点，技术优势积累在开发商手里，新受众和创客群体有限。
+
+.. _wch_usb_uart:
+
+USB-UART
+^^^^^^^^^^^
+
+.. image:: ./images/USB-UART.png
+    :target: https://special.wch.cn/zh_cn/produce/
+
+诸如CH344/CH348转换芯片可用于控制集中器场景，转换多路高速串口
+
+.. _wch_usb_pcie:
+
+USB-PCIe
+^^^^^^^^^^^
 
 `独立PCI/PCIE方案 <http://www.wch.cn/products/categories/49.html?pid=2>`_ 主要包括转串口/打印口/并口等
 
 .. image:: ./images/pci.png
     :target: http://www.wch.cn/products/category/2.html#data
+
+
 
 
 方案总结
