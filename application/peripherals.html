@@ -139,25 +139,25 @@
 <span id="id1"></span><h1>Peripherals<a class="headerlink" href="#peripherals" title="Permalink to this heading">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#id2" id="id14">通信外设</a></p></li>
-<li><p><a class="reference internal" href="#id10" id="id15">功能外设</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id15">通信外设</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id16">功能外设</a></p></li>
 </ul>
 </div>
 <section id="id2">
-<h2><a class="toc-backref" href="#id14">通信外设</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id15">通信外设</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">UART/SPI/I2C/I2S</span></code> <code class="docutils literal notranslate"><span class="pre">U/P/C/S</span></code></p>
 <div class="contents local topic" id="id3">
 <ul class="simple">
-<li><p><a class="reference internal" href="#uart" id="id16">UART</a></p></li>
-<li><p><a class="reference internal" href="#sdio" id="id17">SDIO</a></p></li>
-<li><p><a class="reference internal" href="#can" id="id18">CAN</a></p></li>
-<li><p><a class="reference internal" href="#i2c" id="id19">I2C</a></p></li>
-<li><p><a class="reference internal" href="#i3c" id="id20">I3C</a></p></li>
-<li><p><a class="reference internal" href="#spi" id="id21">SPI</a></p></li>
+<li><p><a class="reference internal" href="#uart" id="id17">UART</a></p></li>
+<li><p><a class="reference internal" href="#sdio" id="id18">SDIO</a></p></li>
+<li><p><a class="reference internal" href="#can" id="id19">CAN</a></p></li>
+<li><p><a class="reference internal" href="#i2c" id="id20">I2C</a></p></li>
+<li><p><a class="reference internal" href="#i3c" id="id21">I3C</a></p></li>
+<li><p><a class="reference internal" href="#spi" id="id22">SPI</a></p></li>
 </ul>
 </div>
 <section id="uart">
-<span id="id4"></span><h3><a class="toc-backref" href="#id16">UART</a><a class="headerlink" href="#uart" title="Permalink to this heading">¶</a></h3>
+<span id="id4"></span><h3><a class="toc-backref" href="#id17">UART</a><a class="headerlink" href="#uart" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">USART</span></code></p>
 <p>UART(Universal Asynchronous Receiver/Transmitter) 通用异步收发传输器，是一种异步收发传输器，在UART通讯协议中信号线上的状态位高电平代表’1’低电平代表’0’。</p>
 <ul class="simple">
@@ -173,17 +173,21 @@
 <p>针对RS232的不足，RS422采用5线（包括信号地线），拥有高输入阻抗和发送驱动能力，可实现一对多通信，通信距离可达1200米，通信速率可达10Mb/s，需要一电阻进行阻抗匹配。</p>
 <p>为扩展应用范围，EIA又于1983年在RS-422基础上制定了RS-485标准，增加了多点、双向通信能力，即允许多个发送器连接到同一条总线上，同时增加了发送器的驱动能力和冲突保护特性，扩展了总线共模范围，后命名为TIA/EIA-485-A标准。</p>
 <p>RS-485采用差分信号正逻辑，+2—+6 V表示逻辑1，-2—-6 V表示逻辑0，信号电平较低，可直接和TTL电平兼容，同样的通信速率可达10Mb/s，采用平衡驱动器和差分接收器的组合，抗共模干能力增强，通信距离实际可达3000米，支持32个节点，使用特制芯片最多支持400个节点。</p>
+<section id="id5">
+<h4>相关芯片<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<p>转USB类芯片 <a class="reference internal" href="../wch/index.html#wch-usb-uart"><span class="std std-ref">USB-UART</span></a></p>
+</section>
 </section>
 <section id="sdio">
-<span id="id5"></span><h3><a class="toc-backref" href="#id17">SDIO</a><a class="headerlink" href="#sdio" title="Permalink to this heading">¶</a></h3>
+<span id="id6"></span><h3><a class="toc-backref" href="#id18">SDIO</a><a class="headerlink" href="#sdio" title="Permalink to this heading">¶</a></h3>
 </section>
 <section id="can">
-<span id="id6"></span><h3><a class="toc-backref" href="#id18">CAN</a><a class="headerlink" href="#can" title="Permalink to this heading">¶</a></h3>
+<span id="id7"></span><h3><a class="toc-backref" href="#id19">CAN</a><a class="headerlink" href="#can" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">控制器局域网</span></code></p>
 <p>CAN总线，也叫做控制器局域网总线（Controller Area Network），是一种用于实时应用的串行通讯协议总线，它可以使用双绞线来传输信号，是世界上应用最广泛的现场总线之一。</p>
 </section>
 <section id="i2c">
-<span id="id7"></span><h3><a class="toc-backref" href="#id19">I2C</a><a class="headerlink" href="#i2c" title="Permalink to this heading">¶</a></h3>
+<span id="id8"></span><h3><a class="toc-backref" href="#id20">I2C</a><a class="headerlink" href="#i2c" title="Permalink to this heading">¶</a></h3>
 <p>I2C(Inter-Integrated Circuit BUS) 集成电路总线，多用于主控制器和从器件间的主从通信，在小数据量场合使用，传输距离短，任意时刻只能有一个主机等特性。IIC是真正的多主机总线，（对比SPI在每次通信前都需要把主机定死，而IIC可以在通讯过程中，改变主机），如果两个或更多的主机同时请求总线，可以通过冲突检测和仲裁防止总线数据被破坏</p>
 <ul class="simple">
 <li><p>起始：时钟线SCL为高时，数据线SDA由高到低</p></li>
@@ -202,7 +206,7 @@
 </ul>
 </section>
 <section id="i3c">
-<span id="id8"></span><h3><a class="toc-backref" href="#id20">I3C</a><a class="headerlink" href="#i3c" title="Permalink to this heading">¶</a></h3>
+<span id="id9"></span><h3><a class="toc-backref" href="#id21">I3C</a><a class="headerlink" href="#i3c" title="Permalink to this heading">¶</a></h3>
 <p>I3C吸纳了I2C和SPI的关键特性，并将其统一起来，同时在I2C的基础上，保留了2线的串行接口结构</p>
 <ul class="simple">
 <li><p>I3C总线可以支持multi-master即多主设备</p></li>
@@ -214,7 +218,7 @@
 <p>I3C允许从设备启动带内中断，这对于I2C和SPI设备来说都需要一根额外的信号线才能实现。当总线处于空闲状态时，从设备可以通过中断机制发送一个”START”信号，然后主设备会为从设备提供一个时钟信号，从设备可以通过主设备提供的分配地址将设备驱动到总线上来启动中断。</p>
 </section>
 <section id="spi">
-<span id="id9"></span><h3><a class="toc-backref" href="#id21">SPI</a><a class="headerlink" href="#spi" title="Permalink to this heading">¶</a></h3>
+<span id="id10"></span><h3><a class="toc-backref" href="#id22">SPI</a><a class="headerlink" href="#spi" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">QSPI</span></code> <code class="docutils literal notranslate"><span class="pre">OSPI</span></code></p>
 <p>SPI(Serial Peripheral Interface) 串行外设接口，是一种高速的，全双工，同步的通信总线，并且在芯片的管脚上只占用四根线，两个SPI设备之间通信必须由主设备 (Master) 来控制次设备 (Slave)</p>
 <ul class="simple">
@@ -231,20 +235,20 @@
 <p>IIC是真正的多主机总线（而这个SPI在每次通信前都需要把主机定死，而IIC可以在通讯过程中，改变主机），如果两个或更多的主机同时请求总线，可以通过冲突检测和仲裁防止总线数据被破坏。</p>
 </section>
 </section>
-<section id="id10">
-<h2><a class="toc-backref" href="#id15">功能外设</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
+<section id="id11">
+<h2><a class="toc-backref" href="#id16">功能外设</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Touch</span></code> <code class="docutils literal notranslate"><span class="pre">RTC</span></code></p>
-<div class="contents local topic" id="id11">
+<div class="contents local topic" id="id12">
 <ul class="simple">
-<li><p><a class="reference internal" href="#touch" id="id22">Touch</a></p></li>
-<li><p><a class="reference internal" href="#rtc" id="id23">RTC</a></p></li>
+<li><p><a class="reference internal" href="#touch" id="id23">Touch</a></p></li>
+<li><p><a class="reference internal" href="#rtc" id="id24">RTC</a></p></li>
 </ul>
 </div>
 <section id="touch">
-<span id="id12"></span><h3><a class="toc-backref" href="#id22">Touch</a><a class="headerlink" href="#touch" title="Permalink to this heading">¶</a></h3>
+<span id="id13"></span><h3><a class="toc-backref" href="#id23">Touch</a><a class="headerlink" href="#touch" title="Permalink to this heading">¶</a></h3>
 </section>
 <section id="rtc">
-<span id="id13"></span><h3><a class="toc-backref" href="#id23">RTC</a><a class="headerlink" href="#rtc" title="Permalink to this heading">¶</a></h3>
+<span id="id14"></span><h3><a class="toc-backref" href="#id24">RTC</a><a class="headerlink" href="#rtc" title="Permalink to this heading">¶</a></h3>
 </section>
 </section>
 </section>
