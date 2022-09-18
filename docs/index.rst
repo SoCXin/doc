@@ -73,15 +73,17 @@ Xindex
 .. list-table::
     :header-rows: 1
 
-    * -
-      - :ref:`wpan`
+    * - :ref:`application`
       - :ref:`bt`
       - :ref:`wifi`
+      - :ref:`lpwa`
       - :ref:`ethernet`
       - :ref:`usb`
       - :ref:`uart`
+      - :ref:`adc`
+      - :ref:`audio`
     * - :ref:`matter`
-      - :ref:`esp32h2`
+      -
       -
       -
       -

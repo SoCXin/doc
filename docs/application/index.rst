@@ -77,7 +77,6 @@ Wireless
 
     Bluetooth(BLE) <bluetooth>
     Wi-Fi(802.11) <wifi>
-    LTE(Cat.1) <lte>
     LPWA(LoRa) <lpwa>
     WPAN(ZigBee) <wpan>
 
