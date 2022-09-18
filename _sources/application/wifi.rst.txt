@@ -154,7 +154,7 @@ WiFi4
 
     W801 <../miscellaneous/W801>
     Hi3861 <../miscellaneous/Hi3861>
-
+    SV32WB0 <../miscellaneous/SV32WB0>
 
 .. _wifi6:
 
@@ -205,6 +205,7 @@ WiFi6
     :maxdepth: 1
 
     AIC8800M <../miscellaneous/AIC8800M>
+    SV32WB11 <../miscellaneous/SV32WB11>
 
 
 性能对比
