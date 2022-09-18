@@ -127,7 +127,7 @@ Level4
       - :ref:`CoreMark`
       - :ref:`frequency`
       - :ref:`power`
-      - :ref:`foundry`
+      - :ref:`fabs`
     * - :ref:`stm32h7b0`
       - :ref:`cortex_m7`
       - 1414
@@ -276,7 +276,7 @@ Level9
       - :ref:`frequency`
       - :ref:`Geekbench`
       - :ref:`power`
-      - :ref:`foundry`
+      - :ref:`fabs`
     * - M1
       -
       -

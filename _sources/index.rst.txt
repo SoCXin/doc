@@ -73,21 +73,27 @@ Xindex
 .. list-table::
     :header-rows: 1
 
-    * -
-      - :ref:`wpan`
+    * - :ref:`application`
       - :ref:`bt`
       - :ref:`wifi`
+      - :ref:`lpwa`
       - :ref:`ethernet`
       - :ref:`usb`
       - :ref:`uart`
+      - :ref:`adc`
+      - :ref:`audio`
     * - :ref:`matter`
-      - :ref:`esp32h2`
+      -
+      -
+      -
       -
       -
       -
       -
       -
     * - :ref:`autosar`
+      -
+      -
       -
       -
       -
@@ -157,35 +163,23 @@ Xindex
 
 
 .. toctree::
-    :caption: 厂商品牌
+    :caption: 行业品牌
     :maxdepth: 1
 
-    晶元制造 <foundry>
     芯片设计 <vendor>
-    供应渠道 <sales>
+    晶元制造 <fabs>
+    销售渠道 <sales>
 
 
 .. list-table::
     :header-rows: 1
 
     * - :ref:`vendor`
-      - 产品系列
-      - 代表作品
-      - 最新产品
-      - 核心技术
-      - :ref:`foundry`
+      - :ref:`fabs`
       - :ref:`sales`
     * - :ref:`wch`
-      - 24
-      - :ref:`ch579`
-      - :ref:`ch32v307`
-      - :ref:`usb`
       -
       - :ref:`lcsc`
     * - :ref:`espressif`
-      - 6
-      - :ref:`esp32`
-      - :ref:`esp32c2`
-      - :ref:`wifi`
       - :ref:`tsmc_40nm`
       -

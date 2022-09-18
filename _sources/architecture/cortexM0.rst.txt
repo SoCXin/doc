@@ -23,7 +23,7 @@ Cortex-M0
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`foundry`
+    * - :ref:`fabs`
       - :ref:`DMIPS`/MHz
       - :ref:`CoreMark`/MHz
       - :ref:`power`/MHz
