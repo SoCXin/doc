@@ -84,6 +84,7 @@ Vendor
     电源模拟和物联网 TI <ti/index>
     微控制器领域王者 ST <st/index>
     高性能多领域跨界 NXP <nxp/index>
+    高性能模拟供应商 silabs <silabs/index>
     低功耗蓝牙控制器 Nordic <nordic/index>
     多媒体及网络通信 Realtek <realtek/index>
     多媒体语音控制器 Nuvoton  <nuvoton/index>
@@ -156,6 +157,7 @@ Vendor
     多媒体应用处理器 Allwinner  <allwinner/index>
     物联网通信及计算 Bouffalolab  <bouffalolab/index>
     驱动控制国产普惠 Mindmotion  <mindmotion/index>
+    无线通信博通集成 Bekencorp  <bekencorp/index>
 
 
 不同芯片厂商的SDK和应用案例的开放策略不同，为了直观对比厂商的开发生态，引入 `OS-Q认证体系 <http://www.OS-Q.com>`_ 来给不同芯片厂商和不同芯片型号的开发资源排序，实现量化比较
