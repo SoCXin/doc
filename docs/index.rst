@@ -79,7 +79,7 @@ Xindex
       - :ref:`lpwa`
       - :ref:`ethernet`
       - :ref:`usb`
-      - :ref:`uart`
+      - :ref:`peripherals`
       - :ref:`adc`
       - :ref:`audio`
     * - :ref:`matter`

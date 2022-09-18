@@ -4,7 +4,6 @@
 Level
 ===============
 
-`Level Marked <https://github.com/SoCXin/Level>`_ : :ref:`frequency`/:ref:`CoreMark`/:ref:`Geekbench`
 
 .. hint::
     用于量化产品的性能指标，Level1-3主要用于控制，Level4-6可以部署算法，Level7-9为高性能计算
@@ -14,7 +13,8 @@ Level
 
 Level1
 --------------
-``Frequency ≤ 60MHz``
+
+`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 60MHz``
 
 
 .. list-table::
@@ -39,7 +39,7 @@ Level1
 
 Level2
 --------------
-``Frequency ≤ 120MHz``
+`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 120MHz``
 
 
 .. list-table::
@@ -64,8 +64,7 @@ Level2
 
 Level3
 --------------
-``Frequency ≤ 200MHz``
-
+`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 200MHz``
 
 .. list-table::
     :header-rows:  1
@@ -117,7 +116,9 @@ Level3
 
 Level4
 --------------
-``CoreMark ≤ 2000``
+
+`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``≤ 2000``
+
 
 .. list-table::
     :header-rows:  1
@@ -170,7 +171,8 @@ Level4
 
 Level5
 --------------
-``CoreMark ≤ 5000``
+`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``≤ 5000``
+
 
 .. list-table::
     :header-rows:  1
@@ -218,7 +220,8 @@ Level5
 
 Level6
 --------------
-``CoreMark > 5000``
+`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``> 5000``
+
 
 .. list-table::
     :header-rows:  1
@@ -253,19 +256,20 @@ Level6
 
 Level7
 --------------
-``Geekbench > 1000``
+`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 1000``
 
 .. _level8:
 
 Level8
 --------------
-``Geekbench > 2000``
+`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 2000``
+
 
 .. _level9:
 
 Level9
 --------------
-``Geekbench > 4000``
+`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 4000``
 
 
 .. list-table::
