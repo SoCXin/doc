@@ -53,10 +53,8 @@ Wi-Fi
       -
       -
 
-.. image:: ./images/wifi.png
+.. image:: ./images/WiFi.jpg
 
-.. note::
-    大部分WiFi通信芯片不仅具备WiFi接入能力，同时具备BLE连接能力，而且不断有新的厂商进入这一领域，用户的选择范围非常广。
 
 
 .. _wifi4:
@@ -72,8 +70,8 @@ WiFi4
       - :ref:`architecture`
       - :ref:`CoreMark`
       - :ref:`sram`/:ref:`flash`
-      - TX(dBm)
-      - RX(dBm)
+      - :ref:`wifi_tx`
+      - :ref:`wifi_rx`
       - :ref:`peripherals`
       - :ref:`package`
     * - :ref:`esp32c3`
@@ -170,8 +168,8 @@ WiFi6
       - :ref:`architecture`
       - :ref:`CoreMark`
       - :ref:`sram`/:ref:`flash`
-      - TX(dBm)
-      - RX(dBm)
+      - :ref:`wifi_tx`
+      - :ref:`wifi_rx`
       - :ref:`peripherals`
       - :ref:`package`
     * - :ref:`esp32c5`
@@ -208,13 +206,21 @@ WiFi6
     SV32WB11 <../miscellaneous/SV32WB11>
 
 
+.. image:: ./images/wifi.png
+
+.. note::
+    大部分WiFi通信芯片不仅具备WiFi接入能力，同时具备BLE连接能力，而且不断有新的厂商进入这一领域，用户的选择范围非常广。
+
 性能对比
 -----------
 
+.. _wifi_rx:
 
-RX性能
+RX
 ~~~~~~~~~~~
 
-TX性能
+.. _wifi_tx:
+
+TX
 ~~~~~~~~~~~
 

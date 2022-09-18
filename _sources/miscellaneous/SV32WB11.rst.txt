@@ -16,6 +16,10 @@ SV32WB11
 Xin简介
 -----------
 
+.. image:: ./images/SV32WB11.jpg
+    :target: http://www.icomm-semi.com/News/info/id/179.html
+
+
 SV6358/SV32WB11 是南方硅谷推出的第一代WIFI 6 产品，其继承了公司一贯优异的性能表现，应用方向为WIFI 透传(SV6358)以及WIFI MCU(SV32WB11), 可以覆盖高带宽要求的视频类产品以及高稳定性要求的IOT 产品应用方向。
 
 SV6358/SV32WB11 支持IEEE802.11 ax, 向下兼容 IEEE802.11 b/g/n,  集成Bluetooth 5.0(LE), 支持 20/40 MHz 带宽， 支持2/4/8MHz窄带模式
@@ -28,7 +32,7 @@ SV6358 可以支持USB2.0/SDIO2.0的接口，方便用户搭载不同类型的�
 规格配置
 ~~~~~~~~~~~
 
-http://www.icomm-semi.com/News/info/id/179.html
+
 
 基本参数
 ^^^^^^^^^^^
