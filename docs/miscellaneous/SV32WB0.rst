@@ -4,7 +4,7 @@
 SV32WB0
 ===============
 
-* `icomm-semi <http://www.icomm-semi.com/>`_ : ``WiFi`` ``BT5.1`` ``22nm``
+* `icomm-semi <http://www.icomm-semi.com/>`_ : ``WiFi`` ``BT5.0`` ``22nm``
 * `Tags <https://github.com/SoCXin/SV32WB0>`_ : :ref:`wifi4` / :ref:`bt`
 
 .. contents::
@@ -14,6 +14,9 @@ SV32WB0
 
 Xin简介
 -----------
+
+.. image:: ./images/SV32WB0.png
+    :target: http://www.icomm-semi.com/Product/info/id/56.html
 
 
 规格配置
@@ -35,10 +38,18 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* :ref:`cortex_m0`
-* CC1,CC2,DP,DM For Type-C Port
-* 内置10通道电压ADC
-* 内置1通道电流ADC
+* SV32WB0x Combo Connectivity MCU.Fully integrated Wi-Fi and BLE Combo SoC for IoT Applications
+* Supports calibration algorithm to handle non-ideal effects from CMOS RF block
+* Integrated on-chip Power Management Unit (PMU) support 3.3~5V input
+* A 2304b e-fuse block for storing chip-specific information
+* Internal 32.768 KHz RC clock with calibration
+* STA, SoftAP and Sniffer modes supported, concurrent AP + STA supported
+* WFA features: WEP/WPA/WPA2/WPA3; WMM
+* 802.11 b/g/n,BLE 5.0
+* High Speed UART: support RX/TX/RTSN/CTSN, 4 pins,baud rate up to 4.8 Mbps
+* UART: Support RX/TX, 2 pins,baud rate up to 921600 bps
+* SDIO 2.0: 1bit/4bits mode supported,support Clock up to 50MHz
+
 
 
 电源参数
@@ -48,4 +59,8 @@ Xin简介
 
 封装规格
 ~~~~~~~~~~~
+
+
+.. image:: ./images/SV32WB0l.png
+    :target: http://www.icomm-semi.com/Product/info/id/56.html
 

@@ -14,7 +14,7 @@ Level
 Level1
 --------------
 
-`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 60MHz``
+`level marked by <https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 60MHz``
 
 
 .. list-table::
@@ -39,7 +39,7 @@ Level1
 
 Level2
 --------------
-`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 120MHz``
+`level marked by <https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 120MHz``
 
 
 .. list-table::
@@ -64,7 +64,7 @@ Level2
 
 Level3
 --------------
-`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 200MHz``
+`level marked by <https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 200MHz``
 
 .. list-table::
     :header-rows:  1
@@ -117,7 +117,7 @@ Level3
 Level4
 --------------
 
-`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``≤ 2000``
+`level marked by <https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``≤ 2000``
 
 
 .. list-table::
@@ -171,7 +171,7 @@ Level4
 
 Level5
 --------------
-`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``≤ 5000``
+`level marked by <https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``≤ 5000``
 
 
 .. list-table::
@@ -220,7 +220,7 @@ Level5
 
 Level6
 --------------
-`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``> 5000``
+`level marked by <https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``> 5000``
 
 
 .. list-table::
@@ -256,20 +256,20 @@ Level6
 
 Level7
 --------------
-`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 1000``
+`level marked by <https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 1000``
 
 .. _level8:
 
 Level8
 --------------
-`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 2000``
+`level marked by <https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 2000``
 
 
 .. _level9:
 
 Level9
 --------------
-`Level Marked by<https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 4000``
+`level marked by <https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 4000``
 
 
 .. list-table::
