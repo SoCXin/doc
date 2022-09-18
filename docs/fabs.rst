@@ -1,13 +1,13 @@
 
-.. _foundry:
+.. _fabs:
 
-Foundry
+Fabs
 ===============
 
 .. list-table::
     :header-rows:  1
 
-    * - Process
+    * - :ref:`fabs`
       - :ref:`tsmc`
       - :ref:`samsung`
       - :ref:`gf`
@@ -15,7 +15,7 @@ Foundry
       - :ref:`smic`
       - :ref:`skywater`
     * - 5nm
-      - 2020
+      -
       -
       -
       -
@@ -155,37 +155,26 @@ SAMSUNG
 
 GlobalFoundries
 -----------------
-``FinFET``
+``FinFET`` ``12nm`` ``28nm`` ``40nm``
 
 `格罗方德 <https://gf.com/>`_ 成立于2009年3月，总部纽约，由AMD拆分而来、与阿联酋阿布扎比先进技术投资公司(ATIC)和穆巴达拉发展公司(Mubadala)联合投资成立的半导体制造企业。
-
-.. _gf_process:
-
-Process
-~~~~~~~~~~~
-``12nm`` ``28nm`` ``40nm``
-
 
 
 .. _umc:
 
 UMC
 -----------
+``28nm`` ``40nm``
 
 `联华电子 <https://www.umc.com/zh-CN/Home/Index>`_ 成立于1980年，总部台湾新竹
 
-.. _umc_process:
-
-Process
-~~~~~~~~~~~
-``28nm`` ``40nm``
 
 
 .. _smic:
 
 SMIC
 -----------
-``中国大陆规模最大、技术水准最高、世界排名第四的晶片代工企业`` ``上海`` ``北京`` ``天津`` ``深圳``
+``28nm`` ``中国大陆规模最大、技术水准最高、世界排名第四的晶片代工企业`` ``上海`` ``北京`` ``天津`` ``深圳``
 
 `中芯国际SMIC <https://www.smics.com/>`_ 成立于2000年(开曼群岛)，总部上海张江，是国内首个能提供28纳米先进制程技术的企业,第一代14纳米FinFET技术取得了突破性进展，并于2019年第四季度进入量产，代表了中国大陆自主研发集成电路的最先进水平。
 
@@ -193,17 +182,13 @@ SMIC
     :local:
     :depth: 1
 
-.. _smic_process:
-
-Process
-~~~~~~~~~~~
-``28nm``
 
 
 .. _skywater:
 
 SkyWater
 -----------
+``130nm`` ``90nm``
 
 `SkyWater工厂 <https://www.skywatertechnology.com/>`_ 最初由位于明尼苏达州的Control Data Corporation（CDC）在1980年代建立。CDC晶圆厂于1991年被赛普拉斯半导体公司收购。
 
@@ -219,10 +204,7 @@ Google 将这项计划名为 `Open MPW Shuttle Program <https://developers.googl
 
 芯片制造是在SkyWater 130nm 工艺（SKY130）上完成
 
-Process
-~~~~~~~~~~~
-``130nm`` ``90nm``
 
-其业务始于130nm，而今年开始提供90nm服务。而IBM和英特尔早在2002年就开始首次生产90 nm芯片，TSMC于2004年推出直径300 mm的晶圆。但SkyWater仍在使用200毫米晶圆。
+其业务始于130nm, 而今年开始提供90nm服务。而IBM和英特尔早在2002年就开始首次生产90 nm芯片，TSMC于2004年推出直径300 mm的晶圆。但SkyWater仍在使用200毫米晶圆。
 
 Skywater正在为D-Wave的量子计算机制造量子比特

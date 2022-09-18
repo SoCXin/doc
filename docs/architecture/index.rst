@@ -22,7 +22,7 @@ Classification
       - :ref:`power`
       - :ref:`performance`
       - :ref:`frequency`
-      - :ref:`foundry`
+      - :ref:`fabs`
     * -
       - :ref:`cortex_m0`
       - >0.0066
