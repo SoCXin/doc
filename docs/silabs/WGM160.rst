@@ -1,0 +1,24 @@
+
+.. _wgm160:
+
+WGM160
+===============
+
+* `silabs <https://cn.silabs.com/>`_ : ``Wi-Fi`` ``BLE``
+* `Tags <https://github.com/bekencorp>`_ : :ref:`wifi4`
+
+* TX 功耗：+16 dBm
+* RX 灵敏度：-95.5 dBm
+
+关键 RF 特性：1x1 802.11n，具有全面的 802.11 b/g 兼容性，72.2 Mbps；Greenfield Tx/Rx 实现最优 802.11n 性能；Short Guard Interval (SGI) 实现 802.11n 最优吞吐量；A-MPDU Rx 和 Tx 实现高 MAC 吞吐量；面向多个帧的块确认；Rx 碎片整理；支持漫游；支持客户端、SoftAP 模式；支持同时 AP + STA；TX 功耗：+16 dBm；RX 灵敏度：-95.5 dBm；2 块 2.4 GHz 天线板，实现全面天线多样性支持；2.4 GHz 共存性；2、3 和 4 线 PTA 支持；
+
+
+MCU 功能和主机接口：72 MHz 的 ARM Cortex-M4；板载闪存：2048 kB；板载 RAM：512kB；超低能耗操作；80 μA/MHz（能耗模式 0 (EM0)）；2.1 μA EM2 深度睡眠电流（RTCC 运行及状态和 RAM 保留）；硬件加密引擎支持 AES、ECC、SHA 和 TRNG；UART 和 USB 串行接口。
+
+认证：FCC、CE、ISED/IC、KCC 和 MIC/TELEC 认证。
+
+
+https://cn.silabs.com/wireless/wi-fi/wgm160-series-1-modules
+
+
+https://cn.silabs.com/wireless/wi-fi/siwx917-wireless-socs

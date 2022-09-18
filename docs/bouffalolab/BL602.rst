@@ -17,8 +17,12 @@ Xin简介
 .. image:: ./images/BL602s.png
     :target: https://www.bouffalolab.com/bl602
 
-.. contents::
-    :local:
+BL602/BL604芯片的无线子系统包含2.4G无线电、Wi-Fi 802.11b / g / n和Bluetooth LE 5.0基带/MAC设计。其微控制器子系统包含低功耗32位RISC-V CPU、高速缓存和存储器。电源管理单元可控制低功耗模式。其外围接口包括SDIO，SPI，UART，I2C，IR远程，PWM，ADC，DAC，ACOMP，PIR等，支持灵活的GPIO配置。 BL602共有16个GPIO，而BL604共有23个GPIO。
+
+该系列芯片的无线功能包括：Wi-Fi 802.11 b / g / n；低功耗蓝牙5.0，具有BLE协助的Wi-Fi快速连接，Wi-Fi和BLE共存；Wi-Fi安全WPS / WEP / WPA / WPA2 / WPA3；STA，SoftAP和嗅探模式；多云连接；2.4 GHz射频收发器；集成射频巴伦，PA / LNA。
+
+其安全功能包括：安全启动；安全调试；XIP QSPI即时AES解密（OTFAD）；AES 128/192/256；SHA-1 / 224/256；TRNG（真随机数生成器）；PKA（公钥加速器）。
+
 
 规格参数
 ~~~~~~~~~~~
