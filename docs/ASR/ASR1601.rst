@@ -4,11 +4,13 @@
 ASR1601
 =============
 
-* 关键词：``Cortex-A7`` ``800MHz`` ``64M DDR2`` ``0.2TOPS`` ``QFN88``
-* 资源库：`GitHub <https://github.com/SoCXin/ASR1601>`_
+* `ASR <http://www.asrmicro.com/>`_ : ``Cortex-A7`` ``800MHz``
+* `Tags <https://github.com/SoCXin/ASR1601>`_ : :ref:`cat1` / :ref:`emtc`
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------

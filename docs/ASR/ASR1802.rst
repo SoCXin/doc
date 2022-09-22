@@ -4,11 +4,14 @@
 ASR1802
 =============
 
-* 关键词：``Cortex-R5`` ``800MHz``
-* 资源库：`GitHub <https://github.com/SoCXin/ASR1802>`_
+* `ASR <http://www.asrmicro.com/>`_ : ``Cortex-R5`` ``800MHz``
+* `Tags <https://github.com/SoCXin/ASR1802>`_ : :ref:`pop` / :ref:`ethernet` / :ref:`usb_hs`
 
 .. contents::
     :local:
+    :depth: 1
+
+
 
 Xin简介
 -----------

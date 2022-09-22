@@ -115,7 +115,7 @@
 /BCM2711.html -> high/BCM2711.html
 /GW1NSR.html -> fpga/GW1NSR.html
 /ASR1601.html -> ASR/ASR1601.html
-/ASR6501.html -> ASR/ASR6501.html
+/ASR595X.html -> ASR/ASR595X.html
 /ASR1802.html -> ASR/ASR1802.html
 /V853.html -> allwinner/V853.html
 /V831.html -> allwinner/V831.html
