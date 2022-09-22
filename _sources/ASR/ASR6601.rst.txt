@@ -4,19 +4,35 @@
 ASR6601
 ===============
 
-* 关键词：``LoRa`` ``Cortex-M4`` ``SoC``
-* 资源库：`GitHub <https://github.com/SoCXin/ASR6601>`_
+* `ASR <http://www.asrmicro.com/>`_ : ``LoRa`` ``Cortex-M4`` ``SoC``
+* `Tags <https://github.com/SoCXin/ASR6601>`_ : :ref:`lora`
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
 
+.. image:: ./images/ASR6601s.png
+    :target: http://www.asrmicro.com/proinfo/23.html
+
 ASR6601是完整意义的LPWAN SOC无线通信芯片，该芯片集成了LORA射频收发器、调制解调器和32位RISC MCU。
+
+ASR6601 SoC 集成了通用微控制器和射频单元，包括射频收发器，调制解调器和一个 48 MHz 主频、采用 ARM STAR 架构的 32 位 MCU。
+
+多种内存选择包括最大 256KB 的闪存和 64KB 的 SRAM 等，内置嵌入式 LCD 驱动程序，支持 AES、DES、RSA、ECC、SHA、SM2/3/4 硬件加密。
+
+与此同时，ASR6601 可以达到 -148dBm 的超高灵敏度，以及最大 22dBm 的发射功率，而 QFN48 最小尺寸仅 6mm x 6mm。
+
+通过 SoC 设计，ASR6601 成为目前市场上兼具功耗优、性能强、成本低等优势的 LPWAN 芯片，极大降低了用户设计门槛，同时帮客户节省大量时间并减少物料清单和运营成本，尤其适用于大批量应用的项目和需要定制化设计的项目。
 
 规格参数
 ~~~~~~~~~~~
+
+.. image:: ./images/ASR6601.png
+    :target: http://www.asrmicro.com/proinfo/23.html
 
 
 基本参数
