@@ -18,6 +18,7 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -80,6 +81,13 @@
 <li class="toctree-l3"><a class="reference internal" href="#sdram">SDRAM</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#gpu">GPU</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verisilicon">VeriSilicon</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vivante">Vivante</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -132,45 +140,56 @@
 <p><code class="docutils literal notranslate"><span class="pre">IP</span></code></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#id2" id="id9">模拟IP</a></p></li>
-<li><p><a class="reference internal" href="#id4" id="id10">射频IP</a></p></li>
-<li><p><a class="reference internal" href="#id5" id="id11">通信IP</a></p></li>
-<li><p><a class="reference internal" href="#id6" id="id12">存储IP</a></p></li>
-<li><p><a class="reference internal" href="#sip" id="id13">SIP封装</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id10">模拟IP</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id11">射频IP</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id12">通信IP</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id13">存储IP</a></p></li>
+<li><p><a class="reference internal" href="#sip" id="id14">SIP封装</a></p></li>
+<li><p><a class="reference internal" href="#gpu" id="id15">GPU</a></p></li>
 </ul>
 </div>
 <section id="id2">
-<h2><a class="toc-backref" href="#id9">模拟IP</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">模拟IP</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">SAR</span> <span class="pre">ADC</span></code> <code class="docutils literal notranslate"><span class="pre">Sigma-delta</span> <span class="pre">ADC</span></code> <code class="docutils literal notranslate"><span class="pre">Audio</span> <span class="pre">CODEC</span></code></p>
 <p><a class="reference external" href="https://www.analogcircuit.cn/">锐成芯微</a></p>
 </section>
 <section id="id4">
-<h2><a class="toc-backref" href="#id10">射频IP</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">射频IP</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Wi-Fi</span></code> <code class="docutils literal notranslate"><span class="pre">BLE</span></code></p>
 </section>
 <section id="id5">
-<h2><a class="toc-backref" href="#id11">通信IP</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">通信IP</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">USB</span></code> <code class="docutils literal notranslate"><span class="pre">MIPI</span></code> <code class="docutils literal notranslate"><span class="pre">SerDes</span></code> <code class="docutils literal notranslate"><span class="pre">PCIe</span></code></p>
 </section>
 <section id="id6">
-<h2><a class="toc-backref" href="#id12">存储IP</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id13">存储IP</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">eNVM</span></code> <code class="docutils literal notranslate"><span class="pre">EEPROM</span></code></p>
 </section>
 <section id="sip">
-<span id="id7"></span><h2><a class="toc-backref" href="#id13">SIP封装</a><a class="headerlink" href="#sip" title="Permalink to this heading">¶</a></h2>
+<span id="id7"></span><h2><a class="toc-backref" href="#id14">SIP封装</a><a class="headerlink" href="#sip" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">SIP</span></code></p>
 <img alt="../_images/sip.jpg" src="../_images/sip.jpg" />
 <div class="contents local topic" id="id8">
 <ul class="simple">
-<li><p><a class="reference internal" href="#psram" id="id14">PSRAM</a></p></li>
-<li><p><a class="reference internal" href="#sdram" id="id15">SDRAM</a></p></li>
+<li><p><a class="reference internal" href="#psram" id="id16">PSRAM</a></p></li>
+<li><p><a class="reference internal" href="#sdram" id="id17">SDRAM</a></p></li>
 </ul>
 </div>
 <section id="psram">
-<h3><a class="toc-backref" href="#id14">PSRAM</a><a class="headerlink" href="#psram" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id16">PSRAM</a><a class="headerlink" href="#psram" title="Permalink to this heading">¶</a></h3>
 </section>
 <section id="sdram">
-<h3><a class="toc-backref" href="#id15">SDRAM</a><a class="headerlink" href="#sdram" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id17">SDRAM</a><a class="headerlink" href="#sdram" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+<section id="gpu">
+<span id="ip-gpu"></span><h2><a class="toc-backref" href="#id15">GPU</a><a class="headerlink" href="#gpu" title="Permalink to this heading">¶</a></h2>
+<section id="verisilicon">
+<h3>VeriSilicon<a class="headerlink" href="#verisilicon" title="Permalink to this heading">¶</a></h3>
+<p><a class="reference external" href="https://www.verisilicon.com/">芯原微电子</a> （上海）股份有限公司于2001年8月21日成立。（688521）</p>
+<section id="vivante">
+<h4>Vivante<a class="headerlink" href="#vivante" title="Permalink to this heading">¶</a></h4>
+</section>
 </section>
 </section>
 </section>

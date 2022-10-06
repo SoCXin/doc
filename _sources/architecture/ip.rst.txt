@@ -48,3 +48,17 @@ PSRAM
 SDRAM
 ~~~~~~~~~~~
 
+.. _ip_gpu:
+
+GPU
+-----------
+
+
+VeriSilicon
+~~~~~~~~~~~~~
+
+`芯原微电子 <https://www.verisilicon.com/>`_ （上海）股份有限公司于2001年8月21日成立。（688521）
+
+Vivante
+^^^^^^^^^^^
+
