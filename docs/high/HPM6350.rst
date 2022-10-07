@@ -4,13 +4,13 @@
 HPM6350
 ===============
 
-`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``DSP`` ``FFA`` ``3390 CoreMark @648MHz`` ``￥28``
+* `HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``DSP`` ``FFA`` ``3390 CoreMark @648MHz`` ``￥28``
+* `Tags <https://github.com/SoCXin/HPM6350>`_ : :ref:`top` / : :ref:`auto`
 
 .. image:: https://github.com/SoCXin/HPM6750/workflows/sdk/badge.svg
     :target: https://github.com/SoCXin/hpm_sdk
 .. image:: https://github.com/SoCXin/HPM6750/workflows/demo/badge.svg
     :target: https://github.com/SoCXin/HPM6750
-
 
 
 .. contents::
@@ -31,7 +31,7 @@ Xin简介
 ^^^^^^^^^^^
 
 * 发布时间：2022年4月
-* 参考价格：￥28
+* 参考价格： `￥28 <https://www.hpmicro.com/product/summary.html?id=79841baf-170a-4870-8571-cdc299987bf6>`_
 * 制程工艺：
 * 供货周期：
 * 处理性能：3390 :ref:`CoreMark` (1710 :ref:`DMIPS` ) , :ref:`level5`
@@ -39,6 +39,7 @@ Xin简介
 * 运行环境：-40°C to 105/125°C
 * RAM容量：800KB
 * Flash容量：
+
 
 
 特征参数

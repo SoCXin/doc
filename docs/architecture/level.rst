@@ -8,13 +8,16 @@ Level
 .. hint::
     用于量化产品的性能指标，Level1-3主要用于控制，Level4-6可以部署算法，Level7-9为高性能计算
 
+.. _cpu:
+
+CPU
+--------------
 
 .. _level1:
 
 Level1
---------------
-
-`level marked by <https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 60MHz``
+~~~~~~~~~~~
+`Graded by <https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 60MHz``
 
 
 .. list-table::
@@ -38,8 +41,8 @@ Level1
 .. _level2:
 
 Level2
---------------
-`level marked by <https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 120MHz``
+~~~~~~~~~~~
+`Graded by <https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 120MHz``
 
 
 .. list-table::
@@ -63,8 +66,8 @@ Level2
 .. _level3:
 
 Level3
---------------
-`level marked by <https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 200MHz``
+~~~~~~~~~~~
+`Graded by <https://github.com/SoCXin/Level>`_ :ref:`frequency` ``≤ 200MHz``
 
 .. list-table::
     :header-rows:  1
@@ -115,9 +118,8 @@ Level3
 .. _level4:
 
 Level4
---------------
-
-`level marked by <https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``≤ 2000``
+~~~~~~~~~~~
+`Graded by <https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``≤ 2000``
 
 
 .. list-table::
@@ -170,8 +172,8 @@ Level4
 .. _level5:
 
 Level5
---------------
-`level marked by <https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``≤ 5000``
+~~~~~~~~~~~
+`Graded by <https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``≤ 5000``
 
 
 .. list-table::
@@ -219,8 +221,8 @@ Level5
 .. _level6:
 
 Level6
---------------
-`level marked by <https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``> 5000``
+~~~~~~~~~~~
+`Graded by <https://github.com/SoCXin/Level>`_ :ref:`CoreMark` ``> 5000``
 
 
 .. list-table::
@@ -255,21 +257,21 @@ Level6
 .. _level7:
 
 Level7
---------------
-`level marked by <https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 1000``
+~~~~~~~~~~~
+`Graded by <https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 1000``
 
 .. _level8:
 
 Level8
---------------
-`level marked by <https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 2000``
+~~~~~~~~~~~
+`Graded by <https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 2000``
 
 
 .. _level9:
 
 Level9
---------------
-`level marked by <https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 4000``
+~~~~~~~~~~~
+`Graded by <https://github.com/SoCXin/Level>`_ :ref:`Geekbench` ``> 4000``
 
 
 .. list-table::
@@ -333,3 +335,10 @@ NPU
       -
 
 .. image:: ./images/npu.jpg
+
+.. _tflm:
+
+TFLM
+~~~~~~~~~~~
+
+ `TFLM(TensorFlow Lite Micro) <https://github.com/tensorflow/tflite-micro>`_
