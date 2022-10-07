@@ -76,7 +76,6 @@ Xindex
     * - :ref:`application`
       - :ref:`bt`
       - :ref:`wifi`
-      - :ref:`lpwa`
       - :ref:`ethernet`
       - :ref:`usb`
       - :ref:`peripherals`
@@ -90,9 +89,7 @@ Xindex
       -
       -
       -
-      -
     * - :ref:`autosar`
-      -
       -
       -
       -
@@ -135,7 +132,7 @@ Xindex
       -
       -
       -
-      - X
+      - 
     * - :ref:`cortex_a`
       -
       -
@@ -145,7 +142,7 @@ Xindex
       - √
       - √
     * - :ref:`riscv`
-      - √
+      - :ref:`ch573`
       - :ref:`gd32v103`
       - :ref:`esp32c3`
       - :ref:`w801`

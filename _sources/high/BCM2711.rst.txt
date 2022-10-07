@@ -4,10 +4,13 @@
 BCM2711
 =============
 
-`GitHub <https://github.com/SoCXin/BCM2711>`_ : ``Broadcom`` ``Cortex-A72`` ``Quad-Core`` ``1.8GHz``
+* `Raspberry Pi <https://www.raspberrypi.org/>`_ : ``Broadcom`` ``Cortex-A72`` ``Quad-Core`` ``1.8GHz``
+* `Tags <https://github.com/SoCXin/BCM2711>`_ : :ref:`top`
+
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
@@ -17,6 +20,7 @@ Xin简介
 规格参数
 ~~~~~~~~~~~
 
+GPU: Videocore VI (@500MHz)
 
 基本参数
 ^^^^^^^^^^^
@@ -44,6 +48,7 @@ Xin选择
 
 .. contents::
     :local:
+    :depth: 1
 
 品牌对比
 ~~~~~~~~~
@@ -51,17 +56,25 @@ Xin选择
 系列对比
 ~~~~~~~~~
 
+bcm2708 for Raspberry Pi 1, bcm2709 for the Raspberry Pi 2, bcm2710 for the Raspberry Pi 3, and bcm2711 for the Raspberry Pi 4.
+
+.. _bcm2710:
+
+BCM2710
+^^^^^^^^^^^
+``Cortex-A53`` ``ARMv8`` ``Quad-Core`` ``1.2GHz`` ``BCM2837`` ``Raspberry Pi 3``
+
+.. _bcm2709:
+
+BCM2709
+^^^^^^^^^^^
+``Cortex-A7`` ``ARMv7`` ``Quad-Core`` ``1.2GHz`` ``BCM2836`` ``Raspberry Pi 2``
+
 型号对比
 ~~~~~~~~~
 
 
 .. image:: ./images/rpi.png
-
-
-BCM2710
-^^^^^^^^^^^
-
-``Cortex-A53`` ``Quad-core`` ``1.0GHz``
 
 
 

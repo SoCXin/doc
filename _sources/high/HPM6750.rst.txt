@@ -32,12 +32,11 @@ Xin简介
 ~~~~~~~~~~~
 
 
-
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：2022年4月
-* 参考价格：￥55
+* 参考价格： `￥55 <https://www.hpmicro.com/product/summary.html?id=d7fdb78f-1fa5-43be-be08-b97b405b65f0>`_
 * 制程工艺：
 * 供货周期：
 * 处理性能：9220 :ref:`CoreMark` (4651 :ref:`DMIPS` ) , :ref:`level6`
@@ -77,8 +76,13 @@ Xin简介
 Xin选择
 -----------
 
+:ref:`tflm` 性能可以比肩Raspberry Pi 3B+ :ref:`bcm2710`
+
+.. image:: ./images/TFLM-HPM.jpg
+
 .. contents::
     :local:
+    :depth: 1
 
 品牌对比
 ~~~~~~~~~
