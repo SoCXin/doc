@@ -112,3 +112,21 @@
 ``RISC-V`` ``320MHz`` ``Bluetooth`` ``SDRAM`` ``QFN48``
 
 :ref:`ac7916`
+
+10-BK7256
+~~~~~~~~~~~~~~
+``Wi-Fi6`` ``BT5.0`` 
+
+:ref:`bk7256`
+
+11-AX620A
+~~~~~~~~~~~~~~
+``Cortex-A7`` ``Quad Core`` ``NPU 3.6Tops int8``
+
+:ref:`ax620a`
+
+12-K230
+~~~~~~~~~~~~~~
+``kendryte`` ``RISC-V`` ``C908`` ``Dual Core`` ``KPU``
+
+:ref:`k230`

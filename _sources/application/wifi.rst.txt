@@ -13,11 +13,11 @@ Wi-Fi
       - :ref:`hot`
       - :ref:`pop`
     * - 排名一
-      - 博通
+      - Broadcom
       -
       -
     * - 排名二
-      - 高通
+      - Qualcomm
       -
       -
     * - 排名三
@@ -40,16 +40,17 @@ Wi-Fi
       - :ref:`mediatek`
       -
       -
+
     * - 排名八
-      - 新岸线
-      -
-      -
-    * - 排名九
       - :ref:`espressif`
       -
       -
-    * - 排名十
+    * - 排名九
       - :ref:`allwinner`
+      -
+      -
+    * - 排名十
+      - 新岸线
       -
       -
 

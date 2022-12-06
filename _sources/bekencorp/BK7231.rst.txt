@@ -5,7 +5,28 @@ BK7231
 ===============
 
 * `bekencorp <http://www.bekencorp.com/>`_ : ``Wi-Fi`` ``BLE``
-* `Tags <https://github.com/bekencorp>`_ : :ref:`wifi4`
+* `Tags <https://github.com/bekencorp>`_ : :ref:`wifi4` / :ref:`ble` / :ref:`riscv`
 
 
 符合802.11b/g/n 1x1协议  2. 17dBm 输出功率；支持20/40 MHz带宽和STBC；支持Wi-Fi STA、AP、Direct模式；支持蓝牙5.1协议，-90dB灵敏度和20dBm输出功率  ；片内MCU；最高频率120MHz；片内256Kbyte数据RAM；内置2MB FLASH，支持透明下载 ； 6路32位 PWM；多路程序下载与JTAG接口；全速USB主机和设备； 50MHz SDIO和SPI接口，并支持主从模式；支持两路I2C接口；支持两路高速UART；6路32位PWM；麦克风信号放大；内置多通道ADC；支持8位DVP 图像传感器；32字节eFUSE。
+
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+    :depth: 1
+
+品牌对比
+~~~~~~~~~~~
+
+
+型号对比
+~~~~~~~~~~~
+
+.. _bk7235:
+
+BK7235
+^^^^^^^^^^^

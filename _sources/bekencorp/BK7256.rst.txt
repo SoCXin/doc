@@ -1,0 +1,9 @@
+
+.. _bk7256:
+
+BK7256
+===============
+
+* `bekencorp <http://www.bekencorp.com/>`_ : ``Wi-Fi`` ``BLE`` ``b/g/n/ax``
+* `Tags <https://github.com/bekencorp>`_ : :ref:`wifi6` / :ref:`ble` / :ref:`riscv`
+

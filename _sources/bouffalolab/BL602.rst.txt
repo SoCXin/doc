@@ -4,7 +4,8 @@
 BL602
 ===============
 
-`bouffalolab <https://www.bouffalolab.com/>`_ : ``Wi-Fi`` ``BLE5``
+* `bouffalolab <https://www.bouffalolab.com/>`_ : ``Wi-Fi`` ``BLE5``
+* `Tags <https://github.com/SoCXin/BL702>`_ : :ref:`wifi4` / :ref:`ble` / :ref:`riscv`
 
 .. contents::
     :local:
@@ -55,6 +56,8 @@ BL602/BL604芯片的无线子系统包含2.4G无线电、Wi-Fi 802.11b / g / n�
 
 芯片架构
 ~~~~~~~~~~~
+
+总链路预算达到118dBm
 
 功耗参数
 ^^^^^^^^^^^

@@ -4,7 +4,8 @@
 BL702
 ===============
 
-`bouffalolab <https://www.bouffalolab.com/>`_ : ``Zigbee`` ``BLE5``
+* `bouffalolab <https://www.bouffalolab.com/>`_ : ``Zigbee`` ``BLE5``
+* `Tags <https://github.com/SoCXin/BL702>`_ : :ref:`zigbee`
 
 .. contents::
     :local:
@@ -73,7 +74,7 @@ Xin选择
 
 .. contents::
     :local:
-
+    :depth: 1
 
 品牌对比
 ~~~~~~~~~~~
