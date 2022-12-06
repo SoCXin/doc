@@ -107,6 +107,7 @@
 /CST92F25.html -> chipsea/CST92F25.html
 /EAI80.html -> high/EAI80.html
 /K210.html -> high/K210.html
+/K230.html -> high/K230.html
 /K510.html -> high/K510.html
 /HPM6750.html -> high/HPM6750.html
 /F133.html -> allwinner/F133.html
@@ -120,3 +121,8 @@
 /V853.html -> allwinner/V853.html
 /V831.html -> allwinner/V831.html
 /R329.html -> allwinner/R329.html
+/BL602.html -> bouffalolab/BL602.html
+/BL608.html -> bouffalolab/BL608.html
+/BL702.html -> bouffalolab/BL702.html
+/BK7231.html -> bekencorp/BK7231.html
+/BK7256.html -> bekencorp/BK7256.html

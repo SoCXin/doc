@@ -1,0 +1,31 @@
+
+.. _k230:
+
+K230
+=============
+
+`GitHub <https://github.com/SoCXin/K230>`_ : ``kendryte`` ``RISC-V`` ``C908`` ``Dual Core`` ``KPU``
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2022年
+* 发布价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能： ? :ref:`CoreMark` (Dual)
+* SRAM容量： 
+* Flash容量：
+
+

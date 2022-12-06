@@ -16,9 +16,17 @@
     :maxdepth: 1
 
     BK7231 <BK7231>
+    BK7256 <BK7256>
     BK3296 <BK3296>
 
 技术简介
 -----------
 
+开发框架
+~~~~~~~~~
+
+armino
+^^^^^^^^^^^
+
+https://github.com/Qitas/armino
 
