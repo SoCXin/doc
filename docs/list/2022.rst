@@ -49,8 +49,8 @@
 .. |November| image:: ../espressif/images/espressif.png
 .. _November: ../miscellaneous/RP2040.html
 
-.. |December| image:: ../espressif/images/espressif.png
-.. _December: ../miscellaneous/RP2040.html
+.. |December| image:: ../high/images/ax620a.jpg
+.. _December: ../high/AX620A.html
 
 
 .. contents::
