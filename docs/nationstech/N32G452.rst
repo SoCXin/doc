@@ -3,15 +3,15 @@
 
 N32G452
 ===============
-
-`标签 <https://github.com/SoCXin/N32G452>`_ : ``Cortex-M4`` ``144MHz`` ``MD5`` ``SM1/SM3/SM4/SM7``
-
+`nationstech <https://www.nationstech.com>`_ : ``Cortex-M4`` ``144MHz`` ``MD5`` ``SM1/SM3/SM4/SM7``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
+`Tags <https://www.nationstech.com/N32G452/>`_ : :ref:`bldc`
 
 .. image:: ./images/N32G452.png
     :target: https://www.nationstech.com/N32G452/
@@ -22,9 +22,16 @@ Xin简介
 基本参数
 ^^^^^^^^^^^
 
-* 供电电压：1.8V - 3.6V
-* 工作温度：-40°C - 105°C
-* 内核频率：144 MHz
+* 发布时间：
+* 发布价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 运行环境：-40°C to 105°C
+* 封装规格：:ref:`LQFP48`
+* RAM容量：144 KB
+* Flash容量：512 KB
+
 
 特征参数
 ^^^^^^^^^^^
@@ -37,8 +44,12 @@ Xin简介
 ~~~~~~~~~~~
 
 
-时钟体系
+功耗参数
 ^^^^^^^^^^^
+
+* 电压范围：1.8 to 3.6 V
+* 功耗范围：
+
 
 Xin选择
 -----------
@@ -53,20 +64,4 @@ Xin选择
 
 版本对比
 ~~~~~~~~~
-
-
-Xin总结
---------------
-
-.. contents::
-    :local:
-
-要点提示
-~~~~~~~~~~~~~
-
-
-
-问题整理
-~~~~~~~~~~~~~
-
 

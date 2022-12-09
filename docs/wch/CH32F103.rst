@@ -3,9 +3,8 @@
 
 CH32F103
 ============
+`WCH <http://www.wch.cn>`_ : ``Cortex-M3`` ``72MHz`` ``USB H/D`` ``CAN2.0B`` ``DAC`` ``RTC``
 
-* `WCH <http://www.wch.cn>`_ : ``Cortex-M3`` ``72MHz`` ``USB H/D`` ``CAN2.0B`` ``DAC`` ``RTC``
-* `Tags <https://github.com/SoCXin/CH32F103>`_ :
 
 .. contents::
     :local:
@@ -14,6 +13,7 @@ CH32F103
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/CH32F103>`_ : :ref:`usb`/:ref:`can`
 
 .. image:: ./images/CH32F103.png
     :target: http://www.wch.cn/products/CH32F103.html

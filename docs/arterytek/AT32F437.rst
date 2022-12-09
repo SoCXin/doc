@@ -3,9 +3,7 @@
 
 AT32F437
 ===============
-
-* `Arterytek <https://www.arterytek.com/cn/product/AT32F437.jsp>`_ : ``Cortex-M4`` ``288 MHz`` ``3x5.33Msps ADC`` ``8 UART`` ``2 CAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
-* `Tags <https://github.com/SoCXin/AT32F437>`_ : :ref:`adc_mcu`
+`Arterytek <https://www.arterytek.com/cn/product/AT32F437.jsp>`_ : ``Cortex-M4`` ``288 MHz`` ``3x5.33Msps ADC`` ``8 UART`` ``2 CAN`` ``USB2.0`` ``MII/RMII`` ``SPI Flash``
 
 .. contents::
     :local:
@@ -13,14 +11,17 @@ AT32F437
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/AT32F437>`_ : :ref:`adc_mcu`
+
+.. contents::
+    :local:
+    :depth: 1
 
 
 规格参数
 ~~~~~~~~~~~
 
-.. contents::
-    :local:
-    :depth: 1
+
 
 基本参数
 ^^^^^^^^^^^

@@ -8,15 +8,19 @@ Applications
     :maxdepth: 1
 
     边缘计算   <ai>
-    实时控制   <foc>
+    电机控制   <motor>
     人机交互   <hmi>
     信号处理   <adc>
-    音频处理   <audio>
+    Audio   <audio>
 
+.. _connection:
 
 通信连接
 -----------
 
+.. contents::
+    :local:
+    :depth: 1
 
 .. _wireless:
 
@@ -88,22 +92,19 @@ Wired
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`wired`
+    * -
       - :ref:`uart`
-      - :ref:`i2c`
-      - :ref:`spi`
+      - :ref:`plc`
       - :ref:`can`
-      - :ref:`sdio`
       - :ref:`usb`
       - :ref:`ethernet`
-    * - 速率
+    * - Bandwidth
       -
       -
       -
       -
       -
-      -
-      -
+
 
 .. toctree::
     :maxdepth: 1

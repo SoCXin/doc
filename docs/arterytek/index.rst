@@ -44,7 +44,7 @@ Arterytek
     120MHz: AT32F421 <AT32F421>
     150MHz: AT32F415 <AT32F415>
     USBOTG: AT32F425 <AT32F425>
-
+    Motor: AT32F4212 <AT32F4212>
 
 主流产品
 ~~~~~~~~~~~

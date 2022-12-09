@@ -95,10 +95,8 @@ ULP
 连接能力
 ~~~~~~~~~~~~~~
 
-.. _esp32s3_throughput:
-
-Throughput
-^^^^^^^^^^^^^^^
+:ref:`link_budget` : 118dBm
+:ref:`bandwidth` : 150 Mbps
 
 
 
@@ -177,6 +175,9 @@ Throughput
 Wi-Fi
 ^^^^^^^^^^^^^^^
 ``20dBm``
+
+:ref:`link_budget` : 118dBm
+:ref:`bandwidth` : 150 Mbps
 
 在 2.4 GHz 频带支持 20 MHz 和 40 MHz 频宽，支持 1T1R 模式，数据速率高达 150 Mbps
 
@@ -291,8 +292,8 @@ Xin选择
 
 :ref:`w801` 和 :ref:`esp32s3` 两者的封装规格相同，主频配置相同，差异主要在： :ref:`esp32s3` 是双核且带有USB， :ref:`w801` 拥有更多外设
 
-性能对比
-^^^^^^^^^^^
+Performance
+^^^^^^^^^^^^^
 
 
 .. list-table::

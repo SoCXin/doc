@@ -3,19 +3,20 @@
 
 HC32F460
 ===============
-
-* 关键词：``Cortex-M4`` ``PGA`` ``200MHz`` ``2.5MSPS ADC``
-* 资源库：`GitHub <https://github.com/SoCXin/HC32F460>`_
+`hdsc <https://www.hdsc.com.cn/>`_ : ``Cortex-M4`` ``PGA`` ``200MHz`` ``2.5MSPS ADC``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/HC32F460>`_ : :ref:`cortex_m4`
 
-:ref:`cortex_m4` MCU
 
-
+.. contents::
+    :local:
+    :depth: 1
 
 关键特性
 ~~~~~~~~~~~~~~

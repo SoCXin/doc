@@ -2,8 +2,7 @@
 
 RISC-V
 ==============
-
-``RISC-V3A`` ``RISC-V4A`` ``RISC-V4B`` ``RISC-V4C`` ``RISC-V4F``
+``RISC-V2A`` ``RISC-V3A`` ``RISC-V4A`` ``RISC-V4B`` ``RISC-V4C`` ``RISC-V4F``
 
 :ref:`wch` 基于 :ref:`riscv` 构建的内核方案，早期外购第三方RISC-V内核，但当时该IP尚未成熟只支持4线JTAG调试占用IO多，内核架构庞大未针对嵌入式应用优化。
 
@@ -89,3 +88,8 @@ V4 系列均支持 RV32IMAC 指令集扩展，其中 V4F 支持单精度硬件�
 .. image:: ./images/wch_riscv4.png
     :target: http://www.wch.cn/downloads/QingKeV4_Processor_Manual_PDF.html
 
+
+IDE
+~~~~~~~~~~~
+
+`MounRiver Studio <http://www.mounriver.com/>`_

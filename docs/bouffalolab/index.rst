@@ -72,11 +72,17 @@ Bouffalolab
 .. toctree::
     :maxdepth: 1
 
-    BL702 <BL702>
     BL602 <BL602>
-    BL608 <BL608>
+    BL702 <BL702>
+    BL808 <BL808>
 
 技术简介
 -----------
 
 
+开发框架
+~~~~~~~~~~~
+
+`bl_iot_sdk <https://github.com/bouffalolab/bl_iot_sdk>`_
+
+`bl_mcu_sdk <https://github.com/bouffalolab/bl_mcu_sdk>`_

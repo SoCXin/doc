@@ -15,12 +15,12 @@ Xindex
     板期刊 <list/boards>
 
 .. toctree::
-    :caption: 芯品分类
+    :caption: 芯排序
     :maxdepth: 1
 
     极客聚集创意高地 <list/hot>
     经典项目适配平台 <list/pop>
-    选在当下赢在未来 <list/news>
+    选在当下赢在未来 <list/new>
     成本敏感低价好货 <list/low>
     超低功耗能效王者 <list/ulp>
     旗舰定位干啥都行 <high/index>
@@ -31,55 +31,49 @@ Xindex
 
     * - :ref:`hot`
       - :ref:`pop`
-      - :ref:`news`
+      - :ref:`new`
       - :ref:`low`
       - :ref:`ulp`
       - :ref:`top`
-      - :ref:`history`
     * - :ref:`stm32g031`
       - :ref:`stm32f103`
       - :ref:`ch32v307`
       - :ref:`stc8`
       - :ref:`stm32u575`
       - :ref:`rt1170`
-      - :ref:`esp32`
     * - :ref:`rp2040`
       - :ref:`mega328p`
       - :ref:`aic8800`
       - :ref:`ch552`
       - :ref:`stm32l412`
       - :ref:`hpm6750`
-      - :ref:`gd32v103`
     * - :ref:`aic8800`
       - :ref:`rp2040`
       - :ref:`NO_013`
       - :ref:`ch573`
       - :ref:`cc2340`
       - :ref:`stm32h730`
-      - :ref:`nrf52832`
 
 
 .. toctree::
-    :caption: 典型应用
+    :caption: 芯分类
     :maxdepth: 1
 
-    功能领域  <application/index>
-    行业应用  <application/industry>
-    产品案例  <application/products>
+    功能配置  <application/index>
+    协议标准  <application/standard>
+    产品定义  <application/products>
 
 .. list-table::
     :header-rows: 1
 
     * - :ref:`application`
-      - :ref:`bt`
-      - :ref:`wifi`
-      - :ref:`ethernet`
-      - :ref:`usb`
-      - :ref:`peripherals`
+      - :ref:`connection`
+      - :ref:`hmi`
+      - :ref:`motor`
+      - :ref:`ai`
       - :ref:`adc`
       - :ref:`audio`
     * - :ref:`matter`
-      -
       -
       -
       -
@@ -93,10 +87,9 @@ Xindex
       -
       -
       -
-      -
 
 .. toctree::
-    :caption: 内核资源
+    :caption: 芯资源
     :maxdepth: 1
 
     核心架构  <architecture/index>
@@ -129,7 +122,7 @@ Xindex
       -
       -
       -
-      - 
+      -
     * - :ref:`cortex_a`
       -
       -
@@ -157,12 +150,12 @@ Xindex
 
 
 .. toctree::
-    :caption: 行业品牌
+    :caption: 芯品牌
     :maxdepth: 1
 
     芯片设计 <vendor>
-    晶元制造 <fabs>
-    供应渠道 <sales>
+    晶元代工 <fabs>
+    销售渠道 <sales>
 
 .. list-table::
     :header-rows: 1

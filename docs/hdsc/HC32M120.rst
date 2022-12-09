@@ -3,15 +3,19 @@
 
 HC32M120
 ===============
-
-* 关键词：``Cortex-M0`` ``48MHz`` ``OPA`` ``CMP``
-* 资源库：`GitHub <https://github.com/SoCXin/HC32M120>`_
-
-Xin简介
------------
+`hdsc <https://www.hdsc.com.cn/>`_ : ``Cortex-M0`` ``48MHz`` ``OPA`` ``CMP``
 
 .. contents::
     :local:
+    :depth: 1
+
+Xin简介
+-----------
+`Tags <https://github.com/SoCXin/HC32M120>`_ : :ref:`bldc` / :ref:`motor` / :ref:`low`
+
+.. contents::
+    :local:
+    :depth: 1
 
 规格参数
 ~~~~~~~~~~~
@@ -22,12 +26,15 @@ ARM Cortex-M0+ 32bit MCU，48MHz，32KB Flash，4KB SRAM，DMA, 8 Timers，12bit
 ^^^^^^^^^^^
 
 * 发布时间：
+* 发布价格：
 * 制程工艺：
-* 工作温度：-40°C to +105°C
-* 处理性能：44 :ref:`DMIPS`
+* 供货周期：
+* 处理性能：
+* 运行环境：-40°C to 105°C
+* 封装规格：:ref:`LQFP48`
 * RAM容量：4 KB
 * Flash容量：32 KB
-* 封装规格：LQFP48/LQFP32
+
 
 特征参数
 ^^^^^^^^^^^

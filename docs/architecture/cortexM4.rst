@@ -70,9 +70,3 @@ Cortex-M4处理器采用一个扩展的单时钟周期乘法累加（MAC）单�
 * Cortex-M4支持饱和运算指令。
 
 
-产品
----------
-.. toctree::
-    :maxdepth: 1
-
-    HC32F460 <../miscellaneous/HC32F460>

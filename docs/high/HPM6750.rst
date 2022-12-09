@@ -5,7 +5,7 @@ HPM6750
 ===============
 
 * `HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``816MHz`` ``Dual Core`` ``USB HS OTG`` ``16bit ADC @2Msps`` ``12bit ADC @5Msps`` ``AEC-Q100``
-* `Tags <https://github.com/SoCXin/AX620A>`_ : :ref:`top` / : :ref:`auto`
+* `Tags <https://github.com/SoCXin/AX620A>`_ : :ref:`top` 
 
 
 .. image:: https://github.com/SoCXin/HPM6750/workflows/sdk/badge.svg

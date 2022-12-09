@@ -1,6 +1,6 @@
-.. _foc:
+.. _motor:
 
-FOC
+Motor
 ============
 
 .. contents::
@@ -8,7 +8,7 @@ FOC
     :depth: 1
 
 
-技术简介
+FOC
 -----------
 
 FOC（field-oriented control）为磁场导向控制，又称为矢量控制（vectorcontrol），是一种利用变频器（VFD）控制三相交流马达的技术，利用调整变频器的输出频率、输出电压的大小及角度，来控制马达的输出。其特性是可以个别控制马达的的磁场及转矩，类似他激式直流马达的特性。由于处理时会将三相输出电流及电压以矢量来表示，因此称为矢量控制。是目前无刷直流电机（BLDC）和永磁同步电机（PMSM）高效控制的最佳选择。FOC精确地控制磁场大小与方向，使得电机转矩平稳、噪声小、效率高，并且具有高速的动态响应。
@@ -169,17 +169,12 @@ MiniFOC
 ODrive
 ~~~~~~~~~~~
 
-* 链接：`ODrive Home <https://odriverobotics.com/>`_ , `ODrive GitHub <https://github.com/odriverobotics/ODrive>`_
+* `ODrive Home <https://odriverobotics.com/>`_
+* `ODrive GitHub <https://github.com/odriverobotics/ODrive>`_
 
 
 相关主控
 ~~~~~~~~~~~
-
-.. toctree::
-    :maxdepth: 1
-
-    HC32M120 <../miscellaneous/HC32M120>
-    N32G452 <../miscellaneous/N32G452>
 
 .. list-table::
     :header-rows:  1
@@ -187,8 +182,7 @@ ODrive
     * - :ref:`vendor`
       - :ref:`architecture`
       - RAM
-      - Flash
-      - mTIM
+      - Flashs
       - PWM
       - More
       - :ref:`package`
@@ -196,7 +190,6 @@ ODrive
       - 170MHz
       - 128KB
       - 128/256/512KB
-      - 3
       - 12
       - :ref:`stm32_hrtim`
       - :ref:`LQFP64`

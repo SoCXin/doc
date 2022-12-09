@@ -68,6 +68,9 @@ Xin简介
 连接能力
 ~~~~~~~~~~~
 
+:ref:`link_budget` : 118 dBm
+:ref:`bandwidth` : 150 Mbps
+
 .. _esp32c3_wifi:
 
 Wi-Fi
@@ -215,8 +218,8 @@ Xin选择
       -
       - QFN28
 
-性能对比
-^^^^^^^^^^^^
+Performance
+^^^^^^^^^^^^^^
 
 :ref:`esp32c3` 的官方性能 407.22 :ref:`CoreMark` @160MHz，略高于120 MHz :ref:`cortex_m3` 的STM32F2系列(398 CoreMark)如 :ref:`stm32f207`，略低于 120 MHz :ref:`cortex_m4` 的STM32L4+系列(409 CoreMark)
 

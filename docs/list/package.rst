@@ -44,9 +44,9 @@ Package
       -
       - :ref:`LQFP48`
       - :ref:`LQFP64`
-      - :ref:`LQFP100`
-      - :ref:`LQFP144`
-      - :ref:`LQFP176`
+      - 
+      - 
+      - 
 
 
 
@@ -318,12 +318,6 @@ QFN56
       -
       -
     * - :ref:`w801`
-      -
-      -
-      -
-      -
-      -
-    * - :ref:`bl608`
       -
       -
       -

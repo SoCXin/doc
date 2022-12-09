@@ -102,7 +102,6 @@
 /RDA8910.html -> miscellaneous/USI8910DM.html
 /USI8910.html -> miscellaneous/USI8910DM.html
 /TKM32F499.html -> miscellaneous/TKM32F499.html
-/HC32M120.html -> miscellaneous/HC32M120.html
 /AIC8800M.html -> miscellaneous/AIC8800M.html
 /CS32A039.html -> chipsea/CS32A039.html
 /CS32G020.html -> chipsea/CS32G020.html
@@ -125,7 +124,11 @@
 /V831.html -> allwinner/V831.html
 /R329.html -> allwinner/R329.html
 /BL602.html -> bouffalolab/BL602.html
-/BL608.html -> bouffalolab/BL608.html
 /BL702.html -> bouffalolab/BL702.html
+/BL808.html -> bouffalolab/BL808.html
 /BK7231.html -> bekencorp/BK7231.html
 /BK7256.html -> bekencorp/BK7256.html
+/HC32M120.html -> hdsc/HC32M120.html
+/HC32F460.html -> hdsc/HC32F460.html
+/N32G452.html -> nationstech/N32G452.html
+/N32G4FR.html -> nationstech/N32G4FR.html

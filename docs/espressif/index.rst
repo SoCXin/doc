@@ -16,7 +16,7 @@ Espressif
 
 
 .. note::
-    乐鑫伴随物联网崛起，就早期狭义的技术实现而言物联网≈ESP32/ESP8266，入门经典莫过于：:ref:`stm32f103` & :ref:`esp8266`
+    乐鑫伴随物联网崛起，就早期狭义的技术实现而言物联网≈ESP32/ESP8266，入门经典 :ref:`stm32f103` + :ref:`esp8266`
 
 .. list-table::
     :header-rows:  1
@@ -26,52 +26,58 @@ Espressif
       - :ref:`CoreMark`
       - :ref:`sram`/:ref:`flash`
       - :ref:`wireless`
-      - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
+      - :ref:`peripherals`
       - :ref:`esp_audio`
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 994.2(2)
       - 520KB/448KB
       - WiFi&BT4.2
-      - 100Mbps/X/√
+      - 
       - I2S(2)/DAC/BT
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
       - 320KB/128KB
       - WiFi
-      - X /1.1 OTG/ √
+      - 
       - I2S/DAC
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6(2)
       - 512KB/384KB
       - WiFi&BLE5.0
-      - X /1.1 OTG/ √
+      - 
       - I2S(2)
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
       - 400KB/384KB
       - WiFi&BLE5.0
-      - X / X / √
+      - 
       - I2S
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
       -
       - 272KB/576KB
       - WiFi&BLE5.0
-      - X / X / √
+      - 
+      - I2S
+    * - :ref:`esp32c6`
+      - :ref:`esp_rv32`
+      -
+      - 400KB/384KB
+      - Matter&BLE5.2
+      - 
       - I2S
     * - :ref:`esp32h2`
       - :ref:`esp_rv32`
       -
       - 400KB/384KB
       - Matter&BLE5.2
-      - X / X / √
+      - 
       - I2S
 
-`官方提供各芯片对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
 
 核心优势
 ~~~~~~~~~~~~
@@ -87,14 +93,6 @@ Espressif
 
 目前主打的一个方向(人设)是AIoT，扩展了芯片在深度学习上的应用，但受限于芯片本身的性能和资源配置，很难从性能上突围，更多是最求一个当下难以量化的性价比，而对底层芯片的开发难度将抵消掉硬件的低成本。
 
-相关思考
-~~~~~~~~~~~~
-
-乐鑫并没有基于Arm内核，也没有IDE开发厂商，开发所依赖资源碎片化且变化更新快，导致使用时同步学习成本高(下游工程师的噩梦)，而对于用量大的产品或大客户，往往都需要相对稳定和确定；
-
-乐鑫Espressif相对其他MCU厂商而言，更积极开源，也拥有大量的开源学习资源，但是这些资源的商业产业化价值有限(大部分是Arduino)，独家芯片的强绑定关系和与Cortex内核不兼容的生态，难以给予客户安全感；
-
-传统MCU厂商的软件开发策略是完全交给客户，高可靠性低频率更新，客户写的每一行代码都只是一行代码，而乐鑫无法接入到传统内核的稳定生态中，所以软件开发层面为客户构建“杠杆”，客户的每一行代码可以翘动更多的功能，代价就是学习成本和框架绑定。
 
 
 芯片产品

@@ -1,0 +1,107 @@
+
+.. _ch32v003:
+
+CH32V003
+============
+
+`WCH <http://www.wch.cn/>`_ : ``RISC-V2A`` ``青稞`` ``48MHz``
+
+`Tags <https://github.com/SoCXin/CH32V003>`_ : :ref:`ulp` / :ref:`low`
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+
+.. image:: ./images/CH32V003.png
+    :target: http://www.wch.cn/products/CH32V003.html
+
+
+规格参数
+~~~~~~~~~~~
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 封装规格：QFN20/SOP16/SOP8/TSSOP20
+* 运行环境：-40°C to 85°C
+* RAM容量：2 KB
+* Flash容量：16 KB
+
+
+特征参数
+^^^^^^^^^^^
+
+* 48 MHz RISC-V2A (2级中断嵌套)
+* 1组1路通用DMA控制器
+* 1组运放比较器
+* 1组10位ADC
+* 1个16位高级定时器和1个16位通用定时器
+* 2个看门狗定时器和1个32位系统时基定时器
+* 1个USART接口、1组IIC接口、1组SPI接口
+* 18个I/O口，映像一个外部中断
+
+
+芯片架构
+~~~~~~~~~~~
+
+
+功耗参数
+^^^^^^^^^^^
+``45uA/MHz``
+
+* 供电电压：3.3/5V
+* 运行模式 44.65uA/MHz
+* 睡眠模式 17.90uA/MHz
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+    :depth: 1
+
+品牌对比
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`vendor`
+      - :ref:`architecture`
+      - :ref:`frequency`
+      - :ref:`sram`/:ref:`flash`
+      - 
+      - :ref:`peripherals`
+      - :ref:`package`
+    * - :ref:`ch32v003`
+      - 
+      - 48 MHz
+      - 2 KB/16 KB
+      - 
+      - 
+      - 
+    * - :ref:`at32f421`
+      - :ref:`cortex_m4`
+      - 120 MHz
+      - 16KB/64KB
+      -
+      -
+      -
+
+
+型号对比
+~~~~~~~~~~
+
+
+
+版本对比
+~~~~~~~~~~
+

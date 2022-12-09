@@ -51,20 +51,14 @@ WPAN
 
     * - :ref:`802_15_4`
       - :ref:`architecture`
-      - :ref:`sram`
-      -
-      - WiFi
-      - Rate
-      - More
+      - :ref:`CoreMark`
+      - :ref:`sram`/:ref:`flash`
       - :ref:`package`
-    * - :ref:`esp32h2`
+    * - :ref:`esp32c6`
       - :ref:`esp_rv32`
       -
       -
-      -
-      -
-      -
-      -
+      - QFN40
 
 
 .. _rfid:
@@ -87,6 +81,13 @@ NFC从本质上来说是一种RFID的演进技术，NFC只是限于13.56MHz的�
 
 NFC工作有效距离约10cm，所以具有很高的安全性。
 
+.. _ndef:
+
+NDEF
+^^^^^^^^^^^
+``NFC数据交换格式``
+
+是一种标准化的数据格式，可用于在任何兼容的NFC设备与另一个NFC设备或标签之间交换信息。 数据格式由NDEF消息和NDEF记录组成。 该标准由NFC论坛维护，可以免费获得参考，但需要接受许可协议才能下载。
 
 
 .. _zigbee:

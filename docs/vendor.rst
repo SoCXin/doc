@@ -4,7 +4,7 @@
 Vendor
 ===============
 
-.. _vendor_king:
+.. _soc_king:
 
 芯实力
 -----------
@@ -16,26 +16,22 @@ Vendor
     * - :ref:`vendor`
       - :ref:`hot`
       - :ref:`pop`
-      - :ref:`news`
+      - :ref:`new`
       - :ref:`low`
       - :ref:`top`
-      - :ref:`update`
     * - :ref:`st`
-      - 
-      - 
-      - :ref:`stm32g031`
-      - :ref:`stm8s003`
-      - :ref:`stm32mp15`
+      - :ref:`stm32f103`
+      - :ref:`stm32f401`
       - :ref:`stm32u575`
+      - :ref:`stm32g031`
+      - :ref:`stm32mp15`
     * - :ref:`ti`
-      - :ref:`wireless`
       -
       -
       -
       -
       -
     * - :ref:`mediatek`
-      - 
       -
       -
       -
@@ -47,9 +43,7 @@ Vendor
       -
       -
       -
-      -
     * - :ref:`nuvoton`
-      -
       -
       -
       -
@@ -61,9 +55,7 @@ Vendor
       -
       -
       -
-      -
     * - :ref:`nxp`
-      -
       -
       -
       -
@@ -84,7 +76,7 @@ Vendor
     国产芯片龙头企业 GigaDevice <gigadevice/index>
 
 
-.. _vendor_now:
+.. _xin_king:
 
 新势力
 -----------
@@ -96,36 +88,31 @@ Vendor
     * - :ref:`vendor`
       - :ref:`hot`
       - :ref:`pop`
-      - :ref:`news`
+      - :ref:`new`
       - :ref:`low`
       - :ref:`top`
-      - :ref:`update`
     * - :ref:`wch`
-      - :ref:`ch583`
+      - :ref:`ch32v307`
       - :ref:`ch552`
       - :ref:`ch579`
       - :ref:`ch573`
       - :ref:`ch569`
-      - :ref:`ch32v307`
     * - :ref:`espressif`
       - :ref:`esp32`
       - :ref:`esp32c3`
-      - :ref:`esp32s2`
+      - :ref:`esp32c6`
       - :ref:`esp32c2`
       - :ref:`esp32s3`
-      - :ref:`esp32h2`
     * - :ref:`arterytek`
-      -
-      -
+      - :ref:`at32wb415`
+      - :ref:`at32f4212`
       -
       - :ref:`at32f421`
-      - :ref:`at32f437`
       - :ref:`at32f437`
     * - :ref:`allwinner`
       - :ref:`r329`
       - :ref:`f133`
       - :ref:`v831`
-      -
       -
       - :ref:`v853`
 
@@ -144,7 +131,9 @@ Vendor
     多媒体应用处理器 Allwinner  <allwinner/index>
     物联网通信及计算 Bouffalolab  <bouffalolab/index>
     驱动控制国产普惠 Mindmotion  <mindmotion/index>
+    通用安全和智能卡 Nation  <nationstech/index>
     无线通信博通集成 Bekencorp  <bekencorp/index>
+    通用控制和智能卡 hdsc  <hdsc/index>
 
 
 不同芯片厂商的SDK和应用案例的开放策略不同，为了直观对比厂商的开发生态，引入 `OS-Q认证体系 <http://www.OS-Q.com>`_ 来给不同芯片厂商和不同芯片型号的开发资源排序，实现量化比较
@@ -154,7 +143,3 @@ Vendor
 * 开源社区的活跃程度和相关的开源项目数量及质量
 * 创新性和突破性
 
-.. note::
-    芯片行业已经不再是卖方市场，从关注我能做什么到用户需要什么的转变是痛苦的，但也是必须的。
-
-在控制器领域，产品开发遵循一定的规律，我们可以用小牛拉大车来降低成本，但为了产品质量却不会这样做，因为存在短板的系统，优化的空间受限，所以外设价值和主控价值存在一定的正相关性，除非是不再优化的退市产品。

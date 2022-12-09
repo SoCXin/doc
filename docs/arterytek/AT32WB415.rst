@@ -3,9 +3,7 @@
 
 AT32WB415
 ===============
-
-* `Arterytek <https://www.arterytek.com/>`_ : ``Cortex-M4`` ``150MHz`` ``BLE5.0``
-* `Tags <https://github.com/SoCXin/AT32WB415>`_ : :ref:`ble`
+`Arterytek <https://www.arterytek.com/>`_ : ``Cortex-M4`` ``150MHz`` ``BLE5.0``
 
 .. contents::
     :local:
@@ -14,12 +12,13 @@ AT32WB415
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/AT32WB415>`_ : :ref:`ble`
 
 
-`datasheet <https://www.arterytek.com/download/DS/DS_AT32WB415_V2.00_CH.pdf>`_
 
 规格参数
 ~~~~~~~~~~~
+`datasheet <https://www.arterytek.com/download/DS/DS_AT32WB415_V2.00_CH.pdf>`_
 
 
 基本参数
