@@ -4,8 +4,6 @@ Espressif
 ==============
 ``Xtensa-LX7`` ``Xtensa-LX6`` ``RISC-V`` ``Matter`` ``Audio`` ``ULP`` ``Touch`` ``Wi-Fi`` ``BT/BLE`` ``ESP32`` ``ESP8266`` ``Arduino``
 
-`OS-Q资源适配 <http://www.OS-Q.com>`_
-
 .. contents::
     :local:
     :depth: 1
@@ -151,7 +149,9 @@ Espressif
 -----------
 
 开发框架
-~~~~~~~~~~~~
+~~~~~~~~~~~
+
+`OS-Q资源适配 <http://www.OS-Q.com>`_
 
 .. contents::
     :local:

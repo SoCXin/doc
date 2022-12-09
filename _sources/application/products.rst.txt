@@ -16,3 +16,8 @@ fingerprint
 
 
 
+.. _bldc:
+
+BLDC
+--------------
+

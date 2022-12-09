@@ -153,9 +153,9 @@ SAMSUNG
 
 .. _gf:
 
-GlobalFoundries
+GF
 -----------------
-``FinFET`` ``12nm`` ``28nm`` ``40nm``
+``GlobalFoundries`` ``FinFET`` ``12nm`` ``28nm`` ``40nm``
 
 `格罗方德 <https://gf.com/>`_ 成立于2009年3月，总部纽约，由AMD拆分而来、与阿联酋阿布扎比先进技术投资公司(ATIC)和穆巴达拉发展公司(Mubadala)联合投资成立的半导体制造企业。
 

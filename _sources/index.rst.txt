@@ -162,8 +162,7 @@ Xindex
 
     芯片设计 <vendor>
     晶元制造 <fabs>
-    销售渠道 <sales>
-
+    供应渠道 <sales>
 
 .. list-table::
     :header-rows: 1
