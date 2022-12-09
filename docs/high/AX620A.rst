@@ -62,5 +62,4 @@ Xin选择
 
 AX630A
 ^^^^^^^^^^^
-
-* `Axera <https://www.axera-tech.com/product/T7297367876758893768>`_ : ``Cortex-A53`` ``Quad Core`` ``8Tops`` ``NPU``
+``Cortex-A53`` ``Quad Core`` ``8Tops`` ``NPU``

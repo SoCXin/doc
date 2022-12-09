@@ -4,8 +4,6 @@ Espressif
 ==============
 ``Xtensa-LX7`` ``Xtensa-LX6`` ``RISC-V`` ``Matter`` ``Audio`` ``ULP`` ``Touch`` ``Wi-Fi`` ``BT/BLE`` ``ESP32`` ``ESP8266`` ``Arduino``
 
-`OS-Q资源适配 <http://www.OS-Q.com>`_
-
 .. contents::
     :local:
     :depth: 1
@@ -142,6 +140,7 @@ Espressif
 
     ESP32S2(USB-OTG) <ESP32-S2>
     ESP32H2 (802.15.4) <ESP32-H2>
+    ESP32P4  <ESP32-P4>
 
 `各芯片资源对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
 
@@ -150,7 +149,9 @@ Espressif
 -----------
 
 开发框架
-~~~~~~~~~~~~
+~~~~~~~~~~~
+
+`OS-Q资源适配 <http://www.OS-Q.com>`_
 
 .. contents::
     :local:

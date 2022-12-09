@@ -104,7 +104,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`wifi4`
       - :ref:`architecture`
       - :ref:`CoreMark`
       - :ref:`sram`/:ref:`flash`
@@ -166,7 +166,7 @@ Xin选择
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`ble`
       - :ref:`architecture`
       - :ref:`CoreMark`
       - :ref:`sram`/:ref:`flash`

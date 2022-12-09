@@ -1,0 +1,17 @@
+
+.. _rs9116:
+
+RS9116
+===============
+
+* `silabs <https://cn.silabs.com/>`_ : ``Wi-Fi`` 
+* `Tags <https://github.com/bekencorp>`_ : :ref:`wifi6`
+
+
+Silicon Labs 的 Wi-Fi 产品RS9116，具有高吞吐量、功率优化性能的扩展范围，并通过了 FCC、IC 和 ETSI/CE 认证。
+
+* 符合单空间流 IEEE 802.11 a/b/g/n，单波段 (2.4 GHz) 和双波段 (2.4/5 GHz) 支持
+* 发射功率高达 +20 dBm，集成功率放大器
+* 接收灵敏度低至 -98.5 dBm
+* 工作频率范围：2412 MHz - 2484 MHz；4.9 GHz - 5.975 GHz
+

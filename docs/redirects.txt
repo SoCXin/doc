@@ -35,6 +35,8 @@
 /ESP32C3.html -> espressif/ESP32-C3.html
 /ESP32-H2.html -> espressif/ESP32-H2.html
 /ESP32H2.html -> espressif/ESP32-H2.html
+/ESP32-C6.html -> espressif/ESP32-C6.html
+/ESP32C6.html -> espressif/ESP32-C6.html
 /CH581.html -> wch/CH583.html
 /CH582.html -> wch/CH583.html
 /CH583.html -> wch/CH583.html
@@ -109,6 +111,7 @@
 /K210.html -> high/K210.html
 /K230.html -> high/K230.html
 /K510.html -> high/K510.html
+/HPM6350.html -> high/HPM6350.html
 /HPM6750.html -> high/HPM6750.html
 /F133.html -> allwinner/F133.html
 /SP7021.html -> high/SP7021.html

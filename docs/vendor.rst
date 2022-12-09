@@ -8,23 +8,21 @@ Vendor
 
 芯实力
 -----------
-``长期领先``
+``世界领先``
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`vendor`
-      - :ref:`application`
-      - :ref:`industry`
-      - :ref:`level`
+      - :ref:`hot`
+      - :ref:`pop`
       - :ref:`news`
       - :ref:`low`
       - :ref:`top`
       - :ref:`update`
     * - :ref:`st`
-      - :ref:`adc`
-      - :ref:`elec`
-      - :ref:`level3`
+      - 
+      - 
       - :ref:`stm32g031`
       - :ref:`stm8s003`
       - :ref:`stm32mp15`
@@ -36,17 +34,14 @@ Vendor
       -
       -
       -
-      -
     * - :ref:`mediatek`
-      - :ref:`ai`
-      -
+      - 
       -
       -
       -
       -
       -
     * - :ref:`realtek`
-      - :ref:`wireless`
       -
       -
       -
@@ -60,9 +55,7 @@ Vendor
       -
       -
       -
-      -
     * - :ref:`gigadevice`
-      -
       -
       -
       -
@@ -76,7 +69,6 @@ Vendor
       -
       -
       -
-      -
 
 .. toctree::
     :maxdepth: 1
@@ -84,7 +76,7 @@ Vendor
     电源模拟和物联网 TI <ti/index>
     微控制器领域王者 ST <st/index>
     高性能多领域跨界 NXP <nxp/index>
-    高性能模拟供应商 silabs <silabs/index>
+    高性能模拟Silicon Labs <silabs/index>
     低功耗蓝牙控制器 Nordic <nordic/index>
     多媒体及网络通信 Realtek <realtek/index>
     多媒体语音控制器 Nuvoton  <nuvoton/index>
@@ -92,7 +84,7 @@ Vendor
     国产芯片龙头企业 GigaDevice <gigadevice/index>
 
 
-.. _vendor_son:
+.. _vendor_now:
 
 新势力
 -----------
@@ -102,7 +94,6 @@ Vendor
     :header-rows:  1
 
     * - :ref:`vendor`
-      - :ref:`history`
       - :ref:`hot`
       - :ref:`pop`
       - :ref:`news`
@@ -110,7 +101,6 @@ Vendor
       - :ref:`top`
       - :ref:`update`
     * - :ref:`wch`
-      - :ref:`ch563`
       - :ref:`ch583`
       - :ref:`ch552`
       - :ref:`ch579`
@@ -118,7 +108,6 @@ Vendor
       - :ref:`ch569`
       - :ref:`ch32v307`
     * - :ref:`espressif`
-      - :ref:`esp8266`
       - :ref:`esp32`
       - :ref:`esp32c3`
       - :ref:`esp32s2`
@@ -129,12 +118,10 @@ Vendor
       -
       -
       -
-      -
       - :ref:`at32f421`
       - :ref:`at32f437`
       - :ref:`at32f437`
     * - :ref:`allwinner`
-      -
       - :ref:`r329`
       - :ref:`f133`
       - :ref:`v831`
@@ -152,7 +139,7 @@ Vendor
     物联网通信控制器 WCH <wch/index>
     行业定制化控制器 Synwit <synwit/index>
     信号链整合控制器 Chipsea <chipsea/index>
-    Espressif WiFi MCU (上海) <espressif/index>
+    Espressif Wi-Fi MCU (上海) <espressif/index>
     Cortex-M4控制器 ArteryTek <arterytek/index>
     多媒体应用处理器 Allwinner  <allwinner/index>
     物联网通信及计算 Bouffalolab  <bouffalolab/index>

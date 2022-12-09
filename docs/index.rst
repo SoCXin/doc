@@ -58,9 +58,6 @@ Xindex
       - :ref:`stm32h730`
       - :ref:`nrf52832`
 
-.. hint::
-    贫乏的过去追求全能，争鸣的当下追求差异，不远的未来追求极致
-
 
 .. toctree::
     :caption: 典型应用
@@ -165,8 +162,7 @@ Xindex
 
     芯片设计 <vendor>
     晶元制造 <fabs>
-    销售渠道 <sales>
-
+    供应渠道 <sales>
 
 .. list-table::
     :header-rows: 1
