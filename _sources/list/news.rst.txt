@@ -13,7 +13,7 @@
 `工业控制`_          `消费电子`_         `超长待机`_          `计量仪表`_
 ==================  ==================  ==================  ==================
 
-.. |感知驱动| image:: images/rp2040.jpg
+.. |感知驱动| image:: images/rp2040.png
 .. _感知驱动: ../miscellaneous/RP2040.html
 
 .. |无线通信| image:: ../application/images/matter.png
@@ -22,8 +22,8 @@
 .. |网络连接| image:: ../espressif/images/espressif.png
 .. _网络连接: ../miscellaneous/RP2040.html
 
-.. |边缘计算| image:: ../espressif/images/espressif.png
-.. _边缘计算: ../miscellaneous/RP2040.html
+.. |边缘计算| image:: images/ax620a.jpg
+.. _边缘计算: ../high/AX620A.html
 
 .. |工业控制| image:: ../espressif/images/espressif.png
 .. _工业控制: ../miscellaneous/RP2040.html

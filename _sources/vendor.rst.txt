@@ -28,7 +28,7 @@ Vendor
       - :ref:`stm32mp15`
       - :ref:`stm32u575`
     * - :ref:`ti`
-      - :ref:`wireless`
+      - 
       -
       -
       -

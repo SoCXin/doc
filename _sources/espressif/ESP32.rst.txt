@@ -66,6 +66,9 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~
 
+:ref:`link_budget` : 118dBm
+:ref:`bandwidth` : 150 Mbps
+
 功耗参数
 ^^^^^^^^^^^
 

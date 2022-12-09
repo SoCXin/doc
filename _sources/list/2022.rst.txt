@@ -16,7 +16,7 @@
 `September`_        `October`_          `November`_         `December`_
 ==================  ==================  ==================  ==================
 
-.. |January| image:: images/rp2040.jpg
+.. |January| image:: images/rp2040.png
 .. _January: ../miscellaneous/RP2040.html
 
 .. |February| image:: ../espressif/images/espressif.png
@@ -46,11 +46,11 @@
 .. |October| image:: ../espressif/images/espressif.png
 .. _October: ../miscellaneous/RP2040.html
 
-.. |November| image:: ../espressif/images/espressif.png
-.. _November: ../miscellaneous/RP2040.html
+.. |November| image:: images/ax620a.jpg
+.. _November: ../high/AX620A.html
 
-.. |December| image:: ../high/images/ax620a.jpg
-.. _December: ../high/AX620A.html
+.. |December| image:: ../espressif/images/espressif.png
+.. _December: ../high/K230.html
 
 
 .. contents::

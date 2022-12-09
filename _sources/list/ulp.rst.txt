@@ -13,7 +13,6 @@
       - :ref:`architecture`
       - :ref:`frequency`
       - :ref:`ulpbench`
-      - :ref:`wireless`
       - :ref:`vdd`
       - :ref:`power`
       - :ref:`halt`
@@ -22,7 +21,6 @@
       - :ref:`cortex_m33`
       - 160(MHz)
       - 651
-      - X
       - 1.7-3.6
       - 19 µA
       - 475 nA
@@ -31,7 +29,6 @@
       - :ref:`cortex_m4`
       - 80(MHz)
       - 273.55
-      - X
       - 1.7-3.6
       - 28 μA
       -
@@ -40,7 +37,6 @@
       - :ref:`wch_riscv4c`
       - 144(MHz)
       -
-      - X
       - 2.4-3.6
       - 45 μA
       -
@@ -49,7 +45,6 @@
       - :ref:`cortex_m0`
       - 32(MHz)
       -
-      - X
       - 1.7-3.6
       - 49 µA
       -
@@ -58,7 +53,6 @@
       - :ref:`cortex_m3`
       - 48(MHz)
       - 158
-      - √
       - 1.8-3.8
       - 51 µA
       -
@@ -67,7 +61,6 @@
       - :ref:`cortex_m0`
       - 48(MHz)
       -
-      - :ref:`ble`
       - 1.71-3.8
       - 55 µA
       - 830 nA
@@ -76,7 +69,6 @@
       - :ref:`cortex_m3`
       - 64(MHz)
       - 142
-      - √
       - 1.8-3.8
       - 61 µA
       -
@@ -85,7 +77,6 @@
       - :ref:`cortex_m23`
       - 64(MHz)
       -
-      - X
       - 1.7-3.6
       - 66 µA
       -
@@ -94,7 +85,6 @@
       - :ref:`andes_d45`
       - 648(MHz)
       - 3390
-      - X
       - 3.0-3.6
       - 90 µA
       -
@@ -103,7 +93,6 @@
       - :ref:`cortex_m7`
       - 280(MHz)
       - 1414
-      - X
       - 1.71-3.6
       - 120µA
       -

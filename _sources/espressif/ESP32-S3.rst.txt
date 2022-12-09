@@ -178,6 +178,9 @@ Wi-Fi
 ^^^^^^^^^^^^^^^
 ``20dBm``
 
+:ref:`link_budget` : 118dBm
+:ref:`bandwidth` : 150 Mbps
+
 在 2.4 GHz 频带支持 20 MHz 和 40 MHz 频宽，支持 1T1R 模式，数据速率高达 150 Mbps
 
 * 天线分集
