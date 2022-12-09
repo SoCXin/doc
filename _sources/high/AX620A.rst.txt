@@ -4,9 +4,9 @@
 AX620A
 =============
 
-* `GigaDevice <https://www.axera-tech.com/>`_ : ``Cortex-A7`` ``Quad Core`` ``NPU 3.6Tops int8``
+* `Axera <https://www.axera-tech.com/product/T7297367876123493768>`_ : ``Cortex-A7`` ``Quad Core`` ``3.6Tops`` ``NPU``
 * `Tags <https://github.com/SoCXin/AX620A>`_ : :ref:`top`
-
+ 
 .. contents::
     :local:
     :depth: 1
@@ -33,9 +33,9 @@ Xin简介
 ^^^^^^^^^^^
 
 * :ref:`cortex_a7` Quad Core
-* 3.6Tops int8 NPU
-* ISP:4K@30fps
-* 视频编码:H.264, H.265 4K@30fps
+* 3.6Tops int8 NPU (14.4Tops int4)
+* ISP 4K@30fps
+* H.264, H.265 4K@30fps
 * 视频解码:1080p@60fps H.264 only
 * 支持1路RGMII/RMII接口模式的以太网
 * 支持双路4Lane MIPI DSI，最大支持单路4K@30fps
@@ -44,3 +44,22 @@ Xin简介
 芯片架构
 ~~~~~~~~~~~~
 
+Xin选择
+-----------
+
+
+.. contents::
+    :local:
+
+
+品牌对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+.. _ax630a:
+
+AX630A
+^^^^^^^^^^^
+``Cortex-A53`` ``Quad Core`` ``8Tops`` ``NPU``

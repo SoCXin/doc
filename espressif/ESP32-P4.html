@@ -4,11 +4,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arterytek &mdash; SoC</title>
+  <title>ESP32P4 &mdash; SoC</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="canonical" href="https://doc.soc.xin/arterytek/index.html" />
+    <link rel="canonical" href="https://doc.soc.xin/espressif/ESP32-P4.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="AT32F421" href="AT32F421.html" />
-    <link rel="prev" title="ESP32P4" href="../espressif/ESP32-P4.html" />
+    <link rel="next" title="Arterytek" href="../arterytek/index.html" />
+    <link rel="prev" title="ESP32H2" href="ESP32-H2.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -85,13 +85,14 @@
 <li class="toctree-l3"><a class="reference internal" href="../wch/index.html">物联网通信控制器 WCH</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../synwit/index.html">行业定制化控制器 Synwit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../chipsea/index.html">信号链整合控制器 Chipsea</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../espressif/index.html">Espressif WiFi MCU (上海)</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Cortex-M4控制器 ArteryTek</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id2">公司简介</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id5">产品简介</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id10">技术简介</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Espressif WiFi MCU (上海)</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="index.html#id2">公司简介</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html#id8">芯片产品</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id13">解决方案</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id29">相关总结</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../arterytek/index.html">Cortex-M4控制器 ArteryTek</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../allwinner/index.html">多媒体应用处理器 Allwinner</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../bouffalolab/index.html">物联网通信及计算 Bouffalolab</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mindmotion/index.html">驱动控制国产普惠 Mindmotion</a></li>
@@ -132,9 +133,10 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
           <li class="breadcrumb-item"><a href="../vendor.html">Vendor</a></li>
-      <li class="breadcrumb-item active">Arterytek</li>
+          <li class="breadcrumb-item"><a href="index.html">Espressif</a></li>
+      <li class="breadcrumb-item active">ESP32P4</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/SoCXin/doc/blob/master/doc/arterytek/index.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/SoCXin/doc/blob/master/doc/espressif/ESP32-P4.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -142,105 +144,76 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="arterytek">
-<span id="id1"></span><h1>Arterytek<a class="headerlink" href="#arterytek" title="Permalink to this heading">¶</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">Cortex-M4</span></code> <code class="docutils literal notranslate"><span class="pre">MCU</span></code> <code class="docutils literal notranslate"><span class="pre">AT32F421</span></code></p>
-<section id="id2">
-<h2>公司简介<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
-<p>单独对 <a class="reference internal" href="#arterytek"><span class="std std-ref">Arterytek</span></a> 进行整理是因为该公司成立至今不久，目前的产品比较聚焦Cortex-M4，掀起替换GD等国产芯片的内卷风，更有想象空间，若以MCU领域的 <a class="reference internal" href="../st/index.html#st"><span class="std std-ref">ST</span></a> 为基线，Arterytek的产品定位更加细分，STM32F4/STM32G4主流高性能产品主频&lt;200MHz，和以 <a class="reference internal" href="../architecture/cortexM7.html#cortex-m7"><span class="std std-ref">Cortex-M7</span></a> 内核构建的STM32H7系列间存在一段性能空白区，众多国产 <a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a> MCU凭借主频(制程工艺)和性价比突围，也避开了和低端 <a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a> 的竞争。</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><a class="reference external" href="https://www.arterytek.com/cn/index.jsp">雅特力科技</a> （重庆）有限公司于2016年6月成立，专注于ARM® Cortex®-M4 的32位微控制器研发与创新，拥有领先高端芯片研发技术、完整的硅智财库及专业灵活的整合经验，创造了MCU 业界Cortex®-M4最高CPU主频288MHz运算效能，并致力于成为中国32位微控制器的创新领导者。</p>
-</div>
-<section id="id4">
-<h3>技术支持<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
-<p>官方提供少量示例工程，厂商无开发环境，支持KEIL/IAR</p>
-</section>
-</section>
-<section id="id5">
-<h2>产品简介<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
-<a class="reference external image-reference" href="https://www.arterytek.com/cn/index.jsp"><img alt="../_images/AT32MCU_220309_ch.png" src="../_images/AT32MCU_220309_ch.png" /></a>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>2016年成立，2018年正式对外销售芯片，AT32系列高效能MCU，采用55nm制程先进工艺，全系列搭载 <a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a> 内核，产品系列较少定位清晰。</p>
-</div>
+  <section id="esp32p4">
+<span id="id1"></span><h1>ESP32P4<a class="headerlink" href="#esp32p4" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.espressif.com/">espressif</a> :  <code class="docutils literal notranslate"><span class="pre">RISC-V</span></code></p></li>
+<li><p><a class="reference external" href="https://github.com/SoCXin/ESP32P4">Tags</a> : <a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></li>
+</ul>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#id6" id="id12">超值产品</a></p></li>
-<li><p><a class="reference internal" href="#id7" id="id13">主流产品</a></p></li>
-<li><p><a class="reference internal" href="#id8" id="id14">性能产品</a></p></li>
-<li><p><a class="reference internal" href="#id9" id="id15">无线产品</a></p></li>
+<li><p><a class="reference internal" href="#xin" id="id14">Xin简介</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id15">Xin选择</a></p></li>
 </ul>
 </div>
+<section id="xin">
+<h2><a class="toc-backref" href="#id14">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<section id="id2">
+<h3>规格参数<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<section id="id3">
+<h4>基本参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>发布时间：</p></li>
+<li><p>参考价格：</p></li>
+<li><p>制程工艺：</p></li>
+<li><p>供货周期：</p></li>
+<li><p>处理性能：? <a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></li>
+<li><p>封装规格：</p></li>
+<li><p>运行环境：-40°C to 105°C</p></li>
+<li><p>RAM容量：272 KBs</p></li>
+<li><p>ROM容量：576 KB</p></li>
+<li><p>Flash容量：</p></li>
+</ul>
+</section>
+<section id="id4">
+<h4>特征参数<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>240 MHz <a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></li>
+</ul>
+</section>
+<section id="id5">
+<h4>模拟性能<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+</section>
+</section>
 <section id="id6">
-<h3><a class="toc-backref" href="#id12">超值产品</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="AT32F421.html">120MHz: AT32F421</a></li>
-<li class="toctree-l1"><a class="reference internal" href="AT32F415.html">150MHz: AT32F415</a></li>
-<li class="toctree-l1"><a class="reference internal" href="AT32F425.html">USBOTG: AT32F425</a></li>
+<h3>芯片架构<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<div class="contents local topic" id="id7">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id8" id="id16">电源参数</a></p></li>
 </ul>
 </div>
-</section>
-<section id="id7">
-<h3><a class="toc-backref" href="#id13">主流产品</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="AT32F413.html">200MHz: AT32F413</a></li>
-<li class="toctree-l1"><a class="reference internal" href="AT32F403.html">240MHz: AT32F403</a></li>
-<li class="toctree-l1"><a class="reference internal" href="AT32F407.html">240MHz: AT32F407</a></li>
-</ul>
-</div>
-</section>
 <section id="id8">
-<h3><a class="toc-backref" href="#id14">性能产品</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="AT32F437.html">288MHz: AT32F437</a></li>
-</ul>
-</div>
+<h4><a class="toc-backref" href="#id16">电源参数</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+</section>
+</section>
 </section>
 <section id="id9">
-<h3><a class="toc-backref" href="#id15">无线产品</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="AT32WB415.html">AT32WB415</a></li>
+<h2><a class="toc-backref" href="#id15">Xin选择</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id10">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id11" id="id17">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id18">型号对比</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id19">版本对比</a></p></li>
 </ul>
 </div>
+<section id="id11">
+<h3><a class="toc-backref" href="#id17">品牌对比</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
 </section>
+<section id="id12">
+<h3><a class="toc-backref" href="#id18">型号对比</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
 </section>
-<section id="id10">
-<h2>技术简介<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
-<div class="contents local topic" id="id11">
-<ul class="simple">
-<li><p><a class="reference internal" href="#m4" id="id16">M4高主频</a></p></li>
-<li><p><a class="reference internal" href="#spim" id="id17">SPIM存储扩展</a></p></li>
-<li><p><a class="reference internal" href="#xmc" id="id18">XMC接口扩展</a></p></li>
-<li><p><a class="reference internal" href="#slib" id="id19">sLib安全库区</a></p></li>
-</ul>
-</div>
-<section id="m4">
-<h3><a class="toc-backref" href="#id16">M4高主频</a><a class="headerlink" href="#m4" title="Permalink to this heading">¶</a></h3>
-<p>基于 <a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a> 内核120MHz主频的 <a class="reference internal" href="AT32F421.html#at32f421"><span class="std std-ref">AT32F421</span></a> 直接对标 <a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a> 的入门级产品，公司不多的几个产品系列基本上都是以高主频的方式降维竞争，配备更多的外设资源，让参数看上去十分抢眼。</p>
-</section>
-<section id="spim">
-<span id="arterytek-spim"></span><h3><a class="toc-backref" href="#id17">SPIM存储扩展</a><a class="headerlink" href="#spim" title="Permalink to this heading">¶</a></h3>
-<p>高达16MB外部 SPI Flash memory 扩展(程序执行/数据储存/程序与数据可加密)</p>
-</section>
-<section id="xmc">
-<h3><a class="toc-backref" href="#id18">XMC接口扩展</a><a class="headerlink" href="#xmc" title="Permalink to this heading">¶</a></h3>
-<p>支持CF卡、SRAM、PSRAM、NOR和NAND存储器支持并行LCD接口, 兼容8080/6800模式</p>
-</section>
-<section id="slib">
-<span id="arterytek-slib"></span><h3><a class="toc-backref" href="#id19">sLib安全库区</a><a class="headerlink" href="#slib" title="Permalink to this heading">¶</a></h3>
-<ul class="simple">
-<li><p>设定以密码保护主闪存中指定范围的程序区(即安全库区)，软件方案商可将核心算法存放到此区域，以达到保护的功能，其余空白程序区可以提供给终端商客户进行二次开发。</p></li>
-<li><p>安全库区分为指令安全库区(SLIB_CODE)及只读安全库区 (SLIB_READ_ONLY)，可支持整个安全库区设定为指令区，或是设定为唯读区，或是部分指令区与部分唯读区。</p></li>
-<li><p>指令 安全库区(SLIB_CODE)内的程序代码 仅能被 MCU透过 I-Code总线 抓取指令 (仅能被执行)，不能透过D-Code总线以读取数据的方式读取(包含ISP/ICP调适模式以及从内部RAM启动的程序)，以读取数据的方式去访问SLIB_CODE时，读到的数值全都是0x00。</p></li>
-<li><p>唯读安全库区(SLIB_READ_ONLY)可透过I-Code及D-Code总线读取，可以储存代码跟数据，但不能写入。</p></li>
-<li><p>安全库区的程序代码及数据，除非输入正确的密码，否则无法被擦除。在密码不正确时，对安全库区执行写入或擦除，将会在FLASH_STS寄存器的WRPRTFLR位置”1”提出警告。</p></li>
-<li><p>终端用户执行主闪存的整片擦除时，安全库区的程序代码及数据不会被擦除。</p></li>
-</ul>
+<section id="id13">
+<h3><a class="toc-backref" href="#id19">版本对比</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
 </section>
 </section>
 </section>
@@ -249,8 +222,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../espressif/ESP32-P4.html" class="btn btn-neutral float-left" title="ESP32P4" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="AT32F421.html" class="btn btn-neutral float-right" title="AT32F421" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ESP32-H2.html" class="btn btn-neutral float-left" title="ESP32H2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../arterytek/index.html" class="btn btn-neutral float-right" title="Arterytek" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -395,8 +368,8 @@
     <dl>
       <dt>Created By Qtias</dt>
       <img src="../_static/images/weixin.jpg">
-        <!-- <dd><a href="https://github.com/SoCXin/doc/blob/master/doc/arterytek/index.rst"> View</a></dd>
-        <dd><a href="https://github.com/SoCXin/doc/edit/master/doc/arterytek/index.rst"> Edit</a></dd> -->
+        <!-- <dd><a href="https://github.com/SoCXin/doc/blob/master/doc/espressif/ESP32-P4.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/doc/edit/master/doc/espressif/ESP32-P4.rst"> Edit</a></dd> -->
     </dl>
   </div>
 </div><script>
