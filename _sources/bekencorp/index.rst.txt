@@ -23,10 +23,12 @@
 -----------
 
 开发框架
-~~~~~~~~~
+~~~~~~~~~~~
 
 armino
 ^^^^^^^^^^^
 
-https://github.com/Qitas/armino
+`armino <https://github.com/Qitas/armino>`_
+
+
 
