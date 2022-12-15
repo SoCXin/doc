@@ -111,10 +111,8 @@ ULP
 连接能力
 ~~~~~~~~~~~~~~
 
-.. _esp32s2_throughput:
-
-Throughput
-^^^^^^^^^^^^^^^
+:ref:`link_budget` : 118dBm
+:ref:`bandwidth` : 150 Mbps
 
 
 .. _esp32s2_wifi:

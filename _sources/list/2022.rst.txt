@@ -22,8 +22,8 @@
 .. |February| image:: ../espressif/images/espressif.png
 .. _February: ../miscellaneous/RP2040.html
 
-.. |March| image:: ../espressif/images/espressif.png
-.. _March: ../miscellaneous/RP2040.html
+.. |March| image:: images/esp32c6.png
+.. _March: ../espressif/ESP32-C6.html
 
 .. |April| image:: ../espressif/images/espressif.png
 .. _April: ../miscellaneous/RP2040.html
@@ -63,16 +63,17 @@
 
 :ref:`rp2040` 聚集了足够多的开发资源和使用方式，同时解决了芯片的供应和价格问题，其商用价值将大大增加，通过逐步上市的产品将进一步提高相关产品的定义基线。
 
-02-ESP32C2
+02-ESP32H2
 ~~~~~~~~~~~~
-``Wi-Fi``
-
-:ref:`esp32c2` 就是你能用上的最便宜的 :ref:`wifi`
-
-03-ESP32H2
-~~~~~~~~~~~~
+``Matter``
 
 :ref:`esp32h2` 就是你快用上的最高效的 :ref:`matter`
+
+03-ESP32C6
+~~~~~~~~~~~~
+``Wi-Fi6`` ``Matter``
+
+:ref:`esp32c6` 支持 :ref:`wifi6`
 
 
 04-CH32V307

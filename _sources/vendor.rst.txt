@@ -16,7 +16,7 @@ Vendor
     * - :ref:`vendor`
       - :ref:`hot`
       - :ref:`pop`
-      - :ref:`news`
+      - :ref:`new`
       - :ref:`low`
       - :ref:`top`
       - :ref:`update`
@@ -96,7 +96,7 @@ Vendor
     * - :ref:`vendor`
       - :ref:`hot`
       - :ref:`pop`
-      - :ref:`news`
+      - :ref:`new`
       - :ref:`low`
       - :ref:`top`
       - :ref:`update`

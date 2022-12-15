@@ -16,7 +16,7 @@ Espressif
 
 
 .. note::
-    乐鑫伴随物联网崛起，就早期狭义的技术实现而言物联网≈ESP32/ESP8266，入门经典莫过于：:ref:`stm32f103` & :ref:`esp8266`
+    乐鑫伴随物联网崛起，就早期狭义的技术实现而言物联网≈ESP32/ESP8266，入门经典 :ref:`stm32f103` + :ref:`esp8266`
 
 .. list-table::
     :header-rows:  1
@@ -26,52 +26,58 @@ Espressif
       - :ref:`CoreMark`
       - :ref:`sram`/:ref:`flash`
       - :ref:`wireless`
-      - :ref:`esp32_eth`/:ref:`esp_usb`/:ref:`esp32_can`
+      - :ref:`esp32_eth`
       - :ref:`esp_audio`
     * - :ref:`esp32`
       - :ref:`xtensa_lx6`
       - 994.2(2)
       - 520KB/448KB
       - WiFi&BT4.2
-      - 100Mbps/X/√
+      - 
       - I2S(2)/DAC/BT
     * - :ref:`esp32s2`
       - :ref:`xtensa_lx7`
       - 613.8
       - 320KB/128KB
       - WiFi
-      - X /1.1 OTG/ √
+      - 
       - I2S/DAC
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
       - 1181.6(2)
       - 512KB/384KB
       - WiFi&BLE5.0
-      - X /1.1 OTG/ √
+      - 
       - I2S(2)
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
       - 400KB/384KB
       - WiFi&BLE5.0
-      - X / X / √
+      - 
       - I2S
     * - :ref:`esp32c2`
       - :ref:`esp_rv32`
       -
       - 272KB/576KB
       - WiFi&BLE5.0
-      - X / X / √
+      - 
+      - I2S
+    * - :ref:`esp32c6`
+      - :ref:`esp_rv32`
+      -
+      - 400KB/384KB
+      - Matter&BLE5.2
+      - 
       - I2S
     * - :ref:`esp32h2`
       - :ref:`esp_rv32`
       -
       - 400KB/384KB
       - Matter&BLE5.2
-      - X / X / √
+      - 
       - I2S
 
-`官方提供各芯片对比 <https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/hw-reference/chip-series-comparison.html>`_
 
 核心优势
 ~~~~~~~~~~~~

@@ -8,53 +8,51 @@ Wi-Fi
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`wifi`
-      - :ref:`vendor`
+    * - :ref:`vendor`
+      - :ref:`new`
       - :ref:`hot`
       - :ref:`pop`
-    * - 排名一
-      - Broadcom
+    * - Broadcom
+      - 
       -
       -
-    * - 排名二
-      - Qualcomm
+    * - Qualcomm
+      - 
       -
       -
-    * - 排名三
-      - Marvell
+    * - Marvell
+      - 
       -
       -
-    * - 排名四
-      - :ref:`mediatek`
+    * - :ref:`mediatek`
+      - 
       -
       -
-    * - 排名五
-      - :ref:`ti`
+    * - :ref:`ti`
+      - 
       -
       -
-    * - 排名六
-      - :ref:`silabs`
+    * - :ref:`silabs`
+      - 
       -
       -
-    * - 排名七
-      - :ref:`mediatek`
-      -
-      -
-
-    * - 排名八
-      - :ref:`espressif`
-      -
-      -
-    * - 排名九
-      - :ref:`allwinner`
-      -
-      -
-    * - 排名十
-      - 新岸线
+    * - :ref:`realtek`
+      - 
       -
       -
 
-.. image:: ./images/WiFi.jpg
+    * - :ref:`espressif`
+      - 
+      -
+      -
+    * - :ref:`allwinner`
+      - 
+      -
+      -
+    * - 新岸线
+      - 
+      -
+      -
 
 
 
@@ -199,8 +197,8 @@ Wi-Fi6
 .. note::
     大部分WiFi通信芯片不仅具备WiFi接入能力，同时具备BLE连接能力，而且不断有新的厂商进入这一领域，用户的选择范围非常广。
 
-性能对比
------------
+Performance
+--------------
 
 .. _link_budget:
 
@@ -212,4 +210,7 @@ Link Budget
 
 Bandwidth
 ~~~~~~~~~~~~~~
+
+
+.. image:: ./images/WiFi.jpg
 
