@@ -4,11 +4,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ASR3601 &mdash; 芯闻</title>
+  <title>CH32V003 &mdash; 芯闻</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="canonical" href="https://doc.soc.xin/ASR/ASR3601.html" />
+    <link rel="canonical" href="https://doc.soc.xin/wch/CH32V003.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="ASR1802" href="ASR1802.html" />
-    <link rel="prev" title="ASR1601" href="ASR1601.html" />
+    <link rel="next" title="CH32V203" href="CH32V203.html" />
+    <link rel="prev" title="RISC-V" href="riscv.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -79,14 +79,17 @@
 <li class="toctree-l2"><a class="reference internal" href="../vendor.html#vendor-king">芯实力</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../vendor.html#vendor-now">新势力</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../stc/index.html">超低成本微控制器 STC</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="index.html">新锐无线长距通信 ASR</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="index.html#id2">公司简介</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="index.html#id4">产品简介</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../ASR/index.html">新锐无线长距通信 ASR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../byd/index.html">跨界造芯垂直整合 BYD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../jieli/index.html">蓝牙音频智能终端 JieLi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../wch/index.html">物联网通信控制器 WCH</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">物联网通信控制器 WCH</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="index.html#id2">公司简介</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id9">通信领域</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html#id13">内核分类</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id15">外设芯片</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id19">方案总结</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../synwit/index.html">行业定制化控制器 Synwit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../chipsea/index.html">信号链整合控制器 Chipsea</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../espressif/index.html">Espressif Wi-Fi MCU (上海)</a></li>
@@ -131,10 +134,10 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
           <li class="breadcrumb-item"><a href="../vendor.html">Vendor</a></li>
-          <li class="breadcrumb-item"><a href="index.html">ASR</a></li>
-      <li class="breadcrumb-item active">ASR3601</li>
+          <li class="breadcrumb-item"><a href="index.html">WCH</a></li>
+      <li class="breadcrumb-item active">CH32V003</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/SoCXin/doc/blob/master/doc/ASR/ASR3601.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/SoCXin/doc/blob/master/doc/wch/CH32V003.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -142,41 +145,119 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="asr3601">
-<span id="id1"></span><h1>ASR3601<a class="headerlink" href="#asr3601" title="Permalink to this heading">¶</a></h1>
-<ul class="simple">
-<li><p><a class="reference external" href="http://www.asrmicro.com/">ASR</a> : <code class="docutils literal notranslate"><span class="pre">Cortex-R5</span></code> <code class="docutils literal notranslate"><span class="pre">600MHz</span></code> <code class="docutils literal notranslate"><span class="pre">GSM</span></code></p></li>
-<li><p><a class="reference external" href="https://github.com/SoCXin/ASR1601">Tags</a> : <a class="reference internal" href="../application/lpwa.html#nbiot"><span class="std std-ref">NB-IoT</span></a> / <a class="reference internal" href="../application/lpwa.html#emtc"><span class="std std-ref">eMTC</span></a> / <a class="reference internal" href="../application/lpwa.html#cat1"><span class="std std-ref">Cat.1</span></a></p></li>
-</ul>
+  <section id="ch32v003">
+<span id="id1"></span><h1>CH32V003<a class="headerlink" href="#ch32v003" title="Permalink to this heading">¶</a></h1>
+<p><a class="reference external" href="http://www.wch.cn/">WCH</a> : <code class="docutils literal notranslate"><span class="pre">RISC-V2A</span></code> <code class="docutils literal notranslate"><span class="pre">青稞</span></code> <code class="docutils literal notranslate"><span class="pre">48MHz</span></code></p>
+<p><a class="reference external" href="https://github.com/SoCXin/CH32V003">Tags</a> : <a class="reference internal" href="../list/ulp.html#ulp"><span class="std std-ref">能效Xin</span></a> / <a class="reference internal" href="../list/low.html#low"><span class="std std-ref">白菜Xin</span></a></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#xin" id="id8">Xin简介</a></p></li>
-<li><p><a class="reference internal" href="#id5" id="id9">Xin选择</a></p></li>
-<li><p><a class="reference internal" href="#id6" id="id10">Xin应用</a></p></li>
-<li><p><a class="reference internal" href="#id7" id="id11">Xin总结</a></p></li>
+<li><p><a class="reference internal" href="#xin" id="id12">Xin简介</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id13">Xin选择</a></p></li>
 </ul>
 </div>
 <section id="xin">
-<h2><a class="toc-backref" href="#id8">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
-<p>ASR3601是一颗高性能、多制式、低功耗、高集成度的多模4G芯片。单芯片集成射频、基带、audio codec等功能。同时支持非常丰富的外部接口。该芯片支持LTE CAT1/eMTC/NB-IoT/GSM通信制式。集成ARM Cortex-R5，可以运行高效的通信协议栈，同时留有丰富的资源用于支持各种应用程序。该芯片可适用于儿童手表、功能机、POS机、对讲机、智能音箱等应用领域。</p>
+<h2><a class="toc-backref" href="#id12">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
+<a class="reference external image-reference" href="http://www.wch.cn/products/CH32V003.html"><img alt="../_images/CH32V003.png" src="../_images/CH32V003.png" /></a>
 <section id="id2">
 <h3>规格参数<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
 <section id="id3">
 <h4>基本参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>发布时间：</p></li>
+<li><p>参考价格：</p></li>
+<li><p>制程工艺：</p></li>
+<li><p>供货周期：</p></li>
+<li><p>处理性能：</p></li>
+<li><p>封装规格：QFN20/SOP16/SOP8/TSSOP20</p></li>
+<li><p>运行环境：-40°C to 85°C</p></li>
+<li><p>RAM容量：2 KB</p></li>
+<li><p>Flash容量：16 KB</p></li>
+</ul>
 </section>
 <section id="id4">
 <h4>特征参数<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
-</section>
+<ul class="simple">
+<li><p>48 MHz RISC-V2A (2级中断嵌套)</p></li>
+<li><p>1组1路通用DMA控制器</p></li>
+<li><p>1组运放比较器</p></li>
+<li><p>1组10位ADC</p></li>
+<li><p>1个16位高级定时器和1个16位通用定时器</p></li>
+<li><p>2个看门狗定时器和1个32位系统时基定时器</p></li>
+<li><p>1个USART接口、1组IIC接口、1组SPI接口</p></li>
+<li><p>18个I/O口，映像一个外部中断</p></li>
+</ul>
 </section>
 </section>
 <section id="id5">
-<h2><a class="toc-backref" href="#id9">Xin选择</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
-</section>
+<h3>芯片架构<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
 <section id="id6">
-<h2><a class="toc-backref" href="#id10">Xin应用</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<h4>功耗参数<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">45uA/MHz</span></code></p>
+<ul class="simple">
+<li><p>供电电压：3.3/5V</p></li>
+<li><p>运行模式 44.65uA/MHz</p></li>
+<li><p>睡眠模式 17.90uA/MHz</p></li>
+</ul>
+</section>
+</section>
 </section>
 <section id="id7">
-<h2><a class="toc-backref" href="#id11">Xin总结</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id13">Xin选择</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id8">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id9" id="id14">品牌对比</a></p></li>
+<li><p><a class="reference internal" href="#id10" id="id15">型号对比</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id16">版本对比</a></p></li>
+</ul>
+</div>
+<section id="id9">
+<h3><a class="toc-backref" href="#id14">品牌对比</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a>/<a class="reference internal" href="../list/low.html#flash"><span class="std std-ref">Flash</span></a></p></th>
+<th class="head"></th>
+<th class="head"><p><a class="reference internal" href="../application/peripherals.html#peripherals"><span class="std std-ref">Peripherals</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/package.html#package"><span class="std std-ref">Package</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#ch32v003"><span class="std std-ref">CH32V003</span></a></p></td>
+<td></td>
+<td><p>48 MHz</p></td>
+<td><p>2 KB/16 KB</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../arterytek/AT32F421.html#at32f421"><span class="std std-ref">AT32F421</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
+<td><p>120 MHz</p></td>
+<td><p>16KB/64KB</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id10">
+<h3><a class="toc-backref" href="#id15">型号对比</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id11">
+<h3><a class="toc-backref" href="#id16">版本对比</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+</section>
 </section>
 </section>
 
@@ -184,8 +265,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ASR1601.html" class="btn btn-neutral float-left" title="ASR1601" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ASR1802.html" class="btn btn-neutral float-right" title="ASR1802" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="riscv.html" class="btn btn-neutral float-left" title="RISC-V" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="CH32V203.html" class="btn btn-neutral float-right" title="CH32V203" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -330,8 +411,8 @@
     <dl>
       <dt>Created By Qtias</dt>
       <img src="../_static/images/weixin.jpg">
-        <!-- <dd><a href="https://github.com/SoCXin/doc/blob/master/doc/ASR/ASR3601.rst"> View</a></dd>
-        <dd><a href="https://github.com/SoCXin/doc/edit/master/doc/ASR/ASR3601.rst"> Edit</a></dd> -->
+        <!-- <dd><a href="https://github.com/SoCXin/doc/blob/master/doc/wch/CH32V003.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/doc/edit/master/doc/wch/CH32V003.rst"> Edit</a></dd> -->
     </dl>
   </div>
 </div><script>

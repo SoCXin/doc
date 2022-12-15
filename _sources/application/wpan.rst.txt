@@ -51,20 +51,14 @@ WPAN
 
     * - :ref:`802_15_4`
       - :ref:`architecture`
-      - :ref:`sram`
-      -
-      - WiFi
-      - Rate
-      - More
+      - :ref:`CoreMark`
+      - :ref:`sram`/:ref:`flash`
       - :ref:`package`
-    * - :ref:`esp32h2`
+    * - :ref:`esp32c6`
       - :ref:`esp_rv32`
       -
       -
-      -
-      -
-      -
-      -
+      - QFN40
 
 
 .. _rfid:

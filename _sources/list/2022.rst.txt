@@ -73,7 +73,7 @@
 ~~~~~~~~~~~~
 ``Wi-Fi6`` ``Matter``
 
-:ref:`esp32c6` 支持 :ref:`wifi6`
+:ref:`esp32c6` 支持三协议丛：:ref:`wifi6` , :ref:`ble` , :ref:`802_15_4`
 
 
 04-CH32V307

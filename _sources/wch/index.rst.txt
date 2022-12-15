@@ -420,6 +420,7 @@ RISC-V
 .. toctree::
     :maxdepth: 1
 
+    CH32V003 <CH32V003>
     CH32V203 <CH32V203>
     CH32V307 <CH32V307>
     CH32V208 <CH32V208>

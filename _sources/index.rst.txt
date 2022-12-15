@@ -15,7 +15,7 @@ Xindex
     板期刊 <list/boards>
 
 .. toctree::
-    :caption: 芯品分类
+    :caption: 芯排序
     :maxdepth: 1
 
     极客聚集创意高地 <list/hot>
@@ -56,12 +56,12 @@ Xindex
 
 
 .. toctree::
-    :caption: 典型应用
+    :caption: 芯分类
     :maxdepth: 1
 
-    功能领域  <application/index>
-    行业应用  <application/standard>
-    产品案例  <application/products>
+    功能配置  <application/index>
+    协议标准  <application/standard>
+    产品定义  <application/products>
 
 .. list-table::
     :header-rows: 1
@@ -92,7 +92,7 @@ Xindex
       -
 
 .. toctree::
-    :caption: 内核资源
+    :caption: 芯资源
     :maxdepth: 1
 
     核心架构  <architecture/index>
@@ -153,7 +153,7 @@ Xindex
 
 
 .. toctree::
-    :caption: 行业品牌
+    :caption: 芯品牌
     :maxdepth: 1
 
     芯片设计 <vendor>

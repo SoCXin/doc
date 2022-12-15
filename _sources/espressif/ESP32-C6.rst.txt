@@ -5,7 +5,8 @@ ESP32C6
 ================
 
 `espressif <https://www.espressif.com/>`_ : ``RISC-V`` ``160MHz`` ``Wi-Fi6`` ``BLE`` ``802.15.4`` ``QFN40``
-* `Tags <https://github.com/SoCXin/ESP32C6>`_ : :ref:`wifi6` / :ref:`ble` / :ref:`riscv`
+
+`Tags <https://github.com/SoCXin/ESP32C6>`_ : :ref:`wifi6` / :ref:`ble` / :ref:`riscv`
 
 .. contents::
     :local:

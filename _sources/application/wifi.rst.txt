@@ -70,14 +70,14 @@ Wi-Fi4
       - :ref:`CoreMark`
       - :ref:`sram`/:ref:`flash`
       - :ref:`link_budget`
-      - :ref:`peripherals`
+      - :ref:`bandwidth`
       - :ref:`package`
     * - :ref:`esp32c3`
       - :ref:`esp_rv32`
       - 407.22
       - 400KB/384KB
       - 
-      - U2/P3/C1/S1
+      -
       - :ref:`esp_qfn32`
     * - :ref:`hi3861`
       - :ref:`riscv`
@@ -119,14 +119,14 @@ Wi-Fi4
       -
       - 288KB/2 MB
       -
-      - 6/2/1
+      - 
       - :ref:`QFN56`
     * - :ref:`cc3200`
       - :ref:`cortex_m4`
       -
       - 256KB/2 MB
       -
-      - 6/2/1
+      - 
       - :ref:`QFN56`
     * - :ref:`gd32w515`
       - :ref:`cortex_m33`
@@ -159,7 +159,7 @@ Wi-Fi6
       - :ref:`CoreMark`
       - :ref:`sram`/:ref:`flash`
       - :ref:`link_budget`
-      - :ref:`peripherals`
+      - :ref:`bandwidth`
       - :ref:`package`
     * - :ref:`esp32c5`
       - :ref:`esp_rv32`
