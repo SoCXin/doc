@@ -88,3 +88,8 @@ V4 系列均支持 RV32IMAC 指令集扩展，其中 V4F 支持单精度硬件�
 .. image:: ./images/wch_riscv4.png
     :target: http://www.wch.cn/downloads/QingKeV4_Processor_Manual_PDF.html
 
+
+IDE
+~~~~~~~~~~~
+
+`MounRiver Studio <http://www.mounriver.com/>`_

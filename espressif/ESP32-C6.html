@@ -101,8 +101,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../fabs.html">晶元制造</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../sales.html">供应渠道</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fabs.html">晶元代工</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sales.html">销售渠道</a></li>
 </ul>
 
 <p style="margin-top: 15px;">
@@ -147,7 +147,6 @@
   <section id="esp32c6">
 <span id="no-006"></span><span id="id1"></span><h1>ESP32C6<a class="headerlink" href="#esp32c6" title="Permalink to this heading">¶</a></h1>
 <p><a class="reference external" href="https://www.espressif.com/">espressif</a> : <code class="docutils literal notranslate"><span class="pre">RISC-V</span></code> <code class="docutils literal notranslate"><span class="pre">160MHz</span></code> <code class="docutils literal notranslate"><span class="pre">Wi-Fi6</span></code> <code class="docutils literal notranslate"><span class="pre">BLE</span></code> <code class="docutils literal notranslate"><span class="pre">802.15.4</span></code> <code class="docutils literal notranslate"><span class="pre">QFN40</span></code></p>
-<p><a class="reference external" href="https://github.com/SoCXin/ESP32C6">Tags</a> : <a class="reference internal" href="../application/wifi.html#wifi6"><span class="std std-ref">Wi-Fi6</span></a> / <a class="reference internal" href="../application/bluetooth.html#ble"><span class="std std-ref">BLE</span></a> / <a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#xin" id="id13">Xin简介</a></p></li>
@@ -156,11 +155,11 @@
 </div>
 <section id="xin">
 <h2><a class="toc-backref" href="#id13">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
-<p>ESP32-C6 是乐鑫首款支持 Wi-Fi 6 的 SoC，集成 2.4 GHz Wi-Fi 6、Bluetooth 5 (LE) 和 802.15.4 协议，能够为物联网产品提供行业领先的射频性能、完善的安全机制和丰富的内存资源。
-它搭载一个时钟频率最高 160 MHz 的高性能 RISC-V 32 位处理器，和一个时钟频率最高 20 MHz 的低功耗 RISC-V 32 位处理器，内置 512 KB SRAM，320 KB ROM，并支持外接 flash。
-ESP32-C6 拥有 30 个 (QFN40) 或 22 个 (QFN32) 可编程 GPIO 管脚，支持 SPI、UART、I2C、I2S、RMT、TWAI、PWM、电机控制 PWM 和 SDIO。它还集成了一个 12 位 ADC 和一个温度传感器。</p>
+<p><a class="reference external" href="https://github.com/SoCXin/ESP32C6">Tags</a> : <a class="reference internal" href="../application/wifi.html#wifi6"><span class="std std-ref">Wi-Fi6</span></a> / <a class="reference internal" href="../application/bluetooth.html#ble"><span class="std std-ref">BLE</span></a> / <a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p>
+<p>ESP32-C6 是乐鑫首款支持 Wi-Fi 6 的 SoC，集成 2.4 GHz Wi-Fi 6、Bluetooth 5 (LE) 和 802.15.4 协议，能够为物联网产品提供行业领先的射频性能、完善的安全机制和丰富的内存资源。</p>
 <section id="id2">
 <h3>规格参数<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<p>搭载一个时钟频率最高 160 MHz 的高性能 RISC-V 32 位处理器，和一个时钟频率最高 20 MHz 的低功耗 RISC-V 32 位处理器，内置 512 KB SRAM，320 KB ROM，并支持外接 flash。</p>
 <section id="id3">
 <h4>基本参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h4>
 <ul class="simple">
@@ -182,6 +181,7 @@ ESP32-C6 拥有 30 个 (QFN40) 或 22 个 (QFN32) 可编程 GPIO 管脚，支持
 <li><p>160 MHz <a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></li>
 <li><p>802.11ax 20 MHz，802.11b/g/n 20/40 MHz</p></li>
 </ul>
+<p>ESP32-C6 拥有 30 个 (QFN40) 或 22 个 (QFN32) 可编程 GPIO 管脚，支持 SPI、UART、I2C、I2S、RMT、TWAI、PWM、电机控制 PWM 和 SDIO。它还集成了一个 12 位 ADC 和一个温度传感器。</p>
 </section>
 </section>
 <section id="id5">
@@ -195,8 +195,10 @@ ESP32-C6 拥有 30 个 (QFN40) 或 22 个 (QFN32) 可编程 GPIO 管脚，支持
 </section>
 <section id="wi-fi">
 <h4>Wi-Fi<a class="headerlink" href="#wi-fi" title="Permalink to this heading">¶</a></h4>
-<p><a class="reference internal" href="../application/wifi.html#link-budget"><span class="std std-ref">Link Budget</span></a> : 118dBm
-<a class="reference internal" href="../application/wifi.html#bandwidth"><span class="std std-ref">Bandwidth</span></a> : 150 Mbps</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../application/wifi.html#link-budget"><span class="std std-ref">Link Budget</span></a> : 118dBm</p></li>
+<li><p><a class="reference internal" href="../application/wifi.html#bandwidth"><span class="std std-ref">Bandwidth</span></a> : 150 Mbps</p></li>
+</ul>
 </section>
 </section>
 <section id="id7">

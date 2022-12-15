@@ -19,8 +19,8 @@
 .. |无线通信| image:: ../application/images/matter.png
 .. _无线通信: ../miscellaneous/RP2040.html
 
-.. |网络连接| image:: ../espressif/images/espressif.png
-.. _网络连接: ../miscellaneous/RP2040.html
+.. |网络连接| image:: images/esp32c6.png
+.. _网络连接: ../espressif/ESP32-C6.html
 
 .. |边缘计算| image:: images/ax620a.jpg
 .. _边缘计算: ../high/AX620A.html

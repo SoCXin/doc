@@ -3,9 +3,8 @@
 
 CH32V208
 ============
+`WCH <http://www.wch.cn/products/CH32V208>`_ : ``RISC-V4C`` ``144MHz`` ``USB`` ``Ethernet`` ``10Mbps(w/PHY)`` ``BLE5.3`` ``QFN68/QFN28``
 
-* `WCH <http://www.wch.cn/products/CH32V208>`_ : ``RISC-V4C`` ``144MHz`` ``USB`` ``Ethernet`` ``10Mbps(w/PHY)`` ``BLE5.3`` ``QFN68/QFN28``
-* `Tags <https://github.com/SoCXin/CH32V208>`_ : :ref:`pop` / :ref:`ethernet` / :ref:`ble`
 
 .. contents::
     :local:
@@ -13,6 +12,7 @@ CH32V208
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/CH32V208>`_ : :ref:`pop` / :ref:`ethernet` / :ref:`ble`
 
 .. image:: ./images/CH32V208.png
     :target: http://www.wch.cn/products/CH32V208.html

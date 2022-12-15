@@ -3,17 +3,18 @@
 
 APT32F706
 =============
-
-`GitHub <https://github.com/SoCXin/APT32F706>`_ : ``C906`` ``600MHz``
-
+`aptchip <http://www.aptchip.com/>`_ : ``RISC-V`` ``C906`` ``E902`` ``600MHz``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
 
-集成玄铁C906、E907双核，实现最高主频600MHz的高性能，适合用于工业人机接口应用（HMI）、电机控制和家电类主控产品。
+.. image:: images/APT32F706.png
+    :target: http://www.aptchip.com/companynews/502.html
+
 
 Xin选择
 -----------

@@ -71,7 +71,6 @@ Xindex
       - :ref:`wifi`
       - :ref:`ethernet`
       - :ref:`usb`
-      - :ref:`peripherals`
       - :ref:`adc`
       - :ref:`audio`
     * - :ref:`matter`
@@ -81,9 +80,7 @@ Xindex
       -
       -
       -
-      -
     * - :ref:`autosar`
-      -
       -
       -
       -
@@ -157,8 +154,8 @@ Xindex
     :maxdepth: 1
 
     芯片设计 <vendor>
-    晶元制造 <fabs>
-    供应渠道 <sales>
+    晶元代工 <fabs>
+    销售渠道 <sales>
 
 .. list-table::
     :header-rows: 1
