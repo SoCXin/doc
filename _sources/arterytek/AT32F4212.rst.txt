@@ -3,9 +3,8 @@
 
 AT32F4212
 ===============
+`Arterytek <https://www.arterytek.com/>`_ : ``Cortex-M4`` ``150MHz``
 
-`Arterytek <https://www.arterytek.com/>`_ : ``Cortex-M4`` ``150MHz`` ``BLE5.0``
- 
 .. contents::
     :local:
     :depth: 1
@@ -13,7 +12,7 @@ AT32F4212
 
 Xin简介
 -----------
-`Tags <https://github.com/SoCXin/AT32WB415>`_ : :ref:`ble`
+`Tags <https://github.com/SoCXin/AT32WB415>`_ : :ref:`bldc`
 
 
 
@@ -44,15 +43,13 @@ Xin简介
 
 * 120 MHz :ref:`cortex_m4`
 
-AT32F4212同时还扩展了1个高速轨到轨输入/输出模拟电压比较器，1个采样率高达2M SPS的12位高速ADC（包含13个外部通道和5个内部通道），2个运算放大器OPA，可充分满足高速数据采集、混合信号处理和工业控制与电机应用要求。 
+AT32F4212同时还扩展了1个高速轨到轨输入/输出模拟电压比较器，1个采样率高达2M SPS的12位高速ADC（包含13个外部通道和5个内部通道），2个运算放大器OPA，可充分满足高速数据采集、混合信号处理和工业控制与电机应用要求。
 
 几乎所有I/O口可容忍5V输入信号，且所有I/O口均为快速I/O，具有多种可选功能还支持端口重映射，极佳的灵活性和易用性满足多种应用需求。
 
 芯片架构
 ~~~~~~~~~~~
 
-.. image:: images/AT32WB415s.png
-    :target: https://www.arterytek.com/cn/product/AT32F4212.jsp
 
 功耗参数
 ^^^^^^^^^^^
