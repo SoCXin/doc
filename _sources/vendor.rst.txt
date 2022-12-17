@@ -21,21 +21,21 @@ Vendor
       - :ref:`top`
       - :ref:`update`
     * - :ref:`st`
-      - :ref:`stm32f103` 
+      - :ref:`stm32f103`
       - :ref:`stm32f401`
       - :ref:`stm32g031`
       - :ref:`stm8s003`
       - :ref:`stm32mp15`
       - :ref:`stm32u575`
     * - :ref:`ti`
-      - 
+      -
       -
       -
       -
       -
       -
     * - :ref:`mediatek`
-      - 
+      -
       -
       -
       -
@@ -117,7 +117,7 @@ Vendor
     * - :ref:`arterytek`
       -
       - :ref:`at32f4212`
-      - 
+      -
       - :ref:`at32f421`
       - :ref:`at32f437`
       - :ref:`at32wb415`
@@ -144,7 +144,9 @@ Vendor
     多媒体应用处理器 Allwinner  <allwinner/index>
     物联网通信及计算 Bouffalolab  <bouffalolab/index>
     驱动控制国产普惠 Mindmotion  <mindmotion/index>
+    通用安全和智能卡 Nation  <nationstech/index>
     无线通信博通集成 Bekencorp  <bekencorp/index>
+    通用控制和智能卡 hdsc  <hdsc/index>
 
 
 不同芯片厂商的SDK和应用案例的开放策略不同，为了直观对比厂商的开发生态，引入 `OS-Q认证体系 <http://www.OS-Q.com>`_ 来给不同芯片厂商和不同芯片型号的开发资源排序，实现量化比较

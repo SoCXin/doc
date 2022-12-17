@@ -169,17 +169,12 @@ MiniFOC
 ODrive
 ~~~~~~~~~~~
 
-* 链接：`ODrive Home <https://odriverobotics.com/>`_ , `ODrive GitHub <https://github.com/odriverobotics/ODrive>`_
+* `ODrive Home <https://odriverobotics.com/>`_
+* `ODrive GitHub <https://github.com/odriverobotics/ODrive>`_
 
 
 相关主控
 ~~~~~~~~~~~
-
-.. toctree::
-    :maxdepth: 1
-
-    HC32M120 <../miscellaneous/HC32M120>
-    N32G452 <../miscellaneous/N32G452>
 
 .. list-table::
     :header-rows:  1
@@ -187,7 +182,7 @@ ODrive
     * - :ref:`vendor`
       - :ref:`architecture`
       - RAM
-      - Flash
+      - Flashs
       - mTIM
       - PWM
       - More

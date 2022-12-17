@@ -12,13 +12,13 @@ AT32F4212
 
 Xin简介
 -----------
-`Tags <https://github.com/SoCXin/AT32WB415>`_ : :ref:`bldc`
+`Tags <https://www.arterytek.com/cn/product/AT32F4212.jsp>`_ : :ref:`bldc` / :ref:`low`
 
 
 
 规格参数
 ~~~~~~~~~~~
-`datasheet <https://www.arterytek.com/download/DS/DS_AT32WB415_V2.00_CH.pdf>`_
+`datasheet <https://www.arterytek.com/download/DS/DS_AT32F4212_V2.00_CH.pdf>`_
 
 雅特力科技AT32F4212系列超值型ARM® Cortex®-M4微控制器，高达120MHz的CPU运算速度与内建数字信号处理器(DSP)，最高可支持64KB闪存存储器(Flash)及16KB随机存取存储器(SRAM)，
 片上还集成了多达2个USART、2个SPI(可复用I²S)、2个I²C、1个16位高级定时器、5个16位通用定时器，和5通道DMA控制器，其丰富的片上资源分配、高集成及高性价比造就一流市场竞争力。
@@ -54,6 +54,6 @@ AT32F4212同时还扩展了1个高速轨到轨输入/输出模拟电压比较器
 功耗参数
 ^^^^^^^^^^^
 
-* 电压范围：2.6 to 3.6 V
+* 电压范围：2.4 to 3.6 V
 * 功耗范围：
 

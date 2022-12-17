@@ -17,6 +17,9 @@ Applications
 通信连接
 -----------
 
+.. contents::
+    :local:
+    :depth: 1
 
 .. _wireless:
 
@@ -88,22 +91,19 @@ Wired
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`wired`
+    * -
       - :ref:`uart`
-      - :ref:`i2c`
-      - :ref:`spi`
+      - :ref:`plc`
       - :ref:`can`
-      - :ref:`sdio`
       - :ref:`usb`
       - :ref:`ethernet`
-    * - 速率
+    * - Bandwidth
       -
       -
       -
       -
       -
-      -
-      -
+
 
 .. toctree::
     :maxdepth: 1
