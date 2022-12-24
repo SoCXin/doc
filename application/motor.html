@@ -4,11 +4,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LPWA &mdash; 芯闻</title>
+  <title>Motor &mdash; 芯闻</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="canonical" href="https://doc.soc.xin/application/lpwa.html" />
+    <link rel="canonical" href="https://doc.soc.xin/application/motor.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="XY1100" href="../miscellaneous/XY1100.html" />
-    <link rel="prev" title="SV32WB11" href="../miscellaneous/SV32WB11.html" />
+    <link rel="next" title="HMI" href="hmi.html" />
+    <link rel="prev" title="Coral TPU" href="coral.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -65,21 +65,25 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">功能配置</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="ai.html">边缘计算</a></li>
-<li class="toctree-l2"><a class="reference internal" href="motor.html">电机控制</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">电机控制</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#foc">FOC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pwm">PWM</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">解决方案</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vesc">VESC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#simplefoc">SimpleFOC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#minifoc">MiniFOC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#odrive">ODrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">相关主控</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="hmi.html">人机交互</a></li>
 <li class="toctree-l2"><a class="reference internal" href="adc.html">信号处理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="audio.html">Audio</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html#connection">通信连接</a><ul class="current">
-<li class="toctree-l3 current"><a class="reference internal" href="index.html#wireless">Wireless</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="bluetooth.html">Bluetooth(BLE)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="wifi.html">Wi-Fi(802.11)</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">LPWA(LoRa)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="wpan.html">WPAN(ZigBee)</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#wired">Wired</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#connection">通信连接</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="standard.html">协议标准</a></li>
@@ -126,9 +130,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Applications</a></li>
-      <li class="breadcrumb-item active">LPWA</li>
+      <li class="breadcrumb-item active">Motor</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/SoCXin/doc/blob/master/docs/application/lpwa.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/SoCXin/doc/blob/master/docs/application/motor.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -136,220 +140,233 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="lpwa">
-<span id="id1"></span><h1>LPWA<a class="headerlink" href="#lpwa" title="Permalink to this heading">¶</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">LPWAN</span></code> <code class="docutils literal notranslate"><span class="pre">LPWA</span></code> <code class="docutils literal notranslate"><span class="pre">LPN</span></code></p>
-<p>LPWAN(低功耗广域网)，也称为LPWA或LPN，是一种用于物联网(例如，以电池为电源的传感器)的类型，这是一种能够以低比特率进行远距离通信的无线网络。LPWAN可以同时满足覆盖和续航的要求。以最小的功耗提供最长的距离覆盖是LPWAN最大的技术优势。</p>
-<img alt="../_images/lpwa.jpg" src="../_images/lpwa.jpg" />
+  <section id="motor">
+<span id="id1"></span><h1>Motor<a class="headerlink" href="#motor" title="Permalink to this heading">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#lora" id="id4">LoRa</a></p></li>
-<li><p><a class="reference internal" href="#nb-iot" id="id5">NB-IoT</a></p></li>
-<li><p><a class="reference internal" href="#emtc" id="id6">eMTC</a></p></li>
-<li><p><a class="reference internal" href="#cat-1" id="id7">Cat.1</a></p></li>
-<li><p><a class="reference internal" href="#cat-4" id="id8">Cat.4</a></p></li>
+<li><p><a class="reference internal" href="#foc" id="id10">FOC</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id11">解决方案</a></p></li>
 </ul>
 </div>
-<section id="lora">
-<span id="id2"></span><h2><a class="toc-backref" href="#id4">LoRa</a><a class="headerlink" href="#lora" title="Permalink to this heading">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">Long</span> <span class="pre">Range</span> <span class="pre">Radio</span></code></p>
-<div class="toctree-wrapper compound">
-</div>
+<section id="foc">
+<h2><a class="toc-backref" href="#id10">FOC</a><a class="headerlink" href="#foc" title="Permalink to this heading">¶</a></h2>
+<p>FOC（field-oriented control）为磁场导向控制，又称为矢量控制（vectorcontrol），是一种利用变频器（VFD）控制三相交流马达的技术，利用调整变频器的输出频率、输出电压的大小及角度，来控制马达的输出。其特性是可以个别控制马达的的磁场及转矩，类似他激式直流马达的特性。由于处理时会将三相输出电流及电压以矢量来表示，因此称为矢量控制。是目前无刷直流电机（BLDC）和永磁同步电机（PMSM）高效控制的最佳选择。FOC精确地控制磁场大小与方向，使得电机转矩平稳、噪声小、效率高，并且具有高速的动态响应。</p>
+<p>FOC按照电机有无传感器来区分可以分为有传感器FOC和无传感器FOC。</p>
+<p>对于有传感器FOC，由于电机的传感器（一般为编码器）能反馈电机转子的位置信息，因此在控制中可以不使用位置估算算法，控制起来相对无传感器FOC简单，但是对带传感器的电机应用来说，往往对控制性能要求较高。</p>
+<p>对于无传感器FOC，由于电机不带任何传感器，因此不能通过简单读取传感器的测量值来得到电机转子的位置信息，所以在控制中需要通过采集电机相电流，使用位置估算算法来计算转子位置。虽然无感FOC的控制难度较大，但是它可以避免传感器故障的风险，并且省去了传感器的成本，同时简化了电机与驱动板间的布线。目前，无感FOC多应用在风机类的场合中。</p>
+<ul class="simple">
+<li><ol class="arabic simple">
+<li><p>FOC则完全没有转速的限制，不论在什么转速下都可以实现精确的控制。</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p>FOC的换向性能极其优秀，最高转速下正反转切换可以非常顺畅。</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p>FOC还可以以能量回收的形式进行刹车控制。</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="4">
+<li><p>FOC可以实现力矩、速度、位置三个闭环控制。</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="5">
+<li><p>FOC驱动器的噪音会比电调小很多，效率也比电调高很多。</p></li>
+</ol>
+</li>
+</ul>
+<section id="pwm">
+<span id="id2"></span><h3>PWM<a class="headerlink" href="#pwm" title="Permalink to this heading">¶</a></h3>
+<p>PWM(Pulse Width Modulation)脉冲宽度调制: 从调制脉冲的极性看，PWM又可分为单极性与双极性控制模式两种。</p>
+<p>过调节占空比的变化来调节信号、能量等的变化，占空比就是指在一个周期内，信号处于高电平的时间占据整个信号周期的百分比，例如方波的占空比就是50%.</p>
+<ul class="simple">
+<li><p>PCM(Pulse Code Modulation)，脉冲编码调制，以约定好的二进制码流传递信息，可以时分复用；</p></li>
+<li><p>PPM(Pulse Position Modulation)，脉冲位置调制，以不同时刻出现的脉冲位置传递信息，可以时分复用</p></li>
+<li><p>PDM(Pulse Distance Modulation)，脉冲间隔调制，脉冲宽度不变，都是560us，通过改变脉冲间隔实现调制</p></li>
+</ul>
+<section id="pcm">
+<span id="id3"></span><h4>PCM<a class="headerlink" href="#pcm" title="Permalink to this heading">¶</a></h4>
+<p>I2S是PCM的一个分支，采样频率一般为44.1KHZ和48KHZ做，PCM采样频率一般为8K,16K。有四组信号:位时钟信号，同步信号，数据输入，数据输出。</p>
+</section>
+<section id="ppm-pdm">
+<h4>PPM/PDM<a class="headerlink" href="#ppm-pdm" title="Permalink to this heading">¶</a></h4>
+<p>红外遥控发射采用PPM/PDM编码方式，遥控编码脉冲由前导码、16 位用户码（8 位用户码、8 位用户码的反码）和 16 位操作码（8 位操作码、8 位操作码的反码）组成。</p>
+<ul class="simple">
+<li><p>前导码的作用：前导码是一个遥控码的起始部分，由一个 9ms 的高电平 (起始码)  和一个 4.5ms 的低电平 (结果码) 组成。</p></li>
+<li><p>用户码的作用：16 位用户码（8 位用户码、8 位用户码的反码），通过对用户码的检验，每个遥控器只能控制一个设备动作，这样可以有效地防止多个设备之间的干扰。编码后面还要有编码的反码，用来检验编码接收的正确性，防止误操作，增强系统的可靠性。</p></li>
+<li><p>位0和1的表示：0和1均以0.56ms的高电平开始(实测500us)，不同的是后面出现的低电平，如果低电平是0.56ms，则表示0，如果低电平是1.68ms(0.56*3=1.68)则表示1。</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="id4">
+<h2><a class="toc-backref" href="#id11">解决方案</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#lora"><span class="std std-ref">LoRa</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a>/<a class="reference internal" href="../list/low.html#flash"><span class="std std-ref">Flash</span></a></p></th>
-<th class="head"></th>
-<th class="head"><p>LoRa</p></th>
-<th class="head"><p>Rate</p></th>
-<th class="head"><p>More</p></th>
+<tr class="row-odd"><th class="head"><p>Solution</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Driver</p></th>
+<th class="head"><p>PID(Max)</p></th>
+<th class="head"><p>Power</p></th>
+<th class="head"><p>Price</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#simplefoc"><span class="std std-ref">SimpleFOC</span></a></p></td>
+<td><p><a class="reference internal" href="../miscellaneous/ATMEGA328P.html#mega328p"><span class="std std-ref">MEGA328P</span></a></p></td>
+<td><p>L6234</p></td>
+<td><p>830Hz</p></td>
+<td><p>120W</p></td>
+<td><p>¥100</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#minifoc"><span class="std std-ref">MiniFOC</span></a></p></td>
+<td><p><a class="reference internal" href="../gigadevice/GD32F130.html#gd32f130"><span class="std std-ref">GD32F130</span></a></p></td>
+<td><p>EG2133</p></td>
+<td><p>30kHz</p></td>
+<td><p>90W</p></td>
+<td><p>¥30</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#odrive"><span class="std std-ref">ODrive</span></a></p></td>
+<td><p><a class="reference internal" href="../st/m/STM32F407.html#stm32f405"><span class="std std-ref">STM32F405</span></a></p></td>
+<td><p>DRV8301</p></td>
+<td><p>8kHz</p></td>
+<td><p>960W</p></td>
+<td><p>¥300</p></td>
+</tr>
+</tbody>
+</table>
+<section id="vesc">
+<span id="id5"></span><h3>VESC<a class="headerlink" href="#vesc" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://vesc-project.com/">VESC Home</a> , <a class="reference external" href="https://github.com/vedderb/bldc">VESC GitHub</a></p></li>
+</ul>
+<p>An open source motor controller firmware, the source code for the VESC DC/BLDC/FOC controller.</p>
+</section>
+<section id="simplefoc">
+<span id="id6"></span><h3>SimpleFOC<a class="headerlink" href="#simplefoc" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.simplefoc.com">SimpleFOC Home</a> , <a class="reference external" href="https://docs.simplefoc.com">SimpleFOC Docs</a> , <a class="reference external" href="https://GitHub.com/simplefoc">SimpleFOC GitHub</a></p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>MCU</p></th>
+<th class="head"><p>2 PWM</p></th>
+<th class="head"><p>4 PWM</p></th>
+<th class="head"><p>3 PWM</p></th>
+<th class="head"><p>6 PWM</p></th>
+<th class="head"><p>PWM Freq</p></th>
 <th class="head"><p><a class="reference internal" href="../list/package.html#package"><span class="std std-ref">Package</span></a></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../ASR/ASR6601.html#asr6601"><span class="std std-ref">ASR6601</span></a></p></td>
-<td><p><a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../espressif/ESP32.html#esp32"><span class="std std-ref">ESP32</span></a></p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p><a class="reference internal" href="../list/package.html#qfn48"><span class="std std-ref">QFN48</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../st/m/STM32WLE5.html#stm32wl5"><span class="std std-ref">STM32WLE5</span></a></p></td>
-<td><p><a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/RP2040.html#rp2040"><span class="std std-ref">RP2040</span></a></p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
 <td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/t/STM32H745.html#stm32h747"><span class="std std-ref">STM32H747</span></a></p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>X</p></td>
+<td><p>√</p></td>
 <td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../st/m/STM32G431.html#stm32g431"><span class="std std-ref">STM32G431</span></a></p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
 <td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32F103.html#stm32f103"><span class="std std-ref">STM32F103</span></a></p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
+<td><p>√</p></td>
 <td></td>
-<td></td>
-<td><p><a class="reference internal" href="../list/package.html#qfn48"><span class="std std-ref">QFN48</span></a></p></td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="minifoc">
+<span id="id7"></span><h3>MiniFOC<a class="headerlink" href="#minifoc" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>链接：<a class="reference external" href="https://github.com/ZhuYanzhen1/miniFOC">MiniFOC GitHub</a></p></li>
+</ul>
+</section>
+<section id="odrive">
+<span id="id8"></span><h3>ODrive<a class="headerlink" href="#odrive" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://odriverobotics.com/">ODrive Home</a></p></li>
+<li><p><a class="reference external" href="https://github.com/odriverobotics/ODrive">ODrive GitHub</a></p></li>
+</ul>
+</section>
+<section id="id9">
+<h3>相关主控<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="peripherals.html#can"><span class="std std-ref">CAN</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="ethernet.html#ethernet"><span class="std std-ref">Ethernet</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="plc.html#plc"><span class="std std-ref">PLC</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="wpan.html#wpan"><span class="std std-ref">WPAN</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="wifi.html#wifi"><span class="std std-ref">Wi-Fi</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="#lora"><span class="std std-ref">LoRa</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="#nbiot"><span class="std std-ref">NB-IoT</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="#cat1"><span class="std std-ref">Cat.1</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="#cat4"><span class="std std-ref">Cat.4</span></a></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<img alt="../_images/LTE.png" src="../_images/LTE.png" />
-</section>
-<section id="nb-iot">
-<span id="nbiot"></span><h2><a class="toc-backref" href="#id5">NB-IoT</a><a class="headerlink" href="#nb-iot" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#nbiot"><span class="std std-ref">NB-IoT</span></a></p></th>
 <th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
-<th class="head"></th>
-<th class="head"></th>
-<th class="head"></th>
-<th class="head"></th>
-<th class="head"></th>
-<th class="head"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../MediaTek/MT2625.html#mt2625"><span class="std std-ref">MT2625</span></a></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/XY1100.html#xy1100"><span class="std std-ref">XY1100</span></a></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/XY1100.html">XY1100</a></li>
-</ul>
-</div>
-</section>
-<section id="emtc">
-<span id="id3"></span><h2><a class="toc-backref" href="#id6">eMTC</a><a class="headerlink" href="#emtc" title="Permalink to this heading">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">enhanced</span> <span class="pre">Machine-Type</span> <span class="pre">Communication</span></code> <code class="docutils literal notranslate"><span class="pre">LTE-M</span></code></p>
-</section>
-<section id="cat-1">
-<span id="cat1"></span><h2><a class="toc-backref" href="#id7">Cat.1</a><a class="headerlink" href="#cat-1" title="Permalink to this heading">¶</a></h2>
-<img alt="../_images/cat.jpg" src="../_images/cat.jpg" />
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#cat1"><span class="std std-ref">Cat.1</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a>/<a class="reference internal" href="../list/low.html#flash"><span class="std std-ref">Flash</span></a></p></th>
-<th class="head"></th>
-<th class="head"><p>LoRa</p></th>
-<th class="head"><p>Rate</p></th>
+<th class="head"><p>RAM</p></th>
+<th class="head"><p>Flashs</p></th>
+<th class="head"><p>PWM</p></th>
 <th class="head"><p>More</p></th>
 <th class="head"><p><a class="reference internal" href="../list/package.html#package"><span class="std std-ref">Package</span></a></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../ASR/ASR1601.html#asr1601"><span class="std std-ref">ASR1601</span></a></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/USI8910DM.html#usi8910"><span class="std std-ref">USI8910DM</span></a></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32G474.html#stm32g474"><span class="std std-ref">STM32G474</span></a></p></td>
+<td><p>170MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>128/256/512KB</p></td>
+<td><p>12</p></td>
+<td><p><a class="reference internal" href="../st/m/STM32G474.html#stm32-hrtim"><span class="std std-ref">HRTIM</span></a></p></td>
+<td><p><a class="reference internal" href="../list/package.html#lqfp64"><span class="std std-ref">LQFP64</span></a></p></td>
 </tr>
 </tbody>
 </table>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/USI8910DM.html">USI8910DM</a></li>
-</ul>
-</div>
 </section>
-<section id="cat-4">
-<span id="cat4"></span><h2><a class="toc-backref" href="#id8">Cat.4</a><a class="headerlink" href="#cat-4" title="Permalink to this heading">¶</a></h2>
-<img alt="../_images/VS.jpg" src="../_images/VS.jpg" />
 </section>
 </section>
 
@@ -357,8 +374,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../miscellaneous/SV32WB11.html" class="btn btn-neutral float-left" title="SV32WB11" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../miscellaneous/XY1100.html" class="btn btn-neutral float-right" title="XY1100" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="coral.html" class="btn btn-neutral float-left" title="Coral TPU" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="hmi.html" class="btn btn-neutral float-right" title="HMI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -503,8 +520,8 @@
     <dl>
       <dt>Created By Qtias</dt>
       <img src="../_static/images/weixin.jpg">
-        <!-- <dd><a href="https://github.com/SoCXin/doc/blob/master/docs/application/lpwa.rst"> View</a></dd>
-        <dd><a href="https://github.com/SoCXin/doc/edit/master/docs/application/lpwa.rst"> Edit</a></dd> -->
+        <!-- <dd><a href="https://github.com/SoCXin/doc/blob/master/docs/application/motor.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/doc/edit/master/docs/application/motor.rst"> Edit</a></dd> -->
     </dl>
   </div>
 </div><script>

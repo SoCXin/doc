@@ -11,7 +11,7 @@ HC32M120
 
 Xin简介
 -----------
-`Tags <https://github.com/SoCXin/HC32M120>`_ : :ref:`bldc` / :ref:`foc` / :ref:`low`
+`Tags <https://github.com/SoCXin/HC32M120>`_ : :ref:`bldc` / :ref:`motor` / :ref:`low`
 
 .. contents::
     :local:

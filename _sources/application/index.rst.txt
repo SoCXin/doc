@@ -8,11 +8,12 @@ Applications
     :maxdepth: 1
 
     边缘计算   <ai>
-    实时控制   <foc>
+    电机控制   <motor>
     人机交互   <hmi>
     信号处理   <adc>
-    音频处理   <audio>
+    Audio   <audio>
 
+.. _connection:
 
 通信连接
 -----------

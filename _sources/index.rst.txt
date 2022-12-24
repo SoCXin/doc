@@ -67,10 +67,10 @@ Xindex
     :header-rows: 1
 
     * - :ref:`application`
-      - :ref:`bt`
-      - :ref:`wifi`
-      - :ref:`ethernet`
-      - :ref:`usb`
+      - :ref:`connection`
+      - :ref:`hmi`
+      - :ref:`motor`
+      - :ref:`ai`
       - :ref:`adc`
       - :ref:`audio`
     * - :ref:`matter`
@@ -122,7 +122,7 @@ Xindex
       -
       -
       -
-      - 
+      -
     * - :ref:`cortex_a`
       -
       -

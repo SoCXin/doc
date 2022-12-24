@@ -4,7 +4,7 @@
 Vendor
 ===============
 
-.. _vendor_king:
+.. _soc_king:
 
 芯实力
 -----------
@@ -19,16 +19,13 @@ Vendor
       - :ref:`new`
       - :ref:`low`
       - :ref:`top`
-      - :ref:`update`
     * - :ref:`st`
       - :ref:`stm32f103`
       - :ref:`stm32f401`
-      - :ref:`stm32g031`
-      - :ref:`stm8s003`
-      - :ref:`stm32mp15`
       - :ref:`stm32u575`
+      - :ref:`stm32g031`
+      - :ref:`stm32mp15`
     * - :ref:`ti`
-      -
       -
       -
       -
@@ -40,9 +37,7 @@ Vendor
       -
       -
       -
-      -
     * - :ref:`realtek`
-      -
       -
       -
       -
@@ -54,16 +49,13 @@ Vendor
       -
       -
       -
-      -
     * - :ref:`gigadevice`
       -
       -
       -
       -
       -
-      -
     * - :ref:`nxp`
-      -
       -
       -
       -
@@ -84,7 +76,7 @@ Vendor
     国产芯片龙头企业 GigaDevice <gigadevice/index>
 
 
-.. _vendor_now:
+.. _xin_king:
 
 新势力
 -----------
@@ -99,33 +91,28 @@ Vendor
       - :ref:`new`
       - :ref:`low`
       - :ref:`top`
-      - :ref:`update`
     * - :ref:`wch`
-      - :ref:`ch583`
+      - :ref:`ch32v307`
       - :ref:`ch552`
       - :ref:`ch579`
       - :ref:`ch573`
       - :ref:`ch569`
-      - :ref:`ch32v307`
     * - :ref:`espressif`
       - :ref:`esp32`
       - :ref:`esp32c3`
-      - :ref:`esp32s2`
+      - :ref:`esp32c6`
       - :ref:`esp32c2`
       - :ref:`esp32s3`
-      - :ref:`esp32c6`
     * - :ref:`arterytek`
-      -
+      - :ref:`at32wb415`
       - :ref:`at32f4212`
       -
       - :ref:`at32f421`
       - :ref:`at32f437`
-      - :ref:`at32wb415`
     * - :ref:`allwinner`
       - :ref:`r329`
       - :ref:`f133`
       - :ref:`v831`
-      -
       -
       - :ref:`v853`
 

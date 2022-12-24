@@ -5,7 +5,7 @@ SWM181
 ===============
 
 * `Synwit <https://www.synwit.cn/>`_ : ``Cortex-M0`` ``48MHz`` ``16bit ADC``
-* `Tags <https://github.com/SoCXin/SWM181>`_ : :ref:`foc`
+* `Tags <https://github.com/SoCXin/SWM181>`_ : :ref:`motor`
 
 .. contents::
     :local:
@@ -34,7 +34,7 @@ Xin简介
 * 处理性能：? :ref:`CoreMark` , :ref:`level1`
 * 封装规格：QFN40/QFP48/QFP64
 * 运行环境：-40°C to 85°C
-* RAM容量： 16 KB 
+* RAM容量： 16 KB
 * Flash容量：96-248KB
 
 
@@ -43,7 +43,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 48 MHz :ref:`cortex_m0` 
+* 48 MHz :ref:`cortex_m0`
 * SLCD 4*31
 * 8个16位PWM
 * 4个32位基本定时器

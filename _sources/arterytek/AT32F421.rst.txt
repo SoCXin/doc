@@ -4,8 +4,7 @@
 AT32F421
 ===============
 
-`标签 <https://github.com/SoCXin/AT32F421>`_ : ``Cortex-M4`` ``120MHz`` ``COMP`` ``sLib`` ``ERTC`` ``TSSOP20``
-
+`Arterytek <https://www.arterytek.com/cn/product/AT32F421.jsp>`_ : ``Cortex-M4`` ``120MHz`` ``COMP`` ``sLib`` ``ERTC`` ``TSSOP20``
 
 .. contents::
     :local:
@@ -14,8 +13,8 @@ AT32F421
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/AT32F421>`_ : :ref:`low`
 
-`官方资源 <https://www.arterytek.com/cn/product/AT32F421.jsp>`_
 
 规格参数
 ~~~~~~~~~~~
