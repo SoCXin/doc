@@ -33,7 +33,7 @@ source_suffix = ".rst"
 # source_encoding = 'utf-8-sig'
 
 # The master toctree document.
-master_doc = "docs/index"
+master_doc = "index"
 
 # General information about the project.
 project = u"Xindex"
@@ -268,5 +268,5 @@ html_context = {
     "github_user": "SoCXin",
     "github_repo": "doc",
     "github_version": "master",
-    "conf_py_path": "/doc/",
+    "conf_py_path": "/docs/",
 }
