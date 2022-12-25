@@ -3,9 +3,7 @@
 
 BL602
 ===============
-
-* `bouffalolab <https://www.bouffalolab.com/>`_ : ``Wi-Fi`` ``BLE5``
-* `Tags <https://github.com/SoCXin/BL702>`_ : :ref:`wifi4` / :ref:`ble` / :ref:`riscv`
+`bouffalolab <https://www.bouffalolab.com/>`_ : ``Wi-Fi`` ``BLE5``
 
 .. contents::
     :local:
@@ -14,6 +12,7 @@ BL602
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/BL602>`_ : :ref:`wifi4` / :ref:`ble` / :ref:`riscv`
 
 .. image:: ./images/BL602s.png
     :target: https://www.bouffalolab.com/product/?type=detail&id=1

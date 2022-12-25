@@ -4,19 +4,22 @@
 BL808
 ===============
 
-`bouffalolab <https://www.bouffalolab.com/>`_ : ``Linux`` ``MCU``
+`bouffalolab <https://www.bouffalolab.com/>`_ : ``RV64`` ``Wi-Fi`` ``BLE`` ``USB`` ``NPU`` ``Linux``
 
 .. contents::
     :local:
     :depth: 1
 
-
 Xin简介
 -----------
+
+`Tags <https://github.com/SoCXin/BL808>`_ : :ref:`top` / :ref:`riscv` / :ref:`wifi4` / :ref:`bt` / :ref:`zigbee` / :ref:`usb_hs` / :ref:`sipeed_maix`
+
 
 
 .. contents::
     :local:
+    :depth: 1
 
 规格参数
 ~~~~~~~~~~~
@@ -32,17 +35,24 @@ Xin简介
 * 处理性能：
 * 封装规格：
 * 运行环境：
-* RAM容量：
+* RAM容量：768KB SRAM + 64MB UHS PSRAM
 * ROM容量：
 * Flash容量：
-
 
 特征参数
 ^^^^^^^^^^^
 
+* 480 MHz RV64GCV + 320MHz RV32GCP + 160MHz RV32EMC
+* 100GOPS NPU(BLAI-100)
+* MJPEG and H264(Baseline/Main)
+* Wi-Fi 802.11 b/g/n :ref:`wifi4`
+* Bluetooth 5.x Dual-mode :ref:`bt` + :ref:`ble`
+* USB 2.0 HS OTG
 
 芯片架构
 ~~~~~~~~~~~
+``三核异构RISC-V`` ``FreeRTOS`` ``Linux``
+
 
 功耗参数
 ^^^^^^^^^^^
@@ -56,13 +66,55 @@ Xin选择
 
 .. contents::
     :local:
+    :depth: 1
 
 品牌对比
 ~~~~~~~~~~~~
+``espressif``
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`vendor`
+      - :ref:`architecture`
+      - :ref:`CoreMark`
+      - :ref:`sram`/:ref:`flash`
+      - Characteristics
+      - UART/SPI/SDIO
+      - :ref:`package`
+    * - :ref:`bl808`
+      - :ref:`riscv`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`aic8800`
+      - :ref:`cortex_m4`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`esp32s3`
+      - :ref:`xtensa_lx7`
+      -
+      -
+      -
+      -
+      -
+
+
+
+
+.. image:: ./images/BL808vs.jpg
+    :target: https://item.taobao.com/item.htm?id=691108452443&mt=
+
+
 
 型号对比
 ~~~~~~~~~~~~
-
 
 
 版本对比

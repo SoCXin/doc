@@ -3,9 +3,7 @@
 
 V831
 =============
-
-* `Allwinner <https://www.allwinnertech.com>`_ : ``Cortex-A7`` ``800 MHz`` ``64M DDR2`` ``10/100 ETH`` ``0.2TOPS`` ``QFN88``
-* `Tags <https://github.com/SoCXin/V831>`_ : :ref:`top` / :ref:`ethernet`
+`Allwinner <https://www.allwinnertech.com>`_ : ``Cortex-A7`` ``800 MHz`` ``64M DDR2`` ``10/100 ETH`` ``0.2TOPS`` ``QFN88``
 
 .. contents::
     :local:
@@ -14,6 +12,7 @@ V831
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/V831>`_ : :ref:`top` / :ref:`ethernet`
 
 .. image:: ./images/V831.png
     :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=104
@@ -35,7 +34,7 @@ Xin简介
 * 封装规格：:ref:`QFN88`
 * 运行环境：-40°C to 85°C
 * RAM容量：64 MB (DDR2)
-* Flash容量： 
+* Flash容量：
 
 
 特征参数
@@ -43,7 +42,7 @@ Xin简介
 
 * 800 MHz :ref:`cortex_a7`
 * 0.2 TOPS :ref:`level_npu`
- 
+
 
 芯片架构
 ~~~~~~~~~~~

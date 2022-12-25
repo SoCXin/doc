@@ -1,5 +1,5 @@
 
-2022年度
+2022芯榜
 -------------
 
 ==================  ==================  ==================  ==================
@@ -49,8 +49,8 @@
 .. |November| image:: images/ax620a.jpg
 .. _November: ../high/AX620A.html
 
-.. |December| image:: ../espressif/images/espressif.png
-.. _December: ../high/K230.html
+.. |December| image:: images/bl808.png
+.. _December: ../bouffalolab/BL808.html
 
 
 .. contents::
@@ -116,7 +116,7 @@
 
 10-BK7256
 ~~~~~~~~~~~~~~
-``Wi-Fi6`` ``BT5.0`` 
+``Wi-Fi6`` ``BT5.0``
 
 :ref:`bk7256`
 
@@ -126,8 +126,8 @@
 
 :ref:`ax620a`
 
-12-K230
+12-BL808
 ~~~~~~~~~~~~~~
-``kendryte`` ``RISC-V`` ``C908`` ``Dual Core`` ``KPU``
+``bouffalolab`` ``三核异构RISC-V`` ``FreeRTOS`` ``Linux`` ``Wi-Fi`` ``BT+BLE`` ``100G NPU``
 
-:ref:`k230`
+:ref:`bl808`

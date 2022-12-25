@@ -3,9 +3,7 @@
 
 BL702
 ===============
-
-* `bouffalolab <https://www.bouffalolab.com/>`_ : ``Zigbee`` ``BLE5``
-* `Tags <https://github.com/SoCXin/BL702>`_ : :ref:`zigbee`
+`bouffalolab <https://www.bouffalolab.com/>`_ : ``Zigbee`` ``BLE5``
 
 .. contents::
     :local:
@@ -14,12 +12,15 @@ BL702
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/BL702>`_ : :ref:`ble` / :ref:`zigbee` / :ref:`sipeed_maix`
 
 .. image:: ./images/BL702s.png
     :target: https://www.bouffalolab.com/bl70X
 
 .. contents::
     :local:
+    :depth: 1
+
 
 规格参数
 ~~~~~~~~~~~

@@ -3,9 +3,7 @@
 
 F133
 =============
-
-* `Allwinner <https://www.allwinnertech.com>`_ : ``RISC-V`` ``D1S`` ``C906`` ``1.1 GHz`` ``WAFT`` ``64MB DDR2`` ``Tina``
-* `Tags <https://github.com/SoCXin/F133>`_ : :ref:`top` / :ref:`riscv`
+`Allwinner <https://www.allwinnertech.com>`_ : ``RISC-V`` ``D1S`` ``C906`` ``1.1 GHz`` ``WAFT`` ``64MB DDR2`` ``Tina``
 
 .. contents::
     :local:
@@ -13,6 +11,8 @@ F133
 
 Xin简介
 -----------
+
+`Tags <https://github.com/SoCXin/F133>`_ : :ref:`top` / :ref:`riscv`
 
 .. image:: ./images/F133.png
     :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=97

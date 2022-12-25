@@ -3,9 +3,7 @@
 
 AIC8800M
 ===============
-
-* `aicsemi <https://www.aicsemi.com/>`_ : ``WiFi6`` ``BT5.2`` ``USB HS OTG`` ``DSP``
-* `Tags <https://github.com/SoCXin/AIC8800M>`_ : :ref:`wifi6` / :ref:`bt` / :ref:`usb_hs`
+`aicsemi <https://www.aicsemi.com/>`_ : ``WiFi6`` ``BT5.2`` ``USB HS OTG`` ``DSP``
 
 
 .. contents::
@@ -14,6 +12,7 @@ AIC8800M
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/AIC8800M>`_ : :ref:`wifi6` / :ref:`bt` / :ref:`usb_hs`
 
 .. contents::
     :local:

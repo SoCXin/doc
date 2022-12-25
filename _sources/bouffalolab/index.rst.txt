@@ -28,45 +28,22 @@ Bouffalolab
       -
       - 276KB/128KB
       -
-      - 
+      -
       - :ref:`QFN32`
     * - :ref:`bl702`
       - :ref:`riscv`
       -
-      - 
-      - 
-      - 
-      - 
-    * - :ref:`esp32c2`
-      - :ref:`esp_rv32`
-      - 300 :ref:`CoreMark`
-      - 272KB/576KB
       -
       -
-      - QFN40
-    * - :ref:`esp32c3`
-      - :ref:`esp_rv32`
-      - 407 :ref:`CoreMark`
-      - 512KB/384KB
-      - 1T1R/v5.0
-      - 2/3/No
-      - :ref:`esp_qfn32`
-    * - :ref:`bk7231`
+      -
+      -
+    * - :ref:`bl808`
       - :ref:`riscv`
       -
-      - 352KB/288KB
-      - 72Mbps
-      - 3/2/1
-      - :ref:`QFN32`
-    * - :ref:`hi3861`
-      - :ref:`riscv`
       -
-      - 352KB/288KB
-      - 72Mbps
-      - 3/2/1
-      - :ref:`QFN32`
-
-
+      -
+      -
+      -
 
 
 .. toctree::
@@ -79,10 +56,30 @@ Bouffalolab
 技术简介
 -----------
 
+.. _bl_sdk:
 
-开发框架
+SDK
 ~~~~~~~~~~~
 
-`bl_iot_sdk <https://github.com/bouffalolab/bl_iot_sdk>`_
+.. list-table::
+    :header-rows:  1
 
-`bl_mcu_sdk <https://github.com/bouffalolab/bl_mcu_sdk>`_
+    * - :ref:`bl_sdk`
+      - `bl_iot_sdk <https://github.com/bouffalolab/bl_iot_sdk>`_
+      - `bl_mcu_sdk <https://github.com/bouffalolab/bl_mcu_sdk>`_
+    * - :ref:`bl602`
+      -
+      -
+    * - :ref:`bl702`
+      -
+      -
+    * - :ref:`bl808`
+      -
+      -
+
+
+
+
+
+
+
