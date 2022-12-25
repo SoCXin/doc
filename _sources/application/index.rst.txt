@@ -7,10 +7,10 @@ Applications
 .. toctree::
     :maxdepth: 1
 
-    边缘计算   <ai>
-    电机控制   <motor>
-    人机交互   <hmi>
-    信号处理   <adc>
+    HMI   <hmi>
+    ADC   <adc>
+    AIoT   <ai>
+    Motor   <motor>
     Audio   <audio>
 
 .. _connect:
@@ -92,12 +92,12 @@ Basic
 .. list-table::
     :header-rows:  1
 
-    * -
+    * - :ref:`basic`
       - :ref:`uart`
-      - :ref:`plc`
-      - :ref:`can`
+      - :ref:`i2c`
+      - :ref:`spi`
       - :ref:`usb`
-      - :ref:`ethernet`
+      - :ref:`can`
     * - Bandwidth
       -
       -
@@ -109,10 +109,7 @@ Basic
     :maxdepth: 1
 
     USB <usb>
-    PLC <plc>
-    Ethernet <ethernet>
-    Others <peripherals>
-
+    peripherals <peripherals>
 
 
 .. _hispeed:
@@ -136,4 +133,10 @@ High Speed
       -
       -
       -
+
+.. toctree::
+    :maxdepth: 1
+
+    PLC <plc>
+    Ethernet <ethernet>
 

@@ -28,11 +28,11 @@
 .. |April| image:: ../espressif/images/espressif.png
 .. _April: ../miscellaneous/RP2040.html
 
-.. |May| image:: ../espressif/images/espressif.png
-.. _May: ../miscellaneous/RP2040.html
+.. |May| image:: images/HPM6750.png
+.. _May: ../high/HPM6750.html
 
-.. |June| image:: ../espressif/images/espressif.png
-.. _June: ../miscellaneous/RP2040.html
+.. |June| image:: images/aic8800.png
+.. _June: ../miscellaneous/AIC8800M.html
 
 .. |July| image:: ../espressif/images/espressif.png
 .. _July: ../miscellaneous/RP2040.html

@@ -16,6 +16,8 @@ Xin简介
 `Tags <https://github.com/SoCXin/BL808>`_ : :ref:`top` / :ref:`riscv` / :ref:`wifi4` / :ref:`bt` / :ref:`zigbee` / :ref:`usb_hs` / :ref:`sipeed_maix`
 
 
+.. image:: ./images/BL808.jpg
+    :target: https://www.bouffalolab.com/
 
 .. contents::
     :local:
@@ -42,7 +44,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 480 MHz RV64GCV + 320MHz RV32GCP + 160MHz RV32EMC
+* 480 MHz :ref:`xt_c906` + 320MHz :ref:`xt_e907` + 160MHz E902
 * 100GOPS NPU(BLAI-100)
 * MJPEG and H264(Baseline/Main)
 * Wi-Fi 802.11 b/g/n :ref:`wifi4`
@@ -51,7 +53,15 @@ Xin简介
 
 芯片架构
 ~~~~~~~~~~~
-``三核异构RISC-V`` ``FreeRTOS`` ``Linux``
+``三核异构`` ``RISC-V`` ``FreeRTOS`` ``Linux``
+
+BL808是一个三核异构架构的AIoT芯片，采用的都是RISC-V架构，最高时钟频率达480MHz。芯片主要包含无线和多媒体两个子系统。
+
+M0集成Wi-Fi/BT/Zigbee无线子系统，可以实现多种无线连接和数据传输，采用平头哥 :ref:`xt_e907` 320MHz 32-bit RISC-V CPU，采用 5 级流水线结构，支持RISC-V 32/16 位混编指令集，包含64个外部中断源，有4个bits可以用于配置中断优先级。M0 包含 32K 指令 cache 和 16K 数据 cache。
+
+D0集成DVP/CSI/ H264/NPU等视频处理模块，采用平头哥 :ref:`xt_c906` 480MHz 64-bit RISC-V CPU，采用 5 级流水线结构，支持 RISC-V RV64IMAFCV 指令架构，包含67个外部中断源，有 3 个 bits 可以用于配置中断优先级。D0 包含 32K 指 令 cache 和 32K 数据 cache。
+
+BL808内部还有一个LP核，采用的是平头哥E902，主频160MHz。
 
 
 功耗参数
