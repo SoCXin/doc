@@ -19,14 +19,14 @@
 .. |January| image:: images/rp2040.png
 .. _January: ../miscellaneous/RP2040.html
 
-.. |February| image:: ../espressif/images/espressif.png
-.. _February: ../miscellaneous/RP2040.html
+.. |February| image:: images/esp32c6.png
+.. _February: ../espressif/ESP32-C6.html
 
-.. |March| image:: images/esp32c6.png
-.. _March: ../espressif/ESP32-C6.html
+.. |March| image:: images/CH32V307.png
+.. _March: ../wch/CH32V307.html
 
-.. |April| image:: images/CH32V307.png
-.. _April: ../wch/CH32V307.html
+.. |April| image:: images/HPMicro.png
+.. _April: ../high/HPM6350.html
 
 .. |May| image:: images/HPM6750.png
 .. _May: ../high/HPM6750.html
@@ -37,8 +37,8 @@
 .. |July| image:: images/AT32F437.png
 .. _July: ../arterytek/AT32F437.html
 
-.. |August| image:: images/HPMicro.png
-.. _August: ../high/HPM6350.html
+.. |August| image:: images/nRF7002.png
+.. _August: ../nordic/nRF7002.html
 
 .. |September| image:: images/AC7916.png
 .. _September: ../jieli/AC7916.html
@@ -63,25 +63,26 @@
 
 :ref:`rp2040` 聚集了足够多的开发资源和使用方式，同时解决了芯片的供应和价格问题，其商用价值将大大增加，通过逐步上市的产品将进一步提高相关产品的定义基线。
 
-02-ESP32H2
+02-ESP32C6
 ~~~~~~~~~~~~
-``Matter``
+``Wi-Fi6`` ``BLE`` ``Thread`` ``Matter``
 
-:ref:`esp32h2` 就是你快用上的最高效的 :ref:`matter`
-
-03-ESP32C6
-~~~~~~~~~~~~
-``Wi-Fi6`` ``Matter``
-
-:ref:`esp32c6` 支持三协议丛：:ref:`wifi6` , :ref:`ble` , :ref:`802_15_4`
+:ref:`esp32c6` 支持三协议 :ref:`wifi6` , :ref:`ble` , :ref:`802_15_4`
 
 
-04-CH32V307
+
+
+03-CH32V307
 ~~~~~~~~~~~~
 ``RISC-V4C`` ``144MHz`` ``USB`` ``Ethernet`` ``10Mbps(PHY)`` ``BLE5.3`` ``QFN28``
 
-:ref:`ch32v307` 非常强大的通信配置，开发板和芯片也可以买到了
+:ref:`ch32v307`
 
+04-HPM6350
+~~~~~~~~~~~~~~
+``RISC-V`` ``DSP`` ``FFA`` ``3390 CoreMark`` ``648MHz`` ``￥28``
+
+:ref:`hpm6350`
 
 05-HPM6750
 ~~~~~~~~~~~~
@@ -101,11 +102,11 @@
 
 :ref:`at32f437`
 
-08-HPM6350
-~~~~~~~~~~~~~~
-``RISC-V`` ``DSP`` ``FFA`` ``3390 CoreMark`` ``648MHz`` ``￥28``
+08-nRF7002
+~~~~~~~~~~~~
+``Wi-Fi6`` ``BLE`` ``Thread`` ``Matter`` ``802.11a/b/g/n/ac/ax``
 
-:ref:`hpm6350`
+:ref:`nrf7002`
 
 
 09-AC7916

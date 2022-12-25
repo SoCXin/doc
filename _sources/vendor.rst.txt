@@ -61,6 +61,12 @@ Vendor
       -
       -
       -
+    * - :ref:`nordic`
+      -
+      -
+      -
+      -
+      -
 
 .. toctree::
     :maxdepth: 1
