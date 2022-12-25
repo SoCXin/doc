@@ -250,20 +250,20 @@
 <td></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/AIC8800M.html#aic8800"><span class="std std-ref">AIC8800M</span></a></p></td>
-<td><p><a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../espressif/ESP32-S3.html#esp32s3"><span class="std std-ref">ESP32S3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../espressif/ESP32-S3.html#esp32s3"><span class="std std-ref">ESP32S3</span></a></p></td>
 <td><p><a class="reference internal" href="../espressif/index.html#xtensa-lx7"><span class="std std-ref">Xtensa LX7</span></a></p></td>
 <td><p>1181</p></td>
 <td><p>512KB</p></td>
 <td><p>150 Mbps</p></td>
 <td><p>118 dBm</p></td>
+<td><p><a class="reference internal" href="../espressif/index.html#esp-qfn56"><span class="std std-ref">QFN56</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../miscellaneous/AIC8800M.html#aic8800"><span class="std std-ref">AIC8800M</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
@@ -272,11 +272,51 @@
 </section>
 <section id="id11">
 <h3><a class="toc-backref" href="#id19">型号对比</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../application/wifi.html#bandwidth"><span class="std std-ref">Bandwidth</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../application/wifi.html#link-budget"><span class="std std-ref">Link Budget</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/package.html#package"><span class="std std-ref">Package</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#bl808"><span class="std std-ref">BL808</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
+<td></td>
+<td><p>768KB</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#bl606p"><span class="std std-ref">BL606P</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
+<td></td>
+<td><p>700KB</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <section id="bl606p">
 <span id="id12"></span><h4>BL606P<a class="headerlink" href="#bl606p" title="Permalink to this heading">¶</a></h4>
-<p>博流智能的多模无线连接智能语音SoC芯片“BL606P”，单芯片高度集成玄铁C906和E907处理器、SRAM、多模无线连接、音频编码器、屏显和外设接口等，可广泛用于智能语音场景。</p>
-<p>BL606P 芯片内部包含多个 RISC-V 处理器，最高时钟频率达480MHz。M0 是一颗 32-bit RISC-V CPU，采用 5 级流水线结构，支持 RISC-V 32/16 位混编指令集，包含 62 个外部中断源，有 4 个 bits 可以用于配置中断优先级。M0 包含 32K 指令 cache 和 16K 数据 cache。D0 是一颗 64-bit RISC-V CPU，采用 5 级流水线结构，支持 RISC-V RV64IMAFCV 指令架构，包含 28 个外部中断源，有 3 个 bits 可以用于配置中断优先级。D0 包含 32K 指 令 cache 和 32K 数据 cache。BL606P包含音频编解码器，具有700KB RAM / 16M pSRAM / 2Kb eFuse存储资源，支持外接Flash。集成的多种外设和丰富的GPIO管脚，睡眠时~1uA级的低功耗，满足智能音箱、视频监控等各类物联网产品功能需求。</p>
-<p>BL606P 的无线子系统集成Wi-Fi / BT / BLE / Zigbee四模合一的无线互联单元，在单颗芯片上实现了Wi-Fi / BLE / Zigbee共存。子系统内置一颗 RISC-V 32-bit 高性能 CPU，可以实现多种无线连接和数据传输，提供多样化的连接与传输体验，有助于构建覆盖范围更广、应用功能更强大的物联网设备及解决方案。</p>
+<p><code class="docutils literal notranslate"><span class="pre">C906</span></code> <code class="docutils literal notranslate"><span class="pre">E907</span></code></p>
+<p>BL606P是高度集成的双核 AIoT 边缘计算SOC，具有 Wi-Fi/BT/BLE/Zigbee/Ethernet/USB2.0 六模合一的多模智能网关功能，内置一颗RISC-V 32位高性能CPU，可实现多种无线有线连接和数据传输，提供多样化的连接与传输体验；另有一颗RISC-V 64-bit 超高性能 CPU，提供超高的数据处理算力，可加速智能音箱相关算法。BL606P支持多种安全机制，提供大容量高速缓存和存储器资源，集合多种外设及音频编译码器，为物联网产品提供强大的联网、存储和运算能力，适用于各种智能语音交互设备、智能中控面板，智能网关，和智能音箱等结合人工智能和多模无线有线网关功能的智能物联网应用场景与设备。</p>
+<p>BL606P 芯片内部包含多个 RISC-V 处理器，最高时钟频率达480MHz。BL606P包含音频编解码器，具有700KB RAM / 16M pSRAM / 2Kb eFuse存储资源，支持外接Flash。</p>
+<p>集成的多种外设和丰富的GPIO管脚，睡眠时~1uA级的低功耗，满足智能音箱、视频监控等各类物联网产品功能需求。</p>
 </section>
 </section>
 <section id="id13">

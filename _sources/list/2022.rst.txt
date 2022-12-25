@@ -25,7 +25,7 @@
 .. |March| image:: images/CH32V307.png
 .. _March: ../wch/CH32V307.html
 
-.. |April| image:: images/HPMicro.png
+.. |April| image:: images/HPM6350.png
 .. _April: ../high/HPM6350.html
 
 .. |May| image:: images/HPM6750.png
@@ -49,7 +49,7 @@
 .. |November| image:: images/ax620a.jpg
 .. _November: ../high/AX620A.html
 
-.. |December| image:: images/bl808.png
+.. |December| image:: images/bl606p.png
 .. _December: ../bouffalolab/BL808.html
 
 
