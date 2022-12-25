@@ -22,37 +22,37 @@
 .. _Aries: ../miscellaneous/RP2040.html
 
 .. |Taurus| image:: images/Taurus.jpg
-.. _Taurus: ../miscellaneous/RP2040.html
+.. _Taurus: ../high/HPM6750.html
 
 .. |Gemini| image:: images/Gemini.jpg
-.. _Gemini: ../espressif/ESP32-C6.html
+.. _Gemini: ../bouffalolab/BL808.html
 
 .. |Cancer| image:: images/Cancer.jpg
-.. _Cancer: ../high/AX620A.html
+.. _Cancer: ../st/m/STM32G474.html
 
 .. |Leo| image:: images/Leo.jpg
-.. _Leo: ../miscellaneous/RP2040.html
+.. _Leo: ../arterytek/AT32F421.html
 
 .. |Virgo| image:: images/Virgo.jpg
-.. _Virgo: ../miscellaneous/RP2040.html
+.. _Virgo: ../st/t/STM32H730.html
 
 .. |Libra| image:: images/Libra.jpg
-.. _Libra: ../miscellaneous/RP2040.html
+.. _Libra: ../wch/CH569.html
 
 .. |Scorpio| image:: images/Scorpio.jpg
-.. _Scorpio: ../miscellaneous/RP2040.html
+.. _Scorpio: ../st/s/STM32G031.html
 
 .. |Sagittarius| image:: images/Sagittarius.jpg
-.. _Sagittarius: ../miscellaneous/RP2040.html
+.. _Sagittarius: ../st/t/STM32H7B0.html
 
 .. |Capricorn| image:: images/Capricorn.jpg
-.. _Capricorn: ../miscellaneous/RP2040.html
+.. _Capricorn: ../wch/CH583.html
 
 .. |Aquarius| image:: images/Aquarius.jpg
-.. _Aquarius: ../miscellaneous/RP2040.html
+.. _Aquarius: ../wch/CH32V307.html
 
 .. |Pisces| image:: images/Pisces.jpg
-.. _Pisces: ../miscellaneous/RP2040.html
+.. _Pisces: ../espressif/ESP32-S3.html
 
 
 * 小众芯片不适合小众产品，基础资源太少意味着投入太多，成果和经验价值变现也更加困难;
@@ -69,7 +69,7 @@
     * - :ref:`NO_002`
       - 国产高性能双核MCU产品，划时代性能9220 CoreMark
     * - :ref:`NO_003`
-      - WiFi6双频 + BT/BLE双模 + USB HS(PHY)
+      - 高性能三核CPU，Wi-Fi + BT/BLE双模 + USB HS(PHY)
     * - :ref:`NO_004`
       - 拥有5个独立 :ref:`adc12b`，拥有 :ref:`stm32_hrtim`
     * - :ref:`NO_005`

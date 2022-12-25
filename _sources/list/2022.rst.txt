@@ -37,14 +37,14 @@
 .. |July| image:: images/AT32F437.png
 .. _July: ../arterytek/AT32F437.html
 
-.. |August| image:: ../espressif/images/espressif.png
-.. _August: ../miscellaneous/RP2040.html
+.. |August| image:: images/HPMicro.png
+.. _August: ../high/HPM6350.html
 
-.. |September| image:: ../espressif/images/espressif.png
-.. _September: ../miscellaneous/RP2040.html
+.. |September| image:: images/AC7916.png
+.. _September: ../jieli/AC7916.html
 
-.. |October| image:: ../espressif/images/espressif.png
-.. _October: ../miscellaneous/RP2040.html
+.. |October| image:: images/BK7256.png
+.. _October: ../bekencorp/BK7256.html
 
 .. |November| image:: images/ax620a.jpg
 .. _November: ../high/AX620A.html
