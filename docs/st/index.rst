@@ -11,11 +11,12 @@ ST
 
 意法半导体是全球最大的半导体公司之一，MCU领域的王者，其产品拥有庞大的工程师群众基础和开发资源。
 
+STM32F7系列的特点及替代方案
 
 .. list-table::
     :header-rows:  1
 
-    * - 分类
+    * - :ref:`st`
       - 性能范围
       - 内存配置
       - 封装规格
@@ -72,15 +73,13 @@ ST
       - :ref:`architecture`
       - :ref:`CoreMark`
       - :ref:`level`
-      - :ref:`sram`
+      - :ref:`sram`/:ref:`flash`
       - :ref:`peripherals`
       - Price
-      - :ref:`package`
     * - :ref:`stm32h745`
       - :ref:`cortex_m7`
       - 3224
       - :ref:`level5`
-      -
       -
       -
       -
@@ -91,7 +90,6 @@ ST
       -
       -
       -
-      -
     * - :ref:`stm32h750`
       - :ref:`cortex_m7`
       - 2424
@@ -99,12 +97,10 @@ ST
       -
       -
       -
-      -
     * - :ref:`stm32h7b0`
       - :ref:`cortex_m7`
       - 1414
       - :ref:`level4`
-      -
       -
       -
       -

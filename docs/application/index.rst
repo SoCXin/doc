@@ -13,9 +13,9 @@ Applications
     信号处理   <adc>
     Audio   <audio>
 
-.. _connection:
+.. _connect:
 
-通信连接
+Connect
 -----------
 
 .. contents::
@@ -84,9 +84,9 @@ Wireless
     LPWA(LoRa) <lpwa>
     WPAN(ZigBee) <wpan>
 
-.. _wired:
+.. _basic:
 
-Wired
+Basic
 ~~~~~~~~~~~~
 
 .. list-table::
@@ -105,7 +105,6 @@ Wired
       -
       -
 
-
 .. toctree::
     :maxdepth: 1
 
@@ -115,4 +114,26 @@ Wired
     Others <peripherals>
 
 
+
+.. _hispeed:
+
+High Speed
+~~~~~~~~~~~~~~
+``> 1Gbps``
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`hispeed`
+      - :ref:`ethernet`
+      - :ref:`usb`
+      -
+      -
+      -
+    * - Bandwidth
+      -
+      -
+      -
+      -
+      -
 

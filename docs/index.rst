@@ -67,12 +67,12 @@ Xindex
     :header-rows: 1
 
     * - :ref:`application`
-      - :ref:`connection`
+      - :ref:`connect`
       - :ref:`hmi`
       - :ref:`motor`
-      - :ref:`ai`
       - :ref:`adc`
       - :ref:`audio`
+      - :ref:`ai`
     * - :ref:`matter`
       -
       -
