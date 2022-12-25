@@ -7,6 +7,6 @@
 .. toctree::
     :maxdepth: 1
 
-    封装尺寸 <package>
+    封装规格 <package>
 
 .. include:: 2022.rst

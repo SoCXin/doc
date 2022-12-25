@@ -1,20 +1,25 @@
 
-.. _xy1100:
+.. _xy2100s:
 
-XY1100
+XY2100S
 ===============
 
-`标签 <https://github.com/SoCXin/XY1100>`_ : ``Cortex-M3`` ``240MHz`` ``UART`` ``CMOS PA``
+`xinyisemi <https://www.xinyisemi.com/>`_ : ``Cortex-M3`` ``NB-IoT`` ``240MHz`` ``UART`` ``CMOS PA``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/XY2100S>`_ : :ref:`nbiot`
 
 规格参数
 ~~~~~~~~~~~
 
+
+XY1200在XY1100的基础上对Modem的功耗/性能以及射频部分的集成度做了提升。
+XY2100S在XY1200的基础上支持更多的功能，如LCD、AuxADC、运放、比较器等，专为智能表计、烟感行业高度优化定制。
 
 基本参数
 ^^^^^^^^^^^

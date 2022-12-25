@@ -1,0 +1,59 @@
+
+.. _nrf7002:
+
+nRF7002
+============
+
+`Nordic <https://www.nordicsemi.com/>`_ : ``Wi-Fi6`` ``BLE`` ``Thread`` ``Matter`` ``802.11a/b/g/n/ac/ax``
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+`Tags <https://www.nordicsemi.com/Products/nRF7002>`_ : :ref:`ulp` / :ref:`wifi6` / :ref:`ble` / :ref:`802_15_4`
+
+
+规格配置
+~~~~~~~~~~~
+
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2022年8月
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：
+* 封装规格：QFN 6×6mm
+* 运行环境：
+* RAM容量：
+* Flash容量：
+
+
+特征参数
+^^^^^^^^^^^
+
+
+芯片架构
+~~~~~~~~~~~
+
+功耗参数
+^^^^^^^^^^^
+
+* 电压范围：1.7V – 3.6V
+* 功耗范围：
+
+
+
+Wi-Fi
+^^^^^^^^^^^^^^^
+``64 QAM``
+
+* Wi-Fi 6 Station(STA)
+* 1 Spatial Stream(SS)
+* 20 MHz 信道带宽，86 Mbps PHY
+

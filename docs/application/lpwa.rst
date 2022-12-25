@@ -33,14 +33,12 @@ LoRa
     * - :ref:`lora`
       - :ref:`architecture`
       - :ref:`sram`/:ref:`flash`
-      -
       - LoRa
       - Rate
       - More
       - :ref:`package`
     * - :ref:`asr6601`
       - :ref:`cortex_m0`
-      -
       -
       -
       -
@@ -52,34 +50,8 @@ LoRa
       -
       -
       -
-      -
       - :ref:`QFN48`
 
-
-
-.. list-table::
-    :header-rows: 1
-
-    * - :ref:`vendor`
-      - :ref:`can`
-      - :ref:`ethernet`
-      - :ref:`plc`
-      - :ref:`wpan`
-      - :ref:`wifi`
-      - :ref:`lora`
-      - :ref:`nbiot`
-      - :ref:`cat1`
-      - :ref:`cat4`
-    * -
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-      -
-      -
 
 
 .. image:: ./images/LTE.png
@@ -110,7 +82,15 @@ NB-IoT
       -
       -
       -
-    * - :ref:`xy1100`
+    * - :ref:`xy1100e`
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`xy2100s`
       -
       -
       -
@@ -122,7 +102,9 @@ NB-IoT
 .. toctree::
     :maxdepth: 1
 
-    XY1100 <../miscellaneous/XY1100>
+    XY1100E <../miscellaneous/XY1100E>
+    XY2100S <../miscellaneous/XY2100S>
+
 
 
 

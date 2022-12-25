@@ -3,10 +3,7 @@
 
 HPM6750
 ===============
-
-* `HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``816MHz`` ``Dual Core`` ``USB HS OTG`` ``16bit ADC @2Msps`` ``12bit ADC @5Msps`` ``AEC-Q100``
-* `Tags <https://github.com/SoCXin/AX620A>`_ : :ref:`top` 
-
+`HPMicro <https://www.hpmicro.com>`_ : ``RISC-V`` ``816MHz`` ``Dual Core`` ``USB HS OTG`` ``16bit ADC @2Msps`` ``12bit ADC @5Msps`` ``AEC-Q100``
 
 .. image:: https://github.com/SoCXin/HPM6750/workflows/sdk/badge.svg
     :target: https://github.com/SoCXin/hpm_sdk
@@ -19,7 +16,7 @@ HPM6750
 
 Xin简介
 -----------
-``新一代信息采集处理器`` ``边缘计算平台``
+`Tags <https://github.com/SoCXin/HPM6750>`_ : :ref:`top` / :ref:`adc` / :ref:`usb_hs`
 
 
 .. image:: ./images/HPM6750s.png
@@ -27,6 +24,8 @@ Xin简介
 
 .. contents::
     :local:
+    :depth: 1
+
 
 规格参数
 ~~~~~~~~~~~

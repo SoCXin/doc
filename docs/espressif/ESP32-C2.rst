@@ -2,9 +2,7 @@
 
 ESP32C2
 ================
-
-* `espressif <https://www.espressif.com/>`_ : ``ESP8684`` ``RISC-V`` ``120MHz`` ``Wi-Fi`` ``1024-QAM`` ``BLE5.0`` ``QFN40``
-* `Tags <https://github.com/SoCXin/ESP32C2>`_ : :ref:`wifi4` / :ref:`ble` / :ref:`riscv`
+`espressif <https://www.espressif.com/>`_ : ``RISC-V`` ``120MHz`` ``Wi-Fi`` ``1024-QAM`` ``BLE5.0`` ``ESP8684`` ``QFN40``
 
 .. contents::
     :local:
@@ -12,6 +10,7 @@ ESP32C2
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/ESP32C2>`_ : :ref:`wifi4` / :ref:`ble` / :ref:`riscv`
 
 .. image:: ./images/ESP32C2.png
     :target: https://www.espressif.com/zh-hans/products/socs/esp32-c2
@@ -149,8 +148,8 @@ Xin选择
     * - :ref:`bk7231`
       - :ref:`riscv`
       -
-      - 
-      - 
+      -
+      -
       -
       - :ref:`QFN32`
     * - :ref:`bl602`
@@ -158,7 +157,7 @@ Xin选择
       -
       - 276KB/128KB
       -
-      - 
+      -
       - :ref:`QFN32`
 
 

@@ -3,14 +3,6 @@
 板刊
 ==================
 
-`SoC·芯 <https://www.SoC.Xin>`_ 做聪明的选择
-
-
-
-
-.. image:: images/all.png
-    :target: https://www.stops.top
-
 
 .. _sipeed:
 
@@ -29,13 +21,51 @@ Sipeed
 
 Maix
 ~~~~~~~~~~
-``K210`` ``V831`` ``R329`` ``AX620A`` 
+``K210`` ``V831`` ``R329`` ``AX620A``
 
-* :ref:`k210` `MAIX-I <https://wiki.sipeed.com/hardware/zh/maix/index.html>`_
-* :ref:`v831` `MAIX-II <https://wiki.sipeed.com/hardware/zh/maixII/index.html>`_
-* :ref:`v833` `MAIX-II-S <https://wiki.sipeed.com/hardware/zh/maixII/M2S/V833.html>`_
-* :ref:`r329` `MAIX-II-A <https://wiki.sipeed.com/hardware/zh/maixII/M2A/maixsense.html>`_
-* :ref:`ax620a` `MAIX-III <https://wiki.sipeed.com/hardware/zh/maixIII/index.html>`_
 
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`sipeed_maix`
+      - :ref:`xin`
+      - :ref:`frequency`
+      - :ref:`level`
+      - update
+    * - `Maix-Zero <https://wiki.sipeed.com/hardware/zh/maixzero/sense/maix_zero_sense.html>`_
+      - :ref:`bl702`
+      -
+      -
+      -
+    * - `Maix-I <https://wiki.sipeed.com/hardware/zh/maix/index.html>`_
+      - :ref:`k210`
+      -
+      -
+      -
+    * - `Maix-I-S <https://wiki.sipeed.com/hardware/zh/maix/m1s/m1s_module.html>`_
+      - :ref:`bl808`
+      -
+      -
+      -
+    * - `Maix-II <https://wiki.sipeed.com/hardware/zh/maixII/index.html>`_
+      - :ref:`v831`
+      -
+      -
+      -
+    * - `Maix-II-S <https://wiki.sipeed.com/hardware/zh/maixII/M2S/V833.html>`_
+      - :ref:`v833`
+      -
+      -
+      -
+    * - `Maix-II-A <https://wiki.sipeed.com/hardware/zh/maixII/M2A/maixsense.html>`_
+      - :ref:`r329`
+      -
+      -
+      -
+    * - `Maix-III <https://wiki.sipeed.com/hardware/zh/maixIII/index.html>`_
+      - :ref:`ax620a`
+      -
+      -
+      -
 
 

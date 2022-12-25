@@ -43,13 +43,13 @@ Xindex
       - :ref:`rt1170`
     * - :ref:`rp2040`
       - :ref:`mega328p`
-      - :ref:`aic8800`
+      - :ref:`bl808`
       - :ref:`ch552`
       - :ref:`stm32l412`
       - :ref:`hpm6750`
-    * - :ref:`aic8800`
+    * - :ref:`bl702`
       - :ref:`rp2040`
-      - :ref:`NO_013`
+      - :ref:`ch583`
       - :ref:`ch573`
       - :ref:`cc2340`
       - :ref:`stm32h730`

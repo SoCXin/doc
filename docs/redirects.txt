@@ -98,7 +98,8 @@
 /CR710.html -> miscellaneous/CR710.html
 /Hi3861.html -> miscellaneous/Hi3861.html
 /Hi3921.html -> miscellaneous/Hi3921.html
-/XY1100.html -> miscellaneous/XY1100.html
+/XY1100E.html -> miscellaneous/XY1100E.html
+/XY2100S.html -> miscellaneous/XY2100S.html
 /RDA8910.html -> miscellaneous/USI8910DM.html
 /USI8910.html -> miscellaneous/USI8910DM.html
 /TKM32F499.html -> miscellaneous/TKM32F499.html

@@ -3,16 +3,15 @@
 
 AX620A
 =============
+`Axera <https://www.axera-tech.com/product/T7297367876123493768>`_ : ``Cortex-A7`` ``Quad Core`` ``3.6Tops`` ``NPU``
 
-* `Axera <https://www.axera-tech.com/product/T7297367876123493768>`_ : ``Cortex-A7`` ``Quad Core`` ``3.6Tops`` ``NPU``
-* `Tags <https://github.com/SoCXin/AX620A>`_ : :ref:`top`
- 
 .. contents::
     :local:
     :depth: 1
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/AX620A>`_ : :ref:`top`  / :ref:`cortex_a7`
 
 
 规格参数
@@ -25,7 +24,7 @@ Xin简介
 * 发布价格：
 * 制程工艺：28 nm
 * 供货周期：
-* 处理性能： 
+* 处理性能：
 
 
 

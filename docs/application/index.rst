@@ -7,10 +7,10 @@ Applications
 .. toctree::
     :maxdepth: 1
 
-    边缘计算   <ai>
-    电机控制   <motor>
-    人机交互   <hmi>
-    信号处理   <adc>
+    HMI   <hmi>
+    ADC   <adc>
+    AIoT   <ai>
+    Motor   <motor>
     Audio   <audio>
 
 .. _connect:
@@ -21,6 +21,62 @@ Connect
 .. contents::
     :local:
     :depth: 1
+
+
+.. _basic:
+
+Basic
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`basic`
+      - :ref:`uart`
+      - :ref:`i2c`
+      - :ref:`spi`
+      - :ref:`usb`
+      - :ref:`can`
+    * - Bandwidth
+      -
+      -
+      -
+      -
+      -
+
+.. toctree::
+    :maxdepth: 1
+
+    USB <usb>
+    peripherals <peripherals>
+
+
+.. _special:
+
+Special
+~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`special`
+      - :ref:`ethernet`
+      - :ref:`plc`
+      -
+      -
+      -
+    * - Bandwidth
+      -
+      -
+      -
+      -
+      -
+
+.. toctree::
+    :maxdepth: 1
+
+    PLC <plc>
+    Ethernet <ethernet>
 
 .. _wireless:
 
@@ -79,61 +135,8 @@ Wireless
 .. toctree::
     :maxdepth: 1
 
-    Bluetooth(BLE) <bluetooth>
-    Wi-Fi(802.11) <wifi>
-    LPWA(LoRa) <lpwa>
-    WPAN(ZigBee) <wpan>
-
-.. _basic:
-
-Basic
-~~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * -
-      - :ref:`uart`
-      - :ref:`plc`
-      - :ref:`can`
-      - :ref:`usb`
-      - :ref:`ethernet`
-    * - Bandwidth
-      -
-      -
-      -
-      -
-      -
-
-.. toctree::
-    :maxdepth: 1
-
-    USB <usb>
-    PLC <plc>
-    Ethernet <ethernet>
-    Others <peripherals>
-
-
-
-.. _hispeed:
-
-High Speed
-~~~~~~~~~~~~~~
-``> 1Gbps``
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`hispeed`
-      - :ref:`ethernet`
-      - :ref:`usb`
-      -
-      -
-      -
-    * - Bandwidth
-      -
-      -
-      -
-      -
-      -
+    Bluetooth (BLE) <bluetooth>
+    WPAN (ZigBee) <wpan>
+    Wi-Fi (802.11) <wifi>
+    LPWA (LoRa) <lpwa>
 

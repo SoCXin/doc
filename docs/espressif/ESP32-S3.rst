@@ -3,8 +3,7 @@
 
 ESP32S3
 ================
-
-`GitHub <https://github.com/SoCXin/ESP32S3>`_ : :ref:`wifi` :ref:`bt` ``Xtensa LX7`` ``Dual Core`` ``240 MHz`` ``BLE5.0`` ``USB1.1 OTG`` ``AI`` ``CAN`` ``Touch`` ``QFN56``
+`espressif <https://www.espressif.com/>`_ : ``Xtensa LX7`` ``Dual Core`` ``240 MHz`` ``BLE5.0`` ``USB1.1 OTG`` ``AI`` ``CAN`` ``Touch`` ``QFN56``
 
 .. contents::
     :local:
@@ -12,6 +11,7 @@ ESP32S3
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/ESP32S3>`_ : :ref:`wifi4` / :ref:`ble`
 
 .. image:: ./images/ESP32S3.png
     :target: https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/get-started/index.html
@@ -256,6 +256,7 @@ Xin选择
 
 .. contents::
     :local:
+    :depth: 1
 
 品牌对比
 ~~~~~~~~~~~~

@@ -5,7 +5,7 @@ RT1170
 =============
 
 * `NXP <https://www.nxp.com.cn>`_ : ``Cortex-M7`` ``Cortex-M4`` ``Dual Core`` ``1 GHz``
-* `Tags <https://github.com/SoCXin/RT1170>`_ : :ref:`top` / :ref:`adc` / :ref:`usb_hs`
+
 
 
 .. contents::
@@ -15,6 +15,7 @@ RT1170
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/RT1170>`_ : :ref:`top` / :ref:`adc` / :ref:`usb_hs`
 
 .. image:: ./images/RT1170.png
     :target: https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1170-crossover-mcu-family-first-ghz-mcu-with-arm-cortex-m7-and-cortex-m4-cores:i.MX-RT1170

@@ -3,7 +3,7 @@
 
 性能Xin
 ============
-``Linux`` ``MCU`` 
+``Linux`` ``RTOS`` ``SoC`` ``MCU``
 
 
 .. list-table::
@@ -53,11 +53,19 @@
       - ≥ :ref:`14x14mm`
     * - :ref:`stm32h730`
       - :ref:`cortex_m7`
-      - <550MHz
+      - 550MHz
       - 2778
       - 147/MHz
       - 1 MB
       - ≥BGA100
+    * - :ref:`bl808`
+      - :ref:`riscv`
+      - 480MHz
+      -
+      -
+      -
+      -
+
 
 
 
@@ -76,7 +84,7 @@ Linux
     K210 <K210>
     K230 <K230>
     K510 <K510>
-    
+
 
 RTOS
 -----------
