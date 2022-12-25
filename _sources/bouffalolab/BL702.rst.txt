@@ -3,7 +3,7 @@
 
 BL702
 ===============
-`bouffalolab <https://www.bouffalolab.com/>`_ : ``Zigbee`` ``BLE5``
+`bouffalolab <https://www.bouffalolab.com/>`_ : ``RISC-V`` ``144MHz`` ``Zigbee`` ``BLE5``
 
 .. contents::
     :local:
@@ -12,10 +12,10 @@ BL702
 
 Xin简介
 -----------
-`Tags <https://github.com/SoCXin/BL702>`_ : :ref:`ble` / :ref:`zigbee` / :ref:`sipeed_maix`
+`Tags <https://github.com/SoCXin/BL702>`_ : :ref:`ble` / :ref:`zigbee` / :ref:`riscv` / :ref:`sipeed_maix`
 
 .. image:: ./images/BL702s.png
-    :target: https://www.bouffalolab.com/bl70X
+    :target: https://www.bouffalolab.com/
 
 .. contents::
     :local:
@@ -39,16 +39,16 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：QFN32 (15 GPIO)
+* 封装规格：:ref:`QFN32` (15 GPIO)
 * 运行环境：-40°C to 85°C
 * RAM容量：132KB (QSPI PSRAM)
 * ROM容量：192KB
-* Flash容量：
+* Flash容量：512KB
 
 特征参数
 ^^^^^^^^^^^
 
-* 144MHz RISC MCU (3.1 CoreMark/MHz)
+* 144MHz :ref:`riscv` (3.1 CoreMark/MHz)
 * 1Kb eFuse
 * USB2.0 FS device interface
 * IR remote control interface
@@ -57,8 +57,6 @@ Xin简介
 模拟性能
 ^^^^^^^^^^^
 
-* 10-bit DAC
-* 12-bit ADC
 
 芯片架构
 ~~~~~~~~~~~

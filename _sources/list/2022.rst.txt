@@ -25,8 +25,8 @@
 .. |March| image:: images/esp32c6.png
 .. _March: ../espressif/ESP32-C6.html
 
-.. |April| image:: ../espressif/images/espressif.png
-.. _April: ../miscellaneous/RP2040.html
+.. |April| image:: images/CH32V307.png
+.. _April: ../wch/CH32V307.html
 
 .. |May| image:: images/HPM6750.png
 .. _May: ../high/HPM6750.html
@@ -34,8 +34,8 @@
 .. |June| image:: images/aic8800.png
 .. _June: ../miscellaneous/AIC8800M.html
 
-.. |July| image:: ../espressif/images/espressif.png
-.. _July: ../miscellaneous/RP2040.html
+.. |July| image:: images/AT32F437.png
+.. _July: ../arterytek/AT32F437.html
 
 .. |August| image:: ../espressif/images/espressif.png
 .. _August: ../miscellaneous/RP2040.html

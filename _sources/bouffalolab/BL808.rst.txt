@@ -82,21 +82,20 @@ Xin选择
 ~~~~~~~~~~~~
 ``espressif``
 
-
 .. list-table::
     :header-rows:  1
 
     * - :ref:`vendor`
       - :ref:`architecture`
       - :ref:`CoreMark`
-      - :ref:`sram`/:ref:`flash`
-      - Characteristics
-      - UART/SPI/SDIO
+      - :ref:`sram`
+      - :ref:`bandwidth`
+      - :ref:`link_budget`
       - :ref:`package`
     * - :ref:`bl808`
       - :ref:`riscv`
       -
-      -
+      - 768KB
       -
       -
       -
@@ -109,10 +108,10 @@ Xin选择
       -
     * - :ref:`esp32s3`
       - :ref:`xtensa_lx7`
-      -
-      -
-      -
-      -
+      - 1181
+      - 512KB
+      - 150 Mbps
+      - 118 dBm
       -
 
 
@@ -126,6 +125,16 @@ Xin选择
 型号对比
 ~~~~~~~~~~~~
 
+.. _bl606p:
+
+BL606P
+^^^^^^^^^^^
+
+博流智能的多模无线连接智能语音SoC芯片“BL606P”，单芯片高度集成玄铁C906和E907处理器、SRAM、多模无线连接、音频编码器、屏显和外设接口等，可广泛用于智能语音场景。
+
+BL606P 芯片内部包含多个 RISC-V 处理器，最高时钟频率达480MHz。M0 是一颗 32-bit RISC-V CPU，采用 5 级流水线结构，支持 RISC-V 32/16 位混编指令集，包含 62 个外部中断源，有 4 个 bits 可以用于配置中断优先级。M0 包含 32K 指令 cache 和 16K 数据 cache。D0 是一颗 64-bit RISC-V CPU，采用 5 级流水线结构，支持 RISC-V RV64IMAFCV 指令架构，包含 28 个外部中断源，有 3 个 bits 可以用于配置中断优先级。D0 包含 32K 指 令 cache 和 32K 数据 cache。BL606P包含音频编解码器，具有700KB RAM / 16M pSRAM / 2Kb eFuse存储资源，支持外接Flash。集成的多种外设和丰富的GPIO管脚，睡眠时~1uA级的低功耗，满足智能音箱、视频监控等各类物联网产品功能需求。
+
+BL606P 的无线子系统集成Wi-Fi / BT / BLE / Zigbee四模合一的无线互联单元，在单颗芯片上实现了Wi-Fi / BLE / Zigbee共存。子系统内置一颗 RISC-V 32-bit 高性能 CPU，可以实现多种无线连接和数据传输，提供多样化的连接与传输体验，有助于构建覆盖范围更广、应用功能更强大的物联网设备及解决方案。
 
 版本对比
 ~~~~~~~~~~~~
