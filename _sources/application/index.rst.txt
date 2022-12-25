@@ -22,6 +22,62 @@ Connect
     :local:
     :depth: 1
 
+
+.. _basic:
+
+Basic
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`basic`
+      - :ref:`uart`
+      - :ref:`i2c`
+      - :ref:`spi`
+      - :ref:`usb`
+      - :ref:`can`
+    * - Bandwidth
+      -
+      -
+      -
+      -
+      -
+
+.. toctree::
+    :maxdepth: 1
+
+    USB <usb>
+    peripherals <peripherals>
+
+
+.. _special:
+
+Special
+~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`special`
+      - :ref:`ethernet`
+      - :ref:`plc`
+      -
+      -
+      -
+    * - Bandwidth
+      -
+      -
+      -
+      -
+      -
+
+.. toctree::
+    :maxdepth: 1
+
+    PLC <plc>
+    Ethernet <ethernet>
+
 .. _wireless:
 
 Wireless
@@ -79,64 +135,8 @@ Wireless
 .. toctree::
     :maxdepth: 1
 
-    Bluetooth(BLE) <bluetooth>
-    Wi-Fi(802.11) <wifi>
-    LPWA(LoRa) <lpwa>
-    WPAN(ZigBee) <wpan>
-
-.. _basic:
-
-Basic
-~~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`basic`
-      - :ref:`uart`
-      - :ref:`i2c`
-      - :ref:`spi`
-      - :ref:`usb`
-      - :ref:`can`
-    * - Bandwidth
-      -
-      -
-      -
-      -
-      -
-
-.. toctree::
-    :maxdepth: 1
-
-    USB <usb>
-    peripherals <peripherals>
-
-
-.. _hispeed:
-
-High Speed
-~~~~~~~~~~~~~~
-``> 1Gbps``
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`hispeed`
-      - :ref:`ethernet`
-      - :ref:`usb`
-      -
-      -
-      -
-    * - Bandwidth
-      -
-      -
-      -
-      -
-      -
-
-.. toctree::
-    :maxdepth: 1
-
-    PLC <plc>
-    Ethernet <ethernet>
+    Bluetooth (BLE) <bluetooth>
+    WPAN (ZigBee) <wpan>
+    Wi-Fi (802.11) <wifi>
+    LPWA (LoRa) <lpwa>
 

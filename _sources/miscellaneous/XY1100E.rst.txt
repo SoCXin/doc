@@ -1,0 +1,47 @@
+
+.. _xy1100e:
+
+XY1100E
+===============
+
+`xinyisemi <https://www.xinyisemi.com/>`_ : ``Cortex-M3`` ``240MHz`` ``NB-IoT`` ``BLE`` ``CMOS PA``
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+`Tags <https://github.com/SoCXin/XY1100E>`_ : :ref:`nbiot`
+
+规格参数
+~~~~~~~~~~~
+
+XY1100E在XY1100的基础上，支持了蓝牙5.1，进一步拓展了NB-IoT的应用场景。
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 发布价格：
+* 工作温度：-40°C to +125°C
+* 处理性能：300 :ref:`DMIPS`
+* RAM容量：900KB
+* Flash容量：417KB
+* 封装规格：QFN52
+
+
+特征参数
+^^^^^^^^^^^
+
+* 240MHz :ref:`xt804` 内置 DSP、浮点运算单元与安全引擎
+
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：3.0 to 3.6 V
+
+封装规格
+~~~~~~~~~~~
+
