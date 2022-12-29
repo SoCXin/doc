@@ -28,7 +28,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：:ref:`LQFP64`/:ref:`LQFP48`/QFN48/LQFP32/QFN28/TSSOP20
+* 封装规格：:ref:`LQFP64`/:ref:`LQFP48`/QFN48/:ref:`LQFP32`/QFN28/TSSOP20
 * 运行环境：-40°C to 85°C
 * RAM容量：10/20 KB
 * Flash容量：32/64 KB

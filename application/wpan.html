@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Wi-Fi" href="wifi.html" />
-    <link rel="prev" title="AB32VG1" href="../miscellaneous/AB32VG1.html" />
+    <link rel="next" title="LPWA" href="lpwa.html" />
+    <link rel="prev" title="SV32WB11" href="../miscellaneous/SV32WB11.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -74,8 +74,8 @@
 <li class="toctree-l3"><a class="reference internal" href="index.html#special">Special</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html#wireless">Wireless</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="bluetooth.html">Bluetooth (BLE)</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">WPAN (ZigBee)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="wifi.html">Wi-Fi (802.11)</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">WPAN (ZigBee)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lpwa.html">LPWA (LoRa)</a></li>
 </ul>
 </li>
@@ -139,7 +139,7 @@
              
   <section id="wpan">
 <span id="id1"></span><h1>WPAN<a class="headerlink" href="#wpan" title="Permalink to this heading">¶</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">Bluetooth</span></code> <code class="docutils literal notranslate"><span class="pre">Zigbee</span></code> <code class="docutils literal notranslate"><span class="pre">RFID</span></code> <code class="docutils literal notranslate"><span class="pre">UWB</span></code> <code class="docutils literal notranslate"><span class="pre">NFC</span></code> <code class="docutils literal notranslate"><span class="pre">54Mbit/s</span></code> <code class="docutils literal notranslate"><span class="pre">802.11</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">Bluetooth</span></code> <code class="docutils literal notranslate"><span class="pre">Zigbee</span></code> <code class="docutils literal notranslate"><span class="pre">RFID</span></code> <code class="docutils literal notranslate"><span class="pre">UWB</span></code> <code class="docutils literal notranslate"><span class="pre">NFC</span></code> <code class="docutils literal notranslate"><span class="pre">54Mbit/s</span></code> <code class="docutils literal notranslate"><span class="pre">802.15.4</span></code></p>
 <p>无线个域网就是在个人周围空间形成的无线网络，现通常指覆盖范围在10m半径以内的短距离无线网络，尤其是指能在便携式消费者电器和通信设备之间进行短距离特别连接的自组织网。WPAN被定位于短距离无线通信技术，但根据不同的应用场合又分为高速WPAN（HR－WPAN）和低速WPAN（LR－WPAN）两种。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -208,33 +208,43 @@
 <td><p><a class="reference internal" href="../espressif/index.html#esp-rv32"><span class="std std-ref">RISC-V</span></a></p></td>
 <td></td>
 <td></td>
-<td><p>QFN40</p></td>
+<td></td>
 </tr>
 </tbody>
 </table>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#zigbee" id="id10">ZigBee</a></p></li>
+<li><p><a class="reference internal" href="#thread" id="id11">Thread</a></p></li>
+</ul>
+</div>
+<section id="zigbee">
+<span id="id4"></span><h3><a class="toc-backref" href="#id10">ZigBee</a><a class="headerlink" href="#zigbee" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">802.15.4</span></code></p>
+</section>
+<section id="thread">
+<span id="id5"></span><h3><a class="toc-backref" href="#id11">Thread</a><a class="headerlink" href="#thread" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">802.15.4</span></code></p>
+</section>
 </section>
 <section id="rfid">
-<span id="id4"></span><h2>RFID<a class="headerlink" href="#rfid" title="Permalink to this heading">¶</a></h2>
+<span id="id6"></span><h2>RFID<a class="headerlink" href="#rfid" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Radio</span> <span class="pre">Frequency</span> <span class="pre">IDentification</span></code></p>
 <p>RFID有低频（mm的传输距离）、高频（13.56Mhz）、超高频、微波频段等，频段不同，功率不同，传输的距离不同。</p>
 <section id="nfc">
-<span id="id5"></span><h3>NFC<a class="headerlink" href="#nfc" title="Permalink to this heading">¶</a></h3>
+<span id="id7"></span><h3>NFC<a class="headerlink" href="#nfc" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">Near</span> <span class="pre">Field</span> <span class="pre">Communication</span></code> <code class="docutils literal notranslate"><span class="pre">13.56MHz</span></code></p>
 <p>NFC从本质上来说是一种RFID的演进技术，NFC只是限于13.56MHz的频段。而RFID的频段有低频（125KHz到135KHz），高频（13.56MHz）和超高频（860MHz到960MHz）。</p>
 <p>NFC工作有效距离约10cm，所以具有很高的安全性。</p>
 <section id="ndef">
-<span id="id6"></span><h4>NDEF<a class="headerlink" href="#ndef" title="Permalink to this heading">¶</a></h4>
+<span id="id8"></span><h4>NDEF<a class="headerlink" href="#ndef" title="Permalink to this heading">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">NFC数据交换格式</span></code></p>
 <p>是一种标准化的数据格式，可用于在任何兼容的NFC设备与另一个NFC设备或标签之间交换信息。 数据格式由NDEF消息和NDEF记录组成。 该标准由NFC论坛维护，可以免费获得参考，但需要接受许可协议才能下载。</p>
 </section>
 </section>
 </section>
-<section id="zigbee">
-<span id="id7"></span><h2>ZigBee<a class="headerlink" href="#zigbee" title="Permalink to this heading">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">802.15.4</span></code></p>
-</section>
 <section id="uwb">
-<span id="id8"></span><h2>UWB<a class="headerlink" href="#uwb" title="Permalink to this heading">¶</a></h2>
+<span id="id9"></span><h2>UWB<a class="headerlink" href="#uwb" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Ultra</span> <span class="pre">Wide</span> <span class="pre">Band</span></code></p>
 <p>UWB是无载波通信技术，利用纳秒（ns）至皮秒（ps）级的非正弦波窄脉冲传输数据，而时间调变技术令其传送速度可以大大提高，而且耗电量相对地低，并有较精确的定位能力。</p>
 <p>这些脉冲所占用的带宽甚至达到几GHz，因此最大数据传输速率可以达到几百Mbps。</p>
@@ -247,8 +257,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../miscellaneous/AB32VG1.html" class="btn btn-neutral float-left" title="AB32VG1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="wifi.html" class="btn btn-neutral float-right" title="Wi-Fi" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../miscellaneous/SV32WB11.html" class="btn btn-neutral float-left" title="SV32WB11" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="lpwa.html" class="btn btn-neutral float-right" title="LPWA" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

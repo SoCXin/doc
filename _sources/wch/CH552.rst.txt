@@ -36,7 +36,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：:ref:`level1`
-* 封装规格：TSSOP20/SOP16/QFN16/MSOP10
+* 封装规格：:ref:`TSSOP20`/SOP16/QFN16/MSOP10
 * 运行环境：-40°C to 85°C
 * RAM容量：1 KB
 * Flash容量：16 KB

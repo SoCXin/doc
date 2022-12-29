@@ -108,7 +108,7 @@ Xin选择
       - 2xHS/2xGb
       - ￥55
       - ?
-      - BGA289/BGA196
+      - :ref:`BGA289`/BGA196
     * - :ref:`rt1176`
       - :ref:`cortex_m7`
       - 6468(2)
@@ -116,7 +116,7 @@ Xin选择
       - 2xHS/2xGb
       - ￥54
       - 150µA/MHz
-      - BGA289
+      - :ref:`BGA289`
 
 .. _rt1176:
 

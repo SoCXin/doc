@@ -3,9 +3,7 @@
 
 STM32L011
 ===============
-
-* `ST <https://www.st.com/en/microcontrollers-microprocessors.html>`_ : ``Cortex-M0`` ``32MHz`` ``LPUART``
-* `Tags <https://github.com/SoCXin/STM32L011>`_ : :ref:`ulp`
+`ST <https://www.st.com/en/microcontrollers-microprocessors.html>`_ : ``Cortex-M0`` ``32MHz`` ``LPUART``
 
 .. contents::
     :local:
@@ -14,6 +12,7 @@ STM32L011
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/STM32L011>`_ : :ref:`ulp`
 
 .. image:: ./images/stm32l011.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32l0x1.html
@@ -31,7 +30,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：? :ref:`CoreMark` (244 ULPBench) , :ref:`level1`
-* 封装规格：LQFP32/QFN32/QFN28/QFN20/TSSOP20
+* 封装规格：:ref:`LQFP32`/QFN32/QFN28/:ref:`QFN20`/TSSOP20
 * 运行环境：-40°C to 85°C
 * RAM容量：20 KB
 * Flash容量：192 KB

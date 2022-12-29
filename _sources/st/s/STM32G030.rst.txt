@@ -25,7 +25,7 @@ Xin简介
 * 制程工艺：90 nm
 * 供货周期：
 * 处理性能：142 :ref:`CoreMark` (59 :ref:`DMIPS` ) , :ref:`level2`
-* 封装规格：:ref:`LQFP48`/LQFP32/TSSOP20/SON8
+* 封装规格：:ref:`LQFP48`/:ref:`LQFP32`/:ref:`TSSOP20`/:ref:`SON8`
 * 运行环境：-40°C to +85°C
 * RAM容量：8 KB
 * Flash容量：32/64 KB
@@ -75,20 +75,6 @@ Timer
 低功耗模式
 ^^^^^^^^^^^
 
-
-封装尺寸
-~~~~~~~~~~~
-
-.. _stm32_so8:
-
-SON8
-^^^^^^^^^^^
-
-* 封装尺寸(STM32G030J6)：4.9 x 6 mm
-
-作为新推出的小封装型号，配备非常丰富的资源非常有针对性，针对单位IO的性能在一段时期内不会落后
-
-.. image:: ./images/STM32G030p8.png
 
 
 

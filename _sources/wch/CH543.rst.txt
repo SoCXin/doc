@@ -33,7 +33,7 @@ CH543 还内置了12位ADC模数转换、电容式触摸按键检测模块、内
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：TSSOP20/SOP16/QFN20/ESSOP10
+* 封装规格：:ref:`TSSOP20`/SOP16/:ref:`QFN20`/ESSOP10
 * 运行环境：-40°C to 85°C
 * RAM容量：512 B
 * Flash容量：16 KB

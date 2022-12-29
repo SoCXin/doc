@@ -48,7 +48,7 @@ ADC-MCU
       - 2x
       - X
       -
-      - LQFP32
+      - :ref:`LQFP32`
     * - :ref:`stm32g431`
       - 170MHz
       -
@@ -129,7 +129,7 @@ ADC-MCU
       -
       - :ref:`sigma_delta`
       - 24bit
-      - QFN20
+      - :ref:`QFN20`
     * - :ref:`zml166`
       - 48 MHz
       - 4KB/64KB

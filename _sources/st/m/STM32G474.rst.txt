@@ -30,7 +30,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：212 :ref:`DMIPS`, 550 :ref:`CoreMark` , :ref:`level3`
-* 封装规格：LQFP48/LQFP64/LQFP100/LQFP128
+* 封装规格：LQFP48/:ref:`LQFP64`/:ref:`LQFP100`/LQFP128
 * 运行环境：-40°C to +85°C/125°C
 * RAM容量：128 KB
 * Flash容量：128/256/512 KB
