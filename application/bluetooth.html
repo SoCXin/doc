@@ -145,35 +145,27 @@
 <p class="admonition-title">Note</p>
 <p>2022年，全行业的 Bluetooth设备出货量预计将达到 50 亿。</p>
 </div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/DA14580.html">DA14580</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/AB32VG1.html">AB32VG1</a></li>
-</ul>
-</div>
 <section id="ble">
 <span id="id1"></span><h2>BLE<a class="headerlink" href="#ble" title="Permalink to this heading">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">低功耗</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">低功耗蓝牙</span></code></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p><a class="reference internal" href="#ble"><span class="std std-ref">BLE</span></a></p></th>
 <th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
 <th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="../list/low.html#flash"><span class="std std-ref">Flash</span></a></p></th>
-<th class="head"><p>TX</p></th>
-<th class="head"><p>RX</p></th>
-<th class="head"><p><a class="reference internal" href="../list/package.html#package"><span class="std std-ref">Package</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a>/<a class="reference internal" href="../list/low.html#flash"><span class="std std-ref">Flash</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#consumption"><span class="std std-ref">Consumption</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="wifi.html#link-budget"><span class="std std-ref">Link Budget</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="wifi.html#bandwidth"><span class="std std-ref">Bandwidth</span></a></p></th>
 </tr>
 </thead>
 <tbody>
@@ -184,11 +176,9 @@
 <td></td>
 <td></td>
 <td></td>
-<td><p>QFN28</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../wch/CH573.html#ch573"><span class="std std-ref">CH573</span></a></p></td>
 <td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv3a"><span class="std std-ref">RISC-V3A</span></a></p></td>
-<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -202,7 +192,6 @@
 <td></td>
 <td></td>
 <td></td>
-<td><p>QFN32</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../arterytek/AT32WB415.html#at32wb415"><span class="std std-ref">AT32WB415</span></a></p></td>
 <td><p><a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
@@ -211,7 +200,22 @@
 <td></td>
 <td></td>
 <td></td>
-<td><p><a class="reference internal" href="../list/package.html#qfn48"><span class="std std-ref">QFN48</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../mindmotion/MM32W073.html#mm32w073"><span class="std std-ref">MM32W073</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../espressif/ESP32-C2.html#esp32c2"><span class="std std-ref">ESP32C2</span></a></p></td>
+<td><p><a class="reference internal" href="../espressif/index.html#esp-rv32"><span class="std std-ref">RISC-V</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../ti/CC2340.html#cc2340"><span class="std std-ref">CC2340</span></a></p></td>
 <td><p><a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></td>
@@ -220,11 +224,33 @@
 <td></td>
 <td></td>
 <td></td>
-<td><p>QFN32</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../chipsea/CST92F25.html#cst92f25"><span class="std std-ref">CST92F25</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../wch/CH32V208.html#ch32v208"><span class="std std-ref">CH32V208</span></a></p></td>
+<td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv4c"><span class="std std-ref">RISC-V4C</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../miscellaneous/AB32VG1.html#ab32vg1"><span class="std std-ref">AB32VG1</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../miscellaneous/DA14580.html#da14580"><span class="std std-ref">DA14580</span></a></p></td>
 <td><p><a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></td>
 <td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../chipsea/CST92F25.html#cst92f25"><span class="std std-ref">CST92F25</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM0.html#cortex-m0"><span class="std std-ref">Cortex-M0</span></a></p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -233,6 +259,12 @@
 </tr>
 </tbody>
 </table>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/DA14580.html">DA14580</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../miscellaneous/AB32VG1.html">AB32VG1</a></li>
+</ul>
+</div>
 </section>
 <section id="id2">
 <h2>版本迭代<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>

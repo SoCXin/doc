@@ -12,18 +12,12 @@ Bluetooth
     2022年，全行业的 Bluetooth设备出货量预计将达到 50 亿。
 
 
-.. toctree::
-    :maxdepth: 1
-
-    DA14580 <../miscellaneous/DA14580>
-    AB32VG1 <../miscellaneous/AB32VG1>
-
 
 .. _ble:
 
 BLE
 ----------
-``低功耗``
+``低功耗蓝牙``
 
 .. list-table::
     :header-rows:  1
@@ -31,11 +25,10 @@ BLE
     * - :ref:`ble`
       - :ref:`architecture`
       - :ref:`frequency`
-      - :ref:`sram`
-      - :ref:`flash`
-      - TX
-      - RX
-      - :ref:`package`
+      - :ref:`sram`/:ref:`flash`
+      - :ref:`consumption`
+      - :ref:`link_budget`
+      - :ref:`bandwidth`
     * - :ref:`ch583`
       - :ref:`wch_riscv4a`
       -
@@ -43,10 +36,8 @@ BLE
       -
       -
       -
-      - QFN28
     * - :ref:`ch573`
       - :ref:`wch_riscv3a`
-      -
       -
       -
       -
@@ -59,7 +50,6 @@ BLE
       -
       -
       -
-      - QFN32
     * - :ref:`at32wb415`
       - :ref:`cortex_m4`
       -
@@ -67,7 +57,20 @@ BLE
       -
       -
       -
-      - :ref:`QFN48`
+    * - :ref:`mm32w073`
+      - :ref:`cortex_m0`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`esp32c2`
+      - :ref:`esp_rv32`
+      -
+      -
+      -
+      -
+      -
     * - :ref:`cc2340`
       - :ref:`cortex_m0`
       -
@@ -75,7 +78,27 @@ BLE
       -
       -
       -
-      - QFN32
+    * - :ref:`ch32v208`
+      - :ref:`wch_riscv4c`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`ab32vg1`
+      - :ref:`riscv`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`da14580`
+      - :ref:`cortex_m0`
+      -
+      -
+      -
+      -
+      -
     * - :ref:`cst92f25`
       - :ref:`cortex_m0`
       -
@@ -83,8 +106,13 @@ BLE
       -
       -
       -
-      -
 
+
+.. toctree::
+    :maxdepth: 1
+
+    DA14580 <../miscellaneous/DA14580>
+    AB32VG1 <../miscellaneous/AB32VG1>
 
 
 

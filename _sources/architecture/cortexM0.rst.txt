@@ -3,7 +3,6 @@
 
 Cortex-M0
 ====================
-
 ``Armv6-M``
 
 .. contents::
@@ -57,6 +56,8 @@ Cortex-M0和Cortex-M3都使用的是3级流水线结构，Cortex-M0+使用的是
 
 .. contents::
     :local:
+    :depth: 1
+
 
 NVIC和SCB两个寄存器管理中断优先级，中断源分为内核中断和IRQ中断
 
@@ -77,8 +78,26 @@ VTOR
 
 中断向量表偏移地址寄存器。中断向量表是128个word对齐的，也就是说它的低9位都是0。 对该寄存器的设置将修改中断向量表的起始地址。 而该寄存器的第29位标志了中断向量表是在SRAM中还是代码段中，有时也称该位为TBLBASE位。
 
-代表产品
+典型产品
 ---------------
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`cortex_m0`
+      - :ref:`frequency`
+      - :ref:`CoreMark`
+      - :ref:`performance`
+    * - :ref:`rp2040`
+      - 133 MHz
+      -
+      -
+    * - :ref:`stm32g031`
+      - 64 MHz
+      -
+      -
+
+
 
 .. toctree::
     :maxdepth: 1

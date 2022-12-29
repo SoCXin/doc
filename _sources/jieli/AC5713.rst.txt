@@ -3,10 +3,7 @@
 
 AC5713
 ===============
-
-* `JieLi <http://www.zh-jieli.com/>`_ : ``RISC-V`` ``240MHz`` ``Dual Core`` ``Bluetooth``
-* `Tags <https://gitee.com/Jieli-Tech/fw-AC79_AIoT_SDK>`_ : :ref:`audio` / :ref:`bt` / :ref:`ble`
-
+`JieLi <http://www.zh-jieli.com/>`_ : ``RISC-V`` ``240MHz`` ``Dual Core`` ``Bluetooth``
 
 .. contents::
     :local:
@@ -15,10 +12,9 @@ AC5713
 
 Xin简介
 -----------
+`Tags <https://gitee.com/Jieli-Tech/fw-AC79_AIoT_SDK>`_ : :ref:`audio` / :ref:`bt` / :ref:`ble`
 
 
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~

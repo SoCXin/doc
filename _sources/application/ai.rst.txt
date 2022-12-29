@@ -59,18 +59,9 @@ Cube-AI
 
 
 
-边缘计算
+算力芯片
 -----------
 
-可以在端侧部署算法的嵌入式平台，相对传统的计算分离体系，拥有更高的集成度和灵活度
-
-.. contents::
-    :local:
-    :depth: 1
-
-
-MCU平台
-~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -117,6 +108,9 @@ MCU平台
       -
 
 
+.. contents::
+    :local:
+    :depth: 1
 
 
 APU平台
@@ -125,26 +119,17 @@ APU平台
 .. list-table::
     :header-rows:  1
 
-    * - #define
+    * - :ref:`linux`
       - :ref:`architecture`
+      - :ref:`frequency`
       - :ref:`CoreMark`
-      - High
-      - WiFi
-      - Rate
-      - More
-      - :ref:`package`
+      - :ref:`level_npu`
     * - :ref:`bcm2711`
       -
       -
       -
       -
-      -
-      -
-      -
     * - :ref:`a311d`
-      -
-      -
-      -
       -
       -
       -

@@ -14,7 +14,7 @@
       - :ref:`frequency`
       - :ref:`ulpbench`
       - :ref:`vdd`
-      - :ref:`power`
+      - :ref:`consumption`
       - :ref:`halt`
       - :ref:`sleep`
     * - :ref:`stm32u575`

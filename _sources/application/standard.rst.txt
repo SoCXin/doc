@@ -28,7 +28,7 @@ AUTOSAR (Automotive Open System Architecture) 成立于2003年，致力于制定
     :local:
     :depth: 1
 
-.. _aec-q100:
+.. _aec_q100:
 
 AEC-Q100
 ~~~~~~~~~~
@@ -40,7 +40,7 @@ AEC-Q即国际汽车电子协会车规验证标准，针对不同的汽车电子
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`aec-q100`
+    * - :ref:`aec_q100`
         - 集成电路IC
     * - AEC-Q101
         - 分立半导体器件，比如二、三极管、MOS、IGBT、TVS管等
@@ -52,6 +52,24 @@ AEC-Q即国际汽车电子协会车规验证标准，针对不同的汽车电子
         - 多芯片模块
     * - AEC-Q200
         - 被动器件，比如电阻、电容和电感
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`aec_q100`
+      - :ref:`architecture`
+      - :ref:`frequency`
+      - :ref:`sram`/:ref:`flash`
+    * - :ref:`ac7815`
+      - :ref:`cortex_m3`
+      - 100 MHz
+      - 64KB/256KB
+    * - :ref:`mm32a0140`
+      - :ref:`cortex_m0`
+      - 72 MHz
+      - 8KB/64KB
+
 
 
 

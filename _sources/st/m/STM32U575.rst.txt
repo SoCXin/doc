@@ -3,9 +3,7 @@
 
 STM32U575
 ===============
-
-* `ST <https://www.st.com>`_ : ``Cortex-M33`` ``160MHz`` ``2.5MSPS-14bit-ADC`` ``USB FS OTG`` ``USB PD`` ``512B OTP`` ``40nm``
-* `Tags <https://github.com/SoCXin/STM32U575>`_ : :ref:`ulp`
+`ST <https://www.st.com>`_ : ``Cortex-M33`` ``160MHz`` ``2.5MSPS-14bit-ADC`` ``USB FS OTG`` ``USB PD`` ``512B OTP`` ``40nm``
 
 :ref:`stm32l412` --> :ref:`stm32l5` --> :ref:`stm32u575`
 
@@ -15,8 +13,8 @@ STM32U575
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/STM32U575>`_ : :ref:`ulp`
 
-`EEMBC:4.07 CoreMark/MHz <https://www.eembc.org/viewer/?benchmark_seq=13317>`_
 
 .. image:: ./images/STM32U575.jpg
     :target: https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32u5-series/stm32u575-585/stm32u575cg.html
@@ -25,6 +23,7 @@ Ultra-low-power with FPU Arm Cortex-M33 with Trust Zone, MCU 160 MHz with 1Mbyte
 
 规格参数
 ~~~~~~~~~~~
+`EEMBC:4.07 CoreMark/MHz <https://www.eembc.org/viewer/?benchmark_seq=13317>`_
 
 STM32U5 的定义是一个低功耗旗舰级产品线，最大的3个特点：
 

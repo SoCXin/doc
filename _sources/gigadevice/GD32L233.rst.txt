@@ -3,9 +3,7 @@
 
 GD32L233
 ============
-
-* `GigaDevice <https://www.gigadevice.com/zh-hans/>`_ : ``Cortex-M23`` ``48MHz``
-* `Tags <https://github.com/SoCXin/GD32F303>`_ : :ref:`ulp`
+`GigaDevice <https://www.gigadevice.com/zh-hans/>`_ : ``Cortex-M23`` ``48MHz``
 
 .. contents::
     :local:
@@ -13,11 +11,11 @@ GD32L233
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/GD32F303>`_ : :ref:`ulp`
 
 该芯片基于ARMCortex-M23内核，采用40nm超低功耗（ULP）工艺制程，采用多电压域的低功耗设计方法，并集成专门优化的低功耗模拟IP。
 
 据报道，该芯片的运行功耗最低66uA/MHz，深度睡眠模式最低2uA左右，适用于能效敏感型应用，如工业表计、小型消费电子设备、便携式个人健康监护设备及环境监测传感器等。
-
 
 规格参数
 ~~~~~~~~~~~

@@ -4,7 +4,7 @@
 DA14580
 ===============
 
-`Dialog Semiconductor <http://www.dialog-semiconductor.com/>`_ : ``BLE4.2``
+`Dialog <http://www.dialog-semiconductor.com/>`_ : ``BLE4.2``
 
 .. contents::
     :local:
