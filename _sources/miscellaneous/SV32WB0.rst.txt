@@ -5,7 +5,7 @@ SV32WB0
 ===============
 
 * `icomm-semi <http://www.icomm-semi.com/>`_ : ``WiFi`` ``BT5.0`` ``22nm``
-* `Tags <https://github.com/SoCXin/SV32WB0>`_ : :ref:`wifi4` / :ref:`bt`
+* `Tags <https://github.com/SoCXin/SV32WB0>`_ : :ref:`wifi4` / :ref:`ble`
 
 .. contents::
     :local:

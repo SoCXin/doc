@@ -138,22 +138,23 @@
            <div itemprop="articleBody">
              
   <section id="bluetooth">
-<span id="bt"></span><h1>Bluetooth<a class="headerlink" href="#bluetooth" title="Permalink to this heading">¶</a></h1>
+<span id="id1"></span><h1>Bluetooth<a class="headerlink" href="#bluetooth" title="Permalink to this heading">¶</a></h1>
 <p><a class="reference external" href="https://www.bluetooth.org/zh-cn">蓝牙技术联盟Bluetooth SIG</a> 成立于1998年9月，总部位于美国华盛顿州，是一个由成员组织组成的网络，是蓝牙技术的守护者和创新者，是一个非营利性的非股份制公司。</p>
 <p>以制定蓝牙规范，以推动蓝牙技术为宗旨的跨国组织。它拥有蓝牙的商标，负责认证制造厂商，授权他们使用蓝牙技术与蓝牙标志，但是它本身不负责蓝牙装置的设计、生产及贩售。</p>
+<p>在蓝牙应用领域，大致可以分为两大类，一类是以蓝牙音频为主，走高性能路线，一种以物联网低功耗场景为主，特点是性价比和低功耗。</p>
+<p>蓝牙从最初的1.0版本逐步升级到5.3版本。其中4.0版本之前的版本是经典蓝牙，从4.0版本开始，低功耗蓝牙诞生了，简称BLE，它与之前的蓝牙设备最显著的区别是，功耗更低。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>2022年，全行业的 Bluetooth设备出货量预计将达到 50 亿。</p>
 </div>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#ble" id="id8">BLE</a></p></li>
-<li><p><a class="reference internal" href="#id2" id="id9">版本迭代</a></p></li>
-<li><p><a class="reference internal" href="#id7" id="id10">技术规格</a></p></li>
+<li><p><a class="reference internal" href="#ble" id="id10">BLE</a></p></li>
+<li><p><a class="reference internal" href="#bt" id="id11">BT</a></p></li>
 </ul>
 </div>
 <section id="ble">
-<span id="id1"></span><h2><a class="toc-backref" href="#id8">BLE</a><a class="headerlink" href="#ble" title="Permalink to this heading">¶</a></h2>
+<span id="id2"></span><h2><a class="toc-backref" href="#id10">BLE</a><a class="headerlink" href="#ble" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">低功耗蓝牙</span></code></p>
 <table class="docutils align-default">
 <colgroup>
@@ -272,11 +273,94 @@
 <li class="toctree-l1"><a class="reference internal" href="../miscellaneous/AB32VG1.html">AB32VG1</a></li>
 </ul>
 </div>
+<section id="id3">
+<h3>技术特征<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">ISM</span></code></p>
+<p><a class="reference internal" href="#ble"><span class="std std-ref">BLE</span></a> 使用2.4GHz工业、科学及医疗(ISM)频段，从2400MHz~2483.5MHz约 83.5MHz的频谱资源。采用的 GFSK 调制方式(髙斯频移键控)，物理层的比特率为 1Mbit/s(1Mbps)。</p>
+<p>一共 40 个通道，37 个自适应自动调频数据通道用于两个连接 设备的通讯，3 个固定广播通道分别是 37、 38、 39。</p>
 </section>
-<section id="id2">
-<h2><a class="toc-backref" href="#id9">版本迭代</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
-<p>在蓝牙应用领域，大致可以分为两大类，一类是以蓝牙音频为主，走高性能路线，一种以物联网低功耗场景为主，特点是性价比和低功耗</p>
-<p>蓝牙从最初的1.0版本逐步升级到5.3版本。其中4.0版本之前的版本是经典蓝牙，从4.0版本开始，低功耗蓝牙诞生了，简称BLE，它与之前的蓝牙设备最显著的区别是，功耗更低。</p>
+<section id="pathloss">
+<span id="id4"></span><h3>路径损耗<a class="headerlink" href="#pathloss" title="Permalink to this heading">¶</a></h3>
+<p><strong>pathloss=40+25log(d)</strong></p>
+<a class="reference external image-reference" href="https://blog.csdn.net/qq_15391889/article/details/87937452"><img alt="../_images/%E8%B7%AF%E5%BE%84%E6%8D%9F%E8%80%97.jpg" src="../_images/%E8%B7%AF%E5%BE%84%E6%8D%9F%E8%80%97.jpg" /></a>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#pathloss"><span class="std std-ref">路径损耗</span></a></p></th>
+<th class="head"><p>距离(d)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>50dB</p></td>
+<td><p>2.5m</p></td>
+</tr>
+<tr class="row-odd"><td><p>60dB</p></td>
+<td><p>6.3m</p></td>
+</tr>
+<tr class="row-even"><td><p>70dB</p></td>
+<td><p>16m</p></td>
+</tr>
+<tr class="row-odd"><td><p>80dB</p></td>
+<td><p>40m</p></td>
+</tr>
+<tr class="row-even"><td><p>90dB</p></td>
+<td><p>100m</p></td>
+</tr>
+<tr class="row-odd"><td><p>100dB</p></td>
+<td><p>250m</p></td>
+</tr>
+<tr class="row-even"><td><p>110dB</p></td>
+<td><p>630m</p></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="#ble"><span class="std std-ref">BLE</span></a> 规定接收机的灵敏度要高于-70dBm, 由上可知当发射功率为0dBm时，即1mW，接收灵敏度为-70dBm的话，通信距离约为16m。</p>
+</section>
+</section>
+<section id="bt">
+<span id="id5"></span><h2><a class="toc-backref" href="#id11">BT</a><a class="headerlink" href="#bt" title="Permalink to this heading">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#bt"><span class="std std-ref">BT</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a>/<a class="reference internal" href="../list/low.html#flash"><span class="std std-ref">Flash</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#consumption"><span class="std std-ref">Consumption</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="wifi.html#link-budget"><span class="std std-ref">Link Budget</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="wifi.html#bandwidth"><span class="std std-ref">Bandwidth</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../bouffalolab/BL808.html#bl808"><span class="std std-ref">BL808</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/riscv.html#xt-c906"><span class="std std-ref">C906</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../jieli/AC7916.html#ac7916"><span class="std std-ref">AC7916</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 17%" />
@@ -333,47 +417,47 @@
 </tr>
 </tbody>
 </table>
-<div class="contents local topic" id="id3">
+<div class="contents local topic" id="id6">
 <ul class="simple">
-<li><p><a class="reference internal" href="#bluetooth-5-3" id="id11">Bluetooth 5.3</a></p></li>
-<li><p><a class="reference internal" href="#bluetooth-5-2" id="id12">Bluetooth 5.2</a></p></li>
-<li><p><a class="reference internal" href="#bluetooth-5-1" id="id13">Bluetooth 5.1</a></p></li>
-<li><p><a class="reference internal" href="#bluetooth-5-0" id="id14">Bluetooth 5.0</a></p></li>
-<li><p><a class="reference internal" href="#bluetooth-4-2" id="id15">Bluetooth 4.2</a></p></li>
+<li><p><a class="reference internal" href="#bluetooth-5-3" id="id12">Bluetooth 5.3</a></p></li>
+<li><p><a class="reference internal" href="#bluetooth-5-2" id="id13">Bluetooth 5.2</a></p></li>
+<li><p><a class="reference internal" href="#bluetooth-5-1" id="id14">Bluetooth 5.1</a></p></li>
+<li><p><a class="reference internal" href="#bluetooth-5-0" id="id15">Bluetooth 5.0</a></p></li>
+<li><p><a class="reference internal" href="#bluetooth-4-2" id="id16">Bluetooth 4.2</a></p></li>
 </ul>
 </div>
 <section id="bluetooth-5-3">
-<span id="btv53"></span><h3><a class="toc-backref" href="#id11">Bluetooth 5.3</a><a class="headerlink" href="#bluetooth-5-3" title="Permalink to this heading">¶</a></h3>
+<span id="btv53"></span><h3><a class="toc-backref" href="#id12">Bluetooth 5.3</a><a class="headerlink" href="#bluetooth-5-3" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">2021年7月13日正式发布</span></code> <code class="docutils literal notranslate"><span class="pre">LC3音频编码</span></code></p>
 <p>蓝牙5.3的传输速度要比5.0高了1倍以上。同时，数据传递量也达到了蓝牙5.0的800%左右。可见，蓝牙5.3能够拥有更快的传输速度和数据收发量。</p>
 <p>由于增强了传输速度，蓝牙5.3的传递距离也提高到了5.0的4倍。从理论距离来看，它的工作距离能达到300米，不过条件比较苛刻。在日常使用的时候，蓝牙5.3的传输距离在穿墙能力和距离上也更优秀。</p>
 <p>除了距离和速度外，还有一些额外的功能不同。例如蓝牙5.3新增了低速率模式、周期性广播增强功能。同时它所能传递的数据包也不同，从而降低了传递过程中的信号损耗。</p>
 <p><a class="reference internal" href="#btv53"><span class="std std-ref">Bluetooth 5.3</span></a> 相较 <a class="reference internal" href="#btv52"><span class="std std-ref">Bluetooth 5.2</span></a> 区别分3个方面：</p>
-<section id="id4">
-<h4>低速率连接<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<section id="id7">
+<h4>低速率连接<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
 <p>一些数据传输由于速率低，无法在蓝牙5.2中传递。而蓝牙5.3解决了这个问题，让低功耗低速率信号也能使用。这主要在血糖仪等一些医疗设备上出现，5.3的出现大大优化了医疗工作。</p>
 </section>
-<section id="id5">
-<h4>加密控制增强<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<section id="id8">
+<h4>加密控制增强<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
 <p>对于一些开放式的信号，例如门禁、商业照明等设备。蓝牙5.3提高了他们的加密密钥长度控制选项，提高了安全性。同时，由于管理员控制更加简单，在连接的时候还能更加快速。</p>
 </section>
-<section id="id6">
-<h4>周期性广播增强<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<section id="id9">
+<h4>周期性广播增强<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h4>
 <p>蓝牙5.2是需要定期向连接设备进行广播的。而蓝牙5.3将提高广播稳定性，从而利用广播时间做更多的事情。</p>
 </section>
 </section>
 <section id="bluetooth-5-2">
-<span id="btv52"></span><h3><a class="toc-backref" href="#id12">Bluetooth 5.2</a><a class="headerlink" href="#bluetooth-5-2" title="Permalink to this heading">¶</a></h3>
+<span id="btv52"></span><h3><a class="toc-backref" href="#id13">Bluetooth 5.2</a><a class="headerlink" href="#bluetooth-5-2" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">2020年1月6日发布</span></code></p>
 <p>相较 <a class="reference internal" href="#btv51"><span class="std std-ref">Bluetooth 5.1</span></a> 版本新增的功能主要包括LE同步信道(LE Isochronous Channels), 增强版ATT(Enhanced ATT)及LE功率控制(LE Power Control)。</p>
 </section>
 <section id="bluetooth-5-1">
-<span id="btv51"></span><h3><a class="toc-backref" href="#id13">Bluetooth 5.1</a><a class="headerlink" href="#bluetooth-5-1" title="Permalink to this heading">¶</a></h3>
+<span id="btv51"></span><h3><a class="toc-backref" href="#id14">Bluetooth 5.1</a><a class="headerlink" href="#bluetooth-5-1" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">2019年1月28日发布</span></code></p>
 <p>相较 <a class="reference internal" href="#btv50"><span class="std std-ref">Bluetooth 5.0</span></a> 加入了测向功能和厘米级的定位服务，即Angle of Arrival (AoA) and Angle of Departure (AoD)（到达角/出发角），这项功能的加入使得室内的定位会变得更加精准，并且在小物体的位置上也能准确定位避免物品遗失。</p>
 </section>
 <section id="bluetooth-5-0">
-<span id="btv50"></span><h3><a class="toc-backref" href="#id14">Bluetooth 5.0</a><a class="headerlink" href="#bluetooth-5-0" title="Permalink to this heading">¶</a></h3>
+<span id="btv50"></span><h3><a class="toc-backref" href="#id15">Bluetooth 5.0</a><a class="headerlink" href="#bluetooth-5-0" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">2016年12月发布</span></code> <code class="docutils literal notranslate"><span class="pre">2Mbps</span></code></p>
 <p>支持2M PHY，速度最高为。比之前版本的1M PHY拥有两倍的传输速度。同时支持LE long range，通过125K或500K PHY实现更远的广播距离和传输距离，</p>
 <p>蓝牙mesh的推出，网状网络可以将成千上万个设备互联。</p>
@@ -386,16 +470,11 @@
 <p>其广播通信容量从蓝牙4.2的31Byte升级成为255Byte，增强的广播能力将带来更好的信标，以创建更多基于位置的室内定位服务和导航服务，室内定位的精度小于1米, 提升室内定位精确度功能。</p>
 </section>
 <section id="bluetooth-4-2">
-<span id="btv42"></span><h3><a class="toc-backref" href="#id15">Bluetooth 4.2</a><a class="headerlink" href="#bluetooth-4-2" title="Permalink to this heading">¶</a></h3>
+<span id="btv42"></span><h3><a class="toc-backref" href="#id16">Bluetooth 4.2</a><a class="headerlink" href="#bluetooth-4-2" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">2014年12月发布</span></code></p>
 <p>改善了数据传输速度和隐私保护程度。将发送数据包长度扩展，提升数据传输速度；新增LE安全配对，增加隐私保护程度</p>
 <p>蓝牙4.2最大通讯速度为1Mbps</p>
 </section>
-</section>
-<section id="id7">
-<h2><a class="toc-backref" href="#id10">技术规格</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
-<p>pathloss=40+25log(d)</p>
-<a class="reference external image-reference" href="https://blog.csdn.net/qq_15391889/article/details/87937452"><img alt="../_images/%E8%B7%AF%E5%BE%84%E6%8D%9F%E8%80%97.jpg" src="../_images/%E8%B7%AF%E5%BE%84%E6%8D%9F%E8%80%97.jpg" /></a>
 </section>
 </section>
 

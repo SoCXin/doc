@@ -11,7 +11,7 @@ WPAN
 
     * - :ref:`wpan`
       - :ref:`802_15_4`
-      - :ref:`bt`
+      - :ref:`bluetooth`
       - :ref:`zigbee`
       - :ref:`rfid`
       - :ref:`uwb`
