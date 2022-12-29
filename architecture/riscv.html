@@ -77,8 +77,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../fpga/index.html">FPGA</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">RISC-V</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#andes">Andes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#qingke">Qingke</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#xuantie">XuanTie</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qingke">Qingke</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="MCS51.html">MCS-51</a></li>
@@ -138,112 +138,70 @@
              
   <section id="risc-v">
 <span id="riscv"></span><h1>RISC-V<a class="headerlink" href="#risc-v" title="Permalink to this heading">¶</a></h1>
-<p><a class="reference external" href="https://github.com/SoCXin/RISC-V">RISC-V 第五代精简指令集</a> 开放指令集架构(ISA)， <a class="reference external" href="https://docs.os-q.com/license.html">BSD License</a> 开源，2010年始于加州大学伯克利分校。</p>
+<p><a class="reference external" href="https://github.com/SoCXin/RISC-V">第五代精简指令集RISC-V</a> 开放指令集架构(ISA)， <a class="reference external" href="https://docs.os-q.com/license.html">BSD License</a> ，2010年始于加州大学伯克利分校。</p>
 <ul class="simple">
 <li><p>模块化：RISC-V将不同的部分以模块化的方式组织在一起，并试图通过一套统一的架构来满足各种不同的应用场景，这种模块化是x86与ARM架构所不具备的。</p></li>
-<li><p>指令数目少：受益于短小精悍的架构以及模块化的特性，RISC-V架构的指令数目非常的简洁。基本的RISC-V指令数目仅有40多条，加上其他的模块化扩展指令也总共只有几十条指令。</p></li>
+<li><p>指令数少：受益于短小精悍的架构以及模块化的特性，RISC-V架构的指令数目非常的简洁。基本的RISC-V指令数目仅有40多条，加上其他的模块化扩展指令也总共只有几十条指令。</p></li>
 </ul>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#andes" id="id7">Andes</a></p></li>
-<li><p><a class="reference internal" href="#qingke" id="id8">Qingke</a></p></li>
+<li><p><a class="reference internal" href="#andes" id="id8">Andes</a></p></li>
 <li><p><a class="reference internal" href="#xuantie" id="id9">XuanTie</a></p></li>
+<li><p><a class="reference internal" href="#qingke" id="id10">Qingke</a></p></li>
 </ul>
 </div>
 <section id="andes">
-<span id="id2"></span><h2><a class="toc-backref" href="#id7">Andes</a><a class="headerlink" href="#andes" title="Permalink to this heading">¶</a></h2>
+<span id="id2"></span><h2><a class="toc-backref" href="#id8">Andes</a><a class="headerlink" href="#andes" title="Permalink to this heading">¶</a></h2>
 <p><a class="reference external" href="https://www.andestech.com/">晶心科技 Andes Technology</a></p>
+<div class="contents local topic" id="id3">
+<ul class="simple">
+<li><p><a class="reference internal" href="#andes-d45" id="id11">Andes D45</a></p></li>
+</ul>
+</div>
 <a class="reference external image-reference" href="https://www.andestech.com/cn/risc-vandes/"><img alt="../_images/AndesCore-2.png" src="../_images/AndesCore-2.png" /></a>
 <section id="andes-d45">
-<span id="id3"></span><h3>Andes D45<a class="headerlink" href="#andes-d45" title="Permalink to this heading">¶</a></h3>
-</section>
-</section>
-<section id="qingke">
-<span id="id4"></span><h2><a class="toc-backref" href="#id8">Qingke</a><a class="headerlink" href="#qingke" title="Permalink to this heading">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">WCH</span></code> <code class="docutils literal notranslate"><span class="pre">青稞</span></code></p>
+<span id="id4"></span><h3><a class="toc-backref" href="#id11">Andes D45</a><a class="headerlink" href="#andes-d45" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../wch/riscv.html#wch-riscv"><span class="std std-ref">RISC-V</span></a></p></th>
-<th class="head"><p>DMIPS</p></th>
-<th class="head"><p>RAM</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>DMIPS</p></th>
-<th class="head"><p>BLE</p></th>
-<th class="head"><p>USB</p></th>
-<th class="head"><p>Ethernet</p></th>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#andes-d45"><span class="std std-ref">Andes D45</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#performance"><span class="std std-ref">Performance</span></a></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv3a"><span class="std std-ref">RISC-V3A</span></a></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/HPM6750.html#hpm6750"><span class="std std-ref">HPM6750</span></a></p></td>
+<td><p>816 MHz</p></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv4a"><span class="std std-ref">RISC-V4A</span></a></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv4b"><span class="std std-ref">RISC-V4B</span></a></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv4c"><span class="std std-ref">RISC-V4C</span></a></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv4f"><span class="std std-ref">RISC-V4F</span></a></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../high/HPM6350.html#hpm6350"><span class="std std-ref">HPM6350</span></a></p></td>
+<td><p>648 MHz</p></td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </section>
+</section>
 <section id="xuantie">
 <span id="xt"></span><h2><a class="toc-backref" href="#id9">XuanTie</a><a class="headerlink" href="#xuantie" title="Permalink to this heading">¶</a></h2>
 <div class="contents local topic" id="id5">
 <ul class="simple">
-<li><p><a class="reference internal" href="#c906" id="id10">C906</a></p></li>
-<li><p><a class="reference internal" href="#e907" id="id11">E907</a></p></li>
-<li><p><a class="reference internal" href="#e902" id="id12">E902</a></p></li>
-<li><p><a class="reference internal" href="#xt804" id="id13">XT804</a></p></li>
+<li><p><a class="reference internal" href="#c906" id="id12">C906</a></p></li>
+<li><p><a class="reference internal" href="#e907" id="id13">E907</a></p></li>
+<li><p><a class="reference internal" href="#e902" id="id14">E902</a></p></li>
+<li><p><a class="reference internal" href="#xt804" id="id15">XT804</a></p></li>
 </ul>
 </div>
 <section id="c906">
-<span id="xt-c906"></span><h3><a class="toc-backref" href="#id10">C906</a><a class="headerlink" href="#c906" title="Permalink to this heading">¶</a></h3>
+<span id="xt-c906"></span><h3><a class="toc-backref" href="#id12">C906</a><a class="headerlink" href="#c906" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 25%" />
@@ -264,7 +222,12 @@
 <td></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../high/K230.html#k230"><span class="std std-ref">K230</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../allwinner/F133.html#f133"><span class="std std-ref">F133</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/K230.html#k230"><span class="std std-ref">K230</span></a></p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -273,7 +236,7 @@
 </table>
 </section>
 <section id="e907">
-<span id="xt-e907"></span><h3><a class="toc-backref" href="#id11">E907</a><a class="headerlink" href="#e907" title="Permalink to this heading">¶</a></h3>
+<span id="xt-e907"></span><h3><a class="toc-backref" href="#id13">E907</a><a class="headerlink" href="#e907" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">32</span> <span class="pre">bit</span></code></p>
 <table class="docutils align-default">
 <colgroup>
@@ -319,7 +282,7 @@
 </ul>
 </section>
 <section id="e902">
-<span id="xt-e902"></span><h3><a class="toc-backref" href="#id12">E902</a><a class="headerlink" href="#e902" title="Permalink to this heading">¶</a></h3>
+<span id="xt-e902"></span><h3><a class="toc-backref" href="#id14">E902</a><a class="headerlink" href="#e902" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 25%" />
@@ -344,8 +307,81 @@
 </table>
 </section>
 <section id="xt804">
-<span id="id6"></span><h3><a class="toc-backref" href="#id13">XT804</a><a class="headerlink" href="#xt804" title="Permalink to this heading">¶</a></h3>
+<span id="id6"></span><h3><a class="toc-backref" href="#id15">XT804</a><a class="headerlink" href="#xt804" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#xt804"><span class="std std-ref">XT804</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#performance"><span class="std std-ref">Performance</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../miscellaneous/W801.html#w801"><span class="std std-ref">W801</span></a></p></td>
+<td><p>240MHz</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </section>
+</section>
+<section id="qingke">
+<span id="id7"></span><h2><a class="toc-backref" href="#id10">Qingke</a><a class="headerlink" href="#qingke" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">WCH</span></code> <code class="docutils literal notranslate"><span class="pre">青稞</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#qingke"><span class="std std-ref">Qingke</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#performance"><span class="std std-ref">Performance</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv2a"><span class="std std-ref">RISC-V2A</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv3a"><span class="std std-ref">RISC-V3A</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv4a"><span class="std std-ref">RISC-V4A</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv4b"><span class="std std-ref">RISC-V4B</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv4c"><span class="std std-ref">RISC-V4C</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../wch/riscv.html#wch-riscv4f"><span class="std std-ref">RISC-V4F</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 

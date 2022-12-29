@@ -3,9 +3,7 @@
 
 CH569
 ===========
-
-* `WCH <http://www.wch.cn/>`_ : ``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``Ethernet`` ``EMMC`` ``DVP``
-* `Tags <https://github.com/SoCXin/CH569>`_ : :ref:`usb`
+`WCH <http://www.wch.cn/>`_ : ``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``Ethernet`` ``EMMC`` ``DVP``
 
 .. contents::
     :local:
@@ -13,6 +11,7 @@ CH569
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/CH569>`_ : :ref:`usb`
 
 .. image:: ./images/CH569.png
     :target: http://www.wch.cn/products/CH569.html

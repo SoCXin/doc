@@ -1,0 +1,71 @@
+
+.. _xr872:
+
+XR872
+=============
+`Allwinner <https://www.allwinnertech.com/>`_ : ``Allwinner`` ``Cortex-M4`` ``384MHz`` ``Wi-Fi`` ``Audio``
+
+.. contents::
+    :local:
+    :depth: 1
+
+Xin简介
+-----------
+`Tags <https://github.com/SoCXin/XR872>`_ : :ref:`wifi4` / :ref:`audio`
+
+
+
+规格参数
+~~~~~~~~~~~
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：2022-11-9
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能：:ref:`level4`
+* 封装规格：
+* 运行环境：-40°C to 85°C
+* RAM容量：
+* Flash容量：
+
+
+特征参数
+^^^^^^^^^^^
+
+* 384 MHz :ref:`cortex_m4`
+* 包括UART，TWI，SPI，DMIC，音频编解码器，PWM，CIR（T / R），CSI，SDIO和辅助ADC
+* 支持AES/DES/3DES/SHA/MD5/CRC等硬件加密引擎
+
+芯片架构
+~~~~~~~~~~~
+
+采用XRADIOTECH的MPDTM技术设计的新型数字RF发射机可提供更高的输出功率并保持更高的效率，保持芯片对天线适配不敏感，但在不同的VSWR下始终具有良好的EVM。
+
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压：2.0 to 3.6 V
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+    :depth: 1
+
+品牌对比
+~~~~~~~~~
+
+系列对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
+

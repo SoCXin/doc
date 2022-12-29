@@ -9,7 +9,6 @@ V831
     :local:
     :depth: 1
 
-
 Xin简介
 -----------
 `Tags <https://github.com/SoCXin/V831>`_ : :ref:`top` / :ref:`ethernet`

@@ -6,7 +6,6 @@ CH32V003
 
 `WCH <http://www.wch.cn/>`_ : ``RISC-V2A`` ``青稞`` ``48MHz``
 
-`Tags <https://github.com/SoCXin/CH32V003>`_ : :ref:`ulp` / :ref:`low`
 
 .. contents::
     :local:
@@ -14,6 +13,7 @@ CH32V003
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/CH32V003>`_ : :ref:`ulp` / :ref:`low`
 
 .. image:: ./images/CH32V003.png
     :target: http://www.wch.cn/products/CH32V003.html
@@ -39,7 +39,7 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 48 MHz RISC-V2A (2级中断嵌套)
+* 48 MHz :ref:`wch_riscv2a` (2级中断嵌套)
 * 1组1路通用DMA控制器
 * 1组运放比较器
 * 1组10位ADC
@@ -78,16 +78,16 @@ Xin选择
       - :ref:`architecture`
       - :ref:`frequency`
       - :ref:`sram`/:ref:`flash`
-      - 
+      -
       - :ref:`peripherals`
       - :ref:`package`
     * - :ref:`ch32v003`
-      - 
+      -
       - 48 MHz
       - 2 KB/16 KB
-      - 
-      - 
-      - 
+      -
+      -
+      -
     * - :ref:`at32f421`
       - :ref:`cortex_m4`
       - 120 MHz

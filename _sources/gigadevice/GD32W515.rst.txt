@@ -4,8 +4,8 @@
 GD32W515
 ============
 
-* `GigaDevice <https://www.gigadevice.com/zh-hans/>`_ : ``Cortex-M33`` ``180MHz``
-* `Tags <https://github.com/SoCXin/GD32W515>`_ : :ref:`wifi4`
+`GigaDevice <https://www.gigadevice.com/zh-hans/>`_ : ``Cortex-M33`` ``180MHz``
+
 
 .. contents::
     :local:
@@ -13,7 +13,7 @@ GD32W515
 
 Xin简介
 -----------
-
+`Tags <https://github.com/SoCXin/GD32W515>`_ : :ref:`wifi4`
 
 规格参数
 ~~~~~~~~~~~

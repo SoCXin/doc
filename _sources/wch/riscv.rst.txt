@@ -43,6 +43,11 @@ RISC-V
       -
       -
 
+.. _wch_riscv2a:
+
+RISC-V2A
+--------------
+
 
 
 .. _wch_riscv3a:

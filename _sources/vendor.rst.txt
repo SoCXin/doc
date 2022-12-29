@@ -119,7 +119,7 @@ Vendor
       - :ref:`r329`
       - :ref:`f133`
       - :ref:`v831`
-      -
+      - :ref:`xr872`
       - :ref:`v853`
     * - :ref:`mindmotion`
       - :ref:`mm32f016`

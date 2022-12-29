@@ -3,15 +3,16 @@
 W801
 ===============
 
-`标签 <https://github.com/SoCXin/W801>`_ : ``XT804`` ``240MHz`` ``UART`` ``Tee`` ``BLE4.2`` ``Wi-Fi`` ``QFN56``
+`WinnerMicro <http://www.winnermicro.com/>`_ : ``XT804`` ``240MHz`` ``UART`` ``Tee`` ``BLE4.2`` ``Wi-Fi`` ``QFN56``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/W801>`_ : :ref:`wifi4`
 
-IoT MCU芯片，支持平头哥CDK开发环境
 
 .. image:: ./images/W801.png
     :target: http://r0.hlktech.com/download/HLK-W801/1/W801%E8%8A%AF%E7%89%87%E8%A7%84%E6%A0%BC%E4%B9%A6V1.0.pdf
@@ -24,7 +25,7 @@ IoT MCU芯片，支持平头哥CDK开发环境
 ^^^^^^^^^^^
 
 * 发布时间：
-* 参考价格：
+* 参考价格： `￥6.65 <https://item.szlcsc.com/3266650.html>`_
 * 制程工艺：
 * 供货周期：
 * 处理性能：
@@ -32,6 +33,7 @@ IoT MCU芯片，支持平头哥CDK开发环境
 * 封装规格：:ref:`QFN56`
 * SRAM容量：288 KB (PSRAM 64MB)
 * Flash容量：2 MB
+
 
 特征参数
 ^^^^^^^^^^^

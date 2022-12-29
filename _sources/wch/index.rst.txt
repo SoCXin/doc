@@ -97,35 +97,30 @@ ETH++
       - :ref:`sram`/:ref:`flash`
       - Characteristics
       - Ethernet
-      - :ref:`package`
     * - :ref:`ch563`
       - :ref:`arm7`
       -
       - 64KB/224KB
       - 480M USB
       - 100M PHY
-      - LQFP64M
     * - :ref:`ch579`
       - :ref:`cortex_m0`
       -
       - 32KB/250KB
       - BLE 4.2
       - 10M PHY
-      - :ref:`QFN48`/QFN28
     * - :ref:`ch32v208`
       - :ref:`wch_riscv4c`
       -
       -
       - BLE 5.3
       - 10M PHY
-      -
     * - :ref:`ch32f208`
       - :ref:`cortex_m3`
       -
       -
       - BLE 5.3
       - 10M PHY
-      -
 
 
 
@@ -411,10 +406,6 @@ RISC-V
 * 2019年推出基于RISC-V3A处理器的CH32V103单片机，内嵌BLE低功耗蓝牙的CH57X系列
 * 2020年初推出128位数据宽度和双层DMA架构的高吞吐量的CH56X系列，现已扩展出浮点型V4F，精简型V2A，增强型V3A/V4A/V4B/V4C等内核产品
 
-
-
-.. image:: ./images/CH32V.png
-    :target: http://special.wch.cn/zh_cn/mcu/
 
 
 .. toctree::
