@@ -3,9 +3,7 @@
 
 CH32V203
 ============
-
-* `WCH <http://www.wch.cn/>`_ : ``RISC-V4B`` ``青稞`` ``增强型低功耗`` ``144MHz`` ``2x USB`` ``2x OPA`` ``HarmonyOS`` ``45uA/MHz``
-* `Tags <https://github.com/SoCXin/CH32V203>`_ : :ref:`ulp` / :ref:`low`
+`WCH <http://www.wch.cn/>`_ : ``RISC-V4B`` ``青稞`` ``增强型低功耗`` ``144MHz`` ``2x USB`` ``2x OPA`` ``HarmonyOS`` ``45uA/MHz``
 
 .. contents::
     :local:
@@ -13,6 +11,7 @@ CH32V203
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/CH32V203>`_ : :ref:`ulp` / :ref:`low`
 
 .. image:: ./images/CH32V203.png
     :target: http://www.wch.cn/products/CH32V203.html

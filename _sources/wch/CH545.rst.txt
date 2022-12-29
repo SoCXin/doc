@@ -3,15 +3,16 @@
 
 CH545
 ==========
-
-* 关键词：``USB`` ``E8051`` ``24MHz`` ``LDO`` ``Type-C``
-* 资源库：`GitHub <https://github.com/SoCXin/CH545>`_ , `官方资源 <http://www.wch.cn/products/CH545.html>`_
+`WCH <http://www.wch.cn/>`_ : ``E8051`` ``24MHz`` ``USB`` ``LDO`` ``Type-C``
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
+`Tags <http://www.wch.cn/products/CH545.html>`_ : :ref:`low` / :ref:`mcs51`
 
 .. image:: ./images/CH545.png
     :target: http://www.wch.cn/products/CH545.html

@@ -3,9 +3,7 @@
 
 GD32F207
 ===============
-
-* `GigaDevice <https://www.gigadevice.com/zh-hans/>`_ : ``Cortex-M4`` ``120MHz``
-* `Tags <https://github.com/SoCXin/GD32F207>`_ : :ref:`pop`
+`GigaDevice <https://www.gigadevice.com/zh-hans/>`_ : ``Cortex-M4`` ``120MHz``
 
 .. contents::
     :local:
@@ -13,6 +11,7 @@ GD32F207
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/GD32F207>`_ : :ref:`pop`
 
 
 规格参数

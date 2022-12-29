@@ -172,7 +172,7 @@ Qingke
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`qingke`
+    * - :ref:`wch_riscv`
       - :ref:`frequency`
       - :ref:`CoreMark`
       - :ref:`performance`

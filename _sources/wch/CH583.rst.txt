@@ -3,9 +3,7 @@
 
 CH583
 ============
-
-* `WCH <http://www.wch.cn/>`_ : ``WCH`` ``RISC-V4A`` ``20MHz`` ``USB`` ``AES-128`` ``BLE5.3`` ``1.7V`` ``QFN48`` ``QFN28``
-* `Tags <https://github.com/SoCXin/CH583>`_ : :ref:`ulp` / :ref:`low` / :ref:`ble` / :ref:`usb`
+`WCH <http://www.wch.cn/>`_ : ``RISC-V4A`` ``20MHz`` ``USB`` ``AES-128`` ``BLE5.3`` ``1.7V`` ``QFN48`` ``QFN28``
 
 .. contents::
     :local:
@@ -13,6 +11,7 @@ CH583
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/CH583>`_ : :ref:`ulp` / :ref:`low` / :ref:`ble` / :ref:`usb`
 
 .. image:: ./images/CH583.png
     :target: http://www.wch.cn/products/CH583.html

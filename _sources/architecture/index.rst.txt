@@ -87,6 +87,13 @@ Classification
       -
       - :ref:`tsmc_40lp`
     * -
+      - :ref:`xtensa_lx6`
+      -
+      -
+      -
+      -
+      - :ref:`tsmc_40lp`
+    * -
       - :ref:`xtensa_lx7`
       -
       -

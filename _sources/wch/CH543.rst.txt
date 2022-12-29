@@ -3,15 +3,15 @@
 
 CH543
 ==========
-
-* 关键词：``MCS51`` ``USB`` ``12V`` ``48MHz`` ``USB PD``
-* 资源库：`GitHub <https://github.com/SoCXin/CH543>`_ , `官方资源 <http://www.wch.cn/products/CH543.html>`_
+`WCH <http://www.wch.cn/>`_ : ``MCS51`` ``USB`` ``12V`` ``48MHz`` ``USB PD``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
+`Tags <http://www.wch.cn/products/CH543.html>`_ : :ref:`low` / :ref:`mcs51`
 
 .. image:: ./images/CH543.png
     :target: http://www.wch.cn/products/CH543.html
