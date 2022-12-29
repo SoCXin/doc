@@ -121,6 +121,12 @@ Vendor
       - :ref:`v831`
       -
       - :ref:`v853`
+    * - :ref:`mindmotion`
+      - :ref:`mm32f016`
+      - :ref:`mm32spin360`
+      -
+      - :ref:`mm32f031`
+      - :ref:`mm32f527`
 
 .. toctree::
     :maxdepth: 1

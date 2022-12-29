@@ -21,12 +21,14 @@ Arm China STAR-MC1 处理器，基于 :ref:`armv8`-M Mainline 指令集架构，
 
     * - :ref:`star_mc1`
       - :ref:`frequency`
+      - :ref:`CoreMark`
+      - :ref:`performance`
       - :ref:`sram`/:ref:`flash`
-      - :ref:`package`
     * - :ref:`mm32f527`
       - 120MHz
-      - 192KB/256KB
       -
+      -
+      - 192KB/256KB
 
 .. _star_mc2:
 

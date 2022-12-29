@@ -44,12 +44,13 @@ Xin简介
 特征参数
 ^^^^^^^^^^^
 
-* 480 MHz :ref:`xt_c906` + 320MHz :ref:`xt_e907` + 160MHz E902
+* 480 MHz :ref:`xt_c906` + 320MHz :ref:`xt_e907` + 160MHz :ref:`xt_e902`
 * 100GOPS NPU(BLAI-100)
 * MJPEG and H264(Baseline/Main)
 * Wi-Fi 802.11 b/g/n :ref:`wifi4`
 * Bluetooth 5.x Dual-mode :ref:`bt` + :ref:`ble`
-* USB 2.0 HS OTG
+* :ref:`usb_hs` OTG
+
 
 芯片架构
 ~~~~~~~~~~~

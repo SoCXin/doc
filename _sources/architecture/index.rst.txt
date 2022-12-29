@@ -58,6 +58,13 @@ Classification
       -
       -
       - :ref:`tsmc_28lp`
+    * -
+      - :ref:`star_mc`
+      -
+      -
+      -
+      -
+      -
     * - :ref:`mips`
       - :ref:`24KEc`
       -
