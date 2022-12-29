@@ -56,6 +56,10 @@ ARMv8是ARM版本升级以来最大的一次改变，ARMv8的架构继承以往A
 
 从2011年11月发布ARMv8开始，ARMv8已经走过将近10年时间。ARMv8架构的主要特点是增加对64位指令集的支持，包括目前性能最强的Cortex-X1/A78，都是基于ARMv8.x指令集打造。
 
+.. toctree::
+    :maxdepth: 1
+
+    STAR-MC
 
 .. _armv9:
 

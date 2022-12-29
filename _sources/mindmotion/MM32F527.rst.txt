@@ -1,0 +1,81 @@
+
+.. _mm32f527:
+
+MM32F527
+============
+
+`mindmotion <https://www.mindmotion.com.cn/>`_ : ``STAR-MC1`` ``120MHz``
+
+.. contents::
+    :local:
+    :depth: 1
+
+
+Xin简介
+-----------
+`Tags <https://github.com/SoCXin/MM32F527>`_ : :ref:`motor`
+
+规格参数
+~~~~~~~~~~~
+
+.. image:: ./images/MM32F5270.jpg
+    :target: https://www.mindmotion.com.cn/products/mm32mcu/mm32f/mm32f_performance/mm32f5270/
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格： `￥20.78 <https://item.szlcsc.com/5842730.html>`_
+* 制程工艺：
+* 供货周期：
+* 封装规格：:ref:`LQFP144`/:ref:`LQFP100`/:ref:`LQFP64`
+* 处理性能：? :ref:`CoreMark`
+* 运行环境：-40°C to +105°C
+* RAM容量：192 KB (32KB ITCM，32KB DTCM，128KB System RAM)
+* Flash容量：256 KB
+
+
+特征参数
+^^^^^^^^^^^
+
+* 120 MHz :ref:`star_mc1` (FPU+DSP)
+
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压: 2.0 to 5.5 V
+* 运行功耗:
+
+
+芯片架构
+~~~~~~~~~~~
+
+- 4KB L1 I-Cache，4KB L1 D-Cache
+- 内置 QSPI 接口，支持程序在线执行（eXecute-in-Place，XIP）
+- 内置 FSMC 并行存储器接口
+- 2 个 12 位 SAR ADC，采样率高达 3MSPS，配置最高 24 个外部通道，支持最高 256 倍硬件过采样
+- 2 个 12 位 DAC、3 个比较器
+- 7 个 16 位定时器、2 个 32 位定时器
+- 8 个 UART 接口（包含1 个 LPUART）、3 个 SPI 接口、3 个 I2S 接口、2 个 I2C 接口
+- 1 个 USB OTG 全速接口
+- 2 个 FlexCAN 接口
+- 部分型号配置 10M/100M 以太网控制器
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+    :depth: 1
+
+品牌对比
+~~~~~~~~~
+
+版本对比
+~~~~~~~~~
+
+型号对比
+~~~~~~~~~
+
