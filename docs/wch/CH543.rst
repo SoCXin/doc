@@ -3,15 +3,15 @@
 
 CH543
 ==========
-
-* 关键词：``MCS51`` ``USB`` ``12V`` ``48MHz`` ``USB PD``
-* 资源库：`GitHub <https://github.com/SoCXin/CH543>`_ , `官方资源 <http://www.wch.cn/products/CH543.html>`_
+`WCH <http://www.wch.cn/>`_ : ``MCS51`` ``USB`` ``12V`` ``48MHz`` ``USB PD``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
+`Tags <http://www.wch.cn/products/CH543.html>`_ : :ref:`low` / :ref:`mcs51`
 
 .. image:: ./images/CH543.png
     :target: http://www.wch.cn/products/CH543.html
@@ -33,7 +33,7 @@ CH543 还内置了12位ADC模数转换、电容式触摸按键检测模块、内
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：TSSOP20/SOP16/QFN20/ESSOP10
+* 封装规格：:ref:`TSSOP20`/SOP16/:ref:`QFN20`/ESSOP10
 * 运行环境：-40°C to 85°C
 * RAM容量：512 B
 * Flash容量：16 KB

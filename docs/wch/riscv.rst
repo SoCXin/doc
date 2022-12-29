@@ -17,6 +17,11 @@ RISC-V
       - :ref:`CoreMark`
       - :ref:`power`
       - Size(mm²)
+    * - :ref:`wch_riscv2a`
+      -
+      -
+      -
+      -
     * - :ref:`wch_riscv3a`
       -
       -
@@ -42,6 +47,11 @@ RISC-V
       -
       -
       -
+
+.. _wch_riscv2a:
+
+RISC-V2A
+--------------
 
 
 

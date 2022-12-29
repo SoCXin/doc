@@ -1,5 +1,5 @@
 
-2022芯榜
+2022 Xin
 -------------
 
 ==================  ==================  ==================  ==================
@@ -25,8 +25,8 @@
 .. |March| image:: images/CH32V307.png
 .. _March: ../wch/CH32V307.html
 
-.. |April| image:: images/HPM6350.png
-.. _April: ../high/HPM6350.html
+.. |April| image:: images/MM32F527.png
+.. _April: ../mindmotion/MM32F527.html
 
 .. |May| image:: images/HPM6750.png
 .. _May: ../high/HPM6750.html
@@ -53,15 +53,10 @@
 .. _December: ../bouffalolab/BL808.html
 
 
-.. contents::
-    :local:
-    :depth: 1
-
-
 01-RP2040
 ~~~~~~~~~~~~
 
-:ref:`rp2040` 聚集了足够多的开发资源和使用方式，同时解决了芯片的供应和价格问题，其商用价值将大大增加，通过逐步上市的产品将进一步提高相关产品的定义基线。
+:ref:`rp2040`
 
 02-ESP32C6
 ~~~~~~~~~~~~
@@ -70,19 +65,17 @@
 :ref:`esp32c6` 支持三协议 :ref:`wifi6` , :ref:`ble` , :ref:`802_15_4`
 
 
-
-
 03-CH32V307
 ~~~~~~~~~~~~
 ``RISC-V4C`` ``144MHz`` ``USB`` ``Ethernet`` ``10Mbps(PHY)`` ``BLE5.3`` ``QFN28``
 
 :ref:`ch32v307`
 
-04-HPM6350
+04-MM32F527
 ~~~~~~~~~~~~~~
-``RISC-V`` ``DSP`` ``FFA`` ``3390 CoreMark`` ``648MHz`` ``￥28``
+``STAR-MC1`` ``120MHz``
 
-:ref:`hpm6350`
+:ref:`mm32f527`
 
 05-HPM6750
 ~~~~~~~~~~~~

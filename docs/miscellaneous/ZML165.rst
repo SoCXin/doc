@@ -4,11 +4,12 @@
 ZML165
 ===============
 
-`标签 <https://github.com/SoCXin/ZML165>`_ : ``Cortex-M0`` ``48MHz`` ``24bit Σ-∆ ADC`` ``QFN20``
-
+`ZLG <https://www.zlgmcu.com/>`_ : ``Cortex-M0`` ``48MHz`` ``24bit Σ-∆ ADC`` ``QFN20``
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
@@ -30,7 +31,7 @@ ZML165 包括1个16位通用定时器、1个32 位通用定时器、1个高级PW
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：QFN20 (4x4mm)
+* 封装规格：:ref:`QFN20` (4x4mm)
 * 运行环境：-40°C to 85°C
 * RAM容量：4KB
 * Flash容量：32KB

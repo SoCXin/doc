@@ -1,9 +1,16 @@
 
 .. _ip:
 
-片上资源
+IP
 ===============
-``IP``
+``Intellectual Property Core``
+
+IP(Intellectual Property Core) 是指芯片中具有独立功能的电路模块的成熟设计。IP核也可以理解为芯片设计的中间构件。该电路模块设计可以应用在包含该电路模块的其他芯片设计项目中，从而减少设计工作量，缩短设计周期，提高芯片设计的成功率。一般说来，一个复杂的芯片是由芯片设计者自主设计的电路部分和多个外购的IP核连接构成的。
+
+IP核有行为(Behavior)级、结构(Structure)级和物理(Physical)级三个层次的分类，对应着三个种类型的IP核：
+* 由硬件描述语言设计的软核(Soft IP Core)
+* 完成结构描述的固核(Firm IP Core)
+* 基于物理描述并经过工艺验证的硬核(Hard IP Core)
 
 .. contents::
     :local:
@@ -18,7 +25,7 @@
 
 射频IP
 -----------
-``Wi-Fi`` ``BLE``
+``Wi-Fi`` ``BLE`` ``PHY`` ``PA``
 
 通信IP
 -----------
@@ -29,13 +36,11 @@
 ``eNVM`` ``EEPROM``
 
 
-.. _sip:
+.. _ram:
 
-SIP封装
+RAM
 -----------
-``SIP``
-
-.. image:: images/sip.jpg
+``SRAM`` ``DRAM``
 
 .. contents::
     :local:
@@ -48,11 +53,13 @@ PSRAM
 SDRAM
 ~~~~~~~~~~~
 
-.. _ip_gpu:
+
+.. _gpu:
 
 GPU
 -----------
 
+.. _verisilicon:
 
 VeriSilicon
 ~~~~~~~~~~~~~
@@ -61,4 +68,16 @@ VeriSilicon
 
 Vivante
 ^^^^^^^^^^^
+
+.. _fpu:
+
+FPU
+-----------
+
+.. _dsp:
+
+DSP
+-----------
+
+
 

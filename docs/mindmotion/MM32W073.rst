@@ -1,0 +1,72 @@
+
+.. _mm32w073:
+
+MM32W073
+============
+
+`mindmotion <https://www.mindmotion.com.cn/>`_ : ``Cortex-M0`` ``48MHz`` ``BLE``
+
+.. contents::
+    :local:
+    :depth: 1
+
+
+Xin简介
+-----------
+`Tags <https://github.com/SoCXin/MM32W073>`_ : :ref:`ble`
+
+规格参数
+~~~~~~~~~~~
+
+.. image:: ./images/MM32W0.jpg
+    :target: https://www.mindmotion.com.cn/products/mm32mcu/mm32w/w0/mm32w0xx/
+
+
+基本参数
+^^^^^^^^^^^
+
+* 发布时间：
+* 参考价格： `￥12.09 <https://item.szlcsc.com/213103.html>`_
+* 制程工艺：
+* 供货周期：
+* 封装规格：:ref:`LQFP48`/:ref:`QFN32`
+* 处理性能：? :ref:`CoreMark`
+* 运行环境：-40°C to +105°C
+* RAM容量：8 KB (4KB free)
+* Flash容量：128 KB (110KB free)
+
+
+特征参数
+^^^^^^^^^^^
+
+* 48 MHz :ref:`cortex_m0`
+
+电源参数
+^^^^^^^^^^^
+
+* 供电电压: 2.3 to 3.6 V
+* 运行功耗:
+
+
+芯片架构
+~~~~~~~~~~~
+
+
+Xin选择
+-----------
+
+.. contents::
+    :local:
+    :depth: 1
+
+
+品牌对比
+~~~~~~~~~
+
+
+系列对比
+~~~~~~~~~
+
+
+版本对比
+~~~~~~~~~

@@ -3,9 +3,7 @@
 
 SWM341
 ===============
-
-* `Synwit <https://www.synwit.cn/>`_ : ``Cortex-M33`` ``150MHz``
-* `Tags <https://github.com/SoCXin/SWM341>`_ : :ref:`motor`
+`Synwit <https://www.synwit.cn/>`_ : ``Cortex-M33`` ``150MHz``
 
 .. contents::
     :local:
@@ -13,12 +11,14 @@ SWM341
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/SWM341>`_ : :ref:`hmi`
 
 .. image:: ./images/SWM341.jpg
     :target: https://www.synwit.cn/gaishu944/
 
 .. contents::
     :local:
+    :depth: 1
 
 规格参数
 ~~~~~~~~~~~

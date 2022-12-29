@@ -58,6 +58,41 @@ Classification
       -
       -
       - :ref:`tsmc_28lp`
+    * -
+      - :ref:`cortex_m55`
+      -
+      -
+      -
+      -
+      -
+    * -
+      - :ref:`cortex_m33`
+      -
+      -
+      -
+      -
+      -
+    * -
+      - :ref:`cortex_m23`
+      -
+      -
+      -
+      -
+      -
+    * -
+      - :ref:`star_mc1`
+      -
+      -
+      -
+      -
+      -
+    * -
+      - :ref:`star_mc2`
+      -
+      -
+      -
+      -
+      -
     * - :ref:`mips`
       - :ref:`24KEc`
       -
@@ -67,6 +102,13 @@ Classification
       - :ref:`tsmc_40lp`
     * -
       - :ref:`1004KEc`
+      -
+      -
+      -
+      -
+      - :ref:`tsmc_40lp`
+    * -
+      - :ref:`xtensa_lx6`
       -
       -
       -
@@ -98,6 +140,13 @@ Classification
       -
       -
       - 3.80/MHz
+      -
+      - :ref:`tsmc_28lp`
+    * -
+      - :ref:`xt_e902`
+      -
+      -
+      -
       -
       - :ref:`tsmc_28lp`
     * -
@@ -322,8 +371,9 @@ Geekbench
 
 Architecture
 ---------------
+``ISA``
 
-CPU主要有两大指令集架构：
+CPU主要有两大指令集架构
 
 * 复杂指令集CISC（Complex Intruction Set Computer，CISC）架构(x86)
 * 精简指令集RISC（Reduced Intruction Set Computer，RISC）架构(ARM、MIPS和RISC-V等)

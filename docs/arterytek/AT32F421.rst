@@ -248,7 +248,7 @@ Xin选择
       - 35
     * - AT32F421K
       - ￥3.67
-      - LQFP32/QFN32
+      - :ref:`LQFP32`/QFN32
       - 7x7mm/4x4mm
       - 35
     * - AT32F421G

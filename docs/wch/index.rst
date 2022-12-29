@@ -97,35 +97,30 @@ ETH++
       - :ref:`sram`/:ref:`flash`
       - Characteristics
       - Ethernet
-      - :ref:`package`
     * - :ref:`ch563`
       - :ref:`arm7`
       -
       - 64KB/224KB
       - 480M USB
       - 100M PHY
-      - LQFP64M
     * - :ref:`ch579`
       - :ref:`cortex_m0`
       -
       - 32KB/250KB
       - BLE 4.2
       - 10M PHY
-      - :ref:`QFN48`/QFN28
     * - :ref:`ch32v208`
       - :ref:`wch_riscv4c`
       -
       -
       - BLE 5.3
       - 10M PHY
-      -
     * - :ref:`ch32f208`
       - :ref:`cortex_m3`
       -
       -
       - BLE 5.3
       - 10M PHY
-      -
 
 
 
@@ -413,10 +408,6 @@ RISC-V
 
 
 
-.. image:: ./images/CH32V.png
-    :target: http://special.wch.cn/zh_cn/mcu/
-
-
 .. toctree::
     :maxdepth: 1
 
@@ -495,57 +486,3 @@ USB-PCIe
 
 `WCHISPTool下载工具 <http://www.wch.cn/downloads/WCHISPTool_Setup_exe.html>`_
 
-
-封装形态
-~~~~~~~~~~~~
-
-.. contents::
-    :local:
-
-.. _wch_qfn68:
-
-QFN68
-^^^^^^^^^^^
-
-``CH569W`` ``CH565`` ``CH32V307WC`` ``CH32F208W``
-
-* 封装尺寸：8 x 8 mm, 0.4mm pitch
-
-
-.. _wch_qfn48:
-
-QFN48
-^^^^^^^^^^^
-
-``CH578M`` ``CH583M`` ``CH32V103C``
-
-* 封装尺寸：5 x 5 mm, 0.35mm pitch
-
-.. _wch_qfn40:
-
-QFN40
-^^^^^^^^^^^
-
-``CH565M``
-
-* 封装尺寸：5 x 5 mm, 0.4mm pitch
-
-
-.. _wch_qfn28:
-
-QFN28
-^^^^^^^^^^^
-
-``CH581F`` ``CH573F``
-
-* 封装尺寸：4 x 4 mm, 0.35mm pitch
-
-
-.. _wch_qfn20:
-
-QFN20
-^^^^^^^^^^^
-
-``CH581F`` ``CH573F``
-
-* 封装尺寸：4 x 4 mm, 0.4mm pitch

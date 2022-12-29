@@ -17,9 +17,8 @@ Allwinner
 .. toctree::
     :maxdepth: 1
 
-    S3  <S3>
     F133 <F133>
     V853 <V853>
     V831 <V831>
     R329 <R329>
-
+    XR872  <XR872>

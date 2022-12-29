@@ -16,7 +16,7 @@ HPM6750
 
 Xin简介
 -----------
-`Tags <https://github.com/SoCXin/HPM6750>`_ : :ref:`top` / :ref:`adc` / :ref:`usb_hs`
+`Tags <https://github.com/SoCXin/HPM6750>`_ : :ref:`top` / :ref:`adc` / :ref:`usb_hs` / :ref:`aec_q100`
 
 
 .. image:: ./images/HPM6750s.png
@@ -108,7 +108,7 @@ Xin选择
       - 2xHS/2xGb
       - ￥55
       - ?
-      - BGA289/BGA196
+      - :ref:`BGA289`/BGA196
     * - :ref:`rt1176`
       - :ref:`cortex_m7`
       - 6468(2)
@@ -116,7 +116,7 @@ Xin选择
       - 2xHS/2xGb
       - ￥54
       - 150µA/MHz
-      - BGA289
+      - :ref:`BGA289`
 
 .. _rt1176:
 

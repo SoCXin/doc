@@ -9,7 +9,6 @@ V831
     :local:
     :depth: 1
 
-
 Xin简介
 -----------
 `Tags <https://github.com/SoCXin/V831>`_ : :ref:`top` / :ref:`ethernet`
@@ -103,14 +102,17 @@ Xin选择
 系列对比
 ~~~~~~~~~~~
 
+.. image:: images/VS831.jpg
+    :target: https://zhuanlan.zhihu.com/p/337674885
 
 .. _v833:
 
 V833
 ^^^^^^^^^^^
+``Cortex-A7`` ``1.2 GHz``
 
-.. image:: images/VS831.jpg
-    :target: https://zhuanlan.zhihu.com/p/337674885
+.. image:: images/V833.png
+    :target: https://www.allwinnertech.com/index.php?c=product&id=105
 
 
 型号对比
@@ -121,13 +123,13 @@ Xin应用
 
 .. contents::
     :local:
+    :depth: 1
 
 开发板
 ~~~~~~~~~~~
+``Sipeed`` ``MAIX-II``
 
-MAIX-II
-^^^^^^^^^^^
-``Sipeed``
+:ref:`sipeed_maix` 开发板系列
 
 .. image:: images/B_V831.jpg
 

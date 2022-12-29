@@ -296,7 +296,6 @@ Xin选择
 Performance
 ^^^^^^^^^^^^^
 
-
 .. list-table::
     :header-rows:  1
 
@@ -305,7 +304,7 @@ Performance
       - :ref:`CoreMark`
       - :ref:`sram`/:ref:`flash`
       - USB
-      - AI
+      - AIoT
       - Sleep
       - :ref:`package`
     * - :ref:`esp32s3`

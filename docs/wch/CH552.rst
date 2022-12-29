@@ -3,14 +3,13 @@
 
 CH552
 ========
+`WCH <http://www.wch.cn/products/CH552>`_ : ``8051`` ``24MHz`` ``LDO`` ``Type-C`` ``USB`` ``QFN28``
 
 .. image:: https://github.com/SoCXin/CH552/workflows/demo/badge.svg
     :target: https://github.com/SoCXin/CH552/actions/workflows/demo.yml
 .. image:: https://github.com/SoCXin/CH552/workflows/src/badge.svg
     :target: https://github.com/SoCXin/CH552/actions/workflows/src.yml
 
-* `WCH <http://www.wch.cn/products/CH552>`_ : ``8051`` ``24MHz`` ``LDO`` ``Type-C`` ``USB`` ``QFN28``
-* `Tags <https://github.com/SoCXin/CH552>`_ : :ref:`pop` / :ref:`low` / :ref:`usb_pd`
 
 :ref:`ch552` --> :ref:`ch554` --> :ref:`ch549`
 
@@ -21,6 +20,7 @@ CH552
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/CH552>`_ : :ref:`pop` / :ref:`low` / :ref:`usb_pd`
 
 .. image:: ./images/CH552.png
     :target: http://www.wch.cn/products/CH552.html
@@ -36,7 +36,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：:ref:`level1`
-* 封装规格：TSSOP20/SOP16/QFN16/MSOP10
+* 封装规格：:ref:`TSSOP20`/SOP16/QFN16/MSOP10
 * 运行环境：-40°C to 85°C
 * RAM容量：1 KB
 * Flash容量：16 KB

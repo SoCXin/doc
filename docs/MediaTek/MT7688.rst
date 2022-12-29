@@ -3,26 +3,38 @@
 
 MT7688
 ================
-
-`GitHub <https://github.com/SoCXin/MT7688>`_ : ``MIPS`` ``800MHz`` ``WiFi``
+`MediaTek <https://www.mediatek.cn/>`_ : ``MIPS`` ``580MHz`` ``Wi-Fi`` ``1T1R`` ``802.11b/g/n``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
+`Tags <https://www.mediatek.cn/products/home-networking/mt7688a>`_ : :ref:`router` / :ref:`wifi4` / :ref:`ethernet`
 
+规格参数
+~~~~~~~~~~~
 
-Xin选择
------------
+联发科技MT7688家族芯片整合1T1R 802.11 b/g/n 无线传输功能，采用MIPS®24KEc™/580MHz中央处理器(CPU)、5端口高速以太网络交换器或是单端口超高速以太网络PHY，以及USB 2.0主控制器、PCIe、SD-XC、I2S/PCM和多种适用慢速的I/O装设备接口。MT7688具备双重运行模式，其中MT7688K内建8MB内存，可为迷你路由器、信号中继器、物联网网关、储存、音频应用等提供产业电子化的转钥(TurnKey)模式。
 
+基本信息
+^^^^^^^^^^^
 
+* 发布时间：
+* 参考价格：
+* 制程工艺：
+* 供货周期：
+* 处理性能： :ref:`level5`
+* 运行环境：-40°C to 85°C
+* 封装规格：
+* RAM容量：64 MB (16bit DDR3)
+* ROM容量：
+* Flash容量：64 MB (NAND Flash)
 
-Xin实践
------------
+特征参数
+^^^^^^^^^^^
 
+* 580 MHz :ref:`24KEc`
 
-
-Xin总结
------------
 

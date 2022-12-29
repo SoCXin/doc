@@ -3,9 +3,7 @@
 
 STM32G031
 ===============
-
-* `ST <https://www.st.com/en/microcontrollers-microprocessors.html>`_ : ``Cortex-M0`` ``64MHz`` ``LPUART`` ``LPTIM`` ``RTC`` ``12-bit ADC 2.5Msps``
-* `Tags <https://github.com/SoCXin/STM32G031>`_ : :ref:`low` / :ref:`ulp` / :ref:`adc`
+`ST <https://www.st.com/en/microcontrollers-microprocessors.html>`_ : ``Cortex-M0`` ``64MHz`` ``LPUART`` ``LPTIM`` ``RTC`` ``12-bit ADC 2.5Msps``
 
 
 .. contents::
@@ -14,12 +12,14 @@ STM32G031
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/STM32G031>`_ : :ref:`low` / :ref:`ulp` / :ref:`adc`
 
 .. image:: ./images/STM32G031.jpg
     :target: https://www.st.com/zh/microcontrollers-microprocessors/stm32g0x1.html
 
 .. contents::
     :local:
+    :depth: 1
 
 规格参数
 ~~~~~~~~~~~
@@ -33,7 +33,7 @@ Xin简介
 * 制程工艺：90 nm
 * 供货周期：
 * 处理性能：142 :ref:`CoreMark` (59 :ref:`DMIPS` ) , :ref:`level2`
-* 封装规格：QFN48/QFN32/QFN28/TSSOP20/SON8
+* 封装规格：QFN48/QFN32/QFN28/:ref:`TSSOP20`/:ref:`SON8`
 * 运行环境：-40°C to 105/125°C
 * RAM容量：8 KB
 * Flash容量：32/64 KB

@@ -3,9 +3,7 @@
 
 CH32V203
 ============
-
-* `WCH <http://www.wch.cn/>`_ : ``RISC-V4B`` ``青稞`` ``增强型低功耗`` ``144MHz`` ``2x USB`` ``2x OPA`` ``HarmonyOS`` ``45uA/MHz``
-* `Tags <https://github.com/SoCXin/CH32V203>`_ : :ref:`ulp` / :ref:`low`
+`WCH <http://www.wch.cn/>`_ : ``RISC-V4B`` ``青稞`` ``增强型低功耗`` ``144MHz`` ``2x USB`` ``2x OPA`` ``HarmonyOS`` ``45uA/MHz``
 
 .. contents::
     :local:
@@ -13,6 +11,7 @@ CH32V203
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/CH32V203>`_ : :ref:`ulp` / :ref:`low`
 
 .. image:: ./images/CH32V203.png
     :target: http://www.wch.cn/products/CH32V203.html
@@ -29,7 +28,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：:ref:`LQFP64`/:ref:`LQFP48`/QFN48/LQFP32/QFN28/TSSOP20
+* 封装规格：:ref:`LQFP64`/:ref:`LQFP48`/QFN48/:ref:`LQFP32`/QFN28/TSSOP20
 * 运行环境：-40°C to 85°C
 * RAM容量：10/20 KB
 * Flash容量：32/64 KB

@@ -1,5 +1,5 @@
 
-.. _bt:
+.. _bluetooth:
 
 Bluetooth
 ============
@@ -8,22 +8,22 @@ Bluetooth
 
 以制定蓝牙规范，以推动蓝牙技术为宗旨的跨国组织。它拥有蓝牙的商标，负责认证制造厂商，授权他们使用蓝牙技术与蓝牙标志，但是它本身不负责蓝牙装置的设计、生产及贩售。
 
+在蓝牙应用领域，大致可以分为两大类，一类是以蓝牙音频为主，走高性能路线，一种以物联网低功耗场景为主，特点是性价比和低功耗。
+
+蓝牙从最初的1.0版本逐步升级到5.3版本。其中4.0版本之前的版本是经典蓝牙，从4.0版本开始，低功耗蓝牙诞生了，简称BLE，它与之前的蓝牙设备最显著的区别是，功耗更低。
+
 .. note::
     2022年，全行业的 Bluetooth设备出货量预计将达到 50 亿。
 
-
-.. toctree::
-    :maxdepth: 1
-
-    DA14580 <../miscellaneous/DA14580>
-    AB32VG1 <../miscellaneous/AB32VG1>
-
+.. contents::
+    :local:
+    :depth: 1
 
 .. _ble:
 
 BLE
 ----------
-``低功耗``
+``低功耗蓝牙``
 
 .. list-table::
     :header-rows:  1
@@ -31,11 +31,10 @@ BLE
     * - :ref:`ble`
       - :ref:`architecture`
       - :ref:`frequency`
-      - :ref:`sram`
-      - :ref:`flash`
-      - TX
-      - RX
-      - :ref:`package`
+      - :ref:`sram`/:ref:`flash`
+      - :ref:`consumption`
+      - :ref:`link_budget`
+      - :ref:`bandwidth`
     * - :ref:`ch583`
       - :ref:`wch_riscv4a`
       -
@@ -43,10 +42,8 @@ BLE
       -
       -
       -
-      - QFN28
     * - :ref:`ch573`
       - :ref:`wch_riscv3a`
-      -
       -
       -
       -
@@ -59,7 +56,6 @@ BLE
       -
       -
       -
-      - QFN32
     * - :ref:`at32wb415`
       - :ref:`cortex_m4`
       -
@@ -67,7 +63,20 @@ BLE
       -
       -
       -
-      - :ref:`QFN48`
+    * - :ref:`mm32w073`
+      - :ref:`cortex_m0`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`esp32c2`
+      - :ref:`esp_rv32`
+      -
+      -
+      -
+      -
+      -
     * - :ref:`cc2340`
       - :ref:`cortex_m0`
       -
@@ -75,7 +84,27 @@ BLE
       -
       -
       -
-      - QFN32
+    * - :ref:`ch32v208`
+      - :ref:`wch_riscv4c`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`ab32vg1`
+      - :ref:`riscv`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`da14580`
+      - :ref:`cortex_m0`
+      -
+      -
+      -
+      -
+      -
     * - :ref:`cst92f25`
       - :ref:`cortex_m0`
       -
@@ -83,17 +112,84 @@ BLE
       -
       -
       -
-      -
 
 
+.. toctree::
+    :maxdepth: 1
+
+    DA14580 <../miscellaneous/DA14580>
+    AB32VG1 <../miscellaneous/AB32VG1>
 
 
-版本迭代
+技术特征
+~~~~~~~~~~
+``ISM``
+
+:ref:`ble` 使用2.4GHz工业、科学及医疗(ISM)频段，从2400MHz~2483.5MHz约 83.5MHz的频谱资源。采用的 GFSK 调制方式(髙斯频移键控)，物理层的比特率为 1Mbit/s(1Mbps)。
+
+一共 40 个通道，37 个自适应自动调频数据通道用于两个连接 设备的通讯，3 个固定广播通道分别是 37、 38、 39。
+
+.. _pathloss:
+
+路径损耗
+~~~~~~~~~~
+**pathloss=40+25log(d)**
+
+.. image:: ./images/路径损耗.jpg
+    :target: https://blog.csdn.net/qq_15391889/article/details/87937452
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`pathloss`
+      - 距离(d)
+    * - 50dB
+      - 2.5m
+    * - 60dB
+      - 6.3m
+    * - 70dB
+      - 16m
+    * - 80dB
+      - 40m
+    * - 90dB
+      - 100m
+    * - 100dB
+      - 250m
+    * - 110dB
+      - 630m
+
+:ref:`ble` 规定接收机的灵敏度要高于-70dBm, 由上可知当发射功率为0dBm时，即1mW，接收灵敏度为-70dBm的话，通信距离约为16m。
+
+.. _bt:
+
+BT
 ----------
 
-在蓝牙应用领域，大致可以分为两大类，一类是以蓝牙音频为主，走高性能路线，一种以物联网低功耗场景为主，特点是性价比和低功耗
 
-蓝牙从最初的1.0版本逐步升级到5.3版本。其中4.0版本之前的版本是经典蓝牙，从4.0版本开始，低功耗蓝牙诞生了，简称BLE，它与之前的蓝牙设备最显著的区别是，功耗更低。
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`bt`
+      - :ref:`architecture`
+      - :ref:`frequency`
+      - :ref:`sram`/:ref:`flash`
+      - :ref:`consumption`
+      - :ref:`link_budget`
+      - :ref:`bandwidth`
+    * - :ref:`bl808`
+      - :ref:`xt_c906`
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`ac7916`
+      - :ref:`riscv`
+      -
+      -
+      -
+      -
+      -
 
 .. list-table::
     :header-rows:  1
@@ -221,13 +317,4 @@ Bluetooth 4.2
 
 蓝牙4.2最大通讯速度为1Mbps
 
-
-
-技术规格
-----------
-
-pathloss=40+25log(d)
-
-.. image:: ./images/路径损耗.jpg
-    :target: https://blog.csdn.net/qq_15391889/article/details/87937452
 

@@ -13,24 +13,28 @@ MM32F031
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/MM32F031>`_ : :ref:`low`
 
-:ref:`low` , :ref:`ref030`
 
 
 规格参数
 ~~~~~~~~~~~
 
+.. image:: ./images/MM32F031.jpg
+    :target: https://www.mindmotion.com.cn/products/mm32mcu/mm32f/mm32f_others/mm32f031xxq/
 
 基本参数
 ^^^^^^^^^^^
 
 * 发布时间：
+* 参考价格： `￥4.93 <https://item.szlcsc.com/298293.html>`_
 * 制程工艺：
-* 工作温度：-40°C to +85°C
+* 供货周期：
+* 封装规格：:ref:`LQFP48`/:ref:`LQFP32`/:ref:`QFN32`/:ref:`QFN20`/:ref:`TSSOP20`
 * 处理性能：140 :ref:`CoreMark`
+* 运行环境：-40°C to +85°C
 * RAM容量：4 KB
 * Flash容量：16/32 KB
-* 封装规格：LQFP48/LQFP32/QFN32/QFN20
 
 
 特征参数
@@ -38,8 +42,8 @@ Xin简介
 
 * 72 MHz :ref:`cortex_m0`
 * 16ch 1x12bit ADC (1.0 MSps)
-* 6x timer
-
+* 1 个 16 位通用定时器、1 个 32 位通用定时器、3 个 16 位基本定时器、1个 16 位高级定时器
+* 2 个 I2C 接口、1 个 SPI 接口和 1 个 UART 接口
 
 电源参数
 ^^^^^^^^^^^
@@ -57,15 +61,16 @@ Xin选择
 
 .. contents::
     :local:
+    :depth: 1
 
 
 品牌对比
 ~~~~~~~~~
 
+
+系列对比
+~~~~~~~~~
+
+
 版本对比
 ~~~~~~~~~
-
-型号对比
-~~~~~~~~~
-
-`GitHub <https://github.com/SoCXin/MM32F031>`_

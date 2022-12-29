@@ -9,14 +9,62 @@ Applications
 
     HMI   <hmi>
     ADC   <adc>
-    AIoT   <ai>
-    Motor   <motor>
-    Audio   <audio>
+    AIoT  <aiot>
+    Motor <motor>
+    Audio <audio>
 
 .. _connect:
 
 Connect
 -----------
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`connect`
+      - :ref:`bandwidth`
+      - Distance
+      - :ref:`consumption`
+    * - :ref:`uart`
+      -
+      -
+      -
+    * - :ref:`usb`
+      -
+      -
+      -
+    * - :ref:`ethernet`
+      -
+      -
+      -
+    * - :ref:`802_15_4`
+      -
+      -
+      -
+    * - :ref:`ble`
+      -
+      -
+      -
+    * - :ref:`wifi`
+      -
+      -
+      -
+    * - :ref:`lora`
+      -
+      -
+      -
+    * - :ref:`nbiot`
+      -
+      -
+      -
+    * - :ref:`cat1`
+      -
+      -
+      -
+    * - :ref:`cat4`
+      -
+      -
+      -
 
 .. contents::
     :local:
@@ -27,6 +75,7 @@ Connect
 
 Basic
 ~~~~~~~~~~~~
+``UART/SPI/I2C/I2S``
 
 .. list-table::
     :header-rows:  1
@@ -55,22 +104,7 @@ Basic
 
 Special
 ~~~~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`special`
-      - :ref:`ethernet`
-      - :ref:`plc`
-      -
-      -
-      -
-    * - Bandwidth
-      -
-      -
-      -
-      -
-      -
+``Ethernet`` ``PLC`` ``EIA``
 
 .. toctree::
     :maxdepth: 1
@@ -82,52 +116,40 @@ Special
 
 Wireless
 ~~~~~~~~~~~
+``Wi-Fi`` ``Bluetooth`` ``NB-IoT``
 
 .. list-table::
     :header-rows:  1
 
-    * -
-      - :ref:`802_15_4`
-      - :ref:`zigbee`
-      - :ref:`bt`
-      - :ref:`wifi`
-      - :ref:`lora`
-      - :ref:`nbiot`
-      - :ref:`cat1`
-      - :ref:`cat4`
-    * - 频段
+    * - :ref:`connect`
+      - :ref:`bandwidth`
+      - LongRange
+      - :ref:`consumption`
+    * - :ref:`802_15_4`
       -
       -
       -
+    * - :ref:`ble`
       -
       -
       -
-      -
-      -
-    * - 带宽
-      -
+    * - :ref:`wifi`
       -
       -
       -
+    * - :ref:`lora`
       -
       -
       -
-      -
-    * - 距离
-      -
+    * - :ref:`nbiot`
       -
       -
       -
+    * - :ref:`cat1`
       -
       -
       -
-      -
-    * - 功耗
-      -
-      -
-      -
-      -
-      -
+    * - :ref:`cat4`
       -
       -
       -
@@ -136,7 +158,7 @@ Wireless
     :maxdepth: 1
 
     Bluetooth (BLE) <bluetooth>
-    WPAN (ZigBee) <wpan>
     Wi-Fi (802.11) <wifi>
+    WPAN (ZigBee) <wpan>
     LPWA (LoRa) <lpwa>
 

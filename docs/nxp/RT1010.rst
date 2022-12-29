@@ -3,10 +3,7 @@
 
 RT1010
 =============
-
-
-* `NXP <https://www.nxp.com.cn>`_ : ``Cortex-M7`` ``500MHz``
-* `Tags <https://github.com/SoCXin/RT1010>`_ : :ref:`top` / :ref:`adc` / :ref:`usb_hs`
+`NXP <https://www.nxp.com.cn>`_ : ``Cortex-M7`` ``500MHz``
 
 .. contents::
     :local:
@@ -15,6 +12,7 @@ RT1010
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/RT1010>`_ : :ref:`top` / :ref:`adc` / :ref:`usb_hs`
 
 .. image:: ./images/RT1010.png
     :target: https://www.nxp.com.cn/docs/en/data-sheet/IMXRT1010IEC.pdf

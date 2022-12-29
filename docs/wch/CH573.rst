@@ -3,8 +3,7 @@
 
 CH573
 ===========
-
-`GitHub <https://github.com/SoCXin/CH573>`_ : ``RISC-V3A`` ``USB`` ``BLE4.2`` ``AES128`` ``UART`` ``TouchKey`` ``QFN28``
+`WCH <http://www.wch.cn/>`_ : ``RISC-V3A`` ``USB`` ``BLE4.2`` ``AES128`` ``UART`` ``TouchKey`` ``QFN28``
 
 :ref:`ch573` --> :ref:`ch583`
 
@@ -15,8 +14,8 @@ CH573
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/CH573>`_ : :ref:`ulp` / :ref:`low` / :ref:`ble`
 
-对这款芯片的认知就是：便宜到根本不需要再向下考虑性价比SoC，钳位￥2元档性价比之王
 
 .. image:: ./images/CH573.png
     :target: http://www.wch.cn/products/CH573.html
@@ -32,7 +31,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：:ref:`wch_qfn28` (4x4mm) / :ref:`wch_qfn48` | :ref:`level1`
+* 封装规格：:ref:`QFN28`/:ref:`QFN48`
 * 运行环境：-40°C to 85°C
 * RAM容量：18 KB
 * Flash容量：512 KB
@@ -124,7 +123,7 @@ Xin选择
 
 就该产品的定位而言，国产极致性价比路线，就产品规格而言少有对手，即使有也难以完全对标
 
-就 :ref:`bt` 连接能力而言，国产有较多的新产品出现
+就 :ref:`ble` 连接能力而言，国产有较多的新产品出现
 
 .. list-table::
     :header-rows:  1

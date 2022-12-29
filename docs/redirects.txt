@@ -86,6 +86,10 @@
 /STC8.html -> stc/STC8.html
 /STC32.html -> stc/STC32.html
 /MM32F031.html -> mindmotion/MM32F031.html
+/MM32F016.html -> mindmotion/MM32F016.html
+/MM32F527.html -> mindmotion/MM32F527.html
+/MM32W073.html -> mindmotion/MM32W073.html
+/MM32A0140.html -> mindmotion/MM32A0140.html
 /MM32SPIN360C.html -> mindmotion/MM32SPIN.html
 /PG23.html -> miscellaneous/PG23.html
 /ZML165.html -> miscellaneous/ZML165.html

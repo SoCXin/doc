@@ -16,21 +16,15 @@ Mindmotion
     :local:
     :depth: 1
 
-通用型MCU
+通用产品
 -----------
 
 .. toctree::
     :maxdepth: 1
 
     MM32F031 <MM32F031>
-
-还包括BLE4.2的MM32W0系列和主打低功耗的MM32L系列，都不够出彩。
-
-驱动型MCU
------------
-
-.. toctree::
-    :maxdepth: 1
-
+    MM32F016 <MM32F016>
+    MM32F527 <MM32F527>
     MM32SPIN <MM32SPIN>
-
+    MM32W073 <MM32W073>
+    MM32A0140 <MM32A0140>

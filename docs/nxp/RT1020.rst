@@ -34,7 +34,7 @@ Xin简介
 * 处理性能：1284 :ref:`DMIPS`, 3020 :ref:`CoreMark`
 * RAM容量：1 MB
 * Flash容量：
-* 封装规格：LQFP144/LQFP100
+* 封装规格：:ref:`LQFP144`/:ref:`LQFP100`
 
 .. image:: ./images/RT1020p.png
     :target: https://www.nxp.com.cn/docs/en/data-sheet/IMXRT1020IEC.pdf

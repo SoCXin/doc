@@ -72,15 +72,15 @@ Xindex
       - :ref:`motor`
       - :ref:`adc`
       - :ref:`audio`
-      - :ref:`ai`
-    * - :ref:`matter`
-      -
-      -
-      -
-      -
-      -
-      -
+      - :ref:`aiot`
     * - :ref:`autosar`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`matter`
       -
       -
       -
@@ -99,24 +99,21 @@ Xindex
 .. list-table::
     :header-rows:  1
 
-    * -
+    * - :ref:`classification`
       - :ref:`level1`
       - :ref:`level2`
       - :ref:`level3`
       - :ref:`level4`
       - :ref:`level5`
       - :ref:`level6`
-      - :ref:`level7`
     * - :ref:`cortex_m`
       - √
       - √
       - √
       - √
-      - √
-      - √
-      - X
+      - :ref:`stm32h730`
+      - :ref:`rt1170`
     * - :ref:`cortex_r`
-      -
       -
       -
       -
@@ -128,25 +125,43 @@ Xindex
       -
       -
       -
-      - √
-      - √
-      - √
-    * - :ref:`riscv`
-      - :ref:`ch573`
-      - :ref:`gd32v103`
-      - :ref:`esp32c3`
-      - :ref:`w801`
-      - :ref:`hpm6350`
-      - :ref:`hpm6750`
+      -
+      - :ref:`v831`
+    * - :ref:`xt_c906`
+      - X
+      - X
+      - X
+      - X
+      - :ref:`bl808`
       - :ref:`f133`
-    * - :ref:`mips`
+    * - :ref:`xt_e907`
       - X
       - √
       - √
+      - :ref:`bl808`
       - √
       - √
+    * - :ref:`andes`
+      -
+      -
+      -
+      -
+      - :ref:`hpm6350`
+      - :ref:`hpm6750`
+    * - :ref:`1004KEc`
+      - X
+      - X
+      - X
       - √
       - √
+      - :ref:`mt7621`
+    * - :ref:`qingke`
+      - :ref:`ch32v003`
+      - :ref:`ch569`
+      - :ref:`ch32v303`
+      - X
+      - X
+      - X
 
 
 .. toctree::

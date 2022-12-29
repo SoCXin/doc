@@ -167,7 +167,7 @@ USB PD
       - 5-20V
       - PD3.0/BC1.2
       - 100W
-      - QFN20/QFN16
+      - :ref:`QFN20`/QFN16
     * - `CH234 <http://www.wch.cn/products/CH234.html>`_
       - 5-12V
       - PD3.0/BC1.2

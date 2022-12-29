@@ -4,14 +4,16 @@
 CH557
 ==========
 
-* 关键词：``USB`` ``E8051`` ``24MHz`` ``LDO`` ``Type-C``
-* 资源库：`GitHub <https://github.com/SoCXin/CH557>`_
+`WCH <http://www.wch.cn/products/CH563>`_ :  ``E8051`` ``24MHz`` ``USB`` ``LDO`` ``Type-C``
 
 .. contents::
     :local:
+    :depth: 1
+
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/CH557>`_ : :ref:`usb`
 
 
 .. image:: ./images/CH557.png

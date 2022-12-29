@@ -17,9 +17,6 @@ Xin简介
 蓝讯骄龙 AB32VG1 是中科蓝讯在 2020 RT-Thread 开发者大会上首度面向通用市场发布的其自主 RISC-V 内核 32 位 MCU 芯片，AB32VG1 主频 120M ，片上集成 RAM 192K, Flash 4Mbit，ADC，PWM，USB，UART，IIC 等资源。
 
 
-.. contents::
-    :local:
-
 规格参数
 ~~~~~~~~~~~
 

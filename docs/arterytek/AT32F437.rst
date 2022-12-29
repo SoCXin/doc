@@ -31,7 +31,7 @@ Xin简介
 * 制程工艺：55nm
 * 供货周期：
 * 处理性能：630 :ref:`CoreMark` , :ref:`level4`
-* 封装规格：:ref:`LQFP64`/LQFP100/LQFP144
+* 封装规格：:ref:`LQFP64`/:ref:`LQFP100`/LQFP144
 * 运行环境：-40 to 105°C
 * RAM容量：128 ~ 512 KB
 * Flash容量：256/1024/4032 KB

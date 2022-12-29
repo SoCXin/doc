@@ -13,44 +13,44 @@ Wi-Fi
       - :ref:`hot`
       - :ref:`pop`
     * - Broadcom
-      - 
+      -
       -
       -
     * - Qualcomm
-      - 
+      -
       -
       -
     * - Marvell
-      - 
+      -
       -
       -
     * - :ref:`mediatek`
-      - 
+      -
       -
       -
     * - :ref:`ti`
-      - 
+      -
       -
       -
     * - :ref:`silabs`
-      - 
+      -
       -
       -
     * - :ref:`realtek`
-      - 
+      -
       -
       -
 
     * - :ref:`espressif`
-      - 
+      -
       -
       -
     * - :ref:`allwinner`
-      - 
+      -
       -
       -
     * - 新岸线
-      - 
+      -
       -
       -
 
@@ -76,7 +76,7 @@ Wi-Fi4
       - :ref:`esp_rv32`
       - 407.22
       - 400KB/384KB
-      - 
+      -
       -
       - :ref:`esp_qfn32`
     * - :ref:`hi3861`
@@ -111,7 +111,7 @@ Wi-Fi4
       - :ref:`xt804`
       -
       - 288KB/2 MB
-      - 
+      -
       -
       - :ref:`QFN32`
     * - :ref:`w801`
@@ -119,14 +119,14 @@ Wi-Fi4
       -
       - 288KB/2 MB
       -
-      - 
+      -
       - :ref:`QFN56`
     * - :ref:`cc3200`
       - :ref:`cortex_m4`
       -
       - 256KB/2 MB
       -
-      - 
+      -
       - :ref:`QFN56`
     * - :ref:`gd32w515`
       - :ref:`cortex_m33`
@@ -135,7 +135,13 @@ Wi-Fi4
       -
       -
       - :ref:`QFN56`
-
+    * - :ref:`xr872`
+      - :ref:`cortex_m33`
+      -
+      -
+      -
+      -
+      - :ref:`QFN56`
 
 .. toctree::
     :maxdepth: 1

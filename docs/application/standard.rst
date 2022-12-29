@@ -24,11 +24,59 @@ AUTOSAR (Automotive Open System Architecture) 成立于2003年，致力于制定
 
 三个文档组：Classic Platform(CP)、Adaptive Platform(AP)、Foundation(FO)
 
+.. contents::
+    :local:
+    :depth: 1
+
+.. _aec_q100:
+
+AEC-Q100
+~~~~~~~~~~
+
+汽车电子协会AEC(Automotive Electronics Council) 由Chrysler(克莱斯勒)、福特(Ford)和通用(GM)发起并在1994年成立。
+
+AEC-Q即国际汽车电子协会车规验证标准，针对不同的汽车电子零部件类型，有不同的AECQ标准：
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`aec_q100`
+        - 集成电路IC
+    * - AEC-Q101
+        - 分立半导体器件，比如二、三极管、MOS、IGBT、TVS管等
+    * - AEC-Q102
+        - 分立光电器件，比如LED、激光组件、光电二极管、光电晶体管等
+    * - AEC-Q103
+        - 传感器
+    * - AEC-Q104
+        - 多芯片模块
+    * - AEC-Q200
+        - 被动器件，比如电阻、电容和电感
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`aec_q100`
+      - :ref:`architecture`
+      - :ref:`frequency`
+      - :ref:`sram`/:ref:`flash`
+    * - :ref:`ac7815`
+      - :ref:`cortex_m3`
+      - 100 MHz
+      - 64KB/256KB
+    * - :ref:`mm32a0140`
+      - :ref:`cortex_m0`
+      - 72 MHz
+      - 8KB/64KB
+
+
+
+
 .. toctree::
     :maxdepth: 1
 
     AC7815 <../miscellaneous/AC7815>
-
 
 .. _matter:
 
@@ -47,7 +95,7 @@ Matter 基于IP协议（例如Wi-Fi、以太网和Thread）而构建，提供了
 .. image:: ./images/chip.png
 
 * Matter 离不开基于IP 的网络协议，而Zigbee 有自己的网络协议
-* Matter 还通过 :ref:`bt` 和 :ref:`wifi` 二维码定义了最适合预期用户设置场景的预配方案，而Zigbee的标准调试流程使用其原生的 :ref:`802_15_4` 无线技术。
+* Matter 还通过 :ref:`ble` 和 :ref:`wifi` 二维码定义了最适合预期用户设置场景的预配方案，而Zigbee的标准调试流程使用其原生的 :ref:`802_15_4` 无线技术。
 
 .. note::
     根据ABI research的最新预测，在2022年到2030年这个区间内，Matter设备的出货量将达到550亿。

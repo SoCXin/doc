@@ -31,7 +31,7 @@ CH32F208基于 :ref:`cortex_m3` 内核的无线型微控制器，主频高达144
 * 制程工艺：
 * 供货周期：
 * 处理性能：:ref:`level3`
-* 封装规格：LQFP64M/QFN68/QFN48/QFN28
+* 封装规格：:ref:`LQFP64`/QFN68/QFN48/QFN28
 * 运行环境：-40°C to 85°C
 * RAM容量：64 KB
 * Flash容量：128 KB

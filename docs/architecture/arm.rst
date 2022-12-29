@@ -16,21 +16,22 @@ ARM
 .. toctree::
     :maxdepth: 1
 
-    高级处理器总线架构AMBA <amba>
+    AMBA <amba>
 
 
-协同设计
+AVH
 ~~~~~~~~~~~
 
-https://avh.arm.com/
+`Arm Virtual Hardware <https://avh.arm.com/>`_
 
 
-版本简介
+
+版本迭代
 -------------
-
 
 .. contents::
     :local:
+    :depth: 1
 
 .. _armv7:
 
@@ -42,6 +43,8 @@ ARMv7
 
 .. note::
     ARM公司在经典处理器ARM11以后的产品改用Cortex命名，并分成A、R和M三类，旨在为各种不同的市场提供服务。Cortex系列属于ARMv7架构，这是2010年止ARM公司最新的指令集架构。
+
+.. image:: ./images/cm-instruction.png
 
 
 .. _armv8:
@@ -56,6 +59,10 @@ ARMv8是ARM版本升级以来最大的一次改变，ARMv8的架构继承以往A
 
 从2011年11月发布ARMv8开始，ARMv8已经走过将近10年时间。ARMv8架构的主要特点是增加对64位指令集的支持，包括目前性能最强的Cortex-X1/A78，都是基于ARMv8.x指令集打造。
 
+.. toctree::
+    :maxdepth: 1
+
+    STAR-MC
 
 .. _armv9:
 
@@ -70,26 +77,47 @@ ARMv9指令集在兼容ARMv8的基础上，提升处理器性能，同时提升�
 .. toctree::
     :maxdepth: 1
 
-    更早的传统系列     <classic>
+    早期经典系列     <classic>
 
 
 
-系列简介
+系列分类
 -------------
 
+从 :ref:`armv7` 开始，架构定义了三大分工明确的系列：
 
-从ARMv7开始，架构定义了三大分工明确的系列：
-
-* :ref:`cortex_a` 系列面向尖端的基于虚拟内存的操作系统和用户应用
-* :ref:`cortex_r` 系列针对实时系统
-* :ref:`cortex_m` 系列对微控制器
-
-
+.. contents::
+    :local:
+    :depth: 1
 
 .. _cortex_a:
 
 Cortex-A
 ~~~~~~~~~~~
+
+面向尖端的基于虚拟内存的操作系统和用户应用
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`cortex_a`
+      - :ref:`frequency`
+      - :ref:`CoreMark`
+      - :ref:`performance`
+    * - :ref:`cortex_a7`
+      -
+      -
+      -
+    * - :ref:`cortex_a53`
+      -
+      -
+      -
+    * - :ref:`cortex_a72`
+      -
+      -
+      -
+
+
 
 
 .. toctree::
@@ -105,12 +133,12 @@ Cortex-A
 Cortex-R
 ~~~~~~~~~~~
 
+针对实时系统
+
 .. toctree::
     :maxdepth: 1
 
     cortexR5
-
-
 
 
 .. _cortex_m:
@@ -118,20 +146,18 @@ Cortex-R
 Cortex-M
 ~~~~~~~~~~~
 
-.. image:: ./images/cm.png
+微控制器系列
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`cortex_m`
       - Pipeline
-      - ISA
       - Version
       - Interrupts
       - DMIPS/MHz
       - CoreMark/MHz
     * - :ref:`cortex_m0`
-      -
       -
       - ARMv6-M
       - 32
@@ -139,13 +165,11 @@ Cortex-M
       - 2.46
     * - :ref:`cortex_m23`
       -
-      -
       - :ref:`armv8`
       - 240
       - 1.03
       - 2.64
     * - :ref:`cortex_m3`
-      -
       -
       - :ref:`armv7`
       - 240
@@ -153,13 +177,11 @@ Cortex-M
       - 3.45
     * - :ref:`cortex_m4`
       -
-      -
       - :ref:`armv7`
       - 240
       - 1.26
       - 3.54
     * - :ref:`cortex_m33`
-      -
       -
       - :ref:`armv8`
       - 480
@@ -167,28 +189,24 @@ Cortex-M
       - 4.10
     * - :ref:`cortex_m55`
       -
-      -
       - :ref:`armv8`
       - 480
       - 1.69
       - 4.40
     * - :ref:`cortex_m7`
       - 3
-      -
       - :ref:`armv7`
       - 240
       - 2.31
       - 5.29
     * - :ref:`cortex_m85`
       -
-      -
       - :ref:`armv8`
       - 480
       - 3.13
       - 6.28
 
-
-.. image:: ./images/cm-instruction.png
+.. image:: ./images/cm.png
 
 
 .. toctree::

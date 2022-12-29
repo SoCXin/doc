@@ -3,14 +3,19 @@
 
 MT7621
 ================
-
-`GitHub <https://github.com/SoCXin/MT7621>`_ : ``MIPS`` ``1004KEc`` ``880MHz`` ``Gigabit``
+`MediaTek <https://www.mediatek.cn/>`_ : ``MIPS`` ``1004KEc`` ``880MHz`` ``Gigabit``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/MT7621>`_ : :ref:`pop`
+
+.. contents::
+    :local:
+    :depth: 1
 
 
 规格参数
@@ -21,10 +26,6 @@ MIPS 1004KEc™ 双核心中心处理器 (CPU)、5 端口 Gigabit 以太网络�
 
 
 
-规格参数
-~~~~~~~~~~~
-
-
 基本信息
 ^^^^^^^^^^^
 
@@ -33,7 +34,7 @@ MIPS 1004KEc™ 双核心中心处理器 (CPU)、5 端口 Gigabit 以太网络�
 * 参考价格：
 * 制程工艺：
 * 供货周期：
-* 处理性能： :ref:`level4`
+* 处理性能： :ref:`level6`
 * 运行环境：-40°C to 85°C
 * 封装规格：
 * RAM容量：64 MB (16bit DDR3)

@@ -1,7 +1,7 @@
 
-.. _ai:
+.. _aiot:
 
-AI
+AIoT
 ============
 ``TensorFlow``
 
@@ -59,76 +59,57 @@ Cube-AI
 
 
 
-边缘平台
+算力芯片
 -----------
-
-
-
-可以在端侧部署算法的嵌入式平台，相对传统的计算分离体系，拥有更高的集成度和灵活度
-
-.. contents::
-    :local:
-    :depth: 1
-
-
-MCU平台
-~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
+    * - :ref:`aiot`
       - :ref:`architecture`
-      - Freq
-      - RAM
-      - Flash
-      - ML(INT8)
-      - :ref:`package`
+      - :ref:`frequency`
+      - :ref:`sram`/:ref:`flash`
+      - :ref:`level_npu`
     * - :ref:`k210`
       - :ref:`riscv`
       - 400 MHz
       - 8 MB
-      -
       - 0.23TOPS
-      - BGA144
     * - :ref:`k510`
       - :ref:`riscv`
       - 800 MHz
       -
-      -
       - 2.5TOPS
-      - BGA144
     * - :ref:`v831`
       - :ref:`cortex_a7`
       - 800 MHz
       - 64MB DDR2
       -
-      -
-      - :ref:`QFN88`
     * - :ref:`r329`
       - :ref:`cortex_a53`
       - 1.50 GHz
       - 64MB DDR2
       -
+    * - :ref:`eai80`
+      - :ref:`cortex_m4`
+      - 200 MHz
+      - 8 MB
+      - :ref:`eai80_npu`
+    * - :ref:`bl808`
+      - :ref:`xt_c906`
+      - 480 MHz
       -
-      - BGA231
+      - 100GOPS(BLAI-100)
     * - :ref:`ssd201`
       - :ref:`cortex_a7`
       - 1.20 GHz
       - 64MB DDR3
       -
-      -
-      - LFBGA231
-    * - :ref:`eai80`
-      - :ref:`cortex_m4`
-      - 200 MHz
-      - 8 MB
-      - 8 MB
-      - :ref:`eai80_npu`
-      - :ref:`14x14mm`
 
 
-
+.. contents::
+    :local:
+    :depth: 1
 
 
 APU平台
@@ -137,26 +118,17 @@ APU平台
 .. list-table::
     :header-rows:  1
 
-    * - #define
+    * - :ref:`linux`
       - :ref:`architecture`
+      - :ref:`frequency`
       - :ref:`CoreMark`
-      - High
-      - WiFi
-      - Rate
-      - More
-      - :ref:`package`
+      - :ref:`level_npu`
     * - :ref:`bcm2711`
       -
       -
       -
       -
-      -
-      -
-      -
     * - :ref:`a311d`
-      -
-      -
-      -
       -
       -
       -

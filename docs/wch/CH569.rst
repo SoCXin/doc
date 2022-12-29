@@ -3,9 +3,7 @@
 
 CH569
 ===========
-
-* `WCH <http://www.wch.cn/>`_ : ``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``Ethernet`` ``EMMC`` ``DVP``
-* `Tags <https://github.com/SoCXin/CH569>`_ : :ref:`usb`
+`WCH <http://www.wch.cn/>`_ : ``RISC-V3A`` ``120MHz`` ``USB 3.0`` ``HSPI`` ``SerDes`` ``10Mbps(PHY)`` ``1Gbps(MAC)`` ``Ethernet`` ``EMMC`` ``DVP``
 
 .. contents::
     :local:
@@ -13,6 +11,7 @@ CH569
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/CH569>`_ : :ref:`usb`
 
 .. image:: ./images/CH569.png
     :target: http://www.wch.cn/products/CH569.html
@@ -30,7 +29,7 @@ Xin简介
 * 制程工艺：
 * 供货周期：
 * 处理性能：
-* 封装规格：:ref:`wch_qfn68`
+* 封装规格：QFN68
 * 运行环境：-40°C to 85°C
 * RAM容量：16 KB + 32/64/96 KB
 * Flash容量：448 KB
@@ -38,7 +37,7 @@ Xin简介
 
 
 .. hint::
-    :ref:`ch569` 目前仅有一个 :ref:`wch_qfn68` 封装，而 :ref:`ch565` 具有QFN68/QFN40
+    :ref:`ch569` 目前仅有一个 QFN68 封装，而 :ref:`ch565` 具有QFN68/QFN40
 
 
 特征参数

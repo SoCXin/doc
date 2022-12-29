@@ -42,7 +42,7 @@ Xin简介
 
 * 320 MHz :ref:`riscv` Dual Core，浮点DSP处理器
 *  :ref:`wifi` 802.11b/g/n
-* :ref:`bt` 双模（支持蓝牙EDR、蓝牙BLE5.2）
+* :ref:`bt` + :ref:`ble` 双模（支持蓝牙EDR、蓝牙BLE5.2）
 * 片上集成了共578K字节SRAM，部分封装支持2/8M字节SDRABM
 * 支持DVP/BT656图像传感器，最大支持720P分辨率
 * 支持ADC、DAC、LINEIN、IIS、PDM、SPDIF音频接口，多种音效处理，双麦克风打断唤醒

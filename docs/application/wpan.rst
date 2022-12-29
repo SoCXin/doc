@@ -2,8 +2,7 @@
 
 WPAN
 ============
-
-``Bluetooth`` ``Zigbee`` ``RFID`` ``UWB`` ``NFC`` ``54Mbit/s`` ``802.11``
+``Bluetooth`` ``Zigbee`` ``RFID`` ``UWB`` ``NFC`` ``54Mbit/s`` ``802.15.4``
 
 无线个域网就是在个人周围空间形成的无线网络，现通常指覆盖范围在10m半径以内的短距离无线网络，尤其是指能在便携式消费者电器和通信设备之间进行短距离特别连接的自组织网。WPAN被定位于短距离无线通信技术，但根据不同的应用场合又分为高速WPAN（HR－WPAN）和低速WPAN（LR－WPAN）两种。
 
@@ -12,7 +11,7 @@ WPAN
 
     * - :ref:`wpan`
       - :ref:`802_15_4`
-      - :ref:`bt`
+      - :ref:`bluetooth`
       - :ref:`zigbee`
       - :ref:`rfid`
       - :ref:`uwb`
@@ -58,7 +57,25 @@ WPAN
       - :ref:`esp_rv32`
       -
       -
-      - QFN40
+      -
+
+
+.. contents::
+    :local:
+    :depth: 1
+
+
+.. _zigbee:
+
+ZigBee
+~~~~~~~~~~~
+``802.15.4``
+
+.. _thread:
+
+Thread
+~~~~~~~~~~~
+``802.15.4``
 
 
 .. _rfid:
@@ -89,12 +106,6 @@ NDEF
 
 是一种标准化的数据格式，可用于在任何兼容的NFC设备与另一个NFC设备或标签之间交换信息。 数据格式由NDEF消息和NDEF记录组成。 该标准由NFC论坛维护，可以免费获得参考，但需要接受许可协议才能下载。
 
-
-.. _zigbee:
-
-ZigBee
-----------
-``802.15.4``
 
 
 .. _uwb:

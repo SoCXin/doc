@@ -3,14 +3,15 @@
 
 R329
 =============
-
-`GitHub <https://github.com/SoCXin/R329>`_ : ``Allwinner`` ``Cortex-A53`` ``1.5GHz`` ``Dual-core`` ``AI`` ``HiFi4`` ``Tina`` ``sunxi``
+`Allwinner <https://www.allwinnertech.com/>`_ : ``Allwinner`` ``Cortex-A53`` ``1.5GHz`` ``Dual-core`` ``AIoT`` ``HiFi4`` ``Tina`` ``sunxi``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/R329>`_ : :ref:`top`
 
 .. image:: ./images/R329.jpg
     :target: https://www.allwinnertech.com/index.php?c=product&a=index&id=91

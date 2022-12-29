@@ -3,9 +3,7 @@
 
 CH549
 =========
-
-* `WCH <http://www.wch.cn/>`_ : ``8051`` ``48MHz`` ``USB FS OTG`` ``4x UART`` ``LDO`` ``USB-PD``
-* `Tags <https://github.com/SoCXin/CH549>`_ : :ref:`low` / :ref:`usb_pd`
+`WCH <http://www.wch.cn/>`_ : ``8051`` ``48MHz`` ``USB FS OTG`` ``4x UART`` ``LDO`` ``USB-PD``
 
 :ref:`ch554` --> :ref:`ch549`
 
@@ -15,6 +13,7 @@ CH549
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/CH549>`_ : :ref:`low` / :ref:`usb_pd`
 
 .. image:: ./images/CH549.png
     :target: http://www.wch.cn/products/CH549.html

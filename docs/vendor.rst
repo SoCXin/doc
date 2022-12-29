@@ -119,8 +119,14 @@ Vendor
       - :ref:`r329`
       - :ref:`f133`
       - :ref:`v831`
-      -
+      - :ref:`xr872`
       - :ref:`v853`
+    * - :ref:`mindmotion`
+      - :ref:`mm32f016`
+      - :ref:`mm32spin360`
+      - :ref:`mm32a0140`
+      - :ref:`mm32f031`
+      - :ref:`mm32f527`
 
 .. toctree::
     :maxdepth: 1

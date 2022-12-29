@@ -4,7 +4,7 @@
 AC7815
 ===============
 
-`autochips <https://www.autochips.com/>`_ : ``AEC-Q100 Grade 1``
+`autochips <https://www.autochips.com/>`_ : ``Cortex-M3`` ``100MHz`` ``AEC-Q100 Grade 1``
 
 .. contents::
     :local:
@@ -13,17 +13,17 @@ AC7815
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/AC7815>`_ : :ref:`aec_q100`
 
-AC781x系列是基于ARM® Cortex-M3内核的车规级MCU，主要应用于汽车电子和高可靠性工业领域。AC781x符合AEC-Q100规范，是国内首颗32bit车规MCU，具备出色的EMC/ESD能力。
 
 .. image:: ./images/AC7815.png
     :target: https://github.com/SoCXin/AC7815
 
-.. contents::
-    :local:
 
 规格参数
 ~~~~~~~~~~~
+
+AC781x系列是基于ARM® Cortex-M3内核的车规级MCU，主要应用于汽车电子和高可靠性工业领域。AC781x符合AEC-Q100规范，是国内首颗32bit车规MCU，具备出色的EMC/ESD能力。
 
 
 基本参数
@@ -42,7 +42,7 @@ AC781x系列是基于ARM® Cortex-M3内核的车规级MCU，主要应用于汽�
 特征参数
 ^^^^^^^^^^^
 
-* 100 MHz :ref:`cortex_m4`
+* 100 MHz :ref:`cortex_m3`
 * 兼容CAN2.0B x2, HW LIN x1, UART LIN x1
 * 增强型闪存加速引擎
 

@@ -77,7 +77,7 @@ Xin选择
       - 2xHS/2xGb
       -
       -
-      - BGA289
+      - :ref:`BGA289`
     * - :ref:`hpm6750`
       - :ref:`riscv`
       - 9220(2)
@@ -85,7 +85,7 @@ Xin选择
       - 2xHS/2xGb
       -
       -
-      - BGA289
+      - :ref:`BGA289`
 
 系列对比
 ~~~~~~~~~~

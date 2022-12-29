@@ -1,7 +1,7 @@
 
 .. _mm32spin360:
 
-MM32SPIN360C
+MM32SPIN360
 ===============
 
 `mindmotion <https://www.mindmotion.com.cn/>`_ : ``Cortex-M0`` ``96MHz``
@@ -12,8 +12,8 @@ MM32SPIN360C
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/MM32SPIN360>`_ : :ref:`motor`
 
-:ref:`sip` 实现单芯片大功率驱动
 
 规格参数
 ~~~~~~~~~~~
@@ -54,17 +54,22 @@ Xin选择
 
 .. contents::
     :local:
+    :depth: 1
 
 
 品牌对比
 ~~~~~~~~~
 
-版本对比
+系列对比
 ~~~~~~~~~
 
 预驱 MCU 内部集成预驱，最高支持 200V 电压。芯片内部集成 LDO、OPAMP、COMP、高速 ADC、电机专用 PWM 模块
 
 驱动 MCU 针对低压，低功率电机应用专门设计，具有极高的集成度。芯片内部集成 MOSFET、LDO、OPAMP、COMP、高速 ADC、电机专用 PWM 模块
+
+.. contents::
+    :local:
+    :depth: 1
 
 .. _mm32spin222:
 

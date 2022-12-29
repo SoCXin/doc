@@ -137,19 +137,23 @@ Router
       -
       - Switch
       - :ref:`eth_mac`
-      -
     * - :ref:`mt7622`
       - :ref:`cortex_a53`
       -
       -
       - 5p GbE
       - SGMII/RGMII
-      -
     * - :ref:`mt7623`
       - :ref:`cortex_a7`
       -
       -
       - 5p GbE
       - SGMII/RGMII
+    * - :ref:`mt7688`
+      - :ref:`24KEc`
       -
+      -
+      - 5p 100Mbps
+      -
+
 

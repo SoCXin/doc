@@ -3,9 +3,7 @@
 
 SWM32S
 ===============
-
-* `Synwit <https://www.synwit.cn/>`_ : ``Cortex-M4`` ``120MHz`` ``800×480`` ``QFP64``
-* `Tags <https://github.com/SoCXin/SWM320>`_ : :ref:`hmi`
+`Synwit <https://www.synwit.cn/>`_ : ``Cortex-M4`` ``120MHz`` ``800×480`` ``QFP64``
 
 .. contents::
     :local:
@@ -13,6 +11,7 @@ SWM32S
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/SWM320>`_ : :ref:`hmi`
 
 .. image:: ./images/SWM32S.jpg
     :target: https://www.synwit.cn/gaishu189/
