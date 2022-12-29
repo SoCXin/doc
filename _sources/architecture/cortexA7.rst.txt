@@ -3,27 +3,27 @@
 Cortex-A7
 =============
 
-.. contents::
-    :local:
-
 .. list-table::
     :header-rows:  1
 
     * - :ref:`cortex_a7`
-      - DMIPS
-      - RAM
-      - Cache
-      - GPU
-      - SPI
-      - USB
-      - Ethernet
-      - Interface
+      - :ref:`frequency`
+      - :ref:`CoreMark`
+      - :ref:`performance`
     * - :ref:`v831`
+      - 800 MHz
+      -
+      -
+    * - :ref:`ssd201`
+      - 1.2 GHz
+      -
+      -
+    * - :ref:`ax620a`
       -
       -
       -
+    * - :ref:`mt7623`
       -
       -
       -
-      -
-      -
+

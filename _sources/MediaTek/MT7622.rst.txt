@@ -3,14 +3,17 @@
 
 MT7622
 ================
-
-`GitHub <https://github.com/SoCXin/MT7622>`_ : ``Cortex-A53`` ``Dual Core`` ``SGMII/RGMII`` ``Gigabit`` ``802.11n`` ``Bluetooth 5.0``
+`MediaTek <https://www.mediatek.cn/>`_ : ``Cortex-A53`` ``Dual Core`` ``SGMII/RGMII`` ``Gigabit`` ``802.11n`` ``Bluetooth 5.0``
 
 .. contents::
     :local:
+    :depth: 1
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/MT7622>`_ : :ref:`pop`
+
+
 
 全球首款采用4x4n 802.11n /蓝牙5.0系统芯片的系统，专为高性能网络设备而设计，适用于多种应用，包括路由器/中继器，家庭自动化网关，无线音频和无线存储。高度通用的芯片组为流行的4X4双频和三频道路由器/中继器提供了一个单一平台，为寻求构建顶级网络设备的制造商提供了最大的灵活性。该平台通过成本效益高的方法将高性能和广泛集成的功能相结合。
 
@@ -35,7 +38,7 @@ MT7622引入了一流的功能，如蓝牙5.0和专用的网络加速引擎与�
 * 参考价格：
 * 制程工艺：
 * 供货周期：
-* 处理性能：:ref:`level5`
+* 处理性能：:ref:`level6`
 * 运行环境：-40°C to 85°C
 * 封装规格：
 * RAM容量：1 GB (16bit DDR3)

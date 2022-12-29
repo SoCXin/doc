@@ -4,7 +4,7 @@
 AMBA
 ====================
 
-**AMBA (Advanced Microcontroller Bus Architecture) 高级处理器总线架构**
+**高级处理器总线架构AMBA (Advanced Microcontroller Bus Architecture)**
 
 * ASB (Advanced System Bus) 高级系统总线
 * APB (Advanced Peripheral Bus) 高级外围总线

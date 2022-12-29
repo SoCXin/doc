@@ -140,16 +140,16 @@
 <span id="id1"></span><h1>ARM<a class="headerlink" href="#arm" title="Permalink to this heading">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#cortex-spec" id="id13">架构简介</a></p></li>
-<li><p><a class="reference internal" href="#id3" id="id14">版本迭代</a></p></li>
-<li><p><a class="reference internal" href="#id9" id="id15">系列分类</a></p></li>
+<li><p><a class="reference internal" href="#cortex-spec" id="id14">架构简介</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id15">版本迭代</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id16">系列分类</a></p></li>
 </ul>
 </div>
 <section id="cortex-spec">
-<span id="id2"></span><h2><a class="toc-backref" href="#id13">架构简介</a><a class="headerlink" href="#cortex-spec" title="Permalink to this heading">¶</a></h2>
+<span id="id2"></span><h2><a class="toc-backref" href="#id14">架构简介</a><a class="headerlink" href="#cortex-spec" title="Permalink to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="amba.html">高级处理器总线架构AMBA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="amba.html">AMBA</a></li>
 </ul>
 </div>
 <section id="avh">
@@ -158,16 +158,16 @@
 </section>
 </section>
 <section id="id3">
-<h2><a class="toc-backref" href="#id14">版本迭代</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id15">版本迭代</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <div class="contents local topic" id="id4">
 <ul class="simple">
-<li><p><a class="reference internal" href="#armv7" id="id16">ARMv7</a></p></li>
-<li><p><a class="reference internal" href="#armv8" id="id17">ARMv8</a></p></li>
-<li><p><a class="reference internal" href="#armv9" id="id18">ARMv9</a></p></li>
+<li><p><a class="reference internal" href="#armv7" id="id17">ARMv7</a></p></li>
+<li><p><a class="reference internal" href="#armv8" id="id18">ARMv8</a></p></li>
+<li><p><a class="reference internal" href="#armv9" id="id19">ARMv9</a></p></li>
 </ul>
 </div>
 <section id="armv7">
-<span id="id5"></span><h3><a class="toc-backref" href="#id16">ARMv7</a><a class="headerlink" href="#armv7" title="Permalink to this heading">¶</a></h3>
+<span id="id5"></span><h3><a class="toc-backref" href="#id17">ARMv7</a><a class="headerlink" href="#armv7" title="Permalink to this heading">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>ARM公司在经典处理器ARM11以后的产品改用Cortex命名，并分成A、R和M三类，旨在为各种不同的市场提供服务。Cortex系列属于ARMv7架构，这是2010年止ARM公司最新的指令集架构。</p>
@@ -175,7 +175,7 @@
 <img alt="../_images/cm-instruction.png" src="../_images/cm-instruction.png" />
 </section>
 <section id="armv8">
-<span id="id7"></span><h3><a class="toc-backref" href="#id17">ARMv8</a><a class="headerlink" href="#armv8" title="Permalink to this heading">¶</a></h3>
+<span id="id7"></span><h3><a class="toc-backref" href="#id18">ARMv8</a><a class="headerlink" href="#armv8" title="Permalink to this heading">¶</a></h3>
 <p>ARMv8是ARM版本升级以来最大的一次改变，ARMv8的架构继承以往ARMv7与之前处理器技术的基础，除了现有的16/32bit的Thumb2指令支持外，也向前兼容现有的A32(ARM 32bit)指令集，扩充了基于64bit的AArch64架构，除了新增A64(ARM 64bit)指令集外，也扩充了现有的A32(ARM 32bit)和T32(Thumb2 32bit）指令集；</p>
 <a class="reference external image-reference" href="https://blog.csdn.net/tanli20090506/article/details/71435777"><img alt="../_images/armv8.png" src="../_images/armv8.png" /></a>
 <p>从2011年11月发布ARMv8开始，ARMv8已经走过将近10年时间。ARMv8架构的主要特点是增加对64位指令集的支持，包括目前性能最强的Cortex-X1/A78，都是基于ARMv8.x指令集打造。</p>
@@ -186,7 +186,7 @@
 </div>
 </section>
 <section id="armv9">
-<span id="id8"></span><h3><a class="toc-backref" href="#id18">ARMv9</a><a class="headerlink" href="#armv9" title="Permalink to this heading">¶</a></h3>
+<span id="id8"></span><h3><a class="toc-backref" href="#id19">ARMv9</a><a class="headerlink" href="#armv9" title="Permalink to this heading">¶</a></h3>
 <p>ARMv9指令集在兼容ARMv8的基础上，提升处理器性能，同时提升安全性、增强矢量计算、机器学习及数字信号处理。基于ARMv9开发的处理器预计将在2022年初正式商用，可能高通下一代骁龙895等SoC。</p>
 <p>与上一代的ARMv8相比，ARMv9处理器将不再局限于移动/嵌入式市场，现已经扩展到PC、HPC高性能计算、深度学习等新市场，以满足全球对功能日益强大的安全、人工智能(AI)和无处不在的专用处理的需求。</p>
 <div class="toctree-wrapper compound">
@@ -197,15 +197,54 @@
 </section>
 </section>
 <section id="id9">
-<h2><a class="toc-backref" href="#id15">系列分类</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
-<p>从ARMv7开始，架构定义了三大分工明确的系列：</p>
+<h2><a class="toc-backref" href="#id16">系列分类</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
+<p>从 <a class="reference internal" href="#armv7"><span class="std std-ref">ARMv7</span></a> 开始，架构定义了三大分工明确的系列：</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#cortex-a"><span class="std std-ref">Cortex-A</span></a> 系列面向尖端的基于虚拟内存的操作系统和用户应用</p></li>
 <li><p><a class="reference internal" href="#cortex-r"><span class="std std-ref">Cortex-R</span></a> 系列针对实时系统</p></li>
 <li><p><a class="reference internal" href="#cortex-m"><span class="std std-ref">Cortex-M</span></a> 系列对微控制器</p></li>
 </ul>
+<div class="contents local topic" id="id10">
+<ul class="simple">
+<li><p><a class="reference internal" href="#cortex-a" id="id20">Cortex-A</a></p></li>
+<li><p><a class="reference internal" href="#cortex-r" id="id21">Cortex-R</a></p></li>
+<li><p><a class="reference internal" href="#cortex-m" id="id22">Cortex-M</a></p></li>
+</ul>
+</div>
 <section id="cortex-a">
-<span id="id10"></span><h3>Cortex-A<a class="headerlink" href="#cortex-a" title="Permalink to this heading">¶</a></h3>
+<span id="id11"></span><h3><a class="toc-backref" href="#id20">Cortex-A</a><a class="headerlink" href="#cortex-a" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#cortex-a"><span class="std std-ref">Cortex-A</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="index.html#performance"><span class="std std-ref">Performance</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="cortexA7.html#cortex-a7"><span class="std std-ref">Cortex-A7</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="cortexA53.html#cortex-a53"><span class="std std-ref">Cortex-A53</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="cortexA72.html#cortex-a72"><span class="std std-ref">Cortex-A72</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="cortexA7.html">Cortex-A7</a></li>
@@ -215,7 +254,7 @@
 </div>
 </section>
 <section id="cortex-r">
-<span id="id11"></span><h3>Cortex-R<a class="headerlink" href="#cortex-r" title="Permalink to this heading">¶</a></h3>
+<span id="id12"></span><h3><a class="toc-backref" href="#id21">Cortex-R</a><a class="headerlink" href="#cortex-r" title="Permalink to this heading">¶</a></h3>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="cortexR5.html">Cortex-R5</a></li>
@@ -223,7 +262,7 @@
 </div>
 </section>
 <section id="cortex-m">
-<span id="id12"></span><h3>Cortex-M<a class="headerlink" href="#cortex-m" title="Permalink to this heading">¶</a></h3>
+<span id="id13"></span><h3><a class="toc-backref" href="#id22">Cortex-M</a><a class="headerlink" href="#cortex-m" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 14%" />

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>片上资源 &mdash; 芯闻</title>
+  <title>IP &mdash; 芯闻</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -76,7 +76,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#id4">射频IP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id5">通信IP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id6">存储IP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#sip">SIP封装</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ram">RAM</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#psram">PSRAM</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sdram">SDRAM</a></li>
 </ul>
@@ -88,6 +88,8 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#fpu">FPU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dsp">DSP</a></li>
 </ul>
 </li>
 </ul>
@@ -125,7 +127,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">片上资源</li>
+      <li class="breadcrumb-item active">IP</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/SoCXin/doc/blob/master/docs/architecture/ip.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -136,61 +138,76 @@
            <div itemprop="articleBody">
              
   <section id="ip">
-<span id="id1"></span><h1>片上资源<a class="headerlink" href="#ip" title="Permalink to this heading">¶</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">IP</span></code></p>
+<span id="id1"></span><h1>IP<a class="headerlink" href="#ip" title="Permalink to this heading">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">Intellectual</span> <span class="pre">Property</span> <span class="pre">Core</span></code></p>
+<p>IP核(Intellectual Property Core) 是指芯片中具有独立功能的电路模块的成熟设计。IP核也可以理解为芯片设计的中间构件。</p>
+<p>该电路模块设计可以应用在包含该电路模块的其他芯片设计项目中，从而减少设计工作量，缩短设计周期，提高芯片设计的成功率。一般说来，一个复杂的芯片是由芯片设计者自主设计的电路部分和多个外购的IP核连接构成的。</p>
+<p>IP核有行为(Behavior)级、结构(Structure)级和物理(Physical)级三个层次的分类，对应着三个种类型的IP核</p>
+<ul class="simple">
+<li><p>由硬件描述语言设计的软核(Soft IP Core)</p></li>
+<li><p>完成结构描述的固核(Firm IP Core)</p></li>
+<li><p>基于物理描述并经过工艺验证的硬核(Hard IP Core)</p></li>
+</ul>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#id2" id="id10">模拟IP</a></p></li>
-<li><p><a class="reference internal" href="#id4" id="id11">射频IP</a></p></li>
-<li><p><a class="reference internal" href="#id5" id="id12">通信IP</a></p></li>
-<li><p><a class="reference internal" href="#id6" id="id13">存储IP</a></p></li>
-<li><p><a class="reference internal" href="#sip" id="id14">SIP封装</a></p></li>
-<li><p><a class="reference internal" href="#gpu" id="id15">GPU</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id14">模拟IP</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id15">射频IP</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id16">通信IP</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id17">存储IP</a></p></li>
+<li><p><a class="reference internal" href="#ram" id="id18">RAM</a></p></li>
+<li><p><a class="reference internal" href="#gpu" id="id19">GPU</a></p></li>
+<li><p><a class="reference internal" href="#fpu" id="id20">FPU</a></p></li>
+<li><p><a class="reference internal" href="#dsp" id="id21">DSP</a></p></li>
 </ul>
 </div>
 <section id="id2">
-<h2><a class="toc-backref" href="#id10">模拟IP</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id14">模拟IP</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">SAR</span> <span class="pre">ADC</span></code> <code class="docutils literal notranslate"><span class="pre">Sigma-delta</span> <span class="pre">ADC</span></code> <code class="docutils literal notranslate"><span class="pre">Audio</span> <span class="pre">CODEC</span></code></p>
 <p><a class="reference external" href="https://www.analogcircuit.cn/">锐成芯微</a></p>
 </section>
 <section id="id4">
-<h2><a class="toc-backref" href="#id11">射频IP</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">Wi-Fi</span></code> <code class="docutils literal notranslate"><span class="pre">BLE</span></code></p>
+<h2><a class="toc-backref" href="#id15">射频IP</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Wi-Fi</span></code> <code class="docutils literal notranslate"><span class="pre">BLE</span></code> <code class="docutils literal notranslate"><span class="pre">PHY</span></code> <code class="docutils literal notranslate"><span class="pre">PA</span></code></p>
 </section>
 <section id="id5">
-<h2><a class="toc-backref" href="#id12">通信IP</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id16">通信IP</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">USB</span></code> <code class="docutils literal notranslate"><span class="pre">MIPI</span></code> <code class="docutils literal notranslate"><span class="pre">SerDes</span></code> <code class="docutils literal notranslate"><span class="pre">PCIe</span></code></p>
 </section>
 <section id="id6">
-<h2><a class="toc-backref" href="#id13">存储IP</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id17">存储IP</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">eNVM</span></code> <code class="docutils literal notranslate"><span class="pre">EEPROM</span></code></p>
 </section>
-<section id="sip">
-<span id="id7"></span><h2><a class="toc-backref" href="#id14">SIP封装</a><a class="headerlink" href="#sip" title="Permalink to this heading">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">SIP</span></code></p>
-<img alt="../_images/sip.jpg" src="../_images/sip.jpg" />
+<section id="ram">
+<span id="id7"></span><h2><a class="toc-backref" href="#id18">RAM</a><a class="headerlink" href="#ram" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">SRAM</span></code> <code class="docutils literal notranslate"><span class="pre">DRAM</span></code></p>
 <div class="contents local topic" id="id8">
 <ul class="simple">
-<li><p><a class="reference internal" href="#psram" id="id16">PSRAM</a></p></li>
-<li><p><a class="reference internal" href="#sdram" id="id17">SDRAM</a></p></li>
+<li><p><a class="reference internal" href="#psram" id="id22">PSRAM</a></p></li>
+<li><p><a class="reference internal" href="#sdram" id="id23">SDRAM</a></p></li>
 </ul>
 </div>
 <section id="psram">
-<h3><a class="toc-backref" href="#id16">PSRAM</a><a class="headerlink" href="#psram" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id22">PSRAM</a><a class="headerlink" href="#psram" title="Permalink to this heading">¶</a></h3>
 </section>
 <section id="sdram">
-<h3><a class="toc-backref" href="#id17">SDRAM</a><a class="headerlink" href="#sdram" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id23">SDRAM</a><a class="headerlink" href="#sdram" title="Permalink to this heading">¶</a></h3>
 </section>
 </section>
 <section id="gpu">
-<span id="ip-gpu"></span><h2><a class="toc-backref" href="#id15">GPU</a><a class="headerlink" href="#gpu" title="Permalink to this heading">¶</a></h2>
+<span id="id9"></span><h2><a class="toc-backref" href="#id19">GPU</a><a class="headerlink" href="#gpu" title="Permalink to this heading">¶</a></h2>
 <section id="verisilicon">
-<h3>VeriSilicon<a class="headerlink" href="#verisilicon" title="Permalink to this heading">¶</a></h3>
+<span id="id10"></span><h3>VeriSilicon<a class="headerlink" href="#verisilicon" title="Permalink to this heading">¶</a></h3>
 <p><a class="reference external" href="https://www.verisilicon.com/">芯原微电子</a> （上海）股份有限公司于2001年8月21日成立。（688521）</p>
 <section id="vivante">
 <h4>Vivante<a class="headerlink" href="#vivante" title="Permalink to this heading">¶</a></h4>
 </section>
 </section>
+</section>
+<section id="fpu">
+<span id="id12"></span><h2><a class="toc-backref" href="#id20">FPU</a><a class="headerlink" href="#fpu" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="dsp">
+<span id="id13"></span><h2><a class="toc-backref" href="#id21">DSP</a><a class="headerlink" href="#dsp" title="Permalink to this heading">¶</a></h2>
 </section>
 </section>
 

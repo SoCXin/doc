@@ -102,14 +102,17 @@ Xin选择
 系列对比
 ~~~~~~~~~~~
 
+.. image:: images/VS831.jpg
+    :target: https://zhuanlan.zhihu.com/p/337674885
 
 .. _v833:
 
 V833
 ^^^^^^^^^^^
+``Cortex-A7`` ``1.2 GHz``
 
-.. image:: images/VS831.jpg
-    :target: https://zhuanlan.zhihu.com/p/337674885
+.. image:: images/V833.png
+    :target: https://www.allwinnertech.com/index.php?c=product&id=105
 
 
 型号对比

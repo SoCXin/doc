@@ -8,6 +8,10 @@ Level
 .. hint::
     用于量化产品的性能指标，Level1-3主要用于控制，Level4-6可以部署算法，Level7-9为高性能计算
 
+.. contents::
+    :local:
+    :depth: 1
+
 .. _cpu:
 
 CPU
@@ -333,6 +337,13 @@ NPU
       -
       -
       -
+    * - :ref:`bl808`
+      - 100G
+      -
+      -
+      -
+      -
+      -
 
 .. image:: ./images/npu.jpg
 
@@ -341,4 +352,5 @@ NPU
 TFLM
 ~~~~~~~~~~~
 
- `TFLM(TensorFlow Lite Micro) <https://github.com/tensorflow/tflite-micro>`_
+`TFLM(TensorFlow Lite Micro) <https://github.com/tensorflow/tflite-micro>`_
+

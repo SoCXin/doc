@@ -7,50 +7,28 @@ Package
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`3x3mm`
-      - :ref:`4x4mm`
-      - :ref:`5x5mm`
+    * - :ref:`package`
+      - Size
+      - Patch
+      - GPIO
+    * - :ref:`LQFP48`
       - :ref:`7x7mm`
+      - 0.5mm
+      - 48
+    * - :ref:`LQFP64`
       - :ref:`10x10mm`
-      - :ref:`14x14mm`
-      - :ref:`20x20mm`
-      - :ref:`24x24mm`
-    * -
-      -
-      -
-      - BGA169
-      - :ref:`BGA196`
-      - :ref:`BGA289`
-      -
-      -
-    * - :ref:`CSP36`
-      - :ref:`CSP64`
-      - :ref:`CSP156`
-      -
-      -
-      - X
-      - X
-      - X
-    * - :ref:`QFN20`
-      - :ref:`QFN28`
-      - :ref:`QFN32`
-      - :ref:`QFN56`
-      - :ref:`QFN88`
-      -
-      -
-      -
-    * - X
-      - X
-      -
-      - :ref:`LQFP48`
-      - :ref:`LQFP64`
-      -
-      -
-      -
+      - 0.5mm
+      - 64
+
+
+.. contents::
+    :local:
+    :depth: 1
 
 
 
-小尺寸(≤5x5)
+
+小尺寸(≤5x5mm)
 --------------
 ``≤5x5mm``
 
@@ -271,7 +249,7 @@ QFN32
       -
       -
 
-中尺寸(≤10x10)
+中尺寸(≤10x10mm)
 -----------------
 
 .. contents::
@@ -450,7 +428,7 @@ LQFP64
       -
       -
 
-大尺寸(>10x10)
+大尺寸(>10x10mm)
 -----------------
 ``≥10x10mm``
 
@@ -503,3 +481,12 @@ LQFP144
 LQFP176
 ^^^^^^^^^^^^^
 ``24x24mm``
+
+
+.. _sip:
+
+SIP
+-----------
+``SIP``
+
+.. image:: images/sip.jpg

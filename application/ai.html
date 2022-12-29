@@ -73,7 +73,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#cube-ai">Cube-AI</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">边缘平台</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id6">边缘计算</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#mcu">MCU平台</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#apu">APU平台</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#npu">NPU平台</a></li>
@@ -146,7 +146,7 @@
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#id2" id="id8">算法框架</a></p></li>
-<li><p><a class="reference internal" href="#id6" id="id9">边缘平台</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id9">边缘计算</a></p></li>
 </ul>
 </div>
 <section id="id2">
@@ -188,7 +188,7 @@
 </section>
 </section>
 <section id="id6">
-<h2><a class="toc-backref" href="#id9">边缘平台</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">边缘计算</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
 <p>可以在端侧部署算法的嵌入式平台，相对传统的计算分离体系，拥有更高的集成度和灵活度</p>
 <div class="contents local topic" id="id7">
 <ul class="simple">
@@ -201,22 +201,18 @@
 <h3><a class="toc-backref" href="#id13">MCU平台</a><a class="headerlink" href="#mcu" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#ai"><span class="std std-ref">AI</span></a></p></th>
 <th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
-<th class="head"><p>Freq</p></th>
-<th class="head"><p>RAM</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>ML(INT8)</p></th>
-<th class="head"><p><a class="reference internal" href="../list/package.html#package"><span class="std std-ref">Package</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a>/<a class="reference internal" href="../list/low.html#flash"><span class="std std-ref">Flash</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/level.html#level-npu"><span class="std std-ref">NPU</span></a></p></th>
 </tr>
 </thead>
 <tbody>
@@ -224,49 +220,43 @@
 <td><p><a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
 <td><p>400 MHz</p></td>
 <td><p>8 MB</p></td>
-<td></td>
 <td><p>0.23TOPS</p></td>
-<td><p>BGA144</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../high/K510.html#k510"><span class="std std-ref">K510</span></a></p></td>
 <td><p><a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
 <td><p>800 MHz</p></td>
 <td></td>
-<td></td>
 <td><p>2.5TOPS</p></td>
-<td><p>BGA144</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../allwinner/V831.html#v831"><span class="std std-ref">V831</span></a></p></td>
 <td><p><a class="reference internal" href="../architecture/cortexA7.html#cortex-a7"><span class="std std-ref">Cortex-A7</span></a></p></td>
 <td><p>800 MHz</p></td>
 <td><p>64MB DDR2</p></td>
 <td></td>
-<td></td>
-<td><p><a class="reference internal" href="../list/package.html#qfn88"><span class="std std-ref">QFN88</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../allwinner/R329.html#r329"><span class="std std-ref">R329</span></a></p></td>
 <td><p><a class="reference internal" href="../architecture/cortexA53.html#cortex-a53"><span class="std std-ref">Cortex-A53</span></a></p></td>
 <td><p>1.50 GHz</p></td>
 <td><p>64MB DDR2</p></td>
 <td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/EAI80.html#eai80"><span class="std std-ref">EAI80</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
+<td><p>200 MHz</p></td>
+<td><p>8 MB</p></td>
+<td><p><a class="reference internal" href="../high/EAI80.html#eai80-npu"><span class="std std-ref">CNN-NPU</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../bouffalolab/BL808.html#bl808"><span class="std std-ref">BL808</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/riscv.html#xt-c906"><span class="std std-ref">C906</span></a></p></td>
+<td><p>480 MHz</p></td>
 <td></td>
-<td><p>BGA231</p></td>
+<td><p>100GOPS(BLAI-100)</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../high/SSD201.html#ssd201"><span class="std std-ref">SSD201</span></a></p></td>
 <td><p><a class="reference internal" href="../architecture/cortexA7.html#cortex-a7"><span class="std std-ref">Cortex-A7</span></a></p></td>
 <td><p>1.20 GHz</p></td>
 <td><p>64MB DDR3</p></td>
 <td></td>
-<td></td>
-<td><p>LFBGA231</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../high/EAI80.html#eai80"><span class="std std-ref">EAI80</span></a></p></td>
-<td><p><a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
-<td><p>200 MHz</p></td>
-<td><p>8 MB</p></td>
-<td><p>8 MB</p></td>
-<td><p><a class="reference internal" href="../high/EAI80.html#eai80-npu"><span class="std std-ref">CNN-NPU</span></a></p></td>
-<td><p><a class="reference internal" href="../list/package.html#x14mm"><span class="std std-ref">14x14mm</span></a></p></td>
 </tr>
 </tbody>
 </table>

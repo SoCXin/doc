@@ -16,7 +16,7 @@ ARM
 .. toctree::
     :maxdepth: 1
 
-    高级处理器总线架构AMBA <amba>
+    AMBA <amba>
 
 
 AVH
@@ -84,19 +84,42 @@ ARMv9指令集在兼容ARMv8的基础上，提升处理器性能，同时提升�
 系列分类
 -------------
 
-
-从ARMv7开始，架构定义了三大分工明确的系列：
+从 :ref:`armv7` 开始，架构定义了三大分工明确的系列：
 
 * :ref:`cortex_a` 系列面向尖端的基于虚拟内存的操作系统和用户应用
 * :ref:`cortex_r` 系列针对实时系统
 * :ref:`cortex_m` 系列对微控制器
 
-
+.. contents::
+    :local:
+    :depth: 1
 
 .. _cortex_a:
 
 Cortex-A
 ~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`cortex_a`
+      - :ref:`frequency`
+      - :ref:`CoreMark`
+      - :ref:`performance`
+    * - :ref:`cortex_a7`
+      -
+      -
+      -
+    * - :ref:`cortex_a53`
+      -
+      -
+      -
+    * - :ref:`cortex_a72`
+      -
+      -
+      -
+
+
 
 
 .. toctree::
@@ -116,8 +139,6 @@ Cortex-R
     :maxdepth: 1
 
     cortexR5
-
-
 
 
 .. _cortex_m:

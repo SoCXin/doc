@@ -3,28 +3,16 @@
 Cortex-A72
 ====================
 
-.. contents::
-    :local:
-
-
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`vendor`
-      - DMIPS
-      - RAM
-      - Cache
-      - GPU
-      - SPI
-      - USB
-      - Ethernet
-      - Interface
+    * - :ref:`cortex_a72`
+      - :ref:`frequency`
+      - :ref:`CoreMark`
+      - :ref:`performance`
     * - :ref:`bcm2711`
       -
       -
       -
-      -
-      -
-      -
-      -
-      -
+
+
