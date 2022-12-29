@@ -12,9 +12,21 @@ STAR-MC
 
 STAR-MC1
 --------------
-``Armv8.1-M``
+``Armv8-M``
 
 Arm China STAR-MC1 处理器，基于 :ref:`armv8`-M Mainline 指令集架构，集成FPU 和 DSP，单位频率 CoreMark 性能相较于 Cortex-M3 和 Cortex-M4 提升约 20%
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`star_mc1`
+      - :ref:`frequency`
+      - :ref:`sram`/:ref:`flash`
+      - :ref:`package`
+    * - :ref:`mm32f527`
+      - 120MHz
+      - 192KB/256KB
+      -
 
 .. _star_mc2:
 

@@ -23,6 +23,7 @@ Mindmotion
     :maxdepth: 1
 
     MM32F031 <MM32F031>
+    MM32F016 <MM32F016>
     MM32F527 <MM32F527>
     MM32SPIN <MM32SPIN>
 

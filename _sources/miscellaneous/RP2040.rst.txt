@@ -3,9 +3,7 @@
 
 RP2040
 ===============
-
-* `Raspberry Pi <https://www.raspberrypi.org/>`_ : ``Cortex-M0`` ``Dual Core`` ``133MHz`` ``USB OTG`` ``QFN56`` ``$0.7`` ``MicroPython``
-* `Tags <https://github.com/SoCXin/RP2040>`_ : :ref:`pop` / :ref:`hot` / :ref:`usb`
+`Raspberry Pi <https://www.raspberrypi.org/>`_ : ``Cortex-M0`` ``Dual Core`` ``133MHz`` ``USB OTG`` ``QFN56`` ``$0.7`` ``MicroPython``
 
 
 .. contents::
@@ -14,6 +12,7 @@ RP2040
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/RP2040>`_ : :ref:`pop` / :ref:`hot` / :ref:`usb`
 
 .. image:: ./images/RP2040.png
     :target: https://www.raspberrypi.org/documentation/microcontrollers/rp2040.html
