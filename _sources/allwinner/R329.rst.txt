@@ -3,7 +3,7 @@
 
 R329
 =============
-`Allwinner <https://www.allwinnertech.com/>`_ : ``Allwinner`` ``Cortex-A53`` ``1.5GHz`` ``Dual-core`` ``AI`` ``HiFi4`` ``Tina`` ``sunxi``
+`Allwinner <https://www.allwinnertech.com/>`_ : ``Allwinner`` ``Cortex-A53`` ``1.5GHz`` ``Dual-core`` ``AIoT`` ``HiFi4`` ``Tina`` ``sunxi``
 
 .. contents::
     :local:

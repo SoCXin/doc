@@ -4,11 +4,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CR710 &mdash; 芯闻</title>
+  <title>AIoT &mdash; 芯闻</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="canonical" href="https://doc.soc.xin/miscellaneous/CR710.html" />
+    <link rel="canonical" href="https://doc.soc.xin/application/aiot.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Hi3921" href="Hi3921.html" />
-    <link rel="prev" title="CR600" href="CR600.html" />
+    <link rel="next" title="Coral TPU" href="coral.html" />
+    <link rel="prev" title="ZML165" href="../miscellaneous/ZML165.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -63,26 +63,30 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">芯分类</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../application/index.html">功能配置</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../application/hmi.html">HMI</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../application/adc.html">ADC</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../application/aiot.html">AIoT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../application/motor.html">Motor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../application/audio.html">Audio</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../application/index.html#connect">Connect</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../application/index.html#basic">Basic</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../application/index.html#special">Special</a><ul class="current">
-<li class="toctree-l4 current"><a class="reference internal" href="../application/plc.html">PLC</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../application/ethernet.html">Ethernet</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">功能配置</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="hmi.html">HMI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adc.html">ADC</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">AIoT</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">算法框架</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tf-lite">TF Lite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tinyml">TinyML</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cube-ai">Cube-AI</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../application/index.html#wireless">Wireless</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">算力芯片</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#apu">APU平台</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#npu">NPU平台</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../application/standard.html">协议标准</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../application/products.html">产品定义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="motor.html">Motor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="audio.html">Audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#connect">Connect</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="standard.html">协议标准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="products.html">产品定义</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">芯资源</span></p>
 <ul>
@@ -124,11 +128,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
-          <li class="breadcrumb-item"><a href="../application/index.html">Applications</a></li>
-          <li class="breadcrumb-item"><a href="../application/plc.html">PLC</a></li>
-      <li class="breadcrumb-item active">CR710</li>
+          <li class="breadcrumb-item"><a href="index.html">Applications</a></li>
+      <li class="breadcrumb-item active">AIoT</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/SoCXin/doc/blob/master/docs/miscellaneous/CR710.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/SoCXin/doc/blob/master/docs/application/aiot.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -136,57 +139,163 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="cr710">
-<span id="id1"></span><h1>CR710<a class="headerlink" href="#cr710" title="Permalink to this heading">¶</a></h1>
-<p><a class="reference external" href="https://github.com/SoCXin/CR710">标签</a> : <code class="docutils literal notranslate"><span class="pre">Cortex-M0</span></code> <code class="docutils literal notranslate"><span class="pre">125MHz</span></code> <code class="docutils literal notranslate"><span class="pre">UART</span></code> <code class="docutils literal notranslate"><span class="pre">PLC</span></code></p>
+  <section id="aiot">
+<span id="id1"></span><h1>AIoT<a class="headerlink" href="#aiot" title="Permalink to this heading">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">TensorFlow</span></code></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#xin" id="id8">Xin简介</a></p>
-<ul>
-<li><p><a class="reference internal" href="#id3" id="id9">规格参数</a></p>
-<ul>
-<li><p><a class="reference internal" href="#id4" id="id10">基本参数</a></p></li>
-<li><p><a class="reference internal" href="#id5" id="id11">特征参数</a></p></li>
-<li><p><a class="reference internal" href="#id6" id="id12">电源参数</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#id7" id="id13">封装规格</a></p></li>
-</ul>
-</li>
+<li><p><a class="reference internal" href="#id2" id="id8">算法框架</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id9">算力芯片</a></p></li>
 </ul>
 </div>
-<section id="xin">
-<h2><a class="toc-backref" href="#id8">Xin简介</a><a class="headerlink" href="#xin" title="Permalink to this heading">¶</a></h2>
-<section id="id3">
-<h3><a class="toc-backref" href="#id9">规格参数</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
-<section id="id4">
-<h4><a class="toc-backref" href="#id10">基本参数</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<section id="id2">
+<h2><a class="toc-backref" href="#id8">算法框架</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<div class="contents local topic" id="id3">
 <ul class="simple">
-<li><p>发布时间：</p></li>
-<li><p>发布价格：</p></li>
-<li><p>工作温度：-40°C to +125°C</p></li>
-<li><p>处理性能：</p></li>
-<li><p>RAM容量：256KB</p></li>
-<li><p>Flash容量：</p></li>
-<li><p>封装规格：LQFP100 (16X16mm)</p></li>
+<li><p><a class="reference internal" href="#tf-lite" id="id10">TF Lite</a></p></li>
+<li><p><a class="reference internal" href="#tinyml" id="id11">TinyML</a></p></li>
+<li><p><a class="reference internal" href="#cube-ai" id="id12">Cube-AI</a></p></li>
+</ul>
+</div>
+<section id="tf-lite">
+<span id="tflite"></span><h3><a class="toc-backref" href="#id10">TF Lite</a><a class="headerlink" href="#tf-lite" title="Permalink to this heading">¶</a></h3>
+<p><a class="reference external" href="https://github.com/tfmin">TFmin</a> 嵌入算法平台</p>
+</section>
+<section id="tinyml">
+<span id="id4"></span><h3><a class="toc-backref" href="#id11">TinyML</a><a class="headerlink" href="#tinyml" title="Permalink to this heading">¶</a></h3>
+<p>分布最广的物联网设备往往体积很小、电量有限。它们被作为终端硬件，通过嵌入式传感器采集各种数据；计算能力有限，对功耗极为敏感。这类设备也能实现机器学习吗？一个趋势是，人工智能AI正在加快速度从“云端”走向“边缘”，进入到越来越小的物联网设备中。在终端和边缘侧的微处理器上，实现的机器学习过程，被称为微型机器学习，即TinyML。</p>
+<p>在终端和边缘侧的微处理器上，实现的机器学习过程，被称为微型机器学习，即TinyML。更准确的说，TinyML是指工程师们在mW功率范围以下的设备上，实现机器学习的方法、工具和技术。</p>
+</section>
+<section id="cube-ai">
+<span id="id5"></span><h3><a class="toc-backref" href="#id12">Cube-AI</a><a class="headerlink" href="#cube-ai" title="Permalink to this heading">¶</a></h3>
+<p>使用基于STM32 MCU的嵌入式系统的开发人员可能不熟悉神经网络。同样，从事机器学习的数据科学家更习惯基于云的海量计算资源，并且对嵌入式开发的内存和计算约束不太满意。STM32Cube.AI揭开了AI和嵌入式系统的神秘面纱，能够充分利用更多的开发人员的专业知识，从而将神经网络带入嵌入式边缘开发领域，进一步拓展了物联网应用。</p>
+<ul class="simple">
+<li><p>从预先训练的神经网络模型生成STM32优化的库。</p></li>
+<li><p>支持各种深度学习框架，如Keras，Caffe，ConvnetJS和Lasagne.</p></li>
+<li><p>通过STM32Cube™集成，可轻松实现不同STM32微控制器系列的便携性。</p></li>
+<li><p>免费，用户友好的许可条款。</p></li>
+</ul>
+<a class="reference external image-reference" href="https://www.st.com/en/embedded-software/x-cube-ai.html#get-software"><img alt="../_images/CUBE-AI.png" src="../_images/CUBE-AI.png" /></a>
+<p>使用神经网络的5个步骤</p>
+<ul class="simple">
+<li><p>1.捕获数据</p></li>
+<li><p>2.清理，标记数据和构建ANN（人工神经网络）拓扑</p></li>
+<li><p>3.训练ANN模型</p></li>
+<li><p>4.将ANN转换为STM32 MCU的优化代码</p></li>
+<li><p>5.使用经过培训的ANN处理和分析新数据</p></li>
 </ul>
 </section>
-<section id="id5">
-<h4><a class="toc-backref" href="#id11">特征参数</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
-<ul class="simple">
-<li><p>OFDM，频率2MHz~28MHz，自带FEC纠错与校验</p></li>
-<li><p>多达48个GPIO、SPI、UART、A/D、I2C、I2S、PWM、SDIO、Ethernet 等接口</p></li>
-</ul>
 </section>
 <section id="id6">
-<h4><a class="toc-backref" href="#id12">电源参数</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<h2><a class="toc-backref" href="#id9">算力芯片</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#aiot"><span class="std std-ref">AIoT</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/low.html#sram"><span class="std std-ref">SRAM</span></a>/<a class="reference internal" href="../list/low.html#flash"><span class="std std-ref">Flash</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/level.html#level-npu"><span class="std std-ref">NPU</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/K210.html#k210"><span class="std std-ref">K210</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
+<td><p>400 MHz</p></td>
+<td><p>8 MB</p></td>
+<td><p>0.23TOPS</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../high/K510.html#k510"><span class="std std-ref">K510</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/riscv.html#riscv"><span class="std std-ref">RISC-V</span></a></p></td>
+<td><p>800 MHz</p></td>
+<td></td>
+<td><p>2.5TOPS</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../allwinner/V831.html#v831"><span class="std std-ref">V831</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexA7.html#cortex-a7"><span class="std std-ref">Cortex-A7</span></a></p></td>
+<td><p>800 MHz</p></td>
+<td><p>64MB DDR2</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../allwinner/R329.html#r329"><span class="std std-ref">R329</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexA53.html#cortex-a53"><span class="std std-ref">Cortex-A53</span></a></p></td>
+<td><p>1.50 GHz</p></td>
+<td><p>64MB DDR2</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/EAI80.html#eai80"><span class="std std-ref">EAI80</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexM4.html#cortex-m4"><span class="std std-ref">Cortex-M4</span></a></p></td>
+<td><p>200 MHz</p></td>
+<td><p>8 MB</p></td>
+<td><p><a class="reference internal" href="../high/EAI80.html#eai80-npu"><span class="std std-ref">CNN-NPU</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../bouffalolab/BL808.html#bl808"><span class="std std-ref">BL808</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/riscv.html#xt-c906"><span class="std std-ref">C906</span></a></p></td>
+<td><p>480 MHz</p></td>
+<td></td>
+<td><p>100GOPS(BLAI-100)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/SSD201.html#ssd201"><span class="std std-ref">SSD201</span></a></p></td>
+<td><p><a class="reference internal" href="../architecture/cortexA7.html#cortex-a7"><span class="std std-ref">Cortex-A7</span></a></p></td>
+<td><p>1.20 GHz</p></td>
+<td><p>64MB DDR3</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="contents local topic" id="id7">
 <ul class="simple">
-<li><p>供电电压：3.0 to 3.6 V</p></li>
+<li><p><a class="reference internal" href="#apu" id="id13">APU平台</a></p></li>
+<li><p><a class="reference internal" href="#npu" id="id14">NPU平台</a></p></li>
 </ul>
+</div>
+<section id="apu">
+<h3><a class="toc-backref" href="#id13">APU平台</a><a class="headerlink" href="#apu" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../high/index.html#linux"><span class="std std-ref">Linux</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../list/ulp.html#frequency"><span class="std std-ref">Frequency</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/index.html#coremark"><span class="std std-ref">CoreMark</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="../architecture/level.html#level-npu"><span class="std std-ref">NPU</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../high/BCM2711.html#bcm2711"><span class="std std-ref">BCM2711</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../high/A311D.html#a311d"><span class="std std-ref">A311D</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </section>
-</section>
-<section id="id7">
-<h3><a class="toc-backref" href="#id13">封装规格</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<section id="npu">
+<h3><a class="toc-backref" href="#id14">NPU平台</a><a class="headerlink" href="#npu" title="Permalink to this heading">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="coral.html">Coral TPU</a></li>
+</ul>
+</div>
 </section>
 </section>
 </section>
@@ -195,8 +304,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="CR600.html" class="btn btn-neutral float-left" title="CR600" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Hi3921.html" class="btn btn-neutral float-right" title="Hi3921" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../miscellaneous/ZML165.html" class="btn btn-neutral float-left" title="ZML165" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="coral.html" class="btn btn-neutral float-right" title="Coral TPU" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -341,8 +450,8 @@
     <dl>
       <dt>Created By Qtias</dt>
       <img src="../_static/images/weixin.jpg">
-        <!-- <dd><a href="https://github.com/SoCXin/doc/blob/master/docs/miscellaneous/CR710.rst"> View</a></dd>
-        <dd><a href="https://github.com/SoCXin/doc/edit/master/docs/miscellaneous/CR710.rst"> Edit</a></dd> -->
+        <!-- <dd><a href="https://github.com/SoCXin/doc/blob/master/docs/application/aiot.rst"> View</a></dd>
+        <dd><a href="https://github.com/SoCXin/doc/edit/master/docs/application/aiot.rst"> Edit</a></dd> -->
     </dl>
   </div>
 </div><script>

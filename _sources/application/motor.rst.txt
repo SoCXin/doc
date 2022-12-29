@@ -2,11 +2,46 @@
 
 Motor
 ============
+``FOC``
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`motor`
+      - :ref:`simplefoc`
+      - :ref:`minifoc`
+      - :ref:`ODrive`
+    * - :ref:`mega328p`
+      -
+      -
+      -
+    * - :ref:`gd32f130`
+      -
+      -
+      -
+    * - :ref:`stm32f405`
+      -
+      -
+      -
+    * - :ref:`stm32g474`
+      -
+      -
+      -
+    * - :ref:`hc32m120`
+      -
+      -
+      -
+    * - :ref:`swm181`
+      -
+      -
+      -
+
 
 .. contents::
     :local:
     :depth: 1
 
+.. _foc:
 
 FOC
 -----------
@@ -59,45 +94,14 @@ PPM/PDM
 
 
 
-解决方案
------------
-
-.. list-table::
-    :header-rows:  1
-
-    * - Solution
-      - MCU
-      - Driver
-      - PID(Max)
-      - Power
-      - Price
-    * - :ref:`simplefoc`
-      - :ref:`mega328p`
-      - L6234
-      - 830Hz
-      - 120W
-      - ¥100
-    * - :ref:`minifoc`
-      - :ref:`gd32f130`
-      - EG2133
-      - 30kHz
-      - 90W
-      - ¥30
-    * - :ref:`ODrive`
-      - :ref:`stm32f405`
-      - DRV8301
-      - 8kHz
-      - 960W
-      - ¥300
-
 .. _vesc:
 
 VESC
 ~~~~~~~~~~~
 
-* `VESC Home <https://vesc-project.com/>`_ , `VESC GitHub <https://github.com/vedderb/bldc>`_
+`VESC GitHub <https://github.com/vedderb/bldc>`_
 
-An open source motor controller firmware, the source code for the VESC DC/BLDC/FOC controller.
+`vesc-project <https://vesc-project.com/>`_  is an open source motor controller firmware, the source code for the VESC DC/BLDC/FOC controller.
 
 
 
@@ -172,25 +176,4 @@ ODrive
 * `ODrive Home <https://odriverobotics.com/>`_
 * `ODrive GitHub <https://github.com/odriverobotics/ODrive>`_
 
-
-相关主控
-~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - :ref:`vendor`
-      - :ref:`architecture`
-      - RAM
-      - Flashs
-      - PWM
-      - More
-      - :ref:`package`
-    * - :ref:`stm32g474`
-      - 170MHz
-      - 128KB
-      - 128/256/512KB
-      - 12
-      - :ref:`stm32_hrtim`
-      - :ref:`LQFP64`
 

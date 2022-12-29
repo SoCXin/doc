@@ -72,7 +72,7 @@ Xindex
       - :ref:`motor`
       - :ref:`adc`
       - :ref:`audio`
-      - :ref:`ai`
+      - :ref:`aiot`
     * - :ref:`autosar`
       -
       -

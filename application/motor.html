@@ -66,18 +66,14 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">功能配置</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="hmi.html">HMI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="adc.html">ADC</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ai.html">AIoT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aiot.html">AIoT</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Motor</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#foc">FOC</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#pwm">PWM</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">解决方案</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#vesc">VESC</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#simplefoc">SimpleFOC</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#minifoc">MiniFOC</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#odrive">ODrive</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id9">相关主控</a></li>
 </ul>
 </li>
 </ul>
@@ -142,14 +138,61 @@
              
   <section id="motor">
 <span id="id1"></span><h1>Motor<a class="headerlink" href="#motor" title="Permalink to this heading">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">FOC</span></code></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="#motor"><span class="std std-ref">Motor</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#simplefoc"><span class="std std-ref">SimpleFOC</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#minifoc"><span class="std std-ref">MiniFOC</span></a></p></th>
+<th class="head"><p><a class="reference internal" href="#odrive"><span class="std std-ref">ODrive</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../miscellaneous/ATMEGA328P.html#mega328p"><span class="std std-ref">MEGA328P</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../gigadevice/GD32F130.html#gd32f130"><span class="std std-ref">GD32F130</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32F407.html#stm32f405"><span class="std std-ref">STM32F405</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../st/m/STM32G474.html#stm32g474"><span class="std std-ref">STM32G474</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../hdsc/HC32M120.html#hc32m120"><span class="std std-ref">HC32M120</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../synwit/SWM181.html#swm181"><span class="std std-ref">SWM181</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#foc" id="id10">FOC</a></p></li>
-<li><p><a class="reference internal" href="#id4" id="id11">解决方案</a></p></li>
+<li><p><a class="reference internal" href="#foc" id="id9">FOC</a></p></li>
 </ul>
 </div>
 <section id="foc">
-<h2><a class="toc-backref" href="#id10">FOC</a><a class="headerlink" href="#foc" title="Permalink to this heading">¶</a></h2>
+<span id="id2"></span><h2><a class="toc-backref" href="#id9">FOC</a><a class="headerlink" href="#foc" title="Permalink to this heading">¶</a></h2>
 <p>FOC（field-oriented control）为磁场导向控制，又称为矢量控制（vectorcontrol），是一种利用变频器（VFD）控制三相交流马达的技术，利用调整变频器的输出频率、输出电压的大小及角度，来控制马达的输出。其特性是可以个别控制马达的的磁场及转矩，类似他激式直流马达的特性。由于处理时会将三相输出电流及电压以矢量来表示，因此称为矢量控制。是目前无刷直流电机（BLDC）和永磁同步电机（PMSM）高效控制的最佳选择。FOC精确地控制磁场大小与方向，使得电机转矩平稳、噪声小、效率高，并且具有高速的动态响应。</p>
 <p>FOC按照电机有无传感器来区分可以分为有传感器FOC和无传感器FOC。</p>
 <p>对于有传感器FOC，由于电机的传感器（一般为编码器）能反馈电机转子的位置信息，因此在控制中可以不使用位置估算算法，控制起来相对无传感器FOC简单，但是对带传感器的电机应用来说，往往对控制性能要求较高。</p>
@@ -177,7 +220,7 @@
 </li>
 </ul>
 <section id="pwm">
-<span id="id2"></span><h3>PWM<a class="headerlink" href="#pwm" title="Permalink to this heading">¶</a></h3>
+<span id="id3"></span><h3>PWM<a class="headerlink" href="#pwm" title="Permalink to this heading">¶</a></h3>
 <p>PWM(Pulse Width Modulation)脉冲宽度调制: 从调制脉冲的极性看，PWM又可分为单极性与双极性控制模式两种。</p>
 <p>过调节占空比的变化来调节信号、能量等的变化，占空比就是指在一个周期内，信号处于高电平的时间占据整个信号周期的百分比，例如方波的占空比就是50%.</p>
 <ul class="simple">
@@ -186,7 +229,7 @@
 <li><p>PDM(Pulse Distance Modulation)，脉冲间隔调制，脉冲宽度不变，都是560us，通过改变脉冲间隔实现调制</p></li>
 </ul>
 <section id="pcm">
-<span id="id3"></span><h4>PCM<a class="headerlink" href="#pcm" title="Permalink to this heading">¶</a></h4>
+<span id="id4"></span><h4>PCM<a class="headerlink" href="#pcm" title="Permalink to this heading">¶</a></h4>
 <p>I2S是PCM的一个分支，采样频率一般为44.1KHZ和48KHZ做，PCM采样频率一般为8K,16K。有四组信号:位时钟信号，同步信号，数据输入，数据输出。</p>
 </section>
 <section id="ppm-pdm">
@@ -199,57 +242,10 @@
 </ul>
 </section>
 </section>
-</section>
-<section id="id4">
-<h2><a class="toc-backref" href="#id11">解决方案</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Solution</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Driver</p></th>
-<th class="head"><p>PID(Max)</p></th>
-<th class="head"><p>Power</p></th>
-<th class="head"><p>Price</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="#simplefoc"><span class="std std-ref">SimpleFOC</span></a></p></td>
-<td><p><a class="reference internal" href="../miscellaneous/ATMEGA328P.html#mega328p"><span class="std std-ref">MEGA328P</span></a></p></td>
-<td><p>L6234</p></td>
-<td><p>830Hz</p></td>
-<td><p>120W</p></td>
-<td><p>¥100</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#minifoc"><span class="std std-ref">MiniFOC</span></a></p></td>
-<td><p><a class="reference internal" href="../gigadevice/GD32F130.html#gd32f130"><span class="std std-ref">GD32F130</span></a></p></td>
-<td><p>EG2133</p></td>
-<td><p>30kHz</p></td>
-<td><p>90W</p></td>
-<td><p>¥30</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#odrive"><span class="std std-ref">ODrive</span></a></p></td>
-<td><p><a class="reference internal" href="../st/m/STM32F407.html#stm32f405"><span class="std std-ref">STM32F405</span></a></p></td>
-<td><p>DRV8301</p></td>
-<td><p>8kHz</p></td>
-<td><p>960W</p></td>
-<td><p>¥300</p></td>
-</tr>
-</tbody>
-</table>
 <section id="vesc">
 <span id="id5"></span><h3>VESC<a class="headerlink" href="#vesc" title="Permalink to this heading">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://vesc-project.com/">VESC Home</a> , <a class="reference external" href="https://github.com/vedderb/bldc">VESC GitHub</a></p></li>
-</ul>
-<p>An open source motor controller firmware, the source code for the VESC DC/BLDC/FOC controller.</p>
+<p><a class="reference external" href="https://github.com/vedderb/bldc">VESC GitHub</a></p>
+<p><a class="reference external" href="https://vesc-project.com/">vesc-project</a>  is an open source motor controller firmware, the source code for the VESC DC/BLDC/FOC controller.</p>
 </section>
 <section id="simplefoc">
 <span id="id6"></span><h3>SimpleFOC<a class="headerlink" href="#simplefoc" title="Permalink to this heading">¶</a></h3>
@@ -332,40 +328,6 @@
 <li><p><a class="reference external" href="https://odriverobotics.com/">ODrive Home</a></p></li>
 <li><p><a class="reference external" href="https://github.com/odriverobotics/ODrive">ODrive GitHub</a></p></li>
 </ul>
-</section>
-<section id="id9">
-<h3>相关主控<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p><a class="reference internal" href="../vendor.html#vendor"><span class="std std-ref">Vendor</span></a></p></th>
-<th class="head"><p><a class="reference internal" href="../architecture/index.html#architecture"><span class="std std-ref">Architecture</span></a></p></th>
-<th class="head"><p>RAM</p></th>
-<th class="head"><p>Flashs</p></th>
-<th class="head"><p>PWM</p></th>
-<th class="head"><p>More</p></th>
-<th class="head"><p><a class="reference internal" href="../list/package.html#package"><span class="std std-ref">Package</span></a></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../st/m/STM32G474.html#stm32g474"><span class="std std-ref">STM32G474</span></a></p></td>
-<td><p>170MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>128/256/512KB</p></td>
-<td><p>12</p></td>
-<td><p><a class="reference internal" href="../st/m/STM32G474.html#stm32-hrtim"><span class="std std-ref">HRTIM</span></a></p></td>
-<td><p><a class="reference internal" href="../list/package.html#lqfp64"><span class="std std-ref">LQFP64</span></a></p></td>
-</tr>
-</tbody>
-</table>
 </section>
 </section>
 </section>

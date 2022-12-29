@@ -9,9 +9,9 @@ Applications
 
     HMI   <hmi>
     ADC   <adc>
-    AIoT   <ai>
-    Motor   <motor>
-    Audio   <audio>
+    AIoT  <aiot>
+    Motor <motor>
+    Audio <audio>
 
 .. _connect:
 
@@ -121,35 +121,35 @@ Wireless
 .. list-table::
     :header-rows:  1
 
-    * - :ref:`wireless`
-      - :ref:`802_15_4`
-      - :ref:`bt`
-      - :ref:`wifi`
-      - :ref:`lora`
-      - :ref:`nbiot`
-      - :ref:`cat1`
-      - :ref:`cat4`
-    * - Bandwidth
+    * - :ref:`connect`
+      - :ref:`bandwidth`
+      - LongRange
+      - :ref:`consumption`
+    * - :ref:`802_15_4`
       -
       -
       -
+    * - :ref:`ble`
       -
       -
       -
-      -
-    * - LongRange
-      -
+    * - :ref:`wifi`
       -
       -
       -
+    * - :ref:`lora`
       -
       -
       -
-    * - :ref:`consumption`
+    * - :ref:`nbiot`
       -
       -
       -
+    * - :ref:`cat1`
       -
+      -
+      -
+    * - :ref:`cat4`
       -
       -
       -

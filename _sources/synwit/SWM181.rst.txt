@@ -3,9 +3,7 @@
 
 SWM181
 ===============
-
-* `Synwit <https://www.synwit.cn/>`_ : ``Cortex-M0`` ``48MHz`` ``16bit ADC``
-* `Tags <https://github.com/SoCXin/SWM181>`_ : :ref:`motor`
+`Synwit <https://www.synwit.cn/>`_ : ``Cortex-M0`` ``48MHz`` ``16bit ADC``
 
 .. contents::
     :local:
@@ -14,12 +12,14 @@ SWM181
 
 Xin简介
 -----------
+`Tags <https://github.com/SoCXin/SWM181>`_ : :ref:`motor`
 
 .. image:: ./images/SWM181.jpg
     :target: https://huaxin2021.yswebportal.cc/col.jsp?id=120
 
 .. contents::
     :local:
+    :depth: 1
 
 规格参数
 ~~~~~~~~~~~

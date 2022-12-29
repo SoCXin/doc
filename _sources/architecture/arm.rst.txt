@@ -86,10 +86,6 @@ ARMv9指令集在兼容ARMv8的基础上，提升处理器性能，同时提升�
 
 从 :ref:`armv7` 开始，架构定义了三大分工明确的系列：
 
-* :ref:`cortex_a` 系列面向尖端的基于虚拟内存的操作系统和用户应用
-* :ref:`cortex_r` 系列针对实时系统
-* :ref:`cortex_m` 系列对微控制器
-
 .. contents::
     :local:
     :depth: 1
@@ -98,6 +94,8 @@ ARMv9指令集在兼容ARMv8的基础上，提升处理器性能，同时提升�
 
 Cortex-A
 ~~~~~~~~~~~
+
+面向尖端的基于虚拟内存的操作系统和用户应用
 
 .. list-table::
     :header-rows:  1
@@ -135,6 +133,8 @@ Cortex-A
 Cortex-R
 ~~~~~~~~~~~
 
+针对实时系统
+
 .. toctree::
     :maxdepth: 1
 
@@ -146,19 +146,18 @@ Cortex-R
 Cortex-M
 ~~~~~~~~~~~
 
+微控制器系列
 
 .. list-table::
     :header-rows:  1
 
     * - :ref:`cortex_m`
       - Pipeline
-      - ISA
       - Version
       - Interrupts
       - DMIPS/MHz
       - CoreMark/MHz
     * - :ref:`cortex_m0`
-      -
       -
       - ARMv6-M
       - 32
@@ -166,13 +165,11 @@ Cortex-M
       - 2.46
     * - :ref:`cortex_m23`
       -
-      -
       - :ref:`armv8`
       - 240
       - 1.03
       - 2.64
     * - :ref:`cortex_m3`
-      -
       -
       - :ref:`armv7`
       - 240
@@ -180,13 +177,11 @@ Cortex-M
       - 3.45
     * - :ref:`cortex_m4`
       -
-      -
       - :ref:`armv7`
       - 240
       - 1.26
       - 3.54
     * - :ref:`cortex_m33`
-      -
       -
       - :ref:`armv8`
       - 480
@@ -194,20 +189,17 @@ Cortex-M
       - 4.10
     * - :ref:`cortex_m55`
       -
-      -
       - :ref:`armv8`
       - 480
       - 1.69
       - 4.40
     * - :ref:`cortex_m7`
       - 3
-      -
       - :ref:`armv7`
       - 240
       - 2.31
       - 5.29
     * - :ref:`cortex_m85`
-      -
       -
       - :ref:`armv8`
       - 480
