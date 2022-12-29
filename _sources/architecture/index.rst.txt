@@ -59,6 +59,27 @@ Classification
       -
       - :ref:`tsmc_28lp`
     * -
+      - :ref:`cortex_m55`
+      -
+      -
+      -
+      -
+      -
+    * -
+      - :ref:`cortex_m33`
+      -
+      -
+      -
+      -
+      -
+    * -
+      - :ref:`cortex_m23`
+      -
+      -
+      -
+      -
+      -
+    * -
       - :ref:`star_mc1`
       -
       -

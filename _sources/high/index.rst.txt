@@ -5,6 +5,15 @@
 ============
 ``Linux`` ``RTOS`` ``SoC`` ``MCU``
 
+.. contents::
+    :local:
+    :depth: 1
+
+.. _rtos:
+
+RTOS
+-----------
+``Flash``
 
 .. list-table::
     :header-rows: 1
@@ -13,64 +22,83 @@
       - :ref:`architecture`
       - :ref:`frequency`
       - :ref:`CoreMark`
-      - :ref:`power`
+      - :ref:`performance`
       - :ref:`sram`/:ref:`flash`
-      - :ref:`package`
     * - :ref:`hpm6750`
       - :ref:`riscv`
       - 816MHz
       - 9220(2)
       -
       - 2 MB
-      - ≥BGA196
     * - :ref:`rt1170`
       - :ref:`cortex_m7`
       - 1 GHz
       - 6468(2)
       -
       - 2 MB
-      - > :ref:`14x14mm`
     * - :ref:`hpm6350`
       - :ref:`andes_d45`
       - 648MHz
       - 3390
       - 90uA/MHz
       - 800KB
-      - ≥7x7mm
     * - :ref:`rt1060`
       - :ref:`cortex_m7`
       - 600MHz
       - 3020
       -
       - 1 MB
-      - ≥BGA196
     * - :ref:`stm32h745`
       - :ref:`cortex_m7`
       - 480MHz
       - 3224
       -
       - 1 MB
-      - ≥ :ref:`14x14mm`
     * - :ref:`stm32h730`
       - :ref:`cortex_m7`
       - 550MHz
       - 2778
       - 147/MHz
       - 1 MB
-      - ≥BGA100
     * - :ref:`bl808`
       - :ref:`riscv`
       - 480MHz
       -
       -
       -
-      -
 
 
+.. toctree::
+    :maxdepth: 1
 
+    EAI80 <EAI80>
+    HPM6750 <HPM6750>
+    HPM6350 <HPM6350>
+
+.. _linux:
 
 Linux
 -----------
+``DDR``
+
+.. list-table::
+    :header-rows: 1
+
+    * - :ref:`top`
+      - :ref:`architecture`
+      - :ref:`frequency`
+      - :ref:`CoreMark`
+      - :ref:`performance`
+    * - :ref:`v831`
+      - :ref:`cortex_a7`
+      - 800 MHz
+      -
+      -
+    * - :ref:`ssd201`
+      - :ref:`cortex_a7`
+      - 1.2 GHz
+      -
+      -
 
 .. toctree::
     :maxdepth: 1
@@ -86,12 +114,3 @@ Linux
     K510 <K510>
 
 
-RTOS
------------
-
-.. toctree::
-    :maxdepth: 1
-
-    EAI80 <EAI80>
-    HPM6750 <HPM6750>
-    HPM6350 <HPM6350>

@@ -73,14 +73,14 @@ Xindex
       - :ref:`adc`
       - :ref:`audio`
       - :ref:`ai`
-    * - :ref:`matter`
-      -
-      -
-      -
-      -
-      -
-      -
     * - :ref:`autosar`
+      -
+      -
+      -
+      -
+      -
+      -
+    * - :ref:`matter`
       -
       -
       -

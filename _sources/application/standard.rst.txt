@@ -24,11 +24,41 @@ AUTOSAR (Automotive Open System Architecture) 成立于2003年，致力于制定
 
 三个文档组：Classic Platform(CP)、Adaptive Platform(AP)、Foundation(FO)
 
+.. contents::
+    :local:
+    :depth: 1
+
+.. _aec-q100:
+
+AEC-Q100
+~~~~~~~~~~
+
+汽车电子协会AEC(Automotive Electronics Council) 由Chrysler(克莱斯勒)、福特(Ford)和通用(GM)发起并在1994年成立。
+
+AEC-Q即国际汽车电子协会车规验证标准，针对不同的汽车电子零部件类型，有不同的AECQ标准：
+
+.. list-table::
+    :header-rows:  1
+
+    * - :ref:`aec-q100`
+        - 集成电路IC
+    * - AEC-Q101
+        - 分立半导体器件，比如二、三极管、MOS、IGBT、TVS管等
+    * - AEC-Q102
+        - 分立光电器件，比如LED、激光组件、光电二极管、光电晶体管等
+    * - AEC-Q103
+        - 传感器
+    * - AEC-Q104
+        - 多芯片模块
+    * - AEC-Q200
+        - 被动器件，比如电阻、电容和电感
+
+
+
 .. toctree::
     :maxdepth: 1
 
     AC7815 <../miscellaneous/AC7815>
-
 
 .. _matter:
 

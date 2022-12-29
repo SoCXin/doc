@@ -1,8 +1,8 @@
 .. _boards:
 
-板刊
+Boards
 ==================
-
+``Sipeed``
 
 .. _sipeed:
 
@@ -15,7 +15,6 @@ Sipeed
 .. contents::
     :local:
     :depth: 1
-
 
 .. _sipeed_maix:
 

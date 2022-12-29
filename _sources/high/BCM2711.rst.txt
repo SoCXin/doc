@@ -3,9 +3,7 @@
 
 BCM2711
 =============
-
-* `Raspberry Pi <https://www.raspberrypi.org/>`_ : ``Broadcom`` ``Cortex-A72`` ``Quad-Core`` ``1.8GHz``
-* `Tags <https://github.com/SoCXin/BCM2711>`_ : :ref:`top`
+`Raspberry Pi <https://www.raspberrypi.org/>`_ : ``Broadcom`` ``Cortex-A72`` ``Quad-Core`` ``1.8GHz``
 
 
 .. contents::
@@ -14,13 +12,13 @@ BCM2711
 
 Xin简介
 -----------
+`Tags <https://datasheets.raspberrypi.org/>`_ : :ref:`top`
 
-`EEMBC CoreMark:33073 (1500 x 22.049 CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=13192>`_
 
 规格参数
 ~~~~~~~~~~~
+`EEMBC CoreMark:33073 (1500 x 22.049 CoreMark/MHz) <https://www.eembc.org/viewer/?benchmark_seq=13192>`_
 
-GPU: Videocore VI (@500MHz)
 
 基本参数
 ^^^^^^^^^^^
@@ -42,6 +40,8 @@ GPU: Videocore VI (@500MHz)
 * 6x I2C
 * 5x SPI
 * 1x SDIO interface
+
+GPU: Videocore VI (@500MHz)
 
 Xin选择
 -----------
@@ -77,12 +77,3 @@ BCM2709
 .. image:: ./images/rpi.png
 
 
-
-
-Xin应用
------------
-
-.. contents::
-    :local:
-
-https://datasheets.raspberrypi.org/

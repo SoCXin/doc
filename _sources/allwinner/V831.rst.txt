@@ -123,13 +123,13 @@ Xin应用
 
 .. contents::
     :local:
+    :depth: 1
 
 开发板
 ~~~~~~~~~~~
+``Sipeed`` ``MAIX-II``
 
-MAIX-II
-^^^^^^^^^^^
-``Sipeed``
+:ref:`sipeed_maix` 开发板系列
 
 .. image:: images/B_V831.jpg
 
